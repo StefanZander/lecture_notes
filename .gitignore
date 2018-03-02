@@ -10,3 +10,4 @@ ewa/pdf/http2/src/figures/.DS_Store
 *.out
 *.gz
 *.toc
+.DS_Store
