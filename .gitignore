@@ -1,0 +1,12 @@
+
+*.lb
+ewa/.DS_Store
+ewa/pdf/http2/src/.DS_Store
+ewa/pdf/http2/src/figures/.DS_Store
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.gz
+*.toc
