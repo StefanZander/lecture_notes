@@ -1,0 +1,797 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% How to use writeLaTeX: 
+%
+% You edit the source code here on the left, and the preview on the
+% right shows you the result within a few seconds.
+%
+% Bookmark this page and share the URL with your co-authors. They can
+% edit at the same time!
+%
+% You can upload figures, bibliographies, custom classes and
+% styles using the files menu.
+%
+% If you're new to LaTeX, the wikibook is a great place to start:
+% http://en.wikibooks.org/wiki/LaTeX
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[a4paper, justified, notoc]{tufte-handout} % SZA: remove 'notoc' to regain tufte-style TOC
+
+%\geometry{showframe}% for debugging purposes -- displays the margins
+
+\usepackage{amsmath}
+
+% Set up the images/graphics package
+\usepackage{graphicx}
+\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+\graphicspath{{figures/}}
+
+\title{Cookies and Sessions\thanks{Selected lecture of the module ``Entwicklung Webbasierter Anwendungen''}}
+\author[opt Author]{Prof.\ Dr.\ Stefan Zander}
+\date{8.\ December 2017}  % if the \date{} command is left out, the current date will be used
+
+% The following package makes prettier tables.  We're all about the bling!
+\usepackage{booktabs}
+
+% The units package provides nice, non-stacked fractions and better spacing
+% for units.
+\usepackage{units}
+
+% The fancyvrb package lets us customize the formatting of verbatim
+% environments.  We use a slightly smaller font.
+\usepackage{fancyvrb}[baw]
+\fvset{fontsize=\normalsize}
+
+% SZA: Added to use a space between paragraphs
+\setlength{\parskip}{0.5em}
+
+% Small sections of multiple columns
+\usepackage{multicol}
+
+% Provides paragraphs of dummy text
+\usepackage{lipsum}
+
+% These commands are used to pretty-print LaTeX commands
+\newcommand{\doccmd}[1]{\texttt{\textbackslash#1}}% command name -- adds backslash automatically
+\newcommand{\docopt}[1]{\ensuremath{\langle}\textrm{\textit{#1}}\ensuremath{\rangle}}% optional command argument
+\newcommand{\docarg}[1]{\textrm{\textit{#1}}}% (required) command argument
+\newenvironment{docspec}{\begin{quote}\noindent}{\end{quote}}% command specification environment
+\newcommand{\docenv}[1]{\textsf{#1}}% environment name
+\newcommand{\docpkg}[1]{\texttt{#1}}% package name
+\newcommand{\doccls}[1]{\texttt{#1}}% document class name
+\newcommand{\docclsopt}[1]{\texttt{#1}}% document class option name
+
+% SZA: Allows colored boxes
+\usepackage[framemethod=tikz]{mdframed}
+
+\usepackage[utf8]{inputenc} % this is needed for umlauts
+% \usepackage[ngerman]{babel} % this is needed for umlauts
+\usepackage[T1]{fontenc}    % this is needed for correct output of umlauts in pdf
+
+
+
+% SZA: Added to provide learning objectives section
+\newenvironment{lernziele}{
+	\begin{mdframed}[hidealllines=true,backgroundcolor=gray!20] 
+	\small \itshape
+	\noindent \underline{Objectives:} 
+	} 
+	{ 
+	\end{mdframed}
+}
+
+% SZA: The note commands extends the marginnote with additional text
+\newcommand{\note}[1] {
+	\marginnote{\textbf{Note:}\quad #1 } }
+
+
+% SZA: Added to support JavaScript in LaTeX Code
+%Define the listing package
+\usepackage{listings} %code highlighter
+\usepackage{color} %use color
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+
+ 
+%Customize a bit the look
+\lstset{ %
+backgroundcolor=\color{gray!20}, % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}
+basicstyle=\small, % the size of the fonts that are used for the code
+breakatwhitespace=false, % sets if automatic breaks should only happen at whitespace
+breaklines=true, % sets automatic line breaking
+captionpos=b, % sets the caption-position to bottom
+commentstyle=\color{mygreen}, % comment style
+deletekeywords={...}, % if you want to delete keywords from the given language
+escapeinside={\%*}{*)}, % if you want to add LaTeX within your code
+extendedchars=true, % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+frame=single, % adds a frame around the code
+keepspaces=true, % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+keywordstyle=\color{blue}, % keyword style
+% language=Octave, % the language of the code
+morekeywords={*,...}, % if you want to add more keywords to the set
+numbers=left, % where to put the line-numbers; possible values are (none, left, right)
+numbersep=5pt, % how far the line-numbers are from the code
+numberstyle=\large\color{black}, % the style that is used for the line-numbers
+rulecolor=\color{black}, % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+showspaces=false, % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+showstringspaces=false, % underline spaces within strings only
+showtabs=false, % show tabs within strings adding particular underscores
+stepnumber=1, % the step between two line-numbers. If it's 1, each line will be numbered
+stringstyle=\color{mymauve}, % string literal style
+tabsize=2, % sets default tabsize to 2 spaces
+title=\lstname % show the filename of files included with \lstinputlisting; also try caption instead of title
+}
+%END of listing package%
+ 
+\definecolor{darkgray}{rgb}{.4,.4,.4}
+\definecolor{purple}{rgb}{0.65, 0.12, 0.82}
+\definecolor{darkgreen}{rgb}{.0,.5,.0}
+
+ 
+%define Javascript language
+\lstdefinelanguage{JavaScript}{
+keywords={typeof, new, true, false, catch, function, return, null, catch, switch, var, if, in, while, do, else, case, break},
+keywordstyle=\color{orange}\bfseries,
+ndkeywords={class, export, boolean, throw, implements, import, this},
+ndkeywordstyle=\color{darkgray}\bfseries,
+identifierstyle=\color{black},
+sensitive=false,
+comment=[l]{//},
+morecomment=[s]{/*}{*/},
+commentstyle=\color{darkgray}\ttfamily,
+stringstyle=\color{blue}\ttfamily,
+morestring=[b]',
+morestring=[b]"
+}
+ 
+\lstset{
+language=JavaScript,
+extendedchars=true,
+basicstyle=\small\ttfamily,
+showstringspaces=false,
+showspaces=false,
+numbers=left,
+numberstyle=\tiny,
+numbersep=9pt,
+tabsize=2,
+breaklines=true,
+showtabs=true,
+captionpos=b,
+frame=l % was 'l' || was lines
+}
+
+
+% SZA: Print listing captions to the right margin to better accomodate the tufte style
+% from: https://tex.stackexchange.com/questions/282485/use-listings-in-tufte-book-with-captions-in-margin
+\makeatletter
+% textwidth Tuftian float for listings
+\newenvironment{listing}[1][htbp]
+  {\ifvmode\else\unskip\fi\begin{@tufte@float}[#1]{lstlisting}{}}
+  {\end{@tufte@float} } % SZA: Added \vspace{-2em} \vspace command in order to better align the following paragraph
+% fullwidth Tuftian float for listings
+\newenvironment{listing*}[1][htbp]%
+  {\ifvmode\else\unskip\fi\begin{@tufte@float}[#1]{lstlisting}{star}}
+  {\end{@tufte@float}}
+% enable re-use of \listoflistings facility
+\def\ext@lstlisting{lol}
+% show listing number in caption even though \lst@@caption is empty
+\def\fnum@lstlisting{\lstlistingname~\thelstlisting}
+\makeatother
+
+
+
+
+
+\begin{document}
+\maketitle% this prints the handout title, author, and date
+
+% \begin{abstract}
+% \noindent Lernziele:
+% \begin{itemize}
+% 	\item Kennenlernen der Grundtechniken moderner HTML5 Echtzeitanwendungen
+% 	\item Aufbau des WebSocket Protokolls
+% 	\item Entwicklung erster WebSocket-basierter Client-Server-Anwendungen
+% 	\item Entwicklung einfacher WebSocket-Server mittels JavaScript und dem Vert.x Framework
+% \end{itemize}
+% \end{abstract}
+
+\begin{lernziele}
+\begin{itemize}
+	\item Understand the logic behind cookies and sessions
+	\item Create cookies and sessions in PHP
+	\item Learn about possible limitations and security risks
+\end{itemize}
+\end{lernziele}
+
+%\printclassoptions
+
+\setcounter{secnumdepth}{2} % SZA: Added to have numbers in sections
+
+\noindent \rule{1.54\textwidth}{0.4pt}
+\tableofcontents
+\noindent \rule{1.54\textwidth}{0.4pt}
+
+\section{Motivation}\label{sec:motivation}
+
+HTTP is a \textbf{stateless protocol} with no <<memory>>; this means that no data could be saved or retained by the protocol between two subsequent requests\marginnote{All data available during the first call of a page are lost in a second call of the same page.}. In terms of the protocol that means, that a subsequently issued HTTP request has no knowledge about previously issued requests and their status as well as about the data generated during the first request. This behavior has some advantages in terms of simplicity and scalability and is one major driving factor for the vast growth of the WWW, but also yields serious implications and limitations in some scenarios---which we will discuss in the course of this lecture. This lecture therefore introduces two solutions, namely \textbf{cookies} and \textbf{sessions}, that deal with this limitation. We discuss both technologies by means of the PHP language.
+
+\section{Cookies} % (fold)
+\label{sec:cookies}
+Cookies are directly integrated in PHP; additional installations are not necessary. 
+In order to use cookies, Web browser support must be enabled\marginnote{Cookies must be enabled by the Web browser}.
+
+The concept of cookies has been developed by Netscape in the mid~90's\sidenote{The original specification document is still available under the URL \url{http://wp.netscape.com/newsref/std/cookie_spec.html}}. Since then, the original specification has been iteratively revised and new functionalities have been incorporated. It is available under the URL \url{www.ietf.org/rfc/rfc2965.txt}.
+
+\subsection{What is a Cookie?} % (fold)
+\label{sub:what_is_a_cookie}
+A cookie represents textual information that is exchanged between a server and its clients. 
+The server sends a request for storing one or more cookies on the client as part of the HTTP header.
+An example HTTP header entry is illustrated below\sidenote{Cookie data are stored in the HTTP general header part. Inspecting the HTTP response issued by the \texttt{cookies.php} file shows the complete HTTP header information.}
+\marginnote{\scriptsize\vspace{0.5em}\\ HTTP/1.1 200 OK\\
+Date: Mon, 18 Dec 2017 06:34:20 GMT\\
+Server: Apache/2.4.27 (Unix) OpenSSL/1.0.2l PHP/7.1.9 mod\_perl/2.0.8-dev Perl/v5.16.3\\
+X-Powered-By: PHP/7.1.9\\
+Set-Cookie: Language=PHP\\
+Set-Cookie: Version=7.0\\
+Content-Length: 478\\
+Keep-Alive: timeout=5, max=100\\
+Connection: Keep-Alive\\
+Content-Type: text/html; charset=UTF-8
+}
+\begin{Verbatim}
+Set-Cookie: Language=PHP
+Set-Cookie: Version=7.0
+\end{Verbatim}
+Upon receiving that information, the Web browser then processes them in accordance to its configuration:
+\begin{enumerate}
+	\item The cookie is either \textbf{saved},
+	\item or it is \textbf{rejected},
+	\item or the Web browser \textbf{asks} the user whether to accept or reject it.
+\end{enumerate}
+If\marginnote{Usually, cookie data are stored in a database file.} the cookie was accepted, the cookie information is either held in memory or stored on the client's hard drive depending on the Web browser's configuration. % On the client side
+During\marginnote{Sever has no information about how cookies are processed on the client side} the initial response, the Web server has no knowledge about how the client processes its cookie request, i.e., whether it was accepted or rejected.
+How a cookie is processed on the client side is communicated back to the server only with the next client's request: If the cookie was accepted, client includes it in the HTTP header of every request:
+\begin{Verbatim}
+Cookie: Language=PHP; Version=7.0
+\end{Verbatim}
+The Web server is then able to recognize a client and access this information to include it in further processing steps.
+If a request for cookies was not accepted, the respective header field is not set.
+The following example demonstrates a HTTP request send by the client including cookie informaiton:
+\begin{listing}
+\begin{lstlisting}[language=HTML]
+GET /dev/dev/php/session_cockies/cookies.php?do=print HTTP/1.1
+Host: localhost
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost/dev/dev/php/session_cockies/cookies.php?do=set
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-GB,en;q=0.9,en-US;q=0.8,de;q=0.7
+Cookie: Language=PHP; Version=7.0
+\end{lstlisting}
+	\caption{A client's HTTP request with cookie data included}
+	\label{setting_cookies}
+\end{listing}
+
+
+\subsection{Storage Location} % (fold)
+\label{sub:storage_location}
+Some Web browsers such as Google's Chrome browser stores cookie data in a SQLite database\sidenote{For more information see \url{https://stackoverflow.com/questions/31021764/where-does-chrome-store-cookies}}. 
+Under Windows, the database file is stored at the following location:
+\begin{Verbatim}
+C:\Users\your_username\AppData\Local\Google\Chrome\User Data\Default\
+\end{Verbatim}
+In Mac OS the location is
+\begin{Verbatim}
+~/Library/Application Support/Google/Chrome/Default/Cookies
+\end{Verbatim}
+and in Linux
+\begin{Verbatim}
+~/.config/google-chrome/Default/
+\end{Verbatim}
+Please note that special tools are needed to read SQLite database files. Otherwise, cookie data can be accessed from within the browser.
+
+
+\subsection{Restrictions} % (fold)
+\label{sub:limitations}
+The following section discusses some precautions that have been incorporated in the Cookie specification in order to minimize misconduct.
+
+\begin{itemize}
+	\item \emph{Reading cookie data} \\ The\marginnote{Access restrictions} probably most relevant restriction is that a cookie can only be read by the server that has set the cookie. 
+A cookie set by the Web page \url{www.h-da.de/} can not be read by the page \url{www.tu-darmstadt.de/} and vice versa. This restrictions also applies to sub-domains such as \url{www.h-da.de/fbi}, the cookies of which could not be retrieved by \url{www.h-da.de/eti} and vice versa. 
+It is, however, possible to bind cookies to second-level domains (SLD/2LD).
+If a cookie is bound to the URL \url{.php.net}, it can be read from \url{www.php.net} as well as from \url{pecl.php.net} and \url{windows.php.net}.
+It is also possible to bind a cookie to a path within a domain such as \url{/regierung}. The cookies set by this site can, for instance, not be accessed from the side \url{/opposition}.
+
+\item \emph{Cookie size} \\ A\marginnote{File size} cookie must not exceed the maximum size of 4 kilobyte, i.e., 4096 characters. The size restriction includes both \emph{name} and \emph{value}. If name and value are grater than 4 kilobyte, all characters that exceed this limit will be cut off. 
+
+\item \emph{Amount of Cookies accepted by Web browser} \\ A\marginnote{Number of cookies} Web server is instructed to accept a maximum of 300 cookies at all and a maximum of 20 cookies per domain. In case one of these numbers is exceeded, the oldest cookie (i.e., 301 or 21) will be deleted.    
+\end{itemize}
+
+
+
+\section{Working with Cookies } % (fold)
+\label{sec:working_with_cookies}
+As indicated by the previous sections, setting and reading cookies is done in the HTTP header exclusively. 
+PHP provides a number of convenience methods for setting and processing cookies.
+
+\subsection{Setting a Cookie} % (fold)
+\label{sub:setting_a_cookie}
+
+Cookies can be set in PHP using the function
+\begin{Verbatim}
+setcookie()
+\end{Verbatim}
+Its syntax is as follows:
+\begin{Verbatim}
+boolean setcookie ( string name [, 
+                    string value [, 
+                    int expire [, 
+                    string path [, 
+		    string domain [, 
+		    boolean secure [, 
+		    boolean httponly ]]]]]] )
+\end{Verbatim}
+Please note that parameters in square brackets \texttt{[ ]} are optional; only \texttt{name} and \texttt{value} are mandatory. 
+
+\begin{itemize}
+	\item \texttt{int expire} \\Sets the cookies expiration date in seconds starting from 1.1.1970. Generally, two types of cookies exist that can be distinguished according to its expiration date: 
+	\begin{enumerate}
+		\item \emph{Temporary Cookies} or sometimes called \emph{Session Cookies} are only valid as long as the browser remains open. They will be deleted when the browser is closed.
+		\item \emph{Permanent Cookies} or persistent cookies contains a defined date that determines their validity.
+	\end{enumerate}
+	The expiration date can be set with the PHP functions \texttt{time() + 60 * 60 * 24} for a cookie the validity of which is one day, or using \texttt{mktime()}; a cookie with expiration date \texttt{mktime(12, 0, 0, 12, 24, 2018)} is valid until Christmas Day 2018, 12 am.
+	A cookie without expiration date is treated as a temporary cookie.
+	
+	\item \texttt{string path} \\ This parameter bounds the cookie to a specific path from which the cookie can be read and manipulated. For instance, a cookie set from the path \url{www.h-da.de/fbi/students} can not be read from \url{www.h-da.de/fbi/professors}. 
+	In general it is good practice to set cookies only on those sites that need them (e.g., on administrative sites) in order to increase performance. 
+	
+	\item \texttt{string domain} \\ Sets the domain from which a cookie can be accessed and manipulated. In cases where this parameter is not explicitly set, the Web browser sets the Web site's domain from its URL. As a consequence, if a Web site is requested using the site's IP address, only the address will be used and not the domain name. 
+	
+	\item \texttt{boolean secure} \\ If this token is set, a cookie will only be sent through secure HTTP connections via HTTPS. However, for security reasons, sensible data should never be stored in cookies but held server-side. 
+	
+	\item \texttt{boolean httponly} \\ One possible security vulnerability of \emph{cross-site scripting} is that external javascript code that is included in a site is in principle capable of reading cookie data. Depending on the browser's configuration this might still be the case although this parameter is set to \texttt{true}. 
+	
+\end{itemize}
+
+Since cookies are set as part of the HTTP header, working with cookies in PHP requires to call the function \texttt{setcookie()} prior to the first HTML output\sidenote{This restriction can be circumvented when writing to an output buffer (\texttt{output\_buffering = true} in \texttt{php.ini}).}. Listing~\ref{setting_cookies} demonstrates the correct setting of a cookie in PHP
+
+
+\begin{listing}
+\begin{lstlisting}[language=PHP]
+<?php
+  header("Content-type: text/html; charset=UTF-8");
+  setcookie("Language", "PHP");
+  setcookie("Version", "7.0");
+?>
+<html>
+<head>
+  <title>Setting Cookies correctly</title>
+</head>
+<body>
+  [...]
+</body>
+</html>
+\end{lstlisting}
+	\caption{Setting cookies in PHP}
+	\label{setting_cookies}
+\end{listing}
+
+\subsection{Reading Cookie Data} % (fold)
+\label{sub:reading_cookie_data}
+PHP automatically captures all cookies sent from the client to the server and stores them in the global array \texttt{\$\_COOKIE} from where they can be accessed. 
+In order to access the value of a single cookie, the cookie's name must be used as key:
+\begin{listing}
+\begin{lstlisting}[language=PHP]
+<?php
+  echo htmlspecialchars($_COOKIE["Language"]);
+?>
+\end{lstlisting}
+	\caption{Reading a cookie value in PHP (not recommended)}
+	\label{setting_cookies}
+\end{listing}
+
+Caution: If no cookie with the given name exists, an error message will be printed depending on the configuration of the PHP Interpreter. Therefore, it is better to first check whether a cookie with the given name exists; this can either be done with the PHP function \texttt{array\_key\_exists()} or using \texttt{empty()} and \texttt{isset()}. The following code excerpt demonstrates this:
+\begin{listing}
+\begin{lstlisting}[language=PHP]
+<?php
+  if (isset($_COOKIE["Language"])) {
+    echo htmlspecialchars($_COOKIE["Language"]);
+  }
+?>
+\end{lstlisting}
+	\caption{Favorable way of reading a cookie value with \texttt{isset()}}
+	\label{setting_cookies}
+\end{listing}
+
+However, it is only possible to read a cookie but not its properties (path, domain, expiration date etc.) since those data are only stored on the client-side and are not transferred to the server. 
+
+\subsection{Deleting Cookies} % (fold)
+\label{sub:deleting_cookies}
+
+Cookies can be deleted in different ways:
+
+\begin{enumerate}
+	\item One way is to set the expiration date of a previously set cookie to a date that lies in the past; the Web browser thus deletes the cookie from the memory automatically. This can be achieved, for instance, by setting the expiration date to \texttt{0}, which works for both session and permanent cookies.
+\begin{listing}
+\begin{lstlisting}[language=PHP]
+<?php
+  setcookie("Language", "PHP", 0);
+?>
+\end{lstlisting}
+	\caption{Deleting a cookie by setting its expiration date to \texttt{0}}
+	\label{setting_cookies}
+\end{listing}
+
+Be aware that for deleting cookies using this methodology, all previously set parameters need to be exactly the same when the cookie was set. If the value of only one remaining parameter (other than expire) differs, deleting a cookie will not work.
+
+	\item Another possibility is to set a cookie's value to an empty string~(\texttt{""}). The Web browser recognizes this and automatically deletes the cookie---regardless of its expiration date.
+\end{enumerate}
+
+\subsection{Final Thoughts} % (fold)
+\label{sub:final_thoughts}
+Cookies in general are very useful; however, the following principles need to be considered when working with cookies:
+\begin{enumerate}
+	\item Make sure that your Web site works even \emph{without} cookies
+	\item Don't torment those users who have cookies enabled in their browsers 
+\end{enumerate}
+
+Particularly\marginnote{Don't set a lot of single cookies} regarding the second point, it is not a good practice to send a lot of single cookies, e.g., one with each image etc. Another point is that cookies should be used with caution and with thriftiness, i.e., that information should be bundled in one cookie rather than sending a large number of single cookies that would soon exceed the 300 number limit. 
+Another\marginnote{Set a realistic expiration date} point concerns the expiration date which should also be set rationally. It is rather stupid to set an expiration date to the far future, e.g., year 2041; inmost cases, one year is more than sufficient.
+
+One big problem that is still present when using cookies is that of \emph{spying on users}. The following scenario demonstrates this problem:
+ 
+Image you request a page from domain \url{www.website1.net} that includes an advertisement banner from the domain \url{www.adserver.net}. However, \url{www.adserver.net} could set a cookie that might be sent back to the domain. 
+If the user navigates to another Web page \url{www.website2.net}, which also includes banners from \url{www.adserver.net}, this site retrieves the previously created cookie set via the page \url{www.website1.net}.
+In doing so, \url{www.adserver.net} gains knowledge about the pages requested by a user---about the user's interests and her browsing behavior. 
+This enables an advertisement company to create a user profile and provide more target-specific advertisements.
+
+
+
+\section{Sessions\marginnote{As we will see, sessions and cookies work perfectly togehter}}% (fold)
+\label{sec:sessions}
+In the last section, we learned that HTTP is a stateless protocol and that cookies are one way to deal with that issue.
+However\marginnote{Cookies might be misused to harm users' privacy by creating user profiles.}, the main problem associated with cookies from an end user perspective is that they can be used to harm users' privacy since they allow 3rd parties to create user profiles---at least to a certain degree. Another\marginnote{Cookies can be disabled} problem is that they can be disabled by the user's Web browser.
+
+\emph{Sessions} are another possibility to deal with the stateless character of HTTP. The\marginnote{Session denotes the act of visiting a website by a user.} term <<session>> usually denotes the act of visiting a Web page by a user. %\marginnote{Accessing a Web site for 10 minutes denotes a 10 minute session; when a user returns after 1 hour to the Web site, usually a new session will be initiated.}.  
+When the user accesses a Web shop for 10~minutes before she moves to another page, she had a 10 minute session. When she returns to the shop, e.g., after 1 hour, a new session will usually be created.  
+
+PHP\marginnote{PHP provides convenience methods for working with sessions.} provides the possibility to create and manipulate session data. It stores data within a session object and provides some convenience methods for accessing and manipulating them.
+In general, those data are available as long as the session objects exists, i.e., as long as the session is active. 
+
+
+\subsection{Background Information} % (fold)
+\label{sub:background_information}
+
+When PHP stores data in a session object, they need to be serialized beforehand and are then stored on the Web servers file system, depending on its configuration. 
+Each \marginnote{The Session ID serves as identifier of the session and the data stored in the session objects} session will be identified through a 32-character long hexadecimal value, the so-called \emph{Session ID}.
+The Session ID serves as identifier for the data stored in the session object. 
+% Hence, in order to store client-specific data between different
+Hence, the problem of storing client-specific data between different subsequent requests is reduced to transmitting the Session ID between server and client. 
+The\marginnote{Sensible data should never be stored in cookies!} data are stored on the server-side and can be accessed through some PHP convenience methods. 
+
+Sessions require that the Session ID is transmitted in every request and response.
+This can be done using two different approaches:
+\begin{enumerate}
+	\item The Session ID is stored in a cookie
+	\item The Session ID is appended to all URLs contained in a Web page
+\end{enumerate}
+
+Using\marginnote{Cookies and sessions work perfectly togehter and are the safest method of storing user data} cookies for storing the Session ID seems counter intuitive since cookies can be disabled in the user's Web browser. However, cookies are the one and only useful method for storing session data since a session management without cookies yields some serious drawbacks, e.g., \emph{session hijacking}.
+
+
+\subsection{Session Management without Cookies} % (fold)
+\label{sub:session_without_cookies}
+The central concept of using a session management without cookies is to append the Session ID to all URLs embedded in a Web page. This leads to generated URLs according to the following pattern:
+\begin{Verbatim}
+http://myserver.org/myscript.php?PHPSESSID=eh2czw36afpn71r8kbt03q4p8005
+\end{Verbatim}  
+As\marginnote{The PHP Interpreter needs to add the Session ID to every URL embedded in a Web page.} a consequence, every link embedded in Web page need to be automatically extended by the PHP Interpreter using the Session ID so that it is not lost. % This could result in a bottleneck for large pages since those need to be parsed and manipulated prior to their delivery. 
+However, the Session ID is available as a GET parameter and does not influence the processing of the script.
+
+The\marginnote{Adding the Session ID to a Web site's URLs is rather resource demanding.} parsing of a Web page and complementing all URLs with the Session ID is resource consuming and might result in \emph{performance bottlenecks}, in particular for large pages with many links.
+However\marginnote{URL rewriting is done automatically by PHP when flags are set in the \texttt{php.ini}.}, PHP is capable of doing the complementation automatically when the corresponding flags are set in the \texttt{php.ini} file. The \texttt{php.ini} also contains the pattern declarations used by the PHP Interpreter for complementing the URLs contained in a Web page (such as \texttt{a}, \texttt{href}, \texttt{frame}, \texttt{src}, \texttt{form}\sidenote{In forms, a hidden field is used to transmit the Session ID.} etc).
+
+
+\subsection{Using Sessions in PHP} % (fold)
+\label{sub:using_sessions_in_php}
+In PHP, a session is started using the function
+\begin{Verbatim}
+  	session_start();
+\end{Verbatim}  
+This function needs to be called explicitly on every page that requires a session management and before any output is generated.
+However, PHP can be configured to automatically initiate the session management on \emph{every} page\sidenote{In terms of performance, it is not useful to have session mangement on every page.} using the following option flag in the \texttt{php.ini}:
+\begin{Verbatim}
+	session.auto_start = 1
+\end{Verbatim} 
+The value of the \texttt{session.auto\_start} is \texttt{0} per default\sidenote{If \texttt{session.auto\_start} is enabled, \texttt{session\_start();} does not need to be called explicitly.}. 
+
+PHP also uses a \emph{garbage collection} mechanism to avoid situations in which the directory for storing session data might grow too big. 
+
+The maximal life time of session data can be specified with the 
+\begin{Verbatim}
+	session.gc_maxlifetime = 1440 
+\end{Verbatim}
+value that determines the time in seconds before session data will be removed by the garbage collector. 
+The above lifetime value causes the garbage collector to remove the session data when no link was clicked in a page within 24 minutes.   
+
+\subsection{Writing Session Data} % (fold)
+\label{sub:writing_session_data}
+When working with sessions in PHP, a large share of programming work is related to writing data to and reading data from the super global session array \texttt{\$\_SESSION}.
+
+Two steps are necessary for storing data in a session:
+\begin{enumerate}
+	\item Initiate the session management by calling \texttt{session\_start()} \newline (unless \texttt{session.auto\_start = 1} is set in the \texttt{php.ini}.)
+	\item Write data to the \texttt{\$\_SESSION} object
+\end{enumerate}
+
+The following code excerpts stores two strings in the session:
+\begin{listing}
+\begin{lstlisting}[language=PHP]
+<?php
+  session_start();
+  // Further instructions...
+  $_SESSION["language"] = "PHP";
+  $_SESSION["version"] = "7.0";
+?>
+\end{lstlisting}
+	\caption{Storing data in the session}
+	\label{writing_session_data}
+\end{listing}
+
+Be\marginnote{Call \texttt{session\_start()} prior to any output.} aware that when cookies are used for session management, \texttt{session\_start()} need to be called prior to writing HTML (e.g., set it in the head). However\marginnote{Once initated, data can be stored any time in the session object.}, when the session is initiated, data can be stored in the session at any time in the PHP script.
+
+One\marginnote{Whether a client accepts cookies can only by ascertained with the second request.} problem still exists since PHP can ascertain whether cookies are enabled in the user's Web browser only with the subsequently following request. Although it is strongly advised against doing so, PHP can be configured to automatically add the Session ID to all links in the generated page when it is first called. Due to privacy and security issues, this should be avoided at all costs.
+
+
+\subsection{Reading Session Data} % (fold)
+\label{sub:reading_session_data}
+Data can be read from the session by accessing the \texttt{\$\_SESSION} array with the data key.
+Be aware that data can only be read from the session when \texttt{session\_start()} was called before, which causes the \texttt{\$\_SESSION} array to be filled with the respective values. 
+
+The following PHP excerpt shows how data can be read from the \texttt{\$\_SESSION} array. 
+\begin{listing}
+\begin{lstlisting}[language=PHP]
+<?php
+  session_start();
+  // Further instructions...
+  if (isset($_SESSION["language"])) {
+    echo htmlspecialchars($_SESSION["language"]);
+  }
+  if (isset($_SESSION["version"])) {
+    echo htmlspecialchars($_SESSION["version"]);
+  }
+?>
+\end{lstlisting}
+	\caption{Reading session data}
+	\label{reading_session_data}
+\end{listing}
+
+Please note that when reading data from the session, it should first be checked whether the data exists using the \texttt{isset()} function. Additionally, the data value need to be escaped in order to avoid code injection and to not compromise the HTML output. 
+
+\subsection{Deleting Session Data} % (fold)
+\label{sub:deleting_session_data}
+PHP provides 2 ways to delete data from a session:
+\begin{enumerate}
+	\item Setting the session variable to an empty string or to \texttt{null}
+	\item Deleting the session variable using the \texttt{unset()} function
+\end{enumerate}
+The result of both approaches is identical though the second variant using \texttt{unset()} is faster. 
+The excerpt in Listing~\ref{deleting_session_data} uses variant 2 and 1 for the deletion of session variables:
+\begin{listing}
+\begin{lstlisting}[language=PHP]
+<?php
+  session_start();
+  // Further instructions...
+  if (isset($_SESSION["language"])) {
+    unset($_SESSION["language"]);
+  }
+  if (isset($_SESSION["version"])) {
+    $_SESSION["version"] = "";
+  }
+?>
+\end{lstlisting}
+	\caption{Deleting session data}
+	\label{deleting_session_data}
+\end{listing}
+
+In order to complete destroy a session and its data, two steps are necessary:
+\begin{enumerate}
+	\item Delete all data from the session array using the \texttt{session\_unset()} function or reinitializing the session variable using \texttt{\$\_SESSION = array();}
+	\item Destroy the session using \texttt{session\_destroy()}
+\end{enumerate}
+
+Eventually, sometimes it might be necessary to also delete the session cookie, if it has been set before. 
+This can be done with the following code:
+\begin{listing}
+\begin{lstlisting}[language=PHP]
+<?php
+  setcookie(session_name(), "killme", 0 , "/");
+?>
+\end{lstlisting}
+	\caption{Deleting the session cookie}
+	\label{deleting_session_cookie}
+\end{listing}
+
+The \texttt{session\_name()} function returns the session's default name as set in the php.\texttt{ini}, e.g., 
+\begin{Verbatim}
+session.name = PHPSESSID
+\end{Verbatim}
+The value can be dynamically retrieved and used to set a temporary cookie with expiration date~\texttt{0} seconds.
+The following PHP program illustrates how to completely delete all session data together with the session cookie:
+\begin{listing}
+\begin{lstlisting}[language=PHP]
+<?php
+  session_start();
+?>
+<html>
+<head>
+  <title>Sessions</title>
+</head>
+<body>
+<?php
+  session_unset();
+  session_destroy();
+  setcookie(session_name(), "killme", 0, "/");
+?>
+<p>Everything has been deleted!</p>
+</body>
+</html>
+\end{lstlisting}
+	\caption{Deleting all session data together with the session cookie}
+	\label{delete_all_session_data}
+\end{listing}
+
+\section{Using Sessions for Access Control} % (fold)
+\label{sec:using_sessions_for_access_control}
+Sessions are omnipresent and widely used in PHP-based Web applications.
+A typical use case scenario is to protected Web content from unauthorized access, i.e., sensitive information can only be retrieved after authentication and authorization via a login page.
+The following pages demonstrate how this can be realized using PHP and sessions.
+
+\begin{listing}
+\begin{lstlisting}[language=PHP]
+<?php
+  session_start();
+
+  if (!isset($_SESSION["login"]) || $_SESSION["login"] != "ok") {
+    $url = $_SERVER["SCRIPT_NAME"];
+    if (isset($_SERVER["QUERY_STRING"])) {
+      $url .= "?" . $_SERVER["QUERY_STRING"];
+    }
+    header("Location: login.php?url=" . urlencode($url));
+  }
+?>
+\end{lstlisting}
+	\caption{Checking whether a user is authenticated and authorized to request a protected resource (<<login.inc.php>>)}
+	\label{login_inc}
+\end{listing}
+
+
+\begin{listing}
+\begin{lstlisting}[language=PHP]
+<?php
+  require_once "login.inc.php";
+?>
+<html>
+<head>
+  <title>Protected Resource</title>
+</head>
+<body>
+<h1>Here is all the secret information...</h1>
+</body>
+</html>
+\end{lstlisting}
+	\caption{The resource the content of which is protected (<<protected\_page.php>>)}
+	\label{protected_page}
+\end{listing}
+
+
+\begin{listing}
+\begin{lstlisting}[language=PHP]
+<?php
+  session_start();
+
+  if (isset($_POST["user"]) && isset($_POST["password"])) {
+    if ($_POST["user"] == "jamesbond" && 
+        $_POST["password"] == "topsecret") {
+      $_SESSION["login"] = "ok";
+      $url = (isset($_GET["url"])) ? nl2br($_GET["url"]) : "index.php";
+      header("Location: $url");
+    }
+  }
+?>
+<html>
+<head>
+  <title>Login</title>
+</head>
+<body>
+<form method="post">
+User: <input type="text" name="user" size="10" /><br />
+Password: <input type="password" name="password" size="10" /><br />
+<input type="submit" value="Login" />
+</form>
+</body>
+</html>
+\end{lstlisting}
+	\caption{The login page (<<login.php>>)}
+	\label{login_page}
+\end{listing}
+
+
+\section{Security Concerns} % (fold)
+\label{sec:security_concerns}
+Sessions are easy to use and maintain in PHP but also yield security concerns, particularly when realized as \emph{cookie-less sessions}. 
+The reason for that is that in cookie-less sessions, the key to user data---the Session ID---is available as plain text since it is encoded in the Web site's URLs.
+The following scenario illustrates a potential security flaw that comes with cookie-less sessions.
+
+Imagine the following situation:
+
+\emph{A Web mail provider uses cookie-less sessions.
+You send one of the Webmail provider's clients an email that contains a link to your Web page.
+The link in the email points to a PHP script that will be executed when the recipient clicks on the link in the Webmail Web interface.
+The first thing the script does is to look at the \texttt{HTTP\_REFERER} header field; 
+most Web browser use this header to send the previously visited page by a user. 
+If you are lucky, the HTTP request issued by clicking on the link in the mail client contains the URL of the previously visited page, i.e., the mail provider's landing Web page together with the Session ID encoded in the URL, since the mail provider uses cookie-less sessions\marginnote{This method is called \emph{Session Hijacking}}. }
+
+In the early days of Web mail, some mail providers such as Lycos and GMX used cookie-less sessions and were vulnerable to session hijacking attacks. Meanwhile, almost all providers use temporary cookies to circumvent such attacks. 
+
+Although a number of counter measures exists that try to minimize such attacks (e.g., storing the user's current IP address in a separate session variable) no method provides full security. In case of storing the user's IP address, the server will evaluate the validity of the client's IP adress with every request and if the IP does not match the IP address stored in the session variable, the session will be immediately destroyed. 
+
+Another possibility is to evaluate the \texttt{HTTP\_REFERER} environment variable and determine the page from where the request was initiated. In case of a session hijacking attack, the value of this variable might be incorrect. Unfortunately, this method is also not entirely reliable since some Web browser either do not send this value or it might be compromised.  
+
+\textbf{In general, only use sessions in combination with cookies, i.e., solely store the Session ID in a cookie!}
+
+
+
+
+% \begin{listing}
+% \begin{lstlisting}[language=JavaScript]
+% function poll() {
+%   xhr.send();
+%   clearTimeout(timeoutId);
+%   timeoutId = setTimeout(poll(), 2000);
+% }
+% timeoutId = setTimeout(poll(), 2000);
+% \end{lstlisting}
+% 	\caption{A simple Javascript code that demonstrates the polling principle}
+% 	\label{polling}
+% \end{listing}
+
+
+
+%
+% \begin{marginfigure}%
+%   \includegraphics[width=\linewidth]{./src/figures/polling.pdf}
+%   \caption{Polling}
+%   \label{fig:marginfig}
+% \end{marginfigure}
+% \begin{figure}%
+% 	\centering
+%   \includegraphics[width=0.8\textwidth]{./figures/polling.pdf}
+%   \caption{Polling}
+%   \label{fig:marginfig}
+% \end{figure}
+
+
+% \begin{Verbatim}[gobble=0,frame=lines,numbers=left]
+% GET /chat HTTP/1.1
+% Host: domain.net
+% Connection: Upgrade
+% upgrade: websocket
+% Sec-WebSocket-Key: dGhlIHNhbXBsZSBub25jZQ==
+% Origin: http://domain.net
+% Sec-WebSocket-Version: 13
+% Sec-WebSocket-Protocol: chat, superchat
+% Sec-WebSocket-Extensions: x-webkit-deflate-stream
+% [...]
+% \end{Verbatim}
+
+
+\bibliography{sample-handout}
+\bibliographystyle{plainnat}
+
+
+
+
+\end{document}

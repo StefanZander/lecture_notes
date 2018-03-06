@@ -1,0 +1,1234 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% How to use writeLaTeX: 
+%
+% You edit the source code here on the left, and the preview on the
+% right shows you the result within a few seconds.
+%
+% Bookmark this page and share the URL with your co-authors. They can
+% edit at the same time!
+%
+% You can upload figures, bibliographies, custom classes and
+% styles using the files menu.
+%
+% If you're new to LaTeX, the wikibook is a great place to start:
+% http://en.wikibooks.org/wiki/LaTeX
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[a4paper, justified, notoc]{tufte-handout} % SZA: remove 'notoc' to regain tufte-style TOC
+
+%\geometry{showframe}% for debugging purposes -- displays the margins
+
+\usepackage{amsmath}
+
+% Set up the images/graphics package
+\usepackage{graphicx}
+\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+\graphicspath{{figures/}}
+
+\title{Moderne Echtzeitkommunikation mit HTML5 und WebSockets\thanks{Ausgewaehltes Kapitel im Rahmen der Lehrveranstaltung ``Entwicklung Webbasierter Anwendungen''}}
+\author[opt Author]{Prof.\ Dr.\ Stefan Zander}
+\date{9.\ Oktober 2017}  % if the \date{} command is left out, the current date will be used
+
+% The following package makes prettier tables.  We're all about the bling!
+\usepackage{booktabs}
+
+% The units package provides nice, non-stacked fractions and better spacing
+% for units.
+\usepackage{units}
+
+% The fancyvrb package lets us customize the formatting of verbatim
+% environments.  We use a slightly smaller font.
+\usepackage{fancyvrb}[baw]
+\fvset{fontsize=\normalsize}
+
+% SZA: Added to use a space between paragraphs
+\setlength{\parskip}{0.5em}
+
+% Small sections of multiple columns
+\usepackage{multicol}
+
+% Provides paragraphs of dummy text
+\usepackage{lipsum}
+
+% These commands are used to pretty-print LaTeX commands
+\newcommand{\doccmd}[1]{\texttt{\textbackslash#1}}% command name -- adds backslash automatically
+\newcommand{\docopt}[1]{\ensuremath{\langle}\textrm{\textit{#1}}\ensuremath{\rangle}}% optional command argument
+\newcommand{\docarg}[1]{\textrm{\textit{#1}}}% (required) command argument
+\newenvironment{docspec}{\begin{quote}\noindent}{\end{quote}}% command specification environment
+\newcommand{\docenv}[1]{\textsf{#1}}% environment name
+\newcommand{\docpkg}[1]{\texttt{#1}}% package name
+\newcommand{\doccls}[1]{\texttt{#1}}% document class name
+\newcommand{\docclsopt}[1]{\texttt{#1}}% document class option name
+
+% SZA: Allows colored boxes
+\usepackage[framemethod=tikz]{mdframed}
+
+
+% \usepackage[ngerman]{babel} % this is needed for umlauts
+\usepackage[T1]{fontenc}    % this is needed for correct output of umlauts in pdf
+\usepackage[utf8]{inputenc} % this is needed for umlauts
+
+
+% SZA: Added to provide learning objectives section
+\newenvironment{lernziele}{
+	\begin{mdframed}[hidealllines=true,backgroundcolor=gray!20] 
+	\small \itshape
+	\noindent \underline{Lernziele:} 
+	} 
+	{ 
+	\end{mdframed}
+}
+
+% SZA: The note commands extends the marginnote with additional text
+\newcommand{\note}[1] {
+	\marginnote{\textbf{Note:}\quad #1 } }
+
+
+% SZA: Added to support JavaScript in LaTeX Code
+%Define the listing package
+\usepackage{listings} %code highlighter
+\usepackage{color} %use color
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+ 
+%Customize a bit the look
+\lstset{ %
+backgroundcolor=\color{gray!20}, % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}
+basicstyle=\small, % the size of the fonts that are used for the code
+breakatwhitespace=false, % sets if automatic breaks should only happen at whitespace
+breaklines=true, % sets automatic line breaking
+captionpos=b, % sets the caption-position to bottom
+commentstyle=\color{mygreen}, % comment style
+deletekeywords={...}, % if you want to delete keywords from the given language
+escapeinside={\%*}{*)}, % if you want to add LaTeX within your code
+extendedchars=true, % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+frame=single, % adds a frame around the code
+keepspaces=true, % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+keywordstyle=\color{blue}, % keyword style
+% language=Octave, % the language of the code
+morekeywords={*,...}, % if you want to add more keywords to the set
+numbers=left, % where to put the line-numbers; possible values are (none, left, right)
+numbersep=5pt, % how far the line-numbers are from the code
+numberstyle=\large\color{black}, % the style that is used for the line-numbers
+rulecolor=\color{black}, % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+showspaces=false, % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+showstringspaces=false, % underline spaces within strings only
+showtabs=false, % show tabs within strings adding particular underscores
+stepnumber=1, % the step between two line-numbers. If it's 1, each line will be numbered
+stringstyle=\color{mymauve}, % string literal style
+tabsize=2, % sets default tabsize to 2 spaces
+title=\lstname % show the filename of files included with \lstinputlisting; also try caption instead of title
+}
+%END of listing package%
+ 
+\definecolor{darkgray}{rgb}{.4,.4,.4}
+\definecolor{purple}{rgb}{0.65, 0.12, 0.82}
+\definecolor{darkgreen}{rgb}{.0,.5,.0}
+
+ 
+%define Javascript language
+\lstdefinelanguage{JavaScript}{
+keywords={typeof, new, true, false, catch, function, return, null, catch, switch, var, if, in, while, do, else, case, break, undefined},
+keywordstyle=\color{orange}\bfseries,
+ndkeywords={class, export, boolean, throw, implements, import, this},
+ndkeywordstyle=\color{darkgray}\bfseries,
+identifierstyle=\color{black},
+sensitive=false,
+comment=[l]{//},
+morecomment=[s]{/*}{*/},
+commentstyle=\color{darkgray}\ttfamily,
+stringstyle=\color{blue}\ttfamily,
+morestring=[b]',
+morestring=[b]"
+}
+ 
+\lstset{
+language=JavaScript,
+extendedchars=true,
+basicstyle=\small\ttfamily,
+showstringspaces=false,
+showspaces=false,
+numbers=left,
+numberstyle=\tiny,
+numbersep=9pt,
+tabsize=2,
+breaklines=true,
+showtabs=true,
+captionpos=b,
+frame=l % was lines
+}
+
+
+% SZA: Print listing captions to the right margin to better accomodate the tufte style
+% from: https://tex.stackexchange.com/questions/282485/use-listings-in-tufte-book-with-captions-in-margin
+\makeatletter
+% textwidth Tuftian float for listings
+\newenvironment{listing}[1][htbp] %[htbp]
+  {\ifvmode\else\unskip\fi\begin{@tufte@float}[#1]{lstlisting}{}}
+  {\end{@tufte@float} } % SZA: Added \vspace{-2em} \vspace command in order to better align the following paragraph
+% fullwidth Tuftian float for listings
+\newenvironment{listing*}[1][htbp]% [htbp]
+  {\ifvmode\else\unskip\fi\begin{@tufte@float}[#1]{lstlisting}{star}}
+  {\end{@tufte@float}}
+% enable re-use of \listoflistings facility
+\def\ext@lstlisting{lol}
+% show listing number in caption even though \lst@@caption is empty
+\def\fnum@lstlisting{\lstlistingname~\thelstlisting}
+\makeatother
+
+
+
+
+
+\begin{document}
+\maketitle% this prints the handout title, author, and date
+
+% \begin{abstract}
+% \noindent Lernziele:
+% \begin{itemize}
+% 	\item Kennenlernen der Grundtechniken moderner HTML5 Echtzeitanwendungen
+% 	\item Aufbau des WebSocket Protokolls
+% 	\item Entwicklung erster WebSocket-basierter Client-Server-Anwendungen
+% 	\item Entwicklung einfacher WebSocket-Server mittels JavaScript und dem Vert.x Framework
+% \end{itemize}
+% \end{abstract}
+
+\begin{lernziele}
+\begin{itemize}
+	\item Kennenlernen der Grundtechniken moderner HTML5 Echtzeitanwendungen
+	\item Aufbau des WebSocket Protokolls
+	\item Entwicklung erster WebSocket-basierter Client-Server-Anwendungen
+	\item Entwicklung einfacher WebSocket-Server mittels JavaScript und Node.js 
+\end{itemize}
+\end{lernziele}
+
+%\printclassoptions
+
+\setcounter{secnumdepth}{2} % SZA: Added to have numbers in sections
+
+\noindent \rule{1.54\textwidth}{0.4pt}
+\tableofcontents
+\noindent \rule{1.54\textwidth}{0.4pt}
+
+\section{Motivation}\label{sec:page-layout}
+HTTP\marginnote{HTTP is stateless} is a \emph{stateless} request-response protocol that requires the client to open a connection to a server in order to send and receive data. The\marginnote{HTTP closes the connection after every response} connection is closed when the server delivered its response. If the client requires additional or updated information, it has to establish a new connection to the server again and issue a request. 
+
+This scenario has two main bottlenecks:
+\begin{enumerate}
+	\item It does not allow the server to send notifications to the client (so-called \emph{PUSH notifications}) without an a prior client-side request.
+	\item For every client's request, a new connection with the entire communication overhead has to be established in order to exchange data with a server.
+\end{enumerate}
+
+The consequences of both bottlenecks are that HTTP\marginnote{Per default, HTTP does not support the Observer pattern and a Model-View-Controller architecture} is not suited for implementing the \emph{Observer pattern} in Web Applications as well as the \emph{Model-View-Controller} architecture, since a model is not able to notify view autonomously in case of any updates. More severely, HTTP is not suited for the realization of pure \emph{real-time Web applications} in which events are sent between clients and servers upon their occurrence, ie., at the time when they are created or captured. 
+These issues are addressed by the WebSocket protocol and its accompanying technology stack.
+
+WebSockets create a bi-directional communication channel between a server and a client. This channel can be used by clients and servers likewise to send textual and/or binary data\sidenote{Some websites try to circumvent ad blockers by sending advertisements through WebSocket connections.}. 
+One of the big advantages of using WebSockets for real-time communication on the Web is its little overhead; the header of WebSocket messages only requires 2 to 6 bytes. 
+
+The WebSocket standard consists of two main elements:
+\begin{enumerate}
+	\item The \textbf{WebSocket Protocol}---standardized through the ITEF in RFC6455
+	\item The \textbf{JavaScript Webbrowser API}---standardized through the World Wide Web Consortium (W3C) 
+\end{enumerate}
+
+% Das HTTP-Protokoll\note{und hier kommt noch viel viel mehr text der dann so oder so dargestellt wid sdssdsdds dgdfg dfgdfg dfggdfgd} erlaubt per Definition nur \emph{Request-Response} Kommunikation. Nach jedem Request-Response wird die Verbindung wieder geschlossen. Auch gibt es keine \emph{PUSH}-Benachrichtigung. D.h., eine reine \texttt{Umsetzung} des \texttt{MVC-Paradigmas}\footnote{Model-View-Controller: Ein Architekturprinzip zur besseren Wartbarkeit von Code welches eine Trennung nach der Verantwortlichkeit von Komponenten eines Softwaresystems propagiert.}  ist in Web-Applikationen bisher nicht möglich.
+
+% \fvset{fontsize=\small} %footnotesize
+% \begin{Verbatim}[gobble=0,frame=lines,numbers=left]
+% <!doctype html>
+% <html>
+% <head>
+%     <title>Websocket Browser Support</title>
+%     <meta charset="utf-8" />
+% </head>
+% <body>
+%     <div id="message">
+%     </div>
+%     <script type="text/javascript">
+%         var parent = document.getElementById("message");
+%         var node = document.createTextNode("");
+%         parent.appendChild(node);
+%         if ("WebSocket" in window) {
+%             node.textContent = "Prima! WebSockets werden unterstützt.";
+%         } else {
+%             node.textContent = "Schade, WebSockets werden nicht von Ihrem Browser unterstützt";
+%         }
+%     </script>
+% </body>
+% </html>
+% \end{Verbatim}
+
+
+\subsection{Polling and Long-Polling} % (fold)
+\label{sub:polling}
+
+Many of today's (near) real-time Web applications are realized trough the principles of \emph{polling} or \emph{long-polling}. During polling, the client issues request to the server according to a pre-determined frequency, e.g., every 2 seconds. Those requests are answered immediately by the server, even in cases when no new data are available . % which are answered immediately by the server. 
+The following Javascript code excerpt demonstrates this principle. 
+
+\begin{listing}
+\begin{lstlisting}[language=JavaScript]
+function poll() {
+  xhr.send();
+  clearTimeout(timeoutId);
+  timeoutId = setTimeout(poll(), 2000);
+}
+timeoutId = setTimeout(poll(), 2000);
+\end{lstlisting}
+	\caption{A simple Javascript code that demonstrates the polling principle} 
+	\label{polling}
+\end{listing}
+
+The \texttt{send()} method is repeatedly executed through the \texttt{setTimeout()} method. By means of this principle, resources hosted on a server will be repeatedly requested and processed on the client side. \marginnote{The server sends an empty response in cases nothing has changed since the last request.} In case there are no changes since the last issued request, the server answers with an empty response (see Figure~\ref{fig:polling}). 
+
+%
+% \begin{marginfigure}%
+%   \includegraphics[width=\linewidth]{./src/figures/polling.pdf}
+%   \caption{Polling}
+%   \label{fig:marginfig}
+% \end{marginfigure}
+\begin{figure}%
+	\centering
+  \includegraphics[width=0.8\textwidth]{./src/figures/polling.pdf}
+  \caption{Principle of HTTP Polling (re-printed from~\citet{gorski:2015})}
+  \label{fig:polling}
+\end{figure}
+
+
+Polling\marginnote{Polling is browser-independent.} can be easily implemented in a browser-independent manner. However, due to many unnecessary requests and computational resources needed to process such requests, polling creates substantial overhead that is not to be underestimated\marginnote{Short update frequencies cause substantial processing overhead in Polling.}. An important aspect in this context is the \emph{temporal resolution} through with requests are issued. For a applications that are required to exhibit a near real-time behavior such as auction or chat systems, the temporal resolution needs to be of rather fine granularity. The requirements of other applications such as monitoring systems for plants might be satisfied with a larger temporal frequency.
+
+\emph{Long-Polling} is intended to reduce the additional overhead caused by empty responses send through polling. \marginnote{During Long-Polling the server answers promptly when detecting a change event.} In Long-Polling, the server answers promptly \emph{only} in case of changes; if no change takes place, the server waits a pre-defined amount of time before it sends an empty response. Iff a change is detected during that time, the server answers promptly (as described before). The connection to the client remains open during the time of waiting and will be closed upon sending an immediate response or an empty message. The client however, immediately issues a new request to the server in both cases. This procedure resembles a permanent connection between client and server. Figure~\ref{fig:long_polling} demonstrates this principle. 
+
+\begin{figure}%
+	\centering
+  \includegraphics[width=0.8\textwidth]{./src/figures/long-polling.pdf}
+  \caption{Principle of Long-Polling (re-printed from~\citet{gorski:2015})}
+  \label{fig:long_polling} 
+\end{figure}
+
+\section{Establishing a WebSocket Connection} % (fold)
+\label{sec:establishing_a_websocket_connection}
+
+This section details all the steps involved in the set-up a WebSocket connection. The set-up is triggered by a HTTP request-response communication between a client and a server.
+
+Upon establishing a WebSocket connection, the client sends an \emph{opening handshake}\sidenote{The opening handshake is also called "<WebSocket Handshake">} on the basis of HTTP in order to open a bi-directional \emph{WebSocket Channel} through which messages between a client and the server are exchanged. The client therefore sends a special HTTP GET request as depicted subsequently.
+
+\newpage
+\begin{Verbatim}[gobble=0,frame=lines,numbers=left]
+GET /chat HTTP/1.1
+Host: domain.net
+Connection: Upgrade
+upgrade: websocket
+Sec-WebSocket-Key: dGhlIHNhbXBsZSBub25jZQ== 
+Origin: http://domain.net
+Sec-WebSocket-Version: 13
+Sec-WebSocket-Protocol: chat, superchat 
+Sec-WebSocket-Extensions: x-webkit-deflate-stream 
+[...]
+\end{Verbatim}
+
+% \texttt{GET /chat} addresses the WebSockets endpoint; a WebSocket server can offer multiple endpoints.
+% \texttt{Connection: Upgrade} requests the server to switch from HTTP to another protocol, signaled through the \texttt{upgrade: websocket} header.
+% \texttt{Sec-WebSocket-Key: dGhlIHNhbXBsZSBub25jZQ==} is a Base64-coded string that contains a randomly created number; this number is used by the client to test whether the server is able to process WebSocket requests, i.e., whether it supports the WebSockets Protocol.
+% \texttt{Origin: http://domain.net} signals the server the domain from which the request has initially been sent. Upon this information, the server can decide whether to accept an connection request or not.
+% \texttt{Sec-WebSocket-Version: 13} indicates the WebSocket Protocol version used for the communication channel.
+% \texttt{Sec-WebSocket-Protocol: chat, superchat} allows the client to signal the server the subprotocols it is able to process through the WebSocket channel. The same principle also applies to the extension header \texttt{Sec-WebSocket-Extensions:}.
+
+\begin{itemize}
+	\item "<\texttt{GET /chat}"> addresses the WebSockets endpoint; a WebSocket server can offer multiple endpoints. 
+	\item "<\texttt{Connection: Upgrade}"> requests the server to switch from HTTP to another protocol, signaled through the "<\texttt{upgrade: websocket}"> header. 
+	\item "<\texttt{Sec-WebSocket-Key: dGhlIHNhbXBsZSBub25jZQ==}"> is a Base64-coded string that contains a randomly created number; this number is used by the client to test whether the server is able to process WebSocket requests, i.e., whether it supports the WebSockets Protocol. 
+	\item "<\texttt{Origin: http://domain.net}"> signals the server the domain from which the request has initially been sent. Upon this information, the server can decide whether to accept an connection request or not.
+	\item  "<\texttt{Sec-WebSocket-Version: 13}"> indicates the WebSocket Protocol version used for the communication channel. 
+	\item  "<\texttt{Sec-WebSocket-Protocol: chat, superchat}"> allows the client to signal the server the subprotocols it is able to process through the WebSocket channel. The same principle also applies to the extension header "<\texttt{Sec-WebSocket-Extensions:}">. 
+\end{itemize} 
+
+The\marginnote{Response sent by the server} client can send multiple extensions whereas the server has the privilege to answer only to those it supports. The subsequently given HTTP excerpt displays a response sent by the server upon accepting a request: % P 37
+
+\begin{Verbatim}[gobble=0,frame=lines,numbers=left]
+HTTP/1.1 101 Switching Protocols
+Upgrade: websocket
+Connection: Upgrade
+Sec-WebSocket-Accept: s3pPLMBiTxaQ9kYGzzhZRbK+xOo= 
+Sec-WebSocket-Protocol: chat
+\end{Verbatim}
+
+Upon accepting the client's request, the server creates a new value for the header "<\texttt{Sec-WebSocket-Accept}"> by appending its / a Globally Unique Identifier (GUID)
+\begin{Verbatim}
+  258EAFA5-E914-47DA-95CA-C5AB0DC85B11
+\end{Verbatim}
+to the client's handshake request "<\texttt{Sec-WebSocket-Key}"> header value ("<\texttt{dGhlIHNhbXBsZSBub25jZQ==}">).
+
+The merged text string 
+\begin{Verbatim}
+  dGhlIHNhbXBsZSBub25jZQ==258EAFA5-E914-47DA-95CA-C5AB0DC85B11
+\end{Verbatim}
+will then be converted into a hash value using the SHA-1\sidenote{\url{https://en.wikipedia.org/wiki/SHA-1}} cryptographic hash function and transformed into a Base64-coded text string. This text string "<\texttt{s3pPLMBiTxaQ9kYGzzhZRbK+xOo=}"> consequently represents the value of the \texttt{Sec-WebSocket-Accept} header.
+
+With the \texttt{Sec-WebSocket-Accept} header, the client is able to extract its initially sent \texttt{Sec-WebSocket-Key} header value in order to verify the server's integrity, i.e., to check wether the response originally came from the intended server.
+
+
+
+\section{WebSocket Frames} % (fold)
+\label{sec:the_dataframe}
+
+In the WebSocket Protocol, data is transmitted as a \emph{sequence of frames}. A Websocket Frame consists of two parts:
+\begin{enumerate}
+	\item A \textbf{header} that contains control data
+	\item A \textbf{payload} containing user data
+\end{enumerate}
+A simplified illustration of a WebSocket Frame according to the RFC 6455 Specification is depicted in Figure~\ref{fig:frame_simple}.
+
+\begin{figure}%
+	\centering
+  \includegraphics[width=1\textwidth]{./src/figures/websocket_frame_simple.pdf}
+  \caption{A simplified representation of a WebSocket Frame according to the RFC 6455 Specification (re-printed from~\citep{gorski:2015})}
+  \label{fig:frame_simple}
+\end{figure}
+From this picture, it is immediately obvious how lean the WebSocket Protocol is; its header is only a fraction of the size an HTTP header requires. A header sent from the server to the client only requires 2 Bytes in case of default size specifications. Frames sent from the client to the server need to be masked with a 4 Byte key; the minimum size of such a frame's header is thus 6 Byte. When the header contains additional user data, e.g., in case of extended payload length information, the header grows by 2 or 8 Byte to a maximal length of 14 Bytes.
+
+The base framing protocol defines a frame type with an \texttt{opcode}, a \texttt{payload length}, and designated locations for \texttt{Extension data} and \texttt{Application data}, which together define the \texttt{Payload data}. Certain bits and opcodes are reserved for future expansion of the protocol.
+
+A data frame MAY be transmitted by either the client or the server at any time after opening handshake completion and before that endpoint has sent a \texttt{Close} frame.
+
+
+\subsection{Structure} % (fold)
+\label{sub:structure}
+
+The WebSocket Specification defines the base framing protocol using the \emph{Augmented Backus-Naur-Form (ABNF)}\footnote{More details about the ABNF are given in the RFC5234: \url{https://tools.ietf.org/html/rfc5234}}. The structure of the WebSocket Protocol header is depicted below followed by a brief description of its main constituents.
+
+
+\begin{figure}
+\begin{Verbatim}[gobble=0,frame=none,numbers=left]
+ 0                   1                   2                   3
+ 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
++-+-+-+-+-------+-+-------------+-------------------------------+
+|F|R|R|R| opcode|M| Payload len |    Extended payload length    |
+|I|S|S|S|  (4)  |A|     (7)     |             (16/64)           |
+|N|V|V|V|       |S|             |   (if payload len==126/127)   |
+| |1|2|3|       |K|             |                               |
++-+-+-+-+-------+-+-------------+ - - - - - - - - - - - - - - - +
+|     Extended payload length continued, if payload len == 127  |
++ - - - - - - - - - - - - - - - +-------------------------------+
+|                               |Masking-key, if MASK set to 1  |
++-------------------------------+-------------------------------+
+| Masking-key (continued)       |          Payload Data         |
++-------------------------------- - - - - - - - - - - - - - - - +
+:                     Payload Data continued ...                :
++ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - +
+|                     Payload Data continued ...                |
++---------------------------------------------------------------+
+\end{Verbatim}
+\label{fig:protocol}
+\caption{Structure and constituents of the WebSocket Protocol header}
+\end{figure}
+
+
+\noindent \texttt{FIN:  1 bit} 
+\begin{quote}
+    Indicates that this is the final fragment in a message.  The first
+    fragment MAY also be the final fragment. If the \texttt{FIN} bit is 0, the server will keep listening for more parts of the message; otherwise, the server considers the message delivered.
+\end{quote}
+
+\noindent \texttt{RSV1, RSV2, RSV3:  1 bit each}
+\begin{quote}
+      MUST be 0 unless an extension is negotiated that defines meanings
+      for non-zero values.  If a nonzero value is received and none of
+      the negotiated extensions defines the meaning of such a nonzero
+      value, the receiving endpoint MUST Fail the WebSocket
+      Connection.
+\end{quote}
+
+
+\noindent   \texttt{Opcode:  4 bits}
+\begin{quote}
+      Defines the interpretation of the \texttt{Payload data}.  If an unknown
+      opcode is received, the receiving endpoint MUST Fail the
+      WebSocket Connection.  The following values are defined.
+	  \begin{itemize}
+      \item  \texttt{\%x0} denotes a continuation frame
+
+      \item  \texttt{\%x1} denotes a text frame
+
+      \item  \texttt{\%x2} denotes a binary frame
+
+      \item  \texttt{\%x3-7} are reserved for further non-control frames
+
+      \item  \texttt{\%x8} denotes a connection close
+
+      \item  \texttt{\%x9} denotes a ping
+
+      \item  \texttt{\%xA} denotes a pong
+
+      \item  \texttt{\%xB-F} are reserved for further control frames
+	  	 
+	  \end{itemize}
+\end{quote}
+      
+\noindent  \texttt{ Mask:  1 bit}
+\begin{quote}
+      Defines whether the \texttt{Payload data} is masked.  If set to 1, a
+      masking key is present in masking-key, and this is used to unmask
+      the \texttt{Payload data}.  All frames sent from
+      client to server have this bit set to 1.
+\end{quote}
+
+\noindent \texttt{   Payload length:  7 bits, 7+16 bits, or 7+64 bits}
+\begin{quote}
+      \marginnote{To read the payload data, you must know when to stop reading. That's why the payload length is important to know. Unfortunately, this is somewhat complicated. To read it, follow these steps:
+\begin{enumerate}
+	\item Read bits 9-15 (inclusive) and interpret that as an unsigned integer. If it's 125 or less, then that's the length; you're done. If it's 126, go to step 2. If it's 127, go to step 3.
+	\item Read the next 16 bits and interpret those as an unsigned integer. You're done.
+	\item Read the next 64 bits and interpret those as an unsigned integer (The most significant bit MUST be 0). You're done.
+\end{enumerate} 
+
+\begin{flushright} \tiny
+Source: \url{https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API/Writing_WebSocket_servers}	
+\end{flushright} }
+
+	  The length of the \texttt{Payload data}, in bytes: if 0-125, that is the
+      payload length.  If 126, the following 2 bytes interpreted as a
+      16-bit unsigned integer are the payload length.  If 127, the
+      following 8 bytes interpreted as a 64-bit unsigned integer (the
+      most significant bit MUST be 0) are the payload length.  Multibyte
+      length quantities are expressed in network byte order.  Note that
+      in all cases, the minimal number of bytes MUST be used to encode
+      the length, for example, the length of a 124-byte-long string
+      can't be encoded as the sequence 126, 0, 124.  The payload length
+      is the length of the \texttt{Extension data} + the length of the
+      \texttt{Application data}.  The length of the \texttt{Extension data} may be
+      zero, in which case the payload length is the length of the
+      \texttt{Application data}.
+\end{quote}
+
+
+\noindent   \texttt{Masking-key:  0 or 4 bytes}
+\begin{quote}
+      All frames sent from the client to the server are masked by a
+      32-bit value that is contained within the frame.  This field is
+      present if the mask bit is set to 1 and is absent if the mask bit
+      is set to 0. 
+\end{quote}
+
+\noindent   \texttt{Payload data:  (x+y) bytes}
+\begin{quote}
+      The \texttt{Payload data} is defined as \texttt{Extension data} concatenated
+      with \texttt{Application data}.
+\end{quote}
+
+\noindent   \texttt{Extension data:  x bytes}
+\begin{quote}
+      The \texttt{Extension data} is 0 bytes unless an extension has been
+      negotiated.  Any extension MUST specify the length of the
+      \texttt{Extension data}, or how that length may be calculated, and how
+      the extension use MUST be negotiated during the opening handshake.
+      If present, the \texttt{Extension data} is included in the total payload
+      length.
+\end{quote}
+
+\noindent   \texttt{Application data:  y bytes}
+\begin{quote}
+      Arbitrary \texttt{Application data}, taking up the remainder of the frame
+      after any \texttt{Extension data}.  The length of the \texttt{Application data}
+      is equal to the payload length minus the length of the \texttt{Extension data}.
+\end{quote}
+
+
+% \begin{itemize}
+% 	\item \texttt{Extension data:  x bytes} \\
+%     The \texttt{Extension data} is 0 bytes unless an extension has been
+%     negotiated.  Any extension MUST specify the length of the
+%     \texttt{Extension data}, or how that length may be calculated, and how
+%     the extension use MUST be negotiated during the opening handshake.
+%     If present, the \texttt{Extension data} is included in the total payload
+%     length.
+% \end{itemize}
+%
+% \begin{itemize}
+% 	\item \texttt{Application data:  y bytes} \\
+%     Arbitrary \texttt{Application data}, taking up the remainder of the frame
+%     after any \texttt{Extension data}.  The length of the \texttt{Application data}
+%     is equal to the payload length minus the length of the \texttt{Extension data}.
+% \end{itemize}
+
+
+
+
+\subsection{Fragmentation} % (fold)
+\label{sub:fragmentation}
+% Fragmentation
+The WebSocket Specification allows a fragmented transmission of user data over a WebSocket Channel, i.e., data might be sent ``piece-by-piece'' over the communication channel. This feature is useful in scenarios where the data to be transmitted are not completely available or buffered at the time a request was issued. Setting the \texttt{FIN}-bit to~\texttt{0} signals the communication partner that further frames are expected to arrive unless a request or response is complete. 
+
+
+\subsection{Masking} % (fold)
+\label{sub:masking}
+
+To avoid confusing network intermediaries (such as intercepting proxies) and for security reasons\footnote{See Section 10.3 of the WebSocket specification under \url{https://tools.ietf.org/html/rfc6455\#section-10.3}}, a client MUST \emph{mask} all frames that it sends to the server. The server, on the contrary, MUST close the connection to the client upon receiving a frame that is not masked. The client MUST do the same in cases when it receives masked frames from a server. More details about the masking semantics are expounded in Section 5.1 of the WebSocket Specification\sidenote{See \url{https://tools.ietf.org/html/rfc6455\#section-5}}.
+
+Both the client or the server can choose to send a message at any time — that is one of the main beneficial features of WebSockets. However, extracting information from these frames of data requires some additional work. Although all frames follow the same specific format, data going from the client to the server is masked using \emph{XOR encryption}\footnote{\url{https://en.wikipedia.org/wiki/XOR_cipher}} (with a 32-bit key). Section 5.3 of the WebSocket Specification describes this in detail.
+
+For\marginnote{The Masking Key of a data frame sent by the client is a randomly created unique 32-Bit number.} every new frame that is to be transmitted as part of a communication, the client MUST generate a unique 32-Bit random number, that acts as \emph{Masking Key}. The masking key is then inserted as value in the \texttt{Masking-key} header field. It\marginnote{Payload data will be masked with the Masking Key using an XOR operator.} will then be used to mask the payload data by applying it periodically to its bit values using an \emph{XOR} operator. The following algorithm demonstrates this principle.
+
+\begin{Verbatim}[gobble=0,frame=lines,numbers=left]
+byte[] maskingKey; // 4 byte randomly created Masking Key
+byte[] payloadData; // data to be transmitted to the server
+byte[] maskedData; // masked data that are to be created
+	
+for(int i=0; i<payloadData.length; i++)
+  maskedData[i] = payloadData[i] ^ maskingKey[i%4];
+\end{Verbatim}
+
+The payload's and masking key bytes are bitwise connected using the XOR operator. Since the XOR operation is self-inverse such as 
+\begin{Verbatim}
+payloadData[i] ^ maskingKey[i%4] ^ maskingKey[i%4] = payloadData[i]
+\end{Verbatim}
+the server is able to recreate, i.e., to unmask the payload data sent by the client.
+xxx contains a good example that demonstrates this principle.
+
+\subsection{Frametypes} % (fold)
+\label{sub:frametypes}
+
+As mentioned previously, the WebSocket Protocol is able to sent both text-based and binary payload data frames. 
+In the following, we give a brief overview of the different frame types defined in the WebSocket Specification.
+
+\begin{itemize}
+	\item \textbf{Textdata Frames} \\
+	Textdata frames are configured using the \texttt{0x1 Opcode} header value. The payload data of such frames is usually encoded using the UTF-8 character encoding.
+	\item \textbf{Binarydata Frames} \\
+	Binarydata frames are initiated with the \texttt{0x2 Opcode}. By setting the \texttt{Extended Payload Length} header, an endpoint is able to transfer payload data in exabyte sizes. Additionally, a fragmented transmission can also be initiated. 	
+	\item \textbf{Control Frames} \\
+	Control frames are divided into a \emph{Ping-Frame} that is sent in order to check whether an established WebSocket connection is still active or to measure the latency between a client and a server. If an endpoint receives a Ping-Frame it MUST answer with a \emph{Pong-Frame}. The third control frame type is the \emph{Close-Frame}, which is used to close an active WebSocket connection. If a server or client receives a Close-Frame, it MUST answer with another Close-Frame in order to initiate a \emph{closing handshake}. The closing handshake is complete when both endpoints have sent \underline{and} received a Close-Frame.
+\end{itemize}
+
+\section{Protocol Analysis Tools } % (fold)
+\label{sec:protocol_analysis_tools}
+To be added....
+
+
+\section{Creating a WebSocket Client} % (fold)
+\label{sec:creating_a_websocket_client}
+The WebSocket technology is a fixed element in the HTML5 family of standards; as such WebSockets are supported by all major desktop and mobile browsers. Information whether a specific browser version incorporates WebSocket support can be obtained from the website 
+
+\url{http://www.caniuse.com/} .
+
+In order to find out whether a browser supports the WebSockets technology and implements both protocol and API, its \texttt{window} object MUST contain a \texttt{WebSocket} element. This element is missing in cases when a browser lacks native WebSockets support. WebSocket browser support can be checked \emph{programmatically} with the following minimal JavaScript code.
+
+\begin{listing}
+\begin{lstlisting}[language=JavaScript]
+<!doctype html>
+<html>
+<head>
+  <title>Websocket Browser Support</title>
+  <meta charset="utf-8" />
+</head>
+<body>
+  <div id="message">
+  </div>
+  <script type="text/javascript">
+    var parent = document.getElementById("message");
+    var node = document.createTextNode("");
+    parent.appendChild(node);
+    if ("WebSocket" in window) {
+      node.textContent = "Prima! WebSockets werden unterstuetzt.";
+    } else {
+      node.textContent = "Schade, WebSockets werden nicht von Ihrem Browser unterstuetzt.";
+    }
+  </script>
+</body>
+</html>	
+\end{lstlisting}
+	\caption{A minimal website with JavaScript embedded to test WebSocket browser support} 
+	\label{plain_server}
+\end{listing}
+ 
+\subsection{Namingscheme} % (fold)
+\label{sub:namingscheme}
+
+A WebSocket server can be accessed using the following naming scheme\sidenote{The Augmented Backus-Naur-Form as defined in RFC 3986 is used as naming scheme notation.}:
+\begin{Verbatim}
+	"ws:" "//" host [ ":" port ] path [ "?" query ]
+\end{Verbatim}
+
+Optional elements are enclosed in brackets (`\texttt{[}' and `\texttt{]}'); Strings remain ``as is''; and normal terms are replaced with concrete values. As a consequence, a WebSocket URL differs from a usual Web URL only by the protocol element.
+
+The RFC 6455 Specification also defines a second WebSocket URL protocol type "<\texttt{wss}"> for secure WebSocket connections---comparable to "<\texttt{https:}">.
+
+\subsection{Creating a WebSocket Connection Object} % (fold)
+\label{sub:creating_a_websocket_connection_object}
+
+For creating a WebSocket connection object, the W3C defines a standard JavaScript WebSocket API. A connection to a WebSocket server using the endpoint URL 
+\begin{Verbatim}
+	ws://echo.websocket.org/
+\end{Verbatim}
+can be created in JavaScript using the following line of code
+\begin{Verbatim}
+	var ws = new WebSocket('ws://echo.websocket.org');
+\end{Verbatim}
+The WebSocket constructor takes as first argument a string that represents the URL of the WebSocket endpoint; specific subprotocols such as SOAP etc.\ can be passed as second optional parameter to the WebSocket constructor.
+
+\subsection{WebSocket States} % (fold)
+\label{sub:handling_websocket_states}
+
+The successful creation of a WebSocket object implies a successful handshake between the client and server; the handshake is automatically conducted during the instantiation of the object. The WebSocket Specification defines \emph{four states} for the WebSocket object that represent the current status:
+\begin{Verbatim}
+	CONNECTING ––> readyState: 0
+	      OPEN ––> readyState: 1
+	   CLOSING ––> readyState: 2
+	    CLOSED ––> readyState: 3	
+\end{Verbatim} 
+
+Figure~\ref{fig:states} represents the different states of the WebSocket object as well as transitions between them:
+\begin{figure}%
+	\centering
+  \includegraphics[width=0.56\textwidth]{./src/figures/states.pdf}
+  \caption{The different states a WebSocket object can be in together with transitions. (re-printed from~\citet{gorski:2015})}
+  \label{fig:states}
+\end{figure}
+
+After the creation of the WebSocket object, it remains in the state \texttt{CONNECTING} for a brief moment; the \texttt{readyState} attribute hence carries the value \texttt{0}. During the \texttt{CONNECTING} phase, the WebSocket object tries to establish a connection to the server and initiate the handshake. If the handshake failed, the object transitions to state \texttt{CLOSED}; the \texttt{readyState} attribute carries the value \texttt{3}. In case of successful handshake, the objects transitions to state \texttt{OPEN} with \texttt{readyState} value of~\texttt{1}. The WebSocket object is able to send and receive frames in this state. This state lasts until either one of the partners initiates a closing handshake or in case an error occurs.
+
+\subsection{Eventhandler} % (fold)
+\label{sub:eventhandler}
+
+Event handler in general are used to react to state transitions. When the state of the WebSocket object changes, the corresponding event is created. This event is then propagated to the respective handler and will be processed by it. I.e., the handler defines the behavior that will be executed when the corresponding event occurs, i.e., when the WebSocket objects transitions to a specific state. The WebSocket Standard defines the following event handlers and corresponding states:
+\begin{Verbatim}
+  Event Handler          Event
+---------------------------------
+  onopen        -->      open
+  onerror       -->      error
+  onmessage     -->      message
+  onclose       -->      close
+\end{Verbatim}
+
+Usually, event handler are represented as functions, sometimes anonymous functions, that are assigned to specific handler attributes (properties) of the WebSocket object. A handler is a function that will be executed when the event the handler is registered for occurs. Since JavaScript treats functions as objects, handler functions can be assigned to the event handler properties (\texttt{onopen}, \texttt{onerror}, etc.) of the WebSocket object.
+Not every event handler need to be connected with a handler function\sidenote{For instance, a sensor that distributes sensed values (so-called \emph{obserables}) unidirectionally via the WebSocket protocol might only define handler functions for opening or closing a connection but not for receiving information from a server.}; it is absolutely ok to define handler functions exclusively for the events of interest. 
+Following a good programming style, however, handler functions should be defined for all possible events that can occur in order to achieve robustness and minimize the risk of unwanted and unintended side effects. 
+
+\subsection{JavaScript Client API} % (fold)
+\label{sub:simple_websocket_client_program}
+The following JavaScript program\sidenote{Please note that checks whether a browser supports the WebSocket protocol have been omitted due to readability and comprehensibility reasons.} represents the set of handlers, a WebSocket client needs to implement in order to establish a WebSocket connection to an endpoint. The code fragment shows how to initiate a connection to a WebSocket server, how to send messages to the server, and how to print out received messages to the JavaScript console. It includes handler functions for all major events.
+
+\begin{listing}%[!t]
+\begin{lstlisting}[language=JavaScript]
+var ws = new WebSocket('ws://echo.websocket.org/');
+
+ws.onopen = function() {
+  console.log('WebSocket-Verbindung aufgebaut.');
+  ws.send('Hallo WebSocket Endpoint!');
+  console.log('Uebertragene Nachricht: Hallo WebSocket Endpoint!');
+};
+
+ws.onmessage = function(message) {	
+  console.log('Der Server sagt: ' + message.data);
+  ws.close();
+};
+
+ws.onclose = function(event) {
+  console.log('Der WebSocket wurde geschlossen oder konnte nicht aufgebaut werden.');
+};
+
+ws.onerror = function(event) {
+  console.log('Mit dem WebSocket ist etwas schiefgelaufen!'); 
+  console.log('Fehlermeldung: ' + event.reason + '(' + event.code + ')');
+};
+\end{lstlisting}
+	\caption{A simple JavaScript client for accessing an echo WebSocket server} 
+	\label{simple_client}
+\end{listing}
+
+Due to the asynchronous character of JavaScript, the script code is not blocked when the client tries to establish a connection to the echo server. After the processing of line 1 (instantiation of the WebSocket object), the runtime environment continues executing the script and does not wait until the handshake is complete. Technically, the instantiation is asynchronously executed in another internally managed thread. Upon executing the script, for anonymous handler functions are assigned to their respective event handler objects. The event handler function for the \texttt{onopen} event notifies the user in case the handshake is complete by printing a message to the JavaScript console. The \texttt{ws} object then transitions into the \texttt{OPEN} state and creates a WebSocket text frame, which is to be sent to the server using the \texttt{ws.send()} method. When the client receives a response, which is also a text frame, the browser calls the \texttt{ws.onmessage()} handler function that prints the message to the JavaScript console and closes the connection.
+
+
+Listing~\ref{simple_client} demonstrates how handler functions can be defined for events defined by the WebSocket Specification. In order to achieve a greater degree of flexibility, event handlers can also be defined using the \texttt{addEventListener()} method alternatively, which allows to define \emph{multiple handlers} for a single event.  Listing~\ref{alternative} illustrates this principle for the \texttt{open} event:
+
+\begin{listing} %[h!t]
+\begin{lstlisting}[language=JavaScript]
+ws.addEventListener("open", function() {
+  console.log('Die WebSocket-Verbindung wurde aufgebaut.'); 
+  ws.send('Hallo WebSocket Endpoint!');
+  console.log('Uebertragene Nachricht: Hallo WebSocket Endpoint!');
+};
+\end{lstlisting}
+	\caption{Using the method \texttt{addEventListener()} to register multiple event handlers for a single event.}
+	\label{alternative}
+\end{listing}
+
+
+% \subsection{Full Code of the WebSocket Echo Client} % (fold)
+% \label{sec:creating_a_websocket_client}
+%
+% \begin{listing}%[!t]
+% \begin{lstlisting}[language=JavaScript]
+% <!doctype html>
+% <html>
+% <head>
+%     <title>Simple WS Echo Client</title>
+%     <meta charset="utf-8" />
+% </head>
+% <body>
+%
+%     <header>
+%         <h2>WebSocket Client for Echo Server</h2>
+%     </header>
+%     <div>
+%         <label>Message:</label>
+%         <input type="text" id="message" placeholder="enter echo string here..."/>
+%         <input type="button" id="send" value="Send" onclick="sendMessage()" />
+%         <input type="button" id="close" value="Close Connection" onclick="closeConnection()" />
+%     </div>
+%
+%     <div id="log_container">
+%         <p/>Log: <br />
+%         <textarea cols="80" rows="25" id="log"></textarea>
+%         <p></p>
+%     </div>
+%
+%     <script type="text/javascript">
+%         var parent = document.getElementById("log");
+%         var node = document.createTextNode("");
+%         parent.appendChild(node);
+%         if ("WebSocket" in window) {
+%             node.textContent = "Prima! WebSockets werden unterstuetzt.";
+%         } else {
+%             node.textContent = "Schade, WebSockets werden nicht von Ihrem Browser unterstuetzt";
+%         }
+%
+%         var ws = new WebSocket("ws://echo.websocket.org/");
+%
+%         // handler for open a WebSocket connection
+%         ws.onopen = function() {
+%             parent.textContent = parent.textContent + "\nWebSocket-Verbindung aufgebaut mit " + ws.url;
+%         };
+%
+%         // handler to print received messages to the log
+%         ws.onmessage = function(message) {
+%             var data = message.data;
+%             parent.textContent = parent.textContent + "\n" + "Echo-Server antwortet: " + data.toString();
+%         };
+%
+%         // handler for closing the WebSocket connection
+%         ws.onclose = function(event) {
+%             if (this.readyState == 2) {
+%                 parent.textContent = parent.textContent + "\n" + "Schliesse Verbindung zum Server...";
+%                 parent.textContent = parent.textContent + "\n" + "Die Verbindung durchlaeuft den Closing Handshake...";
+%             }
+%             else if (this.readyState == 3) {
+%                 parent.textContent = parent.textContent + "\n" + "Verbindung geschlossen!";
+%             }
+%             else {
+%                 parent.textContent = parent.textContent + "\n" + "Unbekannter ReadyState: " + this.readyState;
+%             }
+%         };
+%
+%         // error handler: print errors to the log
+%         ws.onerror = function(event) {
+%             var reason = event.reason;
+%             var code = event.code;
+%             parent.textContent = parent.textContent + "\n" + "Ein Fehler ist aufgetreten: " + reason + " - " + code;
+%         }
+%
+%         // read the message from the DOM and send it to the WS server
+%         function sendMessage() {
+%             "use strict";
+%             var message = document.getElementById("message").value;
+%             parent.textContent = parent.textContent + "\n" + "Sending Message to Echo-Server: " + message;
+%             ws.send(message);
+%         }
+%
+%         function closeConnection() {
+%             "use strict";
+%             ws.close();
+%         }
+%
+%     </script>
+% </body>
+% </html>
+% \end{lstlisting}
+% 	\caption{An elementary WebSocket echo server for Node.js using the \texttt{WebSocket.io} module}
+% 	\label{websocket_client}
+% \end{listing}
+
+
+% \newpage
+\section{Creating a WebSocket Server in Node.js} % (fold)
+\label{sec:creating_a_websocket_server}
+
+This section describes the creation of an echo WebSocket server using \emph{Node.js}\sidenote{\url{https://nodejs.org/en/download/}} and the \emph{WebSocket.io}\sidenote{\url{https://www.npmjs.com/package/websocket.io}} module. However, a WebSocket implementation is available for literally all major server-side frameworks and languages. This module represents a WebSocket implementation for Node.js and offers an API to utilize its functionality. More information about how to install Node.js for your target platform and operating system respectively can be obtained from the official Node.js website as well as from the Node.js section in this lecture notes. Please bear in mind that the Node.js section is \emph{work in progress} and only provides information on a rather generic and basic level.
+
+In order to create a simple echo server using WebSockets.io and Node.js, a few initial steps need to be conducted.
+As a first step, a project directory has to be created, e.g., using the following terminal commands:
+\begin{Verbatim}
+	mkdir echo_websocket_io
+	cd echo_websocket_io
+\end{Verbatim} 
+As a next step, the WebSocket.io module needs to be downloaded and installed using Node.js' module manager \texttt{npm} by entering the following command in the project folder:
+\begin{Verbatim}
+	npm install websocket.io
+\end{Verbatim}
+Now, we can create a file (e.g., \texttt{echoServer.js}) hosting the server code; please note that the file must have the suffix \texttt{.js}. Listing xxx expounds the code for an elementary echo server.
+\begin{listing}%[!t]
+\begin{lstlisting}[language=JavaScript]
+var ws = require('websocket.io'),
+    fs = require('fs'),
+    http = require('http');
+
+// create WebServer and deliver 'index.html' upon request
+var httpServer = http.createServer(function (request, response) {
+    fs.readFile(__dirname+"/index.html", function(error, data) {
+        if (error) {
+            response.writeHead(500);
+            return response.end("Fehler beim Laden der Datei \"index.html\"");
+        } 
+        else {
+            console.log("index.html was requested");
+            response.writeHead(200);
+            response.end(data);
+        }
+    }); 
+});
+
+//combine WebServer with WebSocket-Server
+var wsServer = ws.attach(httpServer);
+
+wsServer.on('connection', function(client) {
+    client.on('message', function(message) {
+        console.log("[WebSocket-Server] Sending message: '" + message + "'");
+        client.send(message);
+    });
+});
+
+httpServer.listen(4000);
+console.log("Der Echo-Server laeuft auf dem Port: " + httpServer.address().port);
+\end{lstlisting}
+	\caption{An elementary WebSocket echo server for Node.js using the \texttt{WebSocket.io} module} 
+	\label{websocket_io_server}
+\end{listing}
+
+The \texttt{WebSocket.io} module is imported in line 1, together with the basis modules \texttt{fs} for reading the \texttt{index.html} file from the file system and \texttt{http} for creating a http server. 
+The lines 5 to 18 hold the code for creating an elementary Web server that listens for incoming http requests and answers all requests by delivering the \texttt{index.html} file. This file serves as the client and contains the client code as described in Section~\ref{sub:simple_websocket_client_program}. It is responsible for establishing a connection to the server. The WebServer is instantiated by combining the \texttt{WebSocket.io} module with the Web server (see line 21). Line 23-28 specifies the behavior of the WebSocket server: the server answers all requests by sending the echo message back to the client. Line 30 specifies the port (\texttt{4000}) through which the server can be requested.
+
+The echo server can now be started by opening the project folder and entering the following command in the console:
+\begin{Verbatim}
+	node echoServer.js
+\end{Verbatim}
+In case everything was implemented correctly, the following message will be printed to the console:
+\begin{Verbatim}
+	Der Echo-Server laeuft auf dem Port: 4000
+\end{Verbatim}
+The \texttt{index.html} can now be requested by opening a WebSocket-enabled browser and entering the following URL in the browser's address field:
+\begin{Verbatim}
+	http://localhost:4000
+\end{Verbatim}
+The \texttt{index.html} file is depicted below:
+\begin{listing} % [h!t]
+\begin{lstlisting}[language=HTML]
+<!doctype html>
+<html>
+<head>
+    <title>Simple WS Echo Client</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <header>
+        <h2>WebSocket Client for Echo Server</h2>
+    </header>
+    <div>
+        <label>Message:</label>
+        <input type="text" id="message" placeholder="enter echo string here..."/>
+        <input type="button" id="send" value="Send" onclick="sendMessage()" />
+        <input type="button" id="close" value="Close Connection" onclick="closeConnection()" />
+    </div>
+    <div id="log_container">
+        <p/>Log: <br />
+        <textarea cols="80" rows="25" id="log"></textarea>
+    </div>
+
+    <!-- hier stehen die WebSocket aufrufe -->
+    <script> ... </script>
+</body>
+</html>
+\end{lstlisting}
+	\caption{HTML part of the WebSocket echo client}
+	\label{echo_client_1}
+\end{listing}
+
+
+
+\begin{listing} %[h!t]
+\begin{lstlisting}[language=JavaScript]
+<script type="text/javascript">
+    var parent = document.getElementById("log");
+    var node = document.createTextNode("");
+    parent.appendChild(node);
+    if ("WebSocket" in window) {
+        node.textContent = "Prima! WebSockets werden unterstuetzt.";
+    } else {
+        node.textContent = "Schade, WebSockets werden nicht von Ihrem Browser unterstuetzt";
+    }
+    
+    var ws = new WebSocket("ws://" + window.location.host);
+    
+    ws.onopen = function() {
+        parent.textContent = parent.textContent + "\nWebSocket-Verbindung aufgebaut mit " + ws.url; };
+    
+    ws.onmessage = function(message) {
+        var data = message.data;
+        parent.textContent = parent.textContent + "\n" + "Echo-Server antwortet: " + data.toString(); };
+    
+    ws.onclose = function(event) {
+        if (this.readyState == 2) {
+            parent.textContent = parent.textContent + "\n" + "Schliesse Verbindung zum Server...";
+            parent.textContent = parent.textContent + "\n" + "Die Verbindung durchlaeuft den Closing Handshake...";
+        }
+        else if (this.readyState == 3) {
+            parent.textContent = parent.textContent + "\n" + "Verbindung geschlossen!";
+        }
+        else {
+            parent.textContent = parent.textContent + "\n" + "Unbekannter ReadyState: " + this.readyState;
+        }
+    };
+    
+    ws.onerror = function(event) {
+        var reason = event.reason;
+        var code = event.code;
+        parent.textContent = parent.textContent + "\n" + "Ein Fehler ist aufgetreten: " + reason + " - " + code; }
+    
+    function sendMessage() {
+        "use strict";
+        var message = document.getElementById("message").value;
+        parent.textContent = parent.textContent + "\n" + "Sending Message to Echo-Server: " + message;
+        ws.send(message); }
+    
+    function closeConnection() {
+        "use strict";
+        ws.close();  }
+</script>
+\end{lstlisting}
+	\caption{JavaScript part of the WebSocket echo client}
+	\label{echo_client_2}
+\end{listing}
+
+
+
+
+
+\newpage
+\section{Digression: Node.js} % (fold)
+\label{sec:node_js}
+% Node.js\marginnote{\textbf{Note:}\quad Unlike for some other web frameworks, the development environment does not include a separate development web server. In Node/Express a web application creates and runs its own web server!} ist ein Framework, mit dem es möglich ist, JavaScript-Code serverseitig, d.h., direkt auf dem Server auszuführen. Hierzu verwendet node.js das Google Webkit javascript-Engine V8. Zentrales Element in node.js ist die asynchrone Behandlung von Aufrufen (\emph{engl.~asynchronous programming}).
+
+Node.js\sidenote{\url{https://nodejs.org/}} (sometimes simply abbreviated as \emph{Note}) is an open-source, cross-platform, runtime environment that allows developers to create all kinds of server-side tools and applications in JavaScript. The runtime is intended for usage apart of a browser context (i.e.\ running directly on a computer or server OS). As such, the environment omits browser-specific JavaScript APIs and adds support for more traditional OS APIs including HTTP and file system libraries.
+
+% SZA: Could also be a good sidenote
+From a web server development perspective, Node.js offers a number of benefits, which are listed below:\sidenote{This enumeration is taken from the Modzilla Web Development Portal: \url{https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Introduction}}
+\begin{itemize}
+	\item Great performance! Node has been designed to optimize throughput and scalability in web applications and is a very good match for many common web-development problems (e.g.\ real-time web applications).
+	\item Code is written in ``plain old JavaScript'', which means that less time is spent dealing with \emph{context shift} between languages when both browser and web server code is written.
+	\item JavaScript is a relatively new programming language and benefits from improvements in language design when compared to other traditional web-server languages (e.g.\ Python, PHP, etc.) Many other new and popular languages compile/convert into JavaScript so you can also use CoffeeScript, ClosureScript, Scala, LiveScript, etc.
+	\item The node package manager (NPM) provides access to hundreds of thousands of reusable packages. It also has best-in-class dependency resolution and can also be used to automate most of the build toolchain.
+	\item It is portable, with versions running on Microsoft Windows, Mac~OS, Linux, Solaris, FreeBSD, OpenBSD, WebOS, and NonStop OS. Furthermore, it is well-supported by many web hosting providers, that often provide specific infrastructure and documentation for hosting Node sites.
+	\item It has a very active third party ecosystem and developer community, with lots of people who are willing to help.
+\end{itemize}
+
+
+
+
+\subsection{A First minimal Web Server in Node.js} % (fold)
+\label{sub:a_first_minimal_web_server_in_node}
+
+% For a first exercise, let's create a minimal HTTP server in node that simply prints out \texttt{"<Hello World">} in the browser when the correct URL \texttt{http://localhost:8000} is requested using a browser.
+
+For a first exercise, create a simple web server
+%\sidenote{If you want to add specific handling for different HTTP verbs (e.g.\ GET, POST, DELETE, etc.), separately handle requests at different URL paths ("routes"), serve static files, or use templates to dynamically create the response, then you will need to write the code yourself, or you can avoid reinventing the wheel and use a web framework!}
+ that is able to respond to any request using the Node HTTP package. The server will listen for any kind of HTTP request on the URL \url{http://127.0.0.1:8000/} and responds with a  plain-text message \texttt{"<Hello World">} when a request is received.
+
+
+\begin{listing}
+\begin{lstlisting}[language=JavaScript]
+//Load HTTP module
+var http = require("http");
+
+//Create HTTP server and listen on port 8000 for requests
+http.createServer(function (request, response) {
+
+   //Set the response HTTP header with HTTP status and Content type and we add a little bit more text to it
+   response.writeHead(200, {'Content-Type': 'text/plain'});
+   
+   //Send the response body "Hello World"
+   response.end('Hello World\n');
+}).listen(8000);
+
+// Print URL for accessing server
+console.log('Server running at http://127.0.0.1:8000/')
+\end{lstlisting}
+	\caption{A plain node.js HTTP server written in JavaScript} 
+	\label{plain_server}
+\end{listing}
+
+\subsection{Asynchrony} % (fold)
+\label{sub:asynchrony}
+
+JavaScript and Node.js make use of asynchronous APIs in which the API will start an operation and immediately return often before the operation is complete. Once the operation finishes, the API will use some mechanism to perform additional operations. For example, the code below will print out \texttt{"<Second, First">} because even though \texttt{setTimeout()} method is called first, and returns immediately, the operation does not complete for several seconds.
+
+\begin{Verbatim}
+  setTimeout(function() {
+     console.log('First');
+     }, 3000);
+  console.log('Second');
+\end{Verbatim}
+
+Using non-blocking asynchronous APIs is even more important on Node than in the browser, because Node is a \emph{single threaded event-driven} execution environment. Single threaded means that all requests to the server are run on the same thread rather than being spawned off into separate processes as it is the case with e.g.\ XAMPP. This model is extremely efficient in terms of speed and server resources, but it does mean that if any function calls synchronous methods that take a long time to complete, they will block not just the current request, but every other request being handled by the web application.
+
+There are a number of ways for an asynchronous API to notify an application that it has completed. The most common way is to register a \emph{callback function} when an asynchronous API Call has to be invoked, that will be called back when the operation completes. This approach is used in the code excerpt above.
+
+
+
+
+\section{Digression: Web Server Programming} % (fold)
+\label{sec:web_server_programming}
+
+
+\subsection{Introduction} % (fold)
+
+Most large-scale websites use server-side code to dynamically display different data when needed, generally retrieved from databases stored on a server and sent to the client to be displayed via some code (e.g.\ HTML and JavaScript). Perhaps the most significant benefit of server-side code is that it allows you to tailor website content for individual users. Dynamic sites can highlight content that is more relevant based on user preferences and habits. It can also make sites easier to use by storing personal preferences and information — for example reusing stored credit card details to streamline subsequent payments. It can even allow interaction with users off the site, sending notifications and updates via email or through other channels. All of these capabilities enable much deeper engagement with users.
+
+
+\subsection{What is Server-side Website Programming?}
+\label{sub:what_is_server_side_website_programming}
+
+\note{The text of the subsequently following paragraphs is based on \url{https://developer.mozilla.org/en-US/docs/Learn/Server-side/First_steps/Introduction}}Web browsers communicate with web servers using the HyperText Transport Protocol (HTTP). When you click a link on a web page, submit a form, or run a search, an HTTP request is sent from your browser to the target server. The request includes a URL identifying the affected resource, a method that defines the required action (for example to get, delete, or post the resource), and may include additional information encoded in URL parameters (the field-value pairs sent via a query string), as POST data (data sent by the HTTP POST method), or in associated cookies.
+
+Web servers wait for client request messages, process them when they arrive, and reply to the web browser with an HTTP response message. The response contains a status line indicating whether or not the request succeeded (e.g. "<\texttt{HTTP/1.1 200 OK}"> for success). The body of a successful response to a request would contain the requested resource (e.g. a new HTML page, or an image, etc...), which could then be displayed by the web browser.
+ 
+\subsection{Static Websites} % (fold)
+\label{sub:static_websites}
+
+Static websites return the same hard-coded content from the server whenever a particular resource is requested.   
+The diagram below shows a basic web server architecture for a static site. When a user wants to navigate to a page, the browser sends an HTTP "<\texttt{GET}"> request specifying its URL. The server retrieves the requested document from its file system and returns an HTTP response containing the document (i.e., the requested resource) and a success status (usually \texttt{200~OK}). If the file cannot be retrieved for some reason, an error status is returned (see client error responses and server error responses).
+
+\subsection{Dynamic Websites} % (fold)
+\label{sub:dynamic_websites}
+
+Dynamic websites on the other hand generate content dynamically from e.g., databases whenever a resource is requested.
+
+\vspace{3em}
+\emph{More content will follow...}
+
+%
+% \begin{fullwidth}
+% \small\itshape
+% {
+% ``Design von Icons – Hauptsache, der Klick ist intuitiv''\\
+% Stuttgarter Zeitung, Artikel vom 01. Oktober 2014\\
+% http://www.stuttgarter-zeitung.de/inhalt.design-von-icons-hauptsache-der-klick-ist-intuitiv.a7e3c301-a5ab-40b3-bfe0-a83423882a45.html
+% }
+% % \url{http://www.stuttgarter-zeitung.de/inhalt.design-von-icons-hauptsache-der-klick-ist-intuitiv.a7e3c301-a5ab-40b3-bfe0-a83423882a45.html}
+% %\footnote{Der Originalartikel ist unter der nachstehenden URL abrufbar: \url{http://www.stuttgarter-zeitung.de/inhalt.design-von-icons-hauptsache-der-klick-ist-intuitiv.a7e3c301-a5ab-40b3-bfe0-a83423882a45.html}}\\
+%
+% \noindent Am Anfang steht das Wort. Es beschreibt eine Funktion auf dem Computer, für die ein Designer ein Bild kreieren soll. Eines, mit dem die Menschen diese Funktion auf den ersten Blick verbinden: ein Icon. Angesichts der wachsenden Informationsflut sollen diese kleinen Bilder helfen, uns auf dem Bildschirm oder dem Handydisplay zu orientieren. Denn Bilder können mehr Informationen zur gleichen Zeit vermitteln als ein Text, erklärt Ralph Tille, Professor für Interaktives Mediendesign an der Stuttgarter Hochschule der Medien: „Unser Gehirn kann nur ein Wort nach dem anderen erfassen, Bilder werden häufig als Gesamtheit verarbeitet.“ Ein gutes Icon kann daher besser zu verstehen sein als die gleiche Information in Textform.
+%
+% Es gibt aber Grenzen: Wenn es zu viele abstrakte Funktionen repräsentieren muss, ist es kaum möglich, ein einprägsames Icon zu entwickeln. Kleiner Test: wer weiß aus dem Kopf das Icon für ``Systemsteuerung'' im Windows-Menü? Die meisten werden hier passen müssen. Wir finden den Ordner ``Systemsteuerung'' trotzdem, weil wir gelernt haben, wo er steht. Ein gutes Icon vermittelt seinen Inhalt hingegen intuitiv. ``Komplexere Bedienhandlungen sind schwer darzustellen'', sagt Tille. Hinter ``Systemsteuerung'' verbergen sich zu viele Funktionen. Und wer zu viel in einem kleinen Bild verpacken will, wird wahrscheinlich scheitern. ``Speichern unter'' ist dagegen eine simplere Funktion – zumindest auf den ersten Blick.
+%
+% Die erste Aufgabe eines Icon-Designers ist zu analysieren, was sich eigentlich hinter einem Begriff verbirgt, und zu überlegen, ob sich das in ein Bild fassen lässt. Was geschieht beispielsweise beim Abspeichern eines Textes? Nutzerfreundliche Icons zeigen nämlich nach aktuellen Forschungen genau die Funktion, für die sie stehen. Die Forschung wird mit dem englischen Begriff Usability bezeichnet, was man ungefähr mit Benutzerfreundlichkeit übersetzen kann. Der US-amerikanische Berater Jakob Nielsen, einer der führenden Usability-Forscher, nennt diese „Resemblance Icons“, ähnliche Icons. Sie haben die gleiche Aufgabe wie die Ikonen, die wir aus der Kirche kennen, erklärt Tille: „Sie zeigen etwas, das ich nicht sehe, und versuchen, Bedeutungen und Zusammenhänge zu vermitteln.“ Man versucht, ein Abbild zu entwerfen. Auch die alten Ikonen-Designer, die damals anders hießen, scheiterten bisweilen an einem solchen Abbild. Wie sollten sie auch „Glauben“ darstellen? Also entschieden sie sich für ein Symbol, sie wählten beispielsweise ein Kreuz.
+%
+% \noindent Mit dem Zahnrad fangen die meisten etwas an
+%
+% Übertragen auf heute heißt das: entweder der Designer findet ein gutes Abbild der Funktion, die hinter dem Icon steht, oder er behilft sich mit einem Symbol. „Diese muss man allerdings lernen“, sagt Tille. Deshalb gelten Symbole als weniger nutzerfreundlich. Beispielsweise erschließen sich viele Verkehrszeichen nicht intuitiv, wir lernen sie auswendig. Auch „Speichern unter“ stellt uns vor größere Herausforderungen. „Wie kann man diesen elektromagnetischen Prozess darstellen?“, fragt Ralph Tille. Die Erfinder des Disketten-Icons entschieden sich, nicht den Vorgang an sich, sondern das Speichermedium abzubilden. Das Icon funktioniert heute noch, weil sich viele an Disketten erinnern können. Aber wie lange noch? Der Nutzer, das unbekannte Wesen, ist die zweite Herausforderung für den Designer. Wer ist die Zielgruppe? Welche Bilder kennen die Nutzer? Hier wird klar, wieso die Diskette bald ausgedient haben wird: Jüngere Nutzer haben sie nie persönlich kennengelernt. Das Bild entwickelt sich derzeit vom einst nutzerfreundlichen „Resemblance Icon“ zum abstrakten Symbol.
+%
+% Aber es gibt noch eine Rettung für Designer, eine dritte Form: „Reference Icons“, wie Nielsen sie nennt. Sie stellen eine Analogie zum eigentlichen Objekt dar, wenn jenes zu uneindeutig oder schwer abbildbar ist. „Dabei wird ähnlich wie bei der Metapher Alltagswissen in einen anderen Kontext übertragen“, erklärt Tille. Beispiele sind die Büroklammer für Dateianhänge, das Zahnrad oder der Gabelschlüssel für „Einstellungen“. Auch wenn in keinem Smartphone oder Notebook ein Zahnrad eingebaut ist und man auch keinen Gabelschlüssel braucht, um sie zu öffnen, erschließt sich uns relativ einfach, dass wir hier zu den Einstellungen gelangen.
+%
+% Solche Icons arbeiten mit unserer Intuition. Das ist ihre Stärke und gleichzeitig ihre Schwäche, denn Intuition beruht auf unserer individuellen Erfahrung. Und die kann der Designer nur erahnen. „Man ist mit der Herausforderung konfrontiert, ob die Benutzer die Abstraktion und Zuordnung tatsächlich verstehen“, sagt die deutsche Usability-Expertin Marja-Liisa Jöckel. Wer sich unsicher sei, ob er ein geeignetes Icon entworfen hat, sollte den Nutzer bereits im Vorfeld zurate ziehen, empfiehlt die Informationswirtin: Nur so kann man herausfinden, ob mit einem Icon die entsprechende Funktion tatsächlich intuitiv verbunden wird. „Man kann Nutzern die Bedeutung eines Icons nicht antrainieren“, warnt sie. Sei der Assoziationsraum zu groß, bleibe das Icon missverständlich und sei nicht benutzerfreundlich. Mediendesigner Tille überprüfte das für einzelne „Reference Icons“: Er ließ in einer Studie Probanden aufzeichnen, was sie mit dem Begriff „Einstellungen“ verbinden. In der Tat zeichneten die meisten ein Zahnrad oder einen Gabelschlüssel. Tille wertet das als Hinweis darauf, dass sich der Designer gut in die Nutzer hineinversetzt hat.
+%
+% Kritik der Experten an Microsofts und Apples Design
+%
+% Manchmal ergibt sich auch ein Widerspruch zwischen Icon und Funktion wie bei den früheren Windows-Versionen: Nutzer mussten zum Ausschalten ihres Rechners zunächst auf die Start-Schaltfläche klicken. Für diese unintuitive Verbindung musste das Unternehmen viel Kritik einstecken. Tille missbilligt auch Apples Umgang mit dem Papierkorb-Symbol – an sich ein sehr treffendes Bild. Aber Mac-Nutzer müssen externe Speichermedien mit der Maus auf den Papierkorb legen, bevor diese ausgegeben werden. „Das ist überhaupt nicht intuitiv“, sagt Ralph Tille.
+%
+% Nicht zuletzt sind unsere bisherigen Erfahrungen mit Icons eine Falle für Designer. Unser Gehirn sortiert Erfahrungen gerne in vorhandenes Wissen ein. Deshalb sollten sich Designer hüten, funktionierende Icons kreativ durch andere zu ersetzen oder gar umzudeuten. „Usability-Papst“ Nielsen, wie er in IT-Keisen genannt wird, untersuchte in einer Studie den neuen Internetauftritt der amerikanischen Bucknell-University, der mit vielen Nutzergewohnheiten bricht. Wer dort auf das Uhrensymbol klickt, bekommt Seiten angezeigt, die er zuvor besucht hat – anstatt eines Weckers oder einer Stoppuhr, auf die das Uhr-Icon üblicherweise verweist. Nielsens These bestätigte sich: Nutzer lassen sich nicht umerziehen. „Kein einziger Teilnehmer klickte das Icon an: Es war pure Verschwendung“, schreibt er.
+%
+% Am Ende steht also ein Bild. Aber selbst wenn der Designer ein treffendes Bild ganz nach Geschmack und Vorerfahrungen seiner Nutzer-Zielgruppe geschaffen hat, hat er einen Feind, der die Lebenszeit seines Icons begrenzt: den technologischen Fortschritt. Denn wie wir unsere Daten in 20 Jahren speichern, das weiß niemand.
+% \end{fullwidth}
+% \noindent \rule{1.54\textwidth}{0.4pt}  % SZA: use newcommand
+%
+% Hier kommt wieder normaler Text gefolgt von einem langen Auszug aus einer deutschen Tageszeitung mit einem sehr interessanten Bericht zum Design und Verständnis von Icons.
+%
+% \noindent Am Anfang steht das Wort. Es beschreibt eine Funktion auf dem Computer, für die ein Designer ein Bild kreieren soll. Eines, mit dem die Menschen diese Funktion auf den ersten Blick verbinden: ein Icon. Angesichts der wachsenden Informationsflut sollen diese kleinen Bilder helfen, uns auf dem Bildschirm oder dem Handydisplay zu orientieren. Denn Bilder können mehr Informationen zur gleichen Zeit vermitteln als ein Text, erklärt Ralph Tille, Professor für Interaktives Mediendesign an der Stuttgarter Hochschule der Medien: „Unser Gehirn kann nur ein Wort nach dem anderen erfassen, Bilder werden häufig als Gesamtheit verarbeitet.“ Ein gutes Icon kann daher besser zu verstehen sein als die gleiche Information in Textform.
+%
+% Es gibt aber Grenzen: Wenn es zu viele abstrakte Funktionen repräsentieren muss, ist es kaum möglich, ein einprägsames Icon zu entwickeln. Kleiner Test: wer weiß aus dem Kopf das Icon für ``Systemsteuerung'' im Windows-Menü? Die meisten werden hier passen müssen. Wir finden den Ordner ``Systemsteuerung'' trotzdem, weil wir gelernt haben, wo er steht. Ein gutes Icon vermittelt seinen Inhalt hingegen intuitiv. ``Komplexere Bedienhandlungen sind schwer darzustellen'', sagt Tille. Hinter ``Systemsteuerung'' verbergen sich zu viele Funktionen. Und wer zu viel in einem kleinen Bild verpacken will, wird wahrscheinlich scheitern. ``Speichern unter'' ist dagegen eine simplere Funktion – zumindest auf den ersten Blick.
+%
+% Die \marginnote{Resemblance Icons} erste Aufgabe eines Icon-Designers ist zu analysieren, was sich eigentlich hinter einem Begriff verbirgt, und zu überlegen, ob sich das in ein Bild fassen lässt. Was geschieht beispielsweise beim Abspeichern eines Textes? Nutzerfreundliche Icons zeigen nämlich nach aktuellen Forschungen genau die Funktion, für die sie stehen. Die Forschung wird mit dem englischen Begriff Usability bezeichnet, was man ungefähr mit Benutzerfreundlichkeit übersetzen kann. Der US-amerikanische Berater Jakob Nielsen, einer der führenden Usability-Forscher, nennt diese „Resemblance Icons“, ähnliche Icons. Sie haben die gleiche Aufgabe wie die Ikonen, die wir aus der Kirche kennen, erklärt Tille: „Sie zeigen etwas, das ich nicht sehe, und versuchen, Bedeutungen und Zusammenhänge zu vermitteln.“ Man versucht, ein Abbild zu entwerfen. Auch die alten Ikonen-Designer, die damals anders hießen, scheiterten bisweilen an einem solchen Abbild. Wie sollten sie auch „Glauben“ darstellen? Also entschieden sie sich für ein Symbol, sie wählten beispielsweise ein Kreuz.
+%
+% Mit dem Zahnrad fangen die meisten etwas an
+%
+% Übertragen \marginnote{Symbole müssen erlernt werden} auf heute heißt das: entweder der Designer findet ein gutes Abbild der Funktion, die hinter dem Icon steht, oder er behilft sich mit einem Symbol. „Diese muss man allerdings lernen“, sagt Tille. Deshalb gelten Symbole als weniger nutzerfreundlich. Beispielsweise erschließen sich viele Verkehrszeichen nicht intuitiv, wir lernen sie auswendig. Auch „Speichern unter“ stellt uns vor größere Herausforderungen. „Wie kann man diesen elektromagnetischen Prozess darstellen?“, fragt Ralph Tille. Die Erfinder des Disketten-Icons entschieden sich, nicht den Vorgang an sich, sondern das Speichermedium abzubilden. Das Icon funktioniert heute noch, weil sich viele an Disketten erinnern können. Aber wie lange noch? Der Nutzer, das unbekannte Wesen, ist die zweite Herausforderung für den Designer. Wer ist die Zielgruppe? Welche Bilder kennen die Nutzer? Hier wird klar, wieso die Diskette bald ausgedient haben wird: Jüngere Nutzer haben sie nie persönlich kennengelernt. Das Bild entwickelt sich derzeit vom einst nutzerfreundlichen „Resemblance Icon“ zum abstrakten Symbol.
+%
+% Aber \marginnote{Reference Icons stellen eine Analogie zum eigentlichen Objekt dar} es gibt noch eine Rettung für Designer, eine dritte Form: „Reference Icons“, wie Nielsen sie nennt. Sie stellen eine Analogie zum eigentlichen Objekt dar, wenn jenes zu uneindeutig oder schwer abbildbar ist. „Dabei wird ähnlich wie bei der Metapher Alltagswissen in einen anderen Kontext übertragen“, erklärt Tille. Beispiele sind die Büroklammer für Dateianhänge, das Zahnrad oder der Gabelschlüssel für „Einstellungen“. Auch wenn in keinem Smartphone oder Notebook ein Zahnrad eingebaut ist und man auch keinen Gabelschlüssel braucht, um sie zu öffnen, erschließt sich uns relativ einfach, dass wir hier zu den Einstellungen gelangen.
+%
+% Solche Icons arbeiten mit unserer Intuition. Das ist ihre Stärke und gleichzeitig ihre Schwäche, denn Intuition beruht auf unserer individuellen Erfahrung. Und die kann der Designer nur erahnen. „Man ist mit der Herausforderung konfrontiert, ob die Benutzer die Abstraktion und Zuordnung tatsächlich verstehen“, sagt die deutsche Usability-Expertin Marja-Liisa Jöckel. Wer sich unsicher sei, ob er ein geeignetes Icon entworfen hat, sollte den Nutzer bereits im Vorfeld zurate ziehen, empfiehlt die Informationswirtin: Nur so kann man herausfinden, ob mit einem Icon die entsprechende Funktion tatsächlich intuitiv verbunden wird. „Man kann Nutzern die Bedeutung eines Icons nicht antrainieren“, warnt sie. Sei der Assoziationsraum zu groß, bleibe das Icon missverständlich und sei nicht benutzerfreundlich. Mediendesigner Tille überprüfte das für einzelne „Reference Icons“: Er ließ in einer Studie Probanden aufzeichnen, was sie mit dem Begriff „Einstellungen“ verbinden. In der Tat zeichneten die meisten ein Zahnrad oder einen Gabelschlüssel. Tille wertet das als Hinweis darauf, dass sich der Designer gut in die Nutzer hineinversetzt hat.
+%
+% \noindent \emph{Kritik der Experten an Microsofts und Apples Design}
+%
+% Manchmal ergibt sich auch ein Widerspruch zwischen Icon und Funktion wie bei den früheren Windows-Versionen: Nutzer mussten zum Ausschalten ihres Rechners zunächst auf die Start-Schaltfläche klicken. Für diese unintuitive Verbindung musste das Unternehmen viel Kritik einstecken. Tille missbilligt auch Apples Umgang mit dem Papierkorb-Symbol – an sich ein sehr treffendes Bild. Aber Mac-Nutzer müssen externe Speichermedien mit der Maus auf den Papierkorb legen, bevor diese ausgegeben werden. „Das ist überhaupt nicht intuitiv“, sagt Ralph Tille.
+%
+% Nicht zuletzt sind unsere bisherigen Erfahrungen mit Icons eine Falle für Designer. Unser Gehirn sortiert Erfahrungen gerne in vorhandenes Wissen ein. Deshalb sollten sich Designer hüten, funktionierende Icons kreativ durch andere zu ersetzen oder gar umzudeuten. „Usability-Papst“ Nielsen, wie er in IT-Keisen genannt wird, untersuchte in einer Studie den neuen Internetauftritt der amerikanischen Bucknell-University, der mit vielen Nutzergewohnheiten bricht. Wer dort auf das Uhrensymbol klickt, bekommt Seiten angezeigt, die er zuvor besucht hat – anstatt eines Weckers oder einer Stoppuhr, auf die das Uhr-Icon üblicherweise verweist. Nielsens These bestätigte sich: Nutzer lassen sich nicht umerziehen. „Kein einziger Teilnehmer klickte das Icon an: Es war pure Verschwendung“, schreibt er.
+%
+% Am Ende steht also ein Bild. Aber selbst wenn der Designer ein treffendes Bild ganz nach Geschmack und Vorerfahrungen seiner Nutzer-Zielgruppe geschaffen hat, hat er einen Feind, der die Lebenszeit seines Icons begrenzt: den technologischen Fortschritt. Denn wie wir unsere Daten in 20 Jahren speichern, das weiß niemand.
+% \rule{1\textwidth}{0.4pt}
+
+% \section{Typography}\label{sec:typography}
+%
+% \subsection{Typefaces}\label{sec:typefaces}
+% If the Palatino, \textsf{Helvetica}, and \texttt{Bera Mono} typefaces are installed, this style
+% will use them automatically.  Otherwise, we'll fall back on the Computer Modern
+% typefaces.
+%
+% \subsection{Letterspacing}\label{sec:letterspacing}
+% This document class includes two new commands and some improvements on
+% existing commands for letterspacing.
+%
+% When setting strings of \allcaps{ALL CAPS} or \smallcaps{small caps}, the
+% letter\-spacing---that is, the spacing between the letters---should be
+% increased slightly.\cite{Bringhurst2005}  The \Verb|\allcaps| command has proper letterspacing for
+% strings of \allcaps{FULL CAPITAL LETTERS}, and the \Verb|\smallcaps| command
+% has letterspacing for \smallcaps{small capital letters}.  These commands
+% will also automatically convert the case of the text to upper- or
+% lowercase, respectively.
+%
+% The \Verb|\textsc| command has also been redefined to include
+% letterspacing.  The case of the \Verb|\textsc| argument is left as is,
+% however.  This allows one to use both uppercase and lowercase letters:
+% \textsc{The Initial Letters Of The Words In This Sentence Are Capitalized.}
+%
+%
+%
+% \section{Installation}\label{sec:installation}
+% To install the Tufte-\LaTeX\ classes, simply drop the
+% following files into the same directory as your \texttt{.tex}
+% file:
+% \begin{quote}
+%   \ttfamily
+%   tufte-common.def\\
+%   tufte-handout.cls\\
+%   tufte-book.cls
+% \end{quote}
+%
+% % TODO add instructions for installing it globally
+%
+%
+%
+% \section{More Documentation}\label{sec:more-doc}
+% For more documentation on the Tufte-\LaTeX{} document classes (including commands not
+% mentioned in this handout), please see the sample book.
+%
+% \section{Support}\label{sec:support}
+%
+% The website for the Tufte-\LaTeX\ packages is located at
+% \url{http://code.google.com/p/tufte-latex/}.  On our website, you'll find
+% links to our \smallcaps{svn} repository, mailing lists, bug tracker, and documentation.
+
+\bibliography{refs}
+\bibliographystyle{plainnat}
+
+
+
+
+\end{document}
