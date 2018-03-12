@@ -216,7 +216,7 @@ frame=l % was 'l' || was lines
 
 \section{Preface} % (fold)
 \label{sec:preface}
-\marginnote[-3em]{This lecture note is a revised summary of the excellent article ``How Browsers Work: Behind the scenes of modern web browsers'' by Tali Garsiel and Paul Irish, published in 2011. The original article is available at: \url{https://www.html5rocks.com/en/tutorials/internals/howbrowserswork/}. 
+\marginnote[-3em]{This lecture note is a revised summary of the excellent article ``How Browsers Work: Behind the scenes of modern web browsers'' published by Tali Garsiel and Paul Irish in 2011. The original article is available at: \url{https://www.html5rocks.com/en/tutorials/internals/howbrowserswork/}. 
 
 \vspace{1em} 
 There is also a video available at vimeo about Tali's talk: \url{http://vimeo.com/44182484}.}
@@ -225,7 +225,7 @@ There is also a video available at vimeo about Tali's talk: \url{http://vimeo.co
 	\emph{In the years of IE 90\% dominance there was nothing much to do but regard the browser as a ``black box'', but now, with open source browsers having more than half of the usage share, it's a good time to take a peek under the engine's hood and see what's inside a web browser. Well, what's inside are millions of C++ lines...}\begin{flushright}\vspace{-1em}---Tali Garsiel \end{flushright}
 \end{quote}
 
-The information and facts about the internal operations of WebKit and Gecko is the result of much research done by Israeli developer Tali Garsiel. Over a few years, she reviewed all the published data about browser internals and spent a lot of time reading Web browser source code. Tali published her research on her site\sidenote{See \url{http://taligarsiel.com/}}. In the following years, her research results have been revised and republished on numerous occasions. 
+The following information and facts about the internal operation principles of WebKit and Gecko is the result of extensive research done by the Israeli developer \textbf{Tali Garsiel}. Over a few years, she reviewed all the published data about browser internals and spent a lot of time reading Web browser source code. Tali published her research on her site\sidenote{See \url{http://taligarsiel.com/}}. In the following years, her research results have been revised and republished on numerous occasions and provided insights to a larger audience. 
 
 \textbf{Why should you learn about browser internals?}
 
@@ -242,6 +242,36 @@ Learning the internals of browser operations helps you make better decisions and
 
 
 \section{Introduction}\label{sec:introduction}
+
+Web browsers are the most widely used software.
+This lecture explains their fundamental operation principles so that students get an understanding about the things that happen internally when a website is requested, i.e., the time from typing in a website's URL in the browser's address bar until it is rendered by in the browser's viewport.
+
+The complexity of Web browser software has significantly changed over recent years.
+
+TODO: Add image of first NEXT browser; compare it with inspector of Google Chrome
+
+
+
+
+
+
+\section{The Browser's Main Functionality} % (fold)
+\label{sec:the_browser_s_main_functionality}
+The main function of a browser is to present the web resource you choose, by requesting it from the server and displaying it in the browser window. The resource is usually an HTML document, but may also be a PDF, image, or some other type of content. The location of the resource is specified by the user using a URI (Uniform Resource Identifier).
+
+The way the browser interprets and displays HTML files is specified in the HTML and CSS specifications. These specifications are maintained by the \textbf{World Wide Web Consortium} organization\sidenote{\url{https://www.w3.org/}}, commonly denominated as \textbf{W3C}, which is the standards organization for the web. For years browsers conformed to only a part of the specifications and developed their own extensions. That caused serious compatibility issues for web authors. Today most of the browsers more or less conform to the specifications.
+
+Browser user interfaces have a lot in common with each other. Among the common user interface elements are:
+\begin{itemize}
+	\item Address bar for inserting a URI
+	\item Back and forward buttons
+	\item Bookmarking options
+	\item Refresh and stop buttons for refreshing or stopping the loading of current documents
+	\item Home button that takes you to your home page
+\end{itemize}
+
+Strangely enough, the browser's user interface is \emph{not specified} in any formal specification, it just comes from good practices shaped over years of experience and by browsers imitating each other. The HTML5 specification does not define UI elements a browser must have, but lists some common elements. Among those are the address bar, status bar and tool bar. There are, of course, features unique to a specific browser like Firefox's downloads manager.
+
 
 
 
