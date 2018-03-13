@@ -251,10 +251,40 @@ Learning the internals of browser operations helps you make better decisions and
 Web browsers are the most widely used software.
 This lecture explains their fundamental operation principles so that students get an understanding about the things that happen internally when a website is requested, i.e., the time from typing in a website's URL in the browser's address bar until it is rendered by in the browser's viewport.
 
-The complexity of Web browser software has significantly changed over recent years.
+The complexity of Web browser software has significantly changed over recent years---as the following two screenshots indicate:
 
-TODO: Add image of first NEXT browser; compare it with inspector of Google Chrome
+\begin{figure}%
+	\centering
+  \includegraphics[width=1.0\textwidth]{./figures/lynx_browser.png}
+  \caption[][0em]{Screenshot of the Lynx Browser, the first and purely text-based browser for the World Wide Web.}
+  \label{fig:lynx}
+\end{figure}
 
+\begin{figure}%
+	\centering
+  \includegraphics[width=1.0\textwidth]{./figures/next_browser.png}
+  \caption[][0em]{Screenshot of the first WWW browser with a graphical user interface, the NeXT Browser used at CERN.}
+  \label{fig:next_browser}
+\end{figure}
+
+TODO: Add image of first NEXT browser; compare it with inspector of Google Chrome; add some description (refs are in the keynote file)
+
+
+\subsection{What is a Web Browser}
+\label{sub:what_is_a_web_browser}
+\marginnote[-2em]{See \url{https://seng130.wordpress.com/lectures-2/browser-architecture/}}
+
+A modern Web browser...
+\begin{enumerate}
+	\item Is an application that we use when we browse the WWW.
+	\item It renders text-based HTML documents into visual pages, which are what we see inside a browser.
+	\item It speaks HTTP protocol and communicates with web servers.
+	\item It understands URL and knows how to translates URL into web resources, e.g., HTML text files, images, videos, etc.
+	\item It is a virtual machine that runs the JavaScript programs embedded inside HTML documents.
+	\item It understands CSS rules and applies the rules to layout the pages.
+	\item It interacts with a user in front of a browser and translates user inputs into browser events, e.g., clicking a link, clicking a button, submitting text inside a text box.
+	\item It makes the WWW come alive!
+\end{enumerate}
 
 
 
@@ -276,6 +306,50 @@ Browser user interfaces have a lot in common with each other. Among the common u
 \end{itemize}
 
 Strangely enough, the browser's user interface is \emph{not specified} in any formal specification, it just comes from good practices shaped over years of experience and by browsers imitating each other. The HTML5 specification does not define UI elements a browser must have, but lists some common elements. Among those are the address bar, status bar and tool bar. There are, of course, features unique to a specific browser like Firefox's downloads manager.
+
+
+\section{The Browser's High Level Structure} % (fold)
+\label{sub:the_browser_s_high_level_structure}
+
+The\marginnote{A reference architecture for modern Web browsers} following components are considered the main building blocks of modern Web browsers (cf.~\citep{grosskurth:2006}):
+\begin{enumerate}
+	\item \textbf{The user interface}: this includes the address bar, back/forward button, bookmarking menu, etc. Every part of the browser display except the window where you see the requested page.
+	\item \textbf{The browser engine}: marshals actions between the UI and the rendering engine.
+	\item \textbf{The rendering engine}: responsible for displaying requested content. For example if the requested content is HTML, the rendering engine parses HTML and CSS, and displays the parsed content on the screen.
+	\item \textbf{Networking}: Responsible for network calls such as HTTP requests, using different implementations for different platform behind a platform-independent interface.
+	\item \textbf{UI backend}: used for drawing basic widgets like combo boxes and windows. This backend exposes a generic interface that is not platform specific. Underneath it uses operating system user interface methods.
+	\item \textbf{JavaScript interpreter}: Used to parse and execute JavaScript code.
+	\item \textbf{Data storage}: This is a persistence layer. The browser may need to save all sorts of data locally, such as cookies. Browsers also support storage mechanisms such as localStorage, IndexedDB, WebSQL and FileSystem.
+\end{enumerate}
+
+Figure~\ref{fig:reference_architecture} provides a graphical overview of the reference elements together with a visualization of their relationships among each other. Figure~\ref{fig:mozilla_architecture} shows an implementation of the reference architecture elements for the Firefox browser.
+
+
+\begin{figure}%
+	\centering
+  \includegraphics[width=0.9\textwidth]{./figures/browser_reference_architecture.png}
+  \caption[][0em]{A reference architecture for Web browsers~\citep{grosskurth:2006}}
+  \label{fig:reference_architecture}
+\end{figure}
+
+\begin{figure}%
+	\centering
+  \includegraphics[width=1.0\textwidth]{./figures/mozilla_browser_architecture.png}
+  \caption[][0em]{The Firefox browser architecture is based upon the reference architecture components~\citep{grosskurth:2006}}
+  \label{fig:mozilla_architecture}
+\end{figure}
+
+It is important to note that browsers such as Chrome run multiple instances of the rendering engine: one for each tab. Each tab runs in a separate process.
+
+\subsection{The Rendering Engine} % (fold)
+\label{sub:the_rendering_engine}
+Different browsers use different rendering engines: Internet Explorer uses Trident, Firefox uses Gecko, Safari uses WebKit. Chrome and Opera (from version 15) use Blink, a fork of WebKit.
+
+WebKit is an open source rendering engine which started as an engine for the Linux platform and was modified by Apple to support Mac and Windows. See \url{webkit.org} for more details.
+
+By default the rendering engine can display HTML and XML documents and images. It can display other types of data via plug-ins or extension; for example, displaying PDF documents using a PDF viewer plug-in. However, in this chapter we will focus on the main use case: displaying HTML and images that are formatted using CSS.
+
+
 
 
 
