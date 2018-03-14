@@ -349,6 +349,15 @@ WebKit is an open source rendering engine which started as an engine for the Lin
 
 By default the rendering engine can display HTML and XML documents and images. It can display other types of data via plug-ins or extension; for example, displaying PDF documents using a PDF viewer plug-in. However, in this chapter we will focus on the main use case: displaying HTML and images that are formatted using CSS.
 
+\textbf{Workflow}
+The rendering engine will start parsing the HTML document and convert elements to DOM nodes in a tree called the \textbf{content tree}. The engine will parse the style data, both in external CSS files and in style elements. Styling information together with visual instructions in the HTML will be used to create another tree: the \textbf{render tree}.
+
+The render tree contains rectangles with visual attributes like color and dimensions. The rectangles are in the right order to be displayed on the screen.
+
+After the construction of the render tree it goes through a \textbf{layout process}. This means giving each node the exact coordinates where it should appear on the screen. The next stage is painting---the render tree will be traversed and each node will be painted using the UI backend layer.
+
+It is important to understand that this is a \emph{gradual process}. For better user experience, the rendering engine will try to display contents on the screen as soon as possible\sidenote{This is referred to as the \textbf{Compositing Forest} (cf.\ \url{https://www.chromium.org/developers/design-documents/gpu-accelerated-compositing-in-chrome}) since four conceptually different tree structures are processed in parallel (DOM tree, RenderObject tree, RenderLayer tree, GraphicsLayer tree).}. It will not wait until all HTML is parsed before starting to build and layout the render tree. Parts of the content will be parsed and displayed, while the process continues with the rest of the contents that keeps coming from the network.
+
 
 
 
