@@ -455,7 +455,39 @@ Like HTML, DOM is specified by the W3C organization\sidenote{Seen \url{www.w3.or
 By saying the tree contains DOM nodes, the more precise meaning is that the tree is constructed of elements that implement one of the DOM interfaces. Browsers use concrete implementations that have other attributes used by the browser internally.
 
 
+\subsection{The Parsing Algorithm} % (fold)
+\label{sub:the_parsing_algorithm}
 
+HTML cannot be parsed using the regular top down or bottom up parsers.
+
+The reasons are:
+\begin{itemize}
+	\item The \textbf{forgiving nature} of the language.
+	\item The fact that browsers have traditional \textbf{error tolerance} to support well known cases of invalid HTML.
+	\item The parsing process is \textbf{reentrant}. For other languages, the source doesn't change during parsing, but in HTML, dynamic code (such as script elements containing \texttt{document.write()} calls) can add extra tokens, so the parsing process actually modifies the input.
+\end{itemize}
+
+Unable to use the regular parsing techniques, browsers create \textbf{custom parsers} for parsing HTML.
+
+The \textbf{parsing algorithm} is described in detail by the HTML5 specification\sidenote{See \url{http://www.whatwg.org/specs/web-apps/current-work/multipage/parsing.html}}. The algorithm consists of two stages: \begin{enumerate}
+	\item tokenization and
+	\item tree construction.
+\end{enumerate} 
+
+\subsection{The Tokenization Algorithm} % (fold)
+\label{sub:the_tokenization_algorithm}
+
+% subsection the_tokenization_algorithm (end)
+\textbf{Tokenization} is the lexical analysis, parsing the input into tokens. Among HTML tokens are start tags, end tags, attribute names and attribute values.
+
+The tokenizer recognizes the token, gives it to the tree constructor, and consumes the next character for recognizing the next token, and so on until the end of the input.
+
+The algorithm's output is an HTML token. The algorithm is expressed as a \emph{state machine}. Each state consumes one or more characters of the input stream and updates the next state according to those characters. The decision is influenced by the current tokenization state and by the tree construction state. This means the same consumed character will yield different results for the correct next state, depending on the current state. The algorithm is very complex to describe fully; an example to understand the principle can be found in .
+
+\subsection{The Tree Construction Algorithm} % (fold)
+\label{sub:the_tree_construction_algorithm}
+
+During the tree construction stage the DOM tree with the Document in its root will be modified and elements will be added to it. Each node emitted by the tokenizer will be processed by the tree constructor. For each token the specification defines which DOM element is relevant to it and will be created for this token. The element is added to the DOM tree, and also the stack of open elements. This stack is used to correct nesting mismatches and unclosed tags. The algorithm is also described as a state machine. The states are called \emph{insertion modes}.
 
 
 
