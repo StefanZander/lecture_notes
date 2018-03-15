@@ -389,12 +389,70 @@ If no rule matches, the parser will store the token internally, and keep asking 
 \subsection{HTML Content Parsing} % (fold)
 \label{sub:parsing_html_content}
 
+The main task of the HTML parser is to parse the HTML markup into a \textbf{parse tree}.
+
 There are programs that can create parsers for languages that are defined on the bases of a context free grammar\sidenote{A language can be parsed by regular parsers if its grammar is a context free grammar.}\sidenote{An intuitive definition of a context free grammar is a grammar that can be entirely expressed in BNF. For a formal definition see your theoretical informatics' lecture notes.} by analyzing a grammar's vocabulary and syntax rules.
 % You feed them the grammar of your language–its vocabulary and syntax rules–and they generate a working parser. Creating a parser requires a deep understanding of parsing and it's not easy to create an optimized parser by hand, so parser generators can be very useful.
 Such grammars can usually described using the Backus Naur Form (BNF). 
 However, human language and HTML (as we will see) are not context free grammars. 
-Therefore, a standard parser for parsing HTML does not exist. 
+HTML cannot easily be defined by a context free grammar that parsers need.
+Therefore, a standard parser for parsing HTML does not exist\sidenote{There is a formal format for defining HTML–DTD (Document Type Definition), but it is not a context free grammar.}. 
+
+\emph{TODO: Add consequences}
+
+% Unfortunately, all the conventional parser topics do not apply to HTML (I didn't bring them up just for fun–they will be used in parsing CSS and JavaScript).
+
+This appears strange at first sight; HTML is rather close to XML. There are lots of available XML parsers. There is an XML variation of HTML–XHTML–so what's the big difference?
+
+The difference is that the HTML approach is more \emph{forgiving}: it lets you omit certain tags (which are then added implicitly), or sometimes omit start or end tags, and so on. On the whole it's a \emph{soft syntax}, as opposed to XML's stiff and demanding syntax.
+
+This seemingly small detail makes a world of a difference. On one hand this is the main reason why HTML is so popular: it forgives your mistakes and makes life easy for the Web author. On the other hand, it makes it difficult to write a formal grammar. So to summarize, HTML cannot be parsed easily by conventional parsers, since its grammar is not context free. HTML cannot be parsed by XML parsers.
+
 This has some consequence for Web development:
+
+
+
+\subsection{The Parse Tree} % (fold)
+\label{sub:the_parse_tree}
+
+The output tree (i.e., the \textbf{parse tree}) is a tree of DOM element and attribute nodes. DOM is short for \textbf{Document Object Model}. It is the object presentation of the HTML document and the interface of HTML elements to the outside world like JavaScript. 
+The root of the tree is the \texttt{Document} object.
+
+The DOM has an almost one-to-one relation to the markup.
+
+For example, the HTML code in Listing~\ref{basic_html} will be translated by a Web browser in the internal DOM tree structure as illustrated in Figure~\ref{fig:basic_dom_tree}.
+
+\begin{listing}
+\begin{lstlisting}[language=HTML]
+<html>
+  <body>
+    <p>
+      Hello World
+    </p>
+    <div> <img src="example.png"/></div>
+  </body>
+</html>
+\end{lstlisting}
+	% \caption{A Web page with basic HTML elements} 
+	\label{basic_html}
+\end{listing}
+
+\begin{marginfigure}[-15em]
+    \includegraphics{./figures/basic_dom_tree.png}
+    \caption{The corresponding internal DOM tree created out of the HTML code example}
+    \label{fig:basic_dom_tree}
+\end{marginfigure}
+
+
+% \begin{marginfigure}
+%     \includegraphics[width=1.0\textwidth]{./figures/webkit_main_flow.png}
+%     \caption[][0em]{The default workflow of the WebKit render engine}
+%     \label{fig:webkit_main_flow}
+% \end{marginfigure}
+
+Like HTML, DOM is specified by the W3C organization\sidenote{Seen \url{www.w3.org/DOM/DOMTR}}. It is a generic specification for manipulating documents. A specific module describes HTML specific elements\sidenote{The HTML definitions can be found here: \url{www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/idl-definitions.html}.}.
+
+By saying the tree contains DOM nodes, the more precise meaning is that the tree is constructed of elements that implement one of the DOM interfaces. Browsers use concrete implementations that have other attributes used by the browser internally.
 
 
 
