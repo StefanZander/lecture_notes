@@ -389,8 +389,9 @@ If no rule matches, the parser will store the token internally, and keep asking 
 \subsection{HTML Content Parsing} % (fold)
 \label{sub:parsing_html_content}
 
-There are programs that can create parsers for languages that are defined on the bases of a context free grammar. 
-Such grammars can usually described using the Backus Naur Form (BNF).
+There are programs that can create parsers for languages that are defined on the bases of a context free grammar\sidenote{A language can be parsed by regular parsers if its grammar is a context free grammar.}\sidenote{An intuitive definition of a context free grammar is a grammar that can be entirely expressed in BNF. For a formal definition see your theoretical informatics' lecture notes.} by analyzing a grammar's vocabulary and syntax rules.
+% You feed them the grammar of your language–its vocabulary and syntax rules–and they generate a working parser. Creating a parser requires a deep understanding of parsing and it's not easy to create an optimized parser by hand, so parser generators can be very useful.
+Such grammars can usually described using the Backus Naur Form (BNF). 
 However, human language and HTML (as we will see) are not context free grammars. 
 Therefore, a standard parser for parsing HTML does not exist. 
 This has some consequence for Web development:
