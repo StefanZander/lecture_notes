@@ -274,16 +274,20 @@ TODO: Add image of first NEXT browser; compare it with inspector of Google Chrom
 \label{sub:what_is_a_web_browser}
 \marginnote[-2em]{See \url{https://seng130.wordpress.com/lectures-2/browser-architecture/}}
 
-A modern Web browser...
+
+This section outlines some of the central functionalities provided by a modern Web browser. It helps in understanding what a browser exactly is. 
+
 \begin{enumerate}
-	\item Is an application that we use when we browse the WWW.
+	\item Is an application that we use when we browse the World Wide Web.
 	\item It renders text-based HTML documents into visual pages, which are what we see inside a browser.
-	\item It speaks HTTP protocol and communicates with web servers.
-	\item It understands URL and knows how to translates URL into web resources, e.g., HTML text files, images, videos, etc.
+	\item It speaks HTTP protocol and communicates with Web servers.
+	\item It understands URL and knows how to translates URL into Web resources, e.g., HTML text files, images, videos, etc. (\emph{URL dereferencing})
 	\item It is a virtual machine that runs the JavaScript programs embedded inside HTML documents.
 	\item It understands CSS rules and applies the rules to layout the pages.
 	\item It interacts with a user in front of a browser and translates user inputs into browser events, e.g., clicking a link, clicking a button, submitting text inside a text box.
-	\item It makes the WWW come alive!
+	% \item It makes the WWW come alive!
+	\item It provides sophisticated tools for analyzing the structure of Web content and network traffic 
+	\item It contains a JavaScript console to utilize its JavaScript engine 
 \end{enumerate}
 
 
@@ -349,7 +353,15 @@ WebKit is an open source rendering engine which started as an engine for the Lin
 
 By default the rendering engine can display HTML and XML documents and images. It can display other types of data via plug-ins or extension; for example, displaying PDF documents using a PDF viewer plug-in. However, in this chapter we will focus on the main use case: displaying HTML and images that are formatted using CSS.
 
-\textbf{Workflow}
+\paragraph{Workflow}
+
+\begin{figure}%
+	\centering
+  \includegraphics[width=1.0\textwidth]{./figures/webkit_main_flow.png}
+  \caption[][0em]{The default workflow of the WebKit render engine}
+  \label{fig:webkit_main_flow}
+\end{figure}
+
 The rendering engine will start parsing the HTML document and convert elements to DOM nodes in a tree called the \textbf{content tree}. The engine will parse the style data, both in external CSS files and in style elements. Styling information together with visual instructions in the HTML will be used to create another tree: the \textbf{render tree}.
 
 The render tree contains rectangles with visual attributes like color and dimensions. The rectangles are in the right order to be displayed on the screen.
@@ -357,6 +369,31 @@ The render tree contains rectangles with visual attributes like color and dimens
 After the construction of the render tree it goes through a \textbf{layout process}. This means giving each node the exact coordinates where it should appear on the screen. The next stage is painting---the render tree will be traversed and each node will be painted using the UI backend layer.
 
 It is important to understand that this is a \emph{gradual process}. For better user experience, the rendering engine will try to display contents on the screen as soon as possible\sidenote{This is referred to as the \textbf{Compositing Forest} (cf.\ \url{https://www.chromium.org/developers/design-documents/gpu-accelerated-compositing-in-chrome}) since four conceptually different tree structures are processed in parallel (DOM tree, RenderObject tree, RenderLayer tree, GraphicsLayer tree).}. It will not wait until all HTML is parsed before starting to build and layout the render tree. Parts of the content will be parsed and displayed, while the process continues with the rest of the contents that keeps coming from the network.
+
+\paragraph{Parsing} % (fold)
+\label{par:parsing}
+Since parsing is a very significant process within the rendering engine, we will go into it a little more deeply. Let's begin with a little introduction about parsing.
+
+Parsing\marginnote{Parsing is based on the syntax rules the document obeys: the language or format it was written in. Every format you can parse must have deterministic grammar consisting of vocabulary and syntax rules. It is called a context free grammar. Human languages are not such languages and therefore cannot be parsed with conventional parsing techniques.} a document means translating it to a structure the code can use. The result of parsing is usually a tree of nodes that represent the structure of the document. This is called a parse tree or a syntax tree.
+
+Parsing can be separated into two sub processes: \textbf{lexical analysis} and \textbf{syntax analysis}.
+
+\textbf{Lexical analysis} is the process of breaking the input into tokens. Tokens are the language vocabulary: the collection of valid building blocks. In human language it will consist of all the words that appear in the dictionary for that language.
+
+\textbf{Syntax analysis} is the applying of the language syntax rules.
+
+The parsing process is \textbf{iterative}. The parser will usually ask the lexer\sidenote{The lexer (sometimes called \emph{tokenizer}) that is responsible for breaking the input into valid tokens.} for a new token and try to match the token with one of the syntax rules. If a rule is matched, a node corresponding to the token will be added to the parse tree and the parser will ask for another token.
+
+If no rule matches, the parser will store the token internally, and keep asking for tokens until a rule matching all the internally stored tokens is found. If no rule is found then the parser will raise an exception. This means the document was not valid and contained syntax errors.
+
+\subsection{HTML Content Parsing} % (fold)
+\label{sub:parsing_html_content}
+
+There are programs that can create parsers for languages that are defined on the bases of a context free grammar. 
+Such grammars can usually described using the Backus Naur Form (BNF).
+However, human language and HTML (as we will see) are not context free grammars. 
+Therefore, a standard parser for parsing HTML does not exist. 
+This has some consequence for Web development:
 
 
 
