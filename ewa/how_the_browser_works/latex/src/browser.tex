@@ -368,7 +368,12 @@ The render tree contains rectangles with visual attributes like color and dimens
 
 After the construction of the render tree it goes through a \textbf{layout process}. This means giving each node the exact coordinates where it should appear on the screen. The next stage is painting---the render tree will be traversed and each node will be painted using the UI backend layer.
 
-It is important to understand that this is a \emph{gradual process}. For better user experience, the rendering engine will try to display contents on the screen as soon as possible\sidenote{This is referred to as the \textbf{Compositing Forest} (cf.\ \url{https://www.chromium.org/developers/design-documents/gpu-accelerated-compositing-in-chrome}) since four conceptually different tree structures are processed in parallel (DOM tree, RenderObject tree, RenderLayer tree, GraphicsLayer tree).}. It will not wait until all HTML is parsed before starting to build and layout the render tree. Parts of the content will be parsed and displayed, while the process continues with the rest of the contents that keeps coming from the network.
+It is important to understand that this is a \emph{gradual process}. For better user experience, the rendering engine will try to display contents on the screen as soon as possible\sidenote{This is referred to as the \textbf{Compositing Forest} (cf.\ \url{https://www.chromium.org/developers/design-documents/gpu-accelerated-compositing-in-chrome}) since four conceptually different tree structures are processed in parallel: \begin{enumerate}
+	\item DOM tree
+	\item RenderObject tree
+	\item RenderLayer tree
+	\item GraphicsLayer tree
+\end{enumerate}}. It will not wait until all HTML is parsed before starting to build and layout the render tree. Parts of the content will be parsed and displayed, while the process continues with the rest of the contents that keeps coming from the network.
 
 \paragraph{Parsing} % (fold)
 \label{par:parsing}
@@ -494,6 +499,71 @@ When the HTML document parsing is finished, the browser will mark the document a
 % \subsection{The Tree Construction Algorithm} % (fold)
 % \label{sub:the_tree_construction_algorithm}
 
+
+\subsection{Error Tolerance} % (fold)
+\label{sub:error_tollerance}
+
+You never get an \texttt{Invalid Syntax} error on an HTML page. Browsers fix any invalid content and go on.
+Take this HTML for example:
+
+\begin{listing}
+\begin{lstlisting}[language=HTML]
+<html>
+  <mytag>
+  </mytag>
+  <div>
+  <p>
+  </div>
+    Really lousy HTML
+  </p>
+</html>
+\end{lstlisting}
+	\caption{A HTML document containing an intentionally large number of errors; however, it will still be processed as if it were error-free by modern Web browsers.}
+	\label{error_html}
+\end{listing}
+
+The code in Listing~\ref{error_html} figuratively violates about a million rules ("mytag" is not a standard tag, wrong nesting of the \texttt{p} and \texttt{div} elements and more) but the browser still shows it correctly and doesn't complain. So a lot of the parser code is fixing the HTML author mistakes.
+
+Error handling is quite consistent in browsers, but amazingly enough it hasn't been part of HTML specifications. Like bookmarking and back/forward buttons, it's just something that developed in browsers over the years. There are known invalid HTML constructs repeated on many sites, and the browsers try to fix them in a way conformant with other browsers.
+
+
+
+
+\subsection{CSS Parsing} % (fold)
+\label{sub:css_parsing}
+
+Unlike HTML, CSS is a context free grammar and can be parsed using standard parsers as described in the HTML Parsing section. The CSS lexical and syntax grammar as defined by the CSS specification is available at \url{http://www.w3.org/TR/CSS2/grammar.html}.
+
+WebKit uses Flex\sidenote{See \url{http://en.wikipedia.org/wiki/Flex_lexical_analyser}} and Bison\sidenote{See \url{http://www.gnu.org/software/bison/}} parser generators to create parsers automatically from the CSS grammar files. As you recall from the parser introduction, Bison creates a bottom up shift-reduce parser. Firefox uses a top down parser written manually. In both cases each CSS file is parsed into a StyleSheet object. Each object contains CSS rules. The CSS rule objects contain selector and declaration objects and other objects corresponding to CSS grammar.
+
+\begin{figure}%
+	\centering
+  \includegraphics[width=1.0\textwidth]{./figures/css_parse_tree.png}
+  \caption[][0em]{Example of a CSS StyleSheet Object tree created by a CSS Parser}
+  \label{fig:css_parse_tree}
+\end{figure}
+
+
+\section{Processing Order} % (fold)
+\label{sec:processing_order}
+
+\subsection{Scripts} % (fold)
+\label{sub:scripts}
+The model of the web is synchronous. Authors expect scripts to be parsed and executed immediately when the parser reaches a \texttt{<script>} tag. The parsing of the document halts until the script has been executed. If the script is external then the resource must first be fetched from the network–this is also done synchronously, and parsing halts until the resource is fetched. This was the model for many years and is also specified in HTML4 and 5 specifications. Authors can add the \texttt{defer} attribute to a script, in which case it will not halt document parsing and will execute after the document is parsed. HTML5 adds an option to mark the script as asynchronous so it will be parsed and executed by a different thread.
+
+\subsection{Speculative Parsing} % (fold)
+\label{sub:speculative_parsing}
+Both\marginnote{Webkit and Geko employ speculative parsing} WebKit and Firefox implement the speculative parsing optimization. While executing scripts, another thread parses the rest of the document and finds out what other resources need to be loaded from the network and loads them. In this way, resources can be loaded on parallel connections and overall speed is improved. Note: the speculative parser only parses references to external resources like external scripts, style sheets and images---it\marginnote{Speculative parsers do not modify the DOM tree} doesn't modify the DOM tree, that is left to the main parser.
+
+\subsection{Style Sheets} % (fold)
+\label{sub:style_sheets}
+Style sheets on the other hand have a different model. Conceptually it seems that since style sheets don't change the DOM tree, there is no reason to wait for them and stop the document parsing. There\marginnote{Scripts might request style information from styles the parsing of which has not finished yet.} is an issue, though, of scripts asking for style information during the document parsing stage. If the style is not loaded and parsed yet, the script will get wrong answers and apparently this caused lots of problems. It seems to be an edge case but is quite common. Firefox\marginnote{Script execution is blocked when style information is requested from unfinished CSS parsing tasks.} blocks all scripts when there is a style sheet that is still being loaded and parsed. WebKit blocks scripts only when they try to access certain style properties that may be affected by unloaded style sheets.
+
+\section{Render Tree Construction} % (fold)
+\label{sec:render_tree_construction}
+While the DOM tree is being constructed, the browser constructs another tree, the render tree. This tree is of visual elements in the order in which they will be displayed. It is the visual representation of the document. The purpose of this tree is to enable painting the contents in their correct order.
+Firefox calls the elements in the render tree \emph{frames}. WebKit uses the term \emph{renderer} or \emph{render object}. 
+A renderer knows how to lay out and paint itself and its children. 
 
 
 
