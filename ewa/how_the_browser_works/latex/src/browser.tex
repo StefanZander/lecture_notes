@@ -561,11 +561,117 @@ Style sheets on the other hand have a different model. Conceptually it seems tha
 
 \section{Render Tree Construction} % (fold)
 \label{sec:render_tree_construction}
-While the DOM tree is being constructed, the browser constructs another tree, the render tree. This tree is of visual elements in the order in which they will be displayed. It is the visual representation of the document. The purpose of this tree is to enable painting the contents in their correct order.
+While the DOM tree is being constructed, the browser constructs another tree, the \textbf{render tree}. This tree is of visual elements in the order in which they will be displayed. It is the \textbf{visual representation of the document}. The purpose of this tree is to enable painting the contents in their correct order.
 Firefox calls the elements in the render tree \emph{frames}. WebKit uses the term \emph{renderer} or \emph{render object}. 
 A renderer knows how to lay out and paint itself and its children. 
 
+Each renderer represents a rectangular area usually corresponding to a node's CSS box, as described by the CSS specification. It includes geometric information like width, height and position. 
 
+\subsection{Render and DOM Tree} % (fold)
+\label{sub:render_and_dom_tree}
+
+The renderers correspond to DOM elements, but the relation is \emph{not} one-to-one. Non-visual DOM elements will not be inserted in the render tree. An example is the \texttt{<head>} element. Also elements whose display value was assigned to \texttt{none} will not appear in the tree (whereas elements with \texttt{hidden} visibility will appear in the tree).
+
+There are DOM elements which correspond to \emph{several visual objects}. These are usually elements with complex structure that cannot be described by a single rectangle. For example, the \texttt{<select>} element has three renderers: one for the display area, one for the drop down list box and one for the button. Also when text is broken into multiple lines because the width is not sufficient for one line, the new lines will be added as extra renderers. 
+Another example of multiple renderers is broken HTML. According to the CSS spec, an inline element must contain either only block elements or only inline elements. In the case of mixed content, anonymous block renderers will be created to wrap the inline elements.
+
+Some render objects correspond to a DOM node but not in the same place in the tree. Floats and absolutely positioned elements are out of flow, placed in a different part of the tree, and mapped to the real frame. A placeholder frame is where they should have been.
+
+\begin{figure}%
+	\centering
+  \includegraphics[width=1.0\textwidth]{./figures/render_tree_example.png}
+  \caption[][0em]{An example of render tree (\emph{purple nodes}) and the corresponding DOM tree. The \texttt{Viewport} is the initial containing block.}
+  \label{fig:render_tree_example}
+\end{figure}
+
+
+\section{Style Computation} % (fold)
+\label{sec:style_computation}
+Building the render tree requires calculating the visual properties of each render object. This is done by calculating the style properties of each element.
+
+The style includes style sheets of various origins, inline style elements and visual properties in the HTML (like the \texttt{bgcolor} property). The later is translated to matching CSS style properties.
+
+Style computation brings up a few difficulties:
+\begin{enumerate}
+	\item \textbf{Memory Issues} \newline Style data is a very large construct, holding the numerous style properties, this can cause memory problems.
+	\item \textbf{Performance Issues} \newline Finding the matching rules for each element can cause performance issues if it's not optimized. Traversing the entire rule list for each element to find matches is a heavy task. Selectors can have complex structure that can cause the matching process to start on a seemingly promising path that is proven to be futile and another path has to be tried.
+%
+% For example–this compound selector:
+% \begin{Verbatim}
+% div div div div {
+%   ...
+% }
+% \end{Verbatim}
+%  Means the rules apply to a <div> who is the descendant of 3 divs. Suppose you want to check if the rule applies for a given <div> element. You choose a certain path up the tree for checking. You may need to traverse the node tree up just to find out there are only two divs and the rule does not apply. You then need to try other paths in the tree.
+	\item \textbf{Complexity Issues} \newline Applying the rules involves quite complex cascade rules that define the hierarchy of the rules.
+\end{enumerate}
+
+One strategy conduced by browser engines to address such issues and mitigate their effect is by \textbf{sharing style data} when certain conditions hold (e.g., elements must be in the same mouse state, have no id, identical set of attributes etc)\sidenote{See~\citep{tali:2011} for a complete list of conditions.}. 
+
+Another strategy is \textbf{rule manipulation}, which works as follows\sidenote{See~\citep{tali:2011} for a working example and additional explanations.}:
+After parsing the style sheet, the rules are added to one of several \textbf{hash maps}, according to the \emph{selector}. There are maps by \emph{id}, by \emph{class name}, by \emph{tag name} and a \emph{general map} for anything that doesn't fit into those categories. If the selector is an id, the rule will be added to the id map, if it's a class, it will be added to the class map etc. 
+This manipulation makes it much easier to match rules. There is no need to look in every declaration: we can extract the relevant rules for an element from the maps. This optimization eliminates 95+\% of the rules, so that they need not even be considered during the matching process.
+
+The next step is to determine the \textbf{order of style rules} that apply to a given DOM element. This process is denominated by the \textbf{cascade} term in CSS.  
+A declaration for a style property can appear in several style sheets, and several times inside a style sheet. This means the order of applying the rules is very important. This is called the \textbf{cascade order}. According to CSS specification, the cascade order is (from low to high):
+\begin{Verbatim}
+  Browser declarations
+  User normal declarations
+  Author normal declarations
+  Author important declarations
+  User important declarations
+\end{Verbatim}
+The browser declarations are least important and the user overrides the author only if the declaration was marked as important. Declarations with the same order will be sorted by \textbf{specificity} and then the order they are specified. The HTML visual attributes are translated to matching CSS declarations . They are treated as author rules with low priority.
+
+We will discuss the specificity aspect in detail in the CSS chapter.
+
+
+\section{Layout and Painting} % (fold)
+\label{sec:layout}
+
+When the renderer is created and added to the tree, it does not have a position and size. Calculating these values is called \textbf{layout} or \textbf{reflow}.
+
+HTML uses a flow based layout model, meaning that most of the time it is possible to compute the geometry in a single pass. Elements later ``in the flow'' typically do not affect the geometry of elements that are earlier ``in the flow'', so layout can proceed left-to-right, top-to-bottom through the document. There are exceptions: for example, HTML tables may require more than one pass.
+
+The coordinate system is relative to the root frame. Top and left coordinates are used.
+
+Layout is a recursive process. It begins at the root renderer, which corresponds to the \texttt{<html>} element of the HTML document. Layout continues recursively through some or all of the frame hierarchy, computing geometric information for each renderer that requires it.
+
+The position of the root renderer is \texttt{0,0} and its dimensions are the viewport–the visible part of the browser window.
+All renderers have a \textbf{layout} or \textbf{reflow method}, each renderer invokes the layout method of its children that need layout.
+
+\subsection{Dirty bit system} % (fold)
+\label{sub:dirty_bit_system}
+In order not to do a full layout for every small change, browsers use a \textbf{dirty bit system}. A renderer that is changed or added marks itself and its children as <<dirty>>: needing layout.
+
+There are two flags: <<dirty>>, and <<children are dirty>> which means that although the renderer itself may be OK, it has at least one child that needs a layout.
+
+\subsection{Global and incremental layout} % (fold)
+\label{sub:global_and_incremental_layout}
+Layout can be triggered on the entire render tree---this is \textbf{global layout}. This can happen as a result of:
+\begin{itemize}
+	\item A global style change that affects all renderers, like a font size change.
+	\item As a result of a screen being resized
+\end{itemize}
+Layout can be incremental, only the dirty renderers will be laid out (this can cause some damage which will require extra layouts). 
+Incremental layout is triggered \emph{asynchronously} when renderers are dirty. For example when new renderers are appended to the render tree after extra content came from the network and was added to the DOM tree.
+
+\subsection{Painting} % (fold)
+\label{sub:painting}
+In the painting stage, the render tree is traversed and the renderer's \texttt{paint()} method is called to display content on the screen. Painting uses the UI infrastructure component.
+
+Firefox goes over the render tree and builds a display list for the painted rectangular. It contains the renderers relevant for the rectangular, in the right painting order (backgrounds of the renderers, then borders etc). That way the tree needs to be traversed only once for a repaint instead of several times–painting all backgrounds, then all images, then all borders etc.
+Firefox optimizes the process by not adding elements that will be hidden, like elements completely beneath other opaque elements.
+
+Before repainting, WebKit saves the old rectangle as a bitmap. It then paints only the delta between the new and old rectangles. 
+
+The browsers try to do the minimal possible actions in response to a change. So changes to an element's color will cause only repaint of the element. Changes to the element position will cause layout and repaint of the element, its children and possibly siblings. Adding a DOM node will cause layout and repaint of the node. Major changes, like increasing font size of the \texttt{html} element, will cause invalidation of caches, relayout and repaint of the entire tree.
+
+\subsection{The Rendering Engine's Threads} % (fold)
+\label{sub:the_rendering_engine_s_threads}
+
+The rendering engine is single threaded. Almost everything, except network operations, happens in a single thread. In Firefox and Safari this is the main thread of the browser. In Chrome it's the tab process main thread. 
+Network operations can be performed by several parallel threads. The number of parallel connections is limited (usually 2–6 connections).
 
 
 
