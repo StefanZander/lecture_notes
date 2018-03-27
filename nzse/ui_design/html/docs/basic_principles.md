@@ -10,7 +10,18 @@ This lecture teaches you basic principles for designing good and intuitive UIs. 
     * [x] You learn a methodology that helps you to built UIs with a good user experience
     * [x] You can ...
 
-## Basic Principles
+## Introduction
+
+### UI versus UX
+
+This section breifly discusses the differences between UI (user interface design) and UX (user experience)
+
+* **User Interface (UI)**: A user interface connects users to a product's underlying technology; it is what users see and feel directly when using a product or system.
+* **User Experience (UX)**: User experience encompasses the entire experience users have with a product or software system. That experience includes the UI, but it also transcends the UI to include the internals that users do not interact with directly, as well as the externals, such as a purchasing process, technical support etc. E.g. for a car, the internals include engine, chassis, handling, and reliability; the externals are product showroom, the purchasing and delivery experience, manuals, warranty etc.
+
+User interface design addresses actions users must do, whereas user experience design also addresses actions users do not have to do; it is the more encompassing action/goal.
+
+### Basic Concepts
 
 A user interface is essentially a **conversation between the user and a software system** to perfom tasks to achieve users' goals.
 A UI differs from conversation primarily in that it uses the **language of UI elements** instead of natural language.
@@ -48,3 +59,7 @@ There are potentially dozens of possible considerations, but answering the quest
 helps in driving the decision.
 
 If you are providing an option that can be turned on or off, a checkbox is the better choice; if you are providing two or more independent states, radio buttons are the better choice.
+
+![alt](figures/radiobuttons_example.png)*Radio buttons are a good choice when one out of several independent options needs to be selected*
+
+## UI Design Principles
