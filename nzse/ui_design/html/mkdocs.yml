@@ -1,7 +1,7 @@
 site_name: Principles of UI Design
 
 pages:
-  - Basic Principles: basic_principles.md
+  - 'Basic Principles': 'basic_principles.md'
 
 theme:
   name: 'material'
