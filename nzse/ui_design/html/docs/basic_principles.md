@@ -27,11 +27,11 @@ A user interface is essentially a **conversation between the user and a software
 A UI differs from conversation primarily in that it uses the **language of UI elements** instead of natural language.
 A well designed UI communicates with its users in a way that is
 
-- natural
-- professional
-- friendly
-- easy to understand
-- efficient.
+* natural
+* professional
+* friendly
+* easy to understand
+* efficient.
 
 By contrast, poorly designed UIs are unnatural, technological and mechanical, and require users to apply thought, experimentation, memorization, and training to translate it into something meaningful.
 
