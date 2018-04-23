@@ -1,0 +1,43 @@
+site_name: CSS Flexbox
+
+pages:
+  - 'CSS Flexbox': 'flexbox.md'
+
+theme:
+  name: 'material'
+  
+  palette:
+    primary: 'teal'
+    accent: 'red'
+  
+  feature:
+    tabs: true
+
+  font:
+    text: 'Roboto'
+    code: 'Fira mono'
+
+extra_css:
+  - 'stylesheets/extra.css'
+
+extra_javascript:
+  - 'javascript/extra.js'
+    
+markdown_extensions:
+  - admonition
+  - codehilite:
+      linenums: true
+      guess_lang: true
+  - toc:
+      permalink: false
+  - meta
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  
