@@ -77,70 +77,130 @@ By default, flex items will all try to fit onto one line. You can change that an
 - `wrap`: flex items will wrap onto multiple lines, from top to bottom.
 - `wrap-reverse`: flex items will wrap onto multiple lines from bottom to top.
 
+### justify-content
+
+![alt](figures/justify-content.svg)
+
+This defines the alignment along the main axis. It helps distribute extra free space left over when either all the flex items on a line are inflexible, or are flexible but have reached their maximum size. It also exerts some control over the alignment of items when they overflow the line.
+
+``` css
+.container {
+  justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly;
+}
+```
+
+- `flex-start` (default): items are packed toward the start line
+- `flex-end`: items are packed toward to end line
+- `center`: items are centered along the line
+- `space-between`: items are evenly distributed in the line; first item is on the start line, last item on the end line
+- `space-around`: items are evenly distributed in the line with equal space around them. Note that visually the spaces aren't equal, since all the items have equal space on both sides. The first item will have one unit of space against the container edge, but two units of space between the next item because that next item has its own spacing that applies.
+- `space-evenly`: items are distributed so that the spacing between any two items (and the space to the edges) is equal.
+
+### align-items
+
+![alt](figures/align-items.svg)
+
+This defines the default behaviour for how flex items are laid out along the cross axis on the current line. Think of it as the `justify-content` version for the cross-axis (perpendicular to the main-axis).
+
+``` css
+.container {
+  align-items: flex-start | flex-end | center | baseline | stretch;
+}
+```
+
+- `flex-start`: cross-start margin edge of the items is placed on the cross-start line
+- `flex-end`: cross-end margin edge of the items is placed on the cross-end line
+- `center`: items are centered in the cross-axis
+- `baseline`: items are aligned such as their baselines align
+- `stretch` (default): stretch to fill the container (still respect min-width/max-width)
+
+### align-content
+
+![alt](figures/align-content.svg)
+
+This aligns a flex container's lines within when there is extra space in the `cross-axis`, similar to how `justify-content` aligns individual items within the `main-axis`.
+
+!!! note
+    This property has no effect when there is only one line of flex items.
+
+``` css
+.container {
+  align-content: flex-start | flex-end | center | space-between | space-around | stretch;
+}
+```
+
+- `flex-start`: lines packed to the start of the container
+- `flex-end`: lines packed to the end of the container
+- `center`: lines packed to the center of the container
+- `space-between`: lines evenly distributed; the first line is at the start of the container while the last one is at the end
+- `space-around`: lines evenly distributed with equal space around each line
+- `stretch` (default): lines stretch to take up the remaining space
 
 
+## Properties for the Flex Items
 
+### order
 
-> The moment the user sees your UI, it communicates where they have arrived, what they can do, and how they should do it. The user receives this message from every aspect of your design: graphical and textual, silent and audible, static and moving, intentional and accidental. Figure out what you want that message to be, then do everything you can to ensure the message your UI sends is as close as possible to the one you intended.
-> ––JAN MIKSOVSKY
+![alt](figures/flex-order.svg)
 
-This lecture teaches you basic principles for designing good and intuitive UIs. Those principles apply to many kinds of systems (Web-based system, mobile app, desktop app etc).
+By default, flex items are laid out in the source order. However, the order property controls the order in which they appear in the flex container.
 
-!!! abstract "Objectives"
-    * [x] You know basic principles of intuitive and modern UIs
-    * [x] You learn a methodology that helps you to built UIs with a good user experience
-    * [x] You can ...
+``` css
+#item {
+  order: <integer>; /* default is 0 */
+}
+```
 
-## Introduction
+### flex-grow
 
-### UI versus UX
+![alt](figures/flex-grow.svg)
 
-This section breifly discusses the differences between UI (user interface design) and UX (user experience)
+This defines the ability for a flex item to grow if necessary. It accepts a unitless value that serves as a proportion. It dictates what amount of the available space inside the flex container the item should take up.
 
-* **User Interface (UI)**: A user interface connects users to a product's underlying technology; it is what users see and feel directly when using a product or system.
-* **User Experience (UX)**: User experience encompasses the entire experience users have with a product or software system. That experience includes the UI, but it also transcends the UI to include the internals that users do not interact with directly, as well as the externals, such as a purchasing process, technical support etc. E.g. for a car, the internals include engine, chassis, handling, and reliability; the externals are product showroom, the purchasing and delivery experience, manuals, warranty etc.
+If all items have `flex-grow` set to 1, the remaining space in the container will be distributed equally to all children. If one of the children has a value of 2, the remaining space would take up twice as much space as the others (or it will try to, at least).
 
-User interface design addresses actions users must do, whereas user experience design also addresses actions users do not have to do; it is the more encompassing action/goal.
+``` css
+#item {
+  flex-grow: <number>; /* default 0 */
+}
+```
 
-### Basic Concepts
+Negative numbers are invalid.
 
-A user interface is essentially a **conversation between the user and a software system** to perfom tasks to achieve users' goals.
-A UI differs from conversation primarily in that it uses the **language of UI elements** instead of natural language.
-A well designed UI communicates with its users in a way that is
+### flex-shrink
 
-* natural
-* professional
-* friendly
-* easy to understand
-* efficient.
+This defines the ability for a flex item to shrink if necessary.
 
-By contrast, poorly designed UIs are unnatural, technological and mechanical, and require users to apply thought, experimentation, memorization, and training to translate it into something meaningful.
+``` css
+.item {
+  flex-shrink: <number>; /* default 1 */
+}
+```
 
-!!! note "User Interface Design is not a subjective visual art"
-    From this point of view, user interface design is not a subjective visual art about pixels and aestethics but rather a **principled objective communication skill** to explain tasks to users.
+Negative numbers are invalid.
 
-    By focusing on communication, **design decisions** that appear subjective (such as control selection, icon design, layout, color scheme etc.) become much more **objective**.
+### flex-basis
 
-Style, color schemes, fashion are largely subjective, but aspects that constitute a comprehensible and intuitive task explanation to the target users are not.
-Therefore, every user interface element can be **evaluated by how effectively it communicates its role and contribution** towards the fulfillment of users' tasks.
-If a UI containts elements, that communicate nothing, they should be removed.
+This defines the default size of an element before the remaining space is distributed. It can be a length (e.g. `20%`, `5rem`, etc.) or a keyword. The auto keyword means "look at my width or height property" (which was temporarily done by the `main-size` keyword until deprecated). The `content` keyword means "size it based on the item's content" - this keyword isn't well supported yet, so it's hard to test and harder to know what its brethren `max-content`, `min-content`, and `fit-content` do.
 
-!!! abstract "Principle x: UI is essentially Human-like Communication"
-    The most important concept is to understand that UI is **not** a completely different form of communication. A good and ituitve UI is designed to **communicate to people**, not robots, so it employs many concepts of human communication.
+``` css
+.item {
+  flex-basis: <length> | auto; /* default auto */
+}
+```
 
-!!! abstract "Principle x: Friendliness"
-    If a UI communicates in a way that would be inappropriate or rude in person, it is equally inappropriate or rude in a system.
+If set to `0`, the extra space around content isn't factored in. If set to `auto`, the extra space is distributed based on its `flex-grow` value.
 
-For example, consider the classic question
-> "should I use radio buttons or a checkbox?"
+![alt](figures/rel-vs-abs-flex.svg)
 
-There are potentially dozens of possible considerations, but answering the question with
-> "What are you trying to communicate?"
+### align-self
 
-helps in driving the decision.
+This allows the default alignment (or the one specified by `align-items`) to be overridden for individual flex items.
 
-If you are providing an option that can be turned on or off, a checkbox is the better choice; if you are providing two or more independent states, radio buttons are the better choice.
+Please see the `align-items` explanation to understand the available values.
 
-![alt](figures/radiobuttons_example.png)*Radio buttons are a good choice when one out of several independent options needs to be selected*
-
-## UI Design Principles
+``` css
+.item {
+  align-self: auto | flex-start | flex-end | center | baseline | stretch;
+}
+```
