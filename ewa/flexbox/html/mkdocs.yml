@@ -7,8 +7,8 @@ theme:
   name: 'material'
   
   palette:
-    primary: 'teal'
-    accent: 'red'
+    primary: 'blue'
+    accent: 'green'
   
   feature:
     tabs: true
