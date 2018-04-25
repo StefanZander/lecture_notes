@@ -17,9 +17,9 @@ li.md-nav__item:first-of-type {
     color: red;
 } */
 
-.md-nav__item.md-nav__item--active {
+/* .md-nav__item.md-nav__item--active {
     background-color: gold;    
-}
+} */
 
 /* ul.md-nav__list a[data-md-state="blur"]:first-of-type {
     background-color: gold;
@@ -78,6 +78,7 @@ li.md-nav__item:first-of-type {
 
 a:hover {
     background-color: lightyellow;
+    font-weight: bold;
     /* transition-duration: .25s; */
 }
 
@@ -86,8 +87,8 @@ a:hover {
 img + em {
     display: block; 
     text-align: center;
-    color: white;
-    background-color: gray;
+    color: gray;
+    /* background-color: gray; */
 }
 
 img+em:before {
@@ -96,11 +97,14 @@ img+em:before {
 }
 
 h3 {
-    background-color: black;
-    color: white;
-    /* font-weight: 300 !important;  */
+    /* background-color: black; */
+    color: black;
+    font-family: 'Zilla Slab';
+    font-size: 2.8rem !important;
+    font-weight: 900 !important; 
+    margin-top: 4rem;
     padding-bottom: 0.3em;
-    padding-left: 0.3em;
+    /* padding-left: 0.3em; */
 }
 
 h2 {

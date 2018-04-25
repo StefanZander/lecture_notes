@@ -2,18 +2,27 @@
 
 ## Background
 
-The Flexbox Layout (Flexible Box) module (currently a W3C Last Call Working Draft) aims at providing a more efficient way to lay out, align and distribute space among items in a container, even when their size is unknown and/or dynamic (thus the word 'flex').
+The __Flexible Box Layout Module__ (short _flexbox_) aims at providing a more efficient way to lay out, align and distribute space among items in a container, even when their size is unknown and/or dynamic (thus the word 'flex').
 
-The main idea behind the flex layout is to give the container the ability to alter its items' width/height (and order) to **best fill the available space** (mostly to accommodate to all kind of display devices and screen sizes). A flex container expands items to fill available free space, or shrinks them to prevent overflow.
+Before the Flexbox Layout module, there were four layout modes:
 
-Most importantly, the flexbox layout is **direction-agnostic** as opposed to the regular layouts (block which is vertically-based and inline which is horizontally-based). While those work well for pages, they lack flexibility (no pun intended) to support large or complex applications (especially when it comes to orientation changing, resizing, stretching, shrinking, etc.).
+- Block, for sections in a webpage
+- Inline, for text
+- Table, for two-dimensional table data
+- Positioned, for explicit position of an element
 
-!!! note
+The Flexible Box Layout Module makes it easier to design flexible responsive layout structure without using float or positioning.
+
+The main idea behind the flex layout is to give the container the ability to alter its items' __width__, __height__, and __order__ to **best fill the available space** in particular to __accommodate to all kind of display devices and screen sizes__. A flex container expands items to fill available free space, or shrinks them to prevent overflow.
+
+Most importantly, the flexbox layout is **direction-agnostic** as opposed to the regular layouts such as `block`, which is vertically-based and `inline`, which is horizontally-based. While those work well for pages, they __lack flexibility to support large or complex applications__, especially when it comes to orientation changing, resizing, stretching, shrinking, etc.
+
+!!! note "When to use Flexbox vs. Grid layout"
     Flexbox layout is most appropriate to the components of an application, and small-scale layouts, while the Grid layout is intended for larger scale layouts.
 
 ## Basic Concepts and Terminology
 
-Flexbox is a whole module and not a single property. It hence involves a lot of things including its whole set of properties. Some of them are meant to be set on the container (parent element, known as "flex container") whereas the others are meant to be set on the children (said "flex items").
+Flexbox is a whole module and not a single property. It hence involves a lot of things including its whole set of properties. Some of them are meant to be set on the container (parent element, known as "__flex container__") whereas the others are meant to be set on the children (said "__flex items__").
 
 The flex layout is based on **flex-flow directions**. The following figure from the specification explains the main idea behind the flex layout.
 
@@ -33,9 +42,28 @@ Basically, items will be laid out following *either* the `main axis` (from `main
 
 ## Properties of the Flex Container
 
+To start using the Flexbox model, you need to first define a flex container.
+
+``` html
+<div class="flex-container">
+  <div class="item">1</div>
+  <div class="item">2</div>
+  <div class="item">3</div>
+</div>
+```
+
+The flex container properties are:
+
+- `flex-direction`
+- `flex-wrap`
+- `flex-flow`
+- `justify-content`
+- `align-items`
+- `align-content`
+
 ### display
 
-This defines a flex container; inline or block depending on the given value. It enables a flex context for all its direct children.
+This defines a flex container; the flex container becomes flexible by setting the `display` property to `flex` (=_block_) or `inline-flex` (=_inline_) depending on the given value. It enables a flex context for all its direct children.
 
 ``` css
 .container {
@@ -43,11 +71,13 @@ This defines a flex container; inline or block depending on the given value. It 
 }
 ```
 
+---
+
 ### flex-direction
 
 ![alt](figures/flex-direction.svg)
 
-This establishes the main-axis, thus defining the direction flex items are placed in the flex container. Flexbox is (aside from optional wrapping) a single-direction layout concept. Think of flex items as primarily laying out either in horizontal rows or vertical columns.
+This establishes the `main axis`, thus defining the direction flex items are placed in the flex container. Flexbox is (aside from optional wrapping) a __single-direction layout concept__. Think of flex items as primarily laying out either in horizontal rows or vertical columns.
 
 ``` css
 .container {
@@ -60,8 +90,11 @@ This establishes the main-axis, thus defining the direction flex items are place
 - `column`: same as row but top to bottom
 - `column-reverse`: same as row-reverse but bottom to top
 
+---
 
 ### flex-wrap
+
+The `flex-wrap` property specifies whether the flex items should wrap or not.
 
 ![alt](figures/flex-wrap.svg)
 
@@ -77,11 +110,15 @@ By default, flex items will all try to fit onto one line. You can change that an
 - `wrap`: flex items will wrap onto multiple lines, from top to bottom.
 - `wrap-reverse`: flex items will wrap onto multiple lines from bottom to top.
 
+---
+
 ### justify-content
+
+The `justify-content` property is used to align the flex items along the `main axis`, i.e., to fill the mai axis' horizontal space.
 
 ![alt](figures/justify-content.svg)
 
-This defines the alignment along the main axis. It helps distribute extra free space left over when either all the flex items on a line are inflexible, or are flexible but have reached their maximum size. It also exerts some control over the alignment of items when they overflow the line.
+It helps distribute extra free space left over when either all the flex items on a line are inflexible, or are flexible but have reached their maximum size. It also exerts some control over the alignment of items when they overflow the line.
 
 ``` css
 .container {
@@ -96,7 +133,11 @@ This defines the alignment along the main axis. It helps distribute extra free s
 - `space-around`: items are evenly distributed in the line with equal space around them. Note that visually the spaces aren't equal, since all the items have equal space on both sides. The first item will have one unit of space against the container edge, but two units of space between the next item because that next item has its own spacing that applies.
 - `space-evenly`: items are distributed so that the spacing between any two items (and the space to the edges) is equal.
 
+---
+
 ### align-items
+
+The `align-items` property is used to align the flex items vertically.
 
 ![alt](figures/align-items.svg)
 
@@ -114,7 +155,11 @@ This defines the default behaviour for how flex items are laid out along the cro
 - `baseline`: items are aligned such as their baselines align
 - `stretch` (default): stretch to fill the container (still respect min-width/max-width)
 
+---
+
 ### align-content
+
+The `align-content` property is used to align the flex lines within the flex container if there is extra space available.
 
 ![alt](figures/align-content.svg)
 
@@ -136,14 +181,27 @@ This aligns a flex container's lines within when there is extra space in the `cr
 - `space-around`: lines evenly distributed with equal space around each line
 - `stretch` (default): lines stretch to take up the remaining space
 
-
 ## Properties for the Flex Items
 
+The direct child elements of a flex container automatically becomes flexible (flex) items.
+
+The flex item properties are:
+
+- `order`
+- `flex-grow`
+- `flex-shrink`
+- `flex-basis`
+- `flex`
+- `align-self`
+
 ### order
+
+The `order` property specifies the order of the flex items.
 
 ![alt](figures/flex-order.svg)
 
 By default, flex items are laid out in the source order. However, the order property controls the order in which they appear in the flex container.
+The first flex item in the code does not have to appear as the first item in the layout.
 
 ``` css
 #item {
@@ -151,11 +209,15 @@ By default, flex items are laid out in the source order. However, the order prop
 }
 ```
 
+---
+
 ### flex-grow
+
+The `flex-grow` property specifies how much a flex item will grow relative to the rest of the flex items.
 
 ![alt](figures/flex-grow.svg)
 
-This defines the ability for a flex item to grow if necessary. It accepts a unitless value that serves as a proportion. It dictates what amount of the available space inside the flex container the item should take up.
+It accepts a **unitless value** that serves as a **proportion**. It dictates the **relative amount** of the available space inside the flex container the item should take up.
 
 If all items have `flex-grow` set to 1, the remaining space in the container will be distributed equally to all children. If one of the children has a value of 2, the remaining space would take up twice as much space as the others (or it will try to, at least).
 
@@ -167,9 +229,11 @@ If all items have `flex-grow` set to 1, the remaining space in the container wil
 
 Negative numbers are invalid.
 
+---
+
 ### flex-shrink
 
-This defines the ability for a flex item to shrink if necessary.
+The `flex-shrink` property specifies how much a flex item will shrink relative to the rest of the flex items.
 
 ``` css
 .item {
@@ -179,9 +243,13 @@ This defines the ability for a flex item to shrink if necessary.
 
 Negative numbers are invalid.
 
+---
+
 ### flex-basis
 
-This defines the default size of an element before the remaining space is distributed. It can be a length (e.g. `20%`, `5rem`, etc.) or a keyword. The auto keyword means "look at my width or height property" (which was temporarily done by the `main-size` keyword until deprecated). The `content` keyword means "size it based on the item's content" - this keyword isn't well supported yet, so it's hard to test and harder to know what its brethren `max-content`, `min-content`, and `fit-content` do.
+The `flex-basis` property specifies the initial length of a flex item.
+
+It defines the **default size** of an element before the remaining space is distributed. It can be a length (e.g. `20%`, `5rem`, etc.) or a keyword. The auto keyword means "look at my width or height property". The `content` keyword means "size it based on the item's content" - this keyword isn't well supported yet, so it's hard to test and harder to know what its brethren `max-content`, `min-content`, and `fit-content` do.
 
 ``` css
 .item {
@@ -193,9 +261,13 @@ If set to `0`, the extra space around content isn't factored in. If set to `auto
 
 ![alt](figures/rel-vs-abs-flex.svg)
 
+---
+
 ### align-self
 
-This allows the default alignment (or the one specified by `align-items`) to be overridden for individual flex items.
+The `align-self` property specifies the alignment for the selected item inside the flexible container.
+
+The `align-self` property overrides the default alignment set by the container's `align-items` property.
 
 Please see the `align-items` explanation to understand the available values.
 
