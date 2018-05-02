@@ -498,21 +498,28 @@
 <p>The <strong>Flexible Box Layout Module</strong> (short <em>flexbox</em>) aims at providing a more efficient way to lay out, align and distribute space among items in a container, even when their size is unknown and/or dynamic (thus the word 'flex').</p>
 <p>Before the Flexbox Layout module, there were four layout modes:</p>
 <ul>
-<li>Block, for sections in a webpage</li>
-<li>Inline, for text</li>
-<li>Table, for two-dimensional table data</li>
-<li>Positioned, for explicit position of an element</li>
+<li><code class="codehilite">Block</code>, for sections in a webpage</li>
+<li><code class="codehilite">Inline</code>, for text</li>
+<li><code class="codehilite">Table</code>, for two-dimensional table data</li>
+<li><code class="codehilite">Positioned</code>, for explicit position of an element</li>
 </ul>
-<p>The Flexible Box Layout Module makes it easier to design flexible responsive layout structure without using float or positioning.</p>
-<p>The main idea behind the flex layout is to give the container the ability to alter its items' <strong>width</strong>, <strong>height</strong>, and <strong>order</strong> to <strong>best fill the available space</strong> in particular to <strong>accommodate to all kind of display devices and screen sizes</strong>. A flex container expands items to fill available free space, or shrinks them to prevent overflow.</p>
+<p>The Flexible Box Layout Module makes it easier to design a <strong>flexible responsive layout structure</strong> without using float or positioning.</p>
+<p>The main idea behind the flex layout is to give the container the ability to alter its items' </p>
+<ul>
+<li><code class="codehilite">width</code>,</li>
+<li><code class="codehilite">height</code>, and</li>
+<li><code class="codehilite">order</code></li>
+</ul>
+<p>to <strong>best fill the available space</strong> in particular to <strong>accommodate to all kind of display devices and screen sizes</strong>. </p>
+<p>Thus, a flex container <strong>expands</strong> items to fill available free space, or <strong>shrinks</strong> them to prevent overflow.</p>
 <p>Most importantly, the flexbox layout is <strong>direction-agnostic</strong> as opposed to the regular layouts such as <code class="codehilite">block</code>, which is vertically-based and <code class="codehilite">inline</code>, which is horizontally-based. While those work well for pages, they <strong>lack flexibility to support large or complex applications</strong>, especially when it comes to orientation changing, resizing, stretching, shrinking, etc.</p>
 <div class="admonition note">
 <p class="admonition-title">When to use Flexbox vs. Grid layout</p>
-<p>Flexbox layout is most appropriate to the components of an application, and small-scale layouts, while the Grid layout is intended for larger scale layouts.</p>
+<p>Flexbox layout is most appropriate to the components of an application and small-scale layouts, while the Grid layout is intended for larger scale layouts.</p>
 </div>
 <h2 id="basic-concepts-and-terminology">Basic Concepts and Terminology</h2>
-<p>Flexbox is a whole module and not a single property. It hence involves a lot of things including its whole set of properties. Some of them are meant to be set on the container (parent element, known as "<strong>flex container</strong>") whereas the others are meant to be set on the children (said "<strong>flex items</strong>").</p>
-<p>The flex layout is based on <strong>flex-flow directions</strong>. The following figure from the specification explains the main idea behind the flex layout.</p>
+<p>Flexbox is an <strong>entire module</strong> and <em>not</em> a single property. It hence involves a lot of new concepts including its <strong>own set of properties</strong>. Some of them are meant to be set on the <strong>container</strong> (ie parent element, known as "<strong>flex container</strong>") whereas the others are meant to be set on the <strong>children</strong> (ie child elements or "<strong>flex items</strong>").</p>
+<p>The flex layout is based on <strong>flex-flow directions</strong>. The following figure from the specification explains the main idea behind the flex layout:</p>
 <p><img alt="alt" src="../figures/flexbox_2.png" /><em>Main elements of the flexbox layout</em></p>
 <p>Basically, items will be laid out following <em>either</em> the <code class="codehilite">main axis</code> (from <code class="codehilite">main-start</code> to <code class="codehilite">main-end</code>) or the <code class="codehilite">cross axis</code> (from <code class="codehilite">cross-start</code> to <code class="codehilite">cross-end</code>).</p>
 <ul>

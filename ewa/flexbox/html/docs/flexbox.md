@@ -6,25 +6,33 @@ The __Flexible Box Layout Module__ (short _flexbox_) aims at providing a more ef
 
 Before the Flexbox Layout module, there were four layout modes:
 
-- Block, for sections in a webpage
-- Inline, for text
-- Table, for two-dimensional table data
-- Positioned, for explicit position of an element
+- `Block`, for sections in a webpage
+- `Inline`, for text
+- `Table`, for two-dimensional table data
+- `Positioned`, for explicit position of an element
 
-The Flexible Box Layout Module makes it easier to design flexible responsive layout structure without using float or positioning.
+The Flexible Box Layout Module makes it easier to design a **flexible responsive layout structure** without using float or positioning.
 
-The main idea behind the flex layout is to give the container the ability to alter its items' __width__, __height__, and __order__ to **best fill the available space** in particular to __accommodate to all kind of display devices and screen sizes__. A flex container expands items to fill available free space, or shrinks them to prevent overflow.
+The main idea behind the flex layout is to give the container the ability to alter its items' 
+
+- `width`,
+- `height`, and
+- `order`
+
+to **best fill the available space** in particular to __accommodate to all kind of display devices and screen sizes__. 
+
+Thus, a flex container **expands** items to fill available free space, or **shrinks** them to prevent overflow.
 
 Most importantly, the flexbox layout is **direction-agnostic** as opposed to the regular layouts such as `block`, which is vertically-based and `inline`, which is horizontally-based. While those work well for pages, they __lack flexibility to support large or complex applications__, especially when it comes to orientation changing, resizing, stretching, shrinking, etc.
 
 !!! note "When to use Flexbox vs. Grid layout"
-    Flexbox layout is most appropriate to the components of an application, and small-scale layouts, while the Grid layout is intended for larger scale layouts.
+    Flexbox layout is most appropriate to the components of an application and small-scale layouts, while the Grid layout is intended for larger scale layouts.
 
 ## Basic Concepts and Terminology
 
-Flexbox is a whole module and not a single property. It hence involves a lot of things including its whole set of properties. Some of them are meant to be set on the container (parent element, known as "__flex container__") whereas the others are meant to be set on the children (said "__flex items__").
+Flexbox is an **entire module** and *not* a single property. It hence involves a lot of new concepts including its **own set of properties**. Some of them are meant to be set on the **container** (ie parent element, known as "__flex container__") whereas the others are meant to be set on the **children** (ie child elements or "__flex items__").
 
-The flex layout is based on **flex-flow directions**. The following figure from the specification explains the main idea behind the flex layout.
+The flex layout is based on **flex-flow directions**. The following figure from the specification explains the main idea behind the flex layout:
 
 ![alt](figures/flexbox_2.png)*Main elements of the flexbox layout*
 
