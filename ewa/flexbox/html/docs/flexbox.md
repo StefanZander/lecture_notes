@@ -13,7 +13,7 @@ Before the Flexbox Layout module, there were four layout modes:
 
 The Flexible Box Layout Module makes it easier to design a **flexible responsive layout structure** without using float or positioning.
 
-The main idea behind the flex layout is to give the container the ability to alter its items' 
+The main idea behind the flex layout is to give the container the ability to alter its items'
 
 - `width`,
 - `height`, and
