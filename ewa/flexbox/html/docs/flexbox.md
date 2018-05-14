@@ -19,7 +19,7 @@ The main idea behind the flex layout is to give the container the ability to alt
 - `height`, and
 - `order`
 
-to **best fill the available space** in particular to __accommodate to all kind of display devices and screen sizes__. 
+to **best fill the available space** in particular to __accommodate to all kind of display devices and screen sizes__.
 
 Thus, a flex container **expands** items to fill available free space, or **shrinks** them to prevent overflow.
 
@@ -284,3 +284,24 @@ Please see the `align-items` explanation to understand the available values.
   align-self: auto | flex-start | flex-end | center | baseline | stretch;
 }
 ```
+
+## Examples
+
+This is an experimental section to test whether Code Pens can be included in mkdoc pages.
+
+### Simple HTML Headline
+
+<p data-height="265" data-theme-id="0" data-slug-hash="mLKLVO" data-default-tab="html,result" data-user="StefanZander" data-embed-version="2" data-pen-title="HTML Intro" class="codepen">See the Pen <a href="https://codepen.io/StefanZander/pen/mLKLVO/">HTML Intro</a> by Stefan Zander (<a href="https://codepen.io/StefanZander">@StefanZander</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+### `flex-direction` and `justify-content` Properties
+
+<p data-height="265" data-theme-id="0" data-slug-hash="ELRLgB" data-default-tab="css,result" data-user="StefanZander" data-embed-version="2" data-pen-title="Simple Flexbox" class="codepen">See the Pen <a href="https://codepen.io/StefanZander/pen/ELRLgB/">Simple Flexbox</a> by Stefan Zander (<a href="https://codepen.io/StefanZander">@StefanZander</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+## Disclaimer
+
+Most of this information and images have been compiled from the following pages
+
+- <https://css-tricks.com/snippets/css/a-guide-to-flexbox/>
+- <https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox>
