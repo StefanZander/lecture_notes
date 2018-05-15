@@ -11,7 +11,7 @@ body {
     color: plum;
 }
 
-[data-md-state="active"] {
+li>a[data-md-state="active"] {
     color: red;
 }
 /*
