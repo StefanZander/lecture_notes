@@ -14,7 +14,7 @@ theme:
     tabs: true
 
   font:
-    text: 'Roboto'
+    text: 'Zilla Slab'
     code: 'Fira mono'
 
 extra_css:

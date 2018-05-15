@@ -2,6 +2,10 @@ body {
     counter-reset: figure;
 }
 
+:root {
+    --primary-color: #128bcd;
+}
+
 
  [data-md-state="blur"]:first-of-type {
     color: plum;
@@ -109,14 +113,14 @@ h3 {
 
 h2 {
     /* background-color: black; */
-    color:#009688;
+    color: var(--primary-color);    /*#009688; */
     font-weight: 300 !important; 
     padding-bottom: 3rem;
     padding-top: 3rem;
     padding-left: 0.3rem;
     font-size: 4.0rem !important; 
-    border-top: 0.3rem solid #009688;
-    border-bottom: 0.3rem solid #009688;
+    border-top: 0.3rem solid var(--primary-color);
+    border-bottom: 0.3rem solid var(--primary-color);
 }
 
 

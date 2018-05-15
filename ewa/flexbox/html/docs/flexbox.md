@@ -4,7 +4,7 @@
 
 The __Flexible Box Layout Module__ (short _flexbox_) aims at providing a more efficient way to lay out, align and distribute space among items in a container, even when their size is unknown and/or dynamic (thus the word 'flex').
 
-Before the Flexbox Layout module, there were four layout modes:
+Prior to the Flexbox Layout module, the HTML and CSS Specifications defined **four main layout modes**:
 
 - `Block`, for sections in a webpage
 - `Inline`, for text
@@ -19,9 +19,7 @@ The main idea behind the flex layout is to give the container the ability to alt
 - `height`, and
 - `order`
 
-to **best fill the available space** in particular to __accommodate to all kind of display devices and screen sizes__.
-
-Thus, a flex container **expands** items to fill available free space, or **shrinks** them to prevent overflow.
+to **best fill the available space** in particular to __accommodate to all kind of display devices and screen sizes__. Thus, a flex container **expands** items to fill available free space, or **shrinks** them to prevent overflow.
 
 Most importantly, the flexbox layout is **direction-agnostic** as opposed to the regular layouts such as `block`, which is vertically-based and `inline`, which is horizontally-based. While those work well for pages, they __lack flexibility to support large or complex applications__, especially when it comes to orientation changing, resizing, stretching, shrinking, etc.
 
