@@ -225,11 +225,13 @@ There is also a video available at vimeo about Tali's talk: \url{http://vimeo.co
 	\emph{In the years of IE 90\% dominance there was nothing much to do but regard the browser as a ``black box'', but now, with open source browsers having more than half of the usage share, it's a good time to take a peek under the engine's hood and see what's inside a web browser. Well, what's inside are millions of C++ lines...}\begin{flushright}\vspace{-1em}---Tali Garsiel \end{flushright}
 \end{quote}
 
-The following information and facts about the internal operation principles of WebKit and Gecko is the result of extensive research done by the Israeli developer \textbf{Tali Garsiel}. Over a few years, she reviewed all the published data about browser internals and spent a lot of time reading Web browser source code. Tali published her research on her site\sidenote{See \url{http://taligarsiel.com/}}. In the following years, her research results have been revised and republished on numerous occasions and provided insights to a larger audience. 
+This document provides some insights into the processing logic and internals of modern Web browsers. It should help students to understand the internals and foundational principles from issuing an HTTP request to a Web server until the representation of a Web page in the browser's viewport. 
+
+The following information about the internal operation principles of the WebKit and Gecko browser engines is the result of extensive research done by the Israeli developer \textbf{Tali Garsiel}. Over a few years, she reviewed all the published data about browser internals and spent a lot of time reading Web browser source code. Tali published her research on her site\sidenote{See \url{http://taligarsiel.com/}}. In the following years, her research results have been revised and republished on numerous occasions and provided insights to a larger audience. 
 
 \textbf{Why should you learn about browser internals?}
 
-Learning the internals of browser operations helps you make better decisions and know the justifications behind development best practices. It also helps you to identify performance bottlenecks and build lightning fast websites. As we will see\marginnote{TODO: Add refs}, page loading time has an influence on the Google page rank---a page loading time > 2 sec.\ results in a lower rank in the Google search results and the Google crawler also crawls such pages less frequently, meaning that  search index terms are less frequently updated and the time until new or updated page content will be considered by the Google search engine is extended.   
+Learning the internals of browser operations helps you make better decisions and know the justifications behind development best practices. It also helps you to identify performance bottlenecks and build both modern and fast websites. As we will see\marginnote{TODO: Add refs}, page loading time is the most crucial non-functional requirement of modern Web pages and has a significant influence on the Google page rank. A page loading time > 2 sec.\ results in a lower rank in the Google search results and the Google crawler also crawls such pages less frequently, meaning that  search index terms are less frequently updated and the time until new or updated page content will be considered by the Google search engine is extended.   
 
 
 
@@ -251,7 +253,7 @@ Learning the internals of browser operations helps you make better decisions and
 Web browsers are the most widely used software.
 This lecture explains their fundamental operation principles so that students get an understanding about the things that happen internally when a website is requested, i.e., the time from typing in a website's URL in the browser's address bar until it is rendered by in the browser's viewport.
 
-The complexity of Web browser software has significantly changed over recent years---as the following two screenshots indicate:
+The complexity of Web browser software has significantly changed over recent years. Figure~\ref{fig:lynx} and \ref{fig:next_browser} display screenshots from the first browsers available for bowsing Web content.
 
 \begin{figure}%
 	\centering
@@ -269,24 +271,26 @@ The complexity of Web browser software has significantly changed over recent yea
 
 TODO: Add image of first NEXT browser; compare it with inspector of Google Chrome; add some description (refs are in the keynote file)
 
+TODO: Add paragraph about features of early Web browsers.
+
 
 \subsection{What is a Web Browser}
 \label{sub:what_is_a_web_browser}
 \marginnote[-2em]{See \url{https://seng130.wordpress.com/lectures-2/browser-architecture/}}
 
 
-This section outlines some of the central functionalities provided by a modern Web browser. It helps in understanding what a browser exactly is. 
+This section lists some of the central functionalities provided by a modern Web browser and explains, what a Web browser exactly is.
 
 \begin{enumerate}
-	\item Is an application that we use when we browse the World Wide Web.
+	\item An application that we use when we browse the World Wide Web.
 	\item It renders text-based HTML documents into visual pages, which are what we see inside a browser.
-	\item It speaks HTTP protocol and communicates with Web servers.
-	\item It understands URL and knows how to translates URL into Web resources, e.g., HTML text files, images, videos, etc. (\emph{URL dereferencing})
+	\item It speaks the HTTP protocol and communicates with Web servers.
+	\item It understands the concepts of URLs and knows how to translate URLs into Web resources via \emph{URL dereferencing}, e.g., HTML text files, images, videos, etc.
 	\item It is a virtual machine that runs the JavaScript programs embedded inside HTML documents.
-	\item It understands CSS rules and applies the rules to layout the pages.
+	\item It understands CSS rules and applies the rules to layout HTML pages.
 	\item It interacts with a user in front of a browser and translates user inputs into browser events, e.g., clicking a link, clicking a button, submitting text inside a text box.
 	% \item It makes the WWW come alive!
-	\item It provides sophisticated tools for analyzing the structure of Web content and network traffic 
+	\item It provides sophisticated tools for analyzing the structure of Web content and network traffic (cf. Google Chrome Inspector)
 	\item It contains a JavaScript console to utilize its JavaScript engine 
 \end{enumerate}
 
@@ -296,11 +300,11 @@ This section outlines some of the central functionalities provided by a modern W
 
 \section{The Browser's Main Functionality} % (fold)
 \label{sec:the_browser_s_main_functionality}
-The main function of a browser is to present the web resource you choose, by requesting it from the server and displaying it in the browser window. The resource is usually an HTML document, but may also be a PDF, image, or some other type of content. The location of the resource is specified by the user using a URI (Uniform Resource Identifier).
+The main function of a browser is to present, ie.\ render Web resources by requesting them from a server and displaying it in the browser window (ie.~\emph{the viewport}). The resource is usually an HTML document, but may also be a PDF, image, or some other type of content. The location of the resource is specified by the user using a URL (Uniform Resource Locator).
 
-The way the browser interprets and displays HTML files is specified in the HTML and CSS specifications. These specifications are maintained by the \textbf{World Wide Web Consortium} organization\sidenote{\url{https://www.w3.org/}}, commonly denominated as \textbf{W3C}, which is the standards organization for the web. For years browsers conformed to only a part of the specifications and developed their own extensions. That caused serious compatibility issues for web authors. Today most of the browsers more or less conform to the specifications.
+The way the browser interprets and displays HTML files is specified in the \textbf{HTML} and \textbf{CSS specifications}. These specifications are maintained by the \textbf{World Wide Web Consortium} organization\sidenote{\url{https://www.w3.org/}}, commonly denominated as \textbf{W3C}, which is the standards organization for the Web. For years, browsers conformed to only a part of the specifications and developed their own extensions. That caused serious compatibility issues for Web authors. Today, most of the browsers more or less conform to the specifications.
 
-Browser user interfaces have a lot in common with each other. Among the common user interface elements are:
+Browser can be operated through their user interfaces, which have a lot in common with each other\sidenote{Strangely enough, the browser's user interface is \emph{not} specified in any formal specification, it just comes from \textbf{good practices} shaped over years of experience and by browsers imitating each other. The HTML5 specification does not define UI elements a browser must have, but lists some common elements. Among those are the address bar, status bar and tool bar. There are, of course, features unique to a specific browser like Firefox's downloads manager.}. Among the common user interface elements are:
 \begin{itemize}
 	\item Address bar for inserting a URI
 	\item Back and forward buttons
@@ -309,7 +313,6 @@ Browser user interfaces have a lot in common with each other. Among the common u
 	\item Home button that takes you to your home page
 \end{itemize}
 
-Strangely enough, the browser's user interface is \emph{not specified} in any formal specification, it just comes from good practices shaped over years of experience and by browsers imitating each other. The HTML5 specification does not define UI elements a browser must have, but lists some common elements. Among those are the address bar, status bar and tool bar. There are, of course, features unique to a specific browser like Firefox's downloads manager.
 
 
 \section{The Browser's High Level Structure} % (fold)
@@ -347,11 +350,11 @@ It is important to note that browsers such as Chrome run multiple instances of t
 
 \subsection{The Rendering Engine} % (fold)
 \label{sub:the_rendering_engine}
-Different browsers use different rendering engines: Internet Explorer uses Trident, Firefox uses Gecko, Safari uses WebKit. Chrome and Opera (from version 15) use Blink, a fork of WebKit.
+Different browsers use different rendering engines: Internet Explorer uses \emph{Trident}, Firefox uses \emph{Gecko}, Safari uses \emph{WebKit}. Chrome and Opera (from version 15) use \emph{Blink}, a fork of WebKit.
 
 WebKit is an open source rendering engine which started as an engine for the Linux platform and was modified by Apple to support Mac and Windows. See \url{webkit.org} for more details.
 
-By default the rendering engine can display HTML and XML documents and images. It can display other types of data via plug-ins or extension; for example, displaying PDF documents using a PDF viewer plug-in. However, in this chapter we will focus on the main use case: displaying HTML and images that are formatted using CSS.
+By default the rendering engine can display HTML and XML documents and images. It can display other types of data via \textbf{plug-ins} or extension; for example, displaying PDF documents using a PDF viewer plug-in. However, in this chapter we will focus on the main use case: displaying HTML and images that are formatted using CSS.
 
 \paragraph{Workflow}
 
@@ -362,18 +365,20 @@ By default the rendering engine can display HTML and XML documents and images. I
   \label{fig:webkit_main_flow}
 \end{figure}
 
-The rendering engine will start parsing the HTML document and convert elements to DOM nodes in a tree called the \textbf{content tree}. The engine will parse the style data, both in external CSS files and in style elements. Styling information together with visual instructions in the HTML will be used to create another tree: the \textbf{render tree}.
+The rendering engine will start parsing the HTML document and convert elements to \textbf{DOM nodes} in a tree called the \textbf{content tree}. The engine will parse the \textbf{style data}, both in external CSS files and in style elements. Styling information together with visual instructions in the HTML will be used to create another tree: the \textbf{render tree}.
 
 The render tree contains rectangles with visual attributes like color and dimensions. The rectangles are in the right order to be displayed on the screen.
 
-After the construction of the render tree it goes through a \textbf{layout process}. This means giving each node the exact coordinates where it should appear on the screen. The next stage is painting---the render tree will be traversed and each node will be painted using the UI backend layer.
+After the construction of the render tree it goes through a \textbf{layout process}. This means giving each node the exact coordinates where it should appear on the screen. 
 
-It is important to understand that this is a \emph{gradual process}. For better user experience, the rendering engine will try to display contents on the screen as soon as possible\sidenote{This is referred to as the \textbf{Compositing Forest} (cf.\ \url{https://www.chromium.org/developers/design-documents/gpu-accelerated-compositing-in-chrome}) since four conceptually different tree structures are processed in parallel: \begin{enumerate}
+The next stage is \textbf{painting}---the render tree will be traversed and each node will be painted using the UI backend layer.
+
+It is important to understand that this is a \textbf{gradual process}. For better user experience, the rendering engine will try to display contents on the screen as soon as possible\sidenote{This is referred to as the \textbf{Compositing Forest} (cf.\ \url{https://www.chromium.org/developers/design-documents/gpu-accelerated-compositing-in-chrome}) since four conceptually different tree structures are processed in parallel: \begin{enumerate}
 	\item DOM tree
 	\item RenderObject tree
 	\item RenderLayer tree
 	\item GraphicsLayer tree
-\end{enumerate}}. It will not wait until all HTML is parsed before starting to build and layout the render tree. Parts of the content will be parsed and displayed, while the process continues with the rest of the contents that keeps coming from the network.
+\end{enumerate}}. \textbf{It will not wait until all HTML is parsed before starting to build and layout the render tree.} Parts of the content will be parsed and displayed, while the process continues with the rest of the contents that keeps coming from the network.
 
 \paragraph{Parsing} % (fold)
 \label{par:parsing}
