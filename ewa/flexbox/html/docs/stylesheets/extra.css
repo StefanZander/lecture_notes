@@ -11,6 +11,9 @@ body {
     color: plum;
 }
 
+[data-md-state="active"] {
+    color: red;
+}
 /*
 li.md-nav__item:first-of-type {
     color: green;

@@ -5,6 +5,7 @@ pages:
 
 theme:
   name: 'material'
+  custom_dir: 'material'
   
   palette:
     primary: 'blue'
