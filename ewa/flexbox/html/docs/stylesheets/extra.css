@@ -4,15 +4,15 @@ body {
 
 :root {
     --primary-color: #128bcd;
+    --active-color: red;
 }
 
-
- [data-md-state="blur"]:first-of-type {
-    color: plum;
-}
 
 li>a[data-md-state="active"] {
     color: red;
+    /* background-color: red; */
+    font-weight: bold;
+
 }
 /*
 li.md-nav__item:first-of-type {
@@ -126,6 +126,9 @@ h2 {
     border-bottom: 0.3rem solid var(--primary-color);
 }
 
+h1 {
+    font-size: 6rem !important;
+}
 
 /* Captured from browser */
 .md-nav__link[data-md-state=blur] {
