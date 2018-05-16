@@ -384,17 +384,17 @@ It is important to understand that this is a \textbf{gradual process}. For bette
 \label{par:parsing}
 Since parsing is a very significant process within the rendering engine, we will go into it a little more deeply. Let's begin with a little introduction about parsing.
 
-Parsing\marginnote{Parsing is based on the syntax rules the document obeys: the language or format it was written in. Every format you can parse must have deterministic grammar consisting of vocabulary and syntax rules. It is called a context free grammar. Human languages are not such languages and therefore cannot be parsed with conventional parsing techniques.} a document means translating it to a structure the code can use. The result of parsing is usually a tree of nodes that represent the structure of the document. This is called a parse tree or a syntax tree.
+Parsing\marginnote{Parsing is based on the syntax rules the document obeys: the language or format it was written in. Every format you can parse must have deterministic grammar consisting of vocabulary and syntax rules. It is called a context free grammar. Human languages are not such languages and therefore cannot be parsed with conventional parsing techniques.} a document means translating it to a structure the code can use. The \textbf{result} of parsing is usually a \textbf{tree of nodes} that represent the structure of the document. This is called a \textbf{parse tree} or a \textbf{syntax tree}.
 
-Parsing can be separated into two sub processes: \textbf{lexical analysis} and \textbf{syntax analysis}.
+Parsing can be separated into two sub processes: 
+\begin{enumerate}
+	\item \textbf{Lexical analysis} \\ Denominates the process of breaking the input into tokens. Tokens are the language vocabulary: the collection of valid building blocks. In human language it will consist of all the words that appear in the dictionary for that language.
+	\item \textbf{Syntax analysis} \\ Describes the process of applying the language syntax rules.
+\end{enumerate}
 
-\textbf{Lexical analysis} is the process of breaking the input into tokens. Tokens are the language vocabulary: the collection of valid building blocks. In human language it will consist of all the words that appear in the dictionary for that language.
+The\marginnote{The parsing process is iterative} parsing process is \textbf{iterative}. The parser will usually ask the lexer\sidenote{The lexer (sometimes called \emph{tokenizer}) that is responsible for breaking the input into valid tokens.} for a new token and try to match the token with one of the syntax rules. If a rule is matched, a node corresponding to the token will be added to the parse tree and the parser will ask for another token.
 
-\textbf{Syntax analysis} is the applying of the language syntax rules.
-
-The parsing process is \textbf{iterative}. The parser will usually ask the lexer\sidenote{The lexer (sometimes called \emph{tokenizer}) that is responsible for breaking the input into valid tokens.} for a new token and try to match the token with one of the syntax rules. If a rule is matched, a node corresponding to the token will be added to the parse tree and the parser will ask for another token.
-
-If no rule matches, the parser will store the token internally, and keep asking for tokens until a rule matching all the internally stored tokens is found. If no rule is found then the parser will raise an exception. This means the document was not valid and contained syntax errors.
+If\marginnote{Operating rules of the parser} no rule matches, the parser will store the token internally, and keep asking for tokens until a rule matching all the internally stored tokens is found. If no rule is found then the parser will raise an exception. This means the document was not valid and contained syntax errors.
 
 \subsection{HTML Content Parsing} % (fold)
 \label{sub:parsing_html_content}
