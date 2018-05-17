@@ -15,16 +15,17 @@ li>a[data-md-state="active"] {
 
 }
 
-/* .admonition {
+.admonition {
     border-radius: 0em !important;
     font-size: 1.4rem !important;
     border-color: #0000003f !important;
-} */
+}
 
-/* .admonition-title {
+.admonition-title {
     background-color: #00000020 !important;
     color: rgba(0,0,0,.87) !important; 
     text-shadow: .02em .02em white;
+    /* display: none !important; */
 }
 
 .admonition-title:before {
@@ -34,52 +35,9 @@ li>a[data-md-state="active"] {
 .admonition.note .admonition-title:before {
     font-weight: 900;
     content: '\E91F  ';
+    /* font-size: 1.8rem; */
     font-family: 'Material Icons';
     text-shadow: .02em .02em white;
-} */
-
-.md-typeset .admonition {
-    box-shadow: none;
-    border-radius: 0rem;
-    font-size: 1.6rem;
-}
-
-.admonition.note {
-    border-left: solid 0.4rem #2c8fcd;
-    background-color: #d6efff;
-}
-
-.admonition {
-    display: flex;
-    flex-direction: row;
-}
-
-.note>p:nth-of-type(2):before {
-    content: 'Note: ';
-    font-weight: bold;
-/*            font-size: 1.2rem;*/
-}
-
-/* .note>p:nth-of-type(2) {
-    padding: .2rem;
-} */
-
-.admonition-title {
-    display: none;
-}
-
-.admonition.note::before {
-    font-family: 'Material Icons';
-    content: '\E91F';
-    font-size: 2.4rem;
-    vertical-align: bottom;
-    padding-top: 1.4rem;
-    padding-right: 1rem;
-    /* padding-left: 0.5rem; */
-/*
-    height: 2rem;
-    line-height: 3rem;
-*/
 }
 
 .question {

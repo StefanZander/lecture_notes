@@ -23,8 +23,8 @@ to **best fill the available space** in particular to __accommodate to all kind 
 
 Most importantly, the flexbox layout is **direction-agnostic** as opposed to the regular layouts such as `block`, which is vertically-based and `inline`, which is horizontally-based. While those work well for pages, they __lack flexibility to support large or complex applications__, especially when it comes to orientation changing, resizing, stretching, shrinking, etc.
 
-!!! note "When to use Flexbox vs. Grid layout"
-    Flexbox layout is most appropriate to the components of an application and small-scale layouts, while the Grid layout is intended for larger scale layouts.
+!!! note
+    Flexbox layout is most appropriate to the components of an application and small-scale layouts, while the Grid layout is intended for larger scale layouts. ("When to use Flexbox vs. Grid layout")
 
 ## Basic Concepts and Terminology
 
