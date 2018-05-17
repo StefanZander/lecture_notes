@@ -1,5 +1,10 @@
 # The CSS Flexbox Layout
 
+!!! abstract "Objectives"
+    * [x] You know basic principles of intuitive and modern UIs
+    * [x] You learn a methodology that helps you to built UIs with a good user experience
+    * [x] You can ...
+
 ## Background
 
 The __Flexible Box Layout Module__ (short _flexbox_) aims at providing a more efficient way to lay out, align and distribute space among items in a container, even when their size is unknown and/or dynamic (thus the word 'flex').

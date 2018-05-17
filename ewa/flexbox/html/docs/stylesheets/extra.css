@@ -45,8 +45,19 @@ li>a[data-md-state="active"] {
 }
 
 .admonition.note {
-    border-left: solid 0.4rem #2c8fcd;
+    border-left: solid 0.5rem #2c8fcd;
     background-color: #d6efff;
+}
+
+.md-typeset .admonition.abstract {
+    border-left: solid 0.5rem #bbbaba;
+}
+
+.abstract>*:nth-of-type(2):before {
+    content: 'Objective: ';
+    font-weight: bold;
+    text-shadow: .02em .02em white;
+/*            font-size: 1.2rem;*/
 }
 
 .admonition {
@@ -57,12 +68,14 @@ li>a[data-md-state="active"] {
 .note>p:nth-of-type(2):before {
     content: 'Note: ';
     font-weight: bold;
+    text-shadow: .02em .02em white;
 /*            font-size: 1.2rem;*/
 }
 
-/* .note>p:nth-of-type(2) {
-    padding: .2rem;
-} */
+.note>p:nth-of-type(2) {
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+}
 
 .admonition-title {
     display: none;
@@ -73,8 +86,9 @@ li>a[data-md-state="active"] {
     content: '\E91F';
     font-size: 2.4rem;
     vertical-align: bottom;
-    padding-top: 1.4rem;
-    padding-right: 1rem;
+    padding-top: .5rem;
+    padding-right: .6rem;
+    text-shadow: .02rem .02rem white;
     /* padding-left: 0.5rem; */
 /*
     height: 2rem;
