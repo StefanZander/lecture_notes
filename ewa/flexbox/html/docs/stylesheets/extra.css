@@ -1,3 +1,9 @@
+@import url("./basic/colors.css");
+@import url("./admonition/admonition.css");
+@import url("./admonition/note.css");
+@import url("./admonition/abstract.css");
+
+
 body {
     counter-reset: figure;
 }
@@ -9,92 +15,12 @@ body {
 
 
 li>a[data-md-state="active"] {
-    color: red;
+    color: var(--toc_active_item_foreground);
     /* background-color: red; */
     font-weight: bold;
 
 }
 
-/* .admonition {
-    border-radius: 0em !important;
-    font-size: 1.4rem !important;
-    border-color: #0000003f !important;
-} */
-
-/* .admonition-title {
-    background-color: #00000020 !important;
-    color: rgba(0,0,0,.87) !important; 
-    text-shadow: .02em .02em white;
-}
-
-.admonition-title:before {
-    color: rgba(0,0,0,.87) !important;   
-}
-
-.admonition.note .admonition-title:before {
-    font-weight: 900;
-    content: '\E91F  ';
-    font-family: 'Material Icons';
-    text-shadow: .02em .02em white;
-} */
-
-.md-typeset .admonition {
-    box-shadow: none;
-    border-radius: 0rem;
-    font-size: 1.6rem;
-}
-
-.admonition.note {
-    border-left: solid 0.5rem #2c8fcd;
-    background-color: #d6efff;
-}
-
-.md-typeset .admonition.abstract {
-    border-left: solid 0.5rem #bbbaba;
-}
-
-.abstract>*:nth-of-type(2):before {
-    content: 'Objective: ';
-    font-weight: bold;
-    text-shadow: .02em .02em white;
-/*            font-size: 1.2rem;*/
-}
-
-.admonition {
-    display: flex;
-    flex-direction: row;
-}
-
-.note>p:nth-of-type(2):before {
-    content: 'Note: ';
-    font-weight: bold;
-    text-shadow: .02em .02em white;
-/*            font-size: 1.2rem;*/
-}
-
-.note>p:nth-of-type(2) {
-    margin-top: 1.2rem;
-    margin-bottom: 1.2rem;
-}
-
-.admonition-title {
-    display: none;
-}
-
-.admonition.note::before {
-    font-family: 'Material Icons';
-    content: '\E91F';
-    font-size: 2.4rem;
-    vertical-align: bottom;
-    padding-top: .5rem;
-    padding-right: .6rem;
-    text-shadow: .02rem .02rem white;
-    /* padding-left: 0.5rem; */
-/*
-    height: 2rem;
-    line-height: 3rem;
-*/
-}
 
 .question {
     background-color: #fcffd6 !important;
@@ -104,21 +30,8 @@ li>a[data-md-state="active"] {
     background-color: #ffd6d6 !important;
 }
 
-.note {
-    background-color: #d6efff !important;
-}
 
-.summary,.abstract {
-    background-color: #f5f4f4 !important;
-}
 
-/* .note>p+p::before {
-    font-weight: 900;
-    content: '\E91F  ';
-    font-size: 1.8rem;
-    font-family: 'Material Icons';
-    display: inline;
-} */
 
 
 

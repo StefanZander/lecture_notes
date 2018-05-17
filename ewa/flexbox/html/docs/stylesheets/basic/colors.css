@@ -1,0 +1,13 @@
+:root {
+    --primary-color: #128bcd;
+    --secondary-color: green;
+
+    --toc_active_item_foreground: red;
+    --toc_active_item_background: white;
+
+    --note_border: blue;
+    --note_background: lightblue;
+
+    --abstract_border_color: #bbbaba;
+    --abstract_background_color: #f5f4f4;
+}

@@ -1,0 +1,16 @@
+.md-typeset .admonition {
+    box-shadow: none;
+    border-radius: 0rem;
+    font-size: 1.6rem;
+}
+
+/* TODO need to be changed to allow for multi-paragraph admonitions */
+/* .admonition {
+    display: flex;
+    flex-direction: row;
+} */
+
+/* TODO enable again */
+.admonition-title {
+    /* display: none; */
+}
