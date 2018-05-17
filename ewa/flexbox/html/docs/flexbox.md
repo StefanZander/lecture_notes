@@ -1,6 +1,6 @@
 # The CSS Flexbox Layout
 
-!!! abstract ""
+!!! abstract
     **Lernziele:**
 
     * [x] You know the basic principles of the modern CSS3 Flex box layout module and can apply it to concrete use cases

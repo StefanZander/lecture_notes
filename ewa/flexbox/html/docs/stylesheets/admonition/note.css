@@ -26,7 +26,7 @@
 
 .admonition.note::before {
     font-family: 'Material Icons';
-    content: '\E91F';
+    content: '\e88f'; /* e91f */
     font-size: 2.4rem;
     vertical-align: bottom;
     padding-right: .6rem;
