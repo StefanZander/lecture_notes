@@ -8,8 +8,8 @@
     * [x] You can ...
 
 
-!!! abstract ""
-    **Note: ** The flexbox is really really good but sometimes hard to understand and to apply to a concrete use case.
+!!! warning ""
+    **Warning: ** The flexbox is really really good but sometimes hard to understand and to apply to a concrete use case.
 
     The traditional layut modules are easier to understand but are limitied for the mobile first approach 
  
@@ -38,7 +38,10 @@ to **best fill the available space** in particular to __accommodate to all kind 
 Most importantly, the flexbox layout is **direction-agnostic** as opposed to the regular layouts such as `block`, which is vertically-based and `inline`, which is horizontally-based. While those work well for pages, they __lack flexibility to support large or complex applications__, especially when it comes to orientation changing, resizing, stretching, shrinking, etc.
 
 !!! note
-    Flexbox layout is most appropriate to the components of an application and small-scale layouts, while the Grid layout is intended for larger scale layouts. ("When to use Flexbox vs. Grid layout")
+    **Note:** Flexbox layout is most appropriate to the components of an application and small-scale layouts, while the Grid layout is intended for larger scale layouts. ("When to use Flexbox vs. Grid layout")
+
+!!! question
+    **Question:** What makes the Flexbox layout direction agnostic? Think about an examples that illustrates that behaviour.
 
 ## Basic Concepts and Terminology
 

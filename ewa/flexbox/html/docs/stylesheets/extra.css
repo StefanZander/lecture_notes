@@ -2,15 +2,12 @@
 @import url("./admonition/admonition.css");
 @import url("./admonition/note.css");
 @import url("./admonition/abstract.css");
+@import url("./admonition/warning.css");
+@import url("./admonition/question.css");
 
 
 body {
     counter-reset: figure;
-}
-
-:root {
-    --primary-color: #128bcd;
-    --active-color: red;
 }
 
 
@@ -22,14 +19,9 @@ li>a[data-md-state="active"] {
 }
 
 
-.question {
+/* .question {
     background-color: #fcffd6 !important;
-}
-
-.warning {
-    background-color: #ffd6d6 !important;
-}
-
+} */
 
 
 

@@ -1,20 +1,8 @@
 .admonition.note {
-    border-left: solid 0.5rem #2c8fcd;
-    background-color: #d6efff;
+    border-left: solid 0.5rem var(--note_border_color);
+    background-color: var(--note_background_color);
 }
 
-.note>p:nth-of-type(2):before {
-    content: 'Note: ';
-    font-weight: bold;
-    text-shadow: .02em .02em white;
-/*            font-size: 1.2rem;*/
-}
-
-
-/* .note>p:nth-of-type(2) {
-    margin-top: 1.2rem;
-    margin-bottom: 1.2rem;
-} */
 
 .admonition.note>* {
     margin-left: 3rem;
@@ -26,17 +14,12 @@
 
 .admonition.note::before {
     font-family: 'Material Icons';
-    content: '\e88f'; /* e91f */
+    content: '\e616'; /* e91f e88f */
     font-size: 2.4rem;
-    vertical-align: bottom;
+    /* vertical-align: bottom; */
     padding-right: .6rem;
-    text-shadow: .02rem .02rem white;
+    text-shadow: .02rem .02rem var(--text_shadow_color);
     padding-top: 1rem;
     float: left;
-    /* padding-left: 0.5rem; */
-/*
-    height: 2rem;
-    line-height: 3rem;
-*/
 }
 
