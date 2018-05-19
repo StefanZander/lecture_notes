@@ -49,13 +49,15 @@ img+em:before {
 
 h3 {
     /* background-color: black; */
+    /* display: inline-flex; */
     color: black;
     font-family: 'Zilla Slab', Roboto, serif;
     font-size: 2.8rem !important;
     font-weight: 900 !important; 
     margin-top: 4rem;
     padding-bottom: 0.3em;
-    /* padding-left: 0.3em; */
+    /* padding-left: 0.5rem; */
+    /* padding-right: 0.5rem; */
 }
 
 h2 {
