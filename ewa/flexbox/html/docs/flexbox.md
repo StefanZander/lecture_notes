@@ -1,17 +1,16 @@
 # The CSS Flexbox Layout
 
 !!! abstract
-    **Lernziele:**
+    **Objectives:**
 
-    * [x] You know the basic principles of the modern CSS3 Flex box layout module and can apply it to concrete use cases
-    * [x] You learn a methodology that helps you to built UIs with a good user experience
-    * [x] You can ...
-
+    * [x] You know the basic principles of the CSS3 Flexbox layout module and can apply it to built a responsive UI with a good user experience
+    * [x] You learn the pasic properietes of the Flexbox layout module
+    * [x] You understand how to apply the Flexbox layout module in a mobile first approach and can apply it to concrete layout problems
 
 !!! warning ""
     **Warning: ** The flexbox is really really good but sometimes hard to understand and to apply to a concrete use case.
 
-    The traditional layut modules are easier to understand but are limitied for the mobile first approach 
+    The traditional layout modules are easier to understand but are limitied for the mobile first approach 
  
 
 ## Background
