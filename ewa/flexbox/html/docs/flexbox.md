@@ -3,9 +3,9 @@
 !!! abstract
     **Objectives:**
 
-    * [x] You know the basic principles of the CSS3 Flexbox layout module and can apply it to built a responsive UI with a good user experience
-    * [x] You learn the pasic properietes of the Flexbox layout module
-    * [x] You understand how to apply the Flexbox layout module in a mobile first approach and can apply it to concrete layout problems
+    * [x] You know the basic layout principles of the CSS3 Flexbox layout module and can apply it to built a responsive UI with a good user experience
+    * [x] You are familiar with the basic properietes of the Flexbox layout module
+    * [x] You understand how to apply the Flexbox layout module in a mobile first approach and can use it to solve concrete layout problems
 
 !!! warning ""
     **Warning: ** The flexbox is really really good but sometimes hard to understand and to apply to a concrete use case.
@@ -66,7 +66,7 @@ Basically, items will be laid out following *either* the `main axis` (from `main
 
 To start using the Flexbox model, you need to first define a flex container.
 
-``` html
+``` html hl_lines="2 4"
 <div class="flex-container">
   <div class="item">1</div>
   <div class="item">2</div>
@@ -87,7 +87,7 @@ The flex container properties are:
 
 This defines a flex container; the flex container becomes flexible by setting the `display` property to `flex` (=_block_) or `inline-flex` (=_inline_) depending on the given value. It enables a flex context for all its direct children.
 
-``` css
+``` css  
 .container {
   display: flex; /* or inline-flex */
 }
