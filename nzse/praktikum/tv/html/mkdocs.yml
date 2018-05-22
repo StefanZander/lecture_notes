@@ -1,0 +1,51 @@
+site_name: Praktikum zur LVA "Nutzerzentrierte Softwareentwicklung"
+
+pages:
+  - 'Vorbemerkung': 'vorbemerkung.md'
+  - 'Projektmappe': 'projektmappe.md'
+  - 'Termin 1: Android Studio': 'termin2.md'
+  - 'Termin 2: User Research': 'termin2.md'
+  - 'Termin 3: UI Entwurf': 'termin3.md'
+  - 'Termin 4: Layout': 'termin4.md'
+  - 'Termin 5: Logik': 'termin5.md'
+  - 'Termin 6: Usability': 'termin6.md'
+
+theme:
+  name: 'material'
+  custom_dir: 'material'
+  
+  palette:
+    primary: 'blue'
+    accent: 'green'
+  
+  feature:
+    tabs: true
+
+  font:
+    text: 'Zilla Slab'
+    code: 'Fira mono'
+
+extra_css:
+  - 'stylesheets/extra.css'
+
+extra_javascript:
+  - 'javascript/extra.js'
+    
+markdown_extensions:
+  - admonition
+  - codehilite:
+      linenums: true
+      guess_lang: true
+  - toc:
+      permalink: false
+  - meta
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  
