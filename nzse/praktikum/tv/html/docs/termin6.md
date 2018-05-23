@@ -1,49 +1,51 @@
-# Implementierung der Benutzungsoberfläche
+# Usability Test und Inspection
 
+!!! warning
+    **Hinweis:** Keine Restarbeiten mehr an der Implementierung!
 
 !!! abstract 
     **Lernziele**
 
-    - Sie können eine Android App mit einer Layoutvariante implementieren
-    - Sie verstehen das Zusammenspiel verschiedener Activities über Intents
-    - Sie verstehen das Konzept der Ereignisorientierung
-    - Sie haben einen ersten Eindruck von XML
+    - [x] Sie können einen Usability Test als Moderator und Beobachter durchführen
+    - [x] Sie können Sich auf das Beobachten beschränken und widerstehen der Versuchung Test-Benutzer zu schulen
+    - [x] Sie können Usability Probleme anhand von kleinsten Anzeichen des Test-Benutzers erkennen
+    - [x] Sie können Usability Probleme präzise benennen und dokumentieren
+
+!!! warning
+     **Zu Hause:** Bereiten Sie die Testprotokolle vor anhand der folgenden Test-Aufgaben und der vorgegebenen Checklisten, d.h. betrachten Sie die Checklisten als „Rohmaterial“ und machen Sie daraus Protokollformulare.
+
+!!! note
+    **Hinweis:** Die Testprotokolle sollen den Entwicklern bei der weiteren Verbesserung helfen (keine Angst, das müssen Sie im Praktikum nicht mehr umsetzen ;-). Benennen Sie Schwachpunkte möglichst konkret; pauschale „Schulnoten“ helfen nicht weiter.
+
+Alle Protokolle aus den folgenden Teilaufgaben kommen in die Projektmappe.
 
 ## Aufgaben
 
-### Layouts und Navigation
+### Usability Test
+Zum Usability Test tun Sie sich mit der Nachbargruppe zusammen:
 
-Legen Sie das Fernbedienungs-Projekt an und generieren Sie alle Activities der Anwendung
+* für die App Ihrer Nachbarn sind Sie Test-Benutzer und arbeiten die Test-Aufgaben ab
+* für Ihre eigene App sind Sie Test-Moderator (der/die eine) und Test-Beobachter (der/die andere)
 
-1. Implementieren Sie die zugehörigen **Layouts** in der **Design-Ansicht** von Android Studio; bestücken Sie die
-Layouts mit den benötigten Views und Widgets. Testen Sie das Layout für unterschiedliche **Displaygrößen** und **Displayauflösungen** und passen Sie es ggf. an.
-2. Schalten Sie um in die Text-Ansicht der Layouts, versuchen Sie das generierte **XML** zu verstehen und räumen Sie in der Text-Ansicht ggf. etwas auf
-3. Verknüpfen Sie die Activities indem Sie die **Navigation** (d.h. die Umschaltung zwischen Screens) implementieren
-4. Optimieren Sie ihren Entwurf hinsichtlich Größe, Platzierung und Beschriftung der Views und Widgets
-
-
-### TV-Server
-
-Der "Fernseher" wird über das **HTTP-Protokoll** gesteuert, über das man normalerweise Webseiten aufruft (näheres dazu in „Entwicklung webbasierter Anwendungen“ im 4. Semester). Die Fernbedienung ist der Client (Browser) und der Fernseher ist der Server. 
-
-Sie können den "Fernseher" provisorisch steuern:
-
-1. Starten Sie den „Fernseher“ durch Doppelklick auf die gegebene Datei `TV.jar`
-2. Notieren Sie die angezeigte IP-Adresse
-3. Laden Sie die gegebene Datei `TestTVInterface.htm` herunter und rufen Sie sie lokal im Browser auf
-4. Machen Sie sich mit dem Befehlssatz vertraut
-5. Schauen Sie sich die Antwort auf den Befehl `scanChannels` genau an (ist JSON Format, wird noch erklärt)
+#### Thinking aloud
+* Der Test-Benutzer arbeitet die Test-Aufgaben (vgl. Anwendungsszenarios und Anforderungen) ab. Der Test- Moderator gibt keine Erklärung und keine Hilfestellung und ermuntert den Test-Benutzer lediglich zum „lauten Denken“. Der Test-Beobachter protokolliert.
+#### Interview
+* Direkt anschließend interviewen Test-Moderator und Test-Beobachter den Test-Benutzer um eventuelle offene Fragen zu klären. Der Test-Beobachter protokolliert.
 
 
-### Kommunikation mit dem TV-Server
+### Usability Inspection
+Wenden Sie die „Checkliste zur Usability Inspection“ auf die Fernbedienung Ihrer Nachbargruppe an. Übertragen Sie die allgemeinen Regeln sinnvoll auf die Fernbedienung. Protokollieren Sie eventuelle Probleme und Defizite so, dass die Entwickler verstehen, inwiefern die App verbessert werden sollte.
 
-Wenn Sie später die Fernbedienung auf dem Smartphone oder im Emulator testen wollen, müssen Sie dort die IP-Adresse verwenden, die der Fernseher beim Start anzeigt (`127.0.0.1` ist der `localhost` und funktioniert nur, wenn Client und Server auf demselben PC laufen).
+### Design Review
+Bewerten Sie die Fernbedienung Ihrer Nachbargruppe unter Design Aspekten:
 
-Das HTTP-Protokoll brauchen Sie für dieses Praktikum nicht weiter zu verstehen:
-
-1. Binden Sie die gegebene Klasse `HttpRequest.java` in Ihr Projekt ein (passen Sie ggf. das package an)
-2. Lesen und verstehen Sie die Dokumentation zur Klasse und ihren Methoden im Quellcode (Javadoc-Stil)
-3. Steuern Sie den „Fernseher“ durch Aufruf der Methode `HttpRequest.execute` mit geeigneten Parametern
+1. Schrift gut lesbar?
+2. Icons gut erkennbar und Funktion verständlich?
+3. Farbgebung
+4. Größe der Bedienelemente
+5. Sinnvolle Gruppierung der Bedienelemente?
+6. Abstände und Ränder
+7. Sinnvolles Verhalten beim Drehen des Smartphones (keine Zustandsänderung, kein Abbruch von Abläufen)
 
 ## Ergebnisse
 
