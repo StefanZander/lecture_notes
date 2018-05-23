@@ -4,10 +4,10 @@
 !!! abstract 
     **Lernziele**
 
-    - Sie können eine Android App mit einer Layoutvariante implementieren
-    - Sie verstehen das Zusammenspiel verschiedener Activities über Intents
-    - Sie verstehen das Konzept der Ereignisorientierung
-    - Sie haben einen ersten Eindruck von XML
+    - [x] Sie können eine Android App mit einer Layoutvariante implementieren
+    - [x] Sie verstehen das Zusammenspiel verschiedener Activities über Intents
+    - [x] Sie verstehen das Konzept der Ereignisorientierung
+    - [x] Sie haben einen ersten Eindruck von XML
 
 ## Aufgaben
 
@@ -52,6 +52,6 @@ Die folgenden Ergebnisse müssen für eine erfolgreiche Testierung der Praktikum
 !!! abstract
     __Ergebnisse:__
 
-    1. Fertiges Layout
-    2. Implementierung der Navigation
-    3. Einbinden der `HttpRequest.java` Klasse
+    - [ ] Fertiges Layout
+    - [ ] Implementierung der Navigation
+    - [ ] Einbinden der `HttpRequest.java` Klasse

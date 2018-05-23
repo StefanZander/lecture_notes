@@ -4,10 +4,10 @@
 !!! abstract 
     **Lernziele**
 
-    - Sie können eine Benutzungsschnittstelle mit geeigneten Diagrammen beschreiben
-    - Sie können Papier-Prototypen erstellen
-    - Sie können die UI Prototypen testen und Verbesserungen identifizieren
-    - Sie verstehen das Vorgehensmodell zum Entwurf einer Benutzungsschnittstelle im Kontext von OOAD/SWE
+    - [x] Sie können eine Benutzungsschnittstelle mit geeigneten Diagrammen beschreiben
+    - [x] Sie können Papier-Prototypen erstellen
+    - [x] Sie können die UI Prototypen testen und Verbesserungen identifizieren
+    - [x] Sie verstehen das Vorgehensmodell zum Entwurf einer Benutzungsschnittstelle im Kontext von OOAD/SWE
 
 ## Aufgaben
 
@@ -33,6 +33,6 @@ Die folgenden Ergebnisse müssen für eine erfolgreiche Testierung der Praktikum
 !!! abstract
     __Ergebnisse:__
 
-    1. Paper Prototypes ihrer Applikation
-    2. Analyseklasse
-    3. Navigationsübersicht
+    - [ ] Paper Prototypes ihrer Applikation
+    - [ ] Analyseklasse
+    - [ ] Navigationsübersicht

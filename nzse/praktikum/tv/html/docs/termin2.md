@@ -4,9 +4,9 @@
 !!! abstract 
     **Lernziele**
 
-    - Die Sicht-, Denk- und Arbeitsweise verschiedener Benutzer kennen lernen und sich in sie hinein versetzen
-    - Finden und Verstehen der beim Benutzer in der Praxis auftretenden Anwendungsfälle
-    - Unterscheidung von technischen Funktionen und benutzerorientierten Anwendungsszenarien
+    - [x] Die Sicht-, Denk- und Arbeitsweise verschiedener Benutzer kennen lernen und sich in sie hinein versetzen
+    - [x] Finden und Verstehen der beim Benutzer in der Praxis auftretenden Anwendungsfälle
+    - [x] Unterscheidung von technischen Funktionen und benutzerorientierten Anwendungsszenarien
 
 ## Aufgaben
 
@@ -43,9 +43,9 @@ Die folgenden Ergebnisse müssen für eine erfolgreiche Testierung der Praktikum
 !!! abstract
     __Ergebnisse:__
 
-    1. je 1 Benutzer- und Kriterienliste
-    2. 2 Stereotypbeschreibungen
-    3. 2 Anwendungsszenariobeschreibungen
-    4. je 1 funktionale und 1 qualitative Anforderung pro Szenario
-    5. Quantifizierung der qualitativen Anforderungen
-    6. je 1 Begeisterungsfaktor pro Szenario
+    - [ ] je 1 Benutzer- und 1 Kriterienliste
+    - [ ] 2 Stereotypbeschreibungen
+    - [ ] 2 Anwendungsszenariobeschreibungen
+    - [ ] je 1 funktionale und 1 qualitative Anforderung pro Szenario
+    - [ ] Quantifizierung der qualitativen Anforderungen
+    - [ ] je 1 Begeisterungsfaktor pro Szenario

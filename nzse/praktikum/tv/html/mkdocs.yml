@@ -3,7 +3,7 @@ site_name: Praktikum zur LVA "Nutzerzentrierte Softwareentwicklung"
 pages:
   - 'Vorbemerkung': 'vorbemerkung.md'
   - 'Projektmappe': 'projektmappe.md'
-  - 'Termin 1: Android Studio': 'termin2.md'
+  - 'Termin 1: Android Studio': 'termin1.md'
   - 'Termin 2: User Research': 'termin2.md'
   - 'Termin 3: UI Entwurf': 'termin3.md'
   - 'Termin 4: Layout': 'termin4.md'
@@ -16,7 +16,7 @@ theme:
   
   palette:
     primary: 'blue'
-    accent: 'green'
+    accent: 'red'
   
   feature:
     tabs: true

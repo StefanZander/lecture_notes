@@ -54,6 +54,6 @@ Die folgenden Ergebnisse müssen für eine erfolgreiche Testierung der Praktikum
 !!! abstract
     __Ergebnisse:__
 
-    1. Fertiges Layout
-    2. Implementierung der Navigation
-    3. Einbinden der `HttpRequest.java` Klasse
+    - [ ] Fertiges Layout
+    - [ ] Implementierung der Navigation
+    - [ ] Einbinden der `HttpRequest.java` Klasse

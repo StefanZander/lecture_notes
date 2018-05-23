@@ -28,4 +28,4 @@ Ein paar Anregungen zur **Anwendungsfallorientierung** (ohne Anspruch auf Vollst
 
 
 !!! warning
-    **Hinweis:** Der Fernseher ist nur ein Simulator; er speichert keinerlei Daten oder Zustände -- diese müssen Sie im Datenmodell Ihrer App verwalten.
+    **Hinweis:** Der Fernseher ist nur ein Simulator, er speichert keinerlei Daten oder Zustände -- diese müssen Sie im Datenmodell Ihrer App selbst verwalten.
