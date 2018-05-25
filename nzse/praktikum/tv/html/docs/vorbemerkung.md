@@ -26,6 +26,5 @@ Ein paar Anregungen zur **Anwendungsfallorientierung** (ohne Anspruch auf Vollst
 * Senderauswahl nach Programmzeitschrift / Zappen / Werbepause überbrücken
 * Spannende Sendung - Telefon klingelt
 
-
 !!! warning
-    **Hinweis:** Der Fernseher ist nur ein Simulator, er speichert keinerlei Daten oder Zustände -- diese müssen Sie im Datenmodell Ihrer App selbst verwalten.
+    **Hinweis:** Der Fernseher ist nur ein **Simulator**, er speichert *keinerlei* Daten oder Zustände --> diese müssen Sie im **Datenmodell** Ihrer App selbst verwalten.

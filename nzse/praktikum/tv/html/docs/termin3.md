@@ -8,34 +8,35 @@
     - [x] Sie können die UI Prototypen testen und Verbesserungen identifizieren
     - [x] Sie verstehen das Vorgehensmodell zum Entwurf einer Benutzungsschnittstelle im Kontext von OOAD/SWE
 
+!!! warning
+    **Hinweis:** Die Fernbedienung muss mindestens die im Kapitel Vorbemerkung aufgezählten Funktionen beinhalten.
+
 ## Aufgaben
 
 ### UI Entwurf (Paper Prototyping)
 1. Entwerfen Sie die **Benutzungsoberfläche** der neuen Fernbedienung in Form von konkreten skizzierten Screen-Diagrammen als **Papier-Prototypen** (*bitte groß und gut erkennbar!*). 
 
-Hinweise:
+    Hinweise:
 
-- Achten Sie auf Vollständigkeit der benötigten Bedienelemente. 
-- Berücksichtigen Sie Platzierung, Größe, Anordnung, Beschriftung. 
-- Skizzieren Sie von **Icons** die Rohform so, dass man deren bildlich-inhaltliche Aussage versteht. 
-- Nutzen Sie die abstrakten Screen-Diagramme um Entwurfsalternativen zu erkennen, die Sie wiederum konkret skizzieren. Wählen Sie die beste Entwurfsalternative aus und verfolgen Sie diese weiter.
-
-!!! warning
-    **Hinweis:** Die Fernbedienung muss mindestens die im Kapitel Vorbemerkung aufgezählten Funktionen beinhalten.
+    - Achten Sie auf Vollständigkeit der benötigten Bedienelemente. 
+    - Berücksichtigen Sie Platzierung, Größe, Anordnung, Beschriftung. 
+    - Skizzieren Sie von **Icons** die Rohform so, dass man deren bildlich-inhaltliche Aussage versteht.
+    - Nutzen Sie **abstrakte Screen-Diagramme** um **Entwurfsalternativen** zu erkennen, die Sie wiederum konkret skizzieren. Wählen Sie die **beste Entwurfsalternative** aus und verfolgen Sie diese weiter.
 
 
+### Analyseklasse
+1. Entwerfen Sie parallel zu den abstrakten / konkreten Screen-Diagrammen **eine(!) Analyseklasse**, in die Sie die Hauptfunktionen der Benutzungsoberfläche als Methoden eintragen.
+2. Nutzen Sie die Analyseklasse um auf **Vollständigkeit** hinsichtlich der verwendeten **UI-Elemente**, als auch auf Vollstädnigkeit hinsichtlich der eingetragenen **Methoden** zu prüfen.
 
+    !!! note
 
-### Analyseklasse (TODO)
-1. Abstrahieren Sie die Skizzen zu abstrakten Screen-Diagrammen (inkl. Analyseklasse). Nutzen Sie die abstrakten Screen-Diagramme um Entwurfsalternativen zu erkennen, die Sie wiederum konkret skizzieren. Wählen Sie die beste Entwurfsalternative aus und verfolgen Sie diese weiter.
-
-Hinweis: Sie können die Funktionalität der Fernbedienung in einer Analyseklasse zusammenfassen.
+        **Hinweis:** Auch wenn **Membervariablen** per Default nicht eingetragen werden müssen, so sollten Sie dies tun und diese dann als Grundlage für den Entwurf des **Datenmodells** hernehmen.
 
 ### Navigationsübersicht
 1. Zeichnen Sie die **abstrakte Navigationsübersicht** zu Ihrem Entwurf inkl. aller **Aktionen**, die einen Übergang von einem Screen zu einem Anderen initieren. Denken Sie auch an **Bedingungen**, die für einen Screenwechsel erfüllt sein müssen bzw. an deren Evaluierung die Ausführung einer Aktion gekoppelt ist.
 
-!!! note
-    **Wohlgemerkt:** Eine Navigationsübersicht hat Screens als Knoten, nicht Bedienelemente! (beliebtes Missverständnis)
+    !!! note
+        **Wohlgemerkt:** Eine Navigationsübersicht hat Screens als Knoten, nicht Bedienelemente! (beliebtes Missverständnis)
 
 
 ### Testen

@@ -4,6 +4,7 @@
 Sammeln Sie **projektbegleitend** alle Dokumente, die in den nachfolgend beschriebenen Teilaufgaben verlangt werden, in einer **Projektmappe** (bevorzugt in Papierform). Die Projektmappe legen Sie dem Betreuer bei **jedem Praktikumstermin** mit den **Ergebnissen des vorigen Termins** vor. Insbesondere dient sie Ihnen selbst aber als Arbeitsunterlage und Referenz für die nächsten Schritte. 
 
 **Formale Anforderungen** an die Projektmappe:
+
 * Schnellhefter oder ähnliches, keine fliegenden Blätter (bei Papierform)
 * Deckblatt mit Namen
 * die einzelnen Dokumente sind sortiert entsprechend der Reihenfolge der Teilaufgaben

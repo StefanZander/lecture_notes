@@ -11,6 +11,8 @@
     - [x] Sie können Usability Probleme anhand von kleinsten Anzeichen des Test-Benutzers erkennen
     - [x] Sie können Usability Probleme präzise benennen und dokumentieren
 
+## Vorbereitung
+
 !!! warning
      **Zu Hause:** Bereiten Sie die Testprotokolle vor anhand der folgenden Test-Aufgaben und der vorgegebenen Checklisten, d.h. betrachten Sie die Checklisten als „Rohmaterial“ und machen Sie daraus Protokollformulare.
 
@@ -22,19 +24,19 @@ Alle Protokolle aus den folgenden Teilaufgaben kommen in die Projektmappe.
 ## Aufgaben
 
 ### Usability Test
-Zum Usability Test tun Sie sich mit der Nachbargruppe zusammen:
+Zum **Usability Test** tun Sie sich mit Ihrer Peer-Gruppe zusammen:
 
 * für die App Ihrer Nachbarn sind Sie Test-Benutzer und arbeiten die Test-Aufgaben ab
 * für Ihre eigene App sind Sie Test-Moderator (der/die eine) und Test-Beobachter (der/die andere)
 
 #### Thinking aloud
-* Der Test-Benutzer arbeitet die Test-Aufgaben (vgl. Anwendungsszenarios und Anforderungen) ab. Der Test- Moderator gibt keine Erklärung und keine Hilfestellung und ermuntert den Test-Benutzer lediglich zum „lauten Denken“. Der Test-Beobachter protokolliert.
+* Der Test-Benutzer arbeitet die **Test-Aufgaben** (vgl. Anwendungsszenarios und Anforderungen) ab. Der Test-Moderator gibt **keine Erklärung** und **keine Hilfestellung** und ermuntert den Test-Benutzer lediglich zum „**lauten Denken**“. Der Test-Beobachter protokolliert.
 #### Interview
-* Direkt anschließend interviewen Test-Moderator und Test-Beobachter den Test-Benutzer um eventuelle offene Fragen zu klären. Der Test-Beobachter protokolliert.
+* Direkt anschließend **interviewen** Test-Moderator und Test-Beobachter den Test-Benutzer um eventuelle **offene Fragen** zu klären. Der Test-Beobachter protokolliert.
 
 
 ### Usability Inspection
-Wenden Sie die „Checkliste zur Usability Inspection“ auf die Fernbedienung Ihrer Nachbargruppe an. Übertragen Sie die allgemeinen Regeln sinnvoll auf die Fernbedienung. Protokollieren Sie eventuelle Probleme und Defizite so, dass die Entwickler verstehen, inwiefern die App verbessert werden sollte.
+Wenden Sie die „**Checkliste zur Usability Inspection**“ auf die Fernbedienung Ihrer Peer-Gruppe an. Übertragen Sie die allgemeinen Regeln sinnvoll auf die Fernbedienung. Protokollieren Sie eventuelle Probleme und Defizite so, dass die Entwickler verstehen, inwiefern die App verbessert werden sollte.
 
 ### Design Review
 Bewerten Sie die Fernbedienung Ihrer Nachbargruppe unter Design Aspekten:
@@ -54,6 +56,7 @@ Die folgenden Ergebnisse müssen für eine erfolgreiche Testierung der Praktikum
 !!! abstract
     __Ergebnisse:__
 
-    - [ ] Fertiges Layout
-    - [ ] Implementierung der Navigation
-    - [ ] Einbinden der `HttpRequest.java` Klasse
+    - [ ] Vorbereitete und ausgefüllte Testprotokolle (**ohne Testprotokolle kein Testat!**)
+    - [ ] Protokoll des Thinking aloud Tests und des Interviews
+    - [ ] Usability Inspection Protokoll
+    - [ ] Protokolliertes Design Review

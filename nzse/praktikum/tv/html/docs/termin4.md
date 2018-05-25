@@ -19,7 +19,7 @@ Legen Sie das Fernbedienungs-Projekt an und generieren Sie alle Activities der A
 Layouts mit den benötigten Views und Widgets. Testen Sie das Layout für unterschiedliche **Displaygrößen** und **Displayauflösungen** und passen Sie es ggf. an.
 2. Schalten Sie um in die Text-Ansicht der Layouts, versuchen Sie das generierte **XML** zu verstehen und räumen Sie in der Text-Ansicht ggf. etwas auf
 3. Verknüpfen Sie die Activities indem Sie die **Navigation** (d.h. die Umschaltung zwischen Screens) implementieren
-4. Optimieren Sie ihren Entwurf hinsichtlich Größe, Platzierung und Beschriftung der Views und Widgets
+4. **Optimieren** Sie ihren Entwurf hinsichtlich **Größe**, **Platzierung** und **Beschriftung** der Views und Widgets
 
 
 ### TV-Server
