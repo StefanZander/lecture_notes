@@ -1,7 +1,7 @@
 # Kennen lernen von Java, Android und Android Studio (--> zu Hause)
 
 
-!!! abstract 
+!!! abstract
     **Lernziele**
 
     - [x] Sie können einfache Android Projekte mit Android Studio anlegen
@@ -9,7 +9,6 @@
     - [x] Sie kennen den Lebenszyklus von Activities
     - [x] Sie kennen die wichtigsten Hilfsmittel in Android Studio
     - [x] Sie verstehen die Konzepte „Datenmodell“ und „Persistenz“ im Kontext einer GUI-Anwendung
-
 
 !!! note
     **Hinweis #1:** Wenn Sie zum Testen und Debuggen Ihr eigenes Handy verwenden wollen, bringen Sie bitte ein passendes USB-Kabel mit. Im Normalfall ist das Kabel des Ladegeräts dazu geeignet. Verbinden Sie das Handy via USB-Kabel mit dem Entwicklungs-PC (Ihr Notebook oder der Labor-PC), schalten Sie das Handy ein, aktivieren Sie Entwickleroptionen und darin USB-Debugging.
@@ -38,10 +37,10 @@ Eventuelle Fehlermeldungen finden Sie im Fenster `0: Messages`, Laufzeitfehler u
 * Hilfe zur API --> rechter Mausklick auf Klassen- oder Methodenname --> `Search with Google`
 
 ### Debuggen
-Setzen Sie ein paar Haltepunkte (Mausklick auf linken Rand im Java Editor). Menü `Run` --> `Debug app`. Lassen Sie das Programm von Haltepunkt zu Haltepunkt laufen; nutzen Sie auch den Einzelschrittmodus. Schauen Sie in Variable hinein.
+Setzen Sie ein paar **Haltepunkte** (Mausklick auf linken Rand im Java Editor). Menü `Run` --> `Debug app`. Lassen Sie das Programm von Haltepunkt zu Haltepunkt laufen; nutzen Sie auch den Einzelschrittmodus. Schauen Sie in Variable hinein.
 
 ### Java verstehen
-Schauen Sie sich den generierten Java-Code genau an und kommentieren Sie jede halbwegs interessante Zeile. Schauen Sie sich die im Quellcode referenzierten Ressourcen im XML-Editor an.
+Schauen Sie sich den **generierten Java-Code** genau an und kommentieren Sie jede halbwegs interessante Zeile. Schauen Sie sich die im Quellcode **referenzierten Ressourcen** im XML-Editor an.
 
 Was hat es mit der Klasse `R` auf sich? Suchen Sie die Datei `R.java` im Windows Explorer / Finder / etc.
 
@@ -78,7 +77,7 @@ mit einer `Log.i`-Testausgabe und ordnen Sie die Methode dem `onClick`-Ereignis 
 
 
 ### Datenmodell der Fernbedienung (optional)
-Alle relevanten **Daten** und **Zustände** sollen in der Fernbedienung verwaltet werden; der Fernseher ist quasi ein reines Display. Überlegen Sie, welche Daten und Zustände innerhalb der Fernbedienung **persistent gespeichert** werden sollen und welche nur **flüchtig**? 
+Alle relevanten **Daten** und **Zustände** sollen in der Fernbedienung verwaltet werden; der Fernseher ist quasi ein reines Display. Überlegen Sie, welche Daten und Zustände innerhalb der Fernbedienung **persistent gespeichert** werden sollen und welche nur **flüchtig**?
 
 !!! note
     **Bedenken Sie:** während einer Fernsehsendung macht man vielleicht noch andere Dinge mit dem Handy; eine andere Frage ist, welche Parameter beim Ausschalten des Fernsehers in Grundstellung gehen sollen. 
@@ -96,9 +95,7 @@ Die folgenden Ergebnisse müssen für eine erfolgreiche Testierung der Praktikum
 !!! abstract
     __Ergebnisse:__
 
-    - [ ] je 1 Benutzer- und Kriterienliste
-    - [ ] 2 Stereotypbeschreibungen
-    - [ ] 2 Anwendungsszenariobeschreibungen
-    4. je 1 funktionale und 1 qualitative Anforderung pro Szenario
-    5. Quantifizierung der qualitativen Anforderungen
-    6. je 1 Begeisterungsfaktor pro Szenario
+    - [ ] Verständnis, was es mit der Klasse `R.java` auf sich hat
+    - [ ] Überschriebene Methoden `onPause`, `onStop`, `onResume`, `onCreate` und `onSaveInstanceState`
+    - [ ] Dokumentierte Ausgabe der Testfälle
+    - [ ] Klassendiagramm der zu persistierenden Daten

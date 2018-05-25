@@ -1,7 +1,6 @@
 # Entwurf
 
-
-!!! abstract 
+!!! abstract
     **Lernziele**
 
     - [x] Sie können eine Benutzungsschnittstelle mit geeigneten Diagrammen beschreiben
@@ -12,19 +11,36 @@
 ## Aufgaben
 
 ### UI Entwurf (Paper Prototyping)
-1. Entwerfen Sie die Benutzungsoberfläche der neuen Fernbedienung in Form von konkreten skizzierten Screen-Diagrammen (Papier-Prototypen, bitte groß und gut erkennbar!). Achten Sie auf Vollständigkeit der benötigten Bedienelemente. Berücksichtigen Sie Platzierung, Größe, Anordnung, Beschriftung. Skizzieren Sie von Icons die Rohform so, dass man deren bildlich-inhaltliche Aussage versteht.
+1. Entwerfen Sie die **Benutzungsoberfläche** der neuen Fernbedienung in Form von konkreten skizzierten Screen-Diagrammen als **Papier-Prototypen** (*bitte groß und gut erkennbar!*). 
 
-2. Testen Sie Ihre Entwürfe mit Ihren Stakeholdern (Ihrer Peer-Gruppe) und identifizieren Sie Ungereimtheiten und/oder Inkonsistenzen und Verbesserungen. Überlegen Sie, ob es gut und richtig ist, wenn Sie keine Verbesserungen identifizieren.
+Hinweise:
+
+- Achten Sie auf Vollständigkeit der benötigten Bedienelemente. 
+- Berücksichtigen Sie Platzierung, Größe, Anordnung, Beschriftung. 
+- Skizzieren Sie von **Icons** die Rohform so, dass man deren bildlich-inhaltliche Aussage versteht. 
+- Nutzen Sie die abstrakten Screen-Diagramme um Entwurfsalternativen zu erkennen, die Sie wiederum konkret skizzieren. Wählen Sie die beste Entwurfsalternative aus und verfolgen Sie diese weiter.
+
+!!! warning
+    **Hinweis:** Die Fernbedienung muss mindestens die im Kapitel Vorbemerkung aufgezählten Funktionen beinhalten.
+
+
 
 
 ### Analyseklasse (TODO)
 1. Abstrahieren Sie die Skizzen zu abstrakten Screen-Diagrammen (inkl. Analyseklasse). Nutzen Sie die abstrakten Screen-Diagramme um Entwurfsalternativen zu erkennen, die Sie wiederum konkret skizzieren. Wählen Sie die beste Entwurfsalternative aus und verfolgen Sie diese weiter.
 
-
 Hinweis: Sie können die Funktionalität der Fernbedienung in einer Analyseklasse zusammenfassen.
 
 ### Navigationsübersicht
-1. Zeichnen Sie die abstrakte Navigationsübersicht zu Ihrem Entwurf. Wohlgemerkt: eine Navigationsübersicht hat Screens als Knoten, nicht Bedienelemente! (beliebtes Missverständnis)
+1. Zeichnen Sie die **abstrakte Navigationsübersicht** zu Ihrem Entwurf inkl. aller **Aktionen**, die einen Übergang von einem Screen zu einem Anderen initieren. Denken Sie auch an **Bedingungen**, die für einen Screenwechsel erfüllt sein müssen bzw. an deren Evaluierung die Ausführung einer Aktion gekoppelt ist.
+
+!!! note
+    **Wohlgemerkt:** Eine Navigationsübersicht hat Screens als Knoten, nicht Bedienelemente! (beliebtes Missverständnis)
+
+
+### Testen
+1. Testen Sie Ihre Entwürfe mit Ihren Stakeholdern (Ihrer Peer-Gruppe) und identifizieren Sie Ungereimtheiten und/oder Inkonsistenzen und Verbesserungen. Überlegen Sie, ob es gut und richtig ist, wenn Sie keine Verbesserungen identifizieren.
+
 
 ## Ergebnisse
 

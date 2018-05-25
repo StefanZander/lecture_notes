@@ -16,19 +16,25 @@
 2. **Stereotype**: Fertigen Sie für zwei dieser Personen eine **Stereotypenbeschreibung** an, d.h. schreiben Sie **lebendige**, **anschauliche Steckbriefe** mit fiktiven oder echten Namen, Bild, Alter, Geschlecht, Ausbildung, Vorlieben, Hobbys, Charaktereigenschaften etc. Anhand dieser Stereotypenbeschreibungen sollen Sie sich später immer wieder vergewissern können, ob die entworfene Fernbedienung auch wirklich zu diesen Personen passt.
 
 ### Anwendungsszenario 
-3. Suchen Sie sich eine Peer-Gruppe, welche fortan die Rolle der User (=Stakeholder) übernimmt.
+1. Suchen Sie sich eine **Peer-Gruppe**, welche fortan die Rolle der User (=Stakeholder) übernimmt.
 
-1. Die User-Gruppe liest sich die Stereotypbeschreibungen der anderen Gruppe durch. Jedes Mitglied der User- Gruppe schlüpft in die Rolle einer Person aus der Stereotypbeschreibung (die Auswahl können sie frei treffen) und beschreibt aus deren Sicht ein plausibles Anwendungsszenario, d.h., der Umgang dieser Person mit dem neuen Fernseher im Kontext ihrer jeweiligen Lebenssituation (hier ist ihre Fantasie gefragt). <p>
+2. Die User-Gruppe liest sich die Stereotypbeschreibungen der anderen Gruppe durch. Jedes Mitglied der User-Gruppe schlüpft in die Rolle einer Person aus der Stereotypbeschreibung (die Auswahl können sie frei treffen) und beschreibt **aus deren Sicht** ein **plausibles Anwendungsszenario**, d.h., der Umgang dieser Person mit dem neuen Fernseher im Kontext ihrer jeweiligen Lebenssituation (hier ist ihre Fantasie gefragt). <p>
 ***Hinweis:** Das Anwendungsszenario (pro Stereotype) soll lebensnah und anschaulich sein und sich nicht in Details verlieren. Beziehen Sie sich nicht auf Knöpfe und deren Beschriftung (die sind ja noch gar nicht erfunden), sondern bleiben Sie auf der Ebene des mentalen Modells (dabei kann die Ich-Form helfen).*
 
 ### Anforderungen & Quantifizierbarkeit
 
-1. Anschließend leiten und stimmen sie gemeinsam mit der User-Gruppe aus **jedem Anwendungsszenario** je **1 funktionale** und **1 qualitative Anforderung** ab. <p>
+1. Anschließend leiten und stimmen sie gemeinsam mit der User-Gruppe aus **jedem Anwendungsszenario** je 
+    * 1 **funktionale** und
+    * 1 **qualitative Anforderung** ab.
 
-6. Überprüfen Sie die **Quantifizierbarkeit** der beiden Qualitätsanforderungen und stellen Sie entsprechende Quantifizierungsmerkmale auf; stimmen Sie diese mit den Stakeholdern ab. Erweitern Sie die Qualitätsanforderungsbeschreibung um diese Merkmale.
+1. Überprüfen Sie die **Quantifizierbarkeit** der beiden Qualitätsanforderungen und stellen Sie entsprechende **Quantifizierungsmerkmale** auf (*Hinweis: hier können Sie sich an den Beispielen aus der Vorlesung bzw. aus dem Skriptum orientieren*); stimmen Sie diese mit den Stakeholdern ab. Erweitern Sie die Qualitätsanforderungsbeschreibung um diese Merkmale.
 
 !!! warning
     **Hinweis:** Achten Sie auf eine **korrekte Formulierung** und überprüfen Sie auch, ob alle **Qualitätskriterien** hinreichend erfüllt werden. Überlegen Sie hierbei, wie die **Einhaltung** eines Qualitätskriteriums nachgewiesen werden kann. **Verfeinern** Sie die Anforderung falls ein Qualitätskriterium überhaupt nicht eingehalten wird.
+
+!!! question
+    **Zum Nachdenken:** In der Vorlesung haben Sie ein **Tool** zur angemessen **Formulierung von Anforderungen** kennen gelernt; wie heißt dieses? Überlegen Sie auch, warum man dieses einsetzen sollte.
+
 
 ### Kano-Modell – Begeisterungsfaktor
 
