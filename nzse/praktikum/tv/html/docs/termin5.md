@@ -14,10 +14,11 @@
 
 ### Datenmodell
 
-1. Implementieren Sie das in Aufgabe 1.9 dargelegte **Datenmodell** und binden Sie es in die App ein
+1. Implementieren Sie das in [Aufgabe 1](termin1.md) dargelegte **Datenmodell** und binden Sie es in die App ein
 2. Machen Sie das Datenmodell **persistent**, indem Sie es in `onPause` jeder relevanten Activity serialisiert in einer Datei speichern und beim `onCreate` aus dieser Datei einlesen und deserialisieren
-
-      *Frage: Erzeugen Sie dabei ein neues Model-Objekt oder füllen Sie lieber das alte mit neuen Inhalten? Müssen/dürfen Activities eigene Referenzen auf das Datenmodell halten?*
+    
+    !!! question
+        **Frage:** Erzeugen Sie dabei ein neues Model-Objekt oder füllen Sie lieber das alte mit neuen Inhalten? Müssen/dürfen Activities eigene Referenzen auf das Datenmodell halten?
 
 ### Benutzeroberfläche
 1. Implementieren Sie Benutzerführung durch **Zeigen/Verbergen** bzw. **Aktivieren/Deaktivieren** von Views und Widgets
