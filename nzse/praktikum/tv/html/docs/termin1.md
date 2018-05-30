@@ -60,7 +60,7 @@ Spielen Sie folgende Testfälle durch und beobachten Sie dabei die Testausgaben
 * App aufrufen
 * App beenden mittels Zurück-Button
 * App aufrufen
-* Handy drehen (Hochformat / Querformat; im Emulator mit Ctrl+F11 simulieren)
+* Handy drehen (Hochformat / Querformat; im Emulator mit `Ctrl`+`F11` simulieren)
 
 Untersuchen Sie mit dem Debugger und mit den Testausgaben folgende Fragen:
 
