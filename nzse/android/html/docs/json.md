@@ -12,8 +12,21 @@
 
 The Android platform includes the standard `json.org` library, which allows processing and creating JSON files.
 
+!!! warning
+    __Plase note:__ Instances of this class are **_not_ thread safe**. Although this class is nonfinal, it was not designed for inheritance and should not be subclassed. In particular, self-use by overrideable methods is not specified.
+
 !!! note
-    __Hint:__ You can also use open source libraries such as `Gson`, available at <https://github.com/google/gson> or <https://github.com/square/moshi> for JSON processing. This library is easier to use, faster and provide more flexibility.
+    __Hint:__ You can also use open source libraries such as __Gson__ or __Moshi__, available at <https://github.com/google/gson> and <https://github.com/square/moshi> for JSON processing. This library is easier to use, faster and provide more flexibility.
+
+### JSONObject
+
+The `JSONObject` class provides a modifiable set of name/value mappings. 
+
+* Names are unique, non-null strings. 
+* Values may be any mix of `JSONObjects`, `JSONArrays`, Strings, Booleans, Integers, Longs, Doubles or NULL. Values may not be `null`, NaNs, infinities, or of any type not listed here.
+
+!!! note
+    __Hinweis:__ Für das Praktikum ist die Verwendung von `JSONObject` ausreichend, da die Antworten des TV-Servers vordefiniert und einfach zu verarbeiten sind. Für komplexere Applikationen empfiehlt sich die Verwendung der eingangs genannten Bibliotheken.
 
 ### Storing Data as JSON
 
@@ -39,9 +52,6 @@ public void writeJSON() {
 
 Converting a JSON string into a JSON object is also very simple. The following code demonstrates how to transform a JSON string into a `JSONObject` from which further data can be extracted.
 
-!!! note
-    __Note:__ The structure of the serialized JSON data need to be known beforehand, i.e., the logic needed to map the extracted JSON elements into Java object must be implemented by hand in the source code.
-
 ```java
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -49,10 +59,14 @@ import org.json.JSONObject;
 String jsonString = readJsonObjectFromSomeWhere(); 
 try {
     JSONObject json = new JSONObject(jsonString);
-    } catch (Exception e) {
-        e.printStackTrace();
-    }
+} catch (Exception e) {
+    e.printStackTrace();
+}
+// read data from the JSONObject
 ```
+
+!!! note
+    __Note:__ The structure of the serialized JSON data need to be known beforehand, i.e., the logic needed to map the extracted JSON elements into Java object must be implemented by hand in the source code.
 
 !!! warning
     __Warning:___ The code example cannot run in the main thread in Android (why?). Place such code in a Thread or in an `AsyncTask`.
@@ -68,13 +82,13 @@ Gson can work with arbitrary Java objects including pre-existing objects that yo
 
 ### Using GSON
 
-The primary class to use is Gson which you can just create by calling new Gson(). There is also a class GsonBuilder available that can be used to create a Gson instance with various settings like version control and so on.
+The primary class to use is `Gson`, which you can just create by calling `new Gson()`. There is also a class `GsonBuilder` available that can be used to create a `Gson` instance with various settings like version control and so on.
 
 The Gson instance does not maintain any state while invoking Json operations. So, you are free to reuse the same object for multiple Json serialization and deserialization operations.
 
 ### Using Gson with Gradle/Android
 
-``` gradle
+``` Groovy
 dependencies {
     compile 'com.google.code.gson:gson:2.8.5'
 }
@@ -125,13 +139,13 @@ String json = gson.toJson(obj);
 !!! note
     **Note** It is not possible to serialize objects with circular references since that will result in infinite recursion.
 
-```java
+``` java
 // Deserialization
 BagOfPrimitives obj2 = gson.fromJson(json, BagOfPrimitives.class);
 // ==> obj2 is just like obj
 ```
 
-#### Important Remarks
+### Important Remarks
 
 * It is perfectly fine (and recommended) to use private fields.
 * There is no need to use any annotations to indicate a field is to be included for serialization and deserialization. All fields in the current class (and from all super classes) are included by default.
@@ -153,3 +167,4 @@ TODO: Add more information about serializing and deserializing objects and colle
 * <http://www.vogella.com/tutorials/AndroidJSON/article.html>
 * <http://www.vogella.com/tutorials/JavaLibrary-Gson/article.html>
 * <https://github.com/google/gson/blob/master/UserGuide.md>
+* <https://developer.android.com/reference/org/json/JSONObject>
