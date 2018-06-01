@@ -2,6 +2,7 @@ site_name: Android & Android Studio
 
 pages:
   - 'Grundlagen': 'grundlagen.md'
+  - 'JSON': 'json.md'
 
 theme:
   name: 'material'
