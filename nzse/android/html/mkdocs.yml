@@ -1,0 +1,44 @@
+site_name: Android & Android Studio
+
+pages:
+  - 'Grundlagen': 'grundlagen.md'
+
+theme:
+  name: 'material'
+  custom_dir: 'material'
+  
+  palette:
+    primary: 'blue'
+    accent: 'red'
+  
+  feature:
+    tabs: true
+
+  font:
+    text: 'Zilla Slab'
+    code: 'Fira mono'
+
+extra_css:
+  - 'stylesheets/extra.css'
+
+extra_javascript:
+  - 'javascript/extra.js'
+    
+markdown_extensions:
+  - admonition
+  - codehilite:
+      linenums: true
+      guess_lang: true
+  - toc:
+      permalink: false
+  - meta
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  
