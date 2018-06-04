@@ -40,7 +40,11 @@
 
 
 ### Testen
-1. Testen Sie Ihre Entwürfe mit Ihren Stakeholdern (Ihrer Peer-Gruppe) und identifizieren Sie Ungereimtheiten und/oder Inkonsistenzen und Verbesserungen. Überlegen Sie, ob es gut und richtig ist, wenn Sie keine Verbesserungen identifizieren.
+1. Testen Sie Ihre Entwürfe mit Ihren Stakeholdern (Ihrer Peer-Gruppe) und identifizieren Sie Ungereimtheiten und/oder Inkonsistenzen und Verbesserungen. Überlegen Sie, ob es gut und richtig ist, wenn Sie keine Verbesserungen identifizieren. Gehen Sie nach folgendem Schema vor:
+
+1. Verbesserung: Überlegenen Sie sich zu jeder im Abschnitt [Vorbemerkung](vorbemerkung.md) genannten Funktion einen kurzen Use Case, in dem die Funktion nachgefragt wird und nutzen Sie diesen Use Case um zu überprüfen, ob die Interaktionsmetaphern zum Ausführen des Use Case (Aufrufen der Funktion) intuitiv von den Testnutzern erkannt werden.
+
+1. Notieren Sie sich Auffälligkeiten / Ungereimtheiten / etc. zu jedem Use Case und leiten Sie daraus Verbesserungen für Ihre Entwürfe ab.
 
 
 ## Ergebnisse
@@ -53,3 +57,4 @@ Die folgenden Ergebnisse müssen für eine erfolgreiche Testierung der Praktikum
     - [ ] Paper Prototypes ihrer Applikation
     - [ ] Analyseklasse
     - [ ] Navigationsübersicht
+    - [ ] Liste der Use Cases + Testprotokoll
