@@ -39,10 +39,10 @@
         **Wohlgemerkt:** Eine Navigationsübersicht hat Screens als Knoten, nicht Bedienelemente! (beliebtes Missverständnis)
 
 
-### Testen
-1. Testen Sie Ihre Entwürfe mit Ihren Stakeholdern (Ihrer Peer-Gruppe) und identifizieren Sie Ungereimtheiten und/oder Inkonsistenzen und Verbesserungen. Überlegen Sie, ob es gut und richtig ist, wenn Sie keine Verbesserungen identifizieren. Gehen Sie nach folgendem Schema vor:
+### UI Test
+Testen Sie Ihre Entwürfe mit Ihren Stakeholdern (Ihrer Peer-Gruppe) und identifizieren Sie Ungereimtheiten und/oder Inkonsistenzen und Verbesserungen. Überlegen Sie, ob es gut und richtig ist, wenn Sie keine Verbesserungen identifizieren. Gehen Sie nach folgendem Schema vor:
 
-1. Verbesserung: Überlegenen Sie sich zu jeder im Abschnitt [Vorbemerkung](vorbemerkung.md) genannten Funktion einen kurzen Use Case, in dem die Funktion nachgefragt wird und nutzen Sie diesen Use Case um zu überprüfen, ob die Interaktionsmetaphern zum Ausführen des Use Case (Aufrufen der Funktion) intuitiv von den Testnutzern erkannt werden.
+1. **Zur Vorbereitung**: Überlegenen Sie sich zu jeder im Abschnitt [Vorbemerkung](vorbemerkung.md) genannten Funktion des TVs einen kurzen **Use Case**, in dem die Funktion nachgefragt wird; nutzen Sie diesen Use Case um zu überprüfen, ob die Interaktionsmetaphern zum Ausführen des Use Case (Aufrufen der Funktion) intuitiv von den Testnutzern erkannt werden. Notieren Sie die Use Cases und nutzen Sie dies als **Leitfaden** für die Moderation des UI Tests.
 
 1. Notieren Sie sich Auffälligkeiten / Ungereimtheiten / etc. zu jedem Use Case und leiten Sie daraus Verbesserungen für Ihre Entwürfe ab.
 
@@ -54,7 +54,7 @@ Die folgenden Ergebnisse müssen für eine erfolgreiche Testierung der Praktikum
 !!! abstract
     __Ergebnisse:__
 
-    - [ ] Paper Prototypes ihrer Applikation
+    - [ ] Paper Prototype ihrer Applikation
     - [ ] Analyseklasse
     - [ ] Navigationsübersicht
     - [ ] Liste der Use Cases + Testprotokoll
