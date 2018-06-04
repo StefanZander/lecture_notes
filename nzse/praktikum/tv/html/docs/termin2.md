@@ -29,6 +29,8 @@
     * 1 **funktionale** und
     * 1 **qualitative Anforderung** ab.
 
+    Verwenden Sie für die Formulierung eine / die in der Vorlesung behandelte **Satzschablone**.
+
 1. Überprüfen Sie die **Quantifizierbarkeit** der beiden Qualitätsanforderungen und stellen Sie entsprechende **Quantifizierungsmerkmale** auf (*Hinweis: hier können Sie sich an den Beispielen aus der Vorlesung bzw. aus dem Skriptum orientieren*); stimmen Sie diese mit den Stakeholdern ab. Erweitern Sie die Qualitätsanforderungsbeschreibung um diese Merkmale.
 
     !!! warning
