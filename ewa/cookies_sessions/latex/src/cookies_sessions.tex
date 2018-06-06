@@ -27,7 +27,7 @@
 
 \title{Cookies and Sessions\thanks{Selected lecture of the module ``Entwicklung Webbasierter Anwendungen''}}
 \author[opt Author]{Prof.\ Dr.\ Stefan Zander}
-\date{8.\ December 2017}  % if the \date{} command is left out, the current date will be used
+% \date{6.\ June 2018}  % if the \date{} command is left out, the current date will be used
 
 % The following package makes prettier tables.  We're all about the bling!
 \usepackage{booktabs}
@@ -547,7 +547,7 @@ One\marginnote{Whether a client accepts cookies can only by ascertained with the
 \subsection{Reading Session Data} % (fold)
 \label{sub:reading_session_data}
 Data can be read from the session by accessing the \texttt{\$\_SESSION} array with the data key.
-Be aware that data can only be read from the session when \texttt{session\_start()} was called before, which causes the \texttt{\$\_SESSION} array to be filled with the respective values. 
+Be\marginnote{Data can only be read from the session after \texttt{session\_start()} was called.} aware that data can only be read from the session when \texttt{session\_start()} was called before, which causes the \texttt{\$\_SESSION} array to be filled with the respective values. 
 
 Listing~\ref{reading_session_data} shows how data can be read from the \texttt{\$\_SESSION} array. 
 \begin{listing}
@@ -567,7 +567,7 @@ Listing~\ref{reading_session_data} shows how data can be read from the \texttt{\
 	\label{reading_session_data}
 \end{listing}
 
-Please note that when reading data from the session, it should first be checked whether the data exists using the \texttt{isset()} function. Additionally, the data value need to be escaped in order to avoid code injection and to not compromise the HTML output. 
+Please\marginnote{Use the \texttt{isset()} function when reading data from the session} note that when reading data from the session, it should first be checked whether the data exists using the \texttt{isset()} function. Additionally,\marginnote{Escape data stored in the session to avoid code injection} the data value need to be \emph{escaped} in order to avoid \emph{code injection} and to not compromise the HTML output. 
 
 \subsection{Deleting Session Data} % (fold)
 \label{sub:deleting_session_data}
@@ -595,13 +595,13 @@ The excerpt in Listing~\ref{deleting_session_data} uses variant 2 and 1 for the 
 	\label{deleting_session_data}
 \end{listing}
 
-In order to completely destroy a session and its data, two steps are necessary:
+In\marginnote{Completely destroying the session object} order to completely destroy a session and its data, two steps are necessary:
 \begin{enumerate}
 	\item Delete all data from the session array using the \texttt{session\_unset()} function or reinitializing the session variable using \texttt{\$\_SESSION = array();}
 	\item Destroy the session using \texttt{session\_destroy()}
 \end{enumerate}
 
-Eventually, sometimes it might be necessary to also delete the session cookie, if it has been set before. 
+Eventually,\marginnote{Delete the session cookie} sometimes it might be necessary to also delete the session cookie, if it has been set before. 
 This can be done with the following code:
 \begin{listing}
 \begin{lstlisting}[language=PHP]
@@ -646,7 +646,7 @@ The following PHP program illustrates how to completely delete all session data 
 \label{sec:using_sessions_for_access_control}
 Sessions are omnipresent and widely used in PHP-based Web applications.
 A typical use case scenario is to protected Web content from unauthorized access, i.e., sensitive information can only be retrieved after authentication and authorization via a login page.
-The following pages demonstrate how this can be realized using PHP and sessions.
+Listing~\ref{login_inc},~\ref{protected_page}, and~\ref{login_page} demonstrate how this can be realized using PHP and sessions.
 
 \begin{listing}
 \begin{lstlisting}[language=PHP]
@@ -717,11 +717,11 @@ Password: <input type="password" name="password" size="10" /><br />
 	\label{login_page}
 \end{listing}
 
-
+\newpage
 \section{Security Concerns} % (fold)
 \label{sec:security_concerns}
 Sessions are easy to use and maintain in PHP but also yield security concerns, particularly when realized as \emph{cookie-less sessions}. 
-The reason for that is that in cookie-less sessions, the key to user data---the Session ID---is available as plain text since it is encoded in the Web site's URLs.
+The\marginnote{In cookie-less sessions, the Session ID is available as plain text} reason for that is that in cookie-less sessions, the key to user data---the Session ID---is available as plain text since it is encoded in the Web site's URLs.
 The following scenario illustrates a potential security flaw that comes with cookie-less sessions.
 
 Imagine the following situation:
@@ -735,9 +735,9 @@ If you are lucky, the HTTP request issued by clicking on the link in the mail cl
 
 In the early days of Web mail, some mail providers such as Lycos and GMX used cookie-less sessions and were vulnerable to session hijacking attacks. Meanwhile, almost all providers use temporary cookies to circumvent such attacks. 
 
-Although a number of counter measures exists that try to minimize such attacks (e.g., storing the user's current IP address in a separate session variable) no method provides full security. In case of storing the user's IP address, the server will evaluate the validity of the client's IP adress with every request and if the IP does not match the IP address stored in the session variable, the session will be immediately destroyed. 
+Although\marginnote{Counter measure \#1: Evaluate the client's IP address in every request} a number of counter measures exists that try to minimize such attacks (e.g., storing the user's current IP address in a separate session variable) no method provides full security. In case of storing the user's IP address, the server will evaluate the validity of the client's IP adress with every request and if the IP does not match the IP address stored in the session variable, the session will be immediately destroyed. 
 
-Another possibility is to evaluate the \texttt{HTTP\_REFERER} environment variable and determine the page from where the request was initiated. In case of a session hijacking attack, the value of this variable might be incorrect. Unfortunately, this method is also not entirely reliable since some Web browser either do not send this value or it might be compromised.  
+Another\marginnote{Counter measure \#2: Evaluate the origin of the page that issed the request} possibility is to evaluate the \texttt{HTTP\_REFERER} environment variable and determine the page from where the request was initiated. In case of a session hijacking attack, the value of this variable might be incorrect. Unfortunately, this method is also not entirely reliable since some Web browser either do not send this value or it might be compromised.  
 
 \textbf{In general, only use sessions in combination with cookies, i.e., solely store the Session ID in a cookie!}
 

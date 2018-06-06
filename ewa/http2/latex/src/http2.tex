@@ -27,7 +27,7 @@
 
 \title{Das HTTP/2-Protokoll\thanks{Ausgesuchte Einheit der Vorlesung ``Entwicklung Webbasierter Anwendungen''}}
 \author[opt Author]{Prof.\ Dr.\ Stefan Zander}
-\date{16.\ Februar 2018}  % if the \date{} command is left out, the current date will be used
+% \date{16.\ Februar 2018}  % if the \date{} command is left out, the current date will be used
 
 % The following package makes prettier tables.  We're all about the bling!
 \usepackage{booktabs}
@@ -213,7 +213,7 @@ frame=l % was 'l' || was lines
 
 \section{Einführung}\label{sec:introduction}
 
-Die Ladezeit einer Webseite ist eines wenn nicht das wichtigste Kriterium einer guten Web Usability. Eine Ladezeit von < 1 Sekunde wird als Heiliger Gral angesehen, nach dem alle News-Sites, Onlineshops, Portale, Blogs und Landingpages suchen. Denn an der Ladezeit hängen sowohl Nutzerzufriedenheit als auch Konversionsraten und deshalb letztlich Traffic und Umsatz einer Seite. Der Einfluss ist so immens, dass beispielsweise Amazon bei einem Anstieg der Ladezeit um 0,1 Sekunden bereits ein Prozent an Umsatz verlieren würde~\citep{heise:2018}.
+Die Ladezeit einer Webseite ist eines, wenn nicht \emph{das} wichtigste Kriterium einer guten \textbf{Web Usability}. Eine Ladezeit von < 1 Sekunde wird als Heiliger Gral angesehen, nach dem alle News-Sites, Onlineshops, Portale, Blogs und Landingpages suchen. Denn an der Ladezeit hängen sowohl Nutzerzufriedenheit als auch Konversionsraten und deshalb letztlich Traffic und Umsatz einer Seite. Der Einfluss ist so immens, dass beispielsweise Amazon bei einem Anstieg der Ladezeit um 0,1 Sekunden bereits ein Prozent an Umsatz verlieren würde~\citep{heise:2018}.
 
 Das Problem besteht insbesondere auch bei mobilen Webseiten, wie nachfolgendes Zitat verdeutlicht~\citep{hobo:2018}:
 \begin{quote}
@@ -236,26 +236,28 @@ Eine weitere Studie, welche die \textbf{Bounce rate}\marginnote{Die \emph{Bounce
 	\emph{``Recently, we trained a deep neural network—a computer system modeled on the human brain and nervous system—with a large set of bounce rate and conversions data. The neural net, which had a 90\% prediction accuracy, found that as page load time goes from one second to seven seconds, the probability of a \textbf{mobile site visitor bouncing increases 113\%}. Similarly, as the number of elements—text, titles, images—on a page goes from 400 to 6,000, the \textbf{probability of conversion drops 95\%}.''}
 \end{quote}
 
-Weitere Interessante Einblicke einschließlich Maßnahmen zur Behebung von Geschwindigkeitsproblemen bietet die folgende Seite\sidenote{\url{https://www.thinkwithgoogle.com/marketing-resources/experience-design/mobile-page-speed-load-time/}}.
+Weitere interessante Einblicke einschließlich Maßnahmen zur Behebung von Geschwindigkeitsproblemen bietet die Seite
+
+\url{https://www.thinkwithgoogle.com/marketing-resources/experience-design/mobile-page-speed-load-time/} .
 
 Aufgrund solcher Ergebnisse ist es nicht verwunderlich, dass Unternehmen wie Google seit Jahren das Thema Webperformance vorantreiben und sich die \textbf{Ladezeit einer Seite sogar auf ihre Platzierung in den Google-Suchergebnissen auswirkt}.
 
 Technisch gesehen hängt die Ladezeit einer Seite an drei zentralen Faktoren: 
 \begin{enumerate}
-	\item an der Verarbeitung im Server, 
-	\item an der Übertragung über das Netzwerk, und 
-	\item an der Darstellung im Browser.
+	\item der Verarbeitung im Server, 
+	\item der Übertragung über das Netzwerk, und 
+	\item der Darstellung im Browser.
 \end{enumerate} 
-Alle drei können einen starken Einfluss auf die Performance haben und die Ladezeitoptimierung zu einem langen und komplexen Prozess machen.
+Je nach den vorherrschenden Gegebenheit können alle drei Faktoren einen starken Einfluss auf die Performance haben und die Ladezeitoptimierung zu einem langen und komplexen Prozess machen.
 
-Einen dieser drei Aspekte -- die Übertragung der Webseite vom Server zum Browser -- konnten Entwickler bislang kaum beeinflussen. Seit 1999 ist das Hypertext Transfer Protocol HTTP in der Version 1.1 der Standard zur Datenübermittlung im Web\marginnote{Nur zur Erinnerung: im Jahre 1999 war der bedeutendste Hersteller für Mobiltelefone ein Unternehmen aus Finnland mit dem Namen Nokia. Der Präsident der USA hieß Bill Clinton. Apple lieferte seine Rechner mit fest verbauten Bildröhren aus, und deutsche Kunden bezahlten dafür damals nicht in Euro, sondern in D-Mark. Quelle:~\citep{weinschenkler:2017}}. Nach über 15 Jahren gibt es nun mit Version 2 (auch HTTP/2 oder kurz h2 genannt) den langersehnten Nachfolger. 
+Einen dieser drei Aspekte -- \emph{die Übertragung der Webseite vom Server zum Browser} -- konnten Entwickler bislang kaum beeinflussen. Seit 1999 ist das Hypertext Transfer Protocol HTTP in der Version 1.1 der Standard zur Datenübermittlung im Web\marginnote{Nur zur Erinnerung: im Jahre 1999 war der bedeutendste Hersteller für Mobiltelefone ein Unternehmen aus Finnland mit dem Namen Nokia. Der Präsident der USA hieß Bill Clinton. Apple lieferte seine Rechner mit fest verbauten Bildröhren aus, und deutsche Kunden bezahlten dafür damals nicht in Euro, sondern in D-Mark. Quelle:~\citep{weinschenkler:2017}}. Nach über 15 Jahren gibt es nun mit Version 2 (auch \emph{HTTP/2} oder kurz \emph{h2} genannt) den langersehnten Nachfolger. 
 
 
 
 
 \section{HTTP/2} % (fold)
 \label{sec:http_2}
-HTTP/2 stellt den Nachfolger von HTTP/1.1 dar und basiert auf dem von Google entwickelten SPDY (Speedy) Protokoll\sidenote{SPDY Whitepaper des Chromium Projekts: \url{https://www.chromium.org/spdy/spdy-whitepaper}}. Im Gegensatz zu SPDY benötigt HTTP/2 keine Verschlüsselung mittels TLS (Transport Layer Security) und kann auch für HTTP Seiten verwendet werden~\citep{mueller:2015}. Langfristig soll HTTP/1.1 durch HTTP/2 abgelöst werden und sich als Standard etablieren. Vorerst stellt die neue Protokollversion jedoch nur eine Alternative dar und gewährleistet durch Abwärtskompatibilität, dass auch Browser, die dieses Protokoll nicht unterstützen, Webseiten über HTTP/1.1 laden.
+HTTP/2 stellt den Nachfolger von HTTP/1.1 dar und basiert auf dem von Google entwickelten \emph{SPDY (Speedy) Protokoll}\sidenote{SPDY Whitepaper des Chromium Projekts: \url{https://www.chromium.org/spdy/spdy-whitepaper}}. Im Gegensatz zu SPDY benötigt HTTP/2 keine Verschlüsselung mittels TLS (Transport Layer Security) und kann auch für HTTP Seiten verwendet werden~\citep{mueller:2015}. Langfristig soll HTTP/1.1 durch HTTP/2 abgelöst werden und sich als Standard etablieren. Vorerst stellt die neue Protokollversion jedoch nur eine Alternative dar und gewährleistet durch Abwärtskompatibilität, dass auch Browser, die dieses Protokoll nicht unterstützen, Webseiten über HTTP/1.1 laden.
 
 HTTP/2 ist ein Binärprotokoll, setzt einen klaren Fokus auf Performance und gibt Entwicklern verschiedene Möglichkeiten zur Optimierung der Seitenladezeit an die Hand. 
 Version 2 des Hypertext Transfer Protokolls\sidenote{Spezifikation: \url{https://tools.ietf.org/html/rfc7540}} wurde im Mai 2015 von der Internet Engineering Task Force (IETF) als Standard verabschiedet. 
@@ -290,7 +292,7 @@ Zum selber testen finden sich die beiden Demos unter \url{http://www.http2demo.i
 
 \subsection{Semantik und Bestandteile} % (fold)
 \label{sub:semantik_und_bestandteile}
-Die Semantik des HTTP-Protokolls bleibt mit Version 2 unberührt; die bekannten HTTP-Schlüsselwörter wie \texttt{GET}, \texttt{POST}, \texttt{PUT}, \texttt{DELETE} oder \texttt{OPTIONS} bleiben erhalten. Auf der Anwendungsschicht ändert sich nichts. Neu ist die Abwicklung des Transports der Header und Nutzdaten. HTTP-Requests und -Responses sind in \textbf{Streams}, \textbf{Messages} und \textbf{Frames} kodiert. Das HTTP/2-Protokoll besteht aus folgenden Bausteinen:
+Die Semantik des HTTP-Protokolls bleibt mit Version 2 unberührt; die bekannten HTTP-Schlüsselwörter wie \texttt{GET}, \texttt{POST}, \texttt{PUT}, \texttt{DELETE} oder \texttt{OPTIONS} bleiben erhalten. Auf der Anwendungsschicht ändert sich nichts. Neu ist die Abwicklung des Transports der Header und Nutzdaten: HTTP-Requests und -Responses sind in \textbf{Streams}, \textbf{Messages} und \textbf{Frames} kodiert. %. Das HTTP/2-Protokoll besteht aus folgenden Bausteinen:
 
 \begin{itemize}
 	\item \textbf{Stream}: Ein bidirektionaler Austausch von Daten zwischen Server und Client, der aus einer oder mehreren Messages besteht. Die Übertragung eines Streams erfolgt innerhalb einer TCP-Verbindung. Mehrere Streams lassen sich simultan über dieselbe TCP-Verbindung übertragen.
@@ -347,10 +349,11 @@ Diese Vorlesungseinheit gibt einen Überblick über die zentralen Ideen und Tech
 HTTP/1.1\marginnote{HTTP/1.1 erlaubt jeweils nur eine Request-Response-Konversation pro TCP-Verbindung} bietet keine direkte Möglichkeit, Requests zu parallelisieren. Über eine TCP-Verbindung kann jeweils nur ein HTTP-Request und daraufhin nur eine HTTP-Response fließen. Das ist für zeitgemäße Webseiten problematisch. Die Startseiten großer Online-Portale erfordern nicht selten den Transfer mehrerer Megabyte an Daten vom Server an den Client. Um diesen Download in Gang zu setzen und abzuschließen, sind mitunter hunderte von HTTP-Requests notwendig.
 
 % Eine wesentliche Limitierung von HTTP/1.1 ist, dass sich pro TCP-Verbindung zum Server nur eine Anfrage (ein Request) gleichzeitig stellen lässt. 
-Um\marginnote{HTTP/1.1 erlaubt max. 6 parallele Verbindungen zum Server} diese Limitierung zu umgehen öffnen Browser üblicherweise sechs parallele Verbindungen, sodass \textbf{maximal sechs Ressourcen gleichzeitig übertragen} werden können. Alle übrigen Requests müssen auf eine freie Verbindung warten\marginnote{Head of Line Blocking}; dieser Flaschenhals wird \textbf{Head of Line Blocking} genannt und ist in Abbildung~\ref{fig:head_of_line_blocking} (linke Hälfte) dargestellt.
+Um\marginnote{\textbf{Workaround 1}: Aufbau mehrerer paralleler Verbindungen zum Server} diese Limitierung zu umgehen öffnen Browser üblicherweise sechs parallele Verbindungen, so dass \textbf{maximal sechs Ressourcen gleichzeitig übertragen} werden können\marginnote{HTTP/1.1 erlaubt max. 6 parallele Verbindungen zum Server}. Alle übrigen Requests müssen auf eine freie Verbindung warten\marginnote{Head of Line Blocking}; dieser Flaschenhals wird \textbf{Head of Line Blocking} genannt und ist in Abbildung~\ref{fig:head_of_line_blocking} (linke Hälfte) dargestellt.
 
 % subsubsection workaround_1_parallele_requests (end)
-Typische\marginnote{\textbf{Workaround 1}: Aufbau mehrerer paralleler Verbindungen zum Server} Workarounds waren bisher, dass Webbrowser \textbf{mehrere TCP-Verbindungen} zum Server aufbauen, über die sich parallel mehrere HTTP-Verbindungen abwickeln lassen. Der dadurch entstehende Protokoll-Overhead fällt jedoch vergleichsweise stark ins Gewicht, da jede TCP-Verbindung einen initialen Aufbau erfordert. Dieser notwendige Nachrichtenaustausch für den Verbindungsaufbau zwischen Client, DNS-Service und Server ist in Abbildung xxx dargestellt
+Der Aufbau mehrerer paralleler Verbindungen zum Server hat jedoch den Nachteil, dass der dadurch entstehende \emph{Protokoll-Overhead} vergleichsweise stark ins Gewicht fällt, da jede TCP-Verbindung einen initialen Aufbau erfordert. Dieser notwendige Nachrichtenaustausch für den Verbindungsaufbau zwischen Client, DNS-Service und Server ist in Abbildung~\ref{fig:tcp_roundtrip} dargestellt.
+% Typische\marginnote{\textbf{Workaround 1}: Aufbau mehrerer paralleler Verbindungen zum Server} Workarounds waren bisher, dass Webbrowser \textbf{mehrere TCP-Verbindungen} zum Server aufbauen, über die sich parallel mehrere HTTP-Verbindungen abwickeln lassen. Der dadurch entstehende Protokoll-Overhead fällt jedoch vergleichsweise stark ins Gewicht, da jede TCP-Verbindung einen initialen Aufbau erfordert. Dieser notwendige Nachrichtenaustausch für den Verbindungsaufbau zwischen Client, DNS-Service und Server ist in Abbildung xxx dargestellt
 
 \begin{figure}%
 	\centering
@@ -392,7 +395,8 @@ In der Konsequenz sind alle zuvor genannten Workarounds hinfällig, die mit HTTP
   \label{fig:head_of_line_blocking}
 \end{figure}
 
-Bei HTTP/2 gibt es diese Limitierung nicht mehr. Alle Ressourcen werden über eine einzige Verbindung geladen und der Browser kann beliebig viele Requests parallel stellen. Dieses Multiplexing umgeht mehrere Probleme: 
+\emph{remove}---Bei HTTP/2 gibt es diese Limitierung nicht mehr. Alle Ressourcen werden über eine einzige Verbindung geladen und der Browser kann beliebig viele Requests parallel stellen. 
+\emph{integrate}---Dieses Multiplexing umgeht mehrere Probleme: 
 \begin{enumerate}
 	\item Erstens wird die anfängliche Durchsatzbegrenzung einer neuen TCP-Verbindung durch den Slow-Start-Algorithmus schneller überwunden.
 	\item  Zweitens fällt bei nur einer Verbindung der langsame Verbindungsaufbau per SSL weniger ins Gewicht. Indem HTTP/2 alle Requests in einer Verbindung bündelt, wird so schnell die maximale Bandbreite des Netzwerks genutzt.
