@@ -198,8 +198,8 @@ frame=l % was 'l' || was lines
 \begin{lernziele}
 \begin{itemize}
 	\item Kennenlernen der Unterschiede zwischen HTTP/1.1 und HTTP/2
-	\item Kennenlernen der mit HTP/2 eingeführten Neuerungen 
-	\item Kennenlernen der grundlegenden Konzepte von HTTP/2
+	\item Kennenlernen der mit HTTP/2 eingeführten Neuerungen 
+	\item Kennenlernen der technischen Beschränkungen von HTTP/1.1
 \end{itemize}
 \end{lernziele}
 
@@ -215,32 +215,36 @@ frame=l % was 'l' || was lines
 
 Die Ladezeit einer Webseite ist eines, wenn nicht \emph{das} wichtigste Kriterium einer guten \textbf{Web Usability}. Eine Ladezeit von < 1 Sekunde wird als Heiliger Gral angesehen, nach dem alle News-Sites, Onlineshops, Portale, Blogs und Landingpages suchen. Denn an der Ladezeit hängen sowohl Nutzerzufriedenheit als auch Konversionsraten und deshalb letztlich Traffic und Umsatz einer Seite. Der Einfluss ist so immens, dass beispielsweise Amazon bei einem Anstieg der Ladezeit um 0,1 Sekunden bereits ein Prozent an Umsatz verlieren würde~\citep{heise:2018}.
 
-Das Problem besteht insbesondere auch bei mobilen Webseiten, wie nachfolgendes Zitat verdeutlicht~\citep{hobo:2018}:
+Das Problem besteht insbesondere auch bei mobilen Webseiten, wie nachfolgender Ausschnitt aus einer 2018 veröffentlichten Studie verdeutlicht~\citep{hobo:2018}:
 \begin{quote}
 	\emph{``The average time it takes to fully load a mobile landing page is 22 seconds, according to a new analysis. \textbf{Yet 53\% of visits are abandoned if a mobile site takes longer than three seconds to load.} That’s a big problem.''}\begin{flushright}\vspace{-1em}---Google \end{flushright}
 \end{quote}
 
-Google Research hat hierzu interessante Studien veröffentlich~\citep{an:2016}:
+Google Research hat hierzu weitere Studien durchgeführt (vgl.~\citep{an:2016}) und kommt zu folgenden Ergebnissen:
 \begin{quote}
 	\emph{``Mobile sites lag behind desktop sites in key engagement metrics such as average time on site, pages per visit, and bounce rate. For retailers, this can be especially costly since 30\% of all online shopping purchases now happen on mobile phones. The average U.S. retail mobile site loaded in 6.9 seconds in July 2016, but, according to the most recent data, \textbf{40\% of consumers will leave a page that takes longer than three seconds to load}. And \textbf{79\% of shoppers who are dissatisfied with site performance} say they're less likely to purchase from the same site again.''}
 \end{quote}
 
-Mit Hilfe eines neuronalen Netzwerks fand man heraus, dass die Hauptfaktoren, die sich für die Dauer des Seitenaufbaus verantwortlich zeichnen die \begin{itemize}
-	\item Anzahl der Seitenelemente, sowie
-	\item die Anzahl der enthaltenen Bilder
-\end{itemize} sind. Bei komplexen Seiten mit vielen Elementen dauert das Parsen des Seitencodes sowie der Aufbau des DOMs bedeutend länger. Bei Grafiken sollte man auflösungsoptimierte JPEGs anstatt PNG Formate verwenden.
+Mit Hilfe eines neuronalen Netzwerks fand man heraus, dass folgende Hauptfaktoren für die Dauer des Seitenaufbaus verantwortlich sind: 
+\begin{enumerate}[(i)]
+	\item Anzahl der Seitenelemente, sowie die
+	\item Anzahl der enthaltenen Bilder
+\end{enumerate} 
+Bei komplexen Seiten mit vielen Elementen dauert das Parsen des Seitencodes sowie der Aufbau des DOMs bedeutend länger. Bei Grafiken empfiehlt es sich, auflösungsoptimierte JPEGs anstatt PNG Formate zu verwenden.
 
-Eine weitere Studie, welche die \textbf{Bounce rate}\marginnote{Die \emph{Bounce rate} misst den prozentualen Anteil der Nutzer, die eine Web-Präsenz nach der Startseite wieder verlassen ohne die weiteren Inhalte in Augenschein genommen zu haben (\emph{``[...]without exploring beyond the landing page.''}). } -- also das Verlassen einer Seite ohne deren Inhalt genauer in Augenschein zu nehmen -- untersucht hat, kommt zu folgendem Ergebnis~\citep{google:2017}:
+Eine weitere von Google Research durchgeführte Studie (vgl.~\citep{google:2017}), welche die \textbf{Bounce rate}\marginnote{Die \emph{Bounce rate} misst den prozentualen Anteil der Nutzer, die eine Web-Präsenz nach der Startseite wieder verlassen ohne die weiteren Inhalte in Augenschein genommen zu haben (\emph{``[...]without exploring beyond the landing page.''}). } -- also das Verlassen einer Seite ohne deren Inhalt genauer in Augenschein zu nehmen -- untersucht hat, kommt zu folgendem Ergebnis:
 
 \begin{quote}
-	\emph{``Recently, we trained a deep neural network—a computer system modeled on the human brain and nervous system—with a large set of bounce rate and conversions data. The neural net, which had a 90\% prediction accuracy, found that as page load time goes from one second to seven seconds, the probability of a \textbf{mobile site visitor bouncing increases 113\%}. Similarly, as the number of elements—text, titles, images—on a page goes from 400 to 6,000, the \textbf{probability of conversion drops 95\%}.''}
+	\emph{``Recently, we trained a deep neural network---a computer system modeled on the human brain and nervous system---with a large set of bounce rate and conversions data. The neural net, which had a 90\% prediction accuracy, found that as page load time goes from one second to seven seconds, the probability of a \textbf{mobile site visitor bouncing increases 113\%}. Similarly, as the number of elements---text, titles, images---on a page goes from 400 to 6,000, the \textbf{probability of conversion drops 95\%}.''}
 \end{quote}
+
+Bei einer Verlangsamung der Seitenladezeit von 1 Sec.\ auf 7 Sec.\ verdoppelt sich die Wahrscheinlichkeit, dass ein mobiler Surfer die eigene Seite nach der Startseite wieder verlässt. Das selbe Verhalten ist zu beobachten, wenn sich die Anzahl der Seitenelemente von 600 auf 4.000 erhöht. 
 
 Weitere interessante Einblicke einschließlich Maßnahmen zur Behebung von Geschwindigkeitsproblemen bietet die Seite
 
 \url{https://www.thinkwithgoogle.com/marketing-resources/experience-design/mobile-page-speed-load-time/} .
 
-Aufgrund solcher Ergebnisse ist es nicht verwunderlich, dass Unternehmen wie Google seit Jahren das Thema Webperformance vorantreiben und sich die \textbf{Ladezeit einer Seite sogar auf ihre Platzierung in den Google-Suchergebnissen auswirkt}.
+Aufgrund solcher Ergebnisse ist es nicht verwunderlich, dass Unternehmen wie Google seit Jahren das Thema Webperformance vorantreiben und sich die \textbf{Ladezeit einer Seite sogar auf ihre Platzierung in den Google-Suchergebnissen auswirkt} (vgl.~\cite{schwartz:2018}).
 
 Technisch gesehen hängt die Ladezeit einer Seite an drei zentralen Faktoren: 
 \begin{enumerate}
@@ -250,7 +254,7 @@ Technisch gesehen hängt die Ladezeit einer Seite an drei zentralen Faktoren:
 \end{enumerate} 
 Je nach den vorherrschenden Gegebenheit können alle drei Faktoren einen starken Einfluss auf die Performance haben und die Ladezeitoptimierung zu einem langen und komplexen Prozess machen.
 
-Einen dieser drei Aspekte -- \emph{die Übertragung der Webseite vom Server zum Browser} -- konnten Entwickler bislang kaum beeinflussen. Seit 1999 ist das Hypertext Transfer Protocol HTTP in der Version 1.1 der Standard zur Datenübermittlung im Web\marginnote{Nur zur Erinnerung: im Jahre 1999 war der bedeutendste Hersteller für Mobiltelefone ein Unternehmen aus Finnland mit dem Namen Nokia. Der Präsident der USA hieß Bill Clinton. Apple lieferte seine Rechner mit fest verbauten Bildröhren aus, und deutsche Kunden bezahlten dafür damals nicht in Euro, sondern in D-Mark. Quelle:~\citep{weinschenkler:2017}}. Nach über 15 Jahren gibt es nun mit Version 2 (auch \emph{HTTP/2} oder kurz \emph{h2} genannt) den langersehnten Nachfolger. 
+Einen dieser drei Aspekte -- \emph{die Übertragung der Webseite vom Server zum Browser} -- konnten Entwickler bislang kaum beeinflussen. Seit~1999 ist das Hypertext Transfer Protocol HTTP in der Version~1.1 der Standard zur Datenübermittlung im Web\marginnote{Nur zur Erinnerung: im Jahre 1999 war der bedeutendste Hersteller für Mobiltelefone ein Unternehmen aus Finnland mit dem Namen Nokia. Der Präsident der USA hieß Bill Clinton. Apple lieferte seine Rechner mit fest verbauten Bildröhren aus, und deutsche Kunden bezahlten dafür damals nicht in Euro, sondern in D-Mark. Quelle:~\citep{weinschenkler:2017}}. Nach über 15 Jahren gibt es nun mit Version 2 (auch \emph{HTTP/2} oder kurz \emph{h2} genannt) den langersehnten Nachfolger. 
 
 
 
