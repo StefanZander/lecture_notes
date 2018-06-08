@@ -39,56 +39,120 @@ For this reason, it is **recommended to use the support library's `Toolbar` clas
 
 These steps describe how to set up a `Toolbar` as an activity's app bar:
 
-1. Add the [v7 appcompat](https://developer.android.com/tools/support-library/features.html#v7-appcompat) **support library** to your project, as described in [Support Library Setup](https://developer.android.com/topic/libraries/support-library/setup).
+### Set the necessary Support Libraries
 
-2. Make sure the activity extends `AppCompatActivity`, as illustrated below:
-    ``` java
-    public class MyActivity extends AppCompatActivity {
-    // ...
+Add the [v7 appcompat](https://developer.android.com/tools/support-library/features.html#v7-appcompat) **support library** to your project, as described in [Support Library Setup](https://developer.android.com/topic/libraries/support-library/setup).
+
+In order to use a Support Library, you must modify the **application's project's classpath dependencies** within the development environment. This procedure must be performed for *each Support Library* that should be used.
+
+To add a Support Library to your application project, include **Google's Maven repository** in your **top-level** `build.gradle` file.
+
+``` groovy
+allprojects {
+    repositories {
+        google()
+
+        // If you're using a version of Gradle lower than 4.1, you must
+        // instead use:
+        //
+        // maven {
+        //     url 'https://maven.google.com'
+        // }
+    }
+}
+```
+
+Then, add the support library to the `dependencies` section:
+
+``` groovy
+dependencies {
+    ...
+    implementation "com.android.support:support-core-utils:27.1.1"
+}
+```
+
+!!! warning
+    __Note #1:__ The `compile` command in the dependencies section is deprecated by the end of 2018. Use `implementation` instead.
+
+!!! warning
+    __Note #2:__ Make sure that the `:support-core-utils` version number matches that of the `:appcompat-v7` version number, otherwise runtime errors might occur. 
+    
+    The following excerpt from the `build.gradle (Module:app)` file uses version `26.1.0`:
+
+    ``` groovy hl_lines="2 4"
+    dependencies {
+        implementation 'com.android.support:support-core-utils:26.1.0'
+        implementation fileTree(dir: 'libs', include: ['*.jar'])
+        implementation 'com.android.support:appcompat-v7:26.1.0'
+        implementation 'com.android.support.constraint:constraint-layout:1.1.1'
+        testImplementation 'junit:junit:4.12'
+        androidTestImplementation 'com.android.support.test:runner:1.0.2'
+        androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     }
     ```
 
-    !!! note
-        __Note:__ You need to make this change for every activity in your app that uses a Toolbar as an app bar.
+### Extend `AppCompatActivity`
 
-3. In the **app manifest**, set the `<application>` element to use one of appcompat's [NoActionBar](https://developer.android.com/reference/android/support/v7/appcompat/R.style.html#Theme_AppCompat_NoActionBar) themes. Using one of these themes prevents the app from using the native `ActionBar` class to provide the app bar. For example:
-    ``` xml
-    <application
-        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-    />
-    ```
-4. Add a `Toolbar` to the activity's layout. For example, the following layout code adds a `Toolbar` and gives it the appearance of floating above the activity:
-    ``` xml
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/my_toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimary"
-        android:elevation="4dp"
-        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
-    ```
-    
-    !!! note
-        __Note:__ The Material Design specification recommends that app bars have an **elevation** of **4 dp**.
+Make sure the activity class extends `AppCompatActivity`, as illustrated below:
 
-    Position the toolbar at the top of the activity's layout, since you are using it as an app bar.
+``` java
+public class MyActivity extends AppCompatActivity {
+// ...
+}
+```
 
-5. In the activity's `onCreate()` method, call the activity's `setSupportActionBar()` method, and pass the activity's toolbar. This method sets the toolbar as the app bar for the activity. 
+!!! note
+    __Note:__ You need to make this change for every activity in your app that uses a Toolbar as an app bar.
+
+### Set the `NoActionBar` Theme
+
+In the **app manifest**, set the `<application>` element to use one of appcompat's [NoActionBar](https://developer.android.com/reference/android/support/v7/appcompat/R.style.html#Theme_AppCompat_NoActionBar) themes. Using one of these themes prevents the app from using the native `ActionBar` class to provide the app bar. For example:
+
+``` xml
+<application
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+/>
+```
+
+### Set the Toolbar's Layout
+
+Add a `Toolbar` to the activity's layout. For example, the following layout code adds a `Toolbar` and gives it the appearance of floating above the activity:
+
+``` xml
+<android.support.v7.widget.Toolbar
+    android:id="@+id/my_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="?attr/colorPrimary"
+    android:elevation="4dp"
+    android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+```
+
+!!! note
+    __Note:__ The Material Design specification recommends that app bars should have an **elevation** of **4 dp**.
+
+Position the toolbar at the top of the activity's layout, since you are using it as an app bar.
+
+### Call `setSupportActionBar()`
+
+In the activity's `onCreate()` method, call the activity's `setSupportActionBar()` method, and pass the activity's toolbar. This method sets the toolbar as the app bar for the activity.
     
-    For example:
-    ``` java
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_my);
-        Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
-        setSupportActionBar(myToolbar);
-    }
-    ```
-    Your app now has a basic action bar. By default, the action bar contains just the name of the app and an overflow menu. The options menu initially contains just the Settings item. 
-    
-    You can add more actions to the action bar and the overflow menu, as described in xxx Adding and Handling Actions.
+For example:
+
+``` java
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_my);
+    Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
+    setSupportActionBar(myToolbar);
+}
+```
+
+Your app now has a basic action bar. By default, the action bar contains just the name of the app and an overflow menu. The options menu initially contains just the Settings item. 
+
+You can add more actions to the action bar and the overflow menu, as described in xxx Adding and Handling Actions.
 
 !!! note
     __Hint: Use App Bar Utility Methods__
@@ -236,7 +300,7 @@ There is no need to catch the up action in the activity's `onOptionsItemSelected
 
 ## Action Views and Action Providers
 
-These more advanced topics will not be covered in this lecture. However, more information can be found on the official android developer pages <https://developer.android.com/training/appbar/action-views>.
+Action Views and Action Providers are advanced topics and will not be covered in this lecture. However, more information can be found on the official android developer pages <https://developer.android.com/training/appbar/action-views>.
 
 ## Disclaimer
 
