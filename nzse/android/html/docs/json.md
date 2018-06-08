@@ -4,10 +4,10 @@
 !!! abstract 
     **Lernziele**
 
-    - [x] Die Sicht-, Denk- und Arbeitsweise verschiedener Benutzer kennen lernen und sich in sie hinein versetzen
-    - [x] Finden und Verstehen der beim Benutzer in der Praxis auftretenden Anwendungsfälle
-    - [x] Unterscheidung von technischen Funktionen und benutzerorientierten Anwendungsszenarien
-
+    - [x] Sie kennen die Grundstruktur von JSON Daten
+    - [x] Sie kennen einige der bekanntesten JSON Bibliotheken unter Android 
+    - [x] Sie können JSON-Daten unter Android mittels entspr. Bibliotheken verarbeiten
+    
 ## Android JSON Library
 
 The Android platform includes the standard `json.org` library, which allows processing and creating JSON files.

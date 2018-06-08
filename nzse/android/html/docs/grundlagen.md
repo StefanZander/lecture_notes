@@ -1,4 +1,4 @@
-# Grundlagen zur Android-Entwicklung mittels Java und Android Studio
+# Grundlagen zur Android-Entwicklung mit Java und Android Studio
 
 !!! abstract
     **Lernziele**
