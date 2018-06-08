@@ -102,7 +102,7 @@ public class MyActivity extends AppCompatActivity {
 ```
 
 !!! note
-    __Note:__ You need to make this change for every activity in your app that uses a Toolbar as an app bar.
+    __Note:__ You need to make this change for *every activity* in your app that uses a Toolbar as an app bar.
 
 ### Set the `NoActionBar` Theme
 
@@ -134,6 +134,7 @@ Add a `Toolbar` to the activity's layout. For example, the following layout code
 
 Position the toolbar at the top of the activity's layout, since you are using it as an app bar.
 
+
 ### Call `setSupportActionBar()`
 
 In the activity's `onCreate()` method, call the activity's `setSupportActionBar()` method, and pass the activity's toolbar. This method sets the toolbar as the app bar for the activity.
@@ -150,9 +151,15 @@ protected void onCreate(Bundle savedInstanceState) {
 }
 ```
 
+Make sure that you import the correct Toolbar library, as illustrated below; otherwise the `setSupportActionBar()` method won't work.
+
+``` java
+import android.support.v7.widget.Toolbar;
+```
+
 Your app now has a basic action bar. By default, the action bar contains just the name of the app and an overflow menu. The options menu initially contains just the Settings item. 
 
-You can add more actions to the action bar and the overflow menu, as described in xxx Adding and Handling Actions.
+You can add more actions to the action bar and the overflow menu, as described in the next Section --> *Adding and Handling Actions*.
 
 !!! note
     __Hint: Use App Bar Utility Methods__
@@ -162,7 +169,9 @@ You can add more actions to the action bar and the overflow menu, as described i
     To use the **ActionBar utility methods**, call the activity's `getSupportActionBar()` method. This method returns a reference to an appcompat `ActionBar` object. Once you have that reference, you can call any of the ActionBar methods to **adjust the app bar**. For example, to hide the app bar, call `ActionBar.hide()`.
 
 
-## Adding and Handling Actions
+
+
+## Defining and Handling Actions
 
 The app bar allows you to **add buttons** for **user actions**. This feature lets you put the most important actions for the current context right at the top of the app. For example, a photo browsing app might show share and create album buttons at the top when the user is looking at their photo roll; when the user looks at an individual photo, the app might show crop and filter buttons.
 
@@ -170,10 +179,13 @@ The app bar allows you to **add buttons** for **user actions**. This feature let
 
 ![](./figures/appbar/appbar_with_action_button.png)*An app bar with a single action button and an overflow menu.*
 
-### Adding Action Buttons
-All action buttons and other items available in the action overflow are defined in an **XML menu resource** (see <https://developer.android.com/guide/topics/resources/menu-resource.html>). 
+
+### Defining Action Buttons
+All action buttons and other items available in the action overflow are defined in an **XML menu resource** (--> see <https://developer.android.com/guide/topics/resources/menu-resource.html>). 
 
 To **add actions** to the action bar, create a **new XML file** in your project's `res/menu/` directory.
+
+The menu can be accessed (e.g. by the `MenuInflater` class) using `R.menu.{name_of_your_menu_xml_file}.xml`.
 
 Add an `<item>` element for each item you want to include in the action bar, as shown in the following code example of a menu XML file:
 
@@ -203,6 +215,38 @@ The `app:showAsAction` attribute specifies whether the **action should be shown 
 The system uses the **action's icon** as the action button, if the action is displayed in the app bar. 
 
 You can find many useful icons on the [Material Icons](https://www.google.com/design/icons/) page.
+
+
+### Setting Actions on the Toolbar
+
+!!! warning
+    __Attention:__ This step is ommitted in the app bar's official google developer documents!
+
+**Actions** should be included in the **options menu**, which is part of the Toolbar if the application is developed for **Android 3.0 (API level 11) and higher**. 
+
+ By default, the system places all items in the **action overflow**, which the user can reveal with the action overflow icon on the right side of the app bar (or by pressing the device Menu button, if available). To enable quick access to important actions, you can promote a few items to appear in the app bar by adding `android:showAsAction="ifRoom"` to the corresponding `<item>` elements (see Figure 3).
+
+![](./figures/appbar/actionbar_with_actions.png)*The Google Play Movies app, showing a search button and the action overflow button.*
+
+!!! note
+    __Hint:__ You can declare items for the options menu from either your Activity subclass or a Fragment subclass. If both your activity and fragment(s) declare items for the options menu, they are combined in the UI. The activity's items appear first, followed by those of each fragment in the order in which each fragment is added to the activity. If necessary, you can re-order the menu items with the `android:orderInCategory` attribute in each `<item>` you need to move.
+
+To specify the options menu for an activity, override `onCreateOptionsMenu()` (fragments provide their own `onCreateOptionsMenu()` callback). In this method, you can **inflate** your **menu resource** (defined in XML) into the Menu provided in the callback. For example:
+
+``` java
+@Override
+public boolean onCreateOptionsMenu(Menu menu) {
+    MenuInflater inflater = getMenuInflater();
+    inflater.inflate(R.menu.action_items, menu);
+    return true;
+}
+```
+
+You can also add menu items using `add()` and retrieve items with `findItem()` to revise their properties with MenuItem APIs.
+
+If you've developed your application for **Android 2.3.x and lower**, the system calls `onCreateOptionsMenu()` to create the options menu when the user opens the menu for the first time.
+If you've developed for **Android 3.0 and higher**, the system calls `onCreateOptionsMenu()` when **starting the activity**, in order to **show items to the app bar**.
+
 
 
 ### Respond to Actions
@@ -307,4 +351,5 @@ Action Views and Action Providers are advanced topics and will not be covered in
 Most of the information in this lecture has been compiled from the following sources:
 
 * <https://developer.android.com/training/appbar/>
+* <https://developer.android.com/guide/topics/ui/menus>
 * <http://www.vogella.com/tutorials/AndroidActionBar/article.html>
