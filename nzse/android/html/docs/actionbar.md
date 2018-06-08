@@ -23,17 +23,17 @@ The key functions of the app bar are as follows:
 This lecture describes how to use the [v7 appcompat](https://developer.android.com/tools/support-library/features.html#v7-appcompat) support library's [Toolbar](https://developer.android.com/reference/android/support/v7/widget/Toolbar.html) widget as an app bar. 
 
 !!! note
-    __Note:__ There are other ways to implement an app bar—for example, some themes set up an ActionBar as an app bar by default––but using the appcompat Toolbar makes it easy to set up an app bar that works on the widest range of devices, and also gives you room to customize your app bar later on as your app develops.
+    __Note:__ There are other ways to implement an app bar—for example, some themes set up an ActionBar as an app bar by default—but using the **appcompat Toolbar** makes it easy to set up an app bar that works on the **widest range of devices**, and also gives you room to customize your app bar later on as your app develops.
 
-## Set up an App Bar
+## Choosing the App Bar Implementation
 
-In its most basic form, the action bar displays the title for the activity on one side and an overflow menu on the other. Even in this simple form, the app bar provides useful information to the users, and helps to give Android apps a consistent look and feel.
+In its most basic form, the action bar displays the **title for the activity** on one side and an **overflow menu** on the other. Even in this simple form, the app bar provides useful information to the users, and helps to give Android apps a consistent look and feel.
 
 ![The App Bar](./figures/appbar/appbar.png)_An app bar with the app title and an overflow menu_
 
-Beginning with Android 3.0 (API level 11), all activities that use the default theme have an `ActionBar` as an app bar. However, app bar features have gradually been added to the native [ActionBar](https://developer.android.com/reference/android/app/ActionBar.html) over various Android releases. As a result, the native `ActionBar` behaves differently depending on what version of the Android system a device may be using. By contrast, the most recent features are added to the support library's version of `Toolbar`, and they are available on any device that can use the support library.
+Beginning with Android 3.0 (API level 11), all activities that use the default theme have an `ActionBar` as an app bar. However, app bar features have gradually been added to the native [ActionBar](https://developer.android.com/reference/android/app/ActionBar.html) over various Android releases. As a result, the **native `ActionBar` behaves differently** depending on what version of the Android system a device may be using. By contrast, the **most recent features are added to the support library's version of `Toolbar`**, and they are available on any device that can use the support library.
 
-For this reason, it is recommended to use the support library's `Toolbar` class to implement activities' app bars. Using the support library's toolbar helps ensure that an app will have consistent behavior across the widest range of devices. For example, the [Toolbar](https://developer.android.com/reference/android/support/v7/widget/Toolbar.html) widget provides a [material design](https://developer.android.com/design/material/index.html) experience on devices running Android 2.1 (API level 7) or later, but the native action bar doesn't support material design unless the device is running Android 5.0 (API level 21) or later.
+For this reason, it is **recommended to use the support library's `Toolbar` class to implement activities' app bars**. Using the support library's toolbar helps ensure that an app will have consistent behavior across the widest range of devices. For example, the [Toolbar](https://developer.android.com/reference/android/support/v7/widget/Toolbar.html) widget provides a [material design](https://developer.android.com/design/material/index.html) experience on devices running Android 2.1 (API level 7) or later, but the native action bar doesn't support material design unless the device is running Android 5.0 (API level 21) or later.
 
 ## Adding a Toolbar to an Activity
 
@@ -107,9 +107,9 @@ The app bar allows you to **add buttons** for **user actions**. This feature let
 ![](./figures/appbar/appbar_with_action_button.png)*An app bar with a single action button and an overflow menu.*
 
 ### Adding Action Buttons
-All action buttons and other items available in the action overflow are defined in an **XML menu resource**(https://developer.android.com/guide/topics/resources/menu-resource.html). 
+All action buttons and other items available in the action overflow are defined in an **XML menu resource** (see <https://developer.android.com/guide/topics/resources/menu-resource.html>). 
 
-To add actions to the action bar, create a new XML file in your project's `res/menu/` directory.
+To **add actions** to the action bar, create a **new XML file** in your project's `res/menu/` directory.
 
 Add an `<item>` element for each item you want to include in the action bar, as shown in the following code example of a menu XML file:
 
@@ -169,9 +169,78 @@ public boolean onOptionsItemSelected(MenuItem item) {
 }
 ```
 
+## Adding an Up Action
+An app should make it easy for users to find their way back to the app's main screen. One simple way to do this is to provide an **Up button** on the app bar for all activities except the main one. When the user selects the Up button, the app navigates to the parent activity.
+
+This section shows you how to add an Up button to an activity by declaring the activity's parent in the manifest, and enabling the app bar's Up button.
+
+### Declaring a Parent Activity
+
+To support the **up functionality** in an activity, you need to declare the **activity's parent**. This is done in the **app manifest**, by setting an `android:parentActivityName` attribute.
+
+!!! note
+    __Note:__ The `android:parentActivityName` attribute was introduced in Android 4.1 (API level 16). To support devices with older versions of Android, define a `<meta-data>` name-value pair, where the name is `"android.support.PARENT_ACTIVITY"` and the value is the name of the parent activity.
+    
+For example, suppose an app has a main activity named `MainActivity` and a single child activity. The following manifest code declares both activities, and specifies the parent/child relationship:
+
+``` xml
+<application ... >
+    ...
+
+    <!-- The main/home activity (it has no parent activity) -->
+
+    <activity
+        android:name="com.example.myfirstapp.MainActivity" ...>
+        ...
+    </activity>
+
+    <!-- A child of the main activity -->
+    <activity
+        android:name="com.example.myfirstapp.MyChildActivity"
+        android:label="@string/title_activity_child"
+        android:parentActivityName="com.example.myfirstapp.MainActivity" >
+
+        <!-- Parent activity meta-data to support 4.0 and lower -->
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.myfirstapp.MainActivity" />
+    </activity>
+</application>
+```
+
+### Enable the Up Button
+
+To enable the Up button for an activity that has a parent activity, call the app bar's `setDisplayHomeAsUpEnabled()` method. Typically, this would be done when the activity is created. For example, the following `onCreate()` method sets a Toolbar as the app bar for `MyChildActivity`, then enables that app bar's Up button:
+
+``` java
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_my_child);
+
+    // my_child_toolbar is defined in the layout file
+    Toolbar myChildToolbar =
+        (Toolbar) findViewById(R.id.my_child_toolbar);
+    setSupportActionBar(myChildToolbar);
+
+    // Get a support ActionBar corresponding to this toolbar
+    ActionBar ab = getSupportActionBar();
+
+    // Enable the Up button
+    ab.setDisplayHomeAsUpEnabled(true);
+}
+```
+
+There is no need to catch the up action in the activity's `onOptionsItemSelected()` method. Instead, that method should call its superclass, as shown in Respond to Actions. The superclass method responds to the Up selection by navigating to the parent activity, as specified in the app manifest.
+
+
+## Action Views and Action Providers
+
+These more advanced topics will not be covered in this lecture. However, more information can be found on the official android developer pages <https://developer.android.com/training/appbar/action-views>.
 
 ## Disclaimer
 
 Most of the information in this lecture has been compiled from the following sources:
 
 * <https://developer.android.com/training/appbar/>
+* <http://www.vogella.com/tutorials/AndroidActionBar/article.html>
