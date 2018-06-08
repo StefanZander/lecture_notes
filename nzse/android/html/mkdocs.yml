@@ -3,6 +3,7 @@ site_name: Android & Android Studio
 pages:
   - 'Grundlagen': 'grundlagen.md'
   - 'JSON': 'json.md'
+  - 'App Bar aka Action Bar': 'actionbar.md'
 
 theme:
   name: 'material'
