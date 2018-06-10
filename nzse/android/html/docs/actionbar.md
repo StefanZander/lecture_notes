@@ -3,9 +3,9 @@
 !!! abstract
     **Lernziele**
 
-    - [x] Sie kennen die Grundlagen der Android Action Bar 
+    - [x] Sie kennen die technischen Grundlagen der Android Action Bar
     - [x] Sie können eine Action Bar in ihre Applikation integrieren
-    - [x] Sie verstehen das Vorgehensmodell zum Entwurf einer Benutzungsschnittstelle im Kontext von OOAD/SWE
+    - [x] Sie verstehen wie sie Actions definieren und der Action Bar hinzufügen
 
 !!! note
     __Note:__ The app bar should be implemented using the __Android Toolbar__ to make it available for a wide range of devices. According to the Android developer guidelines, the appcompat [Toolbar](https://developer.android.com/reference/android/support/v7/widget/Toolbar.html) has the best compatibility support.  
