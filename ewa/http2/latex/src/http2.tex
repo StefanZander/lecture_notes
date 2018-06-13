@@ -197,9 +197,9 @@ frame=l % was 'l' || was lines
 
 \begin{lernziele}
 \begin{itemize}
+	\item Kennenlernen der technischen Beschränkungen von HTTP/1.1
 	\item Kennenlernen der Unterschiede zwischen HTTP/1.1 und HTTP/2
 	\item Kennenlernen der mit HTTP/2 eingeführten Neuerungen 
-	\item Kennenlernen der technischen Beschränkungen von HTTP/1.1
 \end{itemize}
 \end{lernziele}
 
@@ -256,97 +256,9 @@ Je nach den vorherrschenden Gegebenheit können alle drei Faktoren einen starken
 
 Einen dieser drei Aspekte -- \emph{die Übertragung der Webseite vom Server zum Browser} -- konnten Entwickler bislang kaum beeinflussen. Seit~1999 ist das Hypertext Transfer Protocol HTTP in der Version~1.1 der Standard zur Datenübermittlung im Web\marginnote{Nur zur Erinnerung: im Jahre 1999 war der bedeutendste Hersteller für Mobiltelefone ein Unternehmen aus Finnland mit dem Namen Nokia. Der Präsident der USA hieß Bill Clinton. Apple lieferte seine Rechner mit fest verbauten Bildröhren aus, und deutsche Kunden bezahlten dafür damals nicht in Euro, sondern in D-Mark. Quelle:~\citep{weinschenkler:2017}}. Nach über 15 Jahren gibt es nun mit Version 2 (auch \emph{HTTP/2} oder kurz \emph{h2} genannt) den langersehnten Nachfolger. 
 
+Diese Vorlesungseinheit gibt einen Überblick über die zentralen Ideen und Techniken von HTTP/2 und setzt sie in Bezug zu anderen Techniken zur Steigerung der Webperformance. Um die Neuerungen besser zu verstehen und einordnen zu können, soll zu Beginn der Blick auf HTTP/1.1 und die damit einher gehenden Beschränkungen hinsichtlich der Web Performance gelegt werden. 
 
 
-
-\section{HTTP/2} % (fold)
-\label{sec:http_2}
-HTTP/2 stellt den Nachfolger von HTTP/1.1 dar und basiert auf dem von Google entwickelten \emph{SPDY (Speedy) Protokoll}\sidenote{SPDY Whitepaper des Chromium Projekts: \url{https://www.chromium.org/spdy/spdy-whitepaper}}. Im Gegensatz zu SPDY benötigt HTTP/2 keine Verschlüsselung mittels TLS (Transport Layer Security) und kann auch für HTTP Seiten verwendet werden~\citep{mueller:2015}. Langfristig soll HTTP/1.1 durch HTTP/2 abgelöst werden und sich als Standard etablieren. Vorerst stellt die neue Protokollversion jedoch nur eine Alternative dar und gewährleistet durch Abwärtskompatibilität, dass auch Browser, die dieses Protokoll nicht unterstützen, Webseiten über HTTP/1.1 laden.
-
-HTTP/2 ist ein \textbf{Binärprotokoll}, setzt einen klaren Fokus auf Performance und gibt Entwicklern verschiedene Möglichkeiten zur Optimierung der Seitenladezeit an die Hand. 
-Version 2 des Hypertext Transfer Protokolls\sidenote{Spezifikation: \url{https://tools.ietf.org/html/rfc7540}} wurde im Mai 2015 von der Internet Engineering Task Force (IETF) als Standard verabschiedet. 
-Ziel von HTTP/2 ist, die Bandbreite im World Wide Web besser auszunutzen und die Netzwerk-Latenz zu verringern. Hierzu beinhaltet HTTP/2 einige zentrale Optimierungen gegenüber HTTP/1.1, wie insbesondere \textbf{Request Multiplexing}, \textbf{Header Compression}, \textbf{Resource Prioritization}, und \textbf{Server Push}\sidenote{Siehe Kapitel~\ref{sub:semantik_und_bestandteile}}.
-Request Multiplexing und die Kompression der Headerinformationen verbessern die Ladezeit einer Seite unmittelbar. Um die anderen beiden Optimierungen zu nutzen, ist jedoch ein gewisser Entwicklungsaufwand erforderlich (siehe Kapitel xxx).
-
-\begin{figure}%
-	\centering
-  \includegraphics[width=1.5\textwidth]{./figures/http2_demo_people.png}
-  \caption[][21em]{Vergleich der Ladezeiten zwischen HTTP/1.1 (linke Hälfte) und HTTP/2 (rechte Bildhälfte) am Beispiel einer aus vielen kleinen Bildschnipseln zusammengesetzten großen Bilddatei (Demo auf \url{http://www.http2demo.io/})}
-  \label{fig:http2_demo_1}
-\end{figure}
-
-\begin{figure}%
-	\centering
-  \includegraphics[width=1.5\textwidth]{./figures/http2_demo_globe.png}
-  \caption[][26em]{Vergleich der Ladezeiten zwischen HTTP/1.1 (linke Hälfte) und HTTP/2 (rechte Bildhälfte) am Beispiel einer aus vielen kleinen Bildschnipseln zusammengesetzten großen Bilddatei (Demo auf \url{https://http2.akamai.com/demo})}
-  \label{fig:http2_demo_2}
-\end{figure}
-
-Abbildung~\ref{fig:http2_demo_1} und~\ref{fig:http2_demo_2}\marginnote{HTTP/2 Webdemos: \begin{itemize}
-	\item \url{http://www.http2demo.io/}
-	\item \url{https://http2.akamai.com/demo}
-\end{itemize} } zeigen die Ladezeiten einer großen Bilddatei, die sich aus vielen kleinen Bildschnippseln (\emph{sprites}) zusammensetzt. In der linken Bildhälfte ist jeweils  die Ladezeit mittels HTTP/1.1 zu sehen, die rechte Bildhälfte zeigt die Ladezeit mit dem HTTP/2 Protokoll. Sowohl das erste, als auch das zweite Beispiel zeigen eine deutliche Verbesserung der Ladezeiten unter HTTP/2.
-Zum selber testen finden sich die beiden Demos unter \url{http://www.http2demo.io/} sowie \url{https://http2.akamai.com/demo}.
-
-
-
-
-
- 
-
-\subsection{Semantik und Bestandteile} % (fold)
-\label{sub:semantik_und_bestandteile}
-Die Semantik des HTTP-Protokolls bleibt mit Version 2 unberührt; die bekannten HTTP-Schlüsselwörter wie \texttt{GET}, \texttt{POST}, \texttt{PUT}, \texttt{DELETE} oder \texttt{OPTIONS} bleiben weiterhin erhalten; auf der Anwendungsschicht ändert sich nichts. Neu ist hingegen die Abwicklung des Transports der Header und Nutzdaten: HTTP-Requests und -Responses sind in \textbf{Streams}, \textbf{Messages} und \textbf{Frames} kodiert. %. Das HTTP/2-Protokoll besteht aus folgenden Bausteinen:
-
-\begin{itemize}
-	\item \textbf{Stream}: Ein bidirektionaler Austausch von Daten zwischen Server und Client, der aus einer oder mehreren Messages besteht. Die Übertragung eines Streams erfolgt innerhalb einer TCP-Verbindung. Mehrere Streams lassen sich simultan über dieselbe TCP-Verbindung übertragen.
-	\item \textbf{Message}: Eine komplette Abfolge von Frames, die zu einer logischen Message gehören. Eine Message gehört zu einem Stream.
-	\item \textbf{Frame}: Die kleinste Kommunikationseinheit innerhalb von HTTP/2. Sie enthält binär kodierte Header- oder Nutzdaten.
-\end{itemize}
-
-Das Zusammenspiel dieser Bausteine kann wie folgt beschrieben werden:
-\begin{itemize}
-	\item Die gesamte Kommunikation zwischen einem Client und dem Server wird über eine TCP-Verbindung abgehandelt, welche eine nahezu beliebige Anzahl an bidirektionalen Streams beinhalten kann.
-	\item Jeder Stream besitzt einen eindeutigen Identifier und optionale Prioritätsinformationen
-	\item Jede Message ist eine logische HTTP-Request oder Response Nachricht, welche aus einem oder mehreren Frames besteht.
-	\item Ein Frame ist die kleinste Kommunikationseinheit über die Daten wie HTTP Header, Message Payload (Nachrichteninhalt) etc.\ transportiert werden. 
-\end{itemize}
-
-Zusammengefasst unterteilt HTTP/2 die HTTP Protokollkommunikation in einen Austausch binär-kodierter Frames, welche Nachrichten zugeordnet sind die zu einem bestimmten Stream gehören.  
-
-\begin{figure}%
-	\centering
-  \includegraphics[width=1\textwidth]{./figures/http2_streams.png}
-  \caption{Beispielhafte Darstellung eines HTTP/2-Nachrichtenaustauschs zwischen Browser und Server~\citep{weinschenkler:2017}.}
-  \label{fig:http2_nachrichtenaustausch}
-\end{figure}
-
-Abbildung~\ref{fig:http2_nachrichtenaustausch} zeigt eine beispielhafte Client-Server-Kommunikation (übernommen von~\citep{weinschenkler:2017}). Der komplette Nachrichtenaustausch läuft über genau \emph{eine} TCP-Verbindung ab. Die dabei versendeten sechs Frames werden in nachfolgender Auflistung erläutert:
-
-\begin{enumerate}
-	\item Der Client beginnt, indem er einen Request für die Datei \texttt{index.html} per \texttt{HEADERS}-Frame an den Server schickt. Dafür eröffnet er einen neuen Stream -- einen in sich abgeschlossenen Nachrichtenaustausch mit dem Server --, der die \texttt{ID 41} erhält. Der Client setzt weiterhin zwei Flags in dem Frame. \texttt{+END\_HEADERS} bedeutet, dass der Client im aktuellen Stream keine weiteren \texttt{HEADERS}-Frames mehr versenden wird. \texttt{+END\_STREAM} bedeutet, dass der Client nicht beabsichtigt, weitere Frames im aktuellen Stream zu versenden.
-	\item Der Server kann die Datei \texttt{index.html} ausliefern und schickt innerhalb desselben Streams \texttt{41} ebenfalls einen \texttt{HEADERS}-Frame mit dem Statuscode \texttt{200} an den Client zurück. Der Code ist bereits aus HTTP/1.1 bekannt und besagt, dass die Datei verfügbar ist und der Client sie demnächst erhalten wird. Neu ist, dass der Server die eigentliche Nutzlast in Form der Datei \texttt{index.html} mit einem separaten \texttt{DATA}-Frame verschickt.
-	\item Der Server schickt einen \texttt{PUSH\_PROMISE}-Frame, eine Neuerung, mit der er von sich aus eine Datenübertragung an den Client initiiert. Im Fall des Beispiels von Abbildung~\ref{fig:http2_nachrichtenaustausch} antizipiert der Server, dass der Client direkt nach seinem Request für die Datei \texttt{index.html} die Datei \texttt{style.css} benötigen wird. Deshalb bietet er an, diese Datei über den neuen Stream \texttt{42} an den Client zu versenden.
-	\item Wie bei Punkt 2 schickt der Server nun im Stream \texttt{42} einen \texttt{HEADERS}-Frame mit dem Statuscode \texttt{200} bezogen auf die Datei \texttt{style.css} an den Client. Letzterer kündigt die baldige Übertragung der Datei an. Ohne weiteren Widerspruch des Clients würde als nächstes im Stream \texttt{42} die Übertragung eines \texttt{DATA}-Frame mit der \texttt{style.css} erfolgen.
-	\item Im Beispiel benötigt der Client die Datei \texttt{style.css} nicht, weil er noch eine Kopie davon in seinem Cache zur Verfügung hat. Er sendet deshalb im Stream \texttt{42} einen \texttt{RST\_STREAM}-Frame. Damit schließt er den Stream \texttt{42}, und der Server wird darüber keinerlei Daten mehr versenden.
-	\item Bleibt noch die eingangs durch den Client im Stream \texttt{41} angefragte Datei \texttt{index.html}, die der Server nun in einem \texttt{DATA}-Frame an den Client versendet. Damit beendet der Server seinerseits die Kommunikation im Stream \texttt{41}.
-\end{enumerate}
-
-
-
-\subsection{Übersicht der Neuerungen} % (fold)
-\label{sub:neuerungen}
-% subsection neuerungen (end)
-Wie eingangs beschrieben nutzt HTTP/2 die bestehende Bandbreite bei der Datenübertragung besser aus als seine Vorgänger. Das erreicht der neue Standard durch vier Neuerungen. 
-\begin{enumerate}
-	\item \textbf{Request Multiplexing} \\ Das Request Multiplexing sorgt dafür, dass mehrere Request-/Response-Konversationen gleichzeitig über ein und dieselbe TCP-Verbindung erfolgen können.
-	\item \textbf{Server Push} \\ Das Konzept des Server Push ermöglicht, dass ein HTTP-Client einen HTTP Request in Richtung Server absetzen und Letzterer darauf mit mehr als einer Response antworten kann.
-	\item \textbf{Header Compression} \\ HTTP/2 verwendet eine verbesserte Implementierung zur Datenkompression speziell für die Protokoll-Metadaten -- den HTTP Header.
-	\item \textbf{Resource Priorization} \\ Datenpakete werden nach Wichtigkeit sortiert und in entsprechender Reihenfolge übermittelt, wodurch zuerst die Dateien an den Browser übermittelt werden, die für einen schnellen Seitenaufbau wichtig sind (vgl.~\cite{mueller:2015}). 
-\end{enumerate}
-
-
-Diese Vorlesungseinheit gibt einen Überblick über die zentralen Ideen und Techniken von HTTP/2 und setzt sie in Bezug zu anderen Techniken zur Steigerung der Webperformance.
 
 \section{HTTP/1.1} % (fold)
 \label{sec:beschraenkungen}
@@ -406,7 +318,45 @@ Entwickler und Administratoren betreiben damit einen gewaltigen Aufwand, um Eins
 \section{HTTP/2} % (fold)
 \label{sec:http_2}
 
-% section http_2 (end)
+HTTP/2 stellt den Nachfolger von HTTP/1.1 dar und basiert auf dem von Google entwickelten \emph{SPDY (Speedy) Protokoll}\sidenote{SPDY Whitepaper des Chromium Projekts: \url{https://www.chromium.org/spdy/spdy-whitepaper}}. Im Gegensatz zu SPDY benötigt HTTP/2 keine Verschlüsselung mittels TLS (Transport Layer Security) und kann auch für HTTP Seiten verwendet werden~\citep{mueller:2015}. Langfristig soll HTTP/1.1 durch HTTP/2 abgelöst werden und sich als Standard etablieren. Vorerst stellt die neue Protokollversion jedoch nur eine Alternative dar und gewährleistet durch Abwärtskompatibilität, dass auch Browser, die dieses Protokoll nicht unterstützen, Webseiten über HTTP/1.1 laden.
+
+HTTP/2 ist ein \textbf{Binärprotokoll}, setzt einen klaren Fokus auf Performance und gibt Entwicklern verschiedene Möglichkeiten zur Optimierung der Seitenladezeit an die Hand. 
+Version 2 des Hypertext Transfer Protokolls\sidenote{Spezifikation: \url{https://tools.ietf.org/html/rfc7540}} wurde im Mai 2015 von der Internet Engineering Task Force (IETF) als Standard verabschiedet. 
+Ziel von HTTP/2 ist, die Bandbreite im World Wide Web besser auszunutzen und die Netzwerk-Latenz zu verringern. Hierzu beinhaltet HTTP/2 einige zentrale Optimierungen gegenüber HTTP/1.1, wie insbesondere \textbf{Request Multiplexing}, \textbf{Header Compression}, \textbf{Resource Prioritization}, und \textbf{Server Push}\sidenote{Siehe Kapitel~\ref{sub:semantik_und_bestandteile}}.
+Request Multiplexing und die Kompression der Headerinformationen verbessern die Ladezeit einer Seite unmittelbar. Um die anderen beiden Optimierungen zu nutzen, ist jedoch ein gewisser Entwicklungsaufwand erforderlich (siehe Kapitel xxx).
+
+\begin{figure}%
+	\centering
+  \includegraphics[width=1.5\textwidth]{./figures/http2_demo_people.png}
+  \caption[][21em]{Vergleich der Ladezeiten zwischen HTTP/1.1 (linke Hälfte) und HTTP/2 (rechte Bildhälfte) am Beispiel einer aus vielen kleinen Bildschnipseln zusammengesetzten großen Bilddatei (Demo auf \url{http://www.http2demo.io/})}
+  \label{fig:http2_demo_1}
+\end{figure}
+
+\begin{figure}%
+	\centering
+  \includegraphics[width=1.5\textwidth]{./figures/http2_demo_globe.png}
+  \caption[][26em]{Vergleich der Ladezeiten zwischen HTTP/1.1 (linke Hälfte) und HTTP/2 (rechte Bildhälfte) am Beispiel einer aus vielen kleinen Bildschnipseln zusammengesetzten großen Bilddatei (Demo auf \url{https://http2.akamai.com/demo})}
+  \label{fig:http2_demo_2}
+\end{figure}
+
+Abbildung~\ref{fig:http2_demo_1} und~\ref{fig:http2_demo_2}\marginnote{HTTP/2 Webdemos: \begin{itemize}
+	\item \url{http://www.http2demo.io/}
+	\item \url{https://http2.akamai.com/demo}
+\end{itemize} } zeigen die Ladezeiten einer großen Bilddatei, die sich aus vielen kleinen Bildschnippseln (\emph{sprites}) zusammensetzt. In der linken Bildhälfte ist jeweils  die Ladezeit mittels HTTP/1.1 zu sehen, die rechte Bildhälfte zeigt die Ladezeit mit dem HTTP/2 Protokoll. Sowohl das erste, als auch das zweite Beispiel zeigen eine deutliche Verbesserung der Ladezeiten unter HTTP/2.
+Zum selber testen finden sich die beiden Demos unter \url{http://www.http2demo.io/} sowie \url{https://http2.akamai.com/demo}.
+
+
+\subsection{Übersicht der Neuerungen} % (fold)
+\label{sub:neuerungen}
+% subsection neuerungen (end)
+Wie eingangs beschrieben nutzt HTTP/2 die bestehende Bandbreite bei der Datenübertragung besser aus als seine Vorgänger. Das erreicht der neue Standard durch vier Neuerungen. 
+\begin{enumerate}
+	\item \textbf{Request Multiplexing} \\ Das Request Multiplexing sorgt dafür, dass mehrere Request-/Response-Konversationen gleichzeitig über ein und dieselbe TCP-Verbindung erfolgen können.
+	\item \textbf{Server Push} \\ Das Konzept des Server Push ermöglicht, dass ein HTTP-Client einen HTTP Request in Richtung Server absetzen und Letzterer darauf mit mehr als einer Response antworten kann.
+	\item \textbf{Header Compression} \\ HTTP/2 verwendet eine verbesserte Implementierung zur Datenkompression speziell für die Protokoll-Metadaten -- den HTTP Header.
+	\item \textbf{Resource Priorization} \\ Datenpakete werden nach Wichtigkeit sortiert und in entsprechender Reihenfolge übermittelt, wodurch zuerst die Dateien an den Browser übermittelt werden, die für einen schnellen Seitenaufbau wichtig sind (vgl.~\cite{mueller:2015}). 
+\end{enumerate}
+
 
 \subsection{Request Multiplexing} % (fold)
 \label{sub:request_multiplexing}
@@ -502,21 +452,6 @@ Wie in Abbildung~\ref{fig:server_push_ohne} zu sehen ist, initiiert der Browser 
 Mit aktiviertem Server Push werden die Grafiken noch während der Client-seitigen Verarbeitung der Seite automatisch durch den Server ausgeliefert; eine zusätzliche Anfrage ist demnach nicht notwendig und spart Zeit. Zusammen mit der automatischen Auslieferung der Grafiken schickt der Server ein \texttt{PUSH\_PROMISE} Frame\sidenote{Durch \textbf{Push Promisies} signalisiert der Server dem Browser einen \texttt{PUSH} von zu einer Seite gehörenden Ressourcen. Dieses Frame wird immer automatisch am Beginn eines \texttt{PUSH} gesendet.} an den Browser. Sobald der Browser diese benötigt bzw.\ verarbeiten kann gleicht er diese mit dem \texttt{PUSH\_PROMISE} Frame ab und kann diese sofort ohne einen weiteren Request nutzen. 
 
 
----- START ----
-
-Der beispielhafte Ablauf aus Abbildung~\ref{fig:http2_nachrichtenaustausch} (vgl.~Kapitel~\ref{sub:semantik_und_bestandteile}) zeigt die simultane Übertragung von zwei Streams innerhalb einer TCP-Verbindung. Im dritten Frame versendet der Server einen \texttt{PUSH\_PROMISE}-Frame innerhalb des Streams mit der ID \texttt{41}. Das passiert, weil der Server den nächsten Request des Clients vorhersagt und daraufhin eine Response ankündigt. Im genannten Beispiel sieht der Server eine Anfrage für eine Datei \texttt{style.css} kommen und kündigt deren Übertragung an den Client mit einem \texttt{HEADERS}-Frame an, den er im neuen Stream mit der ID \texttt{42} versendet.
-
-Der Client kann nun zwei Dinge tun. Um die angebotene Datei zu akzeptieren, muss der Client aktiv nichts weiter tun. Nach dem \texttt{HEADERS}-Frame wird der Server im Stream \texttt{42} einen \texttt{DATA}-Frame mit besagter Datei versenden. So erhält der Client die Datei \texttt{style.css} ohne sie jemals aktiv angefordert zu haben.
-
-Alternativ kann der Client zu der Entscheidung kommen, dass er die Datei \texttt{style.css} nicht benötigt. In diesem Fall schließt der Client den Stream \texttt{42}, indem er einen \texttt{RST\_STREAM}-Frame an den Server schickt. Das Protokoll verbietet es dem Server, über Streams zu kommunizieren, für die der Client einen solchen Frame gesendet hat.
-
-Server-Push verringert die Latenz somit durch das Einsparen von Client-Requests. Dafür muss der Server jedoch in der Lage sein, die Anfragen des Clients zuverlässig zu antizipieren. Er muss den auszuliefernden Content und das Verhalten seiner Clients gut kennen, um nachfolgende Requests nach weiteren Inhalten vorherzusehen.
-
-Es ist Aufgabe der Webserver-Administratoren oder der Webentwickler, die Push-Funktionalität durch Konfiguration und Implementierung zu gewährleisten.
-
----- END ----
-
-
 \subsection{Browserunterstützung} % (fold)
 \label{sub:browserunterstutzung}
 Laut der Website ``Can I use''\sidenote{\url{https://caniuse.com/\#search=http\%2F2}} wird HTTP/2 bereits von 87,59\% der Internet Browser in Deutschland und 79,57\% der Browser weltweit unterstützt (Stand 2. März 2018). 
@@ -533,6 +468,68 @@ Weitere Details finden sich auf den Seiten von ``Can I use''. % \url{https://can
   \caption[][26em]{Übersicht der Browserunterstützung von HTTP/2}
   \label{fig:http2_browser_support}
 \end{figure}
+
+
+ 
+
+\section{Semantik und Bestandteile} % (fold)
+\label{sub:semantik_und_bestandteile}
+Die Semantik des HTTP-Protokolls bleibt mit Version 2 unberührt; die bekannten HTTP-Schlüsselwörter wie \texttt{GET}, \texttt{POST}, \texttt{PUT}, \texttt{DELETE} oder \texttt{OPTIONS} bleiben weiterhin erhalten; auf der Anwendungsschicht ändert sich nichts. Neu ist hingegen die Abwicklung des Transports der Header und Nutzdaten: HTTP-Requests und -Responses sind in \textbf{Streams}, \textbf{Messages} und \textbf{Frames} kodiert. %. Das HTTP/2-Protokoll besteht aus folgenden Bausteinen:
+
+\begin{itemize}
+	\item \textbf{Stream}: Ein bidirektionaler Austausch von Daten zwischen Server und Client, der aus einer oder mehreren Messages besteht. Die Übertragung eines Streams erfolgt innerhalb einer TCP-Verbindung. Mehrere Streams lassen sich simultan über dieselbe TCP-Verbindung übertragen.
+	\item \textbf{Message}: Eine komplette Abfolge von Frames, die zu einer logischen Message gehören. Eine Message gehört zu einem Stream.
+	\item \textbf{Frame}: Die kleinste Kommunikationseinheit innerhalb von HTTP/2. Sie enthält binär kodierte Header- oder Nutzdaten.
+\end{itemize}
+
+Das Zusammenspiel dieser Bausteine kann wie folgt beschrieben werden:
+\begin{itemize}
+	\item Die gesamte Kommunikation zwischen einem Client und dem Server wird über eine TCP-Verbindung abgehandelt, welche eine nahezu beliebige Anzahl an bidirektionalen Streams beinhalten kann.
+	\item Jeder Stream besitzt einen eindeutigen Identifier und optionale Prioritätsinformationen
+	\item Jede Message ist eine logische HTTP-Request oder Response Nachricht, welche aus einem oder mehreren Frames besteht.
+	\item Ein Frame ist die kleinste Kommunikationseinheit über die Daten wie HTTP Header, Message Payload (Nachrichteninhalt) etc.\ transportiert werden. 
+\end{itemize}
+
+Zusammengefasst unterteilt HTTP/2 die HTTP Protokollkommunikation in einen Austausch binär-kodierter Frames, welche Nachrichten zugeordnet sind die zu einem bestimmten Stream gehören.  
+
+\begin{figure}%
+	\centering
+  \includegraphics[width=1\textwidth]{./figures/http2_streams.png}
+  \caption{Beispielhafte Darstellung eines HTTP/2-Nachrichtenaustauschs zwischen Browser und Server~\citep{weinschenkler:2017}.}
+  \label{fig:http2_nachrichtenaustausch}
+\end{figure}
+
+Abbildung~\ref{fig:http2_nachrichtenaustausch} zeigt eine beispielhafte Client-Server-Kommunikation (übernommen von~\citep{weinschenkler:2017}). Der komplette Nachrichtenaustausch läuft über genau \emph{eine} TCP-Verbindung ab. Die dabei versendeten sechs Frames werden in nachfolgender Auflistung erläutert:
+
+\begin{enumerate}
+	\item Der Client beginnt, indem er einen Request für die Datei \texttt{index.html} per \texttt{HEADERS}-Frame an den Server schickt. Dafür eröffnet er einen neuen Stream -- einen in sich abgeschlossenen Nachrichtenaustausch mit dem Server --, der die \texttt{ID 41} erhält. Der Client setzt weiterhin zwei Flags in dem Frame. \texttt{+END\_HEADERS} bedeutet, dass der Client im aktuellen Stream keine weiteren \texttt{HEADERS}-Frames mehr versenden wird. \texttt{+END\_STREAM} bedeutet, dass der Client nicht beabsichtigt, weitere Frames im aktuellen Stream zu versenden.
+	\item Der Server kann die Datei \texttt{index.html} ausliefern und schickt innerhalb desselben Streams \texttt{41} ebenfalls einen \texttt{HEADERS}-Frame mit dem Statuscode \texttt{200} an den Client zurück. Der Code ist bereits aus HTTP/1.1 bekannt und besagt, dass die Datei verfügbar ist und der Client sie demnächst erhalten wird. Neu ist, dass der Server die eigentliche Nutzlast in Form der Datei \texttt{index.html} mit einem separaten \texttt{DATA}-Frame verschickt.
+	\item Der Server schickt einen \texttt{PUSH\_PROMISE}-Frame, eine Neuerung, mit der er von sich aus eine Datenübertragung an den Client initiiert. Im Fall des Beispiels von Abbildung~\ref{fig:http2_nachrichtenaustausch} antizipiert der Server, dass der Client direkt nach seinem Request für die Datei \texttt{index.html} die Datei \texttt{style.css} benötigen wird. Deshalb bietet er an, diese Datei über den neuen Stream \texttt{42} an den Client zu versenden.
+	\item Wie bei Punkt 2 schickt der Server nun im Stream \texttt{42} einen \texttt{HEADERS}-Frame mit dem Statuscode \texttt{200} bezogen auf die Datei \texttt{style.css} an den Client. Letzterer kündigt die baldige Übertragung der Datei an. Ohne weiteren Widerspruch des Clients würde als nächstes im Stream \texttt{42} die Übertragung eines \texttt{DATA}-Frame mit der \texttt{style.css} erfolgen.
+	\item Im Beispiel benötigt der Client die Datei \texttt{style.css} nicht, weil er noch eine Kopie davon in seinem Cache zur Verfügung hat. Er sendet deshalb im Stream \texttt{42} einen \texttt{RST\_STREAM}-Frame. Damit schließt er den Stream \texttt{42}, und der Server wird darüber keinerlei Daten mehr versenden.
+	\item Bleibt noch die eingangs durch den Client im Stream \texttt{41} angefragte Datei \texttt{index.html}, die der Server nun in einem \texttt{DATA}-Frame an den Client versendet. Damit beendet der Server seinerseits die Kommunikation im Stream \texttt{41}.
+\end{enumerate}
+
+
+
+
+
+---- START ----
+
+Der beispielhafte Ablauf aus Abbildung~\ref{fig:http2_nachrichtenaustausch} (vgl.~Kapitel~\ref{sub:semantik_und_bestandteile}) zeigt die simultane Übertragung von zwei Streams innerhalb einer TCP-Verbindung. Im dritten Frame versendet der Server einen \texttt{PUSH\_PROMISE}-Frame innerhalb des Streams mit der ID \texttt{41}. Das passiert, weil der Server den nächsten Request des Clients vorhersagt und daraufhin eine Response ankündigt. Im genannten Beispiel sieht der Server eine Anfrage für eine Datei \texttt{style.css} kommen und kündigt deren Übertragung an den Client mit einem \texttt{HEADERS}-Frame an, den er im neuen Stream mit der ID \texttt{42} versendet.
+
+Der Client kann nun zwei Dinge tun. Um die angebotene Datei zu akzeptieren, muss der Client aktiv nichts weiter tun. Nach dem \texttt{HEADERS}-Frame wird der Server im Stream \texttt{42} einen \texttt{DATA}-Frame mit besagter Datei versenden. So erhält der Client die Datei \texttt{style.css} ohne sie jemals aktiv angefordert zu haben.
+
+Alternativ kann der Client zu der Entscheidung kommen, dass er die Datei \texttt{style.css} nicht benötigt. In diesem Fall schließt der Client den Stream \texttt{42}, indem er einen \texttt{RST\_STREAM}-Frame an den Server schickt. Das Protokoll verbietet es dem Server, über Streams zu kommunizieren, für die der Client einen solchen Frame gesendet hat.
+
+Server-Push verringert die Latenz somit durch das Einsparen von Client-Requests. Dafür muss der Server jedoch in der Lage sein, die Anfragen des Clients zuverlässig zu antizipieren. Er muss den auszuliefernden Content und das Verhalten seiner Clients gut kennen, um nachfolgende Requests nach weiteren Inhalten vorherzusehen.
+
+Es ist Aufgabe der Webserver-Administratoren oder der Webentwickler, die Push-Funktionalität durch Konfiguration und Implementierung zu gewährleisten.
+
+---- END ----
+
+
+
 
 
 
