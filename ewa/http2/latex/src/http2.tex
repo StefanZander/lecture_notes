@@ -265,7 +265,7 @@ Diese Vorlesungseinheit gibt einen Überblick über die zentralen Ideen und Tech
 \subsection{Beschränkungen} % (fold)
 \label{sub:head_of_line_blocking}
 
-Eine\marginnote{HTTP/1.1 erlaubt jeweils nur eine Request-Response-Konversation pro TCP-Verbindung} wesentliche Einschränkung von HTTP/1.1, das man auch als Konstruktionsfehler~\citep{heise:2018} bezeichnen kann ist, dass HTTP keine direkte Möglichkeit bietet, Requests zu parallelisieren. 
+Eine\marginnote{HTTP/1.1 erlaubt jeweils nur eine Request-Response-Konversation pro TCP-Verbindung} wesentliche Einschränkung von HTTP/1.1, die man auch als \emph{Konstruktionsfehler}~\citep{heise:2018} bezeichnen kann ist, dass HTTP keine direkte Möglichkeit bietet, Requests zu parallelisieren. 
 % Hinzu\marginnote{HTTP/1.1 erlaubt ausschließlich die sequentielle Verarbeitung von Request-Response-Konversationen} kommt ein weiteres Problem, das man durchaus als <<Konstruktionsfehler>>~\citep{heise:2018} bezeichnen kann: 
 In HTTP/1.1 lassen sich zwar mehrere Request-Response-Konversation über eine TCP-Verbindung abwickeln, aber nur \emph{sequenziell}. Dieses Vorgehen bezeichnet man auch als \textbf{HTTP Pipelining}\marginnote{HTTP Pipelining}. Es erzwingt, dass der Server über eine TCP-Verbindung zu einem Zeitpunkt nur eine Response an einen Client übertragen kann.
 
@@ -323,7 +323,7 @@ HTTP/2 stellt den Nachfolger von HTTP/1.1 dar und basiert auf dem von Google ent
 HTTP/2 ist ein \textbf{Binärprotokoll}, setzt einen klaren Fokus auf Performance und gibt Entwicklern verschiedene Möglichkeiten zur Optimierung der Seitenladezeit an die Hand. 
 Version 2 des Hypertext Transfer Protokolls\sidenote{Spezifikation: \url{https://tools.ietf.org/html/rfc7540}} wurde im Mai 2015 von der Internet Engineering Task Force (IETF) als Standard verabschiedet. 
 Ziel von HTTP/2 ist, die Bandbreite im World Wide Web besser auszunutzen und die Netzwerk-Latenz zu verringern. Hierzu beinhaltet HTTP/2 einige zentrale Optimierungen gegenüber HTTP/1.1, wie insbesondere \textbf{Request Multiplexing}, \textbf{Header Compression}, \textbf{Resource Prioritization}, und \textbf{Server Push}\sidenote{Siehe Kapitel~\ref{sub:semantik_und_bestandteile}}.
-Request Multiplexing und die Kompression der Headerinformationen verbessern die Ladezeit einer Seite unmittelbar. Um die anderen beiden Optimierungen zu nutzen, ist jedoch ein gewisser Entwicklungsaufwand erforderlich (siehe Kapitel xxx).
+Request Multiplexing und die Kompression der Headerinformationen verbessern die Ladezeit einer Seite unmittelbar. Um die anderen beiden Optimierungen zu nutzen, ist jedoch ein gewisser Entwicklungsaufwand erforderlich (siehe Kapitel~\ref{sub:resource_prioritization}).
 
 \begin{figure}%
 	\centering
@@ -339,10 +339,12 @@ Request Multiplexing und die Kompression der Headerinformationen verbessern die 
   \label{fig:http2_demo_2}
 \end{figure}
 
-Abbildung~\ref{fig:http2_demo_1} und~\ref{fig:http2_demo_2}\marginnote{HTTP/2 Webdemos: \begin{itemize}
-	\item \url{http://www.http2demo.io/}
-	\item \url{https://http2.akamai.com/demo}
-\end{itemize} } zeigen die Ladezeiten einer großen Bilddatei, die sich aus vielen kleinen Bildschnippseln (\emph{sprites}) zusammensetzt. In der linken Bildhälfte ist jeweils  die Ladezeit mittels HTTP/1.1 zu sehen, die rechte Bildhälfte zeigt die Ladezeit mit dem HTTP/2 Protokoll. Sowohl das erste, als auch das zweite Beispiel zeigen eine deutliche Verbesserung der Ladezeiten unter HTTP/2.
+Abbildung~\ref{fig:http2_demo_1} und~\ref{fig:http2_demo_2}
+% \marginnote{HTTP/2 Webdemos: \begin{itemize}
+% 	\item \url{http://www.http2demo.io/}
+% 	\item \url{https://http2.akamai.com/demo}
+% \end{itemize} }
+zeigen die Ladezeiten einer großen Bilddatei, die sich aus vielen kleinen Bildschnippseln (\emph{sprites}) zusammensetzt. In der linken Bildhälfte ist jeweils  die Ladezeit mittels HTTP/1.1 zu sehen, die rechte Bildhälfte zeigt die Ladezeit mit dem HTTP/2 Protokoll. Sowohl das erste, als auch das zweite Beispiel zeigen eine deutliche Verbesserung der Ladezeiten unter HTTP/2.
 Zum selber testen finden sich die beiden Demos unter \url{http://www.http2demo.io/} sowie \url{https://http2.akamai.com/demo}.
 
 
@@ -352,9 +354,9 @@ Zum selber testen finden sich die beiden Demos unter \url{http://www.http2demo.i
 Wie eingangs beschrieben nutzt HTTP/2 die bestehende Bandbreite bei der Datenübertragung besser aus als seine Vorgänger. Das erreicht der neue Standard durch vier Neuerungen. 
 \begin{enumerate}
 	\item \textbf{Request Multiplexing} \\ Das Request Multiplexing sorgt dafür, dass mehrere Request-/Response-Konversationen gleichzeitig über ein und dieselbe TCP-Verbindung erfolgen können.
-	\item \textbf{Server Push} \\ Das Konzept des Server Push ermöglicht, dass ein HTTP-Client einen HTTP Request in Richtung Server absetzen und Letzterer darauf mit mehr als einer Response antworten kann.
 	\item \textbf{Header Compression} \\ HTTP/2 verwendet eine verbesserte Implementierung zur Datenkompression speziell für die Protokoll-Metadaten -- den HTTP Header.
 	\item \textbf{Resource Priorization} \\ Datenpakete werden nach Wichtigkeit sortiert und in entsprechender Reihenfolge übermittelt, wodurch zuerst die Dateien an den Browser übermittelt werden, die für einen schnellen Seitenaufbau wichtig sind (vgl.~\cite{mueller:2015}). 
+	\item \textbf{Server Push} \\ Das Konzept des Server Push ermöglicht, dass ein HTTP-Client einen HTTP Request in Richtung Server absetzen und Letzterer darauf mit mehr als einer Response antworten kann.
 \end{enumerate}
 
 
