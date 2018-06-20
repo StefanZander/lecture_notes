@@ -220,44 +220,19 @@ This scenario has two main bottlenecks:
 	\item For every client's request, a new connection with the entire communication overhead has to be established in order to exchange data with a server.
 \end{enumerate}
 
-The consequences of both bottlenecks are that HTTP\marginnote{Per default, HTTP does not support the Observer pattern and a Model-View-Controller architecture} is not suited for implementing the \emph{Observer pattern} in Web Applications as well as the \emph{Model-View-Controller} architecture, since a model is not able to notify view autonomously in case of any updates. More severely, HTTP is not suited for the realization of pure \emph{real-time Web applications} in which events are sent between clients and servers upon their occurrence, ie., at the time when they are created or captured. 
+The consequences of both bottlenecks are that HTTP\marginnote{Per default, HTTP does not support the Observer pattern and a Model-View-Controller architecture} is not suited for implementing the \emph{Observer pattern} in Web Applications as well as the \emph{Model-View-Controller} architecture, since a model is not able to notify the view autonomously in case of any updates. More severely, HTTP is not suited for the realization of pure \emph{real-time Web applications} in which events are sent between clients and servers upon their occurrence, ie., at the time when they are created or captured. 
 These issues are addressed by the WebSocket protocol and its accompanying technology stack.
 
 WebSockets\marginnote{WebSockets create a bi-directional communication channel} create a \textbf{bi-directional communication channel} between a server and a client. This channel can be used by clients and servers likewise to send textual and/or binary data\sidenote{Some websites try to circumvent ad blockers by sending advertisements through WebSocket connections.}. 
-One of the big advantages of using WebSockets for real-time communication on the Web is its little overhead; the header of WebSocket messages only requires 2 to 6 bytes. 
+One of the big advantages of using WebSockets for real-time communication on the Web is its \emph{little overhead}; the \textbf{header} of WebSocket messages only requires 2 to 6 bytes. 
 
-The WebSocket standard consists of two main elements:
+The WebSocket Standard consists of two main elements:
 \begin{enumerate}
 	\item The \textbf{WebSocket Protocol}---standardized through the ITEF in RFC6455
 	\item The \textbf{JavaScript Webbrowser API}---standardized through the World Wide Web Consortium (W3C) 
 \end{enumerate}
 
-% Das HTTP-Protokoll\note{und hier kommt noch viel viel mehr text der dann so oder so dargestellt wid sdssdsdds dgdfg dfgdfg dfggdfgd} erlaubt per Definition nur \emph{Request-Response} Kommunikation. Nach jedem Request-Response wird die Verbindung wieder geschlossen. Auch gibt es keine \emph{PUSH}-Benachrichtigung. D.h., eine reine \texttt{Umsetzung} des \texttt{MVC-Paradigmas}\footnote{Model-View-Controller: Ein Architekturprinzip zur besseren Wartbarkeit von Code welches eine Trennung nach der Verantwortlichkeit von Komponenten eines Softwaresystems propagiert.}  ist in Web-Applikationen bisher nicht möglich.
 
-% \fvset{fontsize=\small} %footnotesize
-% \begin{Verbatim}[gobble=0,frame=lines,numbers=left]
-% <!doctype html>
-% <html>
-% <head>
-%     <title>Websocket Browser Support</title>
-%     <meta charset="utf-8" />
-% </head>
-% <body>
-%     <div id="message">
-%     </div>
-%     <script type="text/javascript">
-%         var parent = document.getElementById("message");
-%         var node = document.createTextNode("");
-%         parent.appendChild(node);
-%         if ("WebSocket" in window) {
-%             node.textContent = "Prima! WebSockets werden unterstützt.";
-%         } else {
-%             node.textContent = "Schade, WebSockets werden nicht von Ihrem Browser unterstützt";
-%         }
-%     </script>
-% </body>
-% </html>
-% \end{Verbatim}
 
 
 \subsection{Polling and Long-Polling} % (fold)
@@ -297,7 +272,7 @@ The \texttt{send()} method is repeatedly executed through the \texttt{setTimeout
 
 Polling\marginnote{Polling is browser-independent.} can be easily implemented in a browser-independent manner. However, due to \textbf{many unnecessary requests} and computational resources needed to process such requests, polling creates substantial \textbf{overhead} that is not to be underestimated\marginnote{Short update frequencies cause substantial processing overhead in Polling.}. An important aspect in this context is the \textbf{temporal resolution} through with requests are issued. For a applications that are required to exhibit a \emph{near} real-time behavior such as auction or chat systems, the temporal resolution needs to be of rather fine granularity. The requirements of other applications such as monitoring systems for plants might be satisfied with a larger temporal frequency.
 
-\emph{Long-Polling} is intended to reduce the additional overhead caused by empty responses send through polling. \marginnote{During Long-Polling the server answers promptly when detecting a change event.} In Long-Polling, the server answers promptly \emph{only} in case of changes; if no change takes place, the server waits a pre-defined amount of time before it sends an empty response. Iff a change is detected during that time, the server answers promptly (as described before). The connection to the client remains open during the time of waiting and will be closed upon sending an immediate response or an empty message. The client however, immediately issues a new request to the server in both cases. This procedure resembles a permanent connection between client and server. Figure~\ref{fig:long_polling} demonstrates this principle. 
+\emph{Long-Polling} is intended to reduce the additional overhead caused by empty responses send through polling\marginnote{During Long-Polling the server answers promptly when detecting a change event.}. In Long-Polling, the server answers promptly \emph{only} in case of changes; if no change takes place, the server waits a pre-defined amount of time before it sends an empty response. Iff a change is detected during that time, the server answers promptly (as described before). The connection to the client remains open during the time of waiting and will be closed upon sending an immediate response or an empty message. The client however, immediately issues a new request to the server in both cases. This procedure resembles a permanent connection between client and server. Figure~\ref{fig:long_polling} demonstrates this principle. 
 
 \begin{figure}%
 	\centering
@@ -309,9 +284,9 @@ Polling\marginnote{Polling is browser-independent.} can be easily implemented in
 \section{Establishing a WebSocket Connection} % (fold)
 \label{sec:establishing_a_websocket_connection}
 
-This section details all the steps involved in the set-up a WebSocket connection. The set-up is triggered by a HTTP request-response communication between a client and a server.
+This section details all the steps involved in the set-up of a WebSocket connection. The set-up is triggered by a \emph{HTTP request-response communication} between a client and a server.
 
-Upon establishing a WebSocket connection, the client sends an \textbf{opening handshake}\sidenote{The opening handshake is also called "<WebSocket Handshake">} on the basis of HTTP in order to open a \textbf{bi-directional WebSocket Channel} through which messages between a client and the server are exchanged. The client therefore sends a special \texttt{HTTP GET} request as depicted subsequently.
+Upon establishing a WebSocket connection, the client sends an \textbf{opening handshake}\sidenote{The opening handshake is also called <<WebSocket Handshake>>} on the basis of HTTP in order to open a bi-directional WebSocket Channel through which messages between a client and the server are exchanged. The client therefore sends a \emph{special \texttt{HTTP GET} request}\marginnote{The opening handshake is a special \texttt{HTTP GET} request} as depicted subsequently.
 
 \newpage
 \begin{Verbatim}[gobble=0,frame=lines,numbers=left]
@@ -357,13 +332,17 @@ Upon accepting the client's request, the server creates a new value for the head
 \begin{Verbatim}
   258EAFA5-E914-47DA-95CA-C5AB0DC85B11
 \end{Verbatim}
-to the client's handshake request <<\texttt{Sec-WebSocket-Key}>> header value (<<\texttt{dGhlIHNhbXBsZSBub25jZQ==}>>).
+to the client's handshake request <<\texttt{Sec-WebSocket-Key}>> header value (\texttt{dGhlIHNhbXBsZSBub25jZQ==}).
 
 The merged text string 
 \begin{Verbatim}
   dGhlIHNhbXBsZSBub25jZQ==258EAFA5-E914-47DA-95CA-C5AB0DC85B11
 \end{Verbatim}
-will then be converted into a hash value using the SHA-1\sidenote{\url{https://en.wikipedia.org/wiki/SHA-1}} cryptographic hash function and transformed into a Base64-coded text string. This text string <<\texttt{s3pPLMBiTxaQ9kYGzzhZRbK+xOo=}>> consequently represents the value of the \texttt{Sec-WebSocket-Accept} header.
+will then be converted into a hash value using the SHA-1\sidenote{\url{https://en.wikipedia.org/wiki/SHA-1}} cryptographic hash function and transformed into a Base64-coded text string. The resulting text string
+\begin{Verbatim}
+  s3pPLMBiTxaQ9kYGzzhZRbK+xOo=
+\end{Verbatim}
+consequently represents the value of the \texttt{Sec-WebSocket-Accept} header.
 
 With the \texttt{Sec-WebSocket-Accept} header, the client is able to extract its initially sent \texttt{Sec-WebSocket-Key} header value in order to verify the server's integrity, i.e., to check wether the response originally came from the intended server.
 
