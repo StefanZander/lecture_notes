@@ -27,7 +27,7 @@
 
 \title{Moderne Echtzeitkommunikation mit HTML5 und WebSockets\thanks{Ausgewaehltes Kapitel im Rahmen der Lehrveranstaltung ``Entwicklung Webbasierter Anwendungen''}}
 \author[opt Author]{Prof.\ Dr.\ Stefan Zander}
-\date{9.\ Oktober 2017}  % if the \date{} command is left out, the current date will be used
+% \date{9.\ Oktober 2017}  % if the \date{} command is left out, the current date will be used
 
 % The following package makes prettier tables.  We're all about the bling!
 \usepackage{booktabs}
@@ -223,7 +223,7 @@ This scenario has two main bottlenecks:
 The consequences of both bottlenecks are that HTTP\marginnote{Per default, HTTP does not support the Observer pattern and a Model-View-Controller architecture} is not suited for implementing the \emph{Observer pattern} in Web Applications as well as the \emph{Model-View-Controller} architecture, since a model is not able to notify view autonomously in case of any updates. More severely, HTTP is not suited for the realization of pure \emph{real-time Web applications} in which events are sent between clients and servers upon their occurrence, ie., at the time when they are created or captured. 
 These issues are addressed by the WebSocket protocol and its accompanying technology stack.
 
-WebSockets create a bi-directional communication channel between a server and a client. This channel can be used by clients and servers likewise to send textual and/or binary data\sidenote{Some websites try to circumvent ad blockers by sending advertisements through WebSocket connections.}. 
+WebSockets\marginnote{WebSockets create a bi-directional communication channel} create a \textbf{bi-directional communication channel} between a server and a client. This channel can be used by clients and servers likewise to send textual and/or binary data\sidenote{Some websites try to circumvent ad blockers by sending advertisements through WebSocket connections.}. 
 One of the big advantages of using WebSockets for real-time communication on the Web is its little overhead; the header of WebSocket messages only requires 2 to 6 bytes. 
 
 The WebSocket standard consists of two main elements:
@@ -289,19 +289,19 @@ The \texttt{send()} method is repeatedly executed through the \texttt{setTimeout
 % \end{marginfigure}
 \begin{figure}%
 	\centering
-  \includegraphics[width=0.8\textwidth]{./src/figures/polling.pdf}
+  \includegraphics[width=0.8\textwidth]{./figures/polling.pdf}
   \caption{Principle of HTTP Polling (re-printed from~\citet{gorski:2015})}
   \label{fig:polling}
 \end{figure}
 
 
-Polling\marginnote{Polling is browser-independent.} can be easily implemented in a browser-independent manner. However, due to many unnecessary requests and computational resources needed to process such requests, polling creates substantial overhead that is not to be underestimated\marginnote{Short update frequencies cause substantial processing overhead in Polling.}. An important aspect in this context is the \emph{temporal resolution} through with requests are issued. For a applications that are required to exhibit a near real-time behavior such as auction or chat systems, the temporal resolution needs to be of rather fine granularity. The requirements of other applications such as monitoring systems for plants might be satisfied with a larger temporal frequency.
+Polling\marginnote{Polling is browser-independent.} can be easily implemented in a browser-independent manner. However, due to \textbf{many unnecessary requests} and computational resources needed to process such requests, polling creates substantial \textbf{overhead} that is not to be underestimated\marginnote{Short update frequencies cause substantial processing overhead in Polling.}. An important aspect in this context is the \textbf{temporal resolution} through with requests are issued. For a applications that are required to exhibit a \emph{near} real-time behavior such as auction or chat systems, the temporal resolution needs to be of rather fine granularity. The requirements of other applications such as monitoring systems for plants might be satisfied with a larger temporal frequency.
 
 \emph{Long-Polling} is intended to reduce the additional overhead caused by empty responses send through polling. \marginnote{During Long-Polling the server answers promptly when detecting a change event.} In Long-Polling, the server answers promptly \emph{only} in case of changes; if no change takes place, the server waits a pre-defined amount of time before it sends an empty response. Iff a change is detected during that time, the server answers promptly (as described before). The connection to the client remains open during the time of waiting and will be closed upon sending an immediate response or an empty message. The client however, immediately issues a new request to the server in both cases. This procedure resembles a permanent connection between client and server. Figure~\ref{fig:long_polling} demonstrates this principle. 
 
 \begin{figure}%
 	\centering
-  \includegraphics[width=0.8\textwidth]{./src/figures/long-polling.pdf}
+  \includegraphics[width=0.8\textwidth]{./figures/long-polling.pdf}
   \caption{Principle of Long-Polling (re-printed from~\citet{gorski:2015})}
   \label{fig:long_polling} 
 \end{figure}
@@ -311,7 +311,7 @@ Polling\marginnote{Polling is browser-independent.} can be easily implemented in
 
 This section details all the steps involved in the set-up a WebSocket connection. The set-up is triggered by a HTTP request-response communication between a client and a server.
 
-Upon establishing a WebSocket connection, the client sends an \emph{opening handshake}\sidenote{The opening handshake is also called "<WebSocket Handshake">} on the basis of HTTP in order to open a bi-directional \emph{WebSocket Channel} through which messages between a client and the server are exchanged. The client therefore sends a special HTTP GET request as depicted subsequently.
+Upon establishing a WebSocket connection, the client sends an \textbf{opening handshake}\sidenote{The opening handshake is also called "<WebSocket Handshake">} on the basis of HTTP in order to open a \textbf{bi-directional WebSocket Channel} through which messages between a client and the server are exchanged. The client therefore sends a special \texttt{HTTP GET} request as depicted subsequently.
 
 \newpage
 \begin{Verbatim}[gobble=0,frame=lines,numbers=left]
@@ -335,12 +335,12 @@ Sec-WebSocket-Extensions: x-webkit-deflate-stream
 % \texttt{Sec-WebSocket-Protocol: chat, superchat} allows the client to signal the server the subprotocols it is able to process through the WebSocket channel. The same principle also applies to the extension header \texttt{Sec-WebSocket-Extensions:}.
 
 \begin{itemize}
-	\item "<\texttt{GET /chat}"> addresses the WebSockets endpoint; a WebSocket server can offer multiple endpoints. 
-	\item "<\texttt{Connection: Upgrade}"> requests the server to switch from HTTP to another protocol, signaled through the "<\texttt{upgrade: websocket}"> header. 
-	\item "<\texttt{Sec-WebSocket-Key: dGhlIHNhbXBsZSBub25jZQ==}"> is a Base64-coded string that contains a randomly created number; this number is used by the client to test whether the server is able to process WebSocket requests, i.e., whether it supports the WebSockets Protocol. 
-	\item "<\texttt{Origin: http://domain.net}"> signals the server the domain from which the request has initially been sent. Upon this information, the server can decide whether to accept an connection request or not.
-	\item  "<\texttt{Sec-WebSocket-Version: 13}"> indicates the WebSocket Protocol version used for the communication channel. 
-	\item  "<\texttt{Sec-WebSocket-Protocol: chat, superchat}"> allows the client to signal the server the subprotocols it is able to process through the WebSocket channel. The same principle also applies to the extension header "<\texttt{Sec-WebSocket-Extensions:}">. 
+	\item <<\texttt{GET /chat}>> addresses the WebSockets endpoint; a WebSocket server can offer multiple endpoints. 
+	\item <<\texttt{Connection: Upgrade}>> requests the server to switch from HTTP to another protocol, signaled through the <<\texttt{upgrade: websocket}>> header. 
+	\item <<\texttt{Sec-WebSocket-Key: dGhlIHNhbXBsZSBub25jZQ==}>> is a Base64-coded string that contains a randomly created number; this number is used by the client to test whether the server is able to process WebSocket requests, i.e., whether it supports the WebSockets Protocol. 
+	\item <<\texttt{Origin: http://domain.net}>> signals the server the domain from which the request has initially been sent. Upon this information, the server can decide whether to accept an connection request or not.
+	\item  <<\texttt{Sec-WebSocket-Version: 13}>> indicates the WebSocket Protocol version used for the communication channel. 
+	\item  <<\texttt{Sec-WebSocket-Protocol: chat, superchat}>> allows the client to signal the server the subprotocols it is able to process through the WebSocket channel. The same principle also applies to the extension header <<\texttt{Sec-WebSocket-Extensions:}>>. 
 \end{itemize} 
 
 The\marginnote{Response sent by the server} client can send multiple extensions whereas the server has the privilege to answer only to those it supports. The subsequently given HTTP excerpt displays a response sent by the server upon accepting a request: % P 37
@@ -353,17 +353,17 @@ Sec-WebSocket-Accept: s3pPLMBiTxaQ9kYGzzhZRbK+xOo=
 Sec-WebSocket-Protocol: chat
 \end{Verbatim}
 
-Upon accepting the client's request, the server creates a new value for the header "<\texttt{Sec-WebSocket-Accept}"> by appending its / a Globally Unique Identifier (GUID)
+Upon accepting the client's request, the server creates a new value for the header <<\texttt{Sec-WebSocket-Accept}> by appending its / a Globally Unique Identifier (GUID)
 \begin{Verbatim}
   258EAFA5-E914-47DA-95CA-C5AB0DC85B11
 \end{Verbatim}
-to the client's handshake request "<\texttt{Sec-WebSocket-Key}"> header value ("<\texttt{dGhlIHNhbXBsZSBub25jZQ==}">).
+to the client's handshake request <<\texttt{Sec-WebSocket-Key}>> header value (<<\texttt{dGhlIHNhbXBsZSBub25jZQ==}>>).
 
 The merged text string 
 \begin{Verbatim}
   dGhlIHNhbXBsZSBub25jZQ==258EAFA5-E914-47DA-95CA-C5AB0DC85B11
 \end{Verbatim}
-will then be converted into a hash value using the SHA-1\sidenote{\url{https://en.wikipedia.org/wiki/SHA-1}} cryptographic hash function and transformed into a Base64-coded text string. This text string "<\texttt{s3pPLMBiTxaQ9kYGzzhZRbK+xOo=}"> consequently represents the value of the \texttt{Sec-WebSocket-Accept} header.
+will then be converted into a hash value using the SHA-1\sidenote{\url{https://en.wikipedia.org/wiki/SHA-1}} cryptographic hash function and transformed into a Base64-coded text string. This text string <<\texttt{s3pPLMBiTxaQ9kYGzzhZRbK+xOo=}>> consequently represents the value of the \texttt{Sec-WebSocket-Accept} header.
 
 With the \texttt{Sec-WebSocket-Accept} header, the client is able to extract its initially sent \texttt{Sec-WebSocket-Key} header value in order to verify the server's integrity, i.e., to check wether the response originally came from the intended server.
 
@@ -381,7 +381,7 @@ A simplified illustration of a WebSocket Frame according to the RFC 6455 Specifi
 
 \begin{figure}%
 	\centering
-  \includegraphics[width=1\textwidth]{./src/figures/websocket_frame_simple.pdf}
+  \includegraphics[width=1\textwidth]{./figures/websocket_frame_simple.pdf}
   \caption{A simplified representation of a WebSocket Frame according to the RFC 6455 Specification (re-printed from~\citep{gorski:2015})}
   \label{fig:frame_simple}
 \end{figure}
@@ -557,7 +557,7 @@ Source: \url{https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API/Wri
 \subsection{Fragmentation} % (fold)
 \label{sub:fragmentation}
 % Fragmentation
-The WebSocket Specification allows a fragmented transmission of user data over a WebSocket Channel, i.e., data might be sent ``piece-by-piece'' over the communication channel. This feature is useful in scenarios where the data to be transmitted are not completely available or buffered at the time a request was issued. Setting the \texttt{FIN}-bit to~\texttt{0} signals the communication partner that further frames are expected to arrive unless a request or response is complete. 
+The WebSocket Specification allows a fragmented transmission of user data over a WebSocket Channel, i.e., data might be \emph{sent piece-by-piece} over the communication channel. This feature is useful in scenarios where the data to be transmitted are not completely available or buffered at the time a request was issued. Setting the \texttt{FIN}-bit to~\texttt{0} signals the communication partner that further frames are expected to arrive unless a request or response is complete. 
 
 
 \subsection{Masking} % (fold)
@@ -611,7 +611,7 @@ The WebSocket technology is a fixed element in the HTML5 family of standards; as
 
 \url{http://www.caniuse.com/} .
 
-In order to find out whether a browser supports the WebSockets technology and implements both protocol and API, its \texttt{window} object MUST contain a \texttt{WebSocket} element. This element is missing in cases when a browser lacks native WebSockets support. WebSocket browser support can be checked \emph{programmatically} with the following minimal JavaScript code.
+In\marginnote{WebSocket support can be determined through JavaScript's \texttt{window} object} order to find out whether a browser supports the WebSockets technology and implements both protocol and API, its \texttt{window} object MUST contain a \texttt{WebSocket} element. This element is missing in cases when a browser lacks native WebSockets support. WebSocket browser support can be checked \emph{programmatically} with the following minimal JavaScript code.
 
 \begin{listing}
 \begin{lstlisting}[language=JavaScript]
@@ -627,15 +627,15 @@ In order to find out whether a browser supports the WebSockets technology and im
   <script type="text/javascript">
     var parent = document.getElementById("message");
     var node = document.createTextNode("");
-    parent.appendChild(node);
     if ("WebSocket" in window) {
       node.textContent = "Prima! WebSockets werden unterstuetzt.";
     } else {
       node.textContent = "Schade, WebSockets werden nicht von Ihrem Browser unterstuetzt.";
     }
+    parent.appendChild(node);
   </script>
 </body>
-</html>	
+</html>
 \end{lstlisting}
 	\caption{A minimal website with JavaScript embedded to test WebSocket browser support} 
 	\label{plain_server}
@@ -649,14 +649,14 @@ A WebSocket server can be accessed using the following naming scheme\sidenote{Th
 	"ws:" "//" host [ ":" port ] path [ "?" query ]
 \end{Verbatim}
 
-Optional elements are enclosed in brackets (`\texttt{[}' and `\texttt{]}'); Strings remain ``as is''; and normal terms are replaced with concrete values. As a consequence, a WebSocket URL differs from a usual Web URL only by the protocol element.
+Optional elements are enclosed in brackets (`\texttt{[}' and `\texttt{]}'); Strings remain in their natural form, i.e., \emph{as is}; and normal terms are replaced with concrete values. As a consequence, a WebSocket URL differs from a usual Web URL only by the protocol element.
 
-The RFC 6455 Specification also defines a second WebSocket URL protocol type "<\texttt{wss}"> for secure WebSocket connections---comparable to "<\texttt{https:}">.
+The RFC 6455 Specification also defines a second WebSocket URL protocol type <<\texttt{wss}>> for secure WebSocket connections---comparable to <<\texttt{https:}>>.
 
 \subsection{Creating a WebSocket Connection Object} % (fold)
 \label{sub:creating_a_websocket_connection_object}
 
-For creating a WebSocket connection object, the W3C defines a standard JavaScript WebSocket API. A connection to a WebSocket server using the endpoint URL 
+For creating a WebSocket connection object, the W3C defines a \textbf{standard JavaScript WebSocket API}. A connection to a WebSocket server using the endpoint URL 
 \begin{Verbatim}
 	ws://echo.websocket.org/
 \end{Verbatim}
@@ -669,7 +669,7 @@ The WebSocket constructor takes as first argument a string that represents the U
 \subsection{WebSocket States} % (fold)
 \label{sub:handling_websocket_states}
 
-The successful creation of a WebSocket object implies a successful handshake between the client and server; the handshake is automatically conducted during the instantiation of the object. The WebSocket Specification defines \emph{four states} for the WebSocket object that represent the current status:
+The successful creation of a WebSocket object implies a successful handshake between the client and server; the handshake is automatically conducted during the instantiation of the object. The\marginnote{The WebSocket Specification defines four states for the \texttt{WebSocket} object} WebSocket Specification defines \emph{four states} for the WebSocket object that represent the current status:
 \begin{Verbatim}
 	CONNECTING ––> readyState: 0
 	      OPEN ––> readyState: 1
@@ -680,7 +680,7 @@ The successful creation of a WebSocket object implies a successful handshake bet
 Figure~\ref{fig:states} represents the different states of the WebSocket object as well as transitions between them:
 \begin{figure}%
 	\centering
-  \includegraphics[width=0.56\textwidth]{./src/figures/states.pdf}
+  \includegraphics[width=0.56\textwidth]{./figures/states.pdf}
   \caption{The different states a WebSocket object can be in together with transitions. (re-printed from~\citet{gorski:2015})}
   \label{fig:states}
 \end{figure}
@@ -690,7 +690,7 @@ After the creation of the WebSocket object, it remains in the state \texttt{CONN
 \subsection{Eventhandler} % (fold)
 \label{sub:eventhandler}
 
-Event handler in general are used to react to state transitions. When the state of the WebSocket object changes, the corresponding event is created. This event is then propagated to the respective handler and will be processed by it. I.e., the handler defines the behavior that will be executed when the corresponding event occurs, i.e., when the WebSocket objects transitions to a specific state. The WebSocket Standard defines the following event handlers and corresponding states:
+Event handler in general are used to react to state transitions. When the state of the WebSocket object changes, the corresponding event is created. This event is then propagated to the respective handler and will be processed by it. As a consequence, the handler defines the behavior that will be executed when the corresponding event occurs, i.e., when the WebSocket objects transitions to a specific state. The WebSocket Standard defines the following event handlers and corresponding states:
 \begin{Verbatim}
   Event Handler          Event
 ---------------------------------
@@ -700,13 +700,18 @@ Event handler in general are used to react to state transitions. When the state 
   onclose       -->      close
 \end{Verbatim}
 
-Usually, event handler are represented as functions, sometimes anonymous functions, that are assigned to specific handler attributes (properties) of the WebSocket object. A handler is a function that will be executed when the event the handler is registered for occurs. Since JavaScript treats functions as objects, handler functions can be assigned to the event handler properties (\texttt{onopen}, \texttt{onerror}, etc.) of the WebSocket object.
-Not every event handler need to be connected with a handler function\sidenote{For instance, a sensor that distributes sensed values (so-called \emph{obserables}) unidirectionally via the WebSocket protocol might only define handler functions for opening or closing a connection but not for receiving information from a server.}; it is absolutely ok to define handler functions exclusively for the events of interest. 
-Following a good programming style, however, handler functions should be defined for all possible events that can occur in order to achieve robustness and minimize the risk of unwanted and unintended side effects. 
+Usually, event handler are represented as functions, sometimes anonymous functions, that are assigned to specific handler attributes (properties) of the WebSocket object. A handler is a function that will be executed when the event, the handler is registered for, occurs. Since JavaScript treats functions as objects, handler functions can be assigned to the event handler properties (\texttt{onopen}, \texttt{onerror}, etc.) of the WebSocket object.
+Not every event handler need to be connected with a handler function\sidenote{For instance, a sensor that distributes sensed values (so-called \emph{obserables}) unidirectionally via the WebSocket protocol might only define handler functions for opening or closing a connection but not for receiving information from a server.}; it is common practice to define handler functions exclusively for the events of interest. 
+However, in following a good programming style, \emph{handler functions should be defined for all possible events that can occur} in order to achieve robustness and minimize the risk of unwanted and unintended side effects. 
 
 \subsection{JavaScript Client API} % (fold)
 \label{sub:simple_websocket_client_program}
-The following JavaScript program\sidenote{Please note that checks whether a browser supports the WebSocket protocol have been omitted due to readability and comprehensibility reasons.} represents the set of handlers, a WebSocket client needs to implement in order to establish a WebSocket connection to an endpoint. The code fragment shows how to initiate a connection to a WebSocket server, how to send messages to the server, and how to print out received messages to the JavaScript console. It includes handler functions for all major events.
+The following JavaScript program\sidenote{Please note that checks whether a browser supports the WebSocket protocol have been omitted due to readability and comprehensibility reasons.} represents the set of handlers, a WebSocket client needs to implement in order to establish a WebSocket connection to an endpoint. The code fragment shows 
+\begin{itemize}
+	\item how to initiate a connection to a WebSocket server,
+	\item how to send messages to the server, and 
+	\item how to print out received messages to the JavaScript console.
+\end{itemize}  It includes handler functions for \emph{all major events}.
 
 \begin{listing}%[!t]
 \begin{lstlisting}[language=JavaScript]
@@ -718,7 +723,7 @@ ws.onopen = function() {
   console.log('Uebertragene Nachricht: Hallo WebSocket Endpoint!');
 };
 
-ws.onmessage = function(message) {	
+ws.onmessage = function(message) {
   console.log('Der Server sagt: ' + message.data);
   ws.close();
 };
@@ -736,7 +741,7 @@ ws.onerror = function(event) {
 	\label{simple_client}
 \end{listing}
 
-Due to the asynchronous character of JavaScript, the script code is not blocked when the client tries to establish a connection to the echo server. After the processing of line 1 (instantiation of the WebSocket object), the runtime environment continues executing the script and does not wait until the handshake is complete. Technically, the instantiation is asynchronously executed in another internally managed thread. Upon executing the script, for anonymous handler functions are assigned to their respective event handler objects. The event handler function for the \texttt{onopen} event notifies the user in case the handshake is complete by printing a message to the JavaScript console. The \texttt{ws} object then transitions into the \texttt{OPEN} state and creates a WebSocket text frame, which is to be sent to the server using the \texttt{ws.send()} method. When the client receives a response, which is also a text frame, the browser calls the \texttt{ws.onmessage()} handler function that prints the message to the JavaScript console and closes the connection.
+Due to the asynchronous character of JavaScript, the script code is \emph{not blocked} when the client tries to establish a connection to the echo server. After processing line 1 (instantiation of the WebSocket object), the runtime environment continues executing the script and does not wait until the handshake is complete. \emph{Technically, the instantiation is asynchronously executed in another internally managed thread}. Upon executing the script, four anonymous handler functions are assigned to their respective event handler objects. The event handler function for the \texttt{onopen} event notifies the user in case the handshake is complete by printing a message to the JavaScript console. The \texttt{ws} object then transitions into the \texttt{OPEN} state and creates a WebSocket text frame, which is to be sent to the server using the \texttt{ws.send()} method. When the client receives a response, which is also a text frame, the browser calls the \texttt{ws.onmessage()} handler function that prints the message to the JavaScript console and closes the connection.
 
 
 Listing~\ref{simple_client} demonstrates how handler functions can be defined for events defined by the WebSocket Specification. In order to achieve a greater degree of flexibility, event handlers can also be defined using the \texttt{addEventListener()} method alternatively, which allows to define \emph{multiple handlers} for a single event.  Listing~\ref{alternative} illustrates this principle for the \texttt{open} event:
@@ -853,19 +858,19 @@ ws.addEventListener("open", function() {
 \section{Creating a WebSocket Server in Node.js} % (fold)
 \label{sec:creating_a_websocket_server}
 
-This section describes the creation of an echo WebSocket server using \emph{Node.js}\sidenote{\url{https://nodejs.org/en/download/}} and the \emph{WebSocket.io}\sidenote{\url{https://www.npmjs.com/package/websocket.io}} module. However, a WebSocket implementation is available for literally all major server-side frameworks and languages. This module represents a WebSocket implementation for Node.js and offers an API to utilize its functionality. More information about how to install Node.js for your target platform and operating system respectively can be obtained from the official Node.js website as well as from the Node.js section in this lecture notes. Please bear in mind that the Node.js section is \emph{work in progress} and only provides information on a rather generic and basic level.
+This section describes the creation of an echo WebSocket server using \texttt{Node.js}\sidenote{\url{https://nodejs.org/en/download/}} and the \texttt{WebSocket.io}\sidenote{\url{https://www.npmjs.com/package/websocket.io}} module. However, a WebSocket implementation is available for literally all major server-side frameworks and languages. This module represents a WebSocket implementation for Node.js and offers an API to utilize its functionality. More information about how to install Node.js for your target platform and operating system respectively can be obtained from the official Node.js website as well as from the Node.js section in this lecture notes. Please bear in mind that the Node.js section is \emph{work in progress} and only provides information on a rather generic and basic level.
 
-In order to create a simple echo server using WebSockets.io and Node.js, a few initial steps need to be conducted.
+In order to create a simple echo server using \texttt{WebSockets.io} and \texttt{Node.js}, a few initial steps need to be conducted.
 As a first step, a project directory has to be created, e.g., using the following terminal commands:
 \begin{Verbatim}
 	mkdir echo_websocket_io
 	cd echo_websocket_io
 \end{Verbatim} 
-As a next step, the WebSocket.io module needs to be downloaded and installed using Node.js' module manager \texttt{npm} by entering the following command in the project folder:
+As a next step, the \texttt{WebSocket.io} module needs to be downloaded and installed using \texttt{Node.js}' module manager \texttt{npm} by entering the following terminal command in the project folder:
 \begin{Verbatim}
 	npm install websocket.io
 \end{Verbatim}
-Now, we can create a file (e.g., \texttt{echoServer.js}) hosting the server code; please note that the file must have the suffix \texttt{.js}. Listing xxx expounds the code for an elementary echo server.
+Now, we can create a file (e.g., \texttt{echoServer.js}) hosting the server code; please note that the file must have the suffix \texttt{.js}. Listing~\ref{websocket_io_server} expounds the code for an elementary echo server.
 \begin{listing}%[!t]
 \begin{lstlisting}[language=JavaScript]
 var ws = require('websocket.io'),
@@ -948,7 +953,7 @@ The \texttt{index.html} file is depicted below:
 </body>
 </html>
 \end{lstlisting}
-	\caption{HTML part of the WebSocket echo client}
+	\caption{HTML part of the WebSocket echo client file \texttt{index.html}}
 	\label{echo_client_1}
 \end{listing}
 
@@ -1004,7 +1009,7 @@ The \texttt{index.html} file is depicted below:
         ws.close();  }
 </script>
 \end{lstlisting}
-	\caption{JavaScript part of the WebSocket echo client}
+	\caption{JavaScript part of the WebSocket echo client file \texttt{index.html}}
 	\label{echo_client_2}
 \end{listing}
 
@@ -1017,10 +1022,10 @@ The \texttt{index.html} file is depicted below:
 \label{sec:node_js}
 % Node.js\marginnote{\textbf{Note:}\quad Unlike for some other web frameworks, the development environment does not include a separate development web server. In Node/Express a web application creates and runs its own web server!} ist ein Framework, mit dem es möglich ist, JavaScript-Code serverseitig, d.h., direkt auf dem Server auszuführen. Hierzu verwendet node.js das Google Webkit javascript-Engine V8. Zentrales Element in node.js ist die asynchrone Behandlung von Aufrufen (\emph{engl.~asynchronous programming}).
 
-Node.js\sidenote{\url{https://nodejs.org/}} (sometimes simply abbreviated as \emph{Note}) is an open-source, cross-platform, runtime environment that allows developers to create all kinds of server-side tools and applications in JavaScript. The runtime is intended for usage apart of a browser context (i.e.\ running directly on a computer or server OS). As such, the environment omits browser-specific JavaScript APIs and adds support for more traditional OS APIs including HTTP and file system libraries.
+Node.js\sidenote{\url{https://nodejs.org/}} (sometimes simply abbreviated as \emph{Note}) is an open-source cross-platform runtime environment that allows developers to create all kinds of server-side tools and applications in JavaScript. The runtime is intended for usage apart of a browser context (i.e.\ running directly on a computer or server OS). As such, the environment omits browser-specific JavaScript APIs and adds support for more traditional OS APIs including HTTP and file system libraries.
 
 % SZA: Could also be a good sidenote
-From a web server development perspective, Node.js offers a number of benefits, which are listed below:\sidenote{This enumeration is taken from the Modzilla Web Development Portal: \url{https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Introduction}}
+From a web server development perspective, \texttt{Node.js} offers a number of benefits, which are listed below:\sidenote{This enumeration is taken from the Modzilla Web Development Portal: \url{https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Introduction}}
 \begin{itemize}
 	\item Great performance! Node has been designed to optimize throughput and scalability in web applications and is a very good match for many common web-development problems (e.g.\ real-time web applications).
 	\item Code is written in ``plain old JavaScript'', which means that less time is spent dealing with \emph{context shift} between languages when both browser and web server code is written.
