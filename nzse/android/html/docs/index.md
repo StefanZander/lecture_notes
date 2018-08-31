@@ -1,4 +1,4 @@
-# Welcome to MkDocs
+# Landing Page for MkDocs Root
 
 For full documentation visit [mkdocs.org](http://mkdocs.org).
 
