@@ -2,20 +2,21 @@
 
 ![alt](./figures/dec_vt100_terminal.jpg)*DEC VT100's Terminal Interface*
 
-
 > The moment the user sees your UI, it communicates where they have arrived, what they can do, and how they should do it. The user receives this message from every aspect of your design: graphical and textual, silent and audible, static and moving, intentional and accidental. Figure out what you want that message to be, then do everything you can to ensure the message your UI sends is as close as possible to the one you intended.
 > ––JAN MIKSOVSKY
 
 This lecture teaches you basic principles for designing good and intuitive UIs. Those principles apply to many kinds of systems (Web-based system, mobile app, desktop app etc).
 
-!!! abstract "Objectives"
+!!! abstract 
+    __Objectives:__
+
     * [x] You know basic principles of intuitive and modern UIs
     * [x] You learn a methodology that helps you to built UIs with a good user experience
-    * [x] You can ...
+    * [x] You know the difference between user interface design and user experience design
+    * [x] You learn basic principles of both areas
 
-## Introduction
 
-### User Interface versus User Experience
+## User Interface versus User Experience
 
 This section briefly discusses the __differences__ between __User Interface Design__ (UI) and __User Experience Design__ (UX).
 
@@ -53,15 +54,11 @@ But when you enter a search string into the search box, the search engine offers
 Now imagine that every time you searched on Google it took 15 seconds to get a result – you’d no longer be able to instantly get an answer to your question. Even if the interface stayed the same, your experience with Google would be dramatically different.
 
 
-
-
-
-
 ## What is User Experience?
 
 Source: <https://academic.oup.com/iwc/article/23/5/473/660020>
 
-The term User Expereince was created by Don Norman in the early 1990s. 
+The term __User Experience__ was created by Don Norman in the early 1990s. 
 
 > "The first requirement for an exemplary user experience is to meet the exact needs of the customer, without fuss or bother. Next comes simplicity and elegance that produce products that are a joy to own, a joy to use.
 >
@@ -96,21 +93,25 @@ But User Experience Design is not a market research job.
 
 Though it does utilize many of the same techniques to achieve a complex end goal: The structure, analysis and optimization of a customer’s experience with a company and its products.
 
+
 ### Typical Tasks of a User Experience Designer
 
 Strategy and Content:
+
 * Competitor Analysis
 * Customer Analysis
 * Product Structure/Strategy
 * Content Development
 
 Wireframing and Prototyping:
+
 * Wireframing
 * Prototyping
 * Testing/Iteration
 * Development Planning
 
 Execution and Analytics
+
 * Coordination with UI Designer(s)
 * Coordination with Developer(s)
 * Tracking Goals and Integration
@@ -138,31 +139,39 @@ They may do that by conducting user research to get as much context as possible 
 
 ## What is User Interface Design?
 
-While User Experience is a conglomeration of tasks focused on optimization of a product for effective and enjoyable use; User Interface Design is its compliment, the look and feel, the presentation and interactivity of a product.
+While User Experience is a __conglomeration of tasks focused on optimization of a product for effective and enjoyable use__; User Interface Design is its compliment, the __look and feel__, the __presentation__ and __interactivity__ of a product.
 
-Like User Experience Design, User Interface Design is a multi-faceted and challenging role. It is responsible for the transference of a product’s development, research, content and layout into an attractive, guiding and responsive experience for users. 
+Like User Experience Design, User Interface Design is a multi-faceted and challenging role. It is responsible for the transference of a product’s development, research, content and layout into an attractive, guiding and responsive experience for users.
 
-Responsibilities of a UI Designer
+### Responsibilities of a UI Designer
 
 Look and Feel:
+
 * Customer Analysis
 * Design Research
 * Branding and Graphic Development
 * User Guides/Storyline
 
 Responsiveness and Interactivity:
+
 * UI Prototyping
 * Interactivity and Animation
 * Adaptation to All Device Screen Sizes
 * Implementation with Developer
 
 So, in conclusion
-* User Interface Design is responsible for the transference of a brand’s strengths and visual assets to a product’s interface as to best enhance the user’s experience.
-* User Interface Design is a process of visually guiding the user through a product’s interface via interactive elements and across all sizes/platforms.
-* User Interface Design is a digital field, which includes responsibility for cooperation and work with developers or code.
+
+* User Interface Design is responsible for the __transference of a brand’s strengths and visual assets__ to a product’s interface as to best enhance the user’s experience.
+* User Interface Design is a __process of visually guiding the user__ through a product’s interface via interactive elements and across all sizes/platforms.
+* User Interface Design is a __digital field__, which includes responsibility for cooperation and work with developers or code.
 
 Or in analogical terms, UI design produces a product’s: Skin - a product’s visual/graphic presentation. Senses - a product’s reactivity and interactivity in response to a user’s input or different display environments. And makeup - a product’s guides, hints, and directives that visually leads users through their experience.
 
+
+## How to Design Intuitive User Interfaces?
+
+!!! warning
+    The worst attitude one could take is to say it is the users' fault
 
 ### Basic Concepts
 
@@ -206,3 +215,70 @@ If you are providing an option that can be turned on or off, a checkbox is the b
 ![alt](figures/radiobuttons_example.png)*Radio buttons are a good choice when one out of several independent options needs to be selected*
 
 ## UI Design Principles
+
+!!! warning
+    Guiding Principle:
+    
+    __It is not the users' fault if they can't figure out how to use a product properly!__
+
+    _...probably because its user interface and interactions are overly complex, unituitive, unnatural, not error-prone or require too much effort._
+
+Intuitive UIs must incorporate a combination of the following characteristics:
+
+1. __Discoverability__
+
+    Users can easily find the starting point within a specific context (both temporally and in terms of the encompassing workflow or task).
+    The command (e.g. to initiate an action) is both clearly visible, in the expected location, and visualized (perceived) as a command (and not something else).
+
+2. __Understandability__
+
+    Users are able to make an informed decision quickly (better: instantly) and confidently.
+    Users should not be compelled to experiment around or require assistance to make a choice. 
+    Many task steps boil down to making decisions. 
+
+3. __Affordance__
+
+    The visual elements of an UI must incorporate visual properties that indicate how to perform a specific action or interaction.
+    Users should not be put into position to experiment or deduce how to perform a specific interaction.
+
+4. __Predictability__
+
+    A UI delivers the expected results (in terms of the functionality) with no surprises or confusion.
+    An important concept in this context is the **natural mapping**. 
+    Again, users should not be bothered with the necessity of experimenting around in order to discover the resulting consequences or output.
+
+5. __Efficiency__
+
+    An UI should enable users to perform desired actions with a minimum amount of effort or tweaks.
+    Inefficient and cumbersome interactions do not feel intuitive.
+
+6. __Responsive Feedback__
+
+    An UI should give immediate and clear feedback as a response to the initiation of an action or interaction between the user and system. 
+    The feedback should indicate that an action is happening. 
+    Then the action completes, the UI makes it clear whether the action was successfull or not, prividing specific details when needed.
+
+7. __Forgiveness__
+
+    If users make mistakes, either the right things happen anyway (if that is the case, critically think about whether a decision or interaction was needed at all --> Efficiency) or users can fix or undo their actions with ease.
+    Users usually make small mistakes all the time so UIs that punish users for such small mistakes do not fell intuitive.
+
+8. __Explorability__
+
+    Users should be able to explore a UI without fear (ie. as a result of not being aware of the consequences resulting from an action) of doing something wrong or getitng lost.
+
+
+!!! note
+    **Please note:** 
+    
+    Not every attribute listed here is required for every interaction, so the key challenge is to determine **the appropriate combination of manifestations**.
+    
+    _--> Think: How can this be achieved?_
+
+As a consequence,
+
+!!! warning
+    Summary:
+    
+    __A UI is intiutive, when it exhibits the appropriate combination of discoverability, understandability, affordance, predictability, efficiency, responsiveness, forgiveness, and explorability.__
+
