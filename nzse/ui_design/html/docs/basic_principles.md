@@ -223,7 +223,9 @@ If you are providing an option that can be turned on or off, a checkbox is the b
 
     _...probably because its user interface and interactions are overly complex, unituitive, unnatural, not error-prone or require too much effort._
 
-Intuitive UIs must incorporate a combination of the following characteristics:
+In research and extensive field experiments, a number of characteristics were identified that serve as constituents of UIs perceived as intiutive. 
+
+In the following, we briefly outline these characteristics: 
 
 1. __Discoverability__
 
@@ -279,6 +281,22 @@ As a consequence,
 
 !!! warning
     Summary:
-    
+
     __A UI is intiutive, when it exhibits the appropriate combination of discoverability, understandability, affordance, predictability, efficiency, responsiveness, forgiveness, and explorability.__
 
+
+## Are there any Downsides?
+
+--> See Book Designing Intuitive UIs, page 27ff.
+
+Discoverability, affordance, and predictability are strongly influenced by users' previous or prior experiences.
+
+Users usually spend more time on other pages or with other software than with yours. 
+
+Hence, their prior experiences are built from experiences they learned from using other software. 
+
+If your product or software system is unexpectedly inconsistent with those experiences, it is _YOUR_ product that is unintuitive. 
+
+## Strategically Unintuitive UIs
+
+--> See Book Designing Intuitive UIs, page 29ff.
