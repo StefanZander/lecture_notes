@@ -171,9 +171,9 @@ Or in analogical terms, UI design produces a product’s: Skin - a product’s v
 ## How to Design Intuitive User Interfaces?
 
 !!! warning
-    The worst attitude one could take is to say it is the users' fault
+    The worst attitude one could take is to say it is the users' fault if software or a product is not used or operated as intended by the designer / software engineer.
 
-### Basic Concepts
+### Basic Concepts (How to Communicate with Users)
 
 A user interface is essentially a **conversation between the user and a software system** to perfom tasks to achieve users' goals.
 A UI differs from conversation primarily in that it uses the **language of UI elements** instead of natural language.
@@ -196,10 +196,16 @@ Style, color schemes, fashion are largely subjective, but aspects that constitut
 Therefore, every user interface element can be **evaluated by how effectively it communicates its role and contribution** towards the fulfillment of users' tasks.
 If a UI containts elements, that communicate nothing, they should be removed.
 
-!!! abstract "Principle x: UI is essentially Human-like Communication"
-    The most important concept is to understand that UI is **not** a completely different form of communication. A good and ituitve UI is designed to **communicate to people**, not robots, so it employs many concepts of human communication.
+!!! abstract 
+    __"Principle x: UI is essentially Human-like Communication"__
 
-!!! abstract "Principle x: Friendliness"
+    The most important concept is to understand that UI is *not* a completely different form of communication. 
+    
+    A good and ituitve UI is designed to **communicate to people**, not robots, so it employs many concepts of human communication.
+
+!!! abstract 
+    **Principle x: Friendliness**
+
     If a UI communicates in a way that would be inappropriate or rude in person, it is equally inappropriate or rude in a system.
 
 For example, consider the classic question
@@ -289,7 +295,7 @@ As a consequence,
 
 --> See Book Designing Intuitive UIs, page 27ff.
 
-Discoverability, affordance, and predictability are strongly influenced by users' previous or prior experiences.
+Discoverability, affordance, and predictability are strongly influenced by users' previous or prior experiences. --> _What does that imply for untuitive UIs?_
 
 Users usually spend more time on other pages or with other software than with yours. 
 
