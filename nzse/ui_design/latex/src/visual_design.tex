@@ -1,0 +1,153 @@
+%!TEX root = ./ui.tex
+
+\section{Visual Design} % (fold)
+\label{sec:visual_design}
+This section discusses ...
+
+\subsection{What is Visual Design?} % (fold)
+\label{sub:what_is_visual_design}
+
+% subsection what_is_visual_design (end)
+What is visual design? Try to think about it a few moments---
+\begin{itemize}[]
+	\item \emph{...Is it subjective?}
+	\item \emph{...Does it require extensive training and talent?}
+	\item \emph{...Can only those with creative veins produce good visual designs?}
+	\item \emph{...Is it all about graphics?}
+\end{itemize}  
+
+
+\begin{tcolorbox}[
+	width=\textwidth,
+	% colback={codegray},
+	title={\textbf{What is Visual Design?}},
+	outer arc=0mm,
+	arc=0mm,
+	boxrule=1pt,
+	% coltitle=white
+	]    
+Think about it a few moments an try to answer the following questions:
+\begin{itemize}[]
+	\item \emph{...Is it subjective?}
+	\item \emph{...Does it require extensive training and talent?}
+	\item \emph{...Can only those with creative veins produce good visual designs?}
+	\item \emph{...Is it all about graphics?}
+\end{itemize} 
+\end{tcolorbox}   
+
+
+\begin{tcolorbox}[boxsep=0.5em,
+                  left=0.5em,
+                  right=0pt,
+                  top=0pt,
+				  outer arc=0mm,
+                  arc=0mm,
+                  boxrule=0.0pt,leftrule=3pt,
+                  colback=exampleback,
+				  colframe=examplerule
+                  ]%%
+What is visual design? Think about it a few moments---
+\begin{itemize}[]
+	\item \emph{...Is it subjective?}
+	\item \emph{...Does it require extensive training and talent?}
+	\item \emph{...Can only those with creative veins produce good visual designs?}
+	\item \emph{...Is it all about graphics?}
+\end{itemize} 
+\end{tcolorbox}
+
+People often confuse interface design with graphic design and therefore assume, that UI design is a subjective art that requires extensive training and talent~\citep{mckay:2013}.
+This confusion results in two misleading conceptions:
+
+\begin{enumerate}[a)]
+	\item The first misconception implies that most of UI design is \emph{graphic design}---which is not true as we will see. 
+Although visual design is a crucial element in UI design, most aspects of design efforts should focus on \textbf{interaction design}~\citep{mckay:2013}, ie., how to \textbf{communicate the intended information in meaningful and purposeful ways}.
+
+	\item Another misconception is that visual design is a \emph{subjective art}---this is also not true. 
+Although artistic and subjective aspects play a crucial role in contributing to the enjoyable aspect of UX, most of your visual design elements should be selected, created or justified based on \textbf{what they communicate visually}.
+\end{enumerate}
+
+
+As a corollary, many visual design decisions that initially appear subjective, emotional, arbitrary and aesthetic are actually \textbf{objective}, \textbf{rational}, \textbf{coordinated}, and \textbf{principled}~\citep{mckay:2013}. [explain why]
+
+By clarifying the misleading perceptions, we can now define what visual design actually is.
+A non-technical but rather comprehensive definition of visual design has been provided by~\citep{usability_gov:2018a}:
+
+\begin{quote}
+\emph{``Visual design focuses on the aesthetics of a site and its related materials by strategically implementing images, colors, fonts, and other elements. A successful visual design does not take away from the content on the page or function.  Instead, it enhances it by engaging users and helping to build trust and interest in the brand.''}~\citep{usability_gov:2018a}
+\end{quote}
+
+Form may follow function in industrial design, but in designing intuitive user interface, an aesthetic design form follows communication~\citep{mckay:2013}.
+
+\begin{figure}%
+	\centering
+  \includegraphics[width=1.0\textwidth]{../figures/inconsistent_inputfield.png}
+  \caption[][0em]{The length of this numeric text box suggests long input (like a serial or part number), but the spin buttons (the arrows on the right side) suggest that the default value is close to the right value (so unlike a serial or part number). This inconsistency reveals a design problem.\newline Source: \url{https://html5tutorial.info/html5-number.php}}
+  \label{fig:inconsistent_inputfield}
+\end{figure}
+
+Hence, when evaluating a wireframe, a UI element that does not communicate anything should be removed; if it communicates poorly, it should be redesigned. In cases when a decision has to be made between a design with effective visual communication and one that is aesthetically pleasant, the design that communicates more effectively is the better choice~\citep{mckay:2013}. 
+
+
+\subsection{Why Visual Design is Important} % (fold)
+\label{sub:why_visual_design_is_important}
+
+Note: Good info about Wireframing: https://www.experienceux.co.uk/faqs/what-is-wireframing/
+
+As psychological and anthropological research indicates, visually unappealing products have an impact on \textbf{users subjective perception} about their qualitative characteristics. 
+Users will definitely be affected if a product is visually unappealing---regardless of the power and flexibility of the underlying technology. 
+
+Critical in this respect are also defensive statements such as the following:
+\begin{quote}
+	\emph{``True, our product isn't a beauty, but it surely does the job!''}
+	\par
+	\emph{``The user interface is a bit old fashioned, but the workflow is very accurate!''}
+\end{quote}
+Such statements imply that the visual appearance of a product is a superficial detail that users will overlook (or get used to) as long as the required functionality is provided. 
+This statement might be true for power or expert users, but it fails the ordinary people.
+
+Why does it fail ordinary people?
+
+The reason why such statements are not true lies in the emotional reactions people feel when using a product.  People are emotional and the react emotionally to a products visual appearance. 
+Therefore, a product should look like it fulfills its purpose well.
+But if instead the visual appearance of a product is of questionable quality [what does that mean, think about examples], users will naturally assume that the rest of the product has the same level of quality. 
+Users assume that attractive products are better designed and more usable---this is known as the \textbf{aesthetic-usability effect}\sidenote{See the resources section for further information.}. As~\citep{mckay:2013} indicates 
+\begin{quote}
+	\emph{``Do not assume that users will see the beauty that lies beneath---they won't!''}
+\end{quote}
+
+As a consequence, visual appearance is essential to our perception of quality~\sidenote{As computer scientists or rational technologists, we are mostly reluctant to accept this idea.}.
+We as computer scientists usually want customers to see our software's inner beauty and we want to believe that the quality of the functionality and the internal design---the system architecture, its performance, robustness, reliability, scalability, flexibility etc.---is what matters most. 
+They indeed matter, but only for professional or experienced users.
+Steve Jobs once said
+\begin{quote}
+	\emph{``Design is not just what it looks and feels like. Design is how it works.''}
+\end{quote}
+From a user's point of view, the user experience is the product.
+If the user experience is poor, nothing else matters!
+
+Good visual design is important for a good user experience:
+\begin{itemize}[]
+	\item Users need to be spatially oriented and know where to look
+	\item Users need to know how to scan a page and how to find the information they are looking for quickly---without being overwhelmed 
+	\item The text needs to be readable [dt.~\emph{lesenswert}] (--> typography) and legible [dt.~\emph{leserlich}] have a clear visual hierarchy
+	\item Users need to understand what icons and graphics mean
+	\item They need animations and transitions to keep them oriented, give feedback, and show relationships---without being distracted.
+\end{itemize}
+A good visual design enables users to get their tasks done effectively and efficiently and without distraction. 
+
+
+\begin{tcolorbox}[
+	width=\textwidth,
+	% colback={codegray},
+	title={\textbf{Excursus: What is the Aesthetic-Usability Effect?}},
+	outer arc=0mm,
+	arc=0mm,
+	boxrule=1pt,
+	% coltitle=white
+	]    
+Add information about ...
+\par \url{https://www.nngroup.com/articles/aesthetic-usability-effect/} 
+\par \url{https://medium.com/coffee-and-junk/design-psychology-aesthetic-usability-effect-494ed0f22571}
+\end{tcolorbox}
+
+
