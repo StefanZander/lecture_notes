@@ -150,4 +150,215 @@ Add information about ...
 \par \url{https://medium.com/coffee-and-junk/design-psychology-aesthetic-usability-effect-494ed0f22571}
 \end{tcolorbox}
 
+% \section{Design Guidelines} % SZA: Was previous headline
+\label{sec:design_guidelines}
+
+\section{Layout Design Principles} % (fold)
+\label{sub:layout_design_principles}
+Layout is one of the hardest parts in UI design---especially for non-designers.
+Here are some guidelines that help in designing layouts, that appear simple and orderly (ie., clearly structured), easy to scan, efficient, and aesthetically leasing.
+
+Several layout patterns are often recommended to take advantage of how people scan or read through a design. 3 of the more common are the Gutenberg diagram, the z-pattern layout, and the f-pattern layout. Each offers advice for where to place important information.
+
+
+
+\subsection{Reading Patterns} % (fold)
+\label{sub:reading_patterns}
+(Source: \url{https://www.nngroup.com/articles/website-reading/})
+
+Putting aside direct transactions (such as online banking), user behavior in relation to internet content is paradoxical:
+\begin{itemize}[--->]
+	\item Users go to websites for \textbf{information}.
+	\item Users \textbf{scarcely read anything} during an average website visit.
+\end{itemize}
+
+This second point has been well supported by tons of research over the years:
+\begin{enumerate}
+	\item In 1997, the world's first study of how users read web content summarized the findings in two words: \textbf{they don't}. Instead of carefully reading information, users typically scan it.
+	\item In 2006, eyetracking research found that users frequently scan website prose in an F-pattern, focusing on words at the top or left side of the page, while barely glancing at words that appeared elsewhere.
+	\item 2008 research quantified this finding: given the duration of an average page view, users have time to read at most \textbf{28\% of the words on the page}.
+\end{enumerate}
+
+
+A well-designed page help users save time by focusing their scanning eyes on information that they actually want to read (--> user research).
+
+It is important to note that when web content helps users focus on sections of interest, users switch from scanning to actually reading the copy.
+
+Therefore it is important to place important and significant information first
+a) First 2 Words in Headlines\sidenote{Source: \url{https://www.nngroup.com/articles/first-2-words-a-signal-for-scanning/}}
+b) First 2 Paragraphs in texts should contain the most important and relevant information.
+
+Users pay the \textbf{most attention to information at the top} of the page.
+
+Experiments conducted by the Group revealed that users assess the importance and relevance of text based on its relative distance to the top headline. 
+
+The following table shows the percentage of users who looked at a paragraph relative to its sequential location in the body text:
+
+Position from the start of the text	Users who looked at the paragraph
+1	81\%
+2	71\%
+3	63\%
+4	32\%
+
+Also bear in mind that users hunt for facts online, so factually rich content will attract readers and keep their attention\sidenote{Source: \url{https://www.nngroup.com/articles/write-interesting-facts/}}.
+
+For reading, we generally distinguish between different forms of reading and scanning patterns (different patterns)
+immersive reading
+scanning
+F-shaped reading
+Z-shaped reading
+hybrid forms
+
+We will discuss ... and ... in detail and explain ... through examples.
+
+There are two modes of reading, ie., perceiving the contents of a screen or page:
+\begin{enumerate}
+	\item \textbf{Immersive reading} \par The goal of immersive reading is comprehension, ie., understanding the semantics and consequences of a text thoroughly.
+	Users read immersively in a left-to-right, top-to-bottom order (in Western cultures).
+	During immersive reading, users read most of the words and most of the content, but they may skip over content that does not appear relevant or that requires too much effort to read.
+	
+	\item \textbf{Scanning} \par The goal of scanning is finding desired things quickly with as little effort as possible.
+\end{enumerate}
+Well-designed layouts need to accommodate both modes well. 
+
+Good source for discussion about pattern: \url{https://vanseodesign.com/web-design/3-design-layouts/}
+
+\subsection{Z-Shaped Pattern} % (fold)
+\label{sub:z_shaped_pattern}
+
+A z-pattern design traces the route the human eye travels when they scan the page— left to right, top to bottom:
+\begin{enumerate}
+	\item First, people scan from the top left to the top right, forming a horizontal line
+	\item Next, down and to the left side of the page, creating a diagonal line
+	\item Last, back across to the right again, forming a second horizontal line
+\end{enumerate}
+When viewers’ eyes move in this pattern, it forms an imaginary ``Z'' shape.
+This pattern works because most western readers will scan a page the same way that they would scan a book---top to bottom, left to right.
+
+Z-Pattern\marginnote{Where to use the Z-Pattern.} scanning occurs on pages that aren’t centered on the text (for text-heavy pages such as articles or search results, it’s better to use F-Pattern). This makes z-pattern good solution for simple designs with a minimal copy and a few key elements that need to be seen. Minimalist pages or landing pages centering mostly around one or two main elements can implement the Z-pattern to encourage users to follow this natural method.
+
+\begin{figure}%
+	\centering
+  \includegraphics[width=1.55\textwidth]{../figures/z-shape_facebook.png}
+  \caption[][24em]{Z-layout truly shines in design projects where simplicity and a call-to-action are the most important principle. Facebook landing page is an example of Z-Layout.\newline Source: \url{https://uxplanet.org/z-shaped-pattern-for-reading-web-content-ce1135f92f1c}}
+  \label{fig:z-shape_facebook}
+\end{figure}
+
+The premise of the Z-layout is actually pretty simple: impose the letter Z on the page. Ideally, you want people to see your most important information first and your next most important information second. Thus, important elements should be placed along the scanning path and visitors should be presented with the right information at the right time.
+
+It’s essential to create a flow
+
+Flow is about leading the eye from one part of a page to another in the direction you want it to move. You create flow through a combination of visual weight and visual direction. Here are a few best practices to keep in mind when creating a flow:
+
+\begin{enumerate}[(a)]
+	\item \textbf{Point \#1 --- Logo} \par Point \#1 is a starting point of viewer’s journey. It’s a prime location for your logo.
+	\item \textbf{Point \#2 --- Search or Login Elements} \par Place the items that you want the reader to see first along the top of the Z. The eye will naturally follow the path of the Z, so the goal is to place your secondary ``call to action'' at the end. Put more visual weight into Point \#2 element---make the button (or another key element) bright and colorful to get users attention and guide users along the Z-pattern.
+	\item \textbf{Center area of the page --- Hero image or main message} \par The trick to this area is fill it with content that interests the user, while still urging their sight downward to the next line. For example, you can place a hero image in the center of the page to separate the top and bottom sections and guide the eyes along the Z path.
+	\item \textbf{Point \#3 --- Useful information} \par The purpose of Point \#3 is to guide the users to the final call to action at Point \#4. For example, if your page promotes some product that you want to sell, you want potential customers to see the copy that will convince them to buy before they see the ``Buy Now'' button. Thus, you can use Point \#3 to provide benefits or other helpful information for them.
+	\item \textbf{Point \#4 --- Action UI Elements} \par Point \#4 is the finish line, the row between it and Point 3 should contain content that pushes the user’s sight to the corner. Point \#4 itself is an ideal place for your primary Call to Action.
+\end{enumerate}
+
+
+\begin{figure}%
+	\centering
+  \includegraphics[width=1\textwidth]{../figures/z-shape.png}
+  \caption[][0em]{The Z-layout}
+  \label{fig:z-layout}
+\end{figure}
+	
+	Below you can see two great example of Z-layout from Basecamp and Evernote.
+	
+\begin{figure}%
+	\centering
+  \includegraphics[width=1.5\textwidth]{../figures/z-shape_basecamp.png}
+  \caption[][27em]{Z-layout used on the basecamp.com landing page. (Source: \url{https://basecamp.com/})}
+  \label{fig:z-shape_facebook}
+\end{figure}
+
+\begin{figure}%
+	\centering
+  \includegraphics[width=1.5\textwidth]{../figures/z-shape_evernote.png}
+  \caption[][21em]{Z-layout used on the evernote.com landing page.\newline Source: \url{https://evernote.com/}}
+  \label{fig:z-shape_facebook}
+\end{figure}
+
+\subsection{Zig-Zag-Shaped Pattern} % (fold)
+\label{sub:zig_zag_shaped_pattern}
+
+% section zig_zag_shaped_pattern (end)Zig-Zag Pattern}
+The interesting and useful thing to know about the Z-pattern is that we can extend this pattern a little by seeing it more as a series of z-movements instead of one big z-movement.
+
+As you can see below, this is exactly what Dropbox does by guiding users through a few key product features and finishing their repeated Z-pattern with “Sign Up For Free” call-to-action button. In this layout “Learn More” buttons play a role of secondary call-to-action buttons that help readers go to the next relevant page without needing to read a full copy.
+
+\begin{figure}%
+	\centering
+  \includegraphics[width=1.0\textwidth]{../figures/zig-zag_dropbox.png}
+  \caption[][0em]{Zig-Zag-layout used on the dropbox.com landing page.\newline Source: \url{https://basecamp.com/}}
+  \label{fig:z-shape_facebook}
+\end{figure}
+
+The new evernote.com landing page also adapted to the improved zig-zag-layout.
+
+\begin{figure}%
+	\centering
+  \includegraphics[width=1.0\textwidth]{../figures/zig-zag-shape_evernote.png}
+  \caption[][0em]{Zig-Zag-layout used on the new evernote.com landing page.\newline Source: \url{https://basecamp.com/}}
+  \label{fig:z-shape_facebook}
+\end{figure}
+
+
+
+\subsection{F-Shaped Pattern}\sidenote{Source: \url{https://uxplanet.org/f-shaped-pattern-for-reading-content-80af79cd3394}} % (fold)
+\label{sub:f_shaped_pattern}
+
+
+The F-Pattern describes the most common user eye-scanning patterns when it comes to blocks of content. F for fast. That’s how users read your content. In a few seconds, their eyes move at amazing speeds across your website's page.
+
+\begin{figure}%
+	\centering
+  \includegraphics[width=1\textwidth]{../figures/f-pattern_screens.jpeg}
+  \caption[][0em]{The NNGroup demonstrates how eye-tracking studies revealed that users (in left-to-right reading cultures) typically scan heavy blocks of content in a pattern that looks like the letter F or E. The areas where users looked the most are colored red; the yellow areas indicate fewer views, followed by the least-viewed blue areas. Gray areas did not attract any fixations. \par (Source: \url{https://uxplanet.org/f-shaped-pattern-for-reading-content-80af79cd3394})}
+  \label{fig:f-layout}
+\end{figure}
+
+The pattern was popularized by NNGroup eyetracking study which recorded more than 200 users looked at thousands of web pages and found that users’ main reading behavior was fairly consistent across many different sites and tasks. This reading pattern looked somewhat like an F and has the following three components:
+
+\begin{itemize}
+	\item Users first read in a horizontal movement, usually across the upper part of the content area. This initial element forms the F’s top bar.
+	
+	\item Next, they scan a vertical line down the left side of the screen, looking for points of interest in the paragraph’s initial sentences. When they found something interesting they read across in a second horizontal movement that typically covers a shorter area than the previous movement. This additional element forms the F’s lower bar.
+	
+	\item Finally, users scan the content’s left side in a vertical movement.
+\end{itemize}
+
+\begin{figure}%
+	\centering
+  \includegraphics[width=1\textwidth]{../figures/f-pattern.png}
+  \caption[][0em]{Our eyes are trained to start at the top-left corner, scan horizontally, then drop down to the next line and do the same until we find something of interest.}
+  \label{fig:f-layout}
+\end{figure}
+
+Obviously, users’ scan patterns are not always comprised of exactly three parts. When the reader finds something they like, they begin reading normally, forming horizontal lines.
+
+\paragraph{Why should it be used?}
+F-shaped pattern will help you create a design with good visual hierarchy, a design that people can scan easily. F-shaped layout feels comfortable for the most western readers, because they have been reading top to bottom, left to right for their entire lives.
+
+\paragraph{When should it be used?}
+The F-pattern is the go-to layout for text-heavy websites like blogs and news sites. If there is a lot of content---especially text---users will respond better with the layout that designed according to the natural scanning format.
+
+
+The F-Layout gives the designer more control over what gets seen.
+It is therefore important to prioritize the content from most to least important before arranging elements. Once it is clear what you want your users to see, you can simply place them in the pattern’s ‘hot spots’ for the right interactions.
+
+Bear in mind, that the first two paragraphs are the most important. 
+Therefore, the most important content should be placed near to the top of the page as possible in an attempt to communicate the site’s (or page) purpose quickly. The user will usually read horizontally across the header, so here’s a good place for a navigation bar.
+
+
+
+
+
+
+
+
+
 
