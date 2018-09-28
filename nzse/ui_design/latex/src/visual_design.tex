@@ -166,19 +166,74 @@ Several layout patterns are often recommended to take advantage of how people sc
 \label{sub:reading_patterns}
 (Source: \url{https://www.nngroup.com/articles/website-reading/})
 
-Putting aside direct transactions (such as online banking), user behavior in relation to internet content is paradoxical:
+Putting aside direct transactions (such as online banking), user behavior in relation to Web content in particular is paradoxical:
 \begin{itemize}[--->]
 	\item Users go to websites for \textbf{information}.
 	\item Users \textbf{scarcely read anything} during an average website visit.
 \end{itemize}
 
-This second point has been well supported by tons of research over the years:
+This second point has been well supported by vast amounts of research over the last years:
 \begin{enumerate}
 	\item In 1997, the world's first study of how users read web content summarized the findings in two words: \textbf{they don't}. Instead of carefully reading information, users typically scan it.
 	\item In 2006, eyetracking research found that users frequently scan website prose in an F-pattern, focusing on words at the top or left side of the page, while barely glancing at words that appeared elsewhere.
 	\item 2008 research quantified this finding: given the duration of an average page view, users have time to read at most \textbf{28\% of the words on the page}.
 \end{enumerate}
 
+=======
+
+
+
+
+
+For reading, we generally distinguish between different forms of reading and scanning patterns (different patterns)
+immersive reading
+scanning
+F-shaped reading
+Z-shaped reading
+hybrid forms
+
+We will discuss ... and ... in detail and explain ... through examples.
+
+There are two modes of reading, ie., perceiving the contents of a screen or page:
+\begin{enumerate}
+	\item \textbf{Immersive reading} \par The goal of immersive reading is \textbf{comprehension}, ie., understanding the semantics and consequences of a text thoroughly.
+	Users read immersively in a left-to-right, top-to-bottom order (in Western cultures).
+	During immersive reading, users read most of the words and most of the content, but they may skip over content that does not appear relevant or that requires too much effort to read.
+	
+	\item \textbf{Scanning} \par The goal of scanning is finding desired things quickly with as little effort as possible.
+	Users often scan a page using an \textbf{arching pattern}, starting in the upper-left corner and ending in the lower right.
+	This scanning path is formally known as the \textbf{Gutenberg Diagram} (see Figure~\ref{fig:gutenberg-diagram}).
+	
+\end{enumerate}
+
+\begin{figure}%
+  \includegraphics[width=1.0\textwidth]{../figures/gutenberg-diagram.jpg}
+  \caption[][0em]{The Gutenberg Diagram is a visualization of how Latin-alphabet readers---those of us who read from left-to-right, top-to-bottom---process information presented on a webpage. (Source: \url{https://www.clicksandclients.com/blog/internet-marketing/gutenberg-diagram-homepage-sense/})}
+  \label{fig:gutenberg-diagram}
+\end{figure}
+
+Users follow these patterns generally, but the patterns change when there is content that attracts or repulses attention.
+
+Well-designed layouts need to accommodate both modes well. [\emph{Q: Think about -- how can you enable that?}]
+
+Small screens found on smart phones have a different scanning pattern. Users scan small screens starting in the upper left corner and going straight down. They can take in the width of the screen without scanning across.
+
+
+
+
+
+Good source for discussion about pattern: \url{https://vanseodesign.com/web-design/3-design-layouts/}
+
+
+
+
+
+
+
+\section{Content Usability} % (fold)
+\label{sec:content_usability}
+
+% section content_usability (end)
 
 A well-designed page help users save time by focusing their scanning eyes on information that they actually want to read (--> user research).
 
@@ -190,7 +245,7 @@ b) First 2 Paragraphs in texts should contain the most important and relevant in
 
 Users pay the \textbf{most attention to information at the top} of the page.
 
-Experiments conducted by the Group revealed that users assess the importance and relevance of text based on its relative distance to the top headline. 
+Experiments conducted by the NNGroup revealed that users assess the importance and relevance of text based on its relative distance to the top headline. 
 
 The following table shows the percentage of users who looked at a paragraph relative to its sequential location in the body text:
 
@@ -202,12 +257,12 @@ Position from the start of the text	Users who looked at the paragraph
 
 
 
-\subsection{Fact Hunting or How to create good Content Usability}\marginnote[-1em]{or:\par \emph{``How to create a good Content Usability''}} % (fold)
+\subsection{Facts First}\marginnote[-1em]{or:\par \emph{``How to create a good Content Usability''}} % (fold)
 \label{sub:fact_hunting}
 
 
 % subsection fact_hunting (end)
-Always keep bear in mind that users hunt for facts online, so \textbf{factually rich content} will attract readers and keep their attention\sidenote{Source: \url{https://www.nngroup.com/articles/write-interesting-facts/}}.
+Always bear in mind that users hunt for facts online, so \textbf{factually rich content} will attract readers and keep their attention\sidenote{Source: \url{https://www.nngroup.com/articles/write-interesting-facts/}}.
 
 Central problem:
 
@@ -216,6 +271,9 @@ Given that users spend almost no time visiting the average web page, how do you 
 Users often leave Web pages in 10–20 seconds, but pages with a clear value proposition can hold people's attention for much longer. To gain several minutes of user attention, you must clearly communicate your value proposition within 10 seconds.\sidenote{\url{https://www.nngroup.com/articles/how-long-do-users-stay-on-web-pages/} ---very interesting read}
 
 [add info about negative aging effect of website attractiveness]
+
+\subsection{Put the Introduction right} % (fold)
+\label{sub:put_the_introduction_right}
 
 Introductory text on Web pages is usually too long, so users skip it. But short intros can increase usability by explaining the remaining content's purpose\sidenote{Source: \url{https://www.nngroup.com/articles/blah-blah-text-keep-cut-or-kill/}}.
 
@@ -242,7 +300,7 @@ a) factual texts
 b) concise intros
 
 \begin{figure}%
-	\centering
+	% \centering
   \includegraphics[width=1.50\textwidth]{../figures/good_intro_nngroup.png}
   \caption[][24em]{Articles published on Nielsen Norman Group provide a clear and concise introductory text in form of a one sentence summary (indicated by the indented red colored text). }
   \label{fig:content_usability_nng}
@@ -255,34 +313,18 @@ c) topics -- factual knowledge
 d) summary statement / intro. important: mind the context-information (``Summary: ...'') --- it clearly indicates what this text is, what it is about and what users can expect from it.
 
 \begin{figure}%
-	\centering
-  \includegraphics[width=1.55\textwidth]{../figures/content_usability_bamf.png}
-  \caption[][57em]{Content usability of an rticle about the ``Digitalisierungsagenda 2020'' published by the German Federal Office for Migration and Refugees (BAMF). (Accessed September 27th, 2019.) }
-  \label{fig:content usability}
+  \includegraphics[width=1.54\textwidth]{../figures/content_usability_bamf.png}
+  \caption[][57em]{Content usability of an article about the ``Digitalisierungsagenda 2020'' published by the German Federal Office for Migration and Refugees (BAMF). (Accessed September 27th, 2019.) }
+  \label{fig:content_usability_bamf}
+\end{figure}
+
+\begin{figure}%
+  \includegraphics[width=1.54\textwidth]{../figures/content_usability_kfw.png}
+  \caption[][46em]{Content usability of an article about the ``Digitalisierungsagenda 2020'' published by the German Federal Office for Migration and Refugees (BAMF). (Accessed September 27th, 2019.) }
+  \label{fig:content_usability_kfw}
 \end{figure}
 
 
-
-For reading, we generally distinguish between different forms of reading and scanning patterns (different patterns)
-immersive reading
-scanning
-F-shaped reading
-Z-shaped reading
-hybrid forms
-
-We will discuss ... and ... in detail and explain ... through examples.
-
-There are two modes of reading, ie., perceiving the contents of a screen or page:
-\begin{enumerate}
-	\item \textbf{Immersive reading} \par The goal of immersive reading is comprehension, ie., understanding the semantics and consequences of a text thoroughly.
-	Users read immersively in a left-to-right, top-to-bottom order (in Western cultures).
-	During immersive reading, users read most of the words and most of the content, but they may skip over content that does not appear relevant or that requires too much effort to read.
-	
-	\item \textbf{Scanning} \par The goal of scanning is finding desired things quickly with as little effort as possible.
-\end{enumerate}
-Well-designed layouts need to accommodate both modes well. 
-
-Good source for discussion about pattern: \url{https://vanseodesign.com/web-design/3-design-layouts/}
 
 \subsection{Z-Shaped Pattern} % (fold)
 \label{sub:z_shaped_pattern}
@@ -352,7 +394,7 @@ The interesting and useful thing to know about the Z-pattern is that we can exte
 As you can see below, this is exactly what Dropbox does by guiding users through a few key product features and finishing their repeated Z-pattern with “Sign Up For Free” call-to-action button. In this layout “Learn More” buttons play a role of secondary call-to-action buttons that help readers go to the next relevant page without needing to read a full copy.
 
 \begin{figure}%
-	\centering
+	% \centering
   \includegraphics[width=1.0\textwidth]{../figures/zig-zag_dropbox.png}
   \caption[][0em]{Zig-Zag-layout used on the dropbox.com landing page.\newline Source: \url{https://basecamp.com/}}
   \label{fig:z-shape_facebook}
@@ -361,7 +403,7 @@ As you can see below, this is exactly what Dropbox does by guiding users through
 The new evernote.com landing page also adapted to the improved zig-zag-layout.
 
 \begin{figure}%
-	\centering
+	% \centering
   \includegraphics[width=1.0\textwidth]{../figures/zig-zag-shape_evernote.png}
   \caption[][0em]{Zig-Zag-layout used on the new evernote.com landing page.\newline Source: \url{https://basecamp.com/}}
   \label{fig:z-shape_facebook}
