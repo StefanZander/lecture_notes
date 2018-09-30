@@ -326,6 +326,105 @@ d) summary statement / intro. important: mind the context-information (``Summary
 
 
 
+
+\subsection{Progressive Disclosure} % (fold)
+\label{sub:progressive_disclosure}
+% ger: fortschreitende Offenlegung
+
+[Very good article about progressive disclosure: \url{https://vanseodesign.com/web-design/progressive-discolosure/}]
+
+Central question:
+How to present information online to the appropriate extent?
+
+What is the underlying conversation model?
+
+Would the conversation more like a monologue where everything will be explained in detail (like in most university lectures)?
+
+Or would the conversation more like a brief summary of the essentials followed by Q\&A? 
+
+As a hint, think about how you would communicate a specific kind of information in person in the real world.
+
+If a summary of the essential facts followed by a progressive disclosure of optional information is the most appropriate communication model, then progressive disclosure ...
+This approach works well with the inverted pyramid presentation style invented by journalism where the most important information is placed first and details follow according to their importance. Using this style, users can stop reading at any time once they have the information they need.
+
+[TODO: add image of inverted pyramid]
+
+
+[TODO: add image of trip advisor or amazon stars]
+
+
+Progressive disclosure is an interaction design technique often used in human computer interaction to help maintain the focus of a user's attention by reducing clutter, confusion, and cognitive workload. This improves usability by presenting only the minimum data required for the task at hand.
+
+The idea is to help prevent information overload and keep designs cleaner by reducing clutter and noise. The goal is to keep your audience from becoming frustrated or disoriented by giving them what they need and want and nothing more.
+
+From his 2006 Alertbox article on progressive disclosure, Jacob Nielson points out the dilemma faced by designers.
+
+\begin{enumerate}[(a)]
+	\item Users want power, \textbf{features}, and \textbf{enough options} to handle all of their special needs.
+	\item Users want \textbf{simplicity}; they don’t have time learn a profusion of features in enough depth to select the few that are optimal for their needs.
+\end{enumerate}
+
+How does one provide all the features users want while still keeping interfaces clean and simple? In the same post Jacob also offers the solution (see \url{http://www.useit.com/alertbox/progressive-disclosure.html}).
+
+\begin{enumerate}[(a)]
+	\item Initially, show users only a few of the most important options.
+	\item Offer a larger set of specialized options upon request. Disclose these secondary features only if a user asks for them, meaning that most users can proceed with their tasks without worrying about this added complexity.
+\end{enumerate}
+
+This is progressive disclosure. You want to separate information into multiple layers and by default only present those layers that are necessary or relevant to the task at hand. Along with those necessary layers of information you want to provide simple mechanisms to let people have more information on request.
+
+There are two related ideas in the previous paragraph. One is to provide necessary and relevant default information and the other is to provide more on request.
+
+The first idea tells us it’s ok to present different information on different pages of a web site and the second tells us we should provide a way for our visitors to get more information if they want. This extra information might also change from page to page, though all the extra information should be readily available at any and all times.
+
+Progressive disclosure enables you to hide advanced information from new users while still making that information available to the more advanced users who want it. Information that isn’t currently wanted is essentially noise. Reducing noise and increasing signal is something we should strive for in design and progressive disclosure gives us a mechanism for doing so.
+
+Presenting limited sets of information increases learning efficiency. When information is gradually presented as needed or requested it’s processed better and is perceived as more relevant. Errors and the time and frustration of recovering from those errors is consequently reduced. Less frustration means a better user experience.
+
+\begin{figure}%
+  \includegraphics[width=1.0\textwidth]{../figures/firewall_start.png}
+  \caption[][0em]{Opening screen of the firewall option in the system preferences of Mac OS 10.11. The elementary information und functionality is clearly visible.}
+  \label{fig:firewall_start}
+\end{figure}
+
+\begin{figure}%
+  \includegraphics[width=1.0\textwidth]{../figures/firewall_details.png}
+  \caption[][0em]{The firewall option screen Mac OS 10.11. Details and expert options are displayed on a secondary screen in order to minimize clutter and information overload.}
+  \label{fig:firewall_details}
+\end{figure}
+
+
+
+\subsection{Signal-to-Noise Ratio} % (fold)
+\label{sub:signal_to_noise_ratio}
+[Source: \url{https://vanseodesign.com/web-design/signal-to-noise-ratio/}]
+% Include pollin and reichelt web shop images
+
+% compare it to apple 
+
+The concept of signal-to-noise ratio began as an abstract electrical engineering equation but has since evolved into a useful metaphor for many kinds of communication.
+
+All communication is a chain of creation, transmission, and reception of information. At each step along the way, the useful information—the signal—is degraded by extraneous or irrelevant information: the noise. Good communication thus maximizes what’s important while minimizing the things that distract from the message.
+
+There are a series of steps in any communication. It begins with the creation of a message, followed by the transmission of that message, and ending with the reception of that message by another party. At each of these 3 stages the signal itself degrades some and noise is added.
+
+In analog and digital communication signal-to-noise ratio (S/N or SNR) is a measure of the signal strength that is received relative to the background noise that is also received. If you’ve ever tried to fine tune the reception of an AM/FM radio so you could better hear a station amidst the static you were doing what you could to increase the signal-to-noise ratio.
+
+For our purposes as designers the signal is the information you want to communicate to your audience, the message you are trying to convey. Noise is pretty much everything else. It’s all the extraneous information that doesn’t serve to communicate your message.
+
+The higher the signal-to-noise ratio of your design, the more clearly your message is communicated to those viewing your design. Your goal with every design should be to strive for the maximum S/N possible.
+
+Case Study: Some eCommerce sites
+
+[add images of pollin, reichelt etc. and compare it to apple] 
+
+
+
+\section{Scanning Patterns} % (fold)
+\label{sec:scanning_patterns}
+
+
+
 \subsection{Z-Shaped Pattern} % (fold)
 \label{sub:z_shaped_pattern}
 
@@ -369,8 +468,9 @@ Flow is about leading the eye from one part of a page to another in the directio
   \label{fig:z-layout}
 \end{figure}
 	
-	Below you can see two great example of Z-layout from Basecamp and Evernote.
-	
+
+Below you can see two great example of Z-layout from Basecamp and Evernote.
+% \newpage % looks good!	
 \begin{figure}%
 	\centering
   \includegraphics[width=1.5\textwidth]{../figures/z-shape_basecamp.png}
@@ -424,7 +524,7 @@ The F-Pattern describes the most common user eye-scanning patterns when it comes
   \label{fig:f-layout}
 \end{figure}
 
-The pattern was popularized by NNGroup eyetracking study which recorded more than 200 users looked at thousands of web pages and found that users’ main reading behavior was fairly consistent across many different sites and tasks. This reading pattern looked somewhat like an F and has the following three components:
+The pattern was popularized by NNGroup eye tracking study which recorded more than 200 users looked at thousands of web pages and found that users’ main reading behavior was fairly consistent across many different sites and tasks. This reading pattern looked somewhat like an F and has the following three components:
 
 \begin{itemize}
 	\item Users first read in a horizontal movement, usually across the upper part of the content area. This initial element forms the F’s top bar.
@@ -435,7 +535,6 @@ The pattern was popularized by NNGroup eyetracking study which recorded more tha
 \end{itemize}
 
 \begin{figure}%
-	\centering
   \includegraphics[width=1\textwidth]{../figures/f-pattern.png}
   \caption[][0em]{Our eyes are trained to start at the top-left corner, scan horizontally, then drop down to the next line and do the same until we find something of interest.}
   \label{fig:f-layout}
@@ -458,8 +557,49 @@ Therefore, the most important content should be placed near to the top of the pa
 
 
 
+\section{Alignment} % (fold)
+\label{sec:alignment}
+
+\marginnote{An excellent online article about layout grids can be retrieved from: \url{https://www.smashingmagazine.com/2017/12/building-better-ui-designs-layout-grids/} (accessed: Sept. 30th, 2018) }
+
+When designing the visual appearance of a software, use an invisible alignment system to give the UI elements a coordinated and orderly appearance. 
+Layouts can be improved by reducing the number of vertical alignment grids. 
+The reuse of alignment templates across a software ensures a consistent appearance.
+
+[TODO: Add illustration about alignment grids; consider gutenberg diagramm ]
+
+Label alignment defines the topological relationships between controls and their labels. The most common styles are 
+\begin{enumerate}[(a)]
+	\item top-aligned labels,
+	\item left-aligned labels,
+	\item right-aligned labels, and
+	\item left-aligned labels with ragged controls.
+\end{enumerate}
+For larger screens, there is no single best alignment approach; each has benefits that depend on how the controls and their labels are used. 
 
 
+
+\begin{figure}%
+  \includegraphics[width=\textwidth]{../figures/vertical_align.png}
+  \caption[][0em]{Top-aligned labels work best when the controls are interactive (such as forms), when users are likely to scan both the labels and the controls vertically, and when ease of localization is important. A downside is that top-aligned labels take a lot of vertical space, so they do not work well with many fields. \newline Picture source: \url{https://www.lukew.com/ff/entry.asp?1502}}
+  \label{fig:vertical_align}
+\end{figure}
+
+\begin{figure}%
+  \includegraphics[width=\textwidth]{../figures/left_align.png}
+  \caption[][0em]{Left-aligned labels work best when users are likely to scan both labels and  controls vertically and the labels do not vary much in length. Downsides to this format are that the gaps between the labels and controls can become large if the labels vary in length, the labels and and controls look like two individual columns---giving a cluttered appearance, and it takes a lot of horizontal space if there are long labels or controls. }
+  \label{fig:left_align}
+\end{figure}
+
+\begin{figure}%
+  \includegraphics[width=\textwidth]{../figures/right_align.png}
+  \caption[][0em]{Right-aligned labels with left-justified controls work well when users are reading more than they are scanning , such as in a form. In contrast to left-aligned labels , this format's consistent space between the labels and controls makes the pair easier to read and it looks like one column instead of two. }
+  \label{fig:right_align}
+\end{figure}
+
+Left-aligned labels with ragged controls work best when users are likely to scan vertically to find specific labels but not likely to scan the controls vertically, such as when displaying a set of properties. 
+
+For smartphones, top-aligned labels work best because users can stay oriented when the screen is zoomed and the vertical format works well with vertical scrolling.
 
 
 
