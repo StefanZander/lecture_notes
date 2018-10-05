@@ -181,7 +181,7 @@ This second point has been well supported by vast amounts of research over the l
 
 =======
 
-
+When reading the contents of a page, users skip over any UI elements that repulse their attention, e.g., anything that looks like an advertisement. This phenomenon is known as \textbf{banner blindness}, in which users often skip over banners because they assume they are adds (this is ironic because banners are intended to attract attention).
 
 
 
@@ -419,6 +419,22 @@ Case Study: Some eCommerce sites
 [add images of pollin, reichelt etc. and compare it to apple] 
 
 
+\subsection{Further Recommendations} % (fold)
+\label{sub:general_recommendations}
+
+Some recommendations
+Whenever possible, put \textbf{crucial text on interactive controls} instead of using static text labels. Users are less likely to scan static text, so they might miss that crucial information.
+
+\textbf{Reconsider banners} and \textbf{large blocks of} mostly \textbf{unformatted text}. These formats are often used for important information, but users are likely to not scan them at all.
+
+Place primary UI elements required to perform the task prominently along the scan axis between the starting and ending points.
+
+Consider using bold labels for editable fields because users are likely to scan for specific labels. By contrast, do not use bold labels for reports because users are more likely to scan for specific data, not the labels.
+
+[TODO: Add image p.156]
+
+[TODO: Add infos from summary and other sections there ]
+
 
 \section{Scanning Patterns} % (fold)
 \label{sec:scanning_patterns}
@@ -578,7 +594,6 @@ Label alignment defines the topological relationships between controls and their
 For larger screens, there is no single best alignment approach; each has benefits that depend on how the controls and their labels are used. 
 
 
-
 \begin{figure}%
   \includegraphics[width=\textwidth]{../figures/vertical_align.png}
   \caption[][0em]{Top-aligned labels work best when the controls are interactive (such as forms), when users are likely to scan both the labels and the controls vertically, and when ease of localization is important. A downside is that top-aligned labels take a lot of vertical space, so they do not work well with many fields. \newline Picture source: \url{https://www.lukew.com/ff/entry.asp?1502}}
@@ -600,6 +615,57 @@ For larger screens, there is no single best alignment approach; each has benefit
 Left-aligned labels with ragged controls work best when users are likely to scan vertically to find specific labels but not likely to scan the controls vertically, such as when displaying a set of properties. 
 
 For smartphones, top-aligned labels work best because users can stay oriented when the screen is zoomed and the vertical format works well with vertical scrolling.
+
+
+\section{Affordances} % (fold)
+\label{sec:affordances}
+\marginnote{Source: \url{https://developers.google.com/web/fundamentals/accessibility/semantics-builtin/}, 
+\url{http://www.satukyrolainen.com/affordances/}
+}
+
+
+The concept of affordance came originally from perception psychologist James Gibson in 1979, and the idea was later modified and made more popular by Don Norman in his book ``The Design of Everyday Things'' from 1988.
+
+When we use a man-made tool or device, we typically look to its form and design to give us an idea of what it does and how it works. An affordance is any object that offers, or affords, its user the opportunity to perform an action. The better the affordance is designed, the more obvious or intuitive its use.
+
+So, affordances are \textbf{clues} about how an object should be used, typically provided by the object itself or its context. For example, even if you've never seen a coffee mug before, its use is fairly natural. The handle is shaped for easy grasping and the vessel has a large opening at the top with an empty well inside.
+
+\begin{figure}%
+  \includegraphics[width=\textwidth]{../figures/teapot.png}
+  \caption[][0em]{The design of the teapot clearly indicates its intended usage}
+  \label{fig:teapot}
+\end{figure}
+
+The teapot can be used correctly even without having seen it before because the affordance is similar to those you have seen on many other objects---watering pots, beverage pitchers, coffee mugs, and so on. You probably could pick up the pot by the spout, but your \textbf{experience with similar affordances} tells you the handle is the better option.
+
+In graphical user interfaces, \textbf{affordances represent actions} we can take, but they can be ambiguous because there is no physical object to interact with. GUI affordances are thus specifically designed to be unambiguous: buttons, check boxes, and scroll bars are meant to convey their usage with as little training as possible.
+
+For example, you might paraphrase the use of some common form elements (affordances) like this:
+\begin{itemize}
+	\item Radio buttons --- \emph{``I can choose one of these options.''}
+	\item Check box --- \emph{``I can choose `yes' or `no' to this option.''}
+	\item Text field --- \emph{``I can type something into this area.''}
+	\item Dropdown --- \emph{``I can open this element to display my options.''}
+\end{itemize}
+
+You are able to draw conclusions about these elements only because you can see them. Naturally, someone who can't see the visual clues provided by an element can't comprehend its meaning or intuitively grasp the value of the affordance. So we must make sure that the information is expressed flexibly enough to be accessed by assistive technology that can construct an alternative interface to suit its user's needs.
+
+This non-visual exposure of an affordance's use is called its semantics.
+
+With respect to visual design, affordances are the visual properties of a UI element that indicate how to perform an interaction. 
+Standard controls all have affordances.
+Push buttons for example have frames and shade that visually suggest they can be pushed, i.e., clicked or touched. 
+
+[TODO: Add examples about affordance ]
+
+The consistent use of affordances is essential for providing an intuitive UI. Affordances often introduce visual clutter; therefore, affordances should be removed when the interaction is already clear of the affordance is redundant. 
+
+Challenge: How do you operate the following thing:
+\begin{figure}%
+  \includegraphics[width=\textwidth]{../figures/faucet-with-false-affrodance.jpg}
+  \caption[][0em]{Try guessing how to use this ``thing''... (the answer will be provided in the lecture) \par Picture source: \url{http://www.satukyrolainen.com/affordances/}}
+  \label{fig:faucet}
+\end{figure}
 
 
 
