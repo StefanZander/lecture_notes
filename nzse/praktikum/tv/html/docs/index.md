@@ -1,17 +1,22 @@
-# Welcome to MkDocs
+# Willkommen auf den NZSE-Praktikumsseiten
 
-For full documentation visit [mkdocs.org](http://mkdocs.org).
 
-## Commands
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs help` - Print this help message.
+Auf den folgenden Seiten finden Sie die **Aufgaben** der jewiligen Praktikumseinheiten sowie **allgemeine Informationen** zum Praktikum.
 
-## Project layout
+## Allgmeine Informationen
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+* [Vorbemerkung zum Praktikum](vorbemerkung.md)
+* [Projektmappe](projektmappe.md)
+
+## Einheiten
+
+* [Termin 1: Kennenlernen von Android Studio](termin1.md)
+* [Termin 2: User Research](termin2.md)
+* [Termin 3: UI Entwurf und Test mittels Paper Prototyping](termin3.md)
+* [Termin 4: Implementierung der Benutzeroberfläche](termin4.md)
+* [Termin 5: Implementierung der Applikationslogik](termin5.md)
+* [Termin 6: Usability Test und Inspeciton](termin6.md)
+
+----
+Diese Unterlagen wurden mit [mkdocs.org](http://mkdocs.org), [markdown](https://en.wikipedia.org/wiki/Markdown) und [Visual Stuido Code](https://code.visualstudio.com/) erstellt.

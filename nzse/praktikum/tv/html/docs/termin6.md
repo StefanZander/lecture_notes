@@ -56,7 +56,11 @@ Die folgenden Ergebnisse müssen für eine erfolgreiche Testierung der Praktikum
 !!! abstract
     __Ergebnisse:__
 
-    - [ ] Vorbereitete und dokumentierte Testprotokolle des Thinking aloud Tests und des Interviews <br/> (--> **ohne Testprotokolle kein Testat!**)
-    - [ ] Usability Inspection Protokoll
-    - [ ] Protokolliertes Design Review
-    - [ ] Liste mit Verbesserungen (--> abgeleitet aus den Test-, Inspection- und Designprotokollen)
+    Vorbereitete und ausgefüllte Protokolle für...
+
+    - [ ] Thinking aloud Test und anschl. Interview
+    - [ ] Usability Inspection
+    - [ ] Design Review
+    - [ ] Liste mit Verbesserungen (--> *abgeleitet aus den unterschiedlichen Protokollen*)
+
+    **Ohne Testprotokolle kein Testat!**

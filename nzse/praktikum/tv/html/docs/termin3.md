@@ -14,7 +14,7 @@
 ## Aufgaben
 
 ### UI Entwurf (Paper Prototyping)
-1. Entwerfen Sie die **Benutzungsoberfläche** der neuen Fernbedienung in Form von konkreten skizzierten Screen-Diagrammen als **Papier-Prototypen** (*bitte groß und gut erkennbar!*). 
+1. Entwerfen Sie die **Benutzungsoberfläche** der neuen Fernbedienung in Form von konkreten  Screen-Diagrammen als **Papier-Prototypen** (*bitte groß und gut erkennbar!*). 
 
     Hinweise:
 
@@ -32,19 +32,19 @@
 
         **Hinweis:** Auch wenn **Membervariablen** per Default nicht eingetragen werden müssen, so sollten Sie dies tun und diese dann als Grundlage für den Entwurf des **Datenmodells** hernehmen.
 
-### Navigationsübersicht
+<!-- ### Navigationsübersicht (_entfällt!_)
 1. Zeichnen Sie die **abstrakte Navigationsübersicht** zu Ihrem Entwurf inkl. aller **Aktionen**, die einen Übergang von einem Screen zu einem Anderen initieren. Denken Sie auch an **Bedingungen**, die für einen Screenwechsel erfüllt sein müssen bzw. an deren Evaluierung die Ausführung einer Aktion gekoppelt ist.
 
     !!! note
-        **Wohlgemerkt:** Eine Navigationsübersicht hat Screens als Knoten, nicht Bedienelemente! (beliebtes Missverständnis)
+        **Wohlgemerkt:** Eine Navigationsübersicht hat Screens als Knoten, nicht Bedienelemente! (beliebtes Missverständnis) -->
 
 
-### UI Test
-Testen Sie Ihre Entwürfe mit Ihren Stakeholdern (Ihrer Peer-Gruppe) und identifizieren Sie Ungereimtheiten und/oder Inkonsistenzen und Verbesserungen. Überlegen Sie, ob es gut und richtig ist, wenn Sie keine Verbesserungen identifizieren. Gehen Sie nach folgendem Schema vor:
+### Testen
+1. Testen Sie Ihre Entwürfe mit Ihren Stakeholdern (Ihrer Peer-Gruppe) und identifizieren Sie Ungereimtheiten und/oder Inkonsistenzen und Verbesserungen. Überlegen Sie, ob es gut und richtig ist, wenn Sie keine Verbesserungen identifizieren.
 
-1. **Zur Vorbereitung**: Überlegenen Sie sich zu jeder im Abschnitt [Vorbemerkung](vorbemerkung.md) genannten Funktion des TVs einen kurzen **Use Case**, in dem die Funktion nachgefragt wird; nutzen Sie diesen Use Case um zu überprüfen, ob die Interaktionsmetaphern zum Ausführen des Use Case (Aufrufen der Funktion) intuitiv von den Testnutzern erkannt werden. Notieren Sie die Use Cases und nutzen Sie dies als **Leitfaden** für die Moderation des UI Tests.
-
-1. Notieren Sie sich Auffälligkeiten / Ungereimtheiten / etc. zu jedem Use Case und leiten Sie daraus Verbesserungen für Ihre Entwürfe ab.
+    !!! note
+        1. Den Test können Sie auch zu Beginn der nächsten Einheit durchführen.
+        2. Überlegen Sie im Vorfeld, wie Sie Ihre Entwürfe sinnvoll testen (--> *Funktion vs. Use Case*)
 
 
 ## Ergebnisse
@@ -54,7 +54,7 @@ Die folgenden Ergebnisse müssen für eine erfolgreiche Testierung der Praktikum
 !!! abstract
     __Ergebnisse:__
 
-    - [ ] Paper Prototype ihrer Applikation
+    - [ ] Paper Prototypes ihrer Applikation
     - [ ] Analyseklasse
-    - [ ] Navigationsübersicht
-    - [ ] Liste der Use Cases + Testprotokoll
+    - [ ] Reflexion des User Tests (--> _mündlich_)
+    <!-- - [ ] Navigationsübersicht -->
