@@ -81,6 +81,7 @@ img+em:before {
     color: rgba(0,0,0,.14);
 }
 
-blockquote {
+.md-typeset blockquote {
     font-style: italic;
+    margin: 3em !important;
 }
