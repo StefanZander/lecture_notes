@@ -75,7 +75,7 @@ that satisfy general human needs but have little instrumental value.
 
 Therefore, when compared to basic usability, __enjoyability plays an essential role in user experience__. The extent to which an interactive product is enjoyable to use is referred to as the __product’s hedonic quality__ (Hassenzahl et al., 2000; Hassenzahl, 2001). The shift of emphasis from usability to experiential factors has forced researchers to consider what user experience actually is and how to evaluate it (Vermeeren et al., 2010).
 
-__Important question: How do we measure the queality of user experience?__
+__Important question: How do we measure the quality of user experience?__
 
 A number of __user experience models__ have been proposed during the past decade (Desmet and Hekkert, 2007; Forlizzi and Battarbee, 2004; Hartmann et al., 2008; Hassenzahl, 2004; Hassenzahl and Tractinsky, 2006; Jordan, 2000). Mahlke and Thüring’s (2007) holistic model is one of the most recent and it is building on the previous models and research findings. Mahlke and Thüring (2007) distinguish three __user experience components__ which together determine the __user’s overall appraisal__ of a system and influence their future decisions and behavior: 
 
@@ -121,16 +121,16 @@ So part marketer, part designer, part project manager; the UX role is complex, c
 
 ### Conclusion
 
-* User Experience Design is the process of development and improvement of quality interaction between a user and all facets of a company.
-* User Experience Design is responsible for being hands on with the process of research, testing, development, content, and prototyping to test for quality results.
-* User Experience Design is in theory a non-digital (cognitive science) practice, but used and defined predominantly by digital industries.
+* User Experience Design is the process of development and improvement of **quality interaction** between a user and all facets of a company.
+* User Experience Design is responsible for being hands on with the process of **research**, **testing**, **development**, **content**, and **prototyping** to test for quality results.
+* User Experience Design is in theory a **non-digital (cognitive science) practice**, but used and defined predominantly by digital industries.
 
 UX is not limited to the visual interface of your product. It’s a concept that has many dimensions and encompasses the entire journey a person takes, including:
 
-* The process they go through to discover your company’s product
-* The sequence of actions they take as they interact the interface
-* The thoughts and feelings that arise as they try to accomplish their task
-* The impressions they take away from the interaction as a whole
+* The **process** they go through to discover your company’s product
+* The **sequence of actions** they take as they interact with the interface
+* The **thoughts** and **feelings** that arise as they try to accomplish their task
+* The **impressions** they take away from the interaction as a whole
 
 UX designers are responsible for ensuring that the company delivers a product or service that meets the needs of the customer and allows them to seamlessly achieve their desired outcome.
 

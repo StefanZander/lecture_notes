@@ -59,16 +59,19 @@ People often confuse interface design with graphic design and therefore assume, 
 This confusion results in two misleading conceptions:
 
 \begin{enumerate}[a)]
-	\item The first misconception implies that most of UI design is \emph{graphic design}---which is not true as we will see. 
-Although visual design is a crucial element in UI design, most aspects of design efforts should focus on \textbf{interaction design}~\citep{mckay:2013}, ie., how to \textbf{communicate the intended information in meaningful and purposeful ways}.
+	\item \emph{UI Design is not graphic design} \par The first misconception implies that most of UI design is graphic design---which is not true as we will see. Although visual design is a crucial element in UI design, most aspects of design efforts should focus on \textbf{interaction design}~\citep{mckay:2013}, ie., how to \textbf{communicate the intended information in meaningful and purposeful ways}.
 
-	\item Another misconception is that visual design is a \emph{subjective art}---this is also not true. 
+	\item \emph{UI Design is not a subjective art} \par Another misconception is that visual design is a \emph{subjective art}---this is also not true. 
 Although artistic and subjective aspects play a crucial role in contributing to the enjoyable aspect of UX, most of your visual design elements should be selected, created or justified based on \textbf{what they communicate visually}.
 \end{enumerate}
 
 
 As a corollary, many visual design decisions that initially appear subjective, emotional, arbitrary and aesthetic are actually \textbf{objective}, \textbf{rational}, \textbf{coordinated}, and \textbf{principled}~\citep{mckay:2013}. [explain why]
 
+\subsection{A Definition of Visual Design} % (fold)
+\label{sub:a_definition_of_visual_design}
+
+% subsection a_definition_of_visual_design (end)
 By clarifying the misleading perceptions, we can now define what visual design actually is.
 A non-technical but rather comprehensive definition of visual design has been provided by~\citep{usability_gov:2018a}:
 
@@ -154,8 +157,105 @@ Add information about ...
 \par \url{https://medium.com/coffee-and-junk/design-psychology-aesthetic-usability-effect-494ed0f22571}
 \end{tcolorbox}
 
+
+\section{The Aesthetic-Usability Effect} % (fold)
+\label{sub:aesthetic-usability_effect}
+
+Users are more tolerant of minor usability issues when they find an interface visually appealing. This aesthetic-usability effect can mask UI problems and can prevent issue discovery during usability testing. Identify instances of the aesthetic-usability effect in your user research by watching what your users do, as well as listening to what they say.
+
+Research on the outcome of usability tests revealed that an aesthetic design will reduce the perceived impact of annoyances caused by bad design decisions or unintuitive interactions. Figure~\ref{fig:fitbit} provides an example from a usability test of the fitbit webpage, conduced by the NNGroup.
+
+\begin{figure}%
+  \includegraphics[width=1.0\textwidth]{../figures/fitbit.png}
+  \caption[][0em]{During usability testing, one user encountered many issues while shopping on the FitBit site, ranging from minor annoyances in the interaction design to serious flaws in the navigation. She was able to complete her task, but with difficulty. However, in a posttask questionnaire, she rated the site very highly in ease of use. ``It’s the colors they used,'' she said. ``Looks like the ocean, it’s calm. Very good photographs.'' The positive emotional response caused by the aesthetic appeal of the site helped mask its usability issues. (Source: \url{https://www.nngroup.com/articles/aesthetic-usability-effect/})}
+  \label{fig:fitbit}
+\end{figure}
+
+The reasons for such behavior can be explained by the \textbf{aesthetic-usability effect}, which is defined as follows\sidenote{Source: \url{https://www.nngroup.com/articles/aesthetic-usability-effect/}}:
+
+\begin{tcolorbox}[
+	width=\textwidth,
+	% colback={codegray},
+	title={\textbf{Definition: Aesthetic-Usability Effect}},
+	outer arc=0mm,
+	arc=0mm,
+	boxrule=1pt,
+	% coltitle=white
+	]    
+The aesthetic-usability effect refers to users’ tendency to perceive attractive products as more usable. People tend to believe that things that look better will work better---even if they aren’t actually more effective or efficient.
+\end{tcolorbox}
+
+In\marginnote{Positive emotional responses increases the tolerance towards minor usability issues.} other words, users have a \textbf{positive emotional response} to a visual design, and that makes them \textbf{more tolerant} of minor usability issues on your site. In most cases, this is a positive thing from a user perspective. This effect is a major reason why a good user experience can’t just be a functional UI---designing an interface that is attractive as well as functional is worth the resources.
+
+\begin{figure}[!htb]%
+  \includegraphics[width=1.0\textwidth]{../figures/apple_macbook.png}
+  \caption[][0em]{Apple’s success is an excellent example of the competitive advantage of paying attention to aesthetics.}
+  \label{fig:macbook}
+\end{figure}
+
+\subsection{Scientific Backgorund} % (fold)
+\label{sub:history}
+
+% subsection history (end)
+The aesthetic-usability effect was first studied in the field of human–computer interaction in 1995. Researchers Masaaki Kurosu and Kaori Kashimura from the Hitachi Design Center tested 26 variations of an ATM UI, asking the 252 study participants to rate each design on ease of use, as well as aesthetic appeal.
+
+They found a \textbf{stronger correlation} between the participants’ ratings of aesthetic appeal and perceived ease of use than the correlation between their ratings of aesthetic appeal and actual ease of use. Kurosu and Kashimura concluded that users are \textbf{strongly influenced by the aesthetics of any given interface}, even when they try to evaluate the underlying functionality of the system.
+
+Bear in mind that the aesthetic-usability effect has its \textbf{limits}. A\marginnote{As the first law of e-commerce states, if the user can’t find the product, the user can’t buy the product. Even great-looking sites will have no revenue if they suffer from poor findability.} pretty design can make users more forgiving of minor usability problems, but not of severe ones. 
+
+Form and function should work together. When interfaces suffer from severe usability issues, or when usability is sacrificed for aesthetics, users tend to lose patience---especially on the Web.
+
+\subsection{Implications for Usability Testing} % (fold)
+\label{sub:implications_for_usability_testing}
+
+When the aesthetic-usability effect happens in real life for your users, it’s a good thing. It means your team’s investment in creating a beautiful UI is paying off and connecting with your target audience. 
+However, when the aesthetic-usability effect happens during user research, it can \textbf{prevent you from discovering usability issues}.
+
+You can identify instances of the aesthetic-usability effect during user research by paying close attention to what users do and how it relates to what they say.
+
+If\marginnote{Case Study}, for instance, we observe that a user is struggling through a few tasks on a site, but his final feedback is a vague comment on the attractiveness of the interface, we need to consider three possibilities.
+
+\begin{enumerate}[a)]
+	\item \textbf{The participant might feel pressure to comment on something.} \par Users (especially novice ones) often find it easier to give feedback on the visual design of sites. Another reason is that people are naturally uncomfortable with silence. Mitigate these issues by creating a low-stress and friendly atmosphere early in the process:
+	\begin{enumerate}[(i)]
+		\item Reassure participants frequently that what they’re doing and saying is helpful.
+		\item Remember that the communication between a moderator and a participant isn’t the same as a regular conversation---the right amount of silence is part of the process.
+		\item Give participants plenty of opportunity to comment during the session by asking open-ended questions, but don’t push them too hard if they don’t have anything to say.
+	\end{enumerate} 
+	
+	\item \textbf{The participant might feel pressure to say nice things about the site.} \par These empty compliments tend to happen when participants believe you had a hand in creating the site.
+	Avoid this problem by distancing yourself from what you’re testing.
+	\begin{enumerate}[(i)]
+		\item Before\marginnote{Emphasize the following things
+		\begin{itemize}
+			\item you did not design it
+			\item you want to learn from the user
+			\item negative comments are helpful
+		\end{itemize}} beginning each test session, emphasize that you didn’t design the site (even if you’re a researcher technically on the design team), that you’re there to learn from the participant, and that negative comments won’t hurt your feelings. \textbf{It’s more valuable to hear hard truths than false praise!}
+		\item Try\marginnote{Do not show any emotional reactions} (as much as possible) not to register emotional reactions to their comments in your face or body language. This is harder than it sounds, and takes practice. Try to keep a consistent demeanor of pleasant, nonthreatening, mild interest.
+	\end{enumerate}
+		
+	
+	
+	\item \textbf{The aesthetic-usability effect is interfering.} \par Let’s say we rule out the first two possibilities — we think our user is comfortable in the session and doesn’t feel pressure to say something or give empty compliments. This may be a true instance of the aesthetic-usability effect. Clearly, there are usability problems to be fixed, but it’s a sign that our visual design may be doing its job.
+	\begin{enumerate}[(i)]
+		\item Sometimes you can work around the aesthetic-usability effect by probing users to think beyond the visual layer of the UI. But be careful not to lead the witness. Use vague questions like, “Do you have any comments about how easy or difficult it was to find this information?”
+
+		\item You might also return the user to a page or stage in the process that seemed particularly challenging, and ask them to describe what happened.
+	\end{enumerate}
+\end{enumerate}
+
+Additionally, your visual design may be attractive, but it may not support usability. When that’s the case, users might still make positive comments. The visual hierarchy of the site may not help users understand its content, or a lack of signifiers may degrade interaction.
+
+Once we determine why our user is giving positive feedback on visual design after a negative experience, we can try to work around the problem.
+
+
+
+
+
+
 % \section{Design Guidelines} % SZA: Was previous headline
-\label{sec:design_guidelines}
+% \label{sec:design_guidelines}
 
 \section{Layout Design Principles} % (fold)
 \label{sub:layout_design_principles}
@@ -367,16 +467,16 @@ As you can see below, this is exactly what Dropbox does by guiding users through
 	% \centering
   \includegraphics[width=1.0\textwidth]{../figures/zig-zag_dropbox.png}
   \caption[][0em]{Zig-Zag-layout used on the dropbox.com landing page.\newline Source: \url{https://basecamp.com/}}
-  \label{fig:z-shape_facebook}
+  \label{fig:zig-zag_dropbox}
 \end{figure}
 
-The new evernote.com landing page also adapted to the improved zig-zag-layout.
+The new \url{evernote.com} landing page also adapted to the improved zig-zag-layout.
 
 \begin{figure}%
 	% \centering
   \includegraphics[width=1.0\textwidth]{../figures/zig-zag-shape_evernote.png}
-  \caption[][0em]{Zig-Zag-layout used on the new evernote.com landing page.\newline Source: \url{https://basecamp.com/}}
-  \label{fig:z-shape_facebook}
+  \caption[][0em]{Zig-Zag-layout used on the new evernote.com landing page (accessed online October 24th, 2018).\newline Source: \url{https://evernote.com/}}
+  \label{fig:zig-zag_evernote}
 \end{figure}
 
 
@@ -387,7 +487,7 @@ The new evernote.com landing page also adapted to the improved zig-zag-layout.
 
 
 
-
+\newpage
 \section{Content Usability} % (fold)
 \label{sec:content_usability}
 
@@ -470,13 +570,15 @@ b) date
 c) topics -- factual knowledge
 d) summary statement / intro. important: mind the context-information (``Summary: ...'') --- it clearly indicates what this text is, what it is about and what users can expect from it.
 
-\begin{figure}%
+\newpage
+\begin{figure}[!h] %
   \includegraphics[width=1.54\textwidth]{../figures/content_usability_bamf.png}
   \caption[][57em]{Content usability of an article about the ``Digitalisierungsagenda 2020'' published by the German Federal Office for Migration and Refugees (BAMF). (Accessed September 27th, 2019.) }
   \label{fig:content_usability_bamf}
 \end{figure}
 
-\begin{figure}%
+\newpage
+\begin{figure}[!h]%
   \includegraphics[width=1.54\textwidth]{../figures/content_usability_kfw.png}
   \caption[][46em]{Content usability of an article about the ``Digitalisierungsagenda 2020'' published by the German Federal Office for Migration and Refugees (BAMF). (Accessed September 27th, 2019.) }
   \label{fig:content_usability_kfw}
@@ -484,7 +586,7 @@ d) summary statement / intro. important: mind the context-information (``Summary
 
 
 
-
+\newpage
 \subsection{Progressive Disclosure} % (fold)
 \label{sub:progressive_disclosure}
 % ger: fortschreitende Offenlegung
@@ -540,20 +642,20 @@ Progressive disclosure enables you to hide advanced information from new users w
 
 Presenting limited sets of information increases learning efficiency. When information is gradually presented as needed or requested it’s processed better and is perceived as more relevant. Errors and the time and frustration of recovering from those errors is consequently reduced. Less frustration means a better user experience.
 
-\begin{figure}%
+\begin{figure}[!h] 
   \includegraphics[width=1.0\textwidth]{../figures/firewall_start.png}
-  \caption[][0em]{Opening screen of the firewall option in the system preferences of Mac OS 10.11. The elementary information und functionality is clearly visible.}
+  \caption{Opening screen of the firewall option in the system preferences of Mac OS 10.11. The elementary information, status and selectable actions are clearly visible.}
   \label{fig:firewall_start}
 \end{figure}
 
-\begin{figure}%
+\begin{figure}[!h] 
   \includegraphics[width=1.0\textwidth]{../figures/firewall_details.png}
-  \caption[][0em]{The firewall option screen Mac OS 10.11. Details and expert options are displayed on a secondary screen in order to minimize clutter and information overload.}
+  \caption[][0em]{The firewall option screen Mac OS 10.11. further details and expert options are displayed on a secondary screen in order to minimize clutter and information overload.}
   \label{fig:firewall_details}
 \end{figure}
 
 
-
+\newpage
 \subsection{Signal-to-Noise Ratio} % (fold)
 \label{sub:signal_to_noise_ratio}
 [Source: \url{https://vanseodesign.com/web-design/signal-to-noise-ratio/}]
