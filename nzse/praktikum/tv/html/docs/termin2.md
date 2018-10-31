@@ -28,8 +28,8 @@
 
     * 1 Stereotypbeschreibung
     * 1 Anwendungsszenario
-    * je 1 funktionale und qualitative Anforderung (inkl. Quantifizierung)
-    * 1 Begeisterungsfaktor
+    * (*optional*) je 1 funktionale und qualitative Anforderung (inkl. Quantifizierung)
+    * (*optional*) 1 Begeisterungsfaktor
    
     !!! note
         **Hinweis:** Stellen Sie nicht irgendwelche Fragen; die Fragen sollen Ihnen helfen, die NutzerInnen und deren spezifische Bedürfnisse, Lebensgewohnheiten und Wünsche besser zu verstehen. Die Antworten sind Basis für die Erarbeitung einer spezifischen Stereotypbeschreinung, eines Anwendungsszenarios, sowie je einer funktionaler und qualitativer Anforderung (inkl. Quantifizierung) und eines Begeisterungsfaktors
@@ -40,11 +40,11 @@
     - Gruppe 1 **interviewed** Gruppe 2 und notiert sich die wichtigsten Angaben inkl. Fragen (-->  *Beantwortung am Ende*); 
         - Gruppe 1 legt vorab fest, wer in die Rolle des **Moderators** tritt und wer **protokolliert** (--> *sie können nicht beides gleichzeitig tun!*) 
         - Nutzen Sie ggf. das Handy für Video-/Audioaufzeichnungen
-    - Gruppe 1 erarbeitet aus den Angaben eine **Stereotypbeschreibung**
+    - (*optional*) Gruppe 1 erarbeitet aus den Angaben eine **Stereotypbeschreibung**
     - Gruppe 1 & 2 leiten aus den Angaben gemeinsam ein **Anwendungsszenario** ab; Gruppe 1 notiert dieses. <!--(*durch das Stellen entspr. Fragen ergibt sich dies bereits aus den Antworten*) -->
-    - Gruppe 1 leitet aus dem Anwendungszenario je **1 funktionale + 1 qualitative Anforderung** ab
-    - Gruppe 1 stimmt die **Quantifizierbarkeit** der qualitativen Anforderung mit Gruppe 2 ab
-    - Gruppe 1 erarbeitet mit Gruppe 2 **einen Begeisterungsfaktor**
+    - (*optional*) Gruppe 1 leitet aus dem Anwendungszenario je **1 funktionale + 1 qualitative Anforderung** ab
+    - (*optional*) Gruppe 1 stimmt die **Quantifizierbarkeit** der qualitativen Anforderung mit Gruppe 2 ab
+    - (*optional*) Gruppe 1 erarbeitet mit Gruppe 2 **einen Begeisterungsfaktor**
     - dann Wechsel der Rollen
 
     ----
@@ -99,8 +99,8 @@ Die folgenden Ergebnisse müssen für eine erfolgreiche Testierung der Praktikum
     __Ergebnisse:__
 
     - [ ] je 1 Benutzer- und 1 Kriterienliste
-    - [ ] 2 Stereotypbeschreibungen
-    - [ ] 2 Anwendungsszenariobeschreibungen
-    - [ ] je 1 funktionale und 1 qualitative Anforderung pro Szenario
-    - [ ] Quantifizierung der qualitativen Anforderungen
-    - [ ] je 1 Begeisterungsfaktor pro Szenario
+    - [ ] 1 Stereotypbeschreibung
+    - [ ] 1 Anwendungsszenariobeschreibung
+    - [ ] (*optional*) je 1 funktionale und 1 qualitative Anforderung pro Szenario
+    - [ ] (*optional*) Quantifizierung der qualitativen Anforderungen
+    - [ ] (*optional*) je 1 Begeisterungsfaktor pro Szenario
