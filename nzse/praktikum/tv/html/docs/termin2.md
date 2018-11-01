@@ -36,11 +36,12 @@
 
 2. **Ablauf und Aufgaben**:
     - Gruppe 2 liest die **Charakterbeschreibung** aus Aufgabe 1 von Gruppe 1 und steigt in diese Rolle
+    - (*optional*) Gruppe 1 erarbeitet aus den Angaben eine **Stereotypbeschreibung**
     - Gruppe 1 bereit das **teilstandardisierte Interview** vor (--> *siehe Vorlesungsunterlagen*)
     - Gruppe 1 **interviewed** Gruppe 2 und notiert sich die wichtigsten Angaben inkl. Fragen (-->  *Beantwortung am Ende*); 
         - Gruppe 1 legt vorab fest, wer in die Rolle des **Moderators** tritt und wer **protokolliert** (--> *sie können nicht beides gleichzeitig tun!*) 
         - Nutzen Sie ggf. das Handy für Video-/Audioaufzeichnungen
-    - (*optional*) Gruppe 1 erarbeitet aus den Angaben eine **Stereotypbeschreibung**
+
     - Gruppe 1 & 2 leiten aus den Angaben gemeinsam ein **Anwendungsszenario** ab; Gruppe 1 notiert dieses. <!--(*durch das Stellen entspr. Fragen ergibt sich dies bereits aus den Antworten*) -->
     - (*optional*) Gruppe 1 leitet aus dem Anwendungszenario je **1 funktionale + 1 qualitative Anforderung** ab
     - (*optional*) Gruppe 1 stimmt die **Quantifizierbarkeit** der qualitativen Anforderung mit Gruppe 2 ab
@@ -99,7 +100,7 @@ Die folgenden Ergebnisse müssen für eine erfolgreiche Testierung der Praktikum
     __Ergebnisse:__
 
     - [ ] je 1 Benutzer- und 1 Kriterienliste
-    - [ ] 1 Stereotypbeschreibung
+    - [ ] 1 Charakter- bzw. Stereotypbeschreibung
     - [ ] 1 Anwendungsszenariobeschreibung
     - [ ] (*optional*) je 1 funktionale und 1 qualitative Anforderung pro Szenario
     - [ ] (*optional*) Quantifizierung der qualitativen Anforderungen
