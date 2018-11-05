@@ -1,0 +1,23 @@
+.md-typeset .admonition.warning {
+    border-left: solid 0.5rem var(--warning_border_color);
+    background-color: var(--warning_background_color);
+}
+
+.admonition.warning>* {
+    margin-left: 3rem;
+}
+
+.admonition.warning .admonition-title {
+    display: none;
+}
+
+.admonition.warning::before {
+    font-family: 'Material Icons';
+    content: '\e001'; /* e91f */
+    font-size: 2.4rem;
+    padding-right: .6rem;
+    text-shadow: .02rem .02rem var(--text_shadow_color);
+    padding-top: 0.6rem;
+    float: left;
+}
+
