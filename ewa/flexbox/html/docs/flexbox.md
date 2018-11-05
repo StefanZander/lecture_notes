@@ -7,10 +7,10 @@
     * [x] You are familiar with the basic properietes of the Flexbox layout module
     * [x] You understand how to apply the Flexbox layout module in a mobile first approach and can use it to solve concrete layout problems
 
-!!! warning ""
+<!-- !!! warning ""
     **Warning: ** The flexbox is really really good but sometimes hard to understand and to apply to a concrete use case.
 
-    The traditional layout modules are easier to understand but are limitied for the mobile first approach 
+    The traditional layout modules are easier to understand but are limitied for the mobile first approach  -->
  
 
 ## Background
@@ -26,13 +26,16 @@ Prior to the Flexbox Layout module, the HTML and CSS Specifications defined **fo
 
 The Flexible Box Layout Module makes it easier to design a **flexible responsive layout structure** without using float or positioning.
 
-The main idea behind the flex layout is to give the container the ability to alter its items'
+The **main idea** behind the flex layout is to give the container the ability to alter its items'
 
 - `width`,
 - `height`, and
 - `order`
 
-to **best fill the available space** in particular to __accommodate to all kind of display devices and screen sizes__. Thus, a flex container **expands** items to fill available free space, or **shrinks** them to prevent overflow.
+to **best fill the available space** in particular to accommodate to __all kind of display devices and screen sizes__. Thus, a flex container 
+
+- **expands** items to fill available free space, or 
+- **shrinks** them to prevent overflow.
 
 Most importantly, the flexbox layout is **direction-agnostic** as opposed to the regular layouts such as `block`, which is vertically-based and `inline`, which is horizontally-based. While those work well for pages, they __lack flexibility to support large or complex applications__, especially when it comes to orientation changing, resizing, stretching, shrinking, etc.
 
@@ -66,7 +69,7 @@ Basically, items will be laid out following *either* the `main axis` (from `main
 
 To start using the Flexbox model, you need to first define a flex container.
 
-``` html hl_lines="2 4"
+``` html hl_lines="1"
 <div class="flex-container">
   <div class="item">1</div>
   <div class="item">2</div>
