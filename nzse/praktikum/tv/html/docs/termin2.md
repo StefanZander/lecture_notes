@@ -40,7 +40,7 @@
         - Gruppe 1 legt vorab fest, wer in die Rolle des **Moderators** tritt und wer **protokolliert** (--> *sie können nicht beides gleichzeitig tun!*) 
         - Nutzen Sie ggf. das Handy für Video-/Audioaufzeichnungen
 
-    - Gruppe 1 & 2 leiten aus den Angaben gemeinsam ein **Anwendungsszenario** ab; Gruppe 1 notiert dieses. <!--(*durch das Stellen entspr. Fragen ergibt sich dies bereits aus den Antworten*) -->
+    - Gruppe 1 leitet aus den Angaben ein **Anwendungsszenario** ab und notiert dieses. Anschließend reflektieren Gruppe 1 und 2 dieses gemeinsam um Ungereimtheiten zu identifizieren. <!--(*durch das Stellen entspr. Fragen ergibt sich dies bereits aus den Antworten*) -->
     - (*optional*) Gruppe 1 leitet aus dem Anwendungszenario je **1 funktionale + 1 qualitative Anforderung** ab
     - (*optional*) Gruppe 1 stimmt die **Quantifizierbarkeit** der qualitativen Anforderung mit Gruppe 2 ab
     - (*optional*) Gruppe 1 erarbeitet mit Gruppe 2 **einen Begeisterungsfaktor**
