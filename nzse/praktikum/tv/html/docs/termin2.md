@@ -17,7 +17,7 @@
 
     Fügen Sie diese **Kriterien** der Liste hinzu.
 
-2. **Steckbrief**:    Fertigen Sie für *eine* dieser Personen einen **anschaulichen Steckbrief** mit fiktivem oder echtem Namen, Bild, Alter, Geschlecht, Ausbildung, Vorlieben, Hobbys, Charaktereigenschaften etc. Anhand dieses Steckbriefes und der darauf aufbauenden **Stereotypbeschreibung** sollen Sie sich später immer wieder vergewissern können, ob die entworfene Fernbedienung auch wirklich zu diesen Personen passt.
+2. **Stereotypbeschreibung**:    Fertigen Sie für *eine* dieser Personen eine anschaulische und lebendige **Stereotypbeschreibung** mit fiktivem oder echtem Namen, Bild, Alter, Geschlecht, Ausbildung, Vorlieben, Hobbys, Charaktereigenschaften etc. Anhand dieser Stereotypbeschreibung und des darauf aufbauenden **Anwendungsszenarios** sollen Sie sich später immer wieder vergewissern können, ob die entworfene Fernbedienung auch wirklich zu diesen Personen passt.
 <!--    Fertigen Sie für *eine* dieser Personen eine **Stereotypenbeschreibung** an, d.h. schreiben Sie **lebendige**, **anschauliche Steckbriefe** mit fiktiven oder echten Namen, Bild, Alter, Geschlecht, Ausbildung, Vorlieben, Hobbys, Charaktereigenschaften etc. Anhand dieser Stereotypenbeschreibungen sollen Sie sich später immer wieder vergewissern können, ob die entworfene Fernbedienung auch wirklich zu diesen Personen passt. -->
 
 ### Interview 
@@ -26,17 +26,15 @@
 
     Das Interview dient als Grundlage der Erstellung von
 
-    * 1 Stereotypbeschreibung
-    * 1 Anwendungsszenario
+     * 1 Anwendungsszenario
     * (*optional*) je 1 funktionale und qualitative Anforderung (inkl. Quantifizierung)
     * (*optional*) 1 Begeisterungsfaktor
    
     !!! note
-        **Hinweis:** Stellen Sie nicht irgendwelche Fragen; die Fragen sollen Ihnen helfen, die NutzerInnen und deren spezifische Bedürfnisse, Lebensgewohnheiten und Wünsche besser zu verstehen. Die Antworten sind Basis für die Erarbeitung einer spezifischen Stereotypbeschreinung, eines Anwendungsszenarios, sowie je einer funktionaler und qualitativer Anforderung (inkl. Quantifizierung) und eines Begeisterungsfaktors
+        **Hinweis:** Stellen Sie nicht irgendwelche Fragen; die Fragen sollen Ihnen helfen, die NutzerInnen und deren spezifische Bedürfnisse, Lebensgewohnheiten und Wünsche besser zu verstehen. Die Antworten sind Basis für die Erarbeitung eines Anwendungsszenarios, sowie je einer funktionalen und qualitativen Anforderung (inkl. Quantifizierung) und einem Begeisterungsfaktor.
 
 2. **Ablauf und Aufgaben**:
-    - Gruppe 2 liest die **Charakterbeschreibung** aus Aufgabe 1 von Gruppe 1 und steigt in diese Rolle
-    - (*optional*) Gruppe 1 erarbeitet aus den Angaben eine **Stereotypbeschreibung**
+    - Gruppe 2 liest die **Stereotypbeschreibung** aus Aufgabe 1 von Gruppe 1 und steigt in diese Rolle
     - Gruppe 1 bereit das **teilstandardisierte Interview** vor (--> *siehe Vorlesungsunterlagen*)
     - Gruppe 1 **interviewed** Gruppe 2 und notiert sich die wichtigsten Angaben inkl. Fragen (-->  *Beantwortung am Ende*); 
         - Gruppe 1 legt vorab fest, wer in die Rolle des **Moderators** tritt und wer **protokolliert** (--> *sie können nicht beides gleichzeitig tun!*) 
@@ -100,7 +98,8 @@ Die folgenden Ergebnisse müssen für eine erfolgreiche Testierung der Praktikum
     __Ergebnisse:__
 
     - [ ] je 1 Benutzer- und 1 Kriterienliste
-    - [ ] 1 Charakter- bzw. Stereotypbeschreibung
+    - [ ] dokumentierter Interviewleitfaden inkl. Antworten
+    - [ ] 1 Stereotypbeschreibung
     - [ ] 1 Anwendungsszenariobeschreibung
     - [ ] (*optional*) je 1 funktionale und 1 qualitative Anforderung pro Szenario
     - [ ] (*optional*) Quantifizierung der qualitativen Anforderungen
