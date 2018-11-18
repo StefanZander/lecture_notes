@@ -26,7 +26,7 @@
 
 ### Analyseklasse
 1. Entwerfen Sie parallel zu den abstrakten / konkreten Screen-Diagrammen **eine(!) Analyseklasse**, in die Sie die Hauptfunktionen der Benutzungsoberfläche als Methoden eintragen.
-2. Nutzen Sie die Analyseklasse um auf **Vollständigkeit** hinsichtlich der verwendeten **UI-Elemente**, als auch auf Vollstädnigkeit hinsichtlich der eingetragenen **Methoden** zu prüfen.
+2. Nutzen Sie die Analyseklasse um auf **Vollständigkeit** hinsichtlich der verwendeten **UI-Elemente**, als auch auf Vollständigkeit hinsichtlich der eingetragenen **Methoden** zu prüfen.
 
     !!! note
 
