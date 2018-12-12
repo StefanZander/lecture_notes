@@ -228,8 +228,8 @@ An example HTTP header entry is illustrated below\sidenote{Cookie data are store
 Date: Mon, 18 Dec 2017 06:34:20 GMT\\
 Server: Apache/2.4.27 (Unix) OpenSSL/1.0.2l PHP/7.1.9 mod\_perl/2.0.8-dev Perl/v5.16.3\\
 X-Powered-By: PHP/7.1.9\\
-Set-Cookie: Language=PHP\\
-Set-Cookie: Version=7.0\\
+\textbf{Set-Cookie: Language=PHP}\\
+\textbf{Set-Cookie: Version=7.0}\\
 Content-Length: 478\\
 Keep-Alive: timeout=5, max=100\\
 Connection: Keep-Alive\\
@@ -247,13 +247,13 @@ Upon receiving that information, the Web browser then processes them in accordan
 \end{enumerate}
 If\marginnote{Usually, cookie data are stored in a database file.} the cookie was accepted, the cookie information is either held in memory or stored on the \textbf{client's hard drive} depending on the Web browser's configuration. % On the client side
 During\marginnote{Sever has no information about how cookies are processed on the client side} the initial response, the Web server has no knowledge about how the client processes its cookie request, i.e., whether it was accepted or rejected.
-How a cookie is processed on the client side is communicated back to the server only with the next client's request: If the cookie was accepted, client includes it in the HTTP header of every request:
+How\marginnote{The server receives information about whether a cookie was accepted or not only with the following request.} a cookie is processed on the client side is communicated back to the server only with the next client's request: When the cookie was accepted, the client includes it in the HTTP header of every request:
 \begin{Verbatim}
 Cookie: Language=PHP; Version=7.0
 \end{Verbatim}
 The Web server is then able to recognize a client and access this information to include it in further processing steps.
 If a request for cookies was not accepted, the respective header field is not set.
-The following example demonstrates a HTTP request send by the client including cookie informaiton:
+The following example demonstrates a HTTP request send by the client that includes cookie information:
 \begin{listing}
 \begin{lstlisting}[language=HTML]
 GET /dev/dev/php/session_cockies/cookies.php?do=print HTTP/1.1
@@ -292,7 +292,7 @@ Please\marginnote{Tools are needed to read SQLite database files} note that spec
 
 \subsection{Restrictions} % (fold)
 \label{sub:limitations}
-The\marginnote{Restrictions to minimize misconduct} following section discusses precautions that have been incorporated in the Cookie specification in order to minimize misconduct.
+The\marginnote{Restrictions to minimize misconduct} following section discusses precautions that have been incorporated in the cookie specification in order to minimize misconduct.
 
 \begin{itemize}
 	\item \emph{Reading cookie data} \\ The\marginnote{Access restrictions} probably most relevant restriction is that \textbf{a cookie can only be read by the server that has set the cookie}. 
@@ -313,14 +313,14 @@ It is also possible to bind a cookie to a path within a domain such as \url{/reg
 As\marginnote{Cookies are stored in the HTTP header} indicated by the previous sections, setting and reading cookies is done in the HTTP header exclusively. 
 Cookies\marginnote{Cookies must be enabled by the Web browser} are directly integrated in PHP; additional installations are not necessary. 
 In order to use cookies, Web browser support must be enabled.
-PHP provides a number of convenience methods for setting and processing cookies.
+PHP provides a number of convenience methods\marginnote{PHP offers convenience methods for working with cookies} for setting and processing cookies.
 
 \subsection{Setting a Cookie} % (fold)
 \label{sub:setting_a_cookie}
 
 Cookies can be set in PHP using the function
 \begin{Verbatim}
-setcookie()
+setcookie(...)
 \end{Verbatim}
 Its syntax is as follows:
 \begin{Verbatim}
@@ -341,7 +341,7 @@ Please note that parameters in square brackets \texttt{[ ]} are optional; only \
 		\item \emph{Permanent Cookies} or persistent cookies contains a defined date that determines their validity.
 	\end{enumerate}
 	The expiration date can be set with the PHP functions \texttt{time() + 60 * 60 * 24} for a cookie the validity of which is one day, or using \texttt{mktime()}; a cookie with expiration date \texttt{mktime(12, 0, 0, 12, 24, 2018)} is valid until Christmas Day 2018, 12 am.
-	A\marginnote{Cookies without expiration data are treated as temporary/session cookies} cookie without expiration date is treated as a temporary cookie.
+	A\marginnote{Cookies without expiration data are treated as temporary (=session) cookies} cookie without expiration date is treated as a temporary cookie.
 	
 	\item \texttt{string path} \\ This parameter bounds the cookie to a specific path from which the cookie can be read and manipulated. For instance, a cookie set from the path \url{www.h-da.de/fbi/students} can not be read from \url{www.h-da.de/fbi/professors}. 
 	In\marginnote{It is good practice to set cookies only on those sites that need them} general it is good practice to set cookies only on those sites that need them (e.g., on administrative sites) in order to increase performance. 
@@ -391,7 +391,7 @@ In order to access the value of a single cookie, the cookie's name must be used 
 	\label{setting_cookies}
 \end{listing}
 
-Caution: If no cookie with the given name exists, an error message will be printed depending on the configuration of the PHP Interpreter. Therefore, it is better to first check whether a cookie with the given name exists; this can either be done with the PHP function \texttt{array\_key\_exists()} or using \texttt{empty()} and \texttt{isset()}. The following code excerpt demonstrates this:
+Caution:\marginnote{The PHP interpreter generates an error message if no cookie with the given name exists.} If no cookie with the given name exists, an error message will be printed depending on the configuration of the PHP Interpreter. Therefore, it is better to first check whether a cookie with the given name exists; this can either be done with the PHP function \texttt{array\_key\_exists()} or using \texttt{empty()} and \texttt{isset()}. The following code excerpt demonstrates this:
 \begin{listing}
 \begin{lstlisting}[language=PHP]
 <?php
@@ -412,7 +412,7 @@ However\marginnote{A cookie's properties (path, domain, expiration date) are onl
 Cookies can be deleted in two different ways:
 
 \begin{enumerate}
-	\item One way is to set the expiration date of a previously set cookie to a date that lies in the past; the Web browser thus deletes the cookie from the memory automatically. This can be achieved, for instance, by setting the expiration date to \texttt{0}, which works for both session and permanent cookies.
+	\item One\marginnote{Set the expiration date to a past date \\(\emph{Caution: This method only works if all other parameters are set exactly the same when the cookie was created.})} way is to set the expiration date of a previously set cookie to a date that lies in the past; the Web browser thus deletes the cookie from the memory automatically. This can be achieved, for instance, by setting the expiration date to \texttt{0}, which works for both session and permanent cookies.
 \begin{listing}
 \begin{lstlisting}[language=PHP]
 <?php
@@ -425,18 +425,18 @@ Cookies can be deleted in two different ways:
 
 Be aware that for deleting cookies using this methodology, all previously set parameters need to be exactly the same when the cookie was set. If the value of only one remaining parameter (other than expire) differs, deleting a cookie will not work.
 
-	\item Another possibility is to set a cookie's value to an empty string~(\texttt{""}). The Web browser recognizes this and automatically deletes the cookie---regardless of its expiration date.
+	\item Another\marginnote{Set the cookie's value to an empty (\texttt{""}) string.} possibility is to set a cookie's value to an empty string~(\texttt{""}). The Web browser recognizes this and automatically deletes the cookie---regardless of its expiration date.
 \end{enumerate}
 
 \subsection{Final Thoughts} % (fold)
 \label{sub:final_thoughts}
-Cookies in general are very useful; however, the following principles need to be considered when working with cookies:
+Although cookies in general are very useful and help in providing a good user experience, the following principles, however, need to be considered when working with cookies:
 \begin{enumerate}
 	\item Make sure that your Web site works even \emph{without} cookies
 	\item Do not torment those users who have cookies enabled in their browsers 
 \end{enumerate}
 
-Particularly\marginnote{Don't set a lot of single cookies} regarding the second point, it is not a good practice to send a lot of single cookies, e.g., one with each image etc. Another point is that cookies should be used with caution and with thriftiness, i.e., information should be bundled in one cookie rather than sending a large number of single cookies that would soon exceed the 300 number limit. 
+Particularly\marginnote{Don't set a lot of single cookies} regarding the second point, it is not a good practice to send a lot of single cookies, e.g., one with each image etc. Another point is that cookies should be used with caution and with thriftiness, i.e., information should be bundled\marginnote{Bundle information in one cookie} in one cookie rather than sending a large number of single cookies that would soon exceed the 300 number limit. 
 Another\marginnote{Set a realistic expiration date} point concerns the expiration date which should also be set rationally. It is rather stupid to set an expiration date to the far future, e.g., year 2041; in most cases, one year is more than sufficient.
 
 One\marginnote{Cookies can be misused for spying on user data} big problem that is still present when using cookies is that of \textbf{spying on users}. The following scenario demonstrates this problem:
@@ -541,7 +541,7 @@ The following code excerpts stores two strings in the session:
 
 Be\marginnote{Call \texttt{session\_start()} prior to any output.} aware that when cookies are used for session management, \texttt{session\_start()} need to be called prior to writing HTML (e.g., set it in the head). However\marginnote{Once initated, data can be stored any time in the session object.}, when the session is initiated, data can be stored in the session at any time in the PHP script.
 
-One\marginnote{Whether a client accepts cookies can only by ascertained with the second request.} problem still exists since PHP can ascertain whether cookies are enabled in the user's Web browser only with the subsequently following request. Although it is strongly advised against doing so, PHP can be configured to automatically add the Session ID to all links in the generated page when it is first called. Due to privacy and security issues, this should be avoided at all costs.
+One\marginnote{Whether a client accepts cookies can only by ascertained with the second request.} problem still exists since PHP can ascertain whether cookies are enabled in the user's Web browser only with the \emph{subsequently following request}. Although it is strongly advised against doing so, PHP can be configured to automatically add the Session ID to all links in the generated page when it is first called. Due to privacy and security issues, this should be avoided at all costs.
 
 
 \subsection{Reading Session Data} % (fold)
@@ -602,7 +602,7 @@ In\marginnote{Completely destroying the session object} order to completely dest
 \end{enumerate}
 
 Eventually,\marginnote{Delete the session cookie} sometimes it might be necessary to also delete the session cookie, if it has been set before. 
-This can be done with the following code:
+This can be done with the \texttt{setcookie(...)} command in Listing~\ref{deleting_session_cookie}.
 \begin{listing}
 \begin{lstlisting}[language=PHP]
 <?php
@@ -641,6 +641,7 @@ The following PHP program illustrates how to completely delete all session data 
 	\caption{Deleting all session data together with the session cookie}
 	\label{delete_all_session_data}
 \end{listing}
+
 
 \section{Using Sessions for Access Control} % (fold)
 \label{sec:using_sessions_for_access_control}
@@ -731,7 +732,7 @@ You send one of the Webmail provider's clients an email that contains a link to 
 The link in the email points to a PHP script that will be executed when the recipient clicks on the link in the Webmail Web interface.
 The first thing the script does is to look at the \texttt{HTTP\_REFERER} header field; 
 most Web browser use this header to send the previously visited page by a user. 
-If you are lucky, the HTTP request issued by clicking on the link in the mail client contains the URL of the previously visited page, i.e., the mail provider's landing Web page together with the Session ID encoded in the URL, since the mail provider uses cookie-less sessions\marginnote{This method is called \emph{Session Hijacking}}. }
+If you are lucky, the HTTP request issued by clicking on the link in the mail client contains the URL of the previously visited page, i.e., the mail provider's landing Web page together with the Session ID encoded in the URL, since the mail provider uses cookie-less sessions\marginnote{This method is called \emph{Session Hijacking}}. The Session ID can then be extracted and used to steal user data or mimic a user's identity.}
 
 In the early days of Web mail, some mail providers such as Lycos and GMX used cookie-less sessions and were vulnerable to session hijacking attacks. Meanwhile, almost all providers use temporary cookies to circumvent such attacks. 
 
