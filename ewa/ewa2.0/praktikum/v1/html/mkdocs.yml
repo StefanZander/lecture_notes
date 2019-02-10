@@ -1,1 +1,36 @@
-site_name: My Docs
+site_name: Praktikum zur LVA "Entwicklung Web-basierter Anwendungen"
+
+pages:
+  - 'Termin 0: HTML': 'termin0.md'
+
+theme:
+  name: 'material'
+
+  palette:
+    primary: 'blue'
+    accent: 'red'
+
+  feature:
+    tabs: true
+
+  font:
+    text: 'Zilla Slab'
+    code: 'Fira mono'
+
+markdown_extensions:
+  - admonition
+  - codehilite:
+      linenums: true
+      guess_lang: true
+  - toc:
+      permalink: false
+  - meta
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
