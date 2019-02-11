@@ -27,7 +27,7 @@ li>a[data-md-state="active"] {
 
 
 
-a:hover {
+a:hover:not(.md-footer-nav__link) {
     background-color: lightyellow;
     font-weight: bold;
     /* transition-duration: .25s; */
