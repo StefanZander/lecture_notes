@@ -1,12 +1,12 @@
 # Semesterthema Web-basierter Pizzaservice bzw. Onlineshop
 
 !!! abstract
-    **Zielsetzung** --> move to Termin 0
+    **Zielsetzung** --> {>>move to Termin 0<<}
 
     - [x] Stellen Sie sicher, dass Sie die Aufgabe "Pizzaservice" genau verstanden haben und klären Sie offene Punkte frühzeitig
     - [x] Analysieren Sie sämtliche Vorgaben (sowohl vom Auftraggeber als auch
     interne Vorgaben) 
-    - [x] Identifizieren Sie Inkonsistenzen oder offene Punkte und klären Sie die Fragen mit Ihrem Betreuer
+    - [x] Identifizieren Sie Inkonsistenzen und offene Punkte und klären Sie die Fragen mit Ihrem Betreuer
 
 
 ## Vorbemerkungen

@@ -1,6 +1,7 @@
 site_name: Praktikum zur LVA "Entwicklung Web-basierter Anwendungen"
 
-pages:
+nav:
+  - 'Vorbemerkungen': 'vorbemerkung.md'
   - 'Termin 0: HTML': 'termin0.md'
 
 theme:
