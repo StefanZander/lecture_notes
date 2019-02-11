@@ -13,24 +13,24 @@
 
 Im Lauf des Semesters soll eine **integrierte webbasierte Anwendung** in Form eines Pizzaservices oder eines Webshops nach eigener Wahl entwickelt werden.
 
-<!-- !!! warning
-    Nicht die Funktionalität steht im Vordergrund, sondern die Integration der verschiedenen Techniken und die Methodik der Vorgehensweise. -->
+Der Webshop soll die folgenden **technischen Eigenschaften** aufweisen:
 
 **Clientseitig**:
 
 - Responsive Webseiten mit HTML und CSS
-- Formulare, JavaScript, AJAX und JSON
-- Echtzeitaktualisierung mittels AJAX
+- Nutzereingaben mittels Formularen
+- Client-seitige Interaktion mit JavaScript
+- Echtzeitaktualisierung von Statusinformationen mittels AJAX und JSON
 
 **Serverseitig**:
 
 - Apache Webserver
-- dynamische Seitengenerierung mit PHP
+- Dynamische Seitengenerierung mit PHP
 - Anbindung einer MySQL-Datenbank
 - Nutzung der Seiten- und Blockklassenarchitektur
 - Generierung von JSON-Daten
 
-Der Schwerpunkt liegt auf **professioneller Webentwicklung**
+Der Schwerpunkt liegt hierbei auf ==**professioneller Webentwicklung**==!
 
 - mit Standardkonformität, Barrierefreiheit, Dokumentation, Test etc. 
 - keine Homepage-Bastelei, keine Verwendung von "Fertigteilen" !
@@ -50,7 +50,7 @@ Der Pizzaservice bzw. Onlineshop soll folgende **vier Webseiten** enthalten (gil
 - **Bestellstatus**
 - **Pizzabäcker** (--> Rechnungs- /Versandabteilung etc.)
 - **Fahrer** (--> Lieferdienst)
-- TODO: PHP Controller für AJAX+JSON inkludieren
+<!-- - TODO: PHP Controller für AJAX+JSON inkludieren -->
 
 Der Pizzaservice soll mit **HTML5** und **CSS Level 3** dargestellt werden
 

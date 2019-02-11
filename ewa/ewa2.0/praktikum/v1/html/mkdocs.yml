@@ -1,8 +1,11 @@
 site_name: Praktikum zur LVA "Entwicklung Web-basierter Anwendungen"
 
 nav:
+  - 'Startseite': 'index.md'
   - 'Vorbemerkungen': 'vorbemerkung.md'
   - 'Termin 0: HTML': 'termin0.md'
+  - 'Termin 1: PHP (Erste Schritte)': 'termin1.md'
+  - 'Termin 2: PHP (Seitenklassen und DB)': 'termin2.md'
 
 theme:
   name: 'material'
@@ -12,7 +15,7 @@ theme:
     accent: 'red'
 
   feature:
-    tabs: true
+    tabs: false
 
   font:
     text: 'Zilla Slab'
