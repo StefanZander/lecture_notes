@@ -1,17 +1,20 @@
-# Welcome to MkDocs
+#  Willkommen auf den EWA2.0-Praktikumsseiten
 
-For full documentation visit [mkdocs.org](https://mkdocs.org).
+Auf den folgenden Seiten finden Sie die **Aufgaben** der jewiligen Praktikumseinheiten sowie **allgemeine Informationen** zum Praktikum.
 
-## Commands
+## Allgemeine Informationen
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs help` - Print this help message.
+* [Vorbemerkung zum Praktikum](vorbemerkung.md)
 
-## Project layout
+## Einheiten
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+* [Termin 0: Kennenlernen von HTML](termin0.md)
+* [Termin 1: PHP ](termin0.md)
+* [Termin 2: Kennenlernen von HTML](termin0.md)
+* [Termin 3: Kennenlernen von HTML](termin0.md)
+* [Termin 4: Kennenlernen von HTML](termin0.md)
+* [Termin 5: Kennenlernen von HTML](termin0.md)
+
+
+----
+Diese Unterlagen wurden mit [mkdocs.org](http://mkdocs.org), [markdown](https://en.wikipedia.org/wiki/Markdown) und [Visual Stuido Code](https://code.visualstudio.com/) erstellt.

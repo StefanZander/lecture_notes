@@ -17,6 +17,12 @@ theme:
     text: 'Zilla Slab'
     code: 'Fira mono'
 
+extra_css:
+  - 'stylesheets/extra.css'
+
+extra_javascript:
+  - 'javascript/extra.js'
+
 markdown_extensions:
   - admonition
   - codehilite:
