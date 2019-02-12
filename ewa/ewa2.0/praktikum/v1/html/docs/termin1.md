@@ -35,7 +35,7 @@ In dieser Einheit geht es darum, sich mit den Grundprinzipien der dynamischen Se
 
 2. Deployen Sie die Seiten in im **Projektverzeichnis** Ihrer XAMPP-Installation und stellen Sie sicher, dass die Seiten korrekt aufgerufen werden.
 
-3. Testen Sie den generierten HTML-Code auf **Standardkonformität** mittels geeigneter HTML5-Validatoren (--> Siehe [Aufgabe #3 (Testen)](termin0.md) aus Termin 0: HTML).
+3. Testen Sie den generierten HTML-Code auf **Standardkonformität** mittels geeigneter HTML5-Validatoren (--> Siehe [Aufgabe #3 (Testen)](termin0.md#testen) aus Termin 0: HTML).
 
 
 ### (optional) Anlegen der Datenbankstruktur mittels phpmyadmin
