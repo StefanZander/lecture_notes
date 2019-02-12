@@ -17,17 +17,17 @@
 ### Rohform des Shopsystems mit statischem HTML
 
 1. Realisieren Sie alle Seiten mit **HTML5** unter Berücksichtigung der nachstehenden Hinweise:
-    - Erstellen Sie nur die "Rohform", d.h., keine physische Formatierung, kein CSS, kein JavaScript etc.
+    - Erstellen Sie nur die "Rohform", d.h., *keine physische Formatierung*, kein CSS, kein JavaScript etc.
     - Verwenden Sie strukturierende Tags wie `<section>` statt `<div>` für die globale Seitenstruktur
-    -  schreiben Sie Umlaute und das €-Zeichen direkt in Ihre Dateien (also nicht als "named character entities / benannte Zeichen" wie &auml; etc.)
+    - Schreiben Sie Umlaute und das €-Zeichen direkt in Ihre Dateien (also nicht als "named character entities / benannte Zeichen" wie &auml; etc.)
     - Achten Sie auf ordentliche Formatierung des HTML-Quelltextes! 
-    - Schicken Sie die Formulardaten an das echo-Skript  (--> siehe Tipps)
+    - Schicken Sie die Formulardaten an das Echo-Skript `https://echo.fbi.h-da.de/` oder nutzen Sie einen HTTP-Traffic–Analyzer-Dienst wie `https://pipedream.com/`.
     - Verzichten Sie auf den Einsatz von HTML-Tabellen!
 
 
 2. Realisieren Sie zunächst auch diejenigen Seiten statisch, die später dynamisch aus der Datenbank generiert werden sollen
     - Tragen Sie Beispieldaten ein – so dass klar ist, was später generiert werden muss 
-    - trennen Sie statische und generierte Daten voneinander
+    - Trennen Sie statische und generierte Daten voneinander
 
 ### Werkzeuge
 <!-- Bitte beachten Sie folgende Hinweis: -->
@@ -52,8 +52,6 @@ Die folgenden Ergebnisse müssen für eine erfolgreiche Testierung der Praktikum
 !!! abstract
     __Ergebnisse:__
 
-    - [ ] Paper Prototypes ihrer Applikation
-    - [ ] Analyseklasse
-    - [ ] Reflexion des User Tests (--> _mündlich_)
-    <!-- - [ ] Navigationsübersicht -->
+    - [ ] Statische und validierte HTML-Seiten für Bestellung, Bäcker und Fahrer
+    - [ ] Funktionierende Formulare mit entsprechend gesetztem Endpoint
 

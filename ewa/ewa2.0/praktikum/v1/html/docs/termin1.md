@@ -26,9 +26,21 @@ In dieser Einheit geht es darum, sich mit den Grundprinzipien der dynamischen Se
 
 ### Erzeugung der Seitengrundgerüste mit PHP
 
-{>>Erstellen der Seiten bestellung.php etc. (--> sie Vorbemerkung); <<}
+1. Erstellen Sie je eine **PHP-Seite** für 
+      1. Bestellung
+      2. Bäcker
+      3. Fahrer  
 
-### {Aufgabe 2}
+    und versuchen Sie, den HTML-Code (--> siehe [Termin 0: HTML](termin0.md)) der jeweiligen Seiten mit PHP zu erzeugen.
+
+2. Deployen Sie die Seiten in im **Projektverzeichnis** Ihrer XAMPP-Installation und stellen Sie sicher, dass die Seiten korrekt aufgerufen werden.
+
+3. Testen Sie den generierten HTML-Code auf **Standardkonformität** mittels geeigneter HTML5-Validatoren (--> Siehe [Aufgabe #3 (Testen)](termin0.md) aus Termin 0: HTML).
+
+
+### (optional) Anlegen der Datenbankstruktur mittels phpmyadmin
+
+--> Siehe [Aufgabe #2 (Datenbankzugriff)](termin2.md) aus Termin 2: PHP – Seitenklassen und Datenbankzugriff mit MySQLi.
 
 ### {Aufgabe 3}
 

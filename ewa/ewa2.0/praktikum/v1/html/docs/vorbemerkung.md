@@ -39,7 +39,7 @@ Der Schwerpunkt liegt hierbei auf ==**professioneller Webentwicklung**==!
     Nicht die Funktionalität steht im Vordergrund, sondern die Integration der verschiedenen Techniken und die Methodik der Vorgehensweise.
 
 !!! warning
-    Reine Funktionalität reicht NICHT für die Abnahme !
+    Die reine Umsetzung der Funktionalität des Shopsystems reicht nicht für die Abnahme! Die **objektorientierte Umsetzung** mit **Seitenklassen** ist ein Pflichtbestandteil!
 
 
 ## Anforderungen
