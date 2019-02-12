@@ -6,13 +6,13 @@
     - [x] Sie können mit PHP und MySQLi einen Datenbankzugriff realisieren
     - [x] Sie können die Objekt-orientierte Programmierung mit PHP umsetzen
     - [x] Sie verstehen die grundlegende Funktionsweise der Seiten- und Blockklassenarchitektur
-    - [x] Sie können ein Sessionmanagement mit PHP implementieren
+    - [x] Sie können ein einfaches Sessionmanagement mit PHP implementieren
 
 Ziel dieser Einheit ist die Entwicklung von sauberem, d.h., gut wartbarem und strukturiertem PHP-Code. Hierzu setzen wir die **Seiten-** und **Blockklassen** ein. Ferner stellen wir in dieser Einheit die **Datenbankanbindung** zur Web-Applikation her und implementieren eine leichtgewichtige Form des **Sessionmanagements**.  
 
 ## Aufgaben
 
-### Seitenklassen
+### Dynamische Seitengenerierung mittels Seitenklassen
 
 1. Laden Sie die **Zulieferung** für das Praktikum von der [EWA-Moodleseite](https://lernen.h-da.de/course/view.php?id=6940) herunter:
       - `PageTemplate.php` dient als Vorlage für die 4 Seiten 
