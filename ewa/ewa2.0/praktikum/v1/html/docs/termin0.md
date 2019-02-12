@@ -14,6 +14,13 @@
 
 ## Aufgaben
 
+### Anforderungsanalyse
+
+1. Stellen Sie sicher, dass Sie die Aufgabe "Pizzaservice" genau verstanden haben und klären Sie offene Punkte frühzeitig
+2. Analysieren Sie sämtliche Vorgaben (sowohl vom Auftraggeber als auch interne Vorgaben) 
+3. Identifizieren Sie Inkonsistenzen und offene Punkte und klären Sie die Fragen mit Ihrem Betreuer
+
+
 ### Rohform des Shopsystems mit statischem HTML
 
 1. Realisieren Sie alle Seiten mit **HTML5** unter Berücksichtigung der nachstehenden Hinweise:

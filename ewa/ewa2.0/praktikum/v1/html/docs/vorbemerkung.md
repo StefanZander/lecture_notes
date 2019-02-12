@@ -1,17 +1,9 @@
 # Semesterthema Web-basierter Pizzaservice bzw. Onlineshop
 
-!!! abstract
-    **Zielsetzung** --> {>>move to Termin 0<<}
-
-    - [x] Stellen Sie sicher, dass Sie die Aufgabe "Pizzaservice" genau verstanden haben und klären Sie offene Punkte frühzeitig
-    - [x] Analysieren Sie sämtliche Vorgaben (sowohl vom Auftraggeber als auch
-    interne Vorgaben) 
-    - [x] Identifizieren Sie Inkonsistenzen und offene Punkte und klären Sie die Fragen mit Ihrem Betreuer
-
 
 ## Vorbemerkungen
 
-Im Lauf des Semesters soll eine **integrierte webbasierte Anwendung** in Form eines Pizzaservices oder eines Webshops nach eigener Wahl entwickelt werden.
+Im Lauf des Semesters soll eine **integrierte webbasierte Anwendung** in Form eines Pizzaservices (Standard) oder eines Webshops nach eigener Wahl entwickelt werden.
 
 Der Webshop soll die folgenden **technischen Eigenschaften** aufweisen:
 
@@ -32,8 +24,8 @@ Der Webshop soll die folgenden **technischen Eigenschaften** aufweisen:
 
 Der Schwerpunkt liegt hierbei auf ==**professioneller Webentwicklung**==!
 
-- mit Standardkonformität, Barrierefreiheit, Dokumentation, Test etc. 
-- keine Homepage-Bastelei, keine Verwendung von "Fertigteilen" !
+Wichtig hierbei ist Standardkonformität, Barrierefreiheit, Responsivität, Dokumentation, Tests und die Einhaltung der bewährten Regeln guter Softwaretechnik. 
+Es geht in EWA nicht um Homepage-Bastelei oder die Verwendung von "Fertigteilen"!
 
 !!! warning
     Nicht die Funktionalität steht im Vordergrund, sondern die Integration der verschiedenen Techniken und die Methodik der Vorgehensweise.
@@ -44,21 +36,24 @@ Der Schwerpunkt liegt hierbei auf ==**professioneller Webentwicklung**==!
 
 ## Anforderungen
 
+!!! note
+    **Hinweis**: Die Anforderungen sind aus Sicht des Pizzaservice beschrieben. Wenn Sie einen **eigenen Webshop** entwickeln wollen, dann müssen die Anforderungen entsprechend übertragen werden (bspw. kann anstelle der Bäckerseite eine Versandabteilungs- oder Kommissionierungsseite etc. erstellt werden), die **Anforderungen gelten dann analog** für diese Seiten.
+
 Der Pizzaservice bzw. Onlineshop soll folgende **vier Webseiten** enthalten (gilt entsprechend auch für einen eigenem Webshop):
 
 - **Bestellung**
-- **Bestellstatus**
-- **Pizzabäcker** (--> Rechnungs- /Versandabteilung etc.)
-- **Fahrer** (--> Lieferdienst)
+- **Bestellstatus** (--> wird erst in Einheit xx implementiert)
+- **Pizzabäcker** 
+- **Fahrer** 
 <!-- - TODO: PHP Controller für AJAX+JSON inkludieren -->
 
 Der Pizzaservice soll mit **HTML5** und **CSS Level 3** dargestellt werden
 
-Als Webserver wird **Apache 2** verwendet und als Datenbank **MySQL** (enthalten im XAMPP Paket)
+Als Webserver wird **Apache 2** verwendet und als Datenbank **MySQL** (enthalten im [XAMPP Paket](https://www.apachefriends.org/download.html).)
 
 Die **Abnahme** erfolgt auf Ihren Laptops mit den gängigen Browsern.
 
-Für die PHP-Entwicklung müssen **Seiten-Templates** verwendet werden, die vorgegeben und über den EWA-Moodlekurs herunterladbar sind.
+Für die PHP-Entwicklung müssen **Seiten-Templates** (--> siehe [Termin 2: PHP – Seitenklassen, Datenbankzugriff und Sessionmanagement](termin2.md)) verwendet werden, die vorgegeben und über den EWA-Moodlekurs herunterladbar sind.
 
 ### Designskizze
 
@@ -71,7 +66,7 @@ TODO: Include
     Hier kann der Kunde seine Pizzen aus der Speisekarte auswählen und in einen
     Warenkorb übernehmen. 
 
-    Hier wird der Preis der Bestellung angezeigt und es muss eine Lieferadresse angegeben werden.
+    Es wird der Preis der Bestellung angezeigt und es muss eine Lieferadresse angegeben werden.
 
 - **Bestellstatus**
 
@@ -102,17 +97,17 @@ TODO: Include
 
 - Der Warenkorb bietet die allgemein üblichen Funktionen
 
-- Die Bestellseite passt ihre Darstellung für schmale Handybildschirme an und verwendet ein responsives Layout
+- Die Bestellseite passt ihre Darstellung für schmale Handybildschirme an und verwendet ein **responsives Layout**.
 
-- Versuchen Sie das Layout so umzusetzen, wie es in der Designskizze dargestellt ist. Es sollen 4 getrennte Seiten entwickelt werden
+- ~~Versuchen Sie das Layout so umzusetzen, wie es in der Designskizze dargestellt ist. Es sollen 4 getrennte Seiten entwickelt werden~~
 
-- Die Seiten "Pizzabäcker" und "Fahrer" sollen sich *automatisch* aktualisieren
+- Die Seiten `Pizzabäcker`, `Bestellstatus` und `Fahrer` sollen sich **automatisch aktualisieren**.
 
 
 ### Interne Anforderungen
 
 - Es gibt zu Testzwecken eine weitere Webseite "Übersicht", welche (für einfache Tests) Links zu den 4 Webseiten beinhaltet
-- Tests sollen so klar formuliert sein, dass sie automatisiert laufen könnten
+- Tests sollen so klar formuliert sein, dass sie automatisiert laufen könnten {>>Müssen wir noch genauer diskutieren!<<}
 
 
 
