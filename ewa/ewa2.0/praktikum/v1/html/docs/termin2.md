@@ -1,4 +1,4 @@
-# PHP: Seitenklassen, Datenbankzugriff und Sessionmanagement
+# PHP: Seitenklassen, Datenbankzugriff, Sessionmanagement und Sicherheit
 
 !!! abstract
     **Lernziele**
@@ -7,8 +7,9 @@
     - [x] Sie können die Objekt-orientierte Programmierung mit PHP umsetzen
     - [x] Sie verstehen die grundlegende Funktionsweise der Seiten- und Blockklassenarchitektur
     - [x] Sie können ein einfaches Sessionmanagement mit PHP implementieren
+    - [x] Sie können eine Web-Applikation gegen SQL-Injection und Cross-Site-Scripting (XSS) absichern
 
-Ziel dieser Einheit ist die Entwicklung von sauberem, d.h., gut wartbarem und strukturiertem PHP-Code. Hierzu setzen wir die **Seiten-** und **Blockklassen** ein. Ferner stellen wir in dieser Einheit die **Datenbankanbindung** zur Web-Applikation her und implementieren eine leichtgewichtige Form des **Sessionmanagements**.  
+Ziel dieser Einheit ist die Entwicklung von sauberem, d.h., gut wartbarem und strukturiertem PHP-Code. Hierzu setzen wir die **Seiten-** und **Blockklassen** ein. Ferner stellen wir in dieser Einheit die **Datenbankanbindung** zur Web-Applikation her und implementieren eine leichtgewichtige Form des **Sessionmanagements** sowie der Absicherung gegen **SQL-Injection** und **Cross-Site-Scripting (XSS)**. 
 
 ## Aufgaben
 
@@ -51,7 +52,61 @@ Ziel dieser Einheit ist die Entwicklung von sauberem, d.h., gut wartbarem und st
 
 ### Datenbankzugriff mittels MySQLi
 
-### Sessionmanagement
+1. Entwerfen Sie das **Datenmodell** für den Pizzaservice. 
+
+    Nutzen Sie bspw. das folgende Schema:
+       ``` 
+       Angebot:         PizzaName, Bilddatei, Preis
+       BestelltePizza:  PizzaID, fBestellungID, fPizzaName, Status
+       Bestellung:      BestellungID, Adresse, Bestellzeitpunkt
+       ```
+
+2. Implementieren Sie das **Datenmodell** mit `phpMyAdmin`
+      1. verwenden Sie die Kollation `utf8_unicode_ci` (im Vorgabewert `utf8_general_ci` gilt nicht ß=ss)
+      2. `PizzaName`, `PizzaID`, `BestellungID` sind **Primärschlüssel**; IDs mit Autoincrement
+      3. Realisieren Sie die Verknüpfungen zwischen den Primärschlüsseln und den Fremdschlüsseln `fBestellungID`, `fPizzaName` in der Datenbank.  
+      *Tipp: Mit dem "Designer" in `phpMyAdmin` können Sie die Beziehungen grafisch eintragen*
+      4. Füllen Sie die Tabelle "`Angebot`" manuell mit `phpMyAdmin`.
+      5. Tipp zum Bestellzeitpunkt: MySQL-Funktion `CURRENT_TIMESTAMP` als Standardwert des Feldes.
+
+3. Implementieren Sie die **Datenbankzugriffe** (Select, Insert Into, Update) in den zuständigen Methoden der Klassen und ersetzen Sie die statischen Codeteile durch den Datenbankzugriffscode
+      1. Der Zugriff auf die Datenbank erfolgt objektorientiert über die Klasse `MySQLi`. 
+      2. Zugriff auf die Datenbank erfolgt nur in `getViewData()` und `processReceivedData()`.
+      3. Testen und Debuggen Sie Ihren Code --> `error_reporting(E_ALL)` hilft dabei
+
+    !!! note
+        Tipps zur Umsetzung
+        
+        - `var_dump($variable)` für die schnelle Testausgabe zwischendurch
+        - `number_format($zahl, $nachkommastellen)` formatiert `$zahl`
+        - `$mysqli->insert_id` liefert die Autoincrement-ID nach `INSERT INTO`
+        - Tabellen- und Feldnamen in MySQL ggf. in ` (Gravis / accent grave) einklammern
+        - prüfen Sie mit `phpMyAdmin` ob die Datenbankeinträge korrekt erstellt werden
+
+      
+
+
+
+ 
+
+### Sessionmanagement und Sicherheit
+
+1. Der Kunde soll auf seiner Statusseite nur diejenigen Pizzen sehen, die er selbst zuletzt bestellt hat. Implementieren Sie dieses Feature mittels **Sessionverwaltung**:  
+
+      Speichern Sie die letzte `AuftragsNr` in der Session und filtern Sie damit die Pizzaliste
+
+2. Verhindern Sie **SQL-Injection** mit Hilfe von `real_escape_string`.  
+
+      Test: geben Sie `/ ' " \` als Lieferadresse ein; diese Zeichen müssen auf der Fahrerseite genau so erscheinen.
+
+3. Verhindern Sie **Cross Site Scripting** mit Hilfe von `htmlspecialchars`.  
+
+      Test
+      : geben Sie `<b>xxx</b>` als Lieferadresse ein; dies muss genau so in der Datenbank und in der Ausgabe auf der Fahrerseite erscheinen
+
+4. Testen und validieren Sie die generierten Seiten.
+
+
 
 ## Ergebnisse
 
@@ -60,10 +115,10 @@ Die folgenden Ergebnisse müssen für eine erfolgreiche Testierung der Praktikum
 !!! abstract
     __Ergebnisse:__
 
-    - [ ] Lokale Installation eines Webservers (bspw. XAMPP)
-    - [ ] Deployment der Sourcen
-    - [ ] Ausgabe der Bestell-, Bäcker- und Fahrerseite mittels PHP
-    - [ ] {>>Landingpage mit Navigation?<<}
+    - [ ] Implementierung der Seiten `Bestellung.php`, `Baecker.php` und `Fahrer.php` mittels Seitenklassen und (optional) Blockklassen.
+    - [ ] Implementierung der Datenbankzugriffe mittels `MySQLi`
+    - [ ] Sessionmanagement
+    - [ ] Absicherung der Web-Applikation gegen SQL-Injection und Cross-Site-Scripting (XSS)
 
 
 
