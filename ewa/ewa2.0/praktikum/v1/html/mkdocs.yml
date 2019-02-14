@@ -8,8 +8,8 @@ nav:
   - 'Termin 1: PHP – Erste Schritte': 'termin1.md'
   - 'Termin 2: PHP – Seitenklassen': 'termin2.md'
   - 'Termin 3: JavaScript, AJAX, JSON': 'termin3.md'
-  - 'Termin 4: CSS': 'termin2.md'
-  - 'Termin 5: Abnahme': 'termin2.md'
+  - 'Termin 4: CSS': 'termin4.md'
+  - 'Termin 5: Abnahme': 'termin5.md'
 
 theme:
   name: 'material'
