@@ -45,3 +45,21 @@ Eine Studierendenlösung aus dem SoSe2018
 
 Ein Studierendenprojekt aus dem WiSe 2018/2019
 
+Startseite mit Login
+![](./figures/servershop/login.png)
+---
+Katalogansicht (Bestellung.php)
+![](./figures/servershop/katalog.png)
+---
+Einkaufswagen
+![](./figures/servershop/einkaufswagen.png)
+---
+Warenkorbansicht
+![](./figures/servershop/warenkorb.png)
+---
+Statusanzeige beim Kunden
+![](./figures/servershop/status.png)
+---
+Statusanzeige Shop
+![](./figures/servershop/status2.png)
+
