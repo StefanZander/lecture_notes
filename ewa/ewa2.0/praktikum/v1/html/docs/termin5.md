@@ -6,7 +6,7 @@
 
 ## Allgemeines
 
-Vorbereitung:
+### Vorbereitung
 
 - Stellen Sie vor Beginn(!) der Einheit sicher, dass Ihre Applikation inkl. der Testfälle vollständig und funktionstüchtig ist
 - Gehen Sie *vor* Beginn der Übungseinheit die [angehängte Checkliste](termin5.md#checkliste-fur-die-abnahme) durch überprüfen Sie, dass alle Punkte erfüllt sind
@@ -14,11 +14,11 @@ Vorbereitung:
 - Die Abnahme findet an einem Ihrer Entwicklungsrechner statt 
 - Mock-ups werden nicht akzeptiert 
 - Öffnen Sie die Applikation auf zwei unterschiedlichen Browsern und ordnen Sie die Browserfenster nebeneinander an.
-- Öffnen Sie paralle in einem Browser auch die Datenbank (--> `phpmyadmin`)
+- Öffnen Sie parallel auch die Datenbank (--> `phpmyadmin`) und entfernen Sie vorab alle Testdaten.
 
----
 
-Bei der Abnahme...
+
+### Bei der Abnahme...
 
 - ...wird die Funktionstüchtigkeit der Applikation überprüft
 - ...sollten Sie Ihren Code verstehen und erklären können
@@ -28,10 +28,10 @@ Bei der Abnahme...
 
 ## Checkliste für die Abnahme
 
+Für eine erfolgreiche Abnahme müssen **alle Punkte** erfüllt sein!
+
 !!! abstract
     **Checkliste**
-
-    Für eine erfolgreiche Abnahme müssen *alle* Punkte erfüllt sein!
 
     1. [ ] Keine Tabellen im Quellcode enthalten
     2. [ ] Verwendung von PHP-Seiten- oder Blockklassen
