@@ -8,7 +8,7 @@
     - [x] Sie können ein selbst erstelltes Design Schema in Ihre Webseiten einbinden 
     - [x] Sie kennen Syntax und Logik der Formulierung von CSS Selektoren
 
-Ziel dieser Einheit ist die Entwicklung eines **Design Schemas** für Ihre Webseiten mittels **CSS Level 3** und **Media Queries**. Hierzu setzen wir vor allem auf die Entwicklung eines **responsiven Designs**, bei welchem sich die in einer Seite enthalten UI-Elemente in Abhängigkeit des Ausgabegerätes und der Viewportgröße derart anordnen bzw. darstellen, dass eine hohe **User Experience (UX)** gewährleistet ist. 
+Ziel dieser Einheit ist die Entwicklung eines **Design Schemas** für Ihre Web-Applikation mittels **CSS Level 3** und **Media Queries**. Hierzu setzen wir vor allem auf die Entwicklung eines **responsiven Designs**, bei welchem sich die in einer Seite enthalten UI-Elemente in Abhängigkeit des Ausgabegerätes und der Viewportgröße derart anordnen bzw. darstellen, dass eine hohe **User Experience (UX)** gewährleistet ist. 
 
 
 
@@ -41,3 +41,4 @@ Die folgenden Ergebnisse müssen für eine erfolgreiche Testierung der Praktikum
 
     - [ ] Erstellung eines Design Schemas mittels CSS3 und Media Queries
     - [ ] Demonstration eines responsiven Webdesigns anhand der Bestellseite
+    - [ ] Fehlerfreies CSS
