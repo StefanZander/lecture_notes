@@ -7,7 +7,7 @@ Auf den folgenden Seiten finden Sie die **Aufgaben** der jeweiligen Praktikumsei
 ## Allgemeine Informationen
 
 * [Vorbemerkung zum Praktikum](vorbemerkung.md)
-* [Anforderungen an die zu entwickelnde Web-Applikation](vorbemerkung.md)
+* [Anforderungen an die zu entwickelnde Web-Applikation](anforderungen.md)
 
 ## Einheiten
 

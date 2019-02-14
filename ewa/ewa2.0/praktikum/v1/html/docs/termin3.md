@@ -1,9 +1,11 @@
-# JavaScript, AJAX und JSON
+# Client-seitige Interaktion mit JavaScript, AJAX und JSON
 
 !!! abstract
     **Lernziele**
 
-    - [x] 
+    - [x] {Ziel 1}
+    - [x] {Ziel 2}
+    - [x] {Ziel 3}
 
 In dieser Einheit geht es um die Implementierung der Logik zur Client-seitige Interaktion zwischen BenutzerIn und dem DOM (=Document Object Model). Hierfür setzen wir **JavaScript** ein. Ferner steht in dieser Einheit auch die Kommunikation zwischen Server und Client mittels **JSON** und **AJAX** im Vordergrund, so dass sich die Web-Applikation wie eine Desktop-Applikation "anfühlt". 
 
@@ -12,6 +14,29 @@ In dieser Einheit geht es um die Implementierung der Logik zur Client-seitige In
 
 ### Implementierung von Warenkorbfunktionalität mittels JavaScript
 
+1. Einsatzbereiche für ECMAScript im Pizzaservice:
+    - Klick auf ein Pizzabild trägt diese Pizza in den Warenkorb (Liste) ein;
+      bspw. 3 Pizzen bestellen --> 3-mal klicken
+    - Möglichkeit zum Löschen der Einträge im Warenkorb (--> sowohl "Alle löschen" als auch "(Mehrfach-)Auswahl löschen")
+    - Bestellung wird nur abgeschickt, wenn eine Lieferadresse angegeben ist
+    - Deaktivierung des Bestellknopfes bei unvollständigen Daten
+    - Berechnung des Preises
+    - Klick auf Radio-Button in der Statusliste sendet Statusänderung (bei Bäcker und Fahrer)
+
+    !!! note
+        **Hinweise**:
+
+        - Verwenden Sie nur DOM-konforme Attribute und Funktionen und keine browserspezifischen Spezialitäten (Vorsicht mit Vorlagen aus dem Netz !)
+        - Verwenden Sie `"use strict";` in allen Funktionen
+        - Testen Sie die Skripte mit unterschiedlichen Browsern und Lint-Tools
+
+    !!! note
+        **Bei Problemen mit DOM oder ECMAScript**:
+        
+        - Prüfen Sie die Browser-Konsole auf Fehlermeldungen (Aufruf mit F12)
+        - Nutzen Sie den DOM-Inspector und den Befehl "Inspect" im rechten   Mausmenü um das DOM zu einem Tag anzuschauen
+        - Achten Sie auf Groß-Klein-Schreibung bei DOM-Aufrufen
+        - Prüfen Sie Ihr ECMAScript mit [JSLint](http://www.jslint.com) oder [ESLint für ECMAScript 6](http://eslint.org/demo/)
 
 ### Implementierung der Kundenseite mittels AJAX und JSON
 

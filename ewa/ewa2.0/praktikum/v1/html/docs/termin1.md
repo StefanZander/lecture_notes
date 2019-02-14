@@ -40,9 +40,8 @@ In dieser Einheit geht es darum, sich mit den Grundprinzipien der dynamischen Se
 
 ### (optional) Anlegen der Datenbankstruktur mittels phpmyadmin
 
---> Siehe [Aufgabe #2 (Datenbankzugriff)](termin2.md) aus Termin 2: PHP – Seitenklassen und Datenbankzugriff mit MySQLi.
+--> Siehe [Aufgabe #2 (Datenbankzugriff)](termin2.md#datenbankzugriff-mittels-mysqli) aus Termin 2: PHP – Seitenklassen und Datenbankzugriff mit MySQLi.
 
-### {Aufgabe 3}
 
 ## Ergebnisse
 
@@ -51,7 +50,8 @@ Die folgenden Ergebnisse müssen für eine erfolgreiche Testierung der Praktikum
 !!! abstract
     __Ergebnisse:__
 
-    - [ ] Paper Prototypes ihrer Applikation
-    - [ ] Analyseklasse
-    - [ ] Reflexion des User Tests (--> _mündlich_)
-    <!-- - [ ] Navigationsübersicht -->
+    - [ ] Lauffähige Instanz des Apache Webservers
+    - [ ] Deployment der Seiten `Bestellung.php`, `Baecker.php` und `Fahrer.php` im `htdocs`-Order der XAMPP Installation
+    - [ ] Implementierung der Seiten `Bestellung.php`, `Baecker.php` und `Fahrer.php`
+    - [ ] Validierung des generierten HTML5-Codes hinsichtlich Fehlerfreiheit und Standardkonformität
+    - [ ] (optional) Aufbau und Einrichtung der MySQL-Datenbank

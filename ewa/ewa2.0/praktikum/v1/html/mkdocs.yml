@@ -3,7 +3,7 @@ site_name: Praktikum zur LVA "Entwicklung Web-basierter Anwendungen"
 nav:
   - 'Startseite': 'index.md'
   - 'Vorbemerkungen': 'vorbemerkung.md'
-  - 'Anforderungen': 'vorbemerkung.md'
+  - 'Anforderungen': 'anforderungen.md'
   - 'Termin 0: HTML': 'termin0.md'
   - 'Termin 1: PHP – Erste Schritte': 'termin1.md'
   - 'Termin 2: PHP – Seitenklassen': 'termin2.md'
