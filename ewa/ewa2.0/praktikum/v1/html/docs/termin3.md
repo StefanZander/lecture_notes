@@ -15,8 +15,8 @@ In dieser Einheit geht es um die Implementierung der Logik zur Client-seitige In
 ### Implementierung von Warenkorbfunktionalität mittels JavaScript
 
 1. Einsatzbereiche für ECMAScript im Pizzaservice:
-    - Klick auf ein Pizzabild trägt diese Pizza in den Warenkorb (Liste) ein;
-      bspw. 3 Pizzen bestellen --> 3-mal klicken
+    - Klick auf ein Pizzabild trägt diese Pizza in den Warenkorb (Liste) ein;  
+        bspw. 3 Pizzen bestellen --> 3-mal klicken
     - Möglichkeit zum Löschen der Einträge im Warenkorb (--> sowohl "Alle löschen" als auch "(Mehrfach-)Auswahl löschen")
     - Bestellung wird nur abgeschickt, wenn eine Lieferadresse angegeben ist
     - Deaktivierung des Bestellknopfes bei unvollständigen Daten
@@ -40,5 +40,22 @@ In dieser Einheit geht es um die Implementierung der Logik zur Client-seitige In
 
 ### Implementierung der Kundenseite mittels AJAX und JSON
 
+!!! note
+    **Hinweis**:
+    Es gibt mehrere Umsetzungsmöglichkeiten für Aufgabe 2 (bspw. Polling und kompletter Neuaufbau des DOM-Bereichs mit den Statusinformtionen vs. kaskadierte AJAX-Aufrufe für Stammdaten und Statusupdates). Für die Abnahme ist die Umsetzung einer einfachen Lösung ausreichend (bspw. Polling und kompletter Neuaufbau des Status-DOM).
+
 
 ### PHP Controller zur Versendung von Statusupdates mittels JSON
+
+
+## Ergebnisse
+
+Die folgenden Ergebnisse müssen für eine erfolgreiche Testierung der Praktikumseinheit vorliegen:
+
+!!! abstract
+    __Ergebnisse:__
+
+    - [ ] Implementierung der Seiten `Bestellung.php`, `Baecker.php` und `Fahrer.php` mittels Seitenklassen und (optional) Blockklassen.
+    - [ ] Implementierung der Datenbankzugriffe mittels `MySQLi`
+    - [ ] Sessionmanagement
+    - [ ] Absicherung der Web-Applikation gegen SQL-Injection und Cross-Site-Scripting (XSS)
