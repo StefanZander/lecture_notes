@@ -40,26 +40,38 @@ Es geht in EWA nicht um Homepage-Bastelei oder die Verwendung von "Fertigteilen"
 
 Eine Studierendenlösung aus dem SoSe2018
 
+![](./figures/pizzaservice/übersicht.png)*Übersichtsseite*
+
+![](./figures/pizzaservice/bestellung.png)*Bestellseite*
+
+![](./figures/pizzaservice/kunde.png)*Übersichtsseite beim Kunden*
+
+![](./figures/pizzaservice/bäcker.png)*Bäckerseite*
+
+![](./figures/pizzaservice/fahrer.png)*Fahrerseite*
+
+
+
 
 ### Servershop
 
 Ein Studierendenprojekt aus dem WiSe 2018/2019
 
-Startseite mit Login
-![](./figures/servershop/login.png)
----
-Katalogansicht (Bestellung.php)
-![](./figures/servershop/katalog.png)
----
-Einkaufswagen
-![](./figures/servershop/einkaufswagen.png)
----
-Warenkorbansicht
-![](./figures/servershop/warenkorb.png)
----
-Statusanzeige beim Kunden
-![](./figures/servershop/status.png)
----
-Statusanzeige Shop
-![](./figures/servershop/status2.png)
+<!-- Startseite mit Login -->
+![](./figures/servershop/login.png)*Startseite mit Login*
+
+<!-- Katalogansicht  -->
+![](./figures/servershop/katalog.png)*Katalogansicht*
+
+<!-- Einkaufswagen -->
+![](./figures/servershop/einkaufswagen.png)*Einkaufswagen*
+
+<!-- Warenkorbansicht -->
+![](./figures/servershop/warenkorb.png)*Warenkorbansicht*
+
+<!-- Statusanzeige beim Kunden -->
+![](./figures/servershop/status.png)*Statusanzeige beim Kunden*
+
+<!-- Statusanzeige Shop -->
+![](./figures/servershop/status2.png)*Statusanzeige Shop*
 

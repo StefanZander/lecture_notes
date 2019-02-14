@@ -1,11 +1,15 @@
-# Cascading Style Sheets (CSS)
+# Responsives Webdesign mit CSS & Media Queries 
 
 !!! abstract
     **Lernziele**
 
-    - [x] {Ziel #1}
+    - [x] Sie kennen die Basiselemente eines responsiven Webdesigns
+    - [x] Sie können ein responsives Webdesign mit CSS und Media Queries erstellen
+    - [x] Sie können ein selbst erstelltes Design Schema in Ihre Webseiten einbinden 
+    - [x] Sie kennen Syntax und Logik der Formulierung von CSS Selektoren
 
-Ziel dieser Einheit ist die Entwicklung von sauberem, d.h., gut wartbarem und strukturiertem PHP-Code. Hierzu setzen wir die **Seiten-** und **Blockklassen** ein. Ferner stellen wir in dieser Einheit die **Datenbankanbindung** zur Web-Applikation her und implementieren eine leichtgewichtige Form des **Sessionmanagements** sowie der Absicherung gegen **SQL-Injection** und **Cross-Site-Scripting (XSS)**. 
+Ziel dieser Einheit ist die Entwicklung eines **Design Schemas** für Ihre Webseiten mittels **CSS Level 3** und **Media Queries**. Hierzu setzen wir vor allem auf die Entwicklung eines **responsiven Designs**, bei welchem sich die in einer Seite enthalten UI-Elemente in Abhängigkeit des Ausgabegerätes und der Viewportgröße derart anordnen bzw. darstellen, dass eine hohe **User Experience (UX)** gewährleistet ist. 
+
 
 
 ## Aufgaben
@@ -22,7 +26,7 @@ Ziel dieser Einheit ist die Entwicklung von sauberem, d.h., gut wartbarem und st
 
 Realisieren Sie die Seite `Bestellung-php` nach dem **Mobile First-Ansatz**.
 
-1. Entwickeln bzw. erweitern Sie das gegebene Stylesheet für den Einsatz auf Mobiltelefonen durch die Verwendung von **Mediaqueries**
+1. Entwickeln bzw. erweitern Sie das gegebene Stylesheet für den Einsatz auf Mobiltelefonen durch die Verwendung von **Media Queries**
 2. Passen Sie die Komposition der Elemente dynamisch der entspr. **Viewportgröße** und **Orientierung** an
 3. Testen Sie die Darstellung mit den Web Developer Tools und auf einem Mobiltelefon
 
@@ -35,4 +39,5 @@ Die folgenden Ergebnisse müssen für eine erfolgreiche Testierung der Praktikum
 !!! abstract
     __Ergebnisse:__
 
-    - [ ] 
+    - [ ] Erstellung eines Design Schemas mittels CSS3 und Media Queries
+    - [ ] Demonstration eines responsiven Webdesigns anhand der Bestellseite
