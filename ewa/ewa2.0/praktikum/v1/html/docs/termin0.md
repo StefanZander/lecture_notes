@@ -18,7 +18,7 @@
 
 1. Stellen Sie sicher, dass Sie die Aufgabe "Pizzaservice" genau verstanden haben und klären Sie offene Punkte frühzeitig
 2. Analysieren Sie sämtliche Vorgaben (sowohl vom Auftraggeber als auch interne Vorgaben) 
-3. Identifizieren Sie Inkonsistenzen und offene Punkte und klären Sie die Fragen mit Ihrem Betreuer
+3. Identifizieren Sie Inkonsistenzen und offene Punkte und klären Sie die Fragen mit Ihrem Betreuer / Ihrer Betreuerin
 
 
 ### Rohform des Shopsystems mit statischem HTML
@@ -59,6 +59,6 @@ Die folgenden Ergebnisse müssen für eine erfolgreiche Testierung der Praktikum
 !!! abstract
     __Ergebnisse:__
 
-    - [ ] Statische und validierte HTML-Seiten für Bestellung, Bäcker und Fahrer
+    - [ ] Statische und validierte HTML-Seiten für Bestellung, Bestellstatus, Bäcker und Fahrer
     - [ ] Funktionierende Formulare mit entsprechend gesetztem Endpoint
 

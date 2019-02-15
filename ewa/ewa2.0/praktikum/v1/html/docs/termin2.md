@@ -9,7 +9,7 @@
     - [x] Sie können ein einfaches Sessionmanagement mit PHP implementieren
     - [x] Sie können eine Web-Applikation gegen SQL-Injection und Cross-Site-Scripting (XSS) absichern
 
-Ziel dieser Einheit ist die Entwicklung von sauberem, d.h., gut wartbarem und strukturiertem PHP-Code. Hierzu setzen wir die **Seiten-** und **Blockklassen** ein. Ferner stellen wir in dieser Einheit die **Datenbankanbindung** zur Web-Applikation her und implementieren eine leichtgewichtige Form des **Sessionmanagements** sowie der Absicherung gegen **SQL-Injection** und **Cross-Site-Scripting (XSS)**. 
+Ziel dieser Einheit ist die Entwicklung von sauberem, d.h., gut wartbarem,  strukturiertem und objektorientierten PHP-Code. Hierzu setzen wir die **Seiten-** und **Blockklassen** ein. Ferner stellen wir in dieser Einheit die **Datenbankanbindung** zur Web-Applikation her und implementieren eine leichtgewichtige Form des **Sessionmanagements**. Abschließend sichern wir die Web-Applikation gegen **SQL-Injection** und **Cross-Site-Scripting (XSS)** ab. 
 
 ## Aufgaben
 
@@ -117,7 +117,7 @@ Die folgenden Ergebnisse müssen für eine erfolgreiche Testierung der Praktikum
 
     - [ ] Implementierung der Seiten `Bestellung.php`, `Baecker.php` und `Fahrer.php` mittels Seitenklassen und (optional) Blockklassen.
     - [ ] Implementierung der Datenbankzugriffe mittels `MySQLi`
-    - [ ] Sessionmanagement
+    - [ ] Sessionmanagement auf der Kundenseite ==(--> *Erst nach Aufgabe 3 oder Grundgerüst erstellen; dann aber mehr Anweisungen notwendig (Statusdaten erst zur Laufzeit)*)==
     - [ ] Absicherung der Web-Applikation gegen SQL-Injection und Cross-Site-Scripting (XSS)
 
 

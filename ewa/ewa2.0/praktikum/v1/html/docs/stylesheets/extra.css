@@ -50,7 +50,7 @@ img + em {
 
 img+em:before {
     counter-increment: figure;
-    content: 'Figure ' counter(figure) ': ';
+    content: 'Abbildung ' counter(figure) ': ';
 }
 
 .md-content__inner.md-typeset h3 {
