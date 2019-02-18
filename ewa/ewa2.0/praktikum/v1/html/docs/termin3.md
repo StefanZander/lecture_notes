@@ -3,9 +3,11 @@
 !!! abstract
     **Lernziele**
 
-    - [x] {Ziel 1}
-    - [x] {Ziel 2}
-    - [x] {Ziel 3}
+    - [x] Sie können mittels JavaScript das DOM einer Seite manipulieren
+    - [x] Sie können Anwendungsszenarien (bspw. das Füllen eines Warenkorbs) in entspr. DOM-Manipulationslogik übersetzen
+    - [x] Sie können mittels AJAX das DOM einer Seite dynamisch manipulieren bzw. aktualisieren.
+    - [x] Sie können mittels PHP JSON-Daten erzeugen 
+    - [x] Sie können JSON-Daten clientseitig verarbeiten 
 
 In dieser Einheit geht es um die Implementierung der Logik zur Client-seitige Interaktion zwischen BenutzerIn und dem DOM (=Document Object Model). Hierfür setzen wir **JavaScript** ein. Ferner steht in dieser Einheit auch die Kommunikation zwischen Server und Client mittels **JSON** und **AJAX** im Vordergrund, so dass sich die Web-Applikation wie eine Desktop-Applikation "anfühlt". 
 
@@ -17,11 +19,13 @@ In dieser Einheit geht es um die Implementierung der Logik zur Client-seitige In
 1. Einsatzbereiche für ECMAScript im Pizzaservice:
     - Klick auf ein Pizzabild trägt diese Pizza in den Warenkorb (Liste) ein;  
         bspw. 3 Pizzen bestellen --> 3-mal klicken
-    - Möglichkeit zum Löschen der Einträge im Warenkorb (--> sowohl "Alle löschen" als auch "(Mehrfach-)Auswahl löschen")
+    - Möglichkeit zum Löschen der Einträge im Warenkorb 
+        1. sowohl "Alle löschen" als auch 
+        2. "(Mehrfach-)Auswahl löschen"
     - Bestellung wird nur abgeschickt, wenn eine Lieferadresse angegeben ist
     - Deaktivierung des Bestellknopfes bei unvollständigen Daten
     - Berechnung des Preises
-    - Klick auf Radio-Button in der Statusliste sendet Statusänderung (bei Bäcker und Fahrer)
+    - bei Bäcker und Fahrer: Klick auf Radio-Button in der Statusliste sendet Statusänderung
 
     !!! note
         **Hinweise**:
