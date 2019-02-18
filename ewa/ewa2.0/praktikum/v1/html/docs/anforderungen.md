@@ -1,14 +1,14 @@
 # Anforderungen an die Web-Applikation
 
 !!! note
-    **Hinweis**: Die Anforderungen sind aus Sicht des Pizzaservice beschrieben. Wenn Sie einen **eigenen Webshop** entwickeln, dann müssen die Anforderungen entsprechend übertragen werden (bspw. kann anstelle der Bäckerseite eine Versandabteilungs- oder Kommissionierungsseite etc. erstellt werden). Die **Anforderungen gelten dann analog** für die Seiten des eigenen Webshops.
+    **Hinweis**: Die Anforderungen sind aus Sicht des Pizzaservice beschrieben. Wenn Sie einen **eigenen Webshop** entwickeln, dann müssen Sie die Anforderungen entsprechend übertragen (bspw. kann anstelle der Bäckerseite eine Versandabteilungs- oder Kommissionierungsseite etc. erstellt werden). Die Anforderungen hinsichtlich **Aufbau und Funktionsweise gelten dann analog** für die Seiten des eigenen Webshops.
 
 ## Aufbau
 
 Der Pizzaservice bzw. Onlineshop soll folgende **vier Webseiten** enthalten (gilt entsprechend auch für einen eigenem Webshop):
 
 - **Bestellung**
-- **Bestellstatus** (--> wird erst in Einheit xx implementiert)
+- **Bestellstatus** (--> die Akutalisierunglogik wird in [Termin 3](termin3.md) implementiert)
 - **Pizzabäcker** 
 - **Fahrer** 
 <!-- - TODO: PHP Controller für AJAX+JSON inkludieren -->
@@ -67,13 +67,15 @@ TODO: Include
 
 - ~~Versuchen Sie das Layout so umzusetzen, wie es in der Designskizze dargestellt ist. Es sollen 4 getrennte Seiten entwickelt werden~~
 
-- Die Seiten `Pizzabäcker`, `Bestellstatus` und `Fahrer` sollen sich **automatisch aktualisieren**.
+- Die Seiten `Pizzabäcker`, `Bestellstatus` und `Fahrer` sollen sich **automatisch aktualisieren**.  
 
+- Es gibt zu **Testzwecken** eine weitere Webseite `Übersicht`, welche (für einfache Tests) Links zu den 4 Webseiten beinhaltet.  
 
-## Interne Anforderungen
+    !!! note
+        **Hinweis**:  
+        Alternativ können Sie auch eine **Navigationsleiste** bzw. ein **Navigationsmenu** in die Web-Applikation integrieren, dann brauchen Sie *keine* Übersichtsseite zu implementieren.
 
-- Es gibt zu Testzwecken eine weitere Webseite "Übersicht", welche (für einfache Tests) Links zu den 4 Webseiten beinhaltet
-- Tests sollen so klar formuliert sein, dass sie automatisiert laufen könnten {>>Müssen wir noch genauer diskutieren!<<}
+- Tests sollen so klar formuliert sein, dass sie **automatisiert** laufen könnten {>>Müssen wir noch genauer diskutieren!<<}
 
 
 

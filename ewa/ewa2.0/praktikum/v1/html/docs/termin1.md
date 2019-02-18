@@ -1,13 +1,14 @@
 <!-- # Erstellung des Seitengrundgerüsts mittels PHP -->
-# PHP: Erste Schritte
+# PHP: Web-Server Setup und dynamische Seitengenerierung
 
 
 !!! abstract
     **Lernziele**
 
     - [x] Sie können einen Webserver installieren und Ihre Shopseiten dort deployen
-    - [x] Sie können ersten PHP-Code schreiben um damit HTML-Code zu erzeugen
-    - [x] Sie verstehen die grundlegende Funktionsweise eines Webservers
+    <!-- - [x] Sie können ersten PHP-Code schreiben um damit HTML-Code zu erzeugen -->
+    - [x] Sie können den HTML-Code Ihres Shopsystems mittels PHP erzeugen
+    - [x] Sie verstehen die grundlegende Funktionsweise der dynamischen Seitengenerierung
 
 
 In dieser Einheit geht es darum, sich mit den Grundprinzipien der dynamischen Seitengenerierung mittels PHP und der zugrunde liegenden technischen Infrastruktur (Webserver etc.) auseinander zu setzen.
@@ -28,10 +29,11 @@ In dieser Einheit geht es darum, sich mit den Grundprinzipien der dynamischen Se
 
 1. Erstellen Sie je eine **PHP-Seite** für 
       1. Bestellung
-      2. Bäcker
-      3. Fahrer  
+      2. Kunde (--> Bestellstatus)
+      3. Bäcker
+      4. Fahrer  
 
-    und versuchen Sie, den HTML-Code (--> siehe [Termin 0: HTML](termin0.md)) der jeweiligen Seiten mit PHP zu erzeugen.
+    und versuchen Sie, den HTML-Code (--> siehe [Termin 0: HTML und Anforderungsanalyse](termin0.md)) der jeweiligen Seiten mit PHP zu erzeugen.
 
 2. Deployen Sie die Seiten in im **Projektverzeichnis** Ihrer XAMPP-Installation und stellen Sie sicher, dass die Seiten korrekt aufgerufen werden.
 
@@ -51,7 +53,7 @@ Die folgenden Ergebnisse müssen für eine erfolgreiche Testierung der Praktikum
     __Ergebnisse:__
 
     - [ ] Lauffähige Instanz des Apache Webservers
-    - [ ] Deployment der Seiten `Bestellung.php`, `Baecker.php` und `Fahrer.php` im `htdocs`-Order der XAMPP Installation
-    - [ ] Implementierung der Seiten `Bestellung.php`, `Baecker.php` und `Fahrer.php`
+    - [ ] Implementierung der Seiten `Bestellung.php`, `Kunde.php`, `Baecker.php` und `Fahrer.php`
+    - [ ] Deployment der Seiten `Bestellung.php`, `Kunde.php`, `Baecker.php` und `Fahrer.php` im `htdocs`-Order der XAMPP Installation
     - [ ] Validierung des generierten HTML5-Codes hinsichtlich Fehlerfreiheit und Standardkonformität
     - [ ] (optional) Aufbau und Einrichtung der MySQL-Datenbank
