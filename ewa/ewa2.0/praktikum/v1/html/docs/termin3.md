@@ -14,9 +14,9 @@ In dieser Einheit geht es um die Implementierung der Logik zur Client-seitige In
 
 ## Aufgaben
 
-### Implementierung von Warenkorbfunktionalität mittels JavaScript
+### Implementierung von Bestellfunktionalität mittels JavaScript
 
-1. Einsatzbereiche für ECMAScript im Pizzaservice:
+1. Einsatzbereiche für ECMAScript im Pizzaservice/Webshop:
     - Klick auf ein Pizzabild trägt diese Pizza in den Warenkorb (Liste) ein;  
         bspw. 3 Pizzen bestellen --> 3-mal klicken
     - Möglichkeit zum Löschen der Einträge im Warenkorb 
@@ -45,11 +45,31 @@ In dieser Einheit geht es um die Implementierung der Logik zur Client-seitige In
 ### Implementierung der Kundenseite mittels AJAX und JSON
 
 !!! note
-    **Hinweis**:
+    **Hinweis 1**:
     Es gibt mehrere Umsetzungsmöglichkeiten für Aufgabe 2 (bspw. Polling und kompletter Neuaufbau des DOM-Bereichs mit den Statusinformtionen vs. kaskadierte AJAX-Aufrufe für Stammdaten und Statusupdates). Für die Abnahme ist die Umsetzung einer einfachen Lösung ausreichend (bspw. Polling und kompletter Neuaufbau des Status-DOM).
+
+!!! note
+    **Hinweis 2 (Alternative Lösung)**: 
+
+    - Aufbau der Seite mittels PHP; setzen bzw. aktualisieren der Zustände mit JavaScript
+    - 2 separate AJAX-Requests: (a) pollt Statusupdates, (b) fragt Controller nach neuen Bestellungen; wenn neue Bestellung, dann Redirect im AJAX-Handler auf Kunde.php, d.h., Neuaufbau der Seite mit aktueller Bestellung) 
+
 
 
 ### PHP Controller zur Versendung von Statusupdates mittels JSON
+
+Schreiben Sie einen **PHP StatusController**, welcher in Abhängigkeit der aktuellen Auftragsummer eines Kunden die aktuellen Status der Bestellpositionen als JSON zurück liefert. 
+   
+Bitte beachten Sie folgende Hinweise:
+
+1. Überlegen Sie sich vorab, welche Daten der Controller von der Kundenseite benötigt, um die korrekten und zugehörigen Statusinformationen zurück zu liefern.
+
+2. Implementieren Sie den Controller auf Basis der **Seitenklassenarchitektur**. Implementieren Sie hierfür eine **eigene abstrakte Superklasse** nach dem Vorbild der `Page.php`. Benennen Sie diese Klasse `JSONController.php`.
+
+3. Passen Sie für den konkreten PHP StatusController das `PageTemplate.php` entsprechend an. Teilen Sie den Code nach Zugehörigkeit / Verantwortlichkeit (cf. SWT-Prinzip *Separation of Concerns*) auf die drei Methoden auf. Benennen Sie den Controller `StatusController.php`.
+
+4. Testen Sie die korrekte Funktionsweise des Controllers mittels einem HTTP-Request Generator bzw. einem API Development Tool wie bspw. [Postman](https://www.getpostman.com/)
+
 
 
 ## Ergebnisse
@@ -59,7 +79,7 @@ Die folgenden Ergebnisse müssen für eine erfolgreiche Testierung der Praktikum
 !!! abstract
     __Ergebnisse:__
 
-    - [ ] Implementierung der Seiten `Bestellung.php`, `Baecker.php` und `Fahrer.php` mittels Seitenklassen und (optional) Blockklassen.
-    - [ ] Implementierung der Datenbankzugriffe mittels `MySQLi`
-    - [ ] Sessionmanagement
-    - [ ] Absicherung der Web-Applikation gegen SQL-Injection und Cross-Site-Scripting (XSS)
+    - [ ] Vollständige Implementierung der Seite `Bestellung.php`
+    - [ ] Implementierung der abstrakten Superklasse `JSONController.php`
+    - [ ] Implementierung des `StatusController.php`
+    - [ ] 
