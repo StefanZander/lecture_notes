@@ -5,7 +5,7 @@
 
     - [x] Sie können mittels JavaScript das DOM einer Seite manipulieren
     - [x] Sie können Anwendungsszenarien (bspw. das Füllen eines Warenkorbs) in entspr. DOM-Manipulationslogik übersetzen
-    - [x] Sie können mittels AJAX das DOM einer Seite dynamisch manipulieren bzw. aktualisieren.
+    - [x] Sie können AJAX-Aufrufe erzeugen und HTTP Responses mittels Handler verarbeiten
     - [x] Sie können mittels PHP JSON-Daten erzeugen 
     - [x] Sie können JSON-Daten clientseitig verarbeiten 
 
