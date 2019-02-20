@@ -23,7 +23,8 @@
 
 ### Rohform des Shopsystems mit statischem HTML
 
-1. Realisieren Sie alle Seiten mit **HTML5** unter Berücksichtigung der nachstehenden Hinweise:
+1. Realisieren Sie alle Seiten (Bestellung, Kunde, Bäcker, Fahrer --> siehe [Anforderungen des Auftraggebers](anforderungen.md#anforderungen-des-auftraggebers)) mit **HTML5** unter Berücksichtigung der nachstehenden Hinweise:
+
     - Erstellen Sie nur die "Rohform", d.h., *keine physische Formatierung*, kein CSS, kein JavaScript etc.
     - Verwenden Sie strukturierende Tags wie `<section>` statt `<div>` für die globale Seitenstruktur
     - Schreiben Sie Umlaute und das €-Zeichen direkt in Ihre Dateien (also nicht als "named character entities / benannte Zeichen" wie &auml; etc.)

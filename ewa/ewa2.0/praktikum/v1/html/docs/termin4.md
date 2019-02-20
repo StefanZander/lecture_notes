@@ -22,9 +22,9 @@ Ziel dieser Einheit ist die Entwicklung eines **Design Schemas** für Ihre Web-A
     - Setzen Sie die verschiedenen Maßeinheiten sinnvoll ein. Das Layout soll hinsichtlich Fenstergröße und Schriftgröße dynamisch sein!
     - Verwenden Sie *keine* Tabellen!
 
-### Responsives Layout und Mobile-First
+### Responsives Layout und Mobile-First-Ansatz
 
-Realisieren Sie die Seite `Bestellung-php` nach dem **Mobile First-Ansatz**.
+Realisieren Sie die Seite `Bestellung-php` nach dem **Mobile-First-Ansatz**.
 
 1. Entwickeln bzw. erweitern Sie das gegebene Stylesheet für den Einsatz auf Mobiltelefonen durch die Verwendung von **Media Queries**
 2. Passen Sie die Komposition der Elemente dynamisch der entspr. **Viewportgröße** und **Orientierung** an

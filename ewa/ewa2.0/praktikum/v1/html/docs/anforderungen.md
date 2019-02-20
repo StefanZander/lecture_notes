@@ -8,7 +8,7 @@
 Der Pizzaservice bzw. Onlineshop soll folgende **vier Webseiten** enthalten (gilt entsprechend auch für einen eigenem Webshop):
 
 - **Bestellung**
-- **Bestellstatus** (--> die Akutalisierunglogik wird in [Termin 3](termin3.md) implementiert)
+- **Bestellstatus** (--> die Aktualisierunglogik wird in [Termin 3](termin3.md) implementiert)
 - **Pizzabäcker** 
 - **Fahrer** 
 <!-- - TODO: PHP Controller für AJAX+JSON inkludieren -->
@@ -34,7 +34,7 @@ TODO: Include
 
     Es wird der Preis der Bestellung angezeigt und es muss eine Lieferadresse angegeben werden.
 
-- **Bestellstatus**
+- **Bestellstatus** (=Kundenseite)
 
     Hier kann ein Kunde sehen, in welchem Zustand seine Pizzen sind (`bestellt`, `im Ofen`, `fertig`, `unterwegs`). 
 
