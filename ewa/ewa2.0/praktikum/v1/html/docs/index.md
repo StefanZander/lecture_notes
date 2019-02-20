@@ -20,4 +20,4 @@ Auf den folgenden Seiten finden Sie die **Aufgaben** der jeweiligen Praktikumsei
 
 
 ----
-Diese Unterlagen wurden mit [mkdocs.org](http://mkdocs.org), [markdown](https://en.wikipedia.org/wiki/Markdown) und [Visual Studio Code](https://code.visualstudio.com/) erstellt.
+Diese Unterlagen wurden mit [MkDocs](http://mkdocs.org), [Markdown](https://en.wikipedia.org/wiki/Markdown) und [Visual Studio Code](https://code.visualstudio.com/) erstellt.
