@@ -1,10 +1,10 @@
 .md-typeset .admonition.question {
-    border-left: solid 0.5rem var(--question_border_color);
+    border-left: solid 0.25rem var(--question_border_color);
     background-color: var(--question_background_color);
 }
 
 .admonition.question>* {
-    margin-left: 3rem;
+    margin-left: 1.5rem;
 }
 
 .admonition.question .admonition-title {
@@ -14,10 +14,10 @@
 .admonition.question::before {
     font-family: 'Material Icons';
     content: '\e8af'; /* e91f */
-    font-size: 2.4rem;
-    padding-right: .6rem;
-    text-shadow: .02rem .02rem var(--text_shadow_color);
-    padding-top: 1rem;
+    font-size: 1.2rem;
+    padding-right: .3rem;
+    text-shadow: .01rem .01rem var(--text_shadow_color);
+    padding-top: 0.5rem;
     float: left;
 }
 
