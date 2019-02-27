@@ -16,6 +16,15 @@ In dieser Einheit geht es darum, sich mit den Grundprinzipien der dynamischen Se
 <!-- !!! note
     **Hinweis #1:** Wenn Sie zum Testen und Debuggen Ihr eigenes Handy verwenden wollen, bringen Sie bitte ein passendes USB-Kabel mit. Im Normalfall ist das Kabel des Ladegeräts dazu geeignet. Verbinden Sie das Handy via USB-Kabel mit dem Entwicklungs-PC (Ihr Notebook oder der Labor-PC), schalten Sie das Handy ein, aktivieren Sie Entwickleroptionen und darin USB-Debugging. -->
 
+## Vorbereitung
+1. Vergewissern Sie sich, dass Sie alle im Kapitel Vorbemerkung genannten Informationen verstanden haben 
+2. Stellen Sie sicher, dass Sie alle Anforderungen vollständig verstanden haben.    
+   Notieren Sie sich die unklaren Anforderungen und besprechen Sie diese in [Einheit #1](termin1.md) mit der/dem Dozentin/en.
+3. Vergewissern Sie sich, dass Ihr Laptop einsatzbereit und funktionstüchtig ist
+4. Lesen Sie sich einmal die kompletten Praktikumsaufgaben durch, um einen Eindruck davon zu bekommen, was Sie im Laufe des Semesters erwartet
+5. Bestimmen Sie, ob Sie den Standard-Pizzaservice oder ein eigenes Shopsystem implementieren
+
+
 ## Aufgaben
 
 ### Installation und Konfiguration von XAMPP
@@ -33,9 +42,9 @@ In dieser Einheit geht es darum, sich mit den Grundprinzipien der dynamischen Se
       3. Bäcker
       4. Fahrer  
 
-    und versuchen Sie, den HTML-Code (--> siehe [Termin 0: HTML und Anforderungsanalyse](termin0.md)) der jeweiligen Seiten mit PHP zu erzeugen.
+    und versuchen Sie, den im Browser darzustellenden HTML-Code (--> siehe [Termin 0: HTML und Anforderungsanalyse](termin0.md)) der jeweiligen Seiten mit PHP zu erzeugen.
 
-2. Deployen Sie die Seiten in im **Projektverzeichnis** Ihrer XAMPP-Installation und stellen Sie sicher, dass die Seiten korrekt aufgerufen werden.
+2. Deployen Sie die Seiten im **Projektverzeichnis** Ihrer XAMPP-Installation und stellen Sie sicher, dass die Seiten korrekt aufgerufen werden.
 
 3. Testen Sie den generierten HTML-Code auf **Standardkonformität** mittels geeigneter HTML5-Validatoren (--> Siehe [Aufgabe #3 (Testen)](termin0.md#testen) aus Termin 0: HTML).
 
@@ -47,7 +56,7 @@ In dieser Einheit geht es darum, sich mit den Grundprinzipien der dynamischen Se
 
 ## Ergebnisse
 
-Die folgenden Ergebnisse müssen für eine erfolgreiche Testierung der Praktikumseinheit vorliegen:
+Die folgenden Ergebnisse müssen für eine erfolgreiche Erfüllung der Praktikumseinheit vorliegen:
 
 !!! abstract
     __Ergebnisse:__
