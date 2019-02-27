@@ -1,5 +1,5 @@
 .admonition.note {
-    border-left: solid 0.5rem var(--note_border_color);
+    border-left: solid 0.25rem var(--note_border_color);
     background-color: var(--note_background_color);
 }
 
