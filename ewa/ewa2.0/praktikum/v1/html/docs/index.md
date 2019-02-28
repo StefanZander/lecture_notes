@@ -1,6 +1,6 @@
 #  Willkommen auf den EWA2.0-Praktikumsseiten
 
-<!-- Stand: 2019-02-12 -->
+<!-- Stand: 2019-02-27 -->
 
 Auf den folgenden Seiten finden Sie die **Aufgaben** der jeweiligen Praktikumseinheiten sowie **allgemeine Informationen** zu Inhalt und Ablauf des Praktikums.
 
@@ -11,7 +11,7 @@ Auf den folgenden Seiten finden Sie die **Aufgaben** der jeweiligen Praktikumsei
 
 ## Einheiten
 
-* [Termin 0: HTML und Anforderungsanalyse (--> zu Hause)](termin0.md)
+* [Termin 0: Statisches HTML und Anforderungsanalyse (--> zu Hause)](termin0.md)
 * [Termin 1: PHP – Web-Server Setup und dynamische Seitengenerierung](termin1.md)
 * [Termin 2: PHP – Seitenklassen, Datenbankzugriff, Sessionmanagement und Sicherheit](termin2.md)
 * [Termin 3: Client-seitige Interaktion mit JavaScript, AJAX und JSON](termin3.md)

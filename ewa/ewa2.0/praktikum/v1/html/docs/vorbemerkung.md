@@ -22,9 +22,11 @@ Der Pizzaservice bzw. Webshop soll die folgenden **technischen Eigenschaften** a
 - Nutzung der Seiten- und Blockklassenarchitektur
 - Generierung von JSON-Daten
 
-Der Schwerpunkt liegt vor allem auf ==**professioneller Webentwicklung!**==
+Der Schwerpunkt liegt vor allem auf einer **Software-technisch sauberen Umsetzung**. 
+<!-- ==**professioneller Webentwicklung!**== -->
 
-Wichtig hierbei ist Standardkonformität, Barrierefreiheit, Responsivität, Dokumentation, Tests und die Einhaltung der bewährten Regeln guter Softwaretechnik. 
+Wichtig hierbei ist **Standardkonformität**, **Barrierefreiheit**, **Responsivität**, **Trennung der Verantwortlichkeiten** (*engl. "Separation of Concerns"*), **Tests** und die Einhaltung der bewährten Regeln **guter Softwaretechnik**. 
+
 Es geht in EWA *nicht* um Homepage-Bastelei oder die Verwendung von "Fertigteilen"!
 
 !!! warning

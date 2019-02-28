@@ -11,19 +11,23 @@
     - [x] Sie verstehen die grundlegende Funktionsweise der dynamischen Seitengenerierung
 
 
-In dieser Einheit geht es darum, sich mit den Grundprinzipien der dynamischen Seitengenerierung mittels PHP und der zugrunde liegenden technischen Infrastruktur (Webserver etc.) auseinander zu setzen.
+In dieser Einheit geht es darum, sich mit den Grundprinzipien der **dynamischen Seitengenerierung mittels PHP** und der zugrunde liegenden **technischen Infrastruktur** (Webserver, Datenbankserver, etc.) auseinander zu setzen.
 
 <!-- !!! note
     **Hinweis #1:** Wenn Sie zum Testen und Debuggen Ihr eigenes Handy verwenden wollen, bringen Sie bitte ein passendes USB-Kabel mit. Im Normalfall ist das Kabel des Ladegeräts dazu geeignet. Verbinden Sie das Handy via USB-Kabel mit dem Entwicklungs-PC (Ihr Notebook oder der Labor-PC), schalten Sie das Handy ein, aktivieren Sie Entwickleroptionen und darin USB-Debugging. -->
 
 ## Vorbereitung
-1. Vergewissern Sie sich, dass Sie alle im Kapitel Vorbemerkung genannten Informationen verstanden haben 
-2. Stellen Sie sicher, dass Sie alle Anforderungen vollständig verstanden haben.    
-   Notieren Sie sich die unklaren Anforderungen und besprechen Sie diese in [Einheit #1](termin1.md) mit der/dem Dozentin/en.
-3. Vergewissern Sie sich, dass Ihr Laptop einsatzbereit und funktionstüchtig ist
-4. Lesen Sie sich einmal die kompletten Praktikumsaufgaben durch, um einen Eindruck davon zu bekommen, was Sie im Laufe des Semesters erwartet
-5. Bestimmen Sie, ob Sie den Standard-Pizzaservice oder ein eigenes Shopsystem implementieren
+1. Lesen Sie sich einmal die **kompletten Praktikumsaufgaben** durch, um einen Eindruck davon zu bekommen, was Sie im Laufe des Semesters erwartet und welche Arbeiten für eine **erfolgreiche Testierung** notwendig sind.
+2. Vergewissern Sie sich, dass Sie alle im Kapitel [Vorbemerkungen](vorbemerkung.md) genannten Informationen verstanden haben 
+3. Stellen Sie sicher, dass Sie alle [Anforderungen](anforderungen.md) vollständig verstanden haben.
 
+    !!! note
+        **Hinweis:**
+        Notieren Sie sich die unklaren Anforderungen und besprechen Sie diese in [Einheit #1](termin1.md) mit der/dem Dozentin/en.
+
+4. Bestimmen Sie, ob Sie den Standard-Pizzaservice oder ein eigenes Shopsystem implementieren
+5. Vergewissern Sie sich, dass Ihr Laptop funktionstüchtig ist und dass Sie eine passende IDE ausgewählt haben.
+   
 
 ## Aufgaben
 
@@ -42,7 +46,7 @@ In dieser Einheit geht es darum, sich mit den Grundprinzipien der dynamischen Se
       3. Bäcker
       4. Fahrer  
 
-    und versuchen Sie, den im Browser darzustellenden HTML-Code (--> siehe [Termin 0: HTML und Anforderungsanalyse](termin0.md)) der jeweiligen Seiten mit PHP zu erzeugen.
+    und versuchen Sie, den für die Darstellung im Browser notwendigen **HTML-Code** (--> siehe [Termin 0: HTML und Anforderungsanalyse](termin0.md)) der jeweiligen Seite mit PHP zu erzeugen.
 
 2. Deployen Sie die Seiten im **Projektverzeichnis** Ihrer XAMPP-Installation und stellen Sie sicher, dass die Seiten korrekt aufgerufen werden.
 
@@ -56,7 +60,7 @@ In dieser Einheit geht es darum, sich mit den Grundprinzipien der dynamischen Se
 
 ## Ergebnisse
 
-Die folgenden Ergebnisse müssen für eine erfolgreiche Erfüllung der Praktikumseinheit vorliegen:
+Die folgenden Ergebnisse müssen für eine erfolgreiche Durchführung der Praktikumseinheit vorliegen:
 
 !!! abstract
     __Ergebnisse:__

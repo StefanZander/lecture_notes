@@ -6,11 +6,19 @@
 
     - [x] Sie können einfache HTML Seiten mit einem beliebigen Texteditor oder IDE erstellen
     - [x] Sie verstehen die Grundstruktur einer HTML Seite
-    - [x] Sie kennen die wichtigsten Elemente von Formularen
+    - [x] Sie kennen die wichtigsten Elemente und die Funktionsweise von Formularen
     - [x] Sie verstehen sämtliche Anforderungen an das gewählte Shopsystem (Pizzaservice etc.) und haben Ungereimtheiten und Inkonsistenzen mit der/dem Dozenten/in abgeklärt  
 
-<!-- !!! note
-    **Hinweis #1:** Wenn Sie zum Testen und Debuggen Ihr eigenes Handy verwenden wollen, bringen Sie bitte ein passendes USB-Kabel mit. Im Normalfall ist das Kabel des Ladegeräts dazu geeignet. Verbinden Sie das Handy via USB-Kabel mit dem Entwicklungs-PC (Ihr Notebook oder der Labor-PC), schalten Sie das Handy ein, aktivieren Sie Entwickleroptionen und darin USB-Debugging. -->
+!!! note
+    **Hinweis:** Diese Einheit ist vor allem für diejenigen Stuiderenden, die bisher noch **keine Erfahrungen** mit HTML bzw. der Erstellung von Web-Seiten gesammelt haben. Erfahrene Studierende können gleich mit [Termin 1](termin1.md) beginnen.
+
+## Vorbereitung
+1. Lesen Sie sich einmal die **kompletten Praktikumsaufgaben** durch, um einen Eindruck davon zu bekommen, was Sie im Laufe des Semesters erwartet und welche Arbeiten für eine **erfolgreiche Testierung** notwendig sind.
+2. Vergewissern Sie sich, dass Sie alle im Kapitel [Vorbemerkungen](vorbemerkung.md) genannten Informationen verstanden haben 
+4. Installieren Sie einen **HTML-Editor (IDE)** Ihrer Wahl
+5. Vergewissern Sie sich, dass Ihr Laptop einsatzbereit und funktionstüchtig ist
+
+
 
 ## Aufgaben
 
@@ -55,7 +63,7 @@
 
 ## Ergebnisse
 
-Die folgenden Ergebnisse müssen für eine erfolgreiche Testierung der Praktikumseinheit vorliegen:
+Die folgenden Ergebnisse müssen für eine erfolgreiche Durchführung der Praktikumseinheit vorliegen:
 
 !!! abstract
     __Ergebnisse:__
