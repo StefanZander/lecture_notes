@@ -10,7 +10,7 @@
     - [x] Sie verstehen sämtliche Anforderungen an das gewählte Shopsystem (Pizzaservice etc.) und haben Ungereimtheiten und Inkonsistenzen mit der/dem Dozenten/in abgeklärt  
 
 !!! note
-    **Hinweis:** Diese Einheit ist vor allem für diejenigen Stuiderenden, die bisher noch **keine Erfahrungen** mit HTML bzw. der Erstellung von Web-Seiten gesammelt haben. Erfahrene Studierende können gleich mit [Termin 1](termin1.md) beginnen.
+    **Hinweis:** Diese Einheit ist vor allem für diejenigen Studierenden, die bisher noch **keine Erfahrungen** mit HTML bzw. der Erstellung von Web-Seiten gesammelt haben. Erfahrene Studierende können gleich mit [Termin 1](termin1.md) beginnen.
 
 ## Vorbereitung
 1. Lesen Sie sich einmal die **kompletten Praktikumsaufgaben** durch, um einen Eindruck davon zu bekommen, was Sie im Laufe des Semesters erwartet und welche Arbeiten für eine **erfolgreiche Testierung** notwendig sind.
@@ -25,7 +25,7 @@
 ### Anforderungsanalyse
 
 1. Stellen Sie sicher, dass Sie die Aufgabe "Pizzaservice" genau verstanden haben und klären Sie offene Punkte frühzeitig
-2. Analysieren Sie sämtliche Vorgaben (sowohl vom Auftraggeber als auch interne Vorgaben) 
+2. Analysieren Sie sämtliche Vorgaben (sowohl vom Auftraggeber als auch sonstige Vorgaben) 
 3. Identifizieren Sie Inkonsistenzen und offene Punkte und klären Sie die Fragen mit Ihrem Betreuer / Ihrer Betreuerin
 
 
@@ -35,9 +35,10 @@
 
     - Erstellen Sie nur die "Rohform", d.h., *keine physische Formatierung*, kein CSS, kein JavaScript etc.
     - Verwenden Sie strukturierende Tags wie `<section>` statt `<div>` für die globale Seitenstruktur
-    - Schreiben Sie Umlaute und das €-Zeichen direkt in Ihre Dateien (also nicht als "named character entities / benannte Zeichen" wie &auml; etc.)
+    - Schreiben Sie Umlaute und das €-Zeichen direkt in Ihre Dateien (also nicht als "named character entities / benannte Zeichen" wie '&auml;' etc.)
     - Achten Sie auf ordentliche Formatierung des HTML-Quelltextes! 
     - Schicken Sie die Formulardaten an das Echo-Skript `https://echo.fbi.h-da.de/` oder nutzen Sie einen HTTP-Traffic–Analyzer-Dienst wie `https://pipedream.com/`.
+    - Analysieren Sie die übertragenen Daten hinsichtlich Korrektheit, Vollständigkeit und Angemessenheit für den aktuellen Anwendungsfall.
     - Verzichten Sie auf den Einsatz von HTML-Tabellen!
 
 
