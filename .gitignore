@@ -11,3 +11,4 @@ ewa/pdf/http2/src/figures/.DS_Store
 *.gz
 *.toc
 .DS_Store
+.vscode/settings.json
