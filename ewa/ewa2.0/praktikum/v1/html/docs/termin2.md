@@ -14,9 +14,9 @@ Ziel dieser Einheit ist die Entwicklung von sauberem, d.h., gut wartbarem,  stru
 
 ## Vorbereitung
 1. Der Webserver ist installiert und funktioniert ordnungsgemäß
-2. Die in [Termin 1](termin1.md) erstellten PHP-Seiten werden ordnungsgemäß vom WebServer ausgeliefert, d.h., diese sind unter der URL `http://127.0.0.1/...` abrufbar
+2. Die in [Termin 1: PHP – Erste Schritte](termin1.md) erstellten PHP-Seiten werden ordnungsgemäß vom Webserver ausgeliefert, d.h., diese sind unter der URL `http://127.0.0.1/...` abrufbar
 <!-- 3. Der von den PHP-Seiten erzeugte HTML-Code ist standardkonform;  -->
-3. Überprüfen Sie die Standardkonformität des von den PHP-Seiten erzeugten HTML-Codes durch einen HTML5-Validator
+3. Die Standardkonformität des von den PHP-Seiten erzeugten HTML-Codes wurde durch einen HTML5-Validator überprüft und nachgewiesen
 
 
 
@@ -47,11 +47,9 @@ Ziel dieser Einheit ist die Entwicklung von sauberem, d.h., gut wartbarem,  stru
         **Hinweise**:
 
          - HTML-Ausgaben erfolgen nur in `generateView()`!
-         - Die Struktur wird besser, wenn Sie Speisekarte, Warenkorb-Formular und Statustabellen unter Verwendung von `BlockTemplate.php` realisieren (das ist aber optional)
-         - Die Ausgabe größerer HTML-Abschnitte ist mit der "Heredoc-Notation" besonders einfach. Achten Sie darauf, dass die Endmarke in der ersten Spalte beginnen muss und höchstens noch ein `;` folgen darf
+         - Die Struktur wird besser, wenn Sie Speisekarte, Warenkorb-Formular und Statusansicht unter Verwendung von `BlockTemplate.php` realisieren (das ist aber optional)
+         - Die Ausgabe größerer HTML-Abschnitte ist mit der [Heredoc-Notation](http://php.net/manual/de/language.types.string.php#language.types.string.syntax.heredoc) besonders einfach. Achten Sie darauf, dass die Endmarke in der ersten Spalte beginnen muss und höchstens noch ein `;` folgen darf
          - Die Methoden der gegebenen Klassen dürfen auch zusätzliche Parameter bekommen
-
-<!-- 5. Die Seite `Kunde.php` generiert alle notwendigen HTML-Elemente für die Anzeige der Bestell- sowie Statusinformationen (Radiobuttons etc.).  -->
 
 5. Schreiben Sie **Hilfs-Methoden** oder **zusätzliche Klassen** nach Bedarf
 

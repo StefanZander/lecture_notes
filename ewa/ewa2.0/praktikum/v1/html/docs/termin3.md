@@ -9,7 +9,7 @@
     - [x] Sie können mittels PHP JSON-Daten erzeugen 
     - [x] Sie können JSON-Daten clientseitig verarbeiten 
 
-In dieser Einheit geht es um die Implementierung der Logik zur Client-seitige Interaktion zwischen BenutzerIn und dem DOM (=Document Object Model). Hierfür setzen wir **JavaScript** ein. Ferner steht in dieser Einheit auch die Kommunikation zwischen Server und Client mittels **JSON** und **AJAX** im Vordergrund, so dass sich die Web-Applikation wie eine Desktop-Applikation "anfühlt". 
+In dieser Einheit geht es um die Implementierung der Logik zur **Client-seitigen Interaktion** zwischen BenutzerIn und dem DOM (=Document Object Model) – bspw. zum Befüllen des Warenkorbs. Hierfür setzen wir **JavaScript** ein. Ferner steht in dieser Einheit auch die **asynchrone Kommunikation** zwischen Server und Client mittels **AJAX** und **JSON** im Vordergrund, so dass Statusänderungen auf der Kundenseite *ohne* Neuladen der Seite in "Quasi-Echtzeit" sichtbar werden. 
 
 ## Vorbereitung
 
@@ -18,7 +18,9 @@ In dieser Einheit geht es um die Implementierung der Logik zur Client-seitige In
 3. Sofern noch nicht vorhanden, generieren Sie einige Bestelldaten für den im Rahmen dieser Einheit zu entwickelnden JSON StatusController
 
 
+
 ## Aufgaben
+
 
 ### Implementierung von Bestellfunktionalität mittels JavaScript
 
@@ -48,7 +50,15 @@ In dieser Einheit geht es um die Implementierung der Logik zur Client-seitige In
         - Achten Sie auf Groß-Klein-Schreibung bei DOM-Aufrufen
         - Prüfen Sie Ihr ECMAScript mit [JSLint](http://www.jslint.com) oder [ESLint für ECMAScript 6](http://eslint.org/demo/)
 
+
+
 ### Implementierung der Kundenseite mittels AJAX und JSON
+
+!!! note
+    **Hinweis**: Zur Implementierung und dem Testen des JavaScript-/AJAX-Codes von dieser Aufgabe benötigen Sie den JSON StatusController.php (--> siehe nächste Aufgabe). 
+    Alternativ können Sie die Bestelldaten auch mit einem **REST-API Development Tool** wie bspw. [Postman](https://www.getpostman.com/) erzeugen (`Mocks` --> `mock server`) und die AJAX-Aufrufe damit testen.
+
+Statusänderungen auf der Kundenseite sollen durch AJAX-Aufrufe implementiert werden.
 
 !!! note
     **Hinweis 1**:
@@ -64,33 +74,41 @@ In dieser Einheit geht es um die Implementierung der Logik zur Client-seitige In
 
 ### PHP Controller zur Versendung von Statusupdates mittels JSON
 
-Schreiben Sie einen **PHP StatusController**, welcher in Abhängigkeit der aktuellen Auftragsummer eines Kunden die aktuellen Status der Bestellpositionen als **JSON** zurück liefert. 
+Schreiben Sie einen **PHP StatusController** (Name: `StatusController.php`), welcher in Abhängigkeit der aktuellen `BestellId` eines Kunden die jeweiligen Statusdaten der Bestellpositionen als **JSON** zurück liefert. 
    
 Bitte beachten Sie folgende Hinweise:
 
-1. Überlegen Sie sich vorab, welche Daten der Controller von der Kundenseite benötigt, um die korrekten und zugehörigen Statusinformationen zurück zu liefern.
+1. Überlegen Sie sich vorab, welche Daten `StatusController.php` von der Kundenseite benötigt, um die korrekten und zugehörigen Statusinformationen zurück zu liefern.
 
-2. Implementieren Sie den Controller auf Basis der **Seitenklassenarchitektur**. Implementieren Sie hierfür eine **eigene abstrakte Superklasse** nach dem Vorbild der `Page.php`. Benennen Sie diese Klasse `JSONController.php`.
+    !!! note
+        **Hinweis**: Benötigte Daten können in `data`-Attributen im Seiten-DOM gespeichert und mittels JavaScript für den AJAX-Request ausgelesen werden. 
 
-3. Passen Sie für den konkreten PHP StatusController das `PageTemplate.php` entsprechend an. Teilen Sie den Code nach Zugehörigkeit / Verantwortlichkeit (cf. SWT-Prinzip *Separation of Concerns*) auf die drei Methoden auf. Benennen Sie den Controller `StatusController.php`.
+2. Implementieren Sie den Controller auf Basis der **Seitenklassenarchitektur**. Implementieren Sie hierfür eine **eigene abstrakte Superklasse** nach dem Vorbild der `Page.php` und lagern Sie wiederverwendbaren Code darin aus. Benennen Sie diese Klasse `JSONController.php`.
 
-4. Implementieren Sie ein einfaches Sessionmanagement analog dem in [Termin 2](termin2.md#sessionmanagement-und-sicherheit). 
+3. Implementieren Sie den `StatusController.php` und passen Sie hierfür das `PageTemplate.php` entsprechend an. Teilen Sie den Code nach Zugehörigkeit bzw. Verantwortlichkeit (cf. SWT-Prinzip *"Separation of Concerns"*) auf die drei Methoden `getViewData()`, `generateView()`, `processReceivedData()` auf.
+
+4. Nutzen Sie ein einfaches **Sessionmanagement** analog dem in [Termin 2](termin2.md#sessionmanagement-und-sicherheit) beschriebenem, um die notwendigen Daten aus der Datenbank abzufragen.  
 
     !!! note
         **Hinweis**: In der Sessionvariable steht die zugehörige letzte `BestellungId`; nutzen Sie diese für die Abfrage und Generierung der Statusdaten.
 
-5. Testen Sie die korrekte Funktionsweise des Controllers mittels einem HTTP-Request Generator bzw. einem API Development Tool wie bspw. [Postman](https://www.getpostman.com/)
+5. Entwerfen Sie eine geeignete JSON-Datenstruktur für die Übertragung der Statusdaten einer Bestellung. 
+    1. Den serialisierten JSON-String erzeugen Sie mittels `$var = json_encode({Daten_aus_Recordset});`
+    2. `echo $var`nicht vergessen, um den serialisieren JSON-String als HTTP-Response zu versenden!
+
+6. Testen Sie die korrekte Funktionsweise des Controllers mittels einem HTTP-Request Generator bzw. einem REST-API Development Tool wie bspw. [Postman](https://www.getpostman.com/)
+
 
 
 
 ## Ergebnisse
 
-Die folgenden Ergebnisse müssen für eine erfolgreiche Testierung der Praktikumseinheit vorliegen:
+Die folgenden Ergebnisse müssen für eine erfolgreiche Durchführung der Praktikumseinheit vorliegen:
 
 !!! abstract
     __Ergebnisse:__
 
-    - [ ] Vollständige Implementierung der Seite `Bestellung.php`
+    - [ ] Vollständige Implementierung der Seite `Kunde.php`
     - [ ] Implementierung der abstrakten Superklasse `JSONController.php`
     - [ ] Implementierung des `StatusController.php`
     - [ ] 
