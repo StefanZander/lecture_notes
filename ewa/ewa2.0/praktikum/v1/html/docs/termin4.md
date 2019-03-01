@@ -11,8 +11,13 @@
 Ziel dieser Einheit ist die Entwicklung eines **Design Schemas** für Ihre Web-Applikation mittels **CSS Level 3** und **Media Queries**. Hierzu setzen wir vor allem auf die Entwicklung eines **responsiven Designs**, bei welchem sich die in einer Seite enthalten UI-Elemente in Abhängigkeit des Ausgabegerätes und der Viewportgröße derart anordnen bzw. darstellen, dass eine hohe **User Experience (UX)** gewährleistet ist. 
 
 !!! note
-    **Hinweis**: Sie können für das Design Ihres Shopsystems gerne ein CSS-Framework wie [Bootstrap](https://getbootstrap.com/) verwenden. Bitte beachten Sie jedoch, dass Sie in der Klausur *nicht* auf Bootstrap zurück greifen dürfen und stattdessen die CSS-Stilregeln "von Hand" erstellen müssen.
+    **Hinweis #1**: Sie können für das Design Ihres Shopsystems gerne ein CSS-Framework wie [Bootstrap](https://getbootstrap.com/) verwenden. Bitte beachten Sie jedoch, dass Sie in der Klausur *nicht* auf Bootstrap zurück greifen dürfen und stattdessen die CSS-Stilregeln "von Hand" erstellen müssen.
 
+!!! note
+    **Hinweis #2**: Sie können die Aufgaben von [Termin 4](termin4.md) parallel und iterativ-inkrementell zu den anderen Terminen durchführen.
+
+!!! warning
+    **Wichtig**: [Termin 4](termin4.md) wird vermutlich nicht die gesamte Praktikumseinheit ausfüllen; nutzen Sie die restliche Zeit deshalb insbesondere zur Bearbeitung etwaiger offener Punkte aus den vorherigen Terminen oder zur Vorbereitung der Abnahme. 
 
 
 ## Aufgaben
