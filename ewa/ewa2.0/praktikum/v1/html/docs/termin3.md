@@ -11,6 +11,12 @@
 
 In dieser Einheit geht es um die Implementierung der Logik zur Client-seitige Interaktion zwischen BenutzerIn und dem DOM (=Document Object Model). Hierfür setzen wir **JavaScript** ein. Ferner steht in dieser Einheit auch die Kommunikation zwischen Server und Client mittels **JSON** und **AJAX** im Vordergrund, so dass sich die Web-Applikation wie eine Desktop-Applikation "anfühlt". 
 
+## Vorbereitung
+
+1. Vergewissern Sie sich, dass die Datenbank korrekt angelegt ist und eine Bestellung fehlerfrei durchgeführt wird
+2. Testen Sie, dass auf der Kundenseite nur die letzte Bestellung angezeigt wird, nicht aber Bestellungen anderer Kunden
+3. Sofern noch nicht vorhanden, generieren Sie einige Bestelldaten für den im Rahmen dieser Einheit zu entwickelnden JSON StatusController
+
 
 ## Aufgaben
 
@@ -58,7 +64,7 @@ In dieser Einheit geht es um die Implementierung der Logik zur Client-seitige In
 
 ### PHP Controller zur Versendung von Statusupdates mittels JSON
 
-Schreiben Sie einen **PHP StatusController**, welcher in Abhängigkeit der aktuellen Auftragsummer eines Kunden die aktuellen Status der Bestellpositionen als JSON zurück liefert. 
+Schreiben Sie einen **PHP StatusController**, welcher in Abhängigkeit der aktuellen Auftragsummer eines Kunden die aktuellen Status der Bestellpositionen als **JSON** zurück liefert. 
    
 Bitte beachten Sie folgende Hinweise:
 
@@ -68,7 +74,12 @@ Bitte beachten Sie folgende Hinweise:
 
 3. Passen Sie für den konkreten PHP StatusController das `PageTemplate.php` entsprechend an. Teilen Sie den Code nach Zugehörigkeit / Verantwortlichkeit (cf. SWT-Prinzip *Separation of Concerns*) auf die drei Methoden auf. Benennen Sie den Controller `StatusController.php`.
 
-4. Testen Sie die korrekte Funktionsweise des Controllers mittels einem HTTP-Request Generator bzw. einem API Development Tool wie bspw. [Postman](https://www.getpostman.com/)
+4. Implementieren Sie ein einfaches Sessionmanagement analog dem in [Termin 2](termin2.md#sessionmanagement-und-sicherheit). 
+
+    !!! note
+        **Hinweis**: In der Sessionvariable steht die zugehörige letzte `BestellungId`; nutzen Sie diese für die Abfrage und Generierung der Statusdaten.
+
+5. Testen Sie die korrekte Funktionsweise des Controllers mittels einem HTTP-Request Generator bzw. einem API Development Tool wie bspw. [Postman](https://www.getpostman.com/)
 
 
 

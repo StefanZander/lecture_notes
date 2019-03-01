@@ -16,7 +16,7 @@ Ziel dieser Einheit ist die Entwicklung von sauberem, d.h., gut wartbarem,  stru
 1. Der Webserver ist installiert und funktioniert ordnungsgemäß
 2. Die in [Termin 1](termin1.md) erstellten PHP-Seiten werden ordnungsgemäß vom WebServer ausgeliefert, d.h., diese sind unter der URL `http://127.0.0.1/...` abrufbar
 <!-- 3. Der von den PHP-Seiten erzeugte HTML-Code ist standardkonform;  -->
-3. Die Standardkonformität des von den PHP-Seiten erzeugten HTML-Codes wurde durch einen HTML5-Validator überprüft und nachgewiesen
+3. Überprüfen Sie die Standardkonformität des von den PHP-Seiten erzeugten HTML-Codes durch einen HTML5-Validator
 
 
 
@@ -39,9 +39,9 @@ Ziel dieser Einheit ist die Entwicklung von sauberem, d.h., gut wartbarem,  stru
       - Was tun die Methoden `getViewData()`, `generateView()` und `processReceivedData()`?
       - Wo wird der HTML-Rahmen erzeugt? Wo wird er ausgegeben?
 
-3. Legen Sie **4 Kopien** der Klasse `PageTemplate.php` an und nennen Sie die Dateien Bestellung, Status, Baecker und Fahrer. Ändern Sie auch die Klassennamen und Verweise auf die Klasse innerhalb der Dateien.
+3. Legen Sie **4 Kopien** der Klasse `PageTemplate.php` an und nennen Sie die Dateien `Bestellung.php`, `Kunde.php`, `Baecker.php` und `Fahrer.php`. Ändern Sie auch die Klassennamen und Verweise auf die Klasse innerhalb der Dateien.
 
-4. Verteilen Sie Ihren **PHP-Code** aus der vorherigen Einheit in die zuständigen Methoden der 5 Klassen `Page`, `Bestellung`, `Status`, `Baecker` und `Fahrer` (die Kommentare in den Dateien helfen dabei).  
+4. Verteilen Sie Ihren **PHP-Code** aus der vorherigen Einheit in die zuständigen Methoden der 5 Klassen `Page`, `Bestellung`, `Kunde`, `Baecker` und `Fahrer` (die Kommentare in den Dateien helfen dabei).  
 
     !!! note
         **Hinweise**:
@@ -51,6 +51,8 @@ Ziel dieser Einheit ist die Entwicklung von sauberem, d.h., gut wartbarem,  stru
          - Die Ausgabe größerer HTML-Abschnitte ist mit der "Heredoc-Notation" besonders einfach. Achten Sie darauf, dass die Endmarke in der ersten Spalte beginnen muss und höchstens noch ein `;` folgen darf
          - Die Methoden der gegebenen Klassen dürfen auch zusätzliche Parameter bekommen
 
+<!-- 5. Die Seite `Kunde.php` generiert alle notwendigen HTML-Elemente für die Anzeige der Bestell- sowie Statusinformationen (Radiobuttons etc.).  -->
+
 5. Schreiben Sie **Hilfs-Methoden** oder **zusätzliche Klassen** nach Bedarf
 
 6. Prüfen Sie, ob die neuen PHP-Seiten als Ausgabe die ursprünglichen statischen HTML-Seiten erzeugen und ob dieser Code immer noch **standardkonform** ist.
@@ -58,6 +60,8 @@ Ziel dieser Einheit ist die Entwicklung von sauberem, d.h., gut wartbarem,  stru
          
     <!-- !!! note 
         **Hinweis**: Alle Seiten müssen **objektorientiert** unter Verwendung der gegebenen Templates ([Download](https://lernen.h-da.de/course/view.php?id=6940) von der EWA-Moodleseite) implementiert werden! -->
+
+
 
 ### Datenbankzugriff mittels MySQLi
 
@@ -119,14 +123,14 @@ Ziel dieser Einheit ist die Entwicklung von sauberem, d.h., gut wartbarem,  stru
 
 ## Ergebnisse
 
-Die folgenden Ergebnisse müssen für eine erfolgreiche Testierung der Praktikumseinheit vorliegen:
+Die folgenden Ergebnisse müssen für eine erfolgreiche Durchführung der Praktikumseinheit vorliegen:
 
 !!! abstract
     __Ergebnisse:__
 
-    - [ ] Implementierung der Seiten `Bestellung.php`, `Baecker.php` und `Fahrer.php` mittels Seitenklassen und (optional) Blockklassen.
+    - [ ] Implementierung der Seiten `Bestellung.php`, `Kunde.php`, `Baecker.php` und `Fahrer.php` mittels Seitenklassen und (optional) Blockklassen.
     - [ ] Implementierung der Datenbankzugriffe mittels `MySQLi`
-    - [ ] Sessionmanagement auf der Kundenseite ==(--> *Erst nach Aufgabe 3 oder Grundgerüst erstellen; dann aber mehr Anweisungen notwendig (Statusdaten erst zur Laufzeit)*)==
+    - [ ] Sessionmanagement auf der Kundenseite
     - [ ] Absicherung der Web-Applikation gegen SQL-Injection und Cross-Site-Scripting (XSS)
 
 
