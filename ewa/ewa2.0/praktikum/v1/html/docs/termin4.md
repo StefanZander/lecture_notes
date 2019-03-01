@@ -10,6 +10,9 @@
 
 Ziel dieser Einheit ist die Entwicklung eines **Design Schemas** für Ihre Web-Applikation mittels **CSS Level 3** und **Media Queries**. Hierzu setzen wir vor allem auf die Entwicklung eines **responsiven Designs**, bei welchem sich die in einer Seite enthalten UI-Elemente in Abhängigkeit des Ausgabegerätes und der Viewportgröße derart anordnen bzw. darstellen, dass eine hohe **User Experience (UX)** gewährleistet ist. 
 
+!!! note
+    **Hinweis**: Sie können für das Design Ihres Shopsystems gerne ein CSS-Framework wie [Bootstrap](https://getbootstrap.com/) verwenden. Bitte beachten Sie jedoch, dass Sie in der Klausur *nicht* auf Bootstrap zurück greifen dürfen und stattdessen die CSS-Stilregeln "von Hand" erstellen müssen.
+
 
 
 ## Aufgaben
@@ -24,7 +27,7 @@ Ziel dieser Einheit ist die Entwicklung eines **Design Schemas** für Ihre Web-A
 
 ### Responsives Layout und Mobile-First-Ansatz
 
-Realisieren Sie die Seite `Bestellung-php` nach dem **Mobile-First-Ansatz**.
+Realisieren Sie die Darstellung der Seite `Bestellung.php` nach dem **Mobile-First-Ansatz**.
 
 1. Entwickeln bzw. erweitern Sie das gegebene Stylesheet für den Einsatz auf Mobiltelefonen durch die Verwendung von **Media Queries**
 2. Passen Sie die Komposition der Elemente dynamisch der entspr. **Viewportgröße** und **Orientierung** an
