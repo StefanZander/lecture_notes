@@ -23,7 +23,7 @@ Für die PHP-Entwicklung müssen **Seiten-Templates** (--> siehe [Termin 2: PH
 
 ## Designskizze
 
-TODO: Include
+![](./figures/designskizze.png)*Konzeptionelle Darstellung der vier Web-Seiten des Pizzaservice bzw. Onlineshops*
 
 ## Anforderungen des Auftraggebers
 
@@ -55,7 +55,7 @@ TODO: Include
 
 ## Sonstige Anforderungen
 
-- ~~Die Speisekarte kann um weitere Pizzen erweitert werden. Die Preisberechnungen ändern sich dann (ohne Neuprogrammierung)~~
+<!-- - ~~Die Speisekarte kann um weitere Pizzen erweitert werden. Die Preisberechnungen ändern sich dann (ohne Neuprogrammierung)~~ -->
 
 - Es werden nur gültige Bestellungen akzeptiert
 
@@ -75,7 +75,7 @@ TODO: Include
         **Hinweis**:  
         Alternativ können Sie auch eine **Navigationsleiste** bzw. ein **Navigationsmenu** in die Web-Applikation integrieren, dann brauchen Sie *keine* Übersichtsseite zu implementieren.
 
-- ~~Tests sollen so klar formuliert sein, dass sie **automatisiert** laufen könnten {>>Müssen wir noch genauer diskutieren!<<}~~
+<!-- - ~~Tests sollen so klar formuliert sein, dass sie **automatisiert** laufen könnten {>>Müssen wir noch genauer diskutieren!<<}~~ -->
 
 
 

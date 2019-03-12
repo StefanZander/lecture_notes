@@ -21,8 +21,9 @@
 ### Bei der Abnahme...
 
 - ...wird die Funktionstüchtigkeit der Applikation überprüft
+- ...wird überprüft, ob der Bestellprozess fehlerfrei durchgeführt werden kann und ob Sie alle Anforderungen umgesetzt haben
 - ...sollten Sie Ihren Code verstehen und erklären können
-- ~~...sollten Sie die Testfälle automatisiert ablaufen lassen bzw. die WebSocket-Umsetzung demonstrieren~~
+<!-- - ~~...sollten Sie die Testfälle automatisiert ablaufen lassen bzw. die WebSocket-Umsetzung demonstrieren~~ -->
 - ...sollten Sie insgesamt gut vorbereitet sein und inhaltliche bzw. technische Fragen sicher beantworten können.
 
 

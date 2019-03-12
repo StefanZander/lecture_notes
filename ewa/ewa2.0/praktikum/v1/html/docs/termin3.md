@@ -11,6 +11,10 @@
 
 In dieser Einheit geht es um die Implementierung der Logik zur **Client-seitigen Interaktion** zwischen BenutzerIn und dem DOM (=Document Object Model) – bspw. zum Befüllen des Warenkorbs. Hierfür setzen wir **JavaScript** ein. Ferner steht in dieser Einheit auch die **asynchrone Kommunikation** zwischen Server und Client mittels **AJAX** und **JSON** im Vordergrund, so dass Statusänderungen auf der Kundenseite *ohne* Neuladen der Seite in "Quasi-Echtzeit" sichtbar werden. 
 
+
+!!! warning
+    **Wichtig**: Bis zum Beginn von [Termin #3](termin3.md) sollten Sie alle Aufgaben aus [Termin #1](termin1.md) und [#2](termin2.md) vollständig bearbeitet haben! 
+
 ## Vorbereitung
 
 1. Vergewissern Sie sich, dass die Datenbank korrekt angelegt ist und eine Bestellung fehlerfrei durchgeführt wird
@@ -100,13 +104,13 @@ Ziel dieser Aufgabe ist es, dass die Kundenseite (`Kunde.php`) mittels JavaScrip
 
     Insbesondere bei Fall (b) gibt es mehrere Umsetzungsmöglichkeiten
 
-      - `StatusController.php` liefert HTTP-Statuscode `303 See Other`
-      - Redirect auf `Kunde.php`, so dass die Seite mit den neuen Bestelldaten neu aufgebaut wird
-      - Zweiter kaskadierter AJAX-Request der feststellt, ob eine neue Bestellung initiiert wurde
+      1. `StatusController.php` liefert HTTP-Statuscode `303 See Other`
+      2. Redirect auf `Kunde.php`, so dass die Seite mit den neuen Bestelldaten neu aufgebaut wird
+      3. Zweiter kaskadierter AJAX-Request der feststellt, ob eine neue Bestellung initiiert wurde
 
-    Entscheiden Sie sich für eine Variante und implementieren Sie diese.
+    Entscheiden Sie sich für *eine* **Variante** und implementieren Sie diese.
 
-    **Testen** Sie diese Variante insbesondere mit den beschriebenen Sonderfällen
+ 5. **Testen** Sie die implementierte Variante insbesondere mit den beschriebenen Sonderfällen.
 
 
 <!-- !!! note
