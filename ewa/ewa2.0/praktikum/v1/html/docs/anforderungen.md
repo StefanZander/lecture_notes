@@ -11,7 +11,8 @@ Der Pizzaservice bzw. Onlineshop soll folgende **vier Webseiten** enthalten (gil
 - **Bestellstatus** (--> die Aktualisierunglogik wird in [Termin 3](termin3.md) implementiert)
 - **Pizzabäcker** 
 - **Fahrer** 
-<!-- - TODO: PHP Controller für AJAX+JSON inkludieren -->
+<!-- - TODO: PHP Controller für AJAX+JSON inkludieren 
+RH: Das hat auf Anforderungsebene nichts zu suchen. Es reicht, wenn das im AJAX-Termin kommt! -->
 
 Der Pizzaservice soll mit standardkonformem **HTML5** und **CSS Level 3** dargestellt werden.
 
@@ -23,9 +24,10 @@ Für die PHP-Entwicklung müssen **Seiten-Templates** (--> siehe [Termin 2: PHP 
 
 ## Designskizze
 
-{==TODO: Include==} Was soll hier hin?
+Die folgende Designskizze zeigt grob den erwarteten Inhalt und die Bedienelemente der zu entwickelnden Webseiten. Es sollen 4 getrennte Seiten entwickelt werden: `Bestellung`, `Pizzabäcker`, `Bestellstatus` und `Fahrer`.  
+![](./figures/pizzaservice/SkizzePizzaservice.png)*Designskizze - nur Funktionen, kein Layout)*
 
-## Anforderungen des Auftraggebers
+## Anforderungen des Auftraggebers an die einzelnen Seiten
 
 - **Pizzabestellung**
 
@@ -61,7 +63,7 @@ Für die PHP-Entwicklung müssen **Seiten-Templates** (--> siehe [Termin 2: PHP 
 
 - Im Warenkorb können mehrere Pizzen ausgewählt und gelöscht werden, oder auch alle Pizzen auf einmal.
 
-- Es sollen 4 getrennte Seiten entwickelt werden. Die Seiten `Pizzabäcker`, `Bestellstatus` und `Fahrer` sollen sich **automatisch aktualisieren**.  
+- Die Seiten `Pizzabäcker`, `Bestellstatus` und `Fahrer` sollen sich **automatisch aktualisieren**.  
 
 - ~~Die Speisekarte kann um weitere Pizzen erweitert werden. Die Preisberechnungen ändern sich dann (ohne Neuprogrammierung)~~ {==TODO: Was ist das Problem damit? ==}Wenn eine neu angebotene Pizza in die Datenbank eingetragen wird, so wird diese nach dem Neuladen der Bestellseite angezeigt und die Preisberechnung des Warenkorbs funktioniert ohne Änderungen am Code.
   
