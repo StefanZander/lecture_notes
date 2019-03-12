@@ -18,14 +18,14 @@ Der Pizzaservice bzw. Webshop soll die folgenden **technischen Eigenschaften** a
 
 - Apache Webserver
 - Dynamische Seitengenerierung mit PHP
-- Anbindung einer MySQL-Datenbank
+- Anbindung einer MariaDB-Datenbank
 - Nutzung der Seiten- und Blockklassenarchitektur
 - Generierung von JSON-Daten
 
 Der Schwerpunkt liegt vor allem auf einer **Software-technisch sauberen Umsetzung**. 
 <!-- ==**professioneller Webentwicklung!**== -->
 
-Wichtig hierbei ist **Standardkonformität**, **Barrierefreiheit**, **Responsivität**, **Trennung der Verantwortlichkeiten** (*engl. "Separation of Concerns"*), **Tests** und die Einhaltung der bewährten Regeln **guter Softwaretechnik**. 
+Wichtig hierbei ist **Standardkonformität**, **Barrierefreiheit**, **Responsivität**, **Trennung der Verantwortlichkeiten** (*engl. "Separation of Concerns"*) und die Einhaltung der bewährten Regeln **guter Softwaretechnik**. 
 
 Es geht in EWA *nicht* um Homepage-Bastelei oder die Verwendung von "Fertigteilen"!
 

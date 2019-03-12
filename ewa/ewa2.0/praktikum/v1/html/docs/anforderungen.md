@@ -5,7 +5,7 @@
 
 ## Aufbau
 
-Der Pizzaservice bzw. Onlineshop soll folgende **vier Webseiten** enthalten (gilt entsprechend auch für einen eigenem Webshop):
+Der Pizzaservice bzw. Onlineshop soll folgende **vier Webseiten** enthalten (gilt entsprechend auch für einen alternativen Webshop):
 
 - **Bestellung**
 - **Bestellstatus** (--> die Aktualisierunglogik wird in [Termin 3](termin3.md) implementiert)
@@ -13,17 +13,17 @@ Der Pizzaservice bzw. Onlineshop soll folgende **vier Webseiten** enthalten (gil
 - **Fahrer** 
 <!-- - TODO: PHP Controller für AJAX+JSON inkludieren -->
 
-Der Pizzaservice soll mit **HTML5** und **CSS Level 3** dargestellt werden
+Der Pizzaservice soll mit standardkonformem **HTML5** und **CSS Level 3** dargestellt werden.
 
-Als Webserver wird **Apache 2** verwendet und als Datenbank **MySQL** (enthalten im [XAMPP Paket](https://www.apachefriends.org/download.html).)
+Als Webserver wird **Apache 2** verwendet und als Datenbank **MariaDB** (enthalten im [XAMPP Paket](https://www.apachefriends.org/download.html)).
 
-Die **Abnahme** erfolgt auf Ihren Laptops mit den gängigen Browsern.
+Die **Abnahme** erfolgt auf Ihren Laptops oder den Laborrechnern mit **mindestens zwei** gängigen Browsern.
 
 Für die PHP-Entwicklung müssen **Seiten-Templates** (--> siehe [Termin 2: PHP – Seitenklassen, Datenbankzugriff, Sessionmanagement und Sicherheit](termin2.md)) verwendet werden, die vorgegeben und über den [EWA-Moodlekurs](https://lernen.h-da.de/course/view.php?id=6940) herunterladbar sind.
 
 ## Designskizze
 
-TODO: Include
+{==TODO: Include==} Was soll hier hin?
 
 ## Anforderungen des Auftraggebers
 
@@ -38,7 +38,7 @@ TODO: Include
 
     Hier kann ein Kunde sehen, in welchem Zustand seine Pizzen sind (`bestellt`, `im Ofen`, `fertig`, `unterwegs`). 
 
-    Er sieht nur seine Bestellung – ==und keine Aufträge von anderen Kunden==.
+    Er sieht nur seine Bestellung – **und keine Aufträge von anderen Kunden**.
 
 - **Pizzabäcker**
 
@@ -55,27 +55,24 @@ TODO: Include
 
 ## Sonstige Anforderungen
 
-- ~~Die Speisekarte kann um weitere Pizzen erweitert werden. Die Preisberechnungen ändern sich dann (ohne Neuprogrammierung)~~
+- Es werden nur Bestellungen akzeptiert, die mindestens einen Artikel enthalten und bei denen die Lieferadresse nicht leer ist.
 
-- Es werden nur gültige Bestellungen akzeptiert
+- Das Einfügen einer Pizza in den Warenkorb soll über einen Mausklick auf das Pizzasymbol in der Speisekarte erfolgen
 
-- Die Auswahl einer Pizza soll über einen Mausklick auf ein Pizzasymbol erfolgen
+- Im Warenkorb können mehrere Pizzen ausgewählt und gelöscht werden, oder auch alle Pizzen auf einmal.
 
-- Der Warenkorb bietet die allgemein üblichen Funktionen
+- Es sollen 4 getrennte Seiten entwickelt werden. Die Seiten `Pizzabäcker`, `Bestellstatus` und `Fahrer` sollen sich **automatisch aktualisieren**.  
 
-- Die Bestellseite passt ihre Darstellung für schmale Handybildschirme an und verwendet ein **responsives Layout**.
-
-- Versuchen Sie das Layout so umzusetzen, wie es in der Designskizze dargestellt ist. Es sollen 4 getrennte Seiten entwickelt werden.
-
-- Die Seiten `Pizzabäcker`, `Bestellstatus` und `Fahrer` sollen sich **automatisch aktualisieren**.  
-
+- ~~Die Speisekarte kann um weitere Pizzen erweitert werden. Die Preisberechnungen ändern sich dann (ohne Neuprogrammierung)~~ {==TODO: Was ist das Problem damit? ==}Wenn eine neu angebotene Pizza in die Datenbank eingetragen wird, so wird diese nach dem Neuladen der Bestellseite angezeigt und die Preisberechnung des Warenkorbs funktioniert ohne Änderungen am Code.
+  
 - Es gibt zu **Testzwecken** eine weitere Webseite `übersicht`, welche (für einfache Tests) Links zu den 4 Webseiten beinhaltet.  
+
+- Die Bestellseite passt ihre Darstellung für schmale Handybildschirme an und verwendet ein **responsives Layout**. Versuchen Sie das Layout so umzusetzen, wie es in der Designskizze dargestellt ist. 
 
     !!! note
         **Hinweis**:  
         Alternativ können Sie auch eine **Navigationsleiste** bzw. ein **Navigationsmenu** in die Web-Applikation integrieren, dann brauchen Sie *keine* Übersichtsseite zu implementieren.
 
-- ~~Tests sollen so klar formuliert sein, dass sie **automatisiert** laufen könnten {>>Müssen wir noch genauer diskutieren!<<}~~
 
 
 
