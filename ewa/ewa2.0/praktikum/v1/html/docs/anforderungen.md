@@ -74,7 +74,6 @@ Die folgende Designskizze zeigt grob den erwarteten Inhalt und die Bedienelement
         **Hinweis**:  
         Alternativ können Sie auch eine **Navigationsleiste** bzw. ein **Navigationsmenu** in die Web-Applikation integrieren, dann müssen Sie *keine* separate Übersichtsseite implementieren. Achten Sie aber bitte darauf, dass man diese Leiste bequem entfernen kann - sie soll nämlich nicht ausgeliefert werden.
 
-<!-- - ~~Tests sollen so klar formuliert sein, dass sie **automatisiert** laufen könnten {>>Müssen wir noch genauer diskutieren!<<}~~ -->
 
 
 
