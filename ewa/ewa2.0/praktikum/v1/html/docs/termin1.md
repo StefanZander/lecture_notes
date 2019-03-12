@@ -31,6 +31,10 @@ In dieser Einheit geht es darum, sich mit den Grundprinzipien der **dynamischen 
 
 ## Aufgaben
 
+### Prüfung der Vorbereitung
+  1. {==HTML-Lint <http://www.htmllint.net/en/html-lint/htmllint.html>==}
+  2. {==Abschicken eines Arrays mit Pizzen==}{>>Bisher habe ich immer geprüft, ob die Studis die eckigen Klammern hinter dem name-Attribut für die Bestellung haben. Wenn das fehlt, sucht man in PHP bis zur Verzweiflung! Wie könnten wir das prüfen?)<<}
+
 ### Installation und Konfiguration von XAMPP
 1. Laden Sie sich das **XAMPP-Installationspaket** für das Betriebssystem Ihres Laptops herunter und installieren Sie dies.
 2. Starten Sie den Webserver mittels dem **XAMPP-Dienstprogramm** 

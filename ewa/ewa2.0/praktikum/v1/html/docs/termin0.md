@@ -24,22 +24,20 @@
 2. Vergewissern Sie sich, dass Sie alle im Kapitel [Vorbemerkungen](vorbemerkung.md) genannten Informationen verstanden haben 
 3. Es wird erwartet, dass Sie HTML-Code schreiben können. Verwenden Sie z.B. die folgende [Kurzreferenz](https://websitesetup.org/HTML5-cheat-sheet.pdf) für einen schnellen Überblick über die Anweisungen.
 4. Installieren Sie einen **HTML-Editor (IDE)** Ihrer Wahl. Verwenden Sie einen Editor mit Syntax-Hervorhebung für HTML, CSS und PHP (z.B. Notepad++), in dem Sie den Code / die HTML-Tags etc. selbst erstellen können. Verwenden Sie bitte keine "Luxuseditoren", die HTML & Co. verbergen.
-<!-- 
-4. Vergewissern Sie sich, dass Ihr Laptop einsatzbereit und funktionstüchtig ist.
--->
 
 ### Anforderungsanalyse
 
-1. Stellen Sie sicher, dass Sie die Anforderungen der Aufgabe "Pizzaservice" (sowohl vom Auftraggeber als auch sonstige Vorgaben) genau verstanden haben 
-2. Dokumentieren Sie offene Punkte zur Klärung
-
+1. Stellen Sie sicher, dass Sie die Anforderungen der Aufgabe "Pizzaservice" (sowohl vom Auftraggeber als auch sonstige Vorgaben) genau verstanden haben.
+2. Dokumentieren Sie offene Punkte zur Klärung.
 
 ### Rohform des Shopsystems mit statischem HTML
 
-1. Realisieren Sie alle Seiten (`Bestellung`, `Kunde`, `Bäcker`, `Fahrer` (und eventuell `Übersicht`) mit **HTML5** unter Berücksichtigung der nachstehenden Hinweise:
-
+1. Realisieren Sie alle Seiten (`Bestellung`, `Kunde`, `Bäcker`, `Fahrer` (und eventuell `Übersicht`) mit **HTML5**.
+{==Hier fehlen mir die Bilder der reinen HTML-Seiten. Ansonsten wüsste ich als Studi nicht wirklich was ich tun soll und was nicht! An die Submit-Buttons für Fahrer- und Bäckerseite denken! ==}
+2. Berücksichtigen Sie bei der Umsetzung die nachstehenden Hinweise:
     - Verwenden Sie das folgende (standardkonforme) Grundgerüst für Ihre HTML-Dateien:
-        ``` html 
+  
+        ```html  
         <!DOCTYPE html>
         <html lang="de">  
         <head>
@@ -61,29 +59,20 @@
     - Verwenden Sie strukturierende Tags wie `<section>` statt `<div>` für die globale Seitenstruktur
     - Schreiben Sie Umlaute und das €-Zeichen direkt in Ihre Dateien (verwenden Sie also z.B. das "ä" und nicht das benannte Zeichen  `:::html &auml;`)
     - Achten Sie auf ordentliche Formatierung des HTML-Quelltextes! 
-    - {==Verzichten Sie auf den Einsatz von HTML-Tabellen!==}{>>Das würde ich erst später thematisieren wollen!? Wie wäre es mit: Verwenden Sie keine HTML-Tabellen um Elemente anzuordnen (d.h. zu Layout-Zwecken)!<<}
+    - Verwenden Sie keine HTML-Tabellen um Elemente anzuordnen (d.h. zu Layout-Zwecken)!
 
 
-2. Realisieren Sie zunächst auch diejenigen Inhalte statisch, die später dynamisch aus der Datenbank generiert werden sollen
+3. Realisieren Sie zunächst auch diejenigen Inhalte statisch, die später dynamisch aus der Datenbank generiert werden sollen
     - Tragen Sie Beispieldaten ein – so dass klar ist, was später generiert werden muss 
-    - Trennen Sie statische und generierte Daten voneinander
+    - Trennen Sie statische Inhalte von Inhalten, die später aus Inhalten der der Datenbank erzeugt werden
 
-3. Sorgen Sie dafür, dass die Fahrerseite und die Bäckerseite abgeschickt werden, wenn ein Radiobutton angeklickt wird. Dazu geben Sie dem &lt;form&gt;, das die Radiobuttons umschließt, eine ID (z.B. `:::html <form id="formid">`) und verwenden diese ID bei den Radiobuttons um das Formular beim Anklicken abzuschicken: 
-`:::html <input type="radio" name=... 	onclick="document.forms['formid'].submit();" />`
-{==Alternativlösung==}{>>Wir könnten auch temporär einen Submit-Button fordern (und später in der JS-Übung ersetzen lassen!?)<<}
+4. Im Gegensatz zur Designskizze sollen die Fahrer- und die Bäckerseite bis auf Weiteres über einen Submit-Button abgeschickt werden (In der Übung zu JavaScript werden Sie diese Lösung so anpassen, dass sie den Anforderungen entspricht).
 
 ### Überprüfung der Ergebnisse
-1. {==Bilder der HTML-Seiten==}{>>Hier fehlen mir die Bilder der reinen HTML-Seiten. Ansonsten wüsste ich als Studi nicht wirklich was ich tun soll und was nicht!<<}
+1. Testen Sie Ihre Seiten mit unterschiedlichen Browsern und validieren Sie die Standardkonformität mittels eines **HTML5 Validators**. Besonders bei unerwartetem Verhalten des Browsers gibt ein Validator wertvolle Hinweise auf die mögliche Ursache der Probleme.
+Nutzen Sie <https://validator.w3.org/#validate_by_input> oder <https://html5.validator.nu/> und korrigieren Sie etwaige Fehler und Warnungen.
+
 2. Schicken Sie die Formulardaten an das Echo-Skript `https://echo.fbi.h-da.de/` oder nutzen Sie einen HTTP-Traffic–Analyzer-Dienst wie `https://pipedream.com/`. Analysieren Sie die übertragenen Daten hinsichtlich Korrektheit, Vollständigkeit und Angemessenheit für den aktuellen Anwendungsfall.
-3. Testen Sie Ihre Seiten mit unterschiedlichen Browsern und validieren Sie die Standardkonformität mittels gängigen webbasierten **HTML5 Validatoren**.  
- 
-    Nutzen Sie 
-
-      1. <https://validator.w3.org/#validate_by_input> oder <https://html5.validator.nu/>
-      2. HTML-Lint <http://www.htmllint.net/en/html-lint/htmllint.html> {==Lint??==}{>>Strenger und genauer - aber für die Vorbereitung?? Eventuell Lint erst in der 1. Übung fordern!?!?)<<}
-
-4. Korrigieren Sie etwaige Fehler und Warnungen.
-{==Abschicken eines Arrays mit Pizzen==}{>>Bisher habe ich immer geprüft, ob die Studis die eckigen Klammern hinter dem name-Attribut für die Bestellung haben. Wenn das fehlt, sucht man in PHP bis zur Verzweiflung! Wie könnten wir das prüfen?)<<}
 
 ## Ergebnisse
 

@@ -54,6 +54,8 @@ In dieser Einheit geht es um die Implementierung der Logik zur **Client-seitigen
         - Achten Sie auf Groß-Klein-Schreibung bei DOM-Aufrufen
         - Prüfen Sie Ihr ECMAScript mit [JSLint](http://www.jslint.com) oder [ESLint für ECMAScript 6](http://eslint.org/demo/)
 
+{==TODO: Sorgen Sie dafür, dass die Fahrerseite und die Bäckerseite abgeschickt werden, wenn ein Radiobutton angeklickt wird. Bisher wurde das mit einem Submit-Button gelöst. Dazu geben Sie dem &lt;form&gt;, das die Radiobuttons umschließt, eine ID (z.B. `:::html <form id="formid">`) und verwenden diese ID bei den Radiobuttons um das Formular beim Anklicken abzuschicken: 
+`:::html <input type="radio" name=... 	onclick="document.forms['formid'].submit();" />`==}
 
 ---
 

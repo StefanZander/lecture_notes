@@ -55,7 +55,6 @@ Die folgende Designskizze zeigt grob den erwarteten Inhalt und die Bedienelement
 
 ## Sonstige Anforderungen
 
-<!-- - ~~Die Speisekarte kann um weitere Pizzen erweitert werden. Die Preisberechnungen ändern sich dann (ohne Neuprogrammierung)~~ -->
 - Es werden nur Bestellungen akzeptiert, die mindestens einen Artikel enthalten und bei denen die Lieferadresse nicht leer ist.
 
 - Das Einfügen einer Pizza in den Warenkorb soll über einen Klick auf das Pizzasymbol in der Speisekarte erfolgen
@@ -64,7 +63,7 @@ Die folgende Designskizze zeigt grob den erwarteten Inhalt und die Bedienelement
 
 - Die Seiten `Pizzabäcker`, `Bestellstatus` und `Fahrer` sollen sich **automatisch aktualisieren**.  
 
-- ~~Die Speisekarte kann um weitere Pizzen erweitert werden. Die Preisberechnungen ändern sich dann (ohne Neuprogrammierung)~~ {==TODO: Was ist das Problem damit? Alternativvorschlag: ==}Wenn eine neue Pizza in die Datenbank mit den angebotenen Pizzen eingetragen wird, so wird diese nach dem Neuladen der Bestellseite angezeigt und die Preisberechnung des Warenkorbs funktioniert ohne Änderungen am Code.
+- Wenn eine neue Pizza in die Datenbank mit den angebotenen Pizzen eingetragen wird, so wird diese nach dem Neuladen der Bestellseite angezeigt und die Preisberechnung des Warenkorbs funktioniert ohne Änderungen am Code.
   
 - Die Bestellseite passt ihre Darstellung für schmale Handybildschirme an und verwendet ein **responsives Layout**. Versuchen Sie das Layout so umzusetzen, wie es in der Designskizze dargestellt ist. 
 
