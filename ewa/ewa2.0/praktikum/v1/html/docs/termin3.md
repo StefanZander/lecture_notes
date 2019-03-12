@@ -28,31 +28,31 @@ In dieser Einheit geht es um die Implementierung der Logik zur **Client-seitigen
 
 ### Implementierung von Bestellfunktionalität mittels JavaScript
 
-1. Einsatzbereiche für ECMAScript im Pizzaservice/Webshop:
-    - Klick auf ein Pizzabild trägt diese Pizza in den Warenkorb (Liste) ein;  
+1. Einsatzbereiche für ECMAScript im Pizzaservice/Webshop:
+    - Klick auf ein Pizzabild trägt diese Pizza in den Warenkorb (Liste) ein;  
         bspw. 3 Pizzen bestellen --> 3-mal klicken
-    - Möglichkeit zum Löschen der Einträge im Warenkorb 
-        1. sowohl "Alle löschen" als auch 
-        2. "(Mehrfach-)Auswahl löschen"
+    - Möglichkeit zum Löschen der Einträge im Warenkorb 
+        1. sowohl "Alle löschen" als auch 
+        2. "(Mehrfach-)Auswahl löschen"
     - Bestellung wird nur abgeschickt, wenn eine Lieferadresse angegeben ist
-    - Deaktivierung des Bestellknopfes bei unvollständigen Daten
+    - Deaktivierung des Bestellknopfes bei unvollständigen Daten
     - Berechnung des Preises
-    - bei Bäcker und Fahrer: Klick auf Radio-Button in der Statusliste sendet Statusänderung
+    - bei Bäcker und Fahrer: Klick auf Radio-Button in der Statusliste sendet Statusänderung
 
     !!! note
         **Hinweise**:
 
-        - Verwenden Sie nur DOM-konforme Attribute und Funktionen und keine browserspezifischen Spezialitäten (Vorsicht mit Vorlagen aus dem Netz !)
+        - Verwenden Sie nur DOM-konforme Attribute und Funktionen und keine browserspezifischen Spezialitäten (Vorsicht mit Vorlagen aus dem Netz !)
         - Verwenden Sie `"use strict";` in allen Funktionen
         - Testen Sie die Skripte mit unterschiedlichen Browsern und Lint-Tools
 
     !!! note
         **Bei Problemen mit DOM oder ECMAScript**:
         
-        - Prüfen Sie die Browser-Konsole auf Fehlermeldungen (Aufruf mit F12)
-        - Nutzen Sie den DOM-Inspector und den Befehl "Inspect" im rechten   Mausmenü um das DOM zu einem Tag anzuschauen
+        - Prüfen Sie die Browser-Konsole auf Fehlermeldungen (Aufruf mit F12)
+        - Nutzen Sie den DOM-Inspector und den Befehl "Inspect" im rechten   Mausmenü um das DOM zu einem Tag anzuschauen
         - Achten Sie auf Groß-Klein-Schreibung bei DOM-Aufrufen
-        - Prüfen Sie Ihr ECMAScript mit [JSLint](http://www.jslint.com) oder [ESLint für ECMAScript 6](http://eslint.org/demo/)
+        - Prüfen Sie Ihr ECMAScript mit [JSLint](http://www.jslint.com) oder [ESLint für ECMAScript 6](http://eslint.org/demo/)
 
 
 ---

@@ -18,22 +18,22 @@ Der Pizzaservice bzw. Webshop soll die folgenden **technischen Eigenschaften** a
 
 - Apache Webserver
 - Dynamische Seitengenerierung mit PHP
-- Anbindung einer MySQL-Datenbank
+- Anbindung einer MariaDB-Datenbank
 - Nutzung der Seiten- und Blockklassenarchitektur
 - Generierung von JSON-Daten
 
 Der Schwerpunkt liegt vor allem auf einer **Software-technisch sauberen Umsetzung**. 
 <!-- ==**professioneller Webentwicklung!**== -->
 
-Wichtig hierbei ist **Standardkonformität**, **Barrierefreiheit**, **Responsivität**, **Trennung der Verantwortlichkeiten** (*engl. "Separation of Concerns"*), **Tests** und die Einhaltung der bewährten Regeln **guter Softwaretechnik**. 
+Wichtig hierbei ist **Standardkonformität**, **Barrierefreiheit**, **Responsivität**, **Trennung der Verantwortlichkeiten** (*engl. "Separation of Concerns"*) und die Einhaltung der bewährten Regeln **guter Softwaretechnik**. 
 
 Es geht in EWA *nicht* um Homepage-Bastelei oder die Verwendung von "Fertigteilen"!
 
 !!! warning
-    Nicht die Funktionalität steht im Vordergrund, sondern die **Integration** der verschiedenen Techniken und die **Methodik** der Vorgehensweise.
+    Nicht die Funktionalität steht im Vordergrund, sondern die **Integration** der verschiedenen Techniken und die **Methodik** der Vorgehensweise.
 
 !!! warning
-    Die reine Umsetzung der Funktionalität des Shopsystems reicht *nicht* für die Abnahme! Die **objektorientierte Umsetzung** mit **Seitenklassen** ist ein Pflichtbestandteil!
+    Die reine Umsetzung der Funktionalität des Shopsystems reicht *nicht* für die Abnahme! Die **objektorientierte Umsetzung** mit **Seitenklassen** ist ein Pflichtbestandteil!
 
 
 ## Beispiele
@@ -42,13 +42,13 @@ Es geht in EWA *nicht* um Homepage-Bastelei oder die Verwendung von "Fertigteile
 
 Eine Studierendenlösung aus dem SoSe2018
 
-![](./figures/pizzaservice/übersicht.png)*Übersichtsseite*
+![](./figures/pizzaservice/uebersicht.png)*Übersichtsseite*
 
 ![](./figures/pizzaservice/bestellung.png)*Bestellseite*
 
 ![](./figures/pizzaservice/kunde.png)*Übersichtsseite beim Kunden*
 
-![](./figures/pizzaservice/bäcker.png)*Bäckerseite*
+![](./figures/pizzaservice/baecker.png)*Bäckerseite*
 
 ![](./figures/pizzaservice/fahrer.png)*Fahrerseite*
 

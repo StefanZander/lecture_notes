@@ -5,8 +5,8 @@
 !!! abstract
     **Lernziele**
 
-    - [x] Sie können einen Webserver installieren und Ihre Shopseiten dort deployen
-    <!-- - [x] Sie können ersten PHP-Code schreiben um damit HTML-Code zu erzeugen -->
+    - [x] Sie können einen Webserver installieren und Ihre Shopseiten dort deployen
+    <!-- - [x] Sie können ersten PHP-Code schreiben um damit HTML-Code zu erzeugen -->
     - [x] Sie können den HTML-Code Ihres Shopsystems mittels PHP erzeugen
     - [x] Sie verstehen die grundlegende Funktionsweise der dynamischen Seitengenerierung
 
@@ -14,7 +14,7 @@
 In dieser Einheit geht es darum, sich mit den Grundprinzipien der **dynamischen Seitengenerierung mittels PHP** und der zugrunde liegenden **technischen Infrastruktur** (Webserver, Datenbankserver, etc.) auseinander zu setzen.
 
 <!-- !!! note
-    **Hinweis #1:** Wenn Sie zum Testen und Debuggen Ihr eigenes Handy verwenden wollen, bringen Sie bitte ein passendes USB-Kabel mit. Im Normalfall ist das Kabel des Ladegeräts dazu geeignet. Verbinden Sie das Handy via USB-Kabel mit dem Entwicklungs-PC (Ihr Notebook oder der Labor-PC), schalten Sie das Handy ein, aktivieren Sie Entwickleroptionen und darin USB-Debugging. -->
+    **Hinweis #1:** Wenn Sie zum Testen und Debuggen Ihr eigenes Handy verwenden wollen, bringen Sie bitte ein passendes USB-Kabel mit. Im Normalfall ist das Kabel des Ladegeräts dazu geeignet. Verbinden Sie das Handy via USB-Kabel mit dem Entwicklungs-PC (Ihr Notebook oder der Labor-PC), schalten Sie das Handy ein, aktivieren Sie Entwickleroptionen und darin USB-Debugging. -->
 
 ## Vorbereitung
 1. Lesen Sie sich einmal die **kompletten Praktikumsaufgaben** durch, um einen Eindruck davon zu bekommen, was Sie im Laufe des Semesters erwartet und welche Arbeiten für eine **erfolgreiche Testierung** notwendig sind.
