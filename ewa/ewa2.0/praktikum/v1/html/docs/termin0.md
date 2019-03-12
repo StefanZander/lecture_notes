@@ -68,7 +68,9 @@
     - Tragen Sie Beispieldaten ein – so dass klar ist, was später generiert werden muss 
     - Trennen Sie statische und generierte Daten voneinander
 
-3. 
+3. Sorgen Sie dafür, dass die Fahrerseite und die Bäckerseite abgeschickt werden, wenn ein Radiobutton angeklickt wird. Dazu geben Sie dem &lt;form&gt;, das die Radiobuttons umschließt, eine ID (z.B. `:::html <form id="formid">`) und verwenden diese ID bei den Radiobuttons um das Formular beim Anklicken abzuschicken: 
+`:::html <input type="radio" name=... 	onclick="document.forms['formid'].submit();" />`
+{==Alternativlösung==}{>>Wir könnten auch temporär einen Submit-Button fordern (und später in der JS-Übung ersetzen lassen!?)<<}
 
 ### Überprüfung der Ergebnisse
 1. {==Bilder der HTML-Seiten==}{>>Hier fehlen mir die Bilder der reinen HTML-Seiten. Ansonsten wüsste ich als Studi nicht wirklich was ich tun soll und was nicht!<<}
@@ -78,9 +80,10 @@
     Nutzen Sie 
 
       1. <https://validator.w3.org/#validate_by_input> oder <https://html5.validator.nu/>
-      2. HTML-Lint <http://www.htmllint.net/en/html-lint/htmllint.html>
+      2. HTML-Lint <http://www.htmllint.net/en/html-lint/htmllint.html> {==Lint??==}{>>Strenger und genauer - aber für die Vorbereitung?? Eventuell Lint erst in der 1. Übung fordern!?!?)<<}
 
 4. Korrigieren Sie etwaige Fehler und Warnungen.
+{==Abschicken eines Arrays mit Pizzen==}{>>Bisher habe ich immer geprüft, ob die Studis die eckigen Klammern hinter dem name-Attribut für die Bestellung haben. Wenn das fehlt, sucht man in PHP bis zur Verzweiflung! Wie könnten wir das prüfen?)<<}
 
 ## Ergebnisse
 
