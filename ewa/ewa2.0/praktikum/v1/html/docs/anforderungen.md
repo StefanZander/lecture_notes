@@ -22,19 +22,17 @@ Die **Abnahme** erfolgt auf Ihren Laptops oder den Laborrechnern mit **mindesten
 
 Für die PHP-Entwicklung müssen **Seiten-Templates** (--> siehe [Termin 2: PHP – Seitenklassen, Datenbankzugriff, Sessionmanagement und Sicherheit](termin2.md)) verwendet werden, die vorgegeben und über den [EWA-Moodlekurs](https://lernen.h-da.de/course/view.php?id=6940) herunterladbar sind.
 
-## Designskizze
+## Funktion der einzelnen Seiten
 
 Die folgende Designskizze zeigt grob den erwarteten Inhalt und die Bedienelemente der zu entwickelnden Webseiten. Es sollen 4 getrennte Seiten entwickelt werden: `Bestellung`, `Pizzabäcker`, `Bestellstatus` und `Fahrer`.  
 ![](./figures/pizzaservice/SkizzePizzaservice.png)*Designskizze - nur Funktionen, kein Layout)*
-
-## Anforderungen des Auftraggebers an die einzelnen Seiten
 
 - **Pizzabestellung**
 
     Hier kann der Kunde seine Pizzen aus der Speisekarte auswählen und in einen
     Warenkorb übernehmen. 
 
-    Es wird der Preis der Bestellung angezeigt und es muss eine Lieferadresse angegeben werden.
+    Es wird der Preis der Bestellung angezeigt und es kann eine Lieferadresse angegeben werden.
 
 - **Bestellstatus** (=Kundenseite)
 
@@ -46,34 +44,33 @@ Die folgende Designskizze zeigt grob den erwarteten Inhalt und die Bedienelement
 
     Hier werden die bestellten Pizzen angezeigt. Der Pizzabäcker kann den Status für jede Pizza von "`bestellt`" auf "`im Ofen`" bzw. "`fertig`" setzen. 
     
-    übernimmt der Fahrer eine Pizza, so verschwindet sie aus der Liste.
+    übernimmt der Fahrer eine Pizza, so verschwindet sie aus der Liste des Bäckers.
 
 - **Fahrer**
 
-    Hier werden Bestellungen mit den einzelnen Pizzen, Preis und Adresse angezeigt. Der Fahrer kann den Status der Lieferungen verändern.      
-    Eine Lieferung ist entweder "`fertig`", "`unterwegs`" oder "`geliefert`".  
-    Lieferungen tauchen erst beim Fahrer auf, wenn alle zugehörigen Pizzen fertig sind.      
+    Hier werden Bestellungen mit den einzelnen Pizzen, Preis und Lieferadresse angezeigt. Der Fahrer kann den Status der Lieferungen verändern. Eine Lieferung ist entweder "`fertig`", "`unterwegs`" oder "`geliefert`".  
+    Bestellungen tauchen erst beim Fahrer auf, wenn alle zugehörigen Pizzen fertig sind.      
     Ausgelieferte Bestellungen verschwinden aus der Liste.
 
 ## Sonstige Anforderungen
 
 - Es werden nur Bestellungen akzeptiert, die mindestens einen Artikel enthalten und bei denen die Lieferadresse nicht leer ist.
 
-- Das Einfügen einer Pizza in den Warenkorb soll über einen Mausklick auf das Pizzasymbol in der Speisekarte erfolgen
+- Das Einfügen einer Pizza in den Warenkorb soll über einen Klick auf das Pizzasymbol in der Speisekarte erfolgen
 
 - Im Warenkorb können mehrere Pizzen ausgewählt und gelöscht werden, oder auch alle Pizzen auf einmal.
 
 - Die Seiten `Pizzabäcker`, `Bestellstatus` und `Fahrer` sollen sich **automatisch aktualisieren**.  
 
-- ~~Die Speisekarte kann um weitere Pizzen erweitert werden. Die Preisberechnungen ändern sich dann (ohne Neuprogrammierung)~~ {==TODO: Was ist das Problem damit? ==}Wenn eine neu angebotene Pizza in die Datenbank eingetragen wird, so wird diese nach dem Neuladen der Bestellseite angezeigt und die Preisberechnung des Warenkorbs funktioniert ohne Änderungen am Code.
+- ~~Die Speisekarte kann um weitere Pizzen erweitert werden. Die Preisberechnungen ändern sich dann (ohne Neuprogrammierung)~~ {==TODO: Was ist das Problem damit? Alternativvorschlag: ==}Wenn eine neue Pizza in die Datenbank mit den angebotenen Pizzen eingetragen wird, so wird diese nach dem Neuladen der Bestellseite angezeigt und die Preisberechnung des Warenkorbs funktioniert ohne Änderungen am Code.
   
-- Es gibt zu **Testzwecken** eine weitere Webseite `übersicht`, welche (für einfache Tests) Links zu den 4 Webseiten beinhaltet.  
-
 - Die Bestellseite passt ihre Darstellung für schmale Handybildschirme an und verwendet ein **responsives Layout**. Versuchen Sie das Layout so umzusetzen, wie es in der Designskizze dargestellt ist. 
+
+- Es gibt zu **Testzwecken** eine weitere Webseite `übersicht`, welche (für einfache Tests) Links zu den 4 Webseiten beinhaltet.
 
     !!! note
         **Hinweis**:  
-        Alternativ können Sie auch eine **Navigationsleiste** bzw. ein **Navigationsmenu** in die Web-Applikation integrieren, dann brauchen Sie *keine* Übersichtsseite zu implementieren.
+        Alternativ können Sie auch eine **Navigationsleiste** bzw. ein **Navigationsmenu** in die Web-Applikation integrieren, dann müssen Sie *keine* separate Übersichtsseite implementieren. Achten Sie aber bitte darauf, dass man diese Leiste bequem entfernen kann - sie soll nämlich nicht ausgeliefert werden.
 
 
 
