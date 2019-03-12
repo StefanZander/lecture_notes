@@ -23,19 +23,19 @@ Ziel dieser Einheit ist die Entwicklung eines **Design Schemas** für Ihre Web-A
 ## Aufgaben
 
 ### Entwicklung eines Design-Schemas
-1. Entwickeln Sie ein **gemeinsames Style Sheet** für Ihre Web-Applikation und binden Sie es in alle HTML-Seiten ein
-    - Überlegen Sie sich zu diesem Zweck ein **Design-Schema** mit Farben, Schriftarten, Schriftgrößen, Abstände, Ränder, Ausrichtung, etc.
+1. Entwickeln Sie ein **gemeinsames Style Sheet** für Ihre Web-Applikation und binden Sie es in alle HTML-Seiten ein
+    - Überlegen Sie sich zu diesem Zweck ein **Design-Schema** mit Farben, Schriftarten, Schriftgrößen, Abstände, Ränder, Ausrichtung, etc.
     - Verwenden Sie *keine* physische Formatierung in HTML
     - Verwenden Sie *kein* `style`-Attribut
-    - Setzen Sie die verschiedenen Maßeinheiten sinnvoll ein. Das Layout soll hinsichtlich Fenstergröße und Schriftgröße dynamisch sein!
+    - Setzen Sie die verschiedenen Maßeinheiten sinnvoll ein. Das Layout soll hinsichtlich Fenstergröße und Schriftgröße dynamisch sein!
     - Verwenden Sie *keine* Tabellen!
 
 ### Responsives Layout und Mobile-First-Ansatz
 
 Realisieren Sie die Darstellung der Seite `Bestellung.php` nach dem **Mobile-First-Ansatz**.
 
-1. Entwickeln bzw. erweitern Sie das gegebene Stylesheet für den Einsatz auf Mobiltelefonen durch die Verwendung von **Media Queries**
-2. Passen Sie die Komposition der Elemente dynamisch der entspr. **Viewportgröße** und **Orientierung** an
+1. Entwickeln bzw. erweitern Sie das gegebene Stylesheet für den Einsatz auf Mobiltelefonen durch die Verwendung von **Media Queries**
+2. Passen Sie die Komposition der Elemente dynamisch der entspr. **Viewportgröße** und **Orientierung** an
 3. Testen Sie die Darstellung mit den Web Developer Tools und auf einem Mobiltelefon
 
 
