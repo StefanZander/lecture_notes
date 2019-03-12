@@ -16,7 +16,7 @@
 ## Aufgaben
 
 !!! note
-    **Hinweis**: Es wird erwartet, dass jede\(r\) Studierende diese Aufgaben selbständig und vollständig **vor dem Praktikumstermin** erledigt! 
+    **Hinweis**: Es wird erwartet, dass jede\(r\) Studierende diese Aufgaben selbständig und vollständig **vor dem ersten Praktikumstermin** erledigt! 
 
 ### Einarbeitung 
 

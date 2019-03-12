@@ -1,5 +1,5 @@
 <!-- # Erstellung des Seitengrundgerüsts mittels PHP -->
-# PHP: Web-Server Setup und dynamische Seitengenerierung
+# PHP: Webserver Setup und dynamische Seitengenerierung
 
 
 !!! abstract

@@ -1,4 +1,4 @@
-# Semesterthema Web-basierter Pizzaservice bzw. Onlineshop
+# Semesterthema webbasierter Pizzaservice bzw. Onlineshop
 
 
 ## Vorbemerkungen

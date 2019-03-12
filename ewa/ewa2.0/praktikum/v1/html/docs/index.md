@@ -7,12 +7,12 @@ Auf den folgenden Seiten finden Sie die **Aufgaben** der jeweiligen Praktikumsei
 ## Allgemeine Informationen
 
 * [Vorbemerkung zum Praktikum](vorbemerkung.md)
-* [Anforderungen an die zu entwickelnde Web-Applikation](anforderungen.md)
+* [Anforderungen an die zu entwickelnde Webanwendung](anforderungen.md)
 
 ## Einheiten
 
 * [Termin 0: Statisches HTML und Anforderungsanalyse (--> zu Hause)](termin0.md)
-* [Termin 1: PHP - Web-Server Setup und dynamische Seitengenerierung](termin1.md)
+* [Termin 1: PHP - Webserver Setup und dynamische Seitengenerierung](termin1.md)
 * [Termin 2: PHP - Seitenklassen, Datenbankzugriff, Sessionmanagement und Sicherheit](termin2.md)
 * [Termin 3: Client-seitige Interaktion mit JavaScript, AJAX und JSON](termin3.md)
 * [Termin 4: Responsives Webdesign mit CSS3 und Media Queries](termin4.md)
