@@ -24,6 +24,7 @@ Für die PHP-Entwicklung müssen **Seiten-Templates** (--> siehe [Termin 2: PHP 
 
 ## Funktion der einzelnen Seiten
 
+<!-- ![](./figures/designskizze.png)*Konzeptionelle Darstellung der vier Web-Seiten des Pizzaservice bzw. Onlineshops* -->
 Die folgende Designskizze zeigt grob den erwarteten Inhalt und die Bedienelemente der zu entwickelnden Webseiten. Es sollen 4 getrennte Seiten entwickelt werden: `Bestellung`, `Pizzabäcker`, `Bestellstatus` und `Fahrer`.  
 ![](./figures/pizzaservice/SkizzePizzaservice.png)*Designskizze - nur Funktionen, kein Layout)*
 
@@ -54,6 +55,7 @@ Die folgende Designskizze zeigt grob den erwarteten Inhalt und die Bedienelement
 
 ## Sonstige Anforderungen
 
+<!-- - ~~Die Speisekarte kann um weitere Pizzen erweitert werden. Die Preisberechnungen ändern sich dann (ohne Neuprogrammierung)~~ -->
 - Es werden nur Bestellungen akzeptiert, die mindestens einen Artikel enthalten und bei denen die Lieferadresse nicht leer ist.
 
 - Das Einfügen einer Pizza in den Warenkorb soll über einen Klick auf das Pizzasymbol in der Speisekarte erfolgen
@@ -72,6 +74,7 @@ Die folgende Designskizze zeigt grob den erwarteten Inhalt und die Bedienelement
         **Hinweis**:  
         Alternativ können Sie auch eine **Navigationsleiste** bzw. ein **Navigationsmenu** in die Web-Applikation integrieren, dann müssen Sie *keine* separate Übersichtsseite implementieren. Achten Sie aber bitte darauf, dass man diese Leiste bequem entfernen kann - sie soll nämlich nicht ausgeliefert werden.
 
+<!-- - ~~Tests sollen so klar formuliert sein, dass sie **automatisiert** laufen könnten {>>Müssen wir noch genauer diskutieren!<<}~~ -->
 
 
 

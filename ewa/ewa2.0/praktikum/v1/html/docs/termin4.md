@@ -14,10 +14,10 @@ Ziel dieser Einheit ist die Entwicklung eines **Design Schemas** für Ihre Web-A
     **Hinweis #1**: Sie können für das Design Ihres Shopsystems gerne ein CSS-Framework wie [Bootstrap](https://getbootstrap.com/) verwenden. Bitte beachten Sie jedoch, dass Sie in der Klausur *nicht* auf Bootstrap zurück greifen dürfen und stattdessen die CSS-Stilregeln "von Hand" erstellen müssen.
 
 !!! note
-    **Hinweis #2**: Sie können die Aufgaben von [Termin 4](termin4.md) parallel und iterativ-inkrementell zu den anderen Terminen durchführen.
+    **Hinweis #2**: Die Aufgaben von [Termin 4](termin4.md) können parallel und iterativ-inkrementell zu den anderen Terminen durchführen werden.
 
 !!! warning
-    **Wichtig**: [Termin 4](termin4.md) wird vermutlich nicht die gesamte Praktikumseinheit ausfüllen; nutzen Sie die restliche Zeit deshalb insbesondere zur Bearbeitung etwaiger offener Punkte aus den vorherigen Terminen oder zur Vorbereitung der Abnahme. 
+    **Wichtig**: Die Umsetzung der Aufgaben von [Termin 4](termin4.md) wird vermutlich nicht die gesamte Praktikumseinheit ausfüllen. Nutzen Sie deshalb die restliche Zeit insbesondere zur Bearbeitung etwaiger offener Punkte aus den vorherigen Terminen bzw. der Fertigstellung der Applikation. 
 
 
 ## Aufgaben
