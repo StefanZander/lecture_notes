@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8" />
+    <!-- für später: CSS include -->
+    <!-- <link rel="stylesheet" href="XXX.css"> -->
+    <!-- für später: JavaScript include -->
+    <!-- <script src="XXX.js"></script> -->
+    <title>Pizzaservice</title>
+    </head>
+
+<body>
+    <section class="Bestellseite">
+        <h1>Bestellung</h1>
+        <article class="Speisekarte">
+            <h2>Speisekarte</h2>
+            <table class="left">
+                <tr>
+                    <td><img src="Pizza.gif" class="pizza" alt="" /></td>
+                    <td class="l">Margherita</td>
+                    <td class="r">4.00 €</td>
+                </tr>
+
+                <tr>
+                    <td><img src="Pizza.gif" class="pizza" alt="" /></td>
+                    <td class="l">Salami</td>
+                    <td class="r">4.50 €</td>
+                </tr>
+
+                <tr>
+                    <td><img src="Pizza.gif" class="pizza" alt="" /></td>
+                    <td class="l">Hawaii</td>
+                    <td class="r">5.50 €</td>
+                </tr>
+            </table>
+        </article>
+
+        <!-- *********************************************************** -->
+        <article class="Warenkorb">
+            <h2>Warenkorb</h2>
+            <form id="f1" action="https://echo.fbi.h-da.de/" method="get">
+                <p><select class="full" name="Bestellliste[]" multiple="multiple" size="7" tabindex="0" id="PizzaListe">
+                        <option selected>Salami</option>
+                        <option>Hawaii</option>
+                        <option>Salami</option>
+                    </select></p>
+
+                <p class="r"> <span id="Summe">14.50</span>&nbsp;€</p>
+                <div class="c">
+                    <input class="full" type="text" name="adresse" size="20" maxlength="30" value="" placeholder="Ihre Adresse" /> <br />
+                    <input type="reset" value="Alle Löschen"/>
+                    <!-- onclick="DeleteAll()" -->
+                    <input type="button" value="Auswahl Löschen"/>
+                    <!-- onclick="DeleteSelected()" -->
+                    <input type="submit" value="Bestellen"/>
+                    <!-- onclick="CheckSelected()" -->
+
+                </div>
+            </form>
+        </article>
+    </section>
+</body>
+
+</html>
