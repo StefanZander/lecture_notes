@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <!-- für später: CSS include -->
-    <!-- <link rel="stylesheet" href="XXX.css"> -->
+    <link rel="stylesheet" href="Pizzaaaa.css"/>
     <!-- für später: JavaScript include -->
     <!-- <script src="XXX.js"></script> -->
     <title>Pizzaservice</title>
@@ -15,32 +15,28 @@
         <h1>Bestellung</h1>
         <article class="Speisekarte">
             <h2>Speisekarte</h2>
-            <table class="left">
-                <tr>
-                    <td><img src="Pizza.gif" class="pizza" alt="" /></td>
-                    <td class="l">Margherita</td>
-                    <td class="r">4.00 €</td>
-                </tr>
-
-                <tr>
-                    <td><img src="Pizza.gif" class="pizza" alt="" /></td>
-                    <td class="l">Salami</td>
-                    <td class="r">4.50 €</td>
-                </tr>
-
-                <tr>
-                    <td><img src="Pizza.gif" class="pizza" alt="" /></td>
-                    <td class="l">Hawaii</td>
-                    <td class="r">5.50 €</td>
-                </tr>
-            </table>
-        </article>
+                <div class="speisekartenZeile">
+                        <img src="Pizza.gif" class="pizzabild" alt="" />
+                        <p class="pizzaname">Margherita</p>
+                        <p class="pizzapreis">4.00 €</p>
+                </div>
+                <div class="speisekartenZeile">
+                    <img src="Pizza.gif" class="pizzabild" alt="" />
+                    <p class="pizzaname">Salami</p>
+                    <p class="pizzapreis">4.50 €</p>
+                </div>
+                <div class="speisekartenZeile">
+                    <img src="Pizza.gif" class="pizzabild" alt="" />
+                    <p class="pizzaname">Hawaii</p>
+                    <p class="pizzapreis">5.50 €</p>
+                </div>
+         </article>
 
         <!-- *********************************************************** -->
         <article class="Warenkorb">
             <h2>Warenkorb</h2>
             <form id="f1" action="https://echo.fbi.h-da.de/" method="get">
-                <p><select class="full" name="Bestellliste[]" multiple="multiple" size="7" tabindex="0" id="PizzaListe">
+                <p><select name="Bestellliste[]" multiple="multiple" size="7" tabindex="0" id="PizzaListe">
                         <option selected>Salami</option>
                         <option>Hawaii</option>
                         <option>Salami</option>
@@ -55,7 +51,6 @@
                     <!-- onclick="DeleteSelected()" -->
                     <input type="submit" value="Bestellen"/>
                     <!-- onclick="CheckSelected()" -->
-
                 </div>
             </form>
         </article>

@@ -26,7 +26,7 @@ Für die PHP-Entwicklung müssen **Seiten-Templates** (--> siehe [Termin 2: PHP 
 
 <!-- ![](./figures/designskizze.png)*Konzeptionelle Darstellung der vier Web-Seiten des Pizzaservice bzw. Onlineshops* -->
 Die folgende Designskizze zeigt grob den erwarteten Inhalt und die Bedienelemente der zu entwickelnden Webseiten. Es sollen 4 getrennte Seiten entwickelt werden: `Bestellung`, `Pizzabäcker`, `Bestellstatus` und `Fahrer`.  
-![](./figures/pizzaservice/SkizzePizzaservice.png)*Designskizze - nur Funktionen, kein Layout)*
+![](./figures/DesignskizzePizzaservice.png)*Designskizze - nur Funktionen, kein Layout)*
 
 - **Pizzabestellung**
 

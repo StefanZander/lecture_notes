@@ -1,0 +1,16 @@
+  * {margin:0pt; padding: 0pt; }
+  body {  color: black; background-color: lightgray; font-family: 'Times New Roman', Times, serif}
+
+  h1 {background-color: royalblue; color: white;}
+  div { 	 }
+
+  select {overflow-y: auto;}
+  option { width: 15em; }
+
+  .Speisekarte {float: left; padding: 1em; margin: 1em; background-color: lightblue;}
+  .pizzabild {width: 8em;vertical-align: middle;}
+  .pizzaname {display: inline-block; width: 8em; vertical-align: middle;}
+  .pizzapreis {display: inline-block; vertical-align: middle;}
+
+  .Warenkorb {padding: 1em; margin: 1em; }
+

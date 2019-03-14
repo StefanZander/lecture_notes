@@ -21,9 +21,10 @@
 ### Einarbeitung 
 
 1. Lesen Sie die **komplette Praktikumsaufgabe**, um einen Eindruck davon zu bekommen, was Sie im Laufe des Semesters erwartet und welche Arbeiten für eine **erfolgreiche Testierung** notwendig sind.
-2. Vergewissern Sie sich, dass Sie alle im Kapitel [Vorbemerkungen](vorbemerkung.md) genannten Informationen verstanden haben 
-3. Es wird erwartet, dass Sie HTML-Code schreiben können. Verwenden Sie z.B. die folgende [Kurzreferenz](https://websitesetup.org/HTML5-cheat-sheet.pdf) für einen schnellen Überblick über die Anweisungen.
-4. Installieren Sie einen **HTML-Editor (IDE)** Ihrer Wahl. Verwenden Sie einen Editor mit Syntax-Hervorhebung für HTML, CSS und PHP (z.B. Notepad++), in dem Sie den Code / die HTML-Tags etc. selbst erstellen können. Verwenden Sie bitte keine "Luxuseditoren", die HTML & Co. verbergen.
+2. Überlegen Sie sich, ob Sie lieber den Standard-Pizzaservice oder ein eigenes Shopsystem implementieren wollen
+3. Vergewissern Sie sich, dass Sie alle im Kapitel [Vorbemerkungen](vorbemerkung.md) genannten Informationen verstanden haben 
+4. Es wird erwartet, dass Sie HTML-Code schreiben können. Verwenden Sie z.B. die folgende [Kurzreferenz](https://websitesetup.org/HTML5-cheat-sheet.pdf) für einen schnellen Überblick über die Anweisungen.
+5. Installieren Sie einen **HTML-Editor (IDE)** Ihrer Wahl. Verwenden Sie einen Editor mit Syntax-Hervorhebung für HTML, CSS und PHP (z.B. Notepad++), in dem Sie den Code / die HTML-Tags etc. selbst erstellen können. Verwenden Sie bitte keine "Luxuseditoren", die HTML & Co. verbergen.
 
 ### Anforderungsanalyse
 
@@ -32,8 +33,12 @@
 
 ### Rohform des Shopsystems mit statischem HTML
 
-1. Realisieren Sie alle Seiten (`Bestellung`, `Kunde`, `Bäcker`, `Fahrer` (und eventuell `Übersicht`) mit **HTML5**.
-{==Hier fehlen mir die Bilder der reinen HTML-Seiten. Ansonsten wüsste ich als Studi nicht wirklich was ich tun soll und was nicht! An die Submit-Buttons für Fahrer- und Bäckerseite denken! ==}
+1. Realisieren Sie die `Bestellseite` mit **HTML5**. Da Sie noch kein CSS verwenden (sollen), sollte die Seite ungefähr so aussehen wie in der folgenden Grafik:  
+<img src="../figures/Bestellung_HTML.png" alt="" style="border: 2px solid black; display: block; margin-left: auto; margin-right: auto; width: 20em;"/>
+<!--
+![](./figures/Bestellung_HTML.png)  
+*Rohform der Bestellseite mit HTML - nur Inhalte und Bedienelemente, kein Layout)*
+-->
 2. Berücksichtigen Sie bei der Umsetzung die nachstehenden Hinweise:
     - Verwenden Sie das folgende (standardkonforme) Grundgerüst für Ihre HTML-Dateien:
   
@@ -43,7 +48,7 @@
         <head>
             <meta charset="UTF-8" />
             <!-- für später: CSS include -->
-            <!-- <link rel="stylesheet" href="XXX.css"> -->
+            <!-- <link rel="stylesheet" href="XXX.css"/> -->
             <!-- für später: JavaScript include -->
             <!-- <script src="XXX.js"></script> -->
             <title>Text des Titels</title>

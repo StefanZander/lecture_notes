@@ -25,8 +25,7 @@ In dieser Einheit geht es darum, sich mit den Grundprinzipien der **dynamischen 
         **Hinweis:**
         Notieren Sie sich die unklaren Anforderungen und besprechen Sie diese in [Einheit #1](termin1.md) mit der/dem Dozentin/en.
 
-4. Bestimmen Sie, ob Sie den Standard-Pizzaservice oder ein eigenes Shopsystem implementieren
-5. Vergewissern Sie sich, dass Ihr Laptop funktionstüchtig ist und dass Sie eine passende IDE ausgewählt haben.
+4. Vergewissern Sie sich, dass Ihr Laptop funktionstüchtig ist und dass Sie eine passende IDE ausgewählt haben.
    
 
 ## Aufgaben
