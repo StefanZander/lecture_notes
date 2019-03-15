@@ -1,65 +1,41 @@
-<!-- # Erstellung des Seitengrundgerüsts mittels PHP -->
-# PHP: Webserver Setup und dynamische Seitengenerierung
+# PHP: Webserver Setup und Seitengenerierung
 
 
 !!! abstract
     **Lernziele**
 
-    - [x] Sie können einen Webserver installieren und Ihre Shopseiten dort deployen
-    <!-- - [x] Sie können ersten PHP-Code schreiben um damit HTML-Code zu erzeugen -->
-    - [x] Sie können den HTML-Code Ihres Shopsystems mittels PHP erzeugen
-    - [x] Sie verstehen die grundlegende Funktionsweise der dynamischen Seitengenerierung
+    - [x] Sie können einen Webserver installieren und so konfigurieren, dass er Ihre Shopseiten ausliefert
+    - [x] Sie können HTML-Code mittels PHP erzeugen
+    - [x] Sie verstehen die grundlegende Funktionsweise der dynamischen Generierung von Webseiten
 
 
-In dieser Einheit geht es darum, sich mit den Grundprinzipien der **dynamischen Seitengenerierung mittels PHP** und der zugrunde liegenden **technischen Infrastruktur** (Webserver, Datenbankserver, etc.) auseinander zu setzen.
-
-<!-- !!! note
-    **Hinweis #1:** Wenn Sie zum Testen und Debuggen Ihr eigenes Handy verwenden wollen, bringen Sie bitte ein passendes USB-Kabel mit. Im Normalfall ist das Kabel des Ladegeräts dazu geeignet. Verbinden Sie das Handy via USB-Kabel mit dem Entwicklungs-PC (Ihr Notebook oder der Labor-PC), schalten Sie das Handy ein, aktivieren Sie Entwickleroptionen und darin USB-Debugging. -->
+In dieser Einheit geht es darum, sich mit den Grundprinzipien der **Seitengenerierung mittels PHP** und der zugrunde liegenden **technischen Infrastruktur** (Webserver, PHP-Interpreter, etc.) auseinander zu setzen.
 
 ## Vorbereitung
-1. Lesen Sie sich einmal die **kompletten Praktikumsaufgaben** durch, um einen Eindruck davon zu bekommen, was Sie im Laufe des Semesters erwartet und welche Arbeiten für eine **erfolgreiche Testierung** notwendig sind.
-2. Vergewissern Sie sich, dass Sie alle im Kapitel [Vorbemerkungen](vorbemerkung.md) genannten Informationen verstanden haben 
-3. Stellen Sie sicher, dass Sie alle [Anforderungen](anforderungen.md) vollständig verstanden haben.
-
-    !!! note
-        **Hinweis:**
-        Notieren Sie sich die unklaren Anforderungen und besprechen Sie diese in [Einheit #1](termin1.md) mit der/dem Dozentin/en.
-
-4. Vergewissern Sie sich, dass Ihr Laptop funktionstüchtig ist und dass Sie eine passende IDE ausgewählt haben.
-   
+1. Erledigen Sie die komplette Übung [Termin 0](termin0.md) im Selbststudium. Sie haben anschließend eine Liste mit Fragen zu unklaren Anforderungen und die Bestellseite in der HTML-Rohform.
 
 ## Aufgaben
 
-### Prüfung der Vorbereitung
-  1. {==HTML-Lint <http://www.htmllint.net/en/html-lint/htmllint.html>==}
-  2. {==Abschicken eines Arrays mit Pizzen==}{>>Bisher habe ich immer geprüft, ob die Studis die eckigen Klammern hinter dem name-Attribut für die Bestellung haben. Wenn das fehlt, sucht man in PHP bis zur Verzweiflung! Wie könnten wir das prüfen?)<<}
+### Prüfung der HTML-Rohform
+  1. Laden Sie den HTML-Code Ihrer Bestellseite hoch zu HTML-Lint (<http://www.htmllint.net/en/html-lint/htmllint.html>).
+  Analysieren Sie die Meldungen und korrigieren Sie den HTML-Code entsprechend. Versuchen Sie, alle Meldungen zu beseitigen.
+  2. Wenn Sie ein Formularelement verwenden, das mehrere Einträge übertragen kann (wie z.B. &lt;select&gt;), dann hängen Sie an das name-Attribut dieses Elements zwei Arrayklammern an [], damit die Werte als Array übertragen werden. Schicken Sie das Formular auf Ihrer Bestellseite ab an das Echo-Skript `https://echo.fbi.h-da.de/`. Zeigen Sie das Ergebnis Ihrem Betreuer.
 
 ### Installation und Konfiguration von XAMPP
-1. Laden Sie sich das **XAMPP-Installationspaket** für das Betriebssystem Ihres Laptops herunter und installieren Sie dies.
-2. Starten Sie den Webserver mittels dem **XAMPP-Dienstprogramm** 
-3. Testen Sie, durch Eingabe der **Adresse** `127.0.0.1`, ob der Webserver läuft und ob die Startseite (--> Dashboard) angezeigt wird.
-4. Lokalisieren Sie den Ordner `htdocs` innerhalb Ihres XAMPP-Installationsordners und erzeugen Sie dort ein neues **Projektverzeichnis** (bspw. `.../htdocs/pizzaservice/`) für die Quelldateien des Pizzaservice.
-5. Kopieren Sie die in [Termin 0: HTML](termin0.md) erstellten statischen **HTML-Dateien** in das neu erstellte Projektverzeichnis (legen Sie hierzu einen neuen Unterordner, bspw. `/html/` an) und überprüfen Sie im Browser, ob Sie die Dateien mittels der entsprechenden **URL** (bspw. `http://127.0.0.1/pizzaservice/html/bestellung.html`) aufrufen können.
+1. Laden Sie das **XAMPP-Installationspaket** für das Betriebssystem Ihres Laptops herunter unter [www.apachefriends.org/de](https://www.apachefriends.org/de) und installieren Sie es mit Apache, PHP und MariaDB im manuellen Modus (nicht als Service). 
+2. Öffnen Sie über das XAMPP-Dienstprogramm die Konfiguration des Apache (httpd.conf) und suchen Sie eine Zeile die mit dem Schlüsselwort `Listen` beginnt. Ersetzen Sie diese Zeile durch `Listen 127.0.0.1:80`. Dann akzeptiert Apache nur noch lokale Aufrufe und Ihr Webserver ist für andere Netzwerkadressen nicht erreichbar. 
+3. Starten Sie den Webserver mittels dem **XAMPP-Dienstprogramm**. Testen Sie, durch Eingabe der **Adresse** `127.0.0.1`, ob der Webserver läuft und ob die Startseite (--> Dashboard) angezeigt wird.
+4. Lokalisieren Sie den Ordner `htdocs` innerhalb Ihres XAMPP-Installationsordners und erzeugen Sie dort ein neues **Projektverzeichnis** (bspw. `.../htdocs/pizzaservice/`) für die Quelldateien des Pizzaservices.
+5. Kopieren Sie die als Vorbereitung erstellte Bestellseite in das neu erstellte Projektverzeichnis und überprüfen Sie im Browser, ob Sie die Dateien mittels der entsprechenden **URL** (bspw. `http://127.0.0.1/pizzaservice/bestellung.html`) aufrufen können.
 
-### Erzeugung der Seitengrundgerüste mit PHP
+### Erzeugung der HTML-Seite mit PHP
 
-1. Erstellen Sie je eine **PHP-Seite** für 
-      1. Bestellung
-      2. Kunde (--> Bestellstatus)
-      3. Bäcker
-      4. Fahrer  
+1. Erstellen Sie eine **PHP-Seite** `bestellung.php` und versuchen Sie, den für die Darstellung im Browser gewünschten **HTML-Code** der jeweiligen Seite mit PHP zu erzeugen. (Tipp: Verwenden Sie die HEREDOC-Notation).
 
-    und versuchen Sie, den für die Darstellung im Browser notwendigen **HTML-Code** (--> siehe [Termin 0: HTML und Anforderungsanalyse](termin0.md)) der jeweiligen Seite mit PHP zu erzeugen.
+2. Deployen Sie die Seite im **Projektverzeichnis** Ihrer XAMPP-Installation und stellen Sie sicher, dass die PHP-Seite korrekt aufgerufen werden kann: <http://127.0.0.1/pizzaservice/bestellung.php>
 
-2. Deployen Sie die Seiten im **Projektverzeichnis** Ihrer XAMPP-Installation und stellen Sie sicher, dass die Seiten korrekt aufgerufen werden.
-
-3. Testen Sie den generierten HTML-Code auf **Standardkonformität** mittels geeigneter HTML5-Validatoren (--> Siehe [Aufgabe #3 (Testen)](termin0.md#testen) aus Termin 0: HTML).
-
-
-### (optional) Anlegen der Datenbankstruktur mittels phpmyadmin
-
---> Siehe [Aufgabe #2 (Datenbankzugriff)](termin2.md#datenbankzugriff-mittels-mysqli) aus Termin 2: PHP – Seitenklassen und Datenbankzugriff mit MySQLi.
-
+3. Testen Sie, ob der HTML-Code korrekt erzeugt wurde, indem Sie den Quellcode aus dem Browser kopieren und mittels geeigneter HTML5-Validatoren erneut überprüfen!
+   
 
 ## Ergebnisse
 
@@ -68,8 +44,11 @@ Die folgenden Ergebnisse müssen für eine erfolgreiche Durchführung der Prakti
 !!! abstract
     __Ergebnisse:__
 
-    - [ ] Lauffähige Instanz des Apache Webservers
-    - [ ] Implementierung der Seiten `Bestellung.php`, `Kunde.php`, `Baecker.php` und `Fahrer.php`
-    - [ ] Deployment der Seiten `Bestellung.php`, `Kunde.php`, `Baecker.php` und `Fahrer.php` im `htdocs`-Order der XAMPP Installation
-    - [ ] Validierung des generierten HTML5-Codes hinsichtlich Fehlerfreiheit und Standardkonformität
-    - [ ] (optional) Aufbau und Einrichtung der MySQL-Datenbank
+    - [ ] Lauffähige Installation und Konfiguration des Apache Webservers
+    - [ ] Generierung von validen und standardkonformen HTML5-Seiten
+    - [ ] Auslieferung von dynamisch erstellten Webseiten über den Webserver und den PHP-Interpreter 
+
+
+## Nachbereitung (bis zum nächsten Praktikumstermin)
+1. Setzen Sie analog die übrigen Seiten `Bäckerseite`, `Fahrerseite` und `Kundenseite` um. Zuerst erstellen Sie die HTML-Rohform,  prüfen die Standardkonformität und die Funktion der Formulare wie oben beschrieben. Im Gegensatz zur Designskizze sollen die Fahrer- und die Bäckerseite aber bis auf Weiteres über einen Submit-Button abgeschickt werden (Später werden Sie diese Lösung mit JavaScript so anpassen, dass sie den Anforderungen entspricht).
+2. Passen Sie die Seiten so an, dass sie über den PHP-Interpreter und den Webserver ausgeliefert werden. Prüfen Sie den erzeugten HTML-Code erneut mit einem Validator.

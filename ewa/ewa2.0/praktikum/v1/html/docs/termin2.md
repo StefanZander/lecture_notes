@@ -17,7 +17,8 @@ Ziel dieser Einheit ist die Entwicklung von sauberem, d.h., gut wartbarem,  stru
 2. Die in [Termin 1: PHP – Erste Schritte](termin1.md) erstellten PHP-Seiten werden ordnungsgemäß vom Webserver ausgeliefert, d.h., diese sind unter der URL `http://127.0.0.1/...` abrufbar
 <!-- 3. Der von den PHP-Seiten erzeugte HTML-Code ist standardkonform;  -->
 3. Die Standardkonformität des von den PHP-Seiten erzeugten HTML-Codes wurde durch einen HTML5-Validator überprüft und nachgewiesen
-
+4. Anlegen der Datenbankstruktur mittels phpmyadmin
+--> Siehe [Aufgabe #2 (Datenbankzugriff)](termin2.md#datenbankzugriff-mittels-mysqli) aus Termin 2: PHP – Seitenklassen und Datenbankzugriff mit MySQLi.
 
 
 ## Aufgaben

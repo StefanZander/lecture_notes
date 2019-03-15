@@ -65,9 +65,9 @@ Die folgende Designskizze zeigt grob den erwarteten Inhalt und die Bedienelement
 
 - Wenn eine neue Pizza in die Datenbank mit den angebotenen Pizzen eingetragen wird, so wird diese nach dem Neuladen der Bestellseite angezeigt und die Preisberechnung des Warenkorbs funktioniert ohne Änderungen am Code.
   
-- Die Bestellseite passt ihre Darstellung für schmale Handybildschirme an und verwendet ein **responsives Layout**. Versuchen Sie das Layout so umzusetzen, wie es in der Designskizze dargestellt ist. 
+- Die Bestellseite passt ihre Darstellung für schmale Handybildschirme an und verwendet ein **responsives Layout**. {++Was heißt das konkret?++} Versuchen Sie das Layout so umzusetzen, wie es in der Designskizze dargestellt ist. 
 
-- Es gibt zu **Testzwecken** eine weitere Webseite `übersicht`, welche (für einfache Tests) Links zu den 4 Webseiten beinhaltet.
+- Es gibt zu **Testzwecken** eine weitere Webseite `Übersicht`, welche (für einfache Tests) Links zu den 4 Webseiten beinhaltet.
 
     !!! note
         **Hinweis**:  
