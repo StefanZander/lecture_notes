@@ -73,7 +73,7 @@ Nutzen Sie <https://validator.w3.org/#validate_by_input> oder <https://html5.val
 2. Schicken Sie das Formular ab an das Echo-Skript `https://echo.fbi.h-da.de/` oder nutzen Sie einen HTTP-Traffic–Analyzer-Dienst wie `https://pipedream.com/`. Analysieren Sie die übertragenen Daten hinsichtlich Korrektheit und Vollständigkeit.
 
     !!! note
-        **Hinweis**: Bedenken Sie, dass ein Formular nur Daten für Formularelemente überträgt, die ein "name"-Attribut haben! Üblicherweise befinden sich die Formularelemente innerhalb des &lt;form&gt;s.
+        **Hinweis**: Bedenken Sie, dass ein Formular nur Daten für Formularelemente überträgt, die ein `name`-Attribut haben! Üblicherweise befinden sich die Formularelemente innerhalb des `<form>`s.
 
 ## Ergebnisse
 
