@@ -12,7 +12,7 @@ Der Pizzaservice bzw. Webshop soll die folgenden **technischen Eigenschaften** a
 - Responsive Webseiten mit HTML und CSS
 - Nutzereingaben mittels Formularen
 - Client-seitige Interaktion mit JavaScript
-- Echtzeitaktualisierung von Statusinformationen mittels AJAX und JSON
+- {--Echtzeita--} Aktualisierung von Statusinformationen mittels AJAX und JSON
 
 **Serverseitig**:
 
@@ -35,6 +35,8 @@ Es geht in EWA *nicht* um Homepage-Bastelei oder die Verwendung von "Fertigteile
 !!! warning
     Die reine Umsetzung der Funktionalität des Shopsystems reicht *nicht* für die Abnahme! Die **objektorientierte Umsetzung** mit **Seitenklassen** ist ein Pflichtbestandteil!
 
+!!! warning
+    Die Aufgabe muss mit den in der Veranstaltung behandelten (grundlegenden) Techniken gelöst werden! **Der Einsatz von Frameworks wie bspw.&nbsp;jQuery oder Bootstrap ist nicht gestattet!** 
 
 ## Beispiele
 

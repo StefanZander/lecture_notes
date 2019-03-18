@@ -11,7 +11,7 @@
 - Stellen Sie vor Beginn (!) der Übung sicher, dass Ihre Applikation {--inkl. der Testfälle--} vollständig und funktionstüchtig ist. Gehen Sie *vor* Beginn der Übung die [Checkliste](termin5.md#checkliste-fur-die-abnahme) durch und stellen Sie sicher, dass alle Punkte erfüllt sind.
 - Sehen Sie auch nochmal im Kapitel [Anforderungen an die zu entwickelnde Web-Applikation](anforderungen.md) nach, dass Sie keine Anforderung vergessen oder übersehen haben!
 - Die Abnahme findet an einem Ihrer Entwicklungsrechner statt. Stellen Sie sicher, dass sich darauf 2 unterschiedliche Browser und der konfigurierte Webserver befinden. 
-- {--Mock-ups werden nicht akzeptiert --}
+{--Mock-ups werden nicht akzeptiert --}
 
 
 ### Bei der Abnahme...
