@@ -1,23 +1,24 @@
 # Anforderungsanalyse und Selbststudium von HTML (--> zu Hause)
 
-!!! abstract
+!!! note
     **Lernziele**
 
-    - [x] Sie verstehen sämtliche Anforderungen an das Shopsystem (Pizzaservice o.ä.) bzw. haben Ungereimtheiten und Inkonsistenzen mit der/dem Dozenten/in geklärt
-    - [x] Sie können einfache, statische HTML Seiten erstellen
-    - [x] Sie verstehen die Grundstruktur einer HTML Seite
-    - [x] Sie kennen die wichtigsten Elemente und die Funktionsweise von Formularen
+    - [ ] Sie verstehen sämtliche Anforderungen an das Shopsystem (Pizzaservice o.ä.) bzw. haben Ungereimtheiten und Inkonsistenzen zur Klärung mit der/dem Dozenten/in dokumentiert
+    - [ ] Sie können statische HTML Seiten erstellen
+    - [ ] Sie verstehen die Grundstruktur einer HTML Seite
+    - [ ] Sie kennen die wichtigsten Elemente und die Funktionsweise von Formularen
+
+!!! warning
+    **Selbständige Vorbereitung:**     
+    Es wird erwartet, dass *jede\(r\) Studierende* diese Aufgaben selbständig und vollständig **vor dem ersten Praktikumstermin** erledigt! 
 
 ## Aufgaben
-
-!!! note
-    **Hinweis**: Es wird erwartet, dass jede\(r\) Studierende diese Aufgaben selbständig und vollständig **vor dem ersten Praktikumstermin** erledigt! 
 
 ### Einarbeitung 
 
 1. Lesen Sie die **komplette Praktikumsaufgabe**, um einen Eindruck davon zu bekommen, was Sie im Laufe des Semesters erwartet und welche Arbeiten für eine **erfolgreiche Testierung** notwendig sind.
 2. Vergewissern Sie sich, dass Sie alle im Kapitel [Vorbemerkungen](vorbemerkung.md) genannten Informationen verstanden haben 
-3. Es wird erwartet, dass Sie HTML-Code schreiben können. Verwenden Sie z.B. die folgende [Kurzreferenz](https://websitesetup.org/HTML5-cheat-sheet.pdf) für einen schnellen Überblick über die Anweisungen.
+3. Es wird erwartet, dass Sie auch ohne nennenswertes Vorwissen HTML-Code schreiben können. Verwenden Sie z.B. die folgende [Kurzreferenz](https://websitesetup.org/HTML5-cheat-sheet.pdf) für einen schnellen Überblick über die Anweisungen.
 4. Installieren Sie einen **HTML-Editor (IDE)** Ihrer Wahl. Verwenden Sie einen Editor mit Syntax-Hervorhebung für HTML, CSS und PHP (z.B. Notepad++), in dem Sie den Code / die HTML-Tags etc. selbst erstellen können. Verwenden Sie bitte keine "Luxuseditoren", die HTML & Co. verbergen.
 
 ### Anforderungsanalyse
@@ -26,7 +27,7 @@
 2. Dokumentieren Sie offene Punkte zur Klärung.
 3. Überlegen Sie sich, ob Sie lieber den Standard-Pizzaservice oder ein eigenes Shopsystem implementieren wollen
 
-### Rohform des Shopsystems mit statischem HTML
+### Rohform der Bestellseite mit statischem HTML
 
 1. Realisieren Sie die `Bestellseite` mit **HTML5** (Die übrigen Seiten müssen Sie noch nicht implementieren). Da Sie noch kein CSS verwenden (sollen), sollte die Seite ungefähr so aussehen wie in der folgenden Grafik:  
 <img src="../figures/Bestellung_HTML.png" alt="" style="border: 0.1em solid black; display: block; margin-left: auto; margin-right: auto; width: 20em;"/>
@@ -59,15 +60,15 @@
     - Verwenden Sie strukturierende Tags wie `<section>` statt `<div>` für die Seitenstruktur
     - Schreiben Sie Umlaute und das €-Zeichen direkt in Ihre Dateien (verwenden Sie also z.B. das "ä" und nicht das benannte Zeichen  `:::html &auml;`)
     - Achten Sie auf ordentliche Formatierung des HTML-Quelltextes! 
-    - Verwenden Sie HTML-Tabellen nur um tabellarische Daten auszugeben (und keinesfalls als reines Layouttool)!
+    - Verwenden Sie HTML-Tabellen nur um tabellarische Daten auszugeben (und keinesfalls als Layouttool zur Anordnung von Elementen)!
 
 
 3. Realisieren Sie zunächst auch diejenigen Inhalte statisch, die später dynamisch aus der Datenbank generiert werden sollen
     - Tragen Sie Beispieldaten ein – so dass klar ist, was später generiert werden muss 
-    - Trennen Sie statische Inhalte von Inhalten, die später aus Inhalten der der Datenbank erzeugt werden
+    - Trennen Sie im Code statische Inhalte von Inhalten, die später aus Inhalten der der Datenbank erzeugt werden
 
 ### Überprüfung der Ergebnisse
-1. Testen Sie Ihre Seiten mit unterschiedlichen Browsern und validieren Sie die Standardkonformität mittels eines "HTML5 Validators". Besonders bei unerwartetem Verhalten des Browsers gibt ein Validator wertvolle Hinweise auf die mögliche Ursache der Probleme.
+1. Testen Sie Ihre Seite mit unterschiedlichen Browsern und validieren Sie die Standardkonformität mittels eines "HTML5 Validators". Besonders bei unerwartetem Verhalten des Browsers gibt ein Validator wertvolle Hinweise auf die mögliche Ursache der Probleme.
 Nutzen Sie <https://validator.w3.org/#validate_by_input> oder <https://html5.validator.nu/> und korrigieren Sie etwaige Fehler und Warnungen.
 
 2. Schicken Sie das Formular ab an das Echo-Skript `https://echo.fbi.h-da.de/` oder nutzen Sie einen HTTP-Traffic–Analyzer-Dienst wie `https://pipedream.com/`. Analysieren Sie die übertragenen Daten hinsichtlich Korrektheit und Vollständigkeit.
@@ -82,5 +83,5 @@ Die folgenden Ergebnisse müssen für eine erfolgreiche Durchführung vorliegen:
 !!! abstract
     __Ergebnisse:__
 
-    - [ ] Statische, validierte HTML-Seite für die Bestellung mit funktionierendem Formular
+    - [x] Statische, validierte HTML-Seite für die Bestellung mit funktionierendem Formular
 

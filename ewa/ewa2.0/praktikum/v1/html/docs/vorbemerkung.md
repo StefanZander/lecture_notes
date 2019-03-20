@@ -1,7 +1,7 @@
 # Semesterthema webbasierter Pizzaservice bzw. Onlineshop
 
 
-## Vorbemerkungen
+## Die Aufgabe
 
 Im Lauf des Semesters soll eine **integrierte webbasierte Anwendung** in Form eines Pizzaservice (das ist die Standard-Applikation) oder eines Webshops nach eigener Wahl entwickelt werden.
 
@@ -12,7 +12,7 @@ Der Pizzaservice bzw. Webshop soll die folgenden **technischen Eigenschaften** a
 - Responsive Webseiten mit HTML und CSS
 - Nutzereingaben mittels Formularen
 - Client-seitige Interaktion mit JavaScript
-- {--Echtzeita--} Aktualisierung von Statusinformationen mittels AJAX und JSON
+- Aktualisierung von Statusinformationen mittels AJAX und JSON
 
 **Serverseitig**:
 
@@ -30,15 +30,17 @@ Wichtig hierbei ist **Standardkonformität**, **Barrierefreiheit**, **Responsivi
 Es geht in EWA *nicht* um Homepage-Bastelei oder die Verwendung von "Fertigteilen"!
 
 !!! warning
-    Nicht die Funktionalität steht im Vordergrund, sondern die **Integration** der verschiedenen Techniken und die **Methodik** der Vorgehensweise.
+    - Nicht die Funktionalität steht im Vordergrund, sondern die **Integration** der verschiedenen Techniken und die **Vorgehensweise**.
+    - Die reine Umsetzung der Funktionalität des Shopsystems reicht *nicht* für die Abnahme! Die **objektorientierte Umsetzung** mit **Seitenklassen** ist ein Pflichtbestandteil!
+    - Die Aufgabe muss mit den in der Veranstaltung behandelten (grundlegenden) Techniken gelöst werden! **Der Einsatz von Frameworks wie bspw.&nbsp;jQuery oder Bootstrap ist nicht gestattet!** 
+
+## Organisatorisches
 
 !!! warning
-    Die reine Umsetzung der Funktionalität des Shopsystems reicht *nicht* für die Abnahme! Die **objektorientierte Umsetzung** mit **Seitenklassen** ist ein Pflichtbestandteil!
+    Die Praktikumsaufgabe beinhaltet zwei größere Blöcke, die Sie im Selbststudium erarbeiten sollen: [Selbststudium I: Anforderungen und HTML](termin0.md) und [Selbststudium II: Responsives Design](termin4_5.md).
+    **Den HTML-Teil müssen Sie vor dem ersten Praktikumstermin bearbeiten. Den CSS-Teil spätestens bis zum letzten Praktikumstermin.**
 
-!!! warning
-    Die Aufgabe muss mit den in der Veranstaltung behandelten (grundlegenden) Techniken gelöst werden! **Der Einsatz von Frameworks wie bspw.&nbsp;jQuery oder Bootstrap ist nicht gestattet!** 
-
-## Beispiele
+## Lösungsbeispiele
 
 ### Pizzaservice
 
@@ -53,8 +55,6 @@ Eine Studierendenlösung aus dem SoSe2018
 ![](./figures/pizzaservice/baecker.png)*Bäckerseite*
 
 ![](./figures/pizzaservice/fahrer.png)*Fahrerseite*
-
-
 
 
 ### Servershop

@@ -1,6 +1,6 @@
 # PHP: Objektorientierte Seitenklassen und Datenbankzugriffe
 
-!!! abstract
+!!! note
     **Lernziele**
 
     - [ ] Sie können die objektorientierte Programmierung mit PHP umsetzen
@@ -8,55 +8,62 @@
     - [ ] Sie können mit PHP und MySQLi Datenbankzugriffe realisieren und Webseiten mit Inhalten aus der Datenbank erzeugen (lesend und schreibend).
 
 
-Ziel dieser Einheit ist die Entwicklung von sauberem, d.h., gut wartbarem,  strukturiertem und objektorientiertem PHP-Code. Hierzu setzen wir die **Seiten-** und **Blockklassen** ein. Ferner stellen wir in dieser Einheit die **Datenbankanbindung** zur Web-Applikation her um Daten zu lesen und zu schreiben. 
+Ziel dieser Einheit ist die Entwicklung von sauberem, d.h., gut wartbarem,  strukturiertem und objektorientiertem PHP-Code. Hierzu setzen wir vordefinierte **Seiten-** und **Blockklassen** ein. Ferner stellen wir in dieser Einheit die **Datenbankanbindung** zur Web-Applikation her um Daten zu lesen und zu schreiben. 
 
+##Vorbereitung
 
-## Vorbereitung
-**Voraussetzung:** Die vier in [Termin 1](termin1.md) erstellten PHP-Seiten werden ordnungsgemäß vom Webserver ausgeliefert und erzeugen  standardkonformen HTML-Code.
+!!! abstract  
+    **Erledigen Sie diese Aufgaben VOR dem Übungstermin**    
+
+      **Voraussetzung:** Die vier in [Termin 1](termin1.md) erstellten PHP-Seiten werden ordnungsgemäß vom Webserver ausgeliefert und erzeugen  standardkonformen HTML-Code.
+      
+      1. Laden Sie die **Zulieferung** für das Praktikum von der [EWA-Moodleseite](https://lernen.h-da.de/course/view.php?id=6940) herunter und machen Sie sich mit dem Inhalt vertraut:    
+      {++Machen wir einen gemeinsamen Kurs? Wer?++}   
+         - `PageTemplate.php` dient als Vorlage für die Seiten `Bestellung.php`, `Kunde.php`, `Baecker.php` und `Fahrer.php`    
+         - `Page.php` ist die gemeinsame Basisklasse dieser 4 Seiten-Klassen und soll die Datenbank öffnen und schließen und den HTML-Rahmen erzeugen
+         - `BlockTemplate.php` dient (optional) als Vorlage für einzelne Blöcke innerhalb der Seiten
+         - `Pizzaservice_Documentation.pdf` enthält eine Dokumentation der Klassen mit Klassendiagramm und Sequenzdiagramm.
+      1. Versuchen Sie mit der Dokumentation und dem Quellcode das **Zusammenspiel der verschiedenen Klassen** zu verstehen. Klären Sie folgende Fragen:    
+         - Wo erfolgt der eigentliche Aufruf zur Erstellung einer HTML-Seite?
+         - Was tun die Methoden `getViewData()`, `generateView()` und `processReceivedData()`? In welcher Reihenfolge werden sie aufgerufen?
+         - Wo wird der HTML-Rahmen mit &lt;body&gt; und &lt;head&gt; erzeugt? Wo wird er ausgegeben?
+      2. Entwerfen Sie das **Datenmodell** für Ihren Pizzaservice. 
+      Nutzen Sie bspw. das folgende Schema:
+       {--     ``` 
+            Angebot:         PizzaName, Bilddatei, Preis
+            BestelltePizza:  PizzaID, fBestellungID, fPizzaName, Status
+            Bestellung:      BestellungID, Adresse, Bestellzeitpunkt
+            ```
+      --}    
+      {++Die Pizza über den Namen zu referenzieren ist eigentlich ungeschickt. Eine eindeutige PizzaNummer wäre doch besser!?...++}
+            ``` 
+            Angebot:         PizzaNummer, PizzaName, Bilddatei, Preis
+            BestelltePizza:  PizzaID, fBestellungID, fPizzaNummer, Status
+            Bestellung:      BestellungID, Adresse, Bestellzeitpunkt
+            ```
+
+      1. Implementieren Sie das **Datenmodell** mit `phpMyAdmin`
+         - Starten Sie den Webserver und den **Datenbankserver (MySQL)** mittels des XAMPP-Dienstprogrammes und rufen Sie `phpMyAdmin` auf durch `http://127.0.0.1/phpmyadmin`.
+         - Verwenden Sie die Kollation `utf8_unicode_ci` (im Vorgabewert `utf8_general_ci` gilt nicht ß=ss)
+         - `PizzaName`, `PizzaID`, `BestellungID` sind **Primärschlüssel**; IDs mit Autoincrement
+         - Realisieren Sie die Verknüpfungen zwischen den Primärschlüsseln und den Fremdschlüsseln `fBestellungID`, `fPizzaName` in der Datenbank.  
+           *Tipp: Mit dem "Designer" in `phpMyAdmin` können Sie die Beziehungen grafisch eintragen*
+         - Tipp zum Bestellzeitpunkt: MySQL-Funktion `CURRENT_TIMESTAMP` als Standardwert des Feldes.
+
+      2. Füllen Sie die "Speisekarte" (d.h. die Tabelle "`Angebot`") manuell mit 4-5 Pizzen. Verwenden Sie auch ungerade Preise wie 3.17€ oder 4.99€ und Namen mit Umlauten (Pizza Hühnchen).
 
 !!! warning
-    **Hinweis**: Wenn Sie diese Voraussetzung nicht **zu Beginn der Übung** zeigen können, erhalten Sie kein Testat für die vorherige Übung, sondern eine Verwarnung (**"gelbe Karte"**)!
-
-1. Laden Sie die **Zulieferung** für das Praktikum von der [EWA-Moodleseite](https://lernen.h-da.de/course/view.php?id=6940) herunter {++Machen wir einen gemeinsamen Kurs? Wer?++}:
-      - `PageTemplate.php` dient als Vorlage für die 4 Seiten 
-        1. `Bestellung.php`
-        2. `Kunde.php`
-        3. `Baecker.php`  
-        4. `Fahrer.php`
-      - `Page.php` ist die gemeinsame Basisklasse dieser 4 Seiten-Klassen und soll die Datenbank öffnen und schließen und den HTML-Rahmen erzeugen
-      - `BlockTemplate.php` dient (optional) als Vorlage für einzelne Blöcke innerhalb der Seiten
-      - `Pizzaservice_Documentation.pdf` enthält eine Dokumentation der Klassen mit Klassendiagramm und Sequenzdiagramm.
-2. Versuchen Sie mit der Dokumentation und dem Quellcode das **Zusammenspiel der verschiedenen Klassen** zu verstehen. Klären Sie folgende Fragen:
-      - Wo erfolgt der eigentliche Aufruf zur Erstellung einer HTML-Seite?
-      - Was tun die Methoden `getViewData()`, `generateView()` und `processReceivedData()`?
-      - Wo wird der HTML-Rahmen erzeugt? Wo wird er ausgegeben?
-3. Entwerfen Sie das **Datenmodell** für Ihren Pizzaservice. 
-    Nutzen Sie bspw. das folgende Schema:
-       ``` 
-       Angebot:         PizzaName, Bilddatei, Preis
-       BestelltePizza:  PizzaID, fBestellungID, fPizzaName, Status
-       Bestellung:      BestellungID, Adresse, Bestellzeitpunkt
-       ```
-
-4. Implementieren Sie das **Datenmodell** mit `phpMyAdmin`
-      1. Starten Sie den Webserver und den **Datenbankserver (MySQL)** mittels des XAMPP-Dienstprogrammes und rufen Sie `phpMyAdmin` auf durch `http://127.0.0.1/phpmyadmin`.
-      2. Verwenden Sie die Kollation `utf8_unicode_ci` (im Vorgabewert `utf8_general_ci` gilt nicht ß=ss)
-      3. `PizzaName`, `PizzaID`, `BestellungID` sind **Primärschlüssel**; IDs mit Autoincrement
-      4. Realisieren Sie die Verknüpfungen zwischen den Primärschlüsseln und den Fremdschlüsseln `fBestellungID`, `fPizzaName` in der Datenbank.  
-      *Tipp: Mit dem "Designer" in `phpMyAdmin` können Sie die Beziehungen grafisch eintragen*
-      5. Tipp zum Bestellzeitpunkt: MySQL-Funktion `CURRENT_TIMESTAMP` als Standardwert des Feldes.
-
- 5. Füllen Sie die "Speisekarte" (d.h. die Tabelle "`Angebot`") manuell mit 4-5 Pizzen. Verwenden Sie auch ungerade Preise wie 3.17€ oder 4.99€ und Namen mit Umlauten (Pizza Hühnchen).
+    **Hinweis**: Wenn Sie diese Vorbereitung nicht **zu Beginn der Übung** zeigen können, erhalten Sie kein Testat für die vorherige Übung, sondern eine Verwarnung (**"gelbe Karte"**)!
 
 ## Aufgaben
 
-Am besten führen Sie die folgenden Aufgaben zuerst für **eine** der Seiten (z.B. die Bestellseite) durch. So stellen Sie sicher, dass Sie alle Themen verstanden haben und korrekt umsetzen können bevor Sie die übrigen Seiten implementieren.
+Am besten führen Sie die folgenden Aufgaben zuerst für **eine** der Seiten (z.B. die Bestellseite) durch. So stellen Sie sicher, dass Sie alle Themen verstanden haben und korrekt umsetzen können bevor Sie die übrigen Seiten angehen.
 
 ### Dynamische Seitengenerierung mittels Seitenklassen
 
-1. Legen Sie je eine **Kopien der Klasse `PageTemplate.php`** für jede Seite an, die Sie erstellen (also `Bestellung.php`, `Kunde.php`, `Baecker.php` und `Fahrer.php`) und benennen Sie die Dateien entsprechend. Ändern Sie auch die Klassennamen und Verweise auf die Klasse innerhalb der Dateien.
+1. Legen Sie eine **Kopien der Klasse `PageTemplate.php`** für jede Seite an, die Sie erstellen wollen (also instgesamt `Bestellung.php`, `Kunde.php`, `Baecker.php` und `Fahrer.php`) und benennen Sie die Dateien entsprechend. Ändern Sie auch die Klassennamen und Verweise auf die Klasse innerhalb der Dateien.
 
-2. Verteilen Sie Ihren **PHP-Code** aus der vorherigen Übung in die zuständigen Methoden der neuen Klassen (`Page`, `Bestellung`, `Kunde`, `Baecker` und `Fahrer`). Die Kommentare in den Dateien helfen dabei.
+2. Verteilen Sie Ihren **PHP-Code** aus der vorherigen Übung in die zuständigen Methoden der neuen Klasse und die generischen Teile in die Klasse `Page.php`. Die Kommentare in den Dateien helfen dabei. Rufen Sie die Seite über den Webserver ab und korrigieren Sie die Fehler.
 
     !!! note
         **Hinweise**:
@@ -73,10 +80,11 @@ Am besten führen Sie die folgenden Aufgaben zuerst für **eine** der Seiten (z.
 
 ### Datenbankzugriff mittels MySQLi
 
-1. Implementieren Sie die **Datenbankzugriffe** (Select, Insert Into, Update) in den zuständigen Methoden der Klassen und ersetzen Sie die statischen Codeteile durch Daten, die Sie von der Datenbank abfragen.
-      1. Der Zugriff auf die Datenbank erfolgt objektorientiert über die Klasse `MySQLi`. 
-      2. Zugriff auf die Datenbank erfolgt nur in `getViewData()` und `processReceivedData()`.
-2. Testen und validieren Sie die generierten Seiten.
+1. Konfigurieren SIe den Aufbau der Datenbankverbindung in `Page.php`.
+2. Implementieren Sie die **Datenbankzugriffe** (SELECT, INSERT INTO, UPDATE) in den zuständigen Methoden der Klassen und ersetzen Sie die statischen Codeteile durch Daten, die Sie von der Datenbank abfragen.
+      - Der Zugriff auf die Datenbank erfolgt objektorientiert über die Klasse `MySQLi`. 
+      - Zugriff auf die Datenbank erfolgt nur in `getViewData()` und `processReceivedData()`.
+3. Testen und validieren Sie die generierten Seiten.
 
     !!! note
         Tipps zur Umsetzung
@@ -84,13 +92,18 @@ Am besten führen Sie die folgenden Aufgaben zuerst für **eine** der Seiten (z.
         - Nutzen Sie `var_dump($variable)` für die schnelle Testausgabe zwischendurch
         - `number_format($zahl, $nachkommastellen)` formatiert `$zahl`
         - `$mysqli->insert_id` liefert die Autoincrement-ID nach `INSERT INTO`
-        - Tabellen- und Feldnamen in SQL-Statements ggf. in ` (Gravis / accent grave) einklammern
-        - Prüfen Sie mit `phpMyAdmin` ob die Datenbankeinträge korrekt erstellt werden
+        - Tabellen- und Feldnamen in SQL-Statements klammert man am besten in Hochkommata ein: ` (Gravis / accent grave)
+        - Prüfen Sie mit `phpMyAdmin` ob die Datenbankeinträge korrekt erstellt werden. Denken Sie daran, die Formulare so anzupassen, dass sie ihre Daten nicht mehr an die Echo-Skripte schicken, sondern an die tatsächliche Zielseite.
         - Eine geschickte Datenbankabfrage (z.B. mit einem `JOIN` oder `ORDER BY`) kann Ihnen viel Implementierungsaufwand ersparen.
 
+{++ ###Auflösung von Blockierungen bei Aktualisierungen
+Wenn eine Webseite geladen wird, die ein Formular enthält, das zuvor mittels POST Daten übertragen hat, dann erscheint ein (recht unverständliches) Popup.
+![](./figures/POST_ReloadPopup.png)*Popup durch Reload mit POST-Daten)* Diese Blockierung können Sie auflösen, indem Sie die Seite aus der Seite selbst *ohne Daten* neuladen, nachdem Sie die Daten in processReceivedData() verarbeitet haben. Der PHP-Befehl `:::php header('Location: http://meineSeite.php/');` lädt eine beliebige Seite. Achten Sie aber darauf, dass dieser "Redirect" wirklich nur dann ausgeführt wird, wenn Sie auch tatsächlich Daten empfangen haben - ansonsten entsteht eine Endlosschleife.    
+**Hinweis**: Das Umstellen der Übertragung auf GET ist keine zulässige Lösung!
+++}
 
 ## Nachbereitung
-Setzen Sie noch eventuell fehlende Teile der obigen Aufgabe bis zum nächsten Praktikumstermin um. 
+Setzen Sie noch fehlende Teile der obigen Aufgabe bis zum nächsten Praktikumstermin um. 
 
 ## Ergebnisse
 
@@ -101,9 +114,10 @@ Die folgenden Ergebnisse müssen für eine erfolgreiche Durchführung der Prakti
 
     - [x] Implementierung der Seiten `Bestellung.php`, `Kunde.php`, `Baecker.php` und `Fahrer.php` mittels Seitenklassen und (optional) Blockklassen.
         - Die "Speisekarte" auf der Bestellseite wird mit den Daten aus den Datenbank erzeugt
-        - Die Bestelldaten, welche die Bestellseite abschickt, werden in der Datenbank abgelegt.
+        - Die Daten, welche die Bestellseite abschickt, werden in der Datenbank abgelegt.
         - Die Bäckerseite zeigt die bestellten Pizzen. Ein veränderter Status einer Pizza kann mit einem Submit-Button abgeschickt werden und wird in die Datenbank übernommen.
         - Die Fahrerseite zeigt die Bestellungen, die bereit für die Auslieferung sind. Ein veränderter Status einer Bestellung kann mit einem Submit-Button abgeschickt werden und wird in die Datenbank übernommen.
+        - Die Fahrerseite und die Bäckerseite aktualisieren sich alle 5 Sekunden
         - Die Kundenseite setzen Sie bitte so um, dass *alle* bestellten Pizzen angezeigt werden. Die Einschränkung auf die Pizzen des jeweiligen Kunden erfolgt erst in der nächsten Übung durch Sessionamangement.
     - [x] Implementierung der Datenbankzugriffe mittels `MySQLi`
 

@@ -1,24 +1,28 @@
 # Sessionmanagement, Sicherheit und AJAX-Vorbereitung
 
-!!! abstract
+!!! note
     **Lernziele**
 
-    - [ ] Sie können ein einfaches Sessionmanagement mit PHP implementieren, um nutzerspezifische Daten zu verarbeiten
+     - [ ] Sie können ein einfaches Sessionmanagement mit PHP implementieren, um nutzerspezifische Daten zu verarbeiten
      - [ ] Sie beherrschen grundlegende Verfahren zur Absicherung einer Web-Applikation gegen Angriffe wie SQL-Injection und Cross-Site-Scripting
-    - [ ] Sie können mittels PHP JSON-Daten erzeugen und ausliefern
+     - [ ] Sie können mittels PHP JSON-Daten erzeugen und ausliefern
 
 In dieser Einheit implementieren Sie eine leichtgewichtige Form des **Sessionmanagements**. Zusätzlich sichern Sie Ihre Web-Applikation gegen grundlegende Angriffe auf eine Webseite ab.
-Ferner bereiten Sie die Serverseitige Implementierung  der Kommunikation zur Aktualisierung der Kundenseite mit AJAX  vor. 
+Ferner implementieren Sie die Serverseite zur Aktualisierung der Kundenseite mit AJAX. 
 
-## Vorbereitung
+##Vorbereitung
 
-**Voraussetzung:** Die vier in [Termin 2](termin2.md) erstellten Seitenklassen implementieren die vollständige Datenbankanbindung des Webservices und erzeugen mit den Datenbankinhalten standardkonformen HTML-Code.
+!!! abstract  
+    **Erledigen Sie diese Aufgaben VOR dem Übungstermin**
+
+       **Voraussetzung:** Die vier in [Termin 2](termin2.md) erstellten Seitenklassen implementieren die vollständige Datenbankanbindung des Webservices und erzeugen mit den Datenbankinhalten standardkonformen HTML-Code.
+
+       1. Machen Sie sich die Funktionsweise von Sessions in PHP klar und überlegen Sie sich, wo man Sessions einsetzen muss. 
+       2. Machen Sie sich vertraut mit den Angriffen und den Gegenmaßnahmen zu `Cross Site Scripting` und `SQL-Injection`.
 
 !!! warning
-    **Hinweis**: Wenn Sie diese Voraussetzung nicht **zu Beginn der Übung** zeigen können, erhalten Sie kein Testat für die vorherige Übung, sondern eine Verwarnung (**"gelbe Karte"**)!
-
-1. Machen Sie sich die Funktionsweise von Sessions in PHP klar und überlegen Sie sich, wo man Sessions einsetzen muss. 
-2. Machen Sie sich vertraut mit den Angriffen und den Gegenmaßnahmen zu `Cross Site Scripting` und `SQL-Injection`.
+     **Hinweis**:    
+     Wenn Sie die Vorbereitung nicht **zu Beginn der Übung** zeigen können, erhalten Sie kein Testat für die vorherige Übung, sondern eine Verwarnung (**"gelbe Karte"**)!
 
 ## Aufgaben
 
@@ -46,30 +50,29 @@ Welche Seitenklassen kann das betreffen? Stellen Sie mit dem Befehl `isset()` si
 
 4. Testen und validieren Sie die generierten Seiten.
 
-### Serverseite für die Statusupdates der Kundenseite
+### Serverseitige Implementierung der Statusupdates der Kundenseite
 
-In der finalen Lösung der Kundenseite sollen die Statusinformationen zu den Pizzen übertragen werden, ohne dass jedesmal die gesamte Seite neu geladen wird. Dafür muss es auf der Serverseite eine aufrufbare Funktion geben, die genau diese Rohdaten in einem Standardformat (JSON) liefert. Das Einbauen dieser Funktion in die Kundenseite erfolgt aber erst in der nächsten Übung. 
+In der finalen Lösung der Kundenseite sollen die Statusinformationen zu den Pizzen übertragen werden, ohne dass jedesmal die gesamte Seite neu geladen wird. Dafür muss es auf der Serverseite eine PHP-Seite geben, die genau diese Rohdaten liefert (in einem Standardformat wie `JSON`). Das *Einbauen* der vom Browser empfangenen Daten in die Kundenseite erfolgt aber erst in der nächsten Übung. 
 
-Erstellen Sie baierend auf `PageTemplate.php` eine **neue PHP-Seite** mit Namen `KundenStatus.php`. Diese Seite soll **keine HTML-Ausgabe** erzeugen, sondern die  Statusdaten der bestellten Pizzen zur Weiterverarbeitung an den Browser liefern. 
+Erstellen Sie baierend auf `PageTemplate.php` eine **neue Seitenklasse** mit Namen `KundenStatus.php`. Diese Seite soll **keine HTML-Ausgabe** erzeugen, sondern "nur" die Statusdaten der bestellten Pizzen zurückliefern. 
    
-Bitte beachten Sie folgende Hinweise: {++ Geht das so einfach? Mache ich einen Denkfehler? Warum hattest Du eine neue Baisklasse gefordert? ++}
+Bitte beachten Sie folgende Hinweise: {++ Geht das nicht so einfach? Mache ich einen Denkfehler? Warum hattest Du eine neue Basisklasse gefordert? ++}
 
 1. Passen Sie die Inhalte der Standardmethoden der Seitenklassen an:
-    - processReceivedData(): bleibt leer, da keine Formulardaten übermittelt werden sollen
-    - getViewData(): Hier können Sie wie gewohnt die Daten von der Datenbank abfragen und bereitstellen
+    - processReceivedData(): bleibt leer, da keine Formulardaten empfangen werden sollen
+    - getViewData(): Hier können Sie wie gewohnt die Daten von der Datenbank abfragen und z.B. als Array bereitstellen
     - generateView(): Da keine HTML-Seite erzeugt werden soll, kommentieren Sie die Zeilen generatePageHeader() und generatePageFooter() aus. Stattdessen können Sie hier aber die gewünschten Daten zurückliefern (siehe unten).
   
 2. Überlegen Sie sich, welche Daten `KundenStatus.php` von der Datenbank benötigt, um die korrekten Statusinformationen zurück zu liefern.
 Fragen Sie diese Daten gezielt bei der Datenbank ab. Verwenden Sie analog zur Aufgabe von oben **Sessionmanagement** um die gewünschte Bestellung herauszufiltern. 
-3. Die Datenbankabfrage liefert ein "Recordset", dessen Objekte nur mit den Methoden vom MySQLi abgefragt werden können. Deshalb ist es für die Übertragung an den Browser ungeeignet. Wandeln Sie das Recordset um in ein **einziges** Array, das - analog zum Recordset - ein assoziatives Array für jede Ergebniszeile enthält.
+3. Die Datenbankabfrage liefert ein "Recordset", dessen Objekte nur mit den Methoden vom MySQLi abgefragt werden können. Deshalb ist es für die Übertragung an den Browser ungeeignet. Wandeln Sie das Recordset um in ein **einziges** Array, das - analog zum Recordset - ein assoziatives Array für jede Ergebniszeile enthält (also ein Array von assoziativen Arrays).
 4. Das Datenformat **JSON** bietet die Möglichkeit komplexe Datenstrukturen und Objekte zu einem String zu serialisieren und anschließend wieder zusammenzusetzen. Das ist sehr praktisch, wenn man komplexe Datensätze z.B. von PHP an einen Webbrowser schicken will.
 
     - Den serialisierten JSON-String erzeugen Sie mittels    
-    `$serializedData = json_encode($Array_mit_Daten_aus_Recordset);`
-    - Erzeugen Sie die Ausgabe mit `echo $serializedData`, um den serialisierten JSON-String als Antwort zu versenden!
+    `:::js $serializedData = json_encode($Array_mit_Daten_aus_Recordset);`
+    - Versenden Sie den serialisierten JSON-String als Antwort mit `:::js echo $serializedData`!
 
-5.  Testen Sie die korrekte Funktionsweise des Controllers mittels eines direkten Aufrufs im Browser. Die Antwort können Sie analysieren in einem [Online JSON Editor](https://jsoneditoronline.org/).
-
+5.  Testen Sie die korrekte Funktionsweise von `KundenStatus.php` mittels eines direkten Aufrufs im Browser. Sie können in einem [Online JSON Editor](https://jsoneditoronline.org/) analysieren, ob die Antwort dem ursprünglichen Array entspricht.
 
 ## Nachbereitung
 Setzen Sie noch eventuell fehlende Teile der obigen Aufgabe bis zum nächsten Praktikumstermin um. 
@@ -82,8 +85,8 @@ Die folgenden Ergebnisse müssen für eine erfolgreiche Durchführung der Prakti
 !!! abstract
     __Ergebnisse:__
 
-    - [x] Implementierung von `KundenStatus.php` basierend auf den Seitenklassen. 
     - [x] Einsatz von Sessionmanagement auf der Kundenseite und im Kundenstatus
+    - [x] Implementierung von `KundenStatus.php` basierend auf den Seitenklassen. 
     - [x] Versenden der Statusdaten durch `KundenStatus.php` mittels JSON
     - [x] Absicherung der Web-Applikation gegen SQL-Injection und Cross-Site-Scripting (XSS)
     

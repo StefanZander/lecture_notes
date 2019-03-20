@@ -1,14 +1,15 @@
-site_name: Praktikum zur LVA "Entwicklung Web-basierter Anwendungen"
+site_name: Praktikum zu "Entwicklung webbasierter Anwendungen" im Sommersemester 2019
 
 nav:
   - 'Startseite': 'index.md'
   - 'Vorbemerkungen': 'vorbemerkung.md'
   - 'Anforderungen': 'anforderungen.md'
-  - 'Termin 0: HTML': 'termin0.md'
-  - 'Termin 1: PHP – Erste Schritte': 'termin1.md'
-  - 'Termin 2: PHP – Seitenklassen': 'termin2.md'
-  - 'Termin 3: JavaScript, AJAX, JSON': 'termin3.md'
-  - 'Termin 4: CSS & Media Queries': 'termin4.md'
+  - 'Selbststudium I: Anforderungen und HTML': 'termin0.md'
+  - 'Termin 1: PHP – Erzeugung von Webseiten': 'termin1.md'
+  - 'Termin 2: PHP – Objektorientierung und Datenbanken': 'termin2.md'
+  - 'Termin 3: PHP - Sessions, Sicherheit und AJAX-Vorbereitung': 'termin3.md'
+  - 'Termin 4: Client-seitige Interaktion mit JavaScript, AJAX und DOM': 'termin4.md'
+  - 'Selbststudium II: Responsives Design': 'termin4_5.md'
   - 'Termin 5: Abnahme': 'termin5.md'
 
 theme:

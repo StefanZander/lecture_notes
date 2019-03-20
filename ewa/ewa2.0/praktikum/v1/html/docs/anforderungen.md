@@ -3,12 +3,12 @@
 !!! note
     **Hinweis**: Die Anforderungen sind aus Sicht des Pizzaservice beschrieben. Wenn Sie einen **eigenen Webshop** entwickeln, dann müssen Sie die Anforderungen entsprechend übertragen (bspw. kann anstelle der Bäckerseite eine Versandabteilungs- oder Kommissionierungsseite etc. erstellt werden). Die Anforderungen hinsichtlich **Aufbau und Funktionsweise gelten dann analog** für die Seiten des eigenen Webshops.
 
-## Aufbau
+## Aufbau der Webanwendung
 
 Der Pizzaservice bzw. Onlineshop soll folgende **vier Webseiten** enthalten (gilt entsprechend auch für einen alternativen Webshop):
 
 - **Bestellung**
-- **Bestellstatus** (--> die Aktualisierunglogik wird in [Termin 3](termin3.md) implementiert)
+- **Kunde** (--> die Aktualisierunglogik wird in [Termin 4](termin4.md) implementiert)
 - **Pizzabäcker** 
 - **Fahrer** 
 <!-- - TODO: PHP Controller für AJAX+JSON inkludieren 
@@ -20,22 +20,22 @@ Als Webserver wird **Apache 2** verwendet und als Datenbank **MariaDB** (enthalt
 
 Die **Abnahme** erfolgt auf Ihren Laptops oder den Laborrechnern mit **mindestens zwei** gängigen Browsern.
 
-Für die PHP-Entwicklung müssen **Seiten-Templates** (--> siehe [Termin 2: PHP – Seitenklassen, Datenbankzugriff, Sessionmanagement und Sicherheit](termin2.md)) verwendet werden, die vorgegeben und über den [EWA-Moodlekurs](https://lernen.h-da.de/course/view.php?id=6940) herunterladbar sind.
+Für die PHP-Entwicklung müssen **Seiten-Templates** (--> siehe [Termin 2: PHP – Objektorientierte Seitenklassen und Datenbankzugriffe](termin2.md)) verwendet werden, die vorgegeben sind.
 
 ## Funktion der einzelnen Seiten
 
 <!-- ![](./figures/designskizze.png)*Konzeptionelle Darstellung der vier Web-Seiten des Pizzaservice bzw. Onlineshops* -->
-Die folgende Designskizze zeigt grob den erwarteten Inhalt und die Bedienelemente der zu entwickelnden Webseiten. Es sollen 4 getrennte Seiten entwickelt werden: `Bestellung`, `Pizzabäcker`, `Bestellstatus` und `Fahrer`.  
+Die folgende Designskizze zeigt grob den erwarteten Inhalt und die Bedienelemente der zu entwickelnden Webseiten. Es sollen 4 getrennte Seiten entwickelt werden: `Bestellung`, `Pizzabäcker`, `Kunde` und `Fahrer`.  
 ![](./figures/DesignskizzePizzaservice.png)*Designskizze - nur Funktionen, kein Layout)*
 
 - **Pizzabestellung**
 
-    Hier kann der Kunde seine Pizzen aus der Speisekarte auswählen und in einen
+    Hier kann der Kunde gewünschte Pizzen aus der Speisekarte auswählen und in einen
     Warenkorb übernehmen. 
 
     Es wird der Preis der Bestellung angezeigt und es kann eine Lieferadresse angegeben werden.
 
-- **Bestellstatus** (=Kundenseite)
+- **Kunde**
 
     Hier kann ein Kunde sehen, in welchem Zustand seine Pizzen sind (`bestellt`, `im Ofen`, `fertig`, `unterwegs`). 
 
@@ -61,13 +61,13 @@ Die folgende Designskizze zeigt grob den erwarteten Inhalt und die Bedienelement
 
 - Im Warenkorb können mehrere Pizzen ausgewählt und gelöscht werden, oder auch alle Pizzen auf einmal.
 
-- Die Seiten `Pizzabäcker`, `Bestellstatus` und `Fahrer` sollen sich **automatisch aktualisieren**.  
+- Die Seiten `Pizzabäcker`, `Kunde` und `Fahrer` sollen sich **automatisch aktualisieren**.  
 
 - Wenn eine neue Pizza in die Datenbank mit den angebotenen Pizzen eingetragen wird, so wird diese nach dem Neuladen der Bestellseite angezeigt und die Preisberechnung des Warenkorbs funktioniert ohne Änderungen am Code.
   
 - Die Bestellseite verwendet ein **responsives Layout** und passt ihre Darstellung für schmale Handybildschirme an. Versuchen Sie das Layout so umzusetzen, wie es in der Designskizze dargestellt ist. 
 
-- Es gibt zu **Testzwecken** eine weitere Webseite `Übersicht`, welche (für einfache Tests) Links zu den 4 Webseiten beinhaltet.
+- Es gibt zu **Testzwecken** eine weitere Webseite `Übersicht`, welche (für einfache Tests) Links zu den 4 Webseiten beinhaltet. Diese Seite existiert nur zu Testzwecken und darf deshalb mit statischem HTML erstellt werden.
 
     !!! note
         **Hinweis**:  
