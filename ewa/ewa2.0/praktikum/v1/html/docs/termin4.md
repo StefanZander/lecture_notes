@@ -164,6 +164,13 @@ Die serverseitige Implementierung, welche die Daten liefert, haben Sie bereits i
     - Aufbau der Seite mittels PHP; setzen bzw. aktualisieren der Zustände mit JavaScript
     - 2 separate AJAX-Requests: (a) pollt Statusupdates, (b) fragt Controller nach neuen Bestellungen; wenn neue Bestellung, dann Redirect im AJAX-Handler auf Kunde.php, d.h., Neuaufbau der Seite mit aktueller Bestellung)  -->
 
+
+TODO:
+
+- SZA liefert header-code für JSON
+- SZA liefert code gegen caching
+- 
+
 ## Nachbereitung
 Setzen Sie noch eventuell fehlende Teile der obigen Aufgabe bis zum nächsten Praktikumstermin um. 
 Entwickeln Sie spätestens bis zum nächsten Praktikumstermin auch das **responsive Design** für Ihren Webservice (siehe [Selbststudium II: Responsives Design](termin4_5.md)).
