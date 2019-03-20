@@ -32,7 +32,7 @@ Es geht in EWA *nicht* um Homepage-Bastelei oder die Verwendung von "Fertigteile
 !!! warning
     - Nicht die Funktionalität steht im Vordergrund, sondern die **Integration** der verschiedenen Techniken und die **Vorgehensweise**.
     - Die reine Umsetzung der Funktionalität des Shopsystems reicht *nicht* für die Abnahme! Die **objektorientierte Umsetzung** mit **Seitenklassen** ist ein Pflichtbestandteil!
-    - Die Aufgabe muss mit den in der Veranstaltung behandelten (grundlegenden) Techniken gelöst werden! **Der Einsatz von Frameworks wie bspw.&nbsp;jQuery oder Bootstrap ist nicht gestattet!** 
+    - Die Aufgabe muss mit den in der Veranstaltung behandelten (grundlegenden) Techniken gelöst werden! **Der Einsatz von Frameworks wie bspw.&nbsp;jQuery ist nicht gestattet!** 
 
 ## Organisatorisches
 

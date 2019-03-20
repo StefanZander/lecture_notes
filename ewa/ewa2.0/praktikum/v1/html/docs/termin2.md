@@ -17,25 +17,18 @@ Ziel dieser Einheit ist die Entwicklung von sauberem, d.h., gut wartbarem,  stru
 
       **Voraussetzung:** Die vier in [Termin 1](termin1.md) erstellten PHP-Seiten werden ordnungsgemäß vom Webserver ausgeliefert und erzeugen  standardkonformen HTML-Code.
       
-      1. Laden Sie die **Zulieferung** für das Praktikum von der [EWA-Moodleseite](https://lernen.h-da.de/course/view.php?id=6940) herunter und machen Sie sich mit dem Inhalt vertraut:    
-      {++Machen wir einen gemeinsamen Kurs? Wer?++}   
+      1. Laden Sie die **Zulieferung** für das Praktikum von der EWA-Moodleseite herunter und machen Sie sich mit dem Inhalt vertraut:      
          - `PageTemplate.php` dient als Vorlage für die Seiten `Bestellung.php`, `Kunde.php`, `Baecker.php` und `Fahrer.php`    
          - `Page.php` ist die gemeinsame Basisklasse dieser 4 Seiten-Klassen und soll die Datenbank öffnen und schließen und den HTML-Rahmen erzeugen
          - `BlockTemplate.php` dient (optional) als Vorlage für einzelne Blöcke innerhalb der Seiten
          - `Pizzaservice_Documentation.pdf` enthält eine Dokumentation der Klassen mit Klassendiagramm und Sequenzdiagramm.
-      1. Versuchen Sie mit der Dokumentation und dem Quellcode das **Zusammenspiel der verschiedenen Klassen** zu verstehen. Klären Sie folgende Fragen:    
+      2. Versuchen Sie mit der Dokumentation und dem Quellcode das **Zusammenspiel der verschiedenen Klassen** zu verstehen. Klären Sie folgende Fragen:    
          - Wo erfolgt der eigentliche Aufruf zur Erstellung einer HTML-Seite?
          - Was tun die Methoden `getViewData()`, `generateView()` und `processReceivedData()`? In welcher Reihenfolge werden sie aufgerufen?
          - Wo wird der HTML-Rahmen mit &lt;body&gt; und &lt;head&gt; erzeugt? Wo wird er ausgegeben?
-      2. Entwerfen Sie das **Datenmodell** für Ihren Pizzaservice. 
-      Nutzen Sie bspw. das folgende Schema:
-       {--     ``` 
-            Angebot:         PizzaName, Bilddatei, Preis
-            BestelltePizza:  PizzaID, fBestellungID, fPizzaName, Status
-            Bestellung:      BestellungID, Adresse, Bestellzeitpunkt
-            ```
-      --}    
-      {++Die Pizza über den Namen zu referenzieren ist eigentlich ungeschickt. Eine eindeutige PizzaNummer wäre doch besser!?...++}
+      3. Entwerfen Sie das **Datenmodell** für Ihren Pizzaservice. 
+      Nutzen Sie beispielsweise das folgende Schema:
+
             ``` 
             Angebot:         PizzaNummer, PizzaName, Bilddatei, Preis
             BestelltePizza:  PizzaID, fBestellungID, fPizzaNummer, Status
@@ -96,11 +89,17 @@ Am besten führen Sie die folgenden Aufgaben zuerst für **eine** der Seiten (z.
         - Prüfen Sie mit `phpMyAdmin` ob die Datenbankeinträge korrekt erstellt werden. Denken Sie daran, die Formulare so anzupassen, dass sie ihre Daten nicht mehr an die Echo-Skripte schicken, sondern an die tatsächliche Zielseite.
         - Eine geschickte Datenbankabfrage (z.B. mit einem `JOIN` oder `ORDER BY`) kann Ihnen viel Implementierungsaufwand ersparen.
 
-{++ ###Auflösung von Blockierungen bei Aktualisierungen
-Wenn eine Webseite geladen wird, die ein Formular enthält, das zuvor mittels POST Daten übertragen hat, dann erscheint ein (recht unverständliches) Popup.
-![](./figures/POST_ReloadPopup.png)*Popup durch Reload mit POST-Daten)* Diese Blockierung können Sie auflösen, indem Sie die Seite aus der Seite selbst *ohne Daten* neuladen, nachdem Sie die Daten in processReceivedData() verarbeitet haben. Der PHP-Befehl `:::php header('Location: http://meineSeite.php/');` lädt eine beliebige Seite. Achten Sie aber darauf, dass dieser "Redirect" wirklich nur dann ausgeführt wird, wenn Sie auch tatsächlich Daten empfangen haben - ansonsten entsteht eine Endlosschleife.    
+### Auflösung von Blockierungen bei Aktualisierungen
+Wenn eine Webseite mit einem Formular geladen wird, das zuvor mittels POST Daten gesendet hat, dann bringt der Browser ein (recht unverständliches) Popup und blockiert dadurch die Aktualisierung.
+![](./figures/POST_ReloadPopup.png)*Popup durch Reload mit POST-Daten)*      
+Lösen Sie diese Blockierung auf, indem Sie beim Aufruf der Seite zuerst die Daten verarbeiten und dann die Seite (ohne Daten) neuladen:     
+
+ - Verarbeiten Sie die Daten in processReceivedData() 
+ - laden Sie mit dem  PHP-Befehl `:::js header('Location: http://meineSeite.php/');` die gleiche Seite erneut - aber dieses mal ohne Daten. 
+ - Jetzt können Sie die Seite ohne Blockierung aktualisieren.    
+ 
+Achten Sie aber darauf, dass dieser "Redirect" wirklich nur dann ausgeführt wird, wenn Sie auch tatsächlich Daten empfangen haben - ansonsten entsteht eine Endlosschleife.    
 **Hinweis**: Das Umstellen der Übertragung auf GET ist keine zulässige Lösung!
-++}
 
 ## Nachbereitung
 Setzen Sie noch fehlende Teile der obigen Aufgabe bis zum nächsten Praktikumstermin um. 

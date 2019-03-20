@@ -34,11 +34,10 @@ Für eine erfolgreiche Abnahme müssen **alle Punkte** erfüllt sein!
     **Checkliste**
 
     1. Allgemeines
-         - [ ] Konsequente Verwendung der PHP-Seitenklassen für alle Seiten und auch für den PHP Controller {++Für mich ist das kein Controller (vgl. MVC)! Deshalb habe ich mich um den Namen drumrumgedrückt++}
-         - [ ] Alle generierten Seiten werden vom W3C Validator als fehlerfrei erkannt {++ und HTML Lint zeigt keine Meldungen mit Schwierigkeitsgrad > 2 ?++}
+         - [ ] Konsequente Verwendung der PHP-Seitenklassen für alle Seiten 
+         - [ ] Alle generierten Seiten werden vom W3C Validator als fehlerfrei erkannt und "HTML Lint" zeigt keine Meldungen mit Schwierigkeitsgrad > 2.
          - [ ] Die Web-Applikation ist gesichert gegen Cross-Site-Scripting (XSS) und gegen SQL-Injection
          - [ ] Erfasste Daten werden (bis auf Angriffsversuche) unverändert in die Datenbank geschrieben 
-         - [ ] Es sind keine Tabellen im HTML-Code enthalten {++Das wird knifflig mit so wenig CSS!? Wenn, dann auch vorne fordern!++} 
          - [ ] Es gibt entweder eine Übersichtsseite oder eine ausblendbare Navigationsleiste mit Links zu den 4 Hauptseiten. 
     2. Funktion 
          - [ ] Eine direkt in die Datenbank eingetragene Pizza erscheint nach einem Reload auf der Speisekarte
@@ -52,9 +51,8 @@ Für eine erfolgreiche Abnahme müssen **alle Punkte** erfüllt sein!
          - [ ] Bestellungen verschwinden nach der Auslieferung von der Fahrerseite 
          - [ ] HTML-Tags im Adressfeld einer Bestellung (XSS) werden auf der Fahrerseits **nicht** ausgeführt
     3. Layout
-         - [ ] Responsives Layout + Verwendung von Media Queries {++ Was heißt das konkret ++}
          - [ ] Ansprechendes Design
-         - [ ] Auf der Bestellseite rutscht der Warenkorb je nach Bildschirmbreite neben oder unter die Speisekarte
+         - [ ] Auf der Bestellseite verwenden Sie Media Queries um ansprechende Layouts für mindestens 2 Bildschirmformate umzusetzen. Der Warenkorb rutscht je nach Bildschirmbreite und Ausrichtung neben oder unter die Speisekarte
          - [ ] Keine Verwendung von absoluten Maßeinheiten (außerhalb von Media Queries)
 
 

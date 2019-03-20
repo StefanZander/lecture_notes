@@ -10,7 +10,7 @@
     - [ ] Sie können JSON-Daten clientseitig verarbeiten 
 
 In dieser Einheit geht es um die client-seitige Implementierung der Interaktion zwischen BenutzerIn und Anwendung. Hierfür setzen wir **JavaScript** ein und modifizieren damit die angezeigten Webseite mit Hilfe des DOM (=Document Object Model) – bspw. zum Befüllen des Warenkorbs.
-Ferner steht in dieser Einheit auch die **asynchrone Kommunikation** zwischen Server und Client mittels **AJAX** und **JSON** im Vordergrund, so dass Statusänderungen auf der Kundenseite *ohne* Neuladen der Seite in "Quasi-Echtzeit" sichtbar werden. 
+Ferner steht in dieser Einheit auch die **asynchrone Kommunikation** zwischen Server und Client mittels **AJAX** und **JSON** im Vordergrund, so dass Statusänderungen auf der Kundenseite *ohne* Neuladen der Seite sichtbar werden. 
 
 ## Vorbereitung   
 
@@ -20,28 +20,7 @@ Ferner steht in dieser Einheit auch die **asynchrone Kommunikation** zwischen Se
      **Voraussetzung:** Ihre vier Seiten sind weitgehend vollständig und voll funktional. Es fehlen nur noch das Design und die Interaktionsmöglichkeit mit dem Warenkorb (Einfügen / Löschen / Preisberechnung).
      Zusätzlich haben Sie eine Klasse `KundenStatus` implementiert, die serverseitig die Daten für die Kundenseite liefert.
 
-     1. Implementierung der Bestellfunktionalität mittels JavaScript
-
-        Binden Sie eine gemeinsame EcmaScript-Datei für alle Ihre Webseiten ein. Implementieren Sie anschließend die folgenden Funktionen auf der Bestellseite:  
-
-        1. Ein Klick auf ein Pizzabild trägt diese Pizza in den Warenkorb ein;  
-                bspw. 3 Pizzen bestellen --> 3-mal klicken
-        2. Der Preis der Pizzen im Warenkorb wird berechnet und angepasst, wenn sich der Warenkorb ändert (durch Einfügen oder Löschen).     
-            Tipp: `:::js xxx.toFixed(2)` macht aus einer Zahl xxx einen String mit 2 Nachkommastellen und vermeidet Rundungsfehler!
-        3. "Beleben" Sie die Buttons zum Löschen der Einträge im Warenkorb 
-                    - sowohl "Alle löschen" als auch 
-                    - "(Mehrfach-)Auswahl löschen" (mit Festhalten von Ctrl bei der Auswahl)
-        4. Die Bestellung wird nur abgeschickt, wenn eine Lieferadresse angegeben ist und sich mindestens ein Element im Warenkorb befindet. Ansonsten ist der Bestellknopf deaktiviert.
-
-
-     2. Abschicken von Formularen ohne Submit-Button
-
-        Auf der Bäcker- und Fahrerseite wird bisher ein Submit-Button verwendet, um die Seite abzuschicken.
-
-        1. Ändern Sie die Generierung der Seiten so ab, dass sie abgeschickt werden, wenn ein Radiobutton angeklickt wird.   
-        Tipp: Dazu geben Sie dem &lt;form&gt;, das die Radiobuttons umschließt, eine ID (z.B. `:::html <form id="formid">`) und verwenden diese ID und `onclick` bei den Radiobuttons um das Formular beim Anklicken abzuschicken:  
-        `:::html <input type="radio" name=... 	onclick="document.forms['formid'].submit();" />`
-        1. Entfernen Sie die Submit-Buttons.
+     Machen Sie sich mit EcmaScript und DOM vertraut. Versuchen Sie als Vorbereitung *ernsthaft* die Aufgabe "Clientseitige Interaktion durch EcmaScript" (s.u.) zu lösen. 
 
 !!! warning  
     **Hinweise**:
@@ -67,15 +46,40 @@ Ferner steht in dieser Einheit auch die **asynchrone Kommunikation** zwischen Se
 
 ## Aufgaben
 
+### Clientseitige Interaktion durch EcmaScript
+
+1. Implementierung der Bestellfunktionalität mittels JavaScript
+
+    Binden Sie eine gemeinsame EcmaScript-Datei für alle Ihre Webseiten ein und implementieren Sie anschließend die folgenden Funktionen auf der Bestellseite:  
+
+    - Ein Klick auf ein Pizzabild trägt diese Pizza in den Warenkorb ein;  
+            bspw. 3 Pizzen bestellen --> 3-mal klicken
+    - Der Preis der Pizzen im Warenkorb wird berechnet und angepasst, wenn sich der Warenkorb ändert (durch Einfügen oder Löschen).     
+        Tipp: `:::js xxx.toFixed(2)` macht aus einer Zahl xxx einen String mit 2 Nachkommastellen und vermeidet Rundungsfehler!
+    - "Beleben" Sie die Buttons zum Löschen der Einträge im Warenkorb 
+                - sowohl "Alle löschen" als auch 
+                - "(Mehrfach-)Auswahl löschen" (mit Festhalten von Ctrl bei der Auswahl)
+    - Die Bestellung wird nur abgeschickt, wenn eine Lieferadresse angegeben ist und sich mindestens ein Element im Warenkorb befindet. Ansonsten ist der Bestellknopf deaktiviert.
+
+
+2. Abschicken von Formularen ohne Submit-Button
+
+    Auf der Bäcker- und Fahrerseite wird bisher ein Submit-Button verwendet, um die Seite abzuschicken.
+
+    - Ändern Sie die Generierung der Seiten so ab, dass sie abgeschickt werden, wenn ein Radiobutton angeklickt wird.   
+    Tipp: Dazu geben Sie dem &lt;form&gt;, das die Radiobuttons umschließt, eine ID (z.B. `:::html <form id="formid">`) und verwenden diese ID und `onclick` bei den Radiobuttons um das Formular beim Anklicken abzuschicken:  
+    `:::html <input type="radio" name=... 	onclick="document.forms['formid'].submit();" />`
+    - Entfernen Sie die Submit-Buttons. 
+
+
 ### Aktualisierung der Kundenseite mittels AJAX und JSON
 
 Die Kundenseite soll den Status der Pizzen aktualisieren ohne jedesmal die gesamte Seite neu zu laden. Zwischen Server und Client werden dann nur noch die reinen Daten ausgetauscht und kein HTML-Code mehr. Die Daten werden mit EcmaScript und DOM in die Webseite "eingebaut". Das Anfordern der Daten erfolgt mit AJAX und die Übertragung erfolgt im JSON-Format.  
-Anschließend aktualisiert die Kundenseite (`Kunde.php`) mittels JavaScript und AJAX den Status aller Bestellpositionen in Quasi-Echtzeit, ohne die Seite jeweils neu laden zu müssen. D.h., sobald sich der Status einer Bestellposition auf der Bäcker- oder Fahrer-Seite ändert, soll sich diese Änderung auch auf der Kundenseite widerspiegeln. 
+Anschließend aktualisiert die Kundenseite (`Kunde.php`) mittels JavaScript und AJAX den Status aller Bestellpositionen, ohne die Seite jeweils neu laden zu müssen. D.h., sobald sich der Status einer Bestellposition auf der Bäcker- oder Fahrer-Seite ändert, soll sich diese Änderung auch auf der Kundenseite widerspiegeln. 
 
 Die serverseitige Implementierung, welche die Daten liefert, haben Sie bereits in der letzten Übung implementiert (`KundenStatus.php`).
 
 1. **Schreiben Sie eine EcmaScript-Methode, welche die gelieferten Daten auswertet und über das DOM in die Kundenseite einfügt.**    
-    {++**Zur Vereinfachung dürfen Sie die Anzeige mit Radiobuttons durch eine *textuelle* Anzeige ersetzen. Das heißt, Sie geben einfach für jede Pizza den Status als Text aus (z.B. "Pizza Hawaii: Im Ofen")**. !!!Ohne jQuery, innerhtml & Co. ist das sonst eine elende Fummelei! Wir könnten auch die Designskizze gleich so anpassen!? Warum machen wir überhaupt 3x Radiobuttons?? ++}
      - Rufen Sie die Seite `KundenStatus.php` während einer laufenden Bestellung in einem Browserfenster auf und speichern Sie den gelieferten JSON-String für spätere Tests als Konstante in Ihrer Methode.
      - Binden Sie zu Beginn des HTML-&lt;body&gt; der Kundenseite eine separate JS-Datei ein. Also mit `... <body><script src="StatusUpdate.js"></script>...`
      - Implementieren Sie die EcmaScript-Methode `:::js process()`, die als Parameter einen (JSON-)String erhält, den String mit `:::js JSON.parse` auspackt und mittels DOM in die Kundenseite einfügt.   
@@ -114,7 +118,6 @@ Die serverseitige Implementierung, welche die Daten liefert, haben Sie bereits i
 
 3.  **Führen Sie die Aktualisierung mit AJAX alle 2 Sekunden durch**    
     -  Die Anfrage nach den aktuellen Zuständen einer Bestellung erfolgt mittels zyklisch ausgeführten AJAX-Aufrufen (*=Polling*) durch folgende EcmaScript-Funktion:    
-        {--`:::js setTimeout( function , timeout_in_milliseconds);`--}     
         `:::js window.setInterval	(myfunction, time_in_milliseconds)`   
         Dabei repräsentiert `myfunction` eine JavaScript-Funktion, die zyklisch aufgerufen werden soll. In unserem Fall ist das die Funktion `:::js requestData()` von oben, welche jeweils einen AJAX-Request anlegt und abschickt.
     - Das Polling soll erst starten, nachdem die Seite `Kunde.php` komplett vom Browser geladen und geparst wurde. Bauen Sie den Aufruf im `onload`-Handler ein.
@@ -123,10 +126,14 @@ Die serverseitige Implementierung, welche die Daten liefert, haben Sie bereits i
     !!! note
         **Hinweis**:
         Falls die Aktualisierung immer wieder die gleichen Daten liefert, dann könnte das am Cache Ihres Browsers liegen. 
-        Bauen Sie dann die folgenden Codezeilen am Anfang von `processReceivedData()` in Ihre `KundenStatus.php` ein: 
+        Bauen Sie dann die folgenden Codezeilen ganz am Anfang von `processReceivedData()` in Ihre `KundenStatus.php` ein: 
             ```js  
-            header("Cache-Control: no-cache, must-revalidate"); // HTTP/1.1
+            header("Cache-Control: no-store, no-cache, must-revalidate"); // HTTP/1.1
             header("Expires: Sat, 01 Jul 2000 06:00:00 GMT"); // Datum in der Vergangenheit
+            header("Cache-Control: post-check=0, pre-check=0", false); // fuer IE
+            header("Pragma: no-cache");
+            session_cache_limiter('nocache'); // VOR session_start()!
+            session_cache_expire(0);
             ```
 
 
@@ -163,13 +170,6 @@ Die serverseitige Implementierung, welche die Daten liefert, haben Sie bereits i
 
     - Aufbau der Seite mittels PHP; setzen bzw. aktualisieren der Zustände mit JavaScript
     - 2 separate AJAX-Requests: (a) pollt Statusupdates, (b) fragt Controller nach neuen Bestellungen; wenn neue Bestellung, dann Redirect im AJAX-Handler auf Kunde.php, d.h., Neuaufbau der Seite mit aktueller Bestellung)  -->
-
-
-TODO:
-
-- SZA liefert header-code für JSON
-- SZA liefert code gegen caching
-- 
 
 ## Nachbereitung
 Setzen Sie noch eventuell fehlende Teile der obigen Aufgabe bis zum nächsten Praktikumstermin um. 

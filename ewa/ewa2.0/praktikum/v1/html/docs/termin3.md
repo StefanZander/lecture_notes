@@ -56,7 +56,7 @@ In der finalen Lösung der Kundenseite sollen die Statusinformationen zu den Piz
 
 Erstellen Sie baierend auf `PageTemplate.php` eine **neue Seitenklasse** mit Namen `KundenStatus.php`. Diese Seite soll **keine HTML-Ausgabe** erzeugen, sondern "nur" die Statusdaten der bestellten Pizzen zurückliefern. 
    
-Bitte beachten Sie folgende Hinweise: {++ Geht das nicht so einfach? Mache ich einen Denkfehler? Warum hattest Du eine neue Basisklasse gefordert? ++}
+Bitte beachten Sie folgende Hinweise: 
 
 1. Passen Sie die Inhalte der Standardmethoden der Seitenklassen an:
     - processReceivedData(): bleibt leer, da keine Formulardaten empfangen werden sollen
@@ -68,6 +68,8 @@ Fragen Sie diese Daten gezielt bei der Datenbank ab. Verwenden Sie analog zur Au
 3. Die Datenbankabfrage liefert ein "Recordset", dessen Objekte nur mit den Methoden vom MySQLi abgefragt werden können. Deshalb ist es für die Übertragung an den Browser ungeeignet. Wandeln Sie das Recordset um in ein **einziges** Array, das - analog zum Recordset - ein assoziatives Array für jede Ergebniszeile enthält (also ein Array von assoziativen Arrays).
 4. Das Datenformat **JSON** bietet die Möglichkeit komplexe Datenstrukturen und Objekte zu einem String zu serialisieren und anschließend wieder zusammenzusetzen. Das ist sehr praktisch, wenn man komplexe Datensätze z.B. von PHP an einen Webbrowser schicken will.
 
+    - Als erstes (also zu Beginn der Methode `processReceivedData`) müssen Sie den Nachrichtenheader auf JSON setzen:    
+      `:::js header("Content-Type: application/json; charset=UTF-8");`
     - Den serialisierten JSON-String erzeugen Sie mittels    
     `:::js $serializedData = json_encode($Array_mit_Daten_aus_Recordset);`
     - Versenden Sie den serialisierten JSON-String als Antwort mit `:::js echo $serializedData`!

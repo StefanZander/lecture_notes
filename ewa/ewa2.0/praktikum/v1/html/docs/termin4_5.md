@@ -8,7 +8,7 @@ Ziel dieser Einheit ist die Entwicklung eines **Design Schemas** für Ihre Web-A
     - [ ] Sie kennen die Basiselemente von CSS zur Gestaltung eines Designs  
     - [ ] Sie können ein responsives Webdesign mit CSS und Media Queries erstellen
     - [ ] Sie können ein selbst erstelltes Design Schema in Ihre Webseiten einbinden 
-    - [ ] Sie kennen Syntax und Logik der Formulierung von CSS Selektoren {++ Welche Selektoren meinst Du? Ich finde nicht, dass man die komplizierten Fälle in den Grundlagen braucht!? ++}
+    - [ ] Sie kennen Syntax und Logik der Formulierung von CSS Selektoren
 
 !!! warning
     **Selbständige Vorbereitung:**     
@@ -22,14 +22,13 @@ Entwickeln Sie ein **ansprechendes Style Sheet** für Ihre Web-Applikation und b
  - Überlegen Sie sich zu diesem Zweck ein **Design-Schema** mit Farben, Schriftarten, Schriftgrößen, Abständen, Rändern, Ausrichtung, etc.
  - Verwenden Sie *keine* physische Formatierung in HTML und auch *kein* `style`-Attribut
  - Setzen Sie die verschiedenen Maßeinheiten sinnvoll ein. Das Layout soll hinsichtlich Fenstergröße und Schriftgröße dynamisch sein!
- - Verwenden Sie möglichst *keine* Tabellen! {++ Wie streng sehen wir das? ++}
  - Prüfen Sie das Ergebnis mit dem CSS-Validator
  - Testen Sie Ihr Style Sheet mit unterschiedlichen Browsern und validieren Sie die Standardkonformität mittels eines "CSS Validators". Besonders bei unerwartetem Verhalten des Browsers gibt ein Validator wertvolle Hinweise auf die mögliche Ursache der Probleme.
 Nutzen Sie <https://jigsaw.w3.org/css-validator/#validate_by_input> und korrigieren Sie etwaige Fehler und Warnungen.
 
 ### Responsives Layout und Mobile-First-Ansatz
 
-Realisieren Sie die Darstellung der Seite `Bestellung.php` nach dem **Mobile-First-Ansatz**. {++ Mir ist nicht klar was das konkret bedeutet. Was soll denn passieren? ++}
+Realisieren Sie die Darstellung der Seite `Bestellung.php` nach dem **Mobile-First-Ansatz**. Das heißt, Sie entwickeln die Seite zuerst im Hinblick auf eine gute *User Experience* (UX) auf dem Handy und erst dann für einen PC-Bildschirm.
 
  - Entwickeln bzw. erweitern Sie das gegebene Stylesheet für den Einsatz auf Mobiltelefonen durch die Verwendung von **Media Queries**
  - Passen Sie die Komposition der Elemente dynamisch der entspr. **Viewportgröße** und **Orientierung** an
@@ -45,8 +44,8 @@ Realisieren Sie die Darstellung der Seite `Bestellung.php` nach dem **Mobile-Fir
     - [x] Demonstration eines responsiven Webdesigns mit Media Queries am Beispiel der Bestellseite
 
 
-{--!!! note
-    **Hinweis #1**: Sie können für das Design Ihres Shopsystems ein CSS-Framework wie [Bootstrap](https://getbootstrap.com/) verwenden. Bitte beachten Sie jedoch, dass Sie in der Klausur *nicht* auf Bootstrap zurück greifen dürfen und stattdessen die CSS-Stilregeln "von Hand" erstellen müssen.--}
+!!! note
+    **Hinweis**: Sie können für das Design Ihres Shopsystems ein CSS-Framework wie [Bootstrap](https://getbootstrap.com/) verwenden, um ein besonders ausgefeiltes Design zu erhalten. Bitte beachten Sie jedoch, dass Sie in der Klausur *nicht* auf Bootstrap zurück greifen dürfen und stattdessen die CSS-Stilregeln "von Hand" erstellen müssen.
 
 
 !!! warning
