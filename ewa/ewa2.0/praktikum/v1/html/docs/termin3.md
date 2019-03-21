@@ -7,8 +7,8 @@
      - [ ] Sie beherrschen grundlegende Verfahren zur Absicherung einer Web-Applikation gegen Angriffe wie SQL-Injection und Cross-Site-Scripting
      - [ ] Sie können mittels PHP JSON-Daten erzeugen und ausliefern
 
-In dieser Einheit implementieren Sie eine leichtgewichtige Form des **Sessionmanagements**. Zusätzlich sichern Sie Ihre Web-Applikation gegen grundlegende Angriffe auf eine Webseite ab.
-Ferner implementieren Sie die Serverseite zur Aktualisierung der Kundenseite mit AJAX. 
+In dieser Einheit implementieren Sie eine leichtgewichtige Form des **Sessionmanagements**. Zusätzlich sichern Sie Ihre Web-Applikation gegen grundlegende **Angriffe** auf eine Webseite ab.
+Ferner implementieren Sie die Serverseite zur Aktualisierung der Kundenseite mittels **AJAX**. 
 
 ##Vorbereitung
 
@@ -18,7 +18,7 @@ Ferner implementieren Sie die Serverseite zur Aktualisierung der Kundenseite mit
        **Voraussetzung:** Die vier in [Termin 2](termin2.md) erstellten Seitenklassen implementieren die vollständige Datenbankanbindung des Webservices und erzeugen mit den Datenbankinhalten standardkonformen HTML-Code.
 
        1. Machen Sie sich die Funktionsweise von Sessions in PHP klar und überlegen Sie sich, wo man Sessions einsetzen muss. 
-       2. Machen Sie sich vertraut mit den Angriffen und den Gegenmaßnahmen zu `Cross Site Scripting` und `SQL-Injection`.
+       2. Machen Sie sich vertraut mit den Angriffen und den Gegenmaßnahmen zu [Cross Site Scripting](https://de.wikipedia.org/wiki/Cross-Site-Scripting) und [SQL-Injection](http://php.net/manual/de/security.database.sql-injection.php).
 
 !!! warning
      **Hinweis**:    
@@ -52,25 +52,28 @@ Welche Seitenklassen kann das betreffen? Stellen Sie mit dem Befehl `isset()` si
 
 ### Serverseitige Implementierung der Statusupdates der Kundenseite
 
-In der finalen Lösung der Kundenseite sollen die Statusinformationen zu den Pizzen übertragen werden, ohne dass jedesmal die gesamte Seite neu geladen wird. Dafür muss es auf der Serverseite eine PHP-Seite geben, die genau diese Rohdaten liefert (in einem Standardformat wie `JSON`). Das *Einbauen* der vom Browser empfangenen Daten in die Kundenseite erfolgt aber erst in der nächsten Übung. 
+In der finalen Lösung der Kundenseite sollen die Statusinformationen zu den Pizzen übertragen werden, ohne dass jedesmal die gesamte Seite neu geladen wird. Dafür muss es auf der Serverseite eine PHP-Seite geben, die genau diese Rohdaten liefert (in einem Standardformat wie `JSON`). 
 
-Erstellen Sie baierend auf `PageTemplate.php` eine **neue Seitenklasse** mit Namen `KundenStatus.php`. Diese Seite soll **keine HTML-Ausgabe** erzeugen, sondern "nur" die Statusdaten der bestellten Pizzen zurückliefern. 
+!!! note
+    **Hinweis**: Das *Einbauen* der vom Browser empfangenen Daten in die Kundenseite erfolgt erst in der nächsten Übung. 
+
+Erstellen Sie basierend auf `PageTemplate.php` eine **neue Seitenklasse** mit Namen `KundenStatus.php`. Diese Seite soll **keine HTML-Ausgabe** erzeugen, sondern "nur" die Statusdaten der bestellten Pizzen im **JSON-Format** zurückliefern. 
    
 Bitte beachten Sie folgende Hinweise: 
 
 1. Passen Sie die Inhalte der Standardmethoden der Seitenklassen an:
-    - processReceivedData(): bleibt leer, da keine Formulardaten empfangen werden sollen
-    - getViewData(): Hier können Sie wie gewohnt die Daten von der Datenbank abfragen und z.B. als Array bereitstellen
-    - generateView(): Da keine HTML-Seite erzeugt werden soll, kommentieren Sie die Zeilen generatePageHeader() und generatePageFooter() aus. Stattdessen können Sie hier aber die gewünschten Daten zurückliefern (siehe unten).
+    - `processReceivedData()`: bleibt leer, da keine Formulardaten empfangen werden sollen
+    - `getViewData()`: Hier können Sie wie gewohnt die Daten von der Datenbank abfragen und z.B. als Array bereitstellen
+    - `generateView()`: Da keine HTML-Seite erzeugt werden soll, kommentieren Sie die Zeilen `generatePageHeader()` und `generatePageFooter()` aus. Stattdessen können Sie hier aber die gewünschten Daten zurückliefern (siehe unten).
   
 2. Überlegen Sie sich, welche Daten `KundenStatus.php` von der Datenbank benötigt, um die korrekten Statusinformationen zurück zu liefern.
 Fragen Sie diese Daten gezielt bei der Datenbank ab. Verwenden Sie analog zur Aufgabe von oben **Sessionmanagement** um die gewünschte Bestellung herauszufiltern. 
-3. Die Datenbankabfrage liefert ein "Recordset", dessen Objekte nur mit den Methoden vom MySQLi abgefragt werden können. Deshalb ist es für die Übertragung an den Browser ungeeignet. Wandeln Sie das Recordset um in ein **einziges** Array, das - analog zum Recordset - ein assoziatives Array für jede Ergebniszeile enthält (also ein Array von assoziativen Arrays).
-4. Das Datenformat **JSON** bietet die Möglichkeit komplexe Datenstrukturen und Objekte zu einem String zu serialisieren und anschließend wieder zusammenzusetzen. Das ist sehr praktisch, wenn man komplexe Datensätze z.B. von PHP an einen Webbrowser schicken will.
+3. Die Datenbankabfrage liefert ein `Recordset`, dessen Objekte nur mit den Methoden vom MySQLi abgefragt werden können. Deshalb ist es für die Übertragung an den Browser ungeeignet. Wandeln Sie das Recordset in ein **einziges** Array um, das - analog zum Recordset - ein assoziatives Array für jede Ergebniszeile enthält (also ein Array von assoziativen Arrays).
+4. Das Datenformat **JSON** bietet die Möglichkeit, komplexe Datenstrukturen und Objekte zu einem String zu serialisieren und anschließend wieder zusammenzusetzen. Das ist sehr praktisch, wenn man komplexe Datensätze z.B. von PHP an einen Webbrowser schicken will.
 
-    - Als erstes (also zu Beginn der Methode `processReceivedData`) müssen Sie den Nachrichtenheader auf JSON setzen:    
+    - Als erstes (also zu Beginn der Methode `processReceivedData`) müssen Sie den **Nachrichtenheader** auf JSON setzen:    
       `:::js header("Content-Type: application/json; charset=UTF-8");`
-    - Den serialisierten JSON-String erzeugen Sie mittels    
+    - Den **serialisierten JSON-String** erzeugen Sie mittels    
     `:::js $serializedData = json_encode($Array_mit_Daten_aus_Recordset);`
     - Versenden Sie den serialisierten JSON-String als Antwort mit `:::js echo $serializedData`!
 
