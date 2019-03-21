@@ -1,6 +1,10 @@
 # Responsives Design mit CSS (--> zu Hause)
 
-Ziel dieser Einheit ist die Entwicklung eines **Design Schemas** für Ihre Web-Applikation mittels **CSS Level 3** und **Media Queries**. Hierzu setzen wir vor allem auf die Entwicklung eines **responsiven Designs**, bei welchem sich die in einer Seite enthalten UI-Elemente in Abhängigkeit des Ausgabegerätes und der Viewportgröße derart anordnen bzw. darstellen, dass eine hohe **User Experience (UX)** gewährleistet ist. 
+!!! warning
+    **Selbständige Vorbereitung:**     
+    Es wird erwartet, dass **jede Gruppe** diese Aufgaben selbständig und vollständig *vor* dem letzten Praktikumstermin (--> **Abgabe**!) erledigt hat!
+    Die Ergebnisse *müssen* für eine **erfolgreiche Testierung** im letzten Praktikum vorliegen!
+
 
 !!! note
     **Lernziele**
@@ -10,9 +14,16 @@ Ziel dieser Einheit ist die Entwicklung eines **Design Schemas** für Ihre Web-A
     - [ ] Sie können ein selbst erstelltes Design Schema in Ihre Webseiten einbinden 
     - [ ] Sie kennen Syntax und Logik der Formulierung von CSS Selektoren
 
-!!! warning
-    **Selbständige Vorbereitung:**     
-    Es wird erwartet, dass *jede\(r\)* Studierende diese Aufgaben selbständig und vollständig **vor dem letzten Praktikumstermin** erledigt! 
+Ziel dieser Einheit ist die Entwicklung eines **Design Schemas** für Ihre Web-Applikation mittels **CSS Level 3** und **Media Queries**. Hierzu setzen wir vor allem auf die Entwicklung eines **responsiven Designs**, bei welchem sich die in einer Seite enthalten UI-Elemente in Abhängigkeit des Ausgabegerätes und der Viewportgröße derart anordnen bzw. darstellen, dass eine hohe **User Experience (UX)** gewährleistet ist. 
+
+!!! note
+    **Hinweis #1**: Sie können für das Design Ihres Shopsystems ein CSS-Framework wie [Bootstrap](https://getbootstrap.com/) oder [Material Components for the Web](https://material.io/develop/web/) verwenden, um ein besonders ausgefeiltes Design zu erhalten. Bitte beachten Sie jedoch, dass Sie in der Klausur *nicht* auf CSS-Frameworks zurück greifen dürfen und stattdessen die CSS-Stilregeln "von Hand" erstellen müssen.
+
+
+!!! note
+    **Hinweis #2**: Diese Aufgabe kann und sollte **parallel** und iterativ-inkrementell zu den anderen Terminen durchgeführt werden. 
+
+
 
 ## Aufgaben
 
@@ -30,7 +41,7 @@ Nutzen Sie <https://jigsaw.w3.org/css-validator/#validate_by_input> und korrigie
 
 Realisieren Sie die Darstellung der Seite `Bestellung.php` nach dem **Mobile-First-Ansatz**. Das heißt, Sie entwickeln die Seite zuerst im Hinblick auf eine gute *User Experience* (UX) auf dem Handy und erst dann für einen PC-Bildschirm.
 
- - Entwickeln bzw. erweitern Sie das gegebene Stylesheet für den Einsatz auf Mobiltelefonen durch die Verwendung von **Media Queries**
+ - Entwickeln bzw. erweitern Sie das gegebene Stylesheet für den Einsatz auf Mobiltelefonen durch die Verwendung von [Media Queries](https://developer.mozilla.org/de/docs/Web/CSS/Media_Queries/Using_media_queries).
  - Passen Sie die Komposition der Elemente dynamisch der entspr. **Viewportgröße** und **Orientierung** an
  - Testen Sie die Darstellung mit den "Web Developer Tools" Ihres Browsers oder auf einem Mobiltelefon
 
@@ -43,11 +54,4 @@ Realisieren Sie die Darstellung der Seite `Bestellung.php` nach dem **Mobile-Fir
     - [x] Umsetzung des Design Schemas durch valides CSS
     - [x] Demonstration eines responsiven Webdesigns mit Media Queries am Beispiel der Bestellseite
 
-
-!!! note
-    **Hinweis**: Sie können für das Design Ihres Shopsystems ein CSS-Framework wie [Bootstrap](https://getbootstrap.com/) verwenden, um ein besonders ausgefeiltes Design zu erhalten. Bitte beachten Sie jedoch, dass Sie in der Klausur *nicht* auf Bootstrap zurück greifen dürfen und stattdessen die CSS-Stilregeln "von Hand" erstellen müssen.
-
-
-!!! warning
-    **Hinweis**: Diese Aufgabe kann und sollte parallel und iterativ-inkrementell zu den anderen Terminen durchgeführt werden. Die Ergebnisse müssen für eine erfolgreiche Testierung im letzten Praktikum vorliegen!
 
