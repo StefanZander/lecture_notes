@@ -17,38 +17,21 @@ Ferner steht in dieser Einheit auch die **asynchrone Kommunikation** zwischen Se
 !!! abstract  
     **Erledigen Sie diese Aufgaben VOR dem Übungstermin**
 
-     **Voraussetzung:** Ihre vier Seiten sind weitgehend vollständig und voll funktional. Es fehlen nur noch das Design und die Interaktionsmöglichkeit mit dem Warenkorb (Einfügen / Löschen / Preisberechnung).
-     Zusätzlich haben Sie eine Klasse `KundenStatus` implementiert, die serverseitig die Daten für die Kundenseite liefert.
+    **Voraussetzungen:** 
 
-     Machen Sie sich mit EcmaScript und DOM vertraut. Versuchen Sie als Vorbereitung *ernsthaft* die Aufgabe "Clientseitige Interaktion durch EcmaScript" (s.u.) zu lösen. 
+       1. Ihre vier Seiten sind weitgehend vollständig und voll funktional. Es fehlen nur noch das Design und die Interaktionsmöglichkeit mit dem Warenkorb (Einfügen / Löschen / Preisberechnung).
+       2. Zusätzlich haben Sie eine Klasse `KundenStatus` implementiert, die serverseitig die Daten für die Kundenseite liefert.
 
-!!! warning  
-    **Hinweise**:
+    **Aufgabe:**
 
-    - Verwenden Sie nur DOM-konforme Attribute und Funktionen und keine browserspezifischen Spezialitäten (Vorsicht mit Vorlagen aus dem Netz !)
-    - Verwenden Sie `"use strict";` in allen Funktionen
-    - Verwenden Sie **NICHT** den Befehl `:::js innerhtml()`
-    - Achten Sie auf Groß-Klein-Schreibung und die exakte Schreibweise bei DOM-Aufrufen
-    - Testen Sie die Skripte mit unterschiedlichen Browsern und Lint-Tools
-    - Daten, die Sie nicht anzeigen wollen, aber für die Berechnung brauchen, können unsichtbar in `data`-Attributen im Seiten-DOM gespeichert und mittels JavaScript ausgelesen werden. 
-
-    !!! failure  
-        **Bei Problemen mit DOM oder ECMAScript**:
-            
-        - Prüfen Sie die Browser-Konsole auf Fehlermeldungen (Aufruf mit F12 --> Konsole).
-        - Nutzen Sie den eingebauten "Debugger" Ihres Browser (Aufruf mit F12). 
-            - Im Reiter `Konsole` finden Sie Hinweise auf Fehler im Code, die der Browser nicht anzeigt. Wenn Ihr Code gar nichts tut, steht hier wahrscheinlich der Grund dafür. 
-            - Im Reiter `DOM` können Sie das DOM zu einem Tag anzuschauen. Eine ID für den Tag hilft enorm bei der Suche!
-            - Der `Inspektor` zeigt Ihnen die Stelle im Browserfenster, die Sie im Code auswählen.
-            - Im Browserfenster können Sie im Rechte-Maus-Menü `Element untersuchen` auswählen und sehen den zugehörigen Quellcode im Debugger.
-        - Prüfen Sie Ihr ECMAScript mit [JSLint](http://www.jslint.com) oder [ESLint für ECMAScript 6](http://eslint.org/demo/)
+       1. Machen Sie sich mit EcmaScript und DOM vertraut. Versuchen Sie als Vorbereitung *ernsthaft* die Aufgabe "Clientseitige Interaktion durch EcmaScript" (s.u.) zu lösen. 
 
 
 ## Aufgaben
 
 ### Clientseitige Interaktion durch EcmaScript
 
-1. Implementierung der Bestellfunktionalität mittels JavaScript
+1. **Implementierung der Bestellfunktionalität mittels JavaScript**
 
     Binden Sie eine gemeinsame EcmaScript-Datei für alle Ihre Webseiten ein und implementieren Sie anschließend die folgenden Funktionen auf der Bestellseite:  
 
@@ -61,8 +44,30 @@ Ferner steht in dieser Einheit auch die **asynchrone Kommunikation** zwischen Se
                 - "(Mehrfach-)Auswahl löschen" (mit Festhalten von Ctrl bei der Auswahl)
     - Die Bestellung wird nur abgeschickt, wenn eine Lieferadresse angegeben ist und sich mindestens ein Element im Warenkorb befindet. Ansonsten ist der Bestellknopf deaktiviert.
 
+    !!! warning  
+        **Hinweise**:
 
-2. Abschicken von Formularen ohne Submit-Button
+        - Verwenden Sie nur DOM-konforme Attribute und Funktionen und keine browserspezifischen Spezialitäten (Vorsicht mit Vorlagen aus dem Netz !)
+        - Verwenden Sie `"use strict";` in allen Funktionen
+        - Verwenden Sie **NICHT** den Befehl `:::js innerhtml()`
+        - Achten Sie auf Groß-Klein-Schreibung und die exakte Schreibweise bei DOM-Aufrufen
+        - Testen Sie die Skripte mit unterschiedlichen Browsern und Lint-Tools
+        - Daten, die Sie nicht anzeigen wollen, aber für die Berechnung brauchen, können unsichtbar in `data`-Attributen im Seiten-DOM gespeichert und mittels JavaScript ausgelesen werden. 
+
+    !!! warning  
+        **Bei Problemen mit DOM oder ECMAScript**:
+            
+        - Prüfen Sie die Browser-Konsole auf Fehlermeldungen (Aufruf mit F12 --> Konsole).
+        - Nutzen Sie den eingebauten "Debugger" Ihres Browser (Aufruf mit F12). 
+            - Im Reiter `Konsole` finden Sie Hinweise auf Fehler im Code, die der Browser nicht anzeigt. Wenn Ihr Code gar nichts tut, steht hier wahrscheinlich der Grund dafür. 
+            - Im Reiter `DOM` können Sie das DOM zu einem Tag anzuschauen. Eine ID für den Tag hilft enorm bei der Suche!
+            - Der `Inspektor` zeigt Ihnen die Stelle im Browserfenster, die Sie im Code auswählen.
+            - Im Browserfenster können Sie im Rechte-Maus-Menü `Element untersuchen` auswählen und sehen den zugehörigen Quellcode im Debugger.
+        - Prüfen Sie Ihr ECMAScript mit [JSLint](http://www.jslint.com) oder [ESLint für ECMAScript 6](http://eslint.org/demo/)
+
+
+
+2. **Abschicken von Formularen ohne Submit-Button**
 
     Auf der Bäcker- und Fahrerseite wird bisher ein Submit-Button verwendet, um die Seite abzuschicken.
 
@@ -177,11 +182,11 @@ Entwickeln Sie spätestens bis zum nächsten Praktikumstermin auch das **respons
 
 ## Ergebnisse
 
-Die folgenden Ergebnisse müssen für eine erfolgreiche Testierung der Praktikumseinheit vorliegen:
+Die folgenden Ergebnisse müssen für eine erfolgreiche Durchführung der Praktikumseinheit vorliegen:
 
 !!! abstract
     __Ergebnisse:__
 
     - [x] Vollständige Implementierung der Bestellseite mit Berechnungen und Prüfungen durch valides EcmaScript und DOM
     - [x] Vollständige Implementierung der zyklischen Aktualisierung der Kundenseite über AJAX und JSON
-    - [x] Der komplette Bestelldurchlauf verläuft jetzt wie vom Kunden gefordert (--> ausgiebiges Testen) 
+    - [x] Der komplette Bestelldurchlauf verläuft jetzt wie vom Kunden gefordert (--> ausgiebiges Testen erforderlich) 
