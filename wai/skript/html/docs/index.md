@@ -1,4 +1,6 @@
-#  Willkommen auf den Seiten zur LVA "Wissenschaftliches Arbeiten in der Informatik 1&2"
+# Wissenschaftliches Arbeiten in der Informatik
+
+ Willkommen auf den Seiten zur LVA "Wissenschaftliches Arbeiten in der Informatik 1&2"
 
 <!-- Stand: 2019-03-18 -->
 

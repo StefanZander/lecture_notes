@@ -21,3 +21,16 @@
     float: left;
 }
 
+.md-typeset details.question {
+    font-size: .8rem;
+    border-radius: 0;
+}
+
+.md-typeset details.question>summary::before {
+    font-size: 1.2rem;
+}
+
+.md-typeset details.question>summary {
+    padding-left: 2.2rem;
+}
+
