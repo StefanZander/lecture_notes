@@ -6,7 +6,7 @@ Aufgabenstellung zum Praktikum "Nutzerzentrierte Softwareentwicklung" (Version 2
 !!! note
     **Vorbemerkung:** Das Thema "Fernsehgerät" wurde nur deshalb für das Praktikum gewählt, weil Sie dadurch einen leichten Zugang zur Anwendungsdomäne und zu potentiellen Benutzern haben. Die hier praktizierten Methoden sind aber nicht auf Consumer-Anwendungen beschränkt, sondern passen ebenso für "Datenverarbeitung".
 
-Entwerfen Sie eine nutzerzentrierte und anwendungsfallorientierte Fernbedienung für einen "Fernseher". Die Fernbedienung sollen Sie als **Android-App** für ein Smartphone realisieren. Der "Fernseher" ist vorgegeben und wird im Praktikum simuliert durch eine gegebene **Java-Anwendung** auf dem PC, welche umschaltbare Standbilder anstelle laufender Fernsehprogramme zeigt.
+Entwerfen Sie eine nutzerzentrierte und anwendungsfallorientierte **Fernbedienung** für einen "Fernseher". Die Fernbedienung sollen Sie als **Android-App** für ein Smartphone realisieren. Der "Fernseher" ist vorgegeben und wird im Praktikum simuliert durch eine gegebene **Java-Anwendung** auf dem PC, welche umschaltbare Standbilder anstelle laufender Fernsehprogramme zeigt. Die notwendigen Dateien finden Sie im [Moodle-Kurs des Moduls](https://lernen.h-da.de/course/view.php?id=6802).
 
 Der "Fernseher" hat die **technischen** (Vorsicht: Falle!) **Features**
 

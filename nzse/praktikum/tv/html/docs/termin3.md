@@ -9,7 +9,17 @@
     - [x] Sie verstehen das Vorgehensmodell zum Entwurf einer Benutzungsschnittstelle im Kontext von OOAD/SWE
 
 !!! warning
-    **Hinweis:** Die Fernbedienung muss mindestens die im Kapitel Vorbemerkung aufgezählten Funktionen beinhalten.
+    **Hinweis:** Die Fernbedienung muss mindestens die folgenden Funktionen bieten (--> siehe auch die im Kapitel [Vorbemerkung](vorbemerkung.md) aufgezählten Funktionen).  
+
+    - Seitenverhältnis einstellen  
+    - Sender auswählen
+    - Zappen
+    - Kanalsuchlauf
+    - Favoriten anlegen und verwalten
+    - Timeshift (zeitversetzte Wiedergabe aber keine allgemeinen Recorderfunktionen)
+    - Lautstärkeregelung inkl. Mute
+    - Picture in Picture
+
 
 ## Aufgaben
 

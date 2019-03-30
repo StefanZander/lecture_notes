@@ -13,7 +13,7 @@
 
 ### Layouts und Navigation
 
-Legen Sie das Fernbedienungs-Projekt an und generieren Sie alle Activities (oder Fragmente, falls Sie eine `BottomNavigationBar` zur Navigation einsetzen möchten) der Anwendung
+Legen Sie das Fernbedienungs-Projekt an und generieren Sie alle Activities (oder [Fragmente](https://developer.android.com/guide/components/fragments), falls Sie eine `BottomNavigationBar` zur Navigation einsetzen möchten) der Anwendung
 
 1. Implementieren Sie die zugehörigen **Layouts** in der **Design-Ansicht** von Android Studio; bestücken Sie die
 Layouts mit den benötigten Views und Widgets. Testen Sie das Layout für unterschiedliche **Displaygrößen** und **Displayauflösungen** und passen Sie es ggf. an.

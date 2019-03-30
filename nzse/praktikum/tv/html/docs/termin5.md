@@ -46,4 +46,4 @@ Die folgenden Ergebnisse müssen für eine erfolgreiche Testierung der Praktikum
 
     1. [ ] Persistiertes Datenmodell
     2. [ ] Layout für Hoch- und Querformat
-    3. [ ] Umsetzung der im [Kapitel Vorbemerkung](vorbemerkung.md) genannten Funktionen
+    3. [ ] Umsetzung der im [Kapitel Vorbemerkung](vorbemerkung.md) bzw. in [Aufgabe 3](termin3.md) genannten Funktionen

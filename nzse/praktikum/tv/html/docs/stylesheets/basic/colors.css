@@ -18,4 +18,9 @@
     --question_background_color: #ffebd6;
 
     --text_shadow_color: white;
+
+    --link_text_color: var(--primary-color);
+    --link_background: white;
+    --link_hover_text_color: white;
+    --link_hover_background_color: var(--primary-color);
 }

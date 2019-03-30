@@ -1,6 +1,7 @@
 site_name: Praktikum zur LVA "Nutzerzentrierte Softwareentwicklung"
 
-pages:
+nav:
+  - 'Startseite': 'index.md'
   - 'Vorbemerkung': 'vorbemerkung.md'
   - 'Projektmappe': 'projektmappe.md'
   - 'Termin 1: Android Studio': 'termin1.md'
@@ -12,8 +13,8 @@ pages:
 
 theme:
   name: 'material'
-  custom_dir: 'material2'
-  
+  language: 'de'
+
   palette:
     primary: 'blue'
     accent: 'red'
