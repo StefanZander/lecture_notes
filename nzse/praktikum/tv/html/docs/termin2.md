@@ -98,7 +98,7 @@ Die folgenden Ergebnisse müssen für eine erfolgreiche Testierung der Praktikum
     __Ergebnisse:__
 
     - [ ] je 1 Benutzer- und 1 Kriterienliste
-    - [ ] dokumentierter Interviewleitfaden inkl. Antworten
+    - [ ] Dokumentierter Interviewleitfaden mit Antworten
     - [ ] 1 Stereotypbeschreibung
     - [ ] 1 Anwendungsszenariobeschreibung
     - [ ] (*optional*) je 1 funktionale und 1 qualitative Anforderung pro Szenario
