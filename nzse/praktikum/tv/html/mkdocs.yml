@@ -4,12 +4,12 @@ nav:
   - 'Startseite': 'index.md'
   - 'Vorbemerkung': 'vorbemerkung.md'
   - 'Projektmappe': 'projektmappe.md'
-  - 'Termin 1: Android Studio': 'termin1.md'
-  - 'Termin 2: User Research': 'termin2.md'
-  - 'Termin 3: UI Entwurf': 'termin3.md'
-  - 'Termin 4: Layout': 'termin4.md'
-  - 'Termin 5: Logik': 'termin5.md'
-  - 'Termin 6: Usability': 'termin6.md'
+  - 'Termin 0: Android Studio': 'termin1.md'
+  - 'Termin 1: User Research': 'termin2.md'
+  - 'Termin 2: UI Entwurf': 'termin3.md'
+  - 'Termin 3: Layout': 'termin4.md'
+  - 'Termin 4: Logik': 'termin5.md'
+  - 'Termin 5: Usability': 'termin6.md'
 
 theme:
   name: 'material'
@@ -20,7 +20,7 @@ theme:
     accent: 'red'
   
   feature:
-    tabs: true
+    tabs: false
 
   font:
     text: 'Zilla Slab'

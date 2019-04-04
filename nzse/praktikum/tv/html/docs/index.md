@@ -11,12 +11,12 @@ Auf den folgenden Seiten finden Sie die **Aufgaben** der jewiligen Praktikumsein
 
 ## Einheiten
 
-* [Termin 1: Kennenlernen von Android Studio](termin1.md)
-* [Termin 2: User Research](termin2.md)
-* [Termin 3: UI Entwurf und Test mittels Paper Prototyping](termin3.md)
-* [Termin 4: Implementierung der Benutzeroberfläche](termin4.md)
-* [Termin 5: Implementierung der Applikationslogik](termin5.md)
-* [Termin 6: Usability Test und Inspeciton](termin6.md)
+* [Termin 0: Kennenlernen von Android Studio (--> Vorbereitung zu Hause)](termin1.md)
+* [Termin 1: User Research](termin2.md)
+* [Termin 2: UI Entwurf und Test mittels Paper Prototyping](termin3.md)
+* [Termin 3: Implementierung der Benutzeroberfläche](termin4.md)
+* [Termin 4: Implementierung der Applikationslogik](termin5.md)
+* [Termin 5: Usability Test und Inspeciton](termin6.md)
 
 ----
 Diese Unterlagen wurden mit [mkdocs.org](http://mkdocs.org), [markdown](https://en.wikipedia.org/wiki/Markdown) und [Visual Stuido Code](https://code.visualstudio.com/) erstellt.

@@ -82,7 +82,7 @@ Alle relevanten **Daten** und **Zustände** sollen in der Fernbedienung verwalt
 !!! note
     **Bedenken Sie:** während einer Fernsehsendung macht man vielleicht noch andere Dinge mit dem Handy; eine andere Frage ist, welche Parameter beim Ausschalten des Fernsehers in Grundstellung gehen sollen. 
 
-Fassen Sie alle persistenten Daten in einer Klasse zusammen und zeichnen Sie das Klassendiagramm dieser persistenten Klasse (die Implementierung folgt in [Aufgabe 5](termin5.md)).
+Fassen Sie alle persistenten Daten in einer Klasse zusammen und zeichnen Sie das Klassendiagramm dieser persistenten Klasse (die Implementierung folgt in [Termin 4: Logik](termin5.md)).
 
 !!! note
     __Tipp:__ für das Ergebnis des Kanalscans empfiehlt sich eine `ArrayList<Channel>`.
