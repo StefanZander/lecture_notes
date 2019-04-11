@@ -4,17 +4,17 @@
 !!! abstract
     **Lernziele**
 
-    - [x] Sie können einfache Android Projekte mit Android Studio anlegen
+    - [x] Sie können einfache Android Projekte mit Android Studio anlegen
     - [x] Sie verstehen die Grundstruktur einer Android App
     - [x] Sie kennen den Lebenszyklus von Activities
     - [x] Sie kennen die wichtigsten Hilfsmittel in Android Studio
-    - [x] Sie verstehen die Konzepte „Datenmodell“ und „Persistenz“ im Kontext einer GUI-Anwendung
+    - [x] Sie verstehen die Konzepte "Datenmodell" und "Persistenz" im Kontext einer Android-Anwendung
 
 !!! note
     **Hinweis #1:** Wenn Sie zum Testen und Debuggen Ihr eigenes Handy verwenden wollen, bringen Sie bitte ein passendes USB-Kabel mit. Im Normalfall ist das Kabel des Ladegeräts dazu geeignet. Verbinden Sie das Handy via USB-Kabel mit dem Entwicklungs-PC (Ihr Notebook oder der Labor-PC), schalten Sie das Handy ein, aktivieren Sie Entwickleroptionen und darin USB-Debugging.
 
 !!! note
-    **Hinweis #2:** Sie können Android Studio und den Emulator auch auf Ihrem eigenen Laptop installieren, siehe 
+    **Hinweis #2:** Sie können Android Studio und den Emulator auch auf Ihrem eigenen Laptop installieren, siehe 
 
     - <http://developer.android.com/sdk/index.html>
     - <http://developer.android.com/sdk/installing/adding-packages.html>
@@ -53,7 +53,7 @@ Fügen Sie in jeder dieser Methoden und in `onCreate` eine Testausgabe ein:
     Log.i ("AppName", "MethodenName");
 ```
 
-Spielen Sie folgende Testfälle durch und beobachten Sie dabei die Testausgaben im Fenster `6: Android` (Sie können die Testausgaben filtern mit `Log Level = Info` und Ihrem AppName):
+Spielen Sie folgende Testfälle durch und beobachten Sie dabei die Testausgaben im Fenster `6: Android` (Sie können die Testausgaben filtern mit `Log Level = Info` und Ihrem AppName):
 
 * App aufrufen
 * Home Screen aufrufen
@@ -80,7 +80,10 @@ mit einer `Log.i`-Testausgabe und ordnen Sie die Methode dem `onClick`-Ereignis 
 Alle relevanten **Daten** und **Zustände** sollen in der Fernbedienung verwaltet werden; der Fernseher ist quasi ein reines Display. Überlegen Sie, welche Daten und Zustände innerhalb der Fernbedienung **persistent gespeichert** werden sollen und welche nur **flüchtig**?
 
 !!! note
-    **Bedenken Sie:** während einer Fernsehsendung macht man vielleicht noch andere Dinge mit dem Handy; eine andere Frage ist, welche Parameter beim Ausschalten des Fernsehers in Grundstellung gehen sollen. 
+    **Bedenken Sie:** 
+
+    * Während einer Fernsehsendung macht man vielleicht noch andere Dinge mit dem Handy.
+    * Eine andere Frage ist, welche Parameter beim Ausschalten des Fernsehers in Grundstellung gehen sollen. 
 
 Fassen Sie alle persistenten Daten in einer Klasse zusammen und zeichnen Sie das Klassendiagramm dieser persistenten Klasse (die Implementierung folgt in [Termin 4: Logik](termin5.md)).
 
@@ -90,7 +93,7 @@ Fassen Sie alle persistenten Daten in einer Klasse zusammen und zeichnen Sie das
 
 ## Ergebnisse
 
-Die folgenden Ergebnisse müssen für eine erfolgreiche Testierung der Praktikumseinheit vorliegen:
+Die folgenden Ergebnisse sollten am Ende der Praktikumseinheit vorliegen:
 
 !!! abstract
     __Ergebnisse:__
@@ -98,4 +101,4 @@ Die folgenden Ergebnisse müssen für eine erfolgreiche Testierung der Praktikum
     - [ ] Verständnis, was es mit der Klasse `R.java` auf sich hat
     - [ ] Überschriebene Methoden `onPause`, `onStop`, `onResume`, `onCreate` und `onSaveInstanceState`
     - [ ] Dokumentierte Ausgabe der Testfälle
-    - [ ] Klassendiagramm der zu persistierenden Daten
+    - [ ] (*optional*) Klassendiagramm der zu persistierenden Daten

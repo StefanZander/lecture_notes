@@ -14,11 +14,11 @@
 
 ### Datenmodell
 
-1. Implementieren Sie das in [Aufgabe 1](termin1.md) dargelegte **Datenmodell** und binden Sie es in die App ein
+1. Implementieren und ggf. verfeinern Sie das in [Aufgabe 1](termin1.md) dargelegte **Datenmodell** und binden Sie es in die App ein
 2. Machen Sie das Datenmodell **persistent**, indem Sie es in `onPause` jeder relevanten Activity serialisiert in einer Datei speichern und beim `onCreate` aus dieser Datei einlesen und deserialisieren
     
     !!! question
-        **Frage:** Erzeugen Sie dabei ein neues Model-Objekt oder füllen Sie lieber das alte mit neuen Inhalten? Müssen/dürfen Activities eigene Referenzen auf das Datenmodell halten?
+        **Frage:** Erzeugen Sie dabei ein neues Modell-Objekt oder füllen Sie lieber das alte mit neuen Inhalten? Müssen/dürfen Activities eigene Referenzen auf das Datenmodell halten?
 
 ### Benutzeroberfläche
 1. Implementieren Sie Benutzerführung durch **Zeigen/Verbergen** bzw. **Aktivieren/Deaktivieren** von Views und Widgets
@@ -46,4 +46,4 @@ Die folgenden Ergebnisse müssen für eine erfolgreiche Testierung der Praktikum
 
     1. [ ] Persistiertes Datenmodell
     2. [ ] Layout für Hoch- und Querformat
-    3. [ ] Umsetzung der im [Kapitel Vorbemerkung](vorbemerkung.md) bzw. in [Aufgabe 3](termin3.md) genannten Funktionen
+    3. [ ] Umsetzung der in [Termin 2: UI Entwurf](termin3.md) genannten sowie im Rahmen der Benutzerforschung erarbeiteten Funktionen
