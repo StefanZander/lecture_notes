@@ -3,7 +3,9 @@
 !!! abstract
     **Lernziele**
 
-    - [x] ... 
+    - [x] Sie kennen die organisatorischen und administrativen Rahmenbedingungen der Praxisphase
+    - [x] Sie wissen, welche Nachweise Sie für die erfolgreiche Absolvierung der Praxisphase benötigen
+    - [x] Sie wissen, welche Punkte Sie direkt mit Ihrem/er BetreuerIn klären und welche mit Ihrem Arbeitgeber oder dem Prüfungssekretariat  
 
 Auf dieser Seite befindet sich eine Übersicht häufig gestellter Fragen und den dazugehörigen Antworten.
 Häufig stammen diese Fragen aus E-Mails oder persönlichen Gesprächen mit den Studierenden. 
@@ -34,7 +36,7 @@ Die Informationen auf dieser Seite werden kontinuierlich erweitert und gepflegt.
 ??? question "Zwischen welchen Parteien kommt ein Vertrag zustande?"
      Den Arbeitsvertrag schließen Sie direkt mit Ihrer Praktikumsstelle. Hierbei können auch individuelle Vereinbarungen getroffen werden. Wichtig seitens des Fachbereichs Informatik bzw. der Hochschule ist, dass die zu leistende Mindeststundenanzahl von 360h sichergestellt ist.
 
-??? question "Muss der Arbeitsvertrag Im Fachbereich Informatik beziehungsweise der Hochschule vorgelegt werden?"  
+??? question "Muss der Arbeitsvertrag dem Fachbereich Informatik beziehungsweise der Hochschule vorgelegt werden?"  
      Nein. Den Arbeitsvertrag schließen Sie individuell mit der Praktikumsstelle.
 
 
@@ -45,7 +47,7 @@ Die Informationen auf dieser Seite werden kontinuierlich erweitert und gepflegt.
 ### Anmeldung der Praxisphase 
 
 ??? question "Was brauche ich für die Anmeldung der Praxisphase?"
-     Für die Anmeldung der Praxisphase müssen Sie die Lehrveranstaltung wissenschaftliches Arbeiten in der Informatik zwei erfolgreich absolviert haben. Ferner müssen Sie sich bereits während Des Semesters Um eine Praktikumsstelle bemüht haben. Für die Anmeldung zur Praxisphase ist das entsprechende Formular auf den Seiten des Prüfungssekretariatsherunterzuladen und entsprechend auszufüllen. das Formular geben Sie uns dann zur Bestätigung, dass sie das Fach wissenschaftliches Arbeiten in der Informatik zwei erfolgreich absolviert haben und zur Unterzeichnung.Das unterzeichnete Formular geben Sie dann prüfungssekretariat ab.
+     Für die Anmeldung der Praxisphase müssen Sie die Lehrveranstaltung "**Wissenschaftliches Arbeiten in der Informatik II**" erfolgreich absolviert haben. Ferner müssen Sie sich bereits während des Semesters um eine Praktikumsstelle bemüht haben. Für die Anmeldung zur Praxisphase ist das entsprechende Formular auf den Seiten des Prüfungssekretariats herunterzuladen und entsprechend auszufüllen. das Formular geben Sie uns dann zur Bestätigung, dass Sie das Fach "Wissenschaftliches Arbeiten in der Informatik II" erfolgreich absolviert haben und zur Unterzeichnung. Das unterzeichnete Formular geben Sie anschließend im **Prüfungssekretariat** ab.
 
 
 ??? question "Können Arbeitsstunden bereits vor dem offiziellen Beginn der Praxisphase angerechnet werden?"
@@ -55,7 +57,27 @@ Die Informationen auf dieser Seite werden kontinuierlich erweitert und gepflegt.
 
 
 
-### Oberpunkt 3
+### Abschluss der Praxisphase
+
+??? question "Was brauche ich für die erfolgreiche Durchführung der Praxisphase?"
+     Für die erfolgreiche Durchführung sind **4 Dinge** notwendig:
+
+     1. Ein formloser, allerdings unterzeichneter und mit dem Firmenstempel versehener Nachweis, aus dem neben Start, Ende und die wöchentlichen Arbeitsstunden insbesondere die Gesamtzeit des Praktikums, d.h., die **abzuleistenden 360 Stunden** bestätigt werden.
+     2. Die Einreichung des **Praxisberichts**
+     3. Die Teilnahme am **Kolloquium**
+     4. Das Senden eines **Zwischenberichts** etwa zur Mitte Ihrer Praxisphase.
+
+
+??? question "Kann ich den Praxisbericht für die Bachelorarbeit verwenden?"
+     IdR nein!
+
+     Der **Praxisbericht** ist eine verschriftlichte Darstellung ihrer Tätigkeiten sowie ein Resümee ihrer persönlichen Erfahrungen und Ihrem Wirken innerhalb der Praktikumsstelle.
+
+     Die **Bachelorarbeit** dagegen ist eine wissenschaftliche Arbeit, deren Schwerpunktsetzung, Struktur und Ausarbeitung nicht oder nur zu sehr geringen Anteilen mit dem Praxisbericht vereinbar ist. Eine wissenschaftliche Arbeit ist _kein_(!) Bericht.
+
+
+
+
 
 
 
