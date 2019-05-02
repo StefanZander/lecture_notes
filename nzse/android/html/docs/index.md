@@ -15,7 +15,7 @@ Die Informationen stammen an vielen Stellen aus englischsprachigen Primärquelle
 * [Kapitel 1: Grundlagen](grundlagen.md) 
 * [Kapitel 2: Activities und Intents](activities.md) 
 * [Kapitel 3: Handler](handler.md) 
-* [Kapitel 4: xxx](index.md) 
+* [Kapitel 4: Layouts](index.md) 
 * [Kapitel 5: xxx](index.md) 
 * [Kapitel 6: xxx](index.md) 
 * [Kapitel 7: xxx](index.md) 

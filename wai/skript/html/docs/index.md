@@ -17,6 +17,10 @@ Auf den folgenden Seiten finden Sie allgemeine Informationen zu verschiedenen Th
 * [Praktikumsbericht](./praxisphase/bericht.md)
 * [Häufig gestellte Fragen und Antworten](./praxisphase/questions_answers.md)
 
+## Das Exposé
+
+* [Allgemeine Informationen zum Exposé](expose.md)
+
 ## Die Bachelorarbeit
 
 * ...

@@ -4,6 +4,7 @@ nav:
   - 'Startseite': 'index.md'
   - 'Vorbemerkungen': 'vorbemerkung.md'
   - 'Praxisphase': 'praxisphase.md'
+  - 'Exposé': 'expose.md'
 
 theme:
   name: 'material'
