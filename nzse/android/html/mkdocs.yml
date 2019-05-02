@@ -1,12 +1,13 @@
 site_name: Android & Android Studio
 
-pages:
+nav:
   - 'Grundlagen': 'grundlagen.md'
   - 'JSON': 'json.md'
   - 'App Bar / Action Bar': 'actionbar.md'
 
 theme:
   name: 'material'
+  language: 'de'
   # custom_dir: 'material2'
   
   palette:
@@ -14,7 +15,7 @@ theme:
     accent: 'red'
   
   feature:
-    tabs: true
+    tabs: false
 
   font:
     text: 'Zilla Slab'

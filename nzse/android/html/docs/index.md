@@ -1,17 +1,25 @@
-# Landing Page for MkDocs Root
+#  Android und Android Studio
 
-For full documentation visit [mkdocs.org](http://mkdocs.org).
+<!-- Stand: 2019-03-18 -->
 
-## Commands
+Auf den folgenden Seiten finden Sie Informationen und Aufgaben zur Entwicklung von Android Apps mit Java und Android Studio.
+Die Informationen stammen an vielen Stellen aus englischsprachigen Primärquellen, deshalb ist ein Großteil der Lehrunterlagen in englischer Sprache verfasst.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs help` - Print this help message.
+## Allgemeine Informationen
 
-## Project layout
+* [Vorbereitung](vorbereitung.md)
+* [Anforderungen an die zu entwickelnde Webanwendung](anforderungen.md)
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+## Praktikumstermine
+
+* [Kapitel 1: Grundlagen](grundlagen.md) 
+* [Kapitel 2: Activities und Intents](activities.md) 
+* [Kapitel 3: xxx](index.md) 
+* [Kapitel 4: xxx](index.md) 
+* [Kapitel 5: xxx](index.md) 
+* [Kapitel 6: xxx](index.md) 
+* [Kapitel 7: xxx](index.md) 
+
+
+----
+Diese Unterlagen wurden mit [MkDocs](http://mkdocs.org), [Markdown](https://en.wikipedia.org/wiki/Markdown) und [Visual Studio Code](https://code.visualstudio.com/) erstellt und mit dem individuell angepassten [Material Theme for MkDocs](https://squidfunk.github.io/mkdocs-material/) gerendert.
