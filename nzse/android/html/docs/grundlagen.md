@@ -10,6 +10,27 @@
     - [x] Sie verstehen die Konzepte „Datenmodell“ und „Persistenz“ im Kontext einer GUI-Anwendung
 
 
+## The Layout Editor
+
+Android Studio provides the layout editor for quickly building an app's layout of user interface (UI) elements. It lets you drag elements to a visual design and blueprint view, position them in the layout, add constraints, and set attributes. Constraints determine the position of a UI element within the layout. A constraint represents a connection or alignment to another view, the parent layout, or an invisible guideline.
+
+Explore the layout editor, and refer to the figure below as you follow the numbered steps:
+
+![/figures/android_studio_overview.png](/figures/android_studio_overview.png)
+
+1. In the `app --> res --> layout` folder in the `Project --> Android` pane, double-click the `activity_main.xml` file to open it, if it is not already open.
+   
+2. Click the __Design__ tab if it is not already selected. You use the Design tab to manipulate elements and the layout, and the Text tab to edit the XML code for the layout.
+
+3. The __Palettes__ pane shows UI elements that you can use in your app's layout.
+4. The __Component Tree__ pane shows the view hierarchy of UI elements. View elements are organized into a tree hierarchy of parents and children, in which a child inherits the attributes of its parent. In the figure above, the `TextView` is a child of the `ConstraintLayout`. 
+
+5. The __design and blueprint__ panes of the layout editor showing the UI elements in the layout. In the figure above, the layout shows only one element: a `TextView` that displays `"Hello World"`.
+
+6. The **Attributes** tab displays the Attributes pane for setting properties for a UI element.
+
+
+
 ## Create and Manage Virtual Devices
 
 Source: <https://codelabs.developers.google.com/codelabs/android-training-hello-world/index.html?index=..%2F..%2Fandroid-training#4>

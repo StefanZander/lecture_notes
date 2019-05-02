@@ -16,12 +16,43 @@ An **Activity** represents a **single screen** in your app with which a user can
 
 An app usually consists of **multiple screens** that are **loosely bound** to each other. **Each screen is an activity**. 
 
+### Main Acitivity
 Typically, one activity in an app is specified as the **"main" activity** (`MainActivity.java`), which is presented to the user when the app is launched. The main activity can then start other activities to perform different actions.
 
+### Runtime Logic
 Each time a *new* activity starts, the *previous* activity is **stopped**, but the system **preserves the activity in a stack** (the "back stack"). 
 When a new activity starts, that new activity is **pushed** onto the back stack and takes user focus. 
 The back stack follows basic "last in, first out" stack logic. When the user is done with the current activity and presses the `Back button`, that activity is popped from the stack and destroyed, and the previous activity resumes.
 
+### Adding new Activities to an App
+Each new activity you add to your project has its **own layout and Java files**, separate from those of the main activity.  
+They also have their own `<activity>` elements in the `AndroidManifest.xml` file.  
+As with the main activity, new activity implementations that you create in Android Studio also extend from the `AppCompatActivity` class.
+
+Each activity in your app is only *loosely connected* with other activities. However, you can define an activity as a **parent of another activity** in the `AndroidManifest.xml` file. 
+This **parent-child relationship** enables Android to add **navigation hints** such as left-facing arrows in the title bar for each activity.
+
+!!! example
+    **Example:** Register a second activity in the `AndroidManifest.xml`
+
+    ```xml
+    <activity android:name=".SecondActivity"
+        android:label = "Second Activity"
+        android:parentActivityName=".MainActivity">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=
+                    "com.example.android.twoactivities.MainActivity" />
+    </activity>
+    ```
+
+    Explanations:
+
+    1. The `label` attribute adds the title of the Activity to the app bar.
+
+    2. With the `parentActivityName` attribute, you indicate that the main activity is the parent of the second activity. This relationship is used for Up navigation in your app: the app bar for the second activity will have a left-facing arrow so the user can navigate "upward" to the main activity.
+
+    3. With the `<meta-data>` element, you provide additional arbitrary information about the activity in the form of key-value pairs. In this case the metadata attributes do the same thing as the `android:parentActivityName` attribute -- they define a relationship between two activities for upward navigation. These metadata attributes are required for older versions of Android, because the `android:parentActivityName` attribute is only available for API levels 16 and higher.
 
 ## Intents
 
@@ -36,7 +67,7 @@ You use an intent to
 
 An Intent can be *explicit* or *implicit*:
 
-* An **explicit intent** is one in which you know the target of that intent. That is, you already know the fully qualified class name of that specific activity.
+* An **explicit intent** is one in which the target of an intent is known. That is, you already know the fully qualified class name of that specific activity.
 * An **implicit intent** is one in which you do *not* have the name of the target component, but you have a **general action** to perform.
 
 In NZSE and the practical sessions, you create explicit intents. 
