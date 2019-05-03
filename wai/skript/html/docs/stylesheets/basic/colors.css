@@ -14,8 +14,9 @@
     --warning_border_color: #dc9090;
     --warning_background_color: #ffd6d6;
 
-    --question_border_color: #e6ad71;
+    --question_border_color: #dc9346;
     --question_background_color: #ffebd6;
+    --question_text_background_color: rgb(254, 247, 236);
 
     --text_shadow_color: white;
 
