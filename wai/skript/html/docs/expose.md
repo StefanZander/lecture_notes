@@ -32,6 +32,7 @@ Der vorläufige Titel der Arbeit. Dieser kann sich selbstverständlich noch im w
 !!! warning 
     **Wichtig**: Der Titel sollte die **Problemstellung widerspiegeln** und nur so lang wie nötig sein. Verwenden Sie ggf. einen **Untertitel** und halten Sie den Haupttitel so knapp wie möglich. Vermeiden Sie übermäßig lange oder komplexe Titel -- diese verwässern nur die eigentliche Zielsetzung der Arbeit. 
 
+
 ### Problemstellung
 
 Die Problemstellung ist eines der wesentlichen und wichtigsten Elemente eines Exposés. Hier legen Sie die spezifische Problemstellung, mit der sich Ihre Arbeit auseinandersetzt, dar.
@@ -47,9 +48,9 @@ Ein weiteres Problem ist, dass die Problemstellung oftmals nicht konkret genug u
 
 Der nächste sehr wichtige Bestandteil.
 
-Die Forschungsfragen definieren den Rahmen der Arbeit. Sie leiten sich aus der Problemstellung ab.
+Die Forschungsfragen definieren den **inhaltlichen Rahmen** der Arbeit. Sie leiten sich aus der **Problemstellung** ab.
 
-Für die BA/MA empfiehlt es sich idR nicht mehr als 2-3 Forschungsfragen zu haben. Ggf. können Sie nachgelagerte oder untergeordnete Fragestellungen definieren. Die Hauptforschungsfragen sollten sich jedoch an der genannten Zahl orientieren.
+Für die BA/MA empfiehlt es sich idR nicht mehr als **2-3 Forschungsfragen** zu haben. Ggf. können Sie nachgelagerte oder untergeordnete Fragestellungen definieren. Die Hauptforschungsfragen sollten sich jedoch an der genannten Zahl orientieren.
 
 !!! warning
     **Wichtig**: Forschungsfragen werden oftmals zu allgemein, zu unpräzise und nicht überprüfbar formuliert.
@@ -59,28 +60,34 @@ Für die BA/MA empfiehlt es sich idR nicht mehr als 2-3 Forschungsfragen zu habe
         
     _"Wie lassen sich Big Data Technologien für xyz einsetzen?"_
 
-Diese Forschungsfrage ist zu unspezifisch und nicht überprüfbar, d.h., diese Forschungsfrage drückt keine Qualität einer Lösung aus. Es wird nicht klar, wie gut der Einsatz letztendlich ist bzw. werden keine Metriken definiert, anhand derer sich die Güte einer Lösung festmachen lässt.
+Diese Forschungsfrage ist zu unspezifisch und nicht überprüfbar, d.h., diese Forschungsfrage drückt **keine Qualität einer Lösung** aus. Es wird nicht klar, wie gut der Einsatz letztendlich ist bzw. werden keine Metriken definiert, anhand derer sich die Güte einer Lösung festmachen lässt.
 
 !!! note 
     Ein besseres Beispiel: 
         
-    _"Führt der Einsatz des Big Data Frameworks xyz zu einer 50%-igen Verbesserung der Durchsatzrate im Anwendungsfall zyx?"_
+    _"Führt der Einsatz des Big Data Frameworks xyz zu einer 50%-igen Verbesserung der Durchsatzrate im Anwendungsfall A1?"_
 
-Im Rahmen der Evaluierung kann nun untersucht werden, ob der Einsatz wirklich zu einer entsprechenden Verbesserung im genannten Anwendungsfall geführt hat.
+Im Rahmen der **Evaluierung** kann nun untersucht werden, ob der Einsatz wirklich zu einer entsprechenden Verbesserung im genannten Anwendungsfall geführt hat.
+
+Forschungsfragen sollten deshalb **präzise**, **spezifisch** und **überprüfbar** formuliert werden. Nur dann sind Forschungsfragen in der Lage, den inhaltlichen Rahmen der Abschlussarbeitformal sauber und präzise zu definieren.
 
 
 
 ### Geplante Aktivitäten
 
-Dieser Abschnitt besteht aus mehreren Unterabschnitten und gibt einen groben Überblick über die geplanten Aktivitäten. 
+Die geplanten Aktivitäten (auch *Beiträge* oder engl. *"Contributions"* genannt) beschreiben die im Rahmen der Arbeit durchgeführten Aktivitäten. Ihr Ziel ist die Erstellung von **Ergebnisartefakten**, welche als Grundlage für die anschließende **Evaluierung** dienen.
 
-Verwenden Sie zur Beschreibung der geplanten Aktivitäten die nachstehende Struktur und beschreiben Sie jeden Punkt mit max. 1 Satz:
+Jede Aktivität verfolgt ein **Ziel**, aus dessen Erreichung ein bestimmtes Ergebnis resultiert sowie eine **Methodik**, mit der das Ziel erreicht werden soll. 
+
+Im Exposé besteht dieser Abschnitt aus mehreren **Unterabschnitten** und liefert einen groben Überblick über die geplanten Aktivitäten. 
+
+Verwenden Sie zur Beschreibung der geplanten Aktivitäten die nachstehende **Struktur** und beschreiben Sie jeden Punkt mit max. 1 Satz:
     
 1. Aktivität
 2. Methode
 3. Erwartete Ergebnisse
 
-Führen Sie alle wesentlichen Aktivitäten auf; dies sollen keine 20 Aktivitäten sein, aber 4-7 wesentliche Aktivitäten sollten Sie benennen.
+Führen Sie alle wesentlichen Aktivitäten auf; dies sollen keine 20 Aktivitäten sein, aber **4-7 wesentliche Aktivitäten** sollten Sie benennen.
 
 
 ### Evaluierung
@@ -99,26 +106,28 @@ Verwenden Sie hier analog zur Beschreibung der geplanten Aktivitäten auch eine 
 So wird klar, *was* Sie untersuchen und welche *Methode* Sie planen einzusetzen.
 
 
-### Referenzen**
+### Referenzen
 
 Führen Sie hier erste Referenzen auf, welche Sie in der weiteren Ausarbeitung heranziehen (werden).
 
 
-## Ergebnisse
+## Vorgehen
+
+IdR reichen Sie eine erste Fassung des Exposés zur Begutachtung durch Ihre Betreuerin/Ihren Betreuer ein. Diese wird Ihnen anschließend mit Anmerkungen versehen zur Überarbeitung zurück gegeben. Die überarbeitete Fassung muss alle im ersten Durchlauf adressierten Verbesserungen bzw. Anmerkungen aufgreifen und diese berücksichtigen.
+
+!!! warning
+    __Wichtig__: Bitte **markieren Sie alle Änderungen** in der überarbeiteten Fassung (bspw. durch Hervorhebung, andere farbliche Darstellung oder die Verwendung des Überarbeitungs- bzw. Nachverfolgungsmodus im Textverarbeitungsprogramm). So ist für den Betreuer sofort ersichtlich, welche Stellen sich gegenüber der Erstversion geändert haben bzw. in welcher Form die Anmerkungen eingang in die Zweitfassung des Exposés gefunden haben.
+
+
+<!-- ## Ergebnisse
 
 Die folgenden Ergebnisse müssen für eine erfolgreiche Durchführung der Praktikumseinheit vorliegen:
 
 !!! abstract
     __Ergebnisse:__
 
-    - [x] Implementierung der Seiten `Bestellung.php`, `Kunde.php`, `Baecker.php` und `Fahrer.php` mittels Seitenklassen und (optional) Blockklassen.
-        - Die "Speisekarte" auf der Bestellseite wird mit den Daten aus den Datenbank erzeugt
-        - Die Daten, welche die Bestellseite abschickt, werden in der Datenbank abgelegt.
-        - Die Bäckerseite zeigt die bestellten Pizzen. Ein veränderter Status einer Pizza kann mit einem Submit-Button abgeschickt werden und wird in die Datenbank übernommen.
-        - Die Fahrerseite zeigt die Bestellungen, die bereit für die Auslieferung sind. Ein veränderter Status einer Bestellung kann mit einem Submit-Button abgeschickt werden und wird in die Datenbank übernommen.
-        - Die Fahrerseite und die Bäckerseite aktualisieren sich alle 5 Sekunden
-        - Die Kundenseite setzen Sie bitte so um, dass *alle* bestellten Pizzen angezeigt werden. Die Einschränkung auf die Pizzen des jeweiligen Kunden erfolgt erst in der nächsten Übung durch Sessionamangement.
-    - [x] Implementierung der Datenbankzugriffe mittels `MySQLi`
+    - [ ] 
+    - [ ]  -->
 
 
 
