@@ -5,8 +5,6 @@ nav:
   - 'Vorbemerkungen': 'vorbemerkung.md'
   - 'Praxisphase': 'praxisphase.md'
   - 'Exposé': 'expose.md'
-  - 'Bachelorarbeit': './bachelorarbeit/bachelorarbeit.md'
-
 
 theme:
   name: 'material'

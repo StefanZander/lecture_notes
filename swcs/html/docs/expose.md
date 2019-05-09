@@ -116,8 +116,7 @@ Führen Sie hier erste Referenzen auf, welche Sie in der weiteren Ausarbeitung h
 IdR reichen Sie eine erste Fassung des Exposés zur Begutachtung durch Ihre Betreuerin/Ihren Betreuer ein. Diese wird Ihnen anschließend mit Anmerkungen versehen zur Überarbeitung zurück gegeben. Die überarbeitete Fassung muss alle im ersten Durchlauf adressierten Verbesserungen bzw. Anmerkungen aufgreifen und diese berücksichtigen.
 
 !!! warning
-    __Wichtig__:  
-    Bitte **markieren Sie alle Änderungen** in der überarbeiteten Fassung (bspw. durch *Hervorhebung*, andere *farbliche Darstellung* oder die Verwendung des *Überarbeitungs-* bzw. *Nachverfolgungsmodus* im Textverarbeitungsprogramm). So ist für den Betreuer sofort ersichtlich, **welche Stellen sich gegenüber der Erstversion geändert haben** bzw. in welcher Form die Anmerkungen eingang in die Zweitfassung des Exposés gefunden haben.
+    __Wichtig__: Bitte **markieren Sie alle Änderungen** in der überarbeiteten Fassung (bspw. durch Hervorhebung, andere farbliche Darstellung oder die Verwendung des Überarbeitungs- bzw. Nachverfolgungsmodus im Textverarbeitungsprogramm). So ist für den Betreuer sofort ersichtlich, welche Stellen sich gegenüber der Erstversion geändert haben bzw. in welcher Form die Anmerkungen eingang in die Zweitfassung des Exposés gefunden haben.
 
 
 <!-- ## Ergebnisse
