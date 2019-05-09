@@ -2,8 +2,10 @@ site_name: Android & Android Studio
 
 nav:
   - 'Grundlagen': 'grundlagen.md'
+  - 'Activities & Intents': 'activities.md'
   - 'JSON': 'json.md'
-  - 'App Bar / Action Bar': 'actionbar.md'
+  - 'App Bar': 'actionbar.md'
+  - 'RecyclerView': 'recycler_view.md'
 
 theme:
   name: 'material'
