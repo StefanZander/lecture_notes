@@ -1,6 +1,7 @@
 .md-typeset .admonition.example {
     border-left: solid 0.25rem var(--example_border_color);
     background-color: var(--example_background_color);
+    /* box-shadow: 2px 2px 5px grey; */
 }
 
 

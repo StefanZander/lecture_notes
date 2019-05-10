@@ -378,10 +378,10 @@ public ViewHolder(final View itemView) {
         public void onClick(View v) {
         int pos = getAdapterPosition();
         if (pos != RecyclerView.NO_POSITION) {
-            Toast.makeText(itemView.getContext(), "Deleting Item #" + (pos+1), Toast.LENGTH_SHORT).show();
+            Toast.makeText(itemView.getContext(), "Deleting Item #" + (pos+1), 
+                Toast.LENGTH_SHORT).show();
             mRatings.remove(pos);
             notifyItemRemoved(pos);
-        }
         }
     });
 }
