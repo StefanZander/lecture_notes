@@ -1,4 +1,4 @@
-# RecyclerView
+# The RecyclerView
 
 
 !!! abstract 
@@ -303,7 +303,9 @@ public class UserListActivity extends AppCompatActivity {
 }
 ```
 
-## Adding Data via the Adapter
+## Interacting with the RecyclerView
+
+### Adding Data to the Data Source
 
 Unlike ListView, there is no way to add or remove items directly through the RecyclerView adapter. 
 In order to add or remove data from the data source, you need to make changes to the data source directly and notify the adapter of any changes. 
@@ -356,7 +358,7 @@ fabAdd.setOnClickListener(new View.OnClickListener() {
 });
 ```
 
-## Removing Data from the Data Source
+### Removing Data from the Data Source
 
 In the RecyclerViewDemoApp, each item (row) has a remove button at the right end of its row; once the button is activated (=*clicked*) the current item will be removed.
 In contrast to the FAB for adding an entry, the application code for removing an item will be placed in the adapter, since the handler for the remove button is defined within the `ViewHolder` class.
@@ -390,7 +392,7 @@ Since the adapter holds a reference to the data source, items can be removed (or
     **Note**: Although the code is conducted in the adapter's ViewHolder implementation, please do not forget to fire the notification event for the adapter.
 
 
-## Interacting with the RecyclerView
+### Selecting Elements from the RecyclerView
 
 
 
