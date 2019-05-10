@@ -15,7 +15,7 @@ Android favours the separation of rendering data items from their actual model d
 
 The [RecyclerView](https://developer.android.com/reference/android/support/v7/widget/RecyclerView.html) is a new [ViewGroup](https://developer.android.com/reference/android/view/ViewGroup.html) that is prepared to render any adapter-based view in a similar and more resource-efficient way. It is the successor of ListView and GridView, and it can be found in the latest support-v7 version. One of the reasons is that RecyclerView has a more extensible framework, especially since it provides the ability to implement both horizontal and vertical layouts. Use the RecyclerView widget when you have data collections whose elements change at runtime based on user action or network events.
 
-![RecyclerView](./figures/recycler_view/recycler_view.png)_A list using the `RecyclerView` (Source: [Google](https://developer.android.com/design/material/images/list_mail.png))_
+![RecyclerView](./figures/recycler_view/recycler_view.png)_A list being displayed using the `RecyclerView` (Source: [Google](https://developer.android.com/design/material/images/list_mail.png))_
 
 In order to use a RecyclerView, the following components are needed:
 
@@ -55,7 +55,7 @@ Using a RecyclerView has the following key steps:
 
 ### Adding the RecyclerView Support Library
 
-Make sure the RecyclerView support library is listed as a dependency in your `app/build.gradle`:
+Make sure the RecyclerView support library is listed as a dependency in the `app/build.gradle` file:
 ```js
 dependencies {
     ...
@@ -67,8 +67,8 @@ Click on `Sync Project with Gradle files` to let the IDE download the appropriat
 
 ### Defining a Model
 
-Every RecyclerView is backed by a source for data. 
-Therefore, define a data class which represents the data model being displayed by the RecyclerView
+Every RecyclerView is backed by a data source (the *Model* in the MVC-Paradigm). 
+Therefore, a class which represents the data model being displayed by the RecyclerView needs to be defined.
 
 ```java
 public class Rating implements Serializable {
@@ -78,16 +78,25 @@ public class Rating implements Serializable {
     private String date;
     private int score;
 
+    public Rating() {
+        this.date = generateDate();
+        this.score = generateScore();
+    }
+
     public Rating(int score) {
-        this.date = new SimpleDateFormat("E, dd. MMM yyyy, HH:mm")
-            .format(new Date(System.currentTimeMillis() - Math.round((Math.random() * 31000000000.0))));
+        this.date = generateDate();
         this.score = score;
     }
 
     public String generateDate() {
-        this.date = new SimpleDateFormat("dd.mm.yyyy")
-            .format(new Date(System.currentTimeMillis() - Math.round((Math.random() * 310000000))));
+        this.date = new SimpleDateFormat("E, dd. MMM yyyy, HH:mm")
+            .format(new Date(System.currentTimeMillis() - 
+                Math.round((Math.random() * 31000000000.0))));
         return this.date;
+    }
+
+    public int generateScore() {
+        return (int)(Math.round(Math.random() * 4.0 ) + 1);
     }
 
     public String getDate() {
