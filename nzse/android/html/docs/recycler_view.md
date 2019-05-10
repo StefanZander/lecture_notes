@@ -153,6 +153,9 @@ The adapter's role is to **convert an object at a position into a list row item*
 #### Creating the ViewHolder
 
 However, with a RecyclerView the adapter requires the existence of a `ViewHolder` object which describes and provides access to all the views within each item row. 
+
+Every adapter has three primary methods: `onCreateViewHolder` to inflate the item layout and create the holder, `onBindViewHolder` to set the view attributes based on the data and `getItemCount` to determine the number of items. 
+
 We can create the basic empty adapter and holder together in ContactsAdapter.java as follows:
 
 ```java
@@ -183,8 +186,79 @@ public class ContactsAdapter extends
 }
 ```
 
+The following things need to be implemented by the `:::js RecyclerView.Adapter`:
+
+1. A ViewHolder that extends the `ViewHolder` class of the `RecyclerView`
+2. Data structure that holds the items to be displayed (representing the data model)
+3. A constructor to populate the data structure containing the items to be displayed
+4. Individual implementation (=*overriding*) of the three `:::js RecycleView.Adapter` methods 
+    1. `:::js public ViewHolder onCreateViewHolder(ViewGroup viewGroup, int viewType)`
+    2. `:::js public void onBindViewHolder(ViewHolder viewHolder, int position)`
+    3. `:::js public int getItemCount()`
 
 
+### Binding the Adapter to the RecyclerView
+
+```java
+public class UserListActivity extends AppCompatActivity {
+
+     ArrayList<Contact> contacts;
+
+     @Override
+     protected void onCreate(Bundle savedInstanceState) {
+         // ...
+         // Lookup the recyclerview in activity layout
+         RecyclerView rvContacts = (RecyclerView) findViewById(R.id.rvContacts);
+
+         // Initialize contacts
+         contacts = Contact.createContactsList(20);
+         // Create adapter passing in the sample user data
+         ContactsAdapter adapter = new ContactsAdapter(contacts);
+         // Attach the adapter to the recyclerview to populate items
+         rvContacts.setAdapter(adapter);
+         // Set layout manager to position the items
+         rvContacts.setLayoutManager(new LinearLayoutManager(this));
+         // That's all!
+     }
+}
+```
+
+## Adding Data to the Adapter
+
+Unlike ListView, there is no way to add or remove items directly through the RecyclerView adapter. 
+You need to make changes to the data source directly and notify the adapter of any changes. 
+Also, whenever adding or removing elements, always make changes to the existing data source.
+
+The adapter provides a set of **notification methods**:
+
+| **Method**                            | **Description**                                                                           |
+|---------------------------------------|-------------------------------------------------------------------------------------------|
+| `:::js notifyItemChanged(int pos)`    | Notify that item at the position has changed.                                             |
+| `:::js notifyItemInserted(int pos)`   | Notify that item reflected at the position has been newly inserted.                       |
+| `:::js notifyItemRemoved(int pos)`    | Notify that items previously located at the position have been removed from the data set. |
+| `:::js notifyDataSetChanged()`        | Notify that the dataset has changed. Use only as last resort.                             |
+
+
+
+<!-- | Method                      | Description                                                                               |
+|-----------------------------|-------------------------------------------------------------------------------------------|
+| notifyItemChanged(int pos)  | Notify that item at the position has changed.                                             |
+| notifyItemInserted(int pos) | Notify that item reflected at the position has been newly inserted.                       |
+| notifyItemRemoved(int pos)  | Notify that items previously located at the position have been removed from the data set. |
+| notifyDataSetChanged()      | Notify that the dataset has changed. Use only as last resort.                             | -->
+
+In case an item is added to the end of the list, use the following code:
+
+```java
+// Add a new contact
+mRatings.add(0, new Rating());
+// Notify the adapter that an item was inserted at last position
+adapter.notifyItemInserted(mRatings.size()-1);
+```
+
+Every time we want to add or remove items from the RecyclerView, we will need to explicitly inform the adapter of the event. 
+Unlike the ListView adapter, a RecyclerView adapter should *not* rely on `:::js notifyDataSetChanged()` since the more granular actions should be used.
+The [API Documentation](https://developer.android.com/reference/android/support/v7/widget/RecyclerView.Adapter.html) provides more details.
 
 ## What you have Learned
 
