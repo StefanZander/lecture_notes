@@ -150,42 +150,6 @@ The layout file should be created in `res/layout/item_rating.xml`  and will be r
 Here we need to create the adapter which will actually populate the data into the `RecyclerView`. 
 The adapter's role is to **convert an object at a position into a list row item** to be inserted.
 
-#### Creating the ViewHolder
-
-However, with a RecyclerView the adapter requires the existence of a `ViewHolder` object which describes and provides access to all the views within each item row. 
-
-Every adapter has three primary methods: `onCreateViewHolder` to inflate the item layout and create the holder, `onBindViewHolder` to set the view attributes based on the data and `getItemCount` to determine the number of items. 
-
-We can create the basic empty adapter and holder together in ContactsAdapter.java as follows:
-
-```java
-// Create the basic adapter extending from RecyclerView.Adapter
-// Note that we specify the custom ViewHolder which gives us access to our views
-public class ContactsAdapter extends
-    RecyclerView.Adapter<ContactsAdapter.ViewHolder> {
-
-    // Provide a direct reference to each of the views within a data item
-    // Used to cache the views within the item layout for fast access
-    public class ViewHolder extends RecyclerView.ViewHolder {
-        // Your holder should contain a member variable
-        // for any view that will be set as you render a row
-        public TextView nameTextView;
-        public Button messageButton;
-
-        // We also create a constructor that accepts the entire item row
-        // and does the view lookups to find each subview
-        public ViewHolder(View itemView) {
-            // Stores the itemView in a public final member variable that can be used
-            // to access the context from any ViewHolder instance.
-            super(itemView);
-
-            nameTextView = (TextView) itemView.findViewById(R.id.contact_name);
-            messageButton = (Button) itemView.findViewById(R.id.message_button);
-        }
-    }
-}
-```
-
 The following things need to be implemented by the `:::js RecyclerView.Adapter`:
 
 1. A ViewHolder that extends the `ViewHolder` class of the `RecyclerView`
@@ -196,6 +160,113 @@ The following things need to be implemented by the `:::js RecyclerView.Adapter`:
     2. `:::js public void onBindViewHolder(ViewHolder viewHolder, int position)`
     3. `:::js public int getItemCount()`
 
+#### Creating the ViewHolder
+
+However, with a RecyclerView the adapter requires the existence of a `ViewHolder` object which describes and provides access to all the views within each item row. 
+
+We can create the basic empty adapter and holder together in an `:::js RecycleView.Adapter` class as follows:
+
+```java
+// Create the basic adapter extending from RecyclerView.Adapter
+// Note that we specify a custom ViewHolder that provides access to our views
+public class MyIndividualAdapter extends
+    RecyclerView.Adapter<MyIndividualAdapter.ViewHolder> {
+
+    // Provide a direct reference to each of the views within a data item
+    // Used to cache the views within the item layout for fast access
+    public class ViewHolder extends RecyclerView.ViewHolder {
+        // The holder should contain a member variable
+        // for any view that will be set as you render a row
+        public TextView nameTextView;
+        public Button messageButton;
+
+        // We also create a constructor that accepts the entire item row
+        // and does the view lookups to find each subview
+        public ViewHolder(View itemView) {
+            // Stores the itemView in a public final member variable that can
+            // be used to access the context from any ViewHolder instance.
+            super(itemView);
+
+            nameTextView = (TextView) itemView.findViewById(R.id.contact_name);
+            messageButton = (Button) itemView.findViewById(R.id.message_button);
+        }
+    }
+}
+```
+
+#### Implementing the `:::js RecycleView.Adapter` Methods
+
+Every adapter has three primary methods: 
+
+1. `:::js public ViewHolder onCreateViewHolder(ViewGroup viewGroup, int viewType)`  
+    *to inflate the item layout and create the holder,*
+2. `:::js public void onBindViewHolder(ViewHolder viewHolder, int position)`  
+    *to set the view attributes based on the data, and* 
+3. `:::js public int getItemCount()`  
+    *to determine the number of items.* 
+
+Those methods need to be implemented in order to have a fully working adapter.
+
+The following code demonstrates the implementations for the RecyclerViewDemoApp:
+
+```java
+public class RatingsAdapter extends RecyclerView.Adapter<RatingsAdapter.ViewHolder> {
+
+    // The adapter holds a reference to the data source
+    private ArrayList<Rating> mRatings = new ArrayList<Rating>();
+
+    // The ViewHolder implementation of the adapter
+    public class ViewHolder extends RecyclerView.ViewHolder {
+        public TextView txtNumber;
+        public TextView txtDate;
+        public TextView txtScore;
+        public TextView lblScore;
+        public ImageButton btnRemove;
+
+        // ViewHolder holds event handlers for caching reasons
+        public ViewHolder(final View itemView) {
+            super(itemView);
+            txtNumber = (TextView) itemView.findViewById(R.id.txtNumber);
+            txtDate = (TextView) itemView.findViewById(R.id.txtDate);
+            txtScore = (TextView) itemView.findViewById(R.id.txtScore);
+            lblScore = (TextView) itemView.findViewById(R.id.lblScore);
+            btnRemove = (ImageButton) itemView.findViewById(R.id.btnRemove);
+        }
+    }
+
+    public RatingsAdapter(ArrayList<Rating> ratings) {
+        this.mRatings = ratings;
+    }
+
+    @NonNull
+    @Override
+    public ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int viewType) {
+        Context context = viewGroup.getContext();
+        LayoutInflater inflater = LayoutInflater.from(context);
+        View ratingView = inflater.inflate(R.layout.rating_item, viewGroup, false);
+        ViewHolder viewHolder = new ViewHolder(ratingView);
+        return viewHolder;
+    }
+
+    @Override
+    public void onBindViewHolder(@NonNull ViewHolder viewHolder, int position) {
+        Rating rating = mRatings.get(position);
+
+        TextView txtNumber = viewHolder.txtNumber;
+        txtNumber.setText(String.valueOf(position + 1));
+        TextView txtData = viewHolder.txtDate;
+        txtData.setText(rating.getDate());
+        TextView txtScore = viewHolder.txtScore;
+        txtScore.setText(String.valueOf(rating.getScore()));
+        TextView lblScore = viewHolder.lblScore;
+    }
+
+    @Override
+    public int getItemCount() {
+        return mRatings.size();
+    }
+}
+```
 
 ### Binding the Adapter to the RecyclerView
 
@@ -223,13 +294,13 @@ public class UserListActivity extends AppCompatActivity {
 }
 ```
 
-## Adding Data to the Adapter
+## Adding Data via the Adapter
 
 Unlike ListView, there is no way to add or remove items directly through the RecyclerView adapter. 
-You need to make changes to the data source directly and notify the adapter of any changes. 
+In order to add or remove data from the data source, you need to make changes to the data source directly and notify the adapter of any changes. 
 Also, whenever adding or removing elements, always make changes to the existing data source.
 
-The adapter provides a set of **notification methods**:
+The adapter provides a set of **notification methods** for changes related to the data source:
 
 | **Method**                            | **Description**                                                                           |
 |---------------------------------------|-------------------------------------------------------------------------------------------|
@@ -251,7 +322,7 @@ In case an item is added to the end of the list, use the following code:
 
 ```java
 // Add a new contact
-mRatings.add(0, new Rating());
+mRatings.add(new Rating());
 // Notify the adapter that an item was inserted at last position
 adapter.notifyItemInserted(mRatings.size()-1);
 ```
@@ -259,6 +330,56 @@ adapter.notifyItemInserted(mRatings.size()-1);
 Every time we want to add or remove items from the RecyclerView, we will need to explicitly inform the adapter of the event. 
 Unlike the ListView adapter, a RecyclerView adapter should *not* rely on `:::js notifyDataSetChanged()` since the more granular actions should be used.
 The [API Documentation](https://developer.android.com/reference/android/support/v7/widget/RecyclerView.Adapter.html) provides more details.
+
+The following code excerpt defines an `onClick()` handler for an Floating Action Button that adds a new rating to the data source every time it is activated:
+
+```java
+fabAdd = (FloatingActionButton) findViewById(R.id.fabAdd);
+fabAdd.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        mRatings.add(new Rating());
+        adapter.notifyItemInserted(mRatings.size()-1);
+        Toast.makeText(v.getContext(), "Rating added", Toast.LENGTH_SHORT)
+            .show();
+        recRatings.smoothScrollToPosition(mRatings.size()-1);
+    }
+});
+```
+
+## Removing Data from the Data Source
+
+In the RecyclerViewDemoApp, each item (row) has a remove button at the right end of its row; once the button is activated (=*clicked*) the current item will be removed.
+In contrast to the FAB for adding an entry, the application code for removing an item will be placed in the adapter, since the handler for the remove button is defined within the `ViewHolder` class.
+
+```java
+public ViewHolder(final View itemView) {
+    super(itemView);
+
+    txtNumber = (TextView) itemView.findViewById(R.id.txtNumber);
+    txtDate = (TextView) itemView.findViewById(R.id.txtDate);
+    txtScore = (TextView) itemView.findViewById(R.id.txtScore);
+    lblScore = (TextView) itemView.findViewById(R.id.lblScore);
+    btnRemove = (ImageButton) itemView.findViewById(R.id.btnRemove);
+
+    btnRemove.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+        int pos = getAdapterPosition();
+        if (pos != RecyclerView.NO_POSITION) {
+            Toast.makeText(itemView.getContext(), "Deleting Item #" + (pos+1), Toast.LENGTH_SHORT).show();
+            mRatings.remove(pos);
+            notifyItemRemoved(pos);
+        }
+        }
+    });
+}
+```
+
+Since the adapter holds a reference to the data source, items can be removed (or added) directly via this reference. 
+!!! note
+    **Note**: Although the code is conducted in the adapter's ViewHolder implementation, please do not forget to fire the notification event for the adapter.
+
 
 ## What you have Learned
 
