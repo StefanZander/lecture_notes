@@ -381,6 +381,10 @@ Since the adapter holds a reference to the data source, items can be removed (or
     **Note**: Although the code is conducted in the adapter's ViewHolder implementation, please do not forget to fire the notification event for the adapter.
 
 
+## Interacting with the RecyclerView
+
+
+
 ## What you have Learned
 
 !!! abstract
