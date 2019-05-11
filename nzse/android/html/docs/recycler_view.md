@@ -396,6 +396,34 @@ Since the adapter holds a reference to the data source, items can be removed (or
 
 
 
+```java
+public ViewHolder(final View itemView) {
+    super(itemView);
+
+    txtNumber = (TextView) itemView.findViewById(R.id.txtNumber);
+    txtDate = (TextView) itemView.findViewById(R.id.txtDate);
+    txtScore = (TextView) itemView.findViewById(R.id.txtScore);
+    lblScore = (TextView) itemView.findViewById(R.id.lblScore);
+    btnRemove = (ImageButton) itemView.findViewById(R.id.btnRemove);
+
+    btnRemove.setOnClickListener(new View.OnClickListener() {
+        ...
+    });
+
+    itemView.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Log.v(TAG, "RecyclerView clicked....");
+            // RecyclerView.ViewHolder holder = recRatings.getChildViewHolder(v);
+            int position = getAdapterPosition();
+            if (position != RecyclerView.NO_POSITION) {
+                Toast.makeText(v.getContext(), "Item selected #" + (position + 1), Toast.LENGTH_SHORT).show();
+            }
+        }
+    });
+}
+```
+
 ## What you have Learned
 
 !!! abstract
