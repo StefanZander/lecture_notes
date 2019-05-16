@@ -1,6 +1,7 @@
 site_name: Android & Android Studio
 
 nav:
+  - 'Landing Page': 'index.md'
   - 'Grundlagen': 'grundlagen.md'
   - 'Activities & Intents': 'activities.md'
   - 'JSON': 'json.md'
