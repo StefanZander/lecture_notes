@@ -17,11 +17,36 @@ The [RecyclerView](https://developer.android.com/reference/android/support/v7/wi
 
 ![RecyclerView](./figures/recycler_view/recycler_view.png)_A list being displayed using the `RecyclerView` (Source: [Google](https://developer.android.com/design/material/images/list_mail.png))_
 
+
+## RecyclerView Overview
+
+The [RecyclerView](https://developer.android.com/reference/androidx/recyclerview/widget/RecyclerView.html) widget is a more advanced and flexible version of [ListView](https://developer.android.com/reference/android/widget/ListView.html).
+
+In the RecyclerView model, several different components work together to display your data. 
+The overall container for your user interface is a **RecyclerView object** that you add to your layout. 
+The RecyclerView fills itself with views provided by a **layout manager** that you provide. 
+You can use one of our standard layout managers (such as [LinearLayoutManager](https://developer.android.com/reference/androidx/recyclerview/widget/LinearLayoutManager.html) or [GridLayoutManager](https://developer.android.com/reference/androidx/gridlayout/widget/GridLayoutManager.html)), or implement your own.
+
+The views in the list are represented by **view holder objects**. 
+These objects are **instances** of a class you define by extending `:::js RecyclerView.ViewHolder`[(--> link)](https://developer.android.com/reference/androidx/recyclerview/widget/RecyclerView.ViewHolder.html). 
+Each view holder is in charge of **displaying a single item** with a view. For example, if your list shows music collection, each view holder might represent a single album. The RecyclerView creates only as many view holders as are needed to display the on-screen portion of the dynamic content, plus a few extra. As the user scrolls through the list, the RecyclerView takes the off-screen views and **rebinds them to the data** which is scrolling onto the screen.
+
+The view holder objects are managed by an **adapter**, which you create by extending `:::js RecyclerView.Adapter`[(--> link)](https://developer.android.com/reference/androidx/recyclerview/widget/RecyclerView.Adapter.html). 
+The adapter 
+
+- _creates_ **view holders** as needed. 
+- _binds_ the view holders to their **data**. 
+
+It does this by assigning the **view holder to a position**, and calling the adapter's `:::js onBindViewHolder()` method. 
+That method uses the view holder's position to **determine what the contents should be**, based on its list position.
+
+## Components
+
 In order to use a RecyclerView, the following components are needed:
 
-- `:::js RecyclerView.Adapter` - To handle the data collection and bind it to the view
+<!-- - `:::js RecyclerView.Adapter` - To handle the data collection and bind it to the view
 - `:::js LayoutManager` - to position the items
-- `:::js ItemAnimator` - to support animating the items for common operations such as Addition or Removal of item
+- `:::js ItemAnimator` - to support animating the items for common operations such as Addition or Removal of item -->
 
 - A **data model** containing the data to display: Use the mWordList.
 - A **RecyclerView** for the scrolling list that contains the list items.
@@ -29,7 +54,7 @@ In order to use a RecyclerView, the following components are needed:
 - A **layout manager**. `:::js RecyclerView.LayoutManager` handles the hierarchy and layout of View elements. `RecyclerView` requires an explicit layout manager to manage the arrangement of list items contained within it. This layout could be vertical, horizontal, or a grid. You will use a vertical [LinearLayoutManager](https://developer.android.com/reference/android/support/v7/widget/LinearLayoutManager.html).
 - An **adapter**. `:::js RecyclerView.Adapter` connects your data to the `RecyclerView`. It prepares the data in a `:::js RecyclerView.ViewHolder`. You will create an adapter that inserts into and updates your _generated words in your views_.
 - A **ViewHolder**. Inside your adapter, you will create a [ViewHolder](https://developer.android.com/reference/android/support/v7/widget/RecyclerView.ViewHolder.html) that contains the View information for displaying one item from the item's layout.
-
+- A **recyclerview-selection library** to select items in a RecyclerView list using touch or mouse input. (--> _this is not part of this documentation._)
 
 ## Glossary of Terms
 
@@ -394,7 +419,9 @@ Since the adapter holds a reference to the data source, items can be removed (or
 
 ### Selecting Elements from the RecyclerView
 
-
+!!! note
+    **Note**:  This is a very simple form of implementing an onClickListener for a RecyclerView. However, the presented implementation is sufficient for this course.  
+    At [Link #1](https://developer.android.com/reference/androidx/recyclerview/selection/package-summary.html) and [Link #2](https://guides.codepath.com/android/using-the-recyclerview#attaching-click-handlers-to-items) you will find more advanced implementations of selection listener that provide more extensive sets of interaction features such as movement gestures or combining app bar actions with RecyclerView actions.
 
 ```java
 public ViewHolder(final View itemView) {
@@ -429,6 +456,16 @@ public ViewHolder(final View itemView) {
 !!! abstract
     __After having finished this lession, you know...__
 
-    - [ ] ...how to create Activities and Intents 
-    - [ ] ...how the Application Model in Android works
-    - [ ] ...how you can use Intents to call Activities and share data between them.
+    - [ ] ...how to setup a RecyclerView and a RecyclerView's Adapter 
+    - [ ] ...how to implement the main elements of a RecyclerView
+    - [ ] ...how you can interact with a RecyclerView's elements (=items) 
+
+
+## Disclaimer
+
+Most of the information in this lecture has been compiled from the following sources:
+
+* <https://developer.android.com/guide/topics/ui/layout/recyclerview>
+* <https://guides.codepath.com/android/using-the-recyclerview>
+* <https://developer.android.com/reference/android/support/v7/widget/RecyclerView.html>
+* <https://codelabs.developers.google.com/codelabs/android-training-create-recycler-view/index.html>
