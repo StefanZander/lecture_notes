@@ -69,7 +69,7 @@ try {
     __Note:__ The structure of the serialized JSON data need to be known beforehand, i.e., the logic needed to map the extracted JSON elements into Java object must be implemented by hand in the source code.
 
 !!! warning
-    __Warning:___ The code example cannot run in the main thread in Android (why?). Place such code in a Thread or in an `AsyncTask`.
+    __Warning:__ The code example cannot run in the main thread in Android (why?). Place such code in a separate Thread or in an `AsyncTask`.
 
 
 
@@ -159,10 +159,11 @@ BagOfPrimitives obj2 = gson.fromJson(json, BagOfPrimitives.class);
 * If a field is `synthetic`, it is ignored and not included in JSON serialization or deserialization.
 * Fields corresponding to the outer classes in inner classes, anonymous classes, and local classes are ignored and not included in serialization or deserialization.
 
-TODO: Add more information about serializing and deserializing objects and collections (see gson user guide)
+!!! note
+    __TODO__: Add more information about serializing and deserializing objects and collections (see gson user guide)
 
 
-## Quellen
+## Sources
 
 * <http://www.vogella.com/tutorials/AndroidJSON/article.html>
 * <http://www.vogella.com/tutorials/JavaLibrary-Gson/article.html>

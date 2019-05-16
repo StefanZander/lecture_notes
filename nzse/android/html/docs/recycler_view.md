@@ -451,6 +451,10 @@ public ViewHolder(final View itemView) {
 }
 ```
 
+### Swipe Actions
+
+Consult [this Link](https://www.vogella.com/tutorials/AndroidRecyclerView/article.html#recyclerview_swipe) if you want to add swipe gestures to a RecyclerView.
+
 ## What you have Learned
 
 !!! abstract

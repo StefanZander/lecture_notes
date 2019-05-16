@@ -5,10 +5,8 @@
 
     - [x] You know the basic principles of Android Activies and Intents
     - [x] You are familiar with the application model of Android Applications
-    - [x] 
+    - [x] You know how to add new Activities to an app and update the `AndroidManifest.xml`
 
-!!! warning
-    **Hinweis:** Die Fernbedienung muss mindestens die im Kapitel Vorbemerkung aufgezählten Funktionen beinhalten.
 
 ## Activities
 
