@@ -1,9 +1,9 @@
-site_name: Informationen zur LVA "Wissenschaftliches Arbeiten in der Informatik 1/2"
+site_name: "Scientific Writing for Computer Science"
 
 nav:
-  - 'Startseite': 'index.md'
-  - 'Vorbemerkungen': 'vorbemerkung.md'
-  - 'Praxisphase': 'praxisphase.md'
+  - 'Main Page': 'index.md'
+  - 'Objectives': 'objectives.md'
+  - 'Organisation': 'organisation.md'
   - 'Exposé': 'expose.md'
 
 theme:
