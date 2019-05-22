@@ -4,7 +4,15 @@ nav:
   - 'Main Page': 'index.md'
   - 'Objectives': 'objectives.md'
   - 'Organisation': 'organisation.md'
-  - 'Exposé': 'expose.md'
+  - 'Schedule': 'schedule.md'
+  - 'MS1: Group and Topic': 'milestone1.md'
+  - 'MS2: Factsheet & Abstract': 'milestone2.md'
+  - 'MS3: Paper Draft': 'milestone1.md'
+  - 'MS4: Review': 'milestone1.md'
+  - 'MS5: Final Presentation': 'milestone1.md'
+  - 'MS6: Final Paper': 'milestone1.md'
+
+
 
 theme:
   name: 'material'

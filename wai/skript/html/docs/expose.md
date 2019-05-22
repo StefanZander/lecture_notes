@@ -39,7 +39,7 @@ Die Problemstellung ist eines der wesentlichen und wichtigsten Elemente eines Ex
 
 Die Problemstellung sollte knapp aber präzise beschrieben sein. Die Struktur kann dem [Prinzip der invertierten Pyramide](https://de.wikipedia.org/wiki/Prinzip_der_umgekehrten_Pyramide) folgen, d.h., die wesentlichen Probleme sollten zu Beginn genannt werden. Erst danach folgen Hintergrundinformationen sowie die Einbettung in den Arbeitskontext und ggf. weitere Einzelheiten.
 
-Häufig wird die Problemstellung wie eine Einleitung bzw. die Hinführung zu einem Thema formuliert. Das kann fallweise in Ordnung sein. Generell sollte aber die spezifische Problemstellung, mit der sich die Arbeit auseinandersetzt in Vordergrund stehen. 
+Häufig wird die Problemstellung wie eine Einleitung bzw. die Hinführung zu einem Thema formuliert. Das kann fallweise in Ordnung sein. Generell sollte aber die spezifische Problemstellung, mit der sich die Arbeit auseinandersetzt, im Vordergrund stehen. 
 
 Ein weiteres Problem ist, dass die Problemstellung oftmals nicht konkret genug und sehr allgemein formuliert ist. Das ist aus mehreren Gründen problematisch. Die Arbeit soll einen konkreten Beitrag zur Beantwortung der Problemstellung liefern, und je konkreter die Problemstellung formuliert ist, desto klarer kann später die weitere Ausarbeitung erfolgen. Zudem lässt sich so leichter überprüfen, ob die Beiträge Ihrer Arbeit die aufgeworfene Problemstellung bereits hinreichend genau beantworten.
 
