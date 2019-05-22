@@ -224,6 +224,8 @@ public void sendCommandToTvServer(View view) {
                Alternatively, view updates can be issued via implementing 
                the Runnable Interface and passing it to the view's post()-method
                as an anonymous inner class.
+               That way, UI thread elements can be updated from background threads
+               See https://stackoverflow.com/questions/13840007/what-exactly-does-the-post-method-do 
                */
                txtResponse.post(new Runnable() {
                     @Override
