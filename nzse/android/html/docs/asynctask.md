@@ -101,7 +101,9 @@ There are a few **threading rules** that must be followed for this class to **wo
 * The task can be **executed only once** (an exception will be thrown if a second execution is attempted.)
 
 
-## Example
+## Examples
+
+### Example #1: Subclassing AsyncTask
 
 ```java
 public class ScanChannelsTask extends AsyncTask<String, Integer, JSONObject> {
@@ -184,11 +186,66 @@ public class ScanChannelsTask extends AsyncTask<String, Integer, JSONObject> {
         Toast.makeText(this.context, "Channel Scan finished", Toast.LENGTH_SHORT).show();
     }
 }
-
-
-
 ```
 
+### Example #2: Passing Runnable to AsyncTask's execute Method
+
+```java
+/**
+* Sends the content from txtCommand widget as command to TV Server
+*
+* Shows Option #2 on instantiating an {@link AsyncTask}
+*
+* {@link AsyncTask}s can also be instantiated by implementing the {@link Runnable} interface
+* (and its run() method) in form of an annonymous inner class that is passed as argument to
+* the {@link AsyncTask}'s execute() method
+*/
+public void sendCommandToTvServer(View view) {
+     final String command = txtCommand.getText().toString();
+     txtResponse.append("\nSending Command to TV Server: " + command);
+
+     AsyncTask.execute(new Runnable() {
+          @Override
+          public void run() {
+               try {
+               JSONObject obj = httpRequest.execute(command);
+               Message msg = new Message();
+               Bundle bundle = new Bundle();
+               bundle.putString(MainActivity.HANDLER_MESSAGE_KEY, obj.toString());
+               msg.setData(bundle);
+               /*
+               Example #1
+               SZA: It is important to use sendMessage here;
+               otherwise an Exception is thrown (see Example #3)
+               */
+               mMessageHandler.sendMessage(msg); //
+               /*
+               Example #2
+               Alternatively, view updates can be issued via implementing 
+               the Runnable Interface and passing it to the view's post()-method
+               as an anonymous inner class.
+               */
+               txtResponse.post(new Runnable() {
+                    @Override
+                    public void run() {
+                         txtResponse.append("\nResult created...");
+                    }
+               }) ;
+               /*
+               Example #3
+               SZA: Doesn't work --> Main views can not be modified
+               from runnable objects; only main thread can update its views
+               */
+               // txtResponse.setText("\n"+ obj.toString());
+               } catch (IOException e) {
+               e.printStackTrace();
+               } catch (JSONException e) {
+               e.printStackTrace();
+               }
+          }
+     });
+}
+```
 
 
 ## What you have Learned
