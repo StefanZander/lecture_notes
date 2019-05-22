@@ -1,12 +1,13 @@
 site_name: Android & Android Studio
 
 nav:
-  - 'Landing Page': 'index.md'
+  - 'Index': 'index.md'
   - 'Grundlagen': 'grundlagen.md'
   - 'Activities & Intents': 'activities.md'
   - 'JSON': 'json.md'
   - 'App Bar': 'actionbar.md'
   - 'RecyclerView': 'recycler_view.md'
+  - 'AsyncTask': 'asynctask.md'
 
 theme:
   name: 'material'

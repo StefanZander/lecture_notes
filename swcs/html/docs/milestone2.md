@@ -6,7 +6,7 @@
 !!! abstract
     **Objectives**
 
-    - [ ] Find a colleague with whom your from a SWCS group
+    - [ ] Find a colleague with whom you from a SWCS group
     - [ ] Find a topic that is of interest of both of you
     - [ ] Enter your group constellation and topic into the SWCS Moodle course
 

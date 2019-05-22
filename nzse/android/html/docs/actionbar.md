@@ -10,6 +10,7 @@
 !!! note
     __Note:__ The app bar should be implemented using the __Android Toolbar__ to make it available for a wide range of devices. According to the Android developer guidelines, the appcompat [Toolbar](https://developer.android.com/reference/android/support/v7/widget/Toolbar.html) has the best compatibility support.  
 
+
 ## Introduction
 
 The **app bar**, also known as the *action bar*, is one of the *most important design elements* in your app's activities, because it provides a visual structure and interactive elements that are familiar to users. Using the app bar makes your app **consistent with other Android apps**, allowing users to quickly understand how to operate your app and have a great experience. 
@@ -25,6 +26,7 @@ This lecture describes how to use the [v7 appcompat](https://developer.android.c
 !!! note
     __Note:__ There are other ways to implement an app bar—for example, some themes set up an ActionBar as an app bar by default—but using the **appcompat Toolbar** makes it easy to set up an app bar that works on the **widest range of devices**, and also gives you room to customize your app bar later on as your app develops.
 
+
 ## Choosing the App Bar Implementation
 
 In its most basic form, the action bar displays the **title for the activity** on one side and an **overflow menu** on the other. Even in this simple form, the app bar provides useful information to the users, and helps to give Android apps a consistent look and feel.
@@ -35,9 +37,11 @@ Beginning with Android 3.0 (API level 11), all activities that use the default t
 
 For this reason, it is **recommended to use the support library's `Toolbar` class to implement activities' app bars**. Using the support library's toolbar helps ensure that an app will have consistent behavior across the widest range of devices. For example, the [Toolbar](https://developer.android.com/reference/android/support/v7/widget/Toolbar.html) widget provides a [material design](https://developer.android.com/design/material/index.html) experience on devices running Android 2.1 (API level 7) or later, but the native action bar doesn't support material design unless the device is running Android 5.0 (API level 21) or later.
 
+
 ## Adding a Toolbar to an Activity
 
 These steps describe how to set up a `Toolbar` as an activity's app bar:
+
 
 ### Set the necessary Support Libraries
 
@@ -91,6 +95,7 @@ dependencies {
     }
     ```
 
+
 ### Extend `AppCompatActivity`
 
 Make sure the activity class extends `AppCompatActivity`, as illustrated below:
@@ -104,6 +109,7 @@ public class MyActivity extends AppCompatActivity {
 !!! note
     __Note:__ You need to make this change for *every activity* in your app that uses a Toolbar as an app bar.
 
+
 ### Set the `NoActionBar` Theme
 
 In the **app manifest**, set the `<application>` element to use one of appcompat's [NoActionBar](https://developer.android.com/reference/android/support/v7/appcompat/R.style.html#Theme_AppCompat_NoActionBar) themes. Using one of these themes prevents the app from using the native `ActionBar` class to provide the app bar. For example:
@@ -113,6 +119,7 @@ In the **app manifest**, set the `<application>` element to use one of appcompat
     android:theme="@style/Theme.AppCompat.Light.NoActionBar"
 />
 ```
+
 
 ### Set the Toolbar's Layout
 
