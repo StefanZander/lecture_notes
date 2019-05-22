@@ -1,4 +1,4 @@
-# JSON – JavaScript Object Notation
+# JavaScript Object Notation (JSON)
 
 
 !!! abstract 
@@ -13,10 +13,10 @@
 The Android platform includes the standard `json.org` library, which allows processing and creating JSON files.
 
 !!! warning
-    __Plase note:__ Instances of this class are **_not_ thread safe**. Although this class is nonfinal, it was not designed for inheritance and should not be subclassed. In particular, self-use by overrideable methods is not specified.
+    __Plase note:__ Instances of the `json.org` class are **_not_ thread safe**. Although this class is nonfinal, it was _not_ designed for inheritance and should _not_ be subclassed. In particular, self-use by overrideable methods is not specified.
 
 !!! note
-    __Hint:__ You can also use open source libraries such as __Gson__ or __Moshi__, available at <https://github.com/google/gson> and <https://github.com/square/moshi> for JSON processing. This library is easier to use, faster and provide more flexibility.
+    __Hint:__ You can also use **open source libraries** such as [Gson](https://github.com/google/gson) and [Moshi](https://github.com/square/moshi) for JSON processing. These libraries are easier to use, in general faster and provide more flexibility.
 
 ### JSONObject
 
@@ -69,7 +69,7 @@ try {
     __Note:__ The structure of the serialized JSON data need to be known beforehand, i.e., the logic needed to map the extracted JSON elements into Java object must be implemented by hand in the source code.
 
 !!! warning
-    __Warning:__ The code example cannot run in the main thread in Android (why?). Place such code in a separate Thread or in an `AsyncTask`.
+    __Warning:__ The code example cannot run in the main thread in Android (_think about why_). Place such code in a separate Thread or use an `AsyncTask`.
 
 
 
@@ -163,7 +163,9 @@ BagOfPrimitives obj2 = gson.fromJson(json, BagOfPrimitives.class);
     __TODO__: Add more information about serializing and deserializing objects and collections (see gson user guide)
 
 
-## Sources
+## Disclaimer
+
+Most of the information in this section has been compiled from the following sources:
 
 * <http://www.vogella.com/tutorials/AndroidJSON/article.html>
 * <http://www.vogella.com/tutorials/JavaLibrary-Gson/article.html>
