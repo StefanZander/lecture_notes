@@ -40,6 +40,21 @@
     Email Submissions will *not* be accepted! All results need to be submitted via easychair.
 
 
-## Main Tasks
+## Grading
 
-TBD
+* The grading includes
+    
+    * Factsheet + Abstract – _(Factor 1)_
+    * Review – _(Factor 1)_
+    * Final Presentation – _(Factor 3)_
+    * Written Paper – _(Factor 5)_
+
+    ...with max. **10 points** each
+
+    ...multiplied by the **factor** of each artefact according to the module description‘s grading ratio
+
+* Your **final mark** is calculated from the aggregated points
+
+    !!! note
+        **Note**: You will recieve **bonus points** for exceptionally well elaborated results.
+

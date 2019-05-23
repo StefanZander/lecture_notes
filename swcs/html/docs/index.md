@@ -18,11 +18,14 @@ The following pages contain information about the subject's main elements and mi
 
 * [Milestone #1: Group and Topic Finding](milestone1.md) 
 * [Milestone #2: Factsheet and Abstract](milestone2.md) 
-* [Milestone #3: Submission of Paper Draft](milestone1.md) 
+* [Milestone #3: Submission of Paper Draft](milestone3.md) 
 * [Milestone #4: Review](milestone1.md) 
 * [Milestone #5: Scientific Presentation](milestone1.md) 
 * [Milestone #6: Submission of Final Paper](milestone1.md) 
 
+## Tipps
+
+* [What makes a good Scientifc Paper](good_paper.md) 
 
 
 

@@ -54,7 +54,7 @@ Use the following structure and document each aspect with very few sentences:
     - Register both authors at the easychair system and enter all relevant information
   
         !!! note
-            **Note**: Both(!) authors need to register at the easychair system. Please use your official student email addresses for the reqistration as I will use these later to register you for the reviews. If author and programme committee email-adresses do not match, problems will occur during the review assignment.
+            **Note**: Both(!) authors need to register at the easychair system. Please use your official student email addresses for the registration as I will use these later to register you for the reviews. If author and programme committee email adresses do not match, problems will occur during the review assignment.
 
     - Upload the document to the easychair system
         
