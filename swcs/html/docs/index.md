@@ -9,18 +9,21 @@ The following pages contain information about the subject's main elements and mi
 
 ## General Information
 
-* [Vorbemerkung zu ...](vorbemerkung.md)
+* [Objectives](objectives.md)
+* [Organisation](organisation.md)
+* [Schedule](schedule.md)
 <!-- * [Anforderungen an die zu entwickelnde Webanwendung](anforderungen.md) -->
 
 ## Milestones
 
-* [Allgemeine Informationen zur Praxisphase](./praxisphase/allg_informationen.md) 
-* [Praktikumsbericht](./praxisphase/bericht.md)
-* [Häufig gestellte Fragen und Antworten](./praxisphase/questions_answers.md)
+* [Milestone #1: Group and Topic Finding](milestone1.md) 
+* [Milestone #2: Factsheet and Abstract](milestone2.md) 
+* [Milestone #3: Submission of Paper Draft](milestone1.md) 
+* [Milestone #4: Review](milestone1.md) 
+* [Milestone #5: Scientific Presentation](milestone1.md) 
+* [Milestone #6: Submission of Final Paper](milestone1.md) 
 
-## Timetable
 
-* [Allgemeine Informationen zum Exposé](expose.md)
 
 
 ----

@@ -1,4 +1,4 @@
-# Milestone #1: Determination of Group and Topic
+# Determination of Group and Topic (Milestone #1)
 
 !!! abstract
     **Objectives**
@@ -23,11 +23,11 @@
 
 ## Results
 
-Die folgenden Ergebnisse müssen für eine erfolgreiche Durchführung der Praktikumseinheit vorliegen:
+The following results need to be achieved in order to meet the formal requirements of this milestone:
 
 !!! abstract
-    __Ergebnisse:__
+    __Results:__
 
-    - [x] Vollständige Implementierung der Bestellseite mit Berechnungen und Prüfungen durch valides EcmaScript und DOM
-    - [x] Vollständige Implementierung der zyklischen Aktualisierung der Kundenseite über AJAX und JSON
-    - [x] Der komplette Bestelldurchlauf verläuft jetzt wie vom Kunden gefordert (--> ausgiebiges Testen erforderlich) 
+    - [ ] You formed a group of two people and researched possible topics of interest
+    - [ ] You selected on topic that you are going research in depth
+    - [ ] Group constellation and topic have been entered in the SWCS Moodle course
