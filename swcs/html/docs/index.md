@@ -1,18 +1,18 @@
 # Scientific Writing in Computer Science
 
- Welcome to the course pages of the module "Scientifc Writing for Computer Science"
+ Welcome to the course pages of the module "Scientifc Writing for Computer Science".
 
 <!-- Stand: 2019-03-18 -->
 
-The following pages contain information about the subject's main elements and milestones. It serves as a guideline in preparing the materials needed for successfully passing the course.
+The following pages contain information about the module's main elements and milestones. It serves as a guideline in preparing the materials needed for successfully passing the course.
 
 
 ## General Information
 
-* [Objectives](objectives.md)
+* [Overview, Objectives, and Literature Recommendations](objectives.md)
 * [Organisation](organisation.md)
-* [Schedule](schedule.md)
-<!-- * [Anforderungen an die zu entwickelnde Webanwendung](anforderungen.md) -->
+* [Schedule with Milestones](schedule.md)
+
 
 ## Milestones
 
