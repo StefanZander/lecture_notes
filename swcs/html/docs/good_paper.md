@@ -5,10 +5,16 @@
 
 ## Some Tipps
 
-* Always keep the reader in mind
+* Always keep the reader in mind, 
+    * outline and explain your descisions 
+    * provide enough evidence that allows the reader to make an assessment about the validity and appropriateness of the choosen methodology or the derived conclusions 
 * Focus on clarity rather than using jargon
+    * Use passive style only when needed; in CS the active is often the better and preferred style  
+      e.g. not *"it could be seen that..."*  
+      better: *"the data shows that..."*
 * Make sure your claims are not exaggerated
 * A scientific paper follows a well-established structure
+* Unlike the worlds of newspaper reporting and marketing press releases, the title of a scientific paper should describe the aim of the work (=the problem to be tackled) not the results.
 
 
 ## Conclusions / Discussions
