@@ -20,4 +20,12 @@
 * Missing discussion of evaluation results
 * Neglection of results published in form of primary literature ()
 * Contributions are not clearly visible (--> readers can only guess of what the authors have achieved and how the contributions extend the SOTA)
+* ...
+
+
+## Common Mistakes of Scientific Presentations
+
+* Do not start with the talk's agenda (--> each scientific talk follows a standardized agenda; there is no need to make that explicit)
+* start by motivating the problem the work provides contributions for
 * 
+
