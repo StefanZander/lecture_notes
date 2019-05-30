@@ -1,6 +1,6 @@
 # Das Exposé
 
-`:::js header('Location: http://meineSeite.php/');`
+<!-- `:::js header('Location: http://meineSeite.php/');` -->
 
 !!! abstract
     **Lernziele**
