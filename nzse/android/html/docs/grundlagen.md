@@ -6,9 +6,8 @@
     - [x] Sie können einfache Android Projekte mit Android Studio anlegen
     - [x] Sie verstehen die Grundstruktur einer Android App
     - [x] Sie kennen den Lebenszyklus von Activities
-    - [x] Sie kennen die wichtigsten Hilfsmittel in Android Studio
-    - [x] Sie verstehen die Konzepte „Datenmodell“ und „Persistenz“ im Kontext einer GUI-Anwendung
-
+    - [x] Sie kennen die wichtigsten Hilfsmittel wie bspw. den Layout Editor in Android Studio
+    
 
 ## The Layout Editor
 

@@ -1,6 +1,6 @@
 # Das Exposé
 
-`:::js header('Location: http://meineSeite.php/');`
+<!-- `:::js header('Location: http://meineSeite.php/');` -->
 
 !!! abstract
     **Lernziele**
@@ -69,7 +69,7 @@ Diese Forschungsfrage ist zu unspezifisch und nicht überprüfbar, d.h., diese F
 
 Im Rahmen der **Evaluierung** kann nun untersucht werden, ob der Einsatz wirklich zu einer entsprechenden Verbesserung im genannten Anwendungsfall geführt hat.
 
-Forschungsfragen sollten deshalb **präzise**, **spezifisch** und **überprüfbar** formuliert werden. Nur dann sind Forschungsfragen in der Lage, den inhaltlichen Rahmen der Abschlussarbeitformal sauber und präzise zu definieren.
+Forschungsfragen sollten deshalb **präzise**, **spezifisch** und **überprüfbar** formuliert werden. Nur dann sind Forschungsfragen in der Lage, den inhaltlichen Rahmen der Abschlussarbeit formal sauber und präzise zu definieren.
 
 
 
