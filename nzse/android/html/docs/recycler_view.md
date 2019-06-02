@@ -52,8 +52,8 @@ In order to use a RecyclerView, the following components are needed:
 - A **RecyclerView** for the scrolling list that contains the list items.
 - A **layout** for one item of data. All list items look the same.
 - A **layout manager**. `:::js RecyclerView.LayoutManager` handles the hierarchy and layout of View elements. `RecyclerView` requires an explicit layout manager to manage the arrangement of list items contained within it. This layout could be vertical, horizontal, or a grid. You will use a vertical [LinearLayoutManager](https://developer.android.com/reference/android/support/v7/widget/LinearLayoutManager.html).
-- An **adapter**. `:::js RecyclerView.Adapter` connects your data to the `RecyclerView`. It prepares the data in a `:::js RecyclerView.ViewHolder`. You will create an adapter that inserts into and updates your _generated words in your views_.
-- A **ViewHolder**. Inside your adapter, you will create a [ViewHolder](https://developer.android.com/reference/android/support/v7/widget/RecyclerView.ViewHolder.html) that contains the View information for displaying one item from the item's layout.
+- An **adapter** that implements `:::js RecyclerView.Adapter` and connects your data to the `RecyclerView`. It prepares the data in a `:::js RecyclerView.ViewHolder`.
+- A **ViewHolder**. A [ViewHolder](https://developer.android.com/reference/android/support/v7/widget/RecyclerView.ViewHolder.html) is created inside the adapter and contains the View information for displaying one item using the predefined item's layout.
 - A **recyclerview-selection library** to select items in a RecyclerView list using touch or mouse input. (--> _this is not part of this documentation._)
 
 ## Glossary of Terms
@@ -92,8 +92,10 @@ Click on `Sync Project with Gradle files` to let the IDE download the appropriat
 
 ### Defining a Model
 
-Every RecyclerView is backed by a data source (the *Model* in the MVC-Paradigm). 
-Therefore, a class which represents the data model being displayed by the RecyclerView needs to be defined.
+Every RecyclerView is backed by a **data source** (the *Model* in the MVC-Paradigm). 
+Therefore, a class which represents the data model being displayed by the RecyclerView needs to be defined explicitly.
+
+The following code excerpt shows an example data model for representing course ratings:
 
 ```java
 public class Rating implements Serializable {
