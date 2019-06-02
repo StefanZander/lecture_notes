@@ -277,12 +277,13 @@ Every adapter has three primary methods:
 
 Those methods need to be implemented in order to have a fully working adapter.
 
-----
+#### Example
 
 The following code demonstrates the implementation of the three primary `:::js RecycleView.Adapter` methods for a ratings adapter of the RecyclerViewDemoApp:
 
 ```java
-public class RatingsAdapter extends RecyclerView.Adapter<RatingsAdapter.ViewHolder> {
+public class RatingsAdapter extends 
+    RecyclerView.Adapter<RatingsAdapter.ViewHolder> {
 
     // The adapter holds a reference to the data source
     private ArrayList<Rating> mRatings = new ArrayList<Rating>();
@@ -445,7 +446,9 @@ public ViewHolder(final View itemView) {
         public void onClick(View v) {
         int pos = getAdapterPosition();
         if (pos != RecyclerView.NO_POSITION) {
-            Toast.makeText(itemView.getContext(), "Deleting Item #" + (pos+1), 
+            Toast.makeText(
+                itemView.getContext(), 
+                "Deleting Item #" + (pos+1), 
                 Toast.LENGTH_SHORT).show();
             mRatings.remove(pos);
             notifyItemRemoved(pos);
