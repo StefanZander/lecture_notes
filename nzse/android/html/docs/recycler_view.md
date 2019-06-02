@@ -10,10 +10,10 @@
 
 ## Introduction
 
-A common App feature is the display and manipulation of similar data items in form of lists or cards.
-Android favours the separation of rendering data items from their actual model data and therefore deploys the concept of **adapters** to link the display of data items (the *View* in the MVC-Pattern) to their actual data (the *Model* in the MVC-Pattern). 
+A common feature in mobile apps is the **display** and **manipulation of similar data items** in form of lists or cards.
+Android favours the **separation** of rendering data items from their actual model data and therefore deploys the concept of **adapters** to link the display of data items (the *View* in the MVC-Pattern) to their actual data (the *Model* in the MVC-Pattern). 
 
-The [RecyclerView](https://developer.android.com/reference/android/support/v7/widget/RecyclerView.html) is a new [ViewGroup](https://developer.android.com/reference/android/view/ViewGroup.html) that is prepared to render any adapter-based view in a similar and more resource-efficient way. It is the successor of ListView and GridView, and it can be found in the latest support-v7 version. One of the reasons is that RecyclerView has a more extensible framework, especially since it provides the ability to implement both horizontal and vertical layouts. Use the RecyclerView widget when you have data collections whose elements change at runtime based on user action or network events.
+The [RecyclerView](https://developer.android.com/reference/android/support/v7/widget/RecyclerView.html) is a new [ViewGroup](https://developer.android.com/reference/android/view/ViewGroup.html) that is prepared to **render any adapter-based view** in a similar and more resource-efficient way. It is the *successor* of ListView and GridView, and it can be found in the **latest support-v7 version**. One of the reasons is that RecyclerView has a more **extensible framework**, especially since it provides the ability to implement both horizontal and vertical layouts. Use the RecyclerView widget when you have data collections whose elements change at runtime based on user action or network events.
 
 ![RecyclerView](./figures/recycler_view/recycler_view.png)_A list being displayed using the `RecyclerView` (Source: [Google](https://developer.android.com/design/material/images/list_mail.png))_
 
@@ -22,16 +22,16 @@ The [RecyclerView](https://developer.android.com/reference/android/support/v7/wi
 
 The [RecyclerView](https://developer.android.com/reference/androidx/recyclerview/widget/RecyclerView.html) widget is a more advanced and flexible version of [ListView](https://developer.android.com/reference/android/widget/ListView.html).
 
-In the RecyclerView model, several different components work together to display your data. 
-The overall container for your user interface is a **RecyclerView object** that you add to your layout. 
-The RecyclerView fills itself with views provided by a **layout manager** that you provide. 
-You can use one of our standard layout managers (such as [LinearLayoutManager](https://developer.android.com/reference/androidx/recyclerview/widget/LinearLayoutManager.html) or [GridLayoutManager](https://developer.android.com/reference/androidx/gridlayout/widget/GridLayoutManager.html)), or implement your own.
+In the RecyclerView model, several different components work together to display data. 
+The overall container for the user interface is a **RecyclerView object** that you add to your layout. 
+The RecyclerView **fills itself with views** provided by a **layout manager** that you provide. 
+You can use one of the **standard layout managers** (such as [LinearLayoutManager](https://developer.android.com/reference/androidx/recyclerview/widget/LinearLayoutManager.html) or [GridLayoutManager](https://developer.android.com/reference/androidx/gridlayout/widget/GridLayoutManager.html)), or implement your own.
 
 The views in the list are represented by **view holder objects**. 
-These objects are **instances** of a class you define by extending `:::js RecyclerView.ViewHolder`[(--> link)](https://developer.android.com/reference/androidx/recyclerview/widget/RecyclerView.ViewHolder.html). 
+These objects are **instances** of a self-defined class that extends `:::js RecyclerView.ViewHolder`[(--> link)](https://developer.android.com/reference/androidx/recyclerview/widget/RecyclerView.ViewHolder.html). 
 Each view holder is in charge of **displaying a single item** with a view. For example, if your list shows music collection, each view holder might represent a single album. The RecyclerView creates only as many view holders as are needed to display the on-screen portion of the dynamic content, plus a few extra. As the user scrolls through the list, the RecyclerView takes the off-screen views and **rebinds them to the data** which is scrolling onto the screen.
 
-The view holder objects are managed by an **adapter**, which you create by extending `:::js RecyclerView.Adapter`[(--> link)](https://developer.android.com/reference/androidx/recyclerview/widget/RecyclerView.Adapter.html). 
+The view holder objects are managed by an **adapter**, which is created by extending `:::js RecyclerView.Adapter`[(--> link)](https://developer.android.com/reference/androidx/recyclerview/widget/RecyclerView.Adapter.html). 
 The adapter 
 
 - _creates_ **view holders** as needed. 
