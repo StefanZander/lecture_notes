@@ -46,7 +46,7 @@ An asynchronous task defines **4 callback methods** (=*steps*); when an asynchro
 4. `:::js onPostExecute(Result)` invoked on the UI thread _after_ the background computation finishes. The result of the background computation is passed to this step as a parameter.
 
 !!! note
-     **Note**: Please pay close attention to which methods are exectuted by the UI thread and which by the background thread. This distinction is important as UI Elements (=*views defined in the activitie's layout*) can only by manipulated by the UI thread. Trying to manipulate them from a method executed by the background thread will result in an exception and termination.
+     **Note**: Please pay close attention to which methods are exectuted by the **UI thread** and which by the **background thread**. This distinction is important as UI elements (=*views defined in the activitie's layout*) can only by manipulated by the UI thread. Trying to manipulate them from a method executed by the background thread will result in an exception and termination.
 
 
 ## Usage
