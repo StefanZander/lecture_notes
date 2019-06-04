@@ -5,6 +5,7 @@ nav:
   - 'Grundlagen': 'grundlagen.md'
   - 'Activities & Intents': 'activities.md'
   - 'JSON': 'json.md'
+  - 'Data Storage': 'data_storage.md'
   - 'App Bar': 'actionbar.md'
   - 'RecyclerView': 'recycler_view.md'
   - 'AsyncTask': 'asynctask.md'
