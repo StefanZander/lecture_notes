@@ -4,14 +4,14 @@
 !!! abstract 
     **Objectives**
 
-    - [x] Sie können eine Android App mit einer Layoutvariante implementieren
-    - [x] Sie verstehen das Zusammenspiel verschiedener Activities über Intents
-    - [x] Sie verstehen das Konzept der Ereignisorientierung
-    - [x] Sie haben einen ersten Eindruck von XML
+    - [x] You are familiar with the concepts of handlers
+    - [x] You know why no long-term operations should be executed from the UI thread
+    - [x] You know how to update UI elements on the UI thread from an bachkround thread
+    - [x] You can implement a handler to receive messages messages from background threads
 
-## Handler
+## Handlers for UI Interactions
 
-Since Android employs an event-driven processing model, it uses the concept of **Handlers** to react to user input or user interaction.
+Since Android employs an event-driven processing model, it uses the concept of **handlers** to react to user input or user interaction.
 
 Handlers can be defined on three different ways
 
@@ -22,8 +22,16 @@ Handlers can be defined on three different ways
 A click handler is a method that is invoked when the user clicks or taps on a clickable UI element. 
 
 
+## Handlers as Message Queues
 
-## Ergebnisse
+Include information from <https://stackoverflow.com/questions/13840007/what-exactly-does-the-post-method-do>
+
+![](./figures/handler.png)_A handler receives messages from background threads and updates views on the UI thread_ 
+
+
+
+
+<!-- ## Ergebnisse
 
 Die folgenden Ergebnisse müssen für eine erfolgreiche Testierung der Praktikumseinheit vorliegen:
 
@@ -32,4 +40,4 @@ Die folgenden Ergebnisse müssen für eine erfolgreiche Testierung der Praktikum
 
     - [ ] Fertiges Layout
     - [ ] Implementierung der Navigation
-    - [ ] Einbinden der `HttpRequest.java` Klasse
+    - [ ] Einbinden der `HttpRequest.java` Klasse -->
