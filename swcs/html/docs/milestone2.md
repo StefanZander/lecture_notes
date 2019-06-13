@@ -9,17 +9,41 @@
     - [x] ...
 
 
-## Factsheet
+## Tasks
 
-The Factsheet describes **corner stones** of your research. It serves as **basis** for writing a meaningful and concise abstract and drives your research.
-
-
-### Tasks
 
 1. Write a 1-2 pages long **Factsheet** that employs the subsequently given structure about your research.
     The Factsheet should help you in developing appropriate **research questions** and driving your research endeavour (it serves as an "*Exposé light*")
 
-### Structure
+2. Write an **Abstract** based on the information outlined in the Factsheet.
+    - The Abstract must be meaningful and only as long as necessary but as precise as possible  
+      _(approx. 100 – 200 words; not longer than 5-7 sentences)_
+    - Use the [Springer LNCS template](add link)
+    
+    !!! note
+        **Note**: Write the Abstract from a perspective of what you *intend* to achieve. Change this perspective of what you *have* achieved for the final paper.
+
+3. Submit both Factsheet and Abstract as a **single PDF file** via **EasyChair** (_registration required_)  
+    - Link: <https://easychair.org/my/conference?conf=swcssose2019>
+    - **Register** both authors at the EasyChair system and enter all relevant information
+  
+        !!! note
+            **Note**: Both(!) authors need to register at the EasyChair system. Please use your official student email addresses for the registration as I will use these later to register you as Programme Committee (PC) Member for the reviews. If author and programme committee email addresses *do not match*, problems will occur during the paper assignment.
+
+    - **Upload** the document to the easychair system
+        
+        !!! warning
+            **Note**: Once you uploaded the paper, EasyChair assigns you a single slot. Use this slot during the entire semester, i.e., if you want to upload an updated version of the Factsheet and Abstract, just update (=overwrite) the already entered information.  
+            --> __DO NOT CREATE A NEW SUBMISSION!__
+
+
+## Background Information
+
+### Factsheet
+
+The Factsheet describes **corner stones** of your research. It serves as **basis** for writing a meaningful and concise abstract and drives your research.
+
+#### Structure
 
 Use the following structure and document each aspect with very few sentences:
 
@@ -37,30 +61,10 @@ Use the following structure and document each aspect with very few sentences:
 
 
 
-## Abstract
+### Abstract
 
-### Task
 
-1. Write an **Abstract** based on the information outlined in the Factsheet.
-    - The Abstract must be meaningful and as long as necessary but as precise as possible  
-      _(approx. 100 – 200 words; not longer than 5-7 sentences)_
-    - Use the [Springer LNCS template](add link)
-    
-    !!! note
-        **Note**: Write the Abstract from a perspective of what you *intend* to achieve. Change this perspective of what you *have* achieved for the final paper.
 
-2. Submit both Factsheet and Abstract as a **single PDF file** via **EasyChair** (_registration required_)  
-    - Link: <https://easychair.org/my/conference?conf=swcssose2019>
-    - Register both authors at the easychair system and enter all relevant information
-  
-        !!! note
-            **Note**: Both(!) authors need to register at the easychair system. Please use your official student email addresses for the registration as I will use these later to register you for the reviews. If author and programme committee email adresses do not match, problems will occur during the review assignment.
-
-    - Upload the document to the easychair system
-        
-        !!! note
-            **Note**: Once you uploaded the paper, easychair assigns you a single slot. Use this slot during the entire semester, i.e., if you want to upload an updated version of the Factsheet and Abstract, just update (=overwrite) the already entered information.  
-            __DO NOT CREATE A NEW SUBMISSION!__
       
 
 
