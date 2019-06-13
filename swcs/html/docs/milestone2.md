@@ -63,6 +63,37 @@ Use the following structure and document each aspect with very few sentences:
 
 ### Abstract
 
+!!! warning
+    **Please note**:  
+    The abstract is probably the most important and most difficult to write part of your paper.  
+    So it definitly pays off to put a lot of effort in creating a sound and meaningful abstract.
+
+The abstract helps the reader to determine whether it is worth their time to read your paper and whether they find the information they are looking for.
+The abstract therefore should outline the main insights (=results) of your work together with a description of the problem space and the methodology applied in creating the insights.
+
+
+In order to provide that information, the abstract should answer the following 4 questions:
+
+- What is the problem – WHAT
+- Why is this a problem – WHY
+- What are the specific contributions – CONTRIBUTIONS
+- What is the impact of the work – IMPACT
+
+These questions also serve as basis for **structuring** the abstract: 
+
+- The research problem 
+- The impact of the research problem
+- The results (=contributions) created togehter with the applied methodology 
+- The consequences or insights following from the results
+- (*optionally*) Outline scope and setting at the beginning of the abstract in 1 sentence
+
+*Address each of these aspects with only 1 or 2 sentences.*
+
+As a consequence, the abstract should *not* be longer than **5 - 7 sentences** for a regular research paper (longer works can have a more comprehensive abstract, but it should never exceed the limit of one page length).
+
+!!! note
+    **Please note**: The abstract must be precise and meaningful; it should only be as long as necessary but as precise as possible! 
+
 
 
       
