@@ -23,6 +23,11 @@ The following pages contain information about the module's main elements and mil
 * [Milestone #5: Scientific Presentation](milestone1.md) 
 * [Milestone #6: Submission of Final Paper](milestone1.md) 
 
+
+## Background
+
+* [Introduction to Scientific Writing](introduction.md)
+
 ## Tipps
 
 * [What makes a good Scientifc Paper](good_paper.md) 
