@@ -24,9 +24,10 @@ The following pages contain information about the module's main elements and mil
 * [Milestone #6: Submission of Final Paper](milestone1.md) 
 
 
-## Background
+## Methods and Materials
 
 * [Introduction to Scientific Writing](introduction.md)
+* [Structure of a Scientific Paper](structure.md)
 
 ## Tipps
 

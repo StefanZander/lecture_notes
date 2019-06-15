@@ -6,6 +6,7 @@ nav:
   - 'Organisation': 'organisation.md'
   - 'Schedule': 'schedule.md'
   - 'Introduction': 'introduction.md'  
+  - 'Structure': 'structure.md' 
   - 'MS1: Group and Topic': 'milestone1.md'
   - 'MS2: Factsheet & Abstract': 'milestone2.md'
   - 'MS3: Paper Draft': 'milestone3.md'

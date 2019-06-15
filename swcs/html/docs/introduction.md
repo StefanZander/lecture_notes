@@ -84,6 +84,7 @@ In journal style papers there is virtually no circumstance in which the findings
 * Most of these information have been compiled from the excellent articles' series published by  
     <http://abacus.bates.edu/~ganderso/biology/resources/writing/HTWgeneral.html>
     <http://abacus.bates.edu/~ganderso/biology/resources/writing/HTWtoc.html>
+    <http://abacus.bates.edu/~ganderso/biology/resources/writing/HTWsections.html>
 
 ## Literature Recommendations
 
