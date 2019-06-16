@@ -15,7 +15,7 @@ Unfortunately, many people (even very experienced ones) seem to have difficultie
 On this page, we present a very simple method for writing a good introductory chapter. Actually, the core of this method was taught to me many years ago by Krzysztof Apt. At that time, it surprised me in its simplicity and efficiency. In ten years, I have been happily applying it to all introductions I have written.
 
 
-### A Recipe for Writing an Introduction
+### Main Elements
 
 An Introduction should contain the following three parts:
 
@@ -39,7 +39,9 @@ In addition there can be the following optional ingredients:
 - **The outline (plan of the paper)**  
     Personally, I find it useful only for long reports, otherwise I think it is a waste of paper. But this is my very personal opinion.
 
-Two Extra Tips
+### Further Recommendations
+
+<!-- Two Extra Tips -->
 
 - **Keep the parts well separated**  
     Introductions in which parts 1&2&3 are not clearly separated from each other are usually very annoying, and are certainly much more demanding to the reviewer in terms concentration and energy. Use "itemize", if possible: it helps.
