@@ -44,7 +44,7 @@ In addition there can be the following optional ingredients:
 <!-- Two Extra Tips -->
 
 - **Keep the parts well separated**  
-    Introductions in which parts 1&2&3 are not clearly separated from each other are usually very annoying, and are certainly much more demanding to the reviewer in terms concentration and energy. Use "itemize", if possible: it helps.
+    Introductions in which parts 1 & 2 & 3 are not clearly separated from each other are usually very annoying, and are certainly much more demanding to the reviewer in terms concentration and energy. Use "itemize", if possible: it helps.
 
 - **Keep it short**  
     Removing everything that is not really necessary is often a very effective strategy for improving an introduction.
