@@ -29,3 +29,14 @@
 * start by motivating the problem the work provides contributions for
 * 
 
+
+## Tipps
+
+Here is what you should do if your task is to develop an algorithm / module / component / system etc.
+
+* do not just develop it and think everything is fine (from a methodological point of view it is not; it is not even heuristiaclly valid)
+* Put the problem to the front, i.e., make the problem your starting point
+* Implement different approaches (that all solve or contribute towards solving the problem – or parts of it)
+* Then define KPIs that help you to assess the quality of a solution and that allow to compare the different solutions based on the extent to which they solve (or help solving) the problem
+* Conduct the analysis and compare the different approaches (methodology: comparative analysis) 
+* Present and discuss your findings
