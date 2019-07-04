@@ -6,16 +6,84 @@
 A critical aspect of the scientific process is the reporting of new results in scientific journals in order to disseminate that information to the larger community of scientists. Communication of your results contributes to the pool of knowledge within your discipline (and others!) and very often provides information that helps others interpret their own experimental results. Most journals accept papers for publication only after peer review by a small group of scientists who work in the same field and who recommend the paper be published (usually with some revision).
 
 
+## Why a Scientific Format?
+
+The scientific format may seem confusing for the beginning science writer due to its **rigid structure** which is so different from writing in the humanities. 
+
+1. One reason for using this format is that it is a means of **efficiently communicating scientific findings** to the broad community of scientists in a uniform manner. 
+2. Another reason, perhaps more important than the first, is that this format allows the paper to be **read at several different levels**.  
+   For example, many people skim titles to find out what information is available on a subject. Others may read only titles and abstracts. Those wanting to go deeper may look at the tables and figures in the results, and so on. 
+   
+The take home point here is that the scientific format helps to insure that at whatever level a person reads your paper (beyond title skimming), they will likely get the key results and conclusions.
+
+Source: <http://abacus.bates.edu/~ganderso/biology/resources/writing/HTWsections.html>
+
+
+## Which Structure should I use?
+
+Most journal-style scientific papers are subdivided into the following sections: 
+
+- **Title** – *"What is this paper about?"*
+- **Authors and Affiliation** – *"Who has written this paper?"*
+- **Abstract** – *"What did you do in a nutshell?"*
+- **Introduction** – *"What is the problem?"*
+- **Background** (optional) – *"What concepts, technologies etc. are required to understand the work"*
+- **Related Works** – *"On what works do your work built upon?"*
+- **Methodology** or **Approach** – *"How did you solve the problem?"*
+- **Implementation** (optional) – *"How could an implementation of the solution look like"*
+- **Results** – *"What did you find out"*
+- **Discussion** – *"What does that mean"*
+- **Acknowledgments** (optional) – *"Who helped you during your research?"*
+- **Literature Cited** – *"Whose work did you refer to?"*
+- **Appendices** (optional)
+  
+Those sections are intended to mimic the experimental or research process. This is the system we will use for preparing the scientific paper in this course. 
+
+The sections appear in a journal style paper in the following prescribed order:
+
+ Experimental process
+ Section of Paper
+
+Abstract
+ What is the problem?
+Introduction
+ How did I solve the problem?
+ Materials and Methods
+ What did I find out?
+ Results
+ What does it mean?
+ Discussion
+ Who helped me out?
+ Acknowledgments (optional)
+ Whose work did I refer to?
+ Literature Cited
+ Extra Information
+Appendices (optional)
+
+
+
+
+
+
+
+
 ### Getting Started
 The first task to accomplish as you begin the process of writing is to **order and organize the information** you wish to present. Some people work well from an outline, others do not. Some people write first to discover the points, then re-arrange them using an after-the-fact outline. Whatever process you may use, be aware that scientific writing requires **special attention** to order and organization. Because the paper will be divided into **sections**, you need to know **what information will go into each**. If you don't normally work from an outline, this may be an occasion when you'll at least want to develop a **list of the major points** to be included in each section, before you begin to write. If the paper has multiple authors, then this is a good time to work (and negotiate!) with your collaborators to insure that all the points the group wants to make get listed.
 
 ### A Word about the Audience
  
- *Who will be Reading your Paper?*
+ Always ask
+
+ > Who will be reading your paper?
  
  Usually you will be writing to your **peers** so you can assume that they have at least the same knowledge and expertise base as you. 
 
- Knowing your audience helps you to decide what information to include–––you would write a very different article for a narrow, highly technical, disciplinary journal vs. one that went out to a broad range of disciplines. Similarly, you would write a paper for an audience of other 
+ Knowing your audience helps you to decide what information to include–––you would write a very different article for a narrow, highly technical, disciplinary journal vs. one that went out to a broad range of disciplines. Similarly, you would write a paper for an audience of other.
+
+!!! note
+    **Hint**: For the preparation of the final presentation and the research paper, concentrate on the knowledge level of your colleagues.
+
+
 
 ### Style
 
@@ -54,7 +122,8 @@ It is important to **write clearly and concisely**. Make sure that every **parag
         ACTIVE: *"the mouse consumed oxygen at a higher rate..."*  
         PASSIVE: *"oxygen was consumed by the mouse at a higher rate.."*
 
-    **The clarity and effectiveness of your writing will improve dramatically as you increase the use of the active voice.**
+    !!! note
+        The clarity and effectiveness of your writing will improve dramatically as you increase the use of the active voice.
 
 - **References**:  
     References to the research findings of others are an integral component of any research paper. The usual practice is to summarize the finding or other information in your own words and then cite the source. Any ideas or other information that are not your own must be substantiated by a reference that is cited in the text. As a rule, in research papers, direct quotation and footnoting are rarely practiced --> simply restate the author's ideas or findings in your own words and provide a citation.

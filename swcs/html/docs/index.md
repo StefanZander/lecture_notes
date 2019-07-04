@@ -4,7 +4,13 @@
 
 <!-- Stand: 2019-03-18 -->
 
-The following pages contain information about the module's main elements and milestones. It serves as a guideline in preparing the materials needed for successfully passing the course.
+The following pages contain information about the module's main elements and milestones. 
+They serve as a guideline in preparing the materials needed for successfully passing the course.
+
+The information on this site is separated into 
+
+- **course details**, i.e., objectives, schedule, milestones, assessment etc., and
+- **content details**, i.e., background information about how to write a proper scientific paper.
 
 
 ## General Information
