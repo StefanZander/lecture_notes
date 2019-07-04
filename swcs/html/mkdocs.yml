@@ -15,7 +15,12 @@ nav:
   - 'MS6: Final Paper': 'milestone1.md'
   - 'Tipps': 'good_paper.md'
 
-
+plugins:
+    - search
+    # - pdf-export:
+    #     verbose: true
+    #     media_type: print
+    #     combined: true
 
 theme:
   name: 'material'
