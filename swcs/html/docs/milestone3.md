@@ -6,8 +6,8 @@
 !!! abstract
     **Objectives**
 
-    - [x] Prepare 
-    - [ ] Grading factor
+    - [x] Prepare a  
+    - [ ] Grading factor: none
 
 
 ## Tasks

@@ -6,12 +6,19 @@
 !!! abstract
     **Objectives**
 
-    - [x] You are capable of conducting a scientific review
-    - [x] You know how to create and submit a review via EasyChair 
-    - [x] Grading Factor: 1
+    - [x] You are capable of presenting your research in a scientifically sound way
+    - [x] You know what distinguishes a scientific presentation from other forms of presentation 
+    - [x] Grading Factor: 3
 
 
-## Overview
+The **communication** of **scientific results** is another corner stone of the science circus.  
+The **form** of communication usually is twofold:
+
+1. In writing by means of a scientific article – this is the objective of Milestone #6
+2. Orally in form of a **scientific presentation** – usually conducted during symposia, conferences, workshops etc.
+
+This assignment's objective is to **present your research** to your colleagues (=peers) in form of a scientific presentation. 
+Please be aware that a scientific presentation follows a set of **rules and guidelines** that your presentation needs to exhibit.
 
 
 ## Tasks

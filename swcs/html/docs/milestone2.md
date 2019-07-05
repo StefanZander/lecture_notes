@@ -28,7 +28,7 @@
     - **Register** both authors at the EasyChair system and enter all relevant information
   
         !!! note
-            **Note**: Both(!) authors need to register at the EasyChair system. Please use your official student email addresses for the registration as I will use these later to register you as Programme Committee (PC) Member for the reviews. If author and programme committee email addresses *do not match*, problems will occur during the paper assignment.
+            **Note**: Both(!) authors need to register at the EasyChair system. Please use your official student email addresses for the registration as I will use these later to register you as Programme Committee (PC) Member for the reviews. If author and programme committee email addresses do *not* match, problems will occur during the paper assignment.
 
     - **Upload** the document to the easychair system
         
