@@ -27,8 +27,10 @@ Please be aware that a scientific presentation follows a set of **rules and guid
       
 2. Upload your presentation before the final presentation deadline to the SWCS Moodle course (*optional*)
 
+3. Attend the final presentations and present your work
 
-## Constraints
+
+## Requirements
 
 - Time slot per Group:
     - Talk: 10 Min. – sharp!
@@ -45,33 +47,36 @@ The
   
   of your presentation will be used as basis for the assessment of this milestone.  
 
-This includes an assessment of the following aspects
+This includes an assessment of the following aspects:
 
-- The work is properly motivated
-- The problem space is clear and separated
-- RQs are clearly and correctly stated (max. 2-3)
-- RQs are addressed during the entire presentation
-- Methodology is clearly stated, applied to your research, and both appropriate and sound
-- Contributions are valid and obvious
-- SOTA is considered; work is properly demarcated 
-- External ideas / contributions are clearly cited and separated from individual contributions
-- Relation between RQs, Methodology, and results is obvious
-- Impact and relevance of results is presented and discussed 
-- Contents of slides is comprehensible
-- Appropriate number of slides (e.g. for 10 mins talk max. 8-10 slides)
-    - In previous years, students occasionally showed up to > 30 slides, which is inappropriate and bad style as a lot of information got lost
-- Contents of slides employ a good usability, i.e., 
-    - appropriate extent of information (not too much text), 
-    - clear visual hierarchy, 
-    - no copy of full sentences or paragraphs; 
-    - appropriate length of bulleted lists, etc.
-    - appropriate mixture of text and figures or other display means
-- Good and appropriate presentation style
-    - no word-by-word reading from slides
-    - free speech
-    - contact to the audience
-    - appropriate use of gestures, voice, language 
-- Scientifically sound structure 
+!!! example
+    **Assessment aspects**:
+
+    - The work is properly motivated
+    - The problem space is clearly defined and separated from unrelated issues or things
+    - RQs are clearly and correctly formulated (max. 2-3)
+    - RQs are addressed during the entire presentation
+    - Methodology is clearly stated, applied to your research, and both appropriate and sound
+    - Contributions are valid and obvious
+    - SOTA is considered; work is properly demarcated 
+    - External ideas / contributions are clearly cited and separated from individual contributions
+    - Relation between RQs, Methodology, and results is obvious
+    - Impact and relevance of results is presented and discussed 
+    - Contents of slides is comprehensible
+    - Appropriate number of slides (e.g. for 10 mins talk max. 8-10 slides)
+        - In previous years, students occasionally showed up to > 30 slides, which is inappropriate and bad style as a lot of information got lost
+    - Contents of slides employ a good usability, i.e., 
+        - appropriate extent of information (not too much text), 
+        - clear visual hierarchy, 
+        - no copy of full sentences or paragraphs; 
+        - appropriate length of bulleted lists, etc.
+        - appropriate mixture of text and figures or other display means
+    - Good and appropriate presentation style
+        - no word-by-word reading from slides
+        - free speech
+        - contact to the audience
+        - appropriate use of gestures, voice, language 
+    - Scientifically sound and appropriate structure 
 
 
 ## Tipps 
@@ -96,6 +101,5 @@ The following results need to be achieved in order to meet the formal requiremen
 !!! abstract
     __Results:__
 
-    - [ ] Accepted PC Member invitation
-    - [ ] Paper bids entered into the system
-    - [ ] Submission of review via EasyChair within the deadline 
+    - [ ] Attendance at final presentations
+    - [ ] Conducted presentation

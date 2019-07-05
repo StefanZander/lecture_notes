@@ -5,7 +5,7 @@ nav:
   - 'Objectives': 'objectives.md'
   - 'Organisation': 'organisation.md'
   - 'Schedule': 'schedule.md'
-  - 'Introduction': 'introduction.md'  
+  - 'Scientific Writing': 'scientific_writing.md'  
   - 'Structure': 'structure.md' 
   - 'MS1: Group and Topic': 'milestone1.md'
   - 'MS2: Factsheet & Abstract': 'milestone2.md'
@@ -14,6 +14,7 @@ nav:
   - 'MS5: Final Presentation': 'milestone5.md'
   - 'MS6: Final Paper': 'milestone6.md'
   - 'Tipps': 'good_paper.md'
+  - 'Elements/Introduction': 'elements/introduction'
 
 plugins:
     - search

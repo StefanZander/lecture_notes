@@ -50,16 +50,30 @@ The
 
 ## Tipps 
 
-- It is important to write a meaningful review and provide constructive feedback.  
+- It is important to write a meaningful review and provide constructive feedback.
   Statements such as the following are neither helpful nor scientifically appropriate
 
-    > "Paper is nice and well readable"
-    
-    > "The authors did a good job"
+    > "Paper is nice and well readable..."
+
+    > "The authors did a good job..."
+
+    > "Everything is well explained..."
   
+- Examples of insufficent and inconsistent reviews:
 
+    Example 1:
+    > This is an exciting endeavor to address the security and performance effects of cloud services on enterprise. This study is well designed and written. I only have some minor comments
 
+    > 1. Although the paper entitled “security and performance effects”, the analysis here is without any positive effects  in respect of security. 
+    > 2. Which criteria are used to select these security and performance effects? Can you explain why you selected these as concerns for medium and small enterprises? It would be useful to give some data from researches, which are gathered.
+    > 3.  Is the comparison in figure 2 a self-conducted comparison or does it come from another source?
 
+    Example 2:
+    > Should add to the abstract what yous are going to do in the paper. Introduction is good , well structured, should add a few references with some of the information. History should be filled out more , few more lines for each section.Add a reference to the recent developments paragraph. Basic concepts is good , gives me a good overview, im not sure of it being a separate chapter , if the structure is right, maybe ask Zander.Go into more detail in the methodology. Maybe obstacles could be added to the history/stateoftheArt section. Also Economics in the same section possibly. Cryptology is fine,couple more references after certain points. Obviously the remaining sections are unfinished.  
+    Overall , i thought the paper was good and has lots of potential. Add more references after points.
+
+    Example 3:
+    > The abstract is good, but you don’t actually say what you’re going to do in the paper, so you should just add in an extra sentence.  The introduction and scope are good I don’t think you need to change anything. You should add page numbers. In the analysis 4.1 I think it would be better if you took out the tool name and – and the comment accidentally left in. In section 4.3 the first sentence should be “while there are many advantages” not “While there a many advantages”. Also when you say that many older people aren’t as good with computers it’d be good if you added in some statistics. Overall the paper is well structured and clear.
 
 ## Results
 
