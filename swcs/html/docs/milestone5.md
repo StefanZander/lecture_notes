@@ -23,39 +23,69 @@ Please be aware that a scientific presentation follows a set of **rules and guid
 
 ## Tasks
 
-1. Accept the **Programme Committee invitation email** sent by EasyChair
+1. Prepare the scientific presentation 
       
-2. Log into the EasyChair system and select the **PC Member role**
+2. Upload your presentation before the final presentation deadline to the SWCS Moodle course (*optional*)
 
-3. Enter your **paper bids** 
 
-    - Please specify one of the four options for each paper:
-        - *I want to review*
-        - *I can review*
-        - *I don‘t want to review*
-        - *Conflict of Interest* (use that e.g. for your own paper)
-      
-      These options are need by the system to compute a fair assignment solution for each PC member based on the preferences provided.
+## Constraints
 
-4. After the paper bidding phase is complete, the **assignment algorithm** computes an optimal (i.e. fair) solution for each PC member. You will be **notified** by the system via email about the computed result, i.e., **the paper you have been assigned for review**. 
-
-5. Log into the EasyChair system and enter your review via the **Review option** in the main navigation. 
-
+- Time slot per Group:
+    - Talk: 10 Min. – sharp!
+    - Questions and Feedback: approx. 8-10 Min.
 
 ## Assessment
 
-The thoroughness, comprehensability, extent, and scientific rigour of your review will be used for the assessment of this milestone. 
+The 
+
+- **thoroughness**, 
+- **comprehensability**, 
+- **extent**, and 
+- **scientific rigour** 
+  
+  of your presentation will be used as basis for the assessment of this milestone.  
+
+This includes an assessment of the following aspects
+
+- The work is properly motivated
+- The problem space is clear and separated
+- RQs are clearly and correctly stated (max. 2-3)
+- RQs are addressed during the entire presentation
+- Methodology is clearly stated, applied to your research, and both appropriate and sound
+- Contributions are valid and obvious
+- SOTA is considered; work is properly demarcated 
+- External ideas / contributions are clearly cited and separated from individual contributions
+- Relation between RQs, Methodology, and results is obvious
+- Impact and relevance of results is presented and discussed 
+- Contents of slides is comprehensible
+- Appropriate number of slides (e.g. for 10 mins talk max. 8-10 slides)
+    - In previous years, students occasionally showed up to > 30 slides, which is inappropriate and bad style as a lot of information got lost
+- Contents of slides employ a good usability, i.e., 
+    - appropriate extent of information (not too much text), 
+    - clear visual hierarchy, 
+    - no copy of full sentences or paragraphs; 
+    - appropriate length of bulleted lists, etc.
+    - appropriate mixture of text and figures or other display means
+- Good and appropriate presentation style
+    - no word-by-word reading from slides
+    - free speech
+    - contact to the audience
+    - appropriate use of gestures, voice, language 
+- Scientifically sound structure 
 
 
 ## Tipps 
 
-- It is important to write a meaningful review and provide constructive feedback  
+Please make sure to consider the following things:
 
-    > "Paper is nice and well readable"
-    
-    > "The authors did a good job"
-  
-      is not enough! 
+- Is all external material correctly cited?
+- Is the work precisely demarcated?
+- Is the SOTA considered?
+- Is the work and problem domain well motivated?
+- Are all contributions clearly ”visible”?
+- Are all results verified and validated (--> see internal, external, and construct validity)?
+- Is the reference list complete?
+
 
 
 
