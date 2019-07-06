@@ -94,7 +94,7 @@ Führen Sie alle wesentlichen Aktivitäten auf; dies sollen keine 20 Aktivitäte
 
 Jede gute bzw. sehr gute BA/MA braucht eine Evaluierung! Oder anders ausgedrückt: Ohne Evaluierung wird es sehr schwer, eine gute oder sehr gute Arbeit zu verfassen bzw. eine entsprechende Beurteilung zu erlangen.
 
-Die Evaluierung ist der nächste wesentliche Baustein einer guten wissenschaftlichen Arbeit. In der Evaluierung wird der *Impact* bzw. die Qualität der erarbeiteten Ergebnisse bzw. Ergebnisartefakte im Hinblick auf deren Beitrag zur Beantwortung der Forschungsfragen untersucht und bewertet. 
+Die Evaluierung ist deshalb der nächste wesentliche Baustein einer guten wissenschaftlichen Arbeit. In der Evaluierung wird der *Impact* bzw. die Qualität der erarbeiteten Ergebnisse bzw. Ergebnisartefakte im Hinblick auf deren Beitrag zur Beantwortung der Forschungsfragen untersucht und bewertet. 
 
 Die Evaluierungskriterien richten sich idR nach den Forschungsfragen und sollten angemessene, d.h., belastbare Kriterien bzw. Aspekte umfassen, die einer Beantwortung der Forschungsfragen zuträglich sind.
 
