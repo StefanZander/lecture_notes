@@ -103,7 +103,7 @@ The following fields contain a list of the main elements separated by the differ
 
 ### Structure
 
-Use the following structure (--> see [Milestone #2](milestone2.md) )
+* Use the following structure (--> see [Milestone #2](milestone2.md) )
 
 
 
@@ -127,6 +127,16 @@ Use the following structure (--> see [Milestone #2](milestone2.md) )
 * avoid a too depth structure; cluster elements if necessary
 * usually separated by technology / concept / etc.
 
+
+## Related Work
+
+### Function
+
+* Science is standing on the shoulders of giants; here you describe the works that influence your work or that your work builts upon
+
+### Style
+
+### Structure
 
 
 

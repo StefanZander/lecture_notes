@@ -32,7 +32,7 @@ The information on this site is separated into
 
 ## Methods and Materials
 
-* [Introduction to Scientific Writing](introduction.md)
+* [Introduction to Scientific Writing](scientific_writing.md)
 * [Structure of a Scientific Paper](structure.md)
 
 ## Tipps
