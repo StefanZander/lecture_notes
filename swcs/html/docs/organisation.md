@@ -17,7 +17,7 @@ On this page, you find information about
     !!! note
         Please note that the curly braces (`{}`) are indicators for tokens that should be replaced with the real names and topic (without `{}` of course).
 
-        Although this was explained in the lecture, a number of students' emails contains the previous template in the stated form...
+        Although this is discussed in the lecture, a significant number of students' emails usually contain the previous template in the stated form...
 
 
 ## In-Class Lectures
@@ -26,15 +26,15 @@ On this page, you find information about
 - in general only very few -- but attendance is compulsory
     - Kick-off meeting
     - Final presentations
-- More lectures (in form of tutorials etc.) can be requested by the students  
-    _"I am happy to offer more lectures e.g. in form of tutorials etc. about specific topics but those have to be requested by the students"_
+- More lectures in the form of tutorials about selected topics, Q&A sessions etc. can be requested by the students – _and I am happy to provide them!_
+    <!-- _"I am happy to offer more lectures e.g. in form of tutorials etc. about specific topics but those have to be requested by the students"_ -->
 
 
 ## Tutorials and other In-Class Meetings
 - Will be provided on demand (--> need to be requested by students)
 - Attendance is optional
-- Will be announced via email or in class beforehand
-- Provide practical and in-depth knowledge about relevant topics that students can choose
+- Will be announced via email, Moodle or in class beforehand
+- Provide practical and in-depth knowledge about relevant topics that students can choose individually
 - Provide opportunities to 
     - ...discuss open issues 
     - ...ask questions
