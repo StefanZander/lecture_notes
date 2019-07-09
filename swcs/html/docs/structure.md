@@ -49,8 +49,8 @@ and provide some **tipps** or **remarks** for some elements.
     - [Related Work](elements/related_work.md) 
     - [Approach (*aka Methodology*)](elements/methodology.md)
     - [Realisation (*in CS often named 'Implementation'*)](elements/implementation.md)
-    - Evaluation
-    - Discussion
+    - [Evaluation & Discussion](elements/evaluation.md)
+    - [Discussion (_often included in the evaluation_)](elements/evaluation.md) 
     - Conclusion (*incl. Future Work*)
     - Acknowledgements (*optional*)
     - References
