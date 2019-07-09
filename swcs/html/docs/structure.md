@@ -6,29 +6,49 @@
     - [x] 
 
 
-This page contains information about the general structure of scientific papers. It helps you to structure your paper and work accordingly. Please be aware that different communities might employ different structures although the main elements remain identical.
+This page contains information about the **general structure** of scientific papers. It helps you to structure your paper and work accordingly. 
 
-## Overview
+!!! note
+    Please be aware that different scientific communities might employ slightly different structures although the main sections and contents remain identical.
 
-Scientific papers follow a predefined structure the objective of which is to present acquired results in appropriate ways that support their exploitation and dissemination. 
+## Structure of Research and Survey Papers
 
-The following fields contain a list of the main elements separated by the different types of scientific papers (for this course, we distinguish between the two main types of papers in CS – original research paper and surveys). 
+Scientific papers follow a **predefined structure** the objective of which is to present **acquired results** and the **deployed methodology** upon which the results were acquired in appropriate ways. The objective of deploying such a predefined structure is to support the **exploitation** and **dissemination** of research results. 
+
+In the following, we presented a structural recommendation for the two main types of scientific papers in computer science,
+
+* original **research papers**, and
+* **surveys**.
+
+!!! note
+    **Hint**: Click on the respective element to access detailed information about it. 
+
+The details pages are all structured identically.  
+They introduce a section by describing its
+
+* **function**
+* **style**
+* **structure**
+
+and provide some **tipps** or **remarks** for some elements.
+
+<!-- The following fields contain a list of the main elements separated by the different types of scientific papers (for this course, we distinguish between the two main types of papers in CS – original research paper and surveys).  -->
 
 ### Structure of a Research Paper
 
 !!! Example
     **Main Elements of a Research Paper**
 
-    - Titel
-    - Abstract
-    - Introduction
-        - Motivation
-        - Problem Statement and Research Questions
-        - Contributions
-    - Background (*optional*)
-    - Related Work (*=State of the Art*)
-    - Approach (=*Methodology*)
-    - Realisation (*in CS often named 'Implementation'*)
+    - [Title](elements/title.md)
+    - [Abstract](elements/abstract.md)
+    - [Introduction](elements/introduction.md)
+        <!-- - Motivation -->
+        <!-- - Problem Statement and Research Questions -->
+        <!-- - Contributions -->
+    - [Background (*optional*)](elements/background.md)
+    - [Related Work](elements/related_work.md) 
+    - [Approach (*aka Methodology*)](elements/methodology.md)
+    - [Realisation (*in CS often named 'Implementation'*)](elements/implementation.md)
     - Evaluation
     - Discussion
     - Conclusion (*incl. Future Work*)
@@ -42,101 +62,39 @@ The following fields contain a list of the main elements separated by the differ
 !!! Example
     **Main Elements of a Survey**
 
-    - Title
-    - Abstract
-    - Introduction (incl. SOTA)
+    - [Title](elements/title.md)
+    - [Abstract](elements/abstract.md)
+    - [Introduction](elements/introduction.md) (incl. SOTA)
         - Motivation
         - Problem Statement and Research Questions
         - Overview of Methodology
     - Scope
-    - Description of Analysis Criteria and Methodology
+    - [Description of Analysis Criteria and Methodology (*aka Methodology*)](elements/methodology.md)
     - Analysis
     - Discussion
-    - Related Works
+    - [Related Work](elements/related_work.md)
     - Conclusion and Future Work
 
 
 
 
 
-## Title
+## Details
 
-### Function
-
-* The title is used to convey the main idea of your paper
-* It should provide information about the problem the paper presents a solution for or state the main contribution of the proposed solution
-
-### Style
-
-* Simple and straight; 
-* Avoid overly long and bulky words
-* No complex sentence-like style
-* Use terms that are common in a domain
-* Use a first-letter upper case notation (only stopwords are written in lower case)
-* If appropriate: Use a descriptive main title and complement it with a detailed subtitle
-* Use a neutral language; avoid sensational words; a science paper's title is the opposite of an advertisment headline
-* Avoid abbreviations; use them only if they are very well known
-
-### Structure
-
-* either use a main title
-* if appropriate: complement a short main title with a sub title, separated by ':' or '–'
-
-
-## Abstract
-
-### Function 
-
-* Outlines the main elements (problem, contributions, methodology and results) of your work
-* Together with the title probably the most often read part of your paper
-* Intention is to support readers in assessing wether your paper is useful to them or not 
-
-### Style
-
-* relatively short; for a 15-pages research paper, use max. 5-7 sentences
-* only as long as necessary but as precise as possible
-* contains no refs or definitions
-* avoid abbreviations
-* must not contains advertisments or clifhangers
-* neutrality in wording / thinking / and explanations
-
-
-### Structure
-
-* Use the following structure (--> see [Milestone #2](milestone2.md) )
+* [Title](elements/title.md)
+* [Abstract](elements/abstract.md)
+* [Introduction](elements/introduction.md)
+* [The Background Section](elements/background.md)
+* [Related Work](elements/related_work.md)
+* [Approach (*aka Methodology*)](elements/methodology.md)
 
 
 
-## Background
-
-### Function
-
-* provides the necessary information that is required by readers to understand the paper's proposed solution
-* provides information about involved technologies, concepts or works that the current work builts upon
-
-### Style
-
-* keep it only as long as really necessary; it takes away space that you might need for explaining your approach
-* can be combined with a discussion about related works
-* should contain a short summary paragraph that puts all elements into context
-* do not only present technologies but put them into the context of your work, i.e., how the are used in or influence your work
-
-### Structure
-
-* structure it as necessary and appropriate
-* avoid a too depth structure; cluster elements if necessary
-* usually separated by technology / concept / etc.
 
 
-## Related Work
 
-### Function
 
-* Science is standing on the shoulders of giants; here you describe the works that influence your work or that your work builts upon
 
-### Style
-
-### Structure
 
 
 
