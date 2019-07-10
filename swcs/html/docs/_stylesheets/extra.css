@@ -29,6 +29,11 @@ li.md-nav__item>a:hover {
 } */
 
 
+/* SZ: added to have more space between bullet lists */
+.md-typeset ol li, .md-typeset ul li {
+    margin-bottom: 1em !important;
+}
+
 
 
 

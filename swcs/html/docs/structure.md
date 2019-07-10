@@ -26,9 +26,14 @@ In the following, we presented a structural recommendation for the two main type
 The details pages are all structured identically.  
 They introduce a section by describing its
 
-* **function**
-* **style**
-* **structure**
+* **Function** –
+    Explaining the main purpose of a section
+
+* **Style** –
+    Expounding the type of writing stlye usually applied for writing the section
+
+* **Structure** –
+    Describes elements or tipps on how to structure a section accordingly
 
 and provide some **tipps** or **remarks** for some elements.
 
@@ -51,9 +56,9 @@ and provide some **tipps** or **remarks** for some elements.
     - [Realisation (*in CS often named 'Implementation'*)](elements/implementation.md)
     - [Evaluation & Discussion](elements/evaluation.md)
     - [Discussion (_often included in the evaluation_)](elements/evaluation.md) 
-    - Conclusion (*incl. Future Work*)
-    - Acknowledgements (*optional*)
-    - References
+    - [Conclusion (*incl. Future Work*)](elements/conclusion.md)
+    - [Acknowledgements (*optional*)](elements/acknowledgements.md)
+    - [References](elements/references.md)
 
 
 
@@ -64,16 +69,18 @@ and provide some **tipps** or **remarks** for some elements.
 
     - [Title](elements/title.md)
     - [Abstract](elements/abstract.md)
-    - [Introduction](elements/introduction.md) (incl. SOTA)
-        - Motivation
-        - Problem Statement and Research Questions
-        - Overview of Methodology
-    - Scope
+    - [Introduction _(incl. SOTA)_](elements/introduction.md) 
+        <!-- - Motivation -->
+        <!-- - Problem Statement and Research Questions -->
+        <!-- - Overview of Methodology -->
+    - [Scope](elements/scope.md)
     - [Description of Analysis Criteria and Methodology (*aka Methodology*)](elements/methodology.md)
     - Analysis
     - Discussion
     - [Related Work](elements/related_work.md)
-    - Conclusion and Future Work
+    - [Conclusion (*incl. Future Work*)](elements/conclusion.md)
+    - [Acknowledgements (*optional*)](elements/acknowledgements.md)
+    - [References](elements/references.md)
 
 
 
