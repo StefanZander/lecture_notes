@@ -3,21 +3,23 @@
 !!! abstract
     **Objectives**
 
-    - [ ] Find a colleague with whom your from a SWCS group
-    - [ ] Find a topic that is of interest of both of you
+    - [ ] Find a colleague with whom you from a SWCS group to work through the semester
+    - [ ] Find a topic that is of interest for both of you
     - [ ] Enter your group constellation and topic into the SWCS Moodle course
 
 
 ## Tasks
 
 1. Form **groups** of two people
+     
+    !!! note
+        **Note**: In case you are looking for an SWCS partner, please use the **SWCS Moodle forum** to enter a **request** there. This is the most transparent and preferable way since other students can look you up. 
+
 2. Each group has to choose an **individual topic** that serves as a basis for the scientific work  
     Topic must be related to Computer Science
 3. Enter group and topic information into the [SWCS Moodle page]()  
-    See [Schedule](schedule.md) for deadline of MS1
+    See [Schedule](schedule.md) for deadline of [Milestone #1](milestone1.md)
 
-!!! note
-    **Note**: ...
 
 
 
