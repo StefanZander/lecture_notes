@@ -21,5 +21,5 @@ Each experiment or research phase should be presented as a unit, even if it was 
 
 ### Tipps
 
-- Will be added soon...
+- Will be added in the course of the semester...
 
