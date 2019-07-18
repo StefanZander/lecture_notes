@@ -18,4 +18,4 @@
 
 ### Structure
 
-* Use the following structure (--> see [Milestone #2](milestone2.md) )
+* Use the following structure (--> see [Milestone #2](../milestone2.md) )

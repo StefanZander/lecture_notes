@@ -39,7 +39,9 @@ Most journal-style scientific papers are subdivided into the following sections:
   
 Those sections are intended to mimic the experimental or research process. This is the system we will use for preparing the scientific paper in this course. 
 
-The sections appear in a journal style paper in the following prescribed order:
+Detailed information about which structural elements to apply for what type of scientific work together with details about each structural element will be provided on the page --> [The Structure of Scientific Papers](structure.md).
+
+<!-- The sections appear in a journal style paper in the following prescribed order:
 
  Experimental process
  Section of Paper
@@ -58,7 +60,7 @@ Introduction
  Whose work did I refer to?
  Literature Cited
  Extra Information
-Appendices (optional)
+Appendices (optional) -->
 
 
 
@@ -67,7 +69,7 @@ Appendices (optional)
 
 
 
-### Getting Started
+## Getting Started
 The first task to accomplish as you begin the process of writing is to **order and organize the information** you wish to present. Some people work well from an outline, others do not. Some people write first to discover the points, then re-arrange them using an after-the-fact outline. Whatever process you may use, be aware that scientific writing requires **special attention** to order and organization. Because the paper will be divided into **sections**, you need to know **what information will go into each**. If you don't normally work from an outline, this may be an occasion when you'll at least want to develop a **list of the major points** to be included in each section, before you begin to write. If the paper has multiple authors, then this is a good time to work (and negotiate!) with your collaborators to insure that all the points the group wants to make get listed.
 
 ### A Word about the Audience
