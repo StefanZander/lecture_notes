@@ -81,8 +81,8 @@ The **details pages** are all structured identically:
         <!-- - Overview of Methodology -->
     - [Scope](elements/scope.md)
     - [Description of Analysis Criteria and Methodology (*aka Methodology*)](elements/methodology.md)
-    - Analysis
-    - Discussion
+    - [Analysis](elements/analysis.md)
+    - [Discussion](elements/discussion.md)
     - [Related Work](elements/related_work.md)
     - [Conclusion (*incl. Future Work*)](elements/conclusion.md)
     - [Acknowledgements (*optional*)](elements/acknowledgements.md)
