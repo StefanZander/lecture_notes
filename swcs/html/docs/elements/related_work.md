@@ -36,8 +36,9 @@ Usually there are three ways of structuring the related work section
     * Discuss your findings
     * Outline the consequences that can be deduced from your analysis 
 
-* The **No-Go**
+* **The No-Go**
     * No related works are discussed at all
+    * At serious conferences or journals this causes a desk rejection (*ie. a rejection without review*)
 
 
 ### Tipps and Remarks
