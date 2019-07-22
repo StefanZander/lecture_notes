@@ -9,7 +9,8 @@
     - [x] You are able to apply the principles and methods of proper scientific work practices to other works in form of a review.
     - [x] You are capable of writing a scientific review
     - [x] You know how to submit a review via EasyChair 
-    - [x] Grading Factor: 1
+    
+    **Grading Factor: 1**
 
 
 The **peer review** is one of the corner stones of the scientific circus. The objective of this milestone therefore is to create a **scientific review** for _one_ of your colleagues' works. With this assignment, we want you to **change perspective** and "look" to other works through the eyes of a reviewer. By doing that, you should not only help your colleagues in improving their works but also find new inspiration to critically asses and improve your own work.
@@ -23,13 +24,15 @@ The **peer review** is one of the corner stones of the scientific circus. The ob
 
 3. Enter your **paper bids** 
 
-    - Please specify one of the four options for _each_ paper listed in the biddings' overview:
-        - *I want to review*
-        - *I can review*
-        - *I don‘t want to review*
-        - *Conflict of Interest* (use that e.g. for your own paper)
+    !!! example
+        **Please specify one of the four options for _each_ paper listed in the biddings' overview**:
+        
+        1. *I want to review*
+        2. *I can review*
+        3. *I don‘t want to review*
+        4. *Conflict of Interest* (use that e.g. for your own paper)
       
-      These options are need by the system in order to compute a **fair assignment solution** for each PC member based on the preferences provided.
+    These options are need by the system in order to compute a **fair assignment solution** for each PC member based on the preferences provided.
 
 4. After the paper bidding phase is complete, the **assignment algorithm** computes an optimal (i.e. fair) solution for each PC member. You will be **notified** by the system via email about the computed result, i.e., **the paper you have been assigned to for review**. 
 
@@ -84,4 +87,4 @@ The following results need to be achieved in order to meet the formal requiremen
 
     - [ ] Accepted PC Member invitation
     - [ ] Paper bids entered into the system
-    - [ ] Submission of review via EasyChair within the deadline 
+    - [ ] Submission of review via EasyChair *within* the deadline 

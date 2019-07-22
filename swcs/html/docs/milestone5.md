@@ -7,8 +7,9 @@
     **Objectives**
 
     - [x] You are capable of presenting your research in a scientifically sound way
-    - [x] You know what distinguishes a scientific presentation from other forms of presentation 
-    - [x] Grading Factor: 3
+    - [x] You know what distinguishes a scientific presentation from other forms of presentation
+ 
+    **Grading Factor: 3**
 
 
 The **communication** of **scientific results** is another corner stone of the science circus.  
@@ -23,17 +24,17 @@ Please be aware that a scientific presentation follows a set of **rules and guid
 
 ## Tasks
 
-1. Prepare the scientific presentation 
+1. Prepare the scientific presentation with a tool of your choice
       
 2. Upload your presentation before the final presentation deadline to the SWCS Moodle course (*optional*)
 
-3. Attend the final presentations and present your work
+3. Attend the final presentations and present your work in class
 
 
-## Requirements
+### Requirements
 
 - Time slot per Group:
-    - Talk: 10 Min. – sharp!
+    - Talk: 10 Min. – *sharp*!
     - Questions and Feedback: approx. 8-10 Min.
 
 ## Assessment
