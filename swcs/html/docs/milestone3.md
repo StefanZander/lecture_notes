@@ -9,7 +9,7 @@
     - [x] You are capable of setting up a software infrastructure for authoring scientific papers using LaTeX 
     - [x] Prepare a first draft of your paper that serves as basis for the review (--> [Milestone #4](milestone4.md))  
     
-    **Grading factor: none**
+    **Grading Factor: ungraded**
 
 
 ## Tasks

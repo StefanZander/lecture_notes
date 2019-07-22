@@ -1,4 +1,4 @@
-# Paper Draft (Milestone #3)
+# Final Paper (Milestone #6)
 
 <!-- !!! question
     This milstone will be graded with factor: **1** -->
@@ -6,15 +6,16 @@
 !!! abstract
     **Objectives**
 
-    - [x] You are capable of setting up a software infrastructure for authoring scientific papers using LaTeX 
-    - [x] Prepare a first draft of your paper that serves as basis for the review (--> [Milestone #4](milestone4.md))  
+    - [x] You are capable of finishing your scientific paper and submit it via EsayChair
+    - [x] You are familiar with the main elements of good scientific work practices and can apply them to your own scientific paper  
+    - [x] You know which elements make up a good scientific paper 
     
-    **Grading factor: none**
+    **Grading Factor: 5**
 
 
 ## Tasks
 
-1. Prepare a first version of the paper and submit it via EasyChair
+1. Prepare the final version of the paper and submit it via EasyChair _before(!)_ the deadline
 
     - Use the [Springer Link LNCS LaTeX Template](ftp://ftp.springernature.com/cs-proceeding/llncs/llncs2e.zip) that can be downloaded from the Springer LNCS Authors' [Landing page](https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines).
 
@@ -23,7 +24,7 @@
         - Amount: 15 - 25 
         - Origin: Mostly primary and secondary literature from scientific databases
     - Please also consider the following things:
-        - Follow the standard structure of scientific papers
+        - Follow the standard structure of scientific papers (--> see [Structural Overview](structure.md))
         - Use the appropriate language, notation conventions, and formulations
 
 
@@ -39,6 +40,6 @@ The following results need to be achieved in order to meet the formal requiremen
 !!! abstract
     __Results:__
 
-    - [ ] Preparation of a first draft of the scientific paper
-    - [ ] Uploading of the paper to the EasyChair system
-    - [ ] Updated information in the EasyChair system (_optional_)
+    - [ ] Preparation of a final version of the scientific paper
+    - [ ] Submisison of the paper to the EasyChair system
+    - [ ] Finalized information in the EasyChair system (updated title and abstract)
