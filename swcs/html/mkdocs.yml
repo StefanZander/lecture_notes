@@ -15,6 +15,8 @@ nav:
   - 'MS6: Final Paper': 'milestone6.md'
   - 'Tipps': 'good_paper.md'
   - 'Elements/Introduction': 'elements/introduction'
+  - 'Exercises': 'exercises.md'
+  
 
 plugins:
     - search
