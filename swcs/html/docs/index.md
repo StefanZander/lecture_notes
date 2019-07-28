@@ -35,10 +35,11 @@ The information on this site is separated into
 * [Introduction to Scientific Writing](scientific_writing.md)
 * [Structure of a Scientific Paper](structure.md)
 
+
 ## Tipps
 
 * [What makes a good Scientifc Paper](good_paper.md) 
-
+* [Common Mistakes made in Scientific Writing and Presentations](common_mistakes.md)
 
 
 ----

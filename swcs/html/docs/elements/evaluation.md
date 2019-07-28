@@ -19,7 +19,7 @@ Every good and serious research paper needs an evaluation. Neglecting an evaluat
     An evaluation requires an implementation of the approach, otherwise it could not be analyzed, since an approach is mostly an idea, concept or logical model that needs some form of manifestation. The implementation is such a manifestation.
 
 * **Prerequisite for Discussion**  
-    The evaluation usually creates some results (numbers / statistics / texts), the relevance of which wrt. the paper's problem space and research questions is discussed in the [Discussion](elements/discussion.md) section.
+    The evaluation usually creates some results (numbers / statistics / texts), the relevance of which wrt. the paper's problem space and research questions is discussed in the [Discussion](./discussion.md) section.
 
 ### Types
 

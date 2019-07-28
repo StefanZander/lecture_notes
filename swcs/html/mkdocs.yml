@@ -13,9 +13,8 @@ nav:
   - 'MS4: Review': 'milestone4.md'
   - 'MS5: Final Presentation': 'milestone5.md'
   - 'MS6: Final Paper': 'milestone6.md'
+  - 'Common Mistakes': 'common_mistakes.md' 
   - 'Tipps': 'good_paper.md'
-  - 'Elements/Introduction': 'elements/introduction'
-  - 'Exercises': 'exercises.md'
   
 
 plugins:

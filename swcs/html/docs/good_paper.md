@@ -1,9 +1,43 @@
 # What makes a good Scientific Paper?
 
+### Key Questions to be Asked
+
+> What makes a good scientific paper? 
+ 
+Before you begin, ask the following questions:
+
+* Does it clearly motivate and clearly formulate the **research question**?
+* Does it outline the current knowledge of the **problem domain**, as well as the state of **existing solutions**?
+* Does it present clearly any **preliminary ideas**, the proposed **approach** and the **results** achieved so far?
+* Does it sketch the **research methodology** that is applied?
+* Does it point out the **contributions** of the applicant to the problem solution?
+* Does it state in what aspects the suggested solution is **different**, **new**, or **better** as compared to **existing approaches** to the problem?
+* Does it state how the attained results are **evaluated** or compared to existing approaches to the problem?
+* Does it state how and by whom the **expected results** can be applied?
+
+!!! Example
+    **Source**: <https://www.researchgate.net/publication/255993683_How_to_Write_Good_Scientific_Papers_A_Comprehensive_Guide>   (_Adapted with slight modifications_)
+
+
+### Developing a Technical Artifact
+
+!!! warning
+    **Please note**:  
+    The following information are important! Diregarding them severely harms your paper's quality and assessment.
+
+
+Here is what you should do if your task is to develop an algorithm / module / component / system etc.
+
+* Do not just develop it and think everything is fine (from a methodological point of view it is not; it is not even heuristiaclly valid)
+* Put the problem to the front, i.e., make the problem your starting point
+* Implement different approaches (that all solve or contribute towards solving the problem – or parts of it)
+* Then define KPIs that help you to assess the quality of a solution and that allow to compare the different solutions based on the extent to which they solve (or help solving) the problem
+* Conduct the analysis and compare the different approaches (methodology: comparative analysis) 
+* Present and discuss your findings
 
 
 
-## Some Tipps
+### Some Further Tipps
 
 * **Always keep the reader in mind** 
     * Outline and explain your descisions 
@@ -23,30 +57,9 @@
 
 
 
-### Key Questions to be Asked
-
-What makes a good scientific paper; before you begin, ask the following questions:
-
-* Does it clearly motivate and clearly formulate the **research question**?
-* Does it outline the current knowledge of the **problem domain**, as well as the state of **existing solutions**?
-* Does it present clearly any **preliminary ideas**, the proposed **approach** and the **results** achieved so far?
-* Does it sketch the **research methodology** that is applied?
-* Does it point out the **contributions** of the applicant to the problem solution?
-* Does it state in what aspects the suggested solution is **different**, **new**, or **better** as compared to **existing approaches** to the problem?
-* Does it state how the attained results are **evaluated** or compared to existing approaches to the problem?
-* Does it state how and by whom the **expected results** can be applied?
-
-Adapted from <https://www.researchgate.net/publication/255993683_How_to_Write_Good_Scientific_Papers_A_Comprehensive_Guide>
 
 
 
-## Conclusions / Discussions
 
-The aim of this section is to communicate how the results of your work contribute to progress in your field. It can, however, be a difficult balance between being certain in your tone and not conveying arrogance. One guiding principle is to make sure your deductions aren’t over-inflated in their nature, but always backed-up with data and what others have reported. Furthermore, you can discuss any follow-up work that is underway and suggest future research, to provide further credibility to the points you make.
 
-A couple of useful tips on content:
-
-* **Discuss your research’s significance**: You should discuss the key significance of your results. Don’t be tempted to just restate them, that’s what your results section is for.
-* **Tackle conflicting research**: You should address any work that disagrees with your findings directly in this section. Rather than lambasting it, convince the reader why your work is an improvement, in a constructive way.
-* **Remember to reiterate your objectives**: You should always relate back to the objectives that you laid out in your introduction at this stage, to make the paper congruent for the reader.
 

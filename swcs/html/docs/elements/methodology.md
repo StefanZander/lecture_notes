@@ -3,7 +3,7 @@
 ### Function
 
 This section clearly and thoroughly explains how you carried out your research.
-It describes the approach you designed and carried out in order to gather information (so called *artefacts* in Design Science) that help in answering your research questions (--> see [Introduction](elements/introduction.md)).
+It describes the approach you designed and carried out in order to gather information (so called *artefacts* in Design Science) that help in answering your research questions (--> see [Introduction](./introduction.md)).
 
 Your methodology should be designed in a way so that it ensures internal, external, and construct validity.
 
