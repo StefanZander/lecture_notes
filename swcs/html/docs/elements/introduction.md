@@ -1,29 +1,35 @@
 # The Introduction
 
-## Function
+### Function
 
-The function of the Introduction is to:
+The function of the Introduction is to...
 
-- Establish the context of the work being reported. This is accomplished by discussing the relevant primary research literature (with citations) and summarizing our current understanding of the problem you are investigating;
-- State the purpose of the work in the form of the hypothesis, question, or problem you investigated; and,
-- Briefly explain your rationale and approach and, whenever possible, the possible outcomes your study can reveal.
-
-
-The Introduction must answer the questions,
-
-- *"What was I studying?"*
-- *"Why was it an important question?"*
-- *"What did we know about it before I did this study?"*
-- *"How will this study advance our knowledge?"*
+- ...establish the context of the work being reported. This is accomplished by discussing the relevant primary research literature (with citations) and summarizing our current understanding of the problem you are investigating;
+- ...state the purpose of the work in the form of the hypothesis, question, or problem you investigated; and,
+- ...briefly explain your rationale and approach and, whenever possible, the possible outcomes your study can reveal.
 
 
-## Style
+!!! example
+    **The Introduction must answer the questions...**
 
-Use the active voice as much as possible.
+    - *"What was I studying?"*
+    - *"Why was it an important question?"*
+    - *"What did we know about it before I did this study?"*
+    - *"How will this study advance our knowledge?"*
+
+
+### Style
+
+- Use subheadlines (e.g. Motivation, Research Problem, Contributions etc.) when necessary or appropriate
+- Use the active voice as much as possible.
+- Include the current state of the art (SOTA) to motivate the problem
+- A good introduction often uses a "vivid" example to illustrate the problem
+- A good introduction also contains lots of refs to related works or the SOTA to illustrate and motivate the problem or to explain the current state of the art (*using refs to explain the current state of the art should be self-speaking*)
 
 
 
-## Structure
+
+### Structure
 
 The structure of the Introduction can be thought of as an **inverted triangle** – the broadest part at the top representing the most general information and focusing down to the specific problem you studied. Organize the information to present the more general aspects of the topic early in the Introduction, then narrow toward the more specific topical information that provides context, finally arriving at your statement of purpose and rationale. A good way to get on track is to sketch out the Introduction backwards; start with the specific purpose and then decide what is the scientific context in which you are asking the question(s) your study addresses. Once the scientific context is decided, then you'll have a good sense of what level and type of general information with which the Introduction should begin.
 

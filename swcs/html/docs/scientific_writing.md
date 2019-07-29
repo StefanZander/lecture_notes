@@ -157,7 +157,7 @@ In journal style papers there is virtually no circumstance in which the findings
     <http://abacus.bates.edu/~ganderso/biology/resources/writing/HTWtoc.html>
     <http://abacus.bates.edu/~ganderso/biology/resources/writing/HTWsections.html>
 
-## Literature Recommendations
+<!-- ## Literature Recommendations
 
 External Information about good Scientific Work Practices
 
@@ -174,7 +174,7 @@ External Information about good Scientific Work Practices
     <http://archives.esf.org/fileadmin/Public_documents/Publications/ESPB10.pdf>
 
 * Excellent Article about Hypothesis Buiding and Research Design (*must read*)
-    <https://www.merlin.uzh.ch/contributionDocument/download/6915>
+    <https://www.merlin.uzh.ch/contributionDocument/download/6915> -->
 
 
 

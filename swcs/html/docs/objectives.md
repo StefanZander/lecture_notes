@@ -91,6 +91,11 @@ External Information about good Scientific Work Practices
 * Nice summary of tipps for Phd theses but these also apply to any kind of scientific works
     <https://medium.com/asecuritysite-when-bob-met-alice/as-a-phd-examiner-my-top-25-tips-for-phd-students-4ecb76a307e7>
 
+* An article from Oded Goldreich on how to write a scientific paper
+    <http://www.wisdom.weizmann.ac.il/~oded/R2/re-writing.pdf>
+
+* Simon Peyton Jones from Microsoft Research created an excellent presentaion on how to give a great research talk
+    <https://www.microsoft.com/en-us/research/wp-content/uploads/2016/07/How-to-give-a-great-research-talk.pdf>
 
 
 

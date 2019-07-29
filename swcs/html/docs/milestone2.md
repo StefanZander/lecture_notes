@@ -1,12 +1,20 @@
 # Factsheet and Abstract (Milestone #2)
 
-!!! question
-    This milstone will be graded with factor: **1**
+<!-- !!! question
+    This milstone will be graded with factor: **1** -->
+
 
 !!! abstract
     **Objectives**
 
-    - [x] ...
+    - [x] You are familiar with the main elements a good abstract must contain
+    - [x] You can write an abstract for your research paper
+    - [x] You know the role and function of an fact sheet 
+
+    **Grading Factor: 1**
+
+
+
 
 
 ## Tasks
@@ -45,17 +53,28 @@ The Factsheet describes **corner stones** of your research. It serves as **basis
 
 Use the following structure and document each aspect with very few sentences:
 
-1. **Title and (optionally) Subheading**
-2. **Problem Statement** ie., what is the problem and why is it a problem (--> the motivation of your work)
+- <https://projects.fbi.h-da.de/~s.zander/wai/html/expose/>
+
+<!-- 1. **Title and (optionally) Subheading**
+2. **Problem Statement** ie., what is the problem and why is it a problem (the motivation of your work)
 3. **Research Questions** ie., what questions will your research provide answers for
     The research questions should be short, precise and concise; they should be tractable, ie., they should be directly answerable 
-
 4. Approach  
     ie., specify what you are planing to do
 5. Methodology ie., describe how you conduct your research (ie., the analysis)
 6. Results ie., what results or insights are you expecting
-7. Sources
+7. Sources -->
 
+<!-- Preliminary title
+
+The preliminary title of your research paper. Of course the title can change during the course of your work.
+
+Please note:
+The title should reflect the problem statement of your work and it should only be as long as necessary. In order to keep the main title short, use a sub title. Never use very long or complex constructs for your title –  those things only dilute your work's main objective.
+
+The problem statement
+
+The problem statement (often referred to as the motivation) is one of the crucial elements of your exposé. In this section you explain the specific problem your work contemplates on. -->
 
 
 

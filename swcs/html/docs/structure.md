@@ -61,7 +61,7 @@ The **details pages** are all structured identically:
     - [Approach (*aka Methodology*)](elements/methodology.md)
     - [Realisation (*in CS often named 'Implementation'*)](elements/implementation.md)
     - [Evaluation & Discussion](elements/evaluation.md)
-    - [Discussion (_often included in the evaluation_)](elements/evaluation.md) 
+    - [Discussion (_often included in the evaluation_)](elements/discussion.md) 
     - [Conclusion (*incl. Future Work*)](elements/conclusion.md)
     - [Acknowledgements (*optional*)](elements/acknowledgements.md)
     - [References](elements/references.md)
@@ -81,8 +81,8 @@ The **details pages** are all structured identically:
         <!-- - Overview of Methodology -->
     - [Scope](elements/scope.md)
     - [Description of Analysis Criteria and Methodology (*aka Methodology*)](elements/methodology.md)
-    - Analysis
-    - Discussion
+    - [Analysis](elements/analysis.md)
+    - [Discussion](elements/discussion.md)
     - [Related Work](elements/related_work.md)
     - [Conclusion (*incl. Future Work*)](elements/conclusion.md)
     - [Acknowledgements (*optional*)](elements/acknowledgements.md)

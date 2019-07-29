@@ -1,9 +1,9 @@
-# What makes a good Scientific Paper?
+# Common Mistakes
 
 
 
 
-## Common Mistakes
+### Mistakes in Scientific Writing
 
 * Paper reads like a report
 * Paper just states background technology or what others have already stated
@@ -23,14 +23,15 @@
 * ...
 
 
-## Common Mistakes of Scientific Presentations
+### Common Mistakes of Scientific Presentations
 
 * Do not start with the talk's agenda (--> each scientific talk follows a standardized agenda; there is no need to make that explicit)
 * start by motivating the problem the work provides contributions for
-* 
+* _more to follow..._
 
 
-## Tipps
+
+### Further Tipps
 
 Here is what you should do if your task is to develop an algorithm / module / component / system etc.
 

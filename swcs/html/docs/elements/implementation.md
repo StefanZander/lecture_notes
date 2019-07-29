@@ -3,12 +3,13 @@
 
 ### Function
 
-In order to measure the impact of a solution (the approach), an oprationalisation or manifestation of an approach is needed.
+In order to measure the impact of a solution (the approach), an operationalisation or manifestation of the approach is needed.
 
-The implementation section describes the realisation of the approach (or some parts of it), mainly for the purpose of allowing its evaluation.
+The implementation section describes the realisation of the approach (or some parts of it), mainly for the purpose of enabling its evaluation.
 
 !!! note 
-    **Please note**, that the implemantation should not add something new to the approach or a concept described in the approach section. Its main purpose is to demonstrate one implementation of it. 
+    **Please note**:  
+    The implemantation should *not* "add" something new to the approach or to a concept described in the approach section. Its main purpose is to demonstrate one implementation of it. 
 
 
 ### Style

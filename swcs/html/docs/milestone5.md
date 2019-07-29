@@ -7,15 +7,17 @@
     **Objectives**
 
     - [x] You are capable of presenting your research in a scientifically sound way
-    - [x] You know what distinguishes a scientific presentation from other forms of presentation 
-    - [x] Grading Factor: 3
+    - [x] You know what distinguishes a scientific presentation from other forms of presentation
+ 
+    **Grading Factor: 3**
 
 
-The **communication** of **scientific results** is another corner stone of the science circus.  
+The **communication** of **scientific results** is another corner stone of the science circus. It help others to learn about your work and advances the knowledge in a scientific domain.
+
 The **form** of communication usually is twofold:
 
-1. In writing by means of a scientific article – this is the objective of Milestone #6
-2. Orally in form of a **scientific presentation** – usually conducted during symposia, conferences, workshops etc.
+1. In writing by means of a scientific article – this is the objective of [Milestone #6](milestone6.md)
+2. Orally in form of a **scientific presentation** – usually conducted during symposia, conferences, workshops, technical meetings etc.
 
 This assignment's objective is to **present your research** to your colleagues (=peers) in form of a scientific presentation. 
 Please be aware that a scientific presentation follows a set of **rules and guidelines** that your presentation needs to exhibit.
@@ -23,17 +25,17 @@ Please be aware that a scientific presentation follows a set of **rules and guid
 
 ## Tasks
 
-1. Prepare the scientific presentation 
+1. Prepare the scientific presentation with a tool of your choice
       
 2. Upload your presentation before the final presentation deadline to the SWCS Moodle course (*optional*)
 
-3. Attend the final presentations and present your work
+3. Attend the final presentations and present your work in class
 
 
-## Requirements
+### Requirements
 
 - Time slot per Group:
-    - Talk: 10 Min. – sharp!
+    - Talk: 10 Min. – *sharp*!
     - Questions and Feedback: approx. 8-10 Min.
 
 ## Assessment
