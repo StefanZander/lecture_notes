@@ -97,5 +97,11 @@ External Information about good Scientific Work Practices
 * Simon Peyton Jones from Microsoft Research created an excellent presentaion on how to give a great research talk
     <https://www.microsoft.com/en-us/research/wp-content/uploads/2016/07/How-to-give-a-great-research-talk.pdf>
 
+* Clarity and Impact: Key Tips for Writing a Good Scientific Paper
+    <https://www.mendeley.com/careers/article/clarity-and-impact-key-tips-for-writing-a-good-scientific-paper/>
+
+* Some online courses on scientific writing from Elsevier Researcher Academy (registration required)
+    <https://researcheracademy.elsevier.com/>
+
 
 
