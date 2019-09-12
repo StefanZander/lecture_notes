@@ -33,7 +33,7 @@ The information on this site is separated into
 <!-- Theoretical parts introducing concepts, languages, and technologies -->
 
 * [Session #1: Introduction to Knowledge Management – what is knowledge?](index.md) 
-* [Session #2: Knowledge Representation](index.md) 
+* [Session #2: Foundations of Knowledge Organisation Systems // Knowledge Representation](index.md) 
 * [Session #3: Technologies and Languages for Lightweight Semantic Knowledge Graphs](index.md) 
 * [Session #4: MediaWiki and Semantic MediaWiki](index.md) 
 * [Session #5: Semantic MediaWiki Extensions](index.md) 
@@ -42,12 +42,22 @@ The information on this site is separated into
     * [Semantic Templates](index.md) 
 
 
-## Practical Project
+## Semester Project
 
-* [Task #1: Introduction to Scientific Writing](task1.md)
-* [Task #2: Introduction to Scientific Writing](task1.md)
-* [Task #3: Introduction to Scientific Writing](task1.md)
-* [Task #4: Introduction to Scientific Writing](task1.md)
+Although the tasks are listed and numbered in a sequential order, most of them should by worked in parallel and in an iterative and incremental manner. 
+
+<!-- Please note that the order of tasks is not necessarily always sequentional. For some tasks (e.g. 4 / 5 / 6) it might by useful to conduct them in parallel and in an incremental and iterative manner.  -->
+
+* [Task #1: Defining the Problem Domain and Knowledge Management Issues](task1.md)
+* [Task #2: Defining a Knowledge Representation Model](task1.md)
+* [Task #3: Installing Semantic MediaWiki](task1.md)
+* [Task #4: Implementing the Knowledge Representation Model (Ontological Classes / Properties / Concepts)](task1.md)
+* [Task #4: Creating the Technical Software Infrastructure (Templates / Forms / Queries)](task1.md)
+* [Task #2: Defining a User Interaction Concept](task1.md)
+* [WP #5: User Interaction Concept](task1.md)
+* [WP #6: Implementation of Use Cases](task1.md)
+
+WP = Work Package
 
 ## Tipps
 
