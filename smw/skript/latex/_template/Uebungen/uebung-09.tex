@@ -1,0 +1,140 @@
+% ⓒ 2017 Monika Sturm, Francesco Kriegel, Daniel Borchmann
+% This work is licensed under the Creative Commons Attribution-ShareAlike 4.0
+% International License. To view a copy of this license, visit
+% http://creativecommons.org/licenses/by-sa/4.0/.
+
+\documentclass[german]{latteachCD}[2017/03/28]
+
+% Einführung Logik
+
+\usepackage[sheetnumber=9]{theolog}
+
+\begin{document}
+
+\maketitle
+
+\begin{mdframed}
+  Die folgenden Aufgaben werden nicht in den Übungen besprochen und dienen der
+  Selbstkontrolle.
+
+  \renewcommand{\theexercise}{\Roman{exercise}}
+  \setcounter{exercise}{0}
+
+  \begin{exercise}
+    % TheoLog 2014
+    Geben Sie für die Formel
+    \begin{equation*}
+      F = \forall x. \exists y. (p(c_{1},z) \land (q(x,c_{2},z) \lor p(c_{2},y))),
+    \end{equation*}
+    wobei $c_{1}, c_{2}$ Konstanten sind, folgendes an:
+    \begin{enumerate}
+    \item die Menge aller Teilformeln;
+    \item die Menge aller Terme;
+    \item die Menge aller Variablen, mit Unterscheidung freier und gebundener
+      Variablen;
+    \item ein Interpretation $\mathcal{I}$ und eine Zuweisung $\mathcal{Z}$ für
+      $\mathcal{I}$, so dass $\mathcal{I}, \mathcal{Z} \models F$.
+    \end{enumerate}
+  \end{exercise}
+
+  \begin{exercise}
+    % TheoLog 2014
+    Zeigen Sie die folgenden Aussagen:
+    \begin{enumerate}
+    \item Es gilt $\{F\} \models G$ genau dann, wenn $F \to G$
+      allgemeingültig ist.
+    \item Es gilt $\{F_{1}, \dots, F_{k}\} \models G$ genau dann, wenn
+      $\bigwedge_{i=1}^{k} F_{i} \to G$ allgemeingültig ist.
+    \end{enumerate}
+  \end{exercise}
+
+  \begin{exercise}
+    % TheoLog 2014
+    Seien $F$, $G$ Formeln und $x$ eine Variable.  Zeigen Sie, dass dann gilt
+    \begin{equation*}
+      \exists x.(F \to G) \equiv \forall x. F \to \exists x. G.
+    \end{equation*}
+  \end{exercise}
+  \vspace*{-1.7\baselineskip}
+\end{mdframed}
+
+\setcounter{exercise}{0}
+
+\enlargethispage{2\baselineskip}
+
+\begin{exercise}
+  % TheoLog 2014
+  Welche der angegebenen Strukturen sind Modelle der folgenden Formel?
+  \begin{equation*}
+    \forall x.\, p(x,x) \land \forall x, y.\, ((p(x,y) \land
+      p(y,x)) \to x \approx y)
+    \land \forall x, y, z.\, ((p(x,y) \land p(y,z)) \to p(x,z))
+  \end{equation*}
+  \begin{enumerate}
+  \item $\mathcal{I}_{1}$ mit Grundmenge $\mathbb N$ und $p^{\mathcal{I}_{1}} =
+    \{\,(m,n) \mid m < n \,\}$;
+  \item $\mathcal{I}_{2}$ mit Grundmenge $\mathbb N$ und $p^{\mathcal{I}_{2}} =
+    \{\,(n,n+1) \mid n \in \mathbb N \,\}$;
+  \item $\mathcal{I}_{3}$ mit Grundmenge $\mathbb N$ und $p^{\mathcal{I}_{3}} =
+    \{\,(m,n) \mid m \text{ teilt } n\,\}$;
+  \item $\mathcal{I}_{4}$ mit Grundmenge $\Sigma^{*}$ für ein Alphabet $\Sigma$
+    und $p^{\mathcal{I}_{4}} = \{\,(x,y) \mid x \text{ ist Präfix von } y\,\}$;
+  \item $\mathcal{I}_{5}$ mit Grundmenge $\subsets{M}$ für eine Menge $M$ und
+    $p^{\mathcal{I}_{5}} = \{\,(X,Y) \mid X \subseteq Y\,\}$.
+  \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+  % TheoLog 2014
+  \begin{enumerate}
+  \item Geben Sie je eine erfüllbare Formel in Prädikatenlogik mit Gleichheit
+    an, so dass alle Modelle
+    \begin{enumerate}
+    \item höchstens drei,
+    \item mindestens drei,
+    \item genau drei
+    \end{enumerate}
+    Elemente in der Grundmenge besitzen.
+  \item Geben Sie je eine erfüllbare Formel in Prädikatenlogik mit Gleichheit
+    an, so dass das zweistellige Relationensymbol $p$ in jedem Modell als der
+    Graph einer
+    \begin{enumerate}
+    \item injektiven Funktion,
+    \item surjektiven Funktion,
+    \item bijektiven Funktion
+    \end{enumerate}
+    interpretiert wird.
+
+    (Der Graph einer Funktion $f \colon A \to B$ ist die Relation $\{\,(x,y) \in
+    A \times B \mid f(x) = y\,\}$.)
+  \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+  % TheoLog 2014
+  Welche der folgenden Aussagen sind wahr?  Begründen Sie Ihre Antwort.
+  \begin{enumerate}
+  \item Sind $\Gamma$ und $\Gamma'$ Mengen von prädikatenlogischen Formeln, dann
+    folgt aus $\Gamma \subseteq \Gamma'$ und $\Gamma \models F$ auch $\Gamma'
+    \models F$.
+  \item Jede aussagenlogische Formel ist eine prädikatenlogische Formel.
+  \item Eine prädikatenlogische Formel $F$ ist genau dann allgemeingültig,
+    wenn $\lnot F$ unerfüllbar ist.
+  \item Es gilt
+    \begin{equation*}
+      \{\,\forall x, y.\, (p(x,y) \to p(y,x)), \forall x, y, z.\, ((p(x,y) \land p(y,z))
+      \to p(x,z))\,\} \models \forall x.\, p(x,x).
+    \end{equation*}
+  \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+  % TheoLog 2014
+  Formalisieren Sie Bertrand Russells Barbier-Paradoxon
+  \begin{quote}
+    \emph{Der Barbier rasiert genau diejenigen Personen, die sich nicht selbst rasieren.}
+  \end{quote}
+  als eine prädikatenlogische Formel und zeigen Sie, dass diese unerfüllbar ist.
+\end{exercise}
+
+\end{document}

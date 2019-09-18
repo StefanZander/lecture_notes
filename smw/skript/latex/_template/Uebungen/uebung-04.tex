@@ -1,0 +1,97 @@
+% ⓒ 2017 Monika Sturm, Daniel Borchmann
+% This work is licensed under the Creative Commons Attribution-ShareAlike 4.0
+% International License. To view a copy of this license, visit
+% http://creativecommons.org/licenses/by-sa/4.0/.
+
+\documentclass[german]{latteachCD}[2017/03/28]
+
+\usepackage[sheetnumber=4]{theolog}
+
+% Unentscheidbarkeit und PCP
+
+\begin{document}
+
+\maketitle
+
+\begin{mdframed}
+  Die folgende Aufgabe wird nicht in den Übungen besprochen und dient der
+  Selbstkontrolle.
+
+  \renewcommand{\theexercise}{\Alph{exercise}}
+  \setcounter{exercise}{6}
+
+  \begin{exercise}
+    % TheoLog 2014
+    Welche der folgenden Aussagen sind wahr? Begründen Sie Ihre Antwort.
+    \begin{enumerate}
+    \item Die Menge der Instanzen des Postschen Korrespondenzproblems, welche
+      eine Lösung haben, ist semi-entscheidbar.
+    \item Das Postsche Korrespondenzproblem ist bereits über dem Alphabet
+      $\Sigma = \{a, b\}$ nicht entscheidbar.
+    \item Es ist entscheidbar, ob eine Turingmaschine nur Wörter akzeptiert, die
+      Palindrome sind. (Ein Palindrom ist ein Wort $w = a_{1} \dots a_{n}$ mit
+      $a_{1} \dots a_{n} = a_{n} \dots a_{1}$.)
+    \item $\Slang{P}_{\mathsf{halt}}$ ist semi-entscheidbar.
+    \item Es ist nicht entscheidbar, ob die von einer deterministischen
+      Turing-Maschine berechnete Funktion total ist.
+    \item Es gibt reguläre Sprachen, die nicht semi-entscheidbar sind.
+    \end{enumerate}
+
+    \vspace*{-0.5\baselineskip}
+  \end{exercise}
+\end{mdframed}
+
+\vspace*{0.5\baselineskip}
+
+\setcounter{exercise}{0}
+
+\begin{exercise}
+  % TheoLog 2014
+  Besitzen folgende Instanzen $P_{i}$ des Postschen Korrespondenzproblems Lösungen oder
+  nicht?  Begründen Sie Ihre Antwort.
+  \def\BB#1{\begin{bmatrix}#1\end{bmatrix}}
+  \begin{enumerate}
+  \item $P_{1} = \BB{a\\ aaa}, \BB{abaaa\\ab}, \BB{ab\\b}$
+  \item $P_{2} = \BB{ab\\aba}, \BB{baa\\aa}, \BB{aba\\baa}$
+  \item $P_{3} = \BB{bba\\ b}, \BB{ba\\baa}, \BB{ba\\aba}, \BB{ab\\bba}$
+  \end{enumerate}
+  (Für einige Teilaufgaben ist die Verwendung eines Computers sinnvoll.)
+\end{exercise}
+
+\begin{exercise}
+  % TheoLog 2014
+  Zeigen Sie, dass das Postsche Korrespondenzproblem über einem einelementigen
+  Alphabet entscheidbar ist.
+\end{exercise}
+
+\begin{exercise}
+  % Selbst
+  Zeigen Sie, dass folgendes Problem unentscheidbar ist: gegeben eine
+  Turing-Maschine $M$ und ein $k \in \mathbb N$, kann die Sprache $L(\Smach{M})$
+  durch eine Turing-Maschine mit höchstens $k$ Zuständen erkannt werden?
+
+  Zeigen Sie dazu, dass für $k = 1$ die Menge
+  \begin{equation*}
+    T_{k} \coloneqq \{ \mathsf{enc}(\Smach{M}) \mid L(\Smach{M})
+    \text{ wird von einer TM mit höchstens $k$ Zuständen erkannt} \}
+  \end{equation*}
+  nicht entscheidbar ist.  Warum zeigt dies die ursprüngliche Behauptung?
+\end{exercise}
+
+\begin{exercise}
+  % Sipser, Thm 5.30
+  Zeigen Sie, dass weder das Äquivalenzproblem $\Slang{P}_{\mathsf{äquiv}}$ für
+  Turing-Maschinen noch dessen Komplement
+  $\overline{\Slang{P}}_{\mathsf{äquiv}}$ semi-entscheidbar ist, wobei
+  \begin{align*}
+    \Slang{P}_{\mathsf{äquiv}} \coloneqq \{ \enc(\Smach{M}_{1})\#\#\enc(\Smach{M}_{2})
+    \mid L(\Smach{M}_{1}) = L(\Smach{M}_{2}) \}, \\
+    \overline{\Slang{P}}_{\mathsf{äquiv}} \coloneqq \{ \enc(\Smach{M}_{1})\#\#\enc(\Smach{M}_{2})
+    \mid L(\Smach{M}_{1}) \neq L(\Smach{M}_{2}) \}.
+  \end{align*}
+  Zeigen Sie dazu, dass $\Slang{P}_{\mathsf{halt}} \leq_{m}
+  \Slang{P}_{\mathsf{äquiv}}$ und $\Slang{P}_{\mathsf{halt}} \leq_{m}
+  \overline{\Slang{P}}_{\mathsf{äquiv}}$ gilt.  Weshalb zeigt dies die Aussage?
+\end{exercise}
+
+\end{document}

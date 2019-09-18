@@ -1,0 +1,376 @@
+\documentclass[aspectratio=1610,onlymath]{beamer}
+% \documentclass[aspectratio=1610,onlymath,handout]{beamer}
+
+\input{macros-lecture}
+
+\defineTitle{20}{Resolution (2)}{29. Juni 2018}
+
+\begin{document}
+
+\maketitle
+
+\bgroup
+\setbeamercolor{background canvas}{bg=black}
+\frame[plain]{\label{frame_herbrand}\begin{center}\color{white}
+\includegraphics[height=6cm]{images/Herbrand.jpg}
+
+\LARGE
+Jacques Herbrand\medskip
+
+\normalsize
+\tt 12.2.1908 -- 27.7.1931
+\end{center}}
+\egroup
+
+\sectionSlide{Evaluation}
+
+\begin{frame}\frametitle{Vollständigkeit der Resolution}
+
+Resolutionsregel:
+\[  \frac{
+\{A_1,\ldots,A_n,L_1,\ldots,L_k\}\quad
+\{\neg A'_1,\ldots,\neg A'_m,L'_1,\ldots,L'_\ell\}
+}{\{L_1\sigma,\ldots,L_k\sigma,L'_1\sigma,\ldots,L'_\ell\sigma\}
+}\]
+falls $\sigma$ allgemeinster Unifikator von $\{A_1,\ldots,A_n, A'_1,\ldots, A'_m\}$ ist\bigskip
+
+\emph{Algorithmus (Skizze):}
+\begin{enumerate}[(1)]
+\item Bilde Klauselform
+\item Bilde systematisch Resolventen durch Resolution von Varianten bereits abgeleiteter Klauseln
+\item Wiederhole (2), bis entweder $\bot$ erzeugt wird ("`unerfüllbar"') oder keine neuen Klauseln mehr entstehen\footnote{Dieser Fall ist eher ungewöhnlich: Meist entstehen bei erfüllbaren Theorien immer mehr neue Klauseln ohne dass das Verfahren terminiert.}
+\end{enumerate}
+
+\end{frame}
+
+\begin{frame}\frametitle{Vollständigkeit und Korrektheit}
+
+\theobox{Resolutionssatz: Sei $F$ eine prädikatenlogische Formel und $\mathcal{K}_i$ ($i\geq 0$) die vom Resolutionsalgorithmus ermittelten Klauselmengen. Dann sind die folgenden Aussagen äquivalent:
+\begin{itemize}
+\item $F$ ist unerfüllbar
+\item Es gibt ein $\ell\geq 0$ mit $\bot\in\mathcal{K}_\ell$
+\end{itemize}}
+
+\begin{itemize}
+\item Korrektheit hatten wir bereits gezeigt
+\item Vollständigkeit steht noch aus
+\end{itemize}
+
+\end{frame}
+
+\bgroup
+\setbeamercolor{background canvas}{bg=black}
+\frame[plain]{\label{frame_herbrand_b}\begin{center}\color{white}
+\includegraphics[height=6cm]{images/Herbrand.jpg}
+
+\LARGE
+Jacques Herbrand\medskip
+
+\normalsize
+\tt 12.2.1908 -- 27.7.1931
+\end{center}}
+\egroup
+
+\begin{frame}\frametitle{Syntax vs. Semantik}
+
+Bei Herbrandinterpretationen kann man semantische Elemente (wie sie in Zuweisungen vorkommen) durch syntaktische Elemente (wie sie in Substitutionen vorkommen) ausdrücken:\medskip
+
+\theobox{Lemma: Für jede Herbrandinterpretation $\Inter$, jede Zuweisung $\Zuweisung$ für $\Inter$, jeden Term $t\in\Delta^\Inter$ und jede Formel $F$ gilt:
+\[ \Inter,\Zuweisung\{x\mapsto t\} \models F \qquad \text{gdw.}\qquad \Inter,\Zuweisung \models F\{x\mapsto t\}\]}
+
+(ohne Beweis; einfach)
+\bigskip
+
+{\color{devilscss}\footnotesize \emph{Anmerkung:} Man kann ein entsprechendes Resultat auch für Nicht-Herbrand-Interpretationen zeigen. Dann muss man einfach den Term auf der linken Seite durch $t^{\Inter,\Zuweisung}$ ersetzen.}
+
+\end{frame}
+
+\begin{frame}\frametitle{Erfüllbar + Skolem = Erfüllbarkeit bei Herbrand}
+
+\theobox{Satz: Ein Satz $F$ in Skolemform ist genau dann erfüllbar, wenn $F$ ein
+Herbrandmodell hat.}\pause
+
+\emph{Beweis:} $(\Leftarrow)$ ist klar, da Herbrandmodelle auch Modelle sind.\bigskip\pause
+
+$(\Rightarrow)$ Sei $\Inter\models F$ ein Modell für $F$. Wir definieren eine Herbrandinterpretation $\Jnter$ indem wir festlegen:
+\begin{itemize}
+\item $p^\Jnter=\{\tuple{t_1,\ldots,t_n}\mid\tuple{t_1^\Inter,\ldots,t_n^\Inter}\in p^\Inter\}$\\
+{\footnotesize Anm.: $t_i$ sind variablenfrei, daher ist $t_i^\Inter$ wohldefiniert}
+\end{itemize}
+Behauptung: \alert{$\Jnter$ ist ein Herbrandmodell von $F$}
+
+\end{frame}
+
+\begin{frame}\frametitle{Beweis (Fortsetzung)}
+
+\emph{Behauptung:} \alert{$\Jnter$ ist ein Herbrandmodell von $F$}\bigskip
+
+$F$ hat die Form $\forall x_1,\ldots, x_n.G$, wobei $G$ quantorenfrei ist.\pause
+\begin{itemize}
+\item Aus $\Inter\models F$ folgt also $\Inter,\Zuweisung\models G$ für jede Zuweisung $\Zuweisung$ für $\Inter$\pause
+\item Speziell gilt also für alle $t_1,\ldots,t_n\in\Delta_F$: $\Inter,\{x_1\mapsto t_1^{\Inter},\ldots,x_n\mapsto t_n^{\Inter}\}\models G$\pause
+\item Daraus folgt: $\Inter\models G\{x_1\mapsto t_1,\ldots,x_n\mapsto t_n\}$  (analog zu Lemma)\pause
+\item Daraus folgt: $\Jnter\models G\{x_1\mapsto t_1,\ldots,x_n\mapsto t_n\}$\\
+{\footnotesize(Für Atome $G$ direkt aus Definition; die Aussage kann leicht auf größere Boolsche Verknüpfungen von Atomen verallgemeinert werden -- formal durch strukturelle Induktion)}\pause
+\item Es folgt: $\Jnter,\{x_1\mapsto t_1,\ldots,x_n\mapsto t_n\}\models G$ (Lemma)
+\end{itemize}
+Der Schluss gilt für alle $t_1,\ldots,t_n\in\Delta_F$, d.h. $\Jnter\models F$.\qed
+
+\end{frame}
+
+
+\sectionSlide{Prädikatenlogisches Schließen mit Aussagenlogik}
+
+\begin{frame}\frametitle{Herbrand-Expansionen}
+
+\defbox{Die \redalert{Herbrand-Expansion} $HE(F)$ einer Formel $F=\forall x_1,\ldots, x_n.G$ in Skolemform ist die Menge:
+\[ HE(F)\defeq\big\{ G\{x_1\mapsto t_1,\ldots,x_n\mapsto t_n\}\mid t_1,\ldots,t_n\in\Delta_F\big\}\]
+}
+
+$HE(F)$ ist also die (möglicherweise unendliche) Menge von \ghost{variablen-}\\ freien Sätzen, die in Herbrandmodellen von $F$ gelten müssten.
+\pause\bigskip
+
+\redalert{Quantorenfreie Sätze = aussagenlogische Formeln:}
+\begin{itemize}
+\item $HE(F)$ enthält Formeln ohne Variablen, d.h. Boolsche Kombinationen geschlossener Atome
+\item Geschlossene Atome können unabhängig voneinander wahr oder falsch sein, egal wie ihre genaue Struktur aussieht
+\item Wir können sie also als "`ungewöhnlich benannte"' aussagenlogische Atome auffassen und die gesamte Formel aussagenlogisch interpretieren
+\end{itemize}
+\alert{$\leadsto$ $HE(F)$ als aussagenlogische Theorie}
+
+
+\end{frame}
+
+\begin{frame}\frametitle{Gödel, Herbrand, Skolem}
+
+\theobox{Satz von Gödel, Herbrand \& Skolem: Eine Formel $F$ in Skolemform ist genau dann erfüllbar, wenn $HE(F)$ aussagenlogisch erfüllbar ist.}\pause
+
+\emph{Beweis:} Wir zeigen, dass $F=\forall x_1,\ldots,x_n.G$ genau dann ein Herbrandmodell hat, wenn $HE(F)$ aussagenlogisch erfüllbar ist:\pause
+
+\begin{itemize}
+\item $\Inter$ ist ein Herbrandmodell von $F$\pause
+\item gdw. $\Inter,\{x_1\mapsto t_1,\ldots,x_n\mapsto t_n\}\models G$ für alle $t_1,\ldots,t_n\in\Delta_F$\pause
+\item gdw. $\Inter\models G\{x_1\mapsto t_1,\ldots,x_n\mapsto t_n\}$ für alle $t_1,\ldots,t_n\in\Delta_F$ (Lemma)\pause
+\item gdw. für alle $H\in HE(F)$ gilt $\Inter\models H$\pause
+\item gdw. $\Inter$ als aussagenlogisches Modell für $HE(F)$ angesehen werden kann.\qed
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}\frametitle{Satz von Herbrand}
+
+Als Korollar der gezeigten Ergebnisse erhalten wir ein wichtiges Resultat:
+
+\theobox{Satz: Eine Formel $F$ in Skolemform ist genau dann unerfüllbar, wenn
+eine endliche Teilmenge von $HE(F)$ aussagenlogisch unerfüllbar ist.}
+
+\pause\emph{Beweis:} Das Kontrapositiv des Satzes von Gödel, Herbrand \& Skolem besagt:\medskip
+
+Eine Formel $F$ in Skolemform ist genau dann unerfüllbar, wenn $HE(F)$ aussagenlogisch unerfüllbar ist.\bigskip
+
+Der Satz folgt nun, weil jede unerfüllbare aussagenlogische Formelmenge eine endliche
+Teilmenge hat, die unerfüllbar ist: \alert{Kompaktheit der Aussagenlogik}, ohne Beweis\\[1ex]
+{\tiny
+\textcolor{devilscss}{Das Ergebnis kann aus der Vollständigkeit der Verallgemeinerung aussagenlogischer Resolution auf unendliche Modelle gefolgert werden (siehe Formale Systeme, WS 2017/2018, Vorlesung 23): wenn die leere Klausel endlich abgeleitet werden kann, dann nutzt man dazu nur endlich viele Klauseln der Eingabe; wenn die leere Klausel nicht endlich abgeleitet werden kann, dann erhält man aus der unendlichen Menge aller möglichen Ableitungen ein Modell, analog zum endlichen Fall.}
+
+}\qed
+
+\end{frame}
+
+\begin{frame}\frametitle{Prädikatenlogik semi-entscheiden}
+
+Das Ergebnis Herbrands ermöglicht bereits einen naiven Algorithmus zur Semi-Entscheidung von Unerfüllbarkeit in der Prädikatenlogik:\bigskip
+
+\codebox{%
+\emph{Gegeben:} Eine Formel $F$
+\begin{itemize}
+\item Wandle $F$ in Skolemform $F'$ um
+\item Definiere eine Reihenfolge der Formeln in $HE(F')$: $F_1,F_2,F_3,\ldots$
+\item Für alle $i\geq 1$:
+	\begin{itemize}
+	\item Prüfe ob die endliche Menge $\{F_1,\ldots, F_i\}$ aussagenlogisch unerfüllbar ist
+	\item Falls ja, dann gib "`unerfüllbar"' aus; andernfalls fahre fort
+	\end{itemize}
+\end{itemize}}\medskip
+
+Offenbar ist das \redalert{kein praktischer Algorithmus}, aber er zeigt Semi-Entscheidbarkeit
+
+\end{frame}
+
+\sectionSlide{Vollständigkeit der Resolution}
+
+\begin{frame}\frametitle{Ansatz}
+
+\alert{Herbrands Satz liefert uns auch eine Strategie zum Beweis der Vollständigkeit des Resolutionsalgorithmus}\bigskip
+
+\emph{Wir wissen bereits:}
+\begin{itemize}
+\item Unerfüllbarkeit einer Klauselmenge zeigt sich in der Unerfüllbarkeit ihrer Herbrand-Expansion
+\item Die Unerfüllbarkeit der Herbrand-Expansion kann man mit aussagenlogischer Resolution beweisen
+\item Prädikatenlogische Resolution verallgemeinert aussagenlogische Resolution indem wir direkt mit Klauseln arbeiten, die noch Variablen enthalten
+\end{itemize}\pause
+
+\emph{Frage:} Kann man alle Schlüsse, die man auf expandierten Formeln aussagenlogisch erzeugen kann, auch direkt prädikatenlogisch (mit Variablen) erhalten?
+
+\end{frame}
+
+\begin{frame}\frametitle{Lifting-Lemma}
+
+Wir zeigen: Ja, jeder aussagenlogische Schluss (auf der Expansion) kann auf einen prädikatenlogischen Schluss (auf den Klauseln mit Variablen) "`angehoben"' werden.\medskip
+
+\theobox{Satz (Lifting-Lemma): Seien $K_1$ und $K_2$ prädikatenlogische Klauseln mit
+Grundinstanzen $K'_1=K_1\sigma$ und $K'_2=K_2\sigma$.${^1}$\bigskip
+
+Wenn $R'$ eine (aussagenlogische) Resolvente von $K'_1$ und $K'_2$ ist, dann gibt es
+eine prädikatenlogische Resolvente $R$, welche $R'$ als Grundinstanz hat.
+}
+
+\color{devilscss}
+{\footnotesize ${^1}$ Die Verwendung der selben Substitution für $K'_1$ und $K'_2$ ist keine Einschränkung, da wir durch Variantenbildung sicherstellen können, dass $K_1$ und $K_2$ keine Variablen gemein haben.
+
+}
+
+\end{frame}
+
+\begin{frame}\frametitle{Lifting-Lemma: Beweis}
+
+\theobox{Satz (Lifting-Lemma): Seien $K_1$ und $K_2$ prädikatenlogische Klauseln mit
+Grundinstanzen $K'_1=K_1\sigma$ und $K'_2=K_2\sigma$.\smallskip
+
+Wenn $R'$ eine (aussagenlogische) Resolvente von $K'_1$ und $K'_2$ ist, dann gibt es
+eine prädikatenlogische Resolvente $R$, welche $R'$ als Grundinstanz hat.
+}
+
+\emph{Beweis:} Sei $A'\in K'_1$ das (geschlossene) Atom, über das resolviert wurde, d.h. $\neg A'\in K'_2$.\smallskip\pause
+
+Sei $\mathcal{A}_1\defeq\{A\mid A\in K_1,\;A\sigma=A'\}$ und $\mathcal{A}_2\defeq\{A\mid \neg A\in K_2, A\sigma=A'\}$.\smallskip\pause
+
+Dann ist $\sigma$ ein Unifikator für $\mathcal{A}_1\cup\mathcal{A}_2$.\\ Also hat $\mathcal{A}_1\cup\mathcal{A}_2$ einen allgemeinsten Unifikator $\theta$.\smallskip\pause
+
+Sei $R$ die Resolvente von $K_1$ und $K_2$ bzgl. $\theta$.\smallskip\pause
+
+Dann enthalten $R'$ und $R$ Instanzen der gleichen Literale, d.h. sie sind von der Form
+$R'=\{L_1\sigma,\ldots,L_n\sigma\}$ und $R=\{L_1\theta,\ldots,L_n\theta\}$\smallskip\pause
+
+Da $\theta$ allgemeinster Unifikator ist gibt es $\lambda$ mit $\sigma=\theta\circ\lambda$
+und es gilt: $R\lambda=\{L_1\theta\lambda,\ldots,L_n\theta\lambda\}=\{L_1\sigma,\ldots,L_n\sigma\}=R'$\qed
+
+
+\end{frame}
+
+
+\begin{frame}[t]\frametitle{Vollständigkeit der Resolution (1)}
+
+\theobox{Resolutionssatz: Sei $F$ eine prädikatenlogische Formel und $\mathcal{K}_i$ ($i\geq 0$) die vom Resolutionsalgorithmus ermittelten Klauselmengen. Dann sind die folgenden Aussagen äquivalent:
+\begin{itemize}
+\item $F$ ist unerfüllbar
+\item Es gibt ein $\ell\geq 0$ mit $\bot\in\mathcal{K}_\ell$
+\end{itemize}}\pause
+
+\emph{Beweis (Vollständigkeit):} Sei $F$ unerfüllbar
+\begin{itemize}
+\item Dann ist $HE(F)$ unerfüllbar
+\item Dann gibt es eine (endliche) aussagenlogische Resolutionsableitung von $\bot$ aus $HE(F)$
+\item Die Ableitung erzeugt eine endliche Folge von Klauseln: $K_1',K_2',\ldots,K_{m-1}',K_m'=\bot$
+\item \alert{Behauptung:} Jede Klausel $K_i'$ ist Grundinstanz einer Klausel $K_i$ die in $\mathcal{K}_\ell$ vorkommt für ein $\ell\geq 0$.
+\item Für $i=m$ folgt daraus der Satz, denn $K_m'=\bot$ kann nur Grundinstanz von $\bot$ sein, d.h. $\bot\in\mathcal{K}_\ell$ für ein $\ell\geq 0$.
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}[t]\frametitle{Vollständigkeit der Resolution (2)}
+
+% \theobox{Resolutionssatz: Sei $F$ eine prädikatenlogische Formel und $\mathcal{K}_i$ ($i\geq 0$) die vom Resolutionsalgorithmus ermittelten Klauselmengen. Dann sind die folgenden Aussagen äquivalent:
+% \begin{itemize}
+% \item $F$ ist unerfüllbar
+% \item Es gibt ein $\ell\geq 0$ mit $\bot\in\mathcal{K}_\ell$
+% \end{itemize}}
+
+\emph{Beweis (Vollständigkeit):} \alert{Behauptung:} Jede Klausel $K_i'$ ist Grundinstanz einer Klausel $K_i$ die in $\mathcal{K}_\ell$ vorkommt für ein $\ell\geq 0$.
+\medskip\pause
+
+Aussage klar für $K'_i\in HE(F)$: in diesem Fall ist $K'_i$ ist Grundinstanz einer Klausel $K_i$ in der Klauselform von $F$ und in $\mathcal{K}_0$\medskip\pause
+
+Restlicher Beweis durch Induktion über $i$:
+\begin{itemize}
+\item Induktionsannahme: Die Aussage gilt für alle $j<i$\pause
+\item $K'_i$ ist Resolvente zweier Klauseln $K'_a$ und $K'_b$ mit $a,b<i$\pause
+\item Laut Hypothese sind $K'_a$ und $K'_b$ also Instanzen von Klauseln $K_a$ und $K_b$ in einer Menge $\mathcal{K}_\ell$\pause
+\item Laut Lifting-Lemma ist demnach $K'_i$ ebenfalls die Instanz einer Klausel $K_i$, die durch Resolution aus $K_a$ und $K_b$ entsteht\pause
+\item Diese Resolvente $K_i$ ist also ebenfalls in einer Menge der Form $\mathcal{K}_{\ell'}$\qed
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}\frametitle{Kompaktheit}
+
+Die Existenz von vollständigen und korrekten logischen Schließverfahren wie Resolution
+ist eng verwandt mit einer grundsätzlichen Eigenschaft der Prädikatenlogik:\bigskip
+
+\theobox{Satz (Endlichkeitssatz, Kompaktheitssatz): Falls eine unendliche Menge prädikatenlogischer Sätze $\mathcal{T}$ eine logische Konsequenz $F$ hat, so ist $F$ auch Konsequenz einer endlichen Teilmenge von $\mathcal{T}$.}\pause
+
+\small
+\emph{Beweis:} Die gegebene logische Konsequenz ist gleichbedeutend damit, dass
+$\mathcal{T}\cup\{\neg F\}$ unerfüllbar ist.\medskip
+
+Laut Resolutionssatz (Vollständigkeit) kann die Unerfüllbarkeit von $\mathcal{T}\cup\{\neg F\}$ nach endlich vielen Schritten durch Ableitung der leeren Klausel nachgewiesen werden.\medskip
+
+Dabei können nur endlich viele Klauseln aus der Klauselform von $\mathcal{T}\cup\{\neg F\}$ verwendet worden sein. Laut Resolutionssatz (Korrektheit) folgt die Konsequenz also bereits aus einer endlichen Teilmenge von $\mathcal{T}$.\qed
+
+\end{frame}
+% 
+% \begin{frame}\frametitle{Die Grenzen der Prädikatenlogik}
+% 
+% Kompaktheit zeigt uns auch erste Grenzen der Prädikatenlogik auf.
+% \smallskip
+% 
+% \defbox{Eine logische Formel $F$ mit zwei freien Variablen $x$ und $y$ drückt den \redalert{transitiven Abschluss} einer binären Relation $r$ aus, wenn in jeder Interpretation $\Inter$ und für alle $\delta_1,\delta_2\in\Delta^\Inter$ gilt:\\[1ex]
+% \narrowcentering{$ \Inter,\{x\mapsto \delta_1,y\mapsto\delta_2\}\models F \quad\text{gdw.}\quad \tuple{\delta_1,\delta_2}\in (r^\Inter)^* $}
+% }\pause
+% 
+% \theobox{Satz: Es gibt keine prädikatenlogische Formel, die den transitiven Abschluss einer binären Relation ausdrückt.}\pause
+% 
+% \emph{Beweis:} Angenommen es gäbe so eine Formel $F$.\medskip
+% 
+% Dann ist die folgende unendliche Theorie unerfüllbar:
+% \[\begin{array}{rll}
+% \big\{ & F\{x\mapsto a,y\mapsto b\},\neg r(a,b), \neg \exists x_1.(r(a,x_1)\wedge r(x_1,b)),\\
+% & \neg\exists x_1,x_2.(r(a,x_1)\wedge
+% r(x_1,x_2)\wedge r(x_2,b)),\ldots & \big\}
+% \end{array}\]
+% Aber jede endliche Teilmenge der Theorie ist erfüllbar.
+% Die Existenz der Theorie würde also dem Endlichkeitssatz widersprechen.\qed
+% 
+% \end{frame}
+
+\begin{frame}\frametitle{Zusammenfassung und Ausblick}
+
+Die prädikatenlogische Resolution ist ein vollständiges und korrektes Verfahren für die Unerfüllbarkeit logischer Formeln\bigskip
+
+In gewissem Sinne ist Prädikatenlogik eine Kurzschreibweise für möglicherweise unendliche aussagenlogische Theorien
+\bigskip
+
+% Bei Beschränkung auf endliche Modelle gibt es kein vollständiges und korrektes Verfahren zum logischen Schließen -- dafür wird Erfüllbarkeit semi-entscheidbar\bigskip
+
+% Auswertungsproblem auf endlichen Modellen = Anfragebeantwortung in Datenbanken
+
+\anybox{yellow}{
+Was erwartet uns als nächstes?
+\begin{itemize}
+\item Endliche Modelle und Datenbanken
+\item Datalog
+\item Gödel
+\end{itemize}
+}
+
+\end{frame}
+
+
+\begin{frame}[t]\frametitle{Bildrechte}
+
+Folie \ref{frame_herbrand}, \ref{frame_herbrand_b}: Fotografie von Natasha Artin Brunswick, 1931, CC-By 3.0
+
+\end{frame}
+
+
+\end{document}

@@ -34,10 +34,11 @@ The information on this site is separated into
 <!-- Theoretical parts introducing concepts, languages, and technologies -->
 
 * [Session #1: Introduction to Knowledge Management – what is knowledge?](index.md) 
-* [Session #2: Foundations of Knowledge Organisation Systems // Knowledge Representation](index.md) 
+* [Session #2: Foundations of Knowledge Organisation Systems](index.md) 
+* [Session #2: Knowledge Representation Frameworks](index.md) 
 * [Session #3: Technologies and Languages for Lightweight Semantic Knowledge Graphs](index.md) 
 * [Session #4: Semantic MediaWiki](index.md) 
-* [Session #5: Software Components for Knowledge Graph Creation](index.md) 
+* [Session #5: Extensions for Knowledge Graph Creation](index.md) 
 
 
 
