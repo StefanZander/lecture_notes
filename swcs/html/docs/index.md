@@ -8,7 +8,7 @@
 <!-- Stand: 2019-03-18 -->
 
 
-![The Science Club](figures/scienceclub.gif)_The Science Club – Picture taken from the "Understanding Science 101" course material by the University of Berkeley (Source: <https://undsci.berkeley.edu/article/_0_0/whatisscience_09>)_ 
+![The Science Club](figures/scienceclub.gif)_The Science Club – Picture taken from the "Understanding Science 101" course material by the University of California, Berkeley (Source: <https://undsci.berkeley.edu/article/_0_0/whatisscience_09>)_ 
 
 
 The following pages contain information about the modules' main elements and milestones. 
