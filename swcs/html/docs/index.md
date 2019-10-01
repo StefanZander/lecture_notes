@@ -1,6 +1,9 @@
 # Scientific Writing in Computer Science
 
- Welcome to the course pages of the module "Scientifc Writing for Computer Science".
+ Welcome to the course pages of the modules 
+ 
+ * [Scientifc Writing for Computer Science](https://obs.fbi.h-da.de/mhb/modul.php?nr=30.7324)
+ * [Wissenschaftliches Arbeiten in der Informatik 2](https://obs.fbi.h-da.de/mhb/modul.php?nr=30.7512)
 
 <!-- Stand: 2019-03-18 -->
 
@@ -8,8 +11,8 @@
 ![The Science Club](figures/scienceclub.gif)_The Science Club – Picture taken from the "Understanding Science 101" course material by the University of Berkeley (Source: <https://undsci.berkeley.edu/article/_0_0/whatisscience_09>)_ 
 
 
-The following pages contain information about the module's main elements and milestones. 
-They serve as a guideline in preparing the materials needed for successfully passing the module.
+The following pages contain information about the modules' main elements and milestones. 
+They serve as a guideline in preparing the materials needed for successfully passing the modules.
 
 The information on this site is separated into 
 
