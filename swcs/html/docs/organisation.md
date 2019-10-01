@@ -22,8 +22,8 @@ On this page, you find information about
 
 ## In-Class Lectures
 
-- depends on the student's familirarity with the topic; 
-- in general only very few – but attendance is compulsory
+- Depends on the student's familirarity with the topic; 
+- In general only very few – but attendance is compulsory
     - Kick-off meeting
     - Final presentations
 - More lectures in the form of 
@@ -41,9 +41,9 @@ On this page, you find information about
 ## Tutorials and other In-Class Meetings
 - Will be provided on demand (--> need to be requested by students)
 - Attendance is optional
-- Will be announced via email, Moodle or in class beforehand
+- Will be announced via email, Moodle or in-class beforehand
 - Provide practical and in-depth knowledge about relevant topics that students can choose individually
-- Provide opportunities to 
+- Provide opportunities to...
     - ...discuss open issues 
     - ...ask questions
     - ...get feedback
@@ -55,12 +55,13 @@ On this page, you find information about
 - Please register yourself at the EasyChair system with your official student email-address (i.e., the one you use for the OBS system)
 
 !!! note
-    **Please Note**: 
-    Registration is needed to submit results and to prepare the reviews for your colleagues' works (--> see [Milestone #4](milestone4.md))
+    **Registration is Necessary**:  
+    Registration at the EasyChair system is needed to submit results and to prepare the reviews for your colleagues' works (--> see [Milestone #4](milestone4.md))
 
 !!! warning
-    **Please Note**:  
-    Email submissions will *not* be accepted! All results need to be submitted via EasyChair.
+    **No Email Submissions!**  
+    Email submissions will *not* be accepted and result in a **0 point** assessment for the milestone!  
+    All results need to be submitted via EasyChair.
 
 
 ## Grading

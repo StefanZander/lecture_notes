@@ -28,16 +28,17 @@ Most journal-style scientific papers are subdivided into the following sections:
 - **Abstract** – *"What did you do in a nutshell?"*
 - **Introduction** – *"What is the problem?"*
 - **Background** (optional) – *"What concepts, technologies etc. are required to understand the work"*
-- **Related Works** – *"On what works do your work built upon?"*
+- **Related Works** – *"What works tackle the same / a similar problem and how do they differ?"*
 - **Methodology** or **Approach** – *"How did you solve the problem?"*
 - **Implementation** (optional) – *"How could an implementation of the solution look like"*
 - **Results** – *"What did you find out"*
 - **Discussion** – *"What does that mean"*
+- **Conclusion** – *"How does it all fit together?*
 - **Acknowledgments** (optional) – *"Who helped you during your research?"*
 - **Literature Cited** – *"Whose work did you refer to?"*
 - **Appendices** (optional)
   
-Those sections are intended to mimic the experimental or research process. This is the system we will use for preparing the scientific paper in this course. 
+Those sections are intended to mimic the experimental or research process. This is the structure we will use for preparing the scientific paper in this course. 
 
 Detailed information about which structural elements to apply for what type of scientific work together with details about each structural element will be provided on the page --> [The Structure of Scientific Papers](structure.md).
 

@@ -22,7 +22,8 @@ This site outlines the **main objectives** of this course together with a conden
 
 
 !!! warning
-    **Note**: Maybe the most important objective of this course is to experience and learn how to **independently work on a subject** in an efficient, coordinated, and systematic way so that defined **quality standards** *(=those that make a good scientific paper; see [Elements of Scientific Work](objectives.md#elements_of_scientific_work))* are reached. 
+    **Please Note**:  
+    Maybe the **most important objective** of this course is to experience and learn how to **independently work** on a subject in an efficient, coordinated, and systematic way so that defined **quality standards** *(=those that make a good scientific paper; see [Elements of Scientific Work](objectives.md#elements_of_scientific_work))* are reached. 
 
 
 ## Elements of Scientific Work

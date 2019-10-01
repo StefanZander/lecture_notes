@@ -81,20 +81,20 @@ The problem statement (often referred to as the motivation) is one of the crucia
 ## Abstract
 
 !!! warning
-    **Please note**:  
-    The abstract is probably the most important and most difficult to write part of your paper.  
-    So it definitly pays off to put a lot of effort in creating a sound and meaningful abstract.
+    **Please Note**:  
+    The **abstract** is probably the **most important** and **most difficult** part to write of your paper.  
+    So it definitly pays off to put a lot of effort and thoughts in creating a sound and meaningful abstract.
 
-The abstract helps the reader to determine whether it is worth their time to read your paper and whether they find the information they are looking for.
-The abstract therefore should outline the main insights (=results) of your work together with a description of the problem space and the methodology applied in creating the insights.
+The abstract helps the reader to determine whether it is **worth their time** to read your paper and whether they find the information they are looking for in it.
+The abstract therefore should outline the **main insights** (=results) of your work together with a description of the problem space and the methodology applied in creating the insights.
 
 ### Leading Questions
 
-In order to provide that information, the abstract should answer the following 4 questions:
+In order to provide that information, the abstract should answer the following **4 leading questions**:
 
 - What is the problem – WHAT
 - Why is this a problem – WHY
-- What are the specific contributions – CONTRIBUTIONS
+- What are the specific contributions and how were they achieved – CONTRIBUTIONS & METHODOLOGY
 - What is the impact of the work – IMPACT
 
 ### Structural Elements
@@ -112,7 +112,8 @@ These questions also serve as basis for **structuring** the abstract:
 As a consequence, the abstract should *not* be longer than **5 - 7 sentences** for a regular research paper (longer works can have a more comprehensive abstract, but it should never exceed the limit of one page length).
 
 !!! note
-    **Please note**:  
+    **A well-written abstract is short and precise!**  
+
     The abstract must be **precise** and **meaningful**. It should only be as long as necessary but as precise as possible! 
 
 
