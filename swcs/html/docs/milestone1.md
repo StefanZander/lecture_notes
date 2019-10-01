@@ -7,6 +7,8 @@
     - [x] Find a topic that is of interest for both of you
     - [x] Enter your group constellation and topic into the SWCS Moodle course
 
+    **Grading Factor: ungraded**
+
 
 ## Tasks
 
