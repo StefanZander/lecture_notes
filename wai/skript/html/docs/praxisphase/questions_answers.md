@@ -25,7 +25,9 @@ Die Informationen auf dieser Seite werden kontinuierlich erweitert und gepflegt.
 
 
 ??? question "Ist für die Praxisphase einen Arbeitsvertrag notwendig?"
-    ...
+    I.d.R. ja. Diesen schließen Sie mit Ihrem Arbeitgeber, d.h., mit Ihrer Praktikumsstelle.
+
+    Ein separater Vertragsschluss zwischen Hochschule und Praktikumsstelle oder zwischen der Hochschule und Ihnen ist _nicht_ notwendig.
 
 
 
@@ -42,12 +44,16 @@ Die Informationen auf dieser Seite werden kontinuierlich erweitert und gepflegt.
 
 
 
-
-
 ### Anmeldung der Praxisphase 
 
 ??? question "Was brauche ich für die Anmeldung der Praxisphase?"
-     Für die Anmeldung der Praxisphase müssen Sie die Lehrveranstaltung "**Wissenschaftliches Arbeiten in der Informatik II**" erfolgreich absolviert haben. Ferner müssen Sie sich bereits während des Semesters um eine Praktikumsstelle bemüht haben. Für die Anmeldung zur Praxisphase ist das entsprechende Formular auf den Seiten des Prüfungssekretariats herunterzuladen und entsprechend auszufüllen. das Formular geben Sie uns dann zur Bestätigung, dass Sie das Fach "Wissenschaftliches Arbeiten in der Informatik II" erfolgreich absolviert haben und zur Unterzeichnung. Das unterzeichnete Formular geben Sie anschließend im **Prüfungssekretariat** ab.
+     Für die Anmeldung der Praxisphase müssen Sie die Lehrveranstaltung "**Wissenschaftliches Arbeiten in der Informatik II**" erfolgreich absolviert haben. Ferner müssen Sie sich bereits während des Semesters um eine Praktikumsstelle bemüht haben. 
+     
+     Für die Anmeldung zur Praxisphase ist das entsprechende **Formular** auf den Seiten des Prüfungssekretariats herunterzuladen und entsprechend auszufüllen. 
+     
+     Das Formular geben Sie uns dann zur Bestätigung, dass Sie das Fach "Wissenschaftliches Arbeiten in der Informatik II" erfolgreich absolviert haben und zur Unterzeichnung. Dies erfolgt in der Regel im Zuge der wissenschaftlichen Abschlusspräsentationen in WAI2, d.h., Sie bringen das vorausgefüllte und von Ihrer Praktikumsstelle unterzeichnete Formular mit zu den Abschlusspräsentationen; dort unterzeichnen wir es dann. 
+     
+     Das unterzeichnete Formular geben Sie anschließend im **Prüfungssekretariat** ab.
 
 
 ??? question "Können Arbeitsstunden bereits vor dem offiziellen Beginn der Praxisphase angerechnet werden?"
@@ -62,7 +68,7 @@ Die Informationen auf dieser Seite werden kontinuierlich erweitert und gepflegt.
 ??? question "Was brauche ich für die erfolgreiche Durchführung der Praxisphase?"
      Für die erfolgreiche Durchführung sind **4 Dinge** notwendig:
 
-     1. Ein formloser, allerdings unterzeichneter und mit dem Firmenstempel versehener Nachweis, aus dem neben Start, Ende und die wöchentlichen Arbeitsstunden insbesondere die Gesamtzeit des Praktikums, d.h., die **abzuleistenden 360 Stunden** bestätigt werden.
+     1. Ein formloser, allerdings unterzeichneter und mit dem Firmenstempel versehener **Nachweis**, aus dem neben Start, Ende und die wöchentlichen Arbeitsstunden insbesondere die Gesamtzeit des Praktikums, d.h., die **abzuleistenden 360 Stunden** bestätigt werden.
      2. Die Einreichung des **Praxisberichts**
      3. Die Teilnahme am **Kolloquium**
      4. Das Senden eines **Zwischenberichts** etwa zur Mitte Ihrer Praxisphase.
@@ -73,7 +79,8 @@ Die Informationen auf dieser Seite werden kontinuierlich erweitert und gepflegt.
 
      Der **Praxisbericht** ist eine verschriftlichte Darstellung ihrer Tätigkeiten sowie ein Resümee ihrer persönlichen Erfahrungen und Ihrem Wirken innerhalb der Praktikumsstelle.
 
-     Die **Bachelorarbeit** dagegen ist eine wissenschaftliche Arbeit, deren Schwerpunktsetzung, Struktur und Ausarbeitung nicht oder nur zu sehr geringen Anteilen mit dem Praxisbericht vereinbar ist. Eine wissenschaftliche Arbeit ist _kein_(!) Bericht.
+     Die **Bachelorarbeit** dagegen ist eine wissenschaftliche Arbeit, deren Schwerpunktsetzung, Struktur und Ausarbeitung nicht oder nur zu sehr geringen Anteilen mit dem Praxisbericht vereinbar ist. Eine wissenschaftliche Arbeit ist _kein_(!) Bericht. Sie dürfen allerdings _geeignete(!)_ Texte aus dem Praxisbericht in der BA verwenden, müssen diese aber entsprechend durch Angabe der Quelle kennzeichnen.
+
 
 
 
