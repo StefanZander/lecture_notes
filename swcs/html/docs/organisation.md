@@ -53,7 +53,10 @@ On this page, you find information about
 - All Milestones need to be submitted exclusively via the [EasyChair system](www.easychair.org)  
     Link: <https://easychair.org/my/conference?conf=swcssose2019>
 - Please register yourself at the EasyChair system with your official student email-address (i.e., the one you use for the OBS system)
-    - Registration is needed to submit results and to prepare the reviews for your colleagues' works (--> see [Milestone #4](milestone4.md))
+
+!!! note
+    **Please Note**: 
+    Registration is needed to submit results and to prepare the reviews for your colleagues' works (--> see [Milestone #4](milestone4.md))
 
 !!! warning
     **Please Note**:  
