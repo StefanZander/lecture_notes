@@ -10,12 +10,12 @@ On this page, you find information about
 
 ## Communication
 
-- Via email, skype or as indiviual appointments (contact me via email for arranging an individual appointment)
+- Usually via email, skype or as indiviual appointments (contact me via email for arranging an individual appointment)
 - Please use the following subject when asking questions via email:  
     `[SWCS] {lastname_person1}, {lastname_person2}: {matter}` (without `{}`)
 
     !!! note
-        Please note that the curly braces (`{}`) are indicators for tokens that should be replaced with the real names and topic (without `{}` of course).
+        Please note that the curly braces (`{}`) are indicators for tokens that should be replaced with the real names and matter (without `{}` of course).
 
         Although this is discussed in the lecture, a significant number of students' emails usually contain the previous template in the stated form...
 
@@ -23,10 +23,18 @@ On this page, you find information about
 ## In-Class Lectures
 
 - depends on the student's familirarity with the topic; 
-- in general only very few -- but attendance is compulsory
+- in general only very few – but attendance is compulsory
     - Kick-off meeting
     - Final presentations
-- More lectures in the form of tutorials about selected topics, Q&A sessions etc. can be requested by the students – _and I am happy to provide them!_
+- More lectures in the form of 
+    - tutorials about selected topics, 
+    - Q&A sessions 
+    - etc. 
+  
+    can be requested by the students – _and I am happy to provide them!_
+
+    --> The following section provides more information about them.
+
     <!-- _"I am happy to offer more lectures e.g. in form of tutorials etc. about specific topics but those have to be requested by the students"_ -->
 
 
@@ -42,7 +50,7 @@ On this page, you find information about
 
 
 ## Submission of Results
-- All Milestones need to be submitted exclusively via the EasyChair system  
+- All Milestones need to be submitted exclusively via the [EasyChair system](www.easychair.org)  
     Link: <https://easychair.org/my/conference?conf=swcssose2019>
 - Please register yourself at the EasyChair system with your official student email-address (i.e., the one you use for the OBS system)
     - Registration is needed to submit results and to prepare the reviews for your colleagues' works (--> see [Milestone #4](milestone4.md))

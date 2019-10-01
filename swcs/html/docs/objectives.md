@@ -5,13 +5,19 @@ This site outlines the **main objectives** of this course together with a conden
 
 ## Objectives
 
-- Learn how to write a scientific paper by following the **principles of good scientific practices**
+### Overall Objectives
+
+- Learn how to write a **scientific paper** by following the **principles of good scientific practices**
 - Develop a **problem statement** and derive **research questions** for a specific topic
 - Develop a **research methodology** to tackle an identified problem in a systematic, well-structured, and scientifically sound way
 - Learn how to **document** and **present** your **research results** properly 
+
+### Milestone-oriented Objectives
+- Learn how to **identify a problem** and break it down to specific research questions
 - Learn how to write a precise and concise **abstract**
 - Learn how to write a **review** for one of your colleagues‘ papers
 - Search for relevant literature in **scientific literature databases**
+- Learn how to write a scientific paper using **LaTeX**
 - Become acquianted with the **EasyChair** conference system ([--> Link](https://easychair.org/))
 
 
@@ -22,6 +28,7 @@ This site outlines the **main objectives** of this course together with a conden
 ## Elements of Scientific Work
 
 The section briefly mentions some of the elementary components and concepts of proper scientific work practice.
+You will discover a lot, mostly more detailed in the lecture and through your literature study.
 
 - **Neutrality and objectivity in thinking and writing**  
     Make no personal judgements and don't emphasize things you find interesting or fun, i.e., do not over-emphasize things based on personal judgement. Be as neutral as possible in both thinking and writing. Treat all works your considered for your analysis equal, i.e., do not describe one work in a rather long paragraph and another work with onyl one or two sentences. Use identical criteria when you analyze relevant works and ideas upon which your research is based on.  
@@ -31,26 +38,28 @@ The section briefly mentions some of the elementary components and concepts of p
     Use peer-reviewed papers from conferences or journals as your main literature source. 
 
 - **Construct Validity**  
-    Ensure the appropriateness of the chosen methodology for tackling an identified problem so that others, when applying your methodology are likely to gather the same or comparable results (--> *Reproducability*)
+    Ensure the appropriateness of the chosen methodology for tackling an identified problem so that others, when applying your methodology, are likely to gather the same or comparable results (--> *Reproducability*)
 
 - **External Validity**  
-    Consider the replicability and transferability of the applied methodology and obtained results (--> *Generalisation*)
+    Consider the replicability and transferability of the applied methodology and obtained results (--> *Generalisation*). Your results should be verifable by emperical research results. Others should be able to apply your researched results to comparable problems. Validate the appropriateness of your methodology and generated insights by demonstrating that they also apply to comparable problems and yield similar results.
 
 - **Internal Validity**  
-    Make sure that the logical consistency of the causality chain is maintained, i.e., that you used the appropriate set of methods for takling a problem and that the conclusions you draw from your observations are both verifyable and valid  (--> *"Inducability"*)
+    Make sure that the logical consistency of the applied causality chain is maintained, i.e., that you used the appropriate set of methods for takling a problem and that the conclusions you draw from your observations are both verifyable and valid  (--> *"Inducability"*)
 
 - **Follow the principles of good scientific work practices**  
     This usually involves many aspects even bejond the creation of scientific artefacts (*--> consult the links in the literature recommendations for more in-depth information about good scientific work practices*). From previous experiences with students' submissions, the following few principles revealed to be of immediate importance as they directly influence a paper's assessment:
     
     - **Correct indication of external ideas and content**  
-        It should be clear in your texts what is your idea and what resulted from external works
+        It should be clear in your texts what your ideas are and what elements resulted from the consultation of external works.
     
     - **Citing external work correctly**  
         Be advised: Anything you take from external works need to be indicated, i.e., cited.
         Only take a max. of 3 words directly from external works, not more. 
 
         !!! warning
-            **Please note**: Do not copy whole paragraphs from external works and only provide one citation at the paragraphs end. This counts as plagiarism and will be treated as such.
+            **Important**: 
+            
+            Do __not copy whole paragraphs from external works__ and only provide one citation at the paragraph's end. This counts as plagiarism and will be treated as such (with all consequences).
 
         The LaTeX template provided for this course is already pre-configured and implements a common citation style; so there is no need to modify that.
     
