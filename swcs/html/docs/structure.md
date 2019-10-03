@@ -4,10 +4,10 @@
     **Objectives**
 
     - [x] You know how scientific works are structured in general
-    - [x] You can apply an appropriate structure to your type of scientific work
+    - [x] You are able to develop an appropriate structure according to the specific type of your scientific work
 
 
-This page contains information about the **general structure** of scientific papers. It helps you to structure your paper and reearch work accordingly and provides links to pages where you find **detailed information** about each structural topic. 
+This page contains information about the **general structure** of scientific papers. It helps you to structure your paper and reearch work accordingly and provides links to pages where you find **detailed information** about each structural element. 
 
 !!! note
     Please be aware that different scientific communities might employ slightly different structures although the main structural elements and contents remain identical.
@@ -15,18 +15,18 @@ This page contains information about the **general structure** of scientific pap
 
 ## Preamble
 
-Scientific papers follow a **predefined structure** the objective of which is to present **acquired results** and the **deployed methodology** upon which the results were acquired in appropriate ways. The objective of deploying such a predefined structure is to support the **exploitation** and **dissemination** of research results. 
+Scientific papers follow a **predefined structure** the objective of which is to present **acquired results** and the **deployed methodology** upon which the results were generated in appropriate ways. The objective of deploying such a predefined structure is to support the **exploitation** and **comprehension** of research results . 
 
-In the following, we presented a structural recommendation for the two main types of scientific papers in computer science:
+In the following, we present a structural recommendation for the **two main types** of scientific papers in computer science:
 
 1. Original **Research Papers**, and
 2. **Surveys**
 
-Each structural element for both types of work is described in detail on a **separate details page** that can be looked up by following the link pointing to it.
+Each structural element for both types of works is described in detail on a **separate details page** that can be retrieved by following the link pointing to it.
 
 The **details pages** are all structured identically:  
 
-1. They introduce a **structural topic** by describing its
+1. They introduce a **structural element** by describing its
 
     * **Function** –
         Explaining the main purpose of a section
@@ -41,8 +41,8 @@ The **details pages** are all structured identically:
 
 <!-- The following fields contain a list of the main elements separated by the different types of scientific papers (for this course, we distinguish between the two main types of papers in CS – original research paper and surveys).  -->
 
-!!! note
-    **Hint**: Click on the respective element to access detailed information about it. 
+<!-- !!! note
+    **Hint**: Click on the respective element to access detailed information about it.  -->
 
 
 ## Structure of a Research Paper
