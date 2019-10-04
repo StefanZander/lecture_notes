@@ -42,7 +42,7 @@ The **details pages** are all structured identically:
 <!-- The following fields contain a list of the main elements separated by the different types of scientific papers (for this course, we distinguish between the two main types of papers in CS – original research paper and surveys).  -->
 
 <!-- !!! note
-    **Hint**: Click on the respective element to access detailed information about it.  -->
+    **Hint**: Click on the respective element to access detailed information about it.  --> 
 
 
 ## Structure of a Research Paper
