@@ -34,8 +34,8 @@ Please be aware that a scientific presentation follows a set of **rules and guid
 
 ### Requirements
 
-- Time slot per Group:
-    - Talk: 10 Min. – *sharp*!
+- Time slot per group:
+    - Talk: **10 Min.** – *sharp*!
     - Questions and Feedback: approx. 8-10 Min.
 
 ## Assessment

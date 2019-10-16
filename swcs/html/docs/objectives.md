@@ -2,6 +2,10 @@
 
 This site outlines the **main objectives** of this course together with a condensed list of **crucial elements** that scientific works exhibit. More details and background information about these elements can be found in the **literature recommendations**.
 
+!!! warning
+    **Preamble**      
+    Scientfic writing is like learning to swim – you can read a thousand books but you only learn how to swim when being in the water. Just like swimming, your scientific  writing skills increase through practice, i.e., through hands-on work.
+
 
 ## Objectives
 
@@ -22,7 +26,8 @@ This site outlines the **main objectives** of this course together with a conden
 
 
 !!! warning
-    **Note**: Maybe the most important objective of this course is to experience and learn how to **independently work on a subject** in an efficient, coordinated, and systematic way so that defined **quality standards** *(=those that make a good scientific paper; see [Elements of Scientific Work](objectives.md#elements_of_scientific_work))* are reached. 
+    **Please Note**:  
+    Maybe the **most important objective** of this course is to experience and learn how to **independently work** on a subject in an efficient, coordinated, and systematic way so that defined **quality standards** *(=those that make a good scientific paper; see [Elements of Scientific Work](objectives.md#elements_of_scientific_work))* are reached. 
 
 
 ## Elements of Scientific Work
@@ -81,6 +86,12 @@ You will discover a lot, mostly more detailed in the lecture and through your li
 ## Literature Recommendations
 
 External Information about good Scientific Work Practices
+
+* The fundamentals of science explained in a nice interactive showcase
+    <https://undsci.berkeley.edu/interactive/#/intro/1>
+
+* "Understanding Science 101" – online course by the University of Berkeley
+    <https://undsci.berkeley.edu/article/_0/us101contents_01>
 
 * Excellent article series about scientific writing (*must read*)  
     <https://www.aacc.org/publications/clinical-chemistry/clinical-chemistry%C2%A0guide-to-scientific-writing>

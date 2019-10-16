@@ -7,13 +7,17 @@
     - [x] Find a topic that is of interest for both of you
     - [x] Enter your group constellation and topic into the SWCS Moodle course
 
+    **Grading Factor: ungraded**
+
 
 ## Tasks
 
 1. Form **groups** of two people
      
     !!! note
-        **Note**: In case you are looking for an SWCS partner, please use the **SWCS Moodle forum** to enter a **request** there. This is the most transparent and preferable way since other students can look you up. 
+        **Enter Partner Request in SWCS Moodle Forum**: 
+        
+        In case you are looking for an SWCS partner, please use the **SWCS Moodle forum** to enter a **request** there. This is the most transparent and preferable way since other students can find you there. 
 
 2. Each group has to choose an **individual topic** that serves as a basis for the scientific work  
     Topic must be related to Computer Science
