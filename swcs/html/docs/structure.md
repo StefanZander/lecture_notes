@@ -7,15 +7,20 @@
     - [x] You are able to develop an appropriate structure according to the specific type of your scientific work
 
 
-This page contains information about the **general structure** of scientific papers. It helps you to structure your paper and reearch work accordingly and provides links to pages where you find **detailed information** about each structural element. 
+This page contains information about the **general structure** of scientific papers. It helps you to structure your paper (and with it your research) accordingly and provides links to pages where you find **detailed information** about each structural element. 
 
 !!! note
-    Please be aware that different scientific communities might employ slightly different structures although the main structural elements and contents remain identical.
+    Please be aware that different scientific communities might employ slightly different structures – although the main structural elements and their content remain identical.
 
 
 ## Preamble
 
-Scientific papers follow a **predefined structure** the objective of which is to present **acquired results** and the **deployed methodology** upon which the results were generated in appropriate ways. The objective of deploying such a predefined structure is to support the **exploitation** and **comprehension** of research results . 
+Scientific papers follow a **predefined structure** the objective of which is to present **acquired results** and the **deployed methodology** upon which the results were generated in appropriate ways. The objective of deploying such a predefined structure is to support the **exploitation** and **comprehension** of research results and demonstrate the adherence of good scientific work practices such as
+
+- internal and external validity
+- construct validity
+- reliability of results
+- etc.
 
 In the following, we present a structural recommendation for the **two main types** of scientific papers in computer science:
 
@@ -47,6 +52,8 @@ The **details pages** are all structured identically:
 
 ## Structure of a Research Paper
 
+Click on the respective element to get detailed information about its *function*, *stlye*, and *structure*.
+
 !!! Example
     **Main Elements of a Research Paper**
 
@@ -69,6 +76,8 @@ The **details pages** are all structured identically:
 
 
 ## Structure of a Survey
+
+Click on the respective element to get detailed information about its *function*, *stlye*, and *structure*.
 
 !!! Example
     **Main Elements of a Survey**
