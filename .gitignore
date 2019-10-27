@@ -13,3 +13,7 @@ ewa/pdf/http2/src/figures/.DS_Store
 .DS_Store
 .vscode/settings.json
 site/
+.latexmk
+.fls
+.nav
+.snm
