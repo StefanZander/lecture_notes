@@ -11,13 +11,16 @@ On this page, you find information about
 ## Communication
 
 - Usually via email, skype or as indiviual appointments (contact me via email for arranging an individual appointment)
-- Please use the following subject when asking questions via email:  
-    `[SWCS] {lastname_person1}, {lastname_person2}: {matter}` (without `{}`)
+- Please use the following subject __WAI__ or __SWCS__ when asking questions via email:  
+    `[SWCS|WAI] {lastname_person1}, {lastname_person2}: {matter}` (without `{}`)
 
     !!! note
         Please note that the curly braces (`{}`) are indicators for tokens that should be replaced with the real names and matter (without `{}` of course).
 
-        Although this is discussed in the lecture, a significant number of students' emails usually contain the previous template in the stated form...
+        Please also enter the **correct module** (WAI/SWCS) your request is referring to.
+
+        N.B.  
+        _Although these things are discussed in the lecture, a significant number of students' emails usually contain the previous template in the stated form..._
 
 
 ## In-Class Lectures
