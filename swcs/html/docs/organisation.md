@@ -11,7 +11,7 @@ On this page, you find information about
 ## Communication
 
 - Usually via email, skype or as indiviual appointments (contact me via email for arranging an individual appointment)
-- Please use the following subject __WAI__ or __SWCS__ when asking questions via email:  
+- Please use the following subject `WAI` __OR__ `SWCS` when asking questions via email:  
     `[SWCS|WAI] {lastname_person1}, {lastname_person2}: {matter}` (without `{}`)
 
     !!! note

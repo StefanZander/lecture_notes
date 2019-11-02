@@ -77,18 +77,19 @@ mit einer `Log.i`-Testausgabe und ordnen Sie die Methode dem `onClick`-Ereignis 
 
 
 ### Datenmodell der Fernbedienung (optional)
-Alle relevanten **Daten** und **Zustände** sollen in der Fernbedienung verwaltet werden; der Fernseher ist quasi ein reines Display. Überlegen Sie, welche Daten und Zustände innerhalb der Fernbedienung **persistent gespeichert** werden sollen und welche nur **flüchtig**?
+Alle relevanten **Daten** und **Zustände** müssen in der Fernbedienung verwaltet werden; der Fernseher bzw. Stream-Server ist quasi ein reines Darstellungsprogramm. Überlegen Sie deshalb, welche Daten und Zustände innerhalb der Android-App **persistent gespeichert** werden sollen und welche nur **flüchtig**?
 
 !!! note
     **Bedenken Sie:** 
 
-    * Während einer Fernsehsendung macht man vielleicht noch andere Dinge mit dem Handy.
-    * Eine andere Frage ist, welche Parameter beim Ausschalten des Fernsehers in Grundstellung gehen sollen. 
+    * Während einer Fernsehsendung oder dem Betrachten eines Streamingkanals macht man vielleicht noch andere Dinge mit dem Handy.
+    * Eine andere Frage ist, welche Parameter beim Ausschalten des Fernsehers bzw. des Streaming-Servers in Grundstellung gehen sollen. 
 
 Fassen Sie alle persistenten Daten in einer Klasse zusammen und zeichnen Sie das Klassendiagramm dieser persistenten Klasse (die Implementierung folgt in [Termin 4: Logik](termin5.md)).
 
 !!! note
-    __Tipp:__ für das Ergebnis des Kanalscans empfiehlt sich eine `ArrayList<Channel>`.
+    __Tipp:__ für das Ergebnis des Kanalscans empfiehlt sich eine `ArrayList<Channel>`. {Tipp für Twitch-Streaming Server}
+
 
 
 ## Ergebnisse
