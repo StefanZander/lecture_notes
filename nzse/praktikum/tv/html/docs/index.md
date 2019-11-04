@@ -2,7 +2,7 @@
 
 
 
-Auf den folgenden Seiten finden Sie die **Aufgaben** der jewiligen Praktikumseinheiten sowie **allgemeine Informationen** zum Praktikum.
+Auf den folgenden Seiten finden Sie die **Aufgaben** der jeweiligen Praktikumseinheiten sowie **allgemeine Informationen** zum Praktikum.
 
 ## Allgmeine Informationen
 
