@@ -73,7 +73,28 @@
 \sectionSlide{Knowledge Representation Framework}
 \section{Datenstrukturelemente} % (fold)
 \label{sec:datenstrukturelemente}
-	
+
+\begin{frame}{Modellierung von Wissen: Grundbegriffe}
+
+\defbox{Definition: Ein \textbf{Wissensrepräsentationsrahmenwerk} (engl.\ Knowledge Representation Framework – KRF) bezeichnet die endliche abzählbare Menge an Primitiven (...) einer Beschreibungssprache sowie deren Beziehungen zueinander, mit der ein Gegenstandsbereich\footnote{oder ein Ausschnitt davon} (engl.\ Universe of Discourse) in einem technischen System abgebildet werden kann.\footnote{Quelle: Eigene Definition}}	
+
+\bigskip
+Aus Modellierungssicht definiert ein KRF die Modellelemente, die zur Erstellung eines Datenmodells in der zugrunde liegenden Beschreibungssprache verwendet werden können (vgl.\ Modellierungselemente eines UML Klassendiagramms).
+
+% \footnotesize
+\bigskip
+\alert{Semantik in einem KRF}
+
+Die formale, Modell-theoretische Semantik der Beschreibungsprimitive wird definiert durch die einer Beschreibungssprache zugrunde liegende Logik (engl.\ logical theory).
+
+% Die Ausdrucksmächtigkeit der Logik bestimmt die Berechenbarkeit von inferrierten Schlussfolgerungen aus einem Instanzmodell
+
+Die zugrunde liegende Logik bestimmt die Ausdrucksmächtigkeit einer Beschreibungssprache sowie die Berechenbarkeit von inferrierten Schlussfolgerungen für ein Instanzmodell (bspw.\ transitive Beziehungen, Subsumption etc).
+
+\end{frame}
+%--- Next Frame ---%
+
+
 \begin{frame}{Datenstrukturelemente}
 	\defbox{Definition: Ein \emph{Datenstrukturelement} erlaubt die Spezifikation von Datenmodellen auf Basis des zugrunde liegenden Wissensrepräsentationsformalismus. Neben direkt in einem Wissensrepräsentationsformalismus verankerten Sprachelementen können auch weitere, unterstützende Elemente definiert sein.\footnote{Quelle: Eigene Definition}
 	}
@@ -116,11 +137,17 @@
 
 \begin{frame}{Datenstrukturelement: Seite}
 	
-	Die Seite ist das wesentliche Datenstrukturelement eines Wikis.
+	Die Seite ist das wesentliche Datenstrukturelement eines Wikis. 
+	\bigskip
 	
 	Mit Ausnahme von Datentypen und Subobjects werden alle Sprachelemente im Rahmen einer Seite definiert.
 	
 	\defbox{Definition: Eine \textbf{Seite} ist Container für die Spezifikation eines Datenmodellelements (bspw.\ einer Kategorie, eines Attributs etc).\footnote{Quelle: Eigene Definition, angelehnt an \url{Mediawiki-pages}} }
+	
+	Jede Seite gehört zu einem definierten Namensraum.\\
+	Bsp.: \texttt{http://mediawiki.org/bla/category:}
+	
+	
 	
 \end{frame}
 %--- Next Frame ---%
