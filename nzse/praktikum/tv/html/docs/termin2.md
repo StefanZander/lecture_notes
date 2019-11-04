@@ -20,6 +20,10 @@
 2. **Stereotypbeschreibung**:    Fertigen Sie für *eine* dieser Personen eine anschaulische und lebendige **Stereotypbeschreibung** mit fiktivem oder echtem Namen, Bild, Alter, Geschlecht, Ausbildung, Vorlieben, Hobbys, Charaktereigenschaften etc. Anhand dieser Stereotypbeschreibung und des darauf aufbauenden **Anwendungsszenarios** sollen Sie sich später immer wieder vergewissern können, ob die entworfene Fernbedienung auch wirklich zu diesen Personen passt.
 <!--    Fertigen Sie für *eine* dieser Personen eine **Stereotypenbeschreibung** an, d.h. schreiben Sie **lebendige**, **anschauliche Steckbriefe** mit fiktiven oder echten Namen, Bild, Alter, Geschlecht, Ausbildung, Vorlieben, Hobbys, Charaktereigenschaften etc. Anhand dieser Stereotypenbeschreibungen sollen Sie sich später immer wieder vergewissern können, ob die entworfene Fernbedienung auch wirklich zu diesen Personen passt. -->
 
+!!! note
+    **Hinweis**: Die Stereotypbeschreibung enthält vor allem Informationen zu **Charaktereigenschaften** und etwaige **Lebensumstände**; sie soll *keine* Details zur TV-/Twitch-Nutzung enthalten! Diese Informationen erfragen bzw. erfahren Sie ja erst durch das Interview. 
+
+
 ### Interview 
 
 1. **Interviewleitfaden**: Erarbeiten Sie innerhalb ihres Teams einen **Interviewleitfaden**, d.h., überlegen Sie sich, welche Fragen Sie im Rahmen des Interviews ihren Stakeholdern stellen, um mehr über ihre Fernsehgewohnheiten, Wünsche und Erwartungen zu erfahren. Notieren Sie diese in Form eines **teilstandardisierten Interviews**. 
@@ -32,6 +36,8 @@
    
     !!! note
         **Hinweis:** Stellen Sie nicht irgendwelche Fragen; die Fragen sollen Ihnen helfen, die NutzerInnen und deren spezifische Bedürfnisse, Lebensgewohnheiten und Wünsche besser zu verstehen. Die Antworten sind Basis für die Erarbeitung eines Anwendungsszenarios, sowie je einer funktionalen und qualitativen Anforderung (inkl. Quantifizierung) und einem Begeisterungsfaktor.
+
+
 
 2. **Ablauf und Aufgaben**:
     - Gruppe 2 liest die **Stereotypbeschreibung** aus Aufgabe 1 von Gruppe 1 und steigt in diese Rolle
