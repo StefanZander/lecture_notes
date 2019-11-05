@@ -9,7 +9,9 @@
     - [x] Sie verstehen das Vorgehensmodell zum Entwurf einer Benutzungsschnittstelle im Kontext von OOAD/SWE
 
 !!! warning
-    **Hinweis:** Die Fernbedienung muss mindestens die folgenden Funktionen bieten (--> siehe auch die im Kapitel [Vorbemerkung](vorbemerkung.md) aufgezählten Funktionen).  
+    **Hinweis:** Die Fernbedienungen müssen mindestens die folgenden Funktionen bieten (--> _siehe auch die im Kapitel [Vorbemerkung](vorbemerkung.md) aufgezählten Funktionen_).  
+
+    **Fernbedienung für TV-Server**
 
     - Seitenverhältnis einstellen  
     - Sender auswählen
@@ -21,21 +23,32 @@
     - Picture in Picture
 
 
+    **Twitch Stream-Server**
+
+    - Picture in Picture
+    - Favoriten anlegen und verwalten
+    - Kanalsuche 
+    - Usersuche
+    - Umschalten zwischen themenverwandten Streams
+    - Auswahl eines Streams
+    - Pausieren eines Streams
+
+
 ## Aufgaben
 
 ### UI Entwurf (Paper Prototyping)
-1. Entwerfen Sie die **Benutzungsoberfläche** der neuen Fernbedienung in Form von konkreten  Screen-Diagrammen als **Papier-Prototypen** (*bitte groß und gut erkennbar!*). 
+1. Entwerfen Sie die **Benutzungsoberfläche** der mobilen Clienten in Form von konkreten  Screen-Diagrammen als **Papier-Prototypen** (*bitte groß und gut erkennbar!*). 
 
     Hinweise:
 
     - Achten Sie auf Vollständigkeit der benötigten Bedienelemente. 
     - Berücksichtigen Sie Platzierung, Größe, Anordnung, Beschriftung. 
     - Skizzieren Sie von **Icons** die Rohform so, dass man deren bildlich-inhaltliche Aussage versteht.
-    - Nutzen Sie **abstrakte Screen-Diagramme** um **Entwurfsalternativen** zu erkennen, die Sie wiederum konkret skizzieren. Wählen Sie die **beste Entwurfsalternative** aus und verfolgen Sie diese weiter.
+    - Nutzen Sie **abstrakte Screen-Diagramme** um **Entwurfsalternativen** zu erkennen. Wählen Sie die **beste Entwurfsalternative** aus und verfolgen Sie diese weiter.
 
 
 ### Analyseklasse
-1. Entwerfen Sie parallel zu den abstrakten / konkreten Screen-Diagrammen **eine(!) Analyseklasse**, in die Sie die Hauptfunktionen der Benutzungsoberfläche als Methoden eintragen.
+1. Entwerfen Sie parallel zu Ihrem Paper Prototypen **eine(!) Analyseklasse**, in die Sie die Hauptfunktionen der Benutzungsoberfläche als Methoden eintragen.
 2. Nutzen Sie die Analyseklasse um auf **Vollständigkeit** hinsichtlich der verwendeten **UI-Elemente**, als auch auf Vollständigkeit hinsichtlich der eingetragenen **Methoden** zu prüfen.
 
     !!! note
@@ -50,11 +63,13 @@
 
 
 ### Testen
-1. Testen Sie Ihre Entwürfe mit Ihren Stakeholdern (Ihrer Peer-Gruppe) und identifizieren Sie Ungereimtheiten und/oder Inkonsistenzen und Verbesserungen. Überlegen Sie, ob es gut und richtig ist, wenn Sie keine Verbesserungen identifizieren.
+1. Testen Sie Ihre Entwürfe mit Ihrer Peer-Gruppe und identifizieren Sie Ungereimtheiten und/oder Inkonsistenzen und Verbesserungen. Überlegen Sie, ob es gut und richtig ist, wenn Sie keine Verbesserungen identifizieren.
 
     !!! note
-        1. Den Test können Sie auch zu Beginn der nächsten Einheit durchführen.
-        2. Überlegen Sie im Vorfeld, wie Sie Ihre Entwürfe sinnvoll testen (--> *Funktion vs. Use Case*)
+        1. **Wichtig**: Die Peer-Gruppe testet Ihren Entwurf aus **Sicht des Stereotypen** sowie seiner/ihrer spezifischen Anforderungen!
+        2. Überlegen Sie im Vorfeld, wie Sie Ihre Entwürfe sinnvoll testen (--> *Funktion vs. Use Case*); 
+        3. Entwickeln Sie im Vorfeld **4-5 repräsentative Anwendungsfälle**, die Ihre Peergruppe (in der Rolle des Stereotypen) durchspielen soll.
+        4. Den Test können Sie auch zu Beginn der nächsten Einheit durchführen.
 
 
 ## Ergebnisse

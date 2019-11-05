@@ -23,8 +23,7 @@
 ### Benutzeroberfläche
 1. Implementieren Sie Benutzerführung durch **Zeigen/Verbergen** bzw. **Aktivieren/Deaktivieren** von Views und Widgets
 2. Geben Sie **(Fehler-)Meldungen** in geeigneter Form als `AlertDialog`, `Toast`, `Snackbar` oder via Log aus (was wofür?)
-3. Übernehmen Sie das Ergebnis des **Kanalscans** aus dem JSON-Ergebnis von `HttpRequest.execute` und
-speichern Sie es im **Datenmodell**. Binden Sie die betroffenen Views über Adapter an die Kanalliste an.
+<!-- 3. Übernehmen Sie das Ergebnis des **Kanalscans** aus dem JSON-Ergebnis von `HttpRequest.execute` und speichern Sie es im **Datenmodell**. Binden Sie die betroffenen Views über Adapter an die Kanalliste an. -->
 1. Machen Sie Ihre App "**drehbar**", d.h. sorgen Sie dafür, dass der Neustart der Activity beim Drehen des Smartphones (Hochformat/Querformat) keine sichtbaren Folgen hat. Implementieren Sie dazu ggf. die Methode `onSaveInstanceState` und werten Sie dann den Parameter von `onCreate` entsprechend aus.
 
 
@@ -35,7 +34,7 @@ Eigentlich sollten Zugriffe aufs Netzwerk nicht im UI Thread gemacht werden (war
 
 
 ### Testen, Debuggen, komplett Fertigstellen
-1. Vergewissern Sie sich, dass alle in Aufgabe 2 geplanten Use Cases und Anwendungsszenarien von Ihrer Anwendung tatsächlich unterstützt werden. Testen Sie auch das Verhalten bei Erstinbetriebnahme (d.h. der persistente Speicher ist leer: Einstellungen, Apps, Fernbedienung, Daten löschen)
+1. Vergewissern Sie sich, dass alle in Aufgabe 2 geplanten Use Cases und Anwendungsszenarien von Ihrer Anwendung tatsächlich unterstützt werden. Testen Sie auch das Verhalten bei Erstinbetriebnahme (d.h. der persistente Speicher ist leer: Einstellungen, existierende Daten etc). <!--: Einstellungen, Apps, Fernbedienung, Daten löschen) -->
 
 ## Ergebnisse
 

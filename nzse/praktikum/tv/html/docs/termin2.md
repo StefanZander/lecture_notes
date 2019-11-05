@@ -14,14 +14,15 @@
 1. **Personen- und Kriterienliste**: Erstellen Sie eine **Liste** von verschiedenen typischen Personen, die als Benutzer des Fernsehers in Frage kommen (gerne aus dem Kreis Ihrer Verwandten und Bekannten).
     1. Nach welchen Kriterien unterscheiden Sie die Personen? 
     2. Welche Kriterien identifizieren Sie als relevant für die Klassifikation der Benutzer? 
+    3. Welche Ausprägungen besitzen die Kriterien für die jeweiligen Personen?
 
     Fügen Sie diese **Kriterien** der Liste hinzu.
 
-2. **Stereotypbeschreibung**:    Fertigen Sie für *eine* dieser Personen eine anschaulische und lebendige **Stereotypbeschreibung** mit fiktivem oder echtem Namen, Bild, Alter, Geschlecht, Ausbildung, Vorlieben, Hobbys, Charaktereigenschaften etc. Anhand dieser Stereotypbeschreibung und des darauf aufbauenden **Anwendungsszenarios** sollen Sie sich später immer wieder vergewissern können, ob die entworfene Fernbedienung auch wirklich zu diesen Personen passt.
+2. **Stereotypbeschreibung**:    Fertigen Sie für *eine* dieser Personen (mit besonders starker Ausprägung der Kriterien) eine anschaulische und lebendige **Stereotypbeschreibung** mit fiktivem oder echtem Namen, Bild, Alter, Geschlecht, Ausbildung, Vorlieben, Hobbys, Charaktereigenschaften etc. Anhand dieser Stereotypbeschreibung und des darauf aufbauenden **Anwendungsszenarios** sollen Sie sich später immer wieder vergewissern können, ob das entworfene Design auch wirklich zu diesen Personen passt.
 <!--    Fertigen Sie für *eine* dieser Personen eine **Stereotypenbeschreibung** an, d.h. schreiben Sie **lebendige**, **anschauliche Steckbriefe** mit fiktiven oder echten Namen, Bild, Alter, Geschlecht, Ausbildung, Vorlieben, Hobbys, Charaktereigenschaften etc. Anhand dieser Stereotypenbeschreibungen sollen Sie sich später immer wieder vergewissern können, ob die entworfene Fernbedienung auch wirklich zu diesen Personen passt. -->
 
-!!! note
-    **Hinweis**: Die Stereotypbeschreibung enthält vor allem Informationen zu **Charaktereigenschaften** und etwaige **Lebensumstände**; sie soll *keine* Details zur TV-/Twitch-Nutzung enthalten! Diese Informationen erfragen bzw. erfahren Sie ja erst durch das Interview. 
+    !!! note
+        **Hinweis**: Die Stereotypbeschreibung enthält vor allem Informationen zu **Charaktereigenschaften** und etwaige **Lebensumstände**; sie soll *keine* Details zur TV- oder Twitch-Nutzung enthalten! Diese Informationen erfragen bzw. erfahren Sie ja erst durch das Interview. 
 
 
 ### Interview 
@@ -35,7 +36,14 @@
     * (*optional*) 1 Begeisterungsfaktor
    
     !!! note
-        **Hinweis:** Stellen Sie nicht irgendwelche Fragen; die Fragen sollen Ihnen helfen, die NutzerInnen und deren spezifische Bedürfnisse, Lebensgewohnheiten und Wünsche besser zu verstehen. Die Antworten sind Basis für die Erarbeitung eines Anwendungsszenarios, sowie je einer funktionalen und qualitativen Anforderung (inkl. Quantifizierung) und einem Begeisterungsfaktor.
+        **Hinweis:** Stellen Sie _nicht_ irgendwelche Fragen; die Fragen sollen Ihnen helfen, die NutzerInnen und deren spezifische Bedürfnisse, Lebensgewohnheiten, Wünsche und Nutzungskontexte besser zu verstehen. Die Antworten sind Basis für die Erarbeitung eines Anwendungsszenarios, sowie je einer funktionalen und qualitativen Anforderung (inkl. Quantifizierung) und einem Begeisterungsfaktor.
+
+    !!! note
+        **Hinweis #2**: Beachten Sie die Prinzipen einer guten Interviewdurchführung (schauen Sie sich hierzu ggf. noch einmal die Videos auf der NZSE-Moodleseite an).
+
+        - Stellen Sie offene Fragen, bei denen Benutzer über ihre Erfahrungen berichten können
+        - Vermeiden Sie Suggestivfragen (--> _das ist zu Beginn sehr schwer umsetzbar; bemühen Sie sich!_)
+        - Fragen Sie nicht nach irgendwelchen technischen Details; diese sind für die Benutzung irrelevant; konzentrieren Sie sich auf die Ziele / Anwendungssituationen / etc.
 
 
 
@@ -46,7 +54,7 @@
         - Gruppe 1 legt vorab fest, wer in die Rolle des **Moderators** tritt und wer **protokolliert** (--> *sie können nicht beides gleichzeitig tun!*) 
         - Nutzen Sie ggf. das Handy für Video-/Audioaufzeichnungen
 
-    - Gruppe 1 leitet aus den Angaben ein **Anwendungsszenario** ab und notiert dieses. Anschließend reflektieren Gruppe 1 und 2 dieses gemeinsam um Ungereimtheiten zu identifizieren. <!--(*durch das Stellen entspr. Fragen ergibt sich dies bereits aus den Antworten*) -->
+    - Gruppe 1 leitet aus den Angaben ein **Anwendungsszenario** ab und notiert dieses. Anschließend reflektieren Gruppe 1 und 2 dieses gemeinsam, um Ungereimtheiten zu identifizieren. <!--(*durch das Stellen entspr. Fragen ergibt sich dies bereits aus den Antworten*) -->
     - (*optional*) Gruppe 1 leitet aus dem Anwendungszenario je **1 funktionale + 1 qualitative Anforderung** ab
     - (*optional*) Gruppe 1 stimmt die **Quantifizierbarkeit** der qualitativen Anforderung mit Gruppe 2 ab
     - (*optional*) Gruppe 1 erarbeitet mit Gruppe 2 **einen Begeisterungsfaktor**
@@ -59,7 +67,7 @@
         **Anwendungsszenario**: Dieses soll *lebensnah* und *anschaulich* sein und sich nicht in Details verlieren. Beziehen Sie sich nicht auf Knöpfe und deren Beschriftung (die sind ja noch gar nicht erfunden), sondern bleiben Sie auf der Ebene des mentalen Modells (dabei kann die Ich-Form helfen).
 
     !!! note
-        **Qualitätskriterien:** Achten Sie auf eine **korrekte Formulierung** und überprüfen Sie auch, ob alle **Qualitätskriterien** hinreichend erfüllt werden. Überlegen Sie hierbei, wie die Einhaltung eines Qualitätskriteriums nachgewiesen werden kann. Verfeinern Sie die Anforderung falls ein Qualitätskriterium überhaupt nicht eingehalten wird.
+        **Qualitätskriterien:** Achten Sie auf eine **korrekte Formulierung** und überprüfen Sie auch, ob alle **Qualitätskriterien** hinreichend erfüllt werden. Überlegen Sie hierbei, wie die Einhaltung eines Qualitätskriteriums nachgewiesen werden kann. Verfeinern Sie die Anforderung, falls ein Qualitätskriterium überhaupt nicht eingehalten wird.
 
     !!! note
         **Formulierung:** In der Vorlesung haben Sie ein **Tool** zur angemessen *Formulierung von Anforderungen* kennen gelernt; wie heißt dieses? Überlegen Sie auch, warum man dieses einsetzen sollte.

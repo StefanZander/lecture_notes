@@ -26,7 +26,7 @@ Alle Protokolle aus den folgenden Teilaufgaben kommen in die Projektmappe.
 ### Usability Test
 Zum **Usability Test** tun Sie sich mit Ihrer Peer-Gruppe zusammen:
 
-* für die App Ihrer Nachbarn sind Sie Test-Benutzer und arbeiten die Test-Aufgaben ab
+* für die App Ihrer Peer-Gruppe sind Sie Test-Benutzer und arbeiten die Test-Aufgaben ab
 * für Ihre eigene App sind Sie Test-Moderator (der/die eine) und Test-Beobachter (der/die andere)
 
 #### Thinking aloud
@@ -36,7 +36,7 @@ Zum **Usability Test** tun Sie sich mit Ihrer Peer-Gruppe zusammen:
 
 
 ### Usability Inspection
-Wenden Sie die „**Checkliste zur Usability Inspection**“ auf die Fernbedienung Ihrer Peer-Gruppe an. Übertragen Sie die allgemeinen Regeln sinnvoll auf die Fernbedienung. Protokollieren Sie eventuelle Probleme und Defizite so, dass die Entwickler verstehen, inwiefern die App verbessert werden sollte.
+Wenden Sie die „**Checkliste zur Usability Inspection**“ auf die mobile App Ihrer Peer-Gruppe an. Übertragen Sie die allgemeinen Regeln sinnvoll auf die Applikation. Protokollieren Sie eventuelle Probleme und Defizite so, dass die Entwickler verstehen, inwiefern die App verbessert werden sollte.
 
 ### Design Review
 Bewerten Sie die Fernbedienung Ihrer Nachbargruppe unter Design Aspekten:
@@ -58,7 +58,7 @@ Die folgenden Ergebnisse müssen für eine erfolgreiche Testierung der Praktikum
 
     Vorbereitete und ausgefüllte Protokolle für...
 
-    - [ ] Thinking aloud Test und anschl. Interview
+    - [ ] Thinking aloud Test und anschließendem Interview
     - [ ] Usability Inspection
     - [ ] Design Review
     - [ ] Liste mit Verbesserungen (--> *abgeleitet aus den unterschiedlichen Protokollen*)
