@@ -36,14 +36,14 @@
     * (*optional*) 1 Begeisterungsfaktor
    
     !!! note
-        **Hinweis:** Stellen Sie _nicht_ irgendwelche Fragen; die Fragen sollen Ihnen helfen, die NutzerInnen und deren spezifische Bedürfnisse, Lebensgewohnheiten, Wünsche und Nutzungskontexte besser zu verstehen. Die Antworten sind Basis für die Erarbeitung eines Anwendungsszenarios, sowie je einer funktionalen und qualitativen Anforderung (inkl. Quantifizierung) und einem Begeisterungsfaktor.
+        **Hinweis #1:** Stellen Sie _nicht_ irgendwelche Fragen; die Fragen sollen Ihnen helfen, die NutzerInnen und deren spezifische Bedürfnisse, Lebensgewohnheiten, Wünsche und Nutzungskontexte besser zu verstehen. Die Antworten sind Basis für die Erarbeitung eines Anwendungsszenarios, sowie je einer funktionalen und qualitativen Anforderung (inkl. Quantifizierung) und einem Begeisterungsfaktor.
 
     !!! note
-        **Hinweis #2**: Beachten Sie die Prinzipen einer guten Interviewdurchführung (schauen Sie sich hierzu ggf. noch einmal die Videos auf der NZSE-Moodleseite an).
+        **Hinweis #2:** Beachten Sie die Prinzipien einer guten Interviewdurchführung (schauen Sie sich hierzu ggf. noch einmal die Videos auf der NZSE-Moodleseite an).
 
-        - Stellen Sie offene Fragen, bei denen Benutzer über ihre Erfahrungen berichten können
-        - Vermeiden Sie Suggestivfragen (--> _das ist zu Beginn sehr schwer umsetzbar; bemühen Sie sich!_)
-        - Fragen Sie nicht nach irgendwelchen technischen Details; diese sind für die Benutzung irrelevant; konzentrieren Sie sich auf die Ziele / Anwendungssituationen / etc.
+        - Stellen Sie **offene Fragen**, bei denen BenutzerInnen über ihre **Erfahrungen** berichten können
+        - Vermeiden Sie **Suggestivfragen** (--> _das ist vor allem, wenn Sie das Interview das erste Mal durchführen sehr schwer umsetzbar; bemühen Sie sich!_)
+        - Fragen Sie nicht nach irgendwelchen technischen Details; diese sind für die Benutzung irrelevant. --> _Konzentrieren Sie sich auf die Ziele, den Anwendungskontext und die Lebenssituationen in denen ein Medium konsumiert wird._
 
 
 
@@ -70,7 +70,7 @@
         **Qualitätskriterien:** Achten Sie auf eine **korrekte Formulierung** und überprüfen Sie auch, ob alle **Qualitätskriterien** hinreichend erfüllt werden. Überlegen Sie hierbei, wie die Einhaltung eines Qualitätskriteriums nachgewiesen werden kann. Verfeinern Sie die Anforderung, falls ein Qualitätskriterium überhaupt nicht eingehalten wird.
 
     !!! note
-        **Formulierung:** In der Vorlesung haben Sie ein **Tool** zur angemessen *Formulierung von Anforderungen* kennen gelernt; wie heißt dieses? Überlegen Sie auch, warum man dieses einsetzen sollte.
+        **Formulierung:** In der Vorlesung haben Sie ein **Tool** zur angemessen Formulierung von Anforderungen kennen gelernt; wie heißt dieses? Überlegen Sie auch, warum man dieses einsetzen sollte.
 
     !!! note 
         **Quantifizierung:** Überprüfen Sie die Quantifizierbarkeit der beiden **Qualitätsanforderungen** und stellen Sie entsprechende **Quantifizierungsmerkmale** auf (*Hinweis: hier können Sie sich an den Beispielen aus der Vorlesung bzw. aus dem Skriptum orientieren*);
