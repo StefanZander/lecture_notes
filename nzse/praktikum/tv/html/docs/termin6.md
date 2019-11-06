@@ -6,10 +6,10 @@
 !!! abstract 
     **Lernziele**
 
-    - [x] Sie können einen Usability Test als Moderator und Beobachter durchführen
-    - [x] Sie können Sich auf das Beobachten beschränken und widerstehen der Versuchung Test-Benutzer zu schulen
-    - [x] Sie können Usability Probleme anhand von kleinsten Anzeichen des Test-Benutzers erkennen
-    - [x] Sie können Usability Probleme präzise benennen und dokumentieren
+    - [x] Sie können einen Usability Test als Moderator und Beobachter durchführen
+    - [x] Sie können sich auf das Beobachten beschränken und widerstehen der Versuchung Test-Benutzer zu schulen
+    - [x] Sie können Usability Probleme anhand von kleinsten Anzeichen des Test-Benutzers erkennen
+    - [x] Sie können Usability Probleme präzise benennen und dokumentieren
 
 ## Vorbereitung
 
@@ -17,7 +17,7 @@
      **Zu Hause:** Bereiten Sie die Testprotokolle vor anhand der folgenden Test-Aufgaben und der vorgegebenen Checklisten, d.h. betrachten Sie die Checklisten als „Rohmaterial“ und machen Sie daraus Protokollformulare.
 
 !!! note
-    **Hinweis:** Die Testprotokolle sollen den Entwicklern bei der weiteren Verbesserung helfen (keine Angst, das müssen Sie im Praktikum nicht mehr umsetzen ;-). Benennen Sie Schwachpunkte möglichst konkret; pauschale „Schulnoten“ helfen nicht weiter.
+    **Hinweis:** Die Testprotokolle sollen den Entwicklern bei der weiteren Verbesserung helfen (keine Angst, das müssen Sie im Praktikum nicht mehr umsetzen ;-). Benennen Sie Schwachpunkte möglichst konkret; pauschale „Schulnoten“ helfen nicht weiter.
 
 Alle Protokolle aus den folgenden Teilaufgaben kommen in die Projektmappe.
 
@@ -29,7 +29,7 @@ Zum **Usability Test** tun Sie sich mit Ihrer Peer-Gruppe zusammen:
 * für die App Ihrer Peer-Gruppe sind Sie Test-Benutzer und arbeiten die Test-Aufgaben ab
 * für Ihre eigene App sind Sie Test-Moderator (der/die eine) und Test-Beobachter (der/die andere)
 
-#### Thinking aloud
+#### Thinking Aloud
 * Der Test-Benutzer arbeitet die **Test-Aufgaben** (vgl. Anwendungsszenarios und Anforderungen) ab. Der Test-Moderator gibt **keine Erklärung** und **keine Hilfestellung** und ermuntert den Test-Benutzer lediglich zum „**lauten Denken**“. Der Test-Beobachter protokolliert.
 #### Interview
 * Direkt anschließend **interviewen** Test-Moderator und Test-Beobachter den Test-Benutzer um eventuelle **offene Fragen** zu klären. Der Test-Beobachter protokolliert.
