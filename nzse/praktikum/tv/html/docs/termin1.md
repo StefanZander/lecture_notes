@@ -76,8 +76,8 @@ Schreiben Sie eine Methode
 mit einer `Log.i`-Testausgabe und ordnen Sie die Methode dem `onClick`-Ereignis der TextView `Hello World` zu. Testen Sie durch Antippen des Textes `Hello World`.
 
 
-### Datenmodell der Fernbedienung (optional)
-Alle relevanten **Daten** und **Zustände** müssen in der Fernbedienung verwaltet werden; der Fernseher bzw. Stream-Server ist quasi ein reines Darstellungsprogramm. Überlegen Sie deshalb, welche Daten und Zustände innerhalb der Android-App **persistent gespeichert** werden sollen und welche nur **flüchtig**?
+### Datenmodelle der Fernbedienungen (optional)
+Alle relevanten **Daten** und **Zustände** müssen in den mobilen Apps verwaltet werden; der Fernseher bzw. Stream-Server ist quasi ein _reines Darstellungsprogramm_. Überlegen Sie deshalb, welche Daten und Zustände innerhalb der Android-App **persistent gespeichert** werden sollen und welche nur **flüchtig**?
 
 !!! note
     **Bedenken Sie:** 
@@ -88,7 +88,8 @@ Alle relevanten **Daten** und **Zustände** müssen in der Fernbedienung verwal
 Fassen Sie alle persistenten Daten in einer Klasse zusammen und zeichnen Sie das Klassendiagramm dieser persistenten Klasse (die Implementierung folgt in [Termin 4: Logik](termin5.md)).
 
 !!! note
-    __Tipp:__ für das Ergebnis des Kanalscans empfiehlt sich eine `ArrayList<Channel>`. {Tipp für Twitch-Streaming Server}
+    __Tipp:__ für das Ergebnis des Kanalscans empfiehlt sich eine `ArrayList<Channel>`.  
+    {>>TODO: Tipp für Twitch-Streaming Server<<}
 
 
 

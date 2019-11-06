@@ -19,4 +19,4 @@ Auf den folgenden Seiten finden Sie die **Aufgaben** der jeweiligen Praktikumsei
 * [Termin 5: Usability Test und Inspeciton](termin6.md)
 
 ----
-Diese Unterlagen wurden mit [mkdocs.org](http://mkdocs.org), [markdown](https://en.wikipedia.org/wiki/Markdown) und [Visual Stuido Code](https://code.visualstudio.com/) erstellt.
+Diese Unterlagen wurden mit [mkdocs.org](http://mkdocs.org), [markdown](https://en.wikipedia.org/wiki/Markdown), einem individuell angepassten [Material Theme](https://github.com/squidfunk/mkdocs-material) für MkDocs und [Visual Stuido Code](https://code.visualstudio.com/) erstellt.
