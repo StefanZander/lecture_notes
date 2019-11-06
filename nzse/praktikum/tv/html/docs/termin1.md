@@ -88,7 +88,7 @@ Alle relevanten **Daten** und **Zustände** müssen in den mobilen Apps verwalt
 Fassen Sie alle persistenten Daten in einer Klasse zusammen und zeichnen Sie das Klassendiagramm dieser persistenten Klasse (die Implementierung folgt in [Termin 4: Logik](termin5.md)).
 
 !!! note
-    __Tipp:__ für das Ergebnis des Kanalscans empfiehlt sich eine `ArrayList<Channel>`.  
+    __Tipp:__ für das Ergebnis des Kanalscans empfiehlt sich eine `:::js ArrayList<Channel>`.  
     {>>TODO: Tipp für Twitch-Streaming Server<<}
 
 
