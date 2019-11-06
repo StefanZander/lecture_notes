@@ -13,7 +13,7 @@
 
 ### Layouts und Navigation
 
-Legen Sie das Fernbedienungs-Projekt an und generieren Sie alle Activities (oder [Fragmente](https://developer.android.com/guide/components/fragments), falls Sie eine `BottomNavigationBar` zur Navigation einsetzen möchten) der Anwendung
+Legen Sie das Praktikumsprojekt an und generieren Sie alle Activities (oder [Fragmente](https://developer.android.com/guide/components/fragments), falls Sie eine `BottomNavigationBar` o.Ä. zur Navigation einsetzen möchten) der Anwendung
 
 1. Implementieren Sie die zugehörigen **Layouts** in der **Design-Ansicht** von Android Studio; bestücken Sie die
 Layouts mit den benötigten Views und Widgets. Testen Sie das Layout für unterschiedliche **Displaygrößen** und **Displayauflösungen** und passen Sie es ggf. an.
@@ -45,6 +45,11 @@ Das HTTP-Protokoll brauchen Sie für dieses Praktikum nicht weiter zu verstehen
 2. Lesen und verstehen Sie die Dokumentation zur Klasse und ihren Methoden im Quellcode (Javadoc-Stil)
 3. Steuern Sie den „Fernseher“ durch Aufruf der Methode `HttpRequest.execute` mit geeigneten Parametern
 
+
+### Twitch Stream-Server
+
+Informationen zur Kommunikation mit dem Twitch Stream-Server finden Sie auf den offiziellen Projektseiten: <https://stream-server.h-da.io/>
+
 ## Ergebnisse
 
 Die folgenden Ergebnisse müssen für eine erfolgreiche Testierung der Praktikumseinheit vorliegen:
@@ -54,4 +59,4 @@ Die folgenden Ergebnisse müssen für eine erfolgreiche Testierung der Praktikum
 
     - [ ] Fertiges Layout
     - [ ] Implementierung der Navigation
-    - [ ] Einbinden der `HttpRequest.java` Klasse
+    - [ ] Einbinden der `HttpRequest.java` Klasse (_beim TV-Server_)
