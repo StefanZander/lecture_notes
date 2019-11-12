@@ -28,7 +28,7 @@
 
     - Picture in Picture
     - Favoriten anlegen und verwalten
-    - Kanalsuche 
+    - Kategoriesuche 
     - Usersuche
     - Umschalten zwischen themenverwandten Streams
     - Auswahl eines Streams
