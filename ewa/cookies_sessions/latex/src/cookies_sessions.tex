@@ -256,13 +256,13 @@ If a request for cookies was not accepted, the respective header field is not se
 The following example demonstrates a HTTP request send by the client that includes cookie information:
 \begin{listing}
 \begin{lstlisting}[language=HTML]
-GET /dev/dev/php/session_cockies/cookies.php?do=print HTTP/1.1
+GET /dev/dev/php/session_cookies/cookies.php?do=print HTTP/1.1
 Host: localhost
 Connection: keep-alive
 Upgrade-Insecure-Requests: 1
 User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36
 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
-Referer: http://localhost/dev/dev/php/session_cockies/cookies.php?do=set
+Referer: http://localhost/dev/dev/php/session_cookies/cookies.php?do=set
 Accept-Encoding: gzip, deflate, br
 Accept-Language: en-GB,en;q=0.9,en-US;q=0.8,de;q=0.7
 Cookie: Language=PHP; Version=7.0
@@ -343,10 +343,12 @@ Please note that parameters in square brackets \texttt{[ ]} are optional; only \
 	The expiration date can be set with the PHP functions \texttt{time() + 60 * 60 * 24} for a cookie the validity of which is one day, or using \texttt{mktime()}; a cookie with expiration date \texttt{mktime(12, 0, 0, 12, 24, 2018)} is valid until Christmas Day 2018, 12 am.
 	A\marginnote{Cookies without expiration data are treated as temporary (=session) cookies} cookie without expiration date is treated as a temporary cookie.
 	
-	\item \texttt{string path} \\ This parameter bounds the cookie to a specific path from which the cookie can be read and manipulated. For instance, a cookie set from the path \url{www.h-da.de/fbi/students} can not be read from \url{www.h-da.de/fbi/professors}. 
+	\item \texttt{string path} \\ This parameter bounds the cookie to a specific path from which the cookie can be read and manipulated. For instance, a cookie set to the path \url{www.h-da.de/fbi/students} can not be read from \url{www.h-da.de/fbi/professors}. 
 	In\marginnote{It is good practice to set cookies only on those sites that need them} general it is good practice to set cookies only on those sites that need them (e.g., on administrative sites) in order to increase performance. 
 	
 	\item \texttt{string domain} \\ Sets the domain from which a cookie can be accessed and manipulated. In cases where this parameter is not explicitly set, the Web browser sets the Web site's domain from its URL. As a consequence, if a Web site is requested using the site's IP address, only the address will be used and not the domain name. 
+	
+	% Sinnvoll ist der Einsatz eines Path-Cookie immer dann, wenn nur in einem bestimmten Teilbereich einer Website Cookieinformationen verarbeitet werden müssen. Besteht eine Website beispielsweise sowohl aus einem Cookie-freien statischen, als auch einem dynamischen Seitenbereich, der Cookies verwendet, so lässt sich der Datenaustausch durch geschickte Angabe eines Cookie Path auf den dynamischen Teil der Internetseite beschränken. Angenommen unter dem Verzeichnisbereich /forum/ unter der Domain cookies-path.de ist ein Forum installiert, welches angemeldete Benutzer über einen Cookie identifiziert, während der Rest der Internetseite lediglich statischen Content enthält. Dann sollten Cookies auf den Path /forum/ beschränkt sein, wenn diese lediglich zum Betrieb des Forums benötigt werden.
 	
 	\item \texttt{boolean secure} \\ If\marginnote{Never store sensible data in a cookie} this token is set, a cookie will only be sent through secure HTTP connections via HTTPS. However, for security reasons, sensible data should never be stored in cookies but held server-side. 
 	
@@ -463,12 +465,12 @@ In general, those data are available as long as the session objects exists, i.e.
 \subsection{Background Information} % (fold)
 \label{sub:background_information}
 
-When PHP stores data in a session object, they need to be serialized beforehand and are then stored on the Web servers file system, depending on its configuration. 
-Each \marginnote{The Session ID serves as identifier of the session and the data stored in the session objects} session will be identified through a 32-character long hexadecimal value, the so-called \emph{Session ID}.
+When\marginnote{Session data are stored server-side} PHP stores data in a session object, they need to be serialized beforehand and are then stored on the Web servers file system, depending on its configuration. 
+Each \marginnote{The Session ID serves as identifier of the session and the data stored in the session objects} session will be identified through a 32-character long hexadecimal value, the so-called \textbf{Session ID}.
 The Session ID serves as identifier for the data stored in the session object. 
 % Hence, in order to store client-specific data between different
 \emph{Hence, the problem of storing client-specific data between different subsequent requests is reduced to transmitting the Session ID between server and client. }
-The\marginnote{Sensible data should never be stored in cookies!} data are stored on the server-side and can be accessed through some PHP convenience methods. 
+The\marginnote{Sensible data should never be stored in cookies!} data are stored on the server-side and can be accessed through a set of PHP convenience methods. 
 
 Sessions\marginnote{The Session ID need to be transmitted in every request and response. Why?} require that the Session ID is transmitted in every request and response.
 This can be done using two different approaches:
@@ -486,7 +488,7 @@ The central concept of using a session management without cookies is to append t
 \begin{Verbatim}
 http://myserver.org/myscript.php?PHPSESSID=eh2czw36afpn71r8kbt03q4p8005
 \end{Verbatim}  
-As\marginnote{The PHP Interpreter needs to add the Session ID to every URL embedded in a Web page.} a consequence, every link embedded in Web page need to be automatically extended by the PHP Interpreter using the Session ID so that it is not lost. % This could result in a bottleneck for large pages since those need to be parsed and manipulated prior to their delivery. 
+As\marginnote{The PHP Interpreter needs to add the Session ID to every URL embedded in a Web page.} a consequence, every link embedded in Web page needs to be automatically extended by the PHP Interpreter using the Session ID so that it is not lost. % This could result in a bottleneck for large pages since those need to be parsed and manipulated prior to their delivery. 
 However, the Session ID is available as a \texttt{GET} parameter and does not influence the processing of the script.
 
 The\marginnote{Adding the Session ID to a Web site's URLs is rather resource demanding.} parsing of a Web page and complementing all URLs with the Session ID is resource consuming and might result in \emph{performance bottlenecks}, in particular for large pages with many links.
@@ -517,7 +519,7 @@ The above lifetime value causes the garbage collector to remove the session data
 
 \subsection{Writing Session Data} % (fold)
 \label{sub:writing_session_data}
-When working with sessions in PHP, a large share of programming work is related to writing data to and reading data from the super global session array \texttt{\$\_SESSION}.
+\marginnote{Working with sessions mainly involves reading and writing data from/to the session object} When working with sessions in PHP, a large share of programming work is related to writing data to and reading data from the super global session array \texttt{\$\_SESSION}.
 
 Two steps are necessary for storing data in a session:
 \begin{enumerate}
@@ -582,10 +584,11 @@ The excerpt in Listing~\ref{deleting_session_data} uses variant 2 and 1 for the 
 \begin{lstlisting}[language=PHP]
 <?php
   session_start();
-  // Further instructions...
+  // Variant #2: Using unset
   if (isset($_SESSION["language"])) {
     unset($_SESSION["language"]);
   }
+  // Variant #1: setting value to an empty string
   if (isset($_SESSION["version"])) {
     $_SESSION["version"] = "";
   }
@@ -595,13 +598,18 @@ The excerpt in Listing~\ref{deleting_session_data} uses variant 2 and 1 for the 
 	\label{deleting_session_data}
 \end{listing}
 
+\subsection{Destroying the Session} % (fold)
+\label{sub:destroying_the_session}
+
+% subsection destroying_the_session (end)
+
 In\marginnote{Completely destroying the session object} order to completely destroy a session and its data, two steps are necessary:
 \begin{enumerate}
 	\item Delete all data from the session array using the \texttt{session\_unset()} function or reinitializing the session variable using \texttt{\$\_SESSION = array();}
 	\item Destroy the session using \texttt{session\_destroy()}
 \end{enumerate}
 
-Eventually,\marginnote{Delete the session cookie} sometimes it might be necessary to also delete the session cookie, if it has been set before. 
+Sometimes,\marginnote{Delete the session cookie} it might be necessary to also delete the session cookie, if it has been set before. 
 This can be done with the \texttt{setcookie(...)} command in Listing~\ref{deleting_session_cookie}.
 \begin{listing}
 \begin{lstlisting}[language=PHP]
@@ -651,6 +659,7 @@ Listing~\ref{login_inc},~\ref{protected_page}, and~\ref{login_page} demonstrate 
 
 \begin{listing}
 \begin{lstlisting}[language=PHP]
+// Login.inc.php
 <?php
   session_start();
 
@@ -670,6 +679,7 @@ Listing~\ref{login_inc},~\ref{protected_page}, and~\ref{login_page} demonstrate 
 
 \begin{listing}
 \begin{lstlisting}[language=PHP]
+// protected_page.php
 <?php
   require_once "login.inc.php";
 ?>
@@ -678,7 +688,8 @@ Listing~\ref{login_inc},~\ref{protected_page}, and~\ref{login_page} demonstrate 
   <title>Protected Resource</title>
 </head>
 <body>
-<h1>Here is all the secret information...</h1>
+  <h1>Here is all the protected information</h1>
+	<p> Protected content... </p>
 </body>
 </html>
 \end{lstlisting}
@@ -689,13 +700,16 @@ Listing~\ref{login_inc},~\ref{protected_page}, and~\ref{login_page} demonstrate 
 
 \begin{listing}
 \begin{lstlisting}[language=PHP]
+// login.php
 <?php
   session_start();
 
   if (isset($_POST["user"]) && isset($_POST["password"])) {
+    // usually checked against a user database
     if ($_POST["user"] == "jamesbond" && 
         $_POST["password"] == "topsecret") {
       $_SESSION["login"] = "ok";
+      // redirect the user to the page from where she is comming
       $url = (isset($_GET["url"])) ? nl2br($_GET["url"]) : "index.php";
       header("Location: $url");
     }
@@ -706,15 +720,15 @@ Listing~\ref{login_inc},~\ref{protected_page}, and~\ref{login_page} demonstrate 
   <title>Login</title>
 </head>
 <body>
-<form method="post">
-User: <input type="text" name="user" size="10" /><br />
-Password: <input type="password" name="password" size="10" /><br />
-<input type="submit" value="Login" />
-</form>
+  <form method="post">
+    User: <input type="text" name="user" size="10" /><br />
+    Password: <input type="password" name="password" size="10" /><br />
+    <input type="submit" value="Login" />
+  </form>
 </body>
 </html>
 \end{lstlisting}
-	\caption{The login page (<<login.php>>)}
+	\caption{The login page (<<login.php>>) with stored user authorization credentials; usually such information will be retrieved from and checked against a user database.}
 	\label{login_page}
 \end{listing}
 
