@@ -18,3 +18,4 @@ site/
 .nav
 .snm
 *.fls
+*.fdb_latexmk
