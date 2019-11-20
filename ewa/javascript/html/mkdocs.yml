@@ -1,0 +1,52 @@
+site_name: Android & Android Studio
+
+nav:
+  - 'Index': 'index.md'
+  - 'Closures': 'closures.md'
+  - 'Activities & Intents': 'activities.md'
+  - 'JSON': 'json.md'
+  - 'Data Storage': 'data_storage.md'
+  - 'App Bar': 'actionbar.md'
+  - 'RecyclerView': 'recycler_view.md'
+  - 'AsyncTask': 'asynctask.md'
+
+theme:
+  name: 'material'
+  language: 'de'
+  # custom_dir: 'material2'
+  
+  palette:
+    primary: 'blue'
+    accent: 'red'
+  
+  feature:
+    tabs: false
+
+  font:
+    text: 'Zilla Slab'
+    code: 'Fira mono'
+
+extra_css:
+  - 'stylesheets/extra.css'
+
+extra_javascript:
+  - 'javascript/extra.js'
+
+markdown_extensions:
+  - admonition
+  - codehilite:
+      linenums: true
+      guess_lang: true
+  - toc:
+      permalink: false
+  - meta
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  
