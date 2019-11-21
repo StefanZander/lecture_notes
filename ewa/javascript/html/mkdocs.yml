@@ -3,7 +3,7 @@ site_name: Android & Android Studio
 nav:
   - 'Index': 'index.md'
   - 'Closures': 'closures.md'
-  - 'Activities & Intents': 'activities.md'
+  - 'Functions': 'functions.md'
   - 'JSON': 'json.md'
   - 'Data Storage': 'data_storage.md'
   - 'App Bar': 'actionbar.md'
