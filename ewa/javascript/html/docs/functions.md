@@ -35,8 +35,12 @@ You have to add parentheses around the function to indicate that it is a functio
 ``` javascript
 (function () {
   let x = "Hello World";  // I will invoke myself
+  console.log(x);
 })();
 ```
+
+The function above is actually an anonymous self-invoking function (function without name).
+
 
 #### Example #2
 
