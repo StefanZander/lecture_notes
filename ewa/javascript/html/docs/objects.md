@@ -12,7 +12,22 @@
     **Please note:** A large part of JavaScript programming is managing objects – this is why understanding how objects work is key to understanding JavaScript as a whole. 
 
 
+## Defining Objects
 
+Objects are created based on two basic ways:
+
+1. ia an Object Constructor using a constructor function
+2. in a object literal notation
+
+
+### Adding Properties to Objects
+
+JS distinguishes between 
+
+1. properties inherited from the object prototype and 
+2. own properties 
+
+Adding a property creates a new _own property_ on that object.
 
 ## Disclaimer
 
