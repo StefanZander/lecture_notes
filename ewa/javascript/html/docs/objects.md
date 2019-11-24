@@ -27,7 +27,20 @@ JS distinguishes between
 1. properties inherited from the object prototype and 
 2. own properties 
 
-Adding a property creates a new _own property_ on that object.
+Adding an individual property creates a new _own property_ on that object, i.e., the object instance _owns_ that property.
+
+
+### Checking for the Existence of Properties
+
+Since properties can added to objects at any time, it is sometimes necessary to check for the existence of a property.
+
+The `:::js in`-operator also works for methods (since methods are also properties and reference values (=objects))
+
+!!! note
+    __Please note__: The `:::js in` operator checks for both own properties and prototype properties. If you only want the check for own properties use the `:::js hasOwnProperty()` method, which is present on all objects.
+
+The `:::js hasOwnProperty()` method returns `true` only if the given property exists and is an own property.
+
 
 ## Disclaimer
 
