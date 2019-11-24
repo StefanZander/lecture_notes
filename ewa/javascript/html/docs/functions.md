@@ -8,12 +8,25 @@
     - [x] Sie verstehen wie sie Actions definieren und der Action Bar hinzufügen
 
 
+!!! warning
+    **Please note:** A profound understanding of functions in JavaScript is essential because JavaScript employs no concept of classes – so functions and reference types are all you have to achieve aggregation and inheritance. 
+
 
 ## Function Declarations
+
+- used for normal function and constructor functions to generate reference values (_= objects_)
+- Hoisted at the top of the context in which they are defined 
+
 
 
 
 ## Function Expression
+
+- Used in/as 
+    - assignment expressions, 
+    - function parameters (e.g. for handlers)
+    - methods
+    - return values of functions
 
 
 
@@ -64,6 +77,31 @@ The function above is actually an anonymous self-invoking function (function wit
 ```
 
 
+### Arrow Functions
+
+Arrow functions allows a short syntax for writing function expressions.
+
+Arrow functions do not have their own this. They are not well suited for defining object methods.
+
+Arrow functions are not hoisted. They must be defined before they are used.
+
+You don't need the function keyword, the return keyword, and the curly brackets.
+
+```javascript
+// ES5
+var x = function(x, y) {
+  return x * y;
+}
+
+// ES6
+const x = (x, y) => x * y;
+```
+
+You can only omit the return keyword and the curly brackets if the function is a single statement. Because of this, it might be a good habit to always keep them:
+
+```javascript
+const x = (x, y) => { return x * y };
+```
 
 
 
