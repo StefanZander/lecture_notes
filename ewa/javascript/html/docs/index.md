@@ -1,26 +1,29 @@
-#  Android und Android Studio
+#  Foundations of JavaScript
 
 <!-- Stand: 2019-03-18 -->
 
-Auf den folgenden Seiten finden Sie Informationen und Aufgaben zur Entwicklung von Android Apps mit Java und Android Studio.
-Die Informationen stammen an vielen Stellen aus englischsprachigen Primärquellen, deshalb ist ein Großteil der Lehrunterlagen in englischer Sprache verfasst.
+The following pages contain information about the concepts and basic building blocks of the JavaScript (JS) language.
+The information are collected from various sources and continuously refined, meaning, they change over time since JS is managed as a living standard with annual updates.
+
+!!! note
+    __Please note:__  
+    The following pages only contain information of selected topics; they are no surrogates for the lecture or the standard lecture slides (_although the extend them in many occasions_).
+
 
 <!-- ## Allgemeine Informationen
 
 * [Vorbereitung](vorbereitung.md)
 * [Anforderungen an die zu entwickelnde Webanwendung](anforderungen.md) -->
 
-## Kapitelübersicht
+## Topics
 
-* [Kapitel 1: Grundlagen zu Android und Android Studio](grundlagen.md) 
-* [Kapitel 2: Activities und Intents](activities.md) 
-<!-- * [Kapitel 3: Handling User Interface Events (--> work in progress)](handler.md)  -->
-<!-- * [Kapitel 4: Layouts (--> work in progress)](index.md)  -->
-* [Kapitel 3: JavaScript Object Notation (JSON)](json.md) 
-* [Kapitel 4: Daten-Speicher und Persistenz](data_storage.md) 
-* [Kapitel 5: App Bar und Toolbar](actionbar.md) 
-* [Kapitel 6: RecyclerView](recycler_view.md) 
-* [Kapitel 7: AsyncTask](asynctask.md) 
+* [General Language Concepts](index.md) 
+* [Primitive Types](index.md) 
+* [Reference Types and Objects](objects.md) 
+* [Functions](functions.md) 
+* [JavaScript and the DOM](index.md) 
+* [Closures](closures.md) 
+
 
 
 ----

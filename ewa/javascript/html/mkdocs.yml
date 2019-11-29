@@ -4,11 +4,7 @@ nav:
   - 'Index': 'index.md'
   - 'Closures': 'closures.md'
   - 'Functions': 'functions.md'
-  - 'JSON': 'json.md'
-  - 'Data Storage': 'data_storage.md'
-  - 'App Bar': 'actionbar.md'
-  - 'RecyclerView': 'recycler_view.md'
-  - 'AsyncTask': 'asynctask.md'
+  - 'Objects': 'objects.md'
 
 theme:
   name: 'material'

@@ -1,11 +1,11 @@
 # Closures
 
 !!! abstract
-    **Lernziele**
+    **Summary**
 
-    - [x] Sie kennen die technischen Grundlagen der Android Action Bar
-    - [x] Sie können eine Action Bar in ihre Applikation integrieren
-    - [x] Sie verstehen wie sie Actions definieren und der Action Bar hinzufügen
+    - [x] Protected variables are defined in the outer scope of the function and can be accessed by exposing the inner functional scope 
+    - [x] Closures are a common way to achieve encapsulation (ie. hiding data from external and uncotrolled access) 
+    - [x] Closures consist of an outer and inner function
 
 !!! note
     __Note:__ The app bar should be implemented using the __Android Toolbar__ to make it available for a wide range of devices. According to the Android developer guidelines, the appcompat [Toolbar](https://developer.android.com/reference/android/support/v7/widget/Toolbar.html) has the best compatibility support.  
@@ -48,11 +48,47 @@ When you use closures for data privacy, the enclosed variables are only in scope
     Closures can also be used to create stateful functions whose return values may be influenced by their internal state, e.g.:
 
 
-### Beispiel
+### Example
+``` javascript
+function MyProtectedObj(param) {
+  const mySecretVariable = Math.floor(4711 * Math.random());
+  let name = param;
+   
+  return { 
+    getCode: function() { 
+      return mySecretVariable;
+    },
+    setName: function(value) {
+      name = value;
+    },
+    getName: function() {
+      return name;
+    }
+  }
+}
+```
+
+The closure function can be used like that
 
 ``` javascript
+let obj = MyProtectedObj("James");
+
+console.log(mySecretVariable);      // Reference Error 
+console.log(obj.mySecretVariable);  // outputs 'undefined'
+
+obj.getCode();  //returns the randomly generated number
+obj.setName("John");  //ok
+obj.getName();  //outputs 'John'
+```
+
+
+
+
+
+Be careful, using this does not work in closures
+``` javascript
 function MyProtectedObj(name) {
-  this.mySecretVariable = "4711";
+  this.mySecretVariable = Math.floor(4711 * Math.random());
   this.name = name;
    
   return { 
@@ -66,11 +102,16 @@ function MyProtectedObj(name) {
       return name;
     }
   }
- }
+}
 
-let obj = new MyProtectedObj("James");
+let obj = MyProtectedObj("James");
+
+//works since mySecretVariable is bound to the global scope
+console.log(mySecretVariable); // ...
 ```
 
+!!! warning
+    __Please note__ that the returning object must not access the variables via `this`
 
 
 

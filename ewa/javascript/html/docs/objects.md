@@ -5,19 +5,35 @@
 
     - [x] Objects in JavaScript are dynamic; they can change at any point during code execution
     - [x] While OO-langueage lock-down objects based on class definitions; JS has no such restrictions
-    - [x] Sie verstehen wie sie Actions definieren und der Action Bar hinzufügen
+    - [x] Objects are central elements in JS
 
 
 !!! warning
     **Please note:** A large part of JavaScript programming is managing objects – this is why understanding how objects work is key to understanding JavaScript as a whole. 
 
 
+## Preamble
+
+- Everything in JS is an object
+- or can be accessed as objects
+- even functions are objects
+
+Hence, a good understanding about objects is crucial for working with JS.
+
+
+
+
 ## Defining Objects
 
-Objects are created based on two basic ways:
+Objects can be created on two ways:
 
-1. ia an Object Constructor using a constructor function
-2. in a object literal notation
+1. via an object **Constructor** using a constructor function
+2. via the object **literal notation**.
+
+The constructor function then serves as a reference type; the objects created via it are reference values (i.e., instances of a reference type).
+
+The literal notation creates only reference values.
+
 
 
 ### Adding Properties to Objects
@@ -28,6 +44,7 @@ JS distinguishes between
 2. own properties 
 
 Adding an individual property creates a new _own property_ on that object, i.e., the object instance _owns_ that property.
+
 
 
 ### Checking for the Existence of Properties
