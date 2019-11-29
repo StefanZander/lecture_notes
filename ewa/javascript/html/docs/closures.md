@@ -83,9 +83,9 @@ obj.getName();  //outputs 'John'
 
 
 
+## Pitfalls
 
-
-Be careful, using this does not work in closures
+Be careful, using `:::js this` does not work in closures
 ``` javascript
 function MyProtectedObj(name) {
   this.mySecretVariable = Math.floor(4711 * Math.random());
