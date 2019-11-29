@@ -17,7 +17,7 @@ The information are collected from various sources and continuously refined, mea
 
 ## Topics
 
-* [General Language Concepts](index.md) 
+* [General Language Concepts](introduction.md) 
 * [Primitive Types](index.md) 
 * [Reference Types and Objects](objects.md) 
 * [Functions](functions.md) 
