@@ -110,6 +110,24 @@ let obj = MyProtectedObj("James");
 console.log(mySecretVariable); // ...
 ```
 
+
+``` javascript
+var c = (person(name){
+  this.name = name;
+  this.age = 0;
+
+  return {
+    getOlder: function() {
+      this.age++;
+    },
+    printAge: function() {
+      console.log(age);
+    } 
+  }
+})();
+
+```
+
 !!! warning
     __Please note__ that the returning object must not access the variables via `this`
 

@@ -11,11 +11,11 @@
 | 12.11. | Feedback for Factsheet + Abstract                                                      |           |
 | 19.11. |                                                                                        |           |
 | 26.11. |                                                                                        |           |
-| 03.12. | Submission of paper draft                                                              | MS3       |
-| 10.12. | Enter paper bids                                                                       | MS3       |
-| 17.12. | Submission of paper reviews                                                            | MS4       |
+| 15.12. | Submission of paper draft                                                              | MS3       |
+| 16.12. | Enter paper bids                                                                       | MS3       |
+| 22.12. | Submission of paper reviews                                                            | MS4       |
 | 07.01. |                                                                                        |           |
-| __TBD__| Final Presentations                                                                    | MS5       |
+| 20.01. | Final Presentations                                                                    | MS5       |
 | 21.01. |                                                                                        |           |
 | __TBD__| Submission of Final Paper                                                              | MS6       |
 |        |                                                                                        |           |
@@ -31,11 +31,11 @@
 | 18.11. | Feedback for Factsheet + Abstract                                                      |           |
 | 25.11. |                                                                                        |           |
 | 02.12. |                                                                                        |           |
-| 09.12. | Submission of paper draft                                                              | MS3       |
+| 15.12. | Submission of paper draft                                                              | MS3       |
 | 16.12. | Enter paper bids                                                                       | MS3       |
 | 23.12. | Submission of paper reviews                                                            | MS4       |
 | 06.01. |                                                                                        |           |
-| __TBD__| Final Presentations                                                                    | MS5       |
-| 20.01. |                                                                                        |           |
+| 13.01. |                                                                                        |           |
+| 21.01. | Final Presentations                                                                    | MS5       |
 | __TBD__| Submission of Final Paper                                                              | MS6       |
 |        |                                                                                        |           |
