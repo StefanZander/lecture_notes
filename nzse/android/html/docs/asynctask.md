@@ -10,43 +10,46 @@
 ## Introduction
 
 AsyncTask enables to keep the UI thread from having to perform computational expensive operations. 
-This class allows you to **perform background operations** and publish results on the UI thread without having to manipulate threads and/or handlers.
+This class allows you to **perform background operations** asynchronously and publish results on the UI thread without having to manipulate threads and/or handlers.
 
-AsyncTask is designed to be a **helper class** around Thread and Handler and does _not_ constitute a generic threading framework. 
+AsyncTask is designed to be a **helper class** around `Thread` and `Handler` and does _not_ constitute a generic threading framework. 
 AsyncTasks should ideally be used for **short operations** (a few seconds at the most). 
 
-!!! note 
-     If you need to keep threads running for long periods of time, it is highly recommended you use the various APIs provided by the `java.util.concurrent` package such as [Executor](https://developer.android.com/reference/java/util/concurrent/Executor.html), [ThreadPoolExecutor](https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html) and [FutureTask](https://developer.android.com/reference/java/util/concurrent/FutureTask.html).
+!!! note
+    __Use a Threading Framework for Long-Running Operations__  
+    If you need to keep threads running for long periods of time, it is highly recommended you use the various APIs provided by the `java.util.concurrent` package such as [Executor](https://developer.android.com/reference/java/util/concurrent/Executor.html), [ThreadPoolExecutor](https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html) and [FutureTask](https://developer.android.com/reference/java/util/concurrent/FutureTask.html).
 
 
 ## Structure
 
-An asynchronous task is defined by a **computation** that runs on a **background thread** and whose result is **published on the UI thread**. 
+<!-- An asynchronous task is defined by a **computation** that runs on a **background thread** and whose result is **published on the UI thread**.  -->
 
-An asynchronous task is defined by **3 generic types**, called 
+An asynchronous task is defined by **3 generic types**: 
 
 * `Params` – the type of the parameters sent to the task upon execution.
 * `Progress` – the type of the progress units published during the background computation. 
 * `Result` – the type of the result of the background computation.
 
 !!! note
-     Not all types are always used by an asynchronous task. To mark a type as unused, simply use the type `Void`:
+    __Set Unused Types to `Void`__
+    Not all types are always used by an asynchronous task. To mark a type as unused, simply use the type `Void`:
 
-     `:::js private class MyTask extends AsyncTask<Void, Void, Void> { ... }`
+    `:::js private class MyTask extends AsyncTask<Void, Void, Void> { ... }`
 
 
-An asynchronous task defines **4 callback methods** (=*steps*); when an asynchronous task is executed, the task goes through through steps
+An asynchronous task defines **4 callback methods** (=*steps*); when an asynchronous task is executed, the task goes through the following steps
 
-1. `:::js onPreExecute()`  invoked on the UI thread before the task is executed. This step is normally used to setup the task, for instance by showing a progress bar in the user interface.
+1. `:::js onPreExecute()`  invoked on the _UI thread_ before the task is executed. This step is normally used to setup the task, for instance, by showing a progress bar in the UI.
      
-2. `:::js doInBackground(Params...)`, invoked on the background thread immediately after `:::js onPreExecute()` finishes executing. This step is used to perform background computation that can take a long time. The parameters of the asynchronous task are passed to this step. The result of the computation must be returned by this step and will be passed back to the last step. This step can also use `:::js publishProgress(Progress...)` to publish one or more units of progress. These values are published on the UI thread, in the `:::js onProgressUpdate(Progress...)` step.
+2. `:::js doInBackground(Params...)` invoked on the _background thread_ immediately after `:::js onPreExecute()` finished execution. This step is used to perform background computation that can take a long time. The `Params` parameters of the asynchronous task are passed to this step. The result of the computation must be returned by this step and will be passed to `:::js onPostExecute(Result)`. This step can also use `:::js publishProgress(Progress...)` to publish one or more units of progress. These values are published on the UI thread, in the `:::js onProgressUpdate(Progress...)` step.
 
-3. `:::js onProgressUpdate(Progress...)` invoked on the UI thread after a call to `:::js publishProgress(Progress...)`. The timing of the execution is undefined. This method is used to display any form of progress in the user interface while the background computation is still executing. For instance, it can be used to animate a progress bar or show logs in a text field. 
+3. `:::js onProgressUpdate(Progress...)` invoked on the _UI thread_ after a call to `:::js publishProgress(Progress...)`. The timing of the execution is undefined. This method is used to display any form of progress in the user interface while the background computation is still executing. For instance, it can be used to animate a progress bar or show logs in a text field. 
 
-4. `:::js onPostExecute(Result)` invoked on the UI thread _after_ the background computation finishes. The result of the background computation is passed to this step as a parameter.
+4. `:::js onPostExecute(Result)` invoked on the _UI thread_ after the background computation finishes. The result of the background computation is passed to this callback method as a parameter.
 
 !!! note
-     **Note**: Please pay close attention to which methods are exectuted by the **UI thread** and which by the **background thread**. This distinction is important as UI elements (=*views defined in the activitie's layout*) can only by manipulated by the UI thread. Trying to manipulate them from a method executed by the background thread will result in an exception and termination.
+    **Pay Attention to where a Method is Executed**  
+    Please pay close attention to which methods are exectuted by the **UI thread** and which by the **background thread**. This distinction is important as UI elements (=*views defined in the activity's layout*) can only by manipulated by the UI thread. Trying to manipulate them from a method executed by the background thread will result in an exception and termination.
 
 
 ## Usage
@@ -264,8 +267,7 @@ public void sendCommandToTvServer(View view) {
 
 ## Disclaimer
 
-Most of the information in this lecture has been compiled from the following sources:
+Most of the information in this lecture has been compiled from the official Android documentation pages:
 
-* <https://developer.android.com/training/appbar/>
-* <https://developer.android.com/guide/topics/ui/menus>
-* <http://www.vogella.com/tutorials/AndroidActionBar/article.html>
+* <https://developer.android.com/reference/android/os/AsyncTask>
+
