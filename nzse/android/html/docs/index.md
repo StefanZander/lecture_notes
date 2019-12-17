@@ -14,6 +14,7 @@ Die Informationen stammen an vielen Stellen aus englischsprachigen Primärquelle
 
 * [Kapitel 1: Grundlagen zu Android und Android Studio](grundlagen.md) 
 * [Kapitel 2: Activities und Intents](activities.md) 
+* [Kapitel 2b: Handler](handler.md) 
 <!-- * [Kapitel 3: Handling User Interface Events (--> work in progress)](handler.md)  -->
 <!-- * [Kapitel 4: Layouts (--> work in progress)](index.md)  -->
 * [Kapitel 3: JavaScript Object Notation (JSON)](json.md) 

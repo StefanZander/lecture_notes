@@ -15,7 +15,8 @@ An **Activity** represents a **single screen** in your app with which a user can
 An app usually consists of **multiple screens** that are **loosely bound** to each other. **Each screen is an activity**. 
 
 ### Main Acitivity
-Typically, one activity in an app is specified as the **"main" activity** (`MainActivity.java`), which is presented to the user when the app is launched. The main activity can then start other activities to perform different actions.
+Typically, one activity in an app is specified as the **"main" activity** (`MainActivity.java`), which is presented to the user when the app is launched. 
+The main activity can then start other activities to perform different actions.
 
 ### Runtime Logic
 Each time a *new* activity starts, the *previous* activity is **stopped**, but the system **preserves the activity in a stack** (the "back stack"). 
@@ -52,6 +53,7 @@ This **parent-child relationship** enables Android to add **navigation hints** s
 
     3. With the `<meta-data>` element, you provide additional arbitrary information about the activity in the form of key-value pairs. In this case the metadata attributes do the same thing as the `android:parentActivityName` attribute -- they define a relationship between two activities for upward navigation. These metadata attributes are required for older versions of Android, because the `android:parentActivityName` attribute is only available for API levels 16 and higher.
 
+
 ## Intents
 
 An activity is started or activated with an **intent**.  
@@ -69,6 +71,47 @@ An Intent can be *explicit* or *implicit*:
 * An **implicit intent** is one in which you do *not* have the name of the target component, but you have a **general action** to perform.
 
 In NZSE and the practical sessions, you create explicit intents. 
+
+
+## Activity Life Cycle
+
+For more information see <https://developer.android.com/guide/components/activities/activity-lifecycle#java>
+
+Activities transiton through different __states__ in their life cycle.
+
+ The `Activity` class provides a number of __callback methods__ that allow the activity to know that a state has changed: that the system is creating, stopping, or resuming an activity, or destroying the process in which the activity resides.
+
+ Within the __lifecycle callback methods__, you can declare how an activity _behaves_ when the user leaves and re-enters the activity. 
+ In other words, each callback allows you to perform specific work that's appropriate to a given change of state
+
+
+!!! note
+    __You don't need to implement all lifecycle methods__  
+    Depending on the complexity of your activity, you probably _don't_ need to implement all the lifecycle methods. However, it's important that you understand each one and implement those that ensure your app behaves the way users expect.
+
+* `:::js onCreate()`
+    blabla
+
+
+* `:::js onCreate()`
+    blabla
+
+
+* `:::js onCreate()`
+    blabla
+
+
+* `:::js onCreate()`
+    blabla
+
+
+* `:::js onCreate()`
+    blabla
+
+
+* `:::js onCreate()`
+    blabla
+
 
 
 

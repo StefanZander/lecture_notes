@@ -4,6 +4,7 @@ nav:
   - 'Index': 'index.md'
   - 'Grundlagen': 'grundlagen.md'
   - 'Activities & Intents': 'activities.md'
+  - 'Handler': 'handler.md'
   - 'JSON': 'json.md'
   - 'Data Storage': 'data_storage.md'
   - 'App Bar': 'actionbar.md'
