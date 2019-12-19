@@ -14,14 +14,14 @@ Die Informationen stammen an vielen Stellen aus englischsprachigen Primärquelle
 
 * [Kapitel 1: Grundlagen zu Android und Android Studio](grundlagen.md) 
 * [Kapitel 2: Activities und Intents](activities.md) 
-* [Kapitel 2b: Handler](handler.md) 
+* [Kapitel 3: Handler](handler.md) 
 <!-- * [Kapitel 3: Handling User Interface Events (--> work in progress)](handler.md)  -->
 <!-- * [Kapitel 4: Layouts (--> work in progress)](index.md)  -->
-* [Kapitel 3: JavaScript Object Notation (JSON)](json.md) 
-* [Kapitel 4: Daten-Speicher und Persistenz](data_storage.md) 
-* [Kapitel 5: App Bar und Toolbar](actionbar.md) 
-* [Kapitel 6: RecyclerView](recycler_view.md) 
-* [Kapitel 7: AsyncTask](asynctask.md) 
+* [Kapitel 4: JavaScript Object Notation (JSON)](json.md) 
+* [Kapitel 5: Daten-Speicher und Persistenz](data_storage.md) 
+* [Kapitel 6: App Bar und Toolbar](actionbar.md) 
+* [Kapitel 7: RecyclerView](recycler_view.md) 
+* [Kapitel 8: AsyncTask](asynctask.md) 
 
 
 ----

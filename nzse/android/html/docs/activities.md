@@ -90,27 +90,80 @@ Activities transiton through different __states__ in their life cycle.
     Depending on the complexity of your activity, you probably _don't_ need to implement all the lifecycle methods. However, it's important that you understand each one and implement those that ensure your app behaves the way users expect.
 
 * `:::js onCreate()`
-    blabla
+    * Called when the Activity is first created
+    * Contains the basic setup/startup logic for the application
+    * Use for actions that need to be performed only once in the lifetime of an Activity – e.g. bind data to list, views or adapters
+    * Receives the `savedInstanceState` parameter that contains the activity's previously saved state
+    * Perfoms the following actions
+        * call the super call to complete the creation process
+        * set the user interface layout for this activity
+        * recover the instance state
+        * inflation + initializing view widgets
+
+    ``` java
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        // call the super class onCreate to complete the creation of activity like
+        // the view hierarchy
+        super.onCreate(savedInstanceState);
+
+        // recovering the instance state
+        if (savedInstanceState != null) {
+            gameState = savedInstanceState.getString(GAME_STATE_KEY);
+        }
+
+        // set the user interface layout for this activity
+        // the layout file is defined in the project res/layout/main_activity.xml file
+        setContentView(R.layout.main_activity);
+
+        // initialize member TextView so we can manipulate it later
+        textView = (TextView) findViewById(R.id.text_view);
+    }
+    ```
 
 
-* `:::js onCreate()`
-    blabla
+
+* `:::js onStart()`
+    * Invoked when the system enters the `STARTED` state, previously before the activity enters the foreground
+    * `:::js onStart()` makes the activity visible to the user
+    * Use for the initialization of the code that maintains the UI
+    * Activity only remains very shortly in this state; when the callback finishes the activity transitions to the `RESUMED` state
 
 
-* `:::js onCreate()`
-    blabla
+* `:::js onResume()`
+    * Invoked when the activity comes to the foreground (it is visible and in the foreground)
+    * Activity remains in the `RESUMED` state and user can interakt with it
+    * Activity stays in this state until something happens that takes the focus away from the app/activity (e.g. a receiving phone call; the navigation to another activity; device screen turning off etc.)
+    * When an interruptive event occurs, the activity enters the `PAUSED` state, and the system invokes the `:::js onPause()` callback.
+    * If the activity returns to the `RESUMED` state from the `PAUSED` state, the system once again calls `:::js onResume()` method. For this reason, you should implement `:::js onResume()` to initialize components that you release during `:::js onPause()`, and perform any other initializations that must occur each time the activity enters the `RESUMED` state.
 
 
-* `:::js onCreate()`
-    blabla
+* `:::js onPause()`
+    * First action when the user leaves the activity
+    * Activity is no longer in the foreground
+    * Use `:::js onPause()` to adjust or pause operations that should not continue while the activity is in `PAUSED` state but resume afterwards
+    * Release system resources (e.g. sensor handlers such as GPS etc or resources that affect battery life) 
+
+        !!! warning
+            __Do not use `:::js onPause()` for Data Saving Operations__  
+            `:::js onPause()` execution is very brief, and does not necessarily afford enough time to perform save operations. For this reason, you should not use `:::js onPause()` to save application or user data, make network calls, or execute database transactions; such work may not complete before the method completes. Instead, you should perform heavy-load shutdown operations during  `:::js onStop()`.
+
+    * Completion of the onPause() method does not mean that the activity leaves the Paused state. Rather, the activity remains in this state until either the activity resumes or becomes completely invisible to the user. If the activity resumes, the system once again invokes the onResume() callback. 
 
 
-* `:::js onCreate()`
-    blabla
+* `:::js onStop()`
+    * When your activity is no longer visible to the user, it has entered the `STOPPED` state, and the system invokes the `:::js onStop()` callback.
+    * Called when the activity has finished running and is about to be terminated
+    * Release any resources that are not needed while the app is not visible to the user
+    * Using `:::js onStop()` instead of `:::js onPasue()` ensures that UI-related work continues
+    * Use for CPU-intensive shutdown operations – e.g., store data in a database
 
 
-* `:::js onCreate()`
-    blabla
+* `:::js onDestroy()`
+    * Called before the activity is destroyed
+    * 2 Reasons
+        1. the activity is finishing (due to the user completely dismissing the activity or due to finish() being called on the activity), or
+        2. the system is temporarily destroying the activity due to a configuration change (such as device rotation or multi-window mode) 
 
 
 
