@@ -28,8 +28,8 @@
 
     - Picture in Picture
     - Favoriten anlegen und verwalten
-    - Kategoriesuche 
-    - Usersuche
+    - Filterung der TopStreams nach min. _einer_ frei zu wählenden Eigenschaft (Sprache, Spiel, Kanal) ([--> Link](https://stream-server.h-da.io/reference/#twitchgettopstreams))
+    - Gamessuche ([--> Link](https://stream-server.h-da.io/reference/#twitchsearchgames)) <!-- see http://criticmarkup.com/users-guide.php -->
     - Umschalten zwischen themenverwandten Streams
     - Auswahl eines Streams
     - Pausieren eines Streams
