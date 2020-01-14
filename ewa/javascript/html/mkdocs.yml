@@ -1,10 +1,11 @@
-site_name: Android & Android Studio
+site_name: Introduction to JavaScript
 
 nav:
   - 'Index': 'index.md'
-  - 'Closures': 'closures.md'
+  - 'Language Concepts': 'introduction.md'
   - 'Functions': 'functions.md'
   - 'Objects': 'objects.md'
+  - 'Closures': 'closures.md'
 
 theme:
   name: 'material'

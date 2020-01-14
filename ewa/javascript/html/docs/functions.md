@@ -3,9 +3,9 @@
 !!! abstract
     **Summary**
 
-    - [x] Sie kennen die technischen Grundlagen der Android Action Bar
-    - [x] Sie können eine Action Bar in ihre Applikation integrieren
-    - [x] Sie verstehen wie sie Actions definieren und der Action Bar hinzufügen
+    - [x] Functions are first-class citizen, i.e., regular objects in JavaScript
+    - [x] Functions are used for many purposes
+    - [x] JS distinguishes between function declarations, function expressions, constructor functions and arrow functions
 
 
 !!! warning
@@ -167,5 +167,4 @@ In other words, this.firstName means the firstName property of this object.
 Most of the information in this lecture has been compiled from the following sources:
 
 * <https://www.w3schools.com/js/js_function_definition.asp>
-* <https://www.computerbase.de/forum/threads/warum-sind-closures-so-wichtig.1906523/>
-* <http://www.vogella.com/tutorials/AndroidActionBar/article.html>
+

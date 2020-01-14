@@ -140,4 +140,3 @@ Most of the information in this lecture has been compiled from the following sou
 
 * <https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-closure-b2f0d2152b36>
 * <https://www.computerbase.de/forum/threads/warum-sind-closures-so-wichtig.1906523/>
-* <http://www.vogella.com/tutorials/AndroidActionBar/article.html>

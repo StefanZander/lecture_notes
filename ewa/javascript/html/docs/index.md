@@ -18,10 +18,10 @@ The information are collected from various sources and continuously refined, mea
 ## Topics
 
 * [General Language Concepts](introduction.md) 
-* [Primitive Types](index.md) 
+<!-- * [Primitive Types](index.md)  -->
 * [Reference Types and Objects](objects.md) 
 * [Functions](functions.md) 
-* [JavaScript and the DOM](index.md) 
+<!-- * [JavaScript and the DOM](index.md)  -->
 * [Closures](closures.md) 
 
 

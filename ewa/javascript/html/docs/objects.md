@@ -64,5 +64,4 @@ The `:::js hasOwnProperty()` method returns `true` only if the given property ex
 Most of the information in this lecture has been compiled from the following sources:
 
 * <https://www.w3schools.com/js/js_function_definition.asp>
-* <https://www.computerbase.de/forum/threads/warum-sind-closures-so-wichtig.1906523/>
-* <http://www.vogella.com/tutorials/AndroidActionBar/article.html>
+
