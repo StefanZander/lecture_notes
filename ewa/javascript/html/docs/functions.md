@@ -125,6 +125,28 @@ The function above is actually an anonymous self-invoking function (function wit
 </html>
 ```
 
+#### Alternative Notations
+
+Three more common wordings (see [](https://stackoverflow.com/a/23925102) for more information):
+
+``` javascript
+// Crockford's preference - parens on the inside
+(function() {
+  console.log('Welcome to the Internet. Please follow me.');
+}());
+
+//The OPs example, parentheses on the outside
+(function() {
+  console.log('Welcome to the Internet. Please follow me.');
+})();
+
+//Using the exclamation mark operator
+//https://stackoverflow.com/a/5654929/1175496
+!function() {
+  console.log('Welcome to the Internet. Please follow me.');
+}();
+```
+
 
 ### Arrow Functions
 
@@ -156,9 +178,9 @@ const x = (x, y) => { return x * y };
 
 In a function definition, this refers to the "owner" of the function.
 
-In the example above, this is the person object that "owns" the fullName function.
+In the example above, `:::js this` is the person object that "owns" the `:::js fullName` function.
 
-In other words, this.firstName means the firstName property of this object.
+In other words, `:::js this.firstName` means the `:::js firstName` property of this object.
 
 
 
