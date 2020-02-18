@@ -1,7 +1,7 @@
 # The RecyclerView
 
 
-Last Updated: 2019-06-02
+Last Updated: 2020-01-21
 
 
 !!! abstract 
@@ -32,7 +32,7 @@ You can use one of the **standard layout managers** (such as [LinearLayoutManage
 
 The views in the list are represented by **view holder objects**. 
 These objects are **instances** of a self-defined class that extends `:::js RecyclerView.ViewHolder`[(--> link)](https://developer.android.com/reference/androidx/recyclerview/widget/RecyclerView.ViewHolder.html). 
-Each view holder is in charge of **displaying a single item** with a view. For example, if your list shows music collection, each view holder might represent a single album. The RecyclerView creates only as many view holders as are needed to display the on-screen portion of the dynamic content, plus a few extra. As the user scrolls through the list, the RecyclerView takes the off-screen views and **rebinds them to the data** which is scrolling onto the screen.
+Each view holder is in charge of **displaying a single item** with a view. For example, if your list shows music collections, each view holder might represent a single album. The RecyclerView creates only as many view holders as are needed to display the on-screen portion of the dynamic content, plus a few extra. As the user scrolls through the list, the RecyclerView takes the off-screen views and **rebinds them to the data** which is scrolling onto the screen.
 
 The view holder objects are managed by an **adapter**, which is created by extending `:::js RecyclerView.Adapter`[(--> link)](https://developer.android.com/reference/androidx/recyclerview/widget/RecyclerView.Adapter.html). 
 The adapter 
@@ -223,8 +223,8 @@ The adapter's role is to **convert an object at a position into a list row item*
 The following things need to be implemented by the `:::js RecyclerView.Adapter`:
 
 1. A **ViewHolder** that extends the `ViewHolder` class of the `RecyclerView`
-2. **Data structure** that holds the items to be displayed (representing the data model)
-3. A **constructor** to populate the data structure containing the items to be displayed
+2. A **container** that holds the items to be displayed (representing the data model)
+3. A **constructor** to populate the container holding the items to be displayed
 4. Individual implementation (=*overriding*) of the three `:::js RecycleView.Adapter` **methods** 
     1. `:::js public ViewHolder onCreateViewHolder(ViewGroup viewGroup, int viewType)`
     2. `:::js public void onBindViewHolder(ViewHolder viewHolder, int position)`
@@ -285,7 +285,7 @@ The following code demonstrates the implementation of the three primary `:::js R
 public class RatingsAdapter extends 
     RecyclerView.Adapter<RatingsAdapter.ViewHolder> {
 
-    // The adapter holds a reference to the data source
+    // A collection for the storage of items to be displayed
     private ArrayList<Rating> mRatings = new ArrayList<Rating>();
 
     // The ViewHolder implementation of the adapter
@@ -296,6 +296,7 @@ public class RatingsAdapter extends
         public TextView lblScore;
         public ImageButton btnRemove;
 
+        // Inflation of view elements contained in the item's layout
         // ViewHolder holds event handlers for caching reasons
         public ViewHolder(final View itemView) {
             super(itemView);
@@ -307,10 +308,12 @@ public class RatingsAdapter extends
         }
     }
 
+    // The adapter holds a reference to the data source
     public RatingsAdapter(ArrayList<Rating> ratings) {
         this.mRatings = ratings;
     }
 
+    // Creates the ViewHolder instance and inflates the item layout
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int viewType) {
@@ -321,6 +324,7 @@ public class RatingsAdapter extends
         return viewHolder;
     }
 
+    // Binds the data model to the view items
     @Override
     public void onBindViewHolder(@NonNull ViewHolder viewHolder, int position) {
         Rating rating = mRatings.get(position);
@@ -342,6 +346,18 @@ public class RatingsAdapter extends
 ```
 
 ### Binding the Adapter to the RecyclerView
+
+The binding is implemented in the activity containing the `:::js RecycleView`.
+
+It involves **5 steps**:
+
+1. Initializing (and populating) the data source (=data model)
+2. Inflating the RecyclerView's layout
+3. Instantiating the adapter instance and passing the data source
+4. Linking the adapter to the `:::js RecycleView` instance
+5. Setting a layout for the `:::js RecycleView` instance
+
+The following example demonstrates each step:
 
 ```java
 public class UserListActivity extends AppCompatActivity {
@@ -371,9 +387,11 @@ public class UserListActivity extends AppCompatActivity {
 
 ### Adding Data to the Data Source
 
-Unlike `ListView`, there is *no way* to add or remove items _directly_ through the RecyclerView adapter. 
+!!! warning
+    __Don't add or remove data via the adapter__  
+    Unlike `ListView`, there is *no* way to add or remove items _directly_ through the RecyclerView adapter. 
 
-In order to add or remove data from the data source, you need to **make changes to the data source directly** and **notify** the adapter of any changes. 
+In order to add or remove data, you need to **make changes to the data source directly** and **notify** the adapter of any changes. 
 <!-- Also, whenever adding or removing elements, always make changes to the existing data source. -->
 
 The adapter therefore provides a set of **notification methods** for changes related to the data source:
@@ -403,7 +421,7 @@ mRatings.add(new Rating());
 adapter.notifyItemInserted(mRatings.size()-1);
 ```
 
-Every time we want to add or remove items from the RecyclerView, we will need to explicitly inform the adapter of the event. 
+Every time we want to add or remove items from the RecyclerView, we will need to **explicitly inform the adapter** of the event. 
 Unlike the ListView adapter, a RecyclerView adapter should *not* rely on `:::js notifyDataSetChanged()` since the more granular actions should be used.
 The [API Documentation](https://developer.android.com/reference/android/support/v7/widget/RecyclerView.Adapter.html) provides more details.
 
@@ -459,17 +477,18 @@ public ViewHolder(final View itemView) {
 
 Since the adapter holds a reference to the data source, items can be removed (or added) directly via this reference. 
 !!! warning
-    **Note**: Although the code is defined in the adapter's ViewHolder implementation, please do _not_ forget to **fire the notification event** for the adapter.
+    **Don't Forget to Fire the Notification Event!**  
+    Although the code is defined in the adapter's ViewHolder implementation, please do _not_ forget to **fire the notification event** for the adapter.
 
 
 ### Selecting Elements from the RecyclerView
 
 !!! note
-    **Note**:  This is a very simple form of implementing an onClickListener for a RecyclerView.
+    **Note**:  This is a very simple form of implementing an `:::js onClickListener` for a RecyclerView.
 
     At [Link #1](https://developer.android.com/reference/androidx/recyclerview/selection/package-summary.html) and [Link #2](https://guides.codepath.com/android/using-the-recyclerview#attaching-click-handlers-to-items) you will find more advanced implementations of selection listener that provide more extensive sets of interaction features such as movement gestures or combining app bar actions with RecyclerView actions.
 
-    **However, the presented implementation is sufficient for this course. **
+    **However, the subsequently presented implementation is sufficient for this course. **
 
 ```java
 public ViewHolder(final View itemView) {
