@@ -12,7 +12,8 @@ The following pages contain information about
 * instructions for successfully completing the practical part.
 
 !!! note
-    **Please note:** The lecture materials are written in both English and German language, i.e., for some parts, the language changes from English to German in vice versa. This is due to the fact that the course's contents are continuously extendended and revised and primary content is directly integrated without translation to make it immediately available. 
+    **Please Note: Language and Revision Policy**  
+    The lecture materials are written in both English and German language, i.e., for some parts, the language changes from English to German in vice versa. This is due to the fact that the course's contents are continuously extended and revised. Ocassionally, primary content is directly integrated without translation to make it immediately available. 
 
 <!-- They serve as a guideline in preparing the materials needed for successfully passing the course. -->
 
@@ -33,13 +34,21 @@ The information on this site is separated into
 
 <!-- Theoretical parts introducing concepts, languages, and technologies -->
 
-* [Session #1: Introduction to Knowledge Management – what is knowledge?](index.md) 
+* [Session #1: Introduction to Knowledge Management – what is knowledge?](introduction.md) 
 * [Session #2: Foundations of Knowledge Organisation Systems](index.md) 
 * [Session #2: Knowledge Representation Frameworks](index.md) 
 * [Session #3: Technologies and Languages for Lightweight Semantic Knowledge Graphs](index.md) 
-* [Session #4: Semantic MediaWiki](index.md) 
+* [Session #4: Semantic MediaWiki](smw.md) 
 * [Session #5: Extensions for Knowledge Graph Creation](index.md) 
 
+
+## Themenübersicht
+* [Kapitel #1: Einführung in das Wissensmanagement](introduction.md) 
+* [Kapitel #2: Technologische Grundlagen](index.md) 
+* [Kapitel #3: Semantische Wissensrepräsentation](index.md) 
+* [Session #4: Semantic MediaWiki](smw.md) 
+* [Session #5: Semantic MediaWiki Extensions](index.md) 
+* [Session #6: Knowledge Graph Engineering](index.md) 
 
 
 ## Semester Project
@@ -56,13 +65,10 @@ Although the tasks are listed and numbered in a sequential order, most of them s
 * [WP #6: Defining a User Interaction Concept](task1.md)
 * [WP #7: User Interaction Concept](task1.md)
 * [WP #8: Implementation of Use Cases](task1.md)
+* [WP #9: Preparation of Final Presentation](task1.md)
 
 WP = Work Package
 
-## Tipps
-
-* [What makes a good Scientifc Paper](good_paper.md) 
-* [Common Mistakes made in Scientific Writing and Presentations](common_mistakes.md)
 
 
 ----

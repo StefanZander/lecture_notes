@@ -21,6 +21,9 @@
     --example_border_color: #a9a8a8;        /* #686868 */
     --example_background_color: #f9fafa;    /* #d8d7d5 */
 
+    --tip_border_color: #05b69f;        /* #686868 */
+    --tip_background_color: #b6fff5;    /* #d8d7d5 */
+
     --text_shadow_color: white;
 
     --link_text_color: var(--primary-color);

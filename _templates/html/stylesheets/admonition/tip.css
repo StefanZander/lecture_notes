@@ -1,20 +1,20 @@
-.md-typeset .admonition.note {
-    border-left: solid 0.25rem var(--note_border_color);
-    background-color: var(--note_background_color);
+.md-typeset .admonition.tip {
+    border-left: solid 0.25rem var(--tip_border_color);
+    background-color: var(--tip_background_color);
 }
 
 
-.admonition.note>* {
+.admonition.tip>* {
     margin-left: 1.5rem;
 }
 
-.admonition.note .admonition-title {
+.admonition.tip .admonition-title {
     display: none;
 }
 
-.admonition.note::before {
+.admonition.tip::before {
     font-family: 'Material Icons';
-    content: '\e85d'; /* e91f e88f */
+    content: '\e150'; /* e91f e88f */
     font-size: 1.2rem;
     /* vertical-align: bottom; */
     padding-right: .3rem;

@@ -34,6 +34,32 @@
 \label{sub:was_ist_semantic_mediawiki}
 
 
+\begin{frame}{Leitfragen}
+\begin{itemize}
+	\item Was ist Wissen?
+	\item Welche Rolle spielt 'Wissen' im Unternehmen?
+	\item Warum brauchen Organisationen so etwas wie Wissensmanagement?
+	\item Welche Wissensmanagementansätze gibt es?
+	\item Warum wird die Wichtigkeit von Wissensmanagement mit fortschreitender Digitalisierung weiter zunehmen
+	\item Welche Rolle spielt der Mensch im Wissensmanagement?
+	\item Welche Rolle spielen IKT im Wissensmanagement?
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Das KRF in Semantic MediaWiki}
+
+Die folgenden Zusammenhänge existieren zwischen den einzelnen Elementen:
+\begin{itemize}
+	\item Datenmodell
+	\item Datenstruktur
+	\item KRF
+	\item Ontologie
+	\item Logische Theorie 
+\end{itemize}
+
+\end{frame}
+
+
 
 \begin{frame}{Was ist ein Wiki?}
 	
@@ -70,12 +96,71 @@
 	
 \end{frame}
 
+
+
+\begin{frame}{Semantic MediaWiki ist ein offenes, kollaboratives Wissensmanagementsystem\footnote{Quelle: MediaWiki – Advantages of MediaWiki as a Content Mangement System (Tutorial 2);  \url{https://youtu.be/nokM-3ZFwGs}}}
+
+\begin{footnotesize}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+
+Vorteile 
+\begin{itemize}
+	\item Jeder angemeldete Nutzer kann Content erstellen (anyone can edit)
+	\item Einfach zu erlernen und zu nutzen
+	\item Unmittelbare Contenterstellung und -nutzung (instant publish)
+	\item Kollaborative Ontologie- und Inhaltserstellung (collaboration)
+	\item Änderungsverfolgung 
+	\item Unterstützt den Aufbau von Communities (community building)
+	\item Beinhaltet eine semantische Wissensbasis (knowledge base)
+	\item Agile Entwicklung (agile development)
+\end{itemize}
+\end{column}
+\begin{column}{0.5\textwidth}
+Nachteile
+\begin{itemize}
+	\item Anyone can edit
+	\item Open to span and vandalism
+	\item Erfordert eine permanente Verbindung zum Server
+	\item Information can become disorganized
+	\item Editing is not as simple as Word
+	\item Kein Berechtigungsmanagement ``out-of-the-box''
+	\item Semantic Drift 
+	\item Nur bedingt geeignet für Verschlusssachen
+	\item Keine Trennung von Inhalt und Sicherheitszonen
+\end{itemize}
+\end{column}
+\end{columns}
+\end{footnotesize}
+\end{frame}
+
+
+
+\begin{frame}{Eigenschaften von Semantic MediaWiki-Systemen\footnote{Quelle: ...}}
+
+Semantic MediaWiki ist ein \alert{offenes}, \alert{kollaboratives} Knowledge Management System \par
+\begin{itemize}
+	\item Jeder angemeldete Nutzer kann Content erstellen (anyone can edit)
+	\item Einfach zu erlernen und zu nutzen (easy to learn and use)
+	\item Unmittelbare Contenterstellung und -nutzung (instant publish)
+	\item Kollaborative Onologie- und Inhaltserstellung (collaboration)
+	\item Änderungsverfolgung ($\rightarrow$Revision- and Versionmanagement) 
+	\item Unterstütz den Aufbau von Communities (community building)
+	\item Beinhaltet eine semantische Wissensbasis (knowledge base)
+	\item Agile Entwicklung (agile development)
+\end{itemize}
+
+\end{frame}
+
+
+
 \sectionSlide{Knowledge Representation Framework}
 \section{Datenstrukturelemente} % (fold)
 \label{sec:datenstrukturelemente}
 
 \begin{frame}{Modellierung von Wissen: Grundbegriffe}
 
+\footnotesize
 \defbox{Definition: Ein \textbf{Wissensrepräsentationsrahmenwerk} (engl.\ Knowledge Representation Framework – KRF) bezeichnet die endliche abzählbare Menge an Primitiven (...) einer Beschreibungssprache sowie deren Beziehungen zueinander, mit der ein Gegenstandsbereich\footnote{oder ein Ausschnitt davon} (engl.\ Universe of Discourse) in einem technischen System abgebildet werden kann.\footnote{Quelle: Eigene Definition}}	
 
 \bigskip
@@ -114,10 +199,11 @@ Die zugrunde liegende Logik bestimmt die Ausdrucksmächtigkeit einer Beschreibun
 %--- Next Frame ---%
 
 
-\begin{frame}[t]{Modellierung eines Informationsbedürfnisses / eines realen Gegenstandbereichs}
-	Überführen Sie den nachfolgend dargestellten Sachverhalt in ein minimales \redalert{Datenmodell} einer Sprache Ihrer Wahl\footnote{Für diese Aufgabe ist es i.O., wenn Sie sich auf die wesentlichen Aspekte konzentrieren und diese im Datenmodell darstellen.}: \bigskip
+
+\begin{frame}[t]{Modellierung eines realen Gegenstandbereichs}
+	Aufgabe: Überführen Sie den nachfolgend dargestellten Sachverhalt in ein minimales \redalert{Datenmodell} einer Sprache Ihrer Wahl\footnote{Für diese Aufgabe ist es ausreichend, wenn Sie sich auf die wesentlichen Aspekte konzentrieren und diese im Datenmodell darstellen.}: \bigskip
 	
-	\only<6->{In seiner konstituierenden Sitzung vom 25.06.2019 beschloss der Fachbereichsrat in Anlehnung an Berichtspunkt Nr. 5 des Protokolls vom 17.05.2019 \alert<6>{mit 8 ja-Stimmen und 0 nein-Stimmen}: }
+	\only<6->{In seiner konstituierenden Sitzung vom 25.06.2019 beschloss der Fachbereichsrat in Anlehnung an Berichtspunkt Nr. 5 des Protokolls vom 17.05.2019 \alert<6>{mit 8 'Ja'-Stimmen und 0 'Nein'-Stimmen}: }
 	
 	\only<5>{In seiner konstituierenden Sitzung vom 25.06.2019 beschloss der Fachbereichsrat in Anlehnung \alert<5>{an Berichtspunkt Nr. 5} des Protokolls vom 17.05.2019: }
 	
@@ -143,7 +229,7 @@ Die zugrunde liegende Logik bestimmt die Ausdrucksmächtigkeit einer Beschreibun
 	Die Seite ist das wesentliche Datenstrukturelement eines Wikis. 
 	\bigskip
 	
-	Mit Ausnahme von Datentypen und Subobjects werden alle Datenmodellelemente im Rahmen einer Seite definiert.
+	Mit Ausnahme von \alert{Datentypen} und \alert{Subobjects} werden alle Datenmodellelemente im Rahmen einer Seite definiert.
 	
 	\defbox{Definition: Eine \textbf{Seite} ist Container für die Spezifikation eines Datenmodellelements (bspw.\ einer Kategorie, eines Attributs etc).\footnote{Quelle: Eigene Definition, angelehnt an \url{Mediawiki-pages}} }
 	
