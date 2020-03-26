@@ -1,11 +1,11 @@
-site_name: Informationen zur LVA "Wissenschaftliches Arbeiten in der Informatik 1/2"
+site_name: Praxisphase und Abschlussarbeit
 
 nav:
   - 'Startseite': 'index.md'
-  - 'Vorbemerkungen': 'vorbemerkung.md'
   - 'Praxisphase': 'praxisphase.md'
   - 'Exposé': 'expose.md'
-  - 'Bachelorarbeit': './bachelorarbeit/bachelorarbeit.md'
+  - 'Bachelorarbeit': './bachelorarbeit/q_and_a.md'
+  - 'Tipps': 'lernen_lernen.md'
 
 
 theme:

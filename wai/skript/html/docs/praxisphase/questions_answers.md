@@ -42,6 +42,18 @@ Die Informationen auf dieser Seite werden kontinuierlich erweitert und gepflegt.
      Nein. Den Arbeitsvertrag schließen Sie individuell mit der Praktikumsstelle.
 
 
+??? question "Kann eine Werkstudententätigkeit _vor_ Studienbeginn oder _während_ des Studiums auf die Praxisphase angerechnet werden?"
+     Dies ist leider generell nicht möglich:
+
+     > "§ 11 Anrechnung von praktischen Tätigkeiten  
+     >
+     > Berufspraktische Tätigkeiten vor Studienbeginn können nicht auf die Praxisphase angerechnet werden. " 
+     >
+     > Quelle: <https://fbi.h-da.de/fileadmin/Group_Dekanat/Dokumente/Studium/Group_Bachelor-Koordinator/BSc/praxisordnung_informatik_bachelor.pdf>
+
+     Dies gilt auch für berufspraktische Tätigkeiten, die _während_ des Studiums stattgefunden haben, da hier keine durchgehende Betreuung durch eine/n Hochschulprofessor*in gewährleistet werden kann. Dies ist jedoch eine notwendige Voraussetzung die nur während der Praxisphase erfüllt werden kann.  
+     Quelle:
+
 
 
 ### Anmeldung der Praxisphase 
@@ -77,7 +89,7 @@ Die Informationen auf dieser Seite werden kontinuierlich erweitert und gepflegt.
 ??? question "Kann ich den Praxisbericht für die Bachelorarbeit verwenden?"
      IdR nein!
 
-     Der **Praxisbericht** ist eine verschriftlichte Darstellung ihrer Tätigkeiten sowie ein Resümee ihrer persönlichen Erfahrungen und Ihrem Wirken innerhalb der Praktikumsstelle.
+     Der **Praxisbericht** ist eine verschriftlichte Darstellung ihrer Tätigkeiten sowie ein Resümee ihrer persönlichen Erfahrungen und Ihrem Wirken innerhalb der Praktikumsstelle. Er beinhaltet idR keine wissenschaftliche Auseinandersetzung mit einem Themengebiet sondern beschreibt in erster Linie persönliche Eindrücke und Erfahrungen sowie eine Reflexion selbiger. 
 
      Die **Bachelorarbeit** dagegen ist eine wissenschaftliche Arbeit, deren Schwerpunktsetzung, Struktur und Ausarbeitung nicht oder nur zu sehr geringen Anteilen mit dem Praxisbericht vereinbar ist. Eine wissenschaftliche Arbeit ist _kein_(!) Bericht. Sie dürfen allerdings _geeignete(!)_ Texte aus dem Praxisbericht in der BA verwenden, müssen diese aber entsprechend durch Angabe der Quelle kennzeichnen.
 

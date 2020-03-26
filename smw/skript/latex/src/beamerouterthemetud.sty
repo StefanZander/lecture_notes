@@ -139,7 +139,7 @@
     \ifcase\pdfoutput
     \else
       \def\logo@front{TU_Logo_SW}% SZA: was TU_Logo_SW
-      \def\logo@default{TU_Logo_SW}% SZA: was TU_Logo_SW --> removed to aviod render error
+      \def\logo@default{TU_Logo_SW}% SZA: was TU_Logo_SW --> removed to avoid render error
     \fi
   \fi
 \fi
@@ -324,7 +324,7 @@
 
 \renewcommand\maketitle{%
     %\beamertemplateshadingbackground{darkblue}{darkblue}
-    \setbeamercolor{normal text}{bg=HKS41K100}%
+    \setbeamercolor{normal text}{bg=HKS41K100} % SZA: sets the bg color of the title slide
     % Kopf-/Fusszeile fuer Titel
     \setbeamertemplate{headline}[tud titlepage]%
     \setbeamertemplate{footline}[tud titlepage]%
