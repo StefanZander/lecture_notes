@@ -13,7 +13,7 @@ The following pages contain information about
 
 !!! note
     **Please Note: Language and Revision Policy**  
-    The lecture materials are written in both English and German language, i.e., for some parts, the language changes from English to German in vice versa. This is due to the fact that the course's contents are continuously extended and revised. Ocassionally, primary content is directly integrated without translation to make it immediately available. 
+    The lecture materials are written in both English and German language, i.e., for some parts, the language changes from English to German in vice versa. This is due to the fact that the course's contents are continuously extended and new content is added immediately. It will be revised at later stages.
 
 <!-- They serve as a guideline in preparing the materials needed for successfully passing the course. -->
 
