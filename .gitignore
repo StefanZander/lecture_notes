@@ -19,3 +19,9 @@ site/
 .snm
 *.fls
 *.fdb_latexmk
+*.nav
+*.snm
+*.fdb_latexmk
+*.nav
+*.vrb
+*.fdb_latexmk
