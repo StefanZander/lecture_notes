@@ -3,6 +3,11 @@
 
 \usepackage{lmodern}
 \usepackage{anyfontsize}
+% ------ Added by SZA
+\usepackage{fancyvrb} % Added by SZA
+\usepackage{listings}
+\usepackage{xcolor}
+%\usepackage{enumitem} % remove bullet points in front of lists
 
 \input{macros-lecture}
 
@@ -240,6 +245,217 @@ Die zugrunde liegende Logik bestimmt die Ausdrucksmächtigkeit einer Beschreibun
 	
 \end{frame}
 %--- Next Frame ---%
+
+
+
+\subsection{Categories}
+
+\begin{frame}[fragile]{Categories}
+
+Categories are the preferred way to organise pages in MediaWiki
+
+\defbox{\textbf{Definition}: \redalert{Categories} are pages defined in the \texttt{Category:} namespace and allow for organizing mediawiki pages in predefined categories.\footnote{Quelle: Eigene Definition angelehnt an \url{https://www.mediawiki.org/wiki/Help:Categories}}
+}
+
+\bigskip
+\alert{Links to Category pages mean:}  \redalert{``page is in category''} \\ 
+ {\footnotesize \quad Example: \quad \texttt{[[Category:City]]} on page of \texttt{Cologne} }
+
+\bigskip
+\alert{Category Links on Category pages mean:} \redalert{``page is subcategory of'' } \\
+{\footnotesize \quad Example: \quad \texttt{[[Category:Settlement]]} on \texttt{Category:City}}
+
+\bigskip
+Category hierarchy can be any graph (multi-inheritage, cycles, ...)
+
+%\begin{itemize}
+%	\item  Categories can be described by pages	
+%	\item  Links to Category pages mean: \redalert{``page is in category''} \\ Example: \texttt{[[Category:City]]} on page of \texttt{Cologne}
+%
+%	\item  Category Links on Category pages mean: \redalert{``page is subcategory of'' } \\
+%Example: \texttt{[[Category:Settlement]]} on \texttt{Category:City}
+%	\item  Category hierarchy can be any graph (multi-inheritage, cycles, ...)
+%\end{itemize}
+
+
+\end{frame}
+
+
+\begin{frame}[fragile]{Categories: Tipps}
+\alert{Linking to a Category}
+
+To create a link to a category, use a leading colon before the category name\footnote{without a leading colon, the current page would be added to the category}:
+\begin{lstlisting}
+[[:Category:Help]] --> Link displays as "Category:Help"
+\end{lstlisting}
+
+To change the link text, write the text inside the link tag after a pipe:
+\begin{lstlisting}
+[[:Category:Help|Help category]] --> Link displays as "Help category"
+\end{lstlisting}
+
+\end{frame}
+
+
+
+
+\sectionSlide{Concepts}
+\subsection{Concepts} % (fold)
+
+
+\begin{frame}[fragile]{Concepts: Dynamic Categories}
+
+%Concepts are SMW queries stored on dedicated pages in the concept: namespace
+%
+%Concepts can be viewed as dynamic categories, i.e., a collection of pages that are computed by SMW from the description given in a query
+	\defbox{\textbf{Definition}: \redalert{Concepts} allow to dynamically compute page memberships based on the evaluation of \redalert{query conditions} defined on the concept page.\footnote{Quelle: Eigene Definition angelehnt an \url{https://www.semantic-mediawiki.org/wiki/Help:Concepts}}	}
+
+
+\bigskip
+Problem
+\begin{itemize}
+	\item Sometimes, it is useful to determine memberships to categories based on the occurence of some property values.
+%	\item Manually reviewing whether membership conditions are still satisfied is cumbersome and error-prone
+	\item Reviewing whether membership conditions are still satisfied and manually altering categories is cumbersome and error-prone
+\end{itemize}
+
+\bigskip
+Use Case
+\begin{itemize}
+	\item Automatically annotate all currently running projects with a dedicated category based on the evaluation of start and end date
+%\item Instead of manually annotating all currently running projects with a specific category (that certainly will be invalid for some projects after a certain amount of time), we can define a concept \texttt{Running\_Projects} containing an \#ask query which asks for pages that are in the project category and whose end date lies in the future.
+\end{itemize}
+
+\bigskip
+Solution 
+\begin{itemize}
+	\item \alert{Concepts} are categories whose memberships are dyamically computed by SMW
+\end{itemize}
+
+%	A concept is a SMW-page in the \texttt{concept:} namespace that serve as a category by dynamically linking pages to it, iff such pages satisfy the constraints defined as \alert{query} on the concept page. The constraints are formulated in form of an \alert{\#ask query}. 
+	
+%\bigskip All results of that \#ask query automatically become members of the category represented by the concept
+
+%\bigskip
+%Use Case: \par \footnotesize
+%Instead of manually annotating all currently running projects with a specific category (that certainly will be invalid for some projects after a certain amount of time), we can define a concept \texttt{Running\_Projects} containing an \#ask query which asks for pages that are in the project category and whose end date lies in the future.
+
+	\end{frame}
+%--- Next Frame ---%
+
+
+
+\begin{frame}[fragile]{Concepts: Meaning and Usage}
+
+\alert{Concepts}
+\begin{itemize}
+	\item[] ... are pages defined in the \texttt{Concept:} namespace
+	\item[] ... serve as categories with individually evaluated memberships
+	\item[] ... dynamically link pages to categories based on formulated query conditions
+	\item[] ... conditions are specified in the form of an \alert{\#ask query}
+	\item[] ... results of the \#ask query automatically become members of the concept
+	\item[] ... can be browsed to view the contents of some concept
+	\item[] ... can be used in semantic queries just like categories
+	\item[] ... are very useful in \alert{Page Forms} for defining autocompletion values 
+\end{itemize}
+
+\bigskip
+\alert{Additional Remarks}
+\begin{itemize}
+	\item[] Concept pages can have additional content\footnote{Usually, this is wikitext} – but this text does not have any effect on the definition of the concept.
+	\item[] The \alert{\texttt{\#concept} parser function} can only be used on pages in the \texttt{Concept:} namespace
+\end{itemize}
+
+
+
+%Example: \par \footnotesize
+%Instead of manually annotating all currently running projects with a specific category (that certainly will be invalid for some projects after a certain amount of time), we can define a concept \texttt{Running\_Projects} containing an \#ask query which asks for pages that are in the project category and whose end date lies in the future.
+
+%\examplebox{Example: 
+%Instead of annotating all currently running projects with a specific category (that certainly will be invalid for some projects after a certain amount of time), we can define a \redalert{dynamic category} in form of a concept}
+
+
+\end{frame}
+%--- Next Frame ---%
+
+
+
+
+
+\begin{frame}[fragile]{Concepts: Syntax and Creation}
+
+%\examplebox{Example:
+%The following concept called ``Concept:Semantic MediaWiki Cons 2012'' describes Semantic MediaWiki Cons in 2012\footnote{Example is taken from \url{https://www.semantic-mediawiki.org/wiki/Help:Concepts}}
+%}
+
+\alert{Example} \\
+The following concept called ``Concept:Semantic MediaWiki Cons 2012'' describes Semantic MediaWiki conferences held in 2012\footnote{Example is taken from \url{https://www.semantic-mediawiki.org/wiki/Help:Concepts}}:
+
+
+%Syntax:
+\begin{lstlisting}
+{{#concept:
+ [[Category:Event]]
+ [[Has planned start::> Jan 1 2012]]
+ [[Has planned finish::< Dec 31 2012]] 
+ |Semantic MediaWiki Cons in the year 2012 that have been announced on this wiki.
+}}
+\end{lstlisting}
+
+
+
+\alert{Creating Concepts}
+%\begin{itemize}
+%	\item[] The parser function \texttt{\#concept} defines a concept 
+%	\begin{itemize}
+%		\item[] The first parameter defines the query conditions
+%		\item[] The second parameter is optional and describes the concept
+%	\end{itemize}
+%\end{itemize}
+
+\begin{enumerate}
+	\item Create a new page in the \texttt{Concept:} namespace
+	\item Provide a suitable name for the concept (cf.\ naming categories)
+	\item Use the \texttt{\#concept} parser function to define the query conditions
+	\item Provide a readable description for the concept as a second optional parameter
+	\item Add additional information when necessary
+\end{enumerate}
+
+\end{frame}
+%--- Next Frame ---%
+
+
+
+\begin{frame}[fragile]{Concepts: Usage}
+
+Concept pages 
+\begin{itemize}
+	\item[] ... can be \alert{browsed} to view the contents of some concept, similar to category pages
+ 	\item[] ... can be included in \alert{semantic queries} like categories
+\end{itemize}
+
+\bigskip
+\alert{Syntax}
+\begin{lstlisting}
+{{#ask:
+ [[Concept:Semantic MediaWiki Cons 2012]]
+ |?Has location=Location
+ |format=table
+ |headers=plain
+ |mainlabel=Event
+}}
+\end{lstlisting}
+
+\alert{Result}
+\begin{lstlisting}
+Event                      | Location
+-----------------------------------------------
+SMWCon Fall 2012	Cologne  | Germany
+SMWCon Spring 2012         | Carlsbad, CA, USA
+\end{lstlisting}
+
+
+\end{frame}
 
 
 
