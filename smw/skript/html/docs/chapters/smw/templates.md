@@ -188,8 +188,8 @@ Templates can be used in any place in a page.
 
 
 !!! Note
-    **Note: Allways explicitly specifiy transcluding content**  
+    **Allways explicitly specifiy transcluding content**  
     It is recommended to explicitly markup the content in a template that is to be transcluded and separate it from supplemental or instructional content that describes the usage of the template.  
-    MediaWiki provides distinct commands (`<include_only/>`, `<no_include/>`) to control the transclusion of template content and separate it from e.g. instructional content.
+    MediaWiki provides distinct commands (`<include_only/>`, `<no_include/>`) to control the transclusion of template content and separate it from e.g. instructional content on how to use the template.
 
 
