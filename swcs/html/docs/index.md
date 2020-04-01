@@ -29,6 +29,7 @@ The information on this site is separated into
 
 ## Milestones
 
+* [Milestone #0: Introductory Material and Science Spirit](milestone0.md) 
 * [Milestone #1: Group and Topic Finding](milestone1.md) 
 * [Milestone #2: Factsheet and Abstract](milestone2.md) 
 * [Milestone #3: Submission of Paper Draft](milestone3.md) 
