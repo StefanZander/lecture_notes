@@ -1,5 +1,26 @@
 # Course Schedule
 
+### Syllabus
+
+week 1: Read introductory material + start forming groups
+week 2: Find topics + start reading topic-related material (MS1)
+week 3: Become familiar with the topic and the state of the art + start preparing Factsheet & Abstract
+week 4: Finalize Factsheet & Abstract and submit (MS2)
+week 5: Research
+week 6: Research
+week 7: Research 
+week 8: Research
+week 9: Upload review version of paper + enter paper bids (MS3)
+week 10: Review week (MS4)
+week 11: Integrate feedback + paper revision + start preparing the final presentations
+week 12: Final presentations (MS5)
+week 13: Paper revision
+week 14: Finalization and submission of research paper (MS6)
+
+
+
+
+
 ### Scientific Writing for Computer Science
 
 | Date   | Description                                                                            | Milestone |

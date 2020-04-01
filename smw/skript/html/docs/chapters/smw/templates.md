@@ -40,6 +40,11 @@ This form of inclusion is called **Transclusion**
     Transclusion describes the process of embedding content defined in a template into another page. 
     Transcluded content can be paramterized by specifying individual values for the parameters defined in the template page.  
 
+!!! note
+    **Explanatory Video about Transclusion**  
+    An excellent explanatory video about transclusion with elaborations about the different transclusion commands is available at  
+    <https://www.youtube.com/watch?v=SsLahlGX0Ls&list=PLw2YgbWET_ph1IGqIyiZD8w9FIHlYASui&index=8>
+
 Templates
 : ... can be created as any wiki page, but must be defined in the `Template:` namespace
 : ... can contain almost any kind of wiki content
