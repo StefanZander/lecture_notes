@@ -12,3 +12,8 @@
     - Warum wird WM mit fortschreitender Digitalisierung immer wichtiger ?
 
 
+### Gliederung
+
+- [Lektion 1: Was ist Wissen ?](...)
+- [Lektion 2: Warum benötigen Unternehmen ein funktionierendes Wissensmanagement ?](...)
+- [Lektion 3: Welche Rolle spielt der Mensch im Wissensmanagement ?](...)

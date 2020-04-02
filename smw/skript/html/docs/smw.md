@@ -18,6 +18,12 @@
     
     *Quelle: Eigene Definition angelehnt an xxx*
 
+!!! note
+    **Definition**: << **Wiki** >>  
+    Ein Wiki ist ein webbasiertes Hypertext-System mit eigenem Befehlssatz und Modellierungsprimitiven, das es Benutzenden ermöglicht, Wikiseiten mit individuellem Inhalt direkt (d.h. ohne Programmierung) und online in einem Web-Browser zu erzeugen, zu lesen und zu ändern.
+    
+    *Quelle: Eigene Definition angelehnt an xxx*
+
 
 !!! tip
     **Aufgabe**: Implementieren Sie nachstehenden Sachverhalt
@@ -44,13 +50,13 @@ Die am häufigsten verwendeten Komponenten sind
 
 ### Eigenschaften
 
-Semantic MediaWiki ist ein offenes, kollaboratives Wissensmanagementsystem
+Semantic MediaWiki ist ein **offenes**, **kollaboratives** **Wissensmanagementsystem**
 
-- Jeder angemeldete Nutzer kann Content erstellen (*anyone can edit*)
-- Einfach zu erlernen und zu nutzen (*easy to learn and use*)
-- Unmittelbare Contenterstellung und -nutzung (*instant publish*)
-- Kollaborative Ontologie- und Inhaltserstellung (collaboration)
-- Änderungsverfolgung (*revision management and version tracking*)
-- Unterstützt den Aufbau von Communities (*community building*)
-- Beinhaltet eine semantische Wissensbasis (knowledge base)
-- Agile Entwicklung (agile development)
+- Jeder angemeldete Nutzer kann Content erstellen (~> *anyone can edit*)
+- Einfach zu erlernen und zu nutzen (~> *easy to learn and use*)
+- Unmittelbare Contenterstellung und -nutzung (~> *instant publish*)
+- Kollaborative Ontologie- und Inhaltserstellung (~> *collaboration*)
+- Änderungsverfolgung (~> *revision management and version tracking*)
+- Unterstützt den Aufbau von Communities (~> *community building*)
+- Beinhaltet eine semantische Wissensbasis (~> knowledge base)
+- Agile Entwicklung (~> agile development)

@@ -20,8 +20,8 @@ Use Case
 ### Definition
 
 !!! warning
-    Definition: **Concepts**  
-    Concepts allow to dynamically compute page memberships based on the evaluation of query conditions defined on the concept page.
+    **Definition**: << **Concept** >>  
+    Concepts are pages in the `Concept:` namespace and allow to dynamically compute page memberships based on the evaluation of query conditions defined on the concept page.
     
     _Quelle: Eigene Definition angelehnt an <https://www.semantic-mediawiki.org/wiki/Help:Concepts>_
 

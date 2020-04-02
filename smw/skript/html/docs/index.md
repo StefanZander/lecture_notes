@@ -1,5 +1,6 @@
 <!-- # Introduction to Ontology-based Knowledge Management with Semantic MediaWiki -->
-# Semantic Knowledge Management in Organisations: Concepts, Technologies, Application
+<!-- # Semantic Knowledge Management in Organisations: Concepts, Technologies, Application -->
+# Semantisches Wissensmanagement im Unternehmen: Konzepte, Technologien, Anwendung
 
  <!-- Welcome to the course pages of the module "Introduction to Ontology-based Knowledge Management with Semantic MediaWiki". -->
 
@@ -30,25 +31,25 @@ The information on this site is separated into
 * [Schedule with Milestones](schedule.md)
 
 
-## Lectures
+<!-- ## Lectures -->
 
 <!-- Theoretical parts introducing concepts, languages, and technologies -->
-
-* [Session #1: Introduction to Knowledge Management – what is knowledge?](introduction.md) 
+<!-- 
+* [Session #1: Introduction to Knowledge Management – what is knowledge?](chapter1.md) 
 * [Session #2: Foundations of Knowledge Organisation Systems](index.md) 
 * [Session #2: Knowledge Representation Frameworks](index.md) 
 * [Session #3: Technologies and Languages for Lightweight Semantic Knowledge Graphs](index.md) 
 * [Session #4: Semantic MediaWiki](smw.md) 
-* [Session #5: Extensions for Knowledge Graph Creation](index.md) 
+* [Session #5: Extensions for Knowledge Graph Creation](index.md)  -->
 
 
 ## Themenübersicht
-* [Kapitel #1: Einführung in das Wissensmanagement](introduction.md) 
+* [Kapitel #1: Einführung in das Wissensmanagement](kapitel1.md) 
 * [Kapitel #2: Technologische Grundlagen](index.md) 
 * [Kapitel #3: Semantische Wissensrepräsentation](index.md) 
-* [Session #4: Semantic MediaWiki](smw.md) 
-* [Session #5: Semantic MediaWiki Extensions](index.md) 
-* [Session #6: Knowledge Graph Engineering](index.md) 
+* [Kapitel #4: Semantic MediaWiki](smw.md) 
+* [Kapitel #5: Semantic MediaWiki Extensions](index.md) 
+* [Kapitel #6: Knowledge Graph Engineering](index.md) 
 
 
 ## Semester Project
