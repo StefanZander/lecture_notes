@@ -33,10 +33,11 @@ To make a mediawiki page a member of a category, add a link to the category on t
 
 #### Category Hierarchies
 
-Mediawiki allows to build category hierarchies, i.e., to specify super- and sub-category relationships between categories.
+Mediawiki allows to build **category hierarchies**, i.e., it employs super- and sub-category concepts to resemble the 'broader' and 'narrower' relationships between categories known from taxonomical classification systems. 
 
-In order to make a category a sub-category of another category, enter `[[Category:{Super_category}]]` on the sub-category page.
+In order to make a category a sub-category of another category, add `[[Category:{Super_category}]]` to the sub-category page.
 
+Example:  
 ``` diff
 On the category page 'city':
 ============================

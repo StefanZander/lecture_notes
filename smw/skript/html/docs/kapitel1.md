@@ -14,6 +14,13 @@
 
 ### Gliederung
 
-- [Lektion 1: Was ist Wissen ?](...)
-- [Lektion 2: Warum benötigen Unternehmen ein funktionierendes Wissensmanagement ?](...)
+- [Lektion 1: Was ist Wissen ?](chapters/1/wissen.md)
+- [Lektion 2: Warum benötigen Unternehmen ein funktionierendes Wissensmanagement ?](chapters/1/introduction.md)
 - [Lektion 3: Welche Rolle spielt der Mensch im Wissensmanagement ?](...)
+
+
+
+
+
+Gute Einführung in Wissensmanagement (-> Hauptaufgaben übernehmen) + sehr gute Vorlage für die Darstellung von Inhalten:
+http://strategie-spektren.de/innovation/aufgaben-des-wissensmanagements/

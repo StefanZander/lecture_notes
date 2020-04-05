@@ -1,10 +1,10 @@
 .md-content__inner.md-typeset h3 {
     /* background-color: black; */
     /* display: inline-flex; */
-    color: black;
-    font-family: 'Zilla Slab', Roboto, serif;
-    font-size: 1.4rem;
-    font-weight: 900; 
+    color: rgb(50, 174, 112);
+    font-family: 'Barlow Condensed';
+    font-size: 1.7rem;
+    font-weight: 400; /* was 900 for Zilla Slab /*
     margin-top: 2rem;
     padding-bottom: 0.15em;
     /* padding-left: 0.5rem; */
@@ -23,6 +23,15 @@
     border-bottom: 0.15rem solid var(--primary-color);
 }
 
+/* USE THIS FOR ZILLA SLAB */
+/* .md-content__inner.md-typeset h1 {
+    font-size: 3rem;
+} */
+
+
+/* USE THIS FOR BARLOW FONTS */
 .md-content__inner.md-typeset h1 {
     font-size: 3rem;
+    font-family: 'Barlow Condensed';
+    font-weight: 400; 
 }

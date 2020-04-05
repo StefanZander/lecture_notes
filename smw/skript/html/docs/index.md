@@ -47,8 +47,8 @@ The information on this site is separated into
 * [Kapitel #1: Einführung in das Wissensmanagement](kapitel1.md) 
 * [Kapitel #2: Technologische Grundlagen](index.md) 
 * [Kapitel #3: Semantische Wissensrepräsentation](index.md) 
-* [Kapitel #4: Semantic MediaWiki](smw.md) 
-* [Kapitel #5: Semantic MediaWiki Extensions](index.md) 
+* [Kapitel #4: Semantic MediaWiki](kapitel3.md) 
+* [Kapitel #5: Semantic MediaWiki Extensions](smw.md) 
 * [Kapitel #6: Knowledge Graph Engineering](index.md) 
 
 
@@ -73,4 +73,4 @@ WP = Work Package
 
 
 ----
-Diese Unterlagen wurden mit [MkDocs](http://mkdocs.org), [Markdown](https://en.wikipedia.org/wiki/Markdown) und [Visual Studio Code](https://code.visualstudio.com/) erstellt und mit dem individuell angepassten [Material Theme for MkDocs](https://squidfunk.github.io/mkdocs-material/) gerendert.
+Diese Unterlagen wurden mit [MkDocs](http://mkdocs.org), [Markdown](https://en.wikipedia.org/wiki/Markdown) und [Visual Studio Code](https://code.visualstudio.com/) erstellt und mit dem individuell angepassten [Material Theme for MkDocs](https://squidfunk.github.io/mkdocs-material/) und der fantastischen [Barlow-Font](https://tribby.com/fonts/barlow/) gerendert.
