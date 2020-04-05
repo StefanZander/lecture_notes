@@ -24,7 +24,7 @@ TODO: Data in SMW is always encoded as property-value pairs on pages (Categories
 Semantic MediaWiki allows to encode information in the form of facts
 : ~> Berlin has a population of 3,520,031 people
 
-A Fact consists of of three parts:
+A cact consists of of three parts:
 : Wikipage (subject), e.g. "Berlin"
 : Property (predicate), e.g. "Has population"
 : Value (object), e.g. "3,520,031"

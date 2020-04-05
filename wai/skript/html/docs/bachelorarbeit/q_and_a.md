@@ -1,18 +1,13 @@
 # Häufig gestellte Fragen und Antworten zur Bachelorarbeit
 
-!!! abstract
-    **Lernziele**
-
-    - [x] Sie kennen die organisatorischen und administrativen Rahmenbedingungen der Praxisphase
-    - [x] Sie wissen, welche Nachweise Sie für die erfolgreiche Absolvierung der Praxisphase benötigen
-    - [x] Sie wissen, welche Punkte Sie direkt mit Ihrem/er BetreuerIn klären und welche mit Ihrem Arbeitgeber oder dem Prüfungssekretariat  
-
-Auf dieser Seite befindet sich eine Übersicht häufig gestellter Fragen sowie den dazugehörigen Antworten zur Bachelorarbeit.
+Auf dieser Seite befindet sich eine Übersicht **häufig gestellter Fragen** sowie den dazugehörigen Antworten zur Bachelorarbeit.
 Häufig stammen diese Fragen aus E-Mails oder persönlichen Gesprächen mit den Studierenden. 
+Sie sollen auf diesen Seiten gesammelt und kommentiert zur Verfügung gestellt werden, so dass alle zukünftigen oder sich gerade am Beginn der Bachelorarbeit befindlichen Studierenden davon profiteren.
+
 Die Informationen auf dieser Seite werden kontinuierlich erweitert und gepflegt.
 
 
-## Fragen und Antworten
+<!-- ## Fragen und Antworten -->
 
 
 
@@ -25,6 +20,20 @@ Die Informationen auf dieser Seite werden kontinuierlich erweitert und gepflegt.
      Bei größeren Textstellen können Sie beispielsweise in Form einer Referenz oder eines ergänzenden Textes angeben, dass Sie die nachfolgenden 1-/2-/3-/n-Abschnitte aus der WAI2-Arbeit entnommen haben. 
      
      Beachten Sie bitte, dass Transparenz und Klarheit das oberste Gebot ist.  
+
+
+
+??? question "Worauf muss man achten, wenn man die Bachelorarbeit in einem Unternehmen schreibt?"
+    Es liegt nahe, die Bachelorarbeit in dem Unternehmen der Praxisphase zu schreiben – und viele Studierende machen Gebrauch von dieser Möglichkeit (auch wenn dies nicht zwingend erforderlich ist). Das Unternehmen stellt hierbei idR ein Thema, welches dann im Rahmen der Bachelorarbeit bearbeitet wird. Da diese Themen idR einen hohen Praxisbezug um Implementierungsanteil haben, gilt es folgendes zu beachten:
+
+    * Leider beobachten wir gelegentlich, dass im Rahmen der BA vor allem die Implementierung beschrieben wird. Dies ist für eine BA zu wenig bzw. nicht ausreichend, um die BA mit einer guten oder sehr guten Note abzuschließen.
+    * 
+
+
+
+
+
+
 
 
 

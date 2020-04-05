@@ -20,7 +20,7 @@ theme:
     tabs: false
 
   font:
-    text: 'Zilla Slab'
+    text: 'Barlow Semi Condensed'
     code: 'Fira mono'
 
 extra_css:
