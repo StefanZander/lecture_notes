@@ -1,4 +1,4 @@
-## Tipps für ein erfolgreiches Arbeiten
+# Tipps für ein erfolgreiches Arbeiten
 
 In diesem Bereich finden Sie ein paar allgemeine Tipps, die Ihnen bei der Themenfindung und der Erstellung Ihrer Abschlussarbeit helfen soll. 
 Vieles in diesem Bereich entstammt der persönlichen Erfahrung; Einiges aus wissenschaftlichen Studien oder Berichten.
