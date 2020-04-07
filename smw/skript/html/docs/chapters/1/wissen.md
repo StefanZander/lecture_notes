@@ -54,7 +54,7 @@ Wissen ist
 |----------------------------------------------------------------------------------------|---------------------------------|
 | ... kann kommuniziert werden                                                           | ... im Gehirn gespeichert       |
 | ... kann auf verschiedenen Ebenen formalisiert werden                                  | ... schwer zu kommunizieren     |
-| ... kann in verschiedenen Formaten abgespeichert werden (Dokumente, Datenbanken, etc.) | ... nicht/kaum zu formalisieren |
+| ... kann in verschiedenen Formaten abgespeichert werden <br/> &nbsp;&nbsp;&nbsp;&nbsp;(Dokumente, Datenbanken, etc.) | ... nicht/kaum zu formalisieren |
 | --> **Disembodied Knowledge**                                                          | --> **Embodied Knowledge**      |
 
 Nur ca. 20% des in einer Organisation vorhandenen Wissens ist dokumentiert (explicit knowledge);  

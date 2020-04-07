@@ -20,3 +20,4 @@
     - [Konzepte](chapters/smw/concepts.md)
     - [Properties](chapters/smw/properties.md)
     - [Templates](chapters/smw/templates.md)
+    - [Subobjects](chapters/smw/subobjects.md)

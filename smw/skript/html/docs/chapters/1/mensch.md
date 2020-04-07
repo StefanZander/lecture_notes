@@ -19,3 +19,5 @@ Und ihre Auswirkungen:
 * Erhöhtes Zusammengehörigkeitsgefühl
 * Höhere Identifikation mit der Firma, weniger Fluktuation
 * Freierer Umgang mit Ideen
+
+TODO: Kann auch zur lernenden Organisation
