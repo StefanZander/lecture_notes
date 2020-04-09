@@ -119,7 +119,8 @@ In some cases one might not only want to query for subobject data but also for "
 
 1. Query for a property of a subobject.
 2. Use `format=template`.
-3. Add another query in this template where you ask for `[[Has subobject::{{{1}}}]]`. `Has subobject` returns the parent page of a subobject. The subobject is queried in the first query and passed on to the template as `{{{1}}}`.
+3. Add another query in this template where you ask for `[[Has subobject::{{{1}}}]]`.  
+    `Has subobject` returns the parent page of a subobject. The subobject is queried in the first query and passed on to the template as `{{{1}}}`.
 
 !!! example
     **Example**
@@ -133,7 +134,7 @@ In some cases one might not only want to query for subobject data but also for "
     }}
     ```
 
-    In `Template:YourTemplate` one adds the following:
+    In `Template:YourTemplate` add the following:
 
     ``` diff
     {{#ask:
@@ -143,6 +144,7 @@ In some cases one might not only want to query for subobject data but also for "
     }}
     ``` 
 
+    Please note: `:::diff |?YourSubobjectProperty1` and `:::diff |?YourSubobjectProperty2` will be passed to the template as parameters too; they can be accessed via their index, ie. `{{{2}}}` and `{{{3}}}`.
 
 
 !!! tip
