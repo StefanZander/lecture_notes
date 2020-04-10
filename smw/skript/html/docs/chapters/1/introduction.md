@@ -20,18 +20,16 @@ Durch die zunehmende Digitalisierung werden wissensbasierten Dienstleistungen zu
 
 Während vor wenigen Jahren noch von der Informationsgesellschaft gesprochen wurde, welche die Industriegesellschaft beerben sollte, ist es heute Konsens, dass die Ablösung der Industriegesellschaft treffender durch den Begriff der __Wissensgesellschaft__ umschrieben werden sollte.
 
-!!! note
-    **Beispiel**  Der Übergang von der Industrie- zur Wissensgesellschaft aus betrieblicher Sicht:
+!!! example
+    **Beispiel**  
+    Der Übergang von der Industrie- zur Wissensgesellschaft aus betrieblicher Sicht:
 
-    ``` diff
-    Sachkapital             -->     Wissenskapital 
-    Hierarchie/Kontrolle    -->     Vernetzung/Fokussierung 
-    Produkte                -->     Problemlösungen
-    ```
+    | Industriegesellschaft |  | Wissensgesellschaft |
+    | --- | :---: | --- |
+    | Sachkapital | --> | Wissenskapital  |
+    | Hierarchie/Kontrolle | --> |  Vernetzung/Fokussierung |
+    | Produkte | --> | Problemlösungen | 
 
-    Sachkapital             -->     Wissenskapital  
-    Hierarchie/Kontrolle    -->     Vernetzung/Fokussierung  
-    Produkte                -->     Problemlösungen
 
 
 

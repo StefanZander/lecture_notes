@@ -13,8 +13,9 @@ The following pages contain information about
 * instructions for successfully completing the practical part.
 
 !!! note
-    **Please Note: Language and Revision Policy**  
-    The lecture materials are written in both English and German language, i.e., for some parts, the language changes from English to German in vice versa. This is due to the fact that the course's contents are continuously extended and new content is added immediately. It will be revised at later stages.
+    **Language and Revision Policy**  
+    The lecture materials are written in both English and German language, i.e., for some parts, the language changes from English to German in vice versa. This is due to the fact that the course's contents are continuously extended and new content is added immediately after its verification and validation.  
+    ~> Revisions will be carried out at later stages.
 
 <!-- They serve as a guideline in preparing the materials needed for successfully passing the course. -->
 
@@ -46,10 +47,10 @@ The information on this site is separated into
 ## Themenübersicht
 * [Kapitel #1: Einführung in das Wissensmanagement](kapitel1.md) 
 * [Kapitel #2: Technologische Grundlagen](./chapters/2/overview.md) 
-* [Kapitel #3: Semantische Wissensrepräsentation](./chapters/2/overview.md) 
-* [Kapitel #4: Semantic MediaWiki](kapitel3.md) 
-* [Kapitel #5: Semantic MediaWiki Extensions](./chapters/4/overview.md) 
-* [Kapitel #6: Knowledge Graph Engineering](index.md) 
+<!-- * [Kapitel #3: Semantische Wissensrepräsentation](./chapters/2/overview.md)  -->
+* [Kapitel #3: Semantic MediaWiki](./chapters/3/overview.md) 
+* [Kapitel #4: Semantic MediaWiki Extensions](./chapters/4/overview.md) 
+* [Kapitel #5: Knowledge Graph Engineering](index.md) 
 
 
 ## Semester Project

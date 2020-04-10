@@ -15,3 +15,8 @@
 - [Lektion 1: Was ist Wissen ?](wissen.md)
 - [Lektion 2: Definitionen](definitions.md)
 - [Lektion 3: Welche Rolle spielt der Mensch im Wissensmanagement ?](...)
+
+
+Für das Verstehen der Rolle und Funktion von Ontologien im Wissensmanagement ist ein tiefergreifendes Verständnis notwendig. 
+Die Grundprinzipien ... werden in nachfolgenden Foliensätzen dargelegt.
+Sie finden sich in ähnlicher Ausprägungen in Semantic MediaWiki wider.

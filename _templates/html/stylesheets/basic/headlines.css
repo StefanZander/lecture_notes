@@ -2,7 +2,8 @@
     /* background-color: black; */
     /* display: inline-flex; */
     /* color: rgb(50, 174, 112); */
-    color: var(--tip_border_color);
+    color: #1cab7e;
+    /* color: var(--tip_border_color); */
     font-family: 'Barlow Condensed';
     font-size: 1.7rem;
     font-weight: 400; /* was 900 for Zilla Slab /*

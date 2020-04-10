@@ -5,7 +5,7 @@ nav:
   - 'Allgemeine Informationen': 'kapitel3.md'
   - 'Kapitel 1: Einführung': 'kapitel1.md'
   - 'Kapitel 2: Technische Grundlagen': './chapters/2/overview.md'
-  - 'Kapitel 3: Semantic MediaWiki': 'kapitel3.md'
+  - 'Kapitel 3: Semantic MediaWiki': './chapters/3/overview.md'
   - 'Kapitel 4: Erweiterungen': './chapters/4/overview.md'
   - 'Semesterprojekt': 'kapitel3.md'
 
