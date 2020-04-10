@@ -1,5 +1,11 @@
 # Was ist Wissensmanagement ?
 
+TODO:
+- Sehr gute Studienergebnisse im Studie North 2004
+- Include Grafiken aus Karlsruhe Studie
+- 
+
+
 ### Von der Industrie- zur Wissensgesellschaft
 
 Quelle: 01_WM_Theorie.pdf
