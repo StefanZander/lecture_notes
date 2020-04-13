@@ -30,8 +30,8 @@ The information on this site is separated into
 ## Allgemeine Informationen
 
 * [Lehrveranstaltungsziele und Durchführung](objectives.md)
-* [Organisation](organisation.md)
-* [Schedule with Milestones](schedule.md)
+<!-- * [Organisation](organisation.md) -->
+<!-- * [Schedule with Milestones](schedule.md) -->
 
 
 <!-- ## Lectures -->
@@ -53,6 +53,15 @@ The information on this site is separated into
 * [Kapitel #3: Semantic MediaWiki](./chapters/3/overview.md) 
 * [Kapitel #4: Semantic MediaWiki Extensions zum Ontology-Engineering](./chapters/4/overview.md) 
 * [Kapitel #5: Knowledge Graph Engineering](index.md) 
+
+
+## Übungen
+* [Übung #1: Auseinandersetzung mit der Wissensmanagementliteratur](kapitel1.md) 
+* [Übung #2: Semantische Wissensgraphmodellierung](kapitel1.md)
+* [Übung #3: Installation von Semantic MediaWiki](kapitel1.md)
+* [Übung #4: Vertiefende Auseinandersetzung mit Semantic MediaWiki](kapitel1.md)
+
+Modellierung Bsp. als konzeptueller SMW-Graph
 
 
 ## Semester Project
