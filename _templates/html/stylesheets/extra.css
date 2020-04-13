@@ -20,16 +20,26 @@ body {
 }
 
 /* Added to adjust the size of code (default was too large) */
+/* Update: does not work with latest Mkdocs-Material version */
 .codehilitetable {
     font-size: 0.9em;
 }
 
 /* nicer formatting of code snippets in texts */
-.md-typeset code.codehilite {
+code, .md-typeset code.codehilite {
     border: solid 1px gray;
     padding-left: 0.2em;
     padding-right: 0.2em;
     box-shadow: none;
+    font-size: 0.7em;
+}
+
+/* Selects only the code-blocks */
+/* For newest version of MKdocs Material */
+.md-typeset pre>code {
+    /* color: violet; */
+    font-size: 0.85em;
+    /* font-family: 'Roboto Mono'; */
 }
 
 li>a[data-md-state="active"] {

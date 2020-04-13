@@ -31,7 +31,7 @@ theme:
 
   font:
     text: 'Barlow Semi Condensed'
-    code: 'Fira mono'
+    code: 'Roboto mono'
 
 extra_css:
   - 'stylesheets/extra.css'
@@ -45,7 +45,7 @@ markdown_extensions:
       smart_angled_quotes: true
   - extra
   - codehilite:
-      linenums: false
+      linenums: true
       guess_lang: true
   - toc:
       permalink: false
