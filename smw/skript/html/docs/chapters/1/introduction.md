@@ -152,6 +152,33 @@ __Phase 4__ – __Die Digitalgesellschaft__
 : Übergang zum ==Datenkapitalismus== bei dem die Wertschöpfung vorrangig von der unternehmerischen Kompetenz zur Aneignung und Auswertung von Daten abhängt. Intelligente und vernetzte Produkte und Dienstleistungen werden allgegenwärtig (ubiquitär) und durchdringen alle Lebensbereiche.
 
 
+
+### Was ist Wissensmanagement
+
+_Quelle: http://qib.f-bb.de/wissensmanagement/thema/_
+
+TODO: Integrate!
+
+Wissensmanagement dient dazu
+: ...vorhandenes betriebliches Wissen zu identifizieren und zu vernetzen,
+: ...neues Wissen zu generieren und in neue Produkte, Prozesse und Geschäftsfelder umzusetzen,
+: ...Wissen von außen – über Kunden, Lieferanten, Partner und externe Know-how-Trägern – in das Unternehmen zu transferieren,
+: ...Wissen produktiv zu nutzen und
+: ...Wissen zu messen und zu bewerten
+
+Wissen ist eine wichtige Ressource und ein wertvoller Produktionsfaktor, der gemanagt werden muss. Jedoch ist Wissen ein "flüssiger Stoff": Es ist stets neu zu erwerben und kann nicht einmalig bereitgestellt werden. Für die Unternehmen ergibt sich daraus die Aufgabe, ihre Organisation und Unternehmenskultur so auszurichten, dass sich das verfügbare Wissen ständig "bewegt". Gemanagtes Wissen wird so zum Wettbewerbsvorteil und Innovationstreiber.
+
+Entwicklungstrends
+: ...Verfügbares Wissen wächst exponentiell.
+: ..."Halbwertszeit" bestehenden Wissens sinkt rapide.
+: ...Produkte und Dienstleistungen werden immer wissensintensiver in ihrer Herstellung.
+: ...Komplexe Mitarbeiter- und Hierarchiestrukturen und Hemmnisse bei der Verteilung von Wissen verhindern effizienten Wissensfluss im Betrieb.
+: ...Wissensmanagement wird als zeit- und kostenintensiv erlebt.
+: ...Rein technische Lösungen verfehlen oft ihren Nutzen.
+
+
+
+
 !!! example
     **Aufgabe**  
     Beantworten Sie folgende Fragen:

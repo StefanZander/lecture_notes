@@ -30,4 +30,6 @@
     --link_background: white;
     --link_hover_text_color: white;
     --link_hover_background_color: var(--primary-color);
+
+    --task_list_color: var(--tip_border_color);
 }

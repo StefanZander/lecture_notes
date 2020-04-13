@@ -2,7 +2,7 @@ site_name: "Semantisches Wissensmanagement mit Semantic MediaWiki"
 
 nav:
   - 'Startseite': 'index.md'
-  - 'Allgemeine Informationen': 'kapitel3.md'
+  - 'Allgemeine Informationen': 'objectives.md'
   - 'Kapitel 1: Einführung': 'kapitel1.md'
   - 'Kapitel 2: Technische Grundlagen': './chapters/2/overview.md'
   - 'Kapitel 3: Semantic MediaWiki': './chapters/3/overview.md'

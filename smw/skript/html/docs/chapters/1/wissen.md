@@ -57,19 +57,23 @@ Bekannt ist die Aussage
 
 
 
-| **Explicit Knowledge**                                                                 | **Tacit + Implicit Knowledge**  |
+| **Explicit Knowledge**                                                                 | **Tacit / Implicit Knowledge**  |
 |----------------------------------------------------------------------------------------|---------------------------------|
 | ... kann kommuniziert werden                                                           | ... im Gehirn gespeichert       |
 | ... kann auf verschiedenen Ebenen formalisiert werden                                  | ... schwer zu kommunizieren     |
 | ... kann in verschiedenen Formaten abgespeichert werden <br/> &nbsp;&nbsp;&nbsp;&nbsp;(Dokumente, Datenbanken, etc.) | ... nicht/kaum zu formalisieren |
 | --> **Disembodied Knowledge**                                                          | --> **Embodied Knowledge**      |
 
-Explizites Wissen ist Faktenwissen; eindeutig kodifizierbar und mittels Sprache eindeutig kommunizierbar
+Explizites Wissen 
+: ...ist Faktenwissen, eindeutig kodifizierbar und mittels Sprache eindeutig kommunizierbar.
 
-Implizites Wissen ist Erfahrungs- und Handlungswissen, das an Personen gebunden ist; ist nur schwer und nicht vollständig explizierbar (d.h., in Worte zu fassen)
+Implizites bzw. *verborgenes* Wissen 
+: ...ist Erfahrungs- und Handlungswissen, das an Personen gebunden ist; ist nur schwer und nicht vollständig explizierbar (d.h., in Worte zu fassen)
 
-Nur ca. 20% des in einer Organisation vorhandenen Wissens ist dokumentiert (explicit knowledge);  
-80% des relevanten Wissens ist verborgenes, implizites Wissen (tacit and implicit knowledge) (Quelle: https://de.slideshare.net/mcwyrsch/wissensmanagement-in-unternehmen)
+Nur ca. **20%** des in einer Organisation vorhandenen Wissens ist **dokumentiert** (--> explicit knowledge).  
+**80%** des relevanten Wissens ist verborgenes, **implizites Wissen** (--> tacit and implicit knowledge).  
+*Quelle: https://de.slideshare.net/mcwyrsch/wissensmanagement-in-unternehmen*
+
 
 
 ### Das SECI-Modell
@@ -80,23 +84,24 @@ Es unterscheidet sich von anderen Wissensmanagement dadurch, dass es den Fokus a
 
 Neues Wissen entsteht in einem **kontinuierlichen Transformationsprozess** zwischen dem impliziten und dem expliziten Wissen, d.h., die Wissengenerierung beruht auf einem Prozess der dynamischen Transformation von implizitem zu explizitem Wissen und vice versa.
 
-![Das SECI-Modell](./../../figures/seci_model_2.png) _Das SECI-Modell nach Nonaka und Takeuchi (Quelle: https://www.wbi-wissensmanagement.com/bekannte-theorien-wissensmanagement/#wissensmanagement-theorie-bausteine_
+![Das SECI-Modell](./../../figures/seci_model_2.png) _Das SECI-Modell nach Nonaka und Takeuchi (Quelle: eigene Internetrecherche)_
 
 Es unterscheidet die folgenden **4 Phasen**, welche im einem iterativen und inkrementellen Transformationsprozess durchlaufen werden:
 
 **Sozialisierung** 
-: Implizites Wissen wird geteilt durch Beobachtung, gemeinsames Tun und durch nicht verbalisierte Handlungen. Die Weitergabe von implizitem Wissen in einer Gruppe erfordert einen **Wissensraum**, dieser muss, damit die Sozialisierung funktioniert, 3 Eigenschaften aufweisen: (--> geteiltes Verständnis und einer gemeinsamen Sprache mit gegenseitigem Vertrauten (=Grundlage des gesamten Prozesses der Wissengenerierung und des Wissensaustausches)). 
+: Implizites Wissen wird geteilt durch Beobachtung, gemeinsames Tun und durch nicht verbalisierte Handlungen. Die Weitergabe von implizitem Wissen in einer Gruppe erfordert einen **Wissensraum**, dieser muss, damit die Sozialisierung funktioniert, 3 Eigenschaften aufweisen: (--> geteiltes Verständnis und einer gemeinsamen Sprache mit gegenseitigem Vertrauten (=_Grundlage des gesamten Prozesses der Wissengenerierung und des Wissensaustausches_)). 
 
 **Externalisierung**
 : Mitglieder einer Gruppe fassen das Wissen in Sprache und teilen es mit anderen. Aus implizitem Wissen entsteht explizites. 
 
 **Kombination**
-: Explizites kann nun mit existierendem Wissen neu kombiniert werden. Hier ruht Potential für Innovation. Neues Wissen entsteht nicht aus dem Nichts sondern dadurch, dass neue Akteure neues Wissen in die Organisation einbringen (Frage: Aus welchen Quellen kann dieses Wissen stammen?)
+: Explizites kann nun mit existierendem Wissen neu kombiniert werden. Hier ruht Potential für Innovation. Neues Wissen entsteht nicht aus dem "Nichts" sondern dadurch, dass neue Akteure neues Wissen in die Organisation einbringen (Frage: Aus welchen Quellen kann dieses Wissen stammen?)
 
 **Internalisierung**
 : Entsteht in der Phase der Kombination neues Wissen, so wird dieses nun wieder von den Individuen internalisiert, d.h., mit dem eigenen Wissen kombiniert und dadurch wieder in implizites Wissen überführt. (~> Prozess der Bewußtseinsbildung).
 
-Wichtig: --> Das Kollektiv baut immer auf dem neu entstandenen Wissen auf. 
+
+Wichtig, das Kollektiv baut immer auf dem neu entstandenen Wissen auf (--> _iterativ-inkrementeller Transformationsprozess_). 
 
 Entscheidend bei dem Modell von Nonaka & Takeuchi ist die Transformation von individuellem in kollektives Wissen, d.h., von einem personenbezogenen in ein allgemein zugängliches Wissen (=_die Wissensbasis der Organisation_).
 

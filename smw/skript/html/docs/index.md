@@ -2,6 +2,8 @@
 <!-- # Semantic Knowledge Management in Organisations: Concepts, Technologies, Application -->
 # Semantisches Wissensmanagement im Unternehmen: Konzepte, Technologien, Anwendung
 
+Belegnummer:	30.2626
+
  <!-- Welcome to the course pages of the module "Introduction to Ontology-based Knowledge Management with Semantic MediaWiki". -->
 
 <!-- Stand: 2019-03-18 -->
@@ -25,9 +27,9 @@ The information on this site is separated into
 - **content details**, i.e., background information about how to write a proper scientific paper.
 
 
-## General Information
+## Allgemeine Informationen
 
-* [Overview, Objectives, and Literature Recommendations](objectives.md)
+* [Lehrveranstaltungsziele und Durchführung](objectives.md)
 * [Organisation](organisation.md)
 * [Schedule with Milestones](schedule.md)
 
@@ -49,7 +51,7 @@ The information on this site is separated into
 * [Kapitel #2: Technologische Grundlagen](./chapters/2/overview.md) 
 <!-- * [Kapitel #3: Semantische Wissensrepräsentation](./chapters/2/overview.md)  -->
 * [Kapitel #3: Semantic MediaWiki](./chapters/3/overview.md) 
-* [Kapitel #4: Semantic MediaWiki Extensions](./chapters/4/overview.md) 
+* [Kapitel #4: Semantic MediaWiki Extensions zum Ontology-Engineering](./chapters/4/overview.md) 
 * [Kapitel #5: Knowledge Graph Engineering](index.md) 
 
 
