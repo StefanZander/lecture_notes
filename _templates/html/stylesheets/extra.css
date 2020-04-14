@@ -14,9 +14,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
 
-
+/* cf. https://developer.mozilla.org/en-US/docs/Web/CSS/font-smooth */ 
 body {
-    -webkit-font-smoothing: auto !important; /* cf. https://developer.mozilla.org/en-US/docs/Web/CSS/font-smooth */ 
+    -webkit-font-smoothing: auto !important; 
 }
 
 .md-content__inner.md-typeset {

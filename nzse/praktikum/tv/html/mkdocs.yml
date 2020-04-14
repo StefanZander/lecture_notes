@@ -23,8 +23,8 @@ theme:
     tabs: false
 
   font:
-    text: 'Zilla Slab'
-    code: 'Fira mono'
+    text: 'Barlow Semi Condensed'
+    code: 'Roboto mono'
 
 extra_css:
   - 'stylesheets/extra.css'
