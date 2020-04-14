@@ -38,6 +38,11 @@
 ## Aufgaben
 
 ### UI Entwurf (Paper Prototyping)
+
+!!! warning
+    **Corona-Update**:  
+    Anstelle eines Paper-Prototypen können Sie auch Mock-ups oder eine Wireframe-basierte Konzeption der Oberflächen Ihrer Applikation erstellen (_mit allen Nachteilen gegenüber einer Paper-Prototyp-basierten Lösung_). 
+
 1. Entwerfen Sie die **Benutzungsoberfläche** der mobilen Applikationen in Form von konkreten Screen-Diagrammen als **Papier-Prototypen** (*bitte groß und gut erkennbar!*). 
 
     Hinweise:
@@ -64,6 +69,11 @@
 
 
 ### Testen
+
+!!! warning
+    **Corona-Update**:  
+    Bitten Sie ein Familienmitglied oder eine andere externe Person die konzipierten Oberflächen aus Sicht des Stereotypen zu begutachten. Spielen Sie einige typische Anwendungsfälle mit Ihrem Stereotypen durch und beobachten Sie sehr genau, wie sie/er mit den Oberflächen interagiert.
+
 1. Testen Sie Ihre Entwürfe mit Ihrer Peer-Gruppe und identifizieren Sie Ungereimtheiten und/oder Inkonsistenzen und Verbesserungen. Überlegen Sie, ob es gut und richtig ist, wenn Sie keine Verbesserungen identifizieren.
 
     !!! note
@@ -83,7 +93,7 @@ Die folgenden Ergebnisse müssen für eine erfolgreiche Testierung der Praktikum
 !!! abstract
     __Ergebnisse:__
 
-    - [ ] Paper Prototypes ihrer Applikation
+    - [ ] Paper Prototypes ihrer Applikation (oder Mock-Ups)
     - [ ] Analyseklasse
-    - [ ] Reflexion des User Tests (--> _mündlich_)
+    - [ ] Kurze Zusammenfassung der wesentlichen Anpassungen (Reflexion des User Tests)
     <!-- - [ ] Navigationsübersicht -->

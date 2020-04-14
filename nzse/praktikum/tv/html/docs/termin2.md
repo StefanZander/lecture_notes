@@ -36,18 +36,30 @@
     * (*optional*) 1 Begeisterungsfaktor
    
     !!! note
-        **Hinweis #1:** Stellen Sie _nicht_ irgendwelche Fragen; die Fragen sollen Ihnen helfen, die NutzerInnen und deren spezifische Bedürfnisse, Lebensgewohnheiten, Wünsche und Nutzungskontexte besser zu verstehen. Die Antworten sind Basis für die Erarbeitung eines Anwendungsszenarios, sowie je einer funktionalen und qualitativen Anforderung (inkl. Quantifizierung) und einem Begeisterungsfaktor.
+        **Hinweis #1**: **Stellen Sie die richtigen Fragen**  
+        Stellen Sie _nicht_ irgendwelche Fragen; die Fragen sollen Ihnen helfen, die NutzerInnen und deren spezifische Bedürfnisse, Lebensgewohnheiten, Wünsche und Nutzungskontexte besser zu verstehen. Die Antworten sind Basis für die Erarbeitung eines Anwendungsszenarios, sowie je einer funktionalen und qualitativen Anforderung (inkl. Quantifizierung) und einem Begeisterungsfaktor.
 
     !!! note
-        **Hinweis #2:** Beachten Sie die Prinzipien einer guten Interviewdurchführung (schauen Sie sich hierzu ggf. noch einmal die Videos auf der NZSE-Moodleseite an).
+        **Hinweis #2**: **Achten Sie auf eine "gute" Interviewvorbereitung und -durchführung**  
+        Je besser Sie das Interview planen und durchführen desto besser verwertbar sind die Resultate und Erkenntnisse. Beachten Sie deshalb die Prinzipien einer guten Interviewdurchführung (--> _schauen Sie sich hierzu ggf. noch einmal die Videos auf der NZSE-Moodleseite an_).
 
         - Stellen Sie **offene Fragen**, bei denen BenutzerInnen über ihre **Erfahrungen** berichten können
-        - Vermeiden Sie **Suggestivfragen** (--> _das ist vor allem, wenn Sie das Interview das erste Mal durchführen sehr schwer umsetzbar; bemühen Sie sich!_)
-        - Fragen Sie nicht nach irgendwelchen technischen Details; diese sind für die Benutzung irrelevant. --> _Konzentrieren Sie sich auf die Ziele, den Anwendungskontext und die Lebenssituationen in denen ein Medium konsumiert wird._
+        - Vermeiden Sie **Suggestivfragen** – das ist vor allem wenn Sie das Interview das erste Mal durchführen sehr schwer umsetzbar; --> _bemühen Sie sich_!
+        - Fragen Sie _nicht_ nach irgendwelchen technischen Details oder Features; diese sind für die Benutzung irrelevant.  
+            --> _Konzentrieren Sie sich auf die **Ziele**, den **Anwendungskontext** und die **Lebenssituationen** in denen ein Medium konsumiert wird._
 
 
 
 2. **Ablauf und Aufgaben**:
+
+    !!! warning 
+        **Corona-Update**  
+        Der Austausch mit einer Peer-Gruppe dürfte sich aufgrund mangelnder physischer Präsenz schwierig gestalten. Sie haben 3 Optionen:  
+        
+        1. Bitten Sie ein Familienmitglied in die Rolle des Stereotyps zu schlüpfen und die Interviewfragen aus dieser Perspektive zu beantworten
+        2. Verabreden Sie sich mit einer Peer-Gruppe über Jitsi und führen Sie das Interview online durch
+        3. Falls Sie keinerlei Zugriff auf "externe" Personen haben, dann kann die/der Partner*in in die Rolle des Stereotypen schlüpfen (--> _nicht bevorzugte Lösung_) 
+
     - Gruppe 2 liest die **Stereotypbeschreibung** aus Aufgabe 1 von Gruppe 1 und steigt in diese Rolle
     - Gruppe 1 bereit das **teilstandardisierte Interview** vor (--> *siehe Vorlesungsunterlagen*)
     - Gruppe 1 **interviewed** Gruppe 2 und notiert sich die wichtigsten Angaben inkl. Fragen (-->  *Beantwortung am Ende*); 
@@ -106,7 +118,7 @@ Nun tauschen Sie die Rollen, d.h., die RE-Gruppe ist nun User-Gruppe und umgekeh
 
 ## Ergebnisse
 
-Die folgenden Ergebnisse müssen für eine erfolgreiche Testierung der Praktikumseinheit vorliegen:
+Ihre Praktikumsmappe muss folgende ausgearbeitete Artefakte enthalten: 
 
 !!! abstract
     __Ergebnisse:__

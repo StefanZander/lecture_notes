@@ -23,4 +23,6 @@
     --link_background: white;
     --link_hover_text_color: white;
     --link_hover_background_color: var(--primary-color);
+
+    --task_list_indicator_color: #12cdab;
 }

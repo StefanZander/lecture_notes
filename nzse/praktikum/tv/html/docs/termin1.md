@@ -14,12 +14,12 @@
     **Hinweis #1:** Wenn Sie zum Testen und Debuggen Ihr eigenes Handy verwenden wollen, bringen Sie bitte ein passendes USB-Kabel mit. Im Normalfall ist das Kabel des Ladegeräts dazu geeignet. Verbinden Sie das Handy via USB-Kabel mit dem Entwicklungs-PC (Ihr Notebook oder der Labor-PC), schalten Sie das Handy ein, aktivieren Sie Entwickleroptionen und darin USB-Debugging.
 
 !!! note
-    **Hinweis #2:** Sie können Android Studio und den Emulator auch auf Ihrem eigenen Laptop installieren, siehe 
+    **Hinweis #2:** Vermutlich werden Sie Android Studio und den Emulator auf Ihrem eigenen Laptop installieren; Infos hierzu finden Sie unter 
 
     - <http://developer.android.com/sdk/index.html>
     - <http://developer.android.com/sdk/installing/adding-packages.html>
 
-    Konfigurieren Sie den Emulator hinsichtlich der Displaygröße eher zurückhaltend – er ist ein Ressourcenfresser!
+    Konfigurieren Sie den Emulator hinsichtlich der Displaygröße eher zurückhaltend – er ist (immer noch) ein Ressourcenfresser!
 
 ## Aufgaben
 
@@ -50,7 +50,7 @@ Fügen Sie einen parameterlosen Konstruktor zur Activity hinzu. Überschreiben
 Fügen Sie in jeder dieser Methoden und in `onCreate` eine Testausgabe ein:
 
 ``` java
-    Log.i ("AppName", "MethodenName");
+Log.i ("AppName", "MethodenName");
 ```
 
 Spielen Sie folgende Testfälle durch und beobachten Sie dabei die Testausgaben im Fenster `6: Android` (Sie können die Testausgaben filtern mit `Log Level = Info` und Ihrem AppName):
@@ -71,7 +71,7 @@ Untersuchen Sie mit dem Debugger und mit den Testausgaben folgende Fragen:
 ### Ereignisbehandlung
 Schreiben Sie eine Methode
 ``` java
-    public void onHelloWorldClick (View v)
+public void onHelloWorldClick (View v)
 ```
 mit einer `Log.i`-Testausgabe und ordnen Sie die Methode dem `onClick`-Ereignis der TextView `Hello World` zu. Testen Sie durch Antippen des Textes `Hello World`.
 
@@ -100,7 +100,7 @@ Die folgenden Ergebnisse sollten am Ende der Praktikumseinheit vorliegen:
 !!! abstract
     __Ergebnisse:__
 
-    - [ ] Verständnis, was es mit der Klasse `R.java` auf sich hat
-    - [ ] Überschriebene Methoden `onPause`, `onStop`, `onResume`, `onCreate` und `onSaveInstanceState`
-    - [ ] Dokumentierte Ausgabe der Testfälle
-    - [ ] (*optional*) Klassendiagramm der zu persistierenden Daten
+    - [x] Verständnis, was es mit der Klasse `R.java` auf sich hat
+    - [x] Überschriebene Methoden `onPause`, `onStop`, `onResume`, `onCreate` und `onSaveInstanceState`
+    - [x] Dokumentierte Ausgabe der Testfälle
+    - [x] (*optional*) Klassendiagramm der zu persistierenden Daten

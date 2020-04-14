@@ -1,6 +1,6 @@
 .md-typeset .admonition.abstract {
-    border-left: solid 0.25rem var(--abstract_border_color);
-    background-color: var(--abstract_background_color);
+    border-left: solid 0.25rem var(--abstract_border_color) !important;
+    background-color: var(--abstract_background_color) !important;
 }
 
 /* .abstract>*:nth-of-type(2):before {
@@ -17,7 +17,7 @@
 }
 
 .admonition.abstract::before {
-    font-family: 'Material Icons';
+    font-family: 'Material Icons' !important;
     content: '\e8d0';
     font-size: 1.2rem;
     text-shadow: .01rem .01rem white;

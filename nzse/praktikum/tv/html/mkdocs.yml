@@ -34,6 +34,8 @@ extra_javascript:
     
 markdown_extensions:
   - admonition
+  - smarty:
+      smart_angled_quotes: true
   - codehilite:
       linenums: true
       guess_lang: true
@@ -49,4 +51,8 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
+  - pymdownx.highlight:
+      linenums: true
+      guess_lang: false
+
   

@@ -1,6 +1,6 @@
-.admonition.note {
-    border-left: solid 0.25rem var(--note_border_color);
-    background-color: var(--note_background_color);
+div.admonition.note {
+    border-left: solid 0.25rem var(--note_border_color) !important;
+    background-color: var(--note_background_color) !important; 
 }
 
 

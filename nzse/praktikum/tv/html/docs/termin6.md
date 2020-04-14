@@ -24,6 +24,11 @@ Alle Protokolle aus den folgenden Teilaufgaben kommen in die Projektmappe.
 ## Aufgaben
 
 ### Usability Test
+
+!!! warning
+    **Corona-Update**  
+    Bitten Sie ein Familienmitglied oder eine andere externe Person den Test aus der Rolle des Stereotypen durchzuführen. Ggf. kann die/der Protokollant*in via Webcam beobachten und protokollieren. Falls Sie den Test am Emulator durchführen können Sie ein Screensharing oder ggf. sogar ein Tool wie [TeamViewer](https://www.teamviewer.com/de/) nutzen (falls die/der Tester nicht vor Ort anwesend ist).
+
 Zum **Usability Test** tun Sie sich mit Ihrer Peer-Gruppe zusammen:
 
 * für die App Ihrer Peer-Gruppe sind Sie Test-Benutzer und arbeiten die Test-Aufgaben ab
@@ -36,6 +41,11 @@ Zum **Usability Test** tun Sie sich mit Ihrer Peer-Gruppe zusammen:
 
 
 ### Usability Inspection
+
+!!! warning
+    **Corona-Update**  
+    Führen Sie die **Usability Inspection** und das **Design Review** für Ihre **eigene Applikation** durch. Beurteilen Sie die verschiedenen Aspekte kritisch und hinterfragen Sie getroffene Designentscheidungen. Dies kann natürlich keinen echten Durchlauf mit externen Personen ersetzen, aber Sie bekommen so zumindest eine Vorstellung davon wie beide Methoden durchgeführt werden.
+
 Wenden Sie die „**Checkliste zur Usability Inspection**“ auf die mobile App Ihrer Peer-Gruppe an. Übertragen Sie die allgemeinen Regeln sinnvoll auf die Applikation. Protokollieren Sie eventuelle Probleme und Defizite so, dass die Entwickler verstehen, inwiefern die App verbessert werden sollte.
 
 ### Design Review
