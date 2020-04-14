@@ -9,7 +9,7 @@
 @import url("./admonition/question.css") screen;
 @import url("./admonition/example.css") screen;
 @import url("./admonition/tip.css") screen;
-
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
 body {
     -webkit-font-smoothing: auto !important; /* cf. https://developer.mozilla.org/en-US/docs/Web/CSS/font-smooth */ 
@@ -101,14 +101,14 @@ div.md-content a:hover:not(.md-footer-nav__link) {
 /* Source: https://fonts.googleapis.com/icon?family=Material+Icons */
 /* Source 2: https://google.github.io/material-design-icons/ */
 /* List of Icons: https://github.com/google/material-design-icons/blob/master/iconfont/codepoints */
-@font-face {
+/* @font-face {
     font-family: 'Material Icons';
     font-style: normal;
     font-weight: 400;
     src: url(https://fonts.gstatic.com/s/materialicons/v50/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2) format('woff2');
-}
+} */
 
-.material-icons {
+/* .material-icons {
     font-family: 'Material Icons';
     font-weight: normal;
     font-style: normal;
@@ -120,17 +120,11 @@ div.md-content a:hover:not(.md-footer-nav__link) {
     white-space: nowrap;
     word-wrap: normal;
     direction: ltr;
-     /* Support for all WebKit browsers. */
     -webkit-font-smoothing: antialiased;
-    /* Support for Safari and Chrome. */
     text-rendering: optimizeLegibility;
-
-    /* Support for Firefox. */
     -moz-osx-font-smoothing: grayscale;
-
-    /* Support for IE. */
     font-feature-settings: 'liga';
-  }
+  } */
 
 
 
