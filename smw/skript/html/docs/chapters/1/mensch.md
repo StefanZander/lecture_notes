@@ -3,9 +3,10 @@
 
 ### Die Rolle der Mitarbeiter
 
-Quelle: https://de.slideshare.net/mcwyrsch/wissensmanagement-in-unternehmen
+_Quelle: https://de.slideshare.net/mcwyrsch/wissensmanagement-in-unternehmen_
 
-"Neue" Eigenschaften:
+"Neue" Eigenschaften
+
 * Der Mitarbeiter ist Know-How Träger
 * Untereinander sind die Mitarbeiter Coach oder Mentor
 * Die Erfahrung zählt, Führung erfolgt durch Kompetenz
@@ -13,7 +14,8 @@ Quelle: https://de.slideshare.net/mcwyrsch/wissensmanagement-in-unternehmen
 * Sie sind aktiv in den Wissensprozessen eingebunden
 * Ein offener Austausch wird gefördert
 
-Und ihre Auswirkungen:
+Und ihre Auswirkungen
+
 * Hohe Wertschätzung der einzelnen Mitarbeiter
 * Veränderte Arbeitsweise
 * Erhöhtes Zusammengehörigkeitsgefühl

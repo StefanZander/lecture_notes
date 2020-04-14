@@ -1,43 +1,26 @@
 # Was ist Wissen?
 
-
-### Warum wird Wissen zunehmend wichtiger für Unternehmen?
-
-Langfristige Trends:
-
-* Wissensintensive Geschäftsprozesse, Dienstleistungen und Produkte werden bedeutender
-    * Anteil der Wissensarbeiter in Organisationen nimmt zu (Ingenieure, Manager, Berater, Entwickler, Forscher, ...)
-    * Hoher Zeitanteil für Informationssuche und -bewertung
-* Produktlebenszyklen werden kürzer
-    * Höhere Innovationsrate wird erforderlich
-    * Concurrent Engineering komplexer Produkte erfordert die Integration von Wissen aller Unternehmensbereiche
-* Lean Management erfordert Entscheidungen auf allen Management-Ebenen
-    * Das erforderliche Wissen muss überall vorhanden sein
-* Firmen arbeiten zunehmend verteilt und global 
-    * Virtuelle Unternehmen
-    * Komplexe Wertschöpfungsnetzwerke
-* Wissen selber wird zum Produkt
-    * Neue Arten spezialisierter Dienstleistungsangebote entstehen (z.B. Information Broker)
-* **Firmenwert** beruht bei Weitem nicht nur auf materiellen Werten (Fabrikationsanlagen, Immobilien, ...)
-    * sondern auf vielen "intangible assets" / "intellectual capital"
-* Demographischer Wandel in Europa
-    * Verstärkte Zunahme des Fachkräftemangels in vielen Branchen absehbar
-
-!!! note
-    **Wichtig**: Einige der vorstehenden Argumente gelten nicht nur für gewinn- orientierte Unternehmen, sondern auch in der öffentlichen Verwaltung, Forschung & Lehre und in Non-Governmental Organizations (NGOs).
-
+Bevor wir einen Versuch starten Wissen zu definieren ist es sinnvoll, den Wissensbegriff richtig ein- und abzugrenzen. 
+Hierzu gibt es verschiedene **Modelle**; eines der bekanntesten und etabliertesten Modelle ist die **Wissenstreppe** von Klaus North.
 
 ### Die Wissenstreppe nach Klaus North
 
-TODO: add Picture
+![Wissenstreppe](./../../figures/wissenstreppe_north_web.jpg) *Die Wissenstreppe aufgestellt von Klaus North (Quelle: ...)*
 
 Erläuterungen zur Wissenstreppe
 
+* **Zeichen** bestehen aus Buchstaben, Zahlen etc. aber auch Beobachtungen
+* **Daten** entstehen, indem man Zeichen in eine Reihenfolge bringt
+* **Information** entsteht, indem man Daten eine Bedeutung zuordnet
+* **Wissen** entsteht durch die Vernetzung von Informationen. Wissen ist allerdings subjektiv und kann deshalb nicht direkt übertragen werden (es ist _personifiziert_). Wissen hängt sehr stark vom Erfahrungsschatz des Individuums ab.
 * **Können** entsteht aus der Umsetzung von Wissen in entsprechende Handlungen, da es natürlich nicht ausreicht, nur Wissen zu erwerben, sondern dieses erworbene Wissen auch in Fertigkeiten umgesetzt werden muss.
 * Erst das in **Handeln** umgesetzte Können stellt dieses auch unter Beweis. Hinzu kommt hier natürlich noch das Wollen, dem eine Mitarbeitermotivation vorausgehen muss. Handeln ist messbar und zeigt wie Personen, Gruppen oder Organisationen aus Informationen Wissen generieren und zur Lösung von Problemen einsetzen.
 * Die Fähigkeit, Wissen zur Problemlösung, also zweckorientiert in konkrete Handlungen einzusetzen, wird als **Kompetenz** einer Person, Gruppe oder Organisation bezeichnet.
-* **Kernkompetenzen** beruhen auf explizit gemachtem Wissen und setzen sich aus Fähigkeiten und Technologien zusammen. Sie generieren Werte bei Kunden und sind einzigartig gegenüber Wettbewerbern, schaffen somit Zugang zu neuen Märkten. Deshalb drücken Kernkompetenzen auch die Wettbewerbsfähigkeit eines Unternehmens aus.
+* **Kernkompetenzen** beruhen auf explizit gemachtem Wissen und setzen sich aus Fähigkeiten und Technologien zusammen. Sie generieren Werte bei Kunden und sind einzigartig gegenüber Wettbewerbern, schaffen somit Zugang zu neuen Märkten. Deshalb drücken Kernkompetenzen auch die **Wettbewerbsfähigkeit** eines Unternehmens aus.
 
+!!! note
+    **Lehrvideo zur Wissenstreppe**  
+    Die einzelnen Stufen der Wissenstreppe werden auch sehr schön in diesem [Kurzvideo](https://www.youtube.com/watch?v=VW7ArONW4dA) dargestellt.
 
 ### Was ist Wissen ? – Eine pragmatische Arbeitsdefinition
 
@@ -47,6 +30,12 @@ Wissen ist
 : ... kontext-situiert und vernetzt,
 : ... handlungs- und ziel-orientiert.
 
+!!! warning 
+    **Definition**: << **Wissen** >>  
+    Wissen bezeichnet die Gesamtheit der Kenntnisse und Fähigkeiten, die Menschen zur Lösung von Problemen einsetzen.
+    
+    (_Quelle: Probst GJB., Raub S., Romhardt K., (2006): Wissen managen – Wie Unternehmen ihre wertvollste Ressource optimal nutzen. 5. Aufl. Gabler, Frankfurt/Main; S.22_)
+
 
 ### Wissensarten
 
@@ -54,8 +43,6 @@ nach _Michael Polanyi (1966), "The Tacit Dimension", University of Chicago Press
 
 Bekannt ist die Aussage
 > "We know more than we can tell."
-
-
 
 | **Explicit Knowledge**                                                                 | **Tacit / Implicit Knowledge**  |
 |----------------------------------------------------------------------------------------|---------------------------------|

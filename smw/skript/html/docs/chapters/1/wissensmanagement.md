@@ -1,4 +1,5 @@
 # Was ist Wissensmanagement ?
+*...und warum brauchen Organisationen das ?*
 
 TODO:
 - Sehr gute Studienergebnisse im Studie North 2004
@@ -12,11 +13,11 @@ Quelle: 01_WM_Theorie.pdf
 
 Mitte der 1960er Jahre waren noch über 50% aller Beschäftigten in der Industrie tätig.
 
-Seit dieser Zeit hat sich die Produktivität durch Automatisierung ==versechsfacht==(!) und durch die Globalisierung hat sich die Massenproduktion der meisten Güter weltweit verteilt.
+Seit dieser Zeit hat sich die Produktivität durch Automatisierung _versechsfacht_ (!) und durch die Globalisierung hat sich die Massenproduktion der meisten Güter weltweit verteilt.
 
 Inzwischen ist die Mehrheit der Bevölkerung im Dienstleistungsbereich beschäftigt.
 
-Durch die zunehmende Digitalisierung werden wissensbasierten Dienstleistungen zum dominanten Wirtschaftssegment.
+Durch die zunehmende Digitalisierung werden **wissensbasierte Dienstleistungen** zum dominanten Wirtschaftssegment.
 
 Während vor wenigen Jahren noch von der Informationsgesellschaft gesprochen wurde, welche die Industriegesellschaft beerben sollte, ist es heute Konsens, dass die Ablösung der Industriegesellschaft treffender durch den Begriff der __Wissensgesellschaft__ umschrieben werden sollte.
 
@@ -29,6 +30,19 @@ Während vor wenigen Jahren noch von der Informationsgesellschaft gesprochen wur
     | Sachkapital | --> | Wissenskapital  |
     | Hierarchie/Kontrolle | --> |  Vernetzung/Fokussierung |
     | Produkte | --> | Problemlösungen | 
+
+
+### Warum brauchen Organisationen Wissensmanagement?
+
+Gemäss heutigen Erfahrungen spart man durch Wissensmanagement **20-25% der bisherigen Aufwendungen** ein und erreicht eine **Qualitätssteigerung** von ca. 20% (_Quelle: Wyrsch & Partner, (c) 2012; <www.wyrsch-partner.ch>_).
+
+Beispiele: 
+
+* Der Erdöl-Konzern "Chevron" konnte durch Wissensmanagementmaßnahmen die Förderung von Erdgas optimieren, was einen jährlichen Nutzen von 20 Mio. Dollar erbrachte. 
+* Siemens gab in seiner Telekommunikationssparte ICN 15 Mio. DM für Wissensmanagement aus, wodurch im Gegenzug 280 Mio. DM an nicht notwendigen Ausgaben eingespart werden konnten. 
+* Texas Instruments vernetzte mittels Wissensmanagement seine weltweit 13 Chip-Fabriken so effizient, dass der Bau einer weiteren, eigentlich geplanten Fabrik entfallen konnte. Spar-Effekt: 1,5 Mrd. Dollar. 
+* "digital spirit" (e-learning) mit heute 100 Mitarbeitern: Leitende Mitarbeiter konnten auf diese Weise um bis zu 30% entlastet werden; die Einarbeitung neuer Mitarbeiter konnte wesentlich schneller geleistet werden. Insgesamt ist die "operative Hektik" deutlich geringer geworden.
+
 
 
 
@@ -60,43 +74,6 @@ Während vor wenigen Jahren noch von der Informationsgesellschaft gesprochen wur
   Erfolgreich sind vor allem solche Maßnahmen, durch die Ihre Mitarbeiter und Mitarbeiterinnen sich selbst als ein Teil des Ganzen empfinden und sich aktiv einbringen können.
 
 
-### Warum brauchen Organisationen Wissensmanagement?
-
-Gemäss heutigen Erfahrungen spart man durch Wissensmanagement **20-25% der bisherigen Aufwendungen** ein und erreicht eine **Qualitätssteigerung** von ca. 20% (_Quelle: Wyrsch & Partner, © 2012; <www.wyrsch-partner.ch>_).
-
-Beispiele: 
-
-* Der Erdöl-Konzern "Chevron" konnte durch Wissensmanagementmaßnahmen die Förderung von Erdgas optimieren, was einen jährlichen Nutzen von 20 Mio. Dollar erbrachte. 
-* Siemens gab in seiner Telekommunikationssparte ICN 15 Mio. DM für Wissensmanagement aus, wodurch im Gegenzug 280 Mio. DM an nicht notwendigen Ausgaben eingespart werden konnten. 
-* Texas Instruments vernetzte mittels Wissensmanagement seine weltweit 13 Chip-Fabriken so effizient, dass der Bau einer weiteren, eigentlich geplanten Fabrik entfallen konnte. Spar-Effekt: 1,5 Mrd. Dollar. 
-* "digital spirit" (e-learning) mit heute 100 Mitarbeitern: Leitende Mitarbeiter konnten auf diese Weise um bis zu 30 % entlastet werden, die Einarbeitung neuer Mitarbeiter konnte wesentlich schneller geleistet werden. "Insgesamt ist die operative Hektik deutlich geringer geworden
-
-
-Die Integration von Wissensmanagement in die Projektarbeit (Quelle: https://de.slideshare.net/mcwyrsch/wissensmanagement-in-unternehmen)
-
-* Projekte sind Orte des Lernens
-    * Ca. 20% - 40% des Wissens und der Dokumente aus Projekten können in anderen Projekten wieder verwendet werden[^2]
-* Wissensmanagement (bspw. Lessons Learned) muss im Projektvorgehen voll integriert sein und systematisch von Projekt zu Projekt weitergegeben werden
-* Die Lern-Loops sollen in die Organisation hineinreichen und nicht im Projektteam verbleiben
-* Wissensmanagement bietet die Möglichkeit 
-    - die Methoden in der Projektarbeit zu verbessern 
-    - Innovationen anzustoßen 
-    - Projekterfolge zu garantieren
-[^2]: Quelle: http://www.forschungsnetzwerk.at/downloadpub/wirkt%20wissensmanagement.pdf
-
-
-Wissensmanagement ist Katalysator bei der Überführung in eine << Lernende Organisation >>
-
-!!! note
-    Ziel der lernenden Organisation ist, das **Lern-** und **Wissenspotential der Mitarbeiter** (und damit der gesamten Organisation) zu vergrößern, um die **Leistungsfähigkeit** des  Unternehmens zu steigern. 
-
-Lernende Organisation...
-* ist eine Organisation, die kontinuierlich die Fähigkeit ausweitet, ihre eigene Zukunft schöpferisch zu gestalten
-* ist ein Ort, an dem Menschen entdecken, dass sie ihre Realität selbst erschaffen und selbst verändern können 
-* Dafür müssen die Rahmenbedingungen geschaffen werden: Wissensmanagement
-
-![image](./../../figures/lernende_organisation.png)
-
 
 ### Typische Wissensmanagementprobleme
 
@@ -126,30 +103,14 @@ Services) bestehen
 * Mitarbeiterwissen verfügbar machen
 * Benennung und Strukturierung von Wissen
 * Wissensweitergabe ermöglichen und fördern
-* Integration von relevantem Wissen in den Arbeitsfluss * Gezielter Wissensaufbau
+* Integration von relevantem Wissen in den Arbeitsfluss 
+* Gezielter Wissensaufbau
 * Aus Fehlern lernen
 * Dokumentation von Erfahrungswissen
 * Transfer von Wissen (vor Ausscheiden)
 * Wiederkehrende Fragen (FAQ)
 * Befähigung zur Bewältigung von Aufgaben
 
-
-
-### Phasen des Wissensmanagements
-
-![Phasen der Wissensproduktion und -nutzung](./../../figures/phasen_wissenproduktion_north.jpg) *Phasen der Wissensproduktion und -nutzung (Quelle: Klaus North, Ronald Maier, Wissen 4.0 – Wissensmanagement im digitalen Wandel)*
-
-**Phase 1** – << Beginn der Aufklärung >>
-: Beginn der systematischen wissenschaftlichen Erforschung der Natur und Entwicklung einer allgemein anerkannten wissenschaftlichen Methodik
-
-**Phase 2** – **Die Industriegesellschaft**
-: Wissen wurde in dieser Phase zunehmend in Maschinen und Produktionssysteme mit "mechanischen Algorithmen" eingebettet. Die Wissensproduktion durchdrang alle Lebensbereiche.
-
-__Phase 3__ – __Die Informationsgesellschaft__
-: Information und Wissen wurden zu dominierenden Produktionsfaktoren. Aus organisationaler Perspektive wurden Wettbewerbsvorteile mit der Einzigartigkeit von Ressourcen erklärt. Etablierung von wissensbasierten Theorien und Wissensmanagementsystemen in Unternehmen.
-
-__Phase 4__ – __Die Digitalgesellschaft__
-: Übergang zum ==Datenkapitalismus== bei dem die Wertschöpfung vorrangig von der unternehmerischen Kompetenz zur Aneignung und Auswertung von Daten abhängt. Intelligente und vernetzte Produkte und Dienstleistungen werden allgegenwärtig (ubiquitär) und durchdringen alle Lebensbereiche.
 
 
 

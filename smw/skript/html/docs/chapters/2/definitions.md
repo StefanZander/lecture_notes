@@ -1,5 +1,55 @@
 # Definitionen 
 
+Auf dieser Seite finden Sie Erläuterungen einiger der wichtigsten Begrifflichkeiten des 2. Kapitels – Technische Grundlagen der Wissensrepräsentation.
+
+
+!!! warning
+    **Definition**: << **Gegenstandsbereich** >>  
+    Der Gegenstandsbereich (_engl. Universe of Discourse_) ist ein relevanter Ausschnitt der Wirklichkeit der mit einem Wissensre...
+
+
+!!! warning
+    **Definition**: << ** Semantischer Wissensgraph ** >>  
+    Im Gegensatz zu einem labeled property graph besteht ein semantischer Wissensgraph 
+
+
+!!! warning
+    **Definition**: << **Ontologie** >>  
+    ...
+
+!!! warning
+    **Definition**: << **Resource Description Framework (RDF)** >>  
+    ...
+
+!!! warning
+    **Definition**: << **RDF Schema** >>  
+    ...
+
+!!! warning
+    **Definition**: << **Ontologiesprache** >>  
+    ...
+
+
+!!! warning
+    **Definition**: << **Modell-theoretische Semantik** >>  
+    ...
+
+!!! warning
+    **Definition**: << **Knowledge Representation Framework** >>  
+    ...
+
+!!! warning
+    **Definition**: << **Datenstrukturmodell** >>  
+    ...
+
+!!! warning
+    **Definition**: << **Knowledge Representation** >>  
+    ...
+
+!!! warning
+    **Definition**: << **Datenmodell** >>  
+    ...
+
 
 
 ### Conceptual Graphs

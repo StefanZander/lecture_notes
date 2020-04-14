@@ -14,13 +14,15 @@
 
 ### Gliederung
 
-- [Lektion 1: Was ist Wissen ?](chapters/1/wissen.md)
-- [Lektion 2: Warum benötigen Unternehmen ein funktionierendes Wissensmanagement ?](chapters/1/introduction.md)
-- [Lektion 3: Welche Rolle spielt der Mensch im Wissensmanagement ?](...)
+- [Warum wird Wissen zunehmend wichtiger für Unternehmen ?](chapters/1/motivation.md)
+- [Was ist Wissen ?](chapters/1/wissen.md)
+- [Warum benötigen Unternehmen ein funktionierendes Wissensmanagement ?](chapters/1/wissensmanagement.md)
+- [Welche Rolle spielt der Mensch im Wissensmanagement ?](chapters/1/mensch.md)
+- [Phasen der Wissensproduktion](chapters/1/phasen.md)
+- [Die Integration von Wissensmanagement in die Projektarbeit](chapters/1/projektarbeit.md)
 
 
 
 
-
-Gute Einführung in Wissensmanagement (-> Hauptaufgaben übernehmen) + sehr gute Vorlage für die Darstellung von Inhalten:
+TODO: Gute Einführung in Wissensmanagement (-> Hauptaufgaben übernehmen) + sehr gute Vorlage für die Darstellung von Inhalten:
 http://strategie-spektren.de/innovation/aufgaben-des-wissensmanagements/
