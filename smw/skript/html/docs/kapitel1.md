@@ -1,6 +1,5 @@
 # Kapitel 1: Einführung in das Wissensmanagement
 
-
 !!! abstract
     **Leitfragen**  
 
@@ -18,7 +17,7 @@
 - [Was ist Wissen ?](chapters/1/wissen.md)
 - [Warum benötigen Unternehmen ein funktionierendes Wissensmanagement ?](chapters/1/wissensmanagement.md)
 - [Welche Rolle spielt der Mensch im Wissensmanagement ?](chapters/1/mensch.md)
-- [Phasen der Wissensproduktion](chapters/1/phasen.md)
+- [Phasen der Wissensproduktion und -nutzung](chapters/1/phasen.md)
 - [Die Integration von Wissensmanagement in die Projektarbeit](chapters/1/projektarbeit.md)
 
 

@@ -123,11 +123,24 @@ TODO: Integrate!
 Wissensmanagement dient dazu
 : ...vorhandenes betriebliches Wissen zu identifizieren und zu vernetzen,
 : ...neues Wissen zu generieren und in neue Produkte, Prozesse und Geschäftsfelder umzusetzen,
-: ...Wissen von außen – über Kunden, Lieferanten, Partner und externe Know-how-Trägern – in das Unternehmen zu transferieren,
+: ...Wissen von außen – über Kunden, Lieferanten, Partner und externe Know-how-Träger – in das Unternehmen zu transferieren,
 : ...Wissen produktiv zu nutzen und
 : ...Wissen zu messen und zu bewerten
 
+!!! tip
+    **Aufgabe**  
+    Frage: _Wie lässt sich Wissen messen oder bewerten?_
+      
+    Überlegen Sie sich Ansätze und Möglichkeiten dies zu tun und diskutieren Sie diese. 
+
 Wissen ist eine wichtige Ressource und ein wertvoller Produktionsfaktor, der gemanagt werden muss. Jedoch ist Wissen ein "flüssiger Stoff": Es ist stets neu zu erwerben und kann nicht einmalig bereitgestellt werden. Für die Unternehmen ergibt sich daraus die Aufgabe, ihre Organisation und Unternehmenskultur so auszurichten, dass sich das verfügbare Wissen ständig "bewegt". Gemanagtes Wissen wird so zum Wettbewerbsvorteil und Innovationstreiber.
+
+!!! tip
+    **Aufgabe**  
+    Frage: _Wie lässt sich Wissen managen?_ 
+
+    Denken Sie kritisch über diese Frage nach; lässt sich Wissen wirklich managen und falls ja, in welcher Form und Ausprägung? Welche Ansätze (technisch / organisatorisch / personell / etc.) halten Sie hierfür für geeignet?  
+    Sammeln Sie eine Reihe von Ansatzpunkten und diskutieren Sie diese innerhalb ihrer Gruppe.
 
 Entwicklungstrends
 : ...Verfügbares Wissen wächst exponentiell.
@@ -140,10 +153,10 @@ Entwicklungstrends
 
 
 
-!!! example
+!!! tip
     **Aufgabe**  
     Beantworten Sie folgende Fragen:
 
-    * Warum ist Wissensmanagement mehr als eine technische Plattform?
-    * Überlegen Sie sich eine Reihe von organisationalen Maßnahmen zur Erhöhung der Informationsqualität
-    * Wie lässt sich Information Overload reduzieren ?
+    * _Warum ist Wissensmanagement mehr als eine technische Plattform?_
+    * _Überlegen Sie sich eine Reihe von organisationalen Maßnahmen zur Erhöhung der Informationsqualität_
+    * _Wie lässt sich Information Overload reduzieren?_
