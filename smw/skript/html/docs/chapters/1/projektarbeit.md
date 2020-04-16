@@ -1,5 +1,5 @@
 # Die Integration von Wissensmanagement in die Projektarbeit  
-(Quelle: https://de.slideshare.net/mcwyrsch/wissensmanagement-in-unternehmen)
+(_Quelle: https://de.slideshare.net/mcwyrsch/wissensmanagement-in-unternehmen_)
 
 * Projekte sind Orte des Lernens
     * Ca. 20% - 40% des Wissens und der Dokumente aus Projekten können in anderen Projekten wieder verwendet werden[^2]

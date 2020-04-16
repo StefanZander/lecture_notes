@@ -15,7 +15,8 @@
 
 - [Warum wird Wissen zunehmend wichtiger für Unternehmen ?](chapters/1/motivation.md)
 - [Was ist Wissen ?](chapters/1/wissen.md)
-- [Warum benötigen Unternehmen ein funktionierendes Wissensmanagement ?](chapters/1/wissensmanagement.md)
+- [Was ist Wissensmanagement ?](chapters/1/wissensmanagement.md)
+- [Warum benötigen Unternehmen ein funktionierendes Wissensmanagement ?](chapters/1/warum_wm.md)
 - [Welche Rolle spielt der Mensch im Wissensmanagement ?](chapters/1/mensch.md)
 - [Phasen der Wissensproduktion und -nutzung](chapters/1/phasen.md)
 - [Die Integration von Wissensmanagement in die Projektarbeit](chapters/1/projektarbeit.md)

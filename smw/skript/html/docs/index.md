@@ -55,11 +55,11 @@ The information on this site is separated into
 * [Kapitel #5: Knowledge Graph Engineering](index.md) 
 
 
-## Übungen
-* [Übung #1: Auseinandersetzung mit der Wissensmanagementliteratur](kapitel1.md) 
-* [Übung #2: Semantische Wissensgraphmodellierung](kapitel1.md)
-* [Übung #3: Installation von Semantic MediaWiki](kapitel1.md)
-* [Übung #4: Vertiefende Auseinandersetzung mit Semantic MediaWiki](kapitel1.md)
+## Übungen zum Selbststudium
+* [Übung #1: Auseinandersetzung mit der Wissensmanagementliteratur](./exercises/ue1.md) 
+* [Übung #2: Semantische Wissensgraphmodellierung](./exercises/ue2.md)
+* [Übung #3: Installation von Semantic MediaWiki](./exercises/ue3.md)
+* [Übung #4: Vertiefende Auseinandersetzung mit Semantic MediaWiki](./exercises/ue4.md)
 
 Modellierung Bsp. als konzeptueller SMW-Graph
 

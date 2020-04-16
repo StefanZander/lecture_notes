@@ -1,6 +1,13 @@
 # Die Rolle des Menschen im Wissensmanagement
 
 
+### Das Zusammenwirken von Mensch, Organisation und Technik
+
+_Quelle: TRENDREPORT "Auf Wissen bauen – mit systematischem Wissensmanagement zur digitalen Verwaltung"; Behörden Spiegel, Februar 2020_
+
+![Zusammenwirken](./../../figures/zusammenwirken.jpg) _Vereinfachte Darstellung des Zusammenwirkens zwischen Organisation, Mensch, und Technologie (Quelle: Behörden Spiegel, Feb. 2020)_
+
+
 ### Die Rolle der Mitarbeiter
 
 _Quelle: https://de.slideshare.net/mcwyrsch/wissensmanagement-in-unternehmen_
@@ -24,8 +31,3 @@ Und ihre Auswirkungen
 
 <!-- TODO: Kann auch zur lernenden Organisation -->
 
-### Das Zusammenwirken von Mensch, Organisation und Technik
-
-_Quelle: TRENDREPORT "Auf Wissen bauen – mit systematischem Wissensmanagement zur digitalen Verwaltung"; Behörden Spiegel, Februar 2020_
-
-![Zusammenwirken](./../../figures/zusammenwirken.jpg) _Vereinfachte Darstellung des Zusammenwirkens zwischen Organisation, Mensch, und Technologie (Quelle: Behörden Spiegel, Feb. 2020)_
