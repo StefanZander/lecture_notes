@@ -22,4 +22,10 @@ Und ihre Auswirkungen
 * Höhere Identifikation mit der Firma, weniger Fluktuation
 * Freierer Umgang mit Ideen
 
-TODO: Kann auch zur lernenden Organisation
+<!-- TODO: Kann auch zur lernenden Organisation -->
+
+### Das Zusammenwirken von Mensch, Organisation und Technik
+
+_Quelle: TRENDREPORT "Auf Wissen bauen – mit systematischem Wissensmanagement zur digitalen Verwaltung"; Behörden Spiegel, Februar 2020_
+
+![Zusammenwirken](./../../figures/zusammenwirken.jpg) _Vereinfachte Darstellung des Zusammenwirkens zwischen Organisation, Mensch, und Technologie (Quelle: Behörden Spiegel, Feb. 2020)_
