@@ -7,6 +7,10 @@ nav:
   - 'Kapitel 2: Technische Grundlagen': './chapters/2/overview.md'
   - 'Kapitel 3: Semantic MediaWiki': './chapters/3/overview.md'
   - 'Kapitel 4: Erweiterungen': './chapters/4/overview.md'
+  - 'Übung 1: Wissensmanagement': './exercises/ue1.md'
+  - 'Übung 2: Wissensmodellierung': './exercises/ue2.md'
+  - 'Übung 3: Semantic MediaWiki': './exercises/ue3.md'
+  - 'Übung 4: Vertiefung': './exercises/ue4.md'
   - 'Semesterprojekt': 'kapitel3.md'
 
   

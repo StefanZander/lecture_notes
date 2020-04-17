@@ -91,7 +91,7 @@ Für jede Teilleistung wird eine **Note** vergeben, die mit der jeweiligen Gewic
     1. Regelmäßige Teilnahe an VO
     2. Aktive Mitarbeit im Semesterprojekt
     3. Teilnahme an der Abschlusspräsentation
-    4. Note von 4,0 oder besser bei Prüfungsleistung am Semesterende
+    4. Note von 4,0 oder besser bei Prüfungsleistung und Semesterprojekt
     5. Bearbeitung aller Übungsaufgaben
 
 

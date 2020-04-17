@@ -48,20 +48,19 @@ The information on this site is separated into
 
 ## Themenübersicht
 * [Kapitel #1: Einführung in das Wissensmanagement](kapitel1.md) 
-* [Kapitel #2: Technologische Grundlagen](./chapters/2/overview.md) 
+* [Kapitel #2: Technologische Grundlagen semantischer Wissensrepräsentationsmodelle](./chapters/2/overview.md) 
 <!-- * [Kapitel #3: Semantische Wissensrepräsentation](./chapters/2/overview.md)  -->
 * [Kapitel #3: Semantic MediaWiki](./chapters/3/overview.md) 
 * [Kapitel #4: Semantic MediaWiki Extensions zum Ontology-Engineering](./chapters/4/overview.md) 
-* [Kapitel #5: Knowledge Graph Engineering](index.md) 
+* ~~[Kapitel #5: Knowledge Graph Engineering](index.md)~~ (_nicht im SoSe 2020_)
 
 
 ## Übungen zum Selbststudium
 * [Übung #1: Auseinandersetzung mit der Wissensmanagementliteratur](./exercises/ue1.md) 
 * [Übung #2: Semantische Wissensgraphmodellierung](./exercises/ue2.md)
-* [Übung #3: Installation von Semantic MediaWiki](./exercises/ue3.md)
+* [Übung #3: Einführung in Semantic MediaWiki](./exercises/ue3.md)
 * [Übung #4: Vertiefende Auseinandersetzung mit Semantic MediaWiki](./exercises/ue4.md)
 
-Modellierung Bsp. als konzeptueller SMW-Graph
 
 
 ## Semester Project

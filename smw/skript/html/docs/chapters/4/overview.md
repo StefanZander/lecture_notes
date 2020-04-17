@@ -14,4 +14,4 @@
 
 - [Lektion 1: Fortschrittliche Datenmodellierungskonzepte in Semantic MediaWiki ?](modelling.md)
 - [Lektion 2: Getting Started with Semantic MediaWiki supported Knowledge Management](setup.md)
-- [Lektion 3: Welche Rolle spielt der Mensch im Wissensmanagement ?](...)
+<!-- - [Lektion 3: Welche Rolle spielt der Mensch im Wissensmanagement ?](...) -->
