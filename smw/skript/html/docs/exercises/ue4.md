@@ -31,10 +31,48 @@ Hinweise:
 - Überlegen Sie, welche Properties und Datentypen Sie für die Umsetzung benötigen
 - Erzeugen Sie einige Testinstanzdaten (Personen / Berichtspunkte / Protokolle etc.)
 - Überprüfen Sie die Korrektheit Ihres gewählten Modellierungsansatzes mittels einer `#ask`-query. Bspw. können Sie nach dem Inhalt eines bestimmten (referenzierten) Berichtspunktes fragen.
+- Überlegen Sie, wo sie sinnvollerweise die Informationen zu Mitgliedschaften vorhalten
 
 
 ### Vorbereitung für das Semesterprojekt
 
-1. **Installieren** Sie Semantic MediaWiki auf einem Rechner Ihrer Wahl oder nutzen Sie einen Online-Hosting-Service um die Instanz für Ihr Semesterprojekt aufzusetzen
+1. **Installation**  
+    Installieren Sie Semantic MediaWiki auf einem Rechner Ihrer Wahl oder nutzen Sie einen Online-Hosting-Service um die Instanz für Ihr Semesterprojekt aufzusetzen
+    - Hilfe zur Installation  
+        <https://www.semantic-mediawiki.org/wiki/Help:Installation>
 
-2. Entwickeln Sie eine wissensmagement
+2. **Konfiguration**  
+    Konfigurieren Sie Ihre Semantic MediaWiki Instanz entsprechend
+    
+    - Legen Sie Nutzer an
+    - Schränken Sie den freien Schreibzugriff entsprechend ein (so dass nachvollziehbar ist, welcher Nutzer welche Änderungen vorgenommen bzw. Inhalte erstellt hat)
+
+    Hilfe zur Konfiguration  
+        <https://www.semantic-mediawiki.org/wiki/Help:Configuration>
+
+3. **Erweiterungen**  
+    Installieren Sie die folgenden Erweiterungen
+
+    - Page Forms (formerly known as Semantic Forms)  
+        <https://www.mediawiki.org/wiki/Extension:Page_Forms>
+    - Semantic Compound Queries  
+        <https://www.mediawiki.org/wiki/Extension:Semantic_Compound_Queries>
+      
+    !!! note
+        **Hinweis**:  
+        Eine Übersicht aktueller Extensions finden Sie hier  
+        <https://www.semantic-mediawiki.org/wiki/Help:Semantic_MediaWiki_extensions>  
+
+    
+    Installieren Sie weitere Erweiterungen bei Bedarf – bspw. Semantic Result Formats  
+    <https://www.semantic-mediawiki.org/wiki/Extension:Semantic_Result_Formats>
+      
+    
+4. **Auswahl der Domäne und der wissensmanagement-relevanten Fragestellungen**  
+    
+    1. Machen Sie sich bereits erste Gedanken über die Domäne bzw. den Gegenstandsbereich, den Sie mit Semantic MediaWiki abbilden wollen
+    2. Überlegen Sie sich erste Problem- und Fragestellungen, die Sie mit Ihrem Semantic MediaWiki beantworten wollen
+    3. Formulieren Sie eine Reihe von Fragen, deren Antworten Sie aus den im Semantic MediaWiki hinterlegten Daten generieren wollen
+
+   
+   

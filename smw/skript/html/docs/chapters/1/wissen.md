@@ -41,8 +41,12 @@ Wissen ist
 
 nach _Michael Polanyi (1966), "The Tacit Dimension", University of Chicago Press: Chicago_
 
-Bekannt ist die Aussage
+Bekannt sind die folgenden Aussagen
 > "We know more than we can tell."
+>
+> "If HP knew what HP knows, we would be three times as profitable"
+
+_(vgl. Hinds, P. J.; Pfeffer, J. (2003): Why Organizations Don’t "Know What They Know": Cognitive and Motivational Factors Affecting the Transfer of Expertise. In: Ackerman, M. S.; Pipek, V.; Wulf, V. (2003) (Eds.): Sharing Expertise. Beyond Knowledge Management, pp. 3-26)_
 
 | **Explicit Knowledge**                                                                 | **Tacit / Implicit Knowledge**  |
 |----------------------------------------------------------------------------------------|---------------------------------|
