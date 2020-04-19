@@ -3,7 +3,7 @@
 
 ### Von der Industrie- zur Wissensgesellschaft
 
-Quelle: 01_WM_Theorie.pdf
+_Quelle: 01_WM_Theorie.pdf_
 
 Mitte der 1960er Jahre waren noch über 50% aller Beschäftigten in der Industrie tätig.
 
@@ -28,7 +28,7 @@ Während vor wenigen Jahren noch von der Informationsgesellschaft gesprochen wur
 
 ### Effekte durch Wissensmanagement 
 
-Gemäss heutigen Erfahrungen spart man durch Wissensmanagement **20-25% der bisherigen Aufwendungen** ein und erreicht eine **Qualitätssteigerung** von ca. 20%  
+Gemäss heutigen Erfahrungen spart man durch Wissensmanagement **20-25%** der bisherigen **Aufwendungen** ein und erreicht eine **Qualitätssteigerung** von **ca. 20%**.  
 (_Quelle: Wyrsch & Partner, (c) 2012, <http://www.wyrsch-partner.ch>_).
 
 Beispiele: 

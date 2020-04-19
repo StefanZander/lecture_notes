@@ -24,5 +24,5 @@
 
 
 
-TODO: Gute Einführung in Wissensmanagement (-> Hauptaufgaben übernehmen) + sehr gute Vorlage für die Darstellung von Inhalten:
-http://strategie-spektren.de/innovation/aufgaben-des-wissensmanagements/
+<!-- TODO: Gute Einführung in Wissensmanagement (-> Hauptaufgaben übernehmen) + sehr gute Vorlage für die Darstellung von Inhalten:
+http://strategie-spektren.de/innovation/aufgaben-des-wissensmanagements/ -->

@@ -5,17 +5,30 @@
 
 ### Die Hauptaufgaben des Wissensmanagements
 
---> Sehr gute Vorlage: http://strategie-spektren.de/innovation/aufgaben-des-wissensmanagements/
+_Quelle: http://strategie-spektren.de/innovation/aufgaben-des-wissensmanagements/_
 
 * **Implizites Wissen in explizites Wissen umwandeln**: Implizites Wissen entsteht in erster Linie durch Erfahrung, und liegt somit eher unbewusst in einer nur schwer auszudrückenden Form vor. Ziel des Wissensmanagements ist es dieses schwer zu greifende implizite Wissen in greifbares explizites Wissen zu transformieren.
 * **Individuelles Wissen in kollektives Wissen überführen**: Insbesondere in kleinen und mittelständischen Unternehmen (KMUs), ist Wissen häufig an eine oder wenige Personen gebunden. Ziel ist es daher, das vorhandene (explizite) Wissen bestmöglich zu dokumentieren und allen Mitarbeitern zugänglich zu machen.
 * **Externes Wissen in das Unternehmen integrieren**: Nicht alles Wissen, das ein Unternehmen für seinen Geschäftserfolg braucht, ist immer im Unternehmen vorhanden. Hier gilt es, effiziente Wege zu finden, um Wissen zu erwerben und das erworbene Wissen schließlich in das kollektive Wissen der Organisation zu übertragen.
 
 
+### Weitere typische Aufgaben des Wissensmanagements
+* Mitarbeiterwissen verfügbar machen
+* Benennung und Strukturierung von Wissen
+* Wissensweitergabe ermöglichen und fördern
+* Integration von relevantem Wissen in den Arbeitsfluss 
+* Gezielter Wissensaufbau
+* Aus Fehlern lernen
+* Dokumentation von Erfahrungswissen
+* Transfer von Wissen (vor Ausscheiden)
+* Wiederkehrende Fragen (FAQ)
+* Befähigung zur Bewältigung von Aufgaben
+
+
 ### Ziele des Wissensmanagements
 
 * Der Austausch von Wissen soll die Resonanzfähigkeit des Unternehmens erhöhen, und somit bestehende Denkmuster durchbrechen. Letztlich soll dadurch die Reaktionsfähigkeit erhöht werden, was ein zentrales Merkmale der _agilen Organisation_ ist. Das Wissensmanagement kann somit als eine wesentliche Voraussetzung für eine __digitale Transformation__ gesehen werden.
-* Eine Besondere Bedeutung hat das Wissensmanagement im Zusammenhang mit der __Open Innovation__. Hier wird der Informations- und Wissensaustausch nicht nur als ein interner Prozess betrachtet, sondern als ein ==Austausch zwischen der internen Organisation und ihrer externen Umgebung== (bspw. Kunden, Lieferanten, strategische Partner). Wissensmanagement ist also ein wichtiger Bestandteil des Innovationsprozesses.
+* Eine Besondere Bedeutung hat das Wissensmanagement im Zusammenhang mit der __Open Innovation__. Hier wird der Informations- und Wissensaustausch nicht nur als ein interner Prozess betrachtet, sondern als ein _Austausch zwischen der internen Organisation und ihrer externen Umgebung_ (bspw. Kunden, Lieferanten, strategische Partner). Wissensmanagement ist also ein wichtiger Bestandteil des Innovationsprozesses.
 
 
 
@@ -55,28 +68,15 @@ Services) bestehen
 [^1]: Hieran sieht man, dass die Dimension "Organisation" (=Unternehmenskultur, verborgene Gesetzmäßigkeiten (hidden rules), Organisationsstruktur, Hierarchie etc.) eine wichtige Rolle im Wissensmanagement spielt 
 
 
-### Typische Aufgaben des Wissensmanagements
-* Mitarbeiterwissen verfügbar machen
-* Benennung und Strukturierung von Wissen
-* Wissensweitergabe ermöglichen und fördern
-* Integration von relevantem Wissen in den Arbeitsfluss 
-* Gezielter Wissensaufbau
-* Aus Fehlern lernen
-* Dokumentation von Erfahrungswissen
-* Transfer von Wissen (vor Ausscheiden)
-* Wiederkehrende Fragen (FAQ)
-* Befähigung zur Bewältigung von Aufgaben
 
 
 
-
-### Was ist Wissensmanagement
+<!-- ### Was ist Wissensmanagement ? -->
+### Zusammenfassung
 
 _Quelle: http://qib.f-bb.de/wissensmanagement/thema/_
 
-TODO: Integrate!
-
-Wissensmanagement dient dazu
+**Wissensmanagement** dient dazu
 : ...vorhandenes betriebliches Wissen zu identifizieren und zu vernetzen,
 : ...neues Wissen zu generieren und in neue Produkte, Prozesse und Geschäftsfelder umzusetzen,
 : ...Wissen von außen – über Kunden, Lieferanten, Partner und externe Know-how-Träger – in das Unternehmen zu transferieren,
@@ -89,7 +89,7 @@ Wissensmanagement dient dazu
 
     Überlegen Sie sich Ansätze und Möglichkeiten dies zu tun und diskutieren Sie diese. 
 
-Wissen ist eine wichtige Ressource und ein wertvoller Produktionsfaktor, der gemanagt werden muss. Jedoch ist Wissen ein "flüssiger Stoff": Es ist stets neu zu erwerben und kann nicht einmalig bereitgestellt werden. Für die Unternehmen ergibt sich daraus die Aufgabe, ihre Organisation und Unternehmenskultur so auszurichten, dass sich das verfügbare Wissen ständig "bewegt". Gemanagtes Wissen wird so zum Wettbewerbsvorteil und Innovationstreiber.
+Wissen ist eine wichtige Ressource und ein wertvoller Produktionsfaktor, der gemanagt werden muss. Jedoch ist Wissen ein "flüssiger Stoff": Es ist stets neu zu erwerben und kann nicht einmalig bereitgestellt werden. Für die Unternehmen ergibt sich daraus die Aufgabe, ihre **Organisation** und **Unternehmenskultur** so auszurichten, dass sich das verfügbare Wissen ständig "bewegt". Gemanagtes Wissen wird so zum Wettbewerbsvorteil und Innovationstreiber.
 
 !!! tip
     **Aufgabe**  

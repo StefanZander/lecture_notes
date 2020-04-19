@@ -3,6 +3,7 @@ site_name: Praktikum zur LVA "Nutzerzentrierte Softwareentwicklung"
 nav:
   - 'Startseite': 'index.md'
   - 'Corona-Modus': 'corona.md'
+  - 'Arbeiten mit BBB': 'bbb.md'
   - 'Vorbemerkung': 'vorbemerkung.md'
   - 'Projektmappe': 'projektmappe.md'
   - 'Termin 0: Android Studio': 'termin1.md'

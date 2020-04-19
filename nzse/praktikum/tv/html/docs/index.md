@@ -3,10 +3,13 @@
 
 Auf den folgenden Seiten finden Sie die **Aufgaben** der jeweiligen Praktikumseinheiten sowie **allgemeine Informationen** zum Praktikum.
 
+## Informationen zum SoSe 2020
+
+* [Modus der LVA während der Corona-Krise](corona.md)
+* [Arbeiten mit BigBlueButton (BBB)](bbb.md)
 
 ## Allgmeine Informationen
 
-* {++[Modus der LVA während der Corona-Krise](corona.md)++}
 * [Vorbemerkung zum Praktikum](vorbemerkung.md)
 * [Projektmappe](projektmappe.md)
 

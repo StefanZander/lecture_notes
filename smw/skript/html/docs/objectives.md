@@ -5,10 +5,10 @@
 
 Nach dem Absolvieren der Lehrveranstaltung sind die Studierende in der Lage
 
-* [x] ...selbständig ein Wissensmanagementproblem zu identifizieren und einen IT-gestützten Lösungsansatz auf Grundlage der Sprach- und Entwurfskonzepte semantischer Wissensgraphmodellierung zu entwickeln
-* [x] ...ein identifiziertes Wissensmanagementproblem zu operationalisieren, d.h., ein geeignetes semantisches Beschreibungsmodell in Form einer leichtgewichtigen Ontologie zu erstellen
-* [x] ...die relevanten Entitäten eines Gegenstandbereichs und deren Beziehungen untereinander zu formalisieren und in einen Ontologie-basierten Wissensgraphen zu überführen
-* [x] ...leichtgewichtige Ontologien und semantische Wissensgraphen mittels der Software Semantic MediaWiki zu implementieren und zu verfeinern
+* [x] ...selbständig ein **Wissensmanagementproblem** zu identifizieren und einen IT-gestützten Lösungsansatz auf Grundlage der Sprach- und Entwurfskonzepte semantischer Wissensgraphmodellierung zu entwickeln
+* [x] ...ein identifiziertes Wissensmanagementproblem zu operationalisieren, d.h., ein geeignetes **semantisches Beschreibungsmodell** in Form einer leichtgewichtigen Ontologie zu erstellen
+* [x] ...die relevanten Entitäten eines **Gegenstandbereichs** und deren Beziehungen untereinander zu formalisieren und in einen Ontologie-basierten Wissensgraphen zu überführen
+* [x] ...leichtgewichtige Ontologien und semantische Wissensgraphen mittels der Software **Semantic MediaWiki** zu implementieren und zu verfeinern
 * [x] ...grundlegende Sprach- und Entwurfskonzepte aus dem Bereich der semantischen Wissensgraphmodellierung auf ein bestehendes Wissensmanagementproblem anzuwenden und mittels der Software Semantic MediaWik umzusetzen.
 
 
@@ -31,9 +31,11 @@ Konkret werden Inhalte aus folgenden Fachgebieten behandelt:
 
 ### Durchführung
 
-Durchführung im SoSe 2020 als Online-Lehrveranstaltung via BigBlueButton (BBB) (<https://rooms.fbi.h-da.de/>)
-: VO: MO, 14:15 - 15:45 Uhr in [Raum D14/00.04](<https://rooms.fbi.h-da.de/D14/00.04>)
-: UE: MO, 16:00 - 17:30 Uhr in [Raum D14/00.04](<https://rooms.fbi.h-da.de/D14/00.04>) oder via [Jitsi-Meeting](<https://meet.fbi.h-da.de/>)
+Durchführung im SoSe 2020 als Online-Lehrveranstaltung via **BigBlueButton (BBB)** (<https://rooms.fbi.h-da.de/>)
+: VO: **MO, 14:15 - 15:45 Uhr** in [Raum D14/00.04](<https://rooms.fbi.h-da.de/D14/00.04>)
+: UE: **MO, 16:00 - 17:30 Uhr** in [Raum D14/00.04](<https://rooms.fbi.h-da.de/D14/00.04>) oder via [Jitsi-Meeting](<https://meet.fbi.h-da.de/>)
+: * Durchführung im Selbststudium
+: * Im o.g. Termin stehe ich für Fragen / Rückmeldung / etc. zur Verfügung
 
 Lehrveranstaltungsunterlagen
 : ...verfügbar als [Onlineskript](...) 
@@ -41,7 +43,7 @@ Lehrveranstaltungsunterlagen
 
     * ergänzende Unterlagen (Paper / Foliensätze / etc.)
     * Einreichung der Übungsaufgaben
-    * Festlegung der Teams
+    * Festlegung der Teams für das Semesterprojekt
     * Ankündigungs- und Diskussionsforum
 
     !!! warning
@@ -50,7 +52,7 @@ Lehrveranstaltungsunterlagen
 
 ### Übung
 
-Parallel zur Vorlesungseinheit sind Übungsaufgaben zu bearbeiten 
+Parallel zur Vorlesungseinheit sind **Übungsaufgaben** zu bearbeiten 
 : ...in denen das Wissen der Vorlesung verfestigt und angewendet werden muss
 : ...die im SoSe 2020 vor allem das Selbststudium unterstützen sollen
 : ...die auf das Semesterprojekt vorbereiten.
@@ -67,7 +69,7 @@ Mehr Infos finden sich auf den jeweiligen Übungsseiten.
 
 ### Beurteilung
 
-Die Gesamtbeurteilung der LVA setzt sich aus 2 Teilleitungen zusammen
+Die **Gesamtbeurteilung** der LVA setzt sich aus **2 Teilleitungen** zusammen
 : 70% Projektarbeit und Präsentation (--> Semesterprojekt)
 : 30% Prüfungsleistung am Semesterende 
     : im SoSe 2020 Wahl zwischen folgenden Optionen
@@ -101,7 +103,7 @@ Für jede Teilleistung wird eine **Note** vergeben, die mit der jeweiligen Gewic
 
 ### Semesterprojekt
 
-Durchführung in 2er Teams; Konstellation bitte in Moodle hinterlegen
+Durchführung in 2er Teams; Konstellation bitte in Moodle hinterlegen ([-->Link](https://lernen.h-da.de/mod/data/view.php?id=357528))
 
 Praktische Umsetzung eines Wissensmanagementproblems mittels Semantic MediaWiki
 
@@ -122,7 +124,7 @@ Die LVA gliedert sich in **6 Hauptbestandteile**:
 3. Einführung in Semantic MediaWiki (--> _Woche 3_)
 4. Erweiterungen für die kollaborative Ontologieerstellung mit Semantic MediaWiki (--> _Woche 4_)
 5. Semesterprojekt in Form individueller Projektarbeit (--> _Woche 5 - 10_)
-6. Projektpräsentationen und (kurze) Prüfung am Semesterende (--> _Woche 11 & 12_)
+6. Projektpräsentationen und (kurze) Prüfung/Abschlussarbeit am Semesterende (--> _Woche 11 & 12_)
 
 
 ### Zeitlicher Ablauf

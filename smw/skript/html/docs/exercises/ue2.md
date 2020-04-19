@@ -17,7 +17,7 @@
     : _"Semantic Web for the Working Ontologist – Effective Modeling in RDFS and OWL" (Second Edition)_  
     von Dean Allemang und Jim Hendler (--> [Link in Moodle](https://lernen.h-da.de/pluginfile.php/466426/mod_resource/content/1/Semantic%20Web%20for%20the%20Working%20Ontologist%202nd.pdf)) 
     
-    und beantworten Sie folgende Fragen:
+    ...und beantworten Sie folgende Fragen:
 
     1. _Welche Rolle spielen Modelle in der Mensch-Maschine-Kommunikation ?_
     2. _Erläutern Sie die Konsequenzen, welche die vier wesentlichen Grundkonzepte (AAA, Non-unique Naming Assumption, Netzwerkeffekt, Open-World Assumption) auf die Informationsqualität eines Gegenstandbereichs haben._
