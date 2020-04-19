@@ -2,6 +2,7 @@ site_name: Praktikum zur LVA "Nutzerzentrierte Softwareentwicklung"
 
 nav:
   - 'Startseite': 'index.md'
+  - 'Corona-Modus': 'corona.md'
   - 'Vorbemerkung': 'vorbemerkung.md'
   - 'Projektmappe': 'projektmappe.md'
   - 'Termin 0: Android Studio': 'termin1.md'
@@ -36,6 +37,7 @@ markdown_extensions:
   - admonition
   - smarty:
       smart_angled_quotes: true
+  - extra
   - codehilite:
       linenums: true
       guess_lang: true
