@@ -50,8 +50,8 @@ The information on this site is separated into
 * [Kapitel #1: Einführung in das Wissensmanagement](kapitel1.md) 
 * [Kapitel #2: Technologische Grundlagen semantischer Wissensrepräsentationsmodelle](./chapters/2/overview.md) 
 <!-- * [Kapitel #3: Semantische Wissensrepräsentation](./chapters/2/overview.md)  -->
-* [Kapitel #3: Semantic MediaWiki](./chapters/3/overview.md) 
-* [Kapitel #4: Semantic MediaWiki Extensions zum Ontology-Engineering](./chapters/4/overview.md) 
+* [Kapitel #3: Semantic MediaWiki](./chapters/3/overview.md) (_im Aufbau_)
+* [Kapitel #4: Semantic MediaWiki Extensions zum Ontology-Engineering](./chapters/4/overview.md) (_im Aufbau_)
 * ~~[Kapitel #5: Knowledge Graph Engineering](index.md)~~ (_nicht im SoSe 2020_)
 
 

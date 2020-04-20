@@ -20,8 +20,10 @@
     
     und beantworten Sie folgende Fragen:
 
-    1. ...
-    2. 
+    1. Erläutern Sie anhand eines selbst gewählten Beispiels, wie sich die Wertschöpfung durch steigende Wissensintensität bzw. wissensintensive Technologien verändert / verbessert hat. <!-- S.7 Intelligente Produkte -->
+    2. Tragen Sie Maßnahmen zusammen, die den Aufbau einer kollektiven Wissensbasis im Unternehmen unterstützen. Wie kann dies managementseitig ebenfalls unterstützt und gefördert werden?
+    3. Erläutern Sie, warum eine kollektive Wissensbasis mehr ist, als die Summe der Experten eines Unternehmens.
+    4. Warum ist das Konzept der "Lernenden Organisation" auch in nicht hoch-dynamischen Wirtschaftszweigen wichtig? 
 
 2. Lesen Sie das Paper
 
@@ -30,9 +32,10 @@
 
     und beantworten Sie folgende Fragen:
 
-    1. ...
-    2. ...
-    3. ...
+    1. Warum lässt sich mit "Wissen" allein noch kein Problem lösen?
+    2. Welche Herausforderungen an das Wissensmanagement werden zukünftig noch zunehmen?
+    3. Was ist der Unterschied zwischen operativem und strategischem Wissensmanagement?
+    4. Erläutern Sie Maßnahmen, wie sich das operative und strategische Wissensmanagement verbinden lässt.
 
 
 ### Modellierung eines realen Ausschnitts eines Gegenstandbereichs

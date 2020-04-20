@@ -32,8 +32,8 @@ Konkret werden Inhalte aus folgenden Fachgebieten behandelt:
 ### Durchführung
 
 Durchführung im SoSe 2020 als Online-Lehrveranstaltung via **BigBlueButton (BBB)** (<https://rooms.fbi.h-da.de/>)
-: VO: **MO, 14:15 - 15:45 Uhr** in [Raum D14/00.04](<https://rooms.fbi.h-da.de/D14/00.04>)
-: UE: **MO, 16:00 - 17:30 Uhr** in [Raum D14/00.04](<https://rooms.fbi.h-da.de/D14/00.04>) oder via [Jitsi-Meeting](<https://meet.fbi.h-da.de/>)
+: VO: **MO, 12:30 - 14:00 Uhr** in [Raum D14/00.04](<https://rooms.fbi.h-da.de/D14/00.04>)
+: UE: **MO, 14:15 - 15:45 Uhr** in [Raum D14/00.04](<https://rooms.fbi.h-da.de/D14/00.04>) oder via [Jitsi-Meeting](<https://meet.fbi.h-da.de/>)
 : * Durchführung im Selbststudium
 : * Im o.g. Termin stehe ich für Fragen / Rückmeldung / etc. zur Verfügung
 
