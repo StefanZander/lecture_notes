@@ -3,13 +3,13 @@
 
 ### Ziele der Lehrveranstaltung
 
-Nach dem Absolvieren der Lehrveranstaltung sind die Studierende in der Lage
+Nach dem Absolvieren der Lehrveranstaltung sind die Studierende in der Lage...
 
 * [x] ...selbständig ein **Wissensmanagementproblem** zu identifizieren und einen IT-gestützten Lösungsansatz auf Grundlage der Sprach- und Entwurfskonzepte semantischer Wissensgraphmodellierung zu entwickeln
 * [x] ...ein identifiziertes Wissensmanagementproblem zu operationalisieren, d.h., ein geeignetes **semantisches Beschreibungsmodell** in Form einer leichtgewichtigen Ontologie zu erstellen
 * [x] ...die relevanten Entitäten eines **Gegenstandbereichs** und deren Beziehungen untereinander zu formalisieren und in einen Ontologie-basierten Wissensgraphen zu überführen
 * [x] ...leichtgewichtige Ontologien und semantische Wissensgraphen mittels der Software **Semantic MediaWiki** zu implementieren und zu verfeinern
-* [x] ...grundlegende Sprach- und Entwurfskonzepte aus dem Bereich der semantischen Wissensgraphmodellierung auf ein bestehendes Wissensmanagementproblem anzuwenden und mittels der Software Semantic MediaWik umzusetzen.
+* [x] ...grundlegende Sprach- und Entwurfskonzepte aus dem Bereich der semantischen Wissensgraphmodellierung auf ein bestehendes Wissensmanagementproblem anzuwenden und mittels der Software Semantic MediaWiki umzusetzen.
 
 
 ### Lehrveranstaltungsinhalte
@@ -58,7 +58,8 @@ Parallel zur Vorlesungseinheit sind **Übungsaufgaben** zu bearbeiten
 : ...die auf das Semesterprojekt vorbereiten.
 
 
-Die Bearbeitung der Übungsaufgaben ist Pflicht für ein erfolgreiches Absolvieren der LVA
+~~Die Bearbeitung der Übungsaufgaben ist Pflicht für ein erfolgreiches Absolvieren der LVA~~  
+Die Bearbeitung der Übungsaufgaben wird dringend empfohlen. Für eine konsequente und korrekte Bearbeitung aller Übungsaufgaben gibt es einen Bonus auf die Abschlussnote. 
 
 idR eine Woche Bearbeitungszeit bis zur nächsten Vorlesungseinheit
 
@@ -94,7 +95,7 @@ Für jede Teilleistung wird eine **Note** vergeben, die mit der jeweiligen Gewic
     2. Aktive Mitarbeit im Semesterprojekt
     3. Teilnahme an der Abschlusspräsentation
     4. Note von 4,0 oder besser bei Prüfungsleistung und Semesterprojekt
-    5. Bearbeitung aller Übungsaufgaben
+    5. ~~Bearbeitung aller Übungsaufgaben~~ (nicht im SoSe 2020)
 
 
 
@@ -111,7 +112,7 @@ Die Festlegung des Wissensmanagementproblems und der Domäne erfolgt in Abstimmu
 
 Präsention der Umsetzung am Semesterende via BBB
 
-Mehr Informationen finden sich auf der [Semesterprojektseite](...)
+Mehr Informationen finden sich auf der [Semesterprojektseite](...) (im Aufbau)
 
 
 

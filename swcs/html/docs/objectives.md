@@ -22,12 +22,12 @@ This site outlines the **main objectives** of this course together with a conden
 - Learn how to write a **review** for one of your colleagues‘ papers
 - Search for relevant literature in **scientific literature databases**
 - Learn how to write a scientific paper using **LaTeX**
-- Become acquianted with the **EasyChair** conference system ([--> Link](https://easychair.org/))
+- Become acquianted with the **EasyChair** conference system ([_-->_ Link](https://easychair.org/))
 
 
 !!! warning
     **Please Note**:  
-    Maybe the **most important objective** of this course is to experience and learn how to **independently work** on a subject in an efficient, coordinated, and systematic way so that defined **quality standards** *(=those that make a good scientific paper; see [Elements of Scientific Work](objectives.md#elements_of_scientific_work))* are reached. 
+    Maybe the **most important objective** of this course is to experience and learn how to **independently work** on a subject in an efficient, coordinated, and systematic way so that defined **quality standards** *(=those that make a good scientific paper; --> see [Elements of Scientific Work](objectives.md#elements_of_scientific_work))* are reached. 
 
 
 ## Elements of Scientific Work
@@ -80,14 +80,15 @@ You will discover a lot, mostly more detailed in the lecture and through your li
 - *and many more...*
 
 !!! note
-    **Note**: Consult the literature recommendations for more details and background information.
+    **Recommended Literature**:  
+    Consult the literature recommendations for more details and background information. It helps a lot.
 
 
 ## Literature Recommendations
 
 External Information about good Scientific Work Practices
 
-* The fundamentals of science explained in a nice interactive showcase
+* The fundamentals of science explained in a nice interactive showcase  
     <https://undsci.berkeley.edu/interactive/#/intro/1>
 
 * "Understanding Science 101" – online course by the University of Berkeley
@@ -96,7 +97,7 @@ External Information about good Scientific Work Practices
 * Excellent article series about scientific writing (*must read*)  
     <https://www.aacc.org/publications/clinical-chemistry/clinical-chemistry%C2%A0guide-to-scientific-writing>
 
-* The European Code of Conduct for Research Integrity, Revised Edition (2017):
+* The European Code of Conduct for Research Integrity, Revised Edition (2017)  
     <http://www.allea.org/wp-content/uploads/2017/03/ALLEA-European-Code-of-Conduct-for-Research-Integrity-2017-1.pdf>
 
 * American Scientist, The Science of Scientific Writing  
@@ -105,22 +106,22 @@ External Information about good Scientific Work Practices
 * European Science Foundation Policy Briefing Good scientific practice in research and scholarship from Dec. 2010:  
     <http://archives.esf.org/fileadmin/Public_documents/Publications/ESPB10.pdf>
 
-* Excellent Article about Hypothesis Buiding and Research Design (*must read*)
+* Excellent Article about Hypothesis Buiding and Research Design (*must read*) 
     <https://www.merlin.uzh.ch/contributionDocument/download/6915>
 
-* Nice summary of tipps for Phd theses but these also apply to any kind of scientific works
+* Nice summary of tipps for Phd theses but these also apply to any kind of scientific works  
     <https://medium.com/asecuritysite-when-bob-met-alice/as-a-phd-examiner-my-top-25-tips-for-phd-students-4ecb76a307e7>
 
-* An article from Oded Goldreich on how to write a scientific paper
+* An article from Oded Goldreich on how to write a scientific paper  
     <http://www.wisdom.weizmann.ac.il/~oded/R2/re-writing.pdf>
 
-* Simon Peyton Jones from Microsoft Research created an excellent presentaion on how to give a great research talk
+* Simon Peyton Jones from Microsoft Research created an excellent presentaion on how to give a great research talk  
     <https://www.microsoft.com/en-us/research/wp-content/uploads/2016/07/How-to-give-a-great-research-talk.pdf>
 
-* Clarity and Impact: Key Tips for Writing a Good Scientific Paper
+* Clarity and Impact: Key Tips for Writing a Good Scientific Paper  
     <https://www.mendeley.com/careers/article/clarity-and-impact-key-tips-for-writing-a-good-scientific-paper/>
 
-* Some online courses on scientific writing from Elsevier Researcher Academy (registration required)
+* Some online courses on scientific writing from Elsevier Researcher Academy (registration required)  
     <https://researcheracademy.elsevier.com/>
 
 

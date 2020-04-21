@@ -7,7 +7,7 @@
 Woche 01: Orga + Einführung User-Centered Design  
 Woche 02: User Research  
 Woche 03: Requirements Engineering  
-Woche 04: Modellbildung + Start Visual Design
+Woche 04: Modellbildung + Start Visual Design  
 Woche 05: Visual Design  
 Woche 06: Android Einführung  
 Woche 07: Android Application Model + Inter-Activity Communication  

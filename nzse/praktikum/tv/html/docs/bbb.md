@@ -18,9 +18,12 @@
 #### Wie melde ich mich in BBB, wie stelle ich Fragen?
 Wenn Sie eine Fragen haben oder etwas beitragen wollen, dann...
 : ...schreiben Sie Ihren **Namen** in die `Geteilten Notizen`
-    : ~> ich erteile Ihnen dann bei nächster Gelegenheit das Wort 
+    : ~> ich erteile Ihnen dann bei nächster Gelegenheit das Wort
+: ...oder schalten Sie Ihr **Mikrofon** auf "unmute" und machen Sie sich bemerkbar
+    : ~> ich unterbreche dann die aktuellen Ausführung und erteile Ihnen das Wort. 
 : Falls Sie nur eine Frage stellen aber nicht sprechen wollen, dann schreiben Sie nur **die Frage** in die `Geteilten Notizen`
     : ~> ich werde die Frage dann bei nächster Gelegenheit beantworten ohne den Urheber aufzurufen
+
 
 
 ### Noch ein paar allgemeine Grundsätze
@@ -29,4 +32,4 @@ Wenn Sie eine Fragen haben oder etwas beitragen wollen, dann...
 * **Störungen**: Onlinekurse sind für die Teilnehmenden wie für die Lehrenden idR anstrengender als eine Veranstaltung vor Ort. Bitte orientieren Sie sich deshalb in Ihrem Handeln an der Frage, ob Ihr Verhalten konstruktiv ist. Unterstützung und gute Ideen sind immer gefragt; manche Spielerei dürfte dagegen mindestens anstrengend werden. Deshalb: ~> **lieber nicht**.
 
 
-[^1]:  Wenn Sie sich als “nur zuhören” anmelden, können Sie ihr Mikro während der Sitzung nicht freischalten, sondern müssen herausgehen und sich neu einwählen.
+[^1]:  Wenn Sie sich als "nur zuhören" anmelden, können Sie ihr Mikro während der Sitzung nicht freischalten, sondern müssen herausgehen und sich neu einwählen.

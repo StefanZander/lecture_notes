@@ -26,7 +26,7 @@ The following syllabus information intend to help you structure your work and ac
 
 
 
-### Scientific Writing for Computer Science
+<!-- ### Scientific Writing for Computer Science
 
 | Date   | Description                                                                            | Milestone |
 |--------|----------------------------------------------------------------------------------------|-----------|
@@ -44,7 +44,7 @@ The following syllabus information intend to help you structure your work and ac
 | 20.01. | Final Presentations                                                                    | MS5       |
 | 21.01. |                                                                                        |           |
 | __TBD__| Submission of Final Paper                                                              | MS6       |
-|        |                                                                                        |           |
+|        |                                                                                        |           | -->
 
 <!-- ### Wissenschaftliches Arbeiten in der Informatik 2
 

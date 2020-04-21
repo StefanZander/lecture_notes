@@ -10,7 +10,8 @@ On this page, you find information about
 
 ## Communication
 
-- Usually via email, skype or as indiviual appointments (contact me via email for arranging an individual appointment)
+- Usually via email, skype or as indiviual appointments via <https://meet.fbi.h-da.de>  
+    _-->_ contact me via email for arranging an individual appointment
 - Please use the following subject `WAI` __OR__ `SWCS` when asking questions via email:  
     `[SWCS|WAI] {lastname_person1}, {lastname_person2}: {matter}` (without `{}`)
 
@@ -19,12 +20,18 @@ On this page, you find information about
 
         Please also enter the **correct module** (WAI/SWCS) your request is referring to.
 
-        N.B.  
-        _Although these things are discussed in the lecture, a significant number of students' emails usually contain the previous template in the stated form..._
+        N.B. _Although these things are discussed in the lecture, a significant number of students' emails usually contain the previous template in the stated form..._
 
 
 ## In-Class Lectures
 
+!!! warning 
+    **Corona Update**  
+    Due to the corona crisis, there will be **no in-class lectures** during the summer term 2020.  
+    Instead, we will use **BigBlueButton (BBB)** for all lectures (--> Link: <https://rooms.fbi.h-da.de>). 
+
+- Dates of the lectures will be announced via Email and via the OBS Calendar
+    - _-->_ so please make sure that your email and calendar subscription is up-to-date 
 - Depends on the student's familirarity with the topic; 
 - In general only very few – but attendance is compulsory
     - Kick-off meeting
@@ -44,7 +51,7 @@ On this page, you find information about
 ## Tutorials and other In-Class Meetings
 - Will be provided on demand (--> need to be requested by students)
 - Attendance is optional
-- Will be announced via email, Moodle or in-class beforehand
+- Will be announced via email, Moodle ~~or in-class~~ beforehand
 - Provide practical and in-depth knowledge about relevant topics that students can choose individually
 - Provide opportunities to...
     - ...discuss open issues 

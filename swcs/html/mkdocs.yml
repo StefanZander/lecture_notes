@@ -36,7 +36,7 @@ theme:
     tabs: false
 
   font:
-    text: 'Zilla Slab'
+    text: 'Barlow Semi Condensed'
     code: 'Fira mono'
 
 extra_css:
@@ -47,6 +47,9 @@ extra_javascript:
 
 markdown_extensions:
   - admonition
+  - extra
+  - smarty:
+      smart_angled_quotes: true
   - codehilite:
       linenums: true
       guess_lang: true
