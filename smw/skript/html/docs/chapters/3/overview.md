@@ -12,7 +12,8 @@
 
 ### Gliederung
 
-- [Lektion 1: Einführung in Semantic MediaWiki](...)
+- [Lektion 1: Was ist ein Wiki](./wiki.md)
+- [Lektion x: Einführung in Semantic MediaWiki](./smw.md)
 - [Lektion 2: Datenmodellierung / Grundlegende Konzepte](./datamodel.md)
 - [Lektion 3: Datenstrukturelemente](./datamodel.md)
     - [Seiten und Namensräume](./page.md)
