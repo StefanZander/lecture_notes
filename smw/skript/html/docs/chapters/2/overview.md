@@ -11,6 +11,26 @@
     - Welche Rolle spielen Ontologien in der Wissensrepräsentation und im Wissensmanagement ?
     - Was sind wesentliche Bestandteile eines Ontologie-basierten Wissensmanagements ?
 
+
+### Gliederung
+
+- Vorüberlegungen
+- Auf dem Weg zu Maschinen-verarbeitbarer Semantik
+    - Grundbegriffe
+    - Wissensgraphen
+    - Wissensgraphmodellierung mittels RDF
+    - Kodierung Maschinen-verarbeitbarer Semantik
+- Ontologien
+    - Rolle in der Wissensverarbeitung
+    - RDF/S
+    - OWL
+- Anwendungsbeispiele
+    - Wissensgewinnung
+    - Ontologie-basierte Informationsintegration
+    - Ontologien in der Industrie 4.0
+
+
+
 ### Lehrmaterial
 
 <!-- - [Lektion 1: Was ist Wissen ?](wissen.md)
@@ -18,9 +38,9 @@
 - [Lektion 3: Welche Rolle spielt der Mensch im Wissensmanagement ?](...) -->
 
 
-Für das Verstehen der Rolle und Funktion von Ontologien im Wissensmanagement ist ein tiefergreifendes Verständnis notwendig. 
-Die Grundprinzipien der semantischen Wissensrepräsentation werden in folgendem Foliensatz dargelegt.
+Die o.g. Gliederung ist Bestandteil des Foliensatzes zum 2. Kapitel. Hier wird aus Demonstrations- und Verständlichkeitsgründen ausnahmsweise auf einen Foliensatz zurück gegriffen (insbesondere, um den schrittweisen Aufbau von Wissensgraphen zu demonstrieren).
 
-TODO: Add Moodle-Link to Presentation
+Der Foliensatz zu Kapitel 2 ist im Moodle-Kurs der Veranstaltung hinterlegt. 
+: [Kapitel 2: Technische Grundlagen der Wissengraphmodellierung](https://lernen.h-da.de/mod/resource/view.php?id=359550)
 
 Die dort vorgestellten Konzepte finden sich in ganz ähnlicher Form und Ausprägung in Semantic MediaWiki wider.

@@ -2,6 +2,7 @@ site_name: "Semantisches Wissensmanagement mit Semantic MediaWiki"
 
 nav:
   - 'Startseite': 'index.md'
+  - 'Tagebuch der LVA': 'tagebuch.md'
   - 'Allgemeine Informationen': 'objectives.md'
   - 'Kapitel 1: Einführung': 'kapitel1.md'
   - 'Kapitel 2: Technische Grundlagen': './chapters/2/overview.md'

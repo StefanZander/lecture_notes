@@ -7,6 +7,7 @@ Auf den folgenden Seiten finden Sie die **Aufgaben** der jeweiligen Praktikumsei
 
 * [Modus der LVA während der Corona-Krise](corona.md)
 * [Arbeiten mit BigBlueButton (BBB)](bbb.md)
+* [NZSE-Tagebuch mit wichtigen Infos aus der VO](tagebuch.md)
 
 ## Allgmeine Informationen
 

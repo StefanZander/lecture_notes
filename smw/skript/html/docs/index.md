@@ -30,6 +30,7 @@ The information on this site is separated into
 ## Allgemeine Informationen
 
 * [Lehrveranstaltungsziele und Durchführung](objectives.md)
+* [Tagebuch der Lehrveranstaltung](tagebuch.md)
 <!-- * [Organisation](organisation.md) -->
 <!-- * [Schedule with Milestones](schedule.md) -->
 

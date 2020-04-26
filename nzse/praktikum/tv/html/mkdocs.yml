@@ -2,6 +2,7 @@ site_name: Praktikum zur LVA "Nutzerzentrierte Softwareentwicklung"
 
 nav:
   - 'Startseite': 'index.md'
+  - 'NZSE-Tagebuch': 'tagebuch.md'
   - 'Corona-Modus': 'corona.md'
   - 'Arbeiten mit BBB': 'bbb.md'
   - 'Vorbemerkung': 'vorbemerkung.md'

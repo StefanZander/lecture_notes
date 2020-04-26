@@ -1,5 +1,10 @@
 # Modus während der Corona-Pandemie 
 
+!!! warning
+    **Wichtig**: **Bitte hinterlegen Sie Ihren Vor- und Zunamen**   
+    Um eine verbesserte Kommunikation via Email sicher zu stellen hinterlegen Sie bitte **Vor- und Zunamen** in Ihren **hda-Emaileinstellungen**. `st......@stud.h-da.de` macht es uns Lehrenden sehr schwer, die Nachricht korrekt zuzuordnen.
+
+
 ### Zeitplan 
 
 (unter Vorbehalt)
