@@ -20,10 +20,21 @@ Bei der Durchführung des obigen Beispiels werden Sie sehr schnell feststellen, 
 
 [^2]: Selbstverständlich könnte man die Beziehungen auch als Assoziationen in einem UML Klassendiagramm abbilden; hierbei verliert man allerdings die Möglichkeit, die Beziehungen näher zu spezifizieren (bspw. Typ einer Beziehung, Beziehungen zwischen Beziehungstypen, and die Beziehung geknüpfte logische Bedingungen, etc).
 
+Was wissen wir bisher aus Kapitel 2: Technologische Grundlagen
+
+* Ausschnitte aus Gegenstandsbereichen lassen sich am besten unter Reduzierung struktureller Heterogenität als konzeptueller Graph darstellen
+* Beziehungen sollten als First-Class Elemente behandelt werden
+* URIs/IRIs ermöglichen die eindeutige Identifizierung von "Dingen"
+* Zusammen mit dem Konzept der Content Negotiation ermöglichen sie eine Unterscheidung zwischen technischen- und realweltlichen Repräsentationen
+* Maschinelle Semantik bedeutet: Definitions have Consequences   
+
+  
+
+
 TODO: Data in SMW is always encoded as property-value pairs on pages (Categories / Subobjects / concepts / results of #ask queries can also be "data"...)
 
-Semantic MediaWiki allows to encode information in the form of facts
-: ~> Berlin has a population of 3,520,031 people
+Semantic MediaWiki allows to encode information in the form of **facts**
+: ~> _"Berlin has a population of 3,520,031 people"_
 
 A fact consists of of three parts:
 : 1) **Wikipage** (subject), e.g. "Berlin"
@@ -40,12 +51,12 @@ A statement consists of a **property** and its **value**:
 
 Adding a statement to a page (_the subject_) is called **annotation**.
 
-
+---
 
 
 
 SMW employs a triple-based data model consisting of
-: subject -- the ... an assertion is about
+: subject -- the "thing" an assertion is about
 : predicate -- the property / relation
 : object -- the "value" in the statement
 

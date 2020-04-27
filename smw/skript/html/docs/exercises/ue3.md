@@ -24,7 +24,7 @@
 3. Lesen Sie sich die folgenden wissenschaftlichen Aufsätze durch um Hintergrundinformationen zu Semantic MediaWiki und dessen Rolle bei der Wissensgraphmodellierung zu bekommen:
    
     : _"Semantic Wikipedia"_  
-    von Markus Krötzsch, Denny Vrandecic, Max Völkel, Heiko Haller, Rudi Studer (--> [Link in Moodle](...)) 
+    von Markus Krötzsch, Denny Vrandecic, Max Völkel, Heiko Haller, Rudi Studer (--> [Link in Moodle](https://lernen.h-da.de/mod/resource/view.php?id=363801)) 
 
  
     !!! note
