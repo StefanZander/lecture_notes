@@ -24,3 +24,4 @@
     - [Subobjects](./subobjects.md)
 - [Lektion 5: Semantische Suche](ask.md)
 - [Lektion xx: Aufbau einer Wissensbasis](...)
+

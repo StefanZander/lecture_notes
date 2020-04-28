@@ -80,9 +80,18 @@ Beginnen Sie auch bereits mit der Erstellung des [Exposés](./../expose.md).
 
 ### Der Abschluss
 
+#### Praxisbericht
 Reichen Sie unmittelbar nach Beendigung der Praxisphase den [Praxisbericht](./bericht.md) über den Moodle-Kurs der Veranstaltung ein.
 
-Lassen Sie sich vom Unternehmen einen unterzeichneten und mit dem Firmenstempel versehenen **Nachweis** über die **geleisteten Praxisstunden** ausstellen und leiten Sie dieses an das Prüfungssekretariat weiter.
+#### Nachweis der geleisteten Stunden
+Lassen Sie sich vom Unternehmen einen unterzeichneten und mit dem Firmenstempel versehenen **Nachweis** über die **geleisteten Praxisstunden** ausstellen und leiten Sie dieses per Email an uns und an das Prüfungssekretariat weiter.
 
-Nehmen Sie am gemeinsamen **Kolloquium** zur Praxisphase teil. Hier müssen Sie im Rahmen eines 5-minütigen Vortrags kurz die wichtigsten Erlebnisse / Erfahrungen / Themen Ihrer Praxisphase darlegen. Erst danach gilt die Praxisphase formal als erfolgreich absolviert.
+#### Kolloquium
+Nehmen Sie am gemeinsamen **Kolloquium** zur Praxisphase teil (_--> dieser Termin ist verpflichtend_). 
+
+Den **Termin** senden wir nach dem Eingang aller Berichte per Email aus. 
+
+Im Kolloquium müssen Sie im Rahmen eines **5-minütigen Vortrags** kurz die wichtigsten Erlebnisse / Erfahrungen / Themen Ihrer Praxisphase darlegen. Im Anschluss an jeden Bericht findet eine kurze Plenumsdiskussion statt. Bei Bedarf können Sie Ihren Bericht durch eine kurze (max. 2 Folien) lange Präsentation unterstützen. 
+
+Erst nach dem Kolloquium gilt die Praxisphase formal als erfolgreich absolviert.
 
