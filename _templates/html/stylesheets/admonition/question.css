@@ -39,3 +39,18 @@
     border-bottom-color: var(--question_border_color);
     /* border-bottom-width: .064rem; */
 }
+
+
+/* Added by SZA due to new version of mkdocs */
+.md-typeset .question>summary::before {
+    font-size: 1.2rem;
+    background-color: var(--question_border_color);
+    mask-size: 1.2rem;
+    -webkit-mask-size: 1.2rem;
+}
+
+/* Added to have a bigger Icon */
+.md-typeset summary::before {
+    width: 1.2rem;
+    height: 1.2rem;
+}

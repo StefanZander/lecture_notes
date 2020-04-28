@@ -46,8 +46,8 @@ Die Struktur ist **nicht-normativ**, d.h., sie ist als Vorschlag zu verstehen. T
     * Dinge die Sie als wichtig und relevant erachten, die aber nicht zwingend Bestandteil des Inhaltsteil sein müssen, sondern die dortigen Ausführungen ergänzen / untermauern / etc.
 
 !!! warning
-    **Wichtig:** 
-    Sollte der Bericht in wesentlichen Punkten von obiger Struktur abwichen, wesentliche Inhalte nicht adressieren, oder in Form, Umfang, Darstellung erhebliche Mängel aufweisen, dann werden wir diesen nicht akzeptieren, womit Ihnen eine wesentliche Voraussetzung für die Anmeldung der Bachelorarbeit fehlt. Achten Sie also in jedem Fall auf eine ordentliche und gewissenhafte Darstellung – zumal Umfang und Aufwand wirklich überschaubar sind. 
+    **Wichtig:**  
+    Sollte der Bericht in wesentlichen Punkten von obiger Struktur abweichen, wesentliche Inhalte nicht adressieren, oder in Form, Umfang, Darstellung erhebliche Mängel aufweisen, dann werden wir diesen nicht akzeptieren, womit Ihnen eine wesentliche Voraussetzung für die Anmeldung der Bachelorarbeit fehlt. Achten Sie also in jedem Fall auf eine ordentliche und gewissenhafte Darstellung – zumal Umfang und Aufwand wirklich überschaubar sind. 
 
 
 
