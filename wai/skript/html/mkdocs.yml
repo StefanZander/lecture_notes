@@ -24,7 +24,7 @@ theme:
     code: 'Fira mono'
 
 extra_css:
-  - 'stylesheets/extra.css'
+  - 'css/extra.css'
 
 extra_javascript:
   - 'javascript/extra.js'
