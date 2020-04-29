@@ -9,7 +9,7 @@
 
 Problem
 
-* Sometimes, it is useful to determine memberships to categories based on the occurence of some property values.
+* Sometimes, it is useful to determine memberships to categories based on the occurence of some specific property values.
 * Reviewing whether membership conditions are still satisfied and manually altering categories is cumbersome and error-prone
 
 Use Case
@@ -73,7 +73,7 @@ Additional Remarks:
     | SMWCon Fall 2012   | Cologne, Germany  |
     | SMWCon Spring 2012 | Carlsbad, CA, USA |
 
-First Term
+<!-- First Term
 :   This is the definition of the first term.
 
 **First Term**
@@ -92,7 +92,7 @@ a one-line code block
 Footnotes[^1] have a label[^@#$%] and the footnote's content.
 
 [^1]: This is a footnote content.
-[^@#$%]: A footnote on the label: "@#$%".
+[^@#$%]: A footnote on the label: "@#$%". -->
 
 
 
@@ -104,9 +104,9 @@ Footnotes[^1] have a label[^@#$%] and the footnote's content.
     ``` diff
     {{#concept:
     [[Category:Project]]
-    [[Has planned start::> Jan 1 2012]]
-    [[Has planned finish::< Dec 31 2012]]
-    |Semantic MediaWiki Cons in the year 2012 that have been announced on this wiki.
+    [[Has planned start::< {{CURRENTYEAR}}-{{CURRENTMONTH}}-{{CURRENTDAY2}}]]
+    [[Has planned finish::> {{CURRENTYEAR}}-{{CURRENTMONTH}}-{{CURRENTDAY2}}]]
+    |All currently running projects
     }}
     ```
 
