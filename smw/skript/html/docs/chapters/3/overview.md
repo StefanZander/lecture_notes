@@ -22,6 +22,9 @@
     - [Konzepte](./concepts.md)
     - [Templates](./templates.md)
     - [Subobjects](./subobjects.md)
-- [Lektion 5: Semantische Suche](ask.md)
-- [Lektion xx: Aufbau einer Wissensbasis](...)
+- [Lektion 5: Encoding Information](encoding.md)
+- [Lektion 6: Retrieving Information](retrieving.md)
+- [Lektion 7: Semantische Suche](ask.md)
+- [Magic Words](magic_words.md)
+<!-- - [Lektion xx: Aufbau einer Wissensbasis](...) -->
 

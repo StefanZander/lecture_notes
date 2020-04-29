@@ -1,8 +1,8 @@
 # Encoding Information
 
 SWM represents information conceptually in form of an labeled directed acyclic graph where ...
-: nodes represent pages or subobjects
-: edges represent relationshiphs between pages, literals and subobjects 
+: ...*nodes* represent pages or subobjects
+: ...*edges* represent relationshiphs between pages, literals and subobjects 
 
 Consider the following example:
 
