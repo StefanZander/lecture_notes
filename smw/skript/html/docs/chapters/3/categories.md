@@ -29,7 +29,7 @@ To make a mediawiki page a member of a category, add a link to the category on t
 ```
 
 
-[^1]: Category links can be placed at any location at a wiki page. However, due to maintenance and consistency reasons, it is good practice to define distinct locations on wiki pages for specifying category memberships. 
+[^1]: Category links can be placed at any location at a wiki page. However, due to maintenance and consistency reasons, it is good practice to define distinct locations in wiki pages for specifying category memberships. 
 
 #### Category Hierarchies
 
