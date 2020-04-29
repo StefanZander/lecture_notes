@@ -84,7 +84,7 @@ Beginnen Sie auch bereits mit der Erstellung des [Exposés](./../expose.md).
 Reichen Sie unmittelbar nach Beendigung der Praxisphase den [Praxisbericht](./bericht.md) über den Moodle-Kurs der Veranstaltung ein.
 
 #### Nachweis der geleisteten Stunden
-Lassen Sie sich vom Unternehmen einen unterzeichneten und mit dem Firmenstempel versehenen **Nachweis** über die **geleisteten Praxisstunden** ausstellen und leiten Sie dieses per Email an uns und an das Prüfungssekretariat weiter.
+Lassen Sie sich vom Unternehmen einen unterzeichneten und mit dem Firmenstempel versehenen **Nachweis** über die **geleisteten Praxisstunden** ausstellen und leiten Sie dieses per Email an uns {--und an das Prüfungssekretariat--} weiter.
 
 #### Kolloquium
 Nehmen Sie am gemeinsamen **Kolloquium** zur Praxisphase teil (_--> dieser Termin ist verpflichtend_). 

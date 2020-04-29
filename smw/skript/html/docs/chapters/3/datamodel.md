@@ -51,7 +51,7 @@ A statement consists of a **property** and its **value**:
 : Property (ie. _predicate_), e.g. “Has population” 
 : Value (ie. _object_ or _literal_), e.g. “3,520,031”
 
-Facts are encoded as **property-value pairs** on wiki pages.
+As a consequence, facts are encoded as **property-value pairs** on wiki pages.
 
 !!! example
     **Example**  
@@ -62,7 +62,7 @@ Facts are encoded as **property-value pairs** on wiki pages.
     Spinoza   born on          24 Nov 1632
     ```
 
-Such property-value pairs are called **facts**.
+<!-- Such property-value pairs are called **facts**. -->
 
 Adding a statement (property-value pair) to a page (_the subject_) is called **annotation**.
 
@@ -70,20 +70,30 @@ Adding a statement (property-value pair) to a page (_the subject_) is called **a
 
 ### Datamodel 
 
-From the previous section, we see that SMW employs a **triple-based data model** similar to **RDF**, consisting of
-: *subject* -- the "thing" an assertion is about
-: *predicate* -- the property or relation between a subject and object
-: *object* -- the "value" in the statement, which could be another page or a literal 
+From the previous section, we saw that SMW employs a **triple-based data model** similar to **RDF**, consisting of ...
+: *subject* --- the "thing" an assertion is about
+: *predicate* --- the property or relation between a subject and object
+: *object* --- the "value" in the statement, which could be another page or a literal value
 
-In SMW terms, 
-: the **subject** is always a page or an subobject (being a Blank node in RDF terms)
-: the **predicate** always resembles the property
-: the **object** can either be a page or a data type (string/number/telephone/etc.)
+In SMW terms, ...  
+: ...the **subject** is always a _page_ or an _subobject_ (being a blank node in RDF terms)
+: ...the **predicate** always resembles a page in the `property` namespace
+: ...the **object** can either be a page or a data type (string/number/telephone/etc.)
+
+SMW encodes **terminological knowledge** (TBox) in form of ...
+: ..._categories_ serve as classes
+: ...*concepts* serve as role inclusion axioms
+: ...*special properties* allow to represent terminological relationships between categories and property pages
+
+
 
 The triple-based model employed by Semantic MediaWiki is inherited from W3Cs Resource Description Framework (RDF) specification.
 
-A *page*-*property*-*value* triple resembles the *subject*-*predicate*-*object* triples of RDF and is called a **statement** or **assertion** in RDF terms[^1].
+A *page*-*property*-*value* triple resembles the *subject*-*predicate*-*object* triple pattern of RDF[^3]
+[^3]: In RDF, a triple is also called a *statement* or *assertion*.
 
 
 Pages can be related to pages via properties. 
-That way, the object in the first statement becomes the subject of the second statement (in RDF-terms) (--> see has capital).
+That way, the object in the first statement becomes the subject of the second statement (in RDF-terms) (--> see `has capital`).
+
+
