@@ -2,7 +2,7 @@
 
 ### Übersicht
 
-Semantic MediaWiki ist ein **offenes**, **kollaboratives Knowledge Management System**.  Technisch ist es eine Erweiterung (engl. _Extension_) für MediaWiki.
+Semantic MediaWiki ist ein **offenes**, **kollaboratives Knowledge Management System**.  Technisch ist es eine **Erweiterung** (engl. _Extension_) für MediaWiki.
 
 Semantic MediaWiki erlaubt es, strukturelle Daten durch Annotation bestehender Textinhalte in ein Wiki einzuführen.  
 
@@ -12,9 +12,9 @@ Semantic MediaWiki erlaubt es, strukturelle Daten durch Annotation bestehender T
     **Definition**: << **Semantic MediaWiki** >>  
     Semantic MediaWiki ermöglicht durch die Einführung spezieller Beschreibungskonstrukte (=Modellierungsprimitive) das in Wikiseiten enthaltene Faktenwissen in Form eines Triple-basierten semantischen Wissensgraphen darzustellen.
 
-Semantic MediaWiki erweitert MediaWiki um **Ontologie-basierte Sprachkonzepten** (properties, concepts, subobjects)
+Semantic MediaWiki erweitert MediaWiki um **Ontologie-basierte Sprachkonzepten** (properties, concepts, subobjects), welche den Export und Austausch von enthaltenen Informationen erheblich verbessern. 
 
-Erfunden und entwickelt wurde es am Institut für Angewandte Informatik und Formale Beschreibungsverfahren (AIFB) des KIT durch Markus Krötzsch, Denny Vandricic und Max Völkl.
+Erfunden und entwickelt wurde es am **Institut für Angewandte Informatik und Formale Beschreibungsverfahren (AIFB**) des **Karlsruher Institut für Technologie (KIT)** durch Markus Krötzsch, Denny Vandricic und Max Völkl.
 
 
 ### Vorteile

@@ -1,5 +1,7 @@
 # Was ist ein Wiki ?
 
+![Wiki-Wiki Shuttle from Wikimedia](./../../figures/wiki-wiki-bus.jpg) _The Wiki-Wiki bus shuttle at the Honolulu International Airport (Quelle: https://commons.wikimedia.org/wiki/File:HNL_Wiki_Wiki_Bus.jpg)_
+
 
 !!! warning
     **Definition**: << **Wiki** >>  
@@ -10,13 +12,13 @@
 * Hypertext-System
 * Inhalte sind frei erweiter-, les- und veränderbar
 * die Wiki-Engine: vereinfachtes Content-Management-System
-* einfache erlernbare Markup-Sprache
-* Benutzer kann jede Seite eines Wikis verändern, eine neue Seite erstellen
+* einfache erlernbare **Markup-Sprache**
+* Benutzer kann **jede Seite** eines Wikis verändern, eine neue Seite erstellen
 * _"Wiki promotes meaningful topic associations between different pages by making page link creation almost intuitively easy"_[^1]
     * Verweise zwischen einzelnen Seiten möglich
     * Kennzeichnung ob Verweis existiert oder nicht
-* ein Wiki ist niemals vollständig oder perfekt
-* unterliegt einem ständigen Prozess von
+* ein Wiki ist **niemals vollständig** oder perfekt
+* unterliegt einem **ständigen Prozess** von
     * Erschaffung 
     * Kollaboration
 * Versionsverwaltung

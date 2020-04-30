@@ -1,6 +1,6 @@
 # Encoding Information
 
-SWM represents information conceptually in form of an labeled directed acyclic graph where ...
+SWM represents information conceptually in form of an **labeled directed acyclic graph** where ...
 : ...*nodes* represent pages or subobjects
 : ...*edges* represent relationshiphs between pages, literals and subobjects 
 
@@ -20,10 +20,10 @@ Considering the above graph,
 
 * `Matthias Frank` and `BigGIS` for instance are pages in the `main` namespace
 * `member_of` and `start_date` are wiki pages in the `Property` namespace
-* `start_date` as a datatype annotation on its wikipage declaring the objects of statements in which `start_date` participates as literal of datatype `Date`
+* `start_date` contains a datatype annotation on its wikipage declaring the objects of statements in which `start_date` participates as literal of datatype `Date`; so SMW treats it as a specific value rather than a wiki page.
 * `April 2016` this is a literal without a separate wiki page
 
-Thus, datatypes in property declarations control input and output (and some more things)
+Thus, **datatypes** in property declarations control **input** and **output** (and some more things)
 
 * Output  
     * `[[member_of::BigGIS]]` appears as link  
