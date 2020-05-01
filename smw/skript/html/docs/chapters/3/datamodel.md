@@ -68,7 +68,7 @@ Adding a statement (property-value pair) to a page (_the subject_) is called **a
 
 ---
 
-### Datamodel 
+### Knowledge Representation Model  
 
 From the previous section, we saw that SMW employs a **triple-based data model** similar to **RDF**, consisting of ...
 : *subject* --- the "thing" an assertion is about

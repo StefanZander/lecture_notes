@@ -53,7 +53,7 @@ The parser function `#ask` allows to retrieve pages based on the information the
 
 Results of ask queries are, unless otherwise specified, displayed as customizable tables.
 
-### The `#ask` Query Language (AQL)
+### The #ask Query Language (AQL)
 
 TODO: The tutorial slides ... contain a nice and descriptive illustration of the different parameters that can be used to customize the display of an `#ask` query. 
 
@@ -102,7 +102,7 @@ Other conditions based on comparators:
 
 * `[[has population::>1000]]` --- greater or equal 1000 
 * `[[has population::<1000]]` --- less or equal 1000
-* `[[has population::!1000]]` --- inequal 1000 
+* `[[has population::!1000]]` --- inequal 1000  
     _Note: it always means "has some value for the property that is greater/less/not equal to 1000"_
 
 
