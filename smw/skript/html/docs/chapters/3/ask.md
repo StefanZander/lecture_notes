@@ -43,14 +43,15 @@ Einbindung in **Wiki-Seiten**
 
 How can we model and satisfy this information need in Semantic MediaWiki?
 
-First consider the structural composition of the data model used to represent an universe of discourse (or an excerpt of it).
+First consider the **structural composition** of the data model used to represent an universe of discourse (or an excerpt of it).
 
 For example:
 
 ![Knowledge Base](./../../figures/ask_model_km.png) _An excerpt of the previous example modelled as conceptual SMW graph_
 
-This graphical representation serves as basis for the formulation of query conditions.  
-~> Therefore, think of query conditions as graphs with conditional node values.
+This graphical representation serves as basis for the formulation of **query conditions**.  
+~> Therefore, think of query conditions as graphs with conditional node values.  
+~> Also consider the structural semantics of involved elements.
 
 ![Knowledge Base](./../../figures/ask_query_km.png) _An illustration of the query graph for the previous example_
 
@@ -62,6 +63,9 @@ Consider the following conceptual model semantics:
 * the _blue boxes_ represent query variables that are to be filled with the values in the course of evaluating the query conditions
 * the _green boxes_ are the results returned by processing the query and that are being displayed.
 
+!!! note
+    **Please note**  
+    The previous example represents a more sophisticated query (in technical terms) in which results from an inner query need to be embedded in an outer query. 
 
 In order to determine the **inner** and **outer query** interpret the query graphs as projects with specific employees as members. 
 : ~> Then it becomes clear which query must be embedded into the outer query, ie., which query conditions must constitute the inner query and which conditions the outer query. 
