@@ -12,19 +12,21 @@
 
 ### Gliederung
 
-- [Lektion 1: Was ist ein Wiki](./wiki.md)
-- [Lektion 2: Einführung in Semantic MediaWiki](./smw.md)
-- [Lektion 3: Datenmodellierung / Grundlegende Konzepte](./datamodel.md)
-- [Lektion 4: Datenstrukturelemente](./datamodel.md)
-    - [Seiten und Namensräume](./page.md)
+- [Was ist ein Wiki](./wiki.md)
+- [Einführung in Semantic MediaWiki](./smw.md)
+- [Datenmodell](./datamodel.md)
+- [Datenstrukturelemente](./datamodel.md)
+    - [Seiten](./page.md)
+    - [Namensräume](./namespaces.md)
     - [Kategorien](./categories.md)
     - [Properties](./properties.md)
     - [Konzepte](./concepts.md)
     - [Templates](./templates.md)
     - [Subobjects](./subobjects.md)
-- [Lektion 5: Encoding Information](encoding.md)
-- [Lektion 6: Retrieving Information](retrieving.md)
-- [Lektion 7: Semantische Suche](ask.md)
-- [Magic Words](magic_words.md)
+    - [Magic Words](magic_words.md)
+- [Encoding Information](encoding.md)
+- [Retrieving Information](retrieving.md)
+- [Semantische Suche](ask.md)
+
 <!-- - [Lektion xx: Aufbau einer Wissensbasis](...) -->
 
