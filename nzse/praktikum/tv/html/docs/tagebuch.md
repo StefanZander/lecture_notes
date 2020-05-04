@@ -3,11 +3,11 @@
 
 #### 2020-04-28
 : Videos zur Vor-/Nachbereitung
-: * How to Conduct Qualitative Interviews [--> Link zu Moodle](...)  
+: * How to Conduct Qualitative Interviews (in Moodle) 
     _~> Im Rahmen von NZSE sprechen wir von teilstandardisierten Interviews; die Prinzipien sind aber identisch_
-: * Examples of a Bad / Good Interview [--> Link zu Moodle](...)  
+: * Examples of a Bad / Good Interview (in Moodle)  
     _~> Neben den in den Videos genannten Punkten finden Sie noch wesentlich mehr verbesserungswürdige "Dinge"; notieren Sie diese und reflektieren Sie, ob die notierten Punkte im 2. Interview verbessert bzw. umgangen wurden_
-: * YouTube-Video zum User Research  [--> Link zu Youtube](...)  
+: * YouTube-Video zum User Research  (--> [Link](https://youtu.be/qA0DlfghMAY))  
     _~> Fasst den in der VO behandelten Ablauf zusammen und erläutert die Zusammenhänge zwischen den verschiedenen Artefakten bzw. Schritten_
 : Unterscheidung Personas / Primäre Personas
 : Einführung User Research
