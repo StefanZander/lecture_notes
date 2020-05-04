@@ -3,7 +3,7 @@
     **Corona-Update**: Die Projektmappe ist online als PDF zu führen und vor jedem Termin in den jeweiligen Übungsslot in Moodle hochzuladen. 
 
     Bitte verwenden Sie folgendes Format für den Dateinamen:  
-    __Projektmappe_Gruppe{Nr}_{Nachname_TN1}_{Nachname_TN2}_{...}.pdf__
+    `Projektmappe_Gr{Nr}_{Nachname_TN1}_{Nachname_TN2}_{...}.pdf`
 
     Bitte vermerken Sie auch die Namen alle Teammitglieder auf dem Deckblatt
 

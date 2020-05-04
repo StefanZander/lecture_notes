@@ -28,7 +28,8 @@
 
  
     !!! note
-        Weitere Literatur zu Semantic MediaWiki finden Sie auch online unter <https://www.semantic-mediawiki.org/wiki/Semantic_MediaWiki_publications>
+        Weitere Literatur zu Semantic MediaWiki finden Sie auch online unter  
+        <https://www.semantic-mediawiki.org/wiki/Semantic_MediaWiki_publications>
 
 
 

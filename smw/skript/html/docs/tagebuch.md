@@ -1,7 +1,19 @@
 # Tagebuch zur LVA
 
 
-#### 2020-04-20
+#### 2020-05-04
+: Gemeinsames Modellieren des RDF-Graphen aus UE2
+: Einführung in Semantic MediaWiki anhand der Modellierung eines Wissengraphen
+: Modellierungskonzepte anhand praktischer Beispiele im Sandbox-SMW betrachtet
+: Folien zum Einsatz von SMW im Forschungszentrum gezeigt
+: Restlichen Inhalte der Vorlesungsunterlagen erarbeiten sich die Studierenden im Selbststudium
+: Übung
+: * Nachfrage warum nur 1/10 Studierenden die ÜE bearbeitet hat
+: * 2 Studierende gaben zeitliche Konflikte an; Rest enthielt sich der Rückmeldung (leider!)
+
+
+
+#### 2020-04-27
 : Besprechung Modellierungsbeispiel aus UE1
 : Detaillierte Auseinandersetzung mit Maschinen-verarbeitbarer Semantik
 : Bestandteile und Grundkonzepte semantischer Wissensgraphen 
