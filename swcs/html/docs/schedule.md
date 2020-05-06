@@ -8,15 +8,15 @@ The following syllabus information intend to help you structure your work and ac
     Please read and follow the **syllabus information** carefully! Disregarding them will lead to a **grading penalty** and might harm the sucessful completion of the course.
 
 - Week 1: Read introductory material + start forming groups ([MS0](milestone0.md))
-- Week 2: Find topics + start reading topic-related material ([MS1](milestone1.md))
+- Week 2: Find topics + start reading topic-related material ([MS1](milestone1.md)) 
 - Week 3: Become familiar with the topic and the state of the art + start preparing Factsheet & Abstract
-- Week 4: Finalize Factsheet & Abstract and submit ([MS2](milestone2.md))
+- Week 4: Finalize Factsheet & Abstract and submit ([MS2](milestone2.md)) --- _Deadline: 13.05._
 - Week 5: Research
 - Week 6: Research
 - Week 7: Research 
 - Week 8: Research
-- Week 9: Upload review version of paper + enter paper bids ([MS3](milestone3.md))
-- Week 10: Review Week ([MS4](milestone4.md))
+- Week 9: Upload review version of paper + enter paper bids ([MS3](milestone3.md)) --- _Deadline: 14.06._
+- Week 10: Review Week ([MS4](milestone4.md)) --- _Deadline: xx.05._
 - Week 11: Integrate feedback + paper revision + start preparing the final presentations
 - Week 12: Final presentations ([MS5](milestone5.md))
 - Week 13: Paper revision
