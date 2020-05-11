@@ -55,19 +55,24 @@ Results of ask queries are, unless otherwise specified, displayed as customizabl
 
 ### The #ask Query Language (AQL)
 
-TODO: The tutorial slides ... contain a nice and descriptive illustration of the different parameters that can be used to customize the display of an `#ask` query. 
+The page [Semantische Suche](ask.md) provides more information about how to formulate AQL queries. 
+
+These [slides](https://lernen.h-da.de/mod/resource/view.php?id=368958) also contain a nice demonstration about the different parameters that can be used to customize the display of `#ask` query results. 
 
 #### Main idea
-To ask for a page with some annotation, use this annotation (as in the examples just seen)  
+To ask for **pages** with some **specified annotations** in order to (in most cases) retrieve additional information from those pages. Those annotations in question are used as **query conditions**, as illustrated in the examples below:
+
 
 * `[[Category:City]]`
 * `[[has mayor::Klaus Wowereit]]`
 
 Some query conditions cannot work quite like this:
 
-* `[[has population::+]]` – pages with some population 
-* `[[User:+]]` – pages in namespace `User`
-* `[[:Category:+]]` – pages in namespace `Category`
+The AQL query syntax also allows for formulating broader query conditions, for example:
+
+* `[[has population::+]]` --- pages with some population 
+* `[[User:+]]` --- pages in namespace `User`
+* `[[:Category:+]]` --- pages in namespace `Category`
 
 
 #### AQL Disjunction and Conjunction
@@ -111,11 +116,15 @@ A more elaborate form of property values for Wikipages:
 the pages that match another query
 
 Example:  
-"Countries with small capital cities"  
+_"Countries with small capital cities"_  
 `{{#ask: [[has capital::<q>[[has population::<500,000]]</q> ]]}}`
 
 Property chains like this can be abbreviated:  
 `{{#ask: [[has capital.has population::<500,000]] }}`
+
+_"Projects, a research group's employees are member of"_  
+`{{#ask: [[has_member::<q>[[member_of::{{PAGENAME}}]]</q>]] ... }}`
+
 
 
 ### Result Formats

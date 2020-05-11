@@ -100,6 +100,20 @@ Properties can only have **one** datatype
     <!-- The property values are directly shown on the page -->
     ```
 
+    Please note that this notation can not be used in [Semantic Templates](./semantic_templates.md) when multiple values need to be added to one property.
+    Use the `{{#set:}}` parser function (in conjunction with `{{#show:...}}` when the values should be displayed in a page) instead. 
+    
+    For example:
+    ``` 
+    ! Forschungsthemen
+    {{#set:
+     has_topic={{{topics|}}}
+     |+sep=;
+    }}
+    | {{#show: {{PAGENAME}} |?has_topic }} 
+    |-
+    ```
+
 #### Setting a property value without displaying it on the page
   : 
     ``` diff
@@ -142,6 +156,12 @@ Properties can only have **one** datatype
     {{{value}}}
     ```
     The annotated data value is directly shown with `:::diff {{{value}}}`.
+
+    Alternatively use the `{{#show:...}}` parser function in conjunction with `{{PAGENAME}` and the property the values of which are the be displayed:
+    ```
+    {{#set: has_member={{{members|}}}|+sep=; }}
+    {{#show: {{PAGENAME}} |?has_member }} 
+    ```
 
 
 

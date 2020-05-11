@@ -27,6 +27,7 @@
 - [Encoding Information](encoding.md)
 - [Retrieving Information](retrieving.md)
 - [Semantische Suche](ask.md)
+- [Semantische Templates](semantic_templates.md)
 
 <!-- - [Lektion xx: Aufbau einer Wissensbasis](...) -->
 

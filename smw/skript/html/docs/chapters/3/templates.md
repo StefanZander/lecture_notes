@@ -5,6 +5,20 @@
     Please read all the details about Templates on the official MediaWiki pages  
     <https://www.mediawiki.org/wiki/Help:Templates>
 
+
+
+!!! note
+    **Excellent tutorial videos about templates**  
+    YouTube hosts some excellent videos about the basic principles and formatting of templates
+
+    * Introduction to templates  
+        <https://www.youtube.com/watch?v=IJ4BM5MFXmc>
+    * Basic formatting of templates  
+        <https://youtu.be/SsLahlGX0Ls>
+    * Template Variables  
+        <https://youtu.be/X0QD5HT2qgc> 
+
+
 <!-- ### Motivation
 
 

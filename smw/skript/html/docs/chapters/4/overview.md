@@ -4,14 +4,14 @@
 !!! abstract
     **Leitfragen**  
 
-    - Wie lässt sich das Wissensmanagement mit technischen Maßnahmen unterstützen ?
-    - Warum sind semantische Wissensgraphen geeignete Datenstrukturmodelle ?
-    - Welche Vorteile bieten semantische Wissensgraphen gegenüber anderen Datenmodellen ?
-    - Welche Rolle spielen Ontologien in der Wissensrepräsentation und im Wissensmanagement ?
-    - Was sind wesentliche Bestandteile eines Ontologie-basierten Wissensmanagements ?
+    - Durch welche technischen Maßnahmen können FachanwenderInnen am Aufbau semantischer Wissensgraphen beteiligt werden ?
+    - Wie lassen sich n-äre Beziehungen in Semantic MediaWiki abbilden ?
+    - Welche Maßnahmen helfen bei der Etablierung eines Semantic MediaWiki Systems in Organisationen ?
+    - Wie gestaltet sich das Zusammenspiel zwischen semantischen Templates und Formularen ?
 
 ### Gliederung
 
-- [Lektion 1: Fortschrittliche Datenmodellierungskonzepte in Semantic MediaWiki ?](modelling.md)
-- [Lektion 2: Getting Started with Semantic MediaWiki supported Knowledge Management](setup.md)
+- [Fortschrittliche Datenmodellierungskonzepte in Semantic MediaWiki](modelling.md)
+- [Nutzung von Formularen für die Wissensgrapherstellung](page_forms.md)
+- [Best Practices](best_practices.md)
 <!-- - [Lektion 3: Welche Rolle spielt der Mensch im Wissensmanagement ?](...) -->

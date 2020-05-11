@@ -68,7 +68,7 @@ Nicht alle Aspekte eines Gegenstandsbereichs lassen sich durch Property-Value-Pa
         !!! example
             **Beispiel**:
 
-            Stating that the subobject `The Iron Lady` was embedded on the Meryl Streep page
+            Stating that the subobject `The Iron Lady` was embedded on the `Meryl Streep` page
 
             ``` diff
             {{#subobject:The Iron Lady 

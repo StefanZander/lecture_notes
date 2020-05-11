@@ -13,7 +13,7 @@ The following syllabus information intend to help you structure your work and ac
 - Week 4: Finalize Factsheet & Abstract and submit ([MS2](milestone2.md)) --- _Deadline: 13.05._
 - Week 5: Research
 - Week 6: Research
-- Week 7: Research 
+- Week 7: Research
 - Week 8: Research
 - Week 9: Upload review version of paper + enter paper bids ([MS3](milestone3.md)) --- _Deadline: 21.06._
 - Week 10: Review Week ([MS4](milestone4.md)) --- _Deadline: 28.06._
