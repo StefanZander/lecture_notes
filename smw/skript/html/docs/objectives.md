@@ -38,8 +38,8 @@ Durchführung im SoSe 2020 als Online-Lehrveranstaltung via **BigBlueButton (BBB
 : * Im o.g. Termin stehe ich für Fragen / Rückmeldung / etc. zur Verfügung
 
 Lehrveranstaltungsunterlagen
-: ...verfügbar als [Onlineskript](...) 
-: ...im [Moodle-Kurs](...) der LVA
+: ...verfügbar als [Onlineskript](https://projects.fbi.h-da.de/~s.zander/smw/html) 
+: ...im [Moodle-Kurs](https://lernen.h-da.de/course/view.php?id=11623) der LVA
 
     * ergänzende Unterlagen (Paper / Foliensätze / etc.)
     * Einreichung der Übungsaufgaben
@@ -112,7 +112,7 @@ Die Festlegung des Wissensmanagementproblems und der Domäne erfolgt in Abstimmu
 
 Präsention der Umsetzung am Semesterende via BBB
 
-Mehr Informationen finden sich auf der [Semesterprojektseite](...) (im Aufbau)
+Mehr Informationen finden sich auf der [Semesterprojektseite](semesterprojekt.md) (im Aufbau)
 
 
 

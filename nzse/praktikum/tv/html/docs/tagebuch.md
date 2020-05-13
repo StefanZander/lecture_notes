@@ -1,6 +1,29 @@
 # NZSE-Vorlesungstagebuch
 
 
+#### 2020-05-12
+: Tolle Videos über das Paper Prototyping 
+: * Bsp. 1 zum Testen von Paper Prototypen  
+    <https://www.youtube.com/watch?v=GrV2SZuRPv0>
+: * Bsp. 2  
+    <https://www.youtube.com/watch?v=9wQkLthhHKA>
+: * Paper Prototyping and Sketching (Google for Startups)  
+    <https://www.youtube.com/watch?v=JMjozqJS44M>
+
+
+
+
+#### 2020-05-07
+: Requirements Engineering
+: * alle Themen besprochen bis zu Transformationseffekte und Satzschablone
+: Schwerpunkte
+: * Stakeholder
+: * Arten von Anforderungen
+: * Quantifizierung
+: * Systemkontextanalyse & KANO-Modell
+
+
+
 #### 2020-04-28
 : Videos zur Vor-/Nachbereitung
 : * How to Conduct Qualitative Interviews (in Moodle) 

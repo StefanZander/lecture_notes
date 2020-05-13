@@ -51,7 +51,7 @@ The information on this site is separated into
 * [Kapitel #1: Einführung in das Wissensmanagement](kapitel1.md) 
 * [Kapitel #2: Technologische Grundlagen semantischer Wissensrepräsentationsmodelle](./chapters/2/overview.md) 
 <!-- * [Kapitel #3: Semantische Wissensrepräsentation](./chapters/2/overview.md)  -->
-* [Kapitel #3: Semantic MediaWiki](./chapters/3/overview.md) (_im Aufbau_)
+* [Kapitel #3: Semantic MediaWiki](./chapters/3/overview.md) 
 * [Kapitel #4: Semantic MediaWiki Extensions zum Ontology-Engineering](./chapters/4/overview.md) (_im Aufbau_)
 * ~~[Kapitel #5: Knowledge Graph Engineering](index.md)~~ (_nicht im SoSe 2020_)
 
@@ -66,21 +66,9 @@ The information on this site is separated into
 
 ## Semester Project
 
-Although the tasks are listed and numbered in a sequential order, most of them should be worked in parallel and in an iterative and incremental manner. 
+Informationen zum Semensterprojekt finden sich hier
 
-<!-- Please note that the order of tasks is not necessarily always sequentional. For some tasks (e.g. 4 / 5 / 6) it might by useful to conduct them in parallel and in an incremental and iterative manner.  -->
-
-* [WP #1: Defining the Problem Domain and Knowledge Management Issues](task1.md)
-* [WP #2: Defining a Knowledge Representation Model](task1.md)
-* [WP #3: Installing Semantic MediaWiki with Extensions](task1.md)
-* [WP #4: Implementing the Knowledge Representation Model (Ontological Classes / Properties / Concepts)](task1.md)
-* [WP #5: Creating the Technical Software Infrastructure (Templates / Forms / Queries)](task1.md)
-* [WP #6: Defining a User Interaction Concept](task1.md)
-* [WP #7: User Interaction Concept](task1.md)
-* [WP #8: Implementation of Use Cases](task1.md)
-* [WP #9: Preparation of Final Presentation](task1.md)
-
-WP = Work Package
+* [Semesterprojekt](./semesterprojekt.md)
 
 
 
