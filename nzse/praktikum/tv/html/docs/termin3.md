@@ -61,11 +61,12 @@
         **Hinweis:**  
         Auch wenn **Membervariablen** per Default nicht eingetragen werden müssen, so sollten Sie dies tun und diese dann als Grundlage für den Entwurf des **Datenmodells** hernehmen.
 
-<!-- ### Navigationsübersicht (_entfällt!_)
-1. Zeichnen Sie die **abstrakte Navigationsübersicht** zu Ihrem Entwurf inkl. aller **Aktionen**, die einen Übergang von einem Screen zu einem Anderen initieren. Denken Sie auch an **Bedingungen**, die für einen Screenwechsel erfüllt sein müssen bzw. an deren Evaluierung die Ausführung einer Aktion gekoppelt ist.
+### Navigationsübersicht
+3. Zeichnen Sie die **abstrakte Navigationsübersicht** zu Ihrem Entwurf inkl. aller **Aktionen**, die einen Übergang von einem Screen zu einem Anderen initieren. Denken Sie auch an **Bedingungen**, die für einen Screenwechsel erfüllt sein müssen bzw. an deren Evaluierung die Ausführung einer Aktion gekoppelt ist.
 
     !!! note
-        **Wohlgemerkt:** Eine Navigationsübersicht hat Screens als Knoten, nicht Bedienelemente! (beliebtes Missverständnis) -->
+        **Hinweis**:  
+        Eine Navigationsübersicht hat Screens als Knoten, nicht Bedienelemente! (~> beliebtes Missverständnis)
 
 
 ### Testen
@@ -74,16 +75,18 @@
     **Corona-Update**:  
     Bitten Sie ein Familienmitglied oder eine andere externe Person die konzipierten Oberflächen aus Sicht des Stereotypen zu begutachten. Spielen Sie einige typische Anwendungsfälle mit Ihrem Stereotypen durch und beobachten Sie sehr genau, wie sie/er mit den Oberflächen interagiert.
 
-1. Testen Sie Ihre Entwürfe mit Ihrer Peer-Gruppe und identifizieren Sie Ungereimtheiten und/oder Inkonsistenzen und Verbesserungen. Überlegen Sie, ob es gut und richtig ist, wenn Sie keine Verbesserungen identifizieren.
+1. Entwickeln Sie eine Reihe von **repräsentativen Testfällen**, um eine erste Validierung der in ihrem Prototypen umgesetzten Entwurfsentscheidungen vornehmen zu können. So finden Sie heraus, ob das von Ihnen entwickelte Benutzungskonzept für ihre Stereotypen intuitiv nutzbar ist.
+
+2. **Testen** Sie Ihre Entwürfe mit Ihrer Peer-Gruppe und identifizieren Sie Ungereimtheiten und/oder Inkonsistenzen und Verbesserungen. Überlegen Sie, ob es gut und richtig ist, wenn Sie keine Verbesserungen identifizieren.
 
     !!! note
         **Wichtig**:  
         Die Peer-Gruppe testet Ihren Entwurf aus **Sicht des Stereotypen** sowie seiner/ihrer spezifischen Anforderungen!
 
         1. Überlegen Sie im Vorfeld, wie Sie Ihre Entwürfe sinnvoll testen (--> *Funktion vs. Use Case*); 
-        2. Entwickeln Sie **4-5 repräsentative Anwendungsfälle**, die Ihre Peer-Gruppe (in der Rolle des Stereotypen) durchspielen soll.
-        3. Geben Sie **IN KEINEM FALL HINWEISE** oder Tipps, dies **verfälscht** Ihre Tests enorm. Wir wollen herausfinden, ob die getroffenen Designentscheidungen den mentalen Modellen des Stereotyps entsprechen und ob die UI intuitiv benutzbar ist. 
-        4. Den Test können Sie auch zu Beginn der nächsten Einheit durchführen.
+        2. Entwickeln Sie **5-6 repräsentative Anwendungsfälle**, die Ihre Peer-Gruppe (in der Rolle des Stereotypen) durchspielen soll.
+        3. Geben Sie in **KEINEM FALL HINWEISE** oder Tipps, dies **verfälscht** Ihre Tests enorm. Wir wollen herausfinden, ob die getroffenen Designentscheidungen den mentalen Modellen des Stereotypen entsprechen und ob die UI für diesen intuitiv benutzbar ist. 
+        <!-- 4. Den Test können Sie auch zu Beginn der nächsten Einheit durchführen. -->
 
 
 ## Ergebnisse
@@ -93,7 +96,9 @@ Die folgenden Ergebnisse müssen für eine erfolgreiche Testierung der Praktikum
 !!! abstract
     __Ergebnisse:__
 
-    - [ ] Paper Prototypes ihrer Applikation (oder Mock-Ups)
-    - [ ] Analyseklasse
-    - [ ] Kurze Zusammenfassung der wesentlichen Anpassungen (Reflexion des User Tests)
-    <!-- - [ ] Navigationsübersicht -->
+    - [ ] Paper Prototypen ihrer Applikation mit begründeten Entwurfsentscheidungen
+    - [ ] Analyseklasse(n)
+    - [ ] Navigationsübersicht
+    - [ ] Beschreibung der Testfälle
+    - [ ] Zusammenfassung der wesentlichen Erkenntnisse und Anpassungen (_~> Reflexion des User Tests_)
+    

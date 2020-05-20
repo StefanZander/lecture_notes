@@ -13,6 +13,8 @@
 
 ### Themen
 
+Das Anwendungsgebiet (=*Gegenstandsbereich*) für das Semesterprojekt können Sie frei wählen.
+
 Sofern Sie kein eigenes Thema bearbeiten wollen, können Sie eines der im Folgendenen dargestellten Themen wählen:
 
 !!! example
@@ -20,12 +22,14 @@ Sofern Sie kein eigenes Thema bearbeiten wollen, können Sie eines der im Folgen
 
     - Abbildung von Fachbereichsrats-Protokollen in Semantic MediaWiki
     - Realisierung einer Literaturbeschaffungsplattform inkl. Bestellübersichten für den Fachbereich
-    - Realisierung einer Bewertungsplattform für studentische Abschlussarbeiten inkl. Studierendenverwaltung
+    - Realisierung einer Bewertungsplattform für studentische Abschlussarbeiten inkl. Studierendenverwaltung und PDF-Ausgabe des Beurteilungsbogens
+    - Verwaltung von Studierendenanmeldungen für Praxisphase und Abschlussarbeiten (ggf. gekoppelt mit Bewertungsplattform)
+    - ==++Neu++== Gemeinsame Plattform für Studierende zum Finden von Praktikumsstellen und Bewertung selbiger (_dieses System soll dann für alle Studierende freigeschaltet werden, so dass dies die Suche nach passenden Praktikumsstellen vereinfacht bzw. Studierende dabei unterstützt, die passende Stelle zu finden._)
 
 _Die genaue inhaltliche Festlegung erfolgt in bilateraler Abstimmung mit dem Betreuer._
 
 
-### Inhaltliche Ausgestaltung
+<!-- ### Inhaltliche Ausgestaltung
 
 Für jedes Semesterprojekt sind folgende Meilensteine zu erfüllen
 
@@ -39,7 +43,47 @@ Für jedes Semesterprojekt sind folgende Meilensteine zu erfüllen
 - Erstellung von entsprechenden Konzepten, Properties, Datatypes, Templates, Forms, Concepts, Queries etc.
 - Erstellung eines Interaktionskonzepts, d.h., eine Darlegung, mit welchen technischen Mitteln (Forms etc.) die Informationsbedürfnisse befriedet werden können
 - Darstellung, wie die Anwendungsfälle in SWM umgesetzt werden
-- Zusammenführung aller Arbeiten und Erkenntnisse in einer Abschlusspräsentation
+- Zusammenführung aller Arbeiten und Erkenntnisse in einer Abschlusspräsentation -->
+
+### Arbeitspakete
+
+Für jedes Semesterprojekt sind folgende Arbeitspakete durchzuführen bzw. Meilensteine zu erfüllen.
+
+Die Nummerierung lässt keine Rückschlüsse auf die Bearbeitungsreihenfolge zu. Mit Ausnahme von AP1 ist es vorteilhaft alle weiteren Arbeitspakete inkrementell und iterativ zu bearbeiten. 
+
+
+#### AP0: Installtation Semantic MediaWiki
+: Installation eines Semantic MediaWiki Systems mit einschlägigen Erweiterungen  
+
+    !!!note 
+        __Hinweis__: Falls Sie über keine eigene Installation verfügen dann kontaktieren Sie uns bitte; wir werden IT-Services bitten, eine Instanz aufzusetzen. Auf diese Instanz kann allerdings nur mittel VPN zugegriffen werden
+
+#### AP1: Problembeschreibung und Wissensmanagementfragestellung
+<!-- AP1: Problembeschreibung und Wissensmanagementfragestellung -->
+: Definition der Problemstellung und der Wissensmanagementfragestellungen, d.h., eine Darlegung, welche Informationsbedürfnisse existieren sowie eine Darlegung der Anwendungsfälle, in denen diese auftreten (vgl. Anwendungszenariobeschreibungen in NZSE) auf ==1 DIN-A4-Seite==.
+: Wichtig: Berücksichtigen Sie hier auch ein ==Rollenkonzept==, d.h., welche Benutzer haben in welcher Rolle welches Informationsbedürfnis und überlegen Sie auch, wie Sie dieses in geeigneter Weise adressieren können. 
+: Upload der Seite in Moodle bis zum Termin #6.
+
+#### AP2: Interaktionskonzept
+: Erstellung eines ==Interaktionskonzepts==, d.h., eine Darlegung, mit welchen technischen Mitteln (Formularen / Ansichten etc.) die Informationsbedürfnisse bearbeitet bzw. befriedet werden können.
+: Darlegung, welche Oberflächen für welche User (Rollen) bestimmt sind und welche Informationsbedürfnisse diese adressieren.
+
+#### AP3: Daten- und Domänenmodelle
+: Konzeption und Implementierung des zugrunde liegenden ==Datenmodells== zur Modellierung des gewählten und in AP1 beschriebenen Gegenstandsbereichs.
+: Erstellung der entsprechenden ==Sprachelemente== (Kategorien, Concepts, Properties, Datatypes, Subobjects etc.) in Semantic MediaWiki
+
+#### AP4: Semantische Infrastruktur
+: Aufbau der semantischen Infrastruktur zu Daten- und Domänenmodellierung  
+    - Formulare  
+    - Semantische Templates  
+    - QueryForms  
+    - Queries  
+    - Landing Pages  
+    - etc.
+: Identifizierte NutzerInnen sollen diese für die Erstellung neuer und Anpassung bestehender Informationen verwenden können.
+
+#### AP5: Abschlusspräsentation
+: Zusammenführung aller Arbeiten und Erkenntnisse in einer ==10-minütigen Abschlusspräsentation== inkl. Live-Demonstration.
 
 
 

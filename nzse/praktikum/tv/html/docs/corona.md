@@ -75,7 +75,7 @@ Was bedeutet das für Sie...
 Durchführung
 : Im SoSe 2020 als online LVA mit **BigBlueButton (BBB)** – Raum: [D15/01.02](https://rooms.fbi.h-da.de/core/join/meeting/view/97b043084809414a87a2cbdc85263502)
 : Bearbeitung von mehreren Übungsaufgaben in Form eines **semesterbegleitenden Projekts**
-: Eigenständige Bearbeitung der Übungsaufgaben in **2er Gruppen**
+: Eigenständige Bearbeitung der Übungsaufgaben in max. **4er Gruppen**
 : * Gruppenfindung selbständig vorab oder mit Unterstützung des LVA-Leiters über Moodle
 : Sammlung aller Ergebnisse in der **Projektmappe**
 : * diese ist vor jedem Termin zu aktualisieren und in Moodle im jeweiligen Gruppenslot hochzuladen
@@ -90,5 +90,5 @@ Durchführung
 : * Beide Gruppenmitglieder MÜSSEN anwesend sein 
 : Die **Abnahme** der Aufgaben der N-ten Einheit findet in der (N+1)-Einheit statt
 : * Eine Ausnahme bildet [Übung 5](termin6.md); Die Evaluierungsergebnisse _MÜSSEN_ bereits vor Ihrem letzten Übungstermin vollständig vorliegen und hochgeladen sein. 
-: * In der letzten Übungseinheit besprechen wir nur mehr Ihre Ergebnisse und Sie erhalten die Testierungsmitteilung
+<!-- : * In der letzten Übungseinheit besprechen wir nur mehr Ihre Ergebnisse und Sie erhalten die Testierungsmitteilung -->
 

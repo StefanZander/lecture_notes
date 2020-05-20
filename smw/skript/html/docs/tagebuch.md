@@ -1,6 +1,20 @@
 # Tagebuch zur LVA
 
 
+#### 2020-05-18
+: Besprechung Semesterprojekt
+: Erste Festlegung von Gruppenkonstellation und Themenstellung
+: * Eintragung bis zum 2020-05-25 in Moodle
+
+
+
+#### 2020-05-11
+: Besprechung Ergebnisse UE3
+: Vorstellung und Diskussion von semantischen Templates, PageForms und Modellierung n-ärer Beziehungen (mittels *subobjects*) an konkreten Praxisbeispielen.
+: Auseinandersetzung mit AQL
+: Auftrag: Bildung von Gruppen und Themenfindung bis zum nä. Termin
+
+
 #### 2020-05-04
 : Gemeinsames Modellieren des RDF-Graphen aus UE2
 : Einführung in Semantic MediaWiki anhand der Modellierung eines Wissengraphen
