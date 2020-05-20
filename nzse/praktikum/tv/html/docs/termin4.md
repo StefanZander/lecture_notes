@@ -57,6 +57,7 @@ Die folgenden Ergebnisse müssen für eine erfolgreiche Testierung der Praktikum
 !!! abstract
     __Ergebnisse:__
 
-    - [ ] Fertiges Layout
-    - [ ] Implementierung der Navigation
-    - [ ] Einbinden der `HttpRequest.java` Klasse (_beim TV-Server_)
+    - [ ] Fertiges Layout für Hoch- und Querformat
+    - [ ] Implementierung der Navigation und Darlegung des Navigationskonzepts
+    <!-- - [ ] Einbinden der `HttpRequest.java` Klasse (_beim TV-Server_) -->
+    - [ ] Einbinden der Kommunikationsklassen (`HttpRequest.java` beim TV-Server; `StreamServerClient.java` beim Twitch-Server)

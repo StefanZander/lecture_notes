@@ -44,5 +44,8 @@ Die folgenden Ergebnisse müssen für eine erfolgreiche Testierung der Praktikum
     __Ergebnisse:__
 
     1. [ ] Persistiertes Datenmodell
-    2. [ ] Layout für Hoch- und Querformat
-    3. [ ] Umsetzung der in [Termin 2: UI Entwurf](termin3.md) genannten sowie im Rahmen der Benutzerforschung erarbeiteten Funktionen
+    <!-- 2. [ ] Layout für Hoch- und Querformat -->
+    2. [ ] Darlegung des fertigen Datenmodells
+    3. [ ] Darlegung der Persistierungsstrategie
+    4. [ ] Umsetzung der in [Termin 2: UI Entwurf](termin3.md) genannten sowie im Rahmen der Benutzerforschung erarbeiteten Funktionen
+    5. [ ] (_Optional_) Umsetzung von Begeisterungsfaktoren
