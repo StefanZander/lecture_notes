@@ -36,6 +36,12 @@ Eigentlich sollten Zugriffe aufs Netzwerk nicht im UI Thread gemacht werden (war
 ### Testen, Debuggen, komplett Fertigstellen
 1. Vergewissern Sie sich, dass alle in [Termin #1](termin2.md) geplanten Use Cases und Anwendungsszenarien von Ihrer Anwendung tatsächlich unterstützt werden. Testen Sie auch das Verhalten bei Erstinbetriebnahme (d.h. der persistente Speicher ist leer: Einstellungen, existierende Daten etc). <!--: Einstellungen, Apps, Fernbedienung, Daten löschen) -->
 
+
+### Videoaufzeichnung der App
+
+
+
+
 ## Ergebnisse
 
 Die folgenden Ergebnisse müssen für eine erfolgreiche Testierung der Praktikumseinheit vorliegen:

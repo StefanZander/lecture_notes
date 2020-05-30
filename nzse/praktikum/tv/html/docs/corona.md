@@ -78,7 +78,7 @@ Durchführung
 : Eigenständige Bearbeitung der Übungsaufgaben in max. **4er Gruppen**
 : * Gruppenfindung selbständig vorab oder mit Unterstützung des LVA-Leiters über Moodle
 : Sammlung aller Ergebnisse in der **Projektmappe**
-: * diese ist vor jedem Termin zu aktualisieren und in Moodle im jeweiligen Gruppenslot hochzuladen
+: * diese ist VOR jedem Termin zu aktualisieren und in Moodle im jeweiligen Gruppenslot hochzuladen
 : * mehr Informationen finden sich im Einführungsfoliensatz der Veranstaltung
 
 
@@ -87,8 +87,34 @@ Durchführung
 : * Wichtig: Die Übungstermine sollen Ihnen die Möglichkeit geben, Fragen und Unterstützung zu den aktuellen Übungsaufgaben zu erhalten.
 : * D.h., die Aufgaben der N-ten Einheit müssen bis spätestens VOR Beginn der (N+1)-Einheit vorliegen
 : * Sie können vorarbeiten, müssen aber nicht...
-: * Beide Gruppenmitglieder MÜSSEN anwesend sein 
+: * Alle Gruppenmitglieder MÜSSEN anwesend sein 
 : Die **Abnahme** der Aufgaben der N-ten Einheit findet in der (N+1)-Einheit statt
 : * Eine Ausnahme bildet [Übung 5](termin6.md); Die Evaluierungsergebnisse _MÜSSEN_ bereits vor Ihrem letzten Übungstermin vollständig vorliegen und hochgeladen sein. 
 <!-- : * In der letzten Übungseinheit besprechen wir nur mehr Ihre Ergebnisse und Sie erhalten die Testierungsmitteilung -->
+
+
+<!-- ### Prüfung
+
+Aufgrund der Corona-bedingten Einschränkungen und der Aufforderung seitens der Hochschulleitung wenn möglich alternative, präsenzfreie Prüfungsformen anzubieten, findet im SoSe 2020 der Leistungsnachweis im Modul NZSE in Form einer ... statt.
+
+Hierzu gibt es folgende 
+
+
+
+
+#### Beitragsmatrix
+
+Jede Gruppe hat die Beiträge ihrer Mitglieder aufgeschlüsselt nach ... in einer Matrix darzulegen.
+Zur Beurteilung kann eine 
+
+`--` minimales Involvement in der Bearbeitung der Aufgabe   
+`-` unterdurchschnittlicher Beitrag;   
+`o` zu erwartendes Engagement  
+`+` überdurchschnittliches Engagement bei der Erarbeitung der Ergebnisse  
+`++` Beitrag liegt erheblich über dem zu erwartendenen Beitrag (auch im Vergleich zu dem Teammitgliedern) 
+
+Alternativ können Sie eine %-basierte Bewertungsskala verwenden.
+
+#### Wiederholer / Studierende mit bestandener PVL aus Vorsemestern -->
+
 

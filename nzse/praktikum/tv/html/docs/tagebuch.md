@@ -1,6 +1,15 @@
 # NZSE-Vorlesungstagebuch
 
 
+
+#### 2020-05-26
+
+#### 2020-05-19
+: Erster Teil Visual Design bis einschl. Interaction Design. Fortsetzung Content Comprehension und Content Usability in der nächsten Einheit.
+: Zusätzliches Video zu Aufgabe und Rolle von Analyseklassen in UCD/NZSE  
+  <https://www.youtube.com/watch?v=_JWjL2nwKhE>
+
+
 #### 2020-05-12
 : Tolle Videos über das Paper Prototyping 
 : * Bsp. 1 zum Testen von Paper Prototypen  
