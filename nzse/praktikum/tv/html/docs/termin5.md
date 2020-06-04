@@ -13,13 +13,45 @@
 
 ## Vorbereitung
 
+- Testen Sie App und Server vorab ausgiebig. Stellen Sie sicher, das alles reibungslos funktioniert. 
+- Bereiten Sie die App und den Server vorab so vor, dass Sie in ihrem Präsentationsslot sofort mit der Demonstration beginnen können. Verschwenden Sie keine Zeit mit Installation oder Einrichtung etc.  
+- Machen Sie sich ggf. eine **Checkliste** um sicherzugehen, dass alles wie vorgesehen funktioniert.
+
+<!--
 !!! warning
-     **Zu Hause:** Bereiten Sie die Testprotokolle vor anhand der folgenden Test-Aufgaben und der vorgegebenen Checklisten, d.h. betrachten Sie die Checklisten als „Rohmaterial“ und machen Sie daraus Protokollformulare.
+     **Vorbereitung der Testprotokolle (zu Hause!)**  
+     Bereiten Sie die Testprotokolle vor anhand der folgenden Test-Aufgaben und der vorgegebenen Checklisten, d.h. betrachten Sie die Checklisten als "Rohmaterial" und machen Sie daraus Protokollformulare.
 
-!!! note
-    **Hinweis:** Die Testprotokolle sollen den Entwicklern bei der weiteren Verbesserung helfen (keine Angst, das müssen Sie im Praktikum nicht mehr umsetzen ;-). Benennen Sie Schwachpunkte möglichst konkret; pauschale „Schulnoten“ helfen nicht weiter.
+   
+Die Testprotokolle sollen den Entwickler*innen bei der weiteren Verbesserung helfen (_keine Angst, die Verbesserungen müssen Sie im Praktikum nicht mehr umsetzen..._).
 
-Alle Protokolle aus den folgenden Teilaufgaben kommen in die Projektmappe.
+Alle **Protokolle** aus den folgenden Teilaufgaben kommen in die Projektmappe.
+-->
+
+
+## Durchführung
+
+Der letzte Praktikumstermin ist zweitgeteilt:
+
+1. **Präsentation der App (im Präsenztermin)** 
+    - Im Präsenztermin präsentiert jede Gruppe in **max. 15 Minuten** die entwickelte App mittels BBB und Screensharing
+    - Die Präsentation kann am Emulator oder abgefilmt erfolgen.
+    - Präsentieren Sie alle Funktionen, die Sie umgesetzt haben (--> siehe [Termin 2](termin2.md)) einschl. etwaiger Leistungs- und Begeisterungsfaktoren. 
+    - Alles was Sie nicht präsentieren kann nicht gewertet werden! Achten Sie deshalb darauf keine Zeit zu vergeuden.
+    - Stellen Sie VOR Beginn der Praktikumseinheit sicher, dass App und Server laufen und die Kommunikation funktioniert.
+    - Bereiten Sie die Demonstration so vor, als würde die App das **erste Mal gestartet** werden. Löschen Sie alle Daten und Einstellungen vorab und versetzen Sie die App in den >>Urzustand<<.
+    - Die Präsentation verläuft **interaktiv**, d.h., ich werde während der Präsentation Fragen stellen oder Sie bitten bestimmte Funktionen zu demonstrieren. Setzen Sie dies schnell und zielgerichtet um. 
+
+    !!! warning
+        __Wichtig: Alles was Sie nicht präsentieren kann nicht gewertet werden.__
+
+2. **Usability Test und Inspection**
+    - Führen Sie die Usability Evaluation und das Design Review wie im weiteren Verlauf beschrieben durch
+    - Fügen Sie die zu erstellenden Artefakte (Protokolle etc.) der Projektmappe hinzu und laden sie diese bis zum __Ende (FR) der jeweiligen Praktikumswoche__ in Moodle hoch. Verspätete Abgaben können nicht gewertet werden!
+    - Bereiten Sie die Testprotokolle vor anhand der folgenden Test-Aufgaben und der vorgegebenen Checklisten, d.h. betrachten Sie die Checklisten als "Rohmaterial" und machen Sie daraus Protokollformulare.   
+    - Die Testprotokolle sollen den Entwickler*innen bei der weiteren Verbesserung helfen (_keine Angst, die Verbesserungen müssen Sie im Praktikum nicht mehr umsetzen..._).
+
+
 
 ## Aufgaben
 
@@ -58,6 +90,17 @@ Bewerten Sie die Fernbedienung Ihrer Nachbargruppe unter Design Aspekten:
 5. Sinnvolle Gruppierung der Bedienelemente?
 6. Abstände und Ränder
 7. Sinnvolles Verhalten beim Drehen des Smartphones (keine Zustandsänderung, kein Abbruch von Abläufen)
+
+
+### Liste der Verbesserungen
+
+1. Reflektieren Sie innerhalb Ihrer Gruppe die Ergebnisse der verschiedenen Evaluierungsverfahren. Welche Ergebnisse und Erkenntnisse lassen sich ableiten? 
+2. Erstellen Sie eine Liste mit pot. Schwachpunkten und sich daraus ergebenden Verbesserungsvorschlägen. 
+
+    !!! note
+        **Benennen Sie Schwachpunkte konkret**   
+        Benennen Sie Schwachpunkte so konkret wie möglich; pauschale "Schulnoten" helfen nicht weiter.
+
 
 ## Ergebnisse
 

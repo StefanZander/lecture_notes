@@ -90,7 +90,7 @@ Durchführung
 : In den Übungsterminen bekommen Sie **Rückmeldung** zu den Ergebnissen der vergangenen Übungseinheit 
 : Alle Gruppenmitglieder MÜSSEN anwesend sein 
 : Die **Abnahme** der Aufgaben der N-ten Einheit findet in der (N+1)-Einheit statt
-: * Eine Ausnahme bildet [Übung 5: Usability](termin6.md):  
+: * Eine Ausnahme bildet [Übung 5: Usability](termin5.md):  
 In Termin 5 stellt jede Gruppe die eigene App vor; die Evaluierungsergebnisse müssen dann bis spätestens __Freitag__ in der entspr. Übungswoche in die Projektmappe übernommen und hochgeladen sein. 
 <!--:    * Die Evaluierungsergebnisse _MÜSSEN_ bereits vor Ihrem letzten Übungstermin vollständig vorliegen und hochgeladen sein. -->
 <!-- : * In der letzten Übungseinheit besprechen wir nur mehr Ihre Ergebnisse und Sie erhalten die Testierungsmitteilung -->

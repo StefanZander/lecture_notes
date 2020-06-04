@@ -28,7 +28,7 @@ TV-Server sowie der Twitch Streaming-Server sind bereits implementiert und könn
 Während der Twitch Streaming-Server "live content" darstellt und eine **aktive Internet-Verbindung** benötigt, simuliert der TV-Server das laufende Fernsehprogramm in Form von umschaltbaren Standbildern.
 
 !!! note
-    **Hinweis**: Die Wahl des Anwendungsszenarios (TV-Server vs. Twitch) hängt von den eigenen Vorlieben ab und ist unabhängig für die Testierung des Praktikums. Einzig für den [Termin #5](termin6.md) müssen Sie für das Twitch-Szenario eigene Usability Tests entwerfen (_für den TV-Server sind diese vorgegeben, können aber auch angepasst werden_).
+    **Hinweis**: Die Wahl des Anwendungsszenarios (TV-Server vs. Twitch) hängt von den eigenen Vorlieben ab und ist unabhängig für die Testierung des Praktikums. Einzig für den [Termin #5](termin5.md) müssen Sie für das Twitch-Szenario eigene Usability Tests entwerfen (_für den TV-Server sind diese vorgegeben, können aber auch angepasst werden_).
 
 ### Quelldateien
 
@@ -55,7 +55,7 @@ Konzentrieren Sie sich insbesondere auf die **Anwendungsfälle**, **Nutzungskont
 
 Bauen Sie _keine_ klassische Plastik-Fernbedienung mit all ihren Restriktionen nach, sondern nutzen Sie die Freiheitsgrade, die eine Smartphone App bietet.
 
-In [Termin #2](termin3.md) sind die zu implementierenden **Mindestanforderungen** für beide Applikationsszenarien aufgelistet. Darüber hinaus gehende Features oder Funktionen (_die Sie im Rahmen des User Research gewonnen haben_) sollen Sie berücksichtigen, Sie müssen diese aber nicht implementieren; hier sind in die Applikation integrierte **Mock-Ups** vollkommen ausreichend. 
+In [Termin #2](termin2.md) sind die zu implementierenden **Mindestanforderungen** für beide Applikationsszenarien aufgelistet. Darüber hinaus gehende Features oder Funktionen (_die Sie im Rahmen des User Research gewonnen haben_) sollen Sie berücksichtigen, Sie müssen diese aber nicht implementieren; hier sind in die Applikation integrierte **Mock-Ups** vollkommen ausreichend. 
 
 <!--Denken Sie auch an **SeniorInnen** als Benutzergruppe, nicht nur an Digital Natives (es geht um die App selbst; den Aufrufkontext „Handy“ blenden wir für das Praktikum aus). Die Herausforderung der Aufgabe besteht in der **Beschränkung auf das Wesentliche** - verfallen Sie nicht in Featuritis!--> 
 

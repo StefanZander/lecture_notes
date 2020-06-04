@@ -1,8 +1,24 @@
 # NZSE-Vorlesungstagebuch
 
 
+#### 2020-06-09
+: Themen: Event-Handling, Inter-Activity Kommunikation, Android Application Model, Android Lifecycle, Einbinden der bereitgestellten Klasse zur Kommunikation mit dem TV-Server, Implementierung der Toolbar zur Navigation zwischen Activities
+
+
+
+#### 2020-06-02
+: Einführung Android gestartet
+: Es gibt eine separate Einheit mit ausgewähltem Android-Material zum Selbststudium oder zum Nachschlagen im Moodle-Kurs
+: Die wesentlichen Bestandteile von Android-Projekten und von AndroidStudio  (Manifest, Java-Klassen mit App-Logik, Resourcen, Designer) wurden in Form eines Tutorials vorgestellt
+: Erzeugung von Landscape-Layout auf die kommende Einheit verschoben
+
 
 #### 2020-05-26
+: Abschluss Visual Design 
+: Themengebiet zu dynamischem Layout nicht besprochen und auch nicht klausurrelevant
+: Klausurmodus und Hintergründe dazu besprochen 
+: Aufgabe zur Navigationsübersicht aus SoSe 2017-Klausur besprochen
+
 
 #### 2020-05-19
 : Erster Teil Visual Design bis einschl. Interaction Design. Fortsetzung Content Comprehension und Content Usability in der nächsten Einheit.
