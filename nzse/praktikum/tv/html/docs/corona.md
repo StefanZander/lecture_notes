@@ -7,28 +7,28 @@
 
 ### Zeitplan 
 
-(unter Vorbehalt)
+_Letzte Aktualisierung: 04.06.2020_ 
 
-Woche 01: Orga + Einführung User-Centered Design  
-Woche 02: User Research  
-Woche 03: Requirements Engineering  
-Woche 04: Modellbildung + Start Visual Design  
-Woche 05: Visual Design  
-Woche 06: Android Einführung  
-Woche 07: Android Application Model + Inter-Activity Communication  
-Woche 08: Android AppBar  
-Woche 09: Android AsyncTask  
-Woche 10: Android RecyclerView  
-Woche 11: Usability Evaluation  
-Woche 12: Probeklausur  
-Woche 13: Fragestunde  
+Woche 01 (KW17): Orga + Einführung User-Centered Design  
+Woche 02 (KW18): User Research  
+Woche 03 (KW19): Requirements Engineering  
+Woche 04 (KW20): Modellbildung + Start Visual Design  
+Woche 05 (KW21): Visual Design  
+Woche 06 (KW22): Visual Design  
+Woche 07 (KW23): Android Einführung  
+Woche 08 (KW24): Android Application Model + Act. Communication + Toolbar  
+Woche 09 (KW25): Android AsyncTask  
+Woche 10 (KW26): Android RecyclerView  
+Woche 11 (KW27): Usability Evaluation  
+Woche 12 (KW28): Probeklausur  
+Woche 13 (KW29): Fragestunde  
 
 
 ### Vorlesung
 
 Durchführung 
 : Im SoSe 2020 als online LVA mit **BigBlueButton (BBB)** – Raum: [D14/4.04](https://rooms.fbi.h-da.de/core/join/meeting/view/3968822e35d04f23b35f623496d9bc07)
-: mit ergänzendem **Fragenspeicher** (TODO: add Link) zu den jeweiligen Einheiten
+: mit ergänzendem **Fragenspeicher** (--> [Link](https://lernen.h-da.de/mod/wiki/view.php?id=357203)) zu den jeweiligen Einheiten
 : zus. Bereitstellung von ergänzenden **Lehrvideos** zu ausgesuchten Themen über [YouTube](https://www.youtube.com/channel/UCmvuGsp-maCJ_HwAgKxBpbA?view_as=subscriber)
 
 Termine
@@ -59,7 +59,7 @@ Was bedeutet das für Sie...
     **Bitte machen Sie regen Gebrauch von den Fragemöglichkeiten**  
     Die Erfahrung aus vergangenen Klausuren zeigt, dass insbesondere die Studierenden mit vielen Fragen am besten in der Klausur abschneiden. 
     Auch wenn manche Inhalte recht umfangreich und detailliert in den Unterlagen ausgearbeitet sind, so ergeben sich trotzdem weitergehende Fragestellungen – insbesondere aus dem Zusammenwirken mit anderen Technologien / Konzepten / Abläufen / Themengebieten.  
-    --> _Scheuen Sie sich also nicht Fragen zu stellen bzw. diese im Fragenspeicher zu hinterlegen._
+    ==_--> Scheuen Sie sich also nicht Fragen zu stellen bzw. diese im Fragenspeicher zu hinterlegen._==
 
 
 ### Übung
@@ -87,9 +87,12 @@ Durchführung
 : * Wichtig: Die Übungstermine sollen Ihnen die Möglichkeit geben, Fragen und Unterstützung zu den aktuellen Übungsaufgaben zu erhalten.
 : * D.h., die Aufgaben der N-ten Einheit müssen bis spätestens VOR Beginn der (N+1)-Einheit vorliegen
 : * Sie können vorarbeiten, müssen aber nicht...
-: * Alle Gruppenmitglieder MÜSSEN anwesend sein 
+: In den Übungsterminen bekommen Sie **Rückmeldung** zu den Ergebnissen der vergangenen Übungseinheit 
+: Alle Gruppenmitglieder MÜSSEN anwesend sein 
 : Die **Abnahme** der Aufgaben der N-ten Einheit findet in der (N+1)-Einheit statt
-: * Eine Ausnahme bildet [Übung 5](termin6.md); Die Evaluierungsergebnisse _MÜSSEN_ bereits vor Ihrem letzten Übungstermin vollständig vorliegen und hochgeladen sein. 
+: * Eine Ausnahme bildet [Übung 5: Usability](termin6.md):  
+In Termin 5 stellt jede Gruppe die eigene App vor; die Evaluierungsergebnisse müssen dann bis spätestens __Freitag__ in der entspr. Übungswoche in die Projektmappe übernommen und hochgeladen sein. 
+<!--:    * Die Evaluierungsergebnisse _MÜSSEN_ bereits vor Ihrem letzten Übungstermin vollständig vorliegen und hochgeladen sein. -->
 <!-- : * In der letzten Übungseinheit besprechen wir nur mehr Ihre Ergebnisse und Sie erhalten die Testierungsmitteilung -->
 
 

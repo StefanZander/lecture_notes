@@ -1,54 +1,46 @@
-# Implementierung der Benutzungsoberfläche
+# Vervollständigung der Implementierung
 
 
 !!! abstract 
     **Lernziele**
 
-    - [x] Sie können eine Android App mit einer Layoutvariante implementieren
-    - [x] Sie verstehen das Zusammenspiel verschiedener Activities über Intents
-    - [x] Sie verstehen das Konzept der Ereignisorientierung
-    - [x] Sie haben einen ersten Eindruck von XML
+    - [X] Sie verstehen die Architektur einer App mit Datenmodell und Zugriff auf einen Server
+    - [X] Sie verstehen die Realisierung von Dateizugriff und Serialisierung in Java
+    - [X] Sie verstehen den Sinn der Aufteilung in UI Thread und Worker Threads bei GUI Systemen
+    - [X] Sie können mit JSON Objekten und Java Collections umgehen
+    - [X] Sie verstehen den Lebenszyklus von Activities und die Problematik des Instance State
 
 ## Aufgaben
 
-### Layouts und Navigation
+### Datenmodell
 
-Legen Sie das Praktikumsprojekt an und generieren Sie alle Activities (oder [Fragmente](https://developer.android.com/guide/components/fragments), falls Sie eine `BottomNavigationBar` o.Ä. zur Navigation einsetzen möchten) der Anwendung
+1. Implementieren und ggf. verfeinern Sie das in [Aufgabe 1](termin0.md) dargelegte **Datenmodell** und binden Sie es in die App ein
+2. Machen Sie das Datenmodell **persistent**, indem Sie es in `:::js onPause()` jeder relevanten Activity serialisiert in einer Datei speichern und beim `:::js onCreate()` aus dieser Datei einlesen und deserialisieren
+    
+    !!! question
+        **Frage:** Erzeugen Sie dabei ein neues Modell-Objekt oder füllen Sie lieber das alte mit neuen Inhalten? Müssen/dürfen Activities eigene Referenzen auf das Datenmodell halten?
 
-1. Implementieren Sie die zugehörigen **Layouts** in der **Design-Ansicht** von Android Studio; bestücken Sie die
-Layouts mit den benötigten Views und Widgets. Testen Sie das Layout für unterschiedliche **Displaygrößen** und **Displayauflösungen** und passen Sie es ggf. an.
-2. Schalten Sie um in die Text-Ansicht der Layouts, versuchen Sie das generierte **XML** zu verstehen und räumen Sie in der Text-Ansicht ggf. etwas auf
-3. Verknüpfen Sie die Activities (oder Fragmente) indem Sie die **Navigation** (d.h. die Umschaltung zwischen Screens) implementieren
-4. **Optimieren** Sie ihren Entwurf hinsichtlich **Größe**, **Platzierung** und **Beschriftung** der Views und Widgets
-
-
-### TV-Server
-
-Der "Fernseher" wird über das **HTTP-Protokoll** gesteuert, über das man normalerweise Webseiten aufruft (näheres dazu in „Entwicklung webbasierter Anwendungen“ im 4. Semester). Die Fernbedienung ist der Client (Browser) und der Fernseher ist der Server. 
-
-Sie können den "Fernseher" provisorisch steuern:
-
-1. Starten Sie den „Fernseher“ durch Doppelklick auf die gegebene Datei `TV.jar`
-2. Notieren Sie die angezeigte IP-Adresse
-3. Laden Sie die gegebene Datei `TestTVInterface.htm` herunter und rufen Sie sie lokal im Browser auf
-4. Machen Sie sich mit dem Befehlssatz vertraut
-5. Schauen Sie sich die Antwort auf den Befehl `scanChannels` genau an (ist JSON Format, wird noch erklärt)
+### Benutzeroberfläche
+1. Implementieren Sie Benutzerführung durch **Zeigen/Verbergen** bzw. **Aktivieren/Deaktivieren** von Views und Widgets
+2. Geben Sie **(Fehler-)Meldungen** in geeigneter Form als `AlertDialog`, `Toast`, `Snackbar` oder via Log aus (was wofür?)
+<!-- 3. Übernehmen Sie das Ergebnis des **Kanalscans** aus dem JSON-Ergebnis von `HttpRequest.execute` und speichern Sie es im **Datenmodell**. Binden Sie die betroffenen Views über Adapter an die Kanalliste an. -->
+1. Machen Sie Ihre App "**drehbar**", d.h. sorgen Sie dafür, dass der Neustart der Activity beim Drehen des Smartphones (Hochformat/Querformat) keine sichtbaren Folgen hat. Implementieren Sie dazu ggf. die Methode `:::js onSaveInstanceState()` und werten Sie dann den Parameter von `:::js onCreate()` entsprechend aus.
 
 
-### Kommunikation mit dem TV-Server
+### AsyncTask
+Eigentlich sollten Zugriffe aufs Netzwerk nicht im UI Thread gemacht werden (warum?). 
 
-Wenn Sie später die Fernbedienung auf dem Smartphone oder im Emulator testen wollen, müssen Sie dort die IP-Adresse verwenden, die der Fernseher beim Start anzeigt (`127.0.0.1` ist der `localhost` und funktioniert nur, wenn Client und Server auf demselben PC laufen).
-
-Das HTTP-Protokoll brauchen Sie für dieses Praktikum nicht weiter zu verstehen:
-
-1. Binden Sie die gegebene Klasse `HttpRequest.java` in Ihr Projekt ein (passen Sie ggf. das package an)
-2. Lesen und verstehen Sie die Dokumentation zur Klasse und ihren Methoden im Quellcode (Javadoc-Stil)
-3. Steuern Sie den „Fernseher“ durch Aufruf der Methode `HttpRequest.execute` mit geeigneten Parametern
+1. Schreiben Sie daher eine Klasse `:::js HttpRequestAsync extends AsyncTask` und verlagern Sie die `HttpRequest`-Aufrufe in deren Methode `:::js doInBackground()`.
 
 
-### Twitch Stream-Server
+### Testen, Debuggen, komplett Fertigstellen
+1. Vergewissern Sie sich, dass alle in [Termin #1](termin1.md) geplanten Use Cases und Anwendungsszenarien von Ihrer Anwendung tatsächlich unterstützt werden. Testen Sie auch das Verhalten bei Erstinbetriebnahme (d.h. der persistente Speicher ist leer: Einstellungen, existierende Daten etc). <!--: Einstellungen, Apps, Fernbedienung, Daten löschen) -->
 
-Informationen zur Kommunikation mit dem Twitch Stream-Server finden Sie auf den offiziellen Projektseiten: <https://stream-server.h-da.io/>
+
+### Videoaufzeichnung der App
+
+    
+
 
 ## Ergebnisse
 
@@ -57,7 +49,11 @@ Die folgenden Ergebnisse müssen für eine erfolgreiche Testierung der Praktikum
 !!! abstract
     __Ergebnisse:__
 
-    - [ ] Fertiges Layout für Hoch- und Querformat
-    - [ ] Implementierung der Navigation und Darlegung des Navigationskonzepts
-    <!-- - [ ] Einbinden der `HttpRequest.java` Klasse (_beim TV-Server_) -->
-    - [ ] Einbinden der Kommunikationsklassen (`HttpRequest.java` beim TV-Server; `StreamServerClient.java` beim Twitch-Server)
+    - [ ] Persistiertes Datenmodell
+    - [ ] Darlegung der Persistierungsstrategie
+    - [ ] Layout für Hoch- und Querformat
+    - [ ] Umsetzung der in [Termin 2: UI Entwurf](termin2.md) genannten sowie im Rahmen der Benutzerforschung erarbeiteten Funktionen
+    - [ ] (_Optional_) Umsetzung von Begeisterungsfaktoren
+
+<!-- - [ ] Darlegung des fertigen Datenmodells -->
+<!-- 2. [ ] Layout für Hoch- und Querformat -->

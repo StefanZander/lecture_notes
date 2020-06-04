@@ -7,12 +7,12 @@ nav:
   - 'Arbeiten mit BBB': 'bbb.md'
   - 'Vorbemerkung': 'vorbemerkung.md'
   - 'Projektmappe': 'projektmappe.md'
-  - 'Termin 0: Android Studio': 'termin1.md'
-  - 'Termin 1: User Research': 'termin2.md'
-  - 'Termin 2: UI Entwurf': 'termin3.md'
-  - 'Termin 3: Layout': 'termin4.md'
-  - 'Termin 4: Logik': 'termin5.md'
-  - 'Termin 5: Usability': 'termin6.md'
+  - 'Termin 0: Android Studio': 'termin0.md'
+  - 'Termin 1: User Research': 'termin1.md'
+  - 'Termin 2: UI Entwurf': 'termin2.md'
+  - 'Termin 3: Layout': 'termin3.md'
+  - 'Termin 4: Logik': 'termin4.md'
+  - 'Termin 5: Usability': 'termin5.md'
 
 theme:
   name: 'material'

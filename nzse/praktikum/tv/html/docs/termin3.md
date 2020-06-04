@@ -1,93 +1,72 @@
-# Entwurf
+# Implementierung der Benutzungsoberfläche
 
-!!! abstract
+
+!!! abstract 
     **Lernziele**
 
-    - [x] Sie können eine Benutzungsschnittstelle mit geeigneten Diagrammen beschreiben
-    - [x] Sie können Papier-Prototypen erstellen
-    - [x] Sie können die UI Prototypen testen und Verbesserungen identifizieren
-    - [x] Sie verstehen das Vorgehensmodell zum Entwurf einer Benutzungsschnittstelle im Kontext von OOAD/SWE
-
-!!! warning
-    **Hinweis:** Die Fernbedienungen müssen mindestens die folgenden Funktionen bieten: 
-    <!-- (_siehe auch die im Kapitel [Vorbemerkung](vorbemerkung.md) aufgezählten Funktionen_).   -->
-
-    **Fernbedienung für TV-Server**
-
-    - Seitenverhältnis einstellen  
-    - Sender auswählen
-    - Zappen
-    - Kanalsuchlauf
-    - Favoriten anlegen und verwalten
-    - Timeshift (zeitversetzte Wiedergabe aber keine allgemeinen Recorderfunktionen)
-    - Lautstärkeregelung inkl. Mute
-    - Picture in Picture
-
-
-    **Twitch Stream-Server**
-
-    - Picture in Picture
-    - Favoriten anlegen und verwalten
-    - Filterung der TopStreams nach min. _einer_ frei zu wählenden Eigenschaft (Sprache, Spiel, Kanal) ([--> Link](https://stream-server.h-da.io/reference/#twitchgettopstreams))
-    - Gamessuche ([--> Link](https://stream-server.h-da.io/reference/#twitchsearchgames)) <!-- see http://criticmarkup.com/users-guide.php -->
-    - Umschalten zwischen themenverwandten Streams
-    - Auswahl eines Streams
-    - Pausieren eines Streams
-
+    - [x] Sie können eine Android App mit einer Layoutvariante implementieren
+    - [x] Sie verstehen das Zusammenspiel verschiedener Activities über Intents
+    - [x] Sie verstehen das Konzept der Ereignisorientierung
+    - [x] Sie haben einen ersten Eindruck von XML
 
 ## Aufgaben
 
-### UI Entwurf (Paper Prototyping)
+### Layouts und Navigation
 
-!!! warning
-    **Corona-Update**:  
-    Anstelle eines Paper-Prototypen können Sie auch Mock-ups oder eine Wireframe-basierte Konzeption der Oberflächen Ihrer Applikation erstellen (_mit allen Nachteilen gegenüber einer Paper-Prototyp-basierten Lösung_). 
+Legen Sie das Praktikumsprojekt an und generieren Sie alle Activities (oder [Fragmente](https://developer.android.com/guide/components/fragments), falls Sie eine `BottomNavigationBar` o.Ä. zur Navigation einsetzen möchten) der Anwendung
 
-1. Entwerfen Sie die **Benutzungsoberfläche** der mobilen Applikationen in Form von konkreten Screen-Diagrammen als **Papier-Prototypen** (*bitte groß und gut erkennbar!*). 
-
-    Hinweise:
-
-    - Achten Sie auf Vollständigkeit der benötigten Bedienelemente. 
-    - Berücksichtigen Sie Platzierung, Größe, Anordnung, Beschriftung. 
-    - Skizzieren Sie von **Icons** die Rohform so, dass man deren bildlich-inhaltliche Aussage versteht.
-    - Nutzen Sie **abstrakte Screen-Diagramme** um **Entwurfsalternativen** zu erkennen. Wählen Sie die **beste Entwurfsalternative** aus und verfolgen Sie diese weiter.
+1. Implementieren Sie die zugehörigen **Layouts** in der **Design-Ansicht** von Android Studio; bestücken Sie die
+Layouts mit den benötigten Views und Widgets. 
+2. Testen Sie das Layout für unterschiedliche **Displaygrößen** und **Displayauflösungen** und passen Sie es ggf. an.
+2. Schalten Sie um in die Text-Ansicht der Layouts, versuchen Sie das generierte **XML** zu verstehen und räumen Sie in der Text-Ansicht ggf. etwas auf
+3. Verknüpfen Sie die Activities (oder Fragmente) indem Sie die **Navigation** (d.h. die Umschaltung zwischen Screens) implementieren
+4. **Optimieren** Sie ihren Entwurf hinsichtlich **Größe**, **Platzierung** und **Beschriftung** der Views und Widgets
 
 
-### Analyseklasse
-1. Entwerfen Sie parallel zu Ihrem Paper Prototypen eine **Analyseklasse**, in die Sie die Hauptfunktionen der Benutzungsoberfläche als Methoden eintragen.
-2. Nutzen Sie die Analyseklasse um auf **Vollständigkeit** hinsichtlich der verwendeten **UI-Elemente**, als auch auf Vollständigkeit hinsichtlich der eingetragenen **Methoden** zu prüfen.
+### TV-Server
 
-    !!! note
-        **Hinweis:**  
-        Auch wenn **Membervariablen** per Default nicht eingetragen werden müssen, so sollten Sie dies tun und diese dann als Grundlage für den Entwurf des **Datenmodells** hernehmen.
+Der "Fernseher" wird über das **HTTP-Protokoll** gesteuert, über das man normalerweise Webseiten aufruft (näheres dazu in „Entwicklung webbasierter Anwendungen“ im 4. Semester). Die Fernbedienung ist der Client (Browser) und der Fernseher ist der Server. 
 
-### Navigationsübersicht
-3. Zeichnen Sie die **abstrakte Navigationsübersicht** zu Ihrem Entwurf inkl. aller **Aktionen**, die einen Übergang von einem Screen zu einem Anderen initieren. Denken Sie auch an **Bedingungen**, die für einen Screenwechsel erfüllt sein müssen bzw. an deren Evaluierung die Ausführung einer Aktion gekoppelt ist.
+Sie können den "Fernseher" provisorisch steuern:
 
-    !!! note
-        **Hinweis**:  
-        Eine Navigationsübersicht hat Screens als Knoten, nicht Bedienelemente! (~> beliebtes Missverständnis)
+1. Starten Sie den „Fernseher“ durch Doppelklick auf die gegebene Datei `TV.jar`
+2. Notieren Sie die angezeigte IP-Adresse
+3. Laden Sie die gegebene Datei `TestTVInterface.htm` herunter und rufen Sie sie lokal im Browser auf
+4. Machen Sie sich mit dem Befehlssatz vertraut
+5. Schauen Sie sich die Antwort auf den Befehl `scanChannels` genau an (ist JSON Format, wird noch erklärt)
 
 
-### Testen
+### Kommunikation mit dem TV-Server
 
-!!! warning
-    **Corona-Update**:  
-    Bitten Sie ein Familienmitglied oder eine andere externe Person die konzipierten Oberflächen aus Sicht des Stereotypen zu begutachten. Spielen Sie einige typische Anwendungsfälle mit Ihrem Stereotypen durch und beobachten Sie sehr genau, wie sie/er mit den Oberflächen interagiert.
+Wenn Sie später die Fernbedienung auf dem Smartphone oder im Emulator testen wollen, müssen Sie dort die IP-Adresse verwenden, die der Fernseher beim Start anzeigt (`127.0.0.1` ist der `localhost` und funktioniert nur, wenn Client und Server auf demselben PC laufen).
 
-1. Entwickeln Sie eine Reihe von **repräsentativen Testfällen**, um eine erste Validierung der in ihrem Prototypen umgesetzten Entwurfsentscheidungen vornehmen zu können. So finden Sie heraus, ob das von Ihnen entwickelte Benutzungskonzept für ihre Stereotypen intuitiv nutzbar ist.
+Das HTTP-Protokoll brauchen Sie für dieses Praktikum nicht weiter zu verstehen:
 
-2. **Testen** Sie Ihre Entwürfe mit Ihrer Peer-Gruppe und identifizieren Sie Ungereimtheiten und/oder Inkonsistenzen und Verbesserungen. Überlegen Sie, ob es gut und richtig ist, wenn Sie keine Verbesserungen identifizieren.
+1. Binden Sie die gegebene Klasse `HttpRequest.java` in Ihr Projekt ein (passen Sie ggf. das package an)
+2. Lesen und verstehen Sie die Dokumentation zur Klasse und ihren Methoden im Quellcode (Javadoc-Stil)
+3. Steuern Sie den „Fernseher“ durch Aufruf der Methode `HttpRequest.execute` mit geeigneten Parametern
 
-    !!! note
-        **Wichtig**:  
-        Die Peer-Gruppe testet Ihren Entwurf aus **Sicht des Stereotypen** sowie seiner/ihrer spezifischen Anforderungen!
+!!! note 
+    __IP-Adresse des TV-Servers beim Aufruf aus dem Emulator__:  
+    Verwenden Sie die IP-Adresse `10.0.2.22` bei der Instanziierung der `HTTPRequest`-Klasse, um auf den TV-Server aus dem Emulator heraus zuzugreifen.
 
-        1. Überlegen Sie im Vorfeld, wie Sie Ihre Entwürfe sinnvoll testen (--> *Funktion vs. Use Case*); 
-        2. Entwickeln Sie **5-6 repräsentative Anwendungsfälle**, die Ihre Peer-Gruppe (in der Rolle des Stereotypen) durchspielen soll.
-        3. Geben Sie in **KEINEM FALL HINWEISE** oder Tipps, dies **verfälscht** Ihre Tests enorm. Wir wollen herausfinden, ob die getroffenen Designentscheidungen den mentalen Modellen des Stereotypen entsprechen und ob die UI für diesen intuitiv benutzbar ist. 
-        <!-- 4. Den Test können Sie auch zu Beginn der nächsten Einheit durchführen. -->
+!!! note
+    __Fehlermeldung 'Cleartext HTTP traffic not permitted' (Android 9 / API Level 28 und höher)__  
+    Seit Android 9 (API Level 28) unterbindet das Android Sicherheitsmodell standardmäßig den Austausch von Klartextnachrichten über unverschlüsselte HTTP-Verbindungen.
 
+    Um trotzdem mit dem TV- bzw. Twitch-Server zu kommunizieren gibt es folgende Möglichkeiten:
+
+    1. Auswahl eines API Levels < 28
+    2. Hinzufügen von `android:usesCleartextTraffic="true"` im `AndroidManifest.xml`
+    3. Implementierung einer der Möglichkeiten in Quelle #1
+
+    Quellen: [Quelle 1](https://stackoverflow.com/questions/45940861/android-8-cleartext-http-traffic-not-permitted), [Quelle 2](https://developer.android.com/training/articles/security-config#CleartextTrafficPermitted)
+
+
+### Twitch Stream-Server
+
+Informationen zur Kommunikation mit dem Twitch Stream-Server finden Sie auf den offiziellen Projektseiten:  
+<https://stream-server.h-da.io/>
 
 ## Ergebnisse
 
@@ -96,9 +75,6 @@ Die folgenden Ergebnisse müssen für eine erfolgreiche Testierung der Praktikum
 !!! abstract
     __Ergebnisse:__
 
-    - [ ] Paper Prototypen ihrer Applikation mit begründeten Entwurfsentscheidungen
-    - [ ] Analyseklasse(n)
-    - [ ] Navigationsübersicht
-    - [ ] Beschreibung der Testfälle
-    - [ ] Zusammenfassung der wesentlichen Erkenntnisse und Anpassungen (_~> Reflexion des User Tests_)
-    
+    - [ ] Fertiges Layout für Hoch- und Querformat
+    - [ ] Implementierung der Navigation und Darlegung des Navigationskonzepts
+    - [ ] Einbinden der Kommunikationsklassen (`HttpRequest.java` beim TV-Server; `StreamServerClient.java` beim Twitch-Server)

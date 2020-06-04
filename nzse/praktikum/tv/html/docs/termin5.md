@@ -1,58 +1,76 @@
-# Vervollständigung der Implementierung
+# Usability Test und Inspection
 
+!!! warning
+    **Hinweis:** Keine Restarbeiten mehr an der Implementierung!
 
 !!! abstract 
     **Lernziele**
 
-    - [X] Sie verstehen die Architektur einer App mit Datenmodell und Zugriff auf einen Server
-    - [X] Sie verstehen die Realisierung von Dateizugriff und Serialisierung in Java
-    - [X] Sie verstehen den Sinn der Aufteilung in UI Thread und Worker Threads bei GUI Systemen
-    - [X] Sie können mit JSON Objekten und Java Collections umgehen
-    - [X] Sie verstehen den Lebenszyklus von Activities und die Problematik des Instance State
+    - [x] Sie können einen Usability Test als Moderator und Beobachter durchführen
+    - [x] Sie können sich auf das Beobachten beschränken und widerstehen der Versuchung Test-Benutzer zu schulen
+    - [x] Sie können Usability Probleme anhand von kleinsten Anzeichen des Test-Benutzers erkennen
+    - [x] Sie können Usability Probleme präzise benennen und dokumentieren
+
+## Vorbereitung
+
+!!! warning
+     **Zu Hause:** Bereiten Sie die Testprotokolle vor anhand der folgenden Test-Aufgaben und der vorgegebenen Checklisten, d.h. betrachten Sie die Checklisten als „Rohmaterial“ und machen Sie daraus Protokollformulare.
+
+!!! note
+    **Hinweis:** Die Testprotokolle sollen den Entwicklern bei der weiteren Verbesserung helfen (keine Angst, das müssen Sie im Praktikum nicht mehr umsetzen ;-). Benennen Sie Schwachpunkte möglichst konkret; pauschale „Schulnoten“ helfen nicht weiter.
+
+Alle Protokolle aus den folgenden Teilaufgaben kommen in die Projektmappe.
 
 ## Aufgaben
 
-### Datenmodell
+### Usability Test
 
-1. Implementieren und ggf. verfeinern Sie das in [Aufgabe 1](termin1.md) dargelegte **Datenmodell** und binden Sie es in die App ein
-2. Machen Sie das Datenmodell **persistent**, indem Sie es in `:::js onPause()` jeder relevanten Activity serialisiert in einer Datei speichern und beim `:::js onCreate()` aus dieser Datei einlesen und deserialisieren
-    
-    !!! question
-        **Frage:** Erzeugen Sie dabei ein neues Modell-Objekt oder füllen Sie lieber das alte mit neuen Inhalten? Müssen/dürfen Activities eigene Referenzen auf das Datenmodell halten?
+!!! warning
+    **Corona-Update**  
+    Bitten Sie ein Familienmitglied oder eine andere externe Person den Test aus der Rolle des Stereotypen durchzuführen. Ggf. kann die/der Protokollant*in via Webcam beobachten und protokollieren. Falls Sie den Test am Emulator durchführen können Sie ein Screensharing oder ggf. sogar ein Tool wie [TeamViewer](https://www.teamviewer.com/de/) nutzen (falls die/der Tester nicht vor Ort anwesend ist).
 
-### Benutzeroberfläche
-1. Implementieren Sie Benutzerführung durch **Zeigen/Verbergen** bzw. **Aktivieren/Deaktivieren** von Views und Widgets
-2. Geben Sie **(Fehler-)Meldungen** in geeigneter Form als `AlertDialog`, `Toast`, `Snackbar` oder via Log aus (was wofür?)
-<!-- 3. Übernehmen Sie das Ergebnis des **Kanalscans** aus dem JSON-Ergebnis von `HttpRequest.execute` und speichern Sie es im **Datenmodell**. Binden Sie die betroffenen Views über Adapter an die Kanalliste an. -->
-1. Machen Sie Ihre App "**drehbar**", d.h. sorgen Sie dafür, dass der Neustart der Activity beim Drehen des Smartphones (Hochformat/Querformat) keine sichtbaren Folgen hat. Implementieren Sie dazu ggf. die Methode `:::js onSaveInstanceState()` und werten Sie dann den Parameter von `:::js onCreate()` entsprechend aus.
+Zum **Usability Test** tun Sie sich mit Ihrer Peer-Gruppe zusammen:
 
+* für die App Ihrer Peer-Gruppe sind Sie Test-Benutzer und arbeiten die Test-Aufgaben ab
+* für Ihre eigene App sind Sie Test-Moderator (der/die eine) und Test-Beobachter (der/die andere)
 
-### AsyncTask
-Eigentlich sollten Zugriffe aufs Netzwerk nicht im UI Thread gemacht werden (warum?). 
-
-1. Schreiben Sie daher eine Klasse `:::js HttpRequestAsync extends AsyncTask` und verlagern Sie die `HttpRequest`-Aufrufe in deren Methode `:::js doInBackground()`.
+#### Thinking Aloud
+* Der Test-Benutzer arbeitet die **Test-Aufgaben** (vgl. Anwendungsszenarios und Anforderungen) ab. Der Test-Moderator gibt **keine Erklärung** und **keine Hilfestellung** und ermuntert den Test-Benutzer lediglich zum „**lauten Denken**“. Der Test-Beobachter protokolliert.
+#### Interview
+* Direkt anschließend **interviewen** Test-Moderator und Test-Beobachter den Test-Benutzer um eventuelle **offene Fragen** zu klären. Der Test-Beobachter protokolliert.
 
 
-### Testen, Debuggen, komplett Fertigstellen
-1. Vergewissern Sie sich, dass alle in [Termin #1](termin2.md) geplanten Use Cases und Anwendungsszenarien von Ihrer Anwendung tatsächlich unterstützt werden. Testen Sie auch das Verhalten bei Erstinbetriebnahme (d.h. der persistente Speicher ist leer: Einstellungen, existierende Daten etc). <!--: Einstellungen, Apps, Fernbedienung, Daten löschen) -->
+### Usability Inspection
 
+!!! warning
+    **Corona-Update**  
+    Führen Sie die **Usability Inspection** und das **Design Review** für Ihre **eigene Applikation** durch. Beurteilen Sie die verschiedenen Aspekte kritisch und hinterfragen Sie getroffene Designentscheidungen. Dies kann natürlich keinen echten Durchlauf mit externen Personen ersetzen, aber Sie bekommen so zumindest eine Vorstellung davon wie beide Methoden durchgeführt werden.
 
-### Videoaufzeichnung der App
+Wenden Sie die „**Checkliste zur Usability Inspection**“ auf die mobile App Ihrer Peer-Gruppe an. Übertragen Sie die allgemeinen Regeln sinnvoll auf die Applikation. Protokollieren Sie eventuelle Probleme und Defizite so, dass die Entwickler verstehen, inwiefern die App verbessert werden sollte.
 
+### Design Review
+Bewerten Sie die Fernbedienung Ihrer Nachbargruppe unter Design Aspekten:
 
-
+1. Schrift gut lesbar?
+2. Icons gut erkennbar und Funktion verständlich?
+3. Farbgebung
+4. Größe der Bedienelemente
+5. Sinnvolle Gruppierung der Bedienelemente?
+6. Abstände und Ränder
+7. Sinnvolles Verhalten beim Drehen des Smartphones (keine Zustandsänderung, kein Abbruch von Abläufen)
 
 ## Ergebnisse
 
-Die folgenden Ergebnisse müssen für eine erfolgreiche Testierung der Praktikumseinheit vorliegen:
+Die folgenden Ergebnisse müssen für eine erfolgreiche Testierung der Praktikumseinheit und einer erfolgreichen Endabnahme des Semesterprojekts vorliegen:
 
 !!! abstract
     __Ergebnisse:__
 
-    1. [ ] Persistiertes Datenmodell
-    2. [ ] Darlegung des fertigen Datenmodells
-    3. [ ] Darlegung der Persistierungsstrategie
-    4. [ ] Umsetzung der in [Termin 2: UI Entwurf](termin3.md) genannten sowie im Rahmen der Benutzerforschung erarbeiteten Funktionen
-    5. [ ] (_Optional_) Umsetzung von Begeisterungsfaktoren
+    Vorbereitete und ausgefüllte Protokolle für...
 
-<!-- 2. [ ] Layout für Hoch- und Querformat -->
+    - [x] Thinking aloud Test und anschließendem Interview
+    - [x] Usability Inspection
+    - [x] Design Review
+    - [x] Liste mit Verbesserungen (--> *abgeleitet aus den unterschiedlichen Protokollen*)
+
+    **Ohne Testprotokolle keine Prüfungszulassung!**
