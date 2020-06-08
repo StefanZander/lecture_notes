@@ -10,6 +10,12 @@
 !!! note
     __Note:__ The app bar should be implemented using the __Android Toolbar__ to make it available for a wide range of devices. According to the Android developer guidelines, the appcompat [Toolbar](https://developer.android.com/reference/android/support/v7/widget/Toolbar.html) has the best compatibility support.  
 
+!!! note
+    __Support Library has been superceded by Android Jetpack__  
+    With the introduction of Android Jetpack and AndroidX, the support libraries are migrated into Android Jetpack for applications using API Level 28 (Android 9) and above. 
+    So if you plan to implement your application for Android Version > 8.0, you could use Android Jetpack instead of the support libaries (earlier versions still need to make use of the support libraries as outlined in this documentation).  
+    _Source: <https://developer.android.com/topic/libraries/support-library/setup>_
+
 
 ## Introduction
 

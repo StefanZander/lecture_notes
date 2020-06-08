@@ -2,7 +2,14 @@
 
 
 #### 2020-06-09
-: Themen: Event-Handling, Inter-Activity Kommunikation, Android Application Model, Android Lifecycle, Einbinden der bereitgestellten Klasse zur Kommunikation mit dem TV-Server, Implementierung der Toolbar zur Navigation zwischen Activities
+: Themen: 
+: * Landscape-Layout im Designer
+: * Größenmaß dp
+: * Event-Handling 
+: * Einbinden der bereitgestellten Kommunikationsklasse für den TV-Server (siehe [YouTube-Video](https://youtu.be/7xHfh2DVW3A)) 
+: * Inter-Activity Kommunikation und Datenaustausch (siehe [YouTube-Video](https://youtu.be/ZIJe4QEnlcY))
+: * ggf. Android Application Model & Android Lifecycle (mehr Infos dazu im YouTube-[Video #1](https://youtu.be/l7adwciujn4) und [Video #2](https://youtu.be/UJN3AL4tiqw))
+: * Implementierung der Toolbar zur Navigation zwischen Activities (mehr Infos siehe [Codepath-Doku](https://guides.codepath.com/android/Using-the-App-Toolbar))
 
 
 
