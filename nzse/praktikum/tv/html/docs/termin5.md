@@ -47,7 +47,7 @@ Der letzte Praktikumstermin ist zweitgeteilt:
 
 2. **Usability Test und Inspection**
     - Führen Sie die Usability Evaluation und das Design Review wie im weiteren Verlauf beschrieben durch
-    - Fügen Sie die zu erstellenden Artefakte (Protokolle etc.) der Projektmappe hinzu und laden sie diese bis zum __Ende (FR) der jeweiligen Praktikumswoche__ in Moodle hoch. Verspätete Abgaben können nicht gewertet werden!
+    - Fügen Sie die zu erstellenden Artefakte (Protokolle etc.) der Projektmappe hinzu und laden sie diese bis zum __Ende (SO), 20:00 Uhr der jeweiligen Praktikumswoche__ in Moodle hoch. Verspätete Abgaben können nicht gewertet werden!
     - Bereiten Sie die Testprotokolle vor anhand der folgenden Test-Aufgaben und der vorgegebenen Checklisten, d.h. betrachten Sie die Checklisten als "Rohmaterial" und machen Sie daraus Protokollformulare.   
     - Die Testprotokolle sollen den Entwickler*innen bei der weiteren Verbesserung helfen (_keine Angst, die Verbesserungen müssen Sie im Praktikum nicht mehr umsetzen..._).
 

@@ -1,16 +1,41 @@
 # NZSE-Vorlesungstagebuch
 
 
+
+#### 2020-06-16
+: Themen:
+: * AsyncTask (--> ausführliche Informationen dazu in den ergänzenden Android Unterlagen)
+
+
+#### 2020-06-16
+: Themen:
+: * Beantwortung der offenen Fragen aus der letzten Einheit
+: * Recap Singleton-Entwurfsmuster
+: * Recap Serialisierbare Singletons 
+: * Persistierung in Android
+: * AsyncTask (nur angerissen; mehr in der nä. Einheit)
+
+
+
 #### 2020-06-09
 : Themen: 
-: * Landscape-Layout im Designer
+: * Erzeugung von Landscape-Layout im Designer
 : * Größenmaß dp
 : * Event-Handling 
-: * Einbinden der bereitgestellten Kommunikationsklasse für den TV-Server (siehe [YouTube-Video](https://youtu.be/7xHfh2DVW3A)) 
 : * Inter-Activity Kommunikation und Datenaustausch (siehe [YouTube-Video](https://youtu.be/ZIJe4QEnlcY))
-: * ggf. Android Application Model & Android Lifecycle (mehr Infos dazu im YouTube-[Video #1](https://youtu.be/l7adwciujn4) und [Video #2](https://youtu.be/UJN3AL4tiqw))
-: * Implementierung der Toolbar zur Navigation zwischen Activities (mehr Infos siehe [Codepath-Doku](https://guides.codepath.com/android/Using-the-App-Toolbar))
-
+: * Implementierung der Toolbar zur Navigation zwischen Activities (mehr Infos siehe [begleitende Android Literatur](https://projects.fbi.h-da.de/~s.zander/nzse/vorlesung/android/html/actionbar/) oder die [Codepath-Doku](https://guides.codepath.com/android/Using-the-App-Toolbar))
+: Themen (2. Teil – optional)
+: * Java-Klassen
+: * Serializable
+: * Input-/Output-Streams ([gut aufbereitete Übersicht](http://tutorials.jenkov.com/java-io/overview.html))
+: * Singleton-Entwuftsmuster
+: * Serialisierbare Singletons (Datenmodellspeicherung)
+: Meinungsbild zu Live-Beispielen vs. Folien-basierte Vorstellung/Vorlesung: 
+: * 48 : 20 pro Beibehaltung Live-Beispiele (bei ca. 17 Enthaltungen)
+: * Vereinbarung: __Live-Beispiele werden beibehalten aber der Bezug zu den Unterlagen wird stärker herausgestellt.__
+: --> im Selbststudium:
+: * Einbinden der bereitgestellten Kommunikationsklasse für den TV-Server (siehe [YouTube-Video](https://youtu.be/7xHfh2DVW3A)) 
+: * Android Application Model & Android Lifecycle (mehr Infos dazu im YouTube-[Video #1](https://youtu.be/l7adwciujn4) und [Video #2](https://youtu.be/UJN3AL4tiqw))
 
 
 #### 2020-06-02

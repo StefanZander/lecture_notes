@@ -48,7 +48,7 @@ Das HTTP-Protokoll brauchen Sie für dieses Praktikum nicht weiter zu verstehen
 
 !!! note 
     __IP-Adresse des TV-Servers beim Aufruf aus dem Emulator__:  
-    Verwenden Sie die IP-Adresse `10.0.2.22` bei der Instanziierung der `HTTPRequest`-Klasse, um auf den TV-Server aus dem Emulator heraus zuzugreifen.
+    Verwenden Sie die IP-Adresse `10.0.2.2` bei der Instanziierung der `HTTPRequest`-Klasse, um auf den TV-Server aus dem Emulator heraus zuzugreifen.
 
 !!! note
     __Fehlermeldung 'Cleartext HTTP traffic not permitted' (Android 9 / API Level 28 und höher)__  
