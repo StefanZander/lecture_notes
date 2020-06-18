@@ -16,6 +16,64 @@ Last Updated: 2019-06-04
     <https://www.big-app.de/daten-speicher-in-android/>
 
 
+----
+
+**Update**:  
+Nachstehend finden sich die Beispiele zur Speicherung von Zuständen von UI-Elementen aus der Vorlesung:
+
+Speicherung von Zustandsinformationen im internen Speicher des Gerätes:
+```java
+private boolean saveState() {
+    try {
+        DataOutputStream dos = new DataOutputStream(openFileOutput(FILENAME, MODE_PRIVATE));
+        dos.writeInt(sekVolume.getProgress());
+        dos.flush();
+        dos.close();
+        lblMessage.append("\n\nState successfully stored...");
+        return true;
+    } catch (FileNotFoundException e) {
+        lblMessage.setText(e.getMessage());
+        e.printStackTrace();
+    } catch (IOException e) {
+        lblMessage.setText(e.getMessage());
+        e.printStackTrace();
+    }
+    return false;
+}
+```
+
+Laden von Zustandsinformationen aus dem internen Speicher:
+```java
+private boolean loadState() {
+    try {
+        DataInputStream dis = new DataInputStream(openFileInput(FILENAME));
+        int volume = dis.readInt();
+        if (volume > lowerBound && volume < upperBound) {
+            sekVolume.setProgress(volume);
+        }
+        dis.close();
+        lblMessage.append("\nState successfully loaded...");
+        return true;
+    } catch (IOException e) {
+        lblMessage.setText(e.getMessage());
+        e.printStackTrace();
+    }
+    return false;
+}
+```
+
+Laden von Zustandsinformationen beim Erzeugen der Activity in `onCreate()`:
+```java
+File file = new File(getApplicationContext().getFilesDir(),FILENAME);
+if (file.exists()) {
+    loadState();
+} else {
+    lblMessage.append("\n\nFile not found...");
+}
+```
+
+----
+
 ## Welche Daten-Speicher gibt es in Android?
 
 Für die Speicherung persistenter Daten bietet Android mehrere Lösungen an, die von den Bedürfnissen und Wünschen des Android-Entwicklers abhängig sind. So gibt es **mehrere Daten-Speicher**, die die Daten entweder **privat** ablegen oder für andere Apps bzw. Benutzer **öffentlich** zur Verfügung stellen. Zudem ist die Wahl der Speicherlösung davon abhängig, wieviel Speicherplatz die Daten benötigen und auf welche Weise die Daten gespeichert werden sollen. 

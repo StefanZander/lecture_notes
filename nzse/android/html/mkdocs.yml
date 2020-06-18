@@ -10,6 +10,10 @@ nav:
   - 'App Bar': 'actionbar.md'
   - 'RecyclerView': 'recycler_view.md'
   - 'AsyncTask': 'asynctask.md'
+  - 'Serialisierung und Persistenz': 'serialisierung.md'
+  - 'Singleton': 'singleton.md'
+  
+
 
 theme:
   name: 'material'
