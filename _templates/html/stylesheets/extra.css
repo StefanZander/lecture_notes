@@ -93,7 +93,7 @@ div.md-content a:hover:not(.md-footer-nav__link) {
     padding-left: 0.2em;
     padding-right: 0.2em;
     margin-right: 0.2em;
-    box-shadow: 0.06em 0.06em lightgray;
+    box-shadow: 0.06em 0.06em 0.1em rgb(225, 196, 202); /*was lightgray */
 }
 
 

@@ -14,7 +14,7 @@
 ## Vorbereitung
 
 - Testen Sie App und Server vorab ausgiebig. Stellen Sie sicher, das alles reibungslos funktioniert. 
-- Bereiten Sie die App und den Server vorab so vor, dass Sie in ihrem Präsentationsslot sofort mit der Demonstration beginnen können. Verschwenden Sie keine Zeit mit Installation oder Einrichtung etc.  
+- Bereiten Sie die App und den Server vorab so vor, dass Sie in ihrem __Präsentationsslot sofort mit der Demonstration__ beginnen können. Verschwenden Sie keine Zeit mit Installation oder Einrichtung etc.  
 - Machen Sie sich ggf. eine **Checkliste** um sicherzugehen, dass alles wie vorgesehen funktioniert.
 
 <!--
@@ -47,9 +47,11 @@ Der letzte Praktikumstermin ist zweitgeteilt:
 
 2. **Usability Test und Inspection**
     - Führen Sie die Usability Evaluation und das Design Review wie im weiteren Verlauf beschrieben durch
-    - Fügen Sie die zu erstellenden Artefakte (Protokolle etc.) der Projektmappe hinzu und laden sie diese bis zum __Ende (SO), 20:00 Uhr der jeweiligen Praktikumswoche__ in Moodle hoch. Verspätete Abgaben können nicht gewertet werden!
-    - Bereiten Sie die Testprotokolle vor anhand der folgenden Test-Aufgaben und der vorgegebenen Checklisten, d.h. betrachten Sie die Checklisten als "Rohmaterial" und machen Sie daraus Protokollformulare.   
+    - Fügen Sie die zu erstellenden Artefakte (Protokolle etc.) der Projektmappe hinzu und laden sie diese bis zum __Ende (SO), 20:00 Uhr der jeweiligen Praktikumswoche__ in Moodle hoch. ==Verspätete Abgaben können nicht gewertet werden!==
+    - Bereiten Sie die __Testprotokolle__ vor anhand der folgenden Test-Aufgaben und der [vorgegebenen Checklisten](https://lernen.h-da.de/mod/resource/view.php?id=218415), d.h. betrachten Sie die Checklisten als "Rohmaterial" und machen Sie daraus Protokollformulare.   
     - Die Testprotokolle sollen den Entwickler*innen bei der weiteren Verbesserung helfen (_keine Angst, die Verbesserungen müssen Sie im Praktikum nicht mehr umsetzen..._).
+    - Die Vorlage zur Evaluation der Fernbedienungen findet sich in Moodle:  
+        <https://lernen.h-da.de/mod/resource/view.php?id=218415>
 
 
 

@@ -2,9 +2,30 @@
 
 
 
-#### 2020-06-16
+#### 2020-07-07
+: Themen
+: * Recap Thinking Aloud Methode
+: * Auswertung von Usability Tests
+: * IBM Computer Usability Satisfaction Questionnaires 
+: * Evaluierung
+: * Klausurvorbesprechung
+: * Aufgaben zur Klausurvorbereitung
+
+
+#### 2020-06-30
+: Themen
+: * Usability Evaluierungsmethoden
+: Videos zum Thinking Aloud
+: * <https://www.youtube.com/watch?v=thNZIZmMDQo> (ausführlicheres Beispiel)
+: * <https://www.youtube.com/watch?v=yRjkgsKI5xs> (Deutsch, mit Beispiel)
+: * <https://www.youtube.com/watch?v=qQxq5Muo5GI> (Explanations in English)
+
+
+#### 2020-06-23
 : Themen:
 : * AsyncTask (--> ausführliche Informationen dazu in den ergänzenden Android Unterlagen)
+: * JSON
+: * RecyclerView
 
 
 #### 2020-06-16
