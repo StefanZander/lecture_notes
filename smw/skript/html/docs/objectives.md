@@ -98,10 +98,6 @@ Für jede Teilleistung wird eine **Note** vergeben, die mit der jeweiligen Gewic
     5. ~~Bearbeitung aller Übungsaufgaben~~ (nicht im SoSe 2020)
 
 
-
-
-
-
 ### Semesterprojekt
 
 Durchführung in 2er Teams; Konstellation bitte in Moodle hinterlegen ([-->Link](https://lernen.h-da.de/mod/data/view.php?id=357528))
@@ -114,6 +110,18 @@ Präsention der Umsetzung am Semesterende via BBB
 
 Mehr Informationen finden sich auf der [Semesterprojektseite](semesterprojekt.md) (im Aufbau)
 
+
+### Abschlusspräsentation
+
+Ziele und Durchführung:
+
+* Präsentation der Umsetzung des Semesterprojekts
+* Schwerpunkt liegt auf der Präsentation der technischen Umsetzung des Semesterprojekts in Form einer **Live-Demo**
+* Zeitliche Dauer pro Präsentation: __20 Minuten__ mit anschließendem Frage-Teil
+* Die Vorstellung der Problemstellung / Rollen / Domänen / zu adressierenden Informationsbedürfnissen kann mit einem Foliensatz erfolgen. Das Hauptaugenmerk liegt aber auf der __Live-Demonstration__ der Umsetzung mittels Semantic MediaWiki
+* Heben Sie in der Vorstellung besondere Problemstellung hervor und zeigen Sie, wie Sie diese modellierungstechnisch gelöst haben. Die ZuhörerInnen sollen einen Eindruck davon erhalten, wie Sie bestimmten Wissensmanagementherausforderungen technisch begegnet sind. Legen Sie also Ihre **Entwurfsentscheidungen** offen.
+* Sie müssen _nicht_ jedes einzelne Formular oder Template präsentieren; konzentrieren Sie sich auf die Wesentlichen und heben Sie dort die interessanten bzw. herausfordernden Aspekte hervor. 
+* Stellen Sie die **Informationsbedürfnisse** der einzelnen Rollen dar und zeigen Sie, wie und wodurch diese in der Umsetzung adressiert wurden. 
 
 
 ### Hauptbestandteile
