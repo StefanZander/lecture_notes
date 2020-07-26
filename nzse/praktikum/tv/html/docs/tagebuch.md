@@ -1,6 +1,12 @@
 # NZSE-Vorlesungstagebuch
 
 
+#### 2020-07-14
+: Themen
+: * Festlegung der Klausur-relevanten Themengebiete
+: * Besprechung der SoSe 2017-Klausur
+: * Fragen der Studierenden (Hauptteil)
+
 
 #### 2020-07-07
 : Themen

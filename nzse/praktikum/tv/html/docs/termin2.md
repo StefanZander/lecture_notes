@@ -33,6 +33,7 @@
     - Umschalten zwischen themenverwandten Streams
     - Auswahl eines Streams
     - Pausieren eines Streams
+    - Anzeige von online- und offline Streams
 
 
 ## Aufgaben
