@@ -78,8 +78,7 @@
     /* column-rule-width: 1px; */
     /* column-width: 50%; */}
 
-
-
+/* Important to have multi-col definitions to start at the same top line  */div#p>svg>foreignObject>section .twocolumns dl dt:first-of-type{margin-top:0em}
 
 
 
@@ -385,6 +384,34 @@ Hauptaufgaben, Ziele, Grundlegende Konzepte, Typische Probleme &amp; Fragestellu
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="13" data-paginate="true" data-header="Kapitel 2: Was ist Wissen" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme" data-marpit-pagination="13" data-marpit-pagination-total="18" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme;">
 <header>Kapitel 2: Was ist Wissen</header>
+<h1>Wissensarten</h1>
+
+<p>Grundsätzlich lässt sich zwischen <mark>2 Wissensarten</mark> unterscheiden<sup>1</sup>:</p>
+<div class="twocolumns">
+<div class="blue">
+<p><strong>Explicit Knowledge</strong> (=<em>Disembodied Knowledge</em>)</p>
+<ul>
+<li>... kann kommuniziert werden</li>
+<li>... kann auf verschiedenen Ebenen formalisiert werden</li>
+<li>... kann in verschiedenen Formaten abgespeichert werden</li>
+</ul>
+</div>
+<div class="green">
+<p><strong>Tacit / Implicit Knowledge</strong> (=<em>Embodied Knowledge</em>)</p>
+<ul>
+<li>... im Gehirn gespeichert</li>
+<li>... schwer zu kommunizieren</li>
+<li>... nicht/kaum zu formalisieren</li>
+</ul>
+</div>
+</div>
+<p class="skip"><em>Explizites Wissen</em><br />
+...ist Faktenwissen, eindeutig kodifizierbar und mittels Sprache eindeutig kommunizierbar.</p>
+<p><em>Implizites bzw. verborgenes Wissen</em><br />
+...ist Erfahrungs- und Handlungswissen, das an Personen gebunden ist; ist nur schwer und nicht vollständig explizierbar (d.h., in Worte zu fassen)</p>
+<div class="footnotes">
+<p><sup>1</sup> nach Michael Polanyi (1966), “The Tacit Dimension”, University of Chicago Press: Chicago</p>
+</div>
 <footer>Prof. Dr. Stefan Zander</footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="14" data-paginate="true" data-header="Kapitel 2: Was ist Wissen" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme" data-marpit-pagination="14" data-marpit-pagination-total="18" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme;">
@@ -481,6 +508,8 @@ Campus Verlag, ISBN 978-3-593-39631-6</p>
 </section>
 <script>!function(){"use strict";let t=void 0;function e(e){let r=!1;Array.from(document.querySelectorAll("svg[data-marpit-svg]"),i=>{const{children:o,clientHeight:n,clientWidth:a,viewBox:s}=i;i.style.transform||(i.style.transform="translateZ(0)");const l=e||window!==window.parent&&window.parent.marpitSVGPolyfillZoomFactor||i.currentScale||1;t!==l&&(t=l,r=l);const c=s.baseVal.width/l,d=s.baseVal.height/l,p=Math.min(n/d,a/c);for(let t=0;t<o.length;t+=1){const{style:e}=o[t].firstChild;e.position||(e.position="fixed"),e.transformOrigin||(e.transformOrigin="0 0"),e.transform=`scale(${p}) translateZ(0)`}}),!1!==r&&Object.defineProperty(window,"marpitSVGPolyfillZoomFactor",{configurable:!0,value:r})}const r=(t,e,r)=>{if(t.getAttribute(e)!==r)return t.setAttribute(e,r),!0};function i(t=!0){for(const t of"Apple Computer, Inc."===navigator.vendor?[e]:[])t();Array.from(document.querySelectorAll('svg[data-marp-fitting="svg"]'),t=>{var e;const i=t.firstChild,o=i.firstChild,{scrollWidth:n,scrollHeight:a}=o;let s,l=1;if(t.hasAttribute("data-marp-fitting-code")&&(s=null===(e=t.parentElement)||void 0===e?void 0:e.parentElement),t.hasAttribute("data-marp-fitting-math")&&(s=t.parentElement),s){const t=getComputedStyle(s),e=Math.ceil(s.clientWidth-parseFloat(t.paddingLeft||"0")-parseFloat(t.paddingRight||"0"));e&&(l=e)}const c=Math.max(n,l),d=Math.max(a,1),p=`0 0 ${c} ${d}`;r(i,"width",""+c),r(i,"height",""+d),r(t,"preserveAspectRatio",getComputedStyle(t).getPropertyValue("--preserve-aspect-ratio")||"xMinYMin meet"),r(t,"viewBox",p)&&t.classList.toggle("__reflow__")}),t&&window.requestAnimationFrame(()=>i(t))}!function(){if("undefined"==typeof window)throw new Error("Marp Core's browser script is valid only in browser context.");window.marpCoreBrowserScript?console.warn("Marp Core's browser script has already executed."):(Object.defineProperty(window,"marpCoreBrowserScript",{value:!0}),i())}()}();
 </script></foreignObject></svg></div><div class="bespoke-marp-note" data-index="11" tabindex="0"><p>::: source
+nach Michael Polanyi (1966), “The Tacit Dimension”, University of Chicago Press: Chicago
+:::</p></div><div class="bespoke-marp-note" data-index="12" tabindex="0"><p>::: source
 nach Michael Polanyi (1966), “The Tacit Dimension”, University of Chicago Press: Chicago
 :::</p></div><script>!function(){"use strict";var e=function(e,t){var n,r=1===(e.parent||e).nodeType?e.parent||e:document.querySelector(e.parent||e),a=[].filter.call("string"==typeof e.slides?r.querySelectorAll(e.slides):e.slides||r.children,(function(e){return"SCRIPT"!==e.nodeName})),s={},i=function(e,t){return(t=t||{}).index=a.indexOf(e),t.slide=e,t},o=function(e,t){s[e]=(s[e]||[]).filter((function(e){return e!==t}))},l=function(e,t){return(s[e]||[]).reduce((function(e,n){return e&&!1!==n(t)}),!0)},c=function(e,t){a[e]&&(n&&l("deactivate",i(n,t)),n=a[e],l("activate",i(n,t)))},d=function(e,t){var r=a.indexOf(n)+e;l(e>0?"next":"prev",i(n,t))&&c(r,t)},u={off:o,on:function(e,t){return(s[e]||(s[e]=[])).push(t),o.bind(null,e,t)},fire:l,slide:function(e,t){if(!arguments.length)return a.indexOf(n);l("slide",i(a[e],t))&&c(e,t)},next:d.bind(null,1),prev:d.bind(null,-1),parent:r,slides:a,destroy:function(e){l("destroy",i(n,e)),s={}}};return(t||[]).forEach((function(e){e(u)})),n||c(0),u};function t(e){e.parent.classList.add("bespoke-marp-parent"),e.slides.forEach(e=>e.classList.add("bespoke-marp-slide")),e.on("activate",t=>{const n=t.slide,r=!n.classList.contains("bespoke-marp-active");e.slides.forEach(e=>{e.classList.remove("bespoke-marp-active"),e.setAttribute("aria-hidden","true")}),n.classList.add("bespoke-marp-active"),n.removeAttribute("aria-hidden"),r&&(n.classList.add("bespoke-marp-active-ready"),document.body.clientHeight,n.classList.remove("bespoke-marp-active-ready"))})}function n(e){let t=0,n=0;Object.defineProperty(e,"fragments",{enumerable:!0,value:e.slides.map(e=>[null,...e.querySelectorAll("[data-marpit-fragment]")])});const r=r=>void 0!==e.fragments[t][n+r],a=(r,a)=>{t=r,n=a,e.fragments.forEach((e,t)=>{e.forEach((e,n)=>{if(null==e)return;const s=t<r||t===r&&n<=a;e.setAttribute("data-bespoke-marp-fragment",s?"active":"inactive"),t===r&&n===a?e.setAttribute("data-bespoke-marp-current-fragment","current"):e.removeAttribute("data-bespoke-marp-current-fragment")})}),e.fragmentIndex=a;const s={slide:e.slides[r],index:r,fragments:e.fragments[r],fragmentIndex:a};e.fire("fragment",s)};e.on("next",({fragment:s=!0})=>{if(s){if(r(1))return a(t,n+1),!1;const s=t+1;e.fragments[s]&&a(s,0)}else{const r=e.fragments[t].length;if(n+1<r)return a(t,r-1),!1;const s=e.fragments[t+1];s&&a(t+1,s.length-1)}}),e.on("prev",({fragment:s=!0})=>{if(r(-1)&&s)return a(t,n-1),!1;const i=t-1;e.fragments[i]&&a(i,e.fragments[i].length-1)}),e.on("slide",({index:t,fragment:n})=>{let r=0;if(void 0!==n){const a=e.fragments[t];if(a){const{length:e}=a;r=-1===n?e-1:Math.min(Math.max(n,0),e-1)}}a(t,r)}),a(0,0)}var r=function(e,t,n){return e(n={path:t,exports:{},require:function(e,t){return function(){throw new Error("Dynamic requires are not currently supported by @rollup/plugin-commonjs")}(null==t&&n.path)}},n.exports),n.exports}((function(e){
 /*!

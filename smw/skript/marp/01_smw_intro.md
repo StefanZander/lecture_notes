@@ -216,7 +216,46 @@ _Implizites bzw. verborgenes Wissen_
 ^1^ nach Michael Polanyi (1966), “The Tacit Dimension”, University of Chicago Press: Chicago
 :::
 
+
 ---
+# Wissensarten
+<!-- ::: source
+nach Michael Polanyi (1966), “The Tacit Dimension”, University of Chicago Press: Chicago
+::: -->
+
+Grundsätzlich lässt sich zwischen ==2 Wissensarten== unterscheiden^1^:
+
+
+:::: twocolumns
+::: blue
+**Explicit Knowledge** (=_Disembodied Knowledge_)
+- ... kann kommuniziert werden
+- ... kann auf verschiedenen Ebenen formalisiert werden 
+- ... kann in verschiedenen Formaten abgespeichert werden
+:::
+
+::: green
+**Tacit / Implicit Knowledge** (=_Embodied Knowledge_)
+- ... im Gehirn gespeichert 
+- ... schwer zu kommunizieren
+- ... nicht/kaum zu formalisieren
+:::
+::::
+
+
+
+
+_Explizites Wissen_
+...ist Faktenwissen, eindeutig kodifizierbar und mittels Sprache eindeutig kommunizierbar.{.skip}
+
+_Implizites bzw. verborgenes Wissen_
+...ist Erfahrungs- und Handlungswissen, das an Personen gebunden ist; ist nur schwer und nicht vollständig explizierbar (d.h., in Worte zu fassen)
+
+::: footnotes
+^1^ nach Michael Polanyi (1966), “The Tacit Dimension”, University of Chicago Press: Chicago
+:::
+
+
 
 
 ---
