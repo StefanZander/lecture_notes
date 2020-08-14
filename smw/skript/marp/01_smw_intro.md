@@ -149,7 +149,7 @@ Bekannt sind die folgenden Aussagen^1^
 Nur ca. **20%** des in einer Organisation vorhandenen Wissens ist dokumentiert. 
 **80%** des relevanten Wissens ist verborgenes, implizites Wissen.^2^
 
-Eine der größten Herausforderungen in und für Unternehmen besteht darin, das für ihre Geschäftsbereiche _relevante Wissen_ zu identifizieren.
+Eine der größten Herausforderungen in und für Unternehmen besteht darin, das für ihre Geschäftsbereiche _relevante Wissen_ zu identifizieren und zu nutzen. Hierauf zielt das Wissensmanagement ab.
 
 ::: footnotes
 ^1^ vgl. Hinds, P. J.; Pfeffer, J. (2003): Why Organizations Don’t “Know What They Know”: Cognitive and Motivational Factors Affecting the Transfer of Expertise. In: Ackerman, M. S.; Pipek, V.; Wulf, V. (2003) (Eds.): Sharing Expertise. Beyond Knowledge Management, pp. 3-26
@@ -181,11 +181,11 @@ Quelle: Probst GJB., Raub S., Romhardt K., (2006): "Wissen managen – Wie Unter
 
 ---
 # Wissensarten
-::: source
+<!-- ::: source
 nach Michael Polanyi (1966), “The Tacit Dimension”, University of Chicago Press: Chicago
-:::
+::: -->
 
-Grundsätzlich lässt sich zwischen ==2 Wissensarten== unterscheiden:
+Grundsätzlich lässt sich zwischen ==2 Wissensarten== unterscheiden^1^:
 
 ::::: blue
 :::: columns
@@ -193,10 +193,10 @@ Grundsätzlich lässt sich zwischen ==2 Wissensarten== unterscheiden:
 **Explicit Knowledge** (=_Disembodied Knowledge_)
 - ... kann kommuniziert werden
 - ... kann auf verschiedenen Ebenen formalisiert werden 
-- ... kann in verschiedenen Formaten abgespeichert werden (Dokumente, Datenbanken, etc.)
+- ... kann in verschiedenen Formaten abgespeichert werden 
 :::
 ::: 2nd-col {.left}
-**Tacit / Implicit Knowledge** (= _Embodied Knowledge_)
+**Tacit / Implicit Knowledge** (=_Embodied Knowledge_)
 - ... im Gehirn gespeichert 
 - ... schwer zu kommunizieren
 - ... nicht/kaum zu formalisieren
@@ -212,16 +212,11 @@ _Explizites Wissen_
 _Implizites bzw. verborgenes Wissen_
 ...ist Erfahrungs- und Handlungswissen, das an Personen gebunden ist; ist nur schwer und nicht vollständig explizierbar (d.h., in Worte zu fassen)
 
+::: footnotes
+^1^ nach Michael Polanyi (1966), “The Tacit Dimension”, University of Chicago Press: Chicago
+:::
 
 ---
-# Table
-
-| Explicit Knowledge                                                                     | Tacit + Implicit Knowledge      |
-|----------------------------------------------------------------------------------------|---------------------------------|
-| ... kann kommuniziert werden                                                           | ... im Gehirn gespeichert       |
-| ... kann auf verschiedenen Ebenen formalisiert werden                                  | ... schwer zu kommunizieren     |
-| ... kann in verschiedenen Formaten abgespeichert werden (Dokumente, Datenbanken, etc.) | ... nicht/kaum zu formalisieren |
-| Disembodied Knowledge                                                                  | Embodied Knowledge              |
 
 
 ---
@@ -250,3 +245,75 @@ Quelle: http://qib.f-bb.de/wissensmanagement/thema/wissen/wissenstreppe.rsys
 ::: blue
 __Lehrvideo zur Wissenstreppe__ Die einzelnen Stufen der Wissenstreppe werden auch sehr schön in diesem [Kurzvideo](https://www.youtube.com/watch?v=VW7ArONW4dA) dargestellt.
 :::
+
+---
+# Das SECI-Modell
+
+:::: columns
+::: 1st-col {.left}
+Das SECI-Modell stellt das implizite, d.h., **Personen-gebundene** und **schwer verbalisierbare Erfahrungswissen** von Mitarbeitern in den Mittelpunkt. Es erläutert, _wie dieses Wissen für eine Organisation aktiviert_ werden kann.
+
+Es unterscheidet sich von anderen Wissensmanagement dadurch, dass es den Fokus auf eine einzige Fragestellung lenkt, nämlich -- _wie neues Wissen in Organisationen entsteht_.
+
+Neues Wissen entsteht in einem **kontinuierlichen Transformationsprozess** zwischen dem _impliziten_ und dem _expliziten Wissen_, d.h., die Wissengenerierung beruht auf einem Prozess der dynamischen Transformation von implizitem zu explizitem Wissen und vice versa.
+
+Entscheidend bei dem Modell von Nonaka & Takeuchi ist die __Transformation von individuellem in kollektives Wissen__, d.h., von einem personenbezogenen in ein allgemein zugängliches Wissen (=die Wissensbasis der Organisation).
+::: 
+::: 2nd-col {.left}
+![width:1600px](../html/docs/figures/seci_model_5.png)
+:::
+::::
+
+---
+# Das SECI-Modell: Die Transformationsphasen
+
+Es unterscheidet die folgenden **4 Phasen**, welche im einem _iterativen und inkrementellen Transformationsprozess_ durchlaufen werden:
+
+::: twocolumns
+Sozialisierung
+: Implizites Wissen wird geteilt durch Beobachtung, gemeinsames Tun und durch nicht-verbalisierte Handlungen. Die Weitergabe von implizitem Wissen in einer Gruppe erfordert einen Wissensraum, dieser muss, damit die Sozialisierung funktioniert, _3 Eigenschaften_ aufweisen: (a) geteiltes Verständnis und einer (b) gemeinsamen Sprache mit (c) gegenseitigem Vertrauen^3^.
+
+Externalisierung
+: Mitglieder einer Gruppe fassen das Wissen in Sprache und teilen es mit anderen. Aus implizitem Wissen entsteht explizites.
+
+Kombination
+: Explizites kann nun mit existierendem Wissen neu kombiniert werden. Hier ruht Potential für Innovation. Neues Wissen entsteht nicht aus dem “Nichts” sondern dadurch, dass neue Akteure neues Wissen in die Organisation einbringen^1^.
+
+Internalisierung
+: Entsteht in der Phase der Kombination neues Wissen, so wird dieses nun wieder von den Individuen internalisiert, d.h., mit dem eigenen Wissen kombiniert und dadurch wieder in implizites Wissen überführt. (~> Prozess der Bewußtseinsbildung).
+:::
+
+==Wichtig, das Kollektiv baut immer auf dem neu entstandenen Wissen auf (→ iterativ-inkrementeller Transformationsprozess).==
+
+::: footnotes
+^1^ Frage: Aus welchen Quellen kann dieses Wissen stammen?
+
+^3^ Grundlage des gesamten Prozesses der Wissengenerierung und des Wissensaustausches.
+:::
+
+
+---
+# Das SECI-Modell: Voraussetzungen
+
+Voraussetzungen seitens der Organisation^2^
+
+- **Intention** --> klare Wissensziele innerhalb der Organisation
+- **Autonomie** --> Eigenverantwortung, Selbstorganisation und Freiräume
+- **Instabilität** --> Bereitschaft Bestehendes zu hinterfragen und zu verändern
+- **Redundanz** --> Sollte nicht vermieden werden; ein "Zuviel" an Informationen eröffnet neue Perspektiven
+- **Interne Vielfalt** --> Diversität der Mitglieder und Prozesse
+
+**Fazit**
+: Das SECI-Modell verbindet als eines der wenigen Modelle _Wissensmanagement mit Innovation_ und versteht _Innovation als kollektiven Prozess_^1^. Besondere Bedeutung kommt hierbei der Kommunikation und Kollaboration zuteil. Ziel ist nicht den Prozess bis aufs "Kleinste" zu managen, sondern ==Rahmenbedingungen zu schaffen, in denen ein derartiger kollektiver Transformationsprozess entstehen kann== (=Systemische Sicht). 
+
+
+::: footnotes
+^1^ Innovation ist nicht das Resultat eines "Heureka"-Prozesses eines Individuums
+
+^2^ Quelle: Nonaka, Takeuchi; "Die Organisation des Wissens – Wie japanische Unternehmen eine brachliegende Ressource nutzbar machen"; 2. Auflage, 2012,
+Campus Verlag, ISBN 978-3-593-39631-6
+:::
+
+
+
+

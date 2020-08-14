@@ -7,6 +7,7 @@ const markdownItContainer = require('markdown-it-container')
 const markdownItFootnote = require('markdown-it-footnote')
 const markdownItDiv = require('markdown-it-div')
 // const markdownIt = require('markdown-it')
+const markdownItDef = require('markdown-it-deflist')
 
 
 module.exports = (opts) => new Marp(opts)
@@ -24,6 +25,7 @@ module.exports = (opts) => new Marp(opts)
 // .use(require('markdown-it-footnote'))
 .use(require('markdown-it-sup'))
 .use(markdownItDiv)
+.use(markdownItDef)
 .use(require('markdown-it-fontawesome'));
 
 // .use(require('markdown-it-mark'))
