@@ -1,4 +1,4 @@
-# Responsives Design mit CSS (--> zu Hause)
+# Die Bachelorarbeit
 
 !!! warning
     **Selbständige Vorbereitung:**     

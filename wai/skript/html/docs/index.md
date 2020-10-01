@@ -25,14 +25,15 @@ Studienrechtlich-relevanten und administrative Informationen stehen auf den [Sei
 
 ## Das Exposé
 
+Das Exposé ist Bestandteil des Anmeldeprozesses einer Abschlussarbeit und liefert einen Überblick über die wichtigsten Eckpunkte (Untersuchungsgegenstand, Forschungsfragen, methodischer Ansatz, Evaluierung etc.) und Ziele. Es fungiert als eine Art Vereinbarung zwischen Studierendem und Betreuer hinsichtlich der geplanten Vorhabens.
+
 * [Allgemeine Informationen zum Exposé](expose.md)
 
+Erst nachdem das Exposé vom betreuer akzeptiert wurde kann eine Abschlussarbeit im Prüfungsamt angemeldet werden.
 
 ## Die Bachelorarbeit
 
-* Allgemeine Informationen --> _coming soon_
-* Weitere Themen zur BA --> *coming soon*
-* [Häufig gestellte Fragen und Antworten](./bachelorarbeit/q_and_a.md)
+* [Allgemeine Informationen zu Bachelorarbeit und Kolloquium](./bachelorarbeit/q_and_a.md)
 
 
 ## Tipps
