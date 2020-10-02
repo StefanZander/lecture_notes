@@ -225,3 +225,71 @@ Use `\s` as new delimiter to insert a space between the single values.
 ::: footnotes
 Source: https://www.mediawiki.org/wiki/Extension:Page_Forms/Page_Forms_and_templates#Multiple_values_for_the_same_field
 :::
+
+
+---
+# Tipps for Working with Dates and Page Forms
+
+## Using the current date in an input element^1^
+Using input type `datepicker`, it is possible to set the _current date_ as default value in the input element using the `#time` parser function^2^ of the `Extension:ParserFunctions`^3^
+
+Example:
+```
+! Datum: 
+| {{{field|Datum|input type=datepicker|property=Bestelldatum|date format=dd.mm.yy|default={{#time:d.m.Y}} }}}
+|}
+```
+
+Please note: 
+::: blue
+Regardless of the formatting pattern set via the `date format=...` property, `datepicker` always returns the data in `yyyy/mm/dd` format.
+:::
+
+::: footnotes
+^1^ https://www.mediawiki.org/wiki/Topic:Put4ygy4m0kw279f
+
+^2^ https://www.mediawiki.org/wiki/Help:Extension:ParserFunctions##time
+
+^3^ https://www.mediawiki.org/wiki/Help:Extension:ParserFunctions
+:::
+
+
+---
+
+# Using an Individual Display Format for Date and Time
+
+This tip helps you to _reformat_ the output of dates which is by default `YEAR/MONTH/DAY` (e.g. 2017/06/27) and still keep a proper annotation for it.
+
+Prerequisite is that you have the extension `ParserFunctions` installed on your wiki. 
+
+
+::::: equalcolumns
+:::: 1st-column
+### 1.) ISO-Style
+```
+[[Startdate::{{{startdate|}}}|{{#time:Y-m-d|{{{startdate}}}}}]]
+```
+--> 2011-06-27
+::::
+:::: 2nd-column
+### 2.) German-Style
+```
+[[Startdate::{{{startdate|}}}|{{#time:d.m.Y|{{{startdate}}}}}]]
+```
+--> 27.06.2011
+::::
+:::::
+
+This parser function `#time` takes a date and/or time (in the Gregorian calendar) and formats it according to the syntax given^2,3^.
+
+```
+Format: {{#time: format string | date/time object | language code | local }}
+```
+
+::: footnotes
+Source: https://www.semantic-mediawiki.org/wiki/Help:Date_formatting
+
+^2^ A full list of parameters is available on the help page: https://www.mediawiki.org/wiki/Help:Extension:ParserFunctions##time
+
+^3^ In case the `date/time` object is missing, the value of the magic word `{{CURRENTTIMESTAMP}}` (i.e., the time the page was last rendered into HTML) will be used.
+:::
