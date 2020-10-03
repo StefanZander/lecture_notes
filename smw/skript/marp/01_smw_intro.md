@@ -380,12 +380,10 @@ Wissensmanagement^1^ dient dazu{.skip}
 - ...Wissen produktiv zu nutzen
 - ...Wissen zu messen und zu bewerten
 
-
-
-
 ::: footnotes
 ^1^ siehe http://qib.f-bb.de/wissensmanagement/thema/
 :::
+
 
 
 ---
@@ -423,6 +421,7 @@ Wissensmanagement^1^ dient dazu{.skip}
 :::
 ::::
 :::::
+
 
 
 ---
@@ -464,6 +463,7 @@ in Anlehnung an: http://strategie-spektren.de/innovation/aufgaben-des-wissensman
 :::
 
 
+
 ---
 # Weitere typische Aufgaben des Wissensmanagements
 
@@ -477,6 +477,7 @@ in Anlehnung an: http://strategie-spektren.de/innovation/aufgaben-des-wissensman
 - Transfer von Wissen (vor Ausscheiden)
 - Wiederkehrende Fragen (FAQ)
 - Befähigung zur Bewältigung von Aufgaben
+
 
 
 ---
@@ -523,7 +524,7 @@ Gemäss heutigen Erfahrungen spart man durch Wissensmanagement **20-25%** der **
 :::
 ::::
 
-::: source
+::: footnotes
 Quelle: TRENDREPORT “Auf Wissen bauen – mit systematischem Wissensmanagement zur digitalen Verwaltung”; Behörden Spiegel, Februar 2020
 :::
 
@@ -552,7 +553,7 @@ __...und ihre Auswirkungen__
 - Freierer Umgang mit Ideen
 ::::
 
-::: source
+::: footnotes
 Quelle: https://de.slideshare.net/mcwyrsch/wissensmanagement-in-unternehmen
 :::
 
