@@ -75,7 +75,7 @@ Source: https://www.semantic-mediawiki.org/wiki/Help:Subobjects_and_queries
 
 
 ---
-# Subobject: Show Properties of Subobject's Parent Page
+# Subobjects: Show Properties of the Subobject's Parent Page
 
 In some cases one might not only want to query for subobject data but also for _properties_ that are defined on the _subobject's parent page_. 
 <!-- The process to do that contains the following steps: -->
@@ -105,7 +105,7 @@ In some cases one might not only want to query for subobject data but also for _
 3. Add another query in this template where you ask for `[[Has subobject::{{{1}}}]]`. Has subobject returns the parent page of a subobject. The subobject is queried in the first query and passed on to the template as `{{{1}}}`.
 ::::
 :::: 3rd-column
-**Example**
+Example {.skip}
 ```
 {{#ask:
  [[YourSubobjectProperty::Foo]]
@@ -134,7 +134,10 @@ See https://www.semantic-mediawiki.org/wiki/Help:Property_chains_and_paths
 ---
 # Searching for Pages with certain Subobject Properties
 
-When you want to query for (parent) pages that have certain subobject properties (===subproperties==), you can use subqueries:
+Motivation: _Displaying properties of a specific subobject's parent page_
+
+Solution: _Use ==subqueries== to query for certain, characteristic subobject properties (=subproperties)_
+<!-- When you want to query for (parent) pages that have certain subobject properties (===subproperties==), you can use subqueries: -->
 
 **Example**
 ```
@@ -155,9 +158,9 @@ Source: https://www.semantic-mediawiki.org/wiki/Help:Subobjects_and_queries
 
 
 ---
-# QueryForms: Set Yearly Time Frames
+# QueryForms: Define Yearly Time Frames
 
-If you want to query for time frames using QueryForms, you have to define 2 things:
+If you want to query for specific (e.g. yearly) time frames using QueryForms, you have to define 2 things:
 
 1. Define a field tag with `|input type=year` (or use a combo-box with pre-defined values) for the years
     ```
