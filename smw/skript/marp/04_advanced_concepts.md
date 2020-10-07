@@ -134,9 +134,12 @@ See https://www.semantic-mediawiki.org/wiki/Help:Property_chains_and_paths
 ---
 # Searching for Pages with certain Subobject Properties
 
-Motivation: _Displaying properties of a specific subobject's parent page_
+<!-- Motivation: _Displaying properties of a specific subobject's parent page_ -->
 
-Solution: _Use ==subqueries== to query for certain, characteristic subobject properties (=subproperties)_
+<!-- Solution: _Use ==subqueries== to query for certain, characteristic subobject properties (=subproperties)_ -->
+
+In some business cases, it is necessary to search for pages with certain subobject properties and display their properties.
+The solution is to use ==subqueries== to query for certain subobject properties (e.g. a type property) – so called ==subproperties==.
 <!-- When you want to query for (parent) pages that have certain subobject properties (===subproperties==), you can use subqueries: -->
 
 **Example**
@@ -160,16 +163,16 @@ Source: https://www.semantic-mediawiki.org/wiki/Help:Subobjects_and_queries
 ---
 # QueryForms: Define Yearly Time Frames
 
-If you want to query for specific (e.g. yearly) time frames using QueryForms, you have to define 2 things:
+If you want to use for specific (e.g. yearly) time frames using QueryForms, you have to define 2 things:
 
-1. Define a field tag with `|input type=year` (or use a combo-box with pre-defined values) for the years
+1. Define a _field tag_ with `|input type=year` (or use a combo-box with pre-defined values) for the years
     ```
     '''Jahr:''' 
     {{{field|Datum|input type=combobox|property=Bestelldatum|default={{#time:Y}}
       |values=2019,2020,2021,2022,2023,2024,2025,2026,2027,2028,2029,2030 }}}
     ```
 
-2. Pass this parameter value (ie. `Datum`) to a template and use the following query conditions to set a time frame of 1 year
+2. Pass the field parameter value (ie. `Datum`) to a _template_ and use the following _query conditions_ to set a time frame of, e.g., 1 year
     ```
     {{#ask: 
      [[Category:Buchbestellung]]
@@ -190,7 +193,7 @@ cf. https://www.semantic-mediawiki.org/wiki/Help:Date_parsing
 ::::: equalcolumns
 :::: 1st-column
 _Motivation:_ 
-You want to display the items (represented as subobjects) of all book orders issued in 2020.
+Display the items (represented as subobjects) of all book orders issued in 2020.
 
 _Assumption:_ 
 Items are represented as subobjects embedded in order pages.
@@ -203,13 +206,13 @@ _Solution:_
 ::::
 :::: 2nd-column
 _Example:_
-Build the subquery (i.e. the query conditions for parent pages)
+Build the _subquery_ (i.e. the query conditions for parent pages)
 ```
 [[Category:Buchbestellung]]
 [[Bestelldatum::>1.1.2020]] [[Bestelldatum::<31.12.2020]]
 ```
 
-Build the full query 
+Build the _full query_ and embed the subquery 
 ```
 {{#ask:
  [[-Has subobject::<q>[[Category:Buchbestellung]]
@@ -227,7 +230,7 @@ Build the full query
 ---
 # Combining Parent Page and Subobject Data in Queries
 
-This can be achieved with _subqueries_ and _inverse property chaining_ in the ==properties' selection part== of inline queries.
+This can be achieved with ==subqueries== and ==inverse property chaining== in the _properties' selection part_ of inline queries.
 
 **Example**
 ``` 
@@ -248,11 +251,11 @@ This can be achieved with _subqueries_ and _inverse property chaining_ in the ==
 
 
 ---
-# Automatische Erzeugung von Seiten mittels Page Forms
+# Automatically Setting Page Names in Page Forms
 
-You can have the name of the page created by the form be set automatically, by adding a `page name` parameter within the form definition's `info` tag.
+The name of the page created by a form can be set _automatically_ by adding a `page name` parameter within the form definition's `info` tag^1^.
 
-Beispiel^2^:
+**Example**^2^:
 ``` 
 {{{info|page name=<Author[First name]> <Author[Last name]>}}}
 
@@ -266,9 +269,9 @@ Beispiel^2^:
 ```
 
 ::: footnotes
-https://www.mediawiki.org/wiki/Extension:Page_Forms/Linking_to_forms
+^1^ https://www.mediawiki.org/wiki/Extension:Page_Forms/Linking_to_forms
 
-^2^ https://discoursedb.org/w/index.php?title=Form:Author&action=edit
+^2^ Example is taken from https://discoursedb.org/w/index.php?title=Form:Author&action=edit
 :::
 
 
@@ -276,11 +279,12 @@ https://www.mediawiki.org/wiki/Extension:Page_Forms/Linking_to_forms
 # Benennung von Properties in Templates
 
 Annahme:
-Sie wollen Abschlussarbeiten (BA/MA) mittels SMW verwalten. Für BAs & MAs erstellen Sie jeweils separate Templates. 
+Sie wollen Abschlussarbeiten (BAs/MAs) mittels SMW verwalten. Für BAs & MAs erstellen Sie jeweils separate Templates. 
 
-- Benutzen Sie indentische Properties für/in beiden Templates ?
-- Wie bennenen Sie die Properties ? 
-- Wie gelingt Ihnen die Unterscheidung der konkreten Instanzen (SWM Seiten)?
+Im Verlauf der Arbeit stellen sich hierbei folgende Fragen:
+- Benutzen Sie identische Properties für/in beiden Templates ?
+- Wie benennen Sie die Properties ? 
+- Wie gelingt Ihnen die Unterscheidung der konkreten Instanzen (SWM Seiten) ?
 
 
 
@@ -328,6 +332,7 @@ The possibility of using pipes `|` for setting multiple values was deprecated st
 ```
 - Semantic MediaWiki 1.9.0 introduces `|+sep=...` to identify the separator
 - Provides greates flexibility and can be combined with PageForms
+- Preferred method in most cases
 ::::
 :::::
 
@@ -349,10 +354,9 @@ Source: https://www.semantic-mediawiki.org/wiki/Help:Adding_subobjects#Specifyin
 ---
 # Tipps for Working with Forms
 
-#### Radiobutton – Remove 'Keine Angabe' 
-In order to remove the 'Keine Angabe' option from the set of selection options using radiobuttons or checkboxes, it is necessary to add the `|mandatory`-flag to the input declaration.
-
-Optinally, set the `|default=...` parameter to a specific value to have it pre-selected.  
+### Remove 'Keine Angabe' in selection fields (radiobuttons or checkboxes)
+- In order to remove the `Keine Angabe` option from the set of selection options in radiobuttons or checkboxes, it is necessary to add the `|mandatory`-flag to the input declaration.
+- Optinally, set the `|default=...` parameter to a specific value to have it pre-selected.  
 
 
 ---
@@ -414,7 +418,7 @@ Quelle: <https://www.mediawiki.org/wiki/Extension:Page_Forms/Linking_to_forms>
 ---
 # Enabling Editing of Page Content via Forms
 
-To get the _"edit with form"_ tab to appear on the page, you must use the parser function `{{#default_form:form-name}}` where form-name is the name of the form, without the namespace prefix `Form:`.
+To get the _"edit with form"_ tab to appear on the page, you must use the parser function `{{#default_form:form-name}}` where `form-name` is the name of the form (without the namespace prefix `Form:`).
 
 ::::: equalcolumns small
 :::: 1st-column
@@ -499,6 +503,9 @@ QueryForms ermöglichen die Abfrage von...
 Quelle: Website
 :::
 
+Query Forms kombinieren Formulare mit Templates, in denen eine `#ask`-Query enthalten ist. 
+Die Template Parameter werden mit den Formular-Werten belegt und über eine Spezialseite transkludiert.  
+
 Mittels Query Forms lassen sich die Template-Parameter über Formulareingabeelemente individuell befüllen.
 
 Eine Spezialseite xxx bindet das Query-Form ein, überigbt deren Werte an das Template und stellt das transkludierte Template im Anschluss auf der Seite dar.  
@@ -521,7 +528,7 @@ Damit das Query-Template bzw. die Query richtig funktioniert, muss bei den Param
 ---
 # Formatting of Boolean Values in Queries
 
-By default, Boolean values will display `true` and `false` in queries. This can be changed starting with Semantic MediaWiki 2.4.0 by specifying a ==format string== to control what is displayed for the true and false values of a property.
+By default, Boolean values will display as `true` and `false` in queries. This can be changed starting with Semantic MediaWiki 2.4.0 by specifying a ==format string== to control what is displayed for the true and false values of a property.
 
 ::::: equalcolumns
 :::: 1st-column
@@ -582,8 +589,9 @@ Example:
 |}
 ```
 
-Please note: 
+
 ::: blue
+**Please note**:  
 Regardless of the formatting pattern set via the `date format=...` property, `datepicker` always returns the data in `yyyy/mm/dd` format.
 :::
 
@@ -620,7 +628,7 @@ Prerequisite is that you have the extension `ParserFunctions` installed on your 
 ::::
 :::::
 
-This parser function `#time` takes a date and/or time (in the Gregorian calendar) and formats it according to the syntax given^2,3^.
+The ==parser function== `#time` takes a date and/or time (in the Gregorian calendar) and formats it according to the syntax given^2,3^.
 
 ```
 Format: {{#time: format string | date/time object | language code | local }}
@@ -631,6 +639,6 @@ Source: https://www.semantic-mediawiki.org/wiki/Help:Date_formatting
 
 ^2^ A full list of parameters is available on the help page: https://www.mediawiki.org/wiki/Help:Extension:ParserFunctions##time
 
-^3^ In case the `date/time` object is missing, the value of the magic word `{{CURRENTTIMESTAMP}}` (i.e., the time the page was last rendered into HTML) will be used.
+^3^ In case the `date/time object` parameter is missing, the value of the magic word `{{CURRENTTIMESTAMP}}` (i.e., the time the page was last rendered into HTML) will be used.
 :::
 

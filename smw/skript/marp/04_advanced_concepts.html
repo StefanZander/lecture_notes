@@ -246,8 +246,9 @@
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="5" data-paginate="true" data-header="Kapitel 1: Page Forms" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme" data-marpit-pagination="5" data-marpit-pagination-total="22" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme;">
 <header>Kapitel 1: Page Forms</header>
 <h1>Searching for Pages with certain Subobject Properties</h1>
-<p>Motivation: <em>Displaying properties of a specific subobject's parent page</em></p>
-<p>Solution: <em>Use <mark>subqueries</mark> to query for certain, characteristic subobject properties (=subproperties)</em></p>
+
+<p>In some business cases, it is necessary to search for pages with certain subobject properties and display their properties.<br />
+The solution is to use <mark>subqueries</mark> to query for certain subobject properties (e.g. a type property) – so called <mark>subproperties</mark>.</p>
 
 <p><strong>Example</strong></p>
 <pre><code><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-template-tag">{{#<span class="hljs-name">ask:</span>
@@ -269,17 +270,17 @@
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="6" data-paginate="true" data-header="Kapitel 1: Page Forms" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme" data-marpit-pagination="6" data-marpit-pagination-total="22" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme;">
 <header>Kapitel 1: Page Forms</header>
 <h1>QueryForms: Define Yearly Time Frames</h1>
-<p>If you want to query for specific (e.g. yearly) time frames using QueryForms, you have to define 2 things:</p>
+<p>If you want to use for specific (e.g. yearly) time frames using QueryForms, you have to define 2 things:</p>
 <ol>
 <li>
-<p>Define a field tag with <code>|input type=year</code> (or use a combo-box with pre-defined values) for the years</p>
+<p>Define a <em>field tag</em> with <code>|input type=year</code> (or use a combo-box with pre-defined values) for the years</p>
 <pre><code><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="xml">&#x27;&#x27;&#x27;Jahr:&#x27;&#x27;&#x27; 
 </span><span class="hljs-template-variable">{{{<span class="hljs-name">field</span>|Datum|input <span class="hljs-attr">type</span>=combobox|<span class="hljs-attr">property</span>=Bestelldatum|<span class="hljs-attr">default</span>={{#time:Y}}
   |<span class="hljs-name">values</span>=<span class="hljs-number">2019</span>,<span class="hljs-number">2020</span>,<span class="hljs-number">2021</span>,<span class="hljs-number">2022</span>,<span class="hljs-number">2023</span>,<span class="hljs-number">2024</span>,<span class="hljs-number">2025</span>,<span class="hljs-number">2026</span>,<span class="hljs-number">2027</span>,<span class="hljs-number">2028</span>,<span class="hljs-number">2029</span>,<span class="hljs-number">2030</span> }}}</span><span class="xml">
 </span></span></span></foreignObject></svg></code></pre>
 </li>
 <li>
-<p>Pass this parameter value (ie. <code>Datum</code>) to a template and use the following query conditions to set a time frame of 1 year</p>
+<p>Pass the field parameter value (ie. <code>Datum</code>) to a <em>template</em> and use the following <em>query conditions</em> to set a time frame of, e.g., 1 year</p>
 <pre><code><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>{{#ask: 
  <span class="hljs-string">[[Category:Buchbestellung]]</span>
  <span class="hljs-string">[[Besteller::{{{Besteller|+}}}]]</span>
@@ -300,7 +301,7 @@
 <div class="equalcolumns">
 <div class="1st-column">
 <p><em>Motivation:</em><br />
-You want to display the items (represented as subobjects) of all book orders issued in 2020.</p>
+Display the items (represented as subobjects) of all book orders issued in 2020.</p>
 <p><em>Assumption:</em><br />
 Items are represented as subobjects embedded in order pages.</p>
 <p><em>Solution:</em></p>
@@ -313,11 +314,11 @@ Items are represented as subobjects embedded in order pages.</p>
 </div>
 <div class="2nd-column">
 <p><em>Example:</em><br />
-Build the subquery (i.e. the query conditions for parent pages)</p>
+Build the <em>subquery</em> (i.e. the query conditions for parent pages)</p>
 <pre><code><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-string">[[Category:Buchbestellung]]</span>
 <span class="hljs-string">[[Bestelldatum::&gt;1.1.2020]]</span> <span class="hljs-string">[[Bestelldatum::&lt;31.12.2020]]</span>
 </span></span></foreignObject></svg></code></pre>
-<p>Build the full query</p>
+<p>Build the <em>full query</em> and embed the subquery</p>
 <pre><code><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>{{#ask:
  [[-Has subobject::&lt;q&gt;[[Category:Buchbestellung]]
  [[Bestelldatum::&gt;1.1.2020]] [[Bestelldatum::&lt;31.12.2020]]&lt;/q&gt;]]
@@ -333,7 +334,7 @@ Build the subquery (i.e. the query conditions for parent pages)</p>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="8" data-paginate="true" data-header="Kapitel 1: Page Forms" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme" data-marpit-pagination="8" data-marpit-pagination-total="22" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme;">
 <header>Kapitel 1: Page Forms</header>
 <h1>Combining Parent Page and Subobject Data in Queries</h1>
-<p>This can be achieved with <em>subqueries</em> and <em>inverse property chaining</em> in the <mark>properties' selection part</mark> of inline queries.</p>
+<p>This can be achieved with <mark>subqueries</mark> and <mark>inverse property chaining</mark> in the <em>properties' selection part</em> of inline queries.</p>
 <p><strong>Example</strong></p>
 <pre><code><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-template-tag">{{#<span class="hljs-name">ask:</span>
  [[-Has subobject::&lt;q&gt;[[Category:Buchbestellung]]
@@ -353,9 +354,9 @@ Build the subquery (i.e. the query conditions for parent pages)</p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="9" data-paginate="true" data-header="Kapitel 1: Page Forms" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme" data-marpit-pagination="9" data-marpit-pagination-total="22" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme;">
 <header>Kapitel 1: Page Forms</header>
-<h1>Automatische Erzeugung von Seiten mittels Page Forms</h1>
-<p>You can have the name of the page created by the form be set automatically, by adding a <code>page name</code> parameter within the form definition's <code>info</code> tag.</p>
-<p>Beispiel<sup>2</sup>:</p>
+<h1>Automatically Setting Page Names in Page Forms</h1>
+<p>The name of the page created by a form can be set <em>automatically</em> by adding a <code>page name</code> parameter within the form definition's <code>info</code> tag<sup>1</sup>.</p>
+<p><strong>Example</strong><sup>2</sup>:</p>
 <pre><code><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-template-variable">{{{<span class="hljs-name">info</span>|page <span class="hljs-attr">name</span>=&lt;Author[First name]&gt; &lt;Author[Last name]&gt;}}}</span><span class="xml">
 
 </span><span class="hljs-template-variable">{{{<span class="hljs-name">for</span> template|Author}}}</span><span class="xml">
@@ -367,8 +368,8 @@ Build the subquery (i.e. the query conditions for parent pages)</p>
 </span><span class="hljs-template-variable">{{{<span class="hljs-name">end</span> template}}}</span><span class="xml">
 </span></span></span></foreignObject></svg></code></pre>
 <div class="footnotes">
-<p><a href="https://www.mediawiki.org/wiki/Extension:Page_Forms/Linking_to_forms">https://www.mediawiki.org/wiki/Extension:Page_Forms/Linking_to_forms</a></p>
-<p><sup>2</sup> <a href="https://discoursedb.org/w/index.php?title=Form:Author&amp;action=edit">https://discoursedb.org/w/index.php?title=Form:Author&amp;action=edit</a></p>
+<p><sup>1</sup> <a href="https://www.mediawiki.org/wiki/Extension:Page_Forms/Linking_to_forms">https://www.mediawiki.org/wiki/Extension:Page_Forms/Linking_to_forms</a></p>
+<p><sup>2</sup> Example is taken from <a href="https://discoursedb.org/w/index.php?title=Form:Author&amp;action=edit">https://discoursedb.org/w/index.php?title=Form:Author&amp;action=edit</a></p>
 </div>
 <footer>Prof. Dr. Stefan Zander</footer>
 </section>
@@ -376,11 +377,12 @@ Build the subquery (i.e. the query conditions for parent pages)</p>
 <header>Kapitel 1: Page Forms</header>
 <h1>Benennung von Properties in Templates</h1>
 <p>Annahme:<br />
-Sie wollen Abschlussarbeiten (BA/MA) mittels SMW verwalten. Für BAs &amp; MAs erstellen Sie jeweils separate Templates.</p>
+Sie wollen Abschlussarbeiten (BAs/MAs) mittels SMW verwalten. Für BAs &amp; MAs erstellen Sie jeweils separate Templates.</p>
+<p>Im Verlauf der Arbeit stellen sich hierbei folgende Fragen:</p>
 <ul>
-<li>Benutzen Sie indentische Properties für/in beiden Templates ?</li>
-<li>Wie bennenen Sie die Properties ?</li>
-<li>Wie gelingt Ihnen die Unterscheidung der konkreten Instanzen (SWM Seiten)?</li>
+<li>Benutzen Sie identische Properties für/in beiden Templates ?</li>
+<li>Wie benennen Sie die Properties ?</li>
+<li>Wie gelingt Ihnen die Unterscheidung der konkreten Instanzen (SWM Seiten) ?</li>
 </ul>
 <footer>Prof. Dr. Stefan Zander</footer>
 </section>
@@ -426,6 +428,7 @@ Sie wollen Abschlussarbeiten (BA/MA) mittels SMW verwalten. Für BAs &amp; MAs e
 <ul>
 <li>Semantic MediaWiki 1.9.0 introduces <code>|+sep=...</code> to identify the separator</li>
 <li>Provides greates flexibility and can be combined with PageForms</li>
+<li>Preferred method in most cases</li>
 </ul>
 </div>
 </div>
@@ -444,9 +447,11 @@ Sie wollen Abschlussarbeiten (BA/MA) mittels SMW verwalten. Für BAs &amp; MAs e
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="13" data-paginate="true" data-header="Kapitel 1: Page Forms" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme" data-marpit-pagination="13" data-marpit-pagination-total="22" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme;">
 <header>Kapitel 1: Page Forms</header>
 <h1>Tipps for Working with Forms</h1>
-<h4>Radiobutton – Remove 'Keine Angabe'</h4>
-<p>In order to remove the 'Keine Angabe' option from the set of selection options using radiobuttons or checkboxes, it is necessary to add the <code>|mandatory</code>-flag to the input declaration.</p>
-<p>Optinally, set the <code>|default=...</code> parameter to a specific value to have it pre-selected.</p>
+<h3>Remove 'Keine Angabe' in selection fields (radiobuttons or checkboxes)</h3>
+<ul>
+<li>In order to remove the <code>Keine Angabe</code> option from the set of selection options in radiobuttons or checkboxes, it is necessary to add the <code>|mandatory</code>-flag to the input declaration.</li>
+<li>Optinally, set the <code>|default=...</code> parameter to a specific value to have it pre-selected.</li>
+</ul>
 <footer>Prof. Dr. Stefan Zander</footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="14" data-paginate="true" data-header="Kapitel 1: Page Forms" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme" data-marpit-pagination="14" data-marpit-pagination-total="22" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme;">
@@ -500,7 +505,7 @@ Sie wollen Abschlussarbeiten (BA/MA) mittels SMW verwalten. Für BAs &amp; MAs e
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="16" data-paginate="true" data-header="Kapitel 1: Page Forms" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme" data-marpit-pagination="16" data-marpit-pagination-total="22" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme;">
 <header>Kapitel 1: Page Forms</header>
 <h1>Enabling Editing of Page Content via Forms</h1>
-<p>To get the <em>&quot;edit with form&quot;</em> tab to appear on the page, you must use the parser function <code>{{#default_form:form-name}}</code> where form-name is the name of the form, without the namespace prefix <code>Form:</code>.</p>
+<p>To get the <em>&quot;edit with form&quot;</em> tab to appear on the page, you must use the parser function <code>{{#default_form:form-name}}</code> where <code>form-name</code> is the name of the form (without the namespace prefix <code>Form:</code>).</p>
 <div class="equalcolumns small">
 <div class="1st-column">
 <h3>a) Based on Category</h3>
@@ -574,6 +579,8 @@ Sie wollen Abschlussarbeiten (BA/MA) mittels SMW verwalten. Für BAs &amp; MAs e
 <p>QueryForms ermöglichen die Abfrage von...</p>
 <p>Quelle: Website</p>
 </div>
+<p>Query Forms kombinieren Formulare mit Templates, in denen eine <code>#ask</code>-Query enthalten ist.<br />
+Die Template Parameter werden mit den Formular-Werten belegt und über eine Spezialseite transkludiert.</p>
 <p>Mittels Query Forms lassen sich die Template-Parameter über Formulareingabeelemente individuell befüllen.</p>
 <p>Eine Spezialseite xxx bindet das Query-Form ein, überigbt deren Werte an das Template und stellt das transkludierte Template im Anschluss auf der Seite dar.</p>
 <p>Wichtig:<br />
@@ -591,7 +598,7 @@ Damit das Query-Template bzw. die Query richtig funktioniert, muss bei den Param
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="19" data-paginate="true" data-header="Kapitel 1: Page Forms" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme" data-marpit-pagination="19" data-marpit-pagination-total="22" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme;">
 <header>Kapitel 1: Page Forms</header>
 <h1>Formatting of Boolean Values in Queries</h1>
-<p>By default, Boolean values will display <code>true</code> and <code>false</code> in queries. This can be changed starting with Semantic MediaWiki 2.4.0 by specifying a <mark>format string</mark> to control what is displayed for the true and false values of a property.</p>
+<p>By default, Boolean values will display as <code>true</code> and <code>false</code> in queries. This can be changed starting with Semantic MediaWiki 2.4.0 by specifying a <mark>format string</mark> to control what is displayed for the true and false values of a property.</p>
 <div class="equalcolumns">
 <div class="1st-column">
 <p>The following <em>formatting options</em> are supported</p>
@@ -644,9 +651,9 @@ Damit das Query-Template bzw. die Query richtig funktioniert, muss bei den Param
 | </span><span class="hljs-template-variable">{{{<span class="hljs-name">field</span>|Datum|input <span class="hljs-attr">type</span>=datepicker|<span class="hljs-attr">property</span>=Bestelldatum|date <span class="hljs-attr">format</span>=dd.mm.yy|<span class="hljs-attr">default</span>={{#time:d.m.Y}} }}}</span><span class="xml">
 |}
 </span></span></span></foreignObject></svg></code></pre>
-<p>Please note:</p>
 <div class="blue">
-<p>Regardless of the formatting pattern set via the <code>date format=...</code> property, <code>datepicker</code> always returns the data in <code>yyyy/mm/dd</code> format.</p>
+<p><strong>Please note</strong>:<br />
+Regardless of the formatting pattern set via the <code>date format=...</code> property, <code>datepicker</code> always returns the data in <code>yyyy/mm/dd</code> format.</p>
 </div>
 <div class="footnotes">
 <p><sup>1</sup> <a href="https://www.mediawiki.org/wiki/Topic:Put4ygy4m0kw279f">https://www.mediawiki.org/wiki/Topic:Put4ygy4m0kw279f</a></p>
@@ -674,18 +681,18 @@ Damit das Query-Template bzw. die Query richtig funktioniert, muss bei den Param
 <p>--&gt; 27.06.2011</p>
 </div>
 </div>
-<p>This parser function <code>#time</code> takes a date and/or time (in the Gregorian calendar) and formats it according to the syntax given<sup>2,3</sup>.</p>
+<p>The <mark>parser function</mark> <code>#time</code> takes a date and/or time (in the Gregorian calendar) and formats it according to the syntax given<sup>2,3</sup>.</p>
 <pre><code><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="xml">Format: </span><span class="hljs-template-tag">{{#<span class="hljs-name">time:</span> format string | date/time object | language code | local }}</span><span class="xml">
 </span></span></span></foreignObject></svg></code></pre>
 <div class="footnotes">
 <p>Source: <a href="https://www.semantic-mediawiki.org/wiki/Help:Date_formatting">https://www.semantic-mediawiki.org/wiki/Help:Date_formatting</a></p>
 <p><sup>2</sup> A full list of parameters is available on the help page: <a href="https://www.mediawiki.org/wiki/Help:Extension:ParserFunctions##time">https://www.mediawiki.org/wiki/Help:Extension:ParserFunctions##time</a></p>
-<p><sup>3</sup> In case the <code>date/time</code> object is missing, the value of the magic word <code>{{CURRENTTIMESTAMP}}</code> (i.e., the time the page was last rendered into HTML) will be used.</p>
+<p><sup>3</sup> In case the <code>date/time object</code> parameter is missing, the value of the magic word <code>{{CURRENTTIMESTAMP}}</code> (i.e., the time the page was last rendered into HTML) will be used.</p>
 </div>
 <footer>Prof. Dr. Stefan Zander</footer>
 </section>
 <script>!function(){"use strict";let t=void 0;function e(e){let r=!1;Array.from(document.querySelectorAll("svg[data-marpit-svg]"),i=>{const{children:o,clientHeight:n,clientWidth:a,viewBox:s}=i;i.style.transform||(i.style.transform="translateZ(0)");const l=e||window!==window.parent&&window.parent.marpitSVGPolyfillZoomFactor||i.currentScale||1;t!==l&&(t=l,r=l);const c=s.baseVal.width/l,d=s.baseVal.height/l,p=Math.min(n/d,a/c);for(let t=0;t<o.length;t+=1){const{style:e}=o[t].firstChild;e.position||(e.position="fixed"),e.transformOrigin||(e.transformOrigin="0 0"),e.transform=`scale(${p}) translateZ(0)`}}),!1!==r&&Object.defineProperty(window,"marpitSVGPolyfillZoomFactor",{configurable:!0,value:r})}const r=(t,e,r)=>{if(t.getAttribute(e)!==r)return t.setAttribute(e,r),!0};function i(t=!0){for(const t of"Apple Computer, Inc."===navigator.vendor?[e]:[])t();Array.from(document.querySelectorAll('svg[data-marp-fitting="svg"]'),t=>{var e;const i=t.firstChild,o=i.firstChild,{scrollWidth:n,scrollHeight:a}=o;let s,l=1;if(t.hasAttribute("data-marp-fitting-code")&&(s=null===(e=t.parentElement)||void 0===e?void 0:e.parentElement),t.hasAttribute("data-marp-fitting-math")&&(s=t.parentElement),s){const t=getComputedStyle(s),e=Math.ceil(s.clientWidth-parseFloat(t.paddingLeft||"0")-parseFloat(t.paddingRight||"0"));e&&(l=e)}const c=Math.max(n,l),d=Math.max(a,1),p=`0 0 ${c} ${d}`;r(i,"width",""+c),r(i,"height",""+d),r(t,"preserveAspectRatio",getComputedStyle(t).getPropertyValue("--preserve-aspect-ratio")||"xMinYMin meet"),r(t,"viewBox",p)&&t.classList.toggle("__reflow__")}),t&&window.requestAnimationFrame(()=>i(t))}!function(){if("undefined"==typeof window)throw new Error("Marp Core's browser script is valid only in browser context.");window.marpCoreBrowserScript?console.warn("Marp Core's browser script has already executed."):(Object.defineProperty(window,"marpCoreBrowserScript",{value:!0}),i())}()}();
-</script></foreignObject></svg></div><div class="bespoke-marp-note" data-index="3" tabindex="0"><p>The process to do that contains the following steps:</p></div><div class="bespoke-marp-note" data-index="4" tabindex="0"><p>When you want to query for (parent) pages that have certain subobject properties (===subproperties==), you can use subqueries:</p></div><script>!function(){"use strict";var e=function(e,t){var n,r=1===(e.parent||e).nodeType?e.parent||e:document.querySelector(e.parent||e),a=[].filter.call("string"==typeof e.slides?r.querySelectorAll(e.slides):e.slides||r.children,(function(e){return"SCRIPT"!==e.nodeName})),s={},i=function(e,t){return(t=t||{}).index=a.indexOf(e),t.slide=e,t},o=function(e,t){s[e]=(s[e]||[]).filter((function(e){return e!==t}))},l=function(e,t){return(s[e]||[]).reduce((function(e,n){return e&&!1!==n(t)}),!0)},c=function(e,t){a[e]&&(n&&l("deactivate",i(n,t)),n=a[e],l("activate",i(n,t)))},d=function(e,t){var r=a.indexOf(n)+e;l(e>0?"next":"prev",i(n,t))&&c(r,t)},u={off:o,on:function(e,t){return(s[e]||(s[e]=[])).push(t),o.bind(null,e,t)},fire:l,slide:function(e,t){if(!arguments.length)return a.indexOf(n);l("slide",i(a[e],t))&&c(e,t)},next:d.bind(null,1),prev:d.bind(null,-1),parent:r,slides:a,destroy:function(e){l("destroy",i(n,e)),s={}}};return(t||[]).forEach((function(e){e(u)})),n||c(0),u};function t(e){e.parent.classList.add("bespoke-marp-parent"),e.slides.forEach(e=>e.classList.add("bespoke-marp-slide")),e.on("activate",t=>{const n=t.slide,r=!n.classList.contains("bespoke-marp-active");e.slides.forEach(e=>{e.classList.remove("bespoke-marp-active"),e.setAttribute("aria-hidden","true")}),n.classList.add("bespoke-marp-active"),n.removeAttribute("aria-hidden"),r&&(n.classList.add("bespoke-marp-active-ready"),document.body.clientHeight,n.classList.remove("bespoke-marp-active-ready"))})}function n(e){let t=0,n=0;Object.defineProperty(e,"fragments",{enumerable:!0,value:e.slides.map(e=>[null,...e.querySelectorAll("[data-marpit-fragment]")])});const r=r=>void 0!==e.fragments[t][n+r],a=(r,a)=>{t=r,n=a,e.fragments.forEach((e,t)=>{e.forEach((e,n)=>{if(null==e)return;const s=t<r||t===r&&n<=a;e.setAttribute("data-bespoke-marp-fragment",s?"active":"inactive"),t===r&&n===a?e.setAttribute("data-bespoke-marp-current-fragment","current"):e.removeAttribute("data-bespoke-marp-current-fragment")})}),e.fragmentIndex=a;const s={slide:e.slides[r],index:r,fragments:e.fragments[r],fragmentIndex:a};e.fire("fragment",s)};e.on("next",({fragment:s=!0})=>{if(s){if(r(1))return a(t,n+1),!1;const s=t+1;e.fragments[s]&&a(s,0)}else{const r=e.fragments[t].length;if(n+1<r)return a(t,r-1),!1;const s=e.fragments[t+1];s&&a(t+1,s.length-1)}}),e.on("prev",({fragment:s=!0})=>{if(r(-1)&&s)return a(t,n-1),!1;const i=t-1;e.fragments[i]&&a(i,e.fragments[i].length-1)}),e.on("slide",({index:t,fragment:n})=>{let r=0;if(void 0!==n){const a=e.fragments[t];if(a){const{length:e}=a;r=-1===n?e-1:Math.min(Math.max(n,0),e-1)}}a(t,r)}),a(0,0)}var r=function(e,t,n){return e(n={path:t,exports:{},require:function(e,t){return function(){throw new Error("Dynamic requires are not currently supported by @rollup/plugin-commonjs")}(null==t&&n.path)}},n.exports),n.exports}((function(e){
+</script></foreignObject></svg></div><div class="bespoke-marp-note" data-index="3" tabindex="0"><p>The process to do that contains the following steps:</p></div><div class="bespoke-marp-note" data-index="4" tabindex="0"><p>Motivation: _Displaying properties of a specific subobject's parent page_</p><p>Solution: _Use ==subqueries== to query for certain, characteristic subobject properties (=subproperties)_</p><p>When you want to query for (parent) pages that have certain subobject properties (===subproperties==), you can use subqueries:</p></div><script>!function(){"use strict";var e=function(e,t){var n,r=1===(e.parent||e).nodeType?e.parent||e:document.querySelector(e.parent||e),a=[].filter.call("string"==typeof e.slides?r.querySelectorAll(e.slides):e.slides||r.children,(function(e){return"SCRIPT"!==e.nodeName})),s={},i=function(e,t){return(t=t||{}).index=a.indexOf(e),t.slide=e,t},o=function(e,t){s[e]=(s[e]||[]).filter((function(e){return e!==t}))},l=function(e,t){return(s[e]||[]).reduce((function(e,n){return e&&!1!==n(t)}),!0)},c=function(e,t){a[e]&&(n&&l("deactivate",i(n,t)),n=a[e],l("activate",i(n,t)))},d=function(e,t){var r=a.indexOf(n)+e;l(e>0?"next":"prev",i(n,t))&&c(r,t)},u={off:o,on:function(e,t){return(s[e]||(s[e]=[])).push(t),o.bind(null,e,t)},fire:l,slide:function(e,t){if(!arguments.length)return a.indexOf(n);l("slide",i(a[e],t))&&c(e,t)},next:d.bind(null,1),prev:d.bind(null,-1),parent:r,slides:a,destroy:function(e){l("destroy",i(n,e)),s={}}};return(t||[]).forEach((function(e){e(u)})),n||c(0),u};function t(e){e.parent.classList.add("bespoke-marp-parent"),e.slides.forEach(e=>e.classList.add("bespoke-marp-slide")),e.on("activate",t=>{const n=t.slide,r=!n.classList.contains("bespoke-marp-active");e.slides.forEach(e=>{e.classList.remove("bespoke-marp-active"),e.setAttribute("aria-hidden","true")}),n.classList.add("bespoke-marp-active"),n.removeAttribute("aria-hidden"),r&&(n.classList.add("bespoke-marp-active-ready"),document.body.clientHeight,n.classList.remove("bespoke-marp-active-ready"))})}function n(e){let t=0,n=0;Object.defineProperty(e,"fragments",{enumerable:!0,value:e.slides.map(e=>[null,...e.querySelectorAll("[data-marpit-fragment]")])});const r=r=>void 0!==e.fragments[t][n+r],a=(r,a)=>{t=r,n=a,e.fragments.forEach((e,t)=>{e.forEach((e,n)=>{if(null==e)return;const s=t<r||t===r&&n<=a;e.setAttribute("data-bespoke-marp-fragment",s?"active":"inactive"),t===r&&n===a?e.setAttribute("data-bespoke-marp-current-fragment","current"):e.removeAttribute("data-bespoke-marp-current-fragment")})}),e.fragmentIndex=a;const s={slide:e.slides[r],index:r,fragments:e.fragments[r],fragmentIndex:a};e.fire("fragment",s)};e.on("next",({fragment:s=!0})=>{if(s){if(r(1))return a(t,n+1),!1;const s=t+1;e.fragments[s]&&a(s,0)}else{const r=e.fragments[t].length;if(n+1<r)return a(t,r-1),!1;const s=e.fragments[t+1];s&&a(t+1,s.length-1)}}),e.on("prev",({fragment:s=!0})=>{if(r(-1)&&s)return a(t,n-1),!1;const i=t-1;e.fragments[i]&&a(i,e.fragments[i].length-1)}),e.on("slide",({index:t,fragment:n})=>{let r=0;if(void 0!==n){const a=e.fragments[t];if(a){const{length:e}=a;r=-1===n?e-1:Math.min(Math.max(n,0),e-1)}}a(t,r)}),a(0,0)}var r=function(e,t,n){return e(n={path:t,exports:{},require:function(e,t){return function(){throw new Error("Dynamic requires are not currently supported by @rollup/plugin-commonjs")}(null==t&&n.path)}},n.exports),n.exports}((function(e){
 /*!
   * screenfull
   * v5.0.2 - 2020-02-13
