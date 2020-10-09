@@ -192,20 +192,20 @@ cf. https://www.semantic-mediawiki.org/wiki/Help:Date_parsing
 
 ::::: equalcolumns
 :::: 1st-column
-_Motivation:_ 
+**_Motivation:_**
 Display the items (represented as subobjects) of all book orders issued in 2020.
 
-_Assumption:_ 
+___Assumption:___ 
 Items are represented as subobjects embedded in order pages.
 
-_Solution:_
+___Solution:___
 1. Draw a data graph of the involved entities
 2. Formulate the query conditions for the parent pages
 3. Insert the parent page query conditions into a subquery
 4. The subquery becomes the value of a query condition using the inverse `Has subobject` property
 ::::
 :::: 2nd-column
-_Example:_
+___Example:___
 Build the _subquery_ (i.e. the query conditions for parent pages)
 ```
 [[Category:Buchbestellung]]
@@ -314,7 +314,7 @@ Im Verlauf der Arbeit stellen sich hierbei folgende Fragen:
 ```
 - Separate values using `|` as delimiter
 
-::: warning
+::: warning small
 The possibility of using pipes `|` for setting multiple values was deprecated starting with Semantic MediaWiki 3.0.0 and will be removed in a later version. It is strongly recommended to migrate to using the `
 |+sep` parameter.
 :::
@@ -498,11 +498,43 @@ Jetzt kann mittels einer Query nach Seiten mit dem gesetzten Wert des Properties
 # Query Forms
 
 ::: definition
-QueryForms ermöglichen die Abfrage von...
+Query forms are a specific type of page forms and allow to pass individually entered input form data as parameters to query templates. A query form requires a query template, ie., a template with an inline query plus a special page that displays both form data and transcluded template on one wiki page.
 
-Quelle: Website
+Quelle: Individual Definition
 :::
 
+
+::::: equalcolumns small
+:::: 1st-column
+### 1) A Query Form
+- Defined as a regular page form
+- Displays a "Run Query" button
+- Tag `{{{standard input|run query|label=...}}}` allows to customize the "Run Query" button
+::::
+:::: 2nd-column
+### 2) A Query Template
+- Defines an inline query together with a set of parameters that serve a query conditions
+- Parameter values are passed to the query
+- Displays the executed query as result 
+::::
+:::: 3rd-column
+### 3) The `Special:RunQuery` Page
+- Displays query form and results
+- Passes the query form input data to the template and displays the transcluded  content on top or below the form
+::::
+:::::
+
+Link to the query form via `[[Special:RunQuery/query form name]]` or `{{#queryformlink:form=query form name}}`.
+The parser function is the preferred method as it provides to greatest flexibility.
+<!-- Once the query form has been created, you can link to it via  -->
+
+
+::: footnotes
+Source: https://www.mediawiki.org/wiki/Extension:Page_Forms/Creating_query_forms
+:::
+
+---
+# Query Forms – Teil 2
 Query Forms kombinieren Formulare mit Templates, in denen eine `#ask`-Query enthalten ist. 
 Die Template Parameter werden mit den Formular-Werten belegt und über eine Spezialseite transkludiert.  
 
