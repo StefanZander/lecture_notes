@@ -122,660 +122,722 @@
 /* ========================
     FOOTNOTES
    ========================  
-*/div#p>svg>foreignObject>section .footnotes{font-size:0.6em;line-height:1.2em;height:100%;display:flex;flex-direction:column;justify-content:flex-end;margin-left:.5em}div#p>svg>foreignObject>section section.footnotes{--marpit-root-font-size:0.6em}div#p>svg>foreignObject>section .footnotes:before{content:' ';color:white;border-top:solid .05em black;display:inline-block;max-width:12em;margin-bottom:.2em;margin-left:-.5em}div#p>svg>foreignObject>section sup{color:darkcyan;padding:0 .08em 0 .08em
+*/div#p>svg>foreignObject>section .footnotes{font-size:0.6em;line-height:1.2em;height:100%;display:flex;flex-direction:column;justify-content:flex-end;margin-left:.5em}div#p>svg>foreignObject>section section.footnotes{--marpit-root-font-size:0.6em}
+
+/* Trick: Use white text to display ruler before footnotes start */div#p>svg>foreignObject>section .footnotes:before{content:' ';color:white;border-top:solid .05em black;display:inline-block;max-width:12em;margin-bottom:.2em;margin-left:-.5em}div#p>svg>foreignObject>section sup{color:darkcyan;padding:0 .08em 0 .08em
     /* font-family: 'Barlow Semi Condensed'; */
     /* font-weight: normal; */}
 
 /* display multi-line footnote text indented  */div#p>svg>foreignObject>section .footnotes p{padding-left:.2em;text-indent:-.6em;margin-bottom:0}
+
+
+/* ========================
+    Lists
+   ========================  
+*/div#p>svg>foreignObject>section ol>li>ol,div#p>svg>foreignObject>section ol>li>ul,div#p>svg>foreignObject>section ul>li>ol,div#p>svg>foreignObject>section ul>li>ul{font-size:0.9em
+    /* color: rgb(89, 89, 89); */}div#p>svg>foreignObject>section ul>li>ul>li:before{color:red}
+
 /**
  * @theme enable-all-auto-scaling
  * @auto-scaling true
  **/div#p>svg>foreignObject>section[data-marpit-advanced-background=background]{display:block!important;padding:0!important}div#p>svg>foreignObject>section[data-marpit-advanced-background=background]:after,div#p>svg>foreignObject>section[data-marpit-advanced-background=background]:before,div#p>svg>foreignObject>section[data-marpit-advanced-background=content]:after,div#p>svg>foreignObject>section[data-marpit-advanced-background=content]:before{display:none!important}div#p>svg>foreignObject>section[data-marpit-advanced-background=background]>div[data-marpit-advanced-background-container]{all:initial;display:flex;flex-direction:row;height:100%;overflow:hidden;width:100%}div#p>svg>foreignObject>section[data-marpit-advanced-background=background]>div[data-marpit-advanced-background-container][data-marpit-advanced-background-direction=vertical]{flex-direction:column}div#p>svg>foreignObject>section[data-marpit-advanced-background=background][data-marpit-advanced-background-split]>div[data-marpit-advanced-background-container]{width:var(--marpit-advanced-background-split,50%)}div#p>svg>foreignObject>section[data-marpit-advanced-background=background][data-marpit-advanced-background-split=right]>div[data-marpit-advanced-background-container]{margin-left:calc(100% - var(--marpit-advanced-background-split, 50%))}div#p>svg>foreignObject>section[data-marpit-advanced-background=background]>div[data-marpit-advanced-background-container]>figure{all:initial;background-position:center;background-repeat:no-repeat;background-size:cover;flex:auto;margin:0}div#p>svg>foreignObject>section[data-marpit-advanced-background=content],div#p>svg>foreignObject>section[data-marpit-advanced-background=pseudo]{background:transparent!important}div#p>svg>foreignObject>section[data-marpit-advanced-background=pseudo],div#p>svg[data-marpit-svg]>foreignObject[data-marpit-advanced-background=pseudo]{pointer-events:none!important}div#p>svg>foreignObject>section[data-marpit-advanced-background-split]{width:100%;height:100%}</style></head><body><div class="bespoke-marp-osc"><button data-bespoke-marp-osc="prev" tabindex="-1" title="Previous slide">Previous slide</button><span data-bespoke-marp-osc="page"></span><button data-bespoke-marp-osc="next" tabindex="-1" title="Next slide">Next slide</button><button data-bespoke-marp-osc="fullscreen" tabindex="-1" title="Toggle fullscreen (f)">Toggle fullscreen</button><button data-bespoke-marp-osc="presenter" tabindex="-1" title="Open presenter view (p)">Open presenter view</button></div><div id="p"><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="1" data-paginate="true" data-theme="custom-theme" data-marpit-pagination="1" data-marpit-pagination-total="24" style="--paginate:true;--theme:custom-theme;">
 <h1>Semantisches Wissensmanagement im Unternehmen: <br />Konzepte, Technologien, Anwendungen</h1>
 <h4>Prof. Dr. Stefan Linus Zander</h4>
-<p class="lightgreen big">Kapitel 4: Fortschrittliche Ontologiemodellierung mittels Semantic MediaWiki</p>
+<p class="lightgreen big skip">Kapitel 3: Einführung in Semantic MediaWiki</p>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="2" data-paginate="true" data-header="Kapitel 1: Page Forms" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme" data-marpit-pagination="2" data-marpit-pagination-total="24" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme;">
-<header>Kapitel 1: Page Forms</header>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="2" data-paginate="true" data-header="Kapitel 1: MediaWiki" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme" data-marpit-pagination="2" data-marpit-pagination-total="24" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme;">
+<header>Kapitel 1: MediaWiki</header>
 
-<h1>Defining individual CSS Styles using MediaWiki:Common.css</h1>
-<p>SMW allows to change the rendering of its elements using individual CSS style rules.</p>
-<ol>
-<li>Call the <code>MediaWiki:Common.css</code> page (e.g. ...)</li>
-<li>Get the CSS selector for the elements in question using the style tab in the browser inspector</li>
-<li>Add the corresponding style rules to the <code>MediaWiki:Common.css</code></li>
-</ol>
-<footer>Prof. Dr. Stefan Zander</footer>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="3" data-paginate="true" data-header="Kapitel 1: Page Forms" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme" data-marpit-pagination="3" data-marpit-pagination-total="24" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme;">
-<header>Kapitel 1: Page Forms</header>
-<h1>Subobjects: Querying using #ask</h1>
-<p>Using <code>#subobject</code> does not print out anything on the screen. To show the subobject data directly on the page where they are defined use an ask query <code>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] }}</code> with <mark>inverse property</mark> and add it after the definition of subobjects.</p>
-<div class="equalcolumns">
-<div class="1st-column">
-<p><strong>Example</strong></p>
-<ol>
-<li>Define two subobjects with identifiers &quot;first&quot; and &quot;second&quot;:<pre><code><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-template-tag">{{#<span class="hljs-name">subobject:first</span>
-|<span class="hljs-attr">property1</span>=value1
-|<span class="hljs-attr">property2</span>=value2
-}}</span><span class="xml">
-
-</span><span class="hljs-template-tag">{{#<span class="hljs-name">subobject:second</span>
-|<span class="hljs-attr">property1</span>=value3
-|<span class="hljs-attr">property2</span>=value4
-}}</span><span class="xml">
-</span></span></span></foreignObject></svg></code></pre>
+<h1>Semantic MediaWiki (TODO: Change)</h1>
+<div class="threecolumns small">
+<p>...is a <em>content management software</em> for</p>
+<ul>
+<li>Richly formatted hypertext documents</li>
+<li>Structured data</li>
+</ul>
+<p>... based on the <em>&quot;Wiki Way&quot;</em>:</p>
+<ul>
+<li>User-governed</li>
+<li>Collaborative</li>
+<li>Easy</li>
+</ul>
+<p>...is based on <em>MediaWiki (MW)</em>:</p>
+<ul>
+<li>Wiki engine for managing hypertext</li>
+<li>Very popular
+<ul>
+<li>Wikipedia, Wikia, &gt;100,000 sites</li>
+</ul>
 </li>
-</ol>
-</div>
-<div class="2nd-column">
-<ol start="2">
-<li class="longskip">
-<p>Use the #ask-query to print out the subobjects' data:</p>
-<pre><code><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>{{#ask:
- [[-Has subobject::{{FULLPAGENAME}}]] 
- |?property1
- |?property2
-}}
-</span></span></foreignObject></svg></code></pre>
-<div class="blue">
-<p>Please note that the <code>Has subobject</code> property need to be specified as <mark>inverse property</mark> (note the '<code>-</code>' in front of the property) in order to make the query work.</p>
-</div>
+<li>User interface in hundreds of languages</li>
+<li>Free, Open Source, open development
+<ul>
+<li>Some full-time developers (Wikimedia staff)</li>
+</ul>
 </li>
-</ol>
-</div>
-</div>
-<div class="footnotes">
-<p>Source: <a href="https://www.semantic-mediawiki.org/wiki/Help:Subobjects_and_queries">https://www.semantic-mediawiki.org/wiki/Help:Subobjects_and_queries</a></p>
-</div>
-<footer>Prof. Dr. Stefan Zander</footer>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="4" data-paginate="true" data-header="Kapitel 1: Page Forms" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme" data-marpit-pagination="4" data-marpit-pagination-total="24" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme;">
-<header>Kapitel 1: Page Forms</header>
-<h1>Subobjects: Show Properties of the Subobject's Parent Page</h1>
-<p>In some cases one might not only want to query for subobject data but also for <em>properties</em> that are defined on the <em>subobject's parent page</em>.</p>
-
-<div class="equalcolumns small">
-<div class="1st-column">
-<h3>a) Using Property Chains</h3>
-<p><strong>Example</strong></p>
-<pre><code><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-template-tag">{{#<span class="hljs-name">ask:</span>
- [[-Has subobject::{{FULLPAGENAME}}]] 
- |?-has subobject.YourParentProperty1
- |?-has subobject.YourParentProperty2
- |?YourSubobjectProperty1
- |?YourSubobjectProperty2
-}}</span><span class="xml">
-</span></span></span></foreignObject></svg></code></pre>
-<ul>
-<li>Chain members must be of type <em>page</em></li>
-<li>Last member can be of <em>any type</em></li>
-<li>Chaining <em>depth</em> is not limited by default</li>
+<li>Written in PHP and JavaScript, main DB MySQL</li>
 </ul>
-</div>
-<div class="2nd-column">
-<h3>b) Using Templates</h3>
-<ol>
-<li>Query for a property of a subobject.</li>
-<li>Use <code>format=template</code>.</li>
-<li>Add another query in this template where you ask for <code>[[Has subobject::{{{1}}}]]</code>. Has subobject returns the parent page of a subobject. The subobject is queried in the first query and passed on to the template as <code>{{{1}}}</code>.</li>
-</ol>
-</div>
-<div class="3rd-column">
-<p class="skip">Example</p>
-<pre><code><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-template-tag">{{#<span class="hljs-name">ask:</span>
- [[YourSubobjectProperty::Foo]]
- |?YourSubobjectProperty1
- |?YourSubobjectProperty2
- |<span class="hljs-attr">format</span>=template 
- |<span class="hljs-attr">template</span>=YourTemplate
-}}</span><span class="xml">
-</span></span></span></foreignObject></svg></code></pre>
-<p>In <code>Template:YourTemplate</code> add the following:</p>
-<pre><code><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>{{#ask:
- [[Has subobject::{{{<span class="hljs-number">1</span>}}}]]
- |?YourParentProperty1
- |?YourParentProperty2
-}}
-</span></span></foreignObject></svg></code></pre>
-</div>
-</div>
-<div class="footnotes">
-<p>See <a href="https://www.semantic-mediawiki.org/wiki/Help:Property_chains_and_paths">https://www.semantic-mediawiki.org/wiki/Help:Property_chains_and_paths</a></p>
-</div>
-<footer>Prof. Dr. Stefan Zander</footer>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="5" data-paginate="true" data-header="Kapitel 1: Page Forms" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme" data-marpit-pagination="5" data-marpit-pagination-total="24" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme;">
-<header>Kapitel 1: Page Forms</header>
-<h1>Searching for Pages with certain Subobject Properties</h1>
-
-<p>In some business cases, it is necessary to search for pages with certain subobject properties and display their properties.<br />
-The solution is to use <mark>subqueries</mark> to query for certain subobject properties (e.g. a type property) – so called <mark>subproperties</mark>.</p>
-
-<p><strong>Example</strong></p>
-<pre><code><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-template-tag">{{#<span class="hljs-name">ask:</span>
- [[Has subobject::&lt;q&gt;[[YourSubobjectProperty::Foo]]&lt;/q&gt;]]
- |?YourParentProperty1
- |?YourParentProperty2
-}}</span><span class="xml">
-</span></span></span></foreignObject></svg></code></pre>
+<p>...is implemented as a <em>MediaWiki extension</em>:</p>
 <ul>
-<li>The query <code>[[Has subobject::]]</code> (without the &quot;<code>-</code>&quot;) queries for the (parent) pages that have subpropeties.</li>
-<li>With the subquery, you can then select certain subobject properties.</li>
-<li>As the query asks for parent pages, you can select properties of the parent pages as printouts.</li>
+<li>Modular add-on
+<ul>
+<li>Fully compatible with current and recent MW</li>
 </ul>
-<div class="footnotes">
-<p>Source: <a href="https://www.semantic-mediawiki.org/wiki/Help:Subobjects_and_queries">https://www.semantic-mediawiki.org/wiki/Help:Subobjects_and_queries</a></p>
-</div>
-<footer>Prof. Dr. Stefan Zander</footer>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="6" data-paginate="true" data-header="Kapitel 1: Page Forms" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme" data-marpit-pagination="6" data-marpit-pagination-total="24" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme;">
-<header>Kapitel 1: Page Forms</header>
-<h1>QueryForms: Define Yearly Time Frames</h1>
-<p>If you want to use for specific (e.g. yearly) time frames using QueryForms, you have to define 2 things:</p>
-<ol>
-<li>
-<p>Define a <em>field tag</em> with <code>|input type=year</code> (or use a combo-box with pre-defined values) for the years</p>
-<pre><code><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="xml">&#x27;&#x27;&#x27;Jahr:&#x27;&#x27;&#x27; 
-</span><span class="hljs-template-variable">{{{<span class="hljs-name">field</span>|Datum|input <span class="hljs-attr">type</span>=combobox|<span class="hljs-attr">property</span>=Bestelldatum|<span class="hljs-attr">default</span>={{#time:Y}}
-  |<span class="hljs-name">values</span>=<span class="hljs-number">2019</span>,<span class="hljs-number">2020</span>,<span class="hljs-number">2021</span>,<span class="hljs-number">2022</span>,<span class="hljs-number">2023</span>,<span class="hljs-number">2024</span>,<span class="hljs-number">2025</span>,<span class="hljs-number">2026</span>,<span class="hljs-number">2027</span>,<span class="hljs-number">2028</span>,<span class="hljs-number">2029</span>,<span class="hljs-number">2030</span> }}}</span><span class="xml">
-</span></span></span></foreignObject></svg></code></pre>
 </li>
-<li>
-<p>Pass the field parameter value (ie. <code>Datum</code>) to a <em>template</em> and use the following <em>query conditions</em> to set a time frame of, e.g., 1 year</p>
-<pre><code><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>{{#ask: 
- <span class="hljs-string">[[Category:Buchbestellung]]</span>
- <span class="hljs-string">[[Besteller::{{{Besteller|+}}}]]</span>
- <span class="hljs-string">[[Bestelldatum::&gt;1.1.{{{Datum|1970}}}]]</span>
- <span class="hljs-string">[[Bestelldatum::&lt;31.12.{{{Datum|2100}}}]]</span>
-...
-</span></span></foreignObject></svg></code></pre>
+<li>Free, Open Source, open development
+<ul>
+<li>Driven by volunteers: no staff</li>
+<li>Integrated with MW development</li>
+<li>Current maintainers: MK, Jeroen De Dauw</li>
+</ul>
 </li>
-</ol>
-<div class="footnotes">
-<p>cf. <a href="https://www.semantic-mediawiki.org/wiki/Help:Date_parsing">https://www.semantic-mediawiki.org/wiki/Help:Date_parsing</a></p>
-</div>
-<footer>Prof. Dr. Stefan Zander</footer>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="7" data-paginate="true" data-header="Kapitel 1: Page Forms" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme" data-marpit-pagination="7" data-marpit-pagination-total="24" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme;">
-<header>Kapitel 1: Page Forms</header>
-<h1>Query for Subobject Data on specific Parent Pages</h1>
-<div class="equalcolumns">
-<div class="1st-column">
-<p><strong><em>Motivation:</em></strong><br />
-Display the items (represented as subobjects) of all book orders issued in 2020.</p>
-<p><em><strong>Assumption:</strong></em><br />
-Items are represented as subobjects embedded in order pages.</p>
-<p><em><strong>Solution:</strong></em></p>
-<ol>
-<li>Draw a data graph of the involved entities</li>
-<li>Formulate the query conditions for the parent pages</li>
-<li>Insert the parent page query conditions into a subquery</li>
-<li>The subquery becomes the value of a query condition using the inverse <code>Has subobject</code> property</li>
-</ol>
-</div>
-<div class="2nd-column">
-<p><em><strong>Example:</strong></em><br />
-Build the <em>subquery</em> (i.e. the query conditions for parent pages)</p>
-<pre><code><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-string">[[Category:Buchbestellung]]</span>
-<span class="hljs-string">[[Bestelldatum::&gt;1.1.2020]]</span> <span class="hljs-string">[[Bestelldatum::&lt;31.12.2020]]</span>
-</span></span></foreignObject></svg></code></pre>
-<p>Build the <em>full query</em> and embed the subquery</p>
-<pre><code><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>{{#ask:
- [[-Has subobject::&lt;q&gt;[[Category:Buchbestellung]]
- [[Bestelldatum::&gt;1.1.2020]] [[Bestelldatum::&lt;31.12.2020]]&lt;/q&gt;]]
- |?Verfasser
- |?Buchtitel
- ...
-}}
-</span></span></foreignObject></svg></code></pre>
-</div>
-</div>
-<footer>Prof. Dr. Stefan Zander</footer>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="8" data-paginate="true" data-header="Kapitel 1: Page Forms" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme" data-marpit-pagination="8" data-marpit-pagination-total="24" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme;">
-<header>Kapitel 1: Page Forms</header>
-<h1>Combining Parent Page and Subobject Data in Queries</h1>
-<p>This can be achieved with <mark>subqueries</mark> and <mark>inverse property chaining</mark> in the <em>properties' selection part</em> of inline queries.</p>
-<p><strong>Example</strong></p>
-<pre><code><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-template-tag">{{#<span class="hljs-name">ask:</span>
- [[-Has subobject::&lt;q&gt;[[Category:Buchbestellung]]
- [[Bestelldatum::&gt;1.1.2020]] [[Bestelldatum::&lt;31.12.2020]]&lt;/q&gt;]]
- |?-Has subobject.Besteller         &lt;!-- selecting parent page property via inverse property chaining --&gt;
- |?-Has subobject.Kostenstelle      &lt;!-- selecting parent page property via inverse property chaining --&gt;
- |?Verfasser
- |<span class="hljs-attr">?Buchtitel</span>=Titel
- |<span class="hljs-attr">?Erscheinungsjahr</span>=Jahr |+<span class="hljs-attr">align</span>=center
- |<span class="hljs-attr">mainlabel</span>=-
- |<span class="hljs-attr">format</span>=broadtable
- |<span class="hljs-attr">class</span>=smwtable-clean sortable
- |<span class="hljs-attr">headers</span>=plain
-}}</span><span class="xml">
-</span></span></span></foreignObject></svg></code></pre>
-<footer>Prof. Dr. Stefan Zander</footer>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="9" data-paginate="true" data-header="Kapitel 1: Page Forms" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme" data-marpit-pagination="9" data-marpit-pagination-total="24" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme;">
-<header>Kapitel 1: Page Forms</header>
-<h1>Automatically Setting Page Names in Page Forms</h1>
-<p>The name of the page created by a form can be set <em>automatically</em> by adding a <code>page name</code> parameter within the form definition's <code>info</code> tag<sup>1</sup>.</p>
-<p><strong>Example</strong><sup>2</sup>:</p>
-<pre><code><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-template-variable">{{{<span class="hljs-name">info</span>|page <span class="hljs-attr">name</span>=&lt;Author[First name]&gt; &lt;Author[Last name]&gt;}}}</span><span class="xml">
-
-</span><span class="hljs-template-variable">{{{<span class="hljs-name">for</span> template|Author}}}</span><span class="xml">
-&#x27;&#x27;&#x27;First name:&#x27;&#x27;&#x27; </span><span class="hljs-template-variable">{{{<span class="hljs-name">field</span>|first name}}}</span><span class="xml">
-
-&#x27;&#x27;&#x27;Last name:&#x27;&#x27;&#x27; </span><span class="hljs-template-variable">{{{<span class="hljs-name">field</span>|last name}}}</span><span class="xml">
-
-&#x27;&#x27;&#x27;Political affiliation:&#x27;&#x27;&#x27; </span><span class="hljs-template-variable">{{{<span class="hljs-name">field</span>|political affiliation|input <span class="hljs-attr">type</span>=combobox}}}</span><span class="xml">
-</span><span class="hljs-template-variable">{{{<span class="hljs-name">end</span> template}}}</span><span class="xml">
-</span></span></span></foreignObject></svg></code></pre>
-<div class="footnotes">
-<p><sup>1</sup> <a href="https://www.mediawiki.org/wiki/Extension:Page_Forms/Linking_to_forms">https://www.mediawiki.org/wiki/Extension:Page_Forms/Linking_to_forms</a></p>
-<p><sup>2</sup> Example is taken from <a href="https://discoursedb.org/w/index.php?title=Form:Author&amp;action=edit">https://discoursedb.org/w/index.php?title=Form:Author&amp;action=edit</a></p>
-</div>
-<footer>Prof. Dr. Stefan Zander</footer>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="10" data-paginate="true" data-header="Kapitel 1: Page Forms" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme" data-marpit-pagination="10" data-marpit-pagination-total="24" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme;">
-<header>Kapitel 1: Page Forms</header>
-<h1>Benennung von Properties in Templates</h1>
-<p>Annahme:<br />
-Sie wollen Abschlussarbeiten (BAs/MAs) mittels SMW verwalten. Für BAs &amp; MAs erstellen Sie jeweils separate Templates.</p>
-<p>Im Verlauf der Arbeit stellen sich hierbei folgende Fragen:</p>
+<li>Written in PHP and JavaScript, main DB MySQL
 <ul>
-<li>Benutzen Sie identische Properties für/in beiden Templates ?</li>
-<li>Wie benennen Sie die Properties ?</li>
-<li>Wie gelingt Ihnen die Unterscheidung der konkreten Instanzen (SWM Seiten) ?</li>
+<li>RDF DBs supported as secondary storage</li>
 </ul>
-<footer>Prof. Dr. Stefan Zander</footer>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="11" data-paginate="true" data-header="Kapitel 1: Page Forms" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme" data-marpit-pagination="11" data-marpit-pagination-total="24" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme;">
-<header>Kapitel 1: Page Forms</header>
-<h1>Multiple Values for the same Subobject Property</h1>
-<div class="equalcolumns small">
-<div class="1st-column">
-<h3>a) Add Multiple Lines</h3>
-<pre><code><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-template-tag">{{#<span class="hljs-name">subobject:mysubobject</span>
- |Has property <span class="hljs-number">1</span>=value1
- |Has property <span class="hljs-number">1</span>=value2
- |Has property <span class="hljs-number">3</span>=value1
- ...
-}}</span><span class="xml">
-</span></span></span></foreignObject></svg></code></pre>
-<p><mark>TODO: Check if it works</mark></p>
-</div>
-<div class="2nd-column">
-<h3>b) Separate Values using a Pipe</h3>
-<pre><code><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-template-tag">{{#<span class="hljs-name">subobject:mysubobject</span>
- |Has <span class="hljs-attr">property</span>=value1|value2
- ...
-}}</span><span class="xml">
-</span></span></span></foreignObject></svg></code></pre>
-<ul>
-<li>Separate values using <code>|</code> as delimiter</li>
+</li>
 </ul>
-<div class="warning small">
-<p>The possibility of using pipes <code>|</code> for setting multiple values was deprecated starting with Semantic MediaWiki 3.0.0 and will be removed in a later version. It is strongly recommended to migrate to using the <code> |+sep</code> parameter.</p>
-</div>
-</div>
-<div class="3rd-column">
-<h3>c) Separate Values using a Named Separator</h3>
-<pre><code><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-template-tag">{{#<span class="hljs-name">subobject:mysubobject</span>
- |Has property <span class="hljs-number">1</span>=Value <span class="hljs-number">1</span>;Value <span class="hljs-number">2</span>;Value <span class="hljs-number">3</span>|+<span class="hljs-attr">sep</span>=;
- |Has property <span class="hljs-number">2</span>=<span class="hljs-number">12</span>+<span class="hljs-number">22</span>+<span class="hljs-number">3</span>+<span class="hljs-number">4</span>+<span class="hljs-number">5</span>+<span class="hljs-number">6</span>+<span class="hljs-number">7</span>+<span class="hljs-number">8</span>+<span class="hljs-number">9</span>+<span class="hljs-number">10</span>|+<span class="hljs-attr">sep</span>=+
- |Has property <span class="hljs-number">3</span>=<span class="hljs-number">123</span>,<span class="hljs-number">1234</span>,<span class="hljs-number">12345</span>,|+<span class="hljs-attr">sep</span>=,
- |Has property <span class="hljs-number">4</span>=One,or,two,more,values|+sep
- ...
-}}</span><span class="xml">
-</span></span></span></foreignObject></svg></code></pre>
+<p>...is <em>well-established</em> and <em>stable</em></p>
 <ul>
-<li>Semantic MediaWiki 1.9.0 introduces <code>|+sep=...</code> to identify the separator</li>
-<li>Provides greates flexibility and can be combined with PageForms</li>
-<li>Preferred method in most cases</li>
+<li>Created in 2005</li>
+<li>Used on hundreds of sites (impossible to count)</li>
+<li>Extensive documentation in many languages
+<ul>
+<li><a href="http://semantic-mediawiki.org/">http://semantic-mediawiki.org/</a></li>
+<li>Current maintainer: Karsten Hoffmeyer</li>
+</ul>
+</li>
+<li>Twice-yearly user conference SMWCon</li>
+<li>Organisational support by OSDA (charity)</li>
+<li>One of the biggest MW extensions
+<ul>
+<li>Code, people, commit activity, user community</li>
+</ul>
+</li>
 </ul>
 </div>
-</div>
-<div class="skip"></div>
-<p>Alternatively, the <code>{{#arraymap:...</code> parser function can be used to separate multiple values for one subobject property.</p>
-<div class="footnotes">
-<p>Source: <a href="https://www.semantic-mediawiki.org/wiki/Help:Adding_subobjects#Specifying_multiple_values_for_the_same_property">https://www.semantic-mediawiki.org/wiki/Help:Adding_subobjects#Specifying_multiple_values_for_the_same_property</a></p>
-</div>
 <footer>Prof. Dr. Stefan Zander</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="12" data-paginate="true" data-header="Kapitel 1: Page Forms" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme" data-marpit-pagination="12" data-marpit-pagination-total="24" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme;">
-<header>Kapitel 1: Page Forms</header>
-<h1>How to Query for Subobject Data in Pages</h1>
-<footer>Prof. Dr. Stefan Zander</footer>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="13" data-paginate="true" data-header="Kapitel 1: Page Forms" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme" data-marpit-pagination="13" data-marpit-pagination-total="24" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme;">
-<header>Kapitel 1: Page Forms</header>
-<h1>Tipps for Working with Forms</h1>
-<h3>Remove 'Keine Angabe' in selection fields (radiobuttons or checkboxes)</h3>
-<ul>
-<li>In order to remove the <code>Keine Angabe</code> option from the set of selection options in radiobuttons or checkboxes, it is necessary to add the <code>|mandatory</code>-flag to the input declaration.</li>
-<li>Optinally, set the <code>|default=...</code> parameter to a specific value to have it pre-selected.</li>
-</ul>
-<footer>Prof. Dr. Stefan Zander</footer>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="14" data-paginate="true" data-header="Kapitel 1: Page Forms" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme" data-marpit-pagination="14" data-marpit-pagination-total="24" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme;">
-<header>Kapitel 1: Page Forms</header>
-<h1>Erstellung von Formularen</h1>
-<p>Vorsicht: Die automatische Generierung von Formularen ist fehlerhaft</p>
-<p>Es gibt 2 Wege neue Seiten mittels Formularen zu erstellen</p>
-<ol>
-<li>Zweistufig mit Eingabe des zu erzeugenden Seitennames vor dem Ausfüllen der Formularfelder (auf einer neuen Seite) --&gt; The two-step process</li>
-<li>Aktivierung des Formulars durch Aufruf eines Links oder Buttons --&gt; The one-step process</li>
-</ol>
-<p>Siehe Quellenverweis für eine Auflistung der Parameter und Parameterwerte</p>
-<div class="footnotes">
-<p><a href="https://www.mediawiki.org/wiki/Extension:Page_Forms/Linking_to_forms">https://www.mediawiki.org/wiki/Extension:Page_Forms/Linking_to_forms</a></p>
-</div>
-<footer>Prof. Dr. Stefan Zander</footer>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="15" data-paginate="true" data-header="Kapitel 1: Page Forms" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme" data-marpit-pagination="15" data-marpit-pagination-total="24" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme;">
-<header>Kapitel 1: Page Forms</header>
-<h1>Seitenerzeugung mittels Formularen</h1>
-<p>Es gibt 2 Wege neue Seiten mittels Formularen zu erstellen</p>
-<div class="equalcolumns small">
-<div class="1st-column">
-<p><strong>Zweistufiger Prozess</strong> <em>(vgl. two-step process)</em></p>
-<ol>
-<li>Separate Seite mit Eingabefeld für Seitennamen</li>
-<li>Aufruf des Page Forms im 2. Schritt</li>
-</ol>
-<pre><code><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-attribute">Codebeispiel</span>
-</span></span></foreignObject></svg></code></pre>
-</div>
-<div class="2nd-column">
-<p><strong>Einstufiger Prozess</strong> <em>(vgl. one-step process)</em></p>
-<ol>
-<li>Direkter Aufruf des Formualars mittels Link oder Button</li>
-</ol>
-<pre><code><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-attribute">Codebeispiel</span>
-</span></span></foreignObject></svg></code></pre>
-</div>
-</div>
-<ol>
-<li>Zweistufig mit Eingabe des zu erzeugenden Seitennames vor dem Ausfüllen der Formularfelder (auf einer neuen Seite) --&gt; The two-step process</li>
-<li>Aktivierung des Formulars durch Aufruf eines Links oder Buttons --&gt; The one-step process</li>
-</ol>
-<p>Siehe Quellenverweis für eine Auflistung der Parameter und Parameterwerte</p>
-<div class="footnotes">
-<p>Quelle: <a href="https://www.mediawiki.org/wiki/Extension:Page_Forms/Linking_to_forms">https://www.mediawiki.org/wiki/Extension:Page_Forms/Linking_to_forms</a></p>
-</div>
-<footer>Prof. Dr. Stefan Zander</footer>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="16" data-paginate="true" data-header="Kapitel 1: Page Forms" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme" data-marpit-pagination="16" data-marpit-pagination-total="24" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme;">
-<header>Kapitel 1: Page Forms</header>
-<h1>Enabling Editing of Page Content via Forms</h1>
-<p>To get the <em>&quot;edit with form&quot;</em> tab to appear on the page, you must use the parser function <code>{{#default_form:form-name}}</code> where <code>form-name</code> is the name of the form (without the namespace prefix <code>Form:</code>).</p>
-<div class="equalcolumns small">
-<div class="1st-column">
-<h3>a) Based on Category</h3>
-<ul>
-<li>Requires that page belongs to the category</li>
-<li>Main template that defines a page type must contain a <code>[[Category:...]]</code> tag</li>
-<li><code>{{#default_form:form-name}}</code> need to be placed on the <em>category defintion page</em></li>
-<li>Every page that uses the template automatically belongs to the category and can call the form</li>
-<li>Recommended approach</li>
-</ul>
-</div>
-<div class="2nd-column">
-<h3>b) Based on Namespace</h3>
-<ul>
-<li>Every page in a namespace is editable via the specified form</li>
-<li><code>{{#default_form:form-name}}</code> needs to be placed on the <em>page defining the namespace</em>, e.g. <code>Project:User</code><sup>2</sup> for the 'User' namespace</li>
-<li>Categories take precedence over namespaces</li>
-</ul>
-</div>
-<div class="3rd-column">
-<h3>c) Within the Page</h3>
-<ul>
-<li>Directly associate a form with a page</li>
-<li>Usefull when pages belong to multiple categories with different default forms</li>
-<li>Place the default form parser function<br />
-<code>{{#default_form:form-name}}</code><br />
-<em>directly</em> on the page</li>
-<li>Could be combined with templates</li>
-</ul>
-</div>
-</div>
-<div class="footnotes">
-<p>Source: <a href="https://www.mediawiki.org/wiki/Extension:Page_Forms/The_%22edit_with_form%22_tab">https://www.mediawiki.org/wiki/Extension:Page_Forms/The_&quot;edit_with_form&quot;_tab</a></p>
-<p><sup>2</sup> Create the page if it does not exist. The page for the main-namespace is <code>Project:Main</code>.</p>
-</div>
-<footer>Prof. Dr. Stefan Zander</footer>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="17" data-paginate="true" data-header="Kapitel 1: Page Forms" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme" data-marpit-pagination="17" data-marpit-pagination-total="24" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme;">
-<header>Kapitel 1: Page Forms</header>
-<h1>Abfragen von Seiten auf denen ein Property NICHT gesetzt ist</h1>
-<p>Die <code>#ask</code> Abfragealgebra von SMW erlaubt es nicht, Seiten abzufragen, auf denen ein Property <em>nicht</em> gesetzt ist, d.h., keinen Wert hat<sup>1</sup>.</p>
-<p>Hierzu muss man sich eines Tricks mittels <code>#if</code> und <code>#set</code> behelfen<sup>2</sup>:</p>
-<div class="equalcolumns">
-<div class="1st-column">
-<pre><code><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">if</span>:</span> {{{Competitor}}</span><span class="xml">} | | </span><span class="hljs-template-tag">{{#<span class="hljs-name">set:Competitor</span> <span class="hljs-attr">provided</span>=No}}</span><span class="xml"> }}
-</span></span></span></foreignObject></svg></code></pre>
-<p>Das Property <code>Competitor provided</code> muss vom Datentyp <code>Boolean</code> sein. Nicht notwendigerweise</p>
-</div>
-<div class="2nd-column">
-<div class="blue smaller">
-<p>Erklärung:<br />
-<code>#if</code> evaluiert, ob ein übergebener String leer ist oder nicht. Im obigen Beispiel wird der Parameter nicht übergeben, er ist also leer da ihm kein Wert zugeordnet ist, und so wird der <code>else</code>-Teil der <code>#if</code> Parser function ausgeführt und ein Property mit dem angegebenen Wert auf der Zielseite gesetzt.</p>
-</div>
-</div>
-</div>
-<p>Jetzt kann mittels einer Query nach Seiten mit dem gesetzten Wert des Properties (im o.g. Beispiel <code>Competitor provided</code> und <code>No</code>) gesucht werden.</p>
-<pre><code><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">if</span>:</span> test string | value if test string is not empty | value if test string is empty (<span class="hljs-name">or</span> only white space) }}</span><span class="xml">
-</span></span></span></foreignObject></svg></code></pre>
-<div class="footnotes">
-<p><sup>1</sup> Quelle: <a href="https://www.semantic-mediawiki.org/wiki/Thread:Semantic-mediawiki.org:Community_portal/Querying_for_non-empty_values">https://www.semantic-mediawiki.org/wiki/Thread:Semantic-mediawiki.org:Community_portal/Querying_for_non-empty_values</a></p>
-<p><sup>2</sup> Dieser Trick funktioniert nur in Zusammenhang mit Templates und Parametern.</p>
-<p><sup>3</sup> <a href="https://www.mediawiki.org/wiki/Help:Extension:ParserFunctions##if">https://www.mediawiki.org/wiki/Help:Extension:ParserFunctions##if</a></p>
-</div>
-<footer>Prof. Dr. Stefan Zander</footer>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="18" data-paginate="true" data-header="Kapitel 1: Page Forms" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme" data-marpit-pagination="18" data-marpit-pagination-total="24" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme;">
-<header>Kapitel 1: Page Forms</header>
-<h1>Query Forms</h1>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="3" data-paginate="true" data-header="Kapitel 1: MediaWiki" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme" data-marpit-pagination="3" data-marpit-pagination-total="24" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme;">
+<header>Kapitel 1: MediaWiki</header>
+<h1>Was ist ein Wiki ?</h1>
 <div class="definition">
-<p>Query forms are a specific type of page forms and allow to pass individually entered input form data as parameters to query templates. A query form requires a query template, ie., a template with an inline query plus a special page that displays both form data and transcluded template on one wiki page.</p>
-<p>Quelle: Individual Definition</p>
+<p>Ein <mark>Wiki</mark> ist ein <mark>webbasiertes Hypertext-System</mark> mit einer eigenen Markup-Sprache, das es Benutzenden ermöglicht, Webseiten direkt (d.h. ohne Programmierung) und online in einem Web-Browser zu erzeugen, zu lesen, zu verknüpfen und zu ändern.</p>
+<p>Quelle: Angelehnt an Karin Haenelt, &quot;Semantik im Wiki am Beispiel des MediaWiki und Semantic MediaWik&quot;, Fraunhofer, 2011.</p>
 </div>
-<div class="equalcolumns small">
+<div class="equalcolumns bigskip">
 <div class="1st-column">
-<h3>1) A Query Form</h3>
+<h3>Komponenten eines Wiki-Systems</h3>
+<p>Es gibt unterschiedliche Implementierungen von Wiki-Systemen;<br />
+Die am häufigsten verwendeten Komponenten sind</p>
 <ul>
-<li>Defined as a regular page form</li>
-<li>Displays a &quot;Run Query&quot; button</li>
-<li>Tag <code>{{{standard input|run query|label=...}}}</code> allows to customize the &quot;Run Query&quot; button</li>
+<li>Datenbank</li>
+<li>Versionsverwaltung</li>
+<li>Suchfunktion</li>
 </ul>
 </div>
 <div class="2nd-column">
-<h3>2) A Query Template</h3>
+<h3>MediaWiki</h3>
+<p>MediaWiki ist die bedeutenste und weitverbreiteste Implementierung eines Wiki-Systems</p>
 <ul>
-<li>Defines an inline query together with a set of parameters that serve a query conditions</li>
-<li>Parameter values are passed to the query</li>
-<li>Displays the executed query as result</li>
+<li>Open-source Wiki-Software</li>
+<li>Technische Basisplattform der Wikipedia</li>
+<li>Genutzt von zehntausenden Webseiten und Organisationen<sup>1</sup></li>
+</ul>
+</div>
+</div>
+<div class="footnotes">
+<p><sup>1</sup> Quelle: <a href="https://www.mediawiki.org/wiki/MediaWiki/de">https://www.mediawiki.org/wiki/MediaWiki/de</a></p>
+</div>
+<footer>Prof. Dr. Stefan Zander</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="4" data-paginate="true" data-header="Kapitel 1: MediaWiki" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme" data-marpit-pagination="4" data-marpit-pagination-total="24" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme;">
+<header>Kapitel 1: MediaWiki</header>
+<h1>Eigenschaften von Wiki-Systemen</h1>
+<div class="equalcolumns">
+<div class="1st-column">
+<ul>
+<li>Wiki ist ein <strong>Hypertext-System</strong>
+<ul>
+<li>Seiten beinhalten Informationen zu einem Themengebiet</li>
+<li>Darstellung von <strong>thematischen Zusammenhängen</strong> durch Verweise zwischen Seiten<sup>1</sup></li>
+<li>Kennzeichnung ob ein Verweis existiert oder nicht<sup>2</sup></li>
+</ul>
+</li>
+<li>Wiki ist <strong>frei</strong>
+<ul>
+<li>Quelltext: Gnu General Public License</li>
+<li>Jede/r kann im Rahmen der Möglichkeiten tun und lassen was sie will</li>
+</ul>
+</li>
+<li>Wiki ist <strong>kollaborativ</strong>
+<ul>
+<li>Zusammenarbeit mit anderen</li>
+<li>schnelle Informationsbereitstellung und Korrektur</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="2nd-column">
+<ul>
+<li>Ein Wiki ist <strong>niemals vollständig</strong> oder perfekt
+<ul>
+<li>Es unterliegt einem <strong>ständigen Prozess</strong> von Erschaffung und Kollaboration</li>
+<li>Mit einer inkludierten <strong>Versionsverwaltung</strong> der Inhalte<sup>2</sup></li>
+<li>Organisches Wachstum mit Semantic Drift</li>
+</ul>
+</li>
+<li>Wiki ist von Natur aus <strong>demokratisch</strong>
+<ul>
+<li>Jeder hat die gleichen Rechte</li>
+<li>damit erlaubt es eine Zusammenarbeit im Netz ohne Accounts und Passwörter</li>
+</ul>
+</li>
+<li>Wiki ist <strong>erweiterbar</strong>
+<ul>
+<li>modularer Aufbau</li>
+<li>Programmierschnittstellen</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="footnotes">
+<p><sup>1</sup> &quot;Wiki promotes meaningful topic associations between different pages by making page link creation almost intuitively easy&quot;. Bo Leuf, Ward Cunningham, &quot;The Wiki Way: Quick Collaboration on the Web&quot;, Addison-Wesley, 2001.</p>
+<p><sup>2</sup> Das sind große Vorteile gegenüber dem bestehenden Web.</p>
+<p><sup>3</sup> Angelehnt an Rick Hegewald, &quot;Ontologien und (semantische) Wikis&quot;, Problemseminar Ontologie-Management Institut für Informatik - Universität Leipzig</p>
+</div>
+<footer>Prof. Dr. Stefan Zander</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="5" data-paginate="true" data-header="Kapitel 1: MediaWiki" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme" data-marpit-pagination="5" data-marpit-pagination-total="24" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme;">
+<header>Kapitel 1: MediaWiki</header>
+<h1>Sprachelemente</h1>
+<p>Wikis stellen eine Reihe von <mark>Sprachelementen</mark> zur Erstellung und Verwaltung von Inhalten bereit:</p>
+<ul>
+<li>Seiten</li>
+<li>Namensräume</li>
+<li>Kategorien</li>
+<li>Vorlagen</li>
+<li>Magic Words
+<ul>
+<li>Parser Funktionen</li>
+<li>Variablen</li>
+<li>Behavior switches</li>
+</ul>
+</li>
+<li>etc.</li>
+</ul>
+<div class="warning">
+<p><strong>Groß- und Kleinschreibung beachten!</strong><br />
+MediaWiki und damit auch Semantic MediaWiki unterscheidet zwischen Groß- und Kleinschreibung bei Seitennamen etc. in der URL!</p>
+</div>
+<footer>Prof. Dr. Stefan Zander</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="6" data-paginate="true" data-header="Kapitel 1: MediaWiki" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme" data-marpit-pagination="6" data-marpit-pagination-total="24" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme;">
+<header>Kapitel 1: MediaWiki</header>
+<h1>MediaWiki: A Tool for Managing Wikitext</h1>
+<div class="equalcolumns">
+<div class="1st-column">
+<h3>Content Encoding</h3>
+<ul>
+<li>Wiki pages are formatted hypertext documents</li>
+<li>Content is encoded in wikitext using a <em>markdown-like syntax</em></li>
+<li>Wikitext input is converted into HTML output:</li>
+</ul>
+<pre><code class="language-diff"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>[[Link to wiki-page]]
+[[Some page|link with custom text]] 
+[http://example.org Link to an outside URL]
+==Header 1== 
+<span class="hljs-comment">===Header 2=== (etc.)</span>
+&#x27;&#x27;italics&#x27;&#x27;
+&#x27;&#x27;&#x27;bold&#x27;&#x27;&#x27;
+* bulleted list
+# numbered list
+: indentation
+</span></span></foreignObject></svg></code></pre>
+</div>
+<div class="2nd-column">
+<h3>Advanced Formatting Features</h3>
+<ul>
+<li>Rich set of features for controlling content display</li>
+<li>Many HTML-like features supported (<code>&lt;sub&gt;</code>, <code>style</code>, ...)</li>
+<li>Advanced formatting elements:
+<ul>
+<li>Images</li>
+<li>Tables</li>
+</ul>
+<div class="blue">
+<p>See online documentation for details</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<footer>Prof. Dr. Stefan Zander</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="7" data-paginate="true" data-header="Kapitel 1: MediaWiki" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme" data-marpit-pagination="7" data-marpit-pagination-total="24" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme;">
+<header>Kapitel 1: MediaWiki</header>
+<h1>MediaWiki: Page Names</h1>
+<div class="equalcolumns">
+<div class="1st-column">
+<p><strong>Page names</strong> consist of <em>multiple parts</em></p>
+<pre><code><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-symbol">Namespace:</span>Title/Subpagetitle
+</span></span></foreignObject></svg></code></pre>
+</div>
+<div class="2nd-column">
+<p>Example</p>
+<pre><code><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-symbol">User:</span>Denny/Tests
+</span></span></foreignObject></svg></code></pre>
+</div>
+</div>
+<div class="equalcolumns small">
+<div class="1st-column">
+<h3>Namespaces</h3>
+<ul>
+<li>Prefixes, separated from title by colon <code>:</code></li>
+<li>Not all prefixes that end in &quot;:&quot; are namespaces!
+<ul>
+<li>Available prefixes provided by MW, more can be added in configuration</li>
+<li>Default: <code>Main</code> (empty), <code>User</code>, <code>Category</code>, <code>Template</code>, <code>Help</code>, <code>MediaWiki</code>, <code>File</code>, <code>Special</code>, <code>Project</code> (sitename)</li>
+</ul>
+</li>
+<li>Purpose is to distinguish basic &quot;content types&quot;</li>
+<li>Can have aliases (e.g. <code>File:</code> and <code>Image:</code>)</li>
+<li>Every namespace has a talk version: Talk, User talk, ...</li>
+</ul>
+</div>
+<div class="2nd-column">
+<h3>Subpages</h3>
+<ul>
+<li>Postfixes, separated from title by slash “/”</li>
+<li>Not all postfixes after “/” are subpages!
+<ul>
+<li>Enabled for certain namespaces</li>
+<li>By default only for User and all Talk pages</li>
+</ul>
+</li>
+<li>Often not appropriate for organising pages (rigid, hierarchical content structure)</li>
+<li>Small difference to pages with “/” in title
+<ul>
+<li>For example when moving pages</li>
+</ul>
+</li>
 </ul>
 </div>
 <div class="3rd-column">
-<h3>3) The <code>Special:RunQuery</code> Page</h3>
+<h3>Pagetitle</h3>
 <ul>
-<li>Displays query form and results</li>
-<li>Passes the query form input data to the template and displays the transcluded  content on top or below the form</li>
+<li>Defined during page creation</li>
+<li>MediaWiki determines whether page already exists
+<ul>
+<li>For existing pages, the page's content will be displayed</li>
+<li>For non-existend pages, the edit view will be displayed</li>
 </ul>
+</li>
+</ul>
+<div class="warning">
+<p><strong>Page names are case-sensitive</strong><br />
+MediaWiki distinguishes between upper- and lower-case letters in page names!</p>
 </div>
 </div>
-<p>Link to the query form via <code>[[Special:RunQuery/query form name]]</code> or <code>{{#queryformlink:form=query form name}}</code>.<br />
-The parser function is the preferred method as it provides to greatest flexibility.</p>
-
-<div class="footnotes">
-<p>Source: <a href="https://www.mediawiki.org/wiki/Extension:Page_Forms/Creating_query_forms">https://www.mediawiki.org/wiki/Extension:Page_Forms/Creating_query_forms</a></p>
 </div>
 <footer>Prof. Dr. Stefan Zander</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="19" data-paginate="true" data-header="Kapitel 1: Page Forms" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme" data-marpit-pagination="19" data-marpit-pagination-total="24" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme;">
-<header>Kapitel 1: Page Forms</header>
-<h1>Query Forms: Implementation</h1>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="8" data-paginate="true" data-header="Kapitel 1: MediaWiki" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme" data-marpit-pagination="8" data-marpit-pagination-total="24" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme;">
+<header>Kapitel 1: MediaWiki</header>
+<h1>Namespaces</h1>
+<div class="definition">
+<p><mark>Namespaces</mark> are prefixed in a page's URL and determine both the purpose and the model-theoretic semantics of a page. Based on the given namespace, the  MediaWiki engine determines how to process the contents of a page. MediaWiki provides 18 default namespaces<sup>1</sup>.</p>
+<p>Quelle: eigene Definition</p>
+</div>
+<ul>
+<li>Every wiki page belongs to <strong>one specific namespace</strong>
+<ul>
+<li>Namespaces become part of the page's title, e.g., <code>Help:Namespaces/de</code><sup>3</sup>.</li>
+<li>When no namespace is given during page creation, the page will be created in the <strong>main namespace</strong><sup>2</sup>.</li>
+</ul>
+</li>
+<li>Namespaces determine the <strong>purpose</strong> of a page, i.e., how the contents of a page are interpreted by the wiki engine.
+<ul>
+<li>Example: Datatype information in property pages determine whether the specification of property values will lead to the creation of a new wiki page (in the default namespace) or whether property values are treated as data type values.</li>
+<li>The wiki engine can also assess whether a certain <strong>value holds for a property</strong> or not (e.g., in the case of datatype <code>Date</code> or <code>telephone</code> etc.)</li>
+<li>Contents of pages defined in the <code>Template:</code> namespace will be <strong>transcluded</strong> in other pages.</li>
+</ul>
+</li>
+<li>The <code>Special</code> namespace is reserved for pages with fixed functionality (e.g. <code>Special:RunQuery</code>); no editing is possible</li>
+</ul>
+<div class="footnotes">
+<p><sup>1</sup> See <a href="https://www.mediawiki.org/wiki/Help:Namespaces/en#Standard_namespaces">https://www.mediawiki.org/wiki/Help:Namespaces/en#Standard_namespaces</a> for a list of standard namespaces provided by MediaWiki</p>
+<p><sup>2</sup> The main namespace is not displayed in a page's URL but used internally by the mediawiki engine.</p>
+<p><sup>3</sup> Please note how subpages are used to implement <em>mulit-language support</em> on the official MediaWiki help pages.</p>
+</div>
+<footer>Prof. Dr. Stefan Zander</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="9" data-paginate="true" data-header="Kapitel 1: MediaWiki" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme" data-marpit-pagination="9" data-marpit-pagination-total="24" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme;">
+<header>Kapitel 1: MediaWiki</header>
+<h1>MediaWiki: Namespaces (2/2)</h1>
+<ul>
+<li>Namensräume dienen der Gruppierung von Seiten</li>
+<li>Funktionen können auf bestimmte Namensräume eingeschränkt werden</li>
+<li>Mediawiki hat standardmäßig <strong>18 Namensräume</strong></li>
+<li>Textseiten stehen standardmäßig im Namenraum <code>Main</code></li>
+</ul>
+<footer>Prof. Dr. Stefan Zander</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="10" data-paginate="true" data-header="Kapitel 1: MediaWiki" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme" data-marpit-pagination="10" data-marpit-pagination-total="24" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme;">
+<header>Kapitel 1: MediaWiki</header>
+<h1>Categories</h1>
+<div class="definition">
+<p>Categories are pages defined in the <code>Category:</code> namespace and allow for organizing MediaWiki pages in predefined categories.</p>
+<p>Eigene Definition angelehnt an <a href="https://www.mediawiki.org/wiki/Help:Categories">https://www.mediawiki.org/wiki/Help:Categories</a>_</p>
+</div>
+<h4>Category Hierarchies</h4>
+<p>Mediawiki allows to build <strong>category hierarchies</strong>, i.e., it employs super- and sub-category concepts to resemble the 'broader' and 'narrower' relationships between categories known from taxonomical classification systems.</p>
+<p>In order to make a category a sub-category of another category, add <code>[[Category:{Super_category}]]</code> to the sub-category page.</p>
+<p>Example:</p>
+<pre><code><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>On the category<span class="hljs-built_in"> page </span><span class="hljs-string">&#x27;city&#x27;</span>:
+============================
+
+[[Category:Settlement]] --&gt; makes <span class="hljs-string">&#x27;Settlement&#x27;</span> the super category of category <span class="hljs-string">&#x27;city&#x27;</span>
+</span></span></foreignObject></svg></code></pre>
+
+<div class="blue">
+<p>Please note that category hierarchy can be any graph (multi-inheritance, cycles, etc.)</p>
+</div>
+<footer>Prof. Dr. Stefan Zander</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="11" data-paginate="true" data-header="Kapitel 1: MediaWiki" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme" data-marpit-pagination="11" data-marpit-pagination-total="24" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme;">
+<header>Kapitel 1: MediaWiki</header>
+<h1>Working with Categories</h1>
 <div class="equalcolumns small">
 <div class="1st-column">
-<p><strong>Query Form</strong></p>
-<pre><code><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">includeonly</span>&gt;</span>
-</span><span class="hljs-template-variable">{{{<span class="hljs-name">info</span>|query form at top}}}</span><span class="xml">
-</span><span class="hljs-template-variable">{{{<span class="hljs-name">for</span> template|Query_Buchbestellungen}}}</span><span class="xml">
-{|
-! Besteller*in:
-| </span><span class="hljs-template-variable">{{{<span class="hljs-name">field</span>|Besteller|input <span class="hljs-attr">type</span>=tokens|<span class="hljs-attr">property</span>=Besteller
-    |max <span class="hljs-attr">values</span>=<span class="hljs-number">1</span>|values from <span class="hljs-attr">category</span>=Professor}}}</span><span class="xml">
-! Jahr: 
-|</span><span class="hljs-template-variable">{{{<span class="hljs-name">field</span>|Datum|input <span class="hljs-attr">type</span>=combobox|<span class="hljs-attr">property</span>=Bestelldatum
-    |<span class="hljs-attr">default</span>={{#time:Y}}
-    |<span class="hljs-name">values</span>=<span class="hljs-number">2019</span>,<span class="hljs-number">2020</span>,<span class="hljs-number">2021</span>,<span class="hljs-number">2022</span>,<span class="hljs-number">2023</span>,<span class="hljs-number">2024</span>,<span class="hljs-number">2025</span>,<span class="hljs-number">2026</span>,<span class="hljs-number">2027</span>}}}</span><span class="xml">
-|}
-</span><span class="hljs-template-variable">{{{<span class="hljs-name">end</span> template}}}</span><span class="xml">
-<span class="hljs-tag">&lt;/<span class="hljs-name">includeonly</span>&gt;</span>
-</span></span></span></foreignObject></svg></code></pre>
-</div>
-<div class="2nd-column">
-<p><strong>Query template</strong></p>
-<pre><code><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-template-tag">{{#<span class="hljs-name">ask:</span> 
- [[Category:Buchbestellung]]
- [[Besteller::{{{Besteller|+}}}]]
- [[Bestelldatum::&gt;1.1.{{{Datum|1970}}}]]
- [[Bestelldatum::&lt;31.12.{{{Datum|2100}}}]]
- |?Besteller 
- |?Kostenstelle |+<span class="hljs-attr">align</span>=center
- |<span class="hljs-attr">?Bestellstatus</span>=Status |+<span class="hljs-attr">align</span>=center
- |<span class="hljs-attr">?Bestelldatum</span>=Datum |+<span class="hljs-attr">align</span>=right
- |<span class="hljs-attr">mainlabel</span>=-
- |<span class="hljs-attr">format</span>=broadtable
- |<span class="hljs-attr">class</span>=smwtable-clean sortable
- |<span class="hljs-attr">headers</span>=plain
-}}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">includeonly</span>&gt;</span>
-</span></span></span></foreignObject></svg></code></pre>
-</div>
-</div>
-<p class="small"><strong>&quot;Special:RunQuery&quot;-Link</strong></p>
-<pre><code><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-string">[[Special:RunQuery/Query_Buchbestellungen|Meine bisherigen Buchbestellungen aufrufen]]</span>
-</span></span></foreignObject></svg></code></pre>
-<footer>Prof. Dr. Stefan Zander</footer>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="20" data-paginate="true" data-header="Kapitel 1: Page Forms" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme" data-marpit-pagination="20" data-marpit-pagination-total="24" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme;">
-<header>Kapitel 1: Page Forms</header>
-<h1>Query Forms – Teil 2</h1>
-<p>Query Forms kombinieren Formulare mit Templates, in denen eine <code>#ask</code>-Query enthalten ist.<br />
-Die Template Parameter werden mit den Formular-Werten belegt und über eine Spezialseite transkludiert.</p>
-<p>Mittels Query Forms lassen sich die Template-Parameter über Formulareingabeelemente individuell befüllen.</p>
-<p>Eine Spezialseite xxx bindet das Query-Form ein, überigbt deren Werte an das Template und stellt das transkludierte Template im Anschluss auf der Seite dar.</p>
-<p>Wichtig:<br />
-Damit das Query-Template bzw. die Query richtig funktioniert, muss bei den Parametern ein <code>+</code> als Alternative für einen leeren Wert gesetzt werden!</p>
-<pre><code><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>{{#ask:
- <span class="hljs-string">[[Category:BA_Abschlussmodul]]</span> 
- <span class="hljs-string">[[BA_Betreuer::{{{Betreuer|+}}}]]</span>
- <span class="hljs-string">[[BA_Co-Betreuer::{{{Co-Betreuer|+}}}]]</span>
- <span class="hljs-string">[[Status_Verfahren::{{{Status|+}}}]]</span>
- <span class="hljs-string">[[Abschluss_Semester::{{{Semester|+}}}]]</span>
- ...
-</span></span></foreignObject></svg></code></pre>
-<footer>Prof. Dr. Stefan Zander</footer>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="21" data-paginate="true" data-header="Kapitel 1: Page Forms" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme" data-marpit-pagination="21" data-marpit-pagination-total="24" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme;">
-<header>Kapitel 1: Page Forms</header>
-<h1>Formatting of Boolean Values in Queries</h1>
-<p>By default, Boolean values will display as <code>true</code> and <code>false</code> in queries. This can be changed starting with Semantic MediaWiki 2.4.0 by specifying a <mark>format string</mark> to control what is displayed for the true and false values of a property.</p>
-<div class="equalcolumns">
-<div class="1st-column">
-<p>The following <em>formatting options</em> are supported</p>
+<h3>Creating a new Category</h3>
 <ul>
-<li><code>#LOCL</code> formatter (#LOCL to localize the output)</li>
-<li><code>#num</code> formatter (to produce 1 or 0)</li>
-<li><code>#tick</code> formatter (to display ✓ or ✕)</li>
-<li><code>#x</code> formatter (#x to output X that resembles a cross for true)</li>
-<li>Custom label formatter (Using custom labels to define a boolean output and assign a true, false value display)</li>
+<li>Create a new mediawiki page with a distinct name in the <code>Category</code> namespace</li>
+<li>Example<pre><code><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-symbol">Category:</span>Employee
+</span></span></foreignObject></svg></code></pre>
+--&gt; Creates a new page named 'Employee' in the 'Category' namespace</li>
+<li>Enter additional information about the category on its page</li>
 </ul>
-<div class="blue">
-<p>Note that not all result formats may provide support for these formatters.</p>
-</div>
 </div>
 <div class="2nd-column">
-<p><strong>Syntax</strong></p>
-<pre><code><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-template-tag">{{#<span class="hljs-name">ask:</span>
- [[Category:Project]]
- |?Has boolean#&lt;FORMATTER&gt;
+<h3>Adding Wikipages to a Category</h3>
+<p>To make a mediawiki page a member of a category, add a link to the category on the page<sup>1</sup></p>
+<pre><code><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-string">[[Category:Employee]]</span> 
+</span></span></foreignObject></svg></code></pre>
+<p>Adds the current page to the category &quot;Employee&quot;</p>
+<div class="blue">
+<p>Category links can be placed at any location at a wiki page. However, due to maintenance and consistency reasons, it is good practice to define distinct locations in wiki pages for specifying category memberships.</p>
+</div>
+</div>
+<div class="3rd-column">
+<h3>Linking to a Category</h3>
+<p>To create a link to a category, use a leading colon before the category name (without this colon, the current page would be added to the category):</p>
+<pre><code><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-string">[[:Category:Help]]</span>
+</span></span></foreignObject></svg></code></pre>
+<p>--&gt; Link displays as &quot;Category:Help&quot;</p>
+<p>To change the <em>link text</em>, write the text inside the link tag after a pipe:</p>
+<pre><code><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-string">[[:Category:Help|Help category]]</span>
+</span></span></foreignObject></svg></code></pre>
+<p>--&gt; Link displays as &quot;Help category&quot;</p>
+</div>
+</div>
+<footer>Prof. Dr. Stefan Zander</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="12" data-paginate="true" data-header="Kapitel 1: MediaWiki" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme" data-marpit-pagination="12" data-marpit-pagination-total="24" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme;">
+<header>Kapitel 1: MediaWiki</header>
+<h1>Templates</h1>
+<footer>Prof. Dr. Stefan Zander</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="13" data-paginate="true" data-header="Kapitel 1: MediaWiki" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme" data-marpit-pagination="13" data-marpit-pagination-total="24" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme;">
+<header>Kapitel 1: MediaWiki</header>
+<h1>Templates</h1>
+<div class="definition">
+<p>A <strong>template</strong> is a wikipage defined in the <code>Template:</code> namespace that defines content that can be <mark>transcluded</mark> in other wiki pages.</p>
+<p>Quelle: eigene Definition</p>
+</div>
+<dl>
+<dt class="longskip">Templates</dt>
+<dd>... can be created as any wiki page, but must be defined in the <code>Template:</code> namespace</dd>
+<dd>... can contain almost any kind of wiki content</dd>
+<dd>... can have <em>parameters</em>, the values of which will be inserted in the template's content during transclusion</dd>
+<dd>... often used to embed <em>semantic properties</em> or <em>subobjects</em> in Semantic MediaWiki</dd>
+</dl>
+<ul>
+<li>Templates allow for the inclusion of pre-defined content in wiki pages.</li>
+<li>This form of inclusion is called <strong>Transclusion</strong></li>
+</ul>
+<footer>Prof. Dr. Stefan Zander</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="14" data-paginate="true" data-header="Kapitel 1: MediaWiki" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme" data-marpit-pagination="14" data-marpit-pagination-total="24" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme;">
+<header>Kapitel 1: MediaWiki</header>
+<h1>Templates: Transclusion</h1>
+<div class="definition">
+<p><strong>Transclusion</strong> describes the process of embedding content defined in a template into another page. Transcluded content can be customized by <mark>parameters</mark> that are set while invoking a template.</p>
+<p>Quelle: Eigene Definition angelehnt an</p>
+</div>
+<p class="skip">Transcluded content can be controlled by three <mark>distinct commands</mark></p>
+<ul>
+<li><code>&lt;includeonly&gt;</code></li>
+<li><code>&lt;onlyinclude&gt;</code></li>
+<li><code>&lt;noinclude&gt;</code></li>
+</ul>
+<div class="blue skip">
+<p><strong>Always explicitly specify transcluding content</strong><br />
+It is recommended to explicitly markup the content in a template that is to be transcluded by using the provided commands and separate it from supplemental or instructional content that describes the usage of the template.</p>
+</div>
+<footer>Prof. Dr. Stefan Zander</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="15" data-paginate="true" data-header="Kapitel 1: MediaWiki" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme" data-marpit-pagination="15" data-marpit-pagination-total="24" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme;">
+<header>Kapitel 1: MediaWiki</header>
+<h1>Templates: Tutorial Videos</h1>
+<div class="blue">
+<p><strong>Excellent tutorial videos about templates</strong><br />
+YouTube hosts some excellent videos about the basic principles and formatting of templates as well as about the transclusion process and its controlling commands</p>
+<ul>
+<li>Introduction to templates<br />
+<a href="https://youtu.be/IJ4BM5MFXmc">https://youtu.be/IJ4BM5MFXmc</a></li>
+<li>Basic formatting of templates and transclusion commands<br />
+<a href="https://youtu.be/SsLahlGX0Ls">https://youtu.be/SsLahlGX0Ls</a></li>
+<li>Template Variables<br />
+<a href="https://youtu.be/X0QD5HT2qgc">https://youtu.be/X0QD5HT2qgc</a></li>
+</ul>
+</div>
+<footer>Prof. Dr. Stefan Zander</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="16" data-paginate="true" data-header="Kapitel 1: MediaWiki" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme" data-marpit-pagination="16" data-marpit-pagination-total="24" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme;">
+<header>Kapitel 1: MediaWiki</header>
+<h1>Templates in Semantic MediaWiki</h1>
+<ul>
+<li>Templates are often used for <strong>harmonizing</strong>[^1] semantic data and reducing semantic drift
+<ul>
+<li>...by using pre-defined <strong>semantic properties</strong> in a template page</li>
+<li>...and by setting their allowed values through template <strong>parameters</strong> (often in conjunction with Page Forms)</li>
+<li>~&gt; So, every page that transcludes a template contains the same semantic data and structure</li>
+</ul>
+</li>
+</ul>
+<div class="footnotes">
+<p><sup>1</sup> Harmonizing means to make something consistent and compatible</p>
+</div>
+<footer>Prof. Dr. Stefan Zander</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="17" data-paginate="true" data-header="Kapitel 1: MediaWiki" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme" data-marpit-pagination="17" data-marpit-pagination-total="24" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme;">
+<header>Kapitel 1: MediaWiki</header>
+<h1>Customizing Template Content</h1>
+<p>Templates can have <strong>parameters</strong> that allow for passing <em>individual data</em> to template content that is to be transcluded.</p>
+<h3>Specification in Templates</h3>
+<p>Parameters within templates can either be specified...</p>
+<ul>
+<li>anonymously via the <mark>sequence of occurrence</mark>, i.e., <code> {{{1}}}</code>, <code>{{{2}}}</code>, etc.</li>
+<li>via specific <mark>parameter names</mark>, i.e., <code>{{{Parameter_name|default_value}}}</code></li>
+</ul>
+<p>In case a parameter is not set (i.e., it contains no value), a <mark>default value</mark> can be specified <code>{{{Parameter_name|default_value}}}</code>, <code>{{{1|default_value}}}</code></p>
+<p>Please note that parameters in templates need to be specified with <em>three curly brackets</em> <code>{{{Parameter_name||Parameter_number}}}</code> (N.B. '<code>||</code>' means 'OR' and is not part of the parameter syntax)</p>
+<pre><code class="language-plain"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>Syntax:
+=======
+{{{Parameter_name}}}       OR       {{{Parameter_number}}}
+
+Example:
+========
+{{{project}}}              OR       {{{1}}}
+</span></span></foreignObject></svg></code></pre>
+<footer>Prof. Dr. Stefan Zander</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="18" data-paginate="true" data-header="Kapitel 1: MediaWiki" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme" data-marpit-pagination="18" data-marpit-pagination-total="24" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme;">
+<header>Kapitel 1: MediaWiki</header>
+<h1>Creating Templates</h1>
+<p>Every template needs to a have a <strong>unique page name</strong> in the <code>Template:</code> namespace; they can be created as any other wikipage.</p>
+<p>Template URL: <code>{Semantic_MediaWiki_URL}\Template:Template_name</code><br />
+Template Name: <code>Template_name</code></p>
+<pre><code><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="xml"><span class="hljs-comment">&lt;!-- additional content --&gt;</span>
+...
+[[property1::</span><span class="hljs-template-variable">{{{<span class="hljs-name">parameter1</span>}}}</span><span class="xml">]]
+[[property2::</span><span class="hljs-template-variable">{{{<span class="hljs-name">parameter2</span>}}}</span><span class="xml">]]
+... 
+<span class="hljs-comment">&lt;!-- additional content --&gt;</span>
+</span></span></span></foreignObject></svg></code></pre>
+<p>Usage on a different wiki page – without parameters specified:</p>
+<pre><code><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-template-variable">{{<span class="hljs-name">Template_name</span>}}</span><span class="xml">
+</span></span></span></foreignObject></svg></code></pre>
+<p>Usage – with parameters specified on the page where the template it to be transcluded</p>
+<pre><code><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-template-variable">{{<span class="hljs-name">Template_name</span>
+|<span class="hljs-attr">parameter1</span>=value1
+|<span class="hljs-attr">parameter2</span>=value2
+|...
 }}</span><span class="xml">
 </span></span></span></foreignObject></svg></code></pre>
-<p><strong>Examples</strong></p>
-<pre><code><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>|?Has <span class="hljs-built_in">boolean</span><span class="hljs-comment">#LOCL</span>
+<p>Templates can be used in any place in a page.</p>
+<footer>Prof. Dr. Stefan Zander</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="19" data-paginate="true" data-header="Kapitel 1: MediaWiki" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme" data-marpit-pagination="19" data-marpit-pagination-total="24" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme;">
+<header>Kapitel 1: MediaWiki</header>
+<h1>Templates: Syntax</h1>
+<pre><code><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">noinclude</span>&gt;</span> 
+Dies ist die Vorlage zum Anlegen neuer nationaler und europäischer Förderprogramme. 
+Zum Anlegen eines neuen Förderprogramms einfach den folgenden Ausschnitt in den Quelltext 
+der neuen Seite kopieren und die Parameter entsprechend belegen: 
+<span class="hljs-tag">&lt;<span class="hljs-name">pre</span>&gt;</span> 
+  </span><span class="hljs-template-variable">{{<span class="hljs-name">Förderprogramm</span> 
+   |<span class="hljs-attr">Name</span>= 
+   |<span class="hljs-attr">Akronym</span>= 
+   |<span class="hljs-attr">Webseite</span>= 
+   |<span class="hljs-attr">Deadline</span>= 
+   |<span class="hljs-attr">Beschreibung</span>= 
+   |<span class="hljs-attr">Sonstige_Informationen</span>= 
+  }}</span><span class="xml"> 
+<span class="hljs-tag">&lt;/<span class="hljs-name">pre</span>&gt;</span> 
+Das Template sollte im oben dargestellten Format genutzt werden. 
+Bis auf das Attribut Deadline können alle Felder mit Freitext befüllt werden; 
+Das Attribut Deadline erwartet Datumsangaben (nicht &#x27;Ende September&#x27; sondern &#x27;30.09.2016&#x27;). 
+<span class="hljs-tag">&lt;/<span class="hljs-name">noinclude</span>&gt;</span> 
+<span class="hljs-tag">&lt;<span class="hljs-name">includeonly</span>&gt;</span> <span class="hljs-comment">&lt;!-- **** Hier beginnt das eigentliche Template **** --&gt;</span> 
+  [[Category:Förderprogramm]] 
+  [[Name::</span><span class="hljs-template-variable">{{{<span class="hljs-name">Name</span>|}}}</span><span class="xml">]] 
+  [[Akronym::</span><span class="hljs-template-variable">{{{<span class="hljs-name">Akronym</span>|}}}</span><span class="xml">]] 
+  [[Webseite::</span><span class="hljs-template-variable">{{{<span class="hljs-name">Webseite</span>|}}}</span><span class="xml">]] 
+  [[Deadline::</span><span class="hljs-template-variable">{{{<span class="hljs-name">Deadline</span>|}}}</span><span class="xml">]] 
+  [[Beschreibung::</span><span class="hljs-template-variable">{{{<span class="hljs-name">Beschreibung</span>|}}}</span><span class="xml">]] 
+  [[Sonstiges::</span><span class="hljs-template-variable">{{{<span class="hljs-name">Sonstige_Informationen</span>|}}}</span><span class="xml">]] 
+<span class="hljs-tag">&lt;/<span class="hljs-name">includeonly</span>
+</span></span></span></span></foreignObject></svg></code></pre>
+<footer>Prof. Dr. Stefan Zander</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="20" data-paginate="true" data-header="Kapitel 1: MediaWiki" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme" data-marpit-pagination="20" data-marpit-pagination-total="24" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme;">
+<header>Kapitel 1: MediaWiki</header>
+<h1>Concepts</h1>
+<footer>Prof. Dr. Stefan Zander</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="21" data-paginate="true" data-header="Kapitel 1: MediaWiki" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme" data-marpit-pagination="21" data-marpit-pagination-total="24" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme;">
+<header>Kapitel 1: MediaWiki</header>
+<h1>Concepts</h1>
+<div class="definition">
+<p>Concepts are pages in the <code>Concept:</code> namespace and allow to dynamically compute page memberships based on the evaluation of query conditions defined on the concept page.</p>
+<p>Quelle: Eigene Definition angelehnt an <a href="https://www.semantic-mediawiki.org/wiki/Help:Concepts">https://www.semantic-mediawiki.org/wiki/Help:Concepts</a></p>
+</div>
+<p class="skip"></p>
+<ul>
+<li>Sometimes, it is useful to determine memberships to categories based on the occurrence of some specific property values.</li>
+<li>Reviewing whether membership conditions are still satisfied and manually altering categories is cumbersome and error-prone</li>
+</ul>
+<p>Example</p>
+<ul>
+<li>Automatically annotate all currently running projects with a dedicated category based on the evaluation of start and end date</li>
+</ul>
+<footer>Prof. Dr. Stefan Zander</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="22" data-paginate="true" data-header="Kapitel 1: MediaWiki" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme" data-marpit-pagination="22" data-marpit-pagination-total="24" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme;">
+<header>Kapitel 1: MediaWiki</header>
+<h1>Function</h1>
+<dl>
+<dt>Concepts</dt>
+<dd>... are pages defined in the <code>Concept:</code> <strong>namespace</strong></dd>
+<dd>... serve as categories with individually evaluated memberships</dd>
+<dd>... are declared using the <code>#concept</code> parser function</dd>
+<dd>... dynamically link pages to categories based on formulated <strong>query conditions</strong></dd>
+<dd>... conditions are specified in the form of an <code>#ask</code> query</dd>
+<dd>... results of the <code>#ask</code> query automatically become members of the concept</dd>
+<dd>... can be <strong>browsed</strong> to view the contents of some concept – similar to category pages</dd>
+<dd>... can be used in <strong>semantic queries</strong> just like categories</dd>
+<dd>... are very useful in <strong>Page Forms</strong> for defining auto-completion values</dd>
+<dt>Additional Remarks:</dt>
+<dd>Concept pages can have <strong>additional content</strong> (e.g. wikitext) – but this text does not have any effect on the definition of the concept.</dd>
+<dd>The <code>#concept</code> parser function can <em>only</em> be used on pages in the <code>Concept:</code> namespace</dd>
+</dl>
+<footer>Prof. Dr. Stefan Zander</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="23" data-paginate="true" data-header="Kapitel 1: MediaWiki" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme" data-marpit-pagination="23" data-marpit-pagination-total="24" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme;">
+<header>Kapitel 1: MediaWiki</header>
+<h1>Working with Concepts</h1>
 
-|?Praxisphase_absolviert<span class="hljs-comment">#tick=Fertig</span>
-</span></span></foreignObject></svg></code></pre>
-</div>
-</div>
-<div class="footnotes">
-<p>Source: <a href="https://www.semantic-mediawiki.org/wiki/Help:Type_Boolean">https://www.semantic-mediawiki.org/wiki/Help:Type_Boolean</a></p>
-</div>
-<footer>Prof. Dr. Stefan Zander</footer>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="22" data-paginate="true" data-header="Kapitel 1: Page Forms" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme" data-marpit-pagination="22" data-marpit-pagination-total="24" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme;">
-<header>Kapitel 1: Page Forms</header>
-<h1>Multiple Values for the same Field</h1>
-<p>Use <code>\s</code> as new delimiter to insert a space between the single values.</p>
-<div class="footnotes">
-<p>Source: <a href="https://www.mediawiki.org/wiki/Extension:Page_Forms/Page_Forms_and_templates#Multiple_values_for_the_same_field">https://www.mediawiki.org/wiki/Extension:Page_Forms/Page_Forms_and_templates#Multiple_values_for_the_same_field</a></p>
-</div>
-<footer>Prof. Dr. Stefan Zander</footer>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="23" data-paginate="true" data-header="Kapitel 1: Page Forms" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme" data-marpit-pagination="23" data-marpit-pagination-total="24" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme;">
-<header>Kapitel 1: Page Forms</header>
-<h1>Tipps for Working with Dates and Page Forms</h1>
-<h2>Using the current date in an input element<sup>1</sup></h2>
-<p>Using input type <code>datepicker</code>, it is possible to set the <em>current date</em> as default value in the input element using the <code>#time</code> parser function<sup>2</sup> of the <code>Extension:ParserFunctions</code><sup>3</sup></p>
-<p>Example:</p>
-<pre><code><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="xml">! Datum: 
-| </span><span class="hljs-template-variable">{{{<span class="hljs-name">field</span>|Datum|input <span class="hljs-attr">type</span>=datepicker|<span class="hljs-attr">property</span>=Bestelldatum|date <span class="hljs-attr">format</span>=dd.mm.yy|<span class="hljs-attr">default</span>={{#time:d.m.Y}} }}}</span><span class="xml">
-|}
-</span></span></span></foreignObject></svg></code></pre>
-<div class="blue">
-<p><strong>Please note</strong>:<br />
-Regardless of the formatting pattern set via the <code>date format=...</code> property, <code>datepicker</code> always returns the data in <code>yyyy/mm/dd</code> format.</p>
-</div>
-<div class="footnotes">
-<p><sup>1</sup> <a href="https://www.mediawiki.org/wiki/Topic:Put4ygy4m0kw279f">https://www.mediawiki.org/wiki/Topic:Put4ygy4m0kw279f</a></p>
-<p><sup>2</sup> <a href="https://www.mediawiki.org/wiki/Help:Extension:ParserFunctions##time">https://www.mediawiki.org/wiki/Help:Extension:ParserFunctions##time</a></p>
-<p><sup>3</sup> <a href="https://www.mediawiki.org/wiki/Help:Extension:ParserFunctions">https://www.mediawiki.org/wiki/Help:Extension:ParserFunctions</a></p>
-</div>
-<footer>Prof. Dr. Stefan Zander</footer>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="24" data-paginate="true" data-header="Kapitel 1: Page Forms" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme" data-marpit-pagination="24" data-marpit-pagination-total="24" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme;">
-<header>Kapitel 1: Page Forms</header>
-<h1>Using an Individual Display Format for Date and Time</h1>
-<p>This tip helps you to <em>reformat</em> the output of dates which is by default <code>YEAR/MONTH/DAY</code> (e.g. 2017/06/27) and still keep a proper annotation for it.</p>
-<p>Prerequisite is that you have the extension <code>ParserFunctions</code> installed on your wiki.</p>
 <div class="equalcolumns">
 <div class="1st-column">
-<h3>1.) ISO-Style</h3>
-<pre><code><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>[[Startdate::{{{startdate|}}}|{{#time:Y-m-d|{{{startdate}}}}}]]
-</span></span></foreignObject></svg></code></pre>
-<p>--&gt; 2011-06-27</p>
+<h3>Creating a Concept</h3>
+<pre><code><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-template-tag">{{#<span class="hljs-name">concept:</span>
+ [[Category:Event]]
+ [[Has planned start::&gt; Jan 1 2012]]
+ [[Has planned finish::&lt; Dec 31 2012]] 
+ |Semantic MediaWiki Cons in the year <span class="hljs-number">2012</span> 
+  that have been announced on this wiki.
+}}</span><span class="xml">
+</span></span></span></foreignObject></svg></code></pre>
+<ul>
+<li>A page with the <em>concept name</em> has to be created in the <code>Concept:</code> namespace</li>
+<li>Parser function <code>#concept</code> is used to define concepts.
+<ul>
+<li>It's first parameter is a <em>concept definition</em> that defines the conditions for selecting pages</li>
+<li>It's second parameter is a <em>short text</em> that describes the concept.</li>
+</ul>
+</li>
+<li>A list of matching pages is printed on the concept page</li>
+</ul>
 </div>
 <div class="2nd-column">
-<h3>2.) German-Style</h3>
-<pre><code><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>[[Startdate::{{{startdate|}}}|{{#time:d.m.Y|{{{startdate}}}}}]]
-</span></span></foreignObject></svg></code></pre>
-<p>--&gt; 27.06.2011</p>
-</div>
-</div>
-<p>The <mark>parser function</mark> <code>#time</code> takes a date and/or time (in the Gregorian calendar) and formats it according to the syntax given<sup>2,3</sup>.</p>
-<pre><code><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="xml">Format: </span><span class="hljs-template-tag">{{#<span class="hljs-name">time:</span> format string | date/time object | language code | local }}</span><span class="xml">
+<h3>Using a Concept</h3>
+<pre><code><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-template-tag">{{#<span class="hljs-name">ask:</span>
+ [[Concept:Semantic MediaWiki Cons 2012]]
+ |?Has <span class="hljs-attr">location</span>=Location 
+ |<span class="hljs-attr">format</span>=table
+ |<span class="hljs-attr">headers</span>=plain 
+ |<span class="hljs-attr">mainlabel</span>=Event
+}}</span><span class="xml">
 </span></span></span></foreignObject></svg></code></pre>
-<div class="footnotes">
-<p>Source: <a href="https://www.semantic-mediawiki.org/wiki/Help:Date_formatting">https://www.semantic-mediawiki.org/wiki/Help:Date_formatting</a></p>
-<p><sup>2</sup> A full list of parameters is available on the help page: <a href="https://www.mediawiki.org/wiki/Help:Extension:ParserFunctions##time">https://www.mediawiki.org/wiki/Help:Extension:ParserFunctions##time</a></p>
-<p><sup>3</sup> In case the <code>date/time object</code> parameter is missing, the value of the magic word <code>{{CURRENTTIMESTAMP}}</code> (i.e., the time the page was last rendered into HTML) will be used.</p>
+<p><strong>Result</strong></p>
+<table>
+<thead>
+<tr>
+<th>Event</th>
+<th>Location</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SMWCon Fall 2012</td>
+<td>Cologne, Germany</td>
+</tr>
+<tr>
+<td>SMWCon Spring 2012</td>
+<td>Carlsbad, CA, USA</td>
+</tr>
+</tbody>
+</table>
+<p><mark>TODO: Will concepts be displayed on wiki pages?</mark></p>
 </div>
+</div>
+<div class="footnotes">
+<p>Source: Example taken from &lt;...&gt;</p>
+</div>
+<footer>Prof. Dr. Stefan Zander</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="24" data-paginate="true" data-header="Kapitel 1: MediaWiki" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme" data-marpit-pagination="24" data-marpit-pagination-total="24" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme;">
+<header>Kapitel 1: MediaWiki</header>
+<h1>Example 2: Concept for all currently running Projects</h1>
+<p>Instead of annotating all currently running projects with a specific category (that certainly will be invalid for some projects after a certain amount of time), we can define a dynamic category in form of a concept.</p>
+<pre><code><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>{{#concept:
+ [[Category:Project]]
+ [[Has planned start::&lt; {{CURRENTYEAR}}-{{CURRENTMONTH}}-{{CURRENTDAY}}]]
+ [[Has planned finish::&gt; {{CURRENTYEAR}}-{{CURRENTMONTH}}-{{CURRENTDAY}}]]
+ |All currently running projects
+}}
+</span></span></foreignObject></svg></code></pre>
 <footer>Prof. Dr. Stefan Zander</footer>
 </section>
 <script>!function(){"use strict";let t=void 0;function e(e){let r=!1;Array.from(document.querySelectorAll("svg[data-marpit-svg]"),i=>{const{children:o,clientHeight:n,clientWidth:a,viewBox:s}=i;i.style.transform||(i.style.transform="translateZ(0)");const l=e||window!==window.parent&&window.parent.marpitSVGPolyfillZoomFactor||i.currentScale||1;t!==l&&(t=l,r=l);const c=s.baseVal.width/l,d=s.baseVal.height/l,p=Math.min(n/d,a/c);for(let t=0;t<o.length;t+=1){const{style:e}=o[t].firstChild;e.position||(e.position="fixed"),e.transformOrigin||(e.transformOrigin="0 0"),e.transform=`scale(${p}) translateZ(0)`}}),!1!==r&&Object.defineProperty(window,"marpitSVGPolyfillZoomFactor",{configurable:!0,value:r})}const r=(t,e,r)=>{if(t.getAttribute(e)!==r)return t.setAttribute(e,r),!0};function i(t=!0){for(const t of"Apple Computer, Inc."===navigator.vendor?[e]:[])t();Array.from(document.querySelectorAll('svg[data-marp-fitting="svg"]'),t=>{var e;const i=t.firstChild,o=i.firstChild,{scrollWidth:n,scrollHeight:a}=o;let s,l=1;if(t.hasAttribute("data-marp-fitting-code")&&(s=null===(e=t.parentElement)||void 0===e?void 0:e.parentElement),t.hasAttribute("data-marp-fitting-math")&&(s=t.parentElement),s){const t=getComputedStyle(s),e=Math.ceil(s.clientWidth-parseFloat(t.paddingLeft||"0")-parseFloat(t.paddingRight||"0"));e&&(l=e)}const c=Math.max(n,l),d=Math.max(a,1),p=`0 0 ${c} ${d}`;r(i,"width",""+c),r(i,"height",""+d),r(t,"preserveAspectRatio",getComputedStyle(t).getPropertyValue("--preserve-aspect-ratio")||"xMinYMin meet"),r(t,"viewBox",p)&&t.classList.toggle("__reflow__")}),t&&window.requestAnimationFrame(()=>i(t))}!function(){if("undefined"==typeof window)throw new Error("Marp Core's browser script is valid only in browser context.");window.marpCoreBrowserScript?console.warn("Marp Core's browser script has already executed."):(Object.defineProperty(window,"marpCoreBrowserScript",{value:!0}),i())}()}();
-</script></foreignObject></svg></div><div class="bespoke-marp-note" data-index="3" tabindex="0"><p>The process to do that contains the following steps:</p></div><div class="bespoke-marp-note" data-index="4" tabindex="0"><p>Motivation: _Displaying properties of a specific subobject's parent page_</p><p>Solution: _Use ==subqueries== to query for certain, characteristic subobject properties (=subproperties)_</p><p>When you want to query for (parent) pages that have certain subobject properties (===subproperties==), you can use subqueries:</p></div><div class="bespoke-marp-note" data-index="15" tabindex="0"><p>- Best used in conjunction with a template that defines the category</p><p>- ==TODO: What happens with sub categories?==</p></div><div class="bespoke-marp-note" data-index="17" tabindex="0"><p>Once the query form has been created, you can link to it via</p></div><script>!function(){"use strict";var e=function(e,t){var n,r=1===(e.parent||e).nodeType?e.parent||e:document.querySelector(e.parent||e),a=[].filter.call("string"==typeof e.slides?r.querySelectorAll(e.slides):e.slides||r.children,(function(e){return"SCRIPT"!==e.nodeName})),s={},i=function(e,t){return(t=t||{}).index=a.indexOf(e),t.slide=e,t},o=function(e,t){s[e]=(s[e]||[]).filter((function(e){return e!==t}))},l=function(e,t){return(s[e]||[]).reduce((function(e,n){return e&&!1!==n(t)}),!0)},c=function(e,t){a[e]&&(n&&l("deactivate",i(n,t)),n=a[e],l("activate",i(n,t)))},d=function(e,t){var r=a.indexOf(n)+e;l(e>0?"next":"prev",i(n,t))&&c(r,t)},u={off:o,on:function(e,t){return(s[e]||(s[e]=[])).push(t),o.bind(null,e,t)},fire:l,slide:function(e,t){if(!arguments.length)return a.indexOf(n);l("slide",i(a[e],t))&&c(e,t)},next:d.bind(null,1),prev:d.bind(null,-1),parent:r,slides:a,destroy:function(e){l("destroy",i(n,e)),s={}}};return(t||[]).forEach((function(e){e(u)})),n||c(0),u};function t(e){e.parent.classList.add("bespoke-marp-parent"),e.slides.forEach(e=>e.classList.add("bespoke-marp-slide")),e.on("activate",t=>{const n=t.slide,r=!n.classList.contains("bespoke-marp-active");e.slides.forEach(e=>{e.classList.remove("bespoke-marp-active"),e.setAttribute("aria-hidden","true")}),n.classList.add("bespoke-marp-active"),n.removeAttribute("aria-hidden"),r&&(n.classList.add("bespoke-marp-active-ready"),document.body.clientHeight,n.classList.remove("bespoke-marp-active-ready"))})}function n(e){let t=0,n=0;Object.defineProperty(e,"fragments",{enumerable:!0,value:e.slides.map(e=>[null,...e.querySelectorAll("[data-marpit-fragment]")])});const r=r=>void 0!==e.fragments[t][n+r],a=(r,a)=>{t=r,n=a,e.fragments.forEach((e,t)=>{e.forEach((e,n)=>{if(null==e)return;const s=t<r||t===r&&n<=a;e.setAttribute("data-bespoke-marp-fragment",s?"active":"inactive"),t===r&&n===a?e.setAttribute("data-bespoke-marp-current-fragment","current"):e.removeAttribute("data-bespoke-marp-current-fragment")})}),e.fragmentIndex=a;const s={slide:e.slides[r],index:r,fragments:e.fragments[r],fragmentIndex:a};e.fire("fragment",s)};e.on("next",({fragment:s=!0})=>{if(s){if(r(1))return a(t,n+1),!1;const s=t+1;e.fragments[s]&&a(s,0)}else{const r=e.fragments[t].length;if(n+1<r)return a(t,r-1),!1;const s=e.fragments[t+1];s&&a(t+1,s.length-1)}}),e.on("prev",({fragment:s=!0})=>{if(r(-1)&&s)return a(t,n-1),!1;const i=t-1;e.fragments[i]&&a(i,e.fragments[i].length-1)}),e.on("slide",({index:t,fragment:n})=>{let r=0;if(void 0!==n){const a=e.fragments[t];if(a){const{length:e}=a;r=-1===n?e-1:Math.min(Math.max(n,0),e-1)}}a(t,r)}),a(0,0)}var r=function(e,t,n){return e(n={path:t,exports:{},require:function(e,t){return function(){throw new Error("Dynamic requires are not currently supported by @rollup/plugin-commonjs")}(null==t&&n.path)}},n.exports),n.exports}((function(e){
+</script></foreignObject></svg></div><div class="bespoke-marp-note" data-index="2" tabindex="0"><p>### Eigenschaften (1/2)
+
+- Hypertext-System mit eigener, einfach erlernbaren **Markup-Sprache**
+- Inhalte sind frei erweiter-, les- und veränderbar
+- Die Wiki-Engine ist ein vereinfachtes Content-Management-System
+- Ein Benutzer kann **jede Seite** eines Wikis verändern oder neue Seiten erstellen
+
+::: footnotes
+^1^ Bo Leuf, Ward Cunningham, &quot;The Wiki Way: Quick Collaboration on the Web&quot;,	Addison-Wesley, 2001.
+
+^2^ Angelehnt an Rick Hegewald, &quot;Ontologien und (semantische) Wikis&quot;, Problemseminar Ontologie-Management Institut für Informatik - Universität Leipzig
+:::</p></div><div class="bespoke-marp-note" data-index="9" tabindex="0"><p>!!! Example
+    **Example**  
+    Defining that city is a special form of settlement (ie., sub-category), enter
+    `[[Category:Settlement]]` on the `Category:City` page to make `Settlement` the super category of `City`</p></div><div class="bespoke-marp-note" data-index="13" tabindex="0"><p>MediaWiki provides distinct commands (`&lt;include_only/&gt;`, `&lt;no_include/&gt;`) to control the transclusion of template content and separate it from e.g. instructional content on how to use the template.</p></div><div class="bespoke-marp-note" data-index="18" tabindex="0"><p>The following example displays a template with named parameters for entering new research grants</p></div><div class="bespoke-marp-note" data-index="22" tabindex="0"><p>Defining and using the concept named `Semantic MediaWiki Cons 2012` in an `#ask` query to display the location of all SMW conferences held in 2012:</p></div><script>!function(){"use strict";var e=function(e,t){var n,r=1===(e.parent||e).nodeType?e.parent||e:document.querySelector(e.parent||e),a=[].filter.call("string"==typeof e.slides?r.querySelectorAll(e.slides):e.slides||r.children,(function(e){return"SCRIPT"!==e.nodeName})),s={},i=function(e,t){return(t=t||{}).index=a.indexOf(e),t.slide=e,t},o=function(e,t){s[e]=(s[e]||[]).filter((function(e){return e!==t}))},l=function(e,t){return(s[e]||[]).reduce((function(e,n){return e&&!1!==n(t)}),!0)},c=function(e,t){a[e]&&(n&&l("deactivate",i(n,t)),n=a[e],l("activate",i(n,t)))},d=function(e,t){var r=a.indexOf(n)+e;l(e>0?"next":"prev",i(n,t))&&c(r,t)},u={off:o,on:function(e,t){return(s[e]||(s[e]=[])).push(t),o.bind(null,e,t)},fire:l,slide:function(e,t){if(!arguments.length)return a.indexOf(n);l("slide",i(a[e],t))&&c(e,t)},next:d.bind(null,1),prev:d.bind(null,-1),parent:r,slides:a,destroy:function(e){l("destroy",i(n,e)),s={}}};return(t||[]).forEach((function(e){e(u)})),n||c(0),u};function t(e){e.parent.classList.add("bespoke-marp-parent"),e.slides.forEach(e=>e.classList.add("bespoke-marp-slide")),e.on("activate",t=>{const n=t.slide,r=!n.classList.contains("bespoke-marp-active");e.slides.forEach(e=>{e.classList.remove("bespoke-marp-active"),e.setAttribute("aria-hidden","true")}),n.classList.add("bespoke-marp-active"),n.removeAttribute("aria-hidden"),r&&(n.classList.add("bespoke-marp-active-ready"),document.body.clientHeight,n.classList.remove("bespoke-marp-active-ready"))})}function n(e){let t=0,n=0;Object.defineProperty(e,"fragments",{enumerable:!0,value:e.slides.map(e=>[null,...e.querySelectorAll("[data-marpit-fragment]")])});const r=r=>void 0!==e.fragments[t][n+r],a=(r,a)=>{t=r,n=a,e.fragments.forEach((e,t)=>{e.forEach((e,n)=>{if(null==e)return;const s=t<r||t===r&&n<=a;e.setAttribute("data-bespoke-marp-fragment",s?"active":"inactive"),t===r&&n===a?e.setAttribute("data-bespoke-marp-current-fragment","current"):e.removeAttribute("data-bespoke-marp-current-fragment")})}),e.fragmentIndex=a;const s={slide:e.slides[r],index:r,fragments:e.fragments[r],fragmentIndex:a};e.fire("fragment",s)};e.on("next",({fragment:s=!0})=>{if(s){if(r(1))return a(t,n+1),!1;const s=t+1;e.fragments[s]&&a(s,0)}else{const r=e.fragments[t].length;if(n+1<r)return a(t,r-1),!1;const s=e.fragments[t+1];s&&a(t+1,s.length-1)}}),e.on("prev",({fragment:s=!0})=>{if(r(-1)&&s)return a(t,n-1),!1;const i=t-1;e.fragments[i]&&a(i,e.fragments[i].length-1)}),e.on("slide",({index:t,fragment:n})=>{let r=0;if(void 0!==n){const a=e.fragments[t];if(a){const{length:e}=a;r=-1===n?e-1:Math.min(Math.max(n,0),e-1)}}a(t,r)}),a(0,0)}var r=function(e,t,n){return e(n={path:t,exports:{},require:function(e,t){return function(){throw new Error("Dynamic requires are not currently supported by @rollup/plugin-commonjs")}(null==t&&n.path)}},n.exports),n.exports}((function(e){
 /*!
   * screenfull
   * v5.0.2 - 2020-02-13
@@ -796,5 +858,5 @@ Regardless of the formatting pattern set via the <code>date format=...</code> pr
   OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
   PERFORMANCE OF THIS SOFTWARE.
   ***************************************************************************** */function H(e,t,n,r){return new(n||(n=Promise))((function(a,s){function i(e){try{l(r.next(e))}catch(e){s(e)}}function o(e){try{l(r.throw(e))}catch(e){s(e)}}function l(e){var t;e.done?a(e.value):(t=e.value,t instanceof n?t:new n((function(e){e(t)}))).then(i,o)}l((r=r.apply(e,t||[])).next())}))}let W=void 0;const J=()=>(void 0===W&&(W="wakeLock"in navigator&&navigator.wakeLock),W),_=()=>H(void 0,void 0,void 0,(function*(){const e=J();if(e)try{const t=yield e.request("screen");return t.addEventListener("release",()=>{console.debug("[Marp CLI] Wake Lock was released")}),console.debug("[Marp CLI] Wake Lock is active"),t}catch(e){console.warn(e)}return null}));function G(){return H(this,void 0,void 0,(function*(){if(!J())return;let e;const t=()=>{e&&"visible"===document.visibilityState&&_()};return document.addEventListener("visibilitychange",t),document.addEventListener("fullscreenchange",t),e=yield _(),e}))}const Q=[f.Normal,f.Presenter,f.Next];!function(r=document.getElementById("p")){document.body.setAttribute("data-bespoke-view",(()=>{switch(h("view")){case"next":return f.Next;case"presenter":return f.Presenter;default:return f.Normal}})());const i=(e=>{const t=h(e);return g({[e]:void 0}),t})("sync")||void 0,c=!1,u=!0,m=e(r,((...e)=>{const t=Q.findIndex(e=>p()===e);if(t<0)throw new Error("Invalid view");return e.map(([e,n])=>e[t]&&n).filter(e=>e)})([[u,u,c],B({key:i})],[[u,u,u],U(r)],[[u,u,c],o],[[u,u,u],t],[[u,c,c],s()],[[u,u,u],l],[[u,u,u],Y({history:!1})],[[u,u,c],d()],[[u,u,c],a],[[u,c,c],V],[[u,u,c],z()],[[u,c,c],b()],[[u,u,u],n],[[u,u,c],G]));window.addEventListener("beforeunload",()=>g({sync:m.syncKey})),window.addEventListener("unload",()=>m.destroy())}()}();
-</script><script>window.__marpCliWatchWS="ws://localhost:37717/7e5a9bbcb17921e82805b1a386e8138084af79c686ff08e33fcbded32a5e24ac";!function(){"use strict";const e=(n,o=!1)=>{const t=new WebSocket(n);return t.addEventListener("open",()=>{console.info("[Marp CLI] Observing the change of file..."),o&&location.reload()}),t.addEventListener("close",()=>{console.warn("[Marp CLI] WebSocket for file watcher was disconnected. Try re-connecting in 5000ms..."),setTimeout(()=>e(n,!0),5e3)}),t.addEventListener("message",e=>{"reload"===e.data&&location.reload()}),t};!function(){const n=window.__marpCliWatchWS;if(n)e(n)}()}();
+</script><script>window.__marpCliWatchWS="ws://localhost:37717/39af03516aee6c93716205f7c345a892af3a98e70caa6f80d5e285c0cd78a75e";!function(){"use strict";const e=(n,o=!1)=>{const t=new WebSocket(n);return t.addEventListener("open",()=>{console.info("[Marp CLI] Observing the change of file..."),o&&location.reload()}),t.addEventListener("close",()=>{console.warn("[Marp CLI] WebSocket for file watcher was disconnected. Try re-connecting in 5000ms..."),setTimeout(()=>e(n,!0),5e3)}),t.addEventListener("message",e=>{"reload"===e.data&&location.reload()}),t};!function(){const n=window.__marpCliWatchWS;if(n)e(n)}()}();
 </script></body></html>

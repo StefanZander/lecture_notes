@@ -9,7 +9,7 @@
 
 Problem
 
-* Sometimes, it is useful to determine memberships to categories based on the occurence of some specific property values.
+* Sometimes, it is useful to determine memberships to categories based on the occurrence of some specific property values.
 * Reviewing whether membership conditions are still satisfied and manually altering categories is cumbersome and error-prone
 
 Use Case

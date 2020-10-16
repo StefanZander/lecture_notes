@@ -423,12 +423,13 @@ To get the _"edit with form"_ tab to appear on the page, you must use the parser
 ::::: equalcolumns small
 :::: 1st-column
 ### a) Based on Category
-- Recommended approach
-- Requires that a page belongs to that category
+- Requires that page belongs to the category
 - Main template that defines a page type must contain a `[[Category:...]]` tag
 - `{{#default_form:form-name}}` need to be placed on the _category defintion page_
-- Every page that uses a template automatically belongs to that category and uses the form
-- ==TODO: What happens with sub categories?==
+- Every page that uses the template automatically belongs to the category and can call the form
+- Recommended approach
+<!-- - Best used in conjunction with a template that defines the category -->
+<!-- - ==TODO: What happens with sub categories?== -->
 ::::
 :::: 2nd-column
 ### b) Based on Namespace
@@ -532,6 +533,61 @@ The parser function is the preferred method as it provides to greatest flexibili
 ::: footnotes
 Source: https://www.mediawiki.org/wiki/Extension:Page_Forms/Creating_query_forms
 :::
+
+
+---
+# Query Forms: Implementation
+
+::::: equalcolumns small
+:::: 1st-column
+**Query Form**
+```
+<includeonly>
+{{{info|query form at top}}}
+{{{for template|Query_Buchbestellungen}}}
+{|
+! Besteller*in:
+| {{{field|Besteller|input type=tokens|property=Besteller
+    |max values=1|values from category=Professor}}}
+! Jahr: 
+|{{{field|Datum|input type=combobox|property=Bestelldatum
+    |default={{#time:Y}}
+    |values=2019,2020,2021,2022,2023,2024,2025,2026,2027}}}
+|}
+{{{end template}}}
+</includeonly>
+```
+::::
+:::: 2nd-column
+**Query template** 
+```
+{{#ask: 
+ [[Category:Buchbestellung]]
+ [[Besteller::{{{Besteller|+}}}]]
+ [[Bestelldatum::>1.1.{{{Datum|1970}}}]]
+ [[Bestelldatum::<31.12.{{{Datum|2100}}}]]
+ |?Besteller 
+ |?Kostenstelle |+align=center
+ |?Bestellstatus=Status |+align=center
+ |?Bestelldatum=Datum |+align=right
+ |mainlabel=-
+ |format=broadtable
+ |class=smwtable-clean sortable
+ |headers=plain
+}}</includeonly>
+```
+::::
+:::::
+
+**"Special:RunQuery"-Link** {.small}
+```
+[[Special:RunQuery/Query_Buchbestellungen|Meine bisherigen Buchbestellungen aufrufen]]
+```
+
+
+
+
+
 
 ---
 # Query Forms – Teil 2

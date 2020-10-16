@@ -52,7 +52,7 @@ This form of inclusion is called **Transclusion**
 !!! warning
     **Definition**: >>**Transclusion**<<  
     Transclusion describes the process of embedding content defined in a template into another page. 
-    Transcluded content can be paramterized by specifying individual values for the parameters defined in the template page.  
+    Transcluded content can be parameterized by specifying individual values for the parameters defined in the template page.  
 
 !!! note
     **Explanatory Video about Transclusion**  
@@ -156,7 +156,7 @@ Templates can have **parameters** that allow for passing individual data to temp
 #### Specification in Templates
 
 Parameters within templates can either be specified 
-: ... anonymously via the sequence of occurence, i.e., `:::diff {{{1}}}`, `:::diff {{{2}}}`, etc.
+: ... anonymously via the sequence of occurrence, i.e., `:::diff {{{1}}}`, `:::diff {{{2}}}`, etc.
 : ... via specific parameter names, i.e., `:::diff {{{Parameter_name|default_value}}}`
 
 Please note that parameters in templates need to be specified with three curly brackets `{{{Prameter_name||Parameter_number}}}` (N.B. '`||`' means 'OR' and is not part of the parameter syntax)
@@ -207,7 +207,7 @@ Templates can be used in any place in a page.
 
 
 !!! Note
-    **Allways explicitly specifiy transcluding content**  
+    **Always explicitly specify transcluding content**  
     It is recommended to explicitly markup the content in a template that is to be transcluded and separate it from supplemental or instructional content that describes the usage of the template.  
     MediaWiki provides distinct commands (`<include_only/>`, `<no_include/>`) to control the transclusion of template content and separate it from e.g. instructional content on how to use the template.
 
