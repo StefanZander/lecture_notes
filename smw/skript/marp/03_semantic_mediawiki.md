@@ -239,7 +239,7 @@ User:Denny/Tests
 
 ::::: equalcolumns small
 :::: 1st-column
-### Namespaces
+### Namespace
 - Prefixes, separated from title by colon `:`
 - Not all prefixes that end in ":" are namespaces!
     - Available prefixes provided by MW, more can be added in configuration
@@ -249,7 +249,7 @@ User:Denny/Tests
 - Every namespace has a talk version: Talk, User talk, ...
 ::::
 :::: 2nd-column
-### Subpages
+### Subpage
 - Postfixes, separated from title by slash “/”
 - Not all postfixes after “/” are subpages!
     - Enabled for certain namespaces
@@ -280,7 +280,6 @@ MediaWiki distinguishes between upper- and lower-case letters in page names!
 
 Quelle: eigene Definition
 :::
-
 - Every wiki page belongs to **one specific namespace**
     - Namespaces become part of the page's title, e.g., `Help:Namespaces/de`^3^.
     - When no namespace is given during page creation, the page will be created in the **main namespace**^2^.
@@ -319,7 +318,17 @@ Categories are pages defined in the `Category:` namespace and allow for organizi
 Eigene Definition angelehnt an <https://www.mediawiki.org/wiki/Help:Categories>_  
 :::
 
-#### Category Hierarchies
+{.shortskip}
+- MediaWiki ermöglicht das Klassifizieren von Seiten durch Kategorien
+- Die Zuordnung einer Seite zu einer Kategorie erfolgt durch Einfügen von `[[Category:Categoryname]]` im Quelltext der Seite
+- Eine Seite kann mehreren Kategorien zugeordnet werden
+- Kategorien werden am Ende der Seite angezeigt
+- Eine Hierarchiebildung der Kategorien ist durch Zuordnung von Kategorien zu Kategorien möglich
+
+
+
+---
+# Category Hierarchies
 
 Mediawiki allows to build **category hierarchies**, i.e., it employs super- and sub-category concepts to resemble the 'broader' and 'narrower' relationships between categories known from taxonomical classification systems. 
 
@@ -358,6 +367,7 @@ Please note that category hierarchy can be any graph (multi-inheritance, cycles,
     ```
     --> Creates a new page named 'Employee' in the 'Category' namespace
 - Enter additional information about the category on its page
+- Link it to a category hierarchy 
 ::::
 :::: 2nd-column
 ### Adding Wikipages to a Category
@@ -415,7 +425,7 @@ Templates {.longskip}
 # Templates: Transclusion
 
 ::: definition
-__Transclusion__ describes the process of embedding content defined in a template into another page. Transcluded content can be customized by ==parameters== that are set while invoking a template.  
+Transclusion describes the process of embedding content defined in a template into another page. Transcluded content can be customized by ==parameters== the values of which are are included in distinct locations during template invokation.  
 
 Quelle: Eigene Definition angelehnt an 
 :::
@@ -426,7 +436,7 @@ Transcluded content can be controlled by three ==distinct commands== {.skip}
 - `<noinclude>`
 
 ::: blue skip
-**Always explicitly specify transcluding content**  
+**Always explicitly specify transcluding Content**  
 It is recommended to explicitly markup the content in a template that is to be transcluded by using the provided commands and separate it from supplemental or instructional content that describes the usage of the template. 
 <!-- MediaWiki provides distinct commands (`<include_only/>`, `<no_include/>`) to control the transclusion of template content and separate it from e.g. instructional content on how to use the template. -->
 :::
