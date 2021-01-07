@@ -81,7 +81,7 @@ Quelle: Angelehnt an Karin Haenelt, "Semantik im Wiki am Beispiel des MediaWiki 
 ### Komponenten eines Wiki-Systems
 
 Es gibt unterschiedliche Implementierungen von Wiki-Systemen; 
-Die am häufigsten verwendeten Komponenten sind
+Die am häufigsten verwendeten _Komponenten_ sind
 
 - Datenbank
 - Versionsverwaltung
@@ -90,7 +90,7 @@ Die am häufigsten verwendeten Komponenten sind
 :::: 2nd-column
 ### MediaWiki
 
-MediaWiki ist die bedeutenste und weitverbreiteste Implementierung eines Wiki-Systems
+_MediaWiki_ ist die bedeutenste und weitverbreiteste Implementierung eines Wiki-Systems
 
 - Open-source Wiki-Software
 - Technische Basisplattform der Wikipedia
@@ -159,6 +159,58 @@ MediaWiki ist die bedeutenste und weitverbreiteste Implementierung eines Wiki-Sy
 
 
 ---
+# Semantic MediaWiki
+
+- Extension für MediaWiki
+- Erweitert MediaWiki mit Ontologie-basierten Sprachkonzepten 
+    - properties, concepts, subobjects
+- Erfunden und entwickelt am KIT durch Markus Krötzsch, Denny Vrandečić^3^ und Max Völkl, Institut für Angewandte Informatik und Formale Beschreibungsverfahren (AIFB)
+
+
+::: footnotes
+^1^ some url
+
+^2^ https://iccl.inf.tu-dresden.de/web/Markus_Kr%C3%B6tzsch
+
+^3^ https://de.wikipedia.org/wiki/Denny_Vrande%C4%8Di%C4%87
+
+^4^
+:::
+
+---
+# Semantic MediaWiki ist ein offenes, kollaboratives Wissensmanagementsystem
+
+::::: equalcolumns
+:::: 1st-column
+### Vorteile
+- Jeder angemeldete Nutzer kann Content erstellen (*anyone can edit*)
+- Einfach zu erlernen und zu nutzen
+- Unmittelbare Contenterstellung und -nutzung (*instant publish*)
+- Kollaborative Ontologie- und Inhaltserstellung (*collaboration*)
+- Änderungsverfolgung
+- Unterstützt den Aufbau von Communities (*community building*)
+- Beinhaltet eine semantische Wissensbasis (*knowledge base*)
+- Agile Entwicklung (*agile development*)
+::::
+:::: 2nd-column
+### Nachteile
+- Anyone can edit
+- Open to span and vandalism
+- Erfordert eine permanente Verbindung zum Server
+- Information can become disorganized
+- Editing is not as simple as Word
+- Kein Berechtigungsmanagement "out-of-the-box"
+- Semantic Drift
+- Nur bedingt geeignet für Verschlusssachen
+- Keine Kopplung von Inhalt und Sicherheitszonen
+::::
+:::::
+
+::: footnotes
+Quelle: "MediaWiki – Advantages of MediaWiki as a Content Mangement System" –  Tutorial Part 2; https://youtu.be/nokM-3ZFwGs
+:::
+
+---
 # Sprachelemente
 
 Wikis stellen eine Reihe von ==Sprachelementen== zur Erstellung und Verwaltung von Inhalten bereit:
@@ -181,7 +233,31 @@ MediaWiki und damit auch Semantic MediaWiki unterscheidet zwischen Groß- und Kl
 
 
 ---
-# MediaWiki: A Tool for Managing Wikitext
+# Datenstrukturelemente
+
+::: definition
+Ein ==Datenstrukturelement== (ist Bestandteil einer ...) erlaubt die Spezifikation von Datenmodellen auf Basis des zugrunde liegenden Wissensrepräsentationsformalismus. Neben direkt in einem Wissensrepräsentationsformalismus verankerten Sprachelementen können auch weitere, unterstützende Elemente definiert sein. 
+
+Quelle: Eigene Definition; --> TODO: Unterscheidung zwischen Sprach- und Datenmodellelement
+:::
+
+**Semantic MediaWiki** definiert ==8 Datenstrukturelemente==: {.longskip}
+::: twocolumns 
+1. *Seite* (engl. Page)
+2. *Kategorie* (engl. Category)
+3. *Attribute* (engl. Properties)
+4. *Datentyp* (engl. Datatype)
+
+5. *Namensraum* (engl. Namespace) – kein DSE
+6. *Vorlage* (engl. Template) - kein DSE
+7. *Subobjekt* (engl. Subobject)
+8. *Konzept* (engl. Concept) 
+:::
+
+
+
+---
+# MediaWiki: Syntax
 
 ::::: equalcolumns
 :::: 1st-column
@@ -224,8 +300,8 @@ MediaWiki und damit auch Semantic MediaWiki unterscheidet zwischen Groß- und Kl
 
 ::::: equalcolumns
 :::: 1st-column
-**Page names** consist of _multiple parts_
-```
+==Page names== consist of _multiple parts_
+``` 
 Namespace:Title/Subpagetitle
 ```
 ::::
@@ -239,17 +315,28 @@ User:Denny/Tests
 
 ::::: equalcolumns small
 :::: 1st-column
-### Namespace
+### 1. Namespace
 - Prefixes, separated from title by colon `:`
 - Not all prefixes that end in ":" are namespaces!
     - Available prefixes provided by MW, more can be added in configuration
     - Default: `Main` (empty), `User`, `Category`, `Template`, `Help`, `MediaWiki`, `File`, `Special`, `Project` (sitename)
-- Purpose is to distinguish basic "content types" 
+- Purpose: distinguish _basic "content types"_
 - Can have aliases (e.g. `File:` and `Image:`) 
-- Every namespace has a talk version: Talk, User talk, ...
+<!-- - Every namespace has a talk version: Talk, User talk, ... -->
 ::::
 :::: 2nd-column
-### Subpage
+### 2. Pagetitle
+- Defined during page creation
+- MediaWiki determines whether page already exists
+    - For existing pages, the page's content will be displayed
+    - For non-existend pages, the edit view will be displayed
+    ::: warning
+    **Page names are case-sensitive**
+    MediaWiki distinguishes between upper- and lower-case letters in page names!
+    :::
+::::
+:::: 3rd-column
+### 3. Subpagetitle
 - Postfixes, separated from title by slash “/”
 - Not all postfixes after “/” are subpages!
     - Enabled for certain namespaces
@@ -257,17 +344,6 @@ User:Denny/Tests
 - Often not appropriate for organising pages (rigid, hierarchical content structure)
 - Small difference to pages with “/” in title
     - For example when moving pages
-::::
-:::: 3rd-column
-### Pagetitle
-- Defined during page creation
-- MediaWiki determines whether page already exists
-    - For existing pages, the page's content will be displayed
-    - For non-existend pages, the edit view will be displayed
-::: warning
-**Page names are case-sensitive**
-MediaWiki distinguishes between upper- and lower-case letters in page names!
-:::
 ::::
 :::::
 
@@ -312,6 +388,9 @@ Quelle: eigene Definition
 ---
 # Categories
 
+---
+# Categories
+
 ::: definition
 Categories are pages defined in the `Category:` namespace and allow for organizing MediaWiki pages in predefined categories.
 
@@ -326,6 +405,58 @@ Eigene Definition angelehnt an <https://www.mediawiki.org/wiki/Help:Categories>_
 - Eine Hierarchiebildung der Kategorien ist durch Zuordnung von Kategorien zu Kategorien möglich
 
 
+---
+# Categories
+
+Categories are the preferred way to organise pages in MediaWiki
+::: definition
+==Categories== are pages defined in the `Category:` namespace and allow for organizing MediaWiki pages in predefined categories.
+
+Quelle: Eigene Definition angelehnt an <https://www.mediawiki.org/wiki/Help:Categories>_  
+:::
+
+{.shortskip}
+
+### a) Adding a Page to a Category 
+- _Links to Category pages mean_: =="page is in category"==  
+    - Example: `[[Category:City]]` on page of `Cologne`
+
+<!--
+- _Links to Category pages mean_: =="page is in category"== 
+    - Example: `[[Category:City]]` on page of `Cologne`
+-->
+
+### b) Defining Category Hierarchies 
+
+::::: equalcolumns
+:::: 1st-colum
+- _Category Links on Category pages_: =="page is subcategory of"==
+    - Example: `[[Category:Settlement]]` on `Category:City`
+::::
+:::: 2nd-column
+- ==Category hierarchy== can be _any graph_ 
+    - Multi-Inheritage, Cycles, ...
+::::
+:::::
+
+
+---
+# Categories: Tipps
+
+### c) Linking to a Category
+To create _a link to a category_, use a leading colon `:` before the category name^1^:
+```
+ [[:Category:Help]] −−> Link displays as "Category:Help"
+```
+
+To change the link text, write the text inside the link tag after a pipe `|`:
+```
+ [[:Category:Help|Help category]] −−> Link displays as "Help category"
+```
+
+::: footnotes
+^1^ Without a leading colon, the current page would be added to the category
+:::
 
 ---
 # Category Hierarchies
@@ -358,7 +489,7 @@ Please note that category hierarchy can be any graph (multi-inheritance, cycles,
 
 ::::: equalcolumns small
 :::: 1st-column
-### Creating a new Category
+### 1. Creating a new Category
 
 - Create a new mediawiki page with a distinct name in the `Category` namespace  
 - Example
@@ -370,7 +501,7 @@ Please note that category hierarchy can be any graph (multi-inheritance, cycles,
 - Link it to a category hierarchy 
 ::::
 :::: 2nd-column
-### Adding Wikipages to a Category
+### 2. Adding Wikipages to a Category
 To make a mediawiki page a member of a category, add a link to the category on the page^1^
 ```
 [[Category:Employee]] 
@@ -382,7 +513,7 @@ Category links can be placed at any location at a wiki page. However, due to mai
 :::
 ::::
 :::: 3rd-column
-### Linking to a Category
+### 3. Linking to a Category
 To create a link to a category, use a leading colon before the category name (without this colon, the current page would be added to the category):
 ```
 [[:Category:Help]]
@@ -406,7 +537,7 @@ To change the _link text_, write the text inside the link tag after a pipe:
 # Templates
 
 ::: definition
-A __template__ is a wikipage defined in the `Template:` namespace that defines content that can be ==transcluded== in other wiki pages.
+A ==template== is a wikipage defined in the `Template:` namespace that defines content that can be ==transcluded== in other wiki pages.
 
 Quelle: eigene Definition
 :::
@@ -425,15 +556,15 @@ Templates {.longskip}
 # Templates: Transclusion
 
 ::: definition
-Transclusion describes the process of embedding content defined in a template into another page. Transcluded content can be customized by ==parameters== the values of which are are included in distinct locations during template invokation.  
+==Transclusion== describes the process of embedding content defined in a template into another page. Transcluded content can be customized by ==parameters== the values of which are are included in distinct locations during template invokation.  
 
 Quelle: Eigene Definition angelehnt an 
 :::
 
-Transcluded content can be controlled by three ==distinct commands== {.skip}
+Transcluded content can be controlled by ==three== distinct ==commands== {.skip}
 - `<includeonly>`
 - `<onlyinclude>`
-- `<noinclude>`
+- `<noinclude>` – usually used for _instructional content_, i.e., how a template is to be used. This content will not be transcluded.
 
 ::: blue skip
 **Always explicitly specify transcluding Content**  
@@ -475,9 +606,9 @@ YouTube hosts some excellent videos about the basic principles and formatting of
 
 Templates can have __parameters__ that allow for passing _individual data_ to template content that is to be transcluded.
 
-### Specification in Templates
+<!-- ### Specification in Templates -->
 
-Parameters within templates can either be specified...
+==Parameters== within templates can either be specified...
 - anonymously via the ==sequence of occurrence==, i.e., ` {{{1}}}`, `{{{2}}}`, etc.
 - via specific ==parameter names==, i.e., `{{{Parameter_name|default_value}}}`
 
@@ -592,6 +723,8 @@ Example
 ---
 # Function
 
+Meta: Could also be a summary
+
 Concepts
 : ... are pages defined in the `Concept:` **namespace**
 : ... serve as categories with individually evaluated memberships
@@ -613,10 +746,9 @@ Additional Remarks:
 # Working with Concepts
 
 <!-- Defining and using the concept named `Semantic MediaWiki Cons 2012` in an `#ask` query to display the location of all SMW conferences held in 2012: -->
-
 ::::: equalcolumns
 :::: 1st-column
-### Creating a Concept
+### A) Creating a Concept
 ```
 {{#concept:
  [[Category:Event]]
@@ -633,7 +765,7 @@ Additional Remarks:
 - A list of matching pages is printed on the concept page
 ::::
 :::: 2nd-column
-### Using a Concept
+### B) Using a Concept
 ```
 {{#ask:
  [[Concept:Semantic MediaWiki Cons 2012]]
@@ -674,3 +806,139 @@ Instead of annotating all currently running projects with a specific category (t
  |All currently running projects
 }}
 ```
+
+
+
+---
+# Concepts (Part 2)
+---
+# Concepts
+
+::: definition
+==Concepts== are pages in the `Concept:` namespace and allow to dynamically compute page memberships based on the evaluation of ==query conditions== defined on the concept page.
+    
+Quelle: Eigene Definition angelehnt an <https://www.semantic-mediawiki.org/wiki/Help:Concepts>
+:::
+
+**Problem** {.skip .nobottommargin}
+- Sometimes, it is useful to determine memberships to categories based on the occurence of some property values.
+- Reviewing whether membership conditions are still satisfied and _manually altering categories_ is cumbersome and error-prone
+
+**Example** {.nobottommargin}
+- Automatically annotate all currently running projects with a dedicated category based on the evaluation of start and end date 
+
+**Application Scenarios** {.nobottommargin}
+- Concepts are useful, when the evaluation of query conditions is complex and/or needed in many `#ask` queries.
+- Concepts help in simplifing semantic queries
+
+
+--- 
+# Concepts: Syntax and Creation
+
+_Example_
+The following concept called `Concept:Semantic MediaWiki Cons 2012` describes Semantic MediaWiki conferences held in 2012^1^:
+
+```
+{{#concept:
+ [[Category:Event]]
+ [[Has planned start::> Jan 1 2012]]
+ [[Has planned finish::< Dec 31 2012]]
+ |Semantic MediaWiki Cons in the year 2012 that have been announced on this wiki.
+}}
+```
+
+_Creating Concepts_ {.nobottommargin}
+1. Create a new page in the `Concept:` namespace
+2. Provide a suitable name for the concept (cf. naming categories)
+3. Use the `#concept` parser function to define the query conditions
+4. Provide a readable description for the concept as a second optional parameter
+5. Add additional information when necessary
+
+::: footnotes
+^1^ Example is taken from https://www.semantic-mediawiki.org/wiki/Help:Concepts
+:::
+
+
+
+---
+# Concepts: Usage
+
+
+==Concept pages==
+... can be *browsed* to view the contents of some concept, similar to category pages 
+... can be included in *semantic queries* like categories
+
+::::: equalcolumns
+:::: 1st-column
+*Syntax* {.nobottommargin}
+```
+{{#ask:
+ [[Concept:Semantic MediaWiki Cons 2012]]
+ |?Has location=Location 
+ |format=table
+ |headers=plain 
+ |mainlabel=Event
+}}
+```
+::::
+:::: 2nd-column
+*Result* {.nobottommargin}
+```
+Event                    | Location
+−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−
+SMWCon Fall 2012 Cologne | Germany
+SMWCon Spring 2012       | Carlsbad, CA, USA
+```
+::::
+:::::
+
+<!-- *Syntax* {.nobottommargin}
+```
+{{#ask:
+ [[Concept:Semantic MediaWiki Cons 2012]]
+ |?Has location=Location 
+ |format=table
+ |headers=plain 
+ |mainlabel=Event
+}}
+```
+
+*Result* {.nobottommargin}
+```
+Event                    | Location
+−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−
+SMWCon Fall 2012 Cologne | Germany
+SMWCon Spring 2012       | Carlsbad, CA, USA
+``` -->
+
+
+---
+# Semantic Data Modelling
+---
+# Recap
+
+From the lecture about semantic knowledge graphs we know that...
+: ...in the Web, we distinguish between ==information== and ==non-information resources==
+: ...we use ==IRIs== to _identify things_
+: ...IRIs should be _resolvable_/_dereferenceable_ through a process called ==content negotiation==
+: ...==Ontologies== are used to for encoding semantics that can be used in knowledge graphs 
+: ...Ontologies contain ==terminological (TBox)== and ==assertional (ABox) knowledge==
+: ...==RDF== is the _representation framework_ for encoding factual knowledge in the Web
+: ...RDF resembles a ==triple pattern== (_subject_ – _predicate_ – _object_)
+: ...RDF can also be used to encode terminological knowledge to form a vocabulary that can be used in knowledge graphs 
+
+
+---
+# Lernen lernen
+---
+# Aspekte (die 4 K's) zukünftigen Lernens
+
+Leitfrage: Was sind die Elemente zukünftigen Lernens ?
+<!-- K {.red} ommunikation -->
+
+:::twocolumns center
+<span style="font-size: 4em; color: red; font-weight: 500">K</span>ollaboration
+<span style="font-size: 4em; color: red; font-weight: 500">K</span>ritisches Denken
+<span style="font-size: 4em; color: red; font-weight: 500">K</span>reativität
+<span style="font-size: 4em; color: red; font-weight: 500">K</span>ommunikation
+:::
