@@ -213,8 +213,10 @@ Quelle: "MediaWiki – Advantages of MediaWiki as a Content Mangement System" �
 ---
 # Sprachelemente
 
-Wikis stellen eine Reihe von ==Sprachelementen== zur Erstellung und Verwaltung von Inhalten bereit:
+Wikis stellen eine Reihe von ==Sprachelementen== und ==Erweiterungen== zur Erstellung und Verwaltung von Inhalten bereit:
 
+::::: equalcolumns
+:::: 1st-column
 - Seiten 
 - Namensräume
 - Kategorien 
@@ -224,6 +226,15 @@ Wikis stellen eine Reihe von ==Sprachelementen== zur Erstellung und Verwaltung v
     - Variablen
     - Behavior switches 
 - etc.
+::::
+:::: 2nd-column
+- Page Forms
+- Semantic Result Formats
+- Parser Functions
+- Arrays
+- etc.
+::::
+:::::
 
 ::: warning
 **Groß- und Kleinschreibung beachten!**  
@@ -287,20 +298,23 @@ Quelle: Eigene Definition; --> TODO: Unterscheidung zwischen Sprach- und Datenmo
 - Advanced formatting elements:
     - Images 
     - Tables
-    ::: blue
-    See online documentation for details
-    :::
+
+
+::: blue longskip
+See online documentation for details
+:::
+
 ::::
 :::::
 
 
 
 ---
-# MediaWiki: Page Names
+# MediaWiki: The Structure of Page Names
 
 ::::: equalcolumns
 :::: 1st-column
-==Page names== consist of _multiple parts_
+==Page names== consist of _3 different parts_
 ``` 
 Namespace:Title/Subpagetitle
 ```
@@ -328,8 +342,8 @@ User:Denny/Tests
 ### 2. Pagetitle
 - Defined during page creation
 - MediaWiki determines whether page already exists
-    - For existing pages, the page's content will be displayed
-    - For non-existend pages, the edit view will be displayed
+    - For *existing page*s, the page's content will be displayed
+    - For *non-existend pages*, the edit view will be displayed
     ::: warning
     **Page names are case-sensitive**
     MediaWiki distinguishes between upper- and lower-case letters in page names!
@@ -344,6 +358,7 @@ User:Denny/Tests
 - Often not appropriate for organising pages (rigid, hierarchical content structure)
 - Small difference to pages with “/” in title
     - For example when moving pages
+- Used in Wikipedia for multilingual page content
 ::::
 :::::
 
@@ -561,7 +576,7 @@ Templates {.longskip}
 Quelle: Eigene Definition angelehnt an 
 :::
 
-Transcluded content can be controlled by ==three== distinct ==commands== {.skip}
+Transcluded content can be controlled by __three__ distinct ==commands== {.skip}
 - `<includeonly>`
 - `<onlyinclude>`
 - `<noinclude>` – usually used for _instructional content_, i.e., how a template is to be used. This content will not be transcluded.
@@ -706,18 +721,23 @@ Das Attribut Deadline erwartet Datumsangaben (nicht 'Ende September' sondern '30
 # Concepts
 
 ::: definition
-Concepts are pages in the `Concept:` namespace and allow to dynamically compute page memberships based on the evaluation of query conditions defined on the concept page.
+==Concepts== are pages in the `Concept:` namespace and allow to dynamically compute page memberships based on the evaluation of query conditions defined on the concept page.
     
 Quelle: Eigene Definition angelehnt an <https://www.semantic-mediawiki.org/wiki/Help:Concepts>
 :::
 
-{.skip}
-- Sometimes, it is useful to determine memberships to categories based on the occurrence of some specific property values.
-- Reviewing whether membership conditions are still satisfied and manually altering categories is cumbersome and error-prone
-
-Example
-- Automatically annotate all currently running projects with a dedicated category based on the evaluation of start and end date
-
+{.bigskip}
+::::: equalcolumns
+:::: 1st-column
+**Motivation**
+- Sometimes, it is useful to determine _category membership_ based on the occurrence of some _specific property values_.
+- Reviewing whether _membership conditions_ are still _satisfied_ and manually altering categories is cumbersome and error-prone
+::::
+:::: 2nd-colum
+**Example**
+- _Automatically annotate_ all currently running projects with a dedicated category e.g. `Running Projects` based on the evaluation of start and end date
+::::
+:::::
 
 
 ---
