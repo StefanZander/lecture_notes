@@ -129,7 +129,7 @@ As a consequence, facts are encoded as **property-value pairs** on wiki pages.
 
 
 ---
-# Encoding Property-Value-Pairs
+# Encoding Facts in Semantic MediaWiki
 
 <!-- Semantic MediaWiki encodes facts in form of a triple-base
 
@@ -141,13 +141,13 @@ As a consequence, facts are encoded as **property-value pairs** on wiki pages.
 ::::: equalcolumns
 :::: 1st-column
 This ==triple== can be expressed with elements from SMW's KRF:
-1. __Subject__ is always a wiki page 
+1. ==Subject== is always a **wiki page** or a **subobject** (we will learn about subobjects in Chapter 4) 
    - e.g. a wiki page named `Berlin` in the main namespace
-2. ==Predicates== are wiki pages in the `Property` namespace
+2. ==Predicates== are **wiki pages** in the `Property` namespace
    - e.g., a wiki page named `has Population` in the `Property` namespace
 3. ==Objects== are represented as **literals** or other **wiki pages**
    - e.g., value “3,520,031” in case the object is a literal
-   - e.g., Page named "Germany" in case the statement's object is another Wikipage 
+   - e.g., a page named "Germany" in case the statement's object is another wiki page 
    <!-- - **Literals** embedded in the Wikipage with the annotation, e.g., “3,520,031” -->
    <!-- - other **Wiki pages** in the main namespace, e.g, "Klaus Wowerit"  -->
 ::::
@@ -161,5 +161,10 @@ Cologne   has population   1.017.155
 Germany   has capital      Berlin
 Spinoza   born on          24 Nov 1632
 ```
+
+The triple-based model employed by Semantic MediaWiki is inherited from W3C's Resource Description Framework (RDF) specification.
+
+A page-property-value triple resembles the subject-predicate-object triple pattern of RDF3
+
 ::::
 :::::

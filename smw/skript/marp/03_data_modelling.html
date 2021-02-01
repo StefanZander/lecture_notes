@@ -273,18 +273,18 @@ Prof. Dr. Kai Renz wird zum kommenden Sommersemester neues Mitglied des Stundenp
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="6" data-paginate="true" data-header="Chapter 1: Fundamentals" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme-roboto" data-marpit-pagination="6" data-marpit-pagination-total="6" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme-roboto;">
 <header>Chapter 1: Fundamentals</header>
-<h1>Encoding Property-Value-Pairs</h1>
+<h1>Encoding Facts in Semantic MediaWiki</h1>
 
 <div class="equalcolumns">
 <div class="1st-column">
 <p>This <mark>triple</mark> can be expressed with elements from SMW's KRF:</p>
 <ol>
-<li><strong>Subject</strong> is always a wiki page
+<li><mark>Subject</mark> is always a <strong>wiki page</strong> or a <strong>subobject</strong> (we will learn about subobjects in Chapter 4)
 <ul>
 <li>e.g. a wiki page named <code>Berlin</code> in the main namespace</li>
 </ul>
 </li>
-<li><mark>Predicates</mark> are wiki pages in the <code>Property</code> namespace
+<li><mark>Predicates</mark> are <strong>wiki pages</strong> in the <code>Property</code> namespace
 <ul>
 <li>e.g., a wiki page named <code>has Population</code> in the <code>Property</code> namespace</li>
 </ul>
@@ -292,7 +292,7 @@ Prof. Dr. Kai Renz wird zum kommenden Sommersemester neues Mitglied des Stundenp
 <li><mark>Objects</mark> are represented as <strong>literals</strong> or other <strong>wiki pages</strong>
 <ul>
 <li>e.g., value “3,520,031” in case the object is a literal</li>
-<li>e.g., Page named &quot;Germany&quot; in case the statement's object is another Wikipage</li>
+<li>e.g., a page named &quot;Germany&quot; in case the statement's object is another wiki page</li>
 </ul>
 </li>
 </ol>
@@ -304,6 +304,8 @@ Prof. Dr. Kai Renz wird zum kommenden Sommersemester neues Mitglied des Stundenp
 <span class="hljs-attribute">Germany</span>   has capital      Berlin
 <span class="hljs-attribute">Spinoza</span>   born <span class="hljs-literal">on</span>          <span class="hljs-number">24</span> Nov <span class="hljs-number">1632</span>
 </span></span></foreignObject></svg></code></pre>
+<p>The triple-based model employed by Semantic MediaWiki is inherited from W3C's Resource Description Framework (RDF) specification.</p>
+<p>A page-property-value triple resembles the subject-predicate-object triple pattern of RDF3</p>
 </div>
 </div>
 <footer>Prof. Dr. Stefan Zander</footer>
