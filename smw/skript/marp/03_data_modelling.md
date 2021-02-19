@@ -18,7 +18,7 @@ paginate: true
 Kapitel 3.2: Datenmodellierung mit Semantic MediaWiki {.lightgreen .bigger .skip}
 
 ---
-<!-- header: Chapter 1: Fundamentals -->
+<!-- header: Chapter 1: Motivation -->
 <!-- footer: Prof. Dr. Stefan Zander -->
 
 # Vorbemerkung
@@ -31,7 +31,7 @@ Ein Großteil unseres menschlichen Daseins und Wirken definiert sich über ==Bez
 **Beispiel** 
 Versuchen Sie nachfolgend beschriebenen Sachverhalt in einem Datenmodell ihrer Wahl möglichst widerspruchsfrei und eindeutig abzubilden.
 ::: kursiv
-“In seiner konstituierenden Sitzung vom 25.06.2019 beschloss der Fachbereichsrat in Bezug auf Berichtspunkt Nr. 5 des Protokolls vom 17.05.2019 mit 10 ‘Ja’-Stimmen, 0 Enthaltungen und keiner Gegenstimme:
+“In seiner konstituierenden Sitzung vom 25.03.2019 beschloss der Fachbereichsrat in Bezug auf Berichtspunkt Nr. 5 des Protokolls vom 17.02.2019 mit 10 ‘Ja’-Stimmen, 0 Enthaltungen und keiner Gegenstimme:
 Prof. Dr. Kai Renz wird zum kommenden Sommersemester neues Mitglied des Stundenplanerteams.“
 :::
 ::::
@@ -51,7 +51,7 @@ Mit den Informationen aus Kapitel 2: Technologische Grundlagen können wir diese
 - Beziehungen sollten als _First-Class Elemente_ behandelt werden
 - ==URIs/IRIs== ermöglichen die eindeutige Identifizierung von “Dingen”
 - Zusammen mit dem Konzept der ==Content Negotiation== ermöglichen sie eine Unterscheidung zwischen technischen- und realweltlichen Repräsentationen
-- Maschinen-verarbeitbare Semantik bedeutet: _Definitions have Consequences_ – d.h., die Semantik eines Elements ist definiert durch die sich aus der Anwendung des mit dem Element assozierten Regelsatzes ergebenden Konsequenzen.
+- Maschinen-verarbeitbare Semantik bedeutet: _DEFINITIONS HAVE CONSEQUENCES_ – d.h., die Semantik eines Elements ist definiert durch die sich aus der Anwendung des mit dem Element assozierten Regelsatzes ergebenden Konsequenzen.
 :::
 
 ---
