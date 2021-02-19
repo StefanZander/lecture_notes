@@ -15,7 +15,7 @@ paginate: true
 
 #### Prof. Dr. Stefan Linus Zander
 
-Kapitel 3.2: Datenmodellierung mit Semantic MediaWiki {.lightgreen .big .skip}
+Kapitel 3.2: Datenmodellierung mit Semantic MediaWiki {.lightgreen .bigger .skip}
 
 ---
 <!-- header: Chapter 1: Fundamentals -->
@@ -23,7 +23,7 @@ Kapitel 3.2: Datenmodellierung mit Semantic MediaWiki {.lightgreen .big .skip}
 
 # Vorbemerkung
 
-Ein Großteil unseres menschlichen Daseins und Wirken definiert sich über _Beziehungen_ zu anderen "Dingen" (hier im weitest möglichen Sinne zu verstehen). Möchte man diese Gegenstandsbereiche in technischen Systemen möglichst präzise und “naturgetreu” abbilden, so braucht es _ausdrucksmächtige Beschreibungsformate_ und _Datenstrukturmodelle_. Viele bekannte Datenstrukturmodelle und Formate sind zwar sehr effizient in ihrer maschinellen Verarbeitung, ihnen fehlt es aber an der notwendigen Ausdrucksmächtigkeit, d.h., diese sind nicht in der Lage, die komplexen Beziehungen zwischen Dingen präzise und widerspruchsfrei (=unambiguitiv) abzubilden.
+Ein Großteil unseres menschlichen Daseins und Wirken definiert sich über ==Beziehungen== zu anderen "Dingen" (hier im weitest möglichen Sinne zu verstehen). Möchte man diese Gegenstandsbereiche in technischen Systemen möglichst präzise und “naturgetreu” abbilden, so braucht es _ausdrucksmächtige Beschreibungsformate_ und _Datenstrukturmodelle_. Viele bekannte Datenstrukturmodelle und Formate sind zwar sehr effizient in ihrer maschinellen Verarbeitung, ihnen fehlt es aber an der notwendigen Ausdrucksmächtigkeit und Erweierbarkeit, d.h., diese sind nicht in der Lage, die komplexen Beziehungen zwischen Dingen präzise und widerspruchsfrei (=unambiguitiv) abzubilden.
 
 {.smallskip}
 
@@ -164,7 +164,148 @@ Spinoza   born on          24 Nov 1632
 
 The triple-based model employed by Semantic MediaWiki is inherited from W3C's Resource Description Framework (RDF) specification.
 
-A page-property-value triple resembles the subject-predicate-object triple pattern of RDF3
+A page-property-value triple resembles the subject-predicate-object triple pattern of RDF.
 
 ::::
 :::::
+
+
+---
+# Part 2: How to Encode Information in Knowledge Graphs
+
+
+---
+# Motivating Example
+
+{.bigskip}
+
+::: italic center
+Matthias Frank is an employee of the FZI Research Center for Information Technology working on the BigGIS project. 
+BigGIS is an ongoing research project started at April 2016 and deals with real-time big data and semantic technologies.
+:::
+
+{.bigskip}
+
+Steps:
+1. Identify *Instances* (Resources)
+2. Identify *Concepts* (Classes)
+3. Identify *Properties* and *Data* (Numbers, Literals etc.)
+4. Represent as *Conceptual Graph* with *Stereotypes*
+5. Transform into *Serialized Graphs* using Mediawiki syntax
+
+
+
+---
+# Step 1: Identify Instances
+
+{.bigskip}
+
+::: italic center
+==Matthias Frank== is an employee of the ==FZI Research Center for Information Technology== working on the ==BigGIS== project. 
+==BigGIS== is an ongoing research project started at April 2016 and deals with ==real-time big data== and ==semantic technologies==.
+:::
+
+
+
+
+---
+# Step 2: Identify Concepts
+
+{.bigskip}
+
+::: italic center
+[[Matthias Frank]] is an ==employee== of the [[FZI Research Center for Information Technology]] working on the [[BigGIS]] ==project==. 
+[[BigGIS]] is an ongoing ==research project== started at April 2016 and deals with real-time big data and semantic technologies.
+:::
+
+
+---
+# Step 3: Identify Properties
+
+{.bigskip}
+
+::: italic center
+Matthias Frank ==is== an employee of the FZI Research Center for Information Technology ==working on== the BigGIS project. 
+BigGIS ==is== an ongoing research project ==started at== April 2016 and ==deals with== real-time big data and semantic technologies.
+:::
+
+
+---
+# Step 4a: Representation as Conceptual Graph
+
+::: italic center
+Matthias Frank is an employee of the FZI Research Center for Information Technology working on the BigGIS project. 
+BigGIS is an ongoing research project started at April 2016 and deals with real-time big data and semantic technologies.
+
+![width:800px](./figures/data_model.png)
+:::
+
+
+
+
+---
+# Step 4b: Conceptual Graph with Stereotypes
+
+{.bigskip}
+
+::: center
+![width:800px](./figures/data_model_w_stereotypes.png)
+:::
+
+---
+# Step 5: Transformation into Serialized Graphs
+
+
+It is important to separate the facts on their respective pages 
+
+{.skip}
+
+Syntax on the `Matthias Frank`-Page:
+::: blue
+`[[Matthias Frank]]` is an employee of the `[[employed_at::FZI Research Center for Information Technology]]` working on the `[[works_at::BigGIS]]` project. 
+
+`[[Category:Employee]]`
+:::
+
+{.bigskip}
+
+Syntax on the `BigGIS`-Page:
+::: blue
+`[[BigGIS]]` is an ongoing research project started at `[[started::April 2016]]` and deals with `[[has_topic::Real-Time Big Data]]` and `[[has_topic::Semantic Technologies]]`.
+
+`[[Category:Research Project]]`
+:::
+
+
+---
+
+# Try for Yourself
+
+{.bigskip}
+
+::: center italic blue
+Bayern Munich is a professional football club based in Munich, Germany, that plays in the Bundesliga. 
+Bayern Munich was founded in 1900. They play at the Allianz Arena. The club has won 30 national league titles.
+:::
+
+{.bigskip}
+
+Tasks
+1. Identify all instances, properties, classes, literals etc.
+2. Create the conceptual graph
+3. Think about what classes, properties and literals are needed
+4. Complement the above text using the Semantic MediaWiki syntax of the respective elements
+
+
+
+
+---
+# TODO: Incorporate
+
+- How can we state that Bayern Munich has won 30 Bundesliga Championship titles ?
+- How can we express the years in which a Bundesliga title was won ?
+- How can we express in which season + year a Bundesliga title was won ?
+- How can we express in which seasons Bayern Munich finished second ?
+- How can we count all national and international titles won by a German football club ?
+
+All this calls for subobjects!!!
