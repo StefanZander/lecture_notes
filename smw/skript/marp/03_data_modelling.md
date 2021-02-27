@@ -309,3 +309,18 @@ Tasks
 - How can we count all national and international titles won by a German football club ?
 
 All this calls for subobjects!!!
+
+---
+# Why Knowledge Graphs are useful
+
+Knowledge graphs have many advantages
+- Like most graph models, it more intuitively captures the way we think about the world as humans (as networks, not as tables), making it easier to design, capture, and query data.
+- As a data model supported by W3C standards, it allows us to create interoperable data and systems, all using the same standard to represent and encode data.
+
+Sidenote:
+There are many other methods that have been developed to handle this kind of complexity in RDF, including singleton properties and named graphs/quads. Additionally, an entirely different type of non-RDF graph model, labeled property graphs, allows users to attach properties directly to relationships.
+However, labeled property graphs don’t allow for interoperability at the same scale as RDF — it’s much harder to share and combine different data sets, and moving data from tool to tool isn’t as simple.
+
+::: footnotes
+Source: https://enterprise-knowledge.com/rdf-what-is-it-and-why-do-i-need-it/
+:::

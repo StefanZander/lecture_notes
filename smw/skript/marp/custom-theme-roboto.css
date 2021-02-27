@@ -237,7 +237,16 @@ blockquote p {
    ========================
 */
 
-.longskip {
+
+.BIGSKIP {
+    margin-top: 6rem;
+}
+
+.BIGskip {
+    margin-top: 4rem;
+}
+
+.Bigskip {
     margin-top: 2rem;
 }
 
@@ -269,7 +278,8 @@ blockquote p {
 */
 
 .centerbox {
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 

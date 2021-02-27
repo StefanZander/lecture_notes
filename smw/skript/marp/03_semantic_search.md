@@ -20,8 +20,23 @@ Kapitel 3.3: Semantische Suche {.lightgreen .bigger .skip}
 ---
 <!-- header: Chapter 1: Motivation -->
 <!-- footer: Prof. Dr. Stefan Zander -->
+# Didaktischer Aufbau der Einheit
 
-# Vorbemerkung
+Dieses Kapitel ist _zweigeteilt_:
+- Teil 1 beschäftigt sich mit dem _strukturellen Aufbau_ von Abfragen aus konzeptueller Sicht
+- Teil 2 behandelt _Syntax_ und _syntaktische Beschreibung_ von Abfragen
+
+::: centerbox warning BIGSKIP 
+Warum ist eine derartige Betrachtungsweise sinnvoll ?
+:::
+
+
+
+
+
+
+---
+# Vorbemerkungen
 
 SMW verfügt über eine **eigene Anfragesprache**
 
@@ -62,7 +77,7 @@ How can we model and satisfy this information need in Semantic MediaWiki ?
 {.smallskip}
 
 ::: footnotes
-^1^: Assuming that topic information is encoded on the project pages using, e.g., `has_topic::some topic` statements.
+^1^: Assuming that topic information is encoded on the project pages using, e.g., `has_topic::Big_Data` statements.
 :::
 
 
@@ -76,15 +91,17 @@ The following domain knowledge is modelled in a Semantic MediaWiki
 
 > "A research group has a number of employees being members of it. 
 > These employees work in different projects, where each project has different topics it is concerned with."
+:::
 
-**Question**:
+
+
+**Question**: {.bigskip}
 
 > How can we satisfy the information need of displaying all the research topics a research group’s members are associated with through their project work on the research group’s wiki page? {.italic}
 
 ...or in other words
 
-> Which topics are a research group working on?^1^ {.red}
-:::
+> Which topics are a research group working on?^1^ {.italic}
 
 {.skip}
 
@@ -94,7 +111,7 @@ How can we model and satisfy this information need in Semantic MediaWiki ?
 {.skip}
 
 ::: footnotes
-^1^ Assuming that topic information is encoded on the project pages using, e.g., `has_topic::some topic` statements.
+^1^ Assuming that topic information is encoded on the project pages using, e.g., `has_topic::Smart_Data` statements.
 :::
 
 
@@ -227,9 +244,52 @@ When formulating queries in Semantic MediaWiki, always consider the structural s
 :::::
 
 
-
-
-
 ::: footnotes
 ^1^ In order to determine the inner and outer query, interpret the query graph as projects with specific employees as members.
 :::
+
+
+
+---
+# Part 2: Ask Query Language – Syntax
+
+
+
+---
+# The #ask Query Language (AQL)
+
+SMW defines its own _query language_ called ==AQL==, which resembles the (semantic) MediaWiki syntax to some extent.
+
+**Main Idea**
+To ask for pages with some specified annotations in order to (in most cases) retrieve additional information from those pages. Those annotations in question are used as query conditions, as illustrated in the examples below:
+
+The parser function `#ask`  allows to retrieve pages based on the information they contain; (REALLY ONLY PAGES?!)
+
+Semantic MediaWiki allows to query for 
+- ==pages== (e.g. the wiki pages of all running projects)
+- ==property values== (e.g. the full names of all employees of an organisation)
+- ==subobjects== (subgraphs embedded in pages ~> will be discussed later in this course)
+
+:::: equalcolumns
+::: 1st-column
+**Structure**
+
+Queries consists of four parts
+1. the `#ask` parser function
+2. query conditions
+3. printout statements, i.e., data to be displayed
+4. display options, i.e., how data are displayed
+:::
+::: 2nd-column
+**Example**
+```
+{{#ask:
+ [[Category:City]]          <!-- Query Conditions -->
+ [[Located in::Germany]] 
+ |?Population               <!-- Printout Statements -->
+ |?Area#km² = Size in km²
+ |format=ul                 <!-- Display Options -->
+}}
+```
+:::
+::::

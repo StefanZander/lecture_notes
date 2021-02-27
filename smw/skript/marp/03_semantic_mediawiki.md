@@ -18,8 +18,23 @@ paginate: true
 Kapitel 3: Einführung in Semantic MediaWiki {.lightgreen .big .skip}
 
 ---
-<!-- header: Kapitel 1: MediaWiki -->
+<!-- header: Kapitel 0: Vorbemerkungen -->
 <!-- footer: Prof. Dr. Stefan Zander -->
+# Inhalte
+
+1. Einführung Wiki-Systeme
+2. Grundbegriffe
+3. Sprachelemente
+4. Modelling Information
+5. Encoding Information 
+6. Retrieving Information
+7. Advanced Data Modelling Topics
+8. Extensions for Knowledge Graph Creation
+
+
+
+---
+<!-- header: Kapitel 1: Einführung -->
 
 # Semantic MediaWiki (TODO: Change)
 
