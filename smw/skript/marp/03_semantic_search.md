@@ -23,8 +23,8 @@ Kapitel 3.3: Semantische Suche {.lightgreen .bigger .skip}
 # Didaktischer Aufbau der Einheit
 
 Dieses Kapitel ist _zweigeteilt_:
-- Teil 1 beschäftigt sich mit dem _strukturellen Aufbau_ von Abfragen aus konzeptueller Sicht
-- Teil 2 behandelt _Syntax_ und _syntaktische Beschreibung_ von Abfragen
+- **Teil 1** beschäftigt sich mit dem _strukturellen Aufbau_ von Abfragen aus konzeptueller Sicht
+- **Teil 2** behandelt _Syntax_ und _syntaktische Beschreibung_ von Abfragen
 
 ::: centerbox warning BIGSKIP 
 Warum ist eine derartige Betrachtungsweise sinnvoll ?
@@ -55,6 +55,218 @@ SMW verfügt über eine **eigene Anfragesprache**
 - Anfragesprache unterstützt daher (wie auch OWL DL) keine _benannten Variablen_
 (Beispiel: Personen, die in Stadt_x geboren wurden und in Stadt_x gestorben sind) (mindestens NP-hart)
 
+
+
+---
+# Introduction (to Syntax)
+
+Semantic MediaWiki includes an easy-to-use query language called ==AQL – #ask Query Language==, which enables users to access the wiki's knowledge. The _syntax_ is similar to the syntax of _annotations_. AQL can be used on the ==special page== `Special:Ask`, in ==concepts==, and in ==inline queries==.
+
+**Semantic queries** specify two things:
+1. Which *pages* or *subobjects* to select
+2. What *information to display* about those pages
+
+All queries must state some ==conditions== that describe what is asked for. 
+
+::::: equalcolumns
+:::: 1st-column
+**Pages** can be selected by
+- *name*, 
+- *namespace*, 
+- *category*, and most importantly by 
+- *property values*.
+::::
+:::: 2nd-column
+::: example Bigskip
+**Example**
+
+`[[Located in::Germany]]`
+
+selects all pages with property `Located in` and value `Germany`.
+:::
+::::
+:::::
+
+
+
+---
+# A Word about the Condition Syntax...
+
+<!-- Please note: -->
+The markup text for formulating query conditions is exactly similar to the annotations embedded in wiki pages. 
+
+::: centerbox warning skip
+The syntax for asking for pages that satisfy some condition is exactly the syntax for explicitly asserting that this condition holds.
+:::
+
+The following queries show what this means: {.Bigskip}
+- `[[Category:Actor]]` gives all pages directly or indirectly (through a sub-, subsub-, etc. category) in the category.
+- `[[Born in::Boston]]` gives all pages annotated as being about someone born in Boston.
+- `[[Height::180cm]]` gives all pages annotated as being about someone having a height of 180cm.
+  
+
+---
+# Query Algebra (Part 1 – Conjunctions)
+
+:::: equalcolumns
+::: 1st-column
+Conditions can be _combined_.
+```
+[[Category:Actor]] [[Born in::Boston]] [[Height::180cm]]
+```
+:::
+::: 2nd-column
+Similar, more readable notation
+```
+[[Category:Actor]] 
+[[Born in::Boston]] 
+[[Height::180cm]]
+```
+:::
+::::
+
+When using **many conditions** in _one query_, the result is _narrowed down_ to those pages that meet **all** the requirements. 
+Thus we have a ==logical AND==.
+
+::: blue 
+Note that queries only return the articles that are _positively known to satisfy the required properties_: 
+if there is no property for the height of some actor, that actor will not be selected.
+:::
+
+::: centerbox warning Bigskip
+Please note:
+SMW will ignore some characters such as trailing spaces or comma in numbers depending on the datatype used. SMW also treat synonymous page names as identical resources; "Semantic wiki", "Semantic_wiki" and "semantic wiki" all refer to the same page.
+:::
+
+
+---
+# Query Algebra (Part 2 – Disjunctions)
+
+**Disjunctions** are _OR-conditions_ that admit several _alternative conditions_ on query results. 
+A _disjunction_ requires that at least one (but maybe more than one) of the possible alternatives is satisfied (==logical OR==).
+
+Semantic MediaWiki has two ways of writing _disjunctions_ in queries:
+- The operator `OR` is used for taking the union of two queries.
+- The operator `||` is used for disjunctions in property values, page names and category names.
+
+<!-- **Examples**
+:::: equalcolumns
+::: 1st-column
+Describes people who were born in Boston _OR_ New York
+```
+[[Born in::Boston]] OR [[Born in::New York]]
+```
+:::
+::: 2nd-colum
+The same query written in a more *concise form*
+```
+[[Born in::Boston||New York]]
+```
+:::
+:::: -->
+
+:::: columns
+::: 1st-column
+**Examples**
+:::
+::: 2nd-column
+`
+[[Born in::Boston]] OR [[Born in::New York]]
+`
+Describes people who were born in Boston _OR_ New York
+:::
+::: 3rd-colum
+`
+[[Born in::Boston||New York]]
+`
+The same query written in a more *concise form*
+:::
+::::
+
+
+Note that `||` does not always offer an alternative to `OR`. 
+For example, `[[Born in::Boston]] OR [[Category:Actor]]` cannot be expressed with `||`.
+
+`OR` _operates on the query_, not on a single element of the query. In the following query, the _category name_ needs to be repeated:
+`
+[[Category:Actor]] [[Born in::Boston]] OR [[Category:Actor]] [[Born in::New York]]
+`
+
+
+
+---
+# Wildcards and Search Operators
+
+**Wildcards** are written as `+` and allow _any value_ for a given condition^1^. 
+For example, `[[Born in::+]]` returns all pages that have any value for the property `Born in`. 
+
+**Comparators** are _special symbols_ like `<` or `>`^2^. They are placed after `::` in _property conditions_.
+- `>>` and `<<`: "greater than" and "less than"
+- `>` and `<`: "greater than or equal" and "less than or equal" by default
+- `≥` and `≤`: "greater than or equal" and "less than or equal"
+- `!`: "not" ("unequal")
+- `~`: «like» comparison for texts and pages
+- `!~`: «not like» comparison for texts and pages
+
+When applying **comparators** to pages, then the _title of the page_ (without namespace prefix) is used.
+
+
+::: centerbox warning
+Comparators work only for **property values** and not for conditions on categories.
+:::
+
+
+::: footnotes bigskip
+^1^ Please note that `+` can only be used by itself^1^. 
+
+^2^ See https://www.semantic-mediawiki.org/wiki/Help:Search_operators
+:::
+
+
+
+
+---
+# Search Features
+
+SMW supports a number of additional search features, which are not discussed in detail here^1^:
+
+- *Search operators* shows how to refine search conditions and criteria using operators such as comparators or wildcards.
+- *Unions (OR)* of results describes how *disjunctions* (OR-conditions) can be used to combine query results on alternative conditions.
+- *Single page restriction* section describes how to directly select some pages, or pages from a given namespace.
+- Specify *range of pages*
+- Use *namespace restrictions*
+- *Subqueries* and *property chains*
+- Work with *value substitutions* describes how templates and variables can be used in a query to substitute value components
+- *Distance queries*
+
+
+::: footnotes
+See https://www.semantic-mediawiki.org/wiki/Help:Selecting_pages
+:::
+
+
+
+---
+# AQL Inverse Properties
+
+Sometimes, it is necessary to *invert the direction of properties* in queries, in particular when asking for pages that contain a subobject.
+
+<!-- It is possible to *invert* the *direction* of SMW properties -->
+
+==Inverse properties== do not ask for pages that contain a matching annotation but for the _object value_ of the annotation on pages where the property is used.
+
+**Example**
+```
+{{#ask: [[has capital-::Germany]] }}
+```
+In this example, we do not ask for the page that contains a property with the given value but rather _for the value of the property entered to the page_ `Germany`.
+
+
+In consequence `has capital-` has the meaning `is capital of`.
+
+::: centerbox warning Bigskip
+Inverse properties can be used in all SMW interfaces that take properties, but not when adding data to a page.
+:::
 
 ---
 # How to Formulate Query Conditions
@@ -137,7 +349,7 @@ This **graphical representation** serves as basis for the formulation of ==query
 **Structural Semantics** of the knowledge graph
 - `Matthias Frank` is a wiki page in the `main` namespace
 - The page holds two assertions
-  - a `has_full_name`-property the value of which is a Literal 
+  - a `has_full_name`-property the value of which is a Literal (datatype: `Text`)
   - a `works_in`-property the value of which is the wiki page representing Prof. Studer's research group
 ::::
 :::::
@@ -274,7 +486,7 @@ Semantic MediaWiki allows to query for
 ::: 1st-column
 **Structure**
 
-Queries consists of four parts
+Queries consist of four parts
 1. the `#ask` parser function
 2. query conditions
 3. printout statements, i.e., data to be displayed
