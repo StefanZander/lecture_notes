@@ -186,10 +186,28 @@ blockquote p {
     COLUMNS
    ===========================
 */
+/* Use this for flexible columns */
 .columns {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+/* determines the relative width of a single column */
+.single {
+    flex: 1 1;
+}
+
+.double {
+    flex: 2 1;
+}
+
+.triple {
+    flex: 3 1;
+}
+
+.quad {
+    flex: 4 1;
 }
 
 .equalcolumns {
