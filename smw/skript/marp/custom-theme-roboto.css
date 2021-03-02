@@ -198,6 +198,10 @@ blockquote p {
     flex: 1 1;
 }
 
+.onehalf {
+    flex: 1.5 1;
+}
+
 .double {
     flex: 2 1;
 }

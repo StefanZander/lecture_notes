@@ -23,8 +23,8 @@ Kapitel 3.3: Semantische Suche {.lightgreen .bigger .skip}
 # Didaktischer Aufbau der Einheit
 
 Dieses Kapitel ist _zweigeteilt_:
-- **Teil 1** beschäftigt sich mit dem _strukturellen Aufbau_ von Abfragen aus konzeptueller Sicht
-- **Teil 2** behandelt _Syntax_ und _syntaktische Beschreibung_ von Abfragen
+- **Teil 1** behandelt _Syntax_ und _syntaktische Beschreibung_ von Abfragen
+- **Teil 2** beschäftigt sich mit dem _strukturellen Aufbau_ von Abfragen aus konzeptueller Sicht
 
 ::: centerbox warning BIGSKIP 
 Warum ist eine derartige Betrachtungsweise sinnvoll ?
@@ -58,7 +58,11 @@ SMW verfügt über eine **eigene Anfragesprache**
 
 
 ---
-# Introduction (to Syntax)
+# Part 1: Syntax and Semantics
+
+
+---
+# The #ask Query Language (AQL)
 
 Semantic MediaWiki includes an easy-to-use query language called ==AQL – #ask Query Language==, which enables users to access the wiki's knowledge. The _syntax_ is similar to the syntax of _annotations_. AQL can be used on the ==special page== `Special:Ask`, in ==concepts==, and in ==inline queries==.
 
@@ -88,12 +92,60 @@ selects all pages with property `Located in` and value `Germany`.
 :::::
 
 
+---
+# Anatomy of AQL
+
+Semantic MediaWiki defines its own _query language_ called ==AQL – #ask Query Language==. It allows to _retrieve_ pages (or subobjects) based on the information they contain.
+
+::::: columns
+:::: double
+AQL allows to **query** for 
+- ==pages== (e.g. the wiki pages of all running projects)
+- ==property values== (e.g. the full names of all employees of an organisation)
+- ==subobjects== (subgraphs embedded in pages ~> will be discussed later in this course)
+::::
+:::: single
+::: blue small
+**Main Idea**
+To ask for pages with some specified annotations in order to retrieve additional information from those pages. Those annotations in question are used as query conditions.
+:::
+::::
+:::::
+
+:::: equalcolumns
+::: 1st-column
+**Structure**
+
+#ask Queries consist of _four parts_
+1. the `#ask` parser function
+2. query conditions
+3. printout statements, i.e., data to be displayed
+4. display options, i.e., how data are displayed
+:::
+::: 2nd-column
+**Example**
+```
+{{#ask:
+ [[Category:City]]          <!-- Query Conditions -->
+ [[Located in::Germany]] 
+ |?Population               <!-- Printout Statements -->
+ |?Area#km² = Size in km²
+ |format=ul                 <!-- Display Options -->
+}}
+```
+:::
+::::
+
+
+
+
+
 
 ---
 # A Word about the Condition Syntax...
 
 <!-- Please note: -->
-The markup text for formulating query conditions is exactly similar to the annotations embedded in wiki pages. 
+The _markup text_ for formulating ==query conditions== is exactly similar to the annotations embedded in wiki pages. 
 
 ::: centerbox warning skip
 The syntax for asking for pages that satisfy some condition is exactly the syntax for explicitly asserting that this condition holds.
@@ -249,53 +301,35 @@ See https://www.semantic-mediawiki.org/wiki/Help:Selecting_pages
 ---
 # AQL Inverse Properties
 
-Sometimes, it is necessary to *invert the direction of properties* in queries, in particular when asking for pages that contain a subobject.
+Sometimes, it is necessary to *invert the direction of properties* in queries, in particular when asking for pages that contain a _subobject_.
 
 <!-- It is possible to *invert* the *direction* of SMW properties -->
 
-==Inverse properties== do not ask for pages that contain a matching annotation but for the _object value_ of the annotation on pages where the property is used.
+::: definition
+==Inverse properties== do not ask for pages that contain a matching annotation but for the ==object value== of the annotation on pages where the property is used.
 
-**Example**
+Quelle: eigene Definitoin angelehnt an https://www.semantic-mediawiki.org/wiki/Help:Inverse_properties
+:::
+
+**Example** {.Bigskip}
 ```
 {{#ask: [[has capital-::Germany]] }}
 ```
-In this example, we do not ask for the page that contains a property with the given value but rather _for the value of the property entered to the page_ `Germany`.
-
-
-In consequence `has capital-` has the meaning `is capital of`.
+- In this example, we do not ask for the page that contains a property with the given value but rather _for the value of the property entered to the page_ `Germany`.
+- In consequence `has capital-` has the meaning `is capital of`.
 
 ::: centerbox warning Bigskip
 Inverse properties can be used in all SMW interfaces that take properties, but not when adding data to a page.
 :::
 
----
-# How to Formulate Query Conditions
-
-**Example**
-- The following domains are modelled in a Semantic MediaWiki
-
-    > "A research group has a number of employees being members of it. These employees work in different project where each project has different topics it is concerned with."
-
-**Question**:
-- How can we satisfy the information need of displaying all the research topics a research group’s members are associated with through their project work on the research group’s wiki page?
-
-…or in other words
-
-- Which topics are a research group working on?^1^
-
-::: centerbox warning 
-How can we model and satisfy this information need in Semantic MediaWiki ?
-:::
-{.smallskip}
-
-::: footnotes
-^1^: Assuming that topic information is encoded on the project pages using, e.g., `has_topic::Big_Data` statements.
-:::
-
 
 
 ---
-# How to Formulate Query Conditions (Part 2)
+# Part 2: Formulating Query Conditions
+
+
+---
+# How to Formulate Query Conditions 
 
 ::: example
 **Example**
@@ -395,47 +429,38 @@ The **query graph** then helps in formulating
 Consider the following conceptual _query graph semantics_ of the previous example:
 
 - yellow boxes represent _properties_;
-    properties need to be pre-determined in a query, i.e., you can, e.g., not ask which properties exist between two pages in the main namespace.
-- the red box represents a specific wiki page in the main namespace
+  - properties need to be pre-determined in a query, i.e., you can, e.g., not ask which properties exist between two pages in the main namespace.
+- the red box represents a *specific wiki page* in the main namespace
 - the blue boxes represent _query variables_ that are to be filled with the values in the course of _evaluating_ the _query conditions_
 - the green boxes are the _results_ returned by processing the query and that are being displayed.
-
 
 
 
 ---
 # Formulating Complex Queries
 
-Consider the following excerpt of a knowledge graph representing the group an employee works in and one project it is member of together with the topics the project is concerend with. Also note that the structural semantics (ie., how pages are linked together) are more complex.
-
-::: center
-![height:400px](./figures/ask_model_km.png) 
-::: 
-
-
-
----
-# Formulating Complex Queries (Test)
-
-::: columns
-![width:3600px](./figures/ask_model_km.png) 
-
+:::: columns
+::: triple
+![](./figures/ask_model_km.png) 
+:::
+::: single
 - Consider the following excerpt of a knowledge graph representing the group an employee works in and one project it is member of together with the topics the project is concerend with. 
 - Also note that the structural semantics (ie., how pages are linked together) are more complex.
-::: 
+:::
+::::
+
+
 
 ---
 # Formulating Complex Queries: The Query Graph
 
 If we want to _retrieve all topics_, members of Prof. Studer's group are working on, the **query graph** looks as follows:
 
-::::: equalcolumns bigskip
-:::: 1st-column
-::: center
-![height:380px](./figures/ask_query_km.png) 
-::: 
+::::: columns bigskip
+:::: onehalf
+![](./figures/ask_query_km.png) 
 ::::
-:::: 2nd-column
+:::: single
 The **query graph** consists of two variables and thus two subgraphs
 - the `project` subgraph
 - the `employee` subgraph
@@ -448,7 +473,7 @@ It needs to be transformed into an ==inner query== and an ==outer query==^1^
 - the **inner query** represents specific employees (~> the values which participate as conditions in the outer query)
 - the **outer query** the projects they are members of 
 
-::: centerbox center warning 
+::: centerbox center warning small Bigskip
 When formulating queries in Semantic MediaWiki, always consider the structural semantics of pages (ie., how pages are linked together via properties).
 :::
 
@@ -462,46 +487,3 @@ When formulating queries in Semantic MediaWiki, always consider the structural s
 
 
 
----
-# Part 2: Ask Query Language – Syntax
-
-
-
----
-# The #ask Query Language (AQL)
-
-SMW defines its own _query language_ called ==AQL==, which resembles the (semantic) MediaWiki syntax to some extent.
-
-**Main Idea**
-To ask for pages with some specified annotations in order to (in most cases) retrieve additional information from those pages. Those annotations in question are used as query conditions, as illustrated in the examples below:
-
-The parser function `#ask`  allows to retrieve pages based on the information they contain; (REALLY ONLY PAGES?!)
-
-Semantic MediaWiki allows to query for 
-- ==pages== (e.g. the wiki pages of all running projects)
-- ==property values== (e.g. the full names of all employees of an organisation)
-- ==subobjects== (subgraphs embedded in pages ~> will be discussed later in this course)
-
-:::: equalcolumns
-::: 1st-column
-**Structure**
-
-Queries consist of four parts
-1. the `#ask` parser function
-2. query conditions
-3. printout statements, i.e., data to be displayed
-4. display options, i.e., how data are displayed
-:::
-::: 2nd-column
-**Example**
-```
-{{#ask:
- [[Category:City]]          <!-- Query Conditions -->
- [[Located in::Germany]] 
- |?Population               <!-- Printout Statements -->
- |?Area#km² = Size in km²
- |format=ul                 <!-- Display Options -->
-}}
-```
-:::
-::::
