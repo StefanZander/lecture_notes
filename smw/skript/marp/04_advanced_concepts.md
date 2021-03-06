@@ -1,6 +1,6 @@
 ---
 marp: true
-theme: custom-theme
+theme: custom-theme-roboto
 paginate: true
 ---
 <style>
@@ -15,7 +15,7 @@ paginate: true
 
 #### Prof. Dr. Stefan Linus Zander
 
-Kapitel 4: Fortschrittliche Ontologiemodellierung mittels Semantic MediaWiki {.lightgreen .big}
+Kapitel 4: Fortschrittliche Ontologiemodellierung mittels Semantic MediaWiki {.lightgreen .Big}
 
 ---
 <!-- header: Kapitel 1: Page Forms -->
@@ -23,20 +23,21 @@ Kapitel 4: Fortschrittliche Ontologiemodellierung mittels Semantic MediaWiki {.l
 
 # Defining individual CSS Styles using MediaWiki:Common.css
 
-SMW allows to change the rendering of its elements using individual CSS style rules.
+SMW allows to change the ==rendering== of its elements using individual CSS style rules.
 
 1. Call the `MediaWiki:Common.css` page (e.g. ...)
-2. Get the CSS selector for the elements in question using the style tab in the browser inspector  
-3. Add the corresponding style rules to the `MediaWiki:Common.css`
+2. Get the ==CSS selector== for the elements in question using the _style tab_ in the browser inspector  
+3. Add the corresponding ==style rules== to the `MediaWiki:Common.css`
 
 
 ---
 # Subobjects: Querying using #ask
 
-Using `#subobject` does not print out anything on the screen. To show the subobject data directly on the page where they are defined use an ask query `{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] }}` with ==inverse property== and add it after the definition of subobjects.
+Using `#subobject` does not print out anything on the screen. To show the subobject data directly on the page where they are defined use an _ask query_ `{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] }}` with ==inverse property== and add it after the definition of the subobjects.
 
-::::: equalcolumns
-:::: 1st-column
+
+::::: columns
+:::: single 
 **Example**
 1. Define two subobjects with identifiers "first" and "second":
     ```
@@ -51,9 +52,8 @@ Using `#subobject` does not print out anything on the screen. To show the subobj
     }}
     ```
 ::::
-:::: 2nd-column
-
-2. Use the #ask-query to print out the subobjects' data:{.longskip}
+:::: single bigskip
+2. Use the `#ask`-query to print out the subobjects' data:
     ```
     {{#ask:
      [[-Has subobject::{{FULLPAGENAME}}]] 
@@ -62,7 +62,7 @@ Using `#subobject` does not print out anything on the screen. To show the subobj
     }}
     ```
 
-    ::: blue
+    ::: blue 
     Please note that the `Has subobject` property need to be specified as ==inverse property== (note the '`-`' in front of the property) in order to make the query work.
     :::
 ::::
@@ -77,7 +77,7 @@ Source: https://www.semantic-mediawiki.org/wiki/Help:Subobjects_and_queries
 ---
 # Subobjects: Show Properties of the Subobject's Parent Page
 
-In some cases one might not only want to query for subobject data but also for _properties_ that are defined on the _subobject's parent page_. 
+In some cases it is necessary to query for ==properties== that are defined on the ==subobject's parent page==. 
 <!-- The process to do that contains the following steps: -->
 
 ::::: equalcolumns small
@@ -151,7 +151,7 @@ The solution is to use ==subqueries== to query for certain subobject properties 
 }}
 ```
 
-- The query `[[Has subobject::]]` (without the "`-`") queries for the (parent) pages that have subpropeties. 
+- The query `[[Has subobject::]]` (without the "`-`") queries for the (parent) pages that have certain **subproperties**. 
 - With the subquery, you can then select certain subobject properties. 
 - As the query asks for parent pages, you can select properties of the parent pages as printouts.
 
@@ -163,7 +163,7 @@ Source: https://www.semantic-mediawiki.org/wiki/Help:Subobjects_and_queries
 ---
 # QueryForms: Define Yearly Time Frames
 
-If you want to use for specific (e.g. yearly) time frames using QueryForms, you have to define 2 things:
+If you want to use for specific (e.g. yearly) ==time frames== using **QueryForms**, you have to define 2 things:
 
 1. Define a _field tag_ with `|input type=year` (or use a combo-box with pre-defined values) for the years
     ```
@@ -198,7 +198,7 @@ Display the items (represented as subobjects) of all book orders issued in 2020.
 ___Assumption:___ 
 Items are represented as subobjects embedded in order pages.
 
-___Solution:___
+___Solution:___ {.noskip}
 1. Draw a data graph of the involved entities
 2. Formulate the query conditions for the parent pages
 3. Insert the parent page query conditions into a subquery
@@ -320,7 +320,7 @@ The possibility of using pipes `|` for setting multiple values was deprecated st
 :::
 ::::
 :::: 3rd-column
-### c) Separate Values using a Named Separator
+### c) Separate Values using Named Separator
 ```
 {{#subobject:mysubobject
  |Has property 1=Value 1;Value 2;Value 3|+sep=;
@@ -498,8 +498,12 @@ Jetzt kann mittels einer Query nach Seiten mit dem gesetzten Wert des Properties
 ---
 # Query Forms
 
+
+---
+# Query Forms
+
 ::: definition
-Query forms are a specific type of page forms and allow to pass individually entered input form data as parameters to query templates. A query form requires a query template, ie., a template with an inline query plus a special page that displays both form data and transcluded template on one wiki page.
+==Query forms== are a specific type of page forms and allow to pass individually entered input form data as parameters to query templates. A query form requires a query template, ie., a template with an inline query plus a special page that displays both form data and transcluded template on one wiki page.
 
 Quelle: Individual Definition
 :::
@@ -559,7 +563,7 @@ Source: https://www.mediawiki.org/wiki/Extension:Page_Forms/Creating_query_forms
 ```
 ::::
 :::: 2nd-column
-**Query template** 
+**Query Template** 
 ```
 {{#ask: 
  [[Category:Buchbestellung]]
@@ -584,6 +588,7 @@ Source: https://www.mediawiki.org/wiki/Extension:Page_Forms/Creating_query_forms
 [[Special:RunQuery/Query_Buchbestellungen|Meine bisherigen Buchbestellungen aufrufen]]
 ```
 
+TODO: Add Screenshot
 
 
 
@@ -598,9 +603,9 @@ Mittels Query Forms lassen sich die Template-Parameter über Formulareingabeelem
 
 Eine Spezialseite xxx bindet das Query-Form ein, überigbt deren Werte an das Template und stellt das transkludierte Template im Anschluss auf der Seite dar.  
 
-Wichtig:
-Damit das Query-Template bzw. die Query richtig funktioniert, muss bei den Parametern ein `+` als Alternative für einen leeren Wert gesetzt werden!
 
+::::: columns
+:::: double
 ```
 {{#ask:
  [[Category:BA_Abschlussmodul]] 
@@ -610,13 +615,20 @@ Damit das Query-Template bzw. die Query richtig funktioniert, muss bei den Param
  [[Abschluss_Semester::{{{Semester|+}}}]]
  ...
 ```
-
+::::
+:::: single
+::: warning small
+**Wichtig**:
+Damit das Query-Template bzw. die Query richtig funktioniert, muss bei den Parametern ein `+` als Alternative für einen leeren Wert gesetzt werden!
+:::
+::::
+:::::
 
 
 ---
 # Formatting of Boolean Values in Queries
 
-By default, Boolean values will display as `true` and `false` in queries. This can be changed starting with Semantic MediaWiki 2.4.0 by specifying a ==format string== to control what is displayed for the true and false values of a property.
+By default, __Boolean values__ will display as `true` and `false` in queries. This can be changed in Semantic MediaWiki >= 2.4.0 by specifying a ==format string== to control what is displayed for the true and false values of a property.
 
 ::::: equalcolumns
 :::: 1st-column
@@ -627,8 +639,9 @@ The following _formatting options_ are supported
 -  `#x` formatter (#x to output X that resembles a cross for true)
 -  Custom label formatter (Using custom labels to define a boolean output and assign a true, false value display)
 
-::: blue
-Note that not all result formats may provide support for these formatters.
+::: blue small
+**Note** 
+Not all result formats may provide support for these formatters.
 :::
 ::::
 :::: 2nd-column
@@ -667,7 +680,7 @@ Source: https://www.mediawiki.org/wiki/Extension:Page_Forms/Page_Forms_and_templ
 ---
 # Tipps for Working with Dates and Page Forms
 
-## Using the current date in an input element^1^
+### Using the current date in an input element^1^
 Using input type `datepicker`, it is possible to set the _current date_ as default value in the input element using the `#time` parser function^2^ of the `Extension:ParserFunctions`^3^
 
 Example:

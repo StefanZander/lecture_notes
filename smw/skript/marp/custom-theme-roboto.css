@@ -191,6 +191,13 @@ blockquote p {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    column-gap: 2em;
+}
+
+.columnsnogap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 /* determines the relative width of a single column */
@@ -289,7 +296,7 @@ blockquote p {
 }
 
 /* Use this when a bulleted list should start immediately after a paragraph */
-.nobottommargin {
+.nobottommargin, .noskip {
     margin-bottom: 0em;
 }
 
@@ -304,6 +311,10 @@ blockquote p {
     margin-right: auto;
 }
 
+.centertext {
+    text-align: center;
+}
+
 
 /* ========================
     FONT SIZES
@@ -314,12 +325,12 @@ blockquote p {
     /* font-weight: 600; */
 }
 
-.bigger {
+.Big {
     font-size: 1.5em;
     /* font-weight: 600; */
 }
 
-.biggest {
+.BIG {
     font-size: 2.0em;
     /* font-weight: 600; */
 }

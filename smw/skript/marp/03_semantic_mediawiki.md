@@ -1,6 +1,6 @@
 ---
 marp: true
-theme: custom-theme
+theme: custom-theme-roboto
 paginate: true
 ---
 <style>
@@ -267,7 +267,7 @@ Ein ==Datenstrukturelement== (ist Bestandteil einer ...) erlaubt die Spezifikati
 Quelle: Eigene Definition; --> TODO: Unterscheidung zwischen Sprach- und Datenmodellelement
 :::
 
-**Semantic MediaWiki** definiert ==8 Datenstrukturelemente==: {.longskip}
+**Semantic MediaWiki** definiert ==8 Datenstrukturelemente==: {.BIGskip}
 ::: twocolumns 
 1. *Seite* (engl. Page)
 2. *Kategorie* (engl. Category)
@@ -285,10 +285,10 @@ Quelle: Eigene Definition; --> TODO: Unterscheidung zwischen Sprach- und Datenmo
 ---
 # MediaWiki: Syntax
 
-::::: equalcolumns
-:::: 1st-column
+::::: columns
+:::: single
 ### Content Encoding
-- Wiki pages are formatted hypertext documents 
+- Wiki pages are formatted _hypertext documents_ 
 - Content is encoded in wikitext using a _markdown-like syntax_
 - Wikitext input is converted into HTML output:
 
@@ -305,7 +305,7 @@ Quelle: Eigene Definition; --> TODO: Unterscheidung zwischen Sprach- und Datenmo
 : indentation
 ```
 ::::
-:::: 2nd-column
+:::: single
 ### Advanced Formatting Features
 
 - Rich set of features for controlling content display 
@@ -314,11 +314,10 @@ Quelle: Eigene Definition; --> TODO: Unterscheidung zwischen Sprach- und Datenmo
     - Images 
     - Tables
 
-
-::: blue longskip
+::: centerbox blue Bigskip
 See online documentation for details
+~> https://www.mediawiki.org/wiki/Help:Formatting
 :::
-
 ::::
 :::::
 
@@ -327,18 +326,19 @@ See online documentation for details
 ---
 # MediaWiki: The Structure of Page Names
 
-::::: equalcolumns
-:::: 1st-column
+
 ==Page names== consist of _3 different parts_
+::::: columns
+:::: single
 ``` 
 Namespace:Title/Subpagetitle
 ```
 ::::
-:::: 2nd-column
-Example
+:::: single
 ```
-User:Denny/Tests
+Example:   "User:Denny/Tests"
 ```
+:::
 ::::
 :::::
 
@@ -346,7 +346,7 @@ User:Denny/Tests
 :::: 1st-column
 ### 1. Namespace
 - Prefixes, separated from title by colon `:`
-- Not all prefixes that end in ":" are namespaces!
+- Not all prefixes that end in `:` are namespaces!
     - Available prefixes provided by MW, more can be added in configuration
     - Default: `Main` (empty), `User`, `Category`, `Template`, `Help`, `MediaWiki`, `File`, `Special`, `Project` (sitename)
 - Purpose: distinguish _basic "content types"_
@@ -359,19 +359,19 @@ User:Denny/Tests
 - MediaWiki determines whether page already exists
     - For *existing page*s, the page's content will be displayed
     - For *non-existend pages*, the edit view will be displayed
-    ::: warning
+    ::: warning small skip
     **Page names are case-sensitive**
     MediaWiki distinguishes between upper- and lower-case letters in page names!
     :::
 ::::
 :::: 3rd-column
 ### 3. Subpagetitle
-- Postfixes, separated from title by slash “/”
-- Not all postfixes after “/” are subpages!
+- Postfixes, separated from title by slash `/`
+- Not all postfixes after `/` are subpages!
     - Enabled for certain namespaces
     - By default only for User and all Talk pages 
 - Often not appropriate for organising pages (rigid, hierarchical content structure)
-- Small difference to pages with “/” in title
+- Small difference to pages with `/` in title
     - For example when moving pages
 - Used in Wikipedia for multilingual page content
 ::::
@@ -382,21 +382,23 @@ User:Denny/Tests
 # Namespaces
 
 ::: definition
-==Namespaces== are prefixed in a page's URL and determine both the purpose and the model-theoretic semantics of a page. Based on the given namespace, the  MediaWiki engine determines how to process the contents of a page. MediaWiki provides 18 default namespaces^1^.
+==Namespaces== are prefixed in a page's URL and determine both the purpose and the model-theoretic semantics of a page. Based on the given namespace, the MediaWiki engine determines how to process the contents of a page^1^.
 
 Quelle: eigene Definition
 :::
-- Every wiki page belongs to **one specific namespace**
+
+{.tinyskip}
+* Every wiki page belongs to **one specific namespace**
     - Namespaces become part of the page's title, e.g., `Help:Namespaces/de`^3^.
-    - When no namespace is given during page creation, the page will be created in the **main namespace**^2^.
-- Namespaces determine the **purpose** of a page, i.e., how the contents of a page are interpreted by the wiki engine.
+    - When _no namespace_ is given during page creation, the page will be created in the **main namespace**^2^.
+* Namespaces determine the **purpose** of a page, i.e., how the contents of a page are interpreted by the wiki engine.
     - Example: Datatype information in property pages determine whether the specification of property values will lead to the creation of a new wiki page (in the default namespace) or whether property values are treated as data type values.
     - The wiki engine can also assess whether a certain **value holds for a property** or not (e.g., in the case of datatype `Date` or `telephone` etc.)
     - Contents of pages defined in the `Template:` namespace will be **transcluded** in other pages.
-- The `Special` namespace is reserved for pages with fixed functionality (e.g. `Special:RunQuery`); no editing is possible
+* The `Special` namespace is reserved for pages with fixed functionality (e.g. `Special:RunQuery`); no editing is possible
 
 ::: footnotes
-^1^ See <https://www.mediawiki.org/wiki/Help:Namespaces/en#Standard_namespaces> for a list of standard namespaces provided by MediaWiki
+^1^  MediaWiki provides 18 default namespaces. See <https://www.mediawiki.org/wiki/Help:Namespaces/en#Standard_namespaces> for a list of standard namespaces provided by MediaWiki
 
 ^2^ The main namespace is not displayed in a page's URL but used internally by the mediawiki engine.
 
@@ -406,10 +408,10 @@ Quelle: eigene Definition
 
 
 ---
-# MediaWiki: Namespaces (2/2)
+# Namespaces – Part 2
 
-- Namensräume dienen der Gruppierung von Seiten
-- Funktionen können auf bestimmte Namensräume eingeschränkt werden
+- Namensräume dienen der _Gruppierung_ von logisch zusammengehörigen Seiten
+- _Funktionen_ können auf bestimmte Namensräume eingeschränkt werden
 - Mediawiki hat standardmäßig **18 Namensräume**
 - Textseiten stehen standardmäßig im Namenraum `Main`
 
@@ -422,34 +424,34 @@ Quelle: eigene Definition
 # Categories
 
 ::: definition
-Categories are pages defined in the `Category:` namespace and allow for organizing MediaWiki pages in predefined categories.
+==Categories== are MediaWiki pages created in the `Category:` namespace. A category page represents a single category and allow for organizing other MediaWiki pages in predefined groups, represented by the category names.
 
 Eigene Definition angelehnt an <https://www.mediawiki.org/wiki/Help:Categories>_  
 :::
 
 {.shortskip}
-- MediaWiki ermöglicht das Klassifizieren von Seiten durch Kategorien
+- MediaWiki ermöglicht das Klassifizieren von Seiten durch _Kategorien_
 - Die Zuordnung einer Seite zu einer Kategorie erfolgt durch Einfügen von `[[Category:Categoryname]]` im Quelltext der Seite
-- Eine Seite kann mehreren Kategorien zugeordnet werden
+- Eine Seite kann _mehreren Kategorien_ zugeordnet werden
 - Kategorien werden am Ende der Seite angezeigt
-- Eine Hierarchiebildung der Kategorien ist durch Zuordnung von Kategorien zu Kategorien möglich
+- Eine _Hierarchiebildung_ der Kategorien ist durch Zuordnung von Kategorien zu Kategorien möglich
 
 
 ---
-# Categories
+# Using Categories
 
-Categories are the preferred way to organise pages in MediaWiki
+<!-- Categories are the preferred way to organise pages in MediaWiki
 ::: definition
 ==Categories== are pages defined in the `Category:` namespace and allow for organizing MediaWiki pages in predefined categories.
 
 Quelle: Eigene Definition angelehnt an <https://www.mediawiki.org/wiki/Help:Categories>_  
 :::
 
-{.shortskip}
+{.shortskip} -->
 
 ### a) Adding a Page to a Category 
 - _Links to Category pages mean_: =="page is in category"==  
-    - Example: `[[Category:City]]` on page of `Cologne`
+    - Example: Add `[[Category:City]]` on page of `Cologne`
 
 <!--
 - _Links to Category pages mean_: =="page is in category"== 
@@ -461,7 +463,7 @@ Quelle: Eigene Definition angelehnt an <https://www.mediawiki.org/wiki/Help:Cate
 ::::: equalcolumns
 :::: 1st-colum
 - _Category Links on Category pages_: =="page is subcategory of"==
-    - Example: `[[Category:Settlement]]` on `Category:City`
+    - Example: Add `[[Category:Settlement]]` on `Category:City`
 ::::
 :::: 2nd-column
 - ==Category hierarchy== can be _any graph_ 
@@ -469,33 +471,25 @@ Quelle: Eigene Definition angelehnt an <https://www.mediawiki.org/wiki/Help:Cate
 ::::
 :::::
 
-
----
-# Categories: Tipps
-
 ### c) Linking to a Category
-To create _a link to a category_, use a leading colon `:` before the category name^1^:
-```
- [[:Category:Help]] −−> Link displays as "Category:Help"
-```
-
-To change the link text, write the text inside the link tag after a pipe `|`:
-```
- [[:Category:Help|Help category]] −−> Link displays as "Help category"
-```
+- To create _a link to a category_, use a leading colon `:` before the category name^1^:
+  - Example: `[[:Category:Help]]` −−> Link displays as "Category:Help"
+  - Example: `[[:Category:Help|Help category]]` --> The pipe `|` symbol allows to  set an individual link text
 
 ::: footnotes
 ^1^ Without a leading colon, the current page would be added to the category
 :::
 
+
+
 ---
-# Category Hierarchies
+# Category Hierarchies in more Detail
 
-Mediawiki allows to build **category hierarchies**, i.e., it employs super- and sub-category concepts to resemble the 'broader' and 'narrower' relationships between categories known from taxonomical classification systems. 
+Mediawiki allows to build **category hierarchies**, i.e., it employs ==super-== and ==sub-category concepts== to resemble the _'broader'_ and _'narrower'_ relationships between categories known from _taxonomical classification systems_. 
 
-In order to make a category a sub-category of another category, add `[[Category:{Super_category}]]` to the sub-category page.
+In order to make a category a _sub-category_ of another category, add `[[Category:{Super_category}]]` to the _sub-category page_.
 
-Example:  
+**Example** 
 ```
 On the category page 'city':
 ============================
@@ -508,7 +502,7 @@ On the category page 'city':
     Defining that city is a special form of settlement (ie., sub-category), enter
     `[[Category:Settlement]]` on the `Category:City` page to make `Settlement` the super category of `City` -->
 
-::: blue
+::: blue centerbox Bigskip
 Please note that category hierarchy can be any graph (multi-inheritance, cycles, etc.)
 :::
 
@@ -557,6 +551,151 @@ To change the _link text_, write the text inside the link tag after a pipe:
 --> Link displays as "Help category"
 ::::
 :::::
+
+
+---
+# The Semantic Sauce
+
+---
+# Introduction to Properties
+
+==Properties== and ==datatypes== are the basic way of encoding **semantic data** in Semantic MediaWiki.
+
+::: definition
+==Properties== define ==explicit relationships== between wikipages, between wikipages and typed values, or between wikipages and subobjects. The explicit relationship is represented by the property definition page – a unique page created in the `property` namespace.  
+
+Source: Individual definition
+:::
+
+**Properties can link** {.Bigskip}
+:::: columns 
+::: single 
+- a wikipage to one or many ==wikipages==
+:::
+::: single
+- a wikipage to a ==datatype value==
+:::
+::: single
+- a wikipage to one or many ==subobjects==
+:::
+::::
+
+**Some Introductory Remarks**
+- Properties do not just express a navigational plain link but a link with a certain meaning inherited from the property definiton page on the `property`  namespace. 
+- The **semantics** of a property are determined by the _annotations_ added to the ==property definition page==.
+  - e.g. defining _value restrictions_ – so-called _allowed values_
+  - e.g. defining a certain _datatype_ – which in turn determines the _interpretation_ of _property values_
+    - e.g. treating 1,000 and 1000 as being equal in case of the datatype `Number` 
+  - e.g. defining _taxonomical relationships_ between sub- and super-properties and thus inference in query answering
+
+<!-- Semantic MediaWiki treats properties as ==First-class citizens== -->
+
+
+---
+# Special Properties
+
+A ==property== need to be **declared** before it can be used in annotations. 
+For the declaration, Semantic MediaWiki provides a set of so-called ==special properties==^1^ that allows for encoding property semantics.
+
+::: definition
+==Special properties== are a **predefined set of properties** with **built-in meaning** to control the behaviour of certain areas in a MediaWiki system. They–among other functions–are used to define the **semantics** of **individual properties** and are evaluated differently by the MediaWiki engine.
+
+Source: individual definition based on https://www.semantic-mediawiki.org/wiki/Help:Special_properties
+:::
+
+{.skip}
+
+In consequence, we need to make a **distinction** between ==individually defined properties== and ==special properties==. 
+- ==Special properties== control the behaviour of the Semantic MediaWiki system
+- ==Properties== represent individually defined vocabulary terms for expressing domain relationships.
+
+::: blue centerbox skip small
+**Convention** {.noskip}
+- When we use the term "**property**", we always refer to individually defined properties used to model a universe of discourse.
+- We use the term "**special property**", when we refer to the set of predefined properties provided by the Semantic MediaWiki engine. {.noskip}
+:::
+
+::: footnotes skip
+^1^ Semantic MediaWiki provides 61 special properties; here is a list of them: https://www.semantic-mediawiki.org/wiki/Help:Special_properties
+:::
+
+
+---
+# Property Declaration
+
+
+::::: columns
+:::: triple
+- Before a property can be used in annotations, it need to be **declared**.
+- Properties are declared on their ==property definition pages==. 
+- Property definition pages belong to the `property` namespace and their names represent the respective property in an annotation.
+- Declarations are expressed as annotations, i.e., we use SMW's property syntax for defining a property's semantics (=declaration)
+- A declaration usually involves an annotation about its type and allowed values.
+::::
+:::: single example small
+**Example**
+If we want to define a property, e.g.  `has Population`, we first need to create a page with that name in the `Property` namespace and add a `Has type` special property on its declaration page with value `Number`.
+
+~> `[[Has type::Number]]`
+
+::::
+:::::
+
+::: footnotes
+More information and examples can be found at https://www.semantic-mediawiki.org/wiki/Help:Property_declaration
+:::
+
+
+---
+# Property Naming
+
+Property naming is an important topic to avoid ambiguity and confusion and to minimize ==semantic drift==.
+It is good practice to create property names as a short **verb phrase**. 
+
+**Example**
+<!-- Here's an example that uses Berlin and Germany to makes this practice more comprehensible: -->
+
+`Germany's capital is Berlin. ↔ Berlin is the capital of Germany.`
+
+Using a property called `capital` does not convey the intended meaning.
+
+Better: `Germany's capital is [[Has capital::Berlin]]` <--> `Berlin is the capital of [[Is capital of::Germany]]`
+
+**Naming Recommendations**
+- Avoid _reserved names_ – e.g. those used for magic words, special pages, behaviour switches, namespaces etc.
+- Avoid using the _name of a datatype_ – e.g. `[[Code::Qsdr-5t7Z-b99N]]` can not be changed to text etc.
+- Avoid using certain _kinds of punctuation_ – e.g. `::` (double colon), `-` (hyphen), `.` (dot), `|` (pipe), `#` (fence) 
+
+::: footnotes
+^1^ More information can be found here: https://www.semantic-mediawiki.org/wiki/Help:Property_naming
+
+^2^ "Style Guidelines for Naming and Labeling Ontologies in the Multilingual Web" (https://dcpapers.dublincore.org/pubs/article/view/3626) contains some general guidelines how to name properties and URI's
+:::
+
+
+
+---
+# Notation (unfinsihed)
+
+
+Properties are used in annotations the following way
+<!-- **Notation** {.Bigskip} -->
+::: blue centerbox
+[[Property name::property value]]
+:::
+
+This statement (so-called _annotation_) defines a _value_ for the _property_ of the given `Property name`. 
+The page on which the annotation is used displays the _property value_ and **not the property assignment**.
+
+
+
+::: blue centerbox
+Properties are the "**semantic sauce**" in Semantic MediaWiki and Semantic Knowledge Graphs in general
+:::
+
+
+
+
 
 
 
