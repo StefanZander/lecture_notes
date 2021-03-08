@@ -675,28 +675,110 @@ Better: `Germany's capital is [[Has capital::Berlin]]` <--> `Berlin is the capit
 
 
 ---
-# Notation (unfinsihed)
+# Recap – Using Properties in SMW
 
+<!-- What needs to be done to use properties in Semantic MediaWiki? -->
+The process of using properties in Semantic MediaWiki is _twofold_:
 
-Properties are used in annotations the following way
-<!-- **Notation** {.Bigskip} -->
-::: blue centerbox
-[[Property name::property value]]
+A) ==Creating Properties== {.skip}
+- Property needs to be  _declared_
+- Consider _property naming_ recommendations
+- Use appropritate _datatype_ depending on the envisioned object value^1^
+
+B) ==Creating Annotations==
+- Using _in-text annotations_
+- alternative: Extra annotations
+
+::: footnotes
+^1^ see https://www.semantic-mediawiki.org/wiki/Help:List_of_datatypes
 :::
 
-This statement (so-called _annotation_) defines a _value_ for the _property_ of the given `Property name`. 
+
+
+---
+# Using Properties in Annotations
+
+Properties are used in annotations the following way (a so-called ==in-text annotation==)
+<!-- **Notation** {.Bigskip} -->
+
+::: blue centerbox 
+**Notation** [[Property name::property value]]
+:::
+{.skip}
+
+<!-- ::: example centerbox
+**Example** [[Is capital of::Germany]]
+::: -->
+
+This statement defines a _value_ for the _property_ of the given `Property name`. 
 The page on which the annotation is used displays the _property value_ and **not the property assignment**.
 
+### Notations
+- _in-text annotation_: `[[Is capital of::Germany]]` ~> displays Germany as HTML link on the page
+- _alternative text_: `[[Is capital of::Germany|alternate text]]` ~> alternate text appears in place of the link
+- _hidden property_: `[[Is capital of::Germany| ]]` ~> does not display any value at all 
 
-
+<!--   
 ::: blue centerbox
 Properties are the "**semantic sauce**" in Semantic MediaWiki and Semantic Knowledge Graphs in general
 :::
+-->
+
+---
+# Silent Annotations using #set
+
+The `#set` ==parser function== allows to annotate data, i.e. assign values to a property, _silently_ and avoid the `[[Property::value]]` syntax.
+
+**Example** {.skip}
+::::: columns
+:::: double
+```
+{{#set:
+ Has population=2,229,621
+ |Located in country=France
+}}
+```
+::::
+:::: double
+```
+is similar to...
+
+[[Has population::2,229,621| ]] 
+[[Located in country::France| ]]
+```
+::::
+:::: single small
+<!-- Please note: -->
+The `set` parser function does not display anything, but saves the very same properties as data.
+::::
+:::::
+
+It is also possible to set ==multiple values== to the same property: {.skip}
+::::: columns
+:::: single
+```
+{{#set:
+ Has postcode=75001
+ |Has postcode=75002
+ ...
+}}
+```
+::::
+:::: double
+```
+{{#set:
+ |Has text=fc00:123:8000::/%6;2001:db8::1428:57ab;2001:db8:0:8d3:0:8a2e:70:7344
+ |+sep=;
+}}
+```
+For full compatibility use the separator `|+sep=...` function to separate multiple values
+::::
+:::::
 
 
-
-
-
+::: footnotes
+Sources: (1) https://www.semantic-mediawiki.org/wiki/Help:Setting_values/Working_with_the_separator_parameter and (2) https://www.semantic-mediawiki.org/wiki/Help:Setting_values
+:::
 
 
 ---
