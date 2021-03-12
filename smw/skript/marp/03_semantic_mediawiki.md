@@ -15,10 +15,10 @@ paginate: true
 
 #### Prof. Dr. Stefan Linus Zander
 
-Kapitel 3: Einführung in Semantic MediaWiki {.lightgreen .big .skip}
+Kapitel 3: Einführung in Semantic MediaWiki {.lightgreen .Big .skip}
 
 ---
-<!-- header: Kapitel 0: Vorbemerkungen -->
+<!-- header: Kapitel 0: Inhalte -->
 <!-- footer: Prof. Dr. Stefan Zander -->
 # Inhalte
 
@@ -34,7 +34,7 @@ Kapitel 3: Einführung in Semantic MediaWiki {.lightgreen .big .skip}
 
 
 ---
-<!-- header: Kapitel 1: Einführung -->
+<!-- header: Kapitel 1: Einführung Wiki-Systeme -->
 
 # Semantic MediaWiki (TODO: Change)
 
@@ -176,21 +176,50 @@ _MediaWiki_ ist die bedeutenste und weitverbreiteste Implementierung eines Wiki-
 ---
 # Semantic MediaWiki
 
-- Extension für MediaWiki
-- Erweitert MediaWiki mit Ontologie-basierten Sprachkonzepten 
-    - properties, concepts, subobjects
-- Erfunden und entwickelt am KIT durch Markus Krötzsch, Denny Vrandečić^3^ und Max Völkl, Institut für Angewandte Informatik und Formale Beschreibungsverfahren (AIFB)
-
+::::: columns
+:::: single
+- Extension für MediaWiki, erstmals veröffentlicht 2005
+- Erweitert MediaWiki mit ==Ontologie-basierten Sprachkonzepten== für den Aufbau und die Verarbeitung von Daten in Form ==semantischer Wissensgraphen== 
+    - properties, datatypes, concepts, subobjects
+- Erfunden und entwickelt am KIT durch _Markus Krötzsch_^1^, _Denny Vrandečić_^2^ und _Max Völkel_^3^, ehemalige Wissenschaftliche Mitarbeiter am Institut für Angewandte Informatik und Formale Beschreibungsverfahren (AIFB)^4^
+- Überführt Wiki-Systeme in ==semantische Wissensbasen==
+::::
+:::: single
+::: center 
+![](./figures/smw_website.png) 
+<!-- ![width:100px](./figures/SMW_logo.png)  -->
+::: center
+::::
+:::::
 
 ::: footnotes
-^1^ some url
+^1^ https://iccl.inf.tu-dresden.de/web/Markus_Kr%C3%B6tzsch
 
-^2^ https://iccl.inf.tu-dresden.de/web/Markus_Kr%C3%B6tzsch
+^2^ https://de.wikipedia.org/wiki/Denny_Vrande%C4%8Di%C4%87
 
-^3^ https://de.wikipedia.org/wiki/Denny_Vrande%C4%8Di%C4%87
+^3^ https://www.maxvoelkel.de/
 
-^4^
+^4^ https://aifb.kit.edu/web/Hauptseite
 :::
+
+
+---
+# Why Semantic MediaWiki ?
+
+Wikis are a great tool for _collecting_ and _sharing knowledge_ in communities and organizations. This knowledge is mostly _contained_ within _texts_ and multimedia files, and is thus easily accessible for human readers. But though wikis are very good for storing and retrieving individual facts, they are less useful for getting queried or aggregated information. 
+
+As a simple example, let's say you use a wiki that stores information about projects related to your organization. You have the following simple question:
+
+> "What are the active projects that were started in 2012?"
+
+This should be an easy question to answer, but in fact it's not - you would have to read through all of the pages about projects every time you wanted to answer the question. Text searches won't necessarily help. Categories could help to some extent, although they're not an ideal tool and maintaining them can become complex (see below). And there doesn't exist an artificial intelligence tool that could help with this task either.
+
+Semantic MediaWiki enables wikis to make their knowledge computer-processable, so that you can find and display the answer to this question - and to many more.
+
+::: footnotes
+Source: https://www.semantic-mediawiki.org/wiki/Help:Introduction_to_Semantic_MediaWiki
+:::
+
 
 ---
 # Semantic MediaWiki ist ein offenes, kollaboratives Wissensmanagementsystem
@@ -230,8 +259,8 @@ Quelle: "MediaWiki – Advantages of MediaWiki as a Content Mangement System" �
 
 Wikis stellen eine Reihe von ==Sprachelementen== und ==Erweiterungen== zur Erstellung und Verwaltung von Inhalten bereit:
 
-::::: equalcolumns
-:::: 1st-column
+::::: columns
+:::: single
 - Seiten 
 - Namensräume
 - Kategorien 
@@ -242,7 +271,7 @@ Wikis stellen eine Reihe von ==Sprachelementen== und ==Erweiterungen== zur Erste
     - Behavior switches 
 - etc.
 ::::
-:::: 2nd-column
+:::: single
 - Page Forms
 - Semantic Result Formats
 - Parser Functions
@@ -251,7 +280,7 @@ Wikis stellen eine Reihe von ==Sprachelementen== und ==Erweiterungen== zur Erste
 ::::
 :::::
 
-::: warning
+::: warning centerbox
 **Groß- und Kleinschreibung beachten!**  
 MediaWiki und damit auch Semantic MediaWiki unterscheidet zwischen Groß- und Kleinschreibung bei Seitennamen etc. in der URL!
 :::
@@ -259,27 +288,137 @@ MediaWiki und damit auch Semantic MediaWiki unterscheidet zwischen Groß- und Kl
 
 
 ---
+# Grundlegende Definitionen (1/3)
+
+::: definition
+Ein ==Datenmodell== ist ein Modell der zu beschreibenden und verarbeitenden Daten eines Anwendungsbereichs und ihrer Beziehungen zueinander.
+
+Quelle: https://wirtschaftslexikon.gabler.de/definition/datenmodell-28093/version-251730
+::: 
+
+{.skip}
+
+- Im Kontext der **formalen Abbildung eines Gegenstandsbereichs** (engl. Universe of Discourse) repräsentiert das Datenmodell eine konkrete Ausprägung  des Gegenstandsbereichs. _~> Das Datenmodell ist also eine konkrete Instanz des Gegenstandsbereichs_
+
+- Im Kontext der **semantischen Wissensmodellierung** repräsentiert das Datenmodell das _assertionale Wissen_ eines Wissensgraphen bzw. einer Wissensbasis. 
+
+::: blue centerbox
+**Wichtig**
+Das ==Datenmodell== bezeichnet eine konkrete Ausprägung eines Ausschnitts der Wirklichkeit, welcher mit einem zugrunde liegenden ==Datenstrukturmodell== beschrieben ist. Im Kontext semantischer Wissensmodellierung ist dies idR ein _gerichteter Graph_. 
+:::
+
+---
+# Grundlegende Definitionen (2/3)
+::: definition 
+==Datenmodellierung== bezeichnet ein Verfahren zur formalen Abbildung der in einem definierten Kontext relevanten **Entitäten** (Dinge) sowie ihrer Eigenschaften und Beziehungen. Hauptziel ist die eindeutige Definition und Spezifikation der in einem Informationssystem zu verwaltenden Elemente, ihrer für die Informationszwecke erforderlichen Attribute und der Zusammenhänge.
+
+Quelle: Angelehnt an https://de.wikipedia.org/wiki/Datenmodellierung
+:::
+
+Im Kontext semantischer Wissensgraphen spricht man anstelle von Datemmodellierung eher von **Wissensmodellierung**. {.skip}
+
+::: definition
+Der Begriff ==Entität== stammt aus der Philosophie und bezeichnet etwas, das existiert – ein Seiendes, einen konkreten oder abstrakten Gegenstand. In diesem Sinn wird der Begriff der Entität in der Regel als Sammelbegriff verwendet, um so unterschiedliche Gegenstände wie Dinge, Eigenschaften, Relationen, Sachverhalte oder Ereignisse auf einmal anzusprechen. 
+
+Quelle: Übernommen und angepasst von https://de.wikipedia.org/wiki/Entit%C3%A4t
+::: 
+
+In semantischen Wissensgraphen werden Entiäten als _dereferenzierbare Resourcen_ mit einer eindeutigen _URI_ repräsentiert.  {.skip}
+
+Entität ist hierbei der allgemeine Oberbegriff und bezeichnet sowohl _ABox-_ als auch _TBox-Elemente_. 
+Eine Entität ist damit mit einem _Term_ eines kontrollierten Vokabulars bzw. einer ==Ontologie== gleichzusetzen.
+
+
+---
+# Grundlegende Definitionen (3/3)
+
+
+::: definition
+==Wissensrepräsentation== (engl. Knowledge Representation) dient im Rahmen der Wissensmodellierung dazu, mit Hilfe von formalen Sprachen und Repräsentationsframeworks Wissen in Wissensbasierten Systemen formal abzubilden. Eine Sammlung auf diese Weise repräsentierten Wissens wird als ==Wissensbasis== (engl. Knowledge Base) bezeichnet.
+
+Quelle: Eigene Definition angelehnt an https://de.wikipedia.org/wiki/Wissensrepr%C3%A4sentation
+:::
+
+
+- Semantic MediaWiki liegt das vom W3C standardisierte ==Resource Description Framework (RDF)== zugrunde. {.skip}
+- Mittels RDF lässt sich sowohl assertionales als auch terminologisches Wissen in einem semantischen Wissensgraph abbilden.
+- Daten aus Semantic MediaWiki werden in einem solchen Graphen exportiert.
+
+&nbsp;  
+
+::: definition 
+==Wissensmodellierung== (engl. Knowledge Engineering) dient der Abbildung von Wissen in wissensbasierten Systemen. Sie ist Teilgebiet des Wissensmanagements und der künstlichen Intelligenz.
+
+Quelle: Auszug übernommen aus https://de.wikipedia.org/wiki/Wissensmodellierung
+:::
+
+
+
+
+::: footnotes
+Source: http://groups.csail.mit.edu/medg/ftp/psz/k-rep.html
+:::
+
+---
 # Datenstrukturelemente
 
 ::: definition
-Ein ==Datenstrukturelement== (ist Bestandteil einer ...) erlaubt die Spezifikation von Datenmodellen auf Basis des zugrunde liegenden Wissensrepräsentationsformalismus. Neben direkt in einem Wissensrepräsentationsformalismus verankerten Sprachelementen können auch weitere, unterstützende Elemente definiert sein. 
+Ein ==Datenstrukturelement== erlaubt die Spezifikation von Datenmodellen auf Basis des zugrunde liegenden Wissensrepräsentationsformalismus. Neben direkt in einem Wissensrepräsentationsformalismus verankerten Sprachelementen können auch weitere, unterstützende Elemente definiert sein. 
 
-Quelle: Eigene Definition; --> TODO: Unterscheidung zwischen Sprach- und Datenmodellelement
+Quelle: Eigene Definition
 :::
 
 **Semantic MediaWiki** definiert ==8 Datenstrukturelemente==: {.BIGskip}
 ::: twocolumns 
 1. *Seite* (engl. Page)
 2. *Kategorie* (engl. Category)
-3. *Attribute* (engl. Properties)
+3. *Attribut* (engl. Property)
 4. *Datentyp* (engl. Datatype)
 
-5. *Namensraum* (engl. Namespace) – kein DSE
+5. *Namensraum* (engl. Namespace)
 6. *Vorlage* (engl. Template) - kein DSE
 7. *Subobjekt* (engl. Subobject)
 8. *Konzept* (engl. Concept) 
 :::
 
+
+
+
+
+---
+# Was ist eigentlich ein Wiki ?
+
+- eine besondere Form einer leichtgewichtigen Wissensbasis
+
+Elemente einer Wissensbasis
+- Knowledge Representation Framework
+- 
+
+
+---
+# Datenmodellierungselemente im Detail
+
+
+
+---
+<!-- header: Datenstrukturelemente im Detail -->
+# Page
+
+::: definition
+A ==page== in the context of Semantic MedaiWiki corresponds to a single, uniquely identifyable resource, accessible via a URI. A page serves as container for encoding (semantic) information in a Wiki system. It is used to encode both ==assertional (ABox)== and ==terminological (TBox) knowledge==.
+
+Source: Individual Definition
+:::
+
+{.bigskip}
+
+- Each page belongs to a specific and defined **namespace**
+  - pages with no explicitly given namespace belong to the "main" namespace per default
+  - the namespace determines the semantics of the page's content, i.e., how its contents is processed and interpreted
+- **Pages** are used to 
+  - describe elements from a universe of discourse (the ABox) as well as 
+  - elements (vocabulary terms) used to create a data model for representing elements from the universe of discourse (the TBox)
+- Semantic MediaWiki defines a **syntax** similar to markdown for encoding page content
 
 
 ---
@@ -378,6 +517,10 @@ Example:   "User:Denny/Tests"
 :::::
 
 
+
+
+
+
 ---
 # Namespaces
 
@@ -408,12 +551,15 @@ Quelle: eigene Definition
 
 
 ---
-# Namespaces – Part 2
+# Namespaces – Zusammenfassung
 
 - Namensräume dienen der _Gruppierung_ von logisch zusammengehörigen Seiten
 - _Funktionen_ können auf bestimmte Namensräume eingeschränkt werden
 - Mediawiki hat standardmäßig **18 Namensräume**
+  - Neue Namensräume können hinzugefügt werden
 - Textseiten stehen standardmäßig im Namenraum `Main`
+  - wird nicht separat in der URL angezeigt
+- Der Namensraum definiert, wie der Inhalt einer Seite verarbeitet wird, d.h., die Semantik einer Seite
 
 
 
@@ -675,7 +821,7 @@ Better: `Germany's capital is [[Has capital::Berlin]]` <--> `Berlin is the capit
 
 
 ---
-# Recap – Using Properties in SMW
+# Using Properties in SMW
 
 <!-- What needs to be done to use properties in Semantic MediaWiki? -->
 The process of using properties in Semantic MediaWiki is _twofold_:
@@ -687,7 +833,7 @@ A) ==Creating Properties== {.skip}
 
 B) ==Creating Annotations==
 - Using _in-text annotations_
-- alternative: Extra annotations
+- alternative: _silent annotations_ using the `#set` parser function
 
 ::: footnotes
 ^1^ see https://www.semantic-mediawiki.org/wiki/Help:List_of_datatypes

@@ -457,3 +457,28 @@ ol > li > ol {
 ul > li > ul > li::before {
     color: red;
 }
+
+
+/* ========================
+    HEADER AND FOOTER
+   ========================  
+*/
+
+footer {
+    font-size: 0.8rem;
+}
+
+header {
+    font-size: 1.0rem;
+    /* #1eab79 */
+    /* color: #1eab79;  */
+    /* font-weight: 300; */
+    /* margin-left: 48px; */
+    /* border-bottom: 1px solid; */
+    /* border-bottom: 1px solid #1eab79; */
+    /* min-width: 93%; */
+}
+
+header::after {
+    border-bottom: 1px solid #1eab79;
+}
