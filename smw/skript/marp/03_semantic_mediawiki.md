@@ -20,22 +20,39 @@ Kapitel 3: Einführung in Semantic MediaWiki {.lightgreen .Big .skip}
 ---
 <!-- header: Kapitel 0: Inhalte -->
 <!-- footer: Prof. Dr. Stefan Zander -->
-# Inhalte
+# Inhalte des 3./4. Teils
 
 1. Einführung Wiki-Systeme
-2. Grundbegriffe
-3. Sprachelemente
-4. Modelling Information
-5. Encoding Information 
-6. Retrieving Information
-7. Advanced Data Modelling Topics
-8. Extensions for Knowledge Graph Creation
+2. Semantic MediaWiki
+3. Grundbegriffe und Definitionen
+4. Sprach- und Datenstrukturelemente
+5. Modellierung von Gegenstandsbereichen (~> _Modelling Information_)
+6. Kodierung von Faktenwissen (~> _Encoding Information_)
+7. Semantische Suche (~> _Retrieving Information_)
+8. Advanced Data Modelling Topics^1^
+9. Extensions for Knowledge Graph Creation^1^
 
+::: footnotes
+^1^ Inhalte des 4. Teils der Vorlesung
+:::
 
 
 ---
-<!-- header: Kapitel 1: Einführung Wiki-Systeme -->
+# Inhalte dieses Foliensatzes
 
+1. Einführung Wiki-Systeme
+2. Eigenschaften von Wiki-Systemen
+3. Semantik MediaWiki
+4. Grundlegende Definitionen
+5. Sprach- und Datenstrukturelemente (--> *Pages*, *Namespaces*, *Categories*, *Properties*, *Concepts*, *Templates*)
+   <!-- 1. Pages
+   2. Namespaces
+   3. Categories
+   4. Properties
+   5. Concepts
+   6.  Templates -->
+
+<!-- ---
 # Semantic MediaWiki (TODO: Change)
 
 ::: threecolumns small
@@ -77,12 +94,12 @@ Kapitel 3: Einführung in Semantic MediaWiki {.lightgreen .Big .skip}
 - Organisational support by OSDA (charity)
 - One of the biggest MW extensions
     - Code, people, commit activity, user community
-:::
+::: -->
 
 
 
 ---
-
+<!-- header: Kapitel 1: Einführung Wiki-Systeme -->
 # Was ist ein Wiki ?
 
 ::: definition
@@ -128,12 +145,13 @@ _MediaWiki_ ist die bedeutenste und weitverbreiteste Implementierung eines Wiki-
 ^1^ Bo Leuf, Ward Cunningham, "The Wiki Way: Quick Collaboration on the Web",	Addison-Wesley, 2001.
 
 ^2^ Angelehnt an Rick Hegewald, "Ontologien und (semantische) Wikis", Problemseminar Ontologie-Management Institut für Informatik - Universität Leipzig
-::: -->
+::: 
+-->
 
 
 
 ---
-
+<!-- header: Kapitel 2: Eigenschaften von Wiki-Systemen -->
 # Eigenschaften von Wiki-Systemen
 
 ::::: equalcolumns
@@ -174,6 +192,7 @@ _MediaWiki_ ist die bedeutenste und weitverbreiteste Implementierung eines Wiki-
 
 
 ---
+<!-- header: Kapitel 3: Semantic MediaWiki -->
 # Semantic MediaWiki
 
 ::::: columns
@@ -288,6 +307,7 @@ MediaWiki und damit auch Semantic MediaWiki unterscheidet zwischen Groß- und Kl
 
 
 ---
+<!-- header: Kapitel 4: Grundlegende Definitionen -->
 # Grundlegende Definitionen (1/3)
 
 ::: definition
@@ -401,7 +421,7 @@ Elemente einer Wissensbasis
 
 
 ---
-<!-- header: Datenstrukturelemente im Detail -->
+<!-- header: Kapitel 5: Sprach- und Datenstrukturelemente -->
 # Page
 
 ::: definition
@@ -772,11 +792,15 @@ In consequence, we need to make a **distinction** between ==individually defined
 
 ::::: columns
 :::: triple
-- Before a property can be used in annotations, it need to be **declared**.
+- Before a ==property== can be used in _annotations_, it need to be _declared_.
 - Properties are declared on their ==property definition pages==. 
-- Property definition pages belong to the `property` namespace and their names represent the respective property in an annotation.
-- Declarations are expressed as annotations, i.e., we use SMW's property syntax for defining a property's semantics (=declaration)
-- A declaration usually involves an annotation about its type and allowed values.
+  - Property definition pages belong to the `property` namespace and 
+  - their names represent the respective property in an annotation.
+- Declarations are expressed as ==annotations==, 
+  - i.e., we use SMW's property syntax for defining a property's semantics (=declaration)
+- A declaration usually involves annotations about its _type_ and _allowed values_.
+  - `[[Has type::{some type}]]` sets the _type_ a property's values adhere to
+  - `[[Allowed value::{value}]]` allows to _restrict_ possible values; it can be entered multiple times on the declaration page
 ::::
 :::: single example small
 **Example**
@@ -827,16 +851,16 @@ Better: `Germany's capital is [[Has capital::Berlin]]` <--> `Berlin is the capit
 The process of using properties in Semantic MediaWiki is _twofold_:
 
 A) ==Creating Properties== {.skip}
-- Property needs to be  _declared_
+- A Property needs to be  _declared_ in the `Property` namespace
 - Consider _property naming_ recommendations
 - Use appropritate _datatype_ depending on the envisioned object value^1^
 
 B) ==Creating Annotations==
-- Using _in-text annotations_
-- alternative: _silent annotations_ using the `#set` parser function
+- Use it in _in-text annotations_
+- Alternatively: _silent annotations_ using the `#set` parser function
 
 ::: footnotes
-^1^ see https://www.semantic-mediawiki.org/wiki/Help:List_of_datatypes
+^1^ List of supported datatypes: https://www.semantic-mediawiki.org/wiki/Help:List_of_datatypes
 :::
 
 
@@ -887,7 +911,7 @@ The `#set` ==parser function== allows to annotate data, i.e. assign values to a 
 ::::
 :::: double
 ```
-is similar to...
+Equivalent Property Notation:
 
 [[Has population::2,229,621| ]] 
 [[Located in country::France| ]]
@@ -895,7 +919,7 @@ is similar to...
 ::::
 :::: single small
 <!-- Please note: -->
-The `set` parser function does not display anything, but saves the very same properties as data.
+The `set` parser function does _not display_ anything, but saves the very same properties as data.
 ::::
 :::::
 
@@ -917,7 +941,7 @@ It is also possible to set ==multiple values== to the same property: {.skip}
  |+sep=;
 }}
 ```
-For full compatibility use the separator `|+sep=...` function to separate multiple values
+For full compatibility use the _separator_ `|+sep=...` function to separate multiple values
 ::::
 :::::
 
@@ -925,175 +949,6 @@ For full compatibility use the separator `|+sep=...` function to separate multip
 ::: footnotes
 Sources: (1) https://www.semantic-mediawiki.org/wiki/Help:Setting_values/Working_with_the_separator_parameter and (2) https://www.semantic-mediawiki.org/wiki/Help:Setting_values
 :::
-
-
----
-# Templates
-
----
-# Templates
-
-::: definition
-A ==template== is a wikipage defined in the `Template:` namespace that defines content that can be ==transcluded== in other wiki pages.
-
-Quelle: eigene Definition
-:::
-
-Templates {.longskip}
-: ... can be created as any wiki page, but must be defined in the `Template:` namespace
-: ... can contain almost any kind of wiki content
-: ... can have _parameters_, the values of which will be inserted in the template's content during transclusion
-: ... often used to embed _semantic properties_ or _subobjects_ in Semantic MediaWiki
-
-- Templates allow for the inclusion of pre-defined content in wiki pages.
-- This form of inclusion is called **Transclusion**
-
-
----
-# Templates: Transclusion
-
-::: definition
-==Transclusion== describes the process of embedding content defined in a template into another page. Transcluded content can be customized by ==parameters== the values of which are are included in distinct locations during template invokation.  
-
-Quelle: Eigene Definition angelehnt an 
-:::
-
-Transcluded content can be controlled by __three__ distinct ==commands== {.skip}
-- `<includeonly>`
-- `<onlyinclude>`
-- `<noinclude>` – usually used for _instructional content_, i.e., how a template is to be used. This content will not be transcluded.
-
-::: blue skip
-**Always explicitly specify transcluding Content**  
-It is recommended to explicitly markup the content in a template that is to be transcluded by using the provided commands and separate it from supplemental or instructional content that describes the usage of the template. 
-<!-- MediaWiki provides distinct commands (`<include_only/>`, `<no_include/>`) to control the transclusion of template content and separate it from e.g. instructional content on how to use the template. -->
-:::
----
-# Templates: Tutorial Videos 
-
-::: blue
-**Excellent tutorial videos about templates**  
-YouTube hosts some excellent videos about the basic principles and formatting of templates as well as about the transclusion process and its controlling commands
-- Introduction to templates  
-    <https://youtu.be/IJ4BM5MFXmc>
-- Basic formatting of templates and transclusion commands 
-    <https://youtu.be/SsLahlGX0Ls>
-- Template Variables  
-    <https://youtu.be/X0QD5HT2qgc> 
-:::
-
-
-
----
-# Templates in Semantic MediaWiki
-
-- Templates are often used for **harmonizing**[^1] semantic data and reducing semantic drift
-    - ...by using pre-defined **semantic properties** in a template page
-    - ...and by setting their allowed values through template **parameters** (often in conjunction with Page Forms)
-    - ~> So, every page that transcludes a template contains the same semantic data and structure
-
-::: footnotes
-^1^ Harmonizing means to make something consistent and compatible
-:::
-
-
-
----
-# Customizing Template Content 
-
-Templates can have __parameters__ that allow for passing _individual data_ to template content that is to be transcluded.
-
-<!-- ### Specification in Templates -->
-
-==Parameters== within templates can either be specified...
-- anonymously via the ==sequence of occurrence==, i.e., ` {{{1}}}`, `{{{2}}}`, etc.
-- via specific ==parameter names==, i.e., `{{{Parameter_name|default_value}}}`
-
-In case a parameter is not set (i.e., it contains no value), a ==default value== can be specified `{{{Parameter_name|default_value}}}`, `{{{1|default_value}}}`
-
-Please note that parameters in templates need to be specified with _three curly brackets_ `{{{Parameter_name||Parameter_number}}}` (N.B. '`||`' means 'OR' and is not part of the parameter syntax)
-``` plain
-Syntax:
-=======
-{{{Parameter_name}}}       OR       {{{Parameter_number}}}
-
-Example:
-========
-{{{project}}}              OR       {{{1}}}
-```
-
-
-
----
-# Creating Templates
-
-Every template needs to a have a **unique page name** in the `Template:` namespace; they can be created as any other wikipage.
-
-Template URL: `{Semantic_MediaWiki_URL}\Template:Template_name`
-Template Name: `Template_name`
-
-``` 
-<!-- additional content -->
-...
-[[property1::{{{parameter1}}}]]
-[[property2::{{{parameter2}}}]]
-... 
-<!-- additional content -->
-```
-
-Usage on a different wiki page – without parameters specified:
-```
-{{Template_name}}
-```
-
-Usage – with parameters specified on the page where the template it to be transcluded
-``` 
-{{Template_name
-|parameter1=value1
-|parameter2=value2
-|...
-}}
-```
-
-Templates can be used in any place in a page.
-
-
-
-
----
-# Templates: Syntax
-
-<!-- The following example displays a template with named parameters for entering new research grants -->
-```
-<noinclude> 
-Dies ist die Vorlage zum Anlegen neuer nationaler und europäischer Förderprogramme. 
-Zum Anlegen eines neuen Förderprogramms einfach den folgenden Ausschnitt in den Quelltext 
-der neuen Seite kopieren und die Parameter entsprechend belegen: 
-<pre> 
-  {{Förderprogramm 
-   |Name= 
-   |Akronym= 
-   |Webseite= 
-   |Deadline= 
-   |Beschreibung= 
-   |Sonstige_Informationen= 
-  }} 
-</pre> 
-Das Template sollte im oben dargestellten Format genutzt werden. 
-Bis auf das Attribut Deadline können alle Felder mit Freitext befüllt werden; 
-Das Attribut Deadline erwartet Datumsangaben (nicht 'Ende September' sondern '30.09.2016'). 
-</noinclude> 
-<includeonly> <!-- **** Hier beginnt das eigentliche Template **** --> 
-  [[Category:Förderprogramm]] 
-  [[Name::{{{Name|}}}]] 
-  [[Akronym::{{{Akronym|}}}]] 
-  [[Webseite::{{{Webseite|}}}]] 
-  [[Deadline::{{{Deadline|}}}]] 
-  [[Beschreibung::{{{Beschreibung|}}}]] 
-  [[Sonstiges::{{{Sonstige_Informationen|}}}]] 
-</includeonly
-```
-
 
 
 
@@ -1312,6 +1167,181 @@ Event                    | Location
 SMWCon Fall 2012 Cologne | Germany
 SMWCon Spring 2012       | Carlsbad, CA, USA
 ``` -->
+
+
+
+---
+# Templates
+
+---
+# Templates
+
+::: definition
+A ==template== is a wikipage defined in the `Template:` namespace that defines content that can be ==transcluded== in other wiki pages.
+
+Quelle: eigene Definition
+:::
+
+Templates {.longskip}
+: ... can be created as any wiki page, but must be defined in the `Template:` namespace
+: ... can contain almost any kind of wiki content
+: ... can have _parameters_, the values of which will be inserted in the template's content during transclusion
+: ... often used to embed _semantic properties_ or _subobjects_ in Semantic MediaWiki
+
+- Templates allow for the inclusion of pre-defined content in wiki pages.
+- This form of inclusion is called **Transclusion**
+
+
+---
+# Templates: Transclusion
+
+::: definition
+==Transclusion== describes the process of embedding content defined in a template into another page. Transcluded content can be customized by ==parameters== the values of which are are included in distinct locations during template invokation.  
+
+Quelle: Eigene Definition angelehnt an 
+:::
+
+Transcluded content can be controlled by __three__ distinct ==commands== {.skip}
+- `<includeonly>`
+- `<onlyinclude>`
+- `<noinclude>` – usually used for _instructional content_, i.e., how a template is to be used. This content will not be transcluded.
+
+::: blue skip
+**Always explicitly specify transcluding Content**  
+It is recommended to explicitly markup the content in a template that is to be transcluded by using the provided commands and separate it from supplemental or instructional content that describes the usage of the template. 
+<!-- MediaWiki provides distinct commands (`<include_only/>`, `<no_include/>`) to control the transclusion of template content and separate it from e.g. instructional content on how to use the template. -->
+:::
+---
+# Templates: Tutorial Videos 
+
+::: blue
+**Excellent tutorial videos about templates**  
+YouTube hosts some excellent videos about the basic principles and formatting of templates as well as about the transclusion process and its controlling commands
+- Introduction to templates  
+    <https://youtu.be/IJ4BM5MFXmc>
+- Basic formatting of templates and transclusion commands 
+    <https://youtu.be/SsLahlGX0Ls>
+- Template Variables  
+    <https://youtu.be/X0QD5HT2qgc> 
+:::
+
+
+
+---
+# Templates in Semantic MediaWiki
+
+- Templates are often used for **harmonizing**[^1] semantic data and reducing semantic drift
+    - ...by using pre-defined **semantic properties** in a template page
+    - ...and by setting their allowed values through template **parameters** (often in conjunction with Page Forms)
+    - ~> So, every page that transcludes a template contains the same semantic data and structure
+
+::: footnotes
+^1^ Harmonizing means to make something consistent and compatible
+:::
+
+
+
+---
+# Customizing Template Content 
+
+Templates can have __parameters__ that allow for passing _individual data_ to template content that is to be transcluded.
+
+<!-- ### Specification in Templates -->
+
+==Parameters== within templates can either be specified...
+- anonymously via the ==sequence of occurrence==, i.e., ` {{{1}}}`, `{{{2}}}`, etc.
+- via specific ==parameter names==, i.e., `{{{Parameter_name|default_value}}}`
+
+In case a parameter is not set (i.e., it contains no value), a ==default value== can be specified `{{{Parameter_name|default_value}}}`, `{{{1|default_value}}}`
+
+Please note that parameters in templates need to be specified with _three curly brackets_ `{{{Parameter_name||Parameter_number}}}` (N.B. '`||`' means 'OR' and is not part of the parameter syntax)
+``` plain
+Syntax:
+=======
+{{{Parameter_name}}}       OR       {{{Parameter_number}}}
+
+Example:
+========
+{{{project}}}              OR       {{{1}}}
+```
+
+
+
+---
+# Creating Templates
+
+Every template needs to a have a **unique page name** in the `Template:` namespace; they can be created as any other wikipage.
+
+Template URL: `{Semantic_MediaWiki_URL}\Template:Template_name`
+Template Name: `Template_name`
+
+``` 
+<!-- additional content -->
+...
+[[property1::{{{parameter1}}}]]
+[[property2::{{{parameter2}}}]]
+... 
+<!-- additional content -->
+```
+
+Usage on a different wiki page – without parameters specified:
+```
+{{Template_name}}
+```
+
+Usage – with parameters specified on the page where the template it to be transcluded
+``` 
+{{Template_name
+|parameter1=value1
+|parameter2=value2
+|...
+}}
+```
+
+Templates can be used in any place in a page.
+
+
+
+
+---
+# Templates: Syntax
+
+<!-- The following example displays a template with named parameters for entering new research grants -->
+```
+<noinclude> 
+Dies ist die Vorlage zum Anlegen neuer nationaler und europäischer Förderprogramme. 
+Zum Anlegen eines neuen Förderprogramms einfach den folgenden Ausschnitt in den Quelltext 
+der neuen Seite kopieren und die Parameter entsprechend belegen: 
+<pre> 
+  {{Förderprogramm 
+   |Name= 
+   |Akronym= 
+   |Webseite= 
+   |Deadline= 
+   |Beschreibung= 
+   |Sonstige_Informationen= 
+  }} 
+</pre> 
+Das Template sollte im oben dargestellten Format genutzt werden. 
+Bis auf das Attribut Deadline können alle Felder mit Freitext befüllt werden; 
+Das Attribut Deadline erwartet Datumsangaben (nicht 'Ende September' sondern '30.09.2016'). 
+</noinclude> 
+<includeonly> <!-- **** Hier beginnt das eigentliche Template **** --> 
+  [[Category:Förderprogramm]] 
+  [[Name::{{{Name|}}}]] 
+  [[Akronym::{{{Akronym|}}}]] 
+  [[Webseite::{{{Webseite|}}}]] 
+  [[Deadline::{{{Deadline|}}}]] 
+  [[Beschreibung::{{{Beschreibung|}}}]] 
+  [[Sonstiges::{{{Sonstige_Informationen|}}}]] 
+</includeonly
+```
+
+
+
+
+
+
 
 
 ---
