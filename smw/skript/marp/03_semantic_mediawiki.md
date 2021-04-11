@@ -20,13 +20,13 @@ Kapitel 3: Einführung in Semantic MediaWiki {.lightgreen .Big .skip}
 ---
 <!-- header: Kapitel 0: Inhalte -->
 <!-- footer: Prof. Dr. Stefan Zander -->
-# Inhalte des 3./4. Teils
+# Inhalte des 3. & 4. Kapitels
 
 1. Einführung Wiki-Systeme
 2. Semantic MediaWiki
 3. Grundbegriffe und Definitionen
 4. Sprach- und Datenstrukturelemente
-5. Modellierung von Gegenstandsbereichen (~> _Modelling Information_)
+5. Modellierung von Gegenstandsbereichen als Wissensgraph (~> _Modelling Information_)
 6. Kodierung von Faktenwissen (~> _Encoding Information_)
 7. Semantische Suche (~> _Retrieving Information_)
 8. Advanced Data Modelling Topics^1^
@@ -44,13 +44,13 @@ Kapitel 3: Einführung in Semantic MediaWiki {.lightgreen .Big .skip}
 2. Eigenschaften von Wiki-Systemen
 3. Semantik MediaWiki
 4. Grundlegende Definitionen
-5. Sprach- und Datenstrukturelemente (--> *Pages*, *Namespaces*, *Categories*, *Properties*, *Concepts*, *Templates*)
-   <!-- 1. Pages
+5. Sprach- und Datenstrukturelemente 
+   1. Pages
    2. Namespaces
    3. Categories
    4. Properties
    5. Concepts
-   6.  Templates -->
+   6. Templates
 
 <!-- ---
 # Semantic MediaWiki (TODO: Change)
@@ -162,7 +162,7 @@ _MediaWiki_ ist die bedeutenste und weitverbreiteste Implementierung eines Wiki-
     - Kennzeichnung ob ein Verweis existiert oder nicht^2^
 - Wiki ist **frei**
     - Quelltext: Gnu General Public License
-    - Jede/r kann im Rahmen der Möglichkeiten tun und lassen was sie will
+    - Jede/r kann im Rahmen der Möglichkeiten tun und lassen was er/sie/es will
 - Wiki ist **kollaborativ**
     - Zusammenarbeit mit anderen
     - schnelle Informationsbereitstellung und Korrektur
@@ -343,10 +343,10 @@ Der Begriff ==Entität== stammt aus der Philosophie und bezeichnet etwas, das ex
 Quelle: Übernommen und angepasst von https://de.wikipedia.org/wiki/Entit%C3%A4t
 ::: 
 
-In semantischen Wissensgraphen werden Entiäten als _dereferenzierbare Resourcen_ mit einer eindeutigen _URI_ repräsentiert.  {.skip}
+In semantischen Wissensgraphen werden **Entiäten** als _dereferenzierbare Resourcen_ mit einer eindeutigen _URI_ repräsentiert.  {.skip}
 
 Entität ist hierbei der allgemeine Oberbegriff und bezeichnet sowohl _ABox-_ als auch _TBox-Elemente_. 
-Eine Entität ist damit mit einem _Term_ eines kontrollierten Vokabulars bzw. einer ==Ontologie== gleichzusetzen.
+Eine Entität ist damit mit einem _Term_ eines **kontrollierten Vokabulars** bzw. einer ==Ontologie== gleichzusetzen.
 
 
 ---
@@ -359,18 +359,23 @@ Eine Entität ist damit mit einem _Term_ eines kontrollierten Vokabulars bzw. ei
 Quelle: Eigene Definition angelehnt an https://de.wikipedia.org/wiki/Wissensrepr%C3%A4sentation
 :::
 
-
-- Semantic MediaWiki liegt das vom W3C standardisierte ==Resource Description Framework (RDF)== zugrunde. {.skip}
-- Mittels RDF lässt sich sowohl assertionales als auch terminologisches Wissen in einem semantischen Wissensgraph abbilden.
-- Daten aus Semantic MediaWiki werden in einem solchen Graphen exportiert.
+- Semantic MediaWiki liegt das vom **W3C** standardisierte ==Resource Description Framework (RDF)== zugrunde. {.skip}
+- Mittels **RDF** lässt sich sowohl assertionales als auch terminologisches Wissen in einem semantischen Wissensgraph abbilden.
+- Daten aus Semantic MediaWiki werden in einem solchen **RDF-Graphen** exportiert und mittels einer **OWL-Ontologie** beschrieben.
 
 &nbsp;  
 
+{.skip}
+
 ::: definition 
-==Wissensmodellierung== (engl. Knowledge Engineering) dient der Abbildung von Wissen in wissensbasierten Systemen. Sie ist Teilgebiet des Wissensmanagements und der künstlichen Intelligenz.
+==Wissensmodellierung== (engl. Knowledge Engineering) dient der Abbildung von Wissen in wissensbasierten Systemen. Sie ist Teilgebiet des Wissensmanagements und der Künstlichen Intelligenz.
 
 Quelle: Auszug übernommen aus https://de.wikipedia.org/wiki/Wissensmodellierung
 :::
+
+- Die Wissensmodellierung wird idR mittels **formaler**, **logik-basierter Sprachen** durchgeführt 
+- Ziel ist das kodierte Wissen "berechbar" zu machen, d.h., Widersprüche oder Schlussfolgerungen automatisch zu **inferrieren**.
+  - d.h. zusätzliches "Wissen" automatisch aus bestehendem Wissen abzuleiten
 
 
 
@@ -391,17 +396,16 @@ Quelle: Eigene Definition
 **Semantic MediaWiki** definiert ==8 Datenstrukturelemente==: {.BIGskip}
 ::: twocolumns 
 1. *Seite* (engl. Page)
-2. *Kategorie* (engl. Category)
-3. *Attribut* (engl. Property)
-4. *Datentyp* (engl. Datatype)
+2. *Namensraum* (engl. Namespace)
+3. *Kategorie* (engl. Category)
+4. *Attribut* (engl. Property)
 
-5. *Namensraum* (engl. Namespace)
-6. *Vorlage* (engl. Template) - kein DSE
-7. *Subobjekt* (engl. Subobject)
-8. *Konzept* (engl. Concept) 
+
+5. *Datentyp* (engl. Datatype) – zusammen mit 4.
+6. *Konzept* (engl. Concept) 6. 
+7. *Vorlage* (engl. Template) - kein DSE
+8. *Subobjekt* (engl. Subobject)
 :::
-
-
 
 
 
@@ -1230,10 +1234,10 @@ YouTube hosts some excellent videos about the basic principles and formatting of
 ---
 # Templates in Semantic MediaWiki
 
-- Templates are often used for **harmonizing**[^1] semantic data and reducing semantic drift
-    - ...by using pre-defined **semantic properties** in a template page
-    - ...and by setting their allowed values through template **parameters** (often in conjunction with Page Forms)
-    - ~> So, every page that transcludes a template contains the same semantic data and structure
+Templates are often used for **harmonizing**^1^ semantic data and reducing semantic drift
+  - ...by using pre-defined **semantic properties** in a template page
+  - ...and by setting their __allowed values__ through template **parameters** (often in conjunction with _Page Forms_)
+  - ~> ==So, every page that transcludes a template contains the same semantic data and structure==
 
 ::: footnotes
 ^1^ Harmonizing means to make something consistent and compatible
@@ -1358,6 +1362,12 @@ From the lecture about semantic knowledge graphs we know that...
 : ...==RDF== is the _representation framework_ for encoding factual knowledge in the Web
 : ...RDF resembles a ==triple pattern== (_subject_ – _predicate_ – _object_)
 : ...RDF can also be used to encode terminological knowledge to form a vocabulary that can be used in knowledge graphs 
+
+
+---
+## How to create Knowlegde Graphs using Semantic MediaWiki ?
+
+–> In the next lecture, we will talk about how to represent information in form of **knowledge graphs** using Semantic MediaWiki
 
 
 ---
