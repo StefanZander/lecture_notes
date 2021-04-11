@@ -1,0 +1,837 @@
+<!DOCTYPE html><html lang="en-US"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"><meta name="apple-mobile-web-app-capable" content="yes"><meta http-equiv="X-UA-Compatible" content="ie=edge"><meta property="og:type" content="website"><meta name="twitter:card" content="summary"><style>.bespoke-marp-note,.bespoke-marp-osc,.bespoke-progress-parent{display:none;transition:none}@media screen{body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button{-webkit-appearance:none;-moz-appearance:none;appearance:none;background-color:transparent;border:0;color:inherit;cursor:pointer;font-size:inherit;opacity:.8;outline:none;padding:0;transition:opacity .2s linear;-webkit-tap-highlight-color:transparent}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button:disabled,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button:disabled,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button:disabled{cursor:not-allowed;opacity:.15!important}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button:hover,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button:hover,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button:hover{opacity:1}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button:hover:active,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button:hover:active,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button:hover:active{opacity:.6}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button:hover:not(:disabled),body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button:hover:not(:disabled),body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button:hover:not(:disabled){transition:none}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=prev],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=prev],body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button.bespoke-marp-presenter-info-page-prev{background:transparent url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSI1IiBkPSJNNjggOTBMMjggNTBsNDAtNDAiLz48L3N2Zz4=") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=next],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=next],body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button.bespoke-marp-presenter-info-page-next{background:transparent url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSI1IiBkPSJNMzIgOTBsNDAtNDAtNDAtNDAiLz48L3N2Zz4=") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=fullscreen],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=fullscreen]{background:transparent url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDpub25lO3N0cm9rZTojZmZmO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2Utd2lkdGg6NXB4fTwvc3R5bGU+PC9kZWZzPjxyZWN0IGNsYXNzPSJhIiB4PSIxMCIgeT0iMjAiIHdpZHRoPSI4MCIgaGVpZ2h0PSI2MCIgcng9IjUuNjciLz48cGF0aCBjbGFzcz0iYSIgZD0iTTQwIDcwSDIwVjUwbTIwIDBMMjAgNzBtNDAtNDBoMjB2MjBtLTIwIDBsMjAtMjAiLz48L3N2Zz4=") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button.exit[data-bespoke-marp-osc=fullscreen],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button.exit[data-bespoke-marp-osc=fullscreen]{background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDpub25lO3N0cm9rZTojZmZmO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2Utd2lkdGg6NXB4fTwvc3R5bGU+PC9kZWZzPjxyZWN0IGNsYXNzPSJhIiB4PSIxMCIgeT0iMjAiIHdpZHRoPSI4MCIgaGVpZ2h0PSI2MCIgcng9IjUuNjciLz48cGF0aCBjbGFzcz0iYSIgZD0iTTIwIDUwaDIwdjIwbS0yMCAwbDIwLTIwbTQwIDBINjBWMzBtMjAgMEw2MCA1MCIvPjwvc3ZnPg==")}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=presenter],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=presenter]{background:transparent url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDpub25lO3N0cm9rZTojZmZmO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS13aWR0aDo1cHh9PC9zdHlsZT48L2RlZnM+PHBhdGggY2xhc3M9ImEiIGQ9Ik0yMCA2MGgtNWE1IDUgMCAwMS01LTVWMjBhNSA1IDAgMDE1LTVoNjBhNSA1IDAgMDE1IDV2NU0zMCA4NWg2MCIvPjxyZWN0IHg9IjMwIiB5PSIzNSIgd2lkdGg9IjYwIiBoZWlnaHQ9IjQwIiByeD0iNSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIi8+PHJlY3QgY2xhc3M9ImEiIHg9IjMwIiB5PSIzNSIgd2lkdGg9IjYwIiBoZWlnaHQ9IjQwIiByeD0iNSIvPjxwYXRoIGNsYXNzPSJhIiBkPSJNNDAgNTBoNDBNNDAgNjBoMzAiLz48L3N2Zz4=") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}body,html{height:100%;margin:0}body{background:#000;overflow:hidden}svg.bespoke-marp-slide{content-visibility:hidden;z-index:-1;pointer-events:none;opacity:0}svg.bespoke-marp-slide.bespoke-marp-active{content-visibility:visible;z-index:0;pointer-events:auto;opacity:1}svg.bespoke-marp-slide.bespoke-marp-active.bespoke-marp-active-ready *{-webkit-animation-name:__bespoke_marp__!important;animation-name:__bespoke_marp__!important}@supports not (content-visibility:hidden){svg.bespoke-marp-slide[data-bespoke-marp-load=hideable]{display:none}svg.bespoke-marp-slide[data-bespoke-marp-load=hideable].bespoke-marp-active{display:block}}[data-bespoke-marp-fragment=inactive]{visibility:hidden}body[data-bespoke-view=""] .bespoke-marp-parent,body[data-bespoke-view=next] .bespoke-marp-parent{bottom:0;left:0;position:absolute;right:0;top:0}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc{background:rgba(0,0,0,.65);border-radius:7px;bottom:50px;color:#fff;display:block;font-family:Helvetica,Arial,sans-serif;font-size:16px;left:50%;line-height:0;opacity:1;padding:12px;position:absolute;touch-action:manipulation;transform:translateX(-50%);transition:opacity .2s linear;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;white-space:nowrap;z-index:1;will-change:transform}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>*,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>*{margin-left:6px}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>:first-child,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>:first-child{margin-left:0}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>span,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>span{opacity:.8}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>span[data-bespoke-marp-osc=page],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>span[data-bespoke-marp-osc=page]{display:inline-block;min-width:140px;text-align:center}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=fullscreen],body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=next],body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=presenter],body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=prev],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=fullscreen],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=next],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=presenter],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=prev]{height:32px;line-height:32px;width:32px}body[data-bespoke-view=""] .bespoke-marp-parent.bespoke-marp-inactive,body[data-bespoke-view=next] .bespoke-marp-parent.bespoke-marp-inactive{cursor:none}body[data-bespoke-view=""] .bespoke-marp-parent.bespoke-marp-inactive>.bespoke-marp-osc,body[data-bespoke-view=next] .bespoke-marp-parent.bespoke-marp-inactive>.bespoke-marp-osc{opacity:0;pointer-events:none}body[data-bespoke-view=""] svg.bespoke-marp-slide,body[data-bespoke-view=next] svg.bespoke-marp-slide{height:100%;left:0;position:absolute;top:0;width:100%}body[data-bespoke-view=""] .bespoke-progress-parent{background:#222;display:flex;height:5px;width:100%}body[data-bespoke-view=""] .bespoke-progress-parent+.bespoke-marp-parent{top:5px}body[data-bespoke-view=""] .bespoke-progress-parent .bespoke-progress-bar{flex:0 0 0;background:#0288d1;transition:flex-basis .2s cubic-bezier(0,1,1,1)}body[data-bespoke-view=next]{background:transparent}body[data-bespoke-view=presenter]{background:#161616}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container{font-family:Helvetica,Arial,sans-serif;height:100%;left:0;position:absolute;top:0;width:100%;display:grid;grid-template-columns:2fr 1fr;grid-template-rows:minmax(140px,1fr) 2fr 3em;grid-template-areas:"current next" "current note" "info    note"}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-parent{grid-area:current;position:relative;overflow:hidden}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-parent svg.bespoke-marp-slide{height:calc(100% - 40px);left:20px;position:absolute;pointer-events:none;top:20px;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;width:calc(100% - 40px)}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-parent svg.bespoke-marp-slide.bespoke-marp-active{filter:drop-shadow(0 3px 10px rgba(0,0,0,.5))}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-next-container{background:#222;cursor:pointer;display:none;grid-area:next;overflow:hidden;position:relative}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-next-container.active{display:block}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-next-container iframe.bespoke-marp-presenter-next{background:transparent;border:0;display:block;filter:drop-shadow(0 3px 10px rgba(0,0,0,.5));height:calc(100% - 40px);left:20px;position:absolute;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;top:20px;width:calc(100% - 40px)}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container{background:#222;color:#eee;grid-area:note}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note{margin:20px;width:calc(100% - 40px);height:calc(100% - 40px);box-sizing:border-box;font-size:1.1em;overflow:auto;padding-right:3px;white-space:pre-wrap;word-wrap:break-word;scrollbar-width:thin;scrollbar-color:hsla(0,0%,93.3%,.5) transparent}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note::-webkit-scrollbar{width:6px}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note::-webkit-scrollbar-track{background:transparent}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note::-webkit-scrollbar-thumb{background:hsla(0,0%,93.3%,.5);border-radius:6px}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note:empty{pointer-events:none}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note.active{display:block}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note p:first-child{margin-top:0}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note p:last-child{margin-bottom:0}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container{align-items:center;box-sizing:border-box;color:#eee;display:flex;flex-wrap:nowrap;grid-area:info;justify-content:center;padding:0 10px}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-page,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-time,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-timer{display:block;box-sizing:border-box;padding:0 10px;white-space:nowrap;width:100%}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button{height:1.5em;line-height:1.5em;width:1.5em}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-page{order:2;text-align:center}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-page .bespoke-marp-presenter-info-page-text{display:inline-block;min-width:120px;text-align:center}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-time{color:#999;order:1;text-align:left}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-timer{color:#999;order:3;text-align:right}}@media print{.bespoke-marp-presenter-info-container,.bespoke-marp-presenter-next-container,.bespoke-marp-presenter-note-container{display:none}}</style><style>div#p>svg>foreignObject>section{width:1280px;height:720px;box-sizing:border-box;overflow:hidden;position:relative;scroll-snap-align:center center}div#p>svg>foreignObject>section:after{bottom:0;content:attr(data-marpit-pagination);padding:inherit;pointer-events:none;position:absolute;right:0}div#p>svg>foreignObject>section:not([data-marpit-pagination]):after{display:none}/* Normalization */div#p>svg>foreignObject>section h1{font-size:2em;margin:0.67em 0}div#p>svg>foreignObject>section video::-webkit-media-controls{will-change:transform}@page{size:1280px 720px;margin:0}@media print{body,html{background-color:#fff;margin:0;page-break-inside:avoid;break-inside:avoid-page}div#p>svg>foreignObject>section{page-break-before:always;break-before:page}div#p>svg>foreignObject>section,div#p>svg>foreignObject>section *{-webkit-print-color-adjust:exact!important;animation-delay:0s!important;animation-duration:0s!important;color-adjust:exact!important;transition:none!important}div#p>svg[data-marpit-svg]{display:block;height:100vh;width:100vw}}
+/*!
+ * Marp default theme.
+ *
+ * @theme default
+ * @author Yuki Hattori
+ *
+ * @auto-scaling true
+ * @size 4:3 960px 720px
+ */div#p>svg>foreignObject>section .octicon{display:inline-block;fill:currentColor;vertical-align:text-bottom}div#p>svg>foreignObject>section .anchor{float:left;line-height:1;margin-left:-20px;padding-right:4px}div#p>svg>foreignObject>section .anchor:focus{outline:none}div#p>svg>foreignObject>section h1 .octicon-link,div#p>svg>foreignObject>section h2 .octicon-link,div#p>svg>foreignObject>section h3 .octicon-link,div#p>svg>foreignObject>section h4 .octicon-link,div#p>svg>foreignObject>section h5 .octicon-link,div#p>svg>foreignObject>section h6 .octicon-link{color:#1b1f23;vertical-align:middle;visibility:hidden}div#p>svg>foreignObject>section h1:hover .anchor,div#p>svg>foreignObject>section h2:hover .anchor,div#p>svg>foreignObject>section h3:hover .anchor,div#p>svg>foreignObject>section h4:hover .anchor,div#p>svg>foreignObject>section h5:hover .anchor,div#p>svg>foreignObject>section h6:hover .anchor{text-decoration:none}div#p>svg>foreignObject>section h1:hover .anchor .octicon-link,div#p>svg>foreignObject>section h2:hover .anchor .octicon-link,div#p>svg>foreignObject>section h3:hover .anchor .octicon-link,div#p>svg>foreignObject>section h4:hover .anchor .octicon-link,div#p>svg>foreignObject>section h5:hover .anchor .octicon-link,div#p>svg>foreignObject>section h6:hover .anchor .octicon-link{visibility:visible}div#p>svg>foreignObject>section h1:hover .anchor .octicon-link:before,div#p>svg>foreignObject>section h2:hover .anchor .octicon-link:before,div#p>svg>foreignObject>section h3:hover .anchor .octicon-link:before,div#p>svg>foreignObject>section h4:hover .anchor .octicon-link:before,div#p>svg>foreignObject>section h5:hover .anchor .octicon-link:before,div#p>svg>foreignObject>section h6:hover .anchor .octicon-link:before{width:16px;height:16px;content:" ";display:inline-block;background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' aria-hidden='true'%3E%3Cpath fill-rule='evenodd' d='M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z'/%3E%3C/svg%3E")}div#p>svg>foreignObject>section{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;color:#24292e;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;font-size:16px;line-height:1.5;word-wrap:break-word}div#p>svg>foreignObject>section{--marpit-root-font-size:16px}div#p>svg>foreignObject>section details{display:block}div#p>svg>foreignObject>section summary{display:list-item}div#p>svg>foreignObject>section a{background-color:initial}div#p>svg>foreignObject>section a:active,div#p>svg>foreignObject>section a:hover{outline-width:0}div#p>svg>foreignObject>section strong{font-weight:inherit;font-weight:bolder}div#p>svg>foreignObject>section h1{margin:.67em 0}div#p>svg>foreignObject>section img{border-style:none}div#p>svg>foreignObject>section code,div#p>svg>foreignObject>section kbd,div#p>svg>foreignObject>section pre{font-family:monospace,monospace;font-size:1em}div#p>svg>foreignObject>section hr{box-sizing:initial;overflow:visible}div#p>svg>foreignObject>section input{font:inherit;margin:0;overflow:visible}div#p>svg>foreignObject>section [type=checkbox]{padding:0}div#p>svg>foreignObject>section *,div#p>svg>foreignObject>section [type=checkbox]{box-sizing:border-box}div#p>svg>foreignObject>section input{font-family:inherit;font-size:inherit;line-height:inherit}div#p>svg>foreignObject>section a{color:#0366d6;text-decoration:none}div#p>svg>foreignObject>section a:hover{text-decoration:underline}div#p>svg>foreignObject>section strong{font-weight:600}div#p>svg>foreignObject>section hr{height:0;margin:15px 0;overflow:hidden;background:transparent;border-bottom:1px solid #dfe2e5}div#p>svg>foreignObject>section hr:after,div#p>svg>foreignObject>section hr:before{display:table;content:""}div#p>svg>foreignObject>section hr:after{clear:both}div#p>svg>foreignObject>section table{border-spacing:0;border-collapse:collapse}div#p>svg>foreignObject>section td,div#p>svg>foreignObject>section th{padding:0}div#p>svg>foreignObject>section details summary{cursor:pointer}div#p>svg>foreignObject>section h1,div#p>svg>foreignObject>section h2,div#p>svg>foreignObject>section h3,div#p>svg>foreignObject>section h4,div#p>svg>foreignObject>section h5,div#p>svg>foreignObject>section h6{margin-top:0;margin-bottom:0}div#p>svg>foreignObject>section h1{font-size:32px}div#p>svg>foreignObject>section h1,div#p>svg>foreignObject>section h2{font-weight:600}div#p>svg>foreignObject>section h2{font-size:24px}div#p>svg>foreignObject>section h3{font-size:20px}div#p>svg>foreignObject>section h3,div#p>svg>foreignObject>section h4{font-weight:600}div#p>svg>foreignObject>section h4{font-size:16px}div#p>svg>foreignObject>section h5{font-size:14px}div#p>svg>foreignObject>section h5,div#p>svg>foreignObject>section h6{font-weight:600}div#p>svg>foreignObject>section h6{font-size:12px}div#p>svg>foreignObject>section p{margin-top:0;margin-bottom:10px}div#p>svg>foreignObject>section blockquote{margin:0}div#p>svg>foreignObject>section ol,div#p>svg>foreignObject>section ul{padding-left:0;margin-top:0;margin-bottom:0}div#p>svg>foreignObject>section ol ol,div#p>svg>foreignObject>section ul ol{list-style-type:lower-roman}div#p>svg>foreignObject>section ol ol ol,div#p>svg>foreignObject>section ol ul ol,div#p>svg>foreignObject>section ul ol ol,div#p>svg>foreignObject>section ul ul ol{list-style-type:lower-alpha}div#p>svg>foreignObject>section dd{margin-left:0}div#p>svg>foreignObject>section code,div#p>svg>foreignObject>section pre{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;font-size:12px}div#p>svg>foreignObject>section pre{margin-top:0;margin-bottom:0}div#p>svg>foreignObject>section input::-webkit-inner-spin-button,div#p>svg>foreignObject>section input::-webkit-outer-spin-button{margin:0;-webkit-appearance:none;appearance:none}div#p>svg>foreignObject>section :checked+.radio-label{position:relative;z-index:1;border-color:#0366d6}div#p>svg>foreignObject>section .border{border:1px solid #e1e4e8!important}div#p>svg>foreignObject>section .border-0{border:0!important}div#p>svg>foreignObject>section .border-bottom{border-bottom:1px solid #e1e4e8!important}div#p>svg>foreignObject>section .rounded-1{border-radius:3px!important}div#p>svg>foreignObject>section .bg-white{background-color:#fff!important}div#p>svg>foreignObject>section .bg-gray-light{background-color:#fafbfc!important}div#p>svg>foreignObject>section .text-gray-light{color:#6a737d!important}div#p>svg>foreignObject>section .pl-3,div#p>svg>foreignObject>section .px-3{padding-left:16px!important}div#p>svg>foreignObject>section .px-3{padding-right:16px!important}div#p>svg>foreignObject>section .f6{font-size:12px!important}div#p>svg>foreignObject>section div#p>svg>foreignObject>section section.f6{--marpit-root-font-size:12px!important}div#p>svg>foreignObject>section .lh-condensed{line-height:1.25!important}div#p>svg>foreignObject>section .text-bold{font-weight:600!important}div#p>svg>foreignObject>section .pl-c{color:#6a737d}div#p>svg>foreignObject>section .pl-c1,div#p>svg>foreignObject>section .pl-s .pl-v{color:#005cc5}div#p>svg>foreignObject>section .pl-e,div#p>svg>foreignObject>section .pl-en{color:#6f42c1}div#p>svg>foreignObject>section .pl-s .pl-s1,div#p>svg>foreignObject>section .pl-smi{color:#24292e}div#p>svg>foreignObject>section .pl-ent{color:#22863a}div#p>svg>foreignObject>section .pl-k{color:#d73a49}div#p>svg>foreignObject>section .pl-pds,div#p>svg>foreignObject>section .pl-s,div#p>svg>foreignObject>section .pl-s .pl-pse .pl-s1,div#p>svg>foreignObject>section .pl-sr,div#p>svg>foreignObject>section .pl-sr .pl-cce,div#p>svg>foreignObject>section .pl-sr .pl-sra,div#p>svg>foreignObject>section .pl-sr .pl-sre{color:#032f62}div#p>svg>foreignObject>section .pl-smw,div#p>svg>foreignObject>section .pl-v{color:#e36209}div#p>svg>foreignObject>section .pl-bu{color:#b31d28}div#p>svg>foreignObject>section .pl-ii{color:#fafbfc;background-color:#b31d28}div#p>svg>foreignObject>section .pl-c2{color:#fafbfc;background-color:#d73a49}div#p>svg>foreignObject>section .pl-c2:before{content:"^M"}div#p>svg>foreignObject>section .pl-sr .pl-cce{font-weight:700;color:#22863a}div#p>svg>foreignObject>section .pl-ml{color:#735c0f}div#p>svg>foreignObject>section .pl-mh,div#p>svg>foreignObject>section .pl-mh .pl-en,div#p>svg>foreignObject>section .pl-ms{font-weight:700;color:#005cc5}div#p>svg>foreignObject>section .pl-mi{font-style:italic;color:#24292e}div#p>svg>foreignObject>section .pl-mb{font-weight:700;color:#24292e}div#p>svg>foreignObject>section .pl-md{color:#b31d28;background-color:#ffeef0}div#p>svg>foreignObject>section .pl-mi1{color:#22863a;background-color:#f0fff4}div#p>svg>foreignObject>section .pl-mc{color:#e36209;background-color:#ffebda}div#p>svg>foreignObject>section .pl-mi2{color:#f6f8fa;background-color:#005cc5}div#p>svg>foreignObject>section .pl-mdr{font-weight:700;color:#6f42c1}div#p>svg>foreignObject>section .pl-ba{color:#586069}div#p>svg>foreignObject>section .pl-sg{color:#959da5}div#p>svg>foreignObject>section .pl-corl{text-decoration:underline;color:#032f62}div#p>svg>foreignObject>section .mb-0{margin-bottom:0!important}div#p>svg>foreignObject>section .my-2{margin-bottom:8px!important;margin-top:8px!important}div#p>svg>foreignObject>section .pl-0{padding-left:0!important}div#p>svg>foreignObject>section .py-0{padding-top:0!important;padding-bottom:0!important}div#p>svg>foreignObject>section .pl-1{padding-left:4px!important}div#p>svg>foreignObject>section .pl-2{padding-left:8px!important}div#p>svg>foreignObject>section .py-2{padding-top:8px!important;padding-bottom:8px!important}div#p>svg>foreignObject>section .pl-3{padding-left:16px!important}div#p>svg>foreignObject>section .pl-4{padding-left:24px!important}div#p>svg>foreignObject>section .pl-5{padding-left:32px!important}div#p>svg>foreignObject>section .pl-6{padding-left:40px!important}div#p>svg>foreignObject>section .pl-7{padding-left:48px!important}div#p>svg>foreignObject>section .pl-8{padding-left:64px!important}div#p>svg>foreignObject>section .pl-9{padding-left:80px!important}div#p>svg>foreignObject>section .pl-10{padding-left:96px!important}div#p>svg>foreignObject>section .pl-11{padding-left:112px!important}div#p>svg>foreignObject>section .pl-12{padding-left:128px!important}div#p>svg>foreignObject>section hr{border-bottom-color:#eee}div#p>svg>foreignObject>section kbd{display:inline-block;padding:3px 5px;font:11px SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;line-height:10px;color:#444d56;vertical-align:middle;background-color:#fafbfc;border:1px solid #d1d5da;border-radius:3px;box-shadow:inset 0 -1px 0 #d1d5da}div#p>svg>foreignObject>section:after,div#p>svg>foreignObject>section:before{display:table
+  /* content:""; */}div#p>svg>foreignObject>section:after{clear:both}div#p>svg>foreignObject>section>:first-child{margin-top:0!important}div#p>svg>foreignObject>section>:last-child{margin-bottom:0!important}div#p>svg>foreignObject>section a:not([href]){color:inherit;text-decoration:none}div#p>svg>foreignObject>section blockquote,div#p>svg>foreignObject>section details,div#p>svg>foreignObject>section dl,div#p>svg>foreignObject>section ol,div#p>svg>foreignObject>section p,div#p>svg>foreignObject>section pre,div#p>svg>foreignObject>section table,div#p>svg>foreignObject>section ul{margin-top:0;margin-bottom:16px}div#p>svg>foreignObject>section hr{height:.25em;padding:0;margin:24px 0;background-color:#e1e4e8;border:0}div#p>svg>foreignObject>section blockquote{padding:0 1em;color:#6a737d;border-left:.25em solid #dfe2e5}div#p>svg>foreignObject>section blockquote>:first-child{margin-top:0}div#p>svg>foreignObject>section blockquote>:last-child{margin-bottom:0}div#p>svg>foreignObject>section h1,div#p>svg>foreignObject>section h2,div#p>svg>foreignObject>section h3,div#p>svg>foreignObject>section h4,div#p>svg>foreignObject>section h5,div#p>svg>foreignObject>section h6{margin-top:24px;margin-bottom:16px;font-weight:600;line-height:1.25}div#p>svg>foreignObject>section h1{font-size:2em}div#p>svg>foreignObject>section h1,div#p>svg>foreignObject>section h2{padding-bottom:.3em;border-bottom:1px solid #eaecef}div#p>svg>foreignObject>section h2{font-size:1.5em}div#p>svg>foreignObject>section h3{font-size:1.25em}div#p>svg>foreignObject>section h4{font-size:1em}div#p>svg>foreignObject>section h5{font-size:.875em}div#p>svg>foreignObject>section h6{font-size:.85em;color:#6a737d}div#p>svg>foreignObject>section ol,div#p>svg>foreignObject>section ul{padding-left:2em}div#p>svg>foreignObject>section ol ol,div#p>svg>foreignObject>section ol ul,div#p>svg>foreignObject>section ul ol,div#p>svg>foreignObject>section ul ul{margin-top:0;margin-bottom:0}div#p>svg>foreignObject>section li{word-wrap:break-all}div#p>svg>foreignObject>section li>p{margin-top:16px}div#p>svg>foreignObject>section li+li{margin-top:.25em}div#p>svg>foreignObject>section dl{padding:0}div#p>svg>foreignObject>section dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:600}div#p>svg>foreignObject>section dl dd{padding:0 16px;margin-bottom:16px}div#p>svg>foreignObject>section table{display:block;width:100%;overflow:auto}div#p>svg>foreignObject>section table th{font-weight:600}div#p>svg>foreignObject>section table td,div#p>svg>foreignObject>section table th{padding:6px 13px;border:1px solid #dfe2e5}div#p>svg>foreignObject>section table tr{background-color:#fff;border-top:1px solid #c6cbd1}div#p>svg>foreignObject>section table tr:nth-child(2n){background-color:#f6f8fa}div#p>svg>foreignObject>section img{max-width:100%;box-sizing:initial;background-color:#fff}div#p>svg>foreignObject>section img[align=right]{padding-left:20px}div#p>svg>foreignObject>section img[align=left]{padding-right:20px}div#p>svg>foreignObject>section code{padding:.2em .4em;margin:0;font-size:85%;background-color:rgba(27,31,35,.05);border-radius:3px}div#p>svg>foreignObject>section pre{word-wrap:normal}div#p>svg>foreignObject>section pre>code{padding:0;margin:0;font-size:100%;word-break:normal;white-space:pre;background:transparent;border:0}div#p>svg>foreignObject>section .highlight{margin-bottom:16px}div#p>svg>foreignObject>section .highlight pre{margin-bottom:0;word-break:normal}div#p>svg>foreignObject>section pre{padding:16px;overflow:auto;font-size:85%;line-height:1.45;background-color:#f6f8fa;border-radius:3px}div#p>svg>foreignObject>section pre code{display:inline;max-width:auto;padding:0;margin:0;overflow:visible;line-height:inherit;word-wrap:normal;background-color:initial;border:0}div#p>svg>foreignObject>section .commit-tease-sha{display:inline-block;font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;font-size:90%;color:#444d56}div#p>svg>foreignObject>section div#p>svg>foreignObject>section section.commit-tease-sha{--marpit-root-font-size:90%}div#p>svg>foreignObject>section .full-commit .btn-outline:not(:disabled):hover{color:#005cc5;border-color:#005cc5}div#p>svg>foreignObject>section .blob-wrapper{overflow-x:auto;overflow-y:hidden}div#p>svg>foreignObject>section .blob-wrapper-embedded{max-height:240px;overflow-y:auto}div#p>svg>foreignObject>section .blob-num{width:1%;min-width:50px;padding-right:10px;padding-left:10px;font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;font-size:12px;line-height:20px;color:rgba(27,31,35,.3);text-align:right;white-space:nowrap;vertical-align:top;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}div#p>svg>foreignObject>section div#p>svg>foreignObject>section section.blob-num{--marpit-root-font-size:12px}div#p>svg>foreignObject>section .blob-num:hover{color:rgba(27,31,35,.6)}div#p>svg>foreignObject>section .blob-num:before{content:attr(data-line-number)}div#p>svg>foreignObject>section .blob-code{position:relative;padding-right:10px;padding-left:10px;line-height:20px;vertical-align:top}div#p>svg>foreignObject>section .blob-code-inner{overflow:visible;font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;font-size:12px;color:#24292e;word-wrap:normal;white-space:pre}div#p>svg>foreignObject>section div#p>svg>foreignObject>section section.blob-code-inner{--marpit-root-font-size:12px}div#p>svg>foreignObject>section .pl-token.active,div#p>svg>foreignObject>section .pl-token:hover{cursor:pointer;background:#ffea7f}div#p>svg>foreignObject>section .tab-size[data-tab-size="1"]{-moz-tab-size:1;-o-tab-size:1;tab-size:1}div#p>svg>foreignObject>section .tab-size[data-tab-size="2"]{-moz-tab-size:2;-o-tab-size:2;tab-size:2}div#p>svg>foreignObject>section .tab-size[data-tab-size="3"]{-moz-tab-size:3;-o-tab-size:3;tab-size:3}div#p>svg>foreignObject>section .tab-size[data-tab-size="4"]{-moz-tab-size:4;-o-tab-size:4;tab-size:4}div#p>svg>foreignObject>section .tab-size[data-tab-size="5"]{-moz-tab-size:5;-o-tab-size:5;tab-size:5}div#p>svg>foreignObject>section .tab-size[data-tab-size="6"]{-moz-tab-size:6;-o-tab-size:6;tab-size:6}div#p>svg>foreignObject>section .tab-size[data-tab-size="7"]{-moz-tab-size:7;-o-tab-size:7;tab-size:7}div#p>svg>foreignObject>section .tab-size[data-tab-size="8"]{-moz-tab-size:8;-o-tab-size:8;tab-size:8}div#p>svg>foreignObject>section .tab-size[data-tab-size="9"]{-moz-tab-size:9;-o-tab-size:9;tab-size:9}div#p>svg>foreignObject>section .tab-size[data-tab-size="10"]{-moz-tab-size:10;-o-tab-size:10;tab-size:10}div#p>svg>foreignObject>section .tab-size[data-tab-size="11"]{-moz-tab-size:11;-o-tab-size:11;tab-size:11}div#p>svg>foreignObject>section .tab-size[data-tab-size="12"]{-moz-tab-size:12;-o-tab-size:12;tab-size:12}div#p>svg>foreignObject>section .task-list-item{list-style-type:none}div#p>svg>foreignObject>section .task-list-item+.task-list-item{margin-top:3px}div#p>svg>foreignObject>section .task-list-item input{margin:0 .2em .25em -1.6em;vertical-align:middle}div#p>svg>foreignObject>section .hljs{display:block;background:#fff;padding:.5em;color:#333;overflow-x:auto}div#p>svg>foreignObject>section .hljs-comment,div#p>svg>foreignObject>section .hljs-meta{color:#969896}div#p>svg>foreignObject>section .hljs-emphasis,div#p>svg>foreignObject>section .hljs-quote,div#p>svg>foreignObject>section .hljs-strong,div#p>svg>foreignObject>section .hljs-template-variable,div#p>svg>foreignObject>section .hljs-variable{color:#df5000}div#p>svg>foreignObject>section .hljs-keyword,div#p>svg>foreignObject>section .hljs-selector-tag,div#p>svg>foreignObject>section .hljs-type{color:#d73a49}div#p>svg>foreignObject>section .hljs-attribute,div#p>svg>foreignObject>section .hljs-bullet,div#p>svg>foreignObject>section .hljs-literal,div#p>svg>foreignObject>section .hljs-symbol{color:#0086b3}div#p>svg>foreignObject>section .hljs-name,div#p>svg>foreignObject>section .hljs-section{color:#63a35c}div#p>svg>foreignObject>section .hljs-tag{color:#333}div#p>svg>foreignObject>section .hljs-attr,div#p>svg>foreignObject>section .hljs-selector-attr,div#p>svg>foreignObject>section .hljs-selector-class,div#p>svg>foreignObject>section .hljs-selector-id,div#p>svg>foreignObject>section .hljs-selector-pseudo,div#p>svg>foreignObject>section .hljs-title{color:#6f42c1}div#p>svg>foreignObject>section .hljs-addition{color:#55a532;background-color:#eaffea}div#p>svg>foreignObject>section .hljs-deletion{color:#bd2c00;background-color:#ffecec}div#p>svg>foreignObject>section .hljs-link{text-decoration:underline}div#p>svg>foreignObject>section .hljs-number{color:#005cc5}div#p>svg>foreignObject>section .hljs-string{color:#032f62}div#p>svg>foreignObject>section svg[data-marp-fitting=svg]{max-height:563px}div#p>svg>foreignObject>section h1{color:#246;font-size:1.6em}div#p>svg>foreignObject>section h1,div#p>svg>foreignObject>section h2{border-bottom:none}div#p>svg>foreignObject>section h2{font-size:1.3em}div#p>svg>foreignObject>section h3{font-size:1.1em}div#p>svg>foreignObject>section h4{font-size:1.05em}div#p>svg>foreignObject>section h5{font-size:1em}div#p>svg>foreignObject>section h6{font-size:.9em}div#p>svg>foreignObject>section h1 strong,div#p>svg>foreignObject>section h2 strong,div#p>svg>foreignObject>section h3 strong,div#p>svg>foreignObject>section h4 strong,div#p>svg>foreignObject>section h5 strong,div#p>svg>foreignObject>section h6 strong{font-weight:inherit;color:#48c}div#p>svg>foreignObject>section hr{height:0;padding-top:.25em}div#p>svg>foreignObject>section pre{border:1px solid #999;line-height:1.15;overflow:visible}div#p>svg>foreignObject>section pre code svg[data-marp-fitting=svg]{max-height:529px}div#p>svg>foreignObject>section footer,div#p>svg>foreignObject>section header{margin:0;position:absolute;left:30px;color:hsla(0,0%,40%,.75);font-size:18px}div#p>svg>foreignObject>section header{top:21px}div#p>svg>foreignObject>section footer{bottom:21px}div#p>svg>foreignObject>section{align-items:stretch;background:#fff;display:flex;flex-direction:column;flex-wrap:nowrap;font-size:29px;height:720px;justify-content:center;padding:78.5px;width:1280px}div#p>svg>foreignObject>section{--marpit-root-font-size:29px}div#p>svg>foreignObject>section>:last-child,div#p>svg>foreignObject>section[data-footer]>:nth-last-child(2){margin-bottom:0}div#p>svg>foreignObject>section>:first-child,div#p>svg>foreignObject>section>header:first-child+*{margin-top:0}div#p>svg>foreignObject>section:after{position:absolute;padding:0;right:30px;bottom:21px;font-size:24px;color:#777}div#p>svg>foreignObject>section:after{--marpit-root-font-size:24px}div#p>svg>foreignObject>section.invert{background-color:#222;color:#e6eaf0}div#p>svg>foreignObject>section.invert:after{color:#999}div#p>svg>foreignObject>section.invert img{background-color:transparent}div#p>svg>foreignObject>section.invert a{color:#50b3ff}div#p>svg>foreignObject>section.invert h1{color:#a3c5e7}div#p>svg>foreignObject>section.invert h2,div#p>svg>foreignObject>section.invert h3,div#p>svg>foreignObject>section.invert h4,div#p>svg>foreignObject>section.invert h5{color:#ebeff5}div#p>svg>foreignObject>section.invert blockquote,div#p>svg>foreignObject>section.invert h6{border-color:#3d3f43;color:#939699}div#p>svg>foreignObject>section.invert h1 strong,div#p>svg>foreignObject>section.invert h2 strong,div#p>svg>foreignObject>section.invert h3 strong,div#p>svg>foreignObject>section.invert h4 strong,div#p>svg>foreignObject>section.invert h5 strong,div#p>svg>foreignObject>section.invert h6 strong{color:#7bf}div#p>svg>foreignObject>section.invert hr{background-color:#3d3f43}div#p>svg>foreignObject>section.invert footer,div#p>svg>foreignObject>section.invert header{color:hsla(0,0%,60%,.75)}div#p>svg>foreignObject>section.invert code,div#p>svg>foreignObject>section.invert kbd{background-color:#111}div#p>svg>foreignObject>section.invert kbd{border-color:#666;box-shadow:inset 0 -1px 0 #555;color:#e6eaf0}div#p>svg>foreignObject>section.invert table tr{background-color:#12181d;border-color:#60657b}div#p>svg>foreignObject>section.invert table tr:nth-child(2n){background-color:#1b2024}div#p>svg>foreignObject>section.invert table td,div#p>svg>foreignObject>section.invert table th{border-color:#5b5e61}div#p>svg>foreignObject>section.invert pre{background-color:#0a0e12;border-color:#777}div#p>svg>foreignObject>section.invert pre code{background-color:transparent}div#p>svg>foreignObject>section[data-color] h1,div#p>svg>foreignObject>section[data-color] h2,div#p>svg>foreignObject>section[data-color] h3,div#p>svg>foreignObject>section[data-color] h4,div#p>svg>foreignObject>section[data-color] h5,div#p>svg>foreignObject>section[data-color] h6{color:currentColor}div#p>svg>foreignObject>section svg[data-marp-fitting=svg]{display:block;height:auto;width:100%}@supports (-ms-ime-align:auto){div#p>svg>foreignObject>section svg[data-marp-fitting=svg]{position:static}}div#p>svg>foreignObject>section svg[data-marp-fitting=svg].__reflow__{content:""}@supports (-ms-ime-align:auto){div#p>svg>foreignObject>section svg[data-marp-fitting=svg].__reflow__{position:relative}}div#p>svg>foreignObject>section [data-marp-fitting-svg-content]{display:table;white-space:nowrap}div#p>svg>foreignObject>section [data-marp-fitting-svg-content-wrap]{white-space:pre}div#p>svg>foreignObject>section img[data-marp-twemoji]{background:transparent;height:1em;margin:0 .05em 0 .1em;vertical-align:-.1em;width:1em}
+/* custom-theme.css */
+/* @theme custom-theme-roboto */div#p>svg>foreignObject>section:not(\9){
+    /* font-family: 'Barlow Condensed';  */
+    /* font-weight: 400; */font-family:'Roboto Condensed';font-weight:400;font-size:calc(var(--marpit-root-font-size, 1rem) * 1.28);text-rendering:optimizeLegibility;color:rgb(10,40,72)
+    /* background-color: red; */}div#p>svg>foreignObject>section:not(\9){--marpit-root-font-size:calc(var(--marpit-root-font-size, 1rem) * 1.28)}
+
+/* Size of the slides' content area */div#p>svg>foreignObject>section{
+    /* default value ws > 3em */
+    /* padding: 2.8em;  */}div#p>svg>foreignObject>section h1{font-size:calc(var(--marpit-root-font-size, 1rem) * 3.2)}div#p>svg>foreignObject>section h2{font-size:calc(var(--marpit-root-font-size, 1rem) * 2.4);color:#246 /* added to have identical color to h1 */}div#p>svg>foreignObject>section h4{color:rgb(42,104,175);font-style:normal;font-weight:400}div#p>svg>foreignObject>section code{
+    /* font-family: 'Open Sans Condensed'; */font-family:'M+ 1m';
+    /* font-size: .9em; */font-weight:400;border:solid .06em lightgray;padding:.2em .2em .2em 0.2em;background-color:#e6e6e6}div#p>svg>foreignObject>section em{color:rgb(42,104,175);font-style:normal}div#p>svg>foreignObject>section mark{color:rgb(202,69,33);background-color:inherit}div#p>svg>foreignObject>section blockquote p em{color:inherit;font-style:italic}div#p>svg>foreignObject>section blockquote p{color:inherit;font-style:italic
+    /* background-color: #f1f2f4; */}div#p>svg>foreignObject>section .kursiv{font-style:italic}
+
+/* ========================
+    CONTAINERS
+   ========================
+*/
+
+/* blue container for special notes etc. */div#p>svg>foreignObject>section .blue,div#p>svg>foreignObject>section .note{background-color:rgb(232,241,248);border:solid calc(var(--marpit-root-font-size, 1rem) * 0.2) rgb(36,140,188);padding:0 calc(var(--marpit-root-font-size, 1rem) * 0.6) 0 calc(var(--marpit-root-font-size, 1rem) * 0.6)
+    /* color: #004d1a; */}div#p>svg>foreignObject>section .blue>p:last-child,div#p>svg>foreignObject>section .note>p:last-child{margin-bottom:0.16em}
+
+/* Task container */div#p>svg>foreignObject>section .green,div#p>svg>foreignObject>section .task{background-color:rgb(235,247,232);border:solid calc(var(--marpit-root-font-size, 1rem) * 0.2) rgb(61,171,47);padding:0 calc(var(--marpit-root-font-size, 1rem) * 0.6) 0 calc(var(--marpit-root-font-size, 1rem) * 0.6);color:#004d1a}div#p>svg>foreignObject>section .green>p:last-child,div#p>svg>foreignObject>section .task>p:last-child{margin-bottom:0.16em}
+
+/* Example container */div#p>svg>foreignObject>section .example,div#p>svg>foreignObject>section .gray{background-color:rgb(238,238,238);border:solid calc(var(--marpit-root-font-size, 1rem) * 0.2) rgb(123,123,123);padding:0 calc(var(--marpit-root-font-size, 1rem) * 0.6) 0 calc(var(--marpit-root-font-size, 1rem) * 0.6);color:#323232}div#p>svg>foreignObject>section .example>p:last-child,div#p>svg>foreignObject>section .gray>p:last-child{margin-bottom:0.16em}
+
+
+/* Warning Box (used warning since 'red' is reserved for font color */div#p>svg>foreignObject>section .warning{background-color:#ffe6e6;border:solid calc(var(--marpit-root-font-size, 1rem) * 0.2) #cc0000;padding:0 calc(var(--marpit-root-font-size, 1rem) * 0.6) 0 calc(var(--marpit-root-font-size, 1rem) * 0.6);color:#b30000}div#p>svg>foreignObject>section .warning>p:last-child{margin-bottom:0.16em}
+
+/* .task > p:first-child:before {
+    content: 'Task';
+    font-weight: bold;
+    padding-right: 1rem;
+    color: black;
+} */
+
+
+/* TODO: use Variables for colors */div#p>svg>foreignObject>section .definition{background-color:rgb(249,236,232);border:solid calc(var(--marpit-root-font-size, 1rem) * 0.2) rgb(201,69,33);padding:0 calc(var(--marpit-root-font-size, 1rem) * 0.6) 0 calc(var(--marpit-root-font-size, 1rem) * 0.6)}
+
+/* .definition > p:last-child::after {
+    display: block;
+    min-width: 3rem;
+    width: 4rem;
+    border-top: solid 1px;
+} */div#p>svg>foreignObject>section .definition>p:first-child:before{content:'Definition';font-weight:bold;padding-right:calc(var(--marpit-root-font-size, 1rem) * 1)}
+
+
+/* .definition:after {
+    border-top: solid 1px;
+    content: 'Quelle: Eigene Definition angelehnt an www.somewebsite.com';
+    font-size: .72em;
+} */
+
+/* display source information in a different style than the def. */div#p>svg>foreignObject>section .definition>p:last-child{font-size:0.64em;border-top:solid 1px;margin-bottom:0.5em
+    /* margin-left: 0.5em; */}div#p>svg>foreignObject>section .definition>p:nth-last-child(2){margin-bottom:0.4em}
+/*
+.definition > p:last-child::before {
+    content: ' ';
+    color: white;
+    border-top: solid .05em black;
+    display: block;
+    max-width: 12em;
+    margin-bottom: .2em;
+} */
+
+
+/* ===========================
+    COLUMNS
+   ===========================
+*/
+/* Use this for flexible columns */div#p>svg>foreignObject>section .columns{display:flex;flex-direction:row;justify-content:space-between;column-gap:2em}div#p>svg>foreignObject>section .columnsnogap{display:flex;flex-direction:row;justify-content:space-between}
+
+/* determines the relative width of a single column */div#p>svg>foreignObject>section .single{flex:1 1}div#p>svg>foreignObject>section .onehalf{flex:1.5 1}div#p>svg>foreignObject>section .double{flex:2 1}div#p>svg>foreignObject>section .triple{flex:3 1}div#p>svg>foreignObject>section .quad{flex:4 1}div#p>svg>foreignObject>section .equalcolumns{display:flex;flex-direction:row;justify-content:space-between;column-gap:2em}
+
+/* make columns equally wide and add a litte space between them */div#p>svg>foreignObject>section .equalcolumns>div{flex:1
+    /* margin-right: 0.25em; */}
+
+/* remove right space from last column */div#p>svg>foreignObject>section .equalcolumns>div:last-of-type{flex:1
+    /* margin-right: 0.0em; */}div#p>svg>foreignObject>section .twocolumns{column-count:2
+    /* column-rule-width: 1px; */
+    /* column-width: 50%; */}div#p>svg>foreignObject>section .threecolumns{column-count:3
+    /* column-rule-width: 1px; */
+    /* column-width: 50%; */}
+
+/* Important to have multi-col definitions to start at the same top line  */div#p>svg>foreignObject>section .twocolumns dl dt:first-of-type{margin-top:0em}
+
+
+
+
+/* ========================
+    VERTICAL SPACES
+   ========================
+*/div#p>svg>foreignObject>section .BIGSKIP{margin-top:calc(var(--marpit-root-font-size, 1rem) * 6)}div#p>svg>foreignObject>section .BIGskip{margin-top:calc(var(--marpit-root-font-size, 1rem) * 4)}div#p>svg>foreignObject>section .Bigskip{margin-top:calc(var(--marpit-root-font-size, 1rem) * 2)}div#p>svg>foreignObject>section .bigskip{margin-top:calc(var(--marpit-root-font-size, 1rem) * 1.5)}div#p>svg>foreignObject>section .skip{margin-top:calc(var(--marpit-root-font-size, 1rem) * 1)}div#p>svg>foreignObject>section .shortskip{margin-top:calc(var(--marpit-root-font-size, 1rem) * 0.5)}div#p>svg>foreignObject>section .tinyskip{margin-top:calc(var(--marpit-root-font-size, 1rem) * 0.2)}
+
+/* Use this when a bulleted list should start immediately after a paragraph */div#p>svg>foreignObject>section .nobottommargin,div#p>svg>foreignObject>section .noskip{margin-bottom:0em}
+
+
+/* ========================
+    HORIZONTAL SPACES
+   ========================
+*/div#p>svg>foreignObject>section .centerbox{margin-left:auto;margin-right:auto}div#p>svg>foreignObject>section .centertext{text-align:center}
+
+
+/* ========================
+    FONT SIZES
+   ========================
+*/div#p>svg>foreignObject>section .big{font-size:1.2em
+    /* font-weight: 600; */}div#p>svg>foreignObject>section section.big{--marpit-root-font-size:1.2em}div#p>svg>foreignObject>section .Big{font-size:1.5em
+    /* font-weight: 600; */}div#p>svg>foreignObject>section section.Big{--marpit-root-font-size:1.5em}div#p>svg>foreignObject>section .BIG{font-size:2.0em
+    /* font-weight: 600; */}div#p>svg>foreignObject>section section.BIG{--marpit-root-font-size:2.0em}div#p>svg>foreignObject>section .center{text-align:center}div#p>svg>foreignObject>section .italic{font-style:italic!important}div#p>svg>foreignObject>section .small{font-size:0.9em}div#p>svg>foreignObject>section section.small{--marpit-root-font-size:0.9em}div#p>svg>foreignObject>section .smaller{font-size:0.8em}div#p>svg>foreignObject>section section.smaller{--marpit-root-font-size:0.8em}div#p>svg>foreignObject>section .smallest{font-size:0.7em}div#p>svg>foreignObject>section section.smallest{--marpit-root-font-size:0.7em}div#p>svg>foreignObject>section .tiny{font-size:0.6em}div#p>svg>foreignObject>section section.tiny{--marpit-root-font-size:0.6em}
+
+
+
+/* display source information somewhere on a slide  */div#p>svg>foreignObject>section .source{margin-top:-1em;font-size:0.7em;text-align:end;color:gray;font-style:italic
+    /* border: solid 1px darkgray;
+    background-color: honeydew; */
+    /* display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end; */}div#p>svg>foreignObject>section section.source{--marpit-root-font-size:0.7em}
+
+
+/* ========================
+    COLORS
+   ========================  
+*/div#p>svg>foreignObject>section .darkgray{color:#4a4a4a}div#p>svg>foreignObject>section .gray{color:gray}div#p>svg>foreignObject>section .red{color:red}div#p>svg>foreignObject>section .lightgreen{color:#1eab79}
+
+
+/* ========================
+    FOOTNOTES
+   ========================  
+*/div#p>svg>foreignObject>section .footnotes{font-size:0.6em;line-height:1.2em;height:100%;display:flex;flex-direction:column;justify-content:flex-end;margin-left:.5em}div#p>svg>foreignObject>section section.footnotes{--marpit-root-font-size:0.6em}
+
+/* Trick: Use white text to display ruler before footnotes start */div#p>svg>foreignObject>section .footnotes:before{content:' ';color:white;border-top:solid .05em black;display:inline-block;max-width:12em;margin-bottom:.2em;margin-left:-.5em}div#p>svg>foreignObject>section sup{color:darkcyan;padding:0 .08em 0 .08em
+    /* font-family: 'Barlow Semi Condensed'; */
+    /* font-weight: normal; */}
+
+/* display multi-line footnote text indented  */div#p>svg>foreignObject>section .footnotes p{padding-left:.2em;text-indent:-.6em;margin-bottom:0}
+
+
+/* ========================
+    Lists
+   ========================  
+*/div#p>svg>foreignObject>section ol>li>ol,div#p>svg>foreignObject>section ol>li>ul,div#p>svg>foreignObject>section ul>li>ol,div#p>svg>foreignObject>section ul>li>ul{font-size:0.9em
+    /* color: rgb(89, 89, 89); */}div#p>svg>foreignObject>section ul>li>ul>li:before{color:red}
+
+
+/* ========================
+    HEADER AND FOOTER
+   ========================  
+*/div#p>svg>foreignObject>section footer{font-size:calc(var(--marpit-root-font-size, 1rem) * 0.8)}div#p>svg>foreignObject>section header{font-size:calc(var(--marpit-root-font-size, 1rem) * 1.0)
+    /* #1eab79 */
+    /* color: #1eab79;  */
+    /* font-weight: 300; */
+    /* margin-left: 48px; */
+    /* border-bottom: 1px solid; */
+    /* border-bottom: 1px solid #1eab79; */
+    /* min-width: 93%; */}div#p>svg>foreignObject>section header:after{border-bottom:1px solid #1eab79}
+
+/**
+ * @theme enable-all-auto-scaling
+ * @auto-scaling true
+ */
+
+/* @import 'default'; */
+
+/* @import url('user-theme2.css'); */div#p>svg>foreignObject>section[data-marpit-advanced-background=background]{display:block!important;padding:0!important}div#p>svg>foreignObject>section[data-marpit-advanced-background=background]:after,div#p>svg>foreignObject>section[data-marpit-advanced-background=background]:before,div#p>svg>foreignObject>section[data-marpit-advanced-background=content]:after,div#p>svg>foreignObject>section[data-marpit-advanced-background=content]:before{display:none!important}div#p>svg>foreignObject>section[data-marpit-advanced-background=background]>div[data-marpit-advanced-background-container]{all:initial;display:flex;flex-direction:row;height:100%;overflow:hidden;width:100%}div#p>svg>foreignObject>section[data-marpit-advanced-background=background]>div[data-marpit-advanced-background-container][data-marpit-advanced-background-direction=vertical]{flex-direction:column}div#p>svg>foreignObject>section[data-marpit-advanced-background=background][data-marpit-advanced-background-split]>div[data-marpit-advanced-background-container]{width:var(--marpit-advanced-background-split,50%)}div#p>svg>foreignObject>section[data-marpit-advanced-background=background][data-marpit-advanced-background-split=right]>div[data-marpit-advanced-background-container]{margin-left:calc(100% - var(--marpit-advanced-background-split, 50%))}div#p>svg>foreignObject>section[data-marpit-advanced-background=background]>div[data-marpit-advanced-background-container]>figure{all:initial;background-position:center;background-repeat:no-repeat;background-size:cover;flex:auto;margin:0}div#p>svg>foreignObject>section[data-marpit-advanced-background=content],div#p>svg>foreignObject>section[data-marpit-advanced-background=pseudo]{background:transparent!important}div#p>svg>foreignObject>section[data-marpit-advanced-background=pseudo],div#p>svg[data-marpit-svg]>foreignObject[data-marpit-advanced-background=pseudo]{pointer-events:none!important}div#p>svg>foreignObject>section[data-marpit-advanced-background-split]{width:100%;height:100%}</style></head><body><div class="bespoke-marp-osc"><button data-bespoke-marp-osc="prev" tabindex="-1" title="Previous slide">Previous slide</button><span data-bespoke-marp-osc="page"></span><button data-bespoke-marp-osc="next" tabindex="-1" title="Next slide">Next slide</button><button data-bespoke-marp-osc="fullscreen" tabindex="-1" title="Toggle fullscreen (f)">Toggle fullscreen</button><button data-bespoke-marp-osc="presenter" tabindex="-1" title="Open presenter view (p)">Open presenter view</button></div><div id="p"><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="1" data-paginate="true" data-theme="custom-theme-roboto" data-marpit-pagination="1" data-marpit-pagination-total="31" style="--paginate:true;--theme:custom-theme-roboto;">
+<h1>Semantisches Wissensmanagement im Unternehmen: <br />Konzepte, Technologien, Anwendungen</h1>
+<h4>Prof. Dr. Stefan Linus Zander</h4>
+<p class="lightgreen big">Kapitel 1: Einführung in das Wissensmanagement</p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="2" data-paginate="true" data-header="Kapitel 1: Einführung" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme-roboto" data-marpit-pagination="2" data-marpit-pagination-total="31" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme-roboto;">
+<header>Kapitel 1: Einführung</header>
+
+<h1>Leitfragen</h1>
+<ul>
+<li>Warum benötigen Unternehmen ein funktionierendes Wissensmanagement ?</li>
+<li>Was ist Wissen ?</li>
+<li>Welche Rolle spielt der Mensch im Wissensmanagement ?</li>
+<li>Welche Wissensmanagementansätze gibt es und wodurch unterscheiden sie sich ?</li>
+<li>Welche Rolle spielt IKT im Wissensmanagement?</li>
+<li>Warum wird WM mit fortschreitender Digitalisierung immer wichtiger ?</li>
+</ul>
+<footer>Prof. Dr. Stefan Zander</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="3" data-paginate="true" data-header="Kapitel 1: Einführung" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme-roboto" data-marpit-pagination="3" data-marpit-pagination-total="31" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme-roboto;">
+<header>Kapitel 1: Einführung</header>
+<h1>Gliederung</h1>
+<ol>
+<li>Über die Notwendigkeit eines Wissensmanagements</li>
+<li>Was ist Wissen ?
+<ol>
+<li>Definitionsversuche</li>
+<li>Wissensarten</li>
+</ol>
+</li>
+<li>Wissensmodelle
+<ol>
+<li>Wissenstreppe nach Klaus North</li>
+<li>Das SECI-Modell</li>
+</ol>
+</li>
+<li>Wissensmanagement
+<ol>
+<li>Hauptaufgaben</li>
+<li>Ziele</li>
+<li>Grundlegende Konzepte</li>
+<li>Typische Wissensmanagementprobleme</li>
+</ol>
+</li>
+<li>Die Rolle des Menschen im Wissensmanagement</li>
+<li>Lernzielkontrolle</li>
+</ol>
+<footer>Prof. Dr. Stefan Zander</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="4" data-paginate="true" data-header="Kapitel 1: Warum brauchen Organisationen Wissensmanagement" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme-roboto" data-marpit-pagination="4" data-marpit-pagination-total="31" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme-roboto;">
+<header>Kapitel 1: Warum brauchen Organisationen Wissensmanagement</header>
+
+<h1>Warum benötigen Organisationen ein funktionierendes Wissensmanagement ?</h1>
+<footer>Prof. Dr. Stefan Zander</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="5" data-paginate="true" data-header="Kapitel 1: Warum brauchen Organisationen Wissensmanagement" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme-roboto" data-marpit-pagination="5" data-marpit-pagination-total="31" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme-roboto;">
+<header>Kapitel 1: Warum brauchen Organisationen Wissensmanagement</header>
+<h1>Von der Industrie- zur Wissensgesellschaft</h1>
+
+<div class="twocolumns">
+<p>Mitte der 1960er Jahre waren über <strong>50% aller Beschäftigten</strong> in der Industrie tätig.</p>
+<p>Seit dieser Zeit hat sich die <strong>Produktivität</strong> durch Automatisierung <strong>versechsfacht</strong>(!) und durch die Globalisierung hat sich die Massenproduktion der meisten Güter weltweit verteilt.</p>
+<p>Inzwischen ist die Mehrheit der Bevölkerung im <strong>Dienstleistungsbereich</strong> beschäftigt.</p>
+<p>Durch die zunehmende Digitalisierung werden <strong>wissensbasierte Dienstleistungen</strong> zum dominanten Wirtschaftssegment.</p>
+<p>Während vor wenigen Jahren noch von der Informationsgesellschaft gesprochen wurde, welche die Industriegesellschaft beerben sollte, ist es heute Konsens, dass die Ablösung der Industriegesellschaft treffender durch den Begriff der <strong>Wissensgesellschaft</strong> umschrieben werden sollte.</p>
+<p><img src="../html/docs/figures/wissensgesellschaft.jpg" alt="" /></p>
+</div>
+<div class="footnotes skip">
+<p>Quelle: Bundeszentrale für politische Bildung: Wissensgesellschaft – Eine Idee im Realitätscheck; online abrufbar unter: <a href="https://www.bpb.de/gesellschaft/bildung/zukunft-bildung/146199/wissensgesellschaft">https://www.bpb.de/gesellschaft/bildung/zukunft-bildung/146199/wissensgesellschaft</a></p>
+</div>
+<footer>Prof. Dr. Stefan Zander</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="6" data-paginate="true" data-header="Kapitel 1: Warum brauchen Organisationen Wissensmanagement" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme-roboto" data-marpit-pagination="6" data-marpit-pagination-total="31" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme-roboto;">
+<header>Kapitel 1: Warum brauchen Organisationen Wissensmanagement</header>
+<h1>Beispiele</h1>
+<div class="columns">
+<div class="single small">
+<p><strong>Sektoraler Wandel in Deutschland, Großbritannien und der EU</strong></p>
+<p>Der Anteil der verarbeitenden Industrie (in Deutschland mit den wichtigen Sektoren Automobil, Chemie, Pharmazeutika und dem Bereich der Investitionsgüter wie Maschinenbau, elektrische Ausrüstungen etc.) an der gesamtgesellschaftlichen Wertschöpfung schrumpft, meist verbunden mit einem Abbau von Arbeitsplätzen in diesem Sektor. Das ist ein langfristiger Trend, der freilich in den letzten zehn Jahren in Deutschland aufgehalten wurde, während er sich in der EU ungebremst fortsetzte. In Deutschland hat sich der Anteil des verarbeitenden Gewerbes an der Bruttowertschöpfung von 37 Prozent in 1971 auf 22,6 Prozent in 2011 verringert. Zum Vergleich: 1979 betrug im Großbritannien der industrielle Anteil 33 Prozent, 2011 lag er bei 10,8 Prozent. In diesem Zeitraum entstand in der Londoner City die moderne Finanzwirtschaft. In der EU fiel der entsprechende Anteil im Zeitraum von 2001 bis 2011 von 18 auf 15,5 Prozent.</p>
+</div>
+<div class="single small">
+<p><strong>Von Produktion zu Dienstleistung -- das Beispiel Automobilindustrie</strong></p>
+<p>Die Automobilindustrie produziert zwar noch immer Automobile. Die Aufgabe besteht heute aber zunehmend darin, nicht das physische Produkt Auto zu verkaufen, sondern Mobilitätsbedürfnisse der Kunden zu befriedigen. Die Menschen wollen das Auto nicht mehr unbedingt besitzen, sondern es dort nutzen, wo ihnen Fahrrad, Bahn oder Bus nicht ausreichen. Die Lösung dieser Fragen – zum Beispiel durch Car-Sharing eingebunden in weitere Nutzungsmöglichkeiten – erfordert kommunikative und logistische Leistungen, die weit über die Herstellung der physischen Produkte hinausgehen. Es geht um Kommunikation mit den Kunden und um Kooperation mit ihnen, die in gewisser Weise zu Koproduzenten des Mobilitätsangebots werden.</p>
+</div>
+</div>
+<div class="footnotes">
+<p>Quelle: Bundeszentrale für politische Bildung: Wissensgesellschaft – Eine Idee im Realitätscheck; online abrufbar unter: <a href="https://www.bpb.de/gesellschaft/bildung/zukunft-bildung/146199/wissensgesellschaft">https://www.bpb.de/gesellschaft/bildung/zukunft-bildung/146199/wissensgesellschaft</a></p>
+</div>
+<footer>Prof. Dr. Stefan Zander</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="7" data-paginate="true" data-header="Kapitel 1: Warum brauchen Organisationen Wissensmanagement" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme-roboto" data-marpit-pagination="7" data-marpit-pagination-total="31" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme-roboto;">
+<header>Kapitel 1: Warum brauchen Organisationen Wissensmanagement</header>
+<h1>Die Wissensgesellschaft</h1>
+<div class="equalcolumns">
+<div class="1st-column">
+<p><strong>Früher</strong>:</p>
+<ul>
+<li>Informationen werden von wenigen »Experten« bereitgestellt</li>
+<li>passive Rolle des Nutzers: überwiegend rezeptiver Prozess der Informationsrecherche</li>
+<li><strong>Leitgedanke</strong>:<br />
+<mark>Wissen ist statisch und wird wie ein Gut von einer Person zur anderen übertragen</mark></li>
+</ul>
+</div>
+<div class="2nd-column">
+<p><strong>Heute</strong>:</p>
+<ul>
+<li>Informationen werden von <em>allen Nutzern</em> bereitgestellt</li>
+<li>Aktive Rolle des Nutzers: <em>selbstgesteuerter, konstruktivere Prozess, fügt Informationen hinzu, verknüpft Informationen</em></li>
+<li><strong>Leitgedanke</strong>:<br />
+<mark>Wissen ist dynamisch und wird vom Nutzer auf Grund von Erfahrungen konstruiert und laufend verändert auf Basis praktischer Bedürfnisse</mark></li>
+</ul>
+</div>
+</div>
+
+<div class="blue skip">
+<p>Gefragt ist nicht formelles, abrufbares Wissen, sondern Formen &quot;<strong>lebendigen Wissens</strong>&quot;, wie Erfahrungswissen, Urteilsvermögen, Selbstorganisation, etc. Nicht alles Wissen, aber wissen, wo es zu finden ist. Wichtig werden Fähigkeiten wie die Generierung, Konstruktion und Auswahl von Wissen.</p>
+</div>
+<div class="footnotes">
+<p>Quelle: Wilmar Raddatz, &quot;Wissensgesellschaft – Was ist Wissen?&quot;; abrufbar unter <a href="https://slideplayer.org/slide/640439/">https://slideplayer.org/slide/640439/</a></p>
+</div>
+<footer>Prof. Dr. Stefan Zander</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="8" data-paginate="true" data-header="Kapitel 1: Warum brauchen Organisationen Wissensmanagement" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme-roboto" data-marpit-pagination="8" data-marpit-pagination-total="31" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme-roboto;">
+<header>Kapitel 1: Warum brauchen Organisationen Wissensmanagement</header>
+<h2>Warum wird Wissen zunehmend wichtiger für Unternehmen ?</h2>
+<div class="columns">
+<div class="left 1st-col">
+<ul>
+<li><strong>Wissensintensive</strong> Geschäftsprozesse, Dienstleistungen und Produkte werden bedeutender
+<ul>
+<li>Anteil der Wissensarbeiter in Organisationen nimmt zu<br />
+(Ingenieure, Manager, Berater, Entwickler, Forscher, ...)</li>
+<li>Hoher Zeitanteil für Informationssuche und -bewertung</li>
+</ul>
+</li>
+<li><strong>Produktlebenszyklen</strong> werden kürzer
+<ul>
+<li>Höhere Innovationsrate wird erforderlich</li>
+<li>Concurrent Engineering komplexer Produkte erfordert die Integration von Wissen aller Unternehmensbereiche</li>
+</ul>
+</li>
+<li><strong>Demographischer Wandel</strong> in Europa
+<ul>
+<li>Zunahme des Fachkräftemangels in vielen Branchen absehbar</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="right 2nd-col">
+<ul>
+<li>Firmen arbeiten zunehmend <strong>verteilt</strong> und <strong>global</strong>
+<ul>
+<li>Virtuelle Unternehmen</li>
+<li>Komplexe Wertschöpfungsnetzwerke</li>
+</ul>
+</li>
+<li><strong>Lean Management</strong> erfordert Entscheidungen auf allen Management-Ebenen
+<ul>
+<li>Das erforderliche Wissen muss überall vorhanden sein</li>
+</ul>
+</li>
+<li><strong>Wissen</strong> selber wird zum Produkt
+<ul>
+<li>Neue Arten spezialisierter Dienstleistungsangebote entstehen (z.B. Information Broker)</li>
+</ul>
+</li>
+<li><strong>Firmenwert</strong> beruht bei Weitem nicht nur auf materiellen Werten (Fabrikationsanlagen, Immobilien, ...)
+<ul>
+<li>sondern auf &quot;intangible assets&quot; bzw. &quot;intellectual capital&quot;</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="blue small skip">
+<p><strong>Wichtig</strong>: Einige der vorstehenden Argumente gelten nicht nur für Gewinn-orientierte Unternehmen, sondern auch in der öffentlichen Verwaltung, Forschung &amp; Lehre und in Non-Governmental Organizations (NGOs).</p>
+</div>
+<footer>Prof. Dr. Stefan Zander</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="9" data-paginate="true" data-header="Kapitel 2: Was ist Wissen" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme-roboto" data-marpit-pagination="9" data-marpit-pagination-total="31" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme-roboto;">
+<header>Kapitel 2: Was ist Wissen</header>
+
+<h1>Was ist Wissen ?</h1>
+<footer>Prof. Dr. Stefan Zander</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="10" data-paginate="true" data-header="Kapitel 2: Was ist Wissen" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme-roboto" data-marpit-pagination="10" data-marpit-pagination-total="31" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme-roboto;">
+<header>Kapitel 2: Was ist Wissen</header>
+<h1>Welche Rolle spielt &quot;Wissen&quot; im Unternehmen ?</h1>
+<div class="columns">
+<div class="double">
+<p>Bekannt sind die folgenden Aussagen<sup>1</sup></p>
+<blockquote>
+<p>&quot;We know more than we can tell.&quot;</p>
+<p>&quot;If HP knew what HP knows, we would be three times as profitable&quot;</p>
+</blockquote>
+<p>Nur ca. <strong>20%</strong> des in einer Organisation vorhandenen Wissens ist dokumentiert.<br />
+<strong>80%</strong> des relevanten Wissens ist verborgenes, implizites Wissen.<sup>2</sup></p>
+<p>Eine der größten Herausforderungen in und für Unternehmen besteht darin, das für ihre Geschäftsbereiche <em>relevante Wissen</em> zu identifizieren und zu nutzen.</p>
+<p>Hierauf zielt das <mark>Wissensmanagement</mark> ab.</p>
+</div>
+<div class="single">
+<p><img src="../html/docs/figures/iceberg.jpg" alt="" /></p>
+</div>
+</div>
+<div class="footnotes">
+<p><sup>1</sup> vgl. Hinds, P. J.; Pfeffer, J. (2003): Why Organizations Don’t “Know What They Know”: Cognitive and Motivational Factors Affecting the Transfer of Expertise. In: Ackerman, M. S.; Pipek, V.; Wulf, V. (2003) (Eds.): Sharing Expertise. Beyond Knowledge Management, pp. 3-26</p>
+<p><sup>2</sup> Quelle: <a href="https://de.slideshare.net/mcwyrsch/Wissensmanagement-in-unternehmen">https://de.slideshare.net/mcwyrsch/Wissensmanagement-in-unternehmen</a></p>
+</div>
+<footer>Prof. Dr. Stefan Zander</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="11" data-paginate="true" data-header="Kapitel 2: Was ist Wissen" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme-roboto" data-marpit-pagination="11" data-marpit-pagination-total="31" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme-roboto;">
+<header>Kapitel 2: Was ist Wissen</header>
+<h2>Was ist Wissen ? – Eine pragmatische Arbeitsdefinition</h2>
+<div class="blue center">
+<p>Bevor wir einen Versuch starten Wissen zu definieren ist es sinnvoll, den Wissensbegriff richtig ein- und abzugrenzen.</p>
+</div>
+<p class="longskip">Wissen ist</p>
+<ul>
+<li>... häufig das Ergebnis <strong>bewusster Informationsverarbeitung</strong>,</li>
+<li>... zusammengesetzt aus <strong>Modellen</strong> über konkrete und abstrakte Objekte Ereignisse und Fakten, d.h. symbolische Strukturen, die im menschlichen Gedächtnis abgespeichert sind,</li>
+<li>... <strong>kontext-situiert</strong> und <strong>vernetzt</strong>,</li>
+<li>... <strong>handlungs-</strong> und <strong>ziel-orientiert</strong>.</li>
+</ul>
+<div class="definition">
+<p><mark>Wissen</mark> bezeichnet die Gesamtheit der Kenntnisse und Fähigkeiten, die Menschen zur Lösung von Problemen einsetzen. Wissen stützt sich auf Daten und Informationen, ist im Gegensatz zu diesen jedoch immer <mark>an Personen gebunden</mark>. Daher müssen Daten-, Informations- und Wissensmanagement stets zusammenspielen.</p>
+<p>Quelle: Probst GJB., Raub S., Romhardt K., (2011): &quot;Wissen managen – Wie Unternehmen ihre wertvollste Ressource optimal nutzen&quot;. 7. Auflage, Gabler, Frankfurt/Main; S.24</p>
+</div>
+<footer>Prof. Dr. Stefan Zander</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="12" data-paginate="true" data-header="Kapitel 2: Was ist Wissen" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme-roboto" data-marpit-pagination="12" data-marpit-pagination-total="31" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme-roboto;">
+<header>Kapitel 2: Was ist Wissen</header>
+<h1>Wissensarten</h1>
+
+<p>Grundsätzlich lassen sich <mark>2 Wissensarten</mark> unterscheiden<sup>1</sup>:</p>
+<div class="twocolumns">
+<div class="blue">
+<p><strong>Explicit Knowledge</strong> (=<em>Disembodied Knowledge</em>)</p>
+<ul>
+<li>... kann kommuniziert werden</li>
+<li>... kann auf verschiedenen Ebenen formalisiert werden</li>
+<li>... kann in verschiedenen Formaten abgespeichert werden</li>
+</ul>
+</div>
+<div class="green">
+<p><strong>Tacit / Implicit Knowledge</strong> (=<em>Embodied Knowledge</em>)</p>
+<ul>
+<li>... im Gehirn gespeichert</li>
+<li>... schwer zu kommunizieren</li>
+<li>... nicht/kaum zu formalisieren</li>
+</ul>
+</div>
+</div>
+<p class="skip"><em>Explizites Wissen</em><br />
+...ist Faktenwissen, eindeutig kodifizierbar und mittels Sprache eindeutig kommunizierbar.</p>
+<p><em>Implizites bzw. verborgenes Wissen</em><br />
+...ist Erfahrungs- und Handlungswissen, das an Personen gebunden ist;<br />
+...es ist nur schwer und nicht vollständig explizierbar (d.h., in Worte zu fassen)</p>
+<div class="footnotes">
+<p><sup>1</sup> nach Michael Polanyi (1966), “The Tacit Dimension”, University of Chicago Press: Chicago</p>
+</div>
+<footer>Prof. Dr. Stefan Zander</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="13" data-paginate="true" data-header="Kapitel 3: Wissensmodelle" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme-roboto" data-marpit-pagination="13" data-marpit-pagination-total="31" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme-roboto;">
+<header>Kapitel 3: Wissensmodelle</header>
+
+<h1>Kapitel 3: Wissenmodelle</h1>
+<footer>Prof. Dr. Stefan Zander</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="14" data-paginate="true" data-header="Kapitel 3: Wissensmodelle" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme-roboto" data-marpit-pagination="14" data-marpit-pagination-total="31" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme-roboto;">
+<header>Kapitel 3: Wissensmodelle</header>
+<h1>Die Wissenstreppe nach Klaus North</h1>
+<div class="center">
+<p><img src="../html/docs/figures/wissenstreppe_north_web.jpg" alt="width:750px" style="width:750px;" /></p>
+</div>
+<div class="footnotes">
+<p>Quelle: <a href="http://qib.f-bb.de/wissensmanagement/thema/wissen/wissenstreppe.rsys">http://qib.f-bb.de/wissensmanagement/thema/wissen/wissenstreppe.rsys</a></p>
+</div>
+<footer>Prof. Dr. Stefan Zander</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="15" data-paginate="true" data-header="Kapitel 3: Wissensmodelle" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme-roboto" data-marpit-pagination="15" data-marpit-pagination-total="31" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme-roboto;">
+<header>Kapitel 3: Wissensmodelle</header>
+<h1>Erläuterungen zur Wissenstreppe</h1>
+<div class="threecolumns small">
+<ul>
+<li>
+<p><strong>Zeichen</strong> bestehen aus Buchstaben, Zahlen etc. aber auch Beobachtungen</p>
+</li>
+<li>
+<p><strong>Daten</strong> entstehen, indem man Zeichen in eine Reihenfolge bringt</p>
+</li>
+<li>
+<p><strong>Information</strong> entsteht, indem man Daten eine Bedeutung zuordnet</p>
+</li>
+<li>
+<p><strong>Wissen</strong> entsteht durch die Vernetzung von Informationen. Wissen ist allerdings subjektiv und kann deshalb nicht direkt übertragen werden (es ist personifiziert). Wissen hängt sehr stark vom Erfahrungsschatz des Individuums ab.</p>
+</li>
+<li>
+<p><strong>Können</strong> entsteht aus der Umsetzung von Wissen in entsprechende Handlungen, da es natürlich nicht ausreicht, nur Wissen zu erwerben, sondern dieses erworbene Wissen auch in Fertigkeiten umgesetzt werden muss.</p>
+</li>
+<li>
+<p>Erst das in <strong>Handeln</strong> umgesetzte Können stellt dieses auch unter Beweis. Hinzu kommt hier natürlich noch das Wollen, dem eine Mitarbeitermotivation vorausgehen muss. Handeln ist messbar und zeigt wie Personen, Gruppen oder Organisationen aus Informationen Wissen generieren und zur Lösung von Problemen einsetzen.</p>
+</li>
+<li>
+<p>Die Fähigkeit, Wissen zur Problemlösung, also zweckorientiert in konkrete Handlungen einzusetzen, wird als <strong>Kompetenz</strong> einer Person, Gruppe oder Organisation bezeichnet.</p>
+</li>
+<li>
+<p><strong>Kernkompetenzen</strong> beruhen auf explizit gemachtem Wissen und setzen sich aus Fähigkeiten und Technologien zusammen. Sie generieren Werte bei Kunden und sind einzigartig gegenüber Wettbewerbern, schaffen somit Zugang zu neuen Märkten. Deshalb drücken Kernkompetenzen auch die <strong>Wettbewerbsfähigkeit</strong> eines Unternehmens aus.</p>
+</li>
+</ul>
+</div>
+<div class="blue skip centerbox">
+<p><strong>Lehrvideo zur Wissenstreppe</strong>: Die einzelnen Stufen der Wissenstreppe werden auch sehr schön in diesem <a href="https://www.youtube.com/watch?v=VW7ArONW4dA">Kurzvideo</a> dargestellt.</p>
+</div>
+<footer>Prof. Dr. Stefan Zander</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="16" data-paginate="true" data-header="Kapitel 3: Wissensmodelle" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme-roboto" data-marpit-pagination="16" data-marpit-pagination-total="31" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme-roboto;">
+<header>Kapitel 3: Wissensmodelle</header>
+<h1>Das SECI-Modell</h1>
+<div class="columns">
+<div class="left 1st-col">
+<p>Das SECI-Modell stellt das implizite, d.h., <strong>Personen-gebundene</strong> und <strong>schwer verbalisierbare Erfahrungswissen</strong> von Mitarbeitern in den Mittelpunkt. Es erläutert, <em>wie dieses Wissen für eine Organisation aktiviert</em> werden kann.</p>
+<p>Es unterscheidet sich von anderen Wissensmanagement dadurch, dass es den Fokus auf eine einzige Fragestellung lenkt, nämlich – <em>wie neues Wissen in Organisationen entsteht</em>.</p>
+<p>Neues Wissen entsteht in einem <strong>kontinuierlichen Transformationsprozess</strong> zwischen dem <em>impliziten</em> und dem <em>expliziten Wissen</em>, d.h., die Wissengenerierung beruht auf einem Prozess der dynamischen Transformation von implizitem zu explizitem Wissen und vice versa.</p>
+<p>Entscheidend bei dem Modell von Nonaka &amp; Takeuchi ist die <strong>Transformation von individuellem in kollektives Wissen</strong>, d.h., von einem personenbezogenen in ein allgemein zugängliches Wissen (=die Wissensbasis der Organisation).</p>
+</div>
+<div class="left 2nd-col">
+<p><img src="../html/docs/figures/seci_model_5.png" alt="width:1600px" style="width:1600px;" /></p>
+</div>
+</div>
+<footer>Prof. Dr. Stefan Zander</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="17" data-paginate="true" data-header="Kapitel 3: Wissensmodelle" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme-roboto" data-marpit-pagination="17" data-marpit-pagination-total="31" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme-roboto;">
+<header>Kapitel 3: Wissensmodelle</header>
+<h1>Das SECI-Modell: Die Transformationsphasen</h1>
+<p>Es unterscheidet die folgenden <strong>4 Phasen</strong>, welche im einem <em>iterativen und inkrementellen Transformationsprozess</em> durchlaufen werden:</p>
+<div class="twocolumns">
+<dl>
+<dt>Sozialisierung</dt>
+<dd>Implizites Wissen wird geteilt durch Beobachtung, gemeinsames Tun und durch nicht-verbalisierte Handlungen. Die Weitergabe von implizitem Wissen in einer Gruppe erfordert einen Wissensraum, dieser muss, damit die Sozialisierung funktioniert, <em>3 Eigenschaften</em> aufweisen: (a) geteiltes Verständnis und einer (b) gemeinsamen Sprache mit (c) gegenseitigem Vertrauen<sup>1</sup>.</dd>
+<dt>Externalisierung</dt>
+<dd>Mitglieder einer Gruppe fassen das Wissen in Sprache und teilen es mit anderen. Aus implizitem Wissen entsteht explizites.</dd>
+<dt>Kombination</dt>
+<dd>Explizites kann nun mit existierendem Wissen neu kombiniert werden. Hier ruht Potential für Innovation. Neues Wissen entsteht nicht aus dem “Nichts” sondern dadurch, dass neue Akteure neues Wissen in die Organisation einbringen<sup>2</sup>.</dd>
+<dt>Internalisierung</dt>
+<dd>Entsteht in der Phase der Kombination neues Wissen, so wird dieses nun wieder von den Individuen internalisiert, d.h., mit dem eigenen Wissen kombiniert und dadurch wieder in implizites Wissen überführt. (~&gt; <em>Prozess der Bewußtseinsbildung</em>).</dd>
+</dl>
+</div>
+<p class="center"><mark>Wichtig, das Kollektiv baut immer auf dem neu entstandenen Wissen auf (→ iterativ-inkrementeller Transformationsprozess).</mark></p>
+<div class="footnotes">
+<p><sup>1</sup> Vertrauen ist die Grundlage des gesamten Prozesses der Wissensgenerierung und des Wissensaustausches.</p>
+<p><sup>2</sup> Frage zum Selbststudium: Aus welchen Quellen kann dieses Wissen stammen?</p>
+</div>
+<footer>Prof. Dr. Stefan Zander</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="18" data-paginate="true" data-header="Kapitel 3: Wissensmodelle" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme-roboto" data-marpit-pagination="18" data-marpit-pagination-total="31" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme-roboto;">
+<header>Kapitel 3: Wissensmodelle</header>
+<h1>Das SECI-Modell: Voraussetzungen und Fazit</h1>
+<p>Voraussetzungen seitens der Organisation<sup>2</sup></p>
+<ul>
+<li><strong>Intention</strong> --&gt; klare Wissensziele innerhalb der Organisation</li>
+<li><strong>Autonomie</strong> --&gt; Eigenverantwortung, Selbstorganisation und Freiräume</li>
+<li><strong>Instabilität</strong> --&gt; Bereitschaft Bestehendes zu hinterfragen und zu verändern</li>
+<li><strong>Redundanz</strong> --&gt; Sollte nicht vermieden werden; ein &quot;Zuviel&quot; an Informationen eröffnet neue Perspektiven</li>
+<li><strong>Interne Vielfalt</strong> --&gt; Diversität der Mitglieder und Prozesse</li>
+</ul>
+<dl>
+<dt><strong>Fazit</strong></dt>
+<dd>Das SECI-Modell verbindet als eines der ersten  Modelle <em>Wissensmanagement mit Innovation</em> und versteht <em>Innovation als kollektiven Prozess</em><sup>1</sup>. Besondere Bedeutung kommt hierbei der Kommunikation und Kollaboration zuteil. Ziel ist nicht den Prozess bis aufs &quot;Kleinste&quot; zu managen, sondern <mark>Rahmenbedingungen zu schaffen, in denen ein derartiger kollektiver Transformationsprozess entstehen kann</mark> (=Systemische Sicht).</dd>
+</dl>
+<div class="footnotes">
+<p><sup>1</sup> Innovation ist nicht das Resultat eines &quot;Heureka&quot;-Prozesses eines Individuums sondern ein kollektiver Kommunikations- und Bewußtseinsbildungsprozess.</p>
+<p><sup>2</sup> Quelle: Nonaka, Takeuchi; &quot;Die Organisation des Wissens – Wie japanische Unternehmen eine brachliegende Ressource nutzbar machen&quot;; 2. Auflage, 2012, Campus Verlag, ISBN 978-3-593-39631-6.</p>
+</div>
+<footer>Prof. Dr. Stefan Zander</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="19" data-paginate="true" data-header="Kapitel 4: Was ist Wissensmanagement" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme-roboto" data-marpit-pagination="19" data-marpit-pagination-total="31" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme-roboto;">
+<header>Kapitel 4: Was ist Wissensmanagement</header>
+
+<h1>Was ist Wissensmanagement und warum wird dies für Unternehmen im Zeitalter der Digitalisierung immer wichtiger ?</h1>
+<footer>Prof. Dr. Stefan Zander</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="20" data-paginate="true" data-header="Kapitel 4: Was ist Wissensmanagement" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme-roboto" data-marpit-pagination="20" data-marpit-pagination-total="31" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme-roboto;">
+<header>Kapitel 4: Was ist Wissensmanagement</header>
+<h1>Was ist Wissensmanagement</h1>
+<div class="definition">
+<p><mark>Wissensmanagement</mark> beschäftigt sich mit dem Erwerb, der Entwicklung, dem Transfer, der Speicherung sowie der Nutzung von Wissen. Wissensmanagement ist weit mehr als Informationsmanagement, da es sich über den Fluss von Information und deren Verknüpfung hinaus mit dem &quot;Know-why&quot; befasst, also dem <mark>zielgerichteten Einsatz zur Problemlösung und Kompetenzbildung</mark>.</p>
+<p>Quelle: angelehnt an Gabler Wirtschaftslexikon, Definition: Was ist &quot;Wissensmanagement&quot;? (online abrufbar unter <a href="https://wirtschaftslexikon.gabler.de/definition/wissensmanagement-47468">https://wirtschaftslexikon.gabler.de/definition/wissensmanagement-47468</a>)</p>
+</div>
+<p class="skip">Wissensmanagement<sup>1</sup> dient dazu</p>
+<ul>
+<li>...vorhandenes betriebliches Wissen zu identifizieren und zu vernetzen</li>
+<li>...neues Wissen zu generieren und in neue Produkte, Prozesse und Geschäftsfelder umzusetzen</li>
+<li>...Wissen von außen – über Kunden, Lieferanten, Partner und externe Know-how-Träger – in das Unternehmen zu transferieren</li>
+<li>...Wissen produktiv zu nutzen</li>
+<li>...Wissen zu messen und zu bewerten</li>
+</ul>
+<div class="footnotes">
+<p><sup>1</sup> siehe <a href="http://qib.f-bb.de/wissensmanagement/thema/">http://qib.f-bb.de/wissensmanagement/thema/</a></p>
+</div>
+<footer>Prof. Dr. Stefan Zander</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="21" data-paginate="true" data-header="Kapitel 4: Was ist Wissensmanagement" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme-roboto" data-marpit-pagination="21" data-marpit-pagination-total="31" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme-roboto;">
+<header>Kapitel 4: Was ist Wissensmanagement</header>
+<h2>Typische Fragestellungen und Wissensmanagementprobleme</h2>
+<div class="equalcolumns">
+<div class="1st-column">
+<div class="blue">
+<p><strong>Fragestellungen</strong></p>
+<ul>
+<li>Wie lässt sich individuelles und organisationales Wissen systematisch nutzen und weiterentwickeln ?</li>
+<li>Wie kann individuelles, implizites Wissen unternehmensweit transparent und explizit gemacht werden ?</li>
+<li>Wie kann relevantes Wissen dort bereitgestellt werden, wo es benötigt wird ?</li>
+<li>Wie ist individuelles Expertenwissen zu identifizieren, speichern und unternehmensweit zu transferieren ?</li>
+<li>Was sind organisationale Maßnahmen, um die Informationsqualität zu sichern und einen Information Overload zu vermeiden<sup>1</sup> ?</li>
+</ul>
+<div class="footnotes">
+<p><sup>1</sup> Hieran sieht man, dass die Dimension “Organisation” (=Unternehmenskultur, verborgene Gesetzmäßigkeiten (engl. &quot;hidden rules&quot;), Organisationsstruktur, Hierarchie etc.) eine wichtige Rolle im Wissensmanagement spielt. <br /></p>
+</div>
+</div>
+</div>
+<div class="2nd-column">
+<div class="green">
+<p><strong>Wissensmanagementprobleme</strong></p>
+<ul>
+<li>Ausarbeitung von Ideen, Standards, Evaluationen, Projekten, Vorschlägen, welche bereits bestehen</li>
+<li>Ausbildung von Fähigkeiten, die bereits in der Unternehmung vorhanden sind</li>
+<li>Einkauf von Lizenzen und Leistungen, obwohl eigene Entwicklungen (Produkte, Services) bestehen</li>
+<li>Informationsüberlastung auf allen Ebenen</li>
+<li>Projekterfahrungen werden nicht dokumentiert</li>
+<li>mangelnde Transparenz über externes Wissen (Internet, Dokumente, Experten, Trends, Standards)</li>
+<li>Interne Experten sind nicht bekannt</li>
+<li>Zentrales Wissen geht verloren (~&gt; Expertenverlust)</li>
+</ul>
+</div>
+</div>
+</div>
+<footer>Prof. Dr. Stefan Zander</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="22" data-paginate="true" data-header="Kapitel 4: Was ist Wissensmanagement" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme-roboto" data-marpit-pagination="22" data-marpit-pagination-total="31" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme-roboto;">
+<header>Kapitel 4: Was ist Wissensmanagement</header>
+<h1>Typische Wissensmanagementprobleme</h1>
+<div class="twocolumns">
+<ul>
+<li>Verfügbares Wissen wächst exponentiell.</li>
+<li>&quot;Halbwertszeit&quot; bestehenden Wissens sinkt rapide.</li>
+<li>Produkte und Dienstleistungen werden immer wissensintensiver in ihrer Herstellung.</li>
+<li>Komplexe Mitarbeiter- und Hierarchiestrukturen und Hemmnisse bei der Verteilung von Wissen verhindern effizienten Wissensfluss im Unternehmen.</li>
+<li>Wissensmanagement wird als zeit- und kostenintensiv erlebt.</li>
+<li>Rein technische Lösungen verfehlen oft ihren Nutzen.</li>
+<li>Ausarbeitung von Ideen, Standards, Evaluationen, Projekten, Vorschlägen, welche bereits bestehen</li>
+<li>Ausbildung von Fähigkeiten, die bereits in der Unternehmung vorhanden sind</li>
+<li>Einkauf von Lizenzen und Leistungen, obwohl eigene Entwicklungen (Produkte, Services) bestehen</li>
+<li>Informationsüberlastung auf allen Ebenen</li>
+<li>Projekterfahrungen werden nicht dokumentiert</li>
+<li>mangelnde Transparenz über externes Wissen (Internet, Dokumente, Experten, Trends, Standards)</li>
+<li>Interne Experten sind nicht bekannt</li>
+<li>Zentrales Wissen geht verloren (~&gt; Expertenverlust)</li>
+</ul>
+</div>
+<footer>Prof. Dr. Stefan Zander</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="23" data-paginate="true" data-header="Kapitel 4: Was ist Wissensmanagement" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme-roboto" data-marpit-pagination="23" data-marpit-pagination-total="31" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme-roboto;">
+<header>Kapitel 4: Was ist Wissensmanagement</header>
+<h1>Die Hauptaufgaben des Wissensmanagements</h1>
+<ul>
+<li>
+<p><strong>Implizites Wissen in explizites Wissen umwandeln</strong>:<br />
+Implizites Wissen entsteht in erster Linie durch <em>Erfahrung</em> und liegt somit eher unbewusst in einer nur schwer auszudrückenden Form vor. Ziel des Wissensmanagements ist es, dieses schwer zu greifende implizite Wissen in greifbares <em>explizites Wissen zu transformieren</em>.</p>
+</li>
+<li>
+<p><strong>Individuelles Wissen in kollektives Wissen überführen</strong>:<br />
+Insbesondere in kleinen und mittelständischen Unternehmen (KMUs) ist Wissen häufig an eine oder wenige Personen gebunden. Ziel ist es daher, das vorhandene (explizite) Wissen bestmöglich zu dokumentieren und <em>allen Mitarbeitern zugänglich</em> zu machen.</p>
+</li>
+<li>
+<p><strong>Externes Wissen in das Unternehmen integrieren</strong>:<br />
+Nicht alles Wissen, das ein Unternehmen für seinen Geschäftserfolg braucht, ist immer im Unternehmen vorhanden. Hier gilt es, effiziente Wege zu finden, um Wissen zu erwerben und das erworbene Wissen schließlich in das <em>kollektive Wissen der Organisation zu übertragen</em>.</p>
+</li>
+</ul>
+<div class="footnotes">
+<p>in Anlehnung an: <a href="http://strategie-spektren.de/innovation/aufgaben-des-wissensmanagements/">http://strategie-spektren.de/innovation/aufgaben-des-wissensmanagements/</a></p>
+</div>
+<footer>Prof. Dr. Stefan Zander</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="24" data-paginate="true" data-header="Kapitel 4: Was ist Wissensmanagement" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme-roboto" data-marpit-pagination="24" data-marpit-pagination-total="31" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme-roboto;">
+<header>Kapitel 4: Was ist Wissensmanagement</header>
+<h1>Weitere typische Aufgaben des Wissensmanagements</h1>
+<ul>
+<li>Mitarbeiterwissen verfügbar machen</li>
+<li>Benennung und Strukturierung von Wissen</li>
+<li>Wissensweitergabe ermöglichen und fördern</li>
+<li>Integration von relevantem Wissen in den Arbeitsfluss</li>
+<li>Gezielter Wissensaufbau</li>
+<li>Aus Fehlern lernen</li>
+<li>Dokumentation von Erfahrungswissen</li>
+<li>Transfer von Wissen (vor Ausscheiden)</li>
+<li>Wiederkehrende Fragen (FAQ)</li>
+<li>Befähigung zur Bewältigung von Aufgaben</li>
+</ul>
+<footer>Prof. Dr. Stefan Zander</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="25" data-paginate="true" data-header="Kapitel 4: Was ist Wissensmanagement" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme-roboto" data-marpit-pagination="25" data-marpit-pagination-total="31" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme-roboto;">
+<header>Kapitel 4: Was ist Wissensmanagement</header>
+<h1>Ziele des Wissensmanagements</h1>
+<ul>
+<li>
+<p>Der Austausch von Wissen soll die Resonanzfähigkeit des Unternehmens erhöhen, und somit bestehende Denkmuster durchbrechen. Letztlich soll dadurch die Reaktionsfähigkeit erhöht werden, was ein zentrales Merkmale der <mark>agilen Organisation</mark> ist. Das Wissensmanagement kann somit als eine wesentliche Voraussetzung für eine <em>digitale Transformation</em> gesehen werden.</p>
+</li>
+<li>
+<p>Eine Besondere Bedeutung hat das Wissensmanagement im Zusammenhang mit der <mark>Open Innovation</mark>. Hier wird der Informations- und Wissensaustausch nicht nur als ein interner Prozess betrachtet, sondern als ein Austausch zwischen der internen Organisation und ihrer externen Umgebung (bspw. Kunden, Lieferanten, strategische Partner). Wissensmanagement ist also ein wichtiger Bestandteil des <em>Innovationsprozesses</em>.</p>
+</li>
+</ul>
+<footer>Prof. Dr. Stefan Zander</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="26" data-paginate="true" data-header="Kapitel 4: Was ist Wissensmanagement" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme-roboto" data-marpit-pagination="26" data-marpit-pagination-total="31" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme-roboto;">
+<header>Kapitel 4: Was ist Wissensmanagement</header>
+<h1>Effekte durch Wissensmanagement</h1>
+<div class="blue">
+<p>Gemäss heutigen Erfahrungen spart man durch Wissensmanagement <strong>20-25%</strong> der <strong>bisherigen Aufwendungen</strong> ein und erreicht eine <strong>Qualitätssteigerung</strong> von <strong>ca. 20%</strong>.<sup>1</sup></p>
+</div>
+<p class="skip nobottommargin"><strong>Beispiele</strong>:</p>
+<ul>
+<li>
+<p>Der Erdöl-Konzern “Chevron” konnte durch Wissensmanagementmaßnahmen die Förderung von Erdgas optimieren, was einen jährlichen Nutzen von 20 Mio. Dollar erbrachte.</p>
+</li>
+<li>
+<p>Siemens gab in seiner Telekommunikationssparte ICN 15 Mio. DM für Wissensmanagement aus, wodurch im Gegenzug 280 Mio. DM an nicht notwendigen Ausgaben eingespart werden konnten.</p>
+</li>
+<li>
+<p>Texas Instruments vernetzte mittels Wissensmanagement seine weltweit 13 Chip-Fabriken so effizient, dass der Bau einer weiteren, eigentlich geplanten Fabrik entfallen konnte. Spar-Effekt: 1,5 Mrd. Dollar.</p>
+</li>
+<li>
+<p>&quot;digital spirit&quot; (e-learning) mit heute 100 Mitarbeitern: Leitende Mitarbeiter konnten auf diese Weise um bis zu 30% entlastet werden; die Einarbeitung neuer Mitarbeiter konnte wesentlich schneller geleistet werden. Insgesamt ist die “operative Hektik” deutlich geringer geworden.</p>
+</li>
+</ul>
+<div class="footnotes">
+<p><sup>1</sup> Quelle: Wyrsch &amp; Partner, © 2012, <a href="http://www.wyrsch-partner.ch">http://www.wyrsch-partner.ch</a></p>
+</div>
+<footer>Prof. Dr. Stefan Zander</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="27" data-paginate="true" data-header="Kapitel 5: Die Rolle des Menschen im Wissensmanagement" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme-roboto" data-marpit-pagination="27" data-marpit-pagination-total="31" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme-roboto;">
+<header>Kapitel 5: Die Rolle des Menschen im Wissensmanagement</header>
+
+<h1>Die Rolle des Menschen im Wissensmanagement</h1>
+<footer>Prof. Dr. Stefan Zander</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="28" data-paginate="true" data-header="Kapitel 5: Die Rolle des Menschen im Wissensmanagement" data-footer="_&amp;nbsp;" data-theme="custom-theme-roboto" data-marpit-pagination="28" data-marpit-pagination-total="31" style="--paginate:true;--footer:_&amp;nbsp;;--theme:custom-theme-roboto;">
+<header>Kapitel 5: Die Rolle des Menschen im Wissensmanagement</header>
+
+<div class="columns">
+<div class="single">
+<h2>Das Zusammenwirken von Mensch, Organisation und Technik</h2>
+</div>
+<div class="triple">
+<div class="center">
+<p><img src="../html/docs/figures/zusammenwirken.jpg" alt="height:640px" style="height:640px;" /></p>
+</div>
+</div>
+</div>
+<div class="footnotes">
+<p>Quelle: TRENDREPORT “Auf Wissen bauen – mit systematischem Wissensmanagement zur digitalen Verwaltung”; Behörden Spiegel, Februar 2020</p>
+</div>
+<footer>_ </footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="29" data-paginate="true" data-header="Kapitel 5: Die Rolle des Menschen im Wissensmanagement" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme-roboto" data-marpit-pagination="29" data-marpit-pagination-total="31" style="--paginate:true;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme-roboto;">
+<header>Kapitel 5: Die Rolle des Menschen im Wissensmanagement</header>
+
+<h1>Die Rolle der Mitarbeiter</h1>
+<div class="equalcolumns">
+<div class="">
+<p><strong>&quot;Neue&quot; Eigenschaften</strong></p>
+<ul>
+<li>Der Mitarbeiter ist <em>Know-How Träger</em></li>
+<li>Untereinander sind die Mitarbeiter <em>Coach</em> oder <em>Mentor</em></li>
+<li>Die Erfahrung zählt, <em>Führung erfolgt durch Kompetenz</em></li>
+<li><em>Communities</em> (Fachgruppen) werden gebildet</li>
+<li>Sie sind aktiv in den <em>Wissensprozessen</em> eingebunden</li>
+<li>Ein <em>offener Austausch</em> wird gefördert</li>
+</ul>
+</div>
+<div class="">
+<p><strong>...und ihre Auswirkungen</strong></p>
+<ul>
+<li>Hohe Wertschätzung der einzelnen Mitarbeiter</li>
+<li>Veränderte Arbeitsweise</li>
+<li>Erhöhtes Zusammengehörigkeitsgefühl</li>
+<li>Höhere Identifikation mit der Firma, weniger Fluktuation</li>
+<li>Freierer Umgang mit Ideen</li>
+</ul>
+</div>
+</div>
+<div class="footnotes">
+<p>Quelle: <a href="https://de.slideshare.net/mcwyrsch/wissensmanagement-in-unternehmen">https://de.slideshare.net/mcwyrsch/wissensmanagement-in-unternehmen</a></p>
+</div>
+<footer>Prof. Dr. Stefan Zander</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="30" data-paginate="true" data-header="Zusammenfassung und Lernzielkontrolle" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme-roboto" data-marpit-pagination="30" data-marpit-pagination-total="31" style="--paginate:true;--header:Zusammenfassung und Lernzielkontrolle;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme-roboto;">
+<header>Zusammenfassung und Lernzielkontrolle</header>
+
+<h1>Zusammenfassung und Lernzielkontrolle</h1>
+<footer>Prof. Dr. Stefan Zander</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="31" data-paginate="true" data-header="Zusammenfassung und Lernzielkontrolle" data-footer="Prof. Dr. Stefan Zander" data-theme="custom-theme-roboto" data-marpit-pagination="31" data-marpit-pagination-total="31" style="--paginate:true;--header:Zusammenfassung und Lernzielkontrolle;--footer:Prof. Dr. Stefan Zander;--theme:custom-theme-roboto;">
+<header>Zusammenfassung und Lernzielkontrolle</header>
+<h1>Lernzielkontrolle</h1>
+<div class="green">
+<p><strong>Aufgaben</strong></p>
+<p>Beantworten Sie folgende Fragen:</p>
+<ul>
+<li>
+<p>Wie lässt sich Wissen messen oder bewerten?</p>
+<blockquote>
+<p>Überlegen Sie sich Ansätze und Möglichkeiten dies zu tun und diskutieren Sie diese.</p>
+</blockquote>
+</li>
+<li>
+<p>Lässt sich Wissen überhaupt managen? Falls ja, wie bzw. durch welche Maßnahmen?</p>
+<blockquote>
+<p>Denken Sie kritisch über diese Frage nach; lässt sich Wissen wirklich managen und falls ja, in welcher Form und Ausprägung? Welche Ansätze (technisch / organisatorisch / personell / etc.) halten Sie hierfür für geeignet? Sammeln Sie eine Reihe von Ansatzpunkten und diskutieren Sie diese innerhalb ihrer Gruppe</p>
+</blockquote>
+</li>
+<li>
+<p>Warum ist Wissensmanagement mehr als eine technische Plattform?</p>
+</li>
+<li>
+<p>Überlegen Sie sich eine Reihe von organisationalen Maßnahmen zur Erhöhung der Informationsqualität</p>
+</li>
+<li>
+<p>Wie lässt sich Information Overload reduzieren?</p>
+</li>
+</ul>
+</div>
+<footer>Prof. Dr. Stefan Zander</footer>
+</section>
+<script>!function(){"use strict";let t=void 0;function e(e){let r=!1;Array.from(document.querySelectorAll("svg[data-marpit-svg]"),i=>{const{children:o,clientHeight:n,clientWidth:a,viewBox:s}=i;i.style.transform||(i.style.transform="translateZ(0)");const l=e||window!==window.parent&&window.parent.marpitSVGPolyfillZoomFactor||i.currentScale||1;t!==l&&(t=l,r=l);const c=s.baseVal.width/l,d=s.baseVal.height/l,p=Math.min(n/d,a/c);for(let t=0;t<o.length;t+=1){const{style:e}=o[t].firstChild;e.position||(e.position="fixed"),e.transformOrigin||(e.transformOrigin="0 0"),e.transform=`scale(${p}) translateZ(0)`}}),!1!==r&&Object.defineProperty(window,"marpitSVGPolyfillZoomFactor",{configurable:!0,value:r})}const r=(t,e,r)=>{if(t.getAttribute(e)!==r)return t.setAttribute(e,r),!0};function i(t=!0){for(const t of"Apple Computer, Inc."===navigator.vendor?[e]:[])t();Array.from(document.querySelectorAll('svg[data-marp-fitting="svg"]'),t=>{var e;const i=t.firstChild,o=i.firstChild,{scrollWidth:n,scrollHeight:a}=o;let s,l=1;if(t.hasAttribute("data-marp-fitting-code")&&(s=null===(e=t.parentElement)||void 0===e?void 0:e.parentElement),t.hasAttribute("data-marp-fitting-math")&&(s=t.parentElement),s){const t=getComputedStyle(s),e=Math.ceil(s.clientWidth-parseFloat(t.paddingLeft||"0")-parseFloat(t.paddingRight||"0"));e&&(l=e)}const c=Math.max(n,l),d=Math.max(a,1),p=`0 0 ${c} ${d}`;r(i,"width",""+c),r(i,"height",""+d),r(t,"preserveAspectRatio",getComputedStyle(t).getPropertyValue("--preserve-aspect-ratio")||"xMinYMin meet"),r(t,"viewBox",p)&&t.classList.toggle("__reflow__")}),t&&window.requestAnimationFrame(()=>i(t))}!function(){if("undefined"==typeof window)throw new Error("Marp Core's browser script is valid only in browser context.");window.marpCoreBrowserScript?console.warn("Marp Core's browser script has already executed."):(Object.defineProperty(window,"marpCoreBrowserScript",{value:!0}),i())}()}();
+</script></foreignObject></svg></div><div class="bespoke-marp-note" data-index="4" tabindex="0"><p>beschäftigungsanteil_inland</p></div><div class="bespoke-marp-note" data-index="6" tabindex="0"><p>| Industriegesellschaft |  | Wissensgesellschaft |
+| --- | :---: | --- |
+| Sachkapital | -- | Wissenskapital  |
+| Hierarchie/Kontrolle | -- |  Vernetzung/Fokussierung |
+| Produkte | -- | Problemlösungen |</p></div><div class="bespoke-marp-note" data-index="11" tabindex="0"><p>::: source
+nach Michael Polanyi (1966), “The Tacit Dimension”, University of Chicago Press: Chicago
+:::</p></div><script>!function(){"use strict";var e=function(e,t){var n,r=1===(e.parent||e).nodeType?e.parent||e:document.querySelector(e.parent||e),s=[].filter.call("string"==typeof e.slides?r.querySelectorAll(e.slides):e.slides||r.children,(function(e){return"SCRIPT"!==e.nodeName})),a={},i=function(e,t){return(t=t||{}).index=s.indexOf(e),t.slide=e,t},o=function(e,t){a[e]=(a[e]||[]).filter((function(e){return e!==t}))},l=function(e,t){return(a[e]||[]).reduce((function(e,n){return e&&!1!==n(t)}),!0)},c=function(e,t){s[e]&&(n&&l("deactivate",i(n,t)),n=s[e],l("activate",i(n,t)))},d=function(e,t){var r=s.indexOf(n)+e;l(e>0?"next":"prev",i(n,t))&&c(r,t)},u={off:o,on:function(e,t){return(a[e]||(a[e]=[])).push(t),o.bind(null,e,t)},fire:l,slide:function(e,t){if(!arguments.length)return s.indexOf(n);l("slide",i(s[e],t))&&c(e,t)},next:d.bind(null,1),prev:d.bind(null,-1),parent:r,slides:s,destroy:function(e){l("destroy",i(n,e)),a={}}};return(t||[]).forEach((function(e){e(u)})),n||c(0),u};function t(e){e.parent.classList.add("bespoke-marp-parent"),e.slides.forEach((e=>e.classList.add("bespoke-marp-slide"))),e.on("activate",(t=>{const n=t.slide,r=!n.classList.contains("bespoke-marp-active");e.slides.forEach((e=>{e.classList.remove("bespoke-marp-active"),e.setAttribute("aria-hidden","true")})),n.classList.add("bespoke-marp-active"),n.removeAttribute("aria-hidden"),r&&(n.classList.add("bespoke-marp-active-ready"),document.body.clientHeight,n.classList.remove("bespoke-marp-active-ready"))}))}function n(e){let t=0,n=0;Object.defineProperty(e,"fragments",{enumerable:!0,value:e.slides.map((e=>[null,...e.querySelectorAll("[data-marpit-fragment]")]))});const r=r=>void 0!==e.fragments[t][n+r],s=(r,s)=>{t=r,n=s,e.fragments.forEach(((e,t)=>{e.forEach(((e,n)=>{if(null==e)return;const a=t<r||t===r&&n<=s;e.setAttribute("data-bespoke-marp-fragment",a?"active":"inactive"),t===r&&n===s?e.setAttribute("data-bespoke-marp-current-fragment","current"):e.removeAttribute("data-bespoke-marp-current-fragment")}))})),e.fragmentIndex=s;const a={slide:e.slides[r],index:r,fragments:e.fragments[r],fragmentIndex:s};e.fire("fragment",a)};e.on("next",(({fragment:a=!0})=>{if(a){if(r(1))return s(t,n+1),!1;const a=t+1;e.fragments[a]&&s(a,0)}else{const r=e.fragments[t].length;if(n+1<r)return s(t,r-1),!1;const a=e.fragments[t+1];a&&s(t+1,a.length-1)}})),e.on("prev",(({fragment:a=!0})=>{if(r(-1)&&a)return s(t,n-1),!1;const i=t-1;e.fragments[i]&&s(i,e.fragments[i].length-1)})),e.on("slide",(({index:t,fragment:n})=>{let r=0;if(void 0!==n){const s=e.fragments[t];if(s){const{length:e}=s;r=-1===n?e-1:Math.min(Math.max(n,0),e-1)}}s(t,r)})),s(0,0)}
+/*!
+* screenfull
+* v5.0.2 - 2020-02-13
+* (c) Sindre Sorhus; MIT License
+*/
+var r,s=(function(e){!function(){var t="undefined"!=typeof window&&void 0!==window.document?window.document:{},n=e.exports,r=function(){for(var e,n=[["requestFullscreen","exitFullscreen","fullscreenElement","fullscreenEnabled","fullscreenchange","fullscreenerror"],["webkitRequestFullscreen","webkitExitFullscreen","webkitFullscreenElement","webkitFullscreenEnabled","webkitfullscreenchange","webkitfullscreenerror"],["webkitRequestFullScreen","webkitCancelFullScreen","webkitCurrentFullScreenElement","webkitCancelFullScreen","webkitfullscreenchange","webkitfullscreenerror"],["mozRequestFullScreen","mozCancelFullScreen","mozFullScreenElement","mozFullScreenEnabled","mozfullscreenchange","mozfullscreenerror"],["msRequestFullscreen","msExitFullscreen","msFullscreenElement","msFullscreenEnabled","MSFullscreenChange","MSFullscreenError"]],r=0,s=n.length,a={};r<s;r++)if((e=n[r])&&e[1]in t){for(r=0;r<e.length;r++)a[n[0][r]]=e[r];return a}return!1}(),s={change:r.fullscreenchange,error:r.fullscreenerror},a={request:function(e){return new Promise(function(n,s){var a=function(){this.off("change",a),n()}.bind(this);this.on("change",a);var i=(e=e||t.documentElement)[r.requestFullscreen]();i instanceof Promise&&i.then(a).catch(s)}.bind(this))},exit:function(){return new Promise(function(e,n){if(this.isFullscreen){var s=function(){this.off("change",s),e()}.bind(this);this.on("change",s);var a=t[r.exitFullscreen]();a instanceof Promise&&a.then(s).catch(n)}else e()}.bind(this))},toggle:function(e){return this.isFullscreen?this.exit():this.request(e)},onchange:function(e){this.on("change",e)},onerror:function(e){this.on("error",e)},on:function(e,n){var r=s[e];r&&t.addEventListener(r,n,!1)},off:function(e,n){var r=s[e];r&&t.removeEventListener(r,n,!1)},raw:r};r?(Object.defineProperties(a,{isFullscreen:{get:function(){return Boolean(t[r.fullscreenElement])}},element:{enumerable:!0,get:function(){return t[r.fullscreenElement]}},isEnabled:{enumerable:!0,get:function(){return Boolean(t[r.fullscreenEnabled])}}}),n?e.exports=a:window.screenfull=a):n?e.exports={isEnabled:!1}:window.screenfull={isEnabled:!1}}()}(r={exports:{}},r.exports),r.exports);function a(e){e.fullscreen=()=>{s.isEnabled&&s.toggle(document.body)},document.addEventListener("keydown",(t=>{70!==t.which&&122!==t.which||t.altKey||t.ctrlKey||t.metaKey||!s.isEnabled||(e.fullscreen(),t.preventDefault())}))}function i(e=2e3){return t=>{let n;function r(){n&&clearTimeout(n),n=setTimeout((()=>{t.parent.classList.add("bespoke-marp-inactive"),t.fire("marp-inactive")}),e),t.parent.classList.contains("bespoke-marp-inactive")&&(t.parent.classList.remove("bespoke-marp-inactive"),t.fire("marp-active"))}document.addEventListener("mousedown",r),document.addEventListener("mousemove",r),document.addEventListener("touchend",r),setTimeout(r,0)}}const o=["AUDIO","BUTTON","INPUT","SELECT","TEXTAREA","VIDEO"];function l(e){e.parent.addEventListener("keydown",(e=>{if(!e.target)return;const t=e.target;(o.includes(t.nodeName)||"true"===t.contentEditable)&&e.stopPropagation()}))}function c(e){window.addEventListener("load",(()=>{for(const t of e.slides){const e=t.querySelector("[data-marp-fitting]")?"":"hideable";t.setAttribute("data-bespoke-marp-load",e)}}))}var d;function u({interval:e=200}={}){return t=>{document.addEventListener("keydown",(e=>{if(32===e.which&&e.shiftKey)t.prev();else if(33===e.which||37===e.which||38===e.which)t.prev({fragment:!e.shiftKey});else if(32!==e.which||e.shiftKey)if(34===e.which||39===e.which||40===e.which)t.next({fragment:!e.shiftKey});else if(35===e.which)t.slide(t.slides.length-1,{fragment:-1});else{if(36!==e.which)return;t.slide(0)}else t.next();e.preventDefault()}));let n,r,s=0;t.parent.addEventListener("wheel",(a=>{let i=!1;const o=(e,t)=>{e&&(i=i||function(e,t){return function(e,t){const n=t===d.X?"Width":"Height";return e[`client${n}`]<e[`scroll${n}`]}(e,t)&&function(e,t){const{overflow:n}=e,r=e[`overflow${t}`];return"auto"===n||"scroll"===n||"auto"===r||"scroll"===r}(getComputedStyle(e),t)}(e,t)),(null==e?void 0:e.parentElement)&&o(e.parentElement,t)};if(0!==a.deltaX&&o(a.target,d.X),0!==a.deltaY&&o(a.target,d.Y),i)return;a.preventDefault(),r&&clearTimeout(r),r=setTimeout((()=>{n=0}),e);const l=Date.now()-s<e,c=Math.sqrt(Math.pow(a.deltaX,2)+Math.pow(a.deltaY,2)),u=c<=n;if(n=c,l||u)return;let f;(a.deltaX>0||a.deltaY>0)&&(f="next"),(a.deltaX<0||a.deltaY<0)&&(f="prev"),f&&(t[f](),s=Date.now())}))}}!function(e){e.X="X",e.Y="Y"}(d||(d={}));const f=(...e)=>history.replaceState(...e),m="data-bespoke-view";var p;!function(e){e.Normal="",e.Presenter="presenter",e.Next="next"}(p||(p={}));const h=(e,{protocol:t,host:n,pathname:r,hash:s}=location)=>{const a=e.toString();return`${t}//${n}${r}${a?"?":""}${a}${s}`},g=()=>{switch(document.body.getAttribute(m)){case p.Normal:return p.Normal;case p.Presenter:return p.Presenter;case p.Next:return p.Next;default:throw new Error("View mode is not assigned.")}},v=e=>new URLSearchParams(location.search).get(e),b=(e,t={})=>{const n=Object.assign({location:location,setter:f},t),r=new URLSearchParams(n.location.search);for(const t of Object.keys(e)){const n=e[t];"string"==typeof n?r.set(t,n):r.delete(t)}try{n.setter(null,document.title,h(r,n.location))}catch(e){console.error(e)}},w={available:(()=>{try{return localStorage.setItem("bespoke-marp","bespoke-marp"),localStorage.removeItem("bespoke-marp"),!0}catch(e){return console.warn("Warning: Using localStorage is restricted in the current host so some features may not work."),!1}})(),get:e=>{try{return localStorage.getItem(e)}catch(e){return null}},set:(e,t)=>{try{return localStorage.setItem(e,t),!0}catch(e){return!1}},remove:e=>{try{return localStorage.removeItem(e),!0}catch(e){return!1}}};function y(e=".bespoke-marp-osc"){const t=document.querySelector(e);if(!t)return()=>{};const n=(e,n)=>{t.querySelectorAll(`[data-bespoke-marp-osc=${JSON.stringify(e)}]`).forEach(n)};return s.isEnabled||n("fullscreen",(e=>e.style.display="none")),w.available||n("presenter",(e=>{e.disabled=!0,e.title="Presenter view is disabled due to restricted localStorage."})),e=>{t.addEventListener("click",(t=>{if(t.target instanceof HTMLElement){const{bespokeMarpOsc:n}=t.target.dataset;switch(n&&t.target.blur(),n){case"next":e.next({fragment:!t.shiftKey});break;case"prev":e.prev({fragment:!t.shiftKey});break;case"fullscreen":"function"==typeof e.fullscreen&&s.isEnabled&&e.fullscreen();break;case"presenter":e.openPresenterView()}}})),e.parent.appendChild(t),e.on("activate",(({index:t})=>{n("page",(n=>n.textContent=`Page ${t+1} of ${e.slides.length}`))})),e.on("fragment",(({index:t,fragments:r,fragmentIndex:s})=>{n("prev",(e=>e.disabled=0===t&&0===s)),n("next",(n=>n.disabled=t===e.slides.length-1&&s===r.length-1))})),e.on("marp-active",(()=>t.removeAttribute("aria-hidden"))),e.on("marp-inactive",(()=>t.setAttribute("aria-hidden","true"))),s.isEnabled&&s.onchange((()=>n("fullscreen",(e=>e.classList.toggle("exit",s.isEnabled&&s.isFullscreen)))))}}function x(){const e=Math.max(Math.floor(.85*window.innerWidth),640),t=Math.max(Math.floor(.85*window.innerHeight),360);return window.open(this.presenterUrl,`bespoke-marp-presenter-${this.syncKey}`,`width=${e},height=${t},menubar=no,toolbar=no`)}function k(){const e=new URLSearchParams(location.search);return e.set("view","presenter"),e.set("sync",this.syncKey),h(e)}var E=["area","base","br","col","command","embed","hr","img","input","keygen","link","meta","param","source","track","wbr"];let L=e=>String(e).replace(/[&<>"']/g,(e=>`&${S[e]};`)),S={"&":"amp","<":"lt",">":"gt",'"':"quot","'":"apos"},I="dangerouslySetInnerHTML",P={className:"class",htmlFor:"for"},M={};function N(e,t){let n=[],r="";t=t||{};for(let e=arguments.length;e-- >2;)n.push(arguments[e]);if("function"==typeof e)return t.children=n.reverse(),e(t);if(e){if(r+="<"+e,t)for(let e in t)!1!==t[e]&&null!=t[e]&&e!==I&&(r+=` ${P[e]?P[e]:L(e)}="${L(t[e])}"`);r+=">"}if(-1===E.indexOf(e)){if(t[I])r+=t[I].__html;else for(;n.length;){let e=n.pop();if(e)if(e.pop)for(let t=e.length;t--;)n.push(e[t]);else r+=!0===M[e]?e:L(e)}r+=e?`</${e}>`:""}return M[r]=!0,r}const F=({children:e})=>N(null,null,...e),$="bespoke-marp-presenter-container",O="bespoke-marp-presenter-next",q="bespoke-marp-presenter-next-container",C="bespoke-marp-presenter-note-container",T="bespoke-marp-presenter-info-container",A="bespoke-marp-presenter-info-page",K="bespoke-marp-presenter-info-page-text",j="bespoke-marp-presenter-info-page-prev",R="bespoke-marp-presenter-info-page-next",U="bespoke-marp-presenter-info-time",D="bespoke-marp-presenter-info-timer";function V(e){const{title:t}=document;document.title="[Presenter view]"+(t?` - ${t}`:"");const n={},r=e=>(n[e]=n[e]||document.querySelector(`.${e}`),n[e]);document.body.appendChild((e=>{const t=document.createElement("div");return t.className=$,t.appendChild(e),t.insertAdjacentHTML("beforeend",N(F,null,N("div",{class:q},N("iframe",{class:O,src:"?view=next"})),N("div",{class:C}),N("div",{class:T},N("div",{class:A},N("button",{class:j,tabindex:"-1",title:"Previous"},"Previous"),N("span",{class:K}),N("button",{class:R,tabindex:"-1",title:"Next"},"Next")),N("time",{class:U,title:"Current time"}),N("div",{class:D})))),t})(e.parent)),(e=>{r(q).addEventListener("click",(()=>e.next()));const t=r(O),n=(s=t,(e,t)=>{var n;return null===(n=s.contentWindow)||void 0===n?void 0:n.postMessage(`navigate:${e},${t}`,"null"===window.origin?"*":window.origin)});var s;t.addEventListener("load",(()=>{r(q).classList.add("active"),n(e.slide(),e.fragmentIndex),e.on("fragment",(({index:e,fragmentIndex:t})=>n(e,t)))}));const a=document.querySelectorAll(".bespoke-marp-note");a.forEach((e=>{e.addEventListener("keydown",(e=>e.stopPropagation())),r(C).appendChild(e)})),e.on("activate",(()=>a.forEach((t=>t.classList.toggle("active",t.dataset.index==e.slide()))))),e.on("activate",(({index:t})=>{r(K).textContent=`${t+1} / ${e.slides.length}`}));const i=r(j),o=r(R);i.addEventListener("click",(t=>{i.blur(),e.prev({fragment:!t.shiftKey})})),o.addEventListener("click",(t=>{o.blur(),e.next({fragment:!t.shiftKey})})),e.on("fragment",(({index:t,fragments:n,fragmentIndex:r})=>{i.disabled=0===t&&0===r,o.disabled=t===e.slides.length-1&&r===n.length-1}));const l=()=>r(U).textContent=(new Date).toLocaleTimeString();l(),setInterval(l,250)})(e)}function X(e){const t=g();return t===p.Next&&e.appendChild(document.createElement("span")),e=>{t===p.Normal&&function(e){if(!(e=>e.syncKey&&"string"==typeof e.syncKey)(e))throw new Error("The current instance of Bespoke.js is invalid for Marp bespoke presenter plugin.");Object.defineProperties(e,{openPresenterView:{enumerable:!0,value:x},presenterUrl:{enumerable:!0,get:k}}),w.available&&document.addEventListener("keydown",(t=>{80!==t.which||t.altKey||t.ctrlKey||t.metaKey||(t.preventDefault(),e.openPresenterView())}))}(e),t===p.Presenter&&V(e),t===p.Next&&function(e){const t=t=>{if(t.origin!==window.origin)return;const[n,r]=t.data.split(":");if("navigate"===n){const[t,n]=r.split(",");let s=Number.parseInt(t,10),a=Number.parseInt(n,10)+1;a>=e.fragments[s].length&&(s+=1,a=0),e.slide(s,{fragment:a})}};window.addEventListener("message",t),e.on("destroy",(()=>window.removeEventListener("message",t)))}(e)}}function Y(e){e.on("activate",(t=>{document.querySelectorAll(".bespoke-progress-parent > .bespoke-progress-bar").forEach((n=>{n.style.flexBasis=100*t.index/(e.slides.length-1)+"%"}))}))}const B=e=>{const t=Number.parseInt(e,10);return Number.isNaN(t)?null:t};function z(e={}){const t=Object.assign({history:!0},e);return e=>{let n=!0;const r=e=>{const t=n;try{return n=!0,e()}finally{n=t}},s=(t={fragment:!0})=>{((t,n)=>{const{fragments:r,slides:s}=e,a=Math.max(0,Math.min(t,s.length-1)),i=Math.max(0,Math.min(n||0,r[a].length-1));a===e.slide()&&i===e.fragmentIndex||e.slide(a,{fragment:i})})((B(location.hash.slice(1))||1)-1,t.fragment?B(v("f")||""):null)};e.on("fragment",(({index:e,fragmentIndex:r})=>{n||b({f:0===r||r.toString()},{location:Object.assign(Object.assign({},location),{hash:`#${e+1}`}),setter:(...e)=>t.history?history.pushState(...e):history.replaceState(...e)})})),setTimeout((()=>{s(),window.addEventListener("hashchange",(()=>r((()=>{s({fragment:!1}),b({f:void 0})})))),window.addEventListener("popstate",(()=>{n||r((()=>s()))})),n=!1}),0)}}let H;function W(e={}){const t=e.key||((e=21)=>{let t="",n=crypto.getRandomValues(new Uint8Array(e));for(;e--;){let r=63&n[e];t+=r<36?r.toString(36):r<62?(r-26).toString(36).toUpperCase():r<63?"_":"-"}return t})(),n=`bespoke-marp-sync-${t}`,r=()=>{const e=w.get(n);return e?JSON.parse(e):Object.create(null)},s=e=>{const t=r(),s=Object.assign(Object.assign({},t),e(t));return w.set(n,JSON.stringify(s)),s};return s((e=>({reference:(e.reference||0)+1}))),e=>{Object.defineProperty(e,"syncKey",{value:t,enumerable:!0});let a=!0;setTimeout((()=>{e.on("fragment",(e=>{a&&s((()=>({index:e.index,fragmentIndex:e.fragmentIndex})))}))}),0),window.addEventListener("storage",(t=>{if(t.key===n&&t.oldValue&&t.newValue){const n=JSON.parse(t.oldValue),r=JSON.parse(t.newValue);if(n.index!==r.index||n.fragmentIndex!==r.fragmentIndex)try{a=!1,e.slide(r.index,{fragment:r.fragmentIndex})}finally{a=!0}}})),e.on("destroy",(()=>{const{reference:e}=r();void 0===e||e<=1?w.remove(n):s((()=>({reference:e-1})))}))}}function J({slope:e=Math.tan(-35*Math.PI/180),swipeThreshold:t=30}={}){return n=>{let r;const s=n.parent,a=e=>{const t=s.getBoundingClientRect();return{x:e.pageX-(t.left+t.right)/2,y:e.pageY-(t.top+t.bottom)/2}};s.addEventListener("touchstart",(e=>{r=1===e.touches.length?a(e.touches[0]):void 0}),{passive:!0}),s.addEventListener("touchmove",(e=>{if(r)if(1===e.touches.length){e.preventDefault();const t=a(e.touches[0]),n=t.x-r.x,s=t.y-r.y;r.delta=Math.sqrt(Math.pow(Math.abs(n),2)+Math.pow(Math.abs(s),2)),r.radian=Math.atan2(n,s)}else r=void 0})),s.addEventListener("touchend",(s=>{if(r){if(r.delta&&r.delta>=t&&r.radian){let t=r.radian-e;t=(t+Math.PI)%(2*Math.PI)-Math.PI,n[t<0?"next":"prev"](),s.stopPropagation()}r=void 0}}),{passive:!0})}}
+/*! *****************************************************************************
+Copyright (c) Microsoft Corporation.
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+PERFORMANCE OF THIS SOFTWARE.
+***************************************************************************** */function _(e,t,n,r){return new(n||(n=Promise))((function(s,a){function i(e){try{l(r.next(e))}catch(e){a(e)}}function o(e){try{l(r.throw(e))}catch(e){a(e)}}function l(e){var t;e.done?s(e.value):(t=e.value,t instanceof n?t:new n((function(e){e(t)}))).then(i,o)}l((r=r.apply(e,t||[])).next())}))}const G=()=>(void 0===H&&(H="wakeLock"in navigator&&navigator.wakeLock),H),Q=()=>_(void 0,void 0,void 0,(function*(){const e=G();if(e)try{const t=yield e.request("screen");return t.addEventListener("release",(()=>{console.debug("[Marp CLI] Wake Lock was released")})),console.debug("[Marp CLI] Wake Lock is active"),t}catch(e){console.warn(e)}return null}));function Z(){return _(this,void 0,void 0,(function*(){if(!G())return;let e;const t=()=>{e&&"visible"===document.visibilityState&&Q()};return document.addEventListener("visibilitychange",t),document.addEventListener("fullscreenchange",t),e=yield Q(),e}))}const ee=[p.Normal,p.Presenter,p.Next];!function(r=document.getElementById("p")){document.body.setAttribute(m,(()=>{switch(v("view")){case"next":return p.Next;case"presenter":return p.Presenter;default:return p.Normal}})());const s=(e=>{const t=v(e);return b({[e]:void 0}),t})("sync")||void 0,o=!1,d=!0,f=e(r,((...e)=>{const t=ee.findIndex((e=>g()===e));if(t<0)throw new Error("Invalid view");return e.map((([e,n])=>e[t]&&n)).filter((e=>e))})([[d,d,o],W({key:s})],[[d,d,d],X(r)],[[d,d,o],l],[[d,d,d],t],[[d,o,o],i()],[[d,d,d],c],[[d,d,d],z({history:!1})],[[d,d,o],u()],[[d,d,o],a],[[d,o,o],Y],[[d,d,o],J()],[[d,o,o],y()],[[d,d,d],n],[[d,d,o],Z]));window.addEventListener("beforeunload",(()=>b({sync:f.syncKey}))),window.addEventListener("unload",(()=>f.destroy()))}()}();</script><script>window.__marpCliWatchWS="ws://localhost:37717/c6de9e0eec74c79b91a557d82aa04e5c3c205346f79e0c2ad7caa39130e86587";!function(){"use strict";const e=(n,o=!1)=>{const t=new WebSocket(n);return t.addEventListener("open",(()=>{console.info("[Marp CLI] Observing the change of file..."),o&&location.reload()})),t.addEventListener("close",(()=>{console.warn("[Marp CLI] WebSocket for file watcher was disconnected. Try re-connecting in 5000ms..."),setTimeout((()=>e(n,!0)),5e3)})),t.addEventListener("message",(e=>{"reload"===e.data&&location.reload()})),t};!function(){const n=window.__marpCliWatchWS;if(n)e(n)}()}();</script></body></html>

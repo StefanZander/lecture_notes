@@ -27,6 +27,7 @@ h1 {
 
 h2 {
     font-size: 2.4rem;
+    color: #246; /* added to have identical color to h1 */
 }
 
 h4 {
