@@ -11,6 +11,13 @@ const markdownItDef = require('markdown-it-deflist')
 
 
 module.exports = (opts) => new Marp(opts)
+// module.exports = (opts) => new Marp({
+//     html: true,
+//     emoji: {
+//         shortcode: true,
+//         unicode: true
+//     }
+// })
 // .use(markdownIt)
 .use(markdownItMark)
 .use(markdownItAttrs)

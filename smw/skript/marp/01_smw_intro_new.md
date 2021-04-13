@@ -16,6 +16,9 @@ paginate: true
 
 </style>
 
+<!-- marp --engine ./engine.js --watch --theme-set custom-theme-roboto.css -- --allow-local-files 03_semantic_mediawiki.md -->
+<!-- marp --pdf --allow-local-files --engine ./engine.js --theme-set custom-theme-roboto.css -- 01_smw_intro_new.md -->
+
 # Semantisches Wissensmanagement im Unternehmen: <br />Konzepte, Technologien, Anwendungen
 
 #### Prof. Dr. Stefan Linus Zander
@@ -198,7 +201,7 @@ Eine der größten Herausforderungen in und für Unternehmen besteht darin, das 
 Hierauf zielt das ==Wissensmanagement== ab.
 ::::
 :::: single
-![](../html/docs/figures/iceberg.jpg)
+![](./figures/iceberg.jpg)
 ::::
 :::::
 
@@ -275,7 +278,7 @@ _Implizites bzw. verborgenes Wissen_
 # Die Wissenstreppe nach Klaus North
 
 ::: center
-![width:750px](../html/docs/figures/wissenstreppe_north_web.jpg)
+![width:750px](./figures/wissenstreppe_north_web.jpg)
 :::
 ::: footnotes
 Quelle: http://qib.f-bb.de/wissensmanagement/thema/wissen/wissenstreppe.rsys
@@ -315,7 +318,7 @@ Neues Wissen entsteht in einem **kontinuierlichen Transformationsprozess** zwisc
 Entscheidend bei dem Modell von Nonaka & Takeuchi ist die __Transformation von individuellem in kollektives Wissen__, d.h., von einem personenbezogenen in ein allgemein zugängliches Wissen (=die Wissensbasis der Organisation).
 ::: 
 ::: 2nd-col {.left}
-![width:1600px](../html/docs/figures/seci_model_5.png)
+![width:1600px](./figures/seci_model_5.png)
 :::
 ::::
 
@@ -534,7 +537,7 @@ Gemäss heutigen Erfahrungen spart man durch Wissensmanagement **20-25%** der **
 ::::
 :::: triple
 ::: center
-![height:640px](../html/docs/figures/zusammenwirken.jpg)
+![height:640px](./figures/zusammenwirken.jpg)
 :::
 ::::
 :::::

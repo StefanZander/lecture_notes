@@ -16,8 +16,11 @@ The following pages contain information about
 
 !!! note
     **Language and Revision Policy**  
-    The lecture materials are written in both English and German language, i.e., for some parts, the language changes from English to German in vice versa. This is due to the fact that the course's contents are continuously extended and new content is added immediately after its verification and validation.  
-    ~> Revisions will be carried out at later stages.
+    The lecture materials are written in both English and German language. That means, for some parts, the language changes from English to German in vice versa. The reason for that is, that the course's contents are continuously extended and new content is added immediately after its verification and validation. The course's content is treated as a "living standard".
+
+!!! note
+    **Update 2021-04-12**  
+    Ab dem SoSe2021 sind alle Inhalte auch als **html-/pdf-Foliensätze** verfügbar; die Links finden Sie hier oder im Moodle-Kurs der LVA. In der Vorlesung werden die Inhalte der Foliensätze besprochen. Die Dokumentation hier bleibt jedoch für das Selbststudium weiterhin online.
 
 <!-- They serve as a guideline in preparing the materials needed for successfully passing the course. -->
 
@@ -53,7 +56,7 @@ The information on this site is separated into
 <!-- * [Kapitel #3: Semantische Wissensrepräsentation](./chapters/2/overview.md)  -->
 * [Kapitel #3: Semantic MediaWiki](./chapters/3/overview.md) 
 * [Kapitel #4: Semantic MediaWiki Extensions zum Ontology-Engineering](./chapters/4/overview.md) (_im Aufbau_)
-* ~~[Kapitel #5: Knowledge Graph Engineering](index.md)~~ (_nicht im SoSe 2020_)
+* ~~[Kapitel #5: Knowledge Graph Engineering](index.md)~~ (_nicht im SoSe 2021_)
 
 
 ## Übungen zum Selbststudium

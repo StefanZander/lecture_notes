@@ -1,21 +1,24 @@
 # Tagebuch zur LVA
 
+<!-- !!! note
+    Wie Sie sehen können handelt es sich hierbei noch um das Tagebuch aus dem vergangenen Kurs. Zu Demonstrationszwecken wurden die alten Einträge noch nicht gelöscht. Mit Beginn der ersten Einheit werden die Einträge aktualisiert. -->
 
-#### 2020-05-18
+
+<!-- #### 2020-05-18
 : Besprechung Semesterprojekt
 : Erste Festlegung von Gruppenkonstellation und Themenstellung
-: * Eintragung bis zum 2020-05-25 in Moodle
+: * Eintragung bis zum 2020-05-25 in Moodle -->
 
 
 
-#### 2020-05-11
+<!-- #### 2020-05-11
 : Besprechung Ergebnisse UE3
 : Vorstellung und Diskussion von semantischen Templates, PageForms und Modellierung n-ärer Beziehungen (mittels *subobjects*) an konkreten Praxisbeispielen.
 : Auseinandersetzung mit AQL
-: Auftrag: Bildung von Gruppen und Themenfindung bis zum nä. Termin
+: Auftrag: Bildung von Gruppen und Themenfindung bis zum nä. Termin -->
 
 
-#### 2020-05-04
+<!-- #### 2020-05-04
 : Gemeinsames Modellieren des RDF-Graphen aus UE2
 : Einführung in Semantic MediaWiki anhand der Modellierung eines Wissengraphen
 : Modellierungskonzepte anhand praktischer Beispiele im Sandbox-SMW betrachtet
@@ -23,11 +26,11 @@
 : Restlichen Inhalte der Vorlesungsunterlagen erarbeiten sich die Studierenden im Selbststudium
 : Übung
 : * Nachfrage warum nur 1/10 Studierenden die ÜE bearbeitet hat
-: * 2 Studierende gaben zeitliche Konflikte an; Rest enthielt sich der Rückmeldung (leider!)
+: * 2 Studierende gaben zeitliche Konflikte an; Rest enthielt sich der Rückmeldung (leider!) -->
 
 
 
-#### 2020-04-27
+<!-- #### 2020-04-27
 : Besprechung Modellierungsbeispiel aus UE1
 : Detaillierte Auseinandersetzung mit Maschinen-verarbeitbarer Semantik
 : Bestandteile und Grundkonzepte semantischer Wissensgraphen 
@@ -37,13 +40,15 @@
 : * logisches Datenmodell
 : Kodierung semantischer Wissensgraphen mittels RDF
 : Ontologien und Ontologie-sprachen aus Zeitgründen nicht behandelt
-: Beispiele besprochen
+: Beispiele besprochen -->
 
 
-#### 2020-04-20
-: Orga + Einführung in Wissensmanagement (Langfristige Trends, Herausfoderungen Wissenstreppe, Wissensarten; Rest im Selbststudium)
-: Übung 
-: * im SoSe 2020 nicht verpflichtend; 
-: * bei korrekter und vollständiger Bearbeitung aller Übungsaufgaben bekommt man einen Bonus auf die Gesamtnote
-: * Upload der Übungen via Moodle; Block im Moodle-Kurs ist eingerichtet
-: Semesterprojekt in 2er Teams; Zusammensetzung individuell und ergänzende Gruppenbildung in der 4. Woche
+#### 2021-04-13
+: Organisatorisches (Aufbau des Kurses, Ziele, Lehrmaterialien, Ablauf Präsenzveranstaltung und Übungen)
+: im 2. Teil gem. Sammlung von Erwartungen und Wünschen an die Veranstaltung für ein gutes und zielgerichtetes Zusammenarbeiten
+: Besprechen der 1. Übungsaufgabe
+: * Hochzuladen bis DI, 20.04., 8:00 Uhr in Moodle
+: * zu bearbeiten ist Aufgabe 1 & 2 aus Übung #1 (Aufgabe 3 & 4 dann in der Folgewoche)
+: Aufgrund der extrem hohen Auslastung des Moduls sollen sich die Studierenden Gedanken machen, ob sie das Modul wirklich absolvieren wollen
+: * Nachricht an Prof. Altenbernd (Prodekan) mit der Bitte um weitere WPFs
+: * WPF Fortschrittliche Webentwicklung wird noch angeboten (entweder Semester-begleitend oder als Blockkurs im Aug./Sept.)

@@ -11,6 +11,10 @@
     - Warum wird WM mit fortschreitender Digitalisierung immer wichtiger ?
 
 
+!!! warning
+    Der aktualisierte Foliensatz zum 1. Kapitel findet sich im Moodle-Kurs der LVA sowie online als [HTML-Präsentation](https://projects.fbi.h-da.de/~s.zander/smw/html/chapters/1/01_smw_intro_new.html)
+
+
 ### Gliederung
 
 - [Warum wird Wissen zunehmend wichtiger für Unternehmen ?](chapters/1/motivation.md)

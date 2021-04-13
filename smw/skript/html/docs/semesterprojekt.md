@@ -2,7 +2,7 @@
 
 
 ### Allgemeines
-: Durchführung in 2er Teams; Konstellation und Thema bitte in __Moodle__ hinterlegen ([-->Link](https://lernen.h-da.de/mod/data/view.php?id=357528))
+: Durchführung in 2er oder 3er Teams; Konstellation und Thema bitte in __Moodle__ hinterlegen ([-->Link](https://lernen.h-da.de/mod/data/view.php?id=357528))
 
 : Praktische Umsetzung eines Wissensmanagementproblems mittels Semantic MediaWiki mit allen verfügbaren Sprachelementen und einschlägigen Erweiterungen
 

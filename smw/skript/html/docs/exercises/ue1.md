@@ -1,4 +1,4 @@
-# Übung 1: Literraturrecherche und Wissensmodellierung
+# Übung 1: Literaturrecherche und Wissensmodellierung
 
 !!! abstract
     **Lernziele**
@@ -8,10 +8,13 @@
     * [x] Sie kennen mehrere Wissensmanagement-Modelle sowie deren Unterschiede
     * [x] Sie können wesentliche Herausforderungen bei der Integration des Wissensmanagements in die Unternehmenspraxis benennen
 
+<!-- !!! warning
+    **Aufgabe 1 & 2** sind die PVL für das Modul und müssen bis zur 2. Einheit bearbeitet und via Moodle hochgeladen werden.  -->
+
 
 ## Aufgaben
 
-### Literaturrecherche 
+### Aufgabe 1: Literaturrecherche 
 
 1. Lesen Sie das **Kapitel 1 - 3** des Buchs
    
@@ -25,20 +28,10 @@
     3. Erläutern Sie, warum eine kollektive Wissensbasis mehr ist, als die Summe der Experten eines Unternehmens.
     4. Warum ist das Konzept der "Lernenden Organisation" auch in nicht hoch-dynamischen Wirtschaftszweigen wichtig? 
 
-2. Lesen Sie das Paper
-
-    : _"Wissen 4.0 – Wissensmanagement im digitalen Wandel"_  
-    von Klaus North und Ronald Maier (--> [Link in Moodle](https://lernen.h-da.de/mod/resource/view.php?id=354866))
-
-    und beantworten Sie folgende Fragen:
-
-    1. Warum lässt sich mit "Wissen" allein noch kein Problem lösen?
-    2. Welche Herausforderungen an das Wissensmanagement werden zukünftig noch zunehmen?
-    3. Was ist der Unterschied zwischen operativem und strategischem Wissensmanagement?
-    4. Erläutern Sie Maßnahmen, wie sich das operative und strategische Wissensmanagement verbinden lässt.
 
 
-### Modellierung eines realen Ausschnitts eines Gegenstandbereichs
+
+### Aufgabe 2: Modellierung eines Gegenstandbereichs
 
 **Aufgabe**:  
 Überführen Sie den nachfolgend dargestellten Sachverhalt in ein minimales Datenmodell einer Sprache oder eines Formats (UML-Klassendiagramm / JSON / XML / ERM / etc.) Ihrer Wahl[^2]. Versuchen Sie den Sachverhalt so zu modellieren, dass Sie möglichst viele Informationen bzw. Fakten als "First-class Elemente" darstellen[^3], so dass diese möglichst präzise durch eine Suchalgebra angesprochen werden können:
@@ -69,6 +62,30 @@ Vierter Schritt
 * _Konnten Sie den Beziehungen bestimmte Eigenschaften zuweisen oder diese verfeinern?_
 * _Wie ließen sich Aussagen über Aussagen oder Aussagen über Sachverhalte darstellen ?_
 * _Ist ihr gewähltes Datenmodell ausdrucksmächtig und gleichzeitig flexibel genug, um auf andere Anwendungsgebiete bzw. vergleichbare Gegenstandsbereiche übertragen werden zu können ?_
+
+
+
+
+
+### Aufgaben 3: Literaturrecherche 
+
+1. Lesen Sie das Paper
+
+    : _"Wissen 4.0 – Wissensmanagement im digitalen Wandel"_  
+    von Klaus North und Ronald Maier (--> [Link in Moodle](https://lernen.h-da.de/mod/resource/view.php?id=354866))
+
+    und beantworten Sie folgende Fragen:
+
+    1. Warum lässt sich mit "Wissen" allein noch kein Problem lösen?
+    2. Welche Herausforderungen an das Wissensmanagement werden zukünftig noch zunehmen?
+    3. Was ist der Unterschied zwischen operativem und strategischem Wissensmanagement?
+    4. Erläutern Sie Maßnahmen, wie sich das operative und strategische Wissensmanagement verbinden lässt.
+
+
+
+### Aufgabe 4: Reflektion der 1. Einheit
+
+1. Beantworten Sie die Fragen zur Lernzielkontrolle auf der letzten Seite des Foliensatzes zur 1. Einheit (Wissensmanagement).
 
 
 [^1]: Die folgenden Schritte stellen jeweils eine Verfeinerung bzw. Konkretisierung des beschriebenen Sachverhalts dar. 
