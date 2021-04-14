@@ -4,7 +4,7 @@ This site outlines the **main objectives** of this course together with a conden
 
 !!! warning
     **Preamble**      
-    Scientfic writing is like learning to swim – you can read a thousand books but you only learn how to swim when being in the water. Just like swimming, your scientific  writing skills increase through practice, i.e., through hands-on work.
+    Scientfic writing is like learning to swim – you can read a thousand books but you only learn how to swim when being in the water. Just like swimming, your scientific  writing skills increase through practice, through hands-on work!
 
 
 ## Objectives

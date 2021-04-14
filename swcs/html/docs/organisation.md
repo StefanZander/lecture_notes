@@ -10,7 +10,7 @@ On this page, you find information about
 
 ## Communication
 
-- Usually via email, skype or as indiviual appointments via <https://meet.fbi.h-da.de>  
+- Usually via **email**, **skype** or as **indiviual appointments** via <https://meet.fbi.h-da.de>  
     _-->_ contact me via email for arranging an individual appointment
 - Please use the following subject `WAI` __OR__ `SWCS` when asking questions via email:  
     `[SWCS|WAI] {lastname_person1}, {lastname_person2}: {matter}` (without `{}`)
@@ -27,14 +27,15 @@ On this page, you find information about
 
 !!! warning 
     **Corona Update**  
-    Due to the corona crisis, there will be **no in-class lectures** during the summer term 2020.  
-    Instead, we will use **BigBlueButton (BBB)** for all lectures (--> Link: <https://rooms.fbi.h-da.de>). 
+    Due to the corona crisis, there will be **no in-class lectures** during the summer term 2021.  
+    Instead, we will use **BigBlueButton (BBB)** for all lectures (--> Link: <https://rooms.fbi.h-da.de/r/vFBI/002>). 
 
 - Dates of the lectures will be announced via Email and via the OBS Calendar
     - _-->_ so please make sure that your email and calendar subscription is up-to-date 
 - Depends on the student's familirarity with the topic; 
-- In general only very few – but attendance is compulsory
+- Per default only very few – but attendance is compulsory
     - Kick-off meeting
+    - Introductory session
     - Final presentations
 - More lectures in the form of 
     - tutorials about selected topics, 

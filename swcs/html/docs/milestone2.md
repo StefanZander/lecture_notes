@@ -32,10 +32,10 @@
         **Note**: Write the Abstract from a perspective of what you *intend* to achieve. Change this perspective of what you *have* achieved for the final paper.
 
 3. Submit both Factsheet and Abstract as a **single PDF file** via **EasyChair** (_registration required_)  
-    - Use the following link for the module "**Scientific Writing for Computer Science**":
-        - Link: <https://easychair.org/conferences/?conf=swcssose2020>
-    <!-- - Use this link for the module "**Wissenschaftliches Arbeiten in der Informatik 2**": -->
-        <!-- - Link: <https://easychair.org/conferences/?conf=wai2wise20192020> -->
+    <!-- - Use the following link for the module "**Scientific Writing for Computer Science**":
+        - Link: <https://easychair.org/conferences/?conf=swcssose2020> -->
+    - Use this link for the module "**Wissenschaftliches Arbeiten in der Informatik 2**":
+        - Link: <https://easychair.org/conferences/?conf=wai2-2021>
     - **Register** both authors at the EasyChair system and enter all relevant information
   
         !!! note

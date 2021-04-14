@@ -1,9 +1,9 @@
-# Scientific Writing in Computer Science
+# Scientific Writing in Computer Science aka Wissenschaftliches Arbeiten in der Informatik II
 
  Welcome to the course pages of the modules 
- 
- * [Scientifc Writing for Computer Science](https://obs.fbi.h-da.de/mhb/modul.php?nr=30.7324)
+
  * [Wissenschaftliches Arbeiten in der Informatik 2](https://obs.fbi.h-da.de/mhb/modul.php?nr=30.7512)
+ * [Scientifc Writing for Computer Science](https://obs.fbi.h-da.de/mhb/modul.php?nr=30.7324)
 
 <!-- Stand: 2019-03-18 -->
 
