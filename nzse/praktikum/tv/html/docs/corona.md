@@ -7,7 +7,7 @@
 
 ### Zeitplan 
 
-_Letzte Aktualisierung: 04.06.2020_ 
+_Letzte Aktualisierung: 04.06.2020_ (wird noch aktualisiert)
 
 Woche 01 (KW17): Orga + Einführung User-Centered Design  
 Woche 02 (KW18): User Research  
@@ -27,13 +27,13 @@ Woche 13 (KW29): Fragestunde
 ### Vorlesung
 
 Durchführung 
-: Im SoSe 2020 als online LVA mit **BigBlueButton (BBB)** – Raum: [D14/4.04](https://rooms.fbi.h-da.de/core/join/meeting/view/3968822e35d04f23b35f623496d9bc07)
+: Im SoSe 2021 als online LVA mit **BigBlueButton (BBB)** – Raum: siehe OBS
 : mit ergänzendem **Fragenspeicher** (--> [Link](https://lernen.h-da.de/mod/wiki/view.php?id=357203)) zu den jeweiligen Einheiten
 : zus. Bereitstellung von ergänzenden **Lehrvideos** zu ausgesuchten Themen über [YouTube](https://www.youtube.com/channel/UCmvuGsp-maCJ_HwAgKxBpbA?view_as=subscriber)
 
 Termine
-: **DI1xy 8:30 - 10:00 Uhr**: Inhaltliche Auseinandersetzung mit dem Wochenthema
-: **DI2x 10:15 - 11:45 Uhr**: Vertiefung vorangegangener & aktueller Themen + Möglichkeit weitere Fragen zu stellen
+: **DI3xy 12:00 - 13:30 Uhr**
+: **MI2x 10:15 - 11:45 Uhr** 
 
 Ablauf 
 : Zu Beginn Behandlung von **Fragen** zu Themen der (N-1)-ten und N-ten Woche  
@@ -73,7 +73,7 @@ Was bedeutet das für Sie...
         So werden die Änderung gegenüber dem "normalen" offline Ablauf dargestellt.
 
 Durchführung
-: Im SoSe 2020 als online LVA mit **BigBlueButton (BBB)** – Raum: [D15/01.02](https://rooms.fbi.h-da.de/core/join/meeting/view/97b043084809414a87a2cbdc85263502)
+: Im SoSe 2020 als online LVA mit **BigBlueButton (BBB)** – Raum: siehe OBS
 : Bearbeitung von mehreren Übungsaufgaben in Form eines **semesterbegleitenden Projekts**
 : Eigenständige Bearbeitung der Übungsaufgaben in max. **4er Gruppen**
 : * Gruppenfindung selbständig vorab oder mit Unterstützung des LVA-Leiters über Moodle
