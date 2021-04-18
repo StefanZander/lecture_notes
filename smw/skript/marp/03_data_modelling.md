@@ -15,7 +15,7 @@ paginate: true
 
 #### Prof. Dr. Stefan Linus Zander
 
-Kapitel 3.2: Datenmodellierung mit Semantic MediaWiki {.lightgreen .bigger .skip}
+Kapitel 3.2: Datenmodellierung mit Semantic MediaWiki {.lightgreen .Big .skip}
 
 ---
 <!-- header: Chapter 1: Motivation -->
@@ -300,26 +300,35 @@ Tasks
 
 
 ---
-# TODO: Incorporate
+# Future Work
 
 - How can we state that Bayern Munich has won 30 Bundesliga Championship titles ?
-- How can we express the years in which a Bundesliga title was won ?
+- How can we express the years in which the Bundesliga titles were won ?
 - How can we express in which season + year a Bundesliga title was won ?
 - How can we express in which seasons Bayern Munich finished second ?
 - How can we count all national and international titles won by a German football club ?
 
-All this calls for subobjects!!!
+Hint: All the above modelling cases call for subobjects!
 
 ---
 # Why Knowledge Graphs are useful
 
+::::: columns
+:::: double
 Knowledge graphs have many advantages
 - Like most graph models, it more intuitively captures the way we think about the world as humans (as networks, not as tables), making it easier to design, capture, and query data.
 - As a data model supported by W3C standards, it allows us to create interoperable data and systems, all using the same standard to represent and encode data.
+::::
+:::: single
+![height:280px](figures/lod_graph.webp)
+::::
+:::::
 
-Sidenote:
+::: example small
+__Sidenote__:
 There are many other methods that have been developed to handle this kind of complexity in RDF, including singleton properties and named graphs/quads. Additionally, an entirely different type of non-RDF graph model, labeled property graphs, allows users to attach properties directly to relationships.
 However, labeled property graphs don’t allow for interoperability at the same scale as RDF — it’s much harder to share and combine different data sets, and moving data from tool to tool isn’t as simple.
+:::
 
 ::: footnotes
 Source: https://enterprise-knowledge.com/rdf-what-is-it-and-why-do-i-need-it/
