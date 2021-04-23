@@ -16,14 +16,14 @@ paginate: true
 
 </style>
 
-<!-- marp --engine ./engine.js --watch --theme-set custom-theme-roboto.css -- --allow-local-files 03_semantic_mediawiki.md -->
+<!-- marp --engine ./engine.js --watch --theme-set custom-theme-roboto.css -- --allow-local-files 01_smw_intro_new.md -->
 <!-- marp --pdf --allow-local-files --engine ./engine.js --theme-set custom-theme-roboto.css -- 01_smw_intro_new.md -->
 
 # Semantisches Wissensmanagement im Unternehmen: <br />Konzepte, Technologien, Anwendungen
 
 #### Prof. Dr. Stefan Linus Zander
 
-Kapitel 1: Einführung in das Wissensmanagement {.lightgreen .big}
+Kapitel 1: Einführung in das Wissensmanagement {.lightgreen .Big .skip}
 
 
 ---

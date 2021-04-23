@@ -246,11 +246,11 @@ Source: https://www.semantic-mediawiki.org/wiki/Help:Introduction_to_Semantic_Me
 ::::: equalcolumns
 :::: 1st-column
 ### Vorteile
-- Jeder angemeldete Nutzer kann Content erstellen (*anyone can edit*)
-- Einfach zu erlernen und zu nutzen
+- Jede angemeldete Nutzer_in kann Content erstellen (*anyone can edit*)
+- Einfach zu erlernen und zu nutzen (_easy to learn_)
 - Unmittelbare Contenterstellung und -nutzung (*instant publish*)
 - Kollaborative Ontologie- und Inhaltserstellung (*collaboration*)
-- Änderungsverfolgung
+- Änderungsverfolgung (_versioning and tracking_)
 - Unterstützt den Aufbau von Communities (*community building*)
 - Beinhaltet eine semantische Wissensbasis (*knowledge base*)
 - Agile Entwicklung (*agile development*)
@@ -393,7 +393,7 @@ Ein ==Datenstrukturelement== erlaubt die Spezifikation von Datenmodellen auf Bas
 Quelle: Eigene Definition
 :::
 
-**Semantic MediaWiki** definiert ==8 Datenstrukturelemente==: {.BIGskip}
+**Semantic MediaWiki** definiert ==8 Datenstrukturelemente==: {.Bigskip}
 ::: twocolumns 
 1. *Seite* (engl. Page)
 2. *Namensraum* (engl. Namespace)
@@ -401,26 +401,31 @@ Quelle: Eigene Definition
 4. *Attribut* (engl. Property)
 
 
-5. *Datentyp* (engl. Datatype) – zusammen mit 4.
-6. *Konzept* (engl. Concept) 6. 
-7. *Vorlage* (engl. Template) - kein DSE
+5. *Datentyp* (engl. Datatype)^1^
+6. *Konzept* (engl. Concept) 
+7. *Vorlage* (engl. Template)^2^
 8. *Subobjekt* (engl. Subobject)
 :::
 
+::: footnotes
+^1^ Werden zusammen mit Punkt 4 behandelt
+
+^2^ Templates sind kein Datenstrukturelement im eigentlichen Sinne aber ein mächtiges und sinnvolles Tool zum Datenmanagement in MediaWiki
 
 
----
-# Was ist eigentlich ein Wiki ?
+<!-- # Was ist eigentlich ein Wiki ?
 
 - eine besondere Form einer leichtgewichtigen Wissensbasis
 
 Elemente einer Wissensbasis
-- Knowledge Representation Framework
-- 
+- Knowledge Representation Framework -->
+ 
 
 
 ---
+<!-- header: <br/> -->
 # Datenmodellierungselemente im Detail
+## – Seiten und Namensräume 
 
 
 
@@ -555,14 +560,14 @@ Quelle: eigene Definition
 :::
 
 {.tinyskip}
-* Every wiki page belongs to **one specific namespace**
+- Every wiki page belongs to **one specific namespace**
     - Namespaces become part of the page's title, e.g., `Help:Namespaces/de`^3^.
     - When _no namespace_ is given during page creation, the page will be created in the **main namespace**^2^.
-* Namespaces determine the **purpose** of a page, i.e., how the contents of a page are interpreted by the wiki engine.
+- Namespaces determine the **purpose** of a page, i.e., how the contents of a page are interpreted by the wiki engine.
     - Example: Datatype information in property pages determine whether the specification of property values will lead to the creation of a new wiki page (in the default namespace) or whether property values are treated as data type values.
     - The wiki engine can also assess whether a certain **value holds for a property** or not (e.g., in the case of datatype `Date` or `telephone` etc.)
     - Contents of pages defined in the `Template:` namespace will be **transcluded** in other pages.
-* The `Special` namespace is reserved for pages with fixed functionality (e.g. `Special:RunQuery`); no editing is possible
+- The `Special` namespace is reserved for pages with fixed functionality (e.g. `Special:RunQuery`); no editing is possible
 
 ::: footnotes
 ^1^  MediaWiki provides 18 default namespaces. See <https://www.mediawiki.org/wiki/Help:Namespaces/en#Standard_namespaces> for a list of standard namespaces provided by MediaWiki
@@ -588,7 +593,8 @@ Quelle: eigene Definition
 
 
 ---
-# Categories
+# Datenmodellierungselemente im Detail
+## – Kategorien 
 
 ---
 # Categories
@@ -724,7 +730,8 @@ To change the _link text_, write the text inside the link tag after a pipe:
 
 
 ---
-# The Semantic Sauce
+# Datenmodellierungselemente im Detail
+## – Beziehungen 
 
 ---
 # Introduction to Properties
@@ -740,13 +747,13 @@ Source: Individual definition
 **Properties can link** {.Bigskip}
 :::: columns 
 ::: single 
-- a wikipage to one or many ==wikipages==
+1.) a wikipage to one or many ==wikipages==
 :::
 ::: single
-- a wikipage to a ==datatype value==
+2.) a wikipage to a ==datatype value==
 :::
 ::: single
-- a wikipage to one or many ==subobjects==
+3.) a wikipage to one or many ==subobjects==
 :::
 ::::
 
@@ -852,7 +859,8 @@ Better: `Germany's capital is [[Has capital::Berlin]]` <--> `Berlin is the capit
 # Using Properties in SMW
 
 <!-- What needs to be done to use properties in Semantic MediaWiki? -->
-The process of using properties in Semantic MediaWiki is _twofold_:
+The process of **using properties** in Semantic MediaWiki is twofold:
+
 
 A) ==Creating Properties== {.skip}
 - A Property needs to be  _declared_ in the `Property` namespace
@@ -957,7 +965,9 @@ Sources: (1) https://www.semantic-mediawiki.org/wiki/Help:Setting_values/Working
 
 
 ---
-# Concepts
+# Datenmodellierungselemente im Detail
+## – Konzepte 
+
 ---
 # Concepts
 
@@ -968,15 +978,20 @@ Quelle: Eigene Definition angelehnt an <https://www.semantic-mediawiki.org/wiki/
 :::
 
 {.bigskip}
-::::: equalcolumns
-:::: 1st-column
+::::: columns
+:::: single
 **Motivation**
 - Sometimes, it is useful to determine _category membership_ based on the occurrence of some _specific property values_.
 - Reviewing whether _membership conditions_ are still _satisfied_ and manually altering categories is cumbersome and error-prone
 ::::
-:::: 2nd-colum
+:::: single
 **Example**
 - _Automatically annotate_ all currently running projects with a dedicated category e.g. `Running Projects` based on the evaluation of start and end date
+::::
+:::: single
+**Application Scenarios**
+- Concepts are useful, when the evaluation of _query conditions_ is complex and/or are needed in many `#ask` queries.
+- Concepts help in simplifing semantic _inline queries_
 ::::
 :::::
 
@@ -984,29 +999,32 @@ Quelle: Eigene Definition angelehnt an <https://www.semantic-mediawiki.org/wiki/
 ---
 # Function
 
-Meta: Could also be a summary
+**Concepts**...
+:::: columns
+::: single
+- ... are pages defined in the `Concept:` **namespace**
+- ... serve as categories with individually evaluated memberships
+- ... are declared using the `#concept` parser function
+- ... dynamically link pages to categories based on formulated **query conditions**
+- ... can be used in **semantic queries** just like categories
+:::
+::: single
+- ... conditions are specified in the form of an `#ask` query
+- ... results of the `#ask` query automatically become members of the concept
+- ... can be **browsed** to view the contents of some concept – similar to category pages 
+- ... are very useful in **Page Forms** for defining _auto-completion values_
+:::
+:::: 
 
-Concepts
-: ... are pages defined in the `Concept:` **namespace**
-: ... serve as categories with individually evaluated memberships
-: ... are declared using the `#concept` parser function
-: ... dynamically link pages to categories based on formulated **query conditions**
-: ... conditions are specified in the form of an `#ask` query
-: ... results of the `#ask` query automatically become members of the concept
-: ... can be **browsed** to view the contents of some concept – similar to category pages 
-: ... can be used in **semantic queries** just like categories
-: ... are very useful in **Page Forms** for defining auto-completion values
-
-Additional Remarks:
-: Concept pages can have **additional content** (e.g. wikitext) – but this text does not have any effect on the definition of the concept.
-: The `#concept` parser function can _only_ be used on pages in the `Concept:` namespace 
+**Additional Remarks** {.Bigskip}
+- ==Concept pages== can have _additional content_ (e.g. wikitext) – but this text does not have any effect on the definition of the concept.
+- The `#concept` parser function can _only_ be used on pages in the `Concept:` namespace 
 
 
 
 ---
 # Working with Concepts
 
-<!-- Defining and using the concept named `Semantic MediaWiki Cons 2012` in an `#ask` query to display the location of all SMW conferences held in 2012: -->
 ::::: equalcolumns
 :::: 1st-column
 ### A) Creating a Concept
@@ -1043,21 +1061,19 @@ Additional Remarks:
 | SMWCon Fall 2012   | Cologne, Germany  |
 | SMWCon Spring 2012 | Carlsbad, CA, USA |
 
-==TODO: Will concepts be displayed on wiki pages?==
+<!-- ==TODO: Will concepts be displayed on wiki pages?== -->
 ::::
 :::::
 
-
 ::: footnotes
-Source: Example taken from <...>
+Source: Example taken from https://www.semantic-mediawiki.org/wiki/Help:Concepts
 :::
 
 
-
 ---
-# Example 2: Concept for all currently running Projects
+## Example 2: <br/> Concept for all currently running Projects
 
-Instead of annotating all currently running projects with a specific category (that certainly will be invalid for some projects after a certain amount of time), we can define a dynamic category in form of a concept.
+Instead of annotating all currently running projects with a specific category (that certainly will be invalid for some projects after a certain amount of time), we can define a _dynamic category_ in form of a ==concept==.
 
 ```
 {{#concept:
@@ -1069,10 +1085,9 @@ Instead of annotating all currently running projects with a specific category (t
 ```
 
 
-
----
+<!-- 
 # Concepts (Part 2)
----
+
 # Concepts
 
 ::: definition
@@ -1091,9 +1106,9 @@ Quelle: Eigene Definition angelehnt an <https://www.semantic-mediawiki.org/wiki/
 **Application Scenarios** {.nobottommargin}
 - Concepts are useful, when the evaluation of query conditions is complex and/or needed in many `#ask` queries.
 - Concepts help in simplifing semantic queries
+-->
 
-
---- 
+<!--
 # Concepts: Syntax and Creation
 
 _Example_
@@ -1118,10 +1133,9 @@ _Creating Concepts_ {.nobottommargin}
 ::: footnotes
 ^1^ Example is taken from https://www.semantic-mediawiki.org/wiki/Help:Concepts
 :::
+-->
 
-
-
----
+<!--
 # Concepts: Usage
 
 
@@ -1152,6 +1166,7 @@ SMWCon Spring 2012       | Carlsbad, CA, USA
 ```
 ::::
 :::::
+-->
 
 <!-- *Syntax* {.nobottommargin}
 ```
@@ -1175,7 +1190,8 @@ SMWCon Spring 2012       | Carlsbad, CA, USA
 
 
 ---
-# Templates
+# Datenmodellierungselemente im Detail
+## – Vorlagen 
 
 ---
 # Templates
@@ -1191,6 +1207,7 @@ Templates {.longskip}
 : ... can contain almost any kind of wiki content
 : ... can have _parameters_, the values of which will be inserted in the template's content during transclusion
 : ... often used to embed _semantic properties_ or _subobjects_ in Semantic MediaWiki
+: ... can be used in any place in a page
 
 - Templates allow for the inclusion of pre-defined content in wiki pages.
 - This form of inclusion is called **Transclusion**
@@ -1205,9 +1222,9 @@ Templates {.longskip}
 Quelle: Eigene Definition angelehnt an 
 :::
 
-Transcluded content can be controlled by __three__ distinct ==commands== {.skip}
-- `<includeonly>`
-- `<onlyinclude>`
+Transcluded content can be controlled by __three__ distinct ==commands==^1^ {.skip}
+- `<includeonly>` – the text will only be used when the page is transcluded onto another page; it will not appear on the page itself. 
+- `<onlyinclude>` – the only text should be transcluded onto another page, but will appear on the page itself
 - `<noinclude>` – usually used for _instructional content_, i.e., how a template is to be used. This content will not be transcluded.
 
 ::: blue skip
@@ -1215,6 +1232,13 @@ Transcluded content can be controlled by __three__ distinct ==commands== {.skip}
 It is recommended to explicitly markup the content in a template that is to be transcluded by using the provided commands and separate it from supplemental or instructional content that describes the usage of the template. 
 <!-- MediaWiki provides distinct commands (`<include_only/>`, `<no_include/>`) to control the transclusion of template content and separate it from e.g. instructional content on how to use the template. -->
 :::
+
+::: footnotes
+^1^ see https://www.mediawiki.org/wiki/Transclusion for more information about transclusion
+:::
+
+
+
 ---
 # Templates: Tutorial Videos 
 
@@ -1248,11 +1272,11 @@ Templates are often used for **harmonizing**^1^ semantic data and reducing seman
 ---
 # Customizing Template Content 
 
-Templates can have __parameters__ that allow for passing _individual data_ to template content that is to be transcluded.
+Templates can have ==parameters== that allow for passing _individual data_ to template content that is to be transcluded.
 
 <!-- ### Specification in Templates -->
 
-==Parameters== within templates can either be specified...
+__Parameters__ within templates can either be specified...
 - anonymously via the ==sequence of occurrence==, i.e., ` {{{1}}}`, `{{{2}}}`, etc.
 - via specific ==parameter names==, i.e., `{{{Parameter_name|default_value}}}`
 
@@ -1277,7 +1301,6 @@ Example:
 Every template needs to a have a **unique page name** in the `Template:` namespace; they can be created as any other wikipage.
 
 Template URL: `{Semantic_MediaWiki_URL}\Template:Template_name`
-Template Name: `Template_name`
 
 ``` 
 <!-- additional content -->
@@ -1302,7 +1325,6 @@ Usage – with parameters specified on the page where the template it to be tra
 }}
 ```
 
-Templates can be used in any place in a page.
 
 
 
@@ -1311,6 +1333,7 @@ Templates can be used in any place in a page.
 # Templates: Syntax
 
 <!-- The following example displays a template with named parameters for entering new research grants -->
+
 ```
 <noinclude> 
 Dies ist die Vorlage zum Anlegen neuer nationaler und europäischer Förderprogramme. 

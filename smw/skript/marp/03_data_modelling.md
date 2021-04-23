@@ -11,14 +11,21 @@ paginate: true
 
 </style>
 
+<!-- marp --engine ./engine.js --watch --theme-set custom-theme-roboto.css -- --allow-local-files 03_data_modelling.md -->
+<!-- marp --pdf --allow-local-files --engine ./engine.js --theme-set custom-theme-roboto.css -- 03_data_modelling.md -->
+
+
+
 # Semantisches Wissensmanagement im Unternehmen: <br />Konzepte, Technologien, Anwendungen
 
 #### Prof. Dr. Stefan Linus Zander
 
 Kapitel 3.2: Datenmodellierung mit Semantic MediaWiki {.lightgreen .Big .skip}
 
+
+
 ---
-<!-- header: Chapter 1: Motivation -->
+<!-- header: Kapitel 1: Vorbemerkung -->
 <!-- footer: Prof. Dr. Stefan Zander -->
 
 # Vorbemerkung
@@ -54,7 +61,7 @@ Mit den Informationen aus Kapitel 2: Technologische Grundlagen können wir diese
 - Maschinen-verarbeitbare Semantik bedeutet: _DEFINITIONS HAVE CONSEQUENCES_ – d.h., die Semantik eines Elements ist definiert durch die sich aus der Anwendung des mit dem Element assozierten Regelsatzes ergebenden Konsequenzen.
 :::
 
----
+<!-- ---
 # Wie werden Informationen in SMW kodiert ?
 
 Semantic MediaWiki encodes information in the form of ==facts==
@@ -84,15 +91,14 @@ This ==triple== can be expressed with elements from SMW's KRF:
 3. Objects are represented as **literals** or other **wiki pages**
    - e.g., value “3,520,031” in case the object is a literal
    - e.g., Page named "Germany" in case object is another Wikipage 
-   <!-- - **Literals** embedded in the Wikipage with the annotation, e.g., “3,520,031” -->
-   <!-- - other **Wiki pages** in the main namespace, e.g, "Klaus Wowerit"  -->
 ::::
-:::::
+::::: -->
 
 
 
 ---
-# Encoding Information as Facts
+<!-- header: Kapitel 1: Kodierung von Informationen -->
+# Wie werden Informationen in SMW kodiert ?
 
 Semantic MediaWiki encodes information in the form of ==facts==
 
@@ -140,14 +146,15 @@ As a consequence, facts are encoded as **property-value pairs** on wiki pages.
 {.skip} -->
 ::::: equalcolumns
 :::: 1st-column
-This ==triple== can be expressed with elements from SMW's KRF:
+This ==triple== can be expressed with elements from SMW's KRF^1^:
 1. ==Subject== is always a **wiki page** or a **subobject** (we will learn about subobjects in Chapter 4) 
    - e.g. a wiki page named `Berlin` in the main namespace
 2. ==Predicates== are **wiki pages** in the `Property` namespace
    - e.g., a wiki page named `has Population` in the `Property` namespace
-3. ==Objects== are represented as **literals** or other **wiki pages**
-   - e.g., value “3,520,031” in case the object is a literal
-   - e.g., a page named "Germany" in case the statement's object is another wiki page 
+3. ==Objects== are **literals**, **wiki pages** or **subobjects**^2^
+   - e.g., value `3,520,031` in case the object is a literal
+   - e.g., a page named `Germany` in case the statement's object is another wiki page 
+   - e.g., an anonymous _blank node_ in case the object is a subobject
    <!-- - **Literals** embedded in the Wikipage with the annotation, e.g., “3,520,031” -->
    <!-- - other **Wiki pages** in the main namespace, e.g, "Klaus Wowerit"  -->
 ::::
@@ -162,19 +169,26 @@ Germany   has capital      Berlin
 Spinoza   born on          24 Nov 1632
 ```
 
-The triple-based model employed by Semantic MediaWiki is inherited from W3C's Resource Description Framework (RDF) specification.
+The _triple-based model_ employed by Semantic MediaWiki is inherited from W3C's __Resource Description Framework (RDF)__ specification.
 
-A page-property-value triple resembles the subject-predicate-object triple pattern of RDF.
-
+A _page-property-value_ triple resembles the _subject-predicate-object_ triple pattern of RDF.
 ::::
 :::::
 
+::: footnotes
+^1^ KRF = Knowledge Representation Framework, i.e., a set of rules and description primitives for encoding information in a certain format
+
+^2^ We will learn about subobjects in Lecture 4
+:::
+
 
 ---
+<!-- header: <br/> -->
 # Part 2: How to Encode Information in Knowledge Graphs
 
 
 ---
+<!-- header: Kapitel 2: Kodierung von Informationen in Wissensgraphen-->
 # Motivating Example
 
 {.bigskip}
@@ -193,6 +207,18 @@ Steps:
 4. Represent as *Conceptual Graph* with *Stereotypes*
 5. Transform into *Serialized Graphs* using Mediawiki syntax
 
+
+
+
+---
+# Step 1: Identify Instances
+
+{.bigskip}
+
+::: italic center
+Matthias Frank is an employee of the FZI Research Center for Information Technology working on the BigGIS project. 
+BigGIS is an ongoing research project started at April 2016 and deals with real-time big data and semantic technologies.
+:::
 
 
 ---
@@ -220,7 +246,7 @@ Steps:
 
 
 ---
-# Step 3: Identify Properties
+# Step 3a: Identify Properties...
 
 {.bigskip}
 
@@ -228,6 +254,37 @@ Steps:
 Matthias Frank ==is== an employee of the FZI Research Center for Information Technology ==working on== the BigGIS project. 
 BigGIS ==is== an ongoing research project ==started at== April 2016 and ==deals with== real-time big data and semantic technologies.
 :::
+
+
+---
+# Step 3b: ...and Datatypes
+
+{.bigskip}
+
+::: italic center
+Matthias Frank ==is== an employee of the FZI Research Center for Information Technology ==working on== the BigGIS project. 
+BigGIS ==is== an ongoing research project ==started at== _April 2016_ and ==deals with== _real-time big data_ and _semantic technologies_.
+:::
+
+
+---
+# Instances versus Literals
+
+::: blue  bigskip
+Question: Should an entity be represented as a literal or instance ?
+:::
+
+{.bigskip}
+- Sometimes it is difficult to determine whether an entity should be represented as a literal (using the `text` datatype) or as an instance 
+  - e.g., should a research field be represented as a literal or as an individual page in the system?
+- Since this is a **modelling issue** which depends on the situation at hand, there is no definite answer to this question
+  - A _trade-off_ in terms of performance versus flexibility and extensibility is necessary.
+- Representing an entity as ==instance== (datatype `page` in Semantic MediaWiki) allows for more flexibility and extensibility
+  - e.g. the page of a research field can _list projects_ or works in which this research field is used.
+  - It can host _additional information_ about the field that can be used in queries
+- If _no additional information_ is needed for an entity, it should be represented as a ==literal==
+  - This helps save space (disk and memory) and increases query performance on large knowlesge bases
+
 
 
 ---
@@ -256,7 +313,7 @@ BigGIS is an ongoing research project started at April 2016 and deals with real-
 # Step 5: Transformation into Serialized Graphs
 
 
-It is important to separate the facts on their respective pages 
+It is important to separate the ==facts== on their respective pages and determine the ==direction of a relation==.
 
 {.skip}
 
@@ -278,7 +335,17 @@ Syntax on the `BigGIS`-Page:
 
 
 ---
+# Important: Consider the Relationship Semantics
 
+- SMW's KRF is a ==directed Hypergraph==
+- Therefore, the direction of a relation matters
+- The direction of a relation bears certain **semantics** (structural and model-theoretic)
+- These semantics are relevant in inline queries
+  - e.g. `has_member` versus `is_member_of` – one can be used on employee pages, the other on project pages
+
+
+
+---
 # Try for Yourself
 
 {.bigskip}
@@ -302,22 +369,35 @@ Tasks
 ---
 # Future Work
 
+Here is a list of further, more advanced **modelling problems**:
+
 - How can we state that Bayern Munich has won 30 Bundesliga Championship titles ?
 - How can we express the years in which the Bundesliga titles were won ?
 - How can we express in which season + year a Bundesliga title was won ?
 - How can we express in which seasons Bayern Munich finished second ?
 - How can we count all national and international titles won by a German football club ?
 
-Hint: All the above modelling cases call for subobjects!
+Hint: All the above modelling problems call for the use of ==subobjects==!^1^
+
+::: footnotes
+^1^ We will learn about subobjects in _lecture 4_ of this course.
+:::
+
 
 ---
+<!-- header: Summary -->
+# Summary
+
+
+---
+<!-- header: Summary: Why Knowledge Graphs are useful -->
 # Why Knowledge Graphs are useful
 
 ::::: columns
 :::: double
-Knowledge graphs have many advantages
-- Like most graph models, it more intuitively captures the way we think about the world as humans (as networks, not as tables), making it easier to design, capture, and query data.
-- As a data model supported by W3C standards, it allows us to create interoperable data and systems, all using the same standard to represent and encode data.
+==Knowledge graphs== have many advantages
+- Like most graph models, it more intuitively captures the way _we think about the world_ as humans (as networks, not as tables), making it easier to design, capture, and query data.
+- As a data model supported by W3C standards, it allows us to create _interoperable data_ and _systems_, all using the same standard to represent and encode data while adressing _structural_, _schema_ and _semantic heterogeneities_.
 ::::
 :::: single
 ![height:280px](figures/lod_graph.webp)
@@ -325,9 +405,9 @@ Knowledge graphs have many advantages
 :::::
 
 ::: example small
-__Sidenote__:
-There are many other methods that have been developed to handle this kind of complexity in RDF, including singleton properties and named graphs/quads. Additionally, an entirely different type of non-RDF graph model, labeled property graphs, allows users to attach properties directly to relationships.
-However, labeled property graphs don’t allow for interoperability at the same scale as RDF — it’s much harder to share and combine different data sets, and moving data from tool to tool isn’t as simple.
+**RDF versus Labeled Property Graphs**:
+There are many other methods that have been developed to handle this kind of complexity in RDF, including singleton properties and named graphs/quads. Additionally, an entirely different type of **non-RDF graph model**, denoted as **labeled property graphs**, allows users to attach properties directly to relationships.
+However, labeled property graphs do not allow for interoperability at the same scale as RDF does – it is much harder to share and combine different data sets, and moving data from tool to tool is not as simple and straightforward.
 :::
 
 ::: footnotes

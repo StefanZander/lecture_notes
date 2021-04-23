@@ -127,6 +127,16 @@
 : Übersicht der Lehrvideos: <https://www.youtube.com/channel/UCmvuGsp-maCJ_HwAgKxBpbA?view_as=subscriber> (_noch im Aufbau_)
 : Sehr schönes Video zu einem Design-Thinking-basierten Lösungsansatz (SUMMO-Projekt): [Video](https://lernen.h-da.de/mod/resource/view.php?id=359759) -->
 
+
+#### 2021-04-20
+: Grundprinzipien Nutzer-zentrierter Entwicklungsprozesse
+: * IKEA Fallstudie mit Hinweis zu einem sehr interessanten Spiegel-Artikel (im Moodle-Kurs)
+: Einführung User Research
+: YouTube-Video zum User Research  ([Link](https://youtu.be/qA0DlfghMAY))  
+    _~> Fasst den in der VO behandelten Ablauf zusammen und erläutert die Zusammenhänge zwischen den verschiedenen Artefakten bzw. Schritten_
+: Zur Nachbearbeitung der Motivation
+: * Sehr schönes Video zu einem Design-Thinking-basierten Lösungsansatz (Das SUMMO-Projekt): [Video](https://lernen.h-da.de/mod/resource/view.php?id=359759)
+
  
 
 #### 2021-04-14
