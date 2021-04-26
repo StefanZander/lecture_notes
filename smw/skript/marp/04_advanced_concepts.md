@@ -185,7 +185,7 @@ Source: https://www.semantic-mediawiki.org/wiki/Help:Subobjects_and_queries
 
 
 ---
-# Subobjects: Show Properties of the Subobject's Parent Page
+## Subobjects: Show Properties of the Subobject's Parent Page
 
 In some cases it is necessary to query for ==properties== that are defined on the ==subobject's parent page==. 
 <!-- The process to do that contains the following steps: -->
@@ -567,7 +567,7 @@ Source: https://www.mediawiki.org/wiki/Extension:Page_Forms/The_%22edit_with_for
 
 
 ---
-# Abfragen von Seiten auf denen ein Property NICHT gesetzt ist
+## Abfragen von Seiten auf denen ein Property NICHT gesetzt ist
 
 Die `#ask` Abfragealgebra von SMW erlaubt es nicht, Seiten abzufragen, auf denen ein Property _nicht_ gesetzt ist, d.h., keinen Wert hat^1^.
 
@@ -816,7 +816,7 @@ Regardless of the formatting pattern set via the `date format=...` property, `da
 
 
 ---
-# Using an Individual Display Format for Date and Time
+## Using an Individual Display Format for Date and Time
 
 This tip helps you to _reformat_ the output of dates which is by default `YEAR/MONTH/DAY` (e.g. 2017/06/27) and still keep a proper annotation for it.
 
