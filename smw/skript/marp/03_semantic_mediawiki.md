@@ -11,6 +11,9 @@ paginate: true
 
 </style>
 
+<!-- marp --engine ./engine.js --watch --theme-set custom-theme-roboto.css -- --allow-local-files 03_semantic_mediawiki.md -->
+<!-- marp --pdf --allow-local-files --engine ./engine.js --theme-set custom-theme-roboto.css -- 03_semantic_mediawiki.md -->
+
 # Semantisches Wissensmanagement im Unternehmen: <br />Konzepte, Technologien, Anwendungen
 
 #### Prof. Dr. Stefan Linus Zander
@@ -1197,21 +1200,27 @@ SMWCon Spring 2012       | Carlsbad, CA, USA
 # Templates
 
 ::: definition
-A ==template== is a wikipage defined in the `Template:` namespace that defines content that can be ==transcluded== in other wiki pages.
+A ==template== is a wikipage defined in the `Template:` namespace that contains ==transcludable content== which can be used in other wiki pages. Combined with properties and page forms, it is a very powerful feature to minimize ==semantic drift== in a wiki system.
 
 Quelle: eigene Definition
 :::
 
-Templates {.longskip}
+
+::::: columns
+:::: double
+**Templates** {.Bigskip}
 : ... can be created as any wiki page, but must be defined in the `Template:` namespace
 : ... can contain almost any kind of wiki content
-: ... can have _parameters_, the values of which will be inserted in the template's content during transclusion
+: ... can have ==parameters==, the values of which will be inserted in the template's content during transclusion
 : ... often used to embed _semantic properties_ or _subobjects_ in Semantic MediaWiki
 : ... can be used in any place in a page
-
-- Templates allow for the inclusion of pre-defined content in wiki pages.
-- This form of inclusion is called **Transclusion**
-
+::::
+:::: single
+::: center
+![width:400px](./figures/transclusion.png)
+:::
+::::
+:::::
 
 ---
 # Templates: Transclusion
@@ -1258,7 +1267,7 @@ YouTube hosts some excellent videos about the basic principles and formatting of
 ---
 # Templates in Semantic MediaWiki
 
-Templates are often used for **harmonizing**^1^ semantic data and reducing semantic drift
+Templates are often used for **harmonizing**^1^ semantic data and reducing ==semantic drift==
   - ...by using pre-defined **semantic properties** in a template page
   - ...and by setting their __allowed values__ through template **parameters** (often in conjunction with _Page Forms_)
   - ~> ==So, every page that transcludes a template contains the same semantic data and structure==
@@ -1276,13 +1285,12 @@ Templates can have ==parameters== that allow for passing _individual data_ to te
 
 <!-- ### Specification in Templates -->
 
-__Parameters__ within templates can either be specified...
+__Parameters__^1^ within templates can either be specified...
 - anonymously via the ==sequence of occurrence==, i.e., ` {{{1}}}`, `{{{2}}}`, etc.
 - via specific ==parameter names==, i.e., `{{{Parameter_name|default_value}}}`
 
-In case a parameter is not set (i.e., it contains no value), a ==default value== can be specified `{{{Parameter_name|default_value}}}`, `{{{1|default_value}}}`
+In case a parameter is not set (i.e., it contains no value), a ==default value== can be specified `{{{Parameter_name|default_value}}}`
 
-Please note that parameters in templates need to be specified with _three curly brackets_ `{{{Parameter_name||Parameter_number}}}` (N.B. '`||`' means 'OR' and is not part of the parameter syntax)
 ``` plain
 Syntax:
 =======
@@ -1293,6 +1301,9 @@ Example:
 {{{project}}}              OR       {{{1}}}
 ```
 
+::: footnotes
+^1^ Please note that parameters in templates need to be specified with _three curly brackets_ `{{{Parameter_name||Parameter_number}}}` (N.B. '`||`' means 'OR' and is not part of the parameter syntax)
+:::
 
 
 ---
@@ -1311,12 +1322,16 @@ Template URL: `{Semantic_MediaWiki_URL}\Template:Template_name`
 <!-- additional content -->
 ```
 
-Usage on a different wiki page – without parameters specified:
+**Usage**
+:::::columns
+:::: single
+In a wiki page – _without parameters_ specified
 ```
 {{Template_name}}
 ```
-
-Usage – with parameters specified on the page where the template it to be transcluded
+::::
+:::: single
+_With parameters_ on the page where the template is used
 ``` 
 {{Template_name
 |parameter1=value1
@@ -1324,7 +1339,8 @@ Usage – with parameters specified on the page where the template it to be tra
 |...
 }}
 ```
-
+::::
+:::::
 
 
 
@@ -1337,8 +1353,7 @@ Usage – with parameters specified on the page where the template it to be tra
 ```
 <noinclude> 
 Dies ist die Vorlage zum Anlegen neuer nationaler und europäischer Förderprogramme. 
-Zum Anlegen eines neuen Förderprogramms einfach den folgenden Ausschnitt in den Quelltext 
-der neuen Seite kopieren und die Parameter entsprechend belegen: 
+Zum Anlegen eines neuen Förderprogramms einfach den folgenden Ausschnitt in den Quelltext der neuen Seite kopieren und die Parameter entsprechend belegen: 
 <pre> 
   {{Förderprogramm 
    |Name= 
@@ -1372,7 +1387,8 @@ Das Attribut Deadline erwartet Datumsangaben (nicht 'Ende September' sondern '30
 
 
 ---
-# Semantic Data Modelling
+<!-- header: Outlook -->
+# Next Topic: Semantic Data Modelling
 ---
 # Recap
 
@@ -1380,30 +1396,35 @@ From the lecture about semantic knowledge graphs we know that...
 : ...in the Web, we distinguish between ==information== and ==non-information resources==
 : ...we use ==IRIs== to _identify things_
 : ...IRIs should be _resolvable_/_dereferenceable_ through a process called ==content negotiation==
-: ...==Ontologies== are used to for encoding semantics that can be used in knowledge graphs 
+: ...==Ontologies== are used to encode _machine-processable semantics_ that can be used in knowledge graphs 
+: ...those machine-processable semantics are defined by the ==ontology language== and the KRF used to define an ontology 
 : ...Ontologies contain ==terminological (TBox)== and ==assertional (ABox) knowledge==
-: ...==RDF== is the _representation framework_ for encoding factual knowledge in the Web
+: ...==RDF== is the _representation framework_ for encoding factual knowledge and semantics in the Web
 : ...RDF resembles a ==triple pattern== (_subject_ – _predicate_ – _object_)
-: ...RDF can also be used to encode terminological knowledge to form a vocabulary that can be used in knowledge graphs 
+: ...RDF can also be used to encode terminological knowledge to form a ==vocabulary== (=ontology) that can be used in _knowledge graphs_
+: ...An RDF-graph is a set of _resolvable IRIs_ structured in form of triples that can be _serialized_ using different formats (e.g. _n3_, _n-triples_)
 
-
----
-## How to create Knowlegde Graphs using Semantic MediaWiki ?
-
-–> In the next lecture, we will talk about how to represent information in form of **knowledge graphs** using Semantic MediaWiki
 
 
 ---
+## How do we create Knowlegde Graphs using Semantic MediaWiki ?
+
+In the next lecture, we will learn how we can use SMW's knowledge representation framework to encode information as **knowledge graphs** 
+
+
+<!-- 
 # Lernen lernen
----
+
 # Aspekte (die 4 K's) zukünftigen Lernens
 
 Leitfrage: Was sind die Elemente zukünftigen Lernens ?
+-->
 <!-- K {.red} ommunikation -->
-
+<!-- 
 :::twocolumns center
 <span style="font-size: 4em; color: red; font-weight: 500">K</span>ollaboration
 <span style="font-size: 4em; color: red; font-weight: 500">K</span>ritisches Denken
 <span style="font-size: 4em; color: red; font-weight: 500">K</span>reativität
 <span style="font-size: 4em; color: red; font-weight: 500">K</span>ommunikation
 :::
+-->

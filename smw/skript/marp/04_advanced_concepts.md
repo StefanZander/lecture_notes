@@ -20,7 +20,117 @@ Kapitel 4: Fortschrittliche Ontologiemodellierung mittels Semantic MediaWiki {.l
 ---
 <!-- header: Kapitel 1: Page Forms -->
 <!-- footer: Prof. Dr. Stefan Zander -->
+# Inhalte
 
+1. Page Forms
+2. Query Forms
+3. Fortgeschrittene Tipps
+   1. common.css
+   2. ...
+
+
+---
+# Page Forms
+
+
+---
+# Ausgangsfrage
+
+::: centerbox blue big center
+Wie kann man FachanwenderInnen darin unterstützen, semantisch-konforme und als Wissensgraph verarbeitbare Inhalte zu erzeugen ?
+:::
+
+
+---
+# Page Forms
+
+::::: columns
+:::: single
+==Page Forms== (aka Semantic Forms bis 2016) ist eine _Erweiterung_ für MediaWiki-Systeme.
+
+Sie ermöglicht NutzerInnen durch den Einsatz von **HTML5-Formularelementen**...
+- _neue Inhalte_ zu erstellen
+- _bestehende Inhalte_ zu modifizieren
+- _Abfragen_ dynamisch zu erzeugen und auszuführen 
+    (--> Query Forms)
+
+Page Forms setzen auf _Templates_ und erlauben **Parameterwerte** _dynamisch_ und _nutzerInnenfreundlich_ festzulegen.
+- Statt MediaWiki-Syntax füllen NutzerInnen Formularfelder aus, deren Werte in einen Wissensgraphen transcludiert werden.
+::::
+:::: single
+::: center
+![height:400px](./figures/PageForms.png)
+:::
+::::
+:::::
+
+::: footnotes
+Umfangreiche Dokumentation zu Page Forms: https://www.mediawiki.org/wiki/Extension:Page_Forms
+:::
+
+
+---
+# Hauptbestandteile
+
+
+::::: columns
+:::: single
+- Hauptbestandteil sind sog. ==Form Definition Pages== im `Form:` Namesraum.
+
+- Der Markup-Code dieser Seiten wird geparst sobald eine NutzerIn eine solche Seite aufruft und in eine HTML5-konforme, Formularelement-basierte Seite überführt.
+
+- Form Definitions können sich auf ganze Seiten oder Seitenbereiche (engl. Sections) beziehen, abhängig vom zugrunde liegenden Template
+::::
+:::: single
+::: center
+here comes a picture
+:::
+::::
+:::::
+
+
+
+---
+# Getting Started
+
+In order to use **Page Forms** in a (Semantic) MediaWiki system, the following steps need to be taken:
+
+::::: columns small
+:::: single
+1. **Create Properties**
+    Properties are the basic building blocks and data connectors in a SMW system. Every property should be defined.
+
+2. **Create Templates**
+    Templates hold semantic markup (properties, categories and subobjects). While every page type is usually represented by a single template, pages could also transclude content from many templates.
+
+3. **Create Forms**
+    With Properties and Templates in place, the form definition pages can be created using manual markup code or the built-in creator tool (`Special:CreateForm`). Usually, there should by one form per page type. 
+::::
+:::: single
+4. **Create or Modify Categories**
+    One template in each form should tag each article that the form creates as being part of a certain category. Categories can have a default form annotation so that every article that belongs to this category is editable by a form.
+
+5. **Enable Links to Forms**
+    Besides defining default forms for categories, it is possible to create links that directly links to forms using the `#formlink` and `#forminput` Parser functions. See ^1^ for more information on form linking. 
+
+
+{.skip}
+
+::: centerbox warning center 
+Consult the man pages for detailed instructions
+:::
+::::
+:::::
+
+::: footnotes
+Source: Instructions taken and revised from https://www.mediawiki.org/wiki/Extension:Page_Forms/Quick_start_guide
+
+^1^ https://www.mediawiki.org/wiki/Extension:Page_Forms/Linking_to_forms
+:::
+
+
+
+---
 # Defining individual CSS Styles using MediaWiki:Common.css
 
 SMW allows to change the ==rendering== of its elements using individual CSS style rules.

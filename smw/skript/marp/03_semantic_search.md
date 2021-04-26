@@ -11,14 +11,17 @@ paginate: true
 
 </style>
 
+<!-- marp --engine ./engine.js --watch --theme-set custom-theme-roboto.css -- --allow-local-files 03_semantic_search.md -->
+<!-- marp --pdf --allow-local-files --engine ./engine.js --theme-set custom-theme-roboto.css -- 03_semantic_search.md -->
+
 # Semantisches Wissensmanagement im Unternehmen: <br />Konzepte, Technologien, Anwendungen
 
 #### Prof. Dr. Stefan Linus Zander
 
-Kapitel 3.3: Semantische Suche {.lightgreen .bigger .skip}
+Kapitel 3.3: Semantische Suche {.lightgreen .Big .skip}
 
 ---
-<!-- header: Chapter 1: Motivation -->
+<!-- header: Kapitel 0: Vorbemerkung -->
 <!-- footer: Prof. Dr. Stefan Zander -->
 # Didaktischer Aufbau der Einheit
 
@@ -62,6 +65,7 @@ SMW verfügt über eine **eigene Anfragesprache**
 
 
 ---
+<!-- header: Capter 1: Syntax and Semantics -->
 # The #ask Query Language (AQL)
 
 Semantic MediaWiki includes an easy-to-use query language called ==AQL – #ask Query Language==, which enables users to access the wiki's knowledge. The _syntax_ is similar to the syntax of _annotations_. AQL can be used on the ==special page== `Special:Ask`, in ==concepts==, and in ==inline queries==.
@@ -158,7 +162,7 @@ The following queries show what this means: {.Bigskip}
   
 
 ---
-# Query Algebra (Part 1 – Conjunctions)
+# Query Algebra – Part 1: Conjunctions
 
 :::: equalcolumns
 ::: 1st-column
@@ -192,7 +196,7 @@ SMW will ignore some characters such as trailing spaces or comma in numbers depe
 
 
 ---
-# Query Algebra (Part 2 – Disjunctions)
+# Query Algebra – Part 2: Disjunctions
 
 **Disjunctions** are _OR-conditions_ that admit several _alternative conditions_ on query results. 
 A _disjunction_ requires that at least one (but maybe more than one) of the possible alternatives is satisfied (==logical OR==).
@@ -325,6 +329,7 @@ Inverse properties can be used in all SMW interfaces that take properties, but n
 
 
 ---
+<!-- header: Capter 2: Formulating Queries -->
 # Part 2: Formulating Query Conditions
 
 
@@ -470,8 +475,8 @@ There is no direct linkage from employee to the project they are working in. {.s
 
 <!-- In order to satisfy this information need, the query graph  -->
 It needs to be transformed into an ==inner query== and an ==outer query==^1^
-- the **inner query** represents specific employees (~> the values which participate as conditions in the outer query)
-- the **outer query** the projects they are members of 
+- the **inner query** represents specific _employees_^2^
+- the **outer query** represents _projects_ they are members of 
 
 ::: centerbox center warning small Bigskip
 When formulating queries in Semantic MediaWiki, always consider the structural semantics of pages (ie., how pages are linked together via properties).
@@ -483,6 +488,8 @@ When formulating queries in Semantic MediaWiki, always consider the structural s
 
 ::: footnotes
 ^1^ In order to determine the inner and outer query, interpret the query graph as projects with specific employees as members.
+
+^2^ The values which participate as conditions in the outer query
 :::
 
 
