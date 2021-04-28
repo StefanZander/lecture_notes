@@ -108,7 +108,7 @@
 
 
 
-<!-- #### 2020-04-28
+#### 2021-04-27
 : Videos zur Vor-/Nachbereitung
 : * How to Conduct Qualitative Interviews (in Moodle) 
     _~> Im Rahmen von NZSE sprechen wir von teilstandardisierten Interviews; die Prinzipien sind aber identisch_
@@ -118,14 +118,9 @@
     _~> Fasst den in der VO behandelten Ablauf zusammen und erläutert die Zusammenhänge zwischen den verschiedenen Artefakten bzw. Schritten_
 : Unterscheidung Personas / Primäre Personas
 : Einführung User Research
-: Methoden der Benutzerforschung; im speziellen Teilstandardisiertes Interview -->
+: Methoden der Benutzerforschung; im speziellen Teilstandardisiertes Interview 
 
-<!-- #### 2020-04-21
-: Besprochene Themen: Orga + Intro UCD (Bspe + Fehler; Rest in kommender LVA)
-: Details zur Übung am kommenden DI2x
-: Link zum TED-Talk:  [Don Norman spricht über drei Arten, wie Design uns glücklich macht](https://www.youtube.com/watch?v=RlQEoJaLQRA)
-: Übersicht der Lehrvideos: <https://www.youtube.com/channel/UCmvuGsp-maCJ_HwAgKxBpbA?view_as=subscriber> (_noch im Aufbau_)
-: Sehr schönes Video zu einem Design-Thinking-basierten Lösungsansatz (SUMMO-Projekt): [Video](https://lernen.h-da.de/mod/resource/view.php?id=359759) -->
+
 
 
 #### 2021-04-20
