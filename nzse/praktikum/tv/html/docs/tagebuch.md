@@ -95,12 +95,28 @@
     <https://www.youtube.com/watch?v=JMjozqJS44M> -->
 
 
+#### 2021-05-04
+: Abschluss Requirements Engineering
 
 
-<!-- #### 2020-05-07
-: Requirements Engineering
-: * alle Themen besprochen bis zu Transformationseffekte und Satzschablone
-: Schwerpunkte
+
+
+#### 2021-04-28
+: Start Requirements Engineering
+: * Diskussion zu Projekterfolgsfaktoren und die Rolle von NZSE bzw. Requierments Engineering
+: * Anforderungstypen
+: * Übung zu Anforderungsidentifizierung (Lösung der HS-Übung in den geteilten Notizen)
+: Diskussion zu den Design-Thinking Videos
+: User Research
+: * Vorstellung der User Research Methode "teilstandardisiertes Interview"
+: Organisatorisches
+: * Festlegung des **offenen NZSE-Labors** jeweils **DI4y**; Raum wird noch bekannt gegeben
+: OT
+: * Interessanter Bericht auf heise Developer zu den ökonomischen Vorteilen von User Experience
+    <https://www.heise.de/hintergrund/Die-oekonomischen-Vorteile-von-User-Experience-Design-6020633.html>
+
+
+<!-- : Schwerpunkte
 : * Stakeholder
 : * Arten von Anforderungen
 : * Quantifizierung
