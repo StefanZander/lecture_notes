@@ -4,9 +4,10 @@
 !!! abstract 
     **Lernziele**
 
-    - [x] Die Sicht-, Denk- und Arbeitsweise verschiedener Benutzer kennen lernen und sich in sie hinein versetzen
-    - [x] Finden und Verstehen der beim Benutzer in der Praxis auftretenden Anwendungsfälle
+    - [x] Die Sicht-, Denk- und Arbeitsweise verschiedener BenutzerInnen kennen lernen und sich in sie hinein versetzen
+    - [x] Finden und Verstehen der bei Benutzern in der Praxis auftretenden Anwendungsfälle
     - [x] Unterscheidung von technischen Funktionen und benutzerorientierten Anwendungsszenarien
+    - [x] Methoden erproben um die Nutzungserfahrung von AnwenderInnen zu erforschen und besser kennen zu lernen
 
 ## Aufgaben
 
@@ -46,7 +47,7 @@
         - Stellen Sie **offene Fragen**, bei denen BenutzerInnen über ihre **Erfahrungen** berichten können
         - Vermeiden Sie **Suggestivfragen** – das ist vor allem wenn Sie das Interview das erste Mal durchführen sehr schwer umsetzbar; --> _bemühen Sie sich_!
         - Fragen Sie _nicht_ nach irgendwelchen technischen Details oder Features; diese sind für die Benutzung irrelevant.  
-            --> _Konzentrieren Sie sich auf die **Ziele**, den **Anwendungskontext** und die **Lebenssituationen** in denen ein Medium konsumiert wird._
+            --> _Konzentrieren Sie sich auf die ==Nutzungserfahrung==, d.h., **Ziele**, den **Anwendungskontext** und die **Lebenssituationen** in denen ein Medium konsumiert wird._
 
 
 

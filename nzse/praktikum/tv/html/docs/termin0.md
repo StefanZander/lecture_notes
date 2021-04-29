@@ -24,7 +24,7 @@
 ## Aufgaben
 
 ### Generieren einer Applikation
-Legen Sie ein neues Projekt an mit einer `Basic Activity` oder `Empty Activity` (d.h. abgeleitet von `AppCompatActivity`). Eine Hilfe zum Einstieg finden Sie im Skript in der Datei `NZSE_4_AndroidStudio.pdf` im Moodle-Kurs zur LVA. Machen Sie sich mit den verschiedenen Ansichten von Android Studio vertraut.
+Legen Sie ein neues Projekt an mit einer `Empty Activity` (d.h. abgeleitet von `AppCompatActivity`). Eine Hilfe zum Einstieg finden Sie im Skript in der Datei `NZSE_4_AndroidStudio.pdf` im Moodle-Kurs zur LVA. Machen Sie sich mit den verschiedenen Ansichten von Android Studio vertraut.
 
 ### Übersetzen und Testen
 * Menü `Build` --> `Make Project` 
