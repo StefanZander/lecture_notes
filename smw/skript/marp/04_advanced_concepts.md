@@ -54,7 +54,7 @@ Sie ermöglicht NutzerInnen durch den Einsatz von **HTML5-Formularelementen**...
 - _Abfragen_ dynamisch zu erzeugen und auszuführen 
     (--> Query Forms)
 
-Page Forms setzen auf _Templates_ und erlauben **Parameterwerte** _dynamisch_ und _nutzerInnenfreundlich_ festzulegen.
+Page Forms setzen auf _semantische Templates_ und erlauben **Parameterwerte** _dynamisch_ und _nutzerInnenfreundlich_ festzulegen.
 - Statt MediaWiki-Syntax füllen NutzerInnen Formularfelder aus, deren Werte in einen Wissensgraphen transcludiert werden.
 ::::
 :::: single
@@ -77,9 +77,11 @@ Umfangreiche Dokumentation zu Page Forms: https://www.mediawiki.org/wiki/Extensi
 :::: single
 - Hauptbestandteil sind sog. ==Form Definition Pages== im `Form:` Namesraum.
 
-- Der Markup-Code dieser Seiten wird geparst sobald eine NutzerIn eine solche Seite aufruft und in eine HTML5-konforme, Formularelement-basierte Seite überführt.
+- Bei Aufruf der Form wird der Markup-Code geparst und eine HTML5-konforme Formularelement-basierte Seite generiert.
 
-- Form Definitions können sich auf ganze Seiten oder Seitenbereiche (engl. Sections) beziehen, abhängig vom zugrunde liegenden Template
+- Auf dieser generierten Seite können anschließend die Parameterwerte der zugrunde liegenden Semantic Templates gesetzt werden.
+
+- Form Definitions können sich auf ganze Seiten oder einzelne Seitenbereiche (engl. Sections) beziehen, abhängig vom zugrunde liegenden Template
 ::::
 :::: single
 ::: center
@@ -91,6 +93,266 @@ here comes a picture
 
 
 ---
+# How Page Forms Work
+
+
+::::: columns
+:::: single
+Page Forms use ==semantic templates== in order to _create new_ or _edit_ existing wiki pages. Template parameters are set with _form values_ when the template is embedded into a wiki page.
+
+Usually, for each parameter in a template, Page Forms define a separate **input element declaration**, the value of which will then be assigned to the template parameter when the template call is embedded in the wiki page.
+
+Syntax:
+```
+{{{field|title|mandatory|property=title|size=120|placeholder=The project's full title}}}
+```
+
+The second parameter (`|title`) in the `{{{field...}}}` tag refers to the named parameter (`{{{title|}}}`) in the semantic template a from is defined for, e.g., `[[title::{{{title|}}}]]`.
+
+https://www.mediawiki.org/wiki/Extension:Page_Forms/Defining_forms
+::::
+:::: single
+``` 
+<noinclude> <!-- instructions -->
+  {{#forminput:form=Project Factsheet v2}}
+</noinclude><includeonly>
+{{{info|add title=Add a new Project|edit title=Edit an existing project}}}
+
+{{{for template|Project Factsheet v2}}}
+{| class="formtable"
+! Title: 
+| {{{field|title|mandatory|property=title|size=120
+    |placeholder=please enter the full title of the project}}}
+|-
+! Acronym: 
+| {{{field|acronym|mandatory|property=acronym|size=20
+    |placeholder=Please enter the project's short name (acronym)}}}
+|-
+! Budget: 
+| {{{field|budget|input type=text|property=has_budget|size=20
+    |placeholder=Please enter the project's budget}}} EUR
+|-
+! Projektstart: 
+| {{{field|start_date|input type=datepicker|highlight days of week=1,2,3,4,5
+    |property=has_start_date|date format=dd.mm.yyyy}}}
+|-
+! Beschreibung: 
+| {{{field|description|input type=textarea|property=has_description|cols=80
+    |rows=20|placeholder=Please enter the project's description|autogrow}}}
+|-
+! Themenfelder: 
+| {{{field|topics|input type=tokens|property=has_topic|list|delimiter=;}}}
+|}
+{{{end template}}}
+</includeonly>
+```
+::::
+:::::
+
+
+---
+<!-- header:  <br> -->
+# Example: <br/>Page Forms for Project Data
+
+
+---
+## Form Definition Page 
+
+```
+<noinclude>
+  {{#forminput:form=Project Factsheet v2}}
+</noinclude><includeonly>
+{{{info|add title=Add a new Project|edit title=Edit an existing project}}}
+
+{{{for template|Project Factsheet v2}}}
+{| class="formtable"
+! Title: | {{{field|title|mandatory|property=title|size=120|placeholder=please enter the full title of the project}}}
+|-
+! Acronym: | {{{field|acronym|mandatory|property=acronym|size=20|placeholder=Please enter the project's short name (acronym)}}}
+|-
+! Budget: | {{{field|budget|input type=text|property=has_budget|size=20|placeholder=Please enter the project's budget}}} EUR
+|-
+! Projektstart: | {{{field|start_date|input type=datepicker|highlight days of week=1,2,3,4,5|property=has_start_date|date format=dd.mm.yyyy}}}
+|-
+! Projektende: | {{{field|end_date|input type=datepicker|disable days of week=0,6|property=has_end_date}}}
+|-
+! Beschreibung: | {{{field|description|input type=textarea|property=has_description|cols=80|rows=20|placeholder=Please enter the project's description|autogrow}}}
+|-
+! Themenfelder: | {{{field|topics|input type=tokens|property=has_topic|list|delimiter=;}}}
+|}
+{{{end template}}}
+
+{{{for template|Project member with role|label=ProjektmitarbeiterIn hinzufügen|multiple}}}
+{| class="formtable"
+! Role: | {{{field|role|input type=tokens|mandatory|property=has_role|placeholder=please add or select the employee's role}}}
+|-
+! Projekteinstieg: | {{{field|start_date|input type=datepicker|property=has_start_date}}}
+|-
+! Projektende: | {{{field|end_date|input type=datepicker|property=has_end_date}}}
+|-
+! ProjektmitarbeiterIn: | {{{field|member|input type=combobox|property=has_member}}}
+|}
+{{{end template}}}
+</includeonly>
+```
+
+
+---
+## Semantic Template (1/2)
+
+
+:::: columns
+::: single
+```
+<!-- File: Template:Project Factsheet v2 -->
+
+<noinclude>  <!-- instructions -->  </noinclude>
+<includeonly>
+{{#formlink:form=Project Factsheet v2
+  |link text=Projektdaten bearbeiten
+  |link type=button|target={{PAGENAME}} }}
+
+{| class="wikitable"
+! Projektname | [[title::{{{title|}}}]]
+|-
+! Akronym | [[acronym::{{{acronym|}}}]]
+|-
+! Budget | [[has_budget::{{{budget|}}}]]
+|-
+! Projektstart | [[has_start_date::{{{start_date|}}}]]
+|-
+! Projektende | [[has_end_date::{{{end_date|}}}]]
+|-
+! Beschreibung | [[has_description::{{{description|}}}]]
+|-
+! Forschungsthemen
+{{#set:
+ has_topic={{{topics|}}}
+ |+sep=;
+}}
+| {{#show: {{PAGENAME}} |?has_topic }} 
+|-
+|}
+```
+:::
+::: single
+```
+<!-- Fortsetzung -->
+
+Die folgenden Mitarbeiter arbeiten auf dem Projekt:
+
+{{#ask: [[refers_to_project::{{PAGENAME}}]] [[type::subobject]]
+|?has_member=MitarbeiterIn
+|?has_role=Rolle im Projekt
+|?has_start_date=Eintrittsdatum
+|?has_end_date=Austrittsdatum
+|mainlabel=-
+}}
+
+[[Category:Research Project]]
+</includeonly>
+```
+:::
+::::
+
+
+---
+## Semantic Template (2/2)
+
+```
+<!-- File: Project member with role -->
+
+<noinclude>
+This is the "Project member with role" subobject template.
+It should be called in the following format:
+<pre>
+    {{Project member with role
+     |project= #filled with {{PAGENAME}}
+     |role=
+     |start_date=
+     |end_date=
+     |member=
+    }}
+</pre>
+Edit the page to see the template text.
+</noinclude><includeonly>
+{{#subobject:
+|Refers to project={{PAGENAME}} <!-- TODO: Add if -->
+|Has role={{{role|}}}
+|Has start date={{{start_date|}}}
+|Has end date={{{end_date|}}}
+|Has member={{{member|}}}
+|type=project_membership
+}}
+</includeonly>
+```
+
+
+---
+## Generated Wiki Page
+
+
+```
+{{Project Factsheet v2
+|title=Hochpräzise 3-Dimensionale Digitalisierung von Kulturgütern
+|acronym=CultLab3D
+|budget=1,800,000
+|start_date=02.03.2015
+|end_date=2018/11/30
+|description=Mit CultLab3D sollten Kulturgüter dreidimensional und in sehr hoher Qualität erfasst werden. Die Qualität der Daten sollte geeignet sein, um
+auch wissenschaftlichen Ansprüchen zu genügen, die bislang Originalvorlagen erfordern. Das angestrebte System sollte insbesondere hinsichtlich des Aufwands
+(u.a. Scan-Geschwindigkeit), der erzielbaren Qualität und der Kosten den Markt revolutionieren. 
+
+Der Lösungsansatz basierte auf drei Säulen:
+* Entwicklung einer neuartigen Scan-Technologie in Form des mobilen Digitalisierungslabors (CultLab3D), das aus flexibel einsetzbaren Modulen für die Erfassung von 
+ 3D-Geometrien und Materialeigenschaften bestehen sollte.
+* Einsatz von semantischen Technologien: Es sollte eine Ontologie zur Erfassung und Klassifizierung von Kulturobjekten erstellt werden. Außerdem wurden die digitalen 
+3D Kulturobjekte über ihre Metadaten und semantischen Beschreibungen an externe Informationsquellen mit kulturellem Hintergrundwissen, 
+wie z.B. digitale Bibliotheken oder Informationen im Internet, angebunden.
+* Konzeption und Evaluierung von neuen Geschäftsmodellen zum Nachweis der wirtschaftlichen Tragfähigkeit der neuen Technologie.
+|topics=Semantic Technologies; Real-time Big Data
+}}
+
+{{Project member with role
+|role=Research Associate
+|start_date=2016/01/01
+|end_date=2017/07/31
+|member=Matthias Frank
+}}
+{{Project member with role
+|role=Project Leader
+|start_date=2015/05/04
+|end_date=2018/07/31
+|member=Stefan Zander
+}}
+{{Project member with role
+|role=Research Associate
+|start_date=2020/05/13
+|end_date=2020/05/27
+|member=Nicole Merkle
+}}
+```
+
+
+---
+## Generated Forms Page (1/2)
+
+::: center
+![height:560px](./figures/cultlab_example_1.png)
+:::
+
+---
+## Generated Forms Page (2/2)
+
+::: center
+![height:560px](./figures/cultlab_example_2.png)
+:::
+
+
+
+
+---
+<!-- header: Kapitel xx: Page Forms -->
 # Getting Started
 
 In order to use **Page Forms** in a (Semantic) MediaWiki system, the following steps need to be taken:
