@@ -129,13 +129,17 @@ Source: Instructions taken and revised from https://www.mediawiki.org/wiki/Exten
 :::
 
 
+---
+# Other Tipps
+
+- CSC Styles for MediaWiki
 
 ---
 # Defining individual CSS Styles using MediaWiki:Common.css
 
 SMW allows to change the ==rendering== of its elements using individual CSS style rules.
 
-1. Call the `MediaWiki:Common.css` page (e.g. ...)
+1. Call the `MediaWiki:Common.css` page (e.g. `https://smw-demo.fbi.h-da.de/index.php/MediaWiki:Common.css`)
 2. Get the ==CSS selector== for the elements in question using the _style tab_ in the browser inspector  
 3. Add the corresponding ==style rules== to the `MediaWiki:Common.css`
 
@@ -469,60 +473,62 @@ Source: https://www.semantic-mediawiki.org/wiki/Help:Adding_subobjects#Specifyin
 - Optinally, set the `|default=...` parameter to a specific value to have it pre-selected.  
 
 
----
-# Erstellung von Formularen
 
-Vorsicht: Die automatische Generierung von Formularen ist fehlerhaft
-
-Es gibt 2 Wege neue Seiten mittels Formularen zu erstellen
-
-1. Zweistufig mit Eingabe des zu erzeugenden Seitennames vor dem Ausfüllen der Formularfelder (auf einer neuen Seite) --> The two-step process
-2. Aktivierung des Formulars durch Aufruf eines Links oder Buttons --> The one-step process
-
-Siehe Quellenverweis für eine Auflistung der Parameter und Parameterwerte
-
-::: footnotes
-https://www.mediawiki.org/wiki/Extension:Page_Forms/Linking_to_forms
-:::
 
 
 ---
 # Seitenerzeugung mittels Formularen
 
-Es gibt 2 Wege neue Seiten mittels Formularen zu erstellen
+Es gibt 2 Wege neue Seiten mittels Formularen zu erstellen oder zu editieren:
 
-::::: equalcolumns small
-:::: 1st-column
+::::: columns small
+:::: single
+__Einstufiger Prozess__ _(vgl. one-step process)_
+
+1. Direkter Aufruf des Formulars mittels Link oder Button 
+
+    ```
+    {{#formlink:form=Project Factsheet v2
+     |link text=Projektdaten bearbeiten
+     |link type=button
+     |target={{PAGENAME}} 
+    }}
+    ```
+    
+    Die `#formlink` Parserfunktion kann auf bel. Seiten verwendet werden, bspw. als Bestandteil des in die Zielseite transkludierten Templates (siehe Screenshot auf Folgeseite).
+
+    Beispiel:
+    ![](./figures/forms_1step_link.png)
+
+::::
+:::: single
 __Zweistufiger Prozess__ _(vgl. two-step process)_
 
 1. Separate Seite mit Eingabefeld für Seitennamen
 2. Aufruf des Page Forms im 2. Schritt
 
-```
-Codebeispiel
-```
+    ```
+    {{#forminput:form=Project Factsheet v2}}
+    ```
+
+    Eingebettet am Beginn der Form Definition Page
+
+    ![](./figures/forms_2step.png)
 
 ::::
-:::: 2nd-column
-__Einstufiger Prozess__ _(vgl. one-step process)_
-
-1. Direkter Aufruf des Formualars mittels Link oder Button 
-
-```
-Codebeispiel
-```
-
 :::::
-
-1. Zweistufig mit Eingabe des zu erzeugenden Seitennames vor dem Ausfüllen der Formularfelder (auf einer neuen Seite) --> The two-step process
-2. Aktivierung des Formulars durch Aufruf eines Links oder Buttons --> The one-step process
-
-Siehe Quellenverweis für eine Auflistung der Parameter und Parameterwerte
 
 ::: footnotes
 Quelle: <https://www.mediawiki.org/wiki/Extension:Page_Forms/Linking_to_forms>
 :::
 
+
+---
+## Beispiel des Einstufigen Prozesses
+
+::: center
+![height:540px](figures/forms_1step.png)
+:::
 
 
 ---
