@@ -11,6 +11,9 @@ paginate: true
 
 </style>
 
+<!-- marp --engine ./engine.js --watch --theme-set custom-theme-roboto.css -- --allow-local-files 04_advanced_concepts.md -->
+<!-- marp --pdf --allow-local-files --engine ./engine.js --theme-set custom-theme-roboto.css -- 04_advanced_concepts.md -->
+
 # Semantisches Wissensmanagement im Unternehmen: <br />Konzepte, Technologien, Anwendungen
 
 #### Prof. Dr. Stefan Linus Zander
@@ -391,6 +394,238 @@ Source: Instructions taken and revised from https://www.mediawiki.org/wiki/Exten
 :::
 
 
+
+---
+# Seitenerzeugung mittels Formularen
+
+Es gibt 2 Wege neue Seiten mittels Formularen zu erstellen oder zu editieren:
+
+::::: columns small
+:::: single
+__Einstufiger Prozess__ _(vgl. one-step process)_
+
+1. Direkter Aufruf des Formulars mittels Link oder Button 
+
+    ```
+    {{#formlink:form=Project Factsheet v2
+     |link text=Projektdaten bearbeiten
+     |link type=button
+     |target={{PAGENAME}} 
+    }}
+    ```
+    
+    Die `#formlink` Parserfunktion kann auf bel. Seiten verwendet werden, bspw. als Bestandteil des in die Zielseite transkludierten Templates (siehe Screenshot auf Folgeseite).
+
+    Beispiel:
+    ![](./figures/forms_1step_link.png)
+
+::::
+:::: single
+__Zweistufiger Prozess__ _(vgl. two-step process)_
+
+1. Separate Seite mit Eingabefeld für Seitennamen
+2. Aufruf des Page Forms im 2. Schritt
+
+    ```
+    {{#forminput:form=Project Factsheet v2}}
+    ```
+
+    Eingebettet am Beginn der Form Definition Page
+
+    ![](./figures/forms_2step.png)
+
+::::
+:::::
+
+::: footnotes
+Quelle: <https://www.mediawiki.org/wiki/Extension:Page_Forms/Linking_to_forms>
+:::
+
+
+---
+## Beispiel des Einstufigen Prozesses
+
+::: center
+![height:540px](figures/forms_1step.png)
+:::
+
+
+---
+# Enabling Editing of Page Content via Forms
+
+To get the _"edit with form"_ tab to appear on the page, you must use the parser function `{{#default_form:form-name}}` where `form-name` is the name of the form (without the namespace prefix `Form:`).
+
+::::: equalcolumns small
+:::: 1st-column
+### a) Based on Category
+- Requires that page belongs to the category
+- Main template that defines a page type must contain a `[[Category:...]]` tag
+- `{{#default_form:form-name}}` need to be placed on the _category defintion page_
+- Every page that uses the template automatically belongs to the category and can call the form
+- Recommended approach
+<!-- - Best used in conjunction with a template that defines the category -->
+<!-- - ==TODO: What happens with sub categories?== -->
+::::
+:::: 2nd-column
+### b) Based on Namespace
+- Every page in a namespace is editable via the specified form
+- `{{#default_form:form-name}}` needs to be placed on the _page defining the namespace_, e.g. `Project:User`^2^ for the 'User' namespace
+- Categories take precedence over namespaces 
+::::
+:::: 3rd-column
+### c) Within the Page
+- Directly associate a form with a page
+- Usefull when pages belong to multiple categories with different default forms 
+- Place the default form parser function  
+    `{{#default_form:form-name}}`  
+    _directly_ on the page
+- Could be combined with templates
+::::
+:::::
+
+::: footnotes
+Source: https://www.mediawiki.org/wiki/Extension:Page_Forms/The_%22edit_with_form%22_tab
+
+^2^ Create the page if it does not exist. The page for the main-namespace is `Project:Main`.
+:::
+
+
+
+---
+# Query Forms
+
+
+---
+# Query Forms
+
+::: definition
+==Query forms== are a specific type of page forms and allow to pass individually entered input form data as parameters to query templates. A query form requires a query template, ie., a template with an inline query plus a special page that displays both form data and transcluded template on one wiki page.
+
+Quelle: Individual Definition
+:::
+
+
+::::: equalcolumns small
+:::: 1st-column
+### 1) A Query Form
+- Defined as a regular page form
+- Displays a "Run Query" button
+- Tag `{{{standard input|run query|label=...}}}` allows to customize the "Run Query" button
+::::
+:::: 2nd-column
+### 2) A Query Template
+- Defines an inline query together with a set of parameters that serve a query conditions
+- Parameter values are passed to the query
+- Displays the executed query as result 
+::::
+:::: 3rd-column
+### 3) The `Special:RunQuery` Page
+- Displays query form and results
+- Passes the query form input data to the template and displays the transcluded  content on top or below the form
+::::
+:::::
+
+Link to the query form via `[[Special:RunQuery/query form name]]` or `{{#queryformlink:form=query form name}}`.
+The parser function is the preferred method as it provides to greatest flexibility.
+<!-- Once the query form has been created, you can link to it via  -->
+
+
+::: footnotes
+Source: https://www.mediawiki.org/wiki/Extension:Page_Forms/Creating_query_forms
+:::
+
+
+---
+# Query Forms: Implementation
+
+::::: equalcolumns small
+:::: 1st-column
+**Query Form**
+```
+<includeonly>
+{{{info|query form at top}}}
+{{{for template|Query_Buchbestellungen}}}
+{|
+! Besteller*in:
+| {{{field|Besteller|input type=tokens|property=Besteller
+    |max values=1|values from category=Professor}}}
+! Jahr: 
+|{{{field|Datum|input type=combobox|property=Bestelldatum
+    |default={{#time:Y}}
+    |values=2019,2020,2021,2022,2023,2024,2025,2026,2027}}}
+|}
+{{{end template}}}
+</includeonly>
+```
+::::
+:::: 2nd-column
+**Query Template** 
+```
+{{#ask: 
+ [[Category:Buchbestellung]]
+ [[Besteller::{{{Besteller|+}}}]]
+ [[Bestelldatum::>1.1.{{{Datum|1970}}}]]
+ [[Bestelldatum::<31.12.{{{Datum|2100}}}]]
+ |?Besteller 
+ |?Kostenstelle |+align=center
+ |?Bestellstatus=Status |+align=center
+ |?Bestelldatum=Datum |+align=right
+ |mainlabel=-
+ |format=broadtable
+ |class=smwtable-clean sortable
+ |headers=plain
+}}</includeonly>
+```
+::::
+:::::
+
+**"Special:RunQuery"-Link** {.small}
+```
+[[Special:RunQuery/Query_Buchbestellungen|Meine bisherigen Buchbestellungen aufrufen]]
+```
+
+TODO: Add Screenshot
+
+
+
+
+
+---
+# Query Forms – Teil 2
+Query Forms kombinieren Formulare mit Templates, in denen eine `#ask`-Query enthalten ist. 
+Die Template Parameter werden mit den Formular-Werten belegt und über eine Spezialseite transkludiert.  
+
+Mittels Query Forms lassen sich die Template-Parameter über Formulareingabeelemente individuell befüllen.
+
+Eine Spezialseite xxx bindet das Query-Form ein, überigbt deren Werte an das Template und stellt das transkludierte Template im Anschluss auf der Seite dar.  
+
+
+::::: columns
+:::: double
+```
+{{#ask:
+ [[Category:BA_Abschlussmodul]] 
+ [[BA_Betreuer::{{{Betreuer|+}}}]]
+ [[BA_Co-Betreuer::{{{Co-Betreuer|+}}}]]
+ [[Status_Verfahren::{{{Status|+}}}]]
+ [[Abschluss_Semester::{{{Semester|+}}}]]
+ ...
+```
+::::
+:::: single
+::: warning small
+**Wichtig**:
+Damit das Query-Template bzw. die Query richtig funktioniert, muss bei den Parametern ein `+` als Alternative für einen leeren Wert gesetzt werden!
+:::
+::::
+:::::
+
+
+
+
+
+
+
 ---
 # Other Tipps
 
@@ -406,134 +641,6 @@ SMW allows to change the ==rendering== of its elements using individual CSS styl
 3. Add the corresponding ==style rules== to the `MediaWiki:Common.css`
 
 
----
-# Subobjects: Querying using #ask
-
-Using `#subobject` does not print out anything on the screen. To show the subobject data directly on the page where they are defined use an _ask query_ `{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] }}` with ==inverse property== and add it after the definition of the subobjects.
-
-
-::::: columns
-:::: single 
-**Example**
-1. Define two subobjects with identifiers "first" and "second":
-    ```
-    {{#subobject:first
-    |property1=value1
-    |property2=value2
-    }}
-
-    {{#subobject:second
-    |property1=value3
-    |property2=value4
-    }}
-    ```
-::::
-:::: single bigskip
-2. Use the `#ask`-query to print out the subobjects' data:
-    ```
-    {{#ask:
-     [[-Has subobject::{{FULLPAGENAME}}]] 
-     |?property1
-     |?property2
-    }}
-    ```
-
-    ::: blue 
-    Please note that the `Has subobject` property need to be specified as ==inverse property== (note the '`-`' in front of the property) in order to make the query work.
-    :::
-::::
-:::::
-
-::: footnotes
-Source: https://www.semantic-mediawiki.org/wiki/Help:Subobjects_and_queries
-:::
-
-
-
----
-## Subobjects: Show Properties of the Subobject's Parent Page
-
-In some cases it is necessary to query for ==properties== that are defined on the ==subobject's parent page==. 
-<!-- The process to do that contains the following steps: -->
-
-::::: equalcolumns small
-:::: 1st-column
-### a) Using Property Chains
-
-**Example**
-```
-{{#ask:
- [[-Has subobject::{{FULLPAGENAME}}]] 
- |?-has subobject.YourParentProperty1
- |?-has subobject.YourParentProperty2
- |?YourSubobjectProperty1
- |?YourSubobjectProperty2
-}}
-```
-- Chain members must be of type _page_ 
-- Last member can be of _any type_
-- Chaining _depth_ is not limited by default
-::::
-:::: 2nd-column
-### b) Using Templates
-1. Query for a property of a subobject.
-2. Use `format=template`.
-3. Add another query in this template where you ask for `[[Has subobject::{{{1}}}]]`. Has subobject returns the parent page of a subobject. The subobject is queried in the first query and passed on to the template as `{{{1}}}`.
-::::
-:::: 3rd-column
-Example {.skip}
-```
-{{#ask:
- [[YourSubobjectProperty::Foo]]
- |?YourSubobjectProperty1
- |?YourSubobjectProperty2
- |format=template 
- |template=YourTemplate
-}}
-```
-In `Template:YourTemplate` add the following:
-```
-{{#ask:
- [[Has subobject::{{{1}}}]]
- |?YourParentProperty1
- |?YourParentProperty2
-}}
-```
-::::
-:::::
-
-::: footnotes
-See https://www.semantic-mediawiki.org/wiki/Help:Property_chains_and_paths
-:::
-
-
----
-# Searching for Pages with certain Subobject Properties
-
-<!-- Motivation: _Displaying properties of a specific subobject's parent page_ -->
-
-<!-- Solution: _Use ==subqueries== to query for certain, characteristic subobject properties (=subproperties)_ -->
-
-In some business cases, it is necessary to search for pages with certain subobject properties and display their properties.
-The solution is to use ==subqueries== to query for certain subobject properties (e.g. a type property) – so called ==subproperties==.
-<!-- When you want to query for (parent) pages that have certain subobject properties (===subproperties==), you can use subqueries: -->
-
-**Example**
-```
-{{#ask:
- [[Has subobject::<q>[[YourSubobjectProperty::Foo]]</q>]]
- |?YourParentProperty1
- |?YourParentProperty2
-}}
-```
-
-- The query `[[Has subobject::]]` (without the "`-`") queries for the (parent) pages that have certain **subproperties**. 
-- With the subquery, you can then select certain subobject properties. 
-- As the query asks for parent pages, you can select properties of the parent pages as printouts.
-
-::: footnotes
-Source: https://www.semantic-mediawiki.org/wiki/Help:Subobjects_and_queries
-:::
 
 
 ---
@@ -737,103 +844,6 @@ Source: https://www.semantic-mediawiki.org/wiki/Help:Adding_subobjects#Specifyin
 
 
 
-
----
-# Seitenerzeugung mittels Formularen
-
-Es gibt 2 Wege neue Seiten mittels Formularen zu erstellen oder zu editieren:
-
-::::: columns small
-:::: single
-__Einstufiger Prozess__ _(vgl. one-step process)_
-
-1. Direkter Aufruf des Formulars mittels Link oder Button 
-
-    ```
-    {{#formlink:form=Project Factsheet v2
-     |link text=Projektdaten bearbeiten
-     |link type=button
-     |target={{PAGENAME}} 
-    }}
-    ```
-    
-    Die `#formlink` Parserfunktion kann auf bel. Seiten verwendet werden, bspw. als Bestandteil des in die Zielseite transkludierten Templates (siehe Screenshot auf Folgeseite).
-
-    Beispiel:
-    ![](./figures/forms_1step_link.png)
-
-::::
-:::: single
-__Zweistufiger Prozess__ _(vgl. two-step process)_
-
-1. Separate Seite mit Eingabefeld für Seitennamen
-2. Aufruf des Page Forms im 2. Schritt
-
-    ```
-    {{#forminput:form=Project Factsheet v2}}
-    ```
-
-    Eingebettet am Beginn der Form Definition Page
-
-    ![](./figures/forms_2step.png)
-
-::::
-:::::
-
-::: footnotes
-Quelle: <https://www.mediawiki.org/wiki/Extension:Page_Forms/Linking_to_forms>
-:::
-
-
----
-## Beispiel des Einstufigen Prozesses
-
-::: center
-![height:540px](figures/forms_1step.png)
-:::
-
-
----
-# Enabling Editing of Page Content via Forms
-
-To get the _"edit with form"_ tab to appear on the page, you must use the parser function `{{#default_form:form-name}}` where `form-name` is the name of the form (without the namespace prefix `Form:`).
-
-::::: equalcolumns small
-:::: 1st-column
-### a) Based on Category
-- Requires that page belongs to the category
-- Main template that defines a page type must contain a `[[Category:...]]` tag
-- `{{#default_form:form-name}}` need to be placed on the _category defintion page_
-- Every page that uses the template automatically belongs to the category and can call the form
-- Recommended approach
-<!-- - Best used in conjunction with a template that defines the category -->
-<!-- - ==TODO: What happens with sub categories?== -->
-::::
-:::: 2nd-column
-### b) Based on Namespace
-- Every page in a namespace is editable via the specified form
-- `{{#default_form:form-name}}` needs to be placed on the _page defining the namespace_, e.g. `Project:User`^2^ for the 'User' namespace
-- Categories take precedence over namespaces 
-::::
-:::: 3rd-column
-### c) Within the Page
-- Directly associate a form with a page
-- Usefull when pages belong to multiple categories with different default forms 
-- Place the default form parser function  
-    `{{#default_form:form-name}}`  
-    _directly_ on the page
-- Could be combined with templates
-::::
-:::::
-
-::: footnotes
-Source: https://www.mediawiki.org/wiki/Extension:Page_Forms/The_%22edit_with_form%22_tab
-
-^2^ Create the page if it does not exist. The page for the main-namespace is `Project:Main`.
-:::
-
-
-
 ---
 ## Abfragen von Seiten auf denen ein Property NICHT gesetzt ist
 
@@ -873,134 +883,6 @@ Jetzt kann mittels einer Query nach Seiten mit dem gesetzten Wert des Properties
 
 
 
----
-# Query Forms
-
-
----
-# Query Forms
-
-::: definition
-==Query forms== are a specific type of page forms and allow to pass individually entered input form data as parameters to query templates. A query form requires a query template, ie., a template with an inline query plus a special page that displays both form data and transcluded template on one wiki page.
-
-Quelle: Individual Definition
-:::
-
-
-::::: equalcolumns small
-:::: 1st-column
-### 1) A Query Form
-- Defined as a regular page form
-- Displays a "Run Query" button
-- Tag `{{{standard input|run query|label=...}}}` allows to customize the "Run Query" button
-::::
-:::: 2nd-column
-### 2) A Query Template
-- Defines an inline query together with a set of parameters that serve a query conditions
-- Parameter values are passed to the query
-- Displays the executed query as result 
-::::
-:::: 3rd-column
-### 3) The `Special:RunQuery` Page
-- Displays query form and results
-- Passes the query form input data to the template and displays the transcluded  content on top or below the form
-::::
-:::::
-
-Link to the query form via `[[Special:RunQuery/query form name]]` or `{{#queryformlink:form=query form name}}`.
-The parser function is the preferred method as it provides to greatest flexibility.
-<!-- Once the query form has been created, you can link to it via  -->
-
-
-::: footnotes
-Source: https://www.mediawiki.org/wiki/Extension:Page_Forms/Creating_query_forms
-:::
-
-
----
-# Query Forms: Implementation
-
-::::: equalcolumns small
-:::: 1st-column
-**Query Form**
-```
-<includeonly>
-{{{info|query form at top}}}
-{{{for template|Query_Buchbestellungen}}}
-{|
-! Besteller*in:
-| {{{field|Besteller|input type=tokens|property=Besteller
-    |max values=1|values from category=Professor}}}
-! Jahr: 
-|{{{field|Datum|input type=combobox|property=Bestelldatum
-    |default={{#time:Y}}
-    |values=2019,2020,2021,2022,2023,2024,2025,2026,2027}}}
-|}
-{{{end template}}}
-</includeonly>
-```
-::::
-:::: 2nd-column
-**Query Template** 
-```
-{{#ask: 
- [[Category:Buchbestellung]]
- [[Besteller::{{{Besteller|+}}}]]
- [[Bestelldatum::>1.1.{{{Datum|1970}}}]]
- [[Bestelldatum::<31.12.{{{Datum|2100}}}]]
- |?Besteller 
- |?Kostenstelle |+align=center
- |?Bestellstatus=Status |+align=center
- |?Bestelldatum=Datum |+align=right
- |mainlabel=-
- |format=broadtable
- |class=smwtable-clean sortable
- |headers=plain
-}}</includeonly>
-```
-::::
-:::::
-
-**"Special:RunQuery"-Link** {.small}
-```
-[[Special:RunQuery/Query_Buchbestellungen|Meine bisherigen Buchbestellungen aufrufen]]
-```
-
-TODO: Add Screenshot
-
-
-
-
-
----
-# Query Forms – Teil 2
-Query Forms kombinieren Formulare mit Templates, in denen eine `#ask`-Query enthalten ist. 
-Die Template Parameter werden mit den Formular-Werten belegt und über eine Spezialseite transkludiert.  
-
-Mittels Query Forms lassen sich die Template-Parameter über Formulareingabeelemente individuell befüllen.
-
-Eine Spezialseite xxx bindet das Query-Form ein, überigbt deren Werte an das Template und stellt das transkludierte Template im Anschluss auf der Seite dar.  
-
-
-::::: columns
-:::: double
-```
-{{#ask:
- [[Category:BA_Abschlussmodul]] 
- [[BA_Betreuer::{{{Betreuer|+}}}]]
- [[BA_Co-Betreuer::{{{Co-Betreuer|+}}}]]
- [[Status_Verfahren::{{{Status|+}}}]]
- [[Abschluss_Semester::{{{Semester|+}}}]]
- ...
-```
-::::
-:::: single
-::: warning small
-**Wichtig**:
-Damit das Query-Template bzw. die Query richtig funktioniert, muss bei den Parametern ein `+` als Alternative für einen leeren Wert gesetzt werden!
-:::
-::::
-:::::
 
 
 ---

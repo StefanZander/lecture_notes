@@ -29,7 +29,8 @@ Kapitel 4: Fortschrittliche Modellierungskonzepte in Semantic MediaWiki {.lightg
 2. Einführendes Beispiel
 3. Ein erster Lösungsansatz
 4. Darstellung komplexer Sachverhalte mittels Subobjects
-5. Tipps
+5. Abfrage von Subobjects
+6. Tipps
 
 
 ---
@@ -122,6 +123,14 @@ Erstellung eines neuen Subobjects auf der Meryl Streep Seite mit den properties 
 ::::
 
 
+---
+# Grafische Darstellung
+
+::: center
+![height:500px](./figures/merly_streep_subobject.png)
+:::
+
+
 
 ---
 # Tipp
@@ -161,4 +170,167 @@ Falls das Subobject mittels einem Template transkludiert wird, so kann für die 
 Bei **anonymen Subobjects** ist dies nicht möglich, da ein interner Bezeichner als Identifier vergeben wird, der im Sourcecode der wiki Seite nicht zu sehen ist.
 ::::
 :::::
+
+
+---
+## Beispiel: Speicherung des Seitennamens im Subobject
+
+```
+<noinclude>
+This is the "Project member with role" subobject template.
+It should be called in the following format:
+<pre>
+    {{Project member with role
+     |project= #filled with {{PAGENAME}}
+     |role=
+     |start_date=
+     |end_date=
+     |member=
+    }}
+</pre>
+Edit the page to see the template text.
+</noinclude><includeonly>
+{{#subobject:
+ |Refers to project={{PAGENAME}} <!-- refers to name of parent page -->
+ |Has role={{{role|}}}
+ |Has start date={{{start_date|}}}
+ |Has end date={{{end_date|}}}
+ |Has member={{{member|}}}
+ |type=project_membership
+}}
+</includeonly>
+```
+
+
+
+
+---
+# Subobjects: Querying using #ask
+
+Using `#subobject` does not print out anything on the screen. To show the subobject data directly on the page where they are defined use an _ask query_ `{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] }}` with ==inverse property== and add it after the definition of the subobjects.
+
+
+::::: columns
+:::: single 
+**Example**
+1. Define two subobjects with identifiers "first" and "second":
+    ```
+    {{#subobject:first
+    |property1=value1
+    |property2=value2
+    }}
+
+    {{#subobject:second
+    |property1=value3
+    |property2=value4
+    }}
+    ```
+::::
+:::: single bigskip
+2. Use the `#ask`-query to print out the subobjects' data:
+    ```
+    {{#ask:
+     [[-Has subobject::{{FULLPAGENAME}}]] 
+     |?property1
+     |?property2
+    }}
+    ```
+
+    ::: blue 
+    Please note that the `Has subobject` property need to be specified as ==inverse property== (note the '`-`' in front of the property) in order to make the query work.
+    :::
+::::
+:::::
+
+::: footnotes
+Source: https://www.semantic-mediawiki.org/wiki/Help:Subobjects_and_queries
+:::
+
+
+
+---
+## Subobjects: Show Properties of the Subobject's Parent Page
+
+In some cases it is necessary to query for ==properties== that are defined on the ==subobject's parent page==. 
+<!-- The process to do that contains the following steps: -->
+
+::::: equalcolumns small
+:::: 1st-column
+### a) Using Property Chains
+
+**Example**
+```
+{{#ask:
+ [[-Has subobject::{{FULLPAGENAME}}]] 
+ |?-has subobject.YourParentProperty1
+ |?-has subobject.YourParentProperty2
+ |?YourSubobjectProperty1
+ |?YourSubobjectProperty2
+}}
+```
+- Chain members must be of type _page_ 
+- Last member can be of _any type_
+- Chaining _depth_ is not limited by default
+::::
+:::: 2nd-column
+### b) Using Templates
+1. Query for a property of a subobject.
+2. Use `format=template`.
+3. Add another query in this template where you ask for `[[Has subobject::{{{1}}}]]`. Has subobject returns the parent page of a subobject. The subobject is queried in the first query and passed on to the template as `{{{1}}}`.
+::::
+:::: 3rd-column
+Example {.skip}
+```
+{{#ask:
+ [[YourSubobjectProperty::Foo]]
+ |?YourSubobjectProperty1
+ |?YourSubobjectProperty2
+ |format=template 
+ |template=YourTemplate
+}}
+```
+In `Template:YourTemplate` add the following:
+```
+{{#ask:
+ [[Has subobject::{{{1}}}]]
+ |?YourParentProperty1
+ |?YourParentProperty2
+}}
+```
+::::
+:::::
+
+::: footnotes
+See https://www.semantic-mediawiki.org/wiki/Help:Property_chains_and_paths
+:::
+
+
+---
+# Searching for Pages with certain Subobject Properties
+
+<!-- Motivation: _Displaying properties of a specific subobject's parent page_ -->
+
+<!-- Solution: _Use ==subqueries== to query for certain, characteristic subobject properties (=subproperties)_ -->
+
+In some business cases, it is necessary to search for pages with certain subobject properties and display their properties.
+The solution is to use ==subqueries== to query for certain subobject properties (e.g. a type property) – so called ==subproperties==.
+<!-- When you want to query for (parent) pages that have certain subobject properties (===subproperties==), you can use subqueries: -->
+
+**Example**
+```
+{{#ask:
+ [[Has subobject::<q>[[YourSubobjectProperty::Foo]]</q>]]
+ |?YourParentProperty1
+ |?YourParentProperty2
+}}
+```
+
+- The query `[[Has subobject::]]` (without the "`-`") queries for the (parent) pages that have certain **subproperties**. 
+- With the subquery, you can then select certain subobject properties. 
+- As the query asks for parent pages, you can select properties of the parent pages as printouts.
+
+::: footnotes
+Source: https://www.semantic-mediawiki.org/wiki/Help:Subobjects_and_queries
+:::
+
 
