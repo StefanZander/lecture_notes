@@ -28,8 +28,7 @@ Kapitel 4: Fortschrittliche Ontologiemodellierung mittels Semantic MediaWiki {.l
 1. Page Forms
 2. Query Forms
 3. Fortgeschrittene Tipps
-   1. common.css
-   2. ...
+
 
 
 ---
@@ -159,6 +158,7 @@ https://www.mediawiki.org/wiki/Extension:Page_Forms/Defining_forms
 
 
 ---
+<!-- header: Kapitel 1: Page Forms -->
 ## Form Definition Page 
 
 ```
@@ -355,7 +355,6 @@ wie z.B. digitale Bibliotheken oder Informationen im Internet, angebunden.
 
 
 ---
-<!-- header: Kapitel xx: Page Forms -->
 # Getting Started
 
 In order to use **Page Forms** in a (Semantic) MediaWiki system, the following steps need to be taken:
@@ -492,8 +491,24 @@ Source: https://www.mediawiki.org/wiki/Extension:Page_Forms/The_%22edit_with_for
 
 
 ---
+<!-- header: Kapitel 2: Query Forms -->
 # Query Forms
 
+
+
+---
+# Beispiel 1
+
+::: center
+![height:480px](./figures/query_form_book.png)
+:::
+
+---
+# Beispiel 2
+
+::: center
+![height:480px](./figures/query_forms_ba.png)
+:::
 
 ---
 # Query Forms
@@ -584,20 +599,17 @@ Source: https://www.mediawiki.org/wiki/Extension:Page_Forms/Creating_query_forms
 [[Special:RunQuery/Query_Buchbestellungen|Meine bisherigen Buchbestellungen aufrufen]]
 ```
 
-TODO: Add Screenshot
-
-
 
 
 
 ---
-# Query Forms – Teil 2
+# Query Forms – Zusammenfassung
 Query Forms kombinieren Formulare mit Templates, in denen eine `#ask`-Query enthalten ist. 
-Die Template Parameter werden mit den Formular-Werten belegt und über eine Spezialseite transkludiert.  
+Die **Template-Parameter** werden mit den _Formular-Werten_ belegt und über die **Spezialseite** `[[Special:RunQuery/...]]` transkludiert.  
 
 Mittels Query Forms lassen sich die Template-Parameter über Formulareingabeelemente individuell befüllen.
 
-Eine Spezialseite xxx bindet das Query-Form ein, überigbt deren Werte an das Template und stellt das transkludierte Template im Anschluss auf der Seite dar.  
+Die Spezialseite `[[Special:RunQuery/Query_Form|Link-Text]]` bindet eine Form Definition Seite ein, überigbt deren Werte an das Template und stellt das transkludierte Template im Anschluss als Seite dar.  
 
 
 ::::: columns
@@ -624,14 +636,12 @@ Damit das Query-Template bzw. die Query richtig funktioniert, muss bei den Param
 
 
 
+---
+# Tipps
 
 
 ---
-# Other Tipps
-
-- CSC Styles for MediaWiki
-
----
+<!-- header: Kapitel 3: Tipps -->
 # Defining individual CSS Styles using MediaWiki:Common.css
 
 SMW allows to change the ==rendering== of its elements using individual CSS style rules.
@@ -639,6 +649,20 @@ SMW allows to change the ==rendering== of its elements using individual CSS styl
 1. Call the `MediaWiki:Common.css` page (e.g. `https://smw-demo.fbi.h-da.de/index.php/MediaWiki:Common.css`)
 2. Get the ==CSS selector== for the elements in question using the _style tab_ in the browser inspector  
 3. Add the corresponding ==style rules== to the `MediaWiki:Common.css`
+
+
+
+---
+# Templates: Benennung von Properties in Templates
+
+Annahme:
+Sie wollen Abschlussarbeiten (BAs/MAs) mittels SMW verwalten. Für BAs & MAs erstellen Sie jeweils separate Templates. 
+
+Im Verlauf der Arbeit stellen sich hierbei folgende Fragen:
+- Benutzen Sie identische Properties für/in beiden Templates ?
+- Wie benennen Sie die Properties ? 
+- Wie gelingt Ihnen die Unterscheidung der konkreten Instanzen (SWM Seiten) ?
+
 
 
 
@@ -670,71 +694,10 @@ cf. https://www.semantic-mediawiki.org/wiki/Help:Date_parsing
 
 
 
----
-# Query for Subobject Data on specific Parent Pages 
-
-::::: equalcolumns
-:::: 1st-column
-**_Motivation:_**
-Display the items (represented as subobjects) of all book orders issued in 2020.
-
-___Assumption:___ 
-Items are represented as subobjects embedded in order pages.
-
-___Solution:___ {.noskip}
-1. Draw a data graph of the involved entities
-2. Formulate the query conditions for the parent pages
-3. Insert the parent page query conditions into a subquery
-4. The subquery becomes the value of a query condition using the inverse `Has subobject` property
-::::
-:::: 2nd-column
-___Example:___
-Build the _subquery_ (i.e. the query conditions for parent pages)
-```
-[[Category:Buchbestellung]]
-[[Bestelldatum::>1.1.2020]] [[Bestelldatum::<31.12.2020]]
-```
-
-Build the _full query_ and embed the subquery 
-```
-{{#ask:
- [[-Has subobject::<q>[[Category:Buchbestellung]]
- [[Bestelldatum::>1.1.2020]] [[Bestelldatum::<31.12.2020]]</q>]]
- |?Verfasser
- |?Buchtitel
- ...
-}}
-```
-::::
-:::::
-
 
 
 ---
-# Combining Parent Page and Subobject Data in Queries
-
-This can be achieved with ==subqueries== and ==inverse property chaining== in the _properties' selection part_ of inline queries.
-
-**Example**
-``` 
-{{#ask:
- [[-Has subobject::<q>[[Category:Buchbestellung]]
- [[Bestelldatum::>1.1.2020]] [[Bestelldatum::<31.12.2020]]</q>]]
- |?-Has subobject.Besteller         <!-- selecting parent page property via inverse property chaining -->
- |?-Has subobject.Kostenstelle      <!-- selecting parent page property via inverse property chaining -->
- |?Verfasser
- |?Buchtitel=Titel
- |?Erscheinungsjahr=Jahr |+align=center
- |mainlabel=-
- |format=broadtable
- |class=smwtable-clean sortable
- |headers=plain
-}}
-```
-
-
----
-# Automatically Setting Page Names in Page Forms
+# Page Forms: Automatically Setting Page Names
 
 The name of the page created by a form can be set _automatically_ by adding a `page name` parameter within the form definition's `info` tag^1^.
 
@@ -758,80 +721,33 @@ The name of the page created by a form can be set _automatically_ by adding a `p
 :::
 
 
----
-# Benennung von Properties in Templates
-
-Annahme:
-Sie wollen Abschlussarbeiten (BAs/MAs) mittels SMW verwalten. Für BAs & MAs erstellen Sie jeweils separate Templates. 
-
-Im Verlauf der Arbeit stellen sich hierbei folgende Fragen:
-- Benutzen Sie identische Properties für/in beiden Templates ?
-- Wie benennen Sie die Properties ? 
-- Wie gelingt Ihnen die Unterscheidung der konkreten Instanzen (SWM Seiten) ?
-
-
 
 ---
-# Multiple Values for the same Subobject Property 
+# Page Forms: Tipps for Working with Dates
 
-::::: equalcolumns small
-:::: 1st-column
-### a) Add Multiple Lines
-```
-{{#subobject:mysubobject
- |Has property 1=value1
- |Has property 1=value2
- |Has property 3=value1
- ...
-}}
-```
-==TODO: Check if it works==
-::::
-:::: 2nd-column
-### b) Separate Values using a Pipe
-```
-{{#subobject:mysubobject
- |Has property=value1|value2
- ...
-}}
-```
-- Separate values using `|` as delimiter
+### Using the current date in an input element^1^
+Using input type `datepicker`, it is possible to set the _current date_ as default value in the input element using the `#time` parser function^2^ of the `Extension:ParserFunctions`^3^
 
-::: warning small
-The possibility of using pipes `|` for setting multiple values was deprecated starting with Semantic MediaWiki 3.0.0 and will be removed in a later version. It is strongly recommended to migrate to using the `
-|+sep` parameter.
+Example:
+```
+! Datum: 
+| {{{field|Datum|input type=datepicker|property=Bestelldatum|date format=dd.mm.yy|default={{#time:d.m.Y}} }}}
+|}
+```
+
+
+::: blue
+**Please note**:  
+Regardless of the formatting pattern set via the `date format=...` property, `datepicker` always returns the data in `yyyy/mm/dd` format.
 :::
-::::
-:::: 3rd-column
-### c) Separate Values using Named Separator
-```
-{{#subobject:mysubobject
- |Has property 1=Value 1;Value 2;Value 3|+sep=;
- |Has property 2=12+22+3+4+5+6+7+8+9+10|+sep=+
- |Has property 3=123,1234,12345,|+sep=,
- |Has property 4=One,or,two,more,values|+sep
- ...
-}}
-```
-- Semantic MediaWiki 1.9.0 introduces `|+sep=...` to identify the separator
-- Provides greates flexibility and can be combined with PageForms
-- Preferred method in most cases
-::::
-:::::
-
-::: skip 
-:::
-Alternatively, the `{{#arraymap:...` parser function can be used to separate multiple values for one subobject property.
 
 ::: footnotes
-Source: https://www.semantic-mediawiki.org/wiki/Help:Adding_subobjects#Specifying_multiple_values_for_the_same_property
+^1^ https://www.mediawiki.org/wiki/Topic:Put4ygy4m0kw279f
+
+^2^ https://www.mediawiki.org/wiki/Help:Extension:ParserFunctions##time
+
+^3^ https://www.mediawiki.org/wiki/Help:Extension:ParserFunctions
 :::
-
-
-
----
-# How to Query for Subobject Data in Pages
-
 
 
 ---
@@ -845,7 +761,7 @@ Source: https://www.semantic-mediawiki.org/wiki/Help:Adding_subobjects#Specifyin
 
 
 ---
-## Abfragen von Seiten auf denen ein Property NICHT gesetzt ist
+## Ask: Abfragen von Seiten auf denen ein Property NICHT gesetzt ist
 
 Die `#ask` Abfragealgebra von SMW erlaubt es nicht, Seiten abzufragen, auf denen ein Property _nicht_ gesetzt ist, d.h., keinen Wert hat^1^.
 
@@ -886,7 +802,7 @@ Jetzt kann mittels einer Query nach Seiten mit dem gesetzten Wert des Properties
 
 
 ---
-# Formatting of Boolean Values in Queries
+# Ask: Formatting of Boolean Values in Queries
 
 By default, __Boolean values__ will display as `true` and `false` in queries. This can be changed in Semantic MediaWiki >= 2.4.0 by specifying a ==format string== to control what is displayed for the true and false values of a property.
 
@@ -936,33 +852,6 @@ Use `\s` as new delimiter to insert a space between the single values.
 Source: https://www.mediawiki.org/wiki/Extension:Page_Forms/Page_Forms_and_templates#Multiple_values_for_the_same_field
 :::
 
-
----
-# Tipps for Working with Dates and Page Forms
-
-### Using the current date in an input element^1^
-Using input type `datepicker`, it is possible to set the _current date_ as default value in the input element using the `#time` parser function^2^ of the `Extension:ParserFunctions`^3^
-
-Example:
-```
-! Datum: 
-| {{{field|Datum|input type=datepicker|property=Bestelldatum|date format=dd.mm.yy|default={{#time:d.m.Y}} }}}
-|}
-```
-
-
-::: blue
-**Please note**:  
-Regardless of the formatting pattern set via the `date format=...` property, `datepicker` always returns the data in `yyyy/mm/dd` format.
-:::
-
-::: footnotes
-^1^ https://www.mediawiki.org/wiki/Topic:Put4ygy4m0kw279f
-
-^2^ https://www.mediawiki.org/wiki/Help:Extension:ParserFunctions##time
-
-^3^ https://www.mediawiki.org/wiki/Help:Extension:ParserFunctions
-:::
 
 
 ---

@@ -21,7 +21,7 @@ paginate: true
 Kapitel 4: Fortschrittliche Modellierungskonzepte in Semantic MediaWiki {.lightgreen .Big .skip}
 
 ---
-<!-- header: Kapitel 0: Inhalte -->
+<!-- header: Inhalte -->
 <!-- footer: Prof. Dr. Stefan Zander -->
 # Inhalte
 
@@ -41,6 +41,7 @@ Kapitel 4: Fortschrittliche Modellierungskonzepte in Semantic MediaWiki {.lightg
 
 
 ---
+<!-- header: Subobjects -->
 # Einführendes Beispiel (1/2)
 
 Nicht alle Aspekte eines Gegenstandsbereichs lassen sich durch _Property-Value-Paare_ abbilden.
@@ -124,10 +125,10 @@ Erstellung eines neuen Subobjects auf der Meryl Streep Seite mit den properties 
 
 
 ---
-# Grafische Darstellung
+# Konzeptionelle Darstellung
 
 ::: center
-![height:500px](./figures/merly_streep_subobject.png)
+![height:480px](./figures/merly_streep_subobject.png)
 :::
 
 
@@ -203,6 +204,67 @@ Edit the page to see the template text.
 
 
 
+---
+# Multiple Values for the same Subobject Property 
+
+::::: equalcolumns small
+:::: 1st-column
+### a) Add Multiple Lines
+```
+{{#subobject:mysubobject
+ |Has property 1=value1
+ |Has property 1=value2
+ |Has property 3=value1
+ ...
+}}
+```
+==TODO: Check if it works==
+::::
+:::: 2nd-column
+### b) Separate Values using a Pipe
+```
+{{#subobject:mysubobject
+ |Has property=value1|value2
+ ...
+}}
+```
+- Separate values using `|` as delimiter
+
+::: warning small
+The possibility of using pipes `|` for setting multiple values was deprecated starting with Semantic MediaWiki 3.0.0 and will be removed in a later version. It is strongly recommended to migrate to using the `
+|+sep` parameter.
+:::
+::::
+:::: 3rd-column
+### c) Separate Values using Named Separator
+```
+{{#subobject:mysubobject
+ |Has property 1=Value 1;Value 2;Value 3|+sep=;
+ |Has property 2=12+22+3+4+5+6+7+8+9+10|+sep=+
+ |Has property 3=123,1234,12345,|+sep=,
+ |Has property 4=One,or,two,more,values|+sep
+ ...
+}}
+```
+- Semantic MediaWiki 1.9.0 introduces `|+sep=...` to identify the separator
+- Provides greates flexibility and can be combined with PageForms
+- Preferred method in most cases
+::::
+:::::
+
+::: skip 
+:::
+Alternatively, the `{{#arraymap:...` parser function can be used to separate multiple values for one subobject property.
+
+::: footnotes
+Source: https://www.semantic-mediawiki.org/wiki/Help:Adding_subobjects#Specifying_multiple_values_for_the_same_property
+:::
+
+
+
+
+
+
 
 ---
 # Subobjects: Querying using #ask
@@ -245,6 +307,78 @@ Using `#subobject` does not print out anything on the screen. To show the subobj
 ::: footnotes
 Source: https://www.semantic-mediawiki.org/wiki/Help:Subobjects_and_queries
 :::
+
+
+
+
+---
+# Searching for Pages with certain Subobject Properties
+
+<!-- Motivation: _Displaying properties of a specific subobject's parent page_ -->
+
+<!-- Solution: _Use ==subqueries== to query for certain, characteristic subobject properties (=subproperties)_ -->
+
+In some business cases, it is necessary to search for pages with certain subobject properties and display their properties.
+The solution is to use ==subqueries== to query for certain subobject properties (e.g. a type property) – so called ==subproperties==.
+<!-- When you want to query for (parent) pages that have certain subobject properties (===subproperties==), you can use subqueries: -->
+
+**Example**
+```
+{{#ask:
+ [[Has subobject::<q>[[YourSubobjectProperty::Foo]]</q>]]
+ |?YourParentProperty1
+ |?YourParentProperty2
+}}
+```
+
+- The query `[[Has subobject::]]` (without the "`-`") queries for the (parent) pages that have certain **subproperties**. 
+- With the subquery, you can then select certain subobject properties. 
+- As the query asks for parent pages, you can select properties of the parent pages as printouts.
+
+::: footnotes
+Source: https://www.semantic-mediawiki.org/wiki/Help:Subobjects_and_queries
+:::
+
+
+
+---
+# Query for Subobject Data on specific Parent Pages 
+
+::::: equalcolumns
+:::: 1st-column
+**_Motivation:_**
+Display the items (represented as subobjects) of all book orders issued in 2020.
+
+___Assumption:___ 
+Items are represented as subobjects embedded in order pages.
+
+___Solution:___ {.noskip}
+1. Draw a data graph of the involved entities
+2. Formulate the query conditions for the parent pages
+3. Insert the parent page query conditions into a subquery
+4. The subquery becomes the value of a query condition using the inverse `Has subobject` property
+::::
+:::: 2nd-column
+___Example:___
+Build the _subquery_ (i.e. the query conditions for parent pages)
+```
+[[Category:Buchbestellung]]
+[[Bestelldatum::>1.1.2020]] [[Bestelldatum::<31.12.2020]]
+```
+
+Build the _full query_ and embed the subquery 
+```
+{{#ask:
+ [[-Has subobject::<q>[[Category:Buchbestellung]]
+ [[Bestelldatum::>1.1.2020]] [[Bestelldatum::<31.12.2020]]</q>]]
+ |?Verfasser
+ |?Buchtitel
+ ...
+}}
+```
+::::
+:::::
+
 
 
 
@@ -305,32 +439,26 @@ See https://www.semantic-mediawiki.org/wiki/Help:Property_chains_and_paths
 :::
 
 
+
+
 ---
-# Searching for Pages with certain Subobject Properties
+# Combining Parent Page and Subobject Data in Queries
 
-<!-- Motivation: _Displaying properties of a specific subobject's parent page_ -->
-
-<!-- Solution: _Use ==subqueries== to query for certain, characteristic subobject properties (=subproperties)_ -->
-
-In some business cases, it is necessary to search for pages with certain subobject properties and display their properties.
-The solution is to use ==subqueries== to query for certain subobject properties (e.g. a type property) – so called ==subproperties==.
-<!-- When you want to query for (parent) pages that have certain subobject properties (===subproperties==), you can use subqueries: -->
+This can be achieved with ==subqueries== and ==inverse property chaining== in the _properties' selection part_ of inline queries.
 
 **Example**
-```
+``` 
 {{#ask:
- [[Has subobject::<q>[[YourSubobjectProperty::Foo]]</q>]]
- |?YourParentProperty1
- |?YourParentProperty2
+ [[-Has subobject::<q>[[Category:Buchbestellung]]
+ [[Bestelldatum::>1.1.2020]] [[Bestelldatum::<31.12.2020]]</q>]]
+ |?-Has subobject.Besteller         <!-- selecting parent page property via inverse property chaining -->
+ |?-Has subobject.Kostenstelle      <!-- selecting parent page property via inverse property chaining -->
+ |?Verfasser
+ |?Buchtitel=Titel
+ |?Erscheinungsjahr=Jahr |+align=center
+ |mainlabel=-
+ |format=broadtable
+ |class=smwtable-clean sortable
+ |headers=plain
 }}
 ```
-
-- The query `[[Has subobject::]]` (without the "`-`") queries for the (parent) pages that have certain **subproperties**. 
-- With the subquery, you can then select certain subobject properties. 
-- As the query asks for parent pages, you can select properties of the parent pages as printouts.
-
-::: footnotes
-Source: https://www.semantic-mediawiki.org/wiki/Help:Subobjects_and_queries
-:::
-
-
