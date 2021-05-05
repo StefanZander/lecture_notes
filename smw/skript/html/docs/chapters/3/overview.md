@@ -9,6 +9,11 @@
     - Wie unterstützt Semantic MediaWiki das Wissensmanagement im Unternehmen ?
 
 
+Der Foliensatz zu Kapitel 3 ist im Moodle-Kurs der Veranstaltung hinterlegt. 
+: [Kapitel 3a: Einführung in Semantic MediaWikiDatei](https://lernen.h-da.de/mod/resource/view.php?id=526488)
+: [Kapitel 3b: Datenmodellierung mit Semantic MediaWikiDatei](https://lernen.h-da.de/mod/resource/view.php?id=526489)
+: [Kapitel 3c: Semantische SucheDatei](https://lernen.h-da.de/mod/resource/view.php?id=526490)
+
 
 ### Gliederung
 
