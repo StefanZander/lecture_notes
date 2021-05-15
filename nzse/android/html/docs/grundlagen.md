@@ -3,19 +3,21 @@
 !!! abstract
     **Objectives**
 
+    - [x] Sie kennen die wesentlichen Bedienelemente des Layout Editors
     - [x] Sie können einfache Android Projekte mit Android Studio anlegen
-    - [x] Sie verstehen die Grundstruktur einer Android App
-    - [x] Sie kennen den Lebenszyklus von Activities
-    - [x] Sie kennen die wichtigsten Hilfsmittel wie bspw. den Layout Editor in Android Studio
+    - [x] Sie können eine App auf einem physischen oder einem virtuellen Gerät deployen
+    - [x] Sie können ein virtuelles Device anlegen
+    - [x] Sie kennen die wesentlichen UI-Elemente in Android
+
     
 
 ## The Layout Editor
 
-Android Studio provides the layout editor for quickly building an app's layout of user interface (UI) elements. It lets you drag elements to a visual design and blueprint view, position them in the layout, add constraints, and set attributes. Constraints determine the position of a UI element within the layout. A constraint represents a connection or alignment to another view, the parent layout, or an invisible guideline.
+Android Studio provides the **layout editor** for quickly building an app's layout of user interface (UI) elements. It lets you drag elements to a visual design and blueprint view, position them in the layout, add constraints, and set attributes. Constraints determine the position of a UI element within the layout. A constraint represents a connection or alignment to another view, the parent layout, or an invisible guideline.
 
 Explore the layout editor, and refer to the figure below as you follow the numbered steps:
 
-![/figures/android_studio_overview.png](/figures/android_studio_overview.png)
+![/figures/android_studio_overview.png](./figures/android_studio_overview.png)
 
 1. In the `app --> res --> layout` folder in the `Project --> Android` pane, double-click the `activity_main.xml` file to open it, if it is not already open.
    

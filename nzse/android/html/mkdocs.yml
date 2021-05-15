@@ -12,6 +12,7 @@ nav:
   - 'AsyncTask': 'asynctask.md'
   - 'Serialisierung und Persistenz': 'serialisierung.md'
   - 'Singleton': 'singleton.md'
+  - 'Thread Communication': 'thread_communication.md'
   
 
 
@@ -28,7 +29,7 @@ theme:
     tabs: false
 
   font:
-    text: 'Barlow Semi Condensed'
+    text: 'Roboto Condensed'
     code: 'Roboto mono'
 
 extra_css:

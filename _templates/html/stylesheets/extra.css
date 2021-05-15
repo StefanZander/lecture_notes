@@ -16,7 +16,8 @@
 
 /* cf. https://developer.mozilla.org/en-US/docs/Web/CSS/font-smooth */ 
 body {
-    -webkit-font-smoothing: auto !important; 
+    /* 2021-05-05: disabled it to see how the roboto condensed font renders  */
+    /* -webkit-font-smoothing: auto !important;  */ 
 }
 
 .md-content__inner.md-typeset {
