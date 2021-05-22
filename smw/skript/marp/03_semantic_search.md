@@ -16,7 +16,8 @@ paginate: true
 
 # Semantisches Wissensmanagement im Unternehmen: <br />Konzepte, Technologien, Anwendungen
 
-#### Prof. Dr. Stefan Linus Zander
+#### Prof. Dr. Stefan Linus Zander 
+
 
 Kapitel 3.3: Semantische Suche {.lightgreen .Big .skip}
 
@@ -429,6 +430,47 @@ The **query graph** then helps in formulating
 
 
 ---
+# Formulating Queries I (Part 3)
+
+Once the structural components of the query graph are clear, the query can be formulated using ==AQL==
+
+::::: equalcolumns bigskip
+:::: 1st-column
+::: center
+![height:380px](./figures/ask_query_simple.png) 
+::: 
+::::
+:::: 2nd-column
+**Example**
+```
+{{#ask 
+ [[Category:Employee]] 
+ [[works_in::Gruppe Prof. Studer]]
+ |?has_full_name = Fullname
+ |format=ul
+}}
+```
+
+<!-- **Example**: -->
+<!-- How does the serialized query graph look like for retrieving the full names of all members of Prof. Studer's Group ? {.italic} -->
+
+<!-- The following example depicts a query graph for retrieving all the full names of Porf. Studer's group members.
+- Employee represents the target type of pages (ie. category) 
+- Each target type page needs to hold the `works_in`-property with object `Gruppe Prof. Studer` -->
+
+**Description** {.longskip}
+- Retrieve all pages that are... 
+  - ...of type `Employee` and 
+  - ...that participate in a `works_in`-relationship to the `Gruppe Prof. Studer` wiki page.
+<!-- - hold a `works_in`-property with object `Gruppe Prof. Studer` -->
+- From all matching pages...
+  - ...retrieve the value (object) of the `has_full_name`-property
+::::
+:::::
+
+
+
+---
 # Explanatory Information 
 
 Consider the following conceptual _query graph semantics_ of the previous example:
@@ -449,8 +491,8 @@ Consider the following conceptual _query graph semantics_ of the previous exampl
 ![](./figures/ask_model_km.png) 
 :::
 ::: single
-- Consider the following excerpt of a knowledge graph representing the group an employee works in and one project it is member of together with the topics the project is concerend with. 
-- Also note that the structural semantics (ie., how pages are linked together) are more complex.
+- Consider the following excerpt of a **knowledge graph** representing the *group* an *employee* works in and a *project* she is member of together with the *topics* the project is concerend with. 
+- Be aware of the **structural semantics** (ie., how pages are linked together) that exists between employees, projects, and topics. 
 :::
 ::::
 
@@ -459,7 +501,7 @@ Consider the following conceptual _query graph semantics_ of the previous exampl
 ---
 # Formulating Complex Queries: The Query Graph
 
-If we want to _retrieve all topics_, members of Prof. Studer's group are working on, the **query graph** looks as follows:
+If we want to retrieve _all topics_, members of Prof. Studer's group are working on, the **query graph** looks as follows:
 
 ::::: columns bigskip
 :::: onehalf
@@ -477,11 +519,6 @@ There is no direct linkage from employee to the project they are working in. {.s
 It needs to be transformed into an ==inner query== and an ==outer query==^1^
 - the **inner query** represents specific _employees_^2^
 - the **outer query** represents _projects_ they are members of 
-
-::: centerbox center warning small Bigskip
-When formulating queries in Semantic MediaWiki, always consider the structural semantics of pages (ie., how pages are linked together via properties).
-:::
-
 ::::
 :::::
 
@@ -494,3 +531,37 @@ When formulating queries in Semantic MediaWiki, always consider the structural s
 
 
 
+---
+# Formulating Complex Queries: The Query
+
+If we want to retrieve _all topics_, members of Prof. Studer's group are working on, the **query graph** looks as follows:
+
+::::: columns bigskip
+:::: onehalf
+![](./figures/ask_query_km.png) 
+::::
+:::: single
+**The #ask Query**^1^
+```
+{{#ask: [[has_member::<q>[[works_in::{{PAGENAME}}]]</q>]]
+|?has_topic=
+|mainlabel=-
+|format=valuerank
+}}
+```
+::: small
+- The *inner query* asks for employes working in the group (cf. `works_in`) 
+- The _outer query_ retrieves projects in which these employes participate (cf. `has_member`)
+:::
+
+{.BigSkip}
+
+::: centerbox center warning small Bigskip
+When formulating queries in Semantic MediaWiki, always consider the structural semantics of pages (ie., how pages are linked together via properties).
+:::
+::::
+:::::
+
+::: footnotes
+^1^ Assuming, that the query is placed on the group's page.
+:::
