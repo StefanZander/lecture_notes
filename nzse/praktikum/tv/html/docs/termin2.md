@@ -9,7 +9,7 @@
     - [x] Sie verstehen das Vorgehensmodell zum Entwurf einer Benutzungsschnittstelle im Kontext von OOAD/SWE
 
 !!! warning
-    **Hinweis:** Die Fernbedienungen müssen mindestens die folgenden Funktionen bieten: 
+    **Hinweis:** Die Fernbedienungen müssen mindestens die folgenden Systemmerkmale (vgl. KANO-Modell) bieten: 
     <!-- (_siehe auch die im Kapitel [Vorbemerkung](vorbemerkung.md) aufgezählten Funktionen_).   -->
 
     **Fernbedienung für TV-Server**
@@ -19,7 +19,8 @@
     - Zappen
     - Kanalsuchlauf
     - Favoriten anlegen und verwalten
-    - Timeshift (zeitversetzte Wiedergabe aber keine allgemeinen Recorderfunktionen)
+    - Timeshift (wird das aktuelle Programm zeitversetzt wiedergegeben?)  
+        _Hinweis (2021-05-28): Halten Sie die Funktion so einfach wie möglich; ein Vor-oder Zurückspulen ist nicht notwendig. Zeigen Sie in der UI nur an, ob das Live-Programm abgespielt wird oder Nutzer:innen zeitversetzt fern sehen bzw. das aktuelle Programm pausiert._
     - Lautstärkeregelung inkl. Mute
     - Picture in Picture
 

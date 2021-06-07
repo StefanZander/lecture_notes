@@ -14,8 +14,8 @@ paginate: true
 </style>
 <script src="https://kit.fontawesome.com/8b20b734d0.js" crossorigin="anonymous"></script>
 
-<!-- marp --engine ./engine.js --watch --theme-set custom-theme-roboto.css -- --allow-local-files forschungssemester.md -->
-<!-- marp --pdf --allow-local-files --engine ./engine.js --theme-set custom-theme-roboto.css -- forschungssemester.md -->
+<!-- marp --engine ./engine.js --html --watch --theme-set custom-theme-roboto.css -- --allow-local-files forschungssemester.md -->
+<!-- marp --pdf --html --allow-local-files --engine ./engine.js --theme-set custom-theme-roboto.css -- forschungssemester.md -->
 
 # Vortrag zum Forschungssemester 
 
@@ -31,7 +31,7 @@ Eine Übersicht der Forschungsaktivitäten und Tätigkeiten im WiSe 2020/2021 {.
 # Tätigkeiten 
 
 - Markdown in der Lehre
-- KG-basiertes Tool zur Verwaltung von Abschlussarbeiten
+- Wissensgraph-basiertes Tool zur Verwaltung von Abschlussarbeiten
 - Umbau des WPF "Semantisches Wissensmanagement im Unternehmen"
 - sonstiges 
 
@@ -41,7 +41,7 @@ Eine Übersicht der Forschungsaktivitäten und Tätigkeiten im WiSe 2020/2021 {.
 # Tätigkeiten 
 
 - ==Markdown in der Lehre== {.big}
-- ==KG-basiertes Tool zur Verwaltung von Abschlussarbeiten== {.big}
+- ==Wissensgraph-basiertes Tool zur Verwaltung von Abschlussarbeiten== {.big}
 - Umbau des WPF "Semantisches Wissensmanagement im Unternehmen"
 - sonstiges 
 
@@ -114,7 +114,7 @@ Bildquelle: https://css-tricks.com/wp-content/uploads/2016/01/choose-markdown.jp
 :::::
 
 ::: footnotes
-Online abrufbar unter: ...
+Online abrufbar unter: https://projects.fbi.h-da.de/~s.zander/smw/html/
 :::
 
 
@@ -230,6 +230,23 @@ _MediaWiki_ ist die bedeutenste und weitverbreiteste Implementierung eines Wiki-
 ::: footnotes
 ^1^ Quelle: https://www.mediawiki.org/wiki/MediaWiki/de
 :::
+
+
+---
+# Beispiel: Definition von eigenen Annotationen
+
+```md
+::: definition
+Ein ==Wiki== ist ein ==webbasiertes Hypertext-System== mit einer eigenen
+Markup-Sprache, das es Benutzenden ermöglicht, Webseiten direkt (d.h. ohne
+Programmierung) und online in einem Web-Browser zu erzeugen, zu lesen, zu
+verknüpfen und zu ändern.
+
+Quelle: Angelehnt an Karin Haenelt, "Semantik im Wiki am Beispiel des MediaWiki und Semantic MediaWik", Fraunhofer, 2011.
+:::
+```
+
+
 
 
 ---
@@ -396,6 +413,38 @@ Comparators work only for **property values** and not for conditions on categori
 
 
 ---
+# Annotation von Codefragmenten
+
+```java 
+package org.java.examples.singleton;
+
+/**
+ * Thread-safe implementation of a singleton
+ * Does not require explicit synchronization
+ * Uses the initialization-on-demand holder idiom that
+ * makes uses of the class loader's own synchronisation mechanism
+ * @author stefan zander
+ *
+ */
+public class ThreadSafeSingleton {
+
+    private ThreadSafeSingleton(){ }        
+
+    private static class Holder {
+       private static final ThreadSafeSingleton INSTANCE = new ThreadSafeSingleton();
+    }
+
+    public static ThreadSafeSingleton getInstance() {
+        return Holder.INSTANCE;
+    }
+
+    // Aufruf wie gehabt mit ThreadSafeSingleton instance = ThreadSafeSingleton.getInstance()
+}
+```
+
+
+
+---
 # Formulating Queries I
 
 First consider the **structural composition** of the data model used to represent the universe of discourse (or an excerpt of it). 
@@ -467,7 +516,7 @@ This **graphical representation** serves as basis for the formulation of ==query
 - In jedem Fall aber zusätzliche Motivation durch Freude bei der Erstellung 
 <!-- 
 - War ich wirklich schneller: nein
-- habe das nicht gemessen, wegen fehlender Vergleichbarkeit; nur qual. Erforschbar
+- habe das nicht gemessen, wegen fehlender Vergleichbarkeit; nur qual. erforschbar
 - Geschwindigkeit steigt mit Erfahrung
 - Natürlich eine stark individuell geprägte Meinung
 -->
@@ -487,6 +536,21 @@ This **graphical representation** serves as basis for the formulation of ==query
 # Teil 2: (Live-Demo)<br/>Wissensgraph-basiertes Tool zur Verwaltung von Praxisphasen und Abschlussarbeiten
 
 
+---
+<!-- header: <br/> -->
+
+# Last but least...
+
+---
+![](./figures/haus0.jpeg)
+
+
+---
+![](./figures/haus1.jpeg)
+
+
+---
+# Vielen Dank!
 
 
 ---

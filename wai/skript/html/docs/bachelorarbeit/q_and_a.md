@@ -39,6 +39,24 @@ Sie sollen auf diesen Seiten gesammelt und kommentiert zur Verfügung gestellt w
     * Stimmen Sie offene Punkte frühzeitig mit Ihrer Betreuer\*in ab
 
 
+??? question "Darf man Praxisphase und Bachelorarbeit parallel durchführen?"
+    Nein, dies ist studienrechtlich leider nicht möglich, da es sich hierbei um zwei unterschiedliche Bausteine Ihres Studiums handelt. 
+
+
+??? question "Darf man das Thema aus der Praxisphase in der Bachelorarbeit aufgreifen und dort weiter behandeln?"
+    Ja das ist möglich.
+
+    Sie sollten jedoch sehr genau darauf achten, dass es sich bei der Bachelorarbeit um eine akademische Abschlussarbeit handelt, die nach den Richtlinien der guten wissenschaftlichen Praxis verfasst sein muss und die wesentliche Merkmale wissenschaftlicher Arbeiten enthalten muss. Die entsprechenden Grundlagen haben Sie in Ihrem WAI-Kursen (hoffentlich) gelernt. 
+
+    Bitte beachten Sie, dass eine Bachelorarbeit keine Projekt- oder Implementierungsbeschreibung ist. Dieser Fehler wird häufig begangen, wenn die Arbeit bzw. das Thema aus einem Unternehmen heraus gestellt wird. 
+
+
+??? question "Ist der Praxisphasenbericht das Exposé der Bachelorarbeit?"
+    Nein.  
+    Beide Dokumente erfüllen unterschiedliche Zwecke und sind dementsprechend anders ausgerichtet und gegliedert. 
+
+
+
 ## Kolloquium
 
 ??? question "Was ist das Kolloquium?"

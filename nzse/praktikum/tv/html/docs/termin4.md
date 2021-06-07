@@ -27,10 +27,15 @@
 1. Machen Sie Ihre App "**drehbar**", d.h. sorgen Sie dafür, dass der Neustart der Activity beim Drehen des Smartphones (Hochformat/Querformat) keine sichtbaren Folgen hat. Implementieren Sie dazu ggf. die Methode `:::js onSaveInstanceState()` und werten Sie dann den Parameter von `:::js onCreate()` entsprechend aus.
 
 
-### AsyncTask
-Eigentlich sollten Zugriffe aufs Netzwerk nicht im UI Thread gemacht werden (warum?). 
+### AsyncTask bzw. Nebenläufigkeit
+Eigentlich sollten Zugriffe aufs Netzwerk nicht im **UI Thread** gemacht werden (warum?). 
 
-1. Schreiben Sie daher eine Klasse `:::js HttpRequestAsync extends AsyncTask` und verlagern Sie die `HttpRequest`-Aufrufe in deren Methode `:::js doInBackground()`.
+!!! note 
+    **Update 2021-05-28**:  
+    Identifizieren Sie alle Operationen, die _parallel_ zum UI Thread ablaufen und deshalb eine eigene Ausführungsumgebung erfordern. Lagern Sie diese Operationen in eigene **Threads** aus. Hierfür können Sie entweder die Klasse `AsyncTask` oder die Standard-Thread-Klassen (`MyClass extends Thread`) verwenden. Falls Sie diese Operationen in eigene, nicht von `AsyncTask` abgeleitete Klassen auslagern, dann sollten diese Klassen das Interface `Runnable` implementieren. 
+
+<!-- 1. Schreiben Sie daher eine Klasse `:::js HttpRequestAsync extends AsyncTask` und verlagern Sie die `HttpRequest`-Aufrufe in deren Methode `:::js doInBackground()`. -->
+  
 
 
 ### Testen, Debuggen, komplett Fertigstellen

@@ -26,7 +26,7 @@ theme:
     tabs: false
 
   font:
-    text: 'Barlow Semi Condensed'
+    text: 'Roboto Condensed'
     code: 'Roboto mono'
 
 extra_css:

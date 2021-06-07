@@ -2,6 +2,10 @@ site_name: Android & Android Studio
 
 nav:
   - 'Index': 'index.md'
+  - 'Collections und Generics': 'generics.md'
+  - 'Serialisierung und Persistenz': 'serialisierung.md'
+  - 'Singleton': 'singleton.md'
+  - 'Serialized Singleton': 'serialized_singleton.md'
   - 'Grundlagen': 'grundlagen.md'
   - 'Activities & Intents': 'activities.md'
   - 'Handler': 'handler.md'
@@ -10,8 +14,8 @@ nav:
   - 'App Bar': 'actionbar.md'
   - 'RecyclerView': 'recycler_view.md'
   - 'AsyncTask': 'asynctask.md'
-  - 'Serialisierung und Persistenz': 'serialisierung.md'
-  - 'Singleton': 'singleton.md'
+
+
   - 'Thread Communication': 'thread_communication.md'
   
 

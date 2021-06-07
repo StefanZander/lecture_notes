@@ -12,18 +12,28 @@ Die Informationen stammen an vielen Stellen aus englischsprachigen Primärquelle
 
 ## Kapitelübersicht
 
+#### Java
+
+<!-- * (neu) [Kapitel 1: Klassen und Objekte](klassen.md) -->
+* [Kapitel 1: Collections und Generics](generics.md)
+* [Kapitel 2: Serialisierung und Input- / OutputStreams](serialisierung.md)
+* [Kapitel 3: Singleton](singleton.md)
+* [Kapitel 4: Serialisation von Singleton-Klassen](serialized_singleton.md)
+
+#### Android 
+
 * [Kapitel 1: Grundlagen zu Android und Android Studio](grundlagen.md) 
 * [Kapitel 2: Activities und Intents](activities.md) 
 * [Kapitel 3: Handler](handler.md) 
 <!-- * [Kapitel 3: Handling User Interface Events (_work in progress_)](handler.md)  -->
 <!-- * [Kapitel 4: Layouts (_work in progress_)](index.md)  -->
 * [Kapitel 4: JavaScript Object Notation (JSON)](json.md) 
-* (update) [Kapitel 5: Daten-Speicher und Persistenz](data_storage.md) 
+* [Kapitel 5: Daten-Speicher und Persistenz](data_storage.md) 
 * [Kapitel 6: App Bar und Toolbar](actionbar.md) 
 * [Kapitel 7: RecyclerView](recycler_view.md) 
 * [Kapitel 8: AsyncTask](asynctask.md) 
-* (neu) [Kapitel 9: Serialisierung und Input- / OutputStreams](serialisierung.md)
-* (neu) [Kapitel 10: Singleton](singleton.md)
+
+
 
 
 ----
