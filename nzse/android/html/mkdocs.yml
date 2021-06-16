@@ -14,9 +14,7 @@ nav:
   - 'App Bar': 'actionbar.md'
   - 'RecyclerView': 'recycler_view.md'
   - 'AsyncTask': 'asynctask.md'
-
-
-  - 'Thread Communication': 'thread_communication.md'
+  - 'Threads & Communication': 'thread_communication.md'
   
 
 

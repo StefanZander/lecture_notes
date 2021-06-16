@@ -40,6 +40,10 @@ Der letzte Praktikumstermin ist zweitgeteilt:
     - Alles was Sie nicht präsentieren kann nicht gewertet werden! Achten Sie deshalb darauf keine Zeit zu vergeuden.
     - Stellen Sie VOR Beginn der Praktikumseinheit sicher, dass App und Server laufen und die Kommunikation funktioniert.
     - Bereiten Sie die Demonstration so vor, als würde die App das **erste Mal gestartet** werden. Löschen Sie alle Daten und Einstellungen vorab und versetzen Sie die App in den >>Urzustand<<.
+    
+        !!! note
+            **Hinweis**: Langes Drücken auf das App-Icon ermöglicht das Löschen des Cache und der App.-Daten (Storage) bei den meisten Adroid-Geräten.
+
     - Die Präsentation verläuft **interaktiv**, d.h., ich werde während der Präsentation Fragen stellen oder Sie bitten bestimmte Funktionen zu demonstrieren. Setzen Sie dies schnell und zielgerichtet um. 
 
     !!! warning

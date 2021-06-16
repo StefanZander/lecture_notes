@@ -31,7 +31,8 @@ Die Informationen stammen an vielen Stellen aus englischsprachigen Primärquelle
 * [Kapitel 5: Daten-Speicher und Persistenz](data_storage.md) 
 * [Kapitel 6: App Bar und Toolbar](actionbar.md) 
 * [Kapitel 7: RecyclerView](recycler_view.md) 
-* [Kapitel 8: AsyncTask](asynctask.md) 
+* [Kapitel 8a: AsyncTask](asynctask.md) 
+* [Kapitel 8b: Threads und Thread Kommunikation](thread_communication.md) (*neu*)
 
 
 
