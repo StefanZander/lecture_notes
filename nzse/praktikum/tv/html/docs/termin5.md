@@ -51,7 +51,7 @@ Der letzte Praktikumstermin ist zweitgeteilt:
 
 2. **Usability Test und Inspection**
     - Führen Sie die Usability Evaluation und das Design Review wie im weiteren Verlauf beschrieben durch
-    - Fügen Sie die zu erstellenden Artefakte (Protokolle etc.) der Projektmappe hinzu und laden sie diese bis zum __Ende (SO), 20:00 Uhr der jeweiligen Praktikumswoche__ in Moodle hoch. ==Verspätete Abgaben können nicht gewertet werden!==
+    - Fügen Sie alle zu erstellenden Artefakte (Testprotokolle etc.) der Projektmappe hinzu und laden sie diese bis zum __Ende (SO), 20:00 Uhr der darauf folgenden Woche__ in Moodle hoch. ==Verspätete Abgaben können nicht gewertet werden!==
     - Bereiten Sie die __Testprotokolle__ vor anhand der folgenden Test-Aufgaben und der [vorgegebenen Checklisten](https://lernen.h-da.de/mod/resource/view.php?id=218415), d.h. betrachten Sie die Checklisten als "Rohmaterial" und machen Sie daraus Protokollformulare.   
     - Die Testprotokolle sollen den Entwickler*innen bei der weiteren Verbesserung helfen (_keine Angst, die Verbesserungen müssen Sie im Praktikum nicht mehr umsetzen..._).
     - Die Vorlage zur Evaluation der Fernbedienungen findet sich in Moodle:  
@@ -83,11 +83,15 @@ Zum **Usability Test** tun Sie sich mit Ihrer Peer-Gruppe zusammen:
 !!! warning
     **Corona-Update**  
     Führen Sie die **Usability Inspection** und das **Design Review** für Ihre **eigene Applikation** durch. Beurteilen Sie die verschiedenen Aspekte kritisch und hinterfragen Sie getroffene Designentscheidungen. Dies kann natürlich keinen echten Durchlauf mit externen Personen ersetzen, aber Sie bekommen so zumindest eine Vorstellung davon wie beide Methoden durchgeführt werden.
+    
+    Falls Sie die Möglichkeit haben, dann können Sie die Inspektion stattdessen für die **App einer anderen Gruppe** durchführen. Dies kommt einer echten Usability Inspektion natürlich wesentlich näher. 
+    Dokumentieren Sie alles ausführlich (inkl. Metadaten zur Durchführung) und stellen Sie das Inspektionsprotokoll der anderen PR-Gruppe zur Verfügung. Fügen Sie beide Protokolle (das, welches Sie für die andere Gruppe erstellt haben und das von der anderen Gruppe erhaltene Protokoll) Ihrer Projektmappe hinzu.
 
-Wenden Sie die „**Checkliste zur Usability Inspection**“ auf die mobile App Ihrer Peer-Gruppe an. Übertragen Sie die allgemeinen Regeln sinnvoll auf die Applikation. Protokollieren Sie eventuelle Probleme und Defizite so, dass die Entwickler verstehen, inwiefern die App verbessert werden sollte.
+    
+Wenden Sie die "**Checkliste zur Usability Inspection**" auf die mobile App Ihrer Peer-Gruppe an. Übertragen Sie die allgemeinen Regeln sinnvoll auf die Applikation. Protokollieren Sie eventuelle Probleme und Defizite so, dass die Entwickler verstehen, inwiefern die App verbessert werden sollte.
 
 ### Design Review
-Bewerten Sie die Fernbedienung Ihrer Nachbargruppe unter Design Aspekten:
+Bewerten Sie die Fernbedienung Ihrer Peer-Gruppe unter Design Aspekten:
 
 1. Schrift gut lesbar?
 2. Icons gut erkennbar und Funktion verständlich?
@@ -122,4 +126,4 @@ Die folgenden Ergebnisse müssen für eine erfolgreiche Testierung der Praktikum
     - [x] Design Review
     - [x] Liste mit Verbesserungen (--> *abgeleitet aus den unterschiedlichen Protokollen*)
 
-    **Ohne Testprotokolle keine Prüfungszulassung!**
+    **Ohne Testprotokolle ist kein erfolgreicher Abschluss möglich!**

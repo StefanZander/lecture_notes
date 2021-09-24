@@ -20,7 +20,7 @@ theme:
     tabs: false
 
   font:
-    text: 'Barlow Semi Condensed'
+    text: 'Roboto Condensed'
     code: 'Fira mono'
 
 extra_css:

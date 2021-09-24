@@ -12,7 +12,7 @@ Häufig stammen diese Fragen aus E-Mails oder persönlichen Gesprächen mit den 
 Die Informationen auf dieser Seite werden kontinuierlich erweitert und gepflegt.
 
 
-## Fragen und Antworten
+<!-- ## Fragen und Antworten -->
 
 
 
@@ -74,6 +74,26 @@ Die Informationen auf dieser Seite werden kontinuierlich erweitert und gepflegt.
      _(Quelle: E-Mail aus dem Prüfungssekretariat von Fr. Kim vom 29.01.2019)_
 
 
+### Während der Praxisphase
+
+??? question "Muss ich mich wöchentlich bei meiner/m Hochschulbetreuer:in melden?"
+     Das hängt von der jeweiligen Betreuer:in ab.
+
+     Bei mir (Prof. Zander) ist das nicht notwendig. Es genügt mir ein ausführlicher Zwischenbereicht zu den wichtigsten Erfahrungen während der Praxisphase.
+
+
+??? question "Gibt es seitens der Hochschule administrative Verpflichtungen während der Praxisphase?"
+     Für das Praxismodul selbst gibt es keine. 
+
+     Davon unberührt sind individuelle Vereibarungen mit der Betreuer:in und/oder administrativen Organen des Fachbereichs.
+
+??? question "Kann ich mich bei Problemen / Schwierigkeiten mit dem Unternehmen oder  Vorgesetzen an meine/n hda-Betreuer:in wenden?"
+     Selbstverständlich.
+
+     Die Rolle der/s Betreuer:in ist Sie während der Praxisphase zu unterstützen und Ihnen für Fragen / Probleme / Schwierigkeiten zur Seite zu stehen. Die/Der Betreuer:in fungiert als pers. Mentor:in während der Praxisphase und vertritt Ihre Interessen gegenüber dem Unternehmen.
+
+     **Zögern Sie also nicht, bei Problemen etc. Ihre/n Betreuer:in zu kontaktieren**.
+
 
 ### Abschluss der Praxisphase
 
@@ -93,7 +113,16 @@ Die Informationen auf dieser Seite werden kontinuierlich erweitert und gepflegt.
 
      Die **Bachelorarbeit** dagegen ist eine wissenschaftliche Arbeit, deren Schwerpunktsetzung, Struktur und Ausarbeitung nicht oder nur zu sehr geringen Anteilen mit dem Praxisbericht vereinbar ist. Eine wissenschaftliche Arbeit ist _kein_(!) Bericht. Sie dürfen allerdings _geeignete(!)_ Texte aus dem Praxisbericht in der BA verwenden, müssen diese aber entsprechend durch Angabe der Quelle kennzeichnen.
 
+??? question "Wann ist der Abgabetermin für den Praktikumsbericht?"
+     Der Praktikumsbericht ist zeitnah nach Ablauf des Praktikums über den Moodle-Kurs der LVA einzureichen; hierfür gibt es eine eigene Aktivität in welcher sowohl der Praktikumsbericht als auch der 360h-Nachweis hochgeladen werden können.
 
+??? question "Es wird von der Hochschule verlangt, dass das Unternehmen eine Bescheinigung erstellt, in der die geleisteten Stunden bestätigt werden. Gibt es hierfür eine Vorlage oder ähnliches, die dem Unternehmen vorleget werden kann?"
+     Nein, eine spezielle Vorlage gibt es nicht.
+
+     Das Unternehmen muss schriftlich bestätigen, dass die im Rahmen des Pflichtpraktikums zu erbringenden 360 Stunden geleistet wurden. Dieses Schreiben ist seitens des Unternehmens zu unterzeichnen und mit dem Firmenstempel zu versehen.
+
+??? question "In welchem Umfang und nach welcher Struktur muss der Praktikumsbericht angefertigt werden?"
+     Detaillierte Informationen finden sich auf der entsprechenden [Berichtsseite](bericht.md).
 
 
 

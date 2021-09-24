@@ -27,7 +27,7 @@ Please be aware that a scientific presentation follows a set of **rules and guid
 
 1. Prepare the scientific presentation with a tool of your choice
       
-2. Upload your presentation before the final presentation deadline to the SWCS Moodle course (*optional*)
+2. Send your presentation before the final presentation deadline to the instructor via Email
 
 3. Attend the final presentations and present your work in class
 
@@ -35,7 +35,7 @@ Please be aware that a scientific presentation follows a set of **rules and guid
 ### Requirements
 
 - Time slot per group:
-    - Talk: **10 Min.** – *sharp*!
+    - Talk: **12 Min.** – *sharp*!
     - Questions and Feedback: approx. 8-10 Min.
 
 ## Assessment

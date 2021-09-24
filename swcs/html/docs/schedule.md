@@ -20,7 +20,7 @@ The following syllabus information intend to help you structure your work and ac
 - Week 11: Integrate feedback + paper revision + start preparing the final presentations
 - Week 12: Final presentations ([MS5](milestone5.md)) --- _Deadline: 07.07._
 <!-- - Week 13: Paper revision -->
-- Week 13: Finalization and submission of research paper ([MS6](milestone6.md)) --- _Deadline: 16.07._
+- Week 15: Finalization and submission of research paper ([MS6](milestone6.md)) --- _Deadline: 18.07. (EOD)_
 
 
 

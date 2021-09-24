@@ -7,5 +7,6 @@ Studienrechtlich-relevanten und administrative Informationen stehen auf den [Sei
 <!-- ## Praxisphase -->
 
 * [Allgemeine Informationen zur Praxisphase](./praxisphase/allg_informationen.md) 
+* [Der Start im Unternehmen](./praxisphase/start_im_unternehmen.md) (_wichtige Information_)
 * [Praktikumsbericht](./praxisphase/bericht.md)
 * [Häufig gestellte Fragen und Antworten](./praxisphase/questions_answers.md)
