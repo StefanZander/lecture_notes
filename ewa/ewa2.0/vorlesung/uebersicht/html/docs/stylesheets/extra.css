@@ -1,0 +1,19 @@
+.md-typeset h1 {
+    font-size: 4em;
+}
+
+
+
+.md-typeset h3 {
+    /* background-color: rgb(247, 92, 25); */
+    background-color: teal;
+    color: white;
+    padding-left: 0.5rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    /* font-size: 1.2rem !important; */
+}
+
+.hugo {
+    color:rgb(247, 92, 25);
+}
