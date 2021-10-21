@@ -33,3 +33,5 @@
 * Absichtliches (intentionales) und beiläufiges (inzidentelles und implizites) Lernen
 * Individuelles oder kollektives Lernen
 
+
+
