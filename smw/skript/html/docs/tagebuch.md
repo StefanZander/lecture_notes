@@ -28,16 +28,16 @@
 : * Nachfrage warum nur 1/10 Studierenden die ÜE bearbeitet hat
 : * 2 Studierende gaben zeitliche Konflikte an; Rest enthielt sich der Rückmeldung (leider!) -->
 
-#### 2021-05-04
+<!-- #### 2021-05-04
 : Demonstration zu Content-Negotiation 
 : Fortsetzung technische Grundlagen semantischer Wissensgraphen
 : Start Semantic MediaWiki
-: Live-System verfügbar unter: <https://smw-demo.fbi.h-da.de/index.php>
+: Live-System verfügbar unter: <https://smw-demo.fbi.h-da.de/index.php> -->
 
 
 
 
-#### 2021-04-27
+<!-- #### 2021-04-27
 : Besprechung Modellierungsbeispiel aus UE1
 : Detaillierte Auseinandersetzung mit Maschinen-verarbeitbarer Semantik
 : Bestandteile und Grundkonzepte semantischer Wissensgraphen 
@@ -46,15 +46,15 @@
 : * UIRs & IRIs
 : * logisches Datenmodell
 : Kodierung semantischer Wissensgraphen mittels RDF
-: Ontologien, Ontologie-sprachen und Beispiele aus Zeitgründen nicht behandelt
+: Ontologien, Ontologie-sprachen und Beispiele aus Zeitgründen nicht behandelt -->
 
 
-#### 2021-04-20
+<!-- #### 2021-04-20
 : Einführung Wissensmanagement
 : * Was ist Wissen
 : * Wissensmodelle
 : * Rolle von Wissensmanagement in Organisationen bzw. warum Wissensmanagement für Organisationen immer wichtiger wird
-: Übungen besprochen
+: Übungen besprochen -->
 
 
 #### 2021-04-13

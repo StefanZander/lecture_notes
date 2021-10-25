@@ -26,10 +26,21 @@
 * Alles was uns im Laufe unseres Lebens widerfährt
 * umfasst die Aufnahme von Informationen, deren Auswertung und Umsetzung sowie die Äußerung von Reaktionen, die die Umwelt beeinflussen
 
-### Was verstehen wir unter dem Begriff Lernen?
+### Was verstehen wir unter dem Begriff Lernen ?
 
 * Erwerb von geistigen, körperlichen, sozialen Kenntnissen, Fähigkeiten und Fertigkeiten
 * Durch das Lernen verändern sich das Verhalten, Denken oder Fühlen
 * Absichtliches (intentionales) und beiläufiges (inzidentelles und implizites) Lernen
 * Individuelles oder kollektives Lernen
 
+
+### Wie lernen wir ?
+
+* Das Gehirn ist unser aktivstes Organ
+* Das Gehirn lernt nur das, was für uns Bedeutung hat.
+  * Was Bedeutung hat, wird aufgrund vorhandener Kenntnisse und Erfahrungen entschieden
+
+### Wie Lernen funktioniert
+
+* Gedächtnis entsteht, wenn zwei Nervenzellen, die an der Verarbeitung des Gelernten beteiligt sind, ihre synaptischen Verbindungen stärken. Dies erhöht die Wahrscheinlichkeit, dass sie in Zukunft gemeinsam aktiv sind.
+* Wenn wir eine neue Erfahrung machen, wandeln sich die Synapsen --> ==Gedächtnis entsteht==

@@ -11,8 +11,19 @@
     - Warum wird WM mit fortschreitender Digitalisierung immer wichtiger ?
 
 
+<!-- !!! warning
+    Der aktualisierte Foliensatz zum 1. Kapitel findet sich im Moodle-Kurs der LVA sowie online als [HTML-Präsentation](https://projects.fbi.h-da.de/~s.zander/smw/html/chapters/1/01_smw_intro_new.html) -->
+
+
+
+Der aktualisierte **Foliensatz** zu Kapitel 1 ist im Moodle-Kurs der Veranstaltung hinterlegt. 
+: [Kapitel 1: Einführung in das Wissensmanagement](https://lernen.h-da.de/mod/resource/view.php?id=517924)
+
 !!! warning
-    Der aktualisierte Foliensatz zum 1. Kapitel findet sich im Moodle-Kurs der LVA sowie online als [HTML-Präsentation](https://projects.fbi.h-da.de/~s.zander/smw/html/chapters/1/01_smw_intro_new.html)
+    **Neue Foliensätze**  
+    Seit dem SoSe 2021 sind die **Lehrinhalte in Folienform** aufbereitet. 
+    Die bestehenden Skript-Inhalte bleiben für das Selbststudium weiterhin online verfügbar, werden jedoch nicht ergänzt oder überarbeitet.  
+    Prüfungsrelevant sind die hier verlinkten bzw. im Moodle-Kurs hinterlegten Foliensätze.
 
 
 ### Gliederung

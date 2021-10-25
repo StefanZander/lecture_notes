@@ -2,27 +2,27 @@
 
 
 ### Allgemeines
-: Durchführung in 2er oder 3er Teams; Konstellation und Thema bitte in __Moodle__ hinterlegen ([-->Link](https://lernen.h-da.de/mod/data/view.php?id=357528))
+: Durchführung in **3er Teams**; Konstellation und Thema bitte in __Moodle__ hinterlegen ([-->Link](https://lernen.h-da.de/mod/data/view.php?id=357528))
 
-: Praktische Umsetzung eines Wissensmanagementproblems mittels Semantic MediaWiki mit allen verfügbaren Sprachelementen und einschlägigen Erweiterungen
+: **Praktische Umsetzung** eines Wissensmanagementproblems mittels Semantic MediaWiki mit allen verfügbaren Sprachelementen und einschlägigen Erweiterungen
 
-: Die Festlegung des Wissensmanagementproblems und der Domäne erfolgt in Abstimmung mit dem Betreuer
+: Die Festlegung des **Wissensmanagementproblems** und der Domäne (=Anwendungsgebiet) erfolgt in Abstimmung mit dem Betreuer
 
-: Präsention der Umsetzung am Semesterende via BBB
+: **Präsention** der Umsetzung am Semesterende via BBB
 
 
 ### Themen
 
 Das Anwendungsgebiet (=*Gegenstandsbereich*) für das Semesterprojekt können Sie frei wählen.
 
-Sofern Sie kein eigenes Thema bearbeiten wollen, können Sie eines der im Folgendenen dargestellten Themen wählen:
+Sofern Sie _kein_ eigenes Thema bearbeiten wollen, können Sie eines der im Folgendenen dargestellten Themen wählen:
 
 !!! example
     __Themenliste__
 
     - Abbildung von Fachbereichsrats-Protokollen in Semantic MediaWiki
     - Realisierung einer Literaturbeschaffungsplattform inkl. Bestellübersichten für den Fachbereich
-    - Realisierung einer Bewertungsplattform für studentische Abschlussarbeiten inkl. Studierendenverwaltung und PDF-Ausgabe des Beurteilungsbogens
+    - Realisierung einer Bewertungsplattform für studentische Abschlussarbeiten ggf. mit Studierendenverwaltung und PDF-Ausgabe des Beurteilungsbogens
     - Verwaltung von Studierendenanmeldungen für Praxisphase und Abschlussarbeiten (ggf. gekoppelt mit Bewertungsplattform)
     - ==++Neu++== Gemeinsame Plattform für Studierende zum Finden von Praktikumsstellen und Bewertung selbiger (_dieses System soll dann für alle Studierende freigeschaltet werden, so dass dies die Suche nach passenden Praktikumsstellen vereinfacht bzw. Studierende dabei unterstützt, die passende Stelle zu finden._)
 
@@ -47,25 +47,27 @@ Für jedes Semesterprojekt sind folgende Meilensteine zu erfüllen
 
 ### Arbeitspakete
 
-Für jedes Semesterprojekt sind folgende Arbeitspakete durchzuführen bzw. Meilensteine zu erfüllen.
+Für jedes Semesterprojekt sind folgende **Arbeitspakete** durchzuführen bzw. Meilensteine zu erfüllen.
 
-Die Nummerierung lässt keine Rückschlüsse auf die Bearbeitungsreihenfolge zu. Mit Ausnahme von AP1 ist es vorteilhaft alle weiteren Arbeitspakete inkrementell und iterativ zu bearbeiten. 
+Die Nummerierung lässt keine Rückschlüsse auf die Bearbeitungsreihenfolge zu. Mit Ausnahme von AP1 ist es vorteilhaft, alle weiteren Arbeitspakete inkrementell und iterativ zu bearbeiten. 
 
 
 #### AP0: Installtation Semantic MediaWiki
 : Installation eines Semantic MediaWiki Systems mit einschlägigen Erweiterungen  
 
     !!!note 
-        __Hinweis__: Falls Sie über keine eigene Installation verfügen dann kontaktieren Sie uns bitte; wir werden IT-Services bitten, eine Instanz aufzusetzen. Auf diese Instanz kann allerdings nur mittel VPN zugegriffen werden
+        **Über den Fachbereich gehostete SMW-Instanzen**  
+        Falls Sie über keine eigene Installation verfügen dann kontaktieren Sie uns bitte; wir werden IT-Services bitten, eine über den Fachbereich **gehostete Instanz** aufzusetzen. Auf diese Instanz kann allerdings *nur* mittel **VPN** zugegriffen werden und das Einspielen von Erweiterungen (=Extensions) ist nicht möglich.
 
 #### AP1: Problembeschreibung und Wissensmanagementfragestellung
 <!-- AP1: Problembeschreibung und Wissensmanagementfragestellung -->
-: Definition der Problemstellung und der Wissensmanagementfragestellungen, d.h., eine Darlegung, welche Informationsbedürfnisse existieren sowie eine Darlegung der Anwendungsfälle, in denen diese auftreten (vgl. Anwendungszenariobeschreibungen in NZSE) auf ==1 DIN-A4-Seite==.
+: Definition der Problemstellung und der Wissensmanagementfragestellungen, d.h., legen Sie dar, welche ==Informationsbedürfnisse== existieren und in welchen Anwendungsfällen diese auftreten (vgl. Anwendungszenariobeschreibungen in NZSE).
 : Wichtig: Berücksichtigen Sie hier auch ein ==Rollenkonzept==, d.h., welche Benutzer haben in welcher Rolle welches Informationsbedürfnis und überlegen Sie auch, wie Sie dieses in geeigneter Weise adressieren können. 
-: Upload der Seite in Moodle bis zum Termin #6.
+: Tragen Sie diese Informationen in die entspr. Aktivität in Moodle ein.
+: Verfeinern Sie die Beschreibungen ggf. mit Fortschreiten des Semesterprojektes iterativ
 
 #### AP2: Interaktionskonzept
-: Erstellung eines ==Interaktionskonzepts==, d.h., eine Darlegung, mit welchen technischen Mitteln (Formularen / Ansichten etc.) die Informationsbedürfnisse bearbeitet bzw. befriedet werden können.
+: Überlegen Sie sich ein ==Interaktionskonzept==, d.h., eine Darlegung, mit welchen technischen Mitteln (Formularen / Ansichten etc.) die Informationsbedürfnisse addressiert bzw. befriedet werden können.
 : Darlegung, welche Oberflächen für welche User (Rollen) bestimmt sind und welche Informationsbedürfnisse diese adressieren.
 
 #### AP3: Daten- und Domänenmodelle
@@ -80,10 +82,10 @@ Die Nummerierung lässt keine Rückschlüsse auf die Bearbeitungsreihenfolge zu.
     - Queries  
     - Landing Pages  
     - etc.
-: Identifizierte NutzerInnen sollen diese für die Erstellung neuer und Anpassung bestehender Informationen verwenden können.
+: Identifizierte NutzerInnen (vgl. ==Rollenkonzept==) sollen diese für die Erstellung neuer und Anpassung bestehender Informationen verwenden können.
 
 #### AP5: Abschlusspräsentation
-: Zusammenführung aller Arbeiten und Erkenntnisse in einer ==10-minütigen Abschlusspräsentation== inkl. Live-Demonstration.
+: Zusammenführung aller Arbeiten und Erkenntnisse in einer ==10-12-minütigen Live-Demonstration==.
 
 
 

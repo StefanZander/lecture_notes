@@ -4,6 +4,8 @@
 
 Belegnummer:	30.2626
 
+Discord-Channel: https://discord.gg/XpyrMfkfRQ
+
  <!-- Welcome to the course pages of the module "Introduction to Ontology-based Knowledge Management with Semantic MediaWiki". -->
 
 <!-- Stand: 2019-03-18 -->
@@ -55,7 +57,7 @@ The information on this site is separated into
 * [Kapitel #2: Technologische Grundlagen semantischer Wissensrepräsentationsmodelle](./chapters/2/overview.md) 
 <!-- * [Kapitel #3: Semantische Wissensrepräsentation](./chapters/2/overview.md)  -->
 * [Kapitel #3: Semantic MediaWiki](./chapters/3/overview.md) 
-* [Kapitel #4: Semantic MediaWiki Extensions zum Ontology-Engineering](./chapters/4/overview.md) (_im Aufbau_)
+* [Kapitel #4: Semantic MediaWiki Extensions zum Ontology-Engineering](./chapters/4/overview.md)
 * ~~[Kapitel #5: Knowledge Graph Engineering](index.md)~~ (_nicht im SoSe 2021_)
 
 

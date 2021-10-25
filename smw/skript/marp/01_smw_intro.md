@@ -299,7 +299,7 @@ __Lehrvideo zur Wissenstreppe__ Die einzelnen Stufen der Wissenstreppe werden au
 ::: 1st-col {.left}
 Das SECI-Modell stellt das implizite, d.h., **Personen-gebundene** und **schwer verbalisierbare Erfahrungswissen** von Mitarbeitern in den Mittelpunkt. Es erläutert, _wie dieses Wissen für eine Organisation aktiviert_ werden kann.
 
-Es unterscheidet sich von anderen Wissensmanagement dadurch, dass es den Fokus auf eine einzige Fragestellung lenkt, nämlich -- _wie neues Wissen in Organisationen entsteht_.
+Es unterscheidet sich von anderen Wissensmanagementansätzen dadurch, dass es den Fokus auf eine einzige Fragestellung lenkt, nämlich -- _wie neues Wissen in Organisationen entsteht_.
 
 Neues Wissen entsteht in einem **kontinuierlichen Transformationsprozess** zwischen dem _impliziten_ und dem _expliziten Wissen_, d.h., die Wissengenerierung beruht auf einem Prozess der dynamischen Transformation von implizitem zu explizitem Wissen und vice versa.
 
