@@ -44,3 +44,4 @@
 
 * Gedächtnis entsteht, wenn zwei Nervenzellen, die an der Verarbeitung des Gelernten beteiligt sind, ihre synaptischen Verbindungen stärken. Dies erhöht die Wahrscheinlichkeit, dass sie in Zukunft gemeinsam aktiv sind.
 * Wenn wir eine neue Erfahrung machen, wandeln sich die Synapsen --> ==Gedächtnis entsteht==
+
