@@ -299,7 +299,7 @@ __Lehrvideo zur Wissenstreppe__ Die einzelnen Stufen der Wissenstreppe werden au
 ::: 1st-col {.left}
 Das SECI-Modell stellt das implizite, d.h., **Personen-gebundene** und **schwer verbalisierbare Erfahrungswissen** von Mitarbeitern in den Mittelpunkt. Es erläutert, _wie dieses Wissen für eine Organisation aktiviert_ werden kann.
 
-Es unterscheidet sich von anderen Wissensmanagementansätzen dadurch, dass es den Fokus auf eine einzige Fragestellung lenkt, nämlich -- _wie neues Wissen in Organisationen entsteht_.
+Es unterscheidet sich von anderen Wissensmanagementmodellen dadurch, dass es den Fokus auf eine einzige Fragestellung lenkt, nämlich -- _wie neues Wissen in Organisationen entsteht_.
 
 Neues Wissen entsteht in einem **kontinuierlichen Transformationsprozess** zwischen dem _impliziten_ und dem _expliziten Wissen_, d.h., die Wissengenerierung beruht auf einem Prozess der dynamischen Transformation von implizitem zu explizitem Wissen und vice versa.
 
@@ -415,9 +415,9 @@ Wissensmanagement^1^ dient dazu{.skip}
 - Einkauf von Lizenzen und Leistungen, obwohl eigene Entwicklungen (Produkte, Services) bestehen
 - Informationsüberlastung auf allen Ebenen
 - Projekterfahrungen werden nicht dokumentiert
-- mangelnde Transparenz über externes Wissen (Internet, Dokumente, Experten, Trends, Standards)
-- Interne Experten sind nicht bekannt
-- Zentrales Wissen geht verloren (~> Expertenverlust)
+- mangelnde Transparenz über externes Wissen (Internet, Dokumente, ExpertInnen, Trends, Standards)
+- Interne ExpertInnen sind nicht bekannt
+- Zentrales Wissen geht verloren (~> ExpertInnenverlust)
 :::
 ::::
 :::::
@@ -532,8 +532,9 @@ Quelle: TRENDREPORT “Auf Wissen bauen – mit systematischem Wissensmanagement
 ---
 # Die Rolle der Mitarbeiter
 
-:::: equalcolumns
-:::
+::::: columns
+:::: single
+::: blue
 __"Neue" Eigenschaften__
 
 - Der Mitarbeiter ist _Know-How Träger_
@@ -543,7 +544,9 @@ __"Neue" Eigenschaften__
 - Sie sind _aktiv_ in den Wissensprozessen eingebunden
 - Ein offener Austausch wird gefördert
 :::
-:::
+::::
+:::: single
+::: green
 __...und ihre Auswirkungen__
 
 - Hohe Wertschätzung der einzelnen Mitarbeiter
@@ -551,7 +554,9 @@ __...und ihre Auswirkungen__
 - Erhöhtes Zusammengehörigkeitsgefühl
 - Höhere Identifikation mit der Firma, weniger Fluktuation
 - Freierer Umgang mit Ideen
+:::
 ::::
+:::::
 
 ::: footnotes
 Quelle: https://de.slideshare.net/mcwyrsch/wissensmanagement-in-unternehmen

@@ -311,7 +311,7 @@ __Lehrvideo zur Wissenstreppe__: Die einzelnen Stufen der Wissenstreppe werden a
 ::: 1st-col {.left}
 Das SECI-Modell stellt das implizite, d.h., **Personen-gebundene** und **schwer verbalisierbare Erfahrungswissen** von Mitarbeitern in den Mittelpunkt. Es erläutert, _wie dieses Wissen für eine Organisation aktiviert_ werden kann.
 
-Es unterscheidet sich von anderen Wissensmanagement dadurch, dass es den Fokus auf eine einzige Fragestellung lenkt, nämlich – _wie neues Wissen in Organisationen entsteht_.
+Es unterscheidet sich von anderen Wissensmanagementmodellen dadurch, dass es den Fokus auf eine einzige Fragestellung lenkt, nämlich – _wie neues Wissen in Organisationen entsteht_.
 
 Neues Wissen entsteht in einem **kontinuierlichen Transformationsprozess** zwischen dem _impliziten_ und dem _expliziten Wissen_, d.h., die Wissengenerierung beruht auf einem Prozess der dynamischen Transformation von implizitem zu explizitem Wissen und vice versa.
 
@@ -399,10 +399,10 @@ Wissensmanagement^1^ dient dazu{.skip}
 
 
 ---
-## Typische Fragestellungen und Wissensmanagementprobleme
+# Typische Wissensmanagementfragestellungen
 
-::::: equalcolumns
-:::: 1st-column
+::::: columns
+:::: triple
 ::: blue
 **Fragestellungen**
 
@@ -418,43 +418,38 @@ Wissensmanagement^1^ dient dazu{.skip}
 
 :::
 ::::
-:::: 2nd-column
-::: green
-**Wissensmanagementprobleme**
+:::: double
+::: center
+![height:198px](./figures/discuss.jpg)
+::: 
+::: gray
+**Aufgabe**
 
-- Ausarbeitung von Ideen, Standards, Evaluationen, Projekten, Vorschlägen, welche bereits bestehen
-- Ausbildung von Fähigkeiten, die bereits in der Unternehmung vorhanden sind
-- Einkauf von Lizenzen und Leistungen, obwohl eigene Entwicklungen (Produkte, Services) bestehen
-- Informationsüberlastung auf allen Ebenen
-- Projekterfahrungen werden nicht dokumentiert
-- mangelnde Transparenz über externes Wissen (Internet, Dokumente, Experten, Trends, Standards)
-- Interne Experten sind nicht bekannt
-- Zentrales Wissen geht verloren (~> Expertenverlust)
+Diskutieren Sie die einzelnen Fragestellungen in Gruppen; jede Gruppe behandelt eine Fragestellung. Die gefundenen Antworten werden anschließend im Plenum vorgestellt und reflektiert. 
 :::
 ::::
 :::::
 
 
-
 ---
 # Typische Wissensmanagementprobleme
 
-::: twocolumns
-- Verfügbares Wissen wächst exponentiell.
-- "Halbwertszeit" bestehenden Wissens sinkt rapide.
-- Produkte und Dienstleistungen werden immer wissensintensiver in ihrer Herstellung.
-- Komplexe Mitarbeiter- und Hierarchiestrukturen und Hemmnisse bei der Verteilung von Wissen verhindern effizienten Wissensfluss im Unternehmen.
-- Wissensmanagement wird als zeit- und kostenintensiv erlebt.
-- Rein technische Lösungen verfehlen oft ihren Nutzen.
+:::: twocolumns 
+- Verfügbares Wissen wächst exponentiell
+- "Halbwertszeit" bestehenden Wissens sinkt rapide
+- Produkte und Dienstleistungen werden immer wissensintensiver in ihrer Herstellung
+- Komplexe Mitarbeiter- und Hierarchiestrukturen sowie Hemmnisse bei der Verteilung von Wissen verhindern effizienten Wissensfluss im Unternehmen
+- Wissensmanagement wird als zeit- und kostenintensiv erlebt
+- Rein technische Lösungen verfehlen oft ihren Nutzen
 - Ausarbeitung von Ideen, Standards, Evaluationen, Projekten, Vorschlägen, welche bereits bestehen
 - Ausbildung von Fähigkeiten, die bereits in der Unternehmung vorhanden sind
 - Einkauf von Lizenzen und Leistungen, obwohl eigene Entwicklungen (Produkte, Services) bestehen
 - Informationsüberlastung auf allen Ebenen
 - Projekterfahrungen werden nicht dokumentiert
-- mangelnde Transparenz über externes Wissen (Internet, Dokumente, Experten, Trends, Standards)
-- Interne Experten sind nicht bekannt
-- Zentrales Wissen geht verloren (~> Expertenverlust)
-:::
+- mangelnde Transparenz über externes Wissen (Internet, Dokumente, ExpertInnen, Trends, Standards)
+- Interne ExpertInnen sind nicht bekannt
+- Zentrales Wissen geht verloren (~> ExpertInnenverlust)
+::::
 
 
 
@@ -479,6 +474,8 @@ in Anlehnung an: http://strategie-spektren.de/innovation/aufgaben-des-wissensman
 ---
 # Weitere typische Aufgaben des Wissensmanagements
 
+::::: columns
+:::: single
 - Mitarbeiterwissen verfügbar machen
 - Benennung und Strukturierung von Wissen
 - Wissensweitergabe ermöglichen und fördern
@@ -489,7 +486,13 @@ in Anlehnung an: http://strategie-spektren.de/innovation/aufgaben-des-wissensman
 - Transfer von Wissen (vor Ausscheiden)
 - Wiederkehrende Fragen (FAQ)
 - Befähigung zur Bewältigung von Aufgaben
-
+::::
+:::: single
+::: center
+![](./figures/brain.jpg)
+:::
+::::
+:::::
 
 
 ---
@@ -551,8 +554,9 @@ Quelle: TRENDREPORT “Auf Wissen bauen – mit systematischem Wissensmanagement
 <!-- footer: Prof. Dr. Stefan Zander -->
 # Die Rolle der Mitarbeiter
 
-:::: equalcolumns
-:::
+::::: columns
+:::: single
+::: blue
 __"Neue" Eigenschaften__
 
 - Der Mitarbeiter ist _Know-How Träger_
@@ -562,7 +566,9 @@ __"Neue" Eigenschaften__
 - Sie sind aktiv in den _Wissensprozessen_ eingebunden
 - Ein _offener Austausch_ wird gefördert
 :::
-:::
+::::
+:::: single
+::: green
 __...und ihre Auswirkungen__
 
 - Hohe Wertschätzung der einzelnen Mitarbeiter
@@ -570,7 +576,9 @@ __...und ihre Auswirkungen__
 - Erhöhtes Zusammengehörigkeitsgefühl
 - Höhere Identifikation mit der Firma, weniger Fluktuation
 - Freierer Umgang mit Ideen
+:::
 ::::
+:::::
 
 ::: footnotes
 Quelle: https://de.slideshare.net/mcwyrsch/wissensmanagement-in-unternehmen
