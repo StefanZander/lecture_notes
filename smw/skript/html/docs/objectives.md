@@ -95,7 +95,11 @@ Parallel zur Vorlesungseinheit sind **Übungsaufgaben** zu bearbeiten...
 
 <!-- idR __eine Woche Bearbeitungszeit__ bis zur nächsten Vorlesungseinheit -->
 
-Einreichung der Übungsaufgaben bis **Sonntag** der jeweiligen Vorlesungswoche via **Moodle**
+Einreichung der Übungsaufgaben bis **Sonntag, 24:00 Uhr** der jeweiligen Vorlesungswoche via **Moodle**
+
+!!! warning
+    **Verspätete Abgaben**  
+    Verspätete Abgaben und/oder Abgaben via Email werden nicht akzeptiert und mit der **Note 5** bewertet. 
 
 Mehr Infos finden sich auf den jeweiligen Übungsseiten.
 
