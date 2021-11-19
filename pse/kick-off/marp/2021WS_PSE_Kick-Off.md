@@ -73,6 +73,7 @@ Für *Studierende*, sagen Sie bitte kurz ...
 - **Alexander González Evans** (Business Development Manager) – alexander.gonzalez.evans@bccgi.com
 - **Valentino Di Leonardo** (Lead Developer) – valentino.dileonardo@bccgi.com
 - **Rittik Wystub** (Lead Developer) – rittik.wystup@bccgi.com
+- **Daniel Muri** (Cloud Specialist) – daniel.muri@bccgi.com
 
 ::: footnotes
 ^1^ <https://bccgi.eu/>

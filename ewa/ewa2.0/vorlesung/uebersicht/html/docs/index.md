@@ -104,7 +104,7 @@ EWA-Discord-Channel: <https://discord.gg/AC97TNBSJ6>
 
     - Foliensatz: Kap. 2 - 2.1 & 2.4
     - Lehrvideo: [Dynamische Webseiten I](https://electures.h-da.de/paella/ui/watch.html?id=9e9d2250-4e8c-4a2c-93e7-3e9e566d0572) – (00:00:00 – 01:24:28)
-    - Lehrvideo: [Infrastruktur und Querschnittsthemen II](https://electures.h-da.de/paella/ui/watch.html?id=f887c2ab-a21c-4bdf-8a96-547da22ff401) – (HTTP/S: 00:00:00 – 00:21:48)
+    - Für Interessierte: [Anleitungsvideo für das Debuggen mit PhpStorm und Docker](https://electures.h-da.de/paella/ui/watch.html?id=3bb6798f-b73c-41cb-a08f-362af5c56023)
 
 
 
@@ -158,18 +158,22 @@ EWA-Discord-Channel: <https://discord.gg/AC97TNBSJ6>
 
 ### Einheit #6: JavaScript – Sprachgrundlagen
 
-!!! warning "Neue, bessere Einführung in JavaScript"
+<!--
+!!! warning "Neue Einführung in JavaScript"
     __Wichtig: Hier weichen wir etwas vom Skript ab und es erfolgt eine eigene, umfassendere und tiefergehende Einführung in JavaScript.  
     Verpassen Sie also nicht die entsprechenden Vorlesungseinheiten!__
+-->
 
+!!! info 
+    Aufgrund einer Weiterbildungsmaßnahme wird diese Einheit von **Thomas Hofmann** gehalten und orientiert sich an den VO-Unterlagen.
 
-- Welche grundlegenden Unterschiede bietet JavaScript gegenüber OO-Programmiersprachen ?
+- Welche grundlegenden Konzepte unterscheiden JavaScript von gängigen OO-Programmiersprachen ?
 <!-- - Welche Datentypenarten bietet JavaScript ? -->
 - Wodurch unterscheiden sich *Primitive* von *Reference Types* ?
 - Wie behandelt JavaScript Funktionen ?
 - Welche Möglichkeiten ergeben sich aus der Behandlung von Funktionen als _"First-Class Citizen"_ ?
-- Wie werden Objekte in JavaScript erzeugt ?
-- Was sind *Constructor Functions* ?
+- Wie werden Objekte in JavaScript erzeugt und behandelt ?
+- Wie funktioniert Vererbung in JavaScript ?
 
 !!! book
     **Lehrmaterialen**
@@ -211,9 +215,14 @@ EWA-Discord-Channel: <https://discord.gg/AC97TNBSJ6>
     **Lehrmaterialen**
 
     - Online-Skript von Prof. Zander: _in der Entstehung; Link kommt noch_
-    - Quelle zu Promises
-    - Quelle zu Async/Await
-    - 
+    - Closures
+        - [MDN-Artikel zu Closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
+        - [Closures als innere Funktionen](https://www.mediaevent.de/javascript/closures.html)
+    - Gute Artikel zu Promises 
+        - [JavaScript Promises – Explain Like I'm Five](https://blog.greenroots.info/javascript-promises-explain-like-i-am-five)
+        - [JavaScript Promise Chain – The art of handling promises](https://blog.greenroots.info/javascript-promise-chain-the-art-of-handling-promises)
+    - async/await: [JavaScript async and await - in plain English, please](https://blog.greenroots.info/javascript-async-and-await-in-plain-english-please)
+    - MDN Artikel zu [Inheritance in JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Inheritance)
 
 
 ### Einheit #9: Asynchronous JavaScript and XML (AJAX)
