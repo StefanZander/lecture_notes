@@ -17,7 +17,11 @@
 
 /* Size of the slides' content area */div#p>svg>foreignObject>section{
     /* default value ws > 3em */
-    /* padding: 2.8em;  */}div#p>svg>foreignObject>section h1{font-size:calc(var(--marpit-root-font-size, 1rem) * 3.2)}div#p>svg>foreignObject>section h2{font-size:calc(var(--marpit-root-font-size, 1rem) * 2.4);color:#246 /* added to have identical color to h1 */}div#p>svg>foreignObject>section h4{color:rgb(42,104,175);font-style:normal;font-weight:400}
+    /* padding: 2.8em;  */}div#p>svg>foreignObject>section h1{font-size:calc(var(--marpit-root-font-size, 1rem) * 3.2);
+    /* background-color: rgb(10, 40, 72);
+    display: inline;
+    color: white; */font-weight:600}div#p>svg>foreignObject>section h2{font-size:calc(var(--marpit-root-font-size, 1rem) * 2.4);color:#246 /* added to have identical color to h1 */}div#p>svg>foreignObject>section h4{color:rgb(42,104,175);font-style:normal;font-weight:400}
+
 
 /* Code fragments in texts */div#p>svg>foreignObject>section code{
     /* font-family: 'Open Sans Condensed'; */font-family:'M+ 1m';
@@ -88,7 +92,7 @@
     COLUMNS
    ===========================
 */
-/* Use this for flexible columns */div#p>svg>foreignObject>section .columns{display:flex;flex-direction:row;justify-content:space-between;column-gap:2em}div#p>svg>foreignObject>section .columnsnogap{display:flex;flex-direction:row;justify-content:space-between}
+/* Use this for flexible columns */div#p>svg>foreignObject>section .columns{display:flex;flex-direction:row;justify-content:space-between;column-gap:2em}div#p>svg>foreignObject>section .columns-center{display:flex;flex-direction:row;justify-content:space-between;column-gap:2em;align-items:center}div#p>svg>foreignObject>section .columns-bottom{display:flex;flex-direction:row;justify-content:space-between;column-gap:2em;align-items:flex-end}div#p>svg>foreignObject>section .columnsnogap{display:flex;flex-direction:row;justify-content:space-between}
 
 /* determines the relative width of a single column */div#p>svg>foreignObject>section .single{flex:1 1}div#p>svg>foreignObject>section .onehalf{flex:1.5 1}div#p>svg>foreignObject>section .double{flex:2 1}div#p>svg>foreignObject>section .triple{flex:3 1}div#p>svg>foreignObject>section .quad{flex:4 1}div#p>svg>foreignObject>section .equalcolumns{display:flex;flex-direction:row;justify-content:space-between;column-gap:2em}
 
@@ -177,25 +181,32 @@
     /* border-bottom: 1px solid #1eab79; */
     /* min-width: 93%; */}div#p>svg>foreignObject>section header:after{border-bottom:1px solid #1eab79}
 
+
+/* ========================
+    GENERAL STYLING 
+   ========================  
+*/
+
+/* removes the border from boxes */div#p>svg>foreignObject>section .noborder{border:none!important}
+
+/* places flexbox content vertically centered */div#p>svg>foreignObject>section .centercontent{align-items:center}
 /**
  * @theme enable-all-auto-scaling
  * @auto-scaling true
  */
-
 /* @import 'default'; */
-
-/* @import url('user-theme2.css'); */div#p>svg>foreignObject>section[data-marpit-advanced-background=background]{columns:initial!important;display:block!important;padding:0!important}div#p>svg>foreignObject>section[data-marpit-advanced-background=background]:after,div#p>svg>foreignObject>section[data-marpit-advanced-background=background]:before,div#p>svg>foreignObject>section[data-marpit-advanced-background=content]:after,div#p>svg>foreignObject>section[data-marpit-advanced-background=content]:before{display:none!important}div#p>svg>foreignObject>section[data-marpit-advanced-background=background]>div[data-marpit-advanced-background-container]{all:initial;display:flex;flex-direction:row;height:100%;overflow:hidden;width:100%}div#p>svg>foreignObject>section[data-marpit-advanced-background=background]>div[data-marpit-advanced-background-container][data-marpit-advanced-background-direction=vertical]{flex-direction:column}div#p>svg>foreignObject>section[data-marpit-advanced-background=background][data-marpit-advanced-background-split]>div[data-marpit-advanced-background-container]{width:var(--marpit-advanced-background-split,50%)}div#p>svg>foreignObject>section[data-marpit-advanced-background=background][data-marpit-advanced-background-split=right]>div[data-marpit-advanced-background-container]{margin-left:calc(100% - var(--marpit-advanced-background-split, 50%))}div#p>svg>foreignObject>section[data-marpit-advanced-background=background]>div[data-marpit-advanced-background-container]>figure{all:initial;background-position:center;background-repeat:no-repeat;background-size:cover;flex:auto;margin:0}div#p>svg>foreignObject>section[data-marpit-advanced-background=content],div#p>svg>foreignObject>section[data-marpit-advanced-background=pseudo]{background:transparent!important}div#p>svg>foreignObject>section[data-marpit-advanced-background=pseudo],div#p>svg[data-marpit-svg]>foreignObject[data-marpit-advanced-background=pseudo]{pointer-events:none!important}div#p>svg>foreignObject>section[data-marpit-advanced-background-split]{width:100%;height:100%}</style></head><body><div class="bespoke-marp-osc"><button data-bespoke-marp-osc="prev" tabindex="-1" title="Previous slide">Previous slide</button><span data-bespoke-marp-osc="page"></span><button data-bespoke-marp-osc="next" tabindex="-1" title="Next slide">Next slide</button><button data-bespoke-marp-osc="fullscreen" tabindex="-1" title="Toggle fullscreen (f)">Toggle fullscreen</button><button data-bespoke-marp-osc="presenter" tabindex="-1" title="Open presenter view (p)">Open presenter view</button></div><div id="p"><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="1" data-paginate="true" data-theme="custom-theme-roboto" data-marpit-pagination="1" data-marpit-pagination-total="3" style="--paginate:true;--theme:custom-theme-roboto;">
+/* @import url('user-theme2.css'); */div#p>svg>foreignObject>section[data-marpit-advanced-background=background]{columns:initial!important;display:block!important;padding:0!important}div#p>svg>foreignObject>section[data-marpit-advanced-background=background]:after,div#p>svg>foreignObject>section[data-marpit-advanced-background=background]:before,div#p>svg>foreignObject>section[data-marpit-advanced-background=content]:after,div#p>svg>foreignObject>section[data-marpit-advanced-background=content]:before{display:none!important}div#p>svg>foreignObject>section[data-marpit-advanced-background=background]>div[data-marpit-advanced-background-container]{all:initial;display:flex;flex-direction:row;height:100%;overflow:hidden;width:100%}div#p>svg>foreignObject>section[data-marpit-advanced-background=background]>div[data-marpit-advanced-background-container][data-marpit-advanced-background-direction=vertical]{flex-direction:column}div#p>svg>foreignObject>section[data-marpit-advanced-background=background][data-marpit-advanced-background-split]>div[data-marpit-advanced-background-container]{width:var(--marpit-advanced-background-split,50%)}div#p>svg>foreignObject>section[data-marpit-advanced-background=background][data-marpit-advanced-background-split=right]>div[data-marpit-advanced-background-container]{margin-left:calc(100% - var(--marpit-advanced-background-split, 50%))}div#p>svg>foreignObject>section[data-marpit-advanced-background=background]>div[data-marpit-advanced-background-container]>figure{all:initial;background-position:center;background-repeat:no-repeat;background-size:cover;flex:auto;margin:0}div#p>svg>foreignObject>section[data-marpit-advanced-background=content],div#p>svg>foreignObject>section[data-marpit-advanced-background=pseudo]{background:transparent!important}div#p>svg>foreignObject>section[data-marpit-advanced-background=pseudo],div#p>svg[data-marpit-svg]>foreignObject[data-marpit-advanced-background=pseudo]{pointer-events:none!important}div#p>svg>foreignObject>section[data-marpit-advanced-background-split]{width:100%;height:100%}</style></head><body><div class="bespoke-marp-osc"><button data-bespoke-marp-osc="prev" tabindex="-1" title="Previous slide">Previous slide</button><span data-bespoke-marp-osc="page"></span><button data-bespoke-marp-osc="next" tabindex="-1" title="Next slide">Next slide</button><button data-bespoke-marp-osc="fullscreen" tabindex="-1" title="Toggle fullscreen (f)">Toggle fullscreen</button><button data-bespoke-marp-osc="presenter" tabindex="-1" title="Open presenter view (p)">Open presenter view</button></div><div id="p"><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="1" data-paginate="true" data-theme="custom-theme-roboto" data-marpit-pagination="1" data-marpit-pagination-total="10" style="--paginate:true;--theme:custom-theme-roboto;">
 <h1>Entwicklung Web-basierter Anwendungen</h1>
 <h4>Prof. Dr. Stefan Linus Zander</h4>
 <p class="lightgreen Big skip">Einführung in JavaScript | Functions </p>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="2" data-paginate="true" data-header="Überblick" data-footer="Entwicklung Web-basierter Anwendungen | Einführung in JavaScript – Funktionen | Prof. Dr. Stefan Zander" data-theme="custom-theme-roboto" data-marpit-pagination="2" data-marpit-pagination-total="3" style="--paginate:true;--header:Überblick;--footer:Entwicklung Web-basierter Anwendungen | Einführung in JavaScript – Funktionen | Prof. Dr. Stefan Zander;--theme:custom-theme-roboto;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="2" data-paginate="true" data-header="Überblick" data-footer="Entwicklung Web-basierter Anwendungen | Einführung in JavaScript – Funktionen | Prof. Dr. Stefan Zander" data-theme="custom-theme-roboto" data-marpit-pagination="2" data-marpit-pagination-total="10" style="--paginate:true;--header:Überblick;--footer:Entwicklung Web-basierter Anwendungen | Einführung in JavaScript – Funktionen | Prof. Dr. Stefan Zander;--theme:custom-theme-roboto;">
 <header>Überblick</header>
 
 <h1>Outline</h1>
 <footer>Entwicklung Web-basierter Anwendungen | Einführung in JavaScript – Funktionen | Prof. Dr. Stefan Zander</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="3" data-paginate="true" data-header="Überblick" data-footer="Entwicklung Web-basierter Anwendungen | Einführung in JavaScript – Funktionen | Prof. Dr. Stefan Zander" data-theme="custom-theme-roboto" data-marpit-pagination="3" data-marpit-pagination-total="3" style="--paginate:true;--header:Überblick;--footer:Entwicklung Web-basierter Anwendungen | Einführung in JavaScript – Funktionen | Prof. Dr. Stefan Zander;--theme:custom-theme-roboto;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="3" data-paginate="true" data-header="Überblick" data-footer="Entwicklung Web-basierter Anwendungen | Einführung in JavaScript – Funktionen | Prof. Dr. Stefan Zander" data-theme="custom-theme-roboto" data-marpit-pagination="3" data-marpit-pagination-total="10" style="--paginate:true;--header:Überblick;--footer:Entwicklung Web-basierter Anwendungen | Einführung in JavaScript – Funktionen | Prof. Dr. Stefan Zander;--theme:custom-theme-roboto;">
 <header>Überblick</header>
 <h1>Foundational Concepts</h1>
 <p>Functions in JS are &quot;First-Class Citizens&quot;</p>
@@ -209,6 +220,239 @@
 <li>JS defines multiple internal properties for objects (indicated by the <code>[[...]]</code> double bracket notation)</li>
 <li>Because functions are objects, they behave differently than functions in other languages, and this behavior is central to a good understanding of JavaScript.</li>
 </ul>
+<footer>Entwicklung Web-basierter Anwendungen | Einführung in JavaScript – Funktionen | Prof. Dr. Stefan Zander</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="4" data-paginate="true" data-header="Überblick" data-footer="Entwicklung Web-basierter Anwendungen | Einführung in JavaScript – Funktionen | Prof. Dr. Stefan Zander" data-theme="custom-theme-roboto" data-marpit-pagination="4" data-marpit-pagination-total="10" style="--paginate:true;--header:Überblick;--footer:Entwicklung Web-basierter Anwendungen | Einführung in JavaScript – Funktionen | Prof. Dr. Stefan Zander;--theme:custom-theme-roboto;">
+<header>Überblick</header>
+<h1>Function Delarations vs. Function Expressions</h1>
+<div class="columns">
+<div class="single">
+<p><strong>Declaration</strong></p>
+<pre><code class="language-js"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-keyword">let</span> result = add(<span class="hljs-number">5</span>, <span class="hljs-number">5</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">add</span>(<span class="hljs-params">num1, num2</span>) </span>{
+  <span class="hljs-keyword">return</span> num1 + num2;
+}
+</span></span></foreignObject></svg></code></pre>
+<ul>
+<li>Function declaration are <strong>hoisted</strong> to the top of the context<sup>1</sup>
+<ul>
+<li>ie., the function name is known ahead of time</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="single">
+<p><strong>Expression</strong></p>
+<pre><code class="language-js"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-keyword">let</span> add = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">num1, num2</span>) </span>{ 
+  <span class="hljs-keyword">return</span> num1 + num2;
+};
+</span></span></foreignObject></svg></code></pre>
+<ul>
+<li>Function expressions are anonymous function – ie., functions without name</li>
+<li>function expression can not be hoisted; they can only be referenced through the variable</li>
+<li>Assign a function value to the variable <code>add</code></li>
+<li>Mind the semicolon (<code>;</code>) at the end of the expression</li>
+</ul>
+</div>
+</div>
+<div class="footnotes">
+<p><sup>1</sup> the context is either the function in which the declaration occurs or the global scope</p>
+</div>
+<footer>Entwicklung Web-basierter Anwendungen | Einführung in JavaScript – Funktionen | Prof. Dr. Stefan Zander</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="5" data-paginate="true" data-header="Überblick" data-footer="Entwicklung Web-basierter Anwendungen | Einführung in JavaScript – Funktionen | Prof. Dr. Stefan Zander" data-theme="custom-theme-roboto" data-marpit-pagination="5" data-marpit-pagination-total="10" style="--paginate:true;--header:Überblick;--footer:Entwicklung Web-basierter Anwendungen | Einführung in JavaScript – Funktionen | Prof. Dr. Stefan Zander;--theme:custom-theme-roboto;">
+<header>Überblick</header>
+<h1>Function Declaration vs. Function Expression</h1>
+<div class="columns">
+<div class="single">
+<pre><code class="language-js"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-comment">// ================================================</span>
+<span class="hljs-comment">// Function Declaration</span>
+<span class="hljs-comment">// ================================================</span>
+
+<span class="hljs-comment">// OK</span>
+<span class="hljs-keyword">var</span> result = add(<span class="hljs-number">5</span>, <span class="hljs-number">5</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">add</span>(<span class="hljs-params">num1, num2</span>) </span>{
+  <span class="hljs-keyword">return</span> num1 + num2;
+}
+</span></span></foreignObject></svg></code></pre>
+</div>
+<div class="single">
+<pre><code class="language-js"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-comment">// ================================================</span>
+<span class="hljs-comment">// Function Expression</span>
+<span class="hljs-comment">// ================================================</span>
+
+<span class="hljs-comment">// error!</span>
+<span class="hljs-keyword">var</span> result = add(<span class="hljs-number">5</span>, <span class="hljs-number">5</span>);
+
+<span class="hljs-keyword">var</span> add = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">num1, num2</span>) </span>{
+  <span class="hljs-keyword">return</span> num1 + num2;
+};
+</span></span></foreignObject></svg></code></pre>
+</div>
+</div>
+<footer>Entwicklung Web-basierter Anwendungen | Einführung in JavaScript – Funktionen | Prof. Dr. Stefan Zander</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="6" data-paginate="true" data-header="Überblick" data-footer="Entwicklung Web-basierter Anwendungen | Einführung in JavaScript – Funktionen | Prof. Dr. Stefan Zander" data-theme="custom-theme-roboto" data-marpit-pagination="6" data-marpit-pagination-total="10" style="--paginate:true;--header:Überblick;--footer:Entwicklung Web-basierter Anwendungen | Einführung in JavaScript – Funktionen | Prof. Dr. Stefan Zander;--theme:custom-theme-roboto;">
+<header>Überblick</header>
+<h1>What you can do with Functions in JavaScript</h1>
+<p>Since JavaScript has <em>first-class functions</em>, they can be used just as objects:</p>
+<div class="columns-center">
+<div class="double">
+<div class="blue">
+<ol class="nobottommargin">
+<li><strong>Assign a function to a variable</strong></li>
+<li><strong>Add to an object</strong></li>
+<li><strong>Pass to other functions as arguments</strong></li>
+<li><strong>Return them from functions</strong></li>
+</ol>
+</div>
+</div>
+<div class="triple red">
+<p>This makes JavaScript functions incredibly powerful</p>
+</div>
+</div>
+<footer>Entwicklung Web-basierter Anwendungen | Einführung in JavaScript – Funktionen | Prof. Dr. Stefan Zander</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="7" data-paginate="true" data-header="Überblick" data-footer="Entwicklung Web-basierter Anwendungen | Einführung in JavaScript – Funktionen | Prof. Dr. Stefan Zander" data-theme="custom-theme-roboto" data-marpit-pagination="7" data-marpit-pagination-total="10" style="--paginate:true;--header:Überblick;--footer:Entwicklung Web-basierter Anwendungen | Einführung in JavaScript – Funktionen | Prof. Dr. Stefan Zander;--theme:custom-theme-roboto;">
+<header>Überblick</header>
+<h1>Assigning a Function to a Variable</h1>
+<pre><code class="language-js"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-comment">// Example 1</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sayHi</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Hi!&quot;</span>);
+}
+
+sayHi(); <span class="hljs-comment">// outputs &quot;Hi!&quot; </span>
+
+<span class="hljs-keyword">let</span> say_something = sayHi;
+
+say_something();       <span class="hljs-comment">// outputs &quot;Hi!&quot;</span>
+</span></span></foreignObject></svg></code></pre>
+<pre><code class="language-js"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-comment">// Example 2</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">addOne</span>(<span class="hljs-params">num</span>) </span>{
+  <span class="hljs-keyword">return</span> num + <span class="hljs-number">1</span>; 
+}
+
+<span class="hljs-keyword">let</span> plusOne = addOne; 
+
+<span class="hljs-keyword">let</span> result = plusOne(<span class="hljs-number">1</span>); <span class="hljs-comment">// outputs &#x27;2&#x27;</span>
+</span></span></foreignObject></svg></code></pre>
+<footer>Entwicklung Web-basierter Anwendungen | Einführung in JavaScript – Funktionen | Prof. Dr. Stefan Zander</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="8" data-paginate="true" data-header="Überblick" data-footer="Entwicklung Web-basierter Anwendungen | Einführung in JavaScript – Funktionen | Prof. Dr. Stefan Zander" data-theme="custom-theme-roboto" data-marpit-pagination="8" data-marpit-pagination-total="10" style="--paginate:true;--header:Überblick;--footer:Entwicklung Web-basierter Anwendungen | Einführung in JavaScript – Funktionen | Prof. Dr. Stefan Zander;--theme:custom-theme-roboto;">
+<header>Überblick</header>
+<h1>Adding a Function to an Object</h1>
+<div class="columns">
+<div class="single">
+<p><strong>Methods</strong></p>
+<ul>
+<li>
+<p>A property value of type function makes the property a <strong>method</strong>.</p>
+</li>
+<li>
+<p>Methods are treated the same way as properties except for they can be executed (i.e., their value is calculated).</p>
+<pre><code class="language-js"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-keyword">var</span> person = {
+  <span class="hljs-attr">name</span>: <span class="hljs-string">&quot;Nicholas&quot;</span>, 
+  <span class="hljs-attr">sayName</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-built_in">console</span>.log(person.name); 
+  }
+};
+
+person.sayName();   <span class="hljs-comment">// outputs &quot;Nicholas&quot;</span>
+</span></span></foreignObject></svg></code></pre>
+<div class="small green noborder">
+<p><strong>Think about</strong><br />
+What is the difference between <code>person.name</code> and <code>this.name</code> ?</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="single">
+<p><strong>The <code>this</code> Object</strong></p>
+<ul>
+<li>Every scope in JS has a <code>this</code> object</li>
+<li><code>this</code> represents the calling object for the function</li>
+<li>In the global scope, <code>this</code> represents the global object<sup>1</sup></li>
+</ul>
+<pre><code class="language-js"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sayNameForAll</span>(<span class="hljs-params"></span>) </span>{ 
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">this</span>.name);
+}
+<span class="hljs-keyword">let</span> person1 = {
+  <span class="hljs-attr">name</span>: <span class="hljs-string">&quot;Nicholas&quot;</span>, 
+  <span class="hljs-attr">sayName</span>: sayNameForAll
+};
+<span class="hljs-keyword">let</span> person2 = { 
+  <span class="hljs-attr">name</span>: <span class="hljs-string">&quot;Greg&quot;</span>,
+  <span class="hljs-attr">sayName</span>: sayNameForAll
+};
+<span class="hljs-keyword">let</span> name = <span class="hljs-string">&quot;Michael&quot;</span>; 
+person1.sayName();  <span class="hljs-comment">// outputs &quot;Nicholas&quot;</span>
+person2.sayName();  <span class="hljs-comment">// outputs &quot;Greg&quot;</span>
+sayNameForAll();    <span class="hljs-comment">// outputs &quot;Michael&quot;</span>
+</span></span></foreignObject></svg></code></pre>
+</div>
+</div>
+<div class="footnotes">
+<p><sup>1</sup> The global object is the web browser <code>window</code></p>
+</div>
+<footer>Entwicklung Web-basierter Anwendungen | Einführung in JavaScript – Funktionen | Prof. Dr. Stefan Zander</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="9" data-paginate="true" data-header="Überblick" data-footer="Entwicklung Web-basierter Anwendungen | Einführung in JavaScript – Funktionen | Prof. Dr. Stefan Zander" data-theme="custom-theme-roboto" data-marpit-pagination="9" data-marpit-pagination-total="10" style="--paginate:true;--header:Überblick;--footer:Entwicklung Web-basierter Anwendungen | Einführung in JavaScript – Funktionen | Prof. Dr. Stefan Zander;--theme:custom-theme-roboto;">
+<header>Überblick</header>
+<h1>Returning a Function from a Function</h1>
+<pre><code class="language-js"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">saySomething</span>(<span class="hljs-params">name</span>) </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sayHello</span>(<span class="hljs-params"></span>) </span>{
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Hello, my name is ... &quot;</span> + name); 
+        <span class="hljs-comment">// &#x27;this.name&#x27; does not work since it looks </span>
+        <span class="hljs-comment">// for the value of a &#x27;name&#x27; property in the </span>
+        <span class="hljs-comment">// property to which saySomething was assigned to.</span>
+    };
+}
+
+<span class="hljs-keyword">var</span> a = saySomething(<span class="hljs-string">&quot;Stefan&quot;</span>); <span class="hljs-comment">// vs. var a = saySomething;</span>
+
+a(); <span class="hljs-comment">// Outputs &quot;Hello, my name is ... Stefan&quot;</span>
+</span></span></foreignObject></svg></code></pre>
+<p>Fragen:</p>
+<ul>
+<li>Warum funktioniert <code>console.log(&quot;Hello, my name is ... &quot; + this.name);</code> im obigen Beispiel nicht?</li>
+<li>Wie sähe der Funktionsaufruf aus, wenn stattdessen <code>let a = saySomething;</code> angegeben würde?</li>
+</ul>
+<footer>Entwicklung Web-basierter Anwendungen | Einführung in JavaScript – Funktionen | Prof. Dr. Stefan Zander</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="10" data-paginate="true" data-header="Überblick" data-footer="Entwicklung Web-basierter Anwendungen | Einführung in JavaScript – Funktionen | Prof. Dr. Stefan Zander" data-theme="custom-theme-roboto" data-marpit-pagination="10" data-marpit-pagination-total="10" style="--paginate:true;--header:Überblick;--footer:Entwicklung Web-basierter Anwendungen | Einführung in JavaScript – Funktionen | Prof. Dr. Stefan Zander;--theme:custom-theme-roboto;">
+<header>Überblick</header>
+<h1>Parameters in Functions</h1>
+<p>JS allows to pass any numbers of parameters to any functions since function parameters are stored in an array-like data structure called <code>arguments</code>.</p>
+<div class="columns">
+<div class="double">
+<pre><code class="language-js"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sum</span>(<span class="hljs-params"></span>) </span>{
+<span class="hljs-meta">  &quot;use strict&quot;</span>;
+  <span class="hljs-keyword">var</span> result = <span class="hljs-number">0</span>,
+      i = <span class="hljs-number">0</span>,
+      len = <span class="hljs-built_in">arguments</span>.length;
+  
+  <span class="hljs-keyword">while</span> (i &lt; len) {
+      result += <span class="hljs-built_in">arguments</span>[i];
+      i++;
+  }
+  <span class="hljs-keyword">return</span> result;
+}
+
+<span class="hljs-built_in">console</span>.log(sum(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>));         <span class="hljs-comment">// 3</span>
+<span class="hljs-built_in">console</span>.log(sum(<span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>));   <span class="hljs-comment">// 18</span>
+<span class="hljs-built_in">console</span>.log(sum(<span class="hljs-number">50</span>));           <span class="hljs-comment">// 50</span>
+<span class="hljs-built_in">console</span>.log(sum());             <span class="hljs-comment">// 0</span>
+</span></span></foreignObject></svg></code></pre>
+</div>
+<div class="single">
+<div class="blue">
+<p><strong>Function Overloading</strong></p>
+<p>Many OO-languages support function overloading (=a combination of function name plus the number and types of parameters the function expects). Since JavaScript functions can accept any numbers of parameters, they don't have signatures which means that function overloading is not possible.</p>
+</div>
+</div>
+</div>
 <footer>Entwicklung Web-basierter Anwendungen | Einführung in JavaScript – Funktionen | Prof. Dr. Stefan Zander</footer>
 </section>
 <script>!function(){"use strict";const t="marpitSVGPolyfill:setZoomFactor,",e=Symbol();let r,o;function n(n){const i="object"==typeof n&&n.target||document,a="object"==typeof n?n.zoom:n;window[e]||(Object.defineProperty(window,e,{configurable:!0,value:!0}),window.addEventListener("message",(({data:e,origin:r})=>{if(r===window.origin)try{if(e&&"string"==typeof e&&e.startsWith(t)){const[,t]=e.split(","),r=Number.parseFloat(t);Number.isNaN(r)||(o=r)}}catch(t){console.error(t)}})));let l=!1;Array.from(i.querySelectorAll("svg[data-marpit-svg]"),(t=>{var e,n,i,s;t.style.transform||(t.style.transform="translateZ(0)");const c=a||o||t.currentScale||1;r!==c&&(r=c,l=c);const d=t.getBoundingClientRect(),{length:u}=t.children;for(let r=0;r<u;r+=1){const o=t.children[r],a=o.getScreenCTM();if(a){const t=null!==(n=null===(e=o.x)||void 0===e?void 0:e.baseVal.value)&&void 0!==n?n:0,r=null!==(s=null===(i=o.y)||void 0===i?void 0:i.baseVal.value)&&void 0!==s?s:0,l=o.firstElementChild,{style:u}=l;u.transformOrigin||(u.transformOrigin=`${-t}px ${-r}px`),u.transform=`scale(${c}) matrix(${a.a}, ${a.b}, ${a.c}, ${a.d}, ${a.e-d.left}, ${a.f-d.top}) translateZ(0.0001px)`}}})),!1!==l&&Array.from(i.querySelectorAll("iframe"),(({contentWindow:e})=>{null==e||e.postMessage(`${t}${l}`,"null"===window.origin?"*":window.origin)}))}r=1,o=void 0;const i=(t,e,r)=>{if(t.getAttribute(e)!==r)return t.setAttribute(e,r),!0};function a({once:t=!1,target:e=document}={}){const r="Apple Computer, Inc."===navigator.vendor?[n]:[];let o=!t;const a=()=>{for(const t of r)t({target:e});!function(t=document){Array.from(t.querySelectorAll('svg[data-marp-fitting="svg"]'),(t=>{var e;const r=t.firstChild,o=r.firstChild,{scrollWidth:n,scrollHeight:a}=o;let l,s=1;if(t.hasAttribute("data-marp-fitting-code")&&(l=null===(e=t.parentElement)||void 0===e?void 0:e.parentElement),t.hasAttribute("data-marp-fitting-math")&&(l=t.parentElement),l){const t=getComputedStyle(l),e=Math.ceil(l.clientWidth-parseFloat(t.paddingLeft||"0")-parseFloat(t.paddingRight||"0"));e&&(s=e)}const c=Math.max(n,s),d=Math.max(a,1),u=`0 0 ${c} ${d}`;i(r,"width",`${c}`),i(r,"height",`${d}`),i(t,"preserveAspectRatio",getComputedStyle(t).getPropertyValue("--preserve-aspect-ratio")||"xMinYMin meet"),i(t,"viewBox",u)&&t.classList.toggle("__reflow__")}))}(e),o&&window.requestAnimationFrame(a)};return a(),()=>{o=!1}}const l=Symbol(),s=document.currentScript;((t=document)=>{if("undefined"==typeof window)throw new Error("Marp Core's browser script is valid only in browser context.");if(t[l])return t[l];const e=a({target:t}),r=()=>{e(),delete t[l]};Object.defineProperty(t,l,{configurable:!0,value:r})})(s?s.getRootNode():document)}();

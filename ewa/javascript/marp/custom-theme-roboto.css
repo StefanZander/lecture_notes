@@ -23,6 +23,10 @@ section {
 
 h1 {
     font-size: 3.2rem;
+    /* background-color: rgb(10, 40, 72);
+    display: inline;
+    color: white; */
+    font-weight: 600;
 }
 
 h2 {
@@ -35,6 +39,7 @@ h4 {
     font-style: normal;
     font-weight: 400;
 }
+
 
 /* Code fragments in texts */
 code {
@@ -208,6 +213,23 @@ pre {
     justify-content: space-between;
     column-gap: 2em;
 }
+
+.columns-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 2em;
+    align-items: center;
+}
+
+.columns-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 2em;
+    align-items: flex-end;
+}
+
 
 .columnsnogap {
     display: flex;
@@ -508,4 +530,20 @@ header {
 
 header::after {
     border-bottom: 1px solid #1eab79;
+}
+
+
+/* ========================
+    GENERAL STYLING 
+   ========================  
+*/
+
+/* removes the border from boxes */
+.noborder {
+    border: none !important;
+}
+
+/* places flexbox content vertically centered */
+.centercontent {
+    align-items: center;
 }
