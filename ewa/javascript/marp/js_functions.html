@@ -218,8 +218,11 @@
 <li>the <code>[[Call]]</code> internal property is unique to functions and indicates that the object can be executed</li>
 <li>this property is not accessible via code but rather defines the behaviour of code as it executes</li>
 <li>JS defines multiple internal properties for objects (indicated by the <code>[[...]]</code> double bracket notation)</li>
-<li>Because functions are objects, they behave differently than functions in other languages, and this behavior is central to a good understanding of JavaScript.</li>
 </ul>
+<div class="warning center">
+<p>Because functions are objects in JavaScript, they behave differently than functions in other languages.<br />
+Understanding this behavior is central to a good understanding of JavaScript.</p>
+</div>
 <footer>Entwicklung Web-basierter Anwendungen | Einführung in JavaScript – Funktionen | Prof. Dr. Stefan Zander</footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="4" data-paginate="true" data-header="Überblick" data-footer="Entwicklung Web-basierter Anwendungen | Einführung in JavaScript – Funktionen | Prof. Dr. Stefan Zander" data-theme="custom-theme-roboto" data-marpit-pagination="4" data-marpit-pagination-total="10" style="--paginate:true;--header:Überblick;--footer:Entwicklung Web-basierter Anwendungen | Einführung in JavaScript – Funktionen | Prof. Dr. Stefan Zander;--theme:custom-theme-roboto;">
@@ -240,30 +243,33 @@
 <li>ie., the function name is known ahead of time</li>
 </ul>
 </li>
+<li>Hence, functions can be accessed before they are defined</li>
 </ul>
 </div>
 <div class="single">
 <p><strong>Expression</strong></p>
 <pre><code class="language-js"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-keyword">let</span> add = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">num1, num2</span>) </span>{ 
   <span class="hljs-keyword">return</span> num1 + num2;
-};
+}; <span class="hljs-comment">// mind the semicolon &#x27;;&#x27; at the expression&#x27;s end</span>
+
+<span class="hljs-keyword">let</span> result = add(<span class="hljs-number">5</span>, <span class="hljs-number">5</span>);
 </span></span></foreignObject></svg></code></pre>
 <ul>
 <li>Function expressions are anonymous function – ie., functions without name</li>
 <li>function expression can not be hoisted; they can only be referenced through the variable</li>
 <li>Assign a function value to the variable <code>add</code></li>
-<li>Mind the semicolon (<code>;</code>) at the end of the expression</li>
 </ul>
 </div>
 </div>
 <div class="footnotes">
-<p><sup>1</sup> the context is either the function in which the declaration occurs or the global scope</p>
+<p><sup>1</sup> The context is either the function, in which the declaration occurs or the global scope, i.e., the <code>window</code> object</p>
 </div>
 <footer>Entwicklung Web-basierter Anwendungen | Einführung in JavaScript – Funktionen | Prof. Dr. Stefan Zander</footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="5" data-paginate="true" data-header="Überblick" data-footer="Entwicklung Web-basierter Anwendungen | Einführung in JavaScript – Funktionen | Prof. Dr. Stefan Zander" data-theme="custom-theme-roboto" data-marpit-pagination="5" data-marpit-pagination-total="10" style="--paginate:true;--header:Überblick;--footer:Entwicklung Web-basierter Anwendungen | Einführung in JavaScript – Funktionen | Prof. Dr. Stefan Zander;--theme:custom-theme-roboto;">
 <header>Überblick</header>
-<h1>Function Declaration vs. Function Expression</h1>
+<h1>Hoisting</h1>
+<p>Function declarations are hoisted to the top of the context in which they are defined.</p>
 <div class="columns">
 <div class="single">
 <pre><code class="language-js"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-comment">// ================================================</span>

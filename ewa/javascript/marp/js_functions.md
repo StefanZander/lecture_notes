@@ -43,7 +43,12 @@ Functions have a special internal property called `[[Call]]` that objects don't 
 - the `[[Call]]` internal property is unique to functions and indicates that the object can be executed 
 - this property is not accessible via code but rather defines the behaviour of code as it executes
 - JS defines multiple internal properties for objects (indicated by the `[[...]]` double bracket notation)
-- Because functions are objects, they behave differently than functions in other languages, and this behavior is central to a good understanding of JavaScript. 
+
+
+::: warning center
+Because functions are objects in JavaScript, they behave differently than functions in other languages. 
+Understanding this behavior is central to a good understanding of JavaScript. 
+:::
 
 
 ---
@@ -62,7 +67,8 @@ function add(num1, num2) {
 ```
 
 - Function declaration are **hoisted** to the top of the context^1^
-  - ie., the function name is known ahead of time  
+  - ie., the function name is known ahead of time
+- Hence, functions can be accessed before they are defined  
 
 
 ::::
@@ -72,25 +78,29 @@ function add(num1, num2) {
 ```js
 let add = function(num1, num2) { 
   return num1 + num2;
-};
+}; // mind the semicolon ';' at the expression's end
+
+let result = add(5, 5);
 ```
 
 - Function expressions are anonymous function – ie., functions without name
 - function expression can not be hoisted; they can only be referenced through the variable 
 - Assign a function value to the variable `add`
-- Mind the semicolon (`;`) at the end of the expression
+
 
 ::::
 :::::
 
 ::: footnotes
-^1^ the context is either the function in which the declaration occurs or the global scope
+^1^ The context is either the function, in which the declaration occurs or the global scope, i.e., the `window` object
 
 :::
 
 
 ---
-# Function Declaration vs. Function Expression
+# Hoisting
+
+Function declarations are hoisted to the top of the context in which they are defined.
 
 ::::: columns
 :::: single
