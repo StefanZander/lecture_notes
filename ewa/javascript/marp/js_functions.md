@@ -28,12 +28,13 @@ Einführung in JavaScript | Functions  {.lightgreen .Big .skip}
 
 ---
 <!-- header: Überblick -->
-<!-- footer: Entwicklung Web-basierter Anwendungen | Einführung in JavaScript – Funktionen | Prof. Dr. Stefan Zander-->
+<!-- footer: Entwicklung Web-basierter Anwendungen | Einführung in JavaScript – Funktionen | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences -->
 
 # Outline
 
 
 ---
+<!-- header: JavaScript Functions -->
 # Foundational Concepts
 
 Functions in JS are "First-Class Citizens"
@@ -137,11 +138,11 @@ var add = function (num1, num2) {
 ---
 # What you can do with Functions in JavaScript
 
-Since JavaScript has *first-class functions*, they can be used just as objects: 
+Since JavaScript functions are *first-class functions*, they can be used in the same way as objects, ie., anything that works with objects also works with functions! 
 
 ::::: columns-center
 :::: double
-::: blue 
+::: blue big
 1. **Assign a function to a variable**
 2. **Add to an object**
 3. **Pass to other functions as arguments**
@@ -149,8 +150,8 @@ Since JavaScript has *first-class functions*, they can be used just as objects:
 {.nobottommargin}
 :::
 ::::
-:::: triple red
-This makes JavaScript functions incredibly powerful
+:::: double red 
+This makes JavaScript functions incredibly powerful!
 ::::
 :::::
 
@@ -158,6 +159,9 @@ This makes JavaScript functions incredibly powerful
 ---
 # Assigning a Function to a Variable
 
+
+::::: columns
+:::: single
 ```js
 // Example 1
 function sayHi() {
@@ -170,8 +174,8 @@ let say_something = sayHi;
 
 say_something();       // outputs "Hi!"
 ```
-
-
+::::
+:::: single
 ```js
 // Example 2
 function addOne(num) {
@@ -182,6 +186,20 @@ let plusOne = addOne;
 
 let result = plusOne(1); // outputs '2'
 ```
+::::
+:::: single
+```js
+// Example 3: Handler
+function init() {
+    alert("Page has been fully loaded.");
+}
+
+window.onload = init;
+```
+::::
+:::::
+
+
 
 ---
 # Adding a Function to an Object
@@ -239,6 +257,80 @@ sayNameForAll();    // outputs "Michael"
 ::: footnotes
 ^1^ The global object is the web browser `window`
 :::
+
+
+
+---
+# Passing Functions to other Functions as Arguments
+
+
+::::: columns
+:::: single
+```js
+// (a-c) Using Functions as arguments
+function calc(a, b, f) {
+    return f(a,b);
+}
+
+function add(x,y) {
+    return x+y;
+}
+
+function sub(x,y) {
+    return x-y;
+}
+
+calc(9,4,add); 
+calc(9,4,sub); 
+```
+::::
+:::: double
+```js
+// Example 2
+function Person(firstname, lastname) {
+    this.firstname = firstname;
+    this.lastname = lastname;
+    this.decode = function() {
+        return this.firstname + " " + this.lastname;
+    }
+}
+
+function lower() {
+    return this.firstname.toLowerCase() + " " + this.lastname.toLowerCase();
+}
+
+function scribble() {
+    var str = this.firstname + " " + this.lastname;
+    var result = "";
+    for (var i = 0; i < str.length; i++ ) {
+        if (i % 2 == 0) {
+            result = result + str.charAt(i).toUpperCase();
+        } else {
+            result = result + str.charAt(i).toLowerCase();
+        } 
+    }
+    return result;
+}
+
+function dashed() {
+    var str = this.firstname + " " + this.lastname;
+    var result = "";
+    for (var i = 0; i < str.length; i++ ) {
+        if (i != this.firstname.length) {
+            result = result + "_";
+        }
+        else result = result + " ";
+    }
+    return result;
+}
+
+let p = new Person("Peter", "Pan");
+p.decode();
+p.decode = scribble;
+p.decode();
+```
+::::
+:::::
 
 
 
