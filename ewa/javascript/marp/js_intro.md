@@ -27,8 +27,8 @@ Einführung in JavaScript  {.lightgreen .Big .skip}
 
 
 ---
-<!-- header: Überblick -->
-<!-- footer: Entwicklung Web-basierter Anwendungen – Einführung in JavaScript | Prof. Dr. Stefan Zander-->
+<!-- header: Foundational Concepts -->
+<!-- footer: Entwicklung Web-basierter Anwendungen | Einführung in JavaScript – Funktionen | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences -->
 
 # Outline
 
@@ -70,40 +70,50 @@ So, working with and understanding objects is key to understanding JavaScript as
 :::: single
 **Primitive Types** {.Big .red}
 
-- Primitive types are stored as **simple data types**, ie., the variable object holds the actual value.
-- Some primitive types are treated as reference types to make the language more consistent
+- Primitive types are stored as **simple data types**
+  - ie., the variable object holds the actual value
 - JS has 5 primitive types
   - **Boolean** – true or false
   - **Number** – integer or floating point number
   - **String** – character or sequence of characters
   - **Null** – a primitive type with only one value `null`
   - **Undefined** – value assigned to unitialized variables
-
+- Primitive types `Boolean`, `Number`, and `String` are treated as reference types to make the language more consistent
 - All primitive types have _literal representations_ of their values
-- Identification: `typeof` returns type as `string`
+- **Identification**: `typeof` returns type as `string`
 ::::
 :::: single
 **Reference Types** {.Big .red}
 
-- Reference types are stored as **objects** (=references to memory locations), i.e., the variable object holds a reference to the memory location where the object data are stored.
-- Reference types are the closest thing to classes in JS
-- Objects are instances of reference types
-- Identification: `instanceof` returns `true|false`
+- Reference types are stored as **objects** 
+  - i.e., the variable object holds a reference to the memory location where the object data are stored.
+- Reference types in some ways resemble the class-concept of OO languages
+- Instances of reference types are called **Reference Values**
+- Reference types can be specified in *different notations* 
+  - **Literal Form**: the reference type becomes a reference value
+  - **Constructor function**: the reference type serves as *blueprint* for other reference values of the same type
+- Reference types and reference values are objects in JS
+- **Identification**: `instanceof` returns `true|false`
 ::::
 :::::
 
-Each variable is associated with a specific primitive or reference type
-
+::: centerbox blue
+Each variable in JavaScript is associated with a specific primitive or reference type
+:::
 
 ---
 # Primitive Types
+
+::::: columns
+:::: single
+**A) Defining Primitive Types**
 
 - A variable holding a primitive directly contains the primitive value
 - Values are represented as literals and stored directly in the variable object
 
 ```js
-var color1 = "red"; 
-var color2 = color1;
+let color1 = "red"; 
+let color2 = color1;
 
 console.log(color1); // red
 console.log(color2); // red
@@ -113,11 +123,12 @@ color1 = "blue";
 console.log(color1); // blue
 console.log(color2); // red
 ```
+::::
+:::: single
+**B) Identifying Primitive Types**
 
-Identifying Primitive Types
-
-- the `typeof` operator can be used to identify a primitive type
-  - it returns the type in form of a string
+- The `typeof` operator identifies a primitive type
+- It returns the type in form of a string
 
 ```js
 console.log(typeof "Nicholas"); // "string"
@@ -126,6 +137,8 @@ console.log(typeof 5.1);        // "number"
 console.log(typeof true);       // "boolean" 
 console.log(typeof undefined);  // "undefined"
 ```
+::::
+:::::
 
 
 ---
@@ -185,58 +198,82 @@ console.log(undefined === null);    // false
 
 
 ---
-# Reference Types
+# Reference Types and Reference Values
 
-- Reference types represent objects in JS and are the closest things to classes
-- Reference values are instances of reference types and are synonymous with objects
-- An object (=instance of a reference type) is an unordered list of properties
-- A property consists of a name (always a string) and a value
-- When the value of a property is a function, it is called a method
-- Functions are reference values that can be executed
-- Objects can be perceived as hash tables
-- When you assign an object to a variable, you actually asign a pointer
-  - ie., when you a asign one variable to another, the other one gets a copy of the pointer
+<!-- - Reference types represent objects in JS and are the closest things to classes -->
+<!-- - Reference values are instances of reference types and are synonymous with objects -->
+- An object (=instance of a reference type) is an *unordered list* of **properties**
+- A property consists of a **name** (always a string) and a **value** (can be primitive type or reference value)
+- When the value of a property is a function, it is called a **method**
+- **Methods** are reference values that can be *executed*
+- Objects can be perceived as **hash tables**
+  - The *values* of their properties can be accessed in an *associative form* through their *keys*. 
+- Assigning an object to a variable actually assigns a _pointer_ of the _memory location_ to the variable
+  - i.e., the variable object contains the pointer
+  - When one object is copied to another variable, the new variable gets a copy of the pointer
 
 
+::: blue smaller
+**Naming Convention**
+Although reference types are objects, it is useful to distinguish them from reference values. Hence, when we talk about *objects*, we refer to instances of reference types, ie., reference values. When we talk about *reference types*, we use this denominator.
+:::
 
 ---
 # Instantiating Objects
 
 ::::: columns
 :::: single
-**A) Usign the `new` operator with a constructor**
-  - a constructor is a function that uses `new` to create an object
-  - any function can be a constructor
-  - Constructors start with an upper case (capital letter) by convention to distinguish them from non-constructor functions
-  
+**A) Usign the `new` Operator with a Constructor**
+- A constructor is a function that uses `new` to create an object
+- Any function can be a constructor^1^
+- Such functions are called **Constructor functions**
+```js
+function Book(name, year) {
+  this.name = name;
+  this.year = year;
+}
+let b = new Book("ECMAScript 6", 2015);
+```
+
+**B) Using the `Object()` Function as Constructor**
   ```js
-  let book = new Object();
-  book.name = "The Principles of Object-Oriented JavaScript"; 
-  book.year = 2014;
+    let book = new Object();
+    book.name = "The Principles of Object-Oriented JavaScript"; 
+    book.year = 2014;
   ```
 
 ::::
 :::: single
-**B) Using the literal form**
-- Several built-in types have literal forms
-- A literal allows to define a reference value without explicitly creating an object using the `new` operator and the object's constructor
+**C) Using the Literal Notation**
+- Objects (=reference values) can be directly created using the literal notation syntax without `new` operator and constructor.
+  ```js
+  let book = {
+    name: "The Principles of Object-Oriented JavaScript",
+    year: 2014
+  };
+  ```
 
-```js
-let book = {
-  name: "The Principles of Object-Oriented JavaScript",
-  year: 2014
-};
-```
+- Property names can also be represented as string literals
+  ```js
+  let book = {
+    "name": "The Principles of Object-Oriented JavaScript",
+    "year": 2014
+  };
+  ```
 
-Property names can also be represented as string literals
-```js
-let book = {
-  "name": "The Principles of Object-Oriented JavaScript",
-  "year": 2014
-};
-```
+  ::: warning centerbox center small
+  Please note the different syntax of the literal notation!
+  :::
 ::::
 :::::
+
+<!-- - A literal allows to define a reference value without explicitly creating an object using the `new` operator and the object's constructor -->
+
+
+::: footnotes
+^1^ Constructors start with an upper case (capital letter) by convention to distinguish them from non-constructor functions.
+:::
+
 
 
 ---
@@ -324,33 +361,229 @@ console.log(colors[0]); // "red"
 
 
 ---
-# Identifying Reference Types
+# Identification
 
-A function is the easiest type to identify since the `typeof` operator returns `function` 
+::::: columns
+:::: single
+**A) Identifying Reference Types**
 
+- To identify a *specific type*, use the `instanceof` operator 
+
+  ```js
+  var items = []; 
+  var object = {};
+
+  function reflect(value) {
+      return value;
+  }
+
+  console.log(items instanceof Array);        // true
+  console.log(items instanceof Object);       // true
+  console.log(object instanceof Object);      // true
+  console.log(object instanceof Array);       // false
+  console.log(reflect instanceof Function);   // true
+  console.log(reflect instanceof Object);     // true
+
+  console.log(Array.isArray(items));          // true
+  console.log(typeof reflect);                // "function"
+  ```
+- *Functions* can be identified using `typeof` operator
+- *Arrays* can be identified using the `Array.isArray()` function
+::::
+:::: single
+**B) Identifying Reference Values**
+
+- The `instanceof` operator also helps in identifying the type of a *reference value*
+
+  ```js
+  function Book(name, year) {
+    this.name = name;
+    this.year = year;
+  }
+
+  let b = new Book("ECMAScript 6", 2015);
+
+  console.log(b instanceof Object);     // true
+  console.log(b instanceof Book);       // true
+  console.log(b instanceof Person);     // false
+  ```
+
+  Example #2
+  ::::: columns-center
+  :::: single
+
+    ```js
+    console.log(typeof Book);
+    console.log(typeof b);   
+    ```
+  ::::
+  :::: single
+  ::: smaller center blue
+  Think about, what does the `typeof` operator return for each operation?
+  :::
+  ::::
+  :::::
+
+
+::::
+:::::
+
+
+
+---
+# Property Types
+
+<!-- Properties can be of one of two types -->
+
+::::: columns
+:::: single
+**A) "Own" Properties**
+
+- Own-properties are properties that 'belong' exlusively to the object instance for which they are defined
+<!-- - An own property simply indicates that the specific instance of the object owns that property -->
+- The property is stored directly on the object instance
+- All operations on the property must be performed on that object
+  ```js
+  var person1 = {
+    name: "Nicholas", 
+    sayName: function() {
+      console.log(this.name); }
+  };
+  console.log("name" in person1);                   // true
+  console.log(person1.hasOwnProperty("name"));      // true
+  
+  console.log("toString" in person1);               // true
+  console.log(person1.hasOwnProperty("toString"));  // false
+  ```
+
+::::
+:::: single
+**B) Prototype Properties**
+
+::::
+:::::
+
+
+
+---
+# Identifying the Property Type
+
+JavaScript distinguishes between two types of object properties: own properties and prototype properties
+
+See previous slides
+
+
+---
+# Working with Properties
+
+::::: columns
+:::: single
+**A) Adding Properties**
 ```js
-function reflect(value) {
-  return value;
-}
-console.log(typeof reflect); // "function"
+...
+```
+- Properties can be added at any time regardless of the creation method
+::::
+:::: single
+**B) Deleting Properties**
+```js
+let person1 = { 
+  name: "Nicholas"
+};
+
+console.log("name" in person1); // true
+
+delete person1.name;            
+
+console.log("name" in person1); // false
+console.log(person1.name);      // undefined
 ```
 
-To identify a specific type, use the `instanceof` operator or the `Array.isArray()` function
+- A successful `delete` operation returns `true`
+- Some properties can not be removed
+::::
+:::: single
+**C) Enumerating Properties**
+```js
+// Only iterates over OWN properties
+
+let property;
+
+for (property in Person) {
+  console.log("Name: " + property); 
+  console.log("Value: " + Person[property]);
+}
+```
+
+<!-- Version B: -->
+```js 
+// Includes PROTOTYPE properties
+
+let properties = Object.keys(object); 
+
+// if you want to mimic for-in behavior
+let i, 
+    len = properties.length;
+
+for (i=0; i < len; i++) { 
+  console.log("Name: " + properties[i]); 
+  console.log("Value: " + object[properties[i]]);
+}
+```
+::::
+:::::
+
+
+
+---
+# Working with Properties
+
+
+::::: columns
+:::: single
+**D) Identifying Properties**
+
+- The `in` operator looks for the specified *property* with the given *name* and returns `true` in case of its existence
+- The `in` operator works on both *reference types* and *values*
 
 ```js
-var items = []; 
-var object = {};
-
-function reflect(value) {
-    return value;
+function Person(name, age) {
+  this.name = name;
+  this.age = age;
+  this.sayName = function() {
+    console.log(this.name); 
+  }
 }
 
-console.log(items instanceof Array);        // true
-console.log(items instanceof Object);       // true
-console.log(object instanceof Object);      // true
-console.log(object instanceof Array);       // false
-console.log(reflect instanceof Function);   // true
-console.log(reflect instanceof Object);     // true
-
-console.log(Array.isArray(items));          // true
+console.log("name" in Person);    // true
+console.log("age" in Person);     // true
+console.log("sayName" in Person); // true
+console.log("title" in Person);   // false
 ```
+
+::::
+:::: single
+**E) Identifying Own Properties only**
+
+- The `in` operator checks for both *own properties* and *prototype properties*
+- If only own properties should be detected, a *combination* of `in` with the `hasOwnProperty` method^1^ is needed
+
+```js
+  var person1 = {
+    name: "Nicholas", 
+    sayName: function() {
+      console.log(this.name); }
+  };
+
+  console.log("name" in person1);                   // true
+  console.log(person1.hasOwnProperty("name"));      // true
+  
+  console.log("toString" in person1);               // true
+  console.log(person1.hasOwnProperty("toString"));  // false
+```
+::::
+:::::
+
+::: footnotes
+^1^ The `hasOwnProperty` method is present on all objects in JavaScript
+:::
