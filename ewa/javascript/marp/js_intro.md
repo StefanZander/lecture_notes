@@ -32,29 +32,63 @@ Einführung in JavaScript  {.lightgreen .Big .skip}
 
 # Outline
 
+- Foundational Concepts
+- Overview of Datatypes
+- Primitive Types
+- Reference Types and Reference Values
+- Arrays
+- Constructors
+- Properties
+
+
 
 ---
 # Foundational Concepts
 
-- Object-based $$\neq$$ Object-oriented
-  - before you can do anything in OO, you need to create a class
-- JavaScript $$\leftrightarrow$$ Flexibility
+::::: columns-center
+:::: single
+::: warning centerbox center
+Object-based $\neq$ Object-oriented
+:::
+::::
+:::: double
 - OO developers often get disoriented when working with JavaScript since
   - JS has no formal concept/support for classes
   - JS allows to code using the pay-as-you-go principle
 - Until ECMAScript 5, JS does not have a formal concept for classes
   - Classes were introduced in ECMAScript6, but they rather serve as syntactic sugar 
+The **biggest mistake** in learning JavaScript is trying to transfer your OO-knowledge to JS
+::::
+:::::
+  <!-- - before you can do anything in OO, you need to create a class -->
+
+::::: columns-center
+:::: single
+::: blue centerbox center
+JavaScript $\leftrightarrow$ Flexibility
+:::
+::::
+:::: double
 - JS is an incredibly flexible language
   - You can just start coding
   - no formal class or package structure
   - Code along the pay-as-you-go principle
+::::
+:::::
 
-The biggest mistake in learning JS is to take your OO-knowledge and transfer it to JS
-
+::::: columns-center
+:::: single
+::: green centerbox center
+JavaScript $\leftrightarrow$ Objects
+:::
+::::
+:::: double
 - JS makes Objects the central part of the language
-    - All data in JS are either objects or can be accessed through objects
-    - Even functions are objects
-    - Objects are extremely flexible and can be modified at any time
+  - All data in JS are either objects or can be accessed through objects
+  - Even functions are objects
+  - Objects are extremely flexible and can be modified at any time
+::::
+:::::
 
 ::: warning
 So, working with and understanding objects is key to understanding JavaScript as a language.
