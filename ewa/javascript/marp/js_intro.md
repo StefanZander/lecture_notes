@@ -53,11 +53,9 @@ Object-based $\neq$ Object-oriented
 ::::
 :::: double
 - OO developers often get disoriented when working with JavaScript since
-  - JS has no formal concept/support for classes
-  - JS allows to code using the pay-as-you-go principle
-- Until ECMAScript 5, JS does not have a formal concept for classes
-  - Classes were introduced in ECMAScript6, but they rather serve as syntactic sugar 
-The **biggest mistake** in learning JavaScript is trying to transfer your OO-knowledge to JS
+  - JS has no formal OO concept of classes (at least until ECMAScript 6)
+  - JS Classes were introduced in ECMAScript6, but they rather serve as syntactic sugar 
+- The **biggest mistake** in learning JS is trying to transfer your OO-knowledge to JS
 ::::
 :::::
   <!-- - before you can do anything in OO, you need to create a class -->
@@ -69,9 +67,9 @@ JavaScript $\leftrightarrow$ Flexibility
 :::
 ::::
 :::: double
-- JS is an incredibly flexible language
+- JavaScript is an incredibly **flexible language**
   - You can just start coding
-  - no formal class or package structure
+  - No formal class or package structure
   - Code along the pay-as-you-go principle
 ::::
 :::::
@@ -83,14 +81,14 @@ JavaScript $\leftrightarrow$ Objects
 :::
 ::::
 :::: double
-- JS makes Objects the central part of the language
+- JavaScript makes **Objects** the central part of the language
   - All data in JS are either objects or can be accessed through objects
-  - Even functions are objects
+  - Even functions are objects(!!!)
   - Objects are extremely flexible and can be modified at any time
 ::::
 :::::
 
-::: warning
+::: warning center
 So, working with and understanding objects is key to understanding JavaScript as a language.
 :::
 
@@ -100,9 +98,12 @@ So, working with and understanding objects is key to understanding JavaScript as
 
 <!-- JS employs two primary data types -->
 
-::::: columns
-:::: single
-**Primitive Types** {.Big .red}
+:::::: columns
+::::: single
+:::: green
+::: centerbox center Big
+**Primitive Types**
+:::
 
 - Primitive types are stored as **simple data types**
   - ie., the variable object holds the actual value
@@ -116,27 +117,32 @@ So, working with and understanding objects is key to understanding JavaScript as
 - All primitive types have _literal representations_ of their values
 <!-- - **Identification**: `typeof` returns type as `string` -->
 ::::
-:::: single
-**Reference Types** {.Big .red}
+:::::
+::::: single
+:::: blue
+::: centerbox center Big
+**Reference Types**
+:::
 
 - Reference types are stored as **objects** 
   - i.e., the variable object holds a reference to the memory location where the actual object data are stored.
 - Reference types in some ways resemble the class-concept of OO languages
 - Instances of reference types are called **Reference Values**
-- Reference types can be specified in *different notations* 
-  - **Literal Form**: directly defines a reference value
+- Reference types can be specified in different notations
+  - **Literal Form**: used to define a reference value
   - **Constructor Function**: the reference type serves as *blueprint* for other reference values of the same type
 - Reference types and reference values are objects in JS
 <!-- - **Identification**: `instanceof` returns `true|false` -->
 ::::
 :::::
+::::::
 
 ::: centerbox blue
 Each variable in JavaScript is associated with a specific primitive or reference type
 :::
 
 ---
-# Primitive Types
+# Working with Primitive Types
 
 ::::: columns
 :::: single
@@ -358,6 +364,22 @@ This allows objects to be modified whenever you want – even if you did not de
 
 
 ---
+# Constructors
+
+<!-- - Although JS does not employ the concept of OO-classes, other concepts are needed to resemble behaviour such as inheritance -->
+- A **constructor** allows to create _multiple instances_ of a reference type
+  - those instances contain the same properties and methods as defined in the reference type
+- A constructor does not return anything unless otherwise specified
+  - The `new` operator creates a new object from a constructor and returns it
+  - When a constructor returns an object, that object will be used instead of the newly created instance
+- Every object is created with a special **constructor property** that points to its constructor
+  - This is the reason why `instanceof` can deduce the type of an object
+  - For objects created through the literal notation, the constructor property points to `Object` 
+- Constructors don't eleminate **code redundancy** 
+  - e.g. each created object contains a copy of the same method property although the behaviour does not change among instance
+
+
+---
 # Built-in Reference Types
 
 - The `Object`-type is one generic **built-in reference type**
@@ -557,21 +579,7 @@ console.log(
 :::::
 
 
----
-# [Place somewhere] Constructors
 
-- Although JS does not employ the concept of OO-classes, other concepts are needed to resemble behaviour such as inheritance
-- A constructor allows to create multiple instances of a reference type
-  - those instances contain the same properties and methods
-- A constructor does not return anything; therefore the `new` is needed to create a new object from a constructor
-  - The `new` operator creates a new object and returns it
-  - Every object is created with a special constructor property that points to its constructor
-  - This is the reason why `instanceof` can deduce the type of an object
-  - For objects created through the literal notation, the constructor property points to `Object` 
-- When a constructor returns an object, that object will be used instead of the newly created instance
-- Constructors don't eleminate code redundancy 
-  - e.g. each created object contains a copy of the same method property although the behaviour does not change from instance to instance
-  
 
 
 
