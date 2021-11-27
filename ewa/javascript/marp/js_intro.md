@@ -77,7 +77,7 @@ JavaScript $\leftrightarrow$ Flexibility
 ::::: columns-center
 :::: single
 ::: green centerbox center
-JavaScript $\leftrightarrow$ Objects
+$\rightarrow$ Objects $\leftarrow$
 :::
 ::::
 :::: double
@@ -200,17 +200,17 @@ This proces is called ==autoboxing==.
 :::: triple
 Examples
 ```js
-var name = "Nicholas";
-var lowercaseName = name.toLowerCase();   // convert to lowercase
-var firstLetter = name.charAt(0);         // get first character
-var middleOfName = name.substring(2, 5);  // get characters 2-4
+let name = "Nicholas";
+let lowercaseName = name.toLowerCase();   // convert to lowercase
+let firstLetter = name.charAt(0);         // get first character
+let middleOfName = name.substring(2, 5);  // get characters 2-4
 
-var count = 10;
-var fixedCount = count.toFixed(2);        // convert to "10.00"
-var hexCount = count.toString(16);        // convert to "a"
+let count = 10;
+let fixedCount = count.toFixed(2);        // convert to "10.00"
+let hexCount = count.toString(16);        // convert to "a"
 
-var flag = true;
-var stringFlag = flag.toString();         // convert to "true"
+let flag = true;
+let stringFlag = flag.toString();         // convert to "true"
 
 name.last = "zakas";
 console.log(name.last);                   // undefined
@@ -254,7 +254,7 @@ console.log(undefined === null);    // false
 - **Properties** are *key-value pairs* where
   - the **key** is always a string
   - the **value** can hold any kind of primitive or reference value
-- Objects are extremely **flexible** and powerful
+- Objects are extremely **flexible** and **powerful**
   - Since JavaScript has no formal concept of classes, objects resemble the role of both **types** and **instances**
   - The **role** they play depends on their usage, e.g., an object used as constructor serves as reference type
 ::::
@@ -271,8 +271,7 @@ Although reference types are objects, it is useful to distinguish them from refe
 ---
 # Reference Types and Reference Values REMOVE
 
-- An object (=instance of a reference type) is an *unordered list* of **properties**
-- A property consists of a **name** (always a string) and a **value** (can be primitive type or reference value)
+
 - When the value of a property is a function, it is called a **method**
 - **Methods** are reference values that can be *executed*
 - Objects can be perceived as **hash tables**
@@ -281,11 +280,6 @@ Although reference types are objects, it is useful to distinguish them from refe
   - i.e., the variable object contains the pointer
   - When one object is copied to another variable, the new variable gets a copy of the pointer
 
-
-::: blue small
-**Naming Convention**
-Although reference types are objects, it is useful to distinguish them from reference values. Hence, when we talk about *objects*, we refer to instances of reference types, ie., reference values. When we talk about *reference types*, we use this denominator.
-:::
 
 ---
 # Instantiating Objects
@@ -367,6 +361,7 @@ This allows objects to be modified whenever you want – even if you did not de
 # Constructors
 
 <!-- - Although JS does not employ the concept of OO-classes, other concepts are needed to resemble behaviour such as inheritance -->
+- Constructors are **special functions** that serve as blueprints for objects
 - A **constructor** allows to create _multiple instances_ of a reference type
   - those instances contain the same properties and methods as defined in the reference type
 - A constructor does not return anything unless otherwise specified
