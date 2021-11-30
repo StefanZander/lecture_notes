@@ -32,24 +32,61 @@ Einführung in JavaScript | Functions  {.lightgreen .Big .skip}
 
 # Outline
 
+- The Special Role of Functions in JavaScript
+- Function Declaration versus Function Expression
+- Hoisting
+- Assigning a Function to a Variable
+- Adding a Function to an Object
+- Passing Functions to other Functions as Arguments
+- Returning a Function from a Function
+- Parameters in Functions
+
+
 
 ---
 <!-- header: JavaScript Functions -->
 # The Special Role of Functions in JavaScript
 
-**Functions** in JavaScript are _"First-Class Citizens"_
-- $\leadsto$ "you can do with functions anything you can do with objects" { .kursiv}
+<!-- - $\leadsto$ "you can do with functions anything you can do with objects" { .kursiv} -->
+**Functions** in JavaScript are _"First-Class Elements"_ $\leadsto$ hence, anything that works with objects also works with functions! 
 
-Functions have a **special internal property** called `[[Call]]` that other objects don't have
-- The `[[Call]]` internal property is unique to functions and indicates that the _object can be executed_
+::::: columns-center skip
+:::: double
+::: blue big
+1. **Assign a function to a variable**
+2. **Add to an object**
+3. **Pass to other functions as arguments**
+4. **Return them from functions** 
+{.nobottommargin}
+:::
+::::
+:::: double warning center 
+$\Rightarrow$ This makes JavaScript functions incredibly powerful!
+::::
+:::::
+
+{.skip} 
+
+::::: columns-bottom
+:::: double
+::: gray smaller
+**How does this work ?**
+Functions have a **special internal property** called `[[Call]]` that other objects don't have^1^
+- The `[[Call]]` internal property is unique to functions and indicates that the ==object can be executed==
 - This property is _not accessible_ via code but rather defines the behaviour of code as it executes
-- JavaScript defines multiple internal properties for objects (indicated by the `[[...]]` double bracket notation)
-
-
-::: warning centerbox center skip
+::::
+:::: single
+::: warning centerbox center 
 Because functions are objects in JavaScript, they behave differently than functions in other languages. 
 $\Rightarrow$ Understanding this behavior is central to a good understanding of JavaScript. 
 :::
+::::
+:::::
+
+::: footnotes
+^1^ JavaScript defines multiple internal properties for objects (indicated by the `[[...]]` double bracket notation)
+:::
+
 
 
 ---
@@ -58,7 +95,7 @@ $\Rightarrow$ Understanding this behavior is central to a good understanding of 
 ::::: columns
 :::: single
 ::: green
-**Declaration** {.big .center}
+**Declaration** {.Big .center}
 
 ```js
 let result = add(5, 5);
@@ -70,12 +107,12 @@ function add(num1, num2) {
 
 - Function declaration are **hoisted** to the top of the context^1^
   - ie., the function name is known ahead of time
-- Hence, functions can be accessed before they are defined  
+- Hence, such functions can be used before they are defined  
 :::
 ::::
 :::: single
 ::: blue
-**Expression** {.big .center}
+**Expression** {.Big .center}
 
 ```js
 let add = function(num1, num2) { 
@@ -86,8 +123,8 @@ let result = add(5, 5);
 ```
 
 - Function expressions are anonymous function – ie., functions without name
-- function expression can not be hoisted; they can only be referenced through the variable 
-- Assign a function value to the variable `add`
+- Function expression can not be hoisted; they can only be referenced through the variable 
+- Function expressions are commonly used for handlers
 
 :::
 ::::
@@ -111,13 +148,15 @@ Function declarations are hoisted to the top of the context in which they are de
 // Function Declaration
 // ================================================
 
-// OK
-var result = add(5, 5);
+let result = add(5, 5);
 
 function add(num1, num2) {
   return num1 + num2;
 }
 ```
+::: center Skip Big green centerbox
+OK
+:::
 ::::
 :::: single
 ```js
@@ -125,36 +164,18 @@ function add(num1, num2) {
 // Function Expression
 // ================================================
 
-// error!
-var result = add(5, 5);
+let result = add(5, 5);
 
-var add = function (num1, num2) {
+let add = function (num1, num2) {
   return num1 + num2;
 };
 ```
-::::
-:::::
-
-
----
-# What you can do with Functions in JavaScript
-
-Since JavaScript functions are *first-class functions*, they can be used in the same way as objects, ie., anything that works with objects also works with functions! 
-
-::::: columns-center
-:::: double
-::: blue big
-1. **Assign a function to a variable**
-2. **Add to an object**
-3. **Pass to other functions as arguments**
-4. **Return them from functions** 
-{.nobottommargin}
+::: center Skip Big warning centerbox
+Error
 :::
 ::::
-:::: double red 
-This makes JavaScript functions incredibly powerful!
-::::
 :::::
+
 
 
 ---
@@ -207,13 +228,13 @@ window.onload = init;
 
 ::::: columns
 :::: single
-**Methods**
+**Functions in Objects are called Methods**
 
 - A property value of type function makes the property a **method**.
-- Methods are treated the same way as properties except for they can be executed (i.e., their value is calculated).
+- Methods are treated the same way as properties except for they can be *executed* (i.e., their value is calculated).
 
   ```js
-  var person = {
+  let person = {
     name: "Nicholas", 
     sayName: function() {
       console.log(person.name); 
@@ -231,8 +252,8 @@ window.onload = init;
 :::: single
 **The `this` Object**
 
-- Every scope in JS has a `this` object 
-- `this` represents the calling object for the function
+- Every *scope* in JavaScript has a `this` object 
+- `this` represents the *calling object* for the function
 - In the global scope, `this` represents the global object^1^
 
 ```js
@@ -268,7 +289,7 @@ sayNameForAll();    // outputs "Michael"
 ::::: columns
 :::: single
 ```js
-// (a-c) Using Functions as arguments
+// Using Functions as arguments
 function calc(a, b, f) {
     return f(a,b);
 }
@@ -291,9 +312,7 @@ calc(9,4,sub);
 function Person(firstname, lastname) {
     this.firstname = firstname;
     this.lastname = lastname;
-    this.decode = function() {
-        return this.firstname + " " + this.lastname;
-    }
+    this.decode = function() { return this.firstname + " " + this.lastname; }
 }
 
 function lower() {
@@ -304,12 +323,8 @@ function scribble() {
     var str = this.firstname + " " + this.lastname;
     var result = "";
     for (var i = 0; i < str.length; i++ ) {
-        if (i % 2 == 0) {
-            result = result + str.charAt(i).toUpperCase();
-        } else {
-            result = result + str.charAt(i).toLowerCase();
-        } 
-    }
+      if (i % 2 == 0) { result = result + str.charAt(i).toUpperCase(); } 
+        else { result = result + str.charAt(i).toLowerCase(); } }
     return result;
 }
 
@@ -317,11 +332,8 @@ function dashed() {
     var str = this.firstname + " " + this.lastname;
     var result = "";
     for (var i = 0; i < str.length; i++ ) {
-        if (i != this.firstname.length) {
-            result = result + "_";
-        }
-        else result = result + " ";
-    }
+        if (i != this.firstname.length) { result = result + "_"; }
+          else result = result + " "; }
     return result;
 }
 
@@ -348,7 +360,7 @@ function saySomething(name) {
     };
 }
 
-var a = saySomething("Stefan"); // vs. var a = saySomething;
+let a = saySomething("Stefan"); // vs. let a = saySomething;
 
 a(); // Outputs "Hello, my name is ... Stefan"
 ```
@@ -367,7 +379,7 @@ JS allows to pass any numbers of parameters to any functions since function para
 ```js
 function sum() {
   "use strict";
-  var result = 0,
+  let result = 0,
       i = 0,
       len = arguments.length;
   
