@@ -27,7 +27,7 @@ Einführung in JavaScript | Functions  {.lightgreen .Big .skip}
 
 
 ---
-<!-- header: Überblick -->
+<!-- header: Overview -->
 <!-- footer: Entwicklung Web-basierter Anwendungen | Einführung in JavaScript – Funktionen | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences -->
 
 # Outline
@@ -35,20 +35,20 @@ Einführung in JavaScript | Functions  {.lightgreen .Big .skip}
 
 ---
 <!-- header: JavaScript Functions -->
-# Foundational Concepts
+# The Special Role of Functions in JavaScript
 
-Functions in JS are "First-Class Citizens"
-- "you can do with functions anything you can do with objects"
+**Functions** in JavaScript are _"First-Class Citizens"_
+- $\leadsto$ "you can do with functions anything you can do with objects" { .kursiv}
 
-Functions have a special internal property called `[[Call]]` that objects don't have
-- the `[[Call]]` internal property is unique to functions and indicates that the object can be executed 
-- this property is not accessible via code but rather defines the behaviour of code as it executes
-- JS defines multiple internal properties for objects (indicated by the `[[...]]` double bracket notation)
+Functions have a **special internal property** called `[[Call]]` that other objects don't have
+- The `[[Call]]` internal property is unique to functions and indicates that the _object can be executed_
+- This property is _not accessible_ via code but rather defines the behaviour of code as it executes
+- JavaScript defines multiple internal properties for objects (indicated by the `[[...]]` double bracket notation)
 
 
-::: warning center
+::: warning centerbox center skip
 Because functions are objects in JavaScript, they behave differently than functions in other languages. 
-Understanding this behavior is central to a good understanding of JavaScript. 
+$\Rightarrow$ Understanding this behavior is central to a good understanding of JavaScript. 
 :::
 
 
@@ -57,7 +57,8 @@ Understanding this behavior is central to a good understanding of JavaScript.
 
 ::::: columns
 :::: single
-**Declaration**
+::: green
+**Declaration** {.big .center}
 
 ```js
 let result = add(5, 5);
@@ -70,11 +71,11 @@ function add(num1, num2) {
 - Function declaration are **hoisted** to the top of the context^1^
   - ie., the function name is known ahead of time
 - Hence, functions can be accessed before they are defined  
-
-
+:::
 ::::
 :::: single
-**Expression**
+::: blue
+**Expression** {.big .center}
 
 ```js
 let add = function(num1, num2) { 
@@ -88,7 +89,7 @@ let result = add(5, 5);
 - function expression can not be hoisted; they can only be referenced through the variable 
 - Assign a function value to the variable `add`
 
-
+:::
 ::::
 :::::
 

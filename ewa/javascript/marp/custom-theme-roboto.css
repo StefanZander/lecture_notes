@@ -79,6 +79,14 @@ blockquote p {
 }
 
 
+.inverse {
+    background-color: #246;
+    color: whitesmoke;
+    padding-left: .2em;
+}
+
+
+
 /* ========================
     CODE SNIPPETS
    ========================
@@ -129,6 +137,18 @@ pre {
 }
 
 .example > p:last-child, .gray > p:last-child {
+    margin-bottom: 0.16em;
+}
+
+/* Orange Box container */
+.orange-box {
+    background-color: rgb(255, 231, 220);
+    border: solid 0.2rem rgb(211, 88, 11);
+    padding: 0 0.6rem 0 0.6rem;
+    color: rgb(211, 88, 11);
+}
+
+.orange-box > p:last-child  {
     margin-bottom: 0.16em;
 }
 
@@ -312,11 +332,11 @@ pre {
     margin-top: 4rem;
 }
 
-.Bigskip {
+.Bigskip, .SKIP{
     margin-top: 2rem;
 }
 
-.bigskip {
+.bigskip, .Skip {
     margin-top: 1.5rem;
 }
 

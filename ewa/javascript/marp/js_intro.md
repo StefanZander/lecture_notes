@@ -27,7 +27,6 @@ Einführung in JavaScript  {.lightgreen .Big .skip}
 
 
 ---
-<!-- header: Foundational Concepts -->
 <!-- footer: Entwicklung Web-basierter Anwendungen | Einführung in JavaScript – Funktionen | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences -->
 
 # Outline
@@ -43,19 +42,20 @@ Einführung in JavaScript  {.lightgreen .Big .skip}
 
 
 ---
+<!-- header: Foundational Concepts -->
 # Foundational Concepts
 
 ::::: columns-center
 :::: single
-::: warning centerbox center
+::: orange-box centerbox center
 Object-based $\neq$ Object-oriented
 :::
 ::::
 :::: double
 - OO developers often get disoriented when working with JavaScript since
   - JS has no formal OO concept of classes (at least until ECMAScript 6)
-  - JS Classes were introduced in ECMAScript6, but they rather serve as syntactic sugar 
-- The **biggest mistake** in learning JS is trying to transfer your OO-knowledge to JS
+  - JS classes serve as syntactic sugar for object types
+  - The **biggest mistake** in learning JS is trying to transfer your OO-knowledge to JS {.warning}
 ::::
 :::::
   <!-- - before you can do anything in OO, you need to create a class -->
@@ -67,10 +67,10 @@ JavaScript $\leftrightarrow$ Flexibility
 :::
 ::::
 :::: double
-- JavaScript is an incredibly **flexible language**
-  - You can just start coding
-  - No formal class or package structure
+- JavaScript is an incredibly **flexible** and **powerfull language**
+  - You can just start coding; no formal class or package structure
   - Code along the pay-as-you-go principle
+  - With great flexibility comes great responsibility
 ::::
 :::::
 
@@ -88,13 +88,13 @@ $\rightarrow$ Objects $\leftarrow$
 ::::
 :::::
 
-::: warning center
+::: warning center skip
 So, working with and understanding objects is key to understanding JavaScript as a language.
 :::
 
 
 --- 
-# JavaScript Datatypes
+# JavaScript employs two Types of Datatypes
 
 <!-- JS employs two primary data types -->
 
@@ -114,7 +114,7 @@ So, working with and understanding objects is key to understanding JavaScript as
   - **Null** – a primitive type with only one value `null`
   - **Undefined** – value assigned to unitialized variables
 - Primitive types `Boolean`, `Number`, and `String` are treated as reference types to make the language more consistent
-- All primitive types have _literal representations_ of their values
+- All primitive types have literal value representations
 <!-- - **Identification**: `typeof` returns type as `string` -->
 ::::
 :::::
@@ -123,30 +123,33 @@ So, working with and understanding objects is key to understanding JavaScript as
 ::: centerbox center Big
 **Reference Types**
 :::
-
 - Reference types are stored as **objects** 
-  - i.e., the variable object holds a reference to the memory location where the actual object data are stored.
-- Reference types in some ways resemble the class-concept of OO languages
-- Instances of reference types are called **Reference Values**
-- Reference types can be specified in different notations
-  - **Literal Form**: used to define a reference value
-  - **Constructor Function**: the reference type serves as *blueprint* for other reference values of the same type
-- Reference types and reference values are objects in JS
+  - i.e., the variable object holds a reference to the memory location where the actual object data are stored
+- Objects are the main building blocks of JavaScript
+- Objects are extremely **flexible** and **powerful**
+  - Since JavaScript has no formal concept of classes, objects resemble the role of both **types** and **instances**
+- Reference types serve as **blueprints** for reference values
+- Reference values are **instances** of reference types
+- JavaScript contains a set of built-in reference types such as `Array`, `Date`, `Error`, `Function`, `RegExp`
+<!-- - Reference types and reference values are objects in JS -->
 <!-- - **Identification**: `instanceof` returns `true|false` -->
 ::::
 :::::
 ::::::
 
-::: centerbox blue
+::: centerbox warning skip
 Each variable in JavaScript is associated with a specific primitive or reference type
 :::
 
+
+
 ---
+<!-- header: Primitive Types -->
 # Working with Primitive Types
 
 ::::: columns
 :::: single
-**A) Defining Primitive Types**
+**A) Defining Primitive Types** 
 
 - A variable holding a primitive directly contains the primitive value
 - Values are represented as literals and stored directly in the variable object
@@ -238,25 +241,28 @@ console.log(undefined === null);    // false
 
 
 ---
+<!-- header: Reference Types -->
 # Reference Types and Reference Values
 
 
 ---
-# General Information
+# What are Reference Types ?
 
-::::: columns
+::::: columns-center
 :::: quad
-- **Objects** are the main building blocks of JavaScript
-- Objects exist in form of **reference types** and **reference values**
-- Reference types serve as *blueprints* for reference values
-- Reference values are *instances* of reference types and as such also objects
+<!-- - Reference types and reference values are objects in JS -->
+- Objects in JavaScript exist as both **reference types** and **reference values**
+- The **role** objects play depends on their usage
+  - an object in _literal form_ serves as instance 
+  - an object used as _constructor_ serves as reference type and resembles the class-concept of OO languages
+- Reference types can be specified in different notations
+  - **Literal Form**: used to define a reference value, ie., instance of a reference type
+  - **Constructor Function**: the reference type serves as *blueprint* for other reference values of the same type
+<!-- - Instances of reference types are called **reference values** -->
 - Objects in JavaScript consists of an **unordered list of properties**
 - **Properties** are *key-value pairs* where
-  - the **key** is always a string
+  - the **key** is always a string and serves as name for the value
   - the **value** can hold any kind of primitive or reference value
-- Objects are extremely **flexible** and **powerful**
-  - Since JavaScript has no formal concept of classes, objects resemble the role of both **types** and **instances**
-  - The **role** they play depends on their usage, e.g., an object used as constructor serves as reference type
 ::::
 :::: single
 ::: blue smaller italic
@@ -266,19 +272,6 @@ Although reference types are objects, it is useful to distinguish them from refe
 ::::
 :::::
 
-
-
----
-# Reference Types and Reference Values REMOVE
-
-
-- When the value of a property is a function, it is called a **method**
-- **Methods** are reference values that can be *executed*
-- Objects can be perceived as **hash tables**
-  - The *values* of their properties can be accessed in an *associative form* through their *keys*. 
-- Assigning an object to a variable actually assigns a _pointer_ of the _memory location_ to the variable
-  - i.e., the variable object contains the pointer
-  - When one object is copied to another variable, the new variable gets a copy of the pointer
 
 
 ---
@@ -519,7 +512,29 @@ const a3 = colors.concat(points);
 
 
 ---
+<!-- header: Properties -->
 # Properties
+
+
+
+
+---
+# Properties
+
+- Properties are the main building blocks of objects
+- Objects can thus be perceived as **hash tables**
+  - The *values* of their properties can be accessed in an *associative form* through their *keys*.
+- Property **keys** are represented as string literals
+- Proptery **values** can be both primitive as well as reference values
+- When the value of a property is a function, it is called a **method**
+- **Methods** are reference values that can be *executed*
+  - They contain a special internal property called `[[call]]` that signals that the value needs to be exectuted
+
+<!--
+- Assigning an object to a variable actually assigns a _pointer_ of the _memory location_ to the variable
+  - i.e., the variable object contains the pointer
+  - When one object is copied to another variable, the new variable gets a copy of the pointer
+-->
 
 
 ---
