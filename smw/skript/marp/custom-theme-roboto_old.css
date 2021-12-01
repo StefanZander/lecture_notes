@@ -23,10 +23,6 @@ section {
 
 h1 {
     font-size: 3.2rem;
-    /* background-color: rgb(10, 40, 72);
-    display: inline;
-    color: white; */
-    font-weight: 600;
 }
 
 h2 {
@@ -40,8 +36,6 @@ h4 {
     font-weight: 400;
 }
 
-
-/* Code fragments in texts */
 code {
     /* font-family: 'Open Sans Condensed'; */
     font-family: 'M+ 1m';
@@ -77,27 +71,6 @@ blockquote p {
 .kursiv {
     font-style: italic;
 }
-
-
-.inverse {
-    background-color: #246;
-    color: whitesmoke;
-    padding-left: .2em;
-}
-
-
-
-/* ========================
-    CODE SNIPPETS
-   ========================
-*/
-
-pre {
-    border: 0;
-    background-color: #eee;
-}
-
-
 
 /* ========================
     CONTAINERS
@@ -137,18 +110,6 @@ pre {
 }
 
 .example > p:last-child, .gray > p:last-child {
-    margin-bottom: 0.16em;
-}
-
-/* Orange Box container */
-.orange-box {
-    background-color: rgb(255, 231, 220);
-    border: solid 0.2rem rgb(211, 88, 11);
-    padding: 0 0.6rem 0 0.6rem;
-    color: rgb(211, 88, 11);
-}
-
-.orange-box > p:last-child  {
     margin-bottom: 0.16em;
 }
 
@@ -234,23 +195,6 @@ pre {
     column-gap: 2em;
 }
 
-.columns-center {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    column-gap: 2em;
-    align-items: center;
-}
-
-.columns-bottom {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    column-gap: 2em;
-    align-items: flex-end;
-}
-
-
 .columnsnogap {
     display: flex;
     flex-direction: row;
@@ -332,11 +276,11 @@ pre {
     margin-top: 4rem;
 }
 
-.Bigskip, .SKIP{
+.Bigskip {
     margin-top: 2rem;
 }
 
-.bigskip, .Skip {
+.bigskip {
     margin-top: 1.5rem;
 }
 
@@ -390,18 +334,6 @@ pre {
 .BIG {
     font-size: 2.0em;
     /* font-weight: 600; */
-}
-
-.huge {
-    font-size: 2.4em;
-}
-
-.Huge {
-    font-size: 3.0em;
-}
-
-.HUGE {
-    font-size: 4.0em;
 }
 
 .center {
@@ -550,20 +482,4 @@ header {
 
 header::after {
     border-bottom: 1px solid #1eab79;
-}
-
-
-/* ========================
-    GENERAL STYLING 
-   ========================  
-*/
-
-/* removes the border from boxes */
-.noborder {
-    border: none !important;
-}
-
-/* places flexbox content vertically centered */
-.centercontent {
-    align-items: center;
 }

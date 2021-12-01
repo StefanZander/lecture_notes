@@ -26,7 +26,7 @@ Kapitel 3.2: Datenmodellierung mit Semantic MediaWiki {.lightgreen .Big .skip}
 
 ---
 <!-- header: Kapitel 1: Vorbemerkung -->
-<!-- footer: Prof. Dr. Stefan Zander -->
+<!-- footer: Semantisches Wissensmanagement in Unternehmen | Datenmodellierung mit Semantic MediaWiki | Prof. Dr. Stefan Zander | Hochschule Darmstadt -->
 
 # Vorbemerkung
 
@@ -47,18 +47,23 @@ Prof. Dr. Kai Renz wird zum kommenden Sommersemester neues Mitglied des Stundenp
 ---
 # Überlegungen zum Datenmodell
 
-Bei der Durchführung des vorherigen Beispiels werden Sie sehr schnell feststellen, dass die Repräsentation in Form eines ==konzeptuellen Graphen== mit _Knoten_ und _Kanten_ die Beziehungen zwischen den “Dingen” in einer natürlichen Darstellung am nächsten kommt2.
+Bei der Durchführung des vorherigen Beispiels werden Sie sehr schnell feststellen, dass die Repräsentation in Form eines ==konzeptuellen Graphen== mit _Knoten_ und _Kanten_ die Beziehungen zwischen den “Dingen” in einer natürlichen Darstellung am nächsten kommt.
 
-Mit den Informationen aus Kapitel 2: Technologische Grundlagen können wir diesen Graphen weiter verfeinern.
+Mit den Informationen aus "Kapitel 2: Technologische Grundlagen" können wir diesen Graphen weiter verfeinern.
 
 <!-- Was wissen wir bisher aus Kapitel 2: Technologische Grundlagen -->
 
 ::: twocolumns
 - Ausschnitte aus Gegenstandsbereichen lassen sich am besten unter Reduzierung struktureller Heterogenität als _konzeptueller Graph_ darstellen
 - Beziehungen sollten als _First-Class Elemente_ behandelt werden
-- ==URIs/IRIs== ermöglichen die eindeutige Identifizierung von “Dingen”
-- Zusammen mit dem Konzept der ==Content Negotiation== ermöglichen sie eine Unterscheidung zwischen technischen- und realweltlichen Repräsentationen
-- Maschinen-verarbeitbare Semantik bedeutet: _DEFINITIONS HAVE CONSEQUENCES_ – d.h., die Semantik eines Elements ist definiert durch die sich aus der Anwendung des mit dem Element assozierten Regelsatzes ergebenden Konsequenzen.
+- ==URIs & IRIs== ermöglichen die eindeutige Identifizierung von “Dingen” und dienen als *Adressierungschemata*
+- Dinge sind ==Information-== und ==Non-Information Resources==
+- Wir unterscheiden zwischen _Designator_ und _Designatum_
+- Zusammen mit dem Konzept der ==Content Negotiation== ermöglichen sie eine Unterscheidung zwischen technischen- und real-weltlichen Repräsentationen
+- Zur Beschreibung der Bedeutung einer Beziehung braucht es eine _maschinen-verarbeitbare Semantik_
+- Die Semantik wird durch die Terme und logische Theorie, auf der eine ==Ontologiesprache== definiert ist, festgelegt
+- Beziehungen sollten durch _wohl-definierte Terme_ aus bekannten Ontologien oder Vokabularen representiert werden
+- Resourcen sollten durch URIs/IRIs von bekannten ==Domänen== (bspw. DBpedia) identifiziert werden
 :::
 
 <!-- ---
@@ -146,8 +151,8 @@ As a consequence, facts are encoded as **property-value pairs** on wiki pages.
 {.skip} -->
 ::::: equalcolumns
 :::: 1st-column
-This ==triple== can be expressed with elements from SMW's KRF^1^:
-1. ==Subject== is always a **wiki page** or a **subobject** (we will learn about subobjects in Chapter 4) 
+This ==triple== can be expressed with elements from SMW's Knowledge Representation Framework^1^:
+1. ==Subjects== are general **wiki pages** or **subobjects**^2^ 
    - e.g. a wiki page named `Berlin` in the main namespace
 2. ==Predicates== are **wiki pages** in the `Property` namespace
    - e.g., a wiki page named `has Population` in the `Property` namespace
@@ -176,9 +181,9 @@ A _page-property-value_ triple resembles the _subject-predicate-object_ triple p
 :::::
 
 ::: footnotes
-^1^ KRF = Knowledge Representation Framework, i.e., a set of rules and description primitives for encoding information in a certain format
+^1^ KRF = Knowledge Representation Framework, i.e., a set of rules and description primitives for encoding information in a certain format.
 
-^2^ We will learn about subobjects in Lecture 4
+^2^ We will learn about subobjects in Lecture 4.
 :::
 
 
@@ -209,7 +214,7 @@ Steps:
 
 
 
-
+<!--
 ---
 # Step 1: Identify Instances
 
@@ -219,6 +224,7 @@ Steps:
 Matthias Frank is an employee of the FZI Research Center for Information Technology working on the BigGIS project. 
 BigGIS is an ongoing research project started at April 2016 and deals with real-time big data and semantic technologies.
 :::
+-->
 
 
 ---
@@ -240,8 +246,8 @@ BigGIS is an ongoing research project started at April 2016 and deals with real-
 {.bigskip}
 
 ::: italic center
-[[Matthias Frank]] is an ==employee== of the [[FZI Research Center for Information Technology]] working on the [[BigGIS]] ==project==. 
-[[BigGIS]] is an ongoing ==research project== started at April 2016 and deals with real-time big data and semantic technologies.
+Matthias Frank is an ==employee== of the FZI Research Center for Information Technology working on the BigGIS ==project==. 
+BigGIS is an ongoing ==research project== started at April 2016 and deals with real-time big data and semantic technologies.
 :::
 
 
@@ -262,8 +268,8 @@ BigGIS ==is== an ongoing research project ==started at== April 2016 and ==deals 
 {.bigskip}
 
 ::: italic center
-Matthias Frank ==is== an employee of the FZI Research Center for Information Technology ==working on== the BigGIS project. 
-BigGIS ==is== an ongoing research project ==started at== _April 2016_ and ==deals with== _real-time big data_ and _semantic technologies_.
+Matthias Frank is an employee of the FZI Research Center for Information Technology working on the BigGIS project. 
+BigGIS is an ongoing research project started at ==April 2016== and deals with ==real-time big data== and ==semantic technologies==.
 :::
 
 
@@ -293,7 +299,7 @@ Question: Should an entity be represented as a literal or instance ?
 ::: italic center
 Matthias Frank is an employee of the FZI Research Center for Information Technology working on the BigGIS project. 
 BigGIS is an ongoing research project started at April 2016 and deals with real-time big data and semantic technologies.
-
+ 
 ![width:800px](./figures/data_model.png)
 :::
 
@@ -313,13 +319,13 @@ BigGIS is an ongoing research project started at April 2016 and deals with real-
 # Step 5: Transformation into Serialized Graphs
 
 
-It is important to separate the ==facts== on their respective pages and determine the ==direction of a relation==.
+It is *important* to **separate the facts** on their respective pages and determine the **direction** of a relation.
 
 {.skip}
 
 Syntax on the `Matthias Frank`-Page:
 ::: blue
-`[[Matthias Frank]]` is an employee of the `[[employed_at::FZI Research Center for Information Technology]]` working on the `[[works_at::BigGIS]]` project. 
+`[[Matthias Frank]]` is an employee of the `[[works_at::FZI Research Center for Information Technology]]` working on the `[[member_of::BigGIS]]` project. 
 
 `[[Category:Employee]]`
 :::
@@ -328,19 +334,19 @@ Syntax on the `Matthias Frank`-Page:
 
 Syntax on the `BigGIS`-Page:
 ::: blue
-`[[BigGIS]]` is an ongoing research project started at `[[started::April 2016]]` and deals with `[[has_topic::Real-Time Big Data]]` and `[[has_topic::Semantic Technologies]]`.
+`[[BigGIS]]` is an ongoing research project started at `[[start_date::April 2016]]` and deals with `[[has_topic::Real-Time Big Data]]` and `[[has_topic::Semantic Technologies]]`.
 
-`[[Category:Research Project]]`
+`[[Category:Project]]`
 :::
 
 
 ---
 # Important: Consider the Relationship Semantics
 
-- SMW's KRF is a ==directed Hypergraph==
+- SMW's Knowledge Representation Framework is a ==directed Hypergraph==
 - Therefore, the direction of a relation matters
-- The direction of a relation bears certain **semantics** (structural and model-theoretic)
-- These semantics are relevant in inline queries
+- The direction of a relation bears certain ==semantics== (_structural_ and _model-theoretic_)
+- These semantics are relevant in **inline queries**
   - e.g. `has_member` versus `is_member_of` – one can be used on employee pages, the other on project pages
 
 
@@ -357,11 +363,12 @@ Bayern Munich was founded in 1900. They play at the Allianz Arena. The club has 
 
 {.bigskip}
 
-Tasks
-1. Identify all instances, properties, classes, literals etc.
-2. Create the conceptual graph
-3. Think about what classes, properties and literals are needed
-4. Complement the above text using the Semantic MediaWiki syntax of the respective elements
+**Tasks**
+1. Identify all *instances*, *properties*, *classes*, *literals* etc.
+2. Think about what *additional* classes, properties and literals are needed
+3. Create the *conceptual graph*
+4. Think about what **facts** will be represented on which page
+5. Complement the above text using the *Semantic MediaWiki syntax* of the respective elements
 
 
 
