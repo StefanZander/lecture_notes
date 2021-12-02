@@ -55,7 +55,6 @@ Mit den Informationen aus "Kapitel 2: Technologische Grundlagen" können wir die
 
 ::: twocolumns
 - Ausschnitte aus Gegenstandsbereichen lassen sich am besten unter Reduzierung struktureller Heterogenität als _konzeptueller Graph_ darstellen
-- Beziehungen sollten als _First-Class Elemente_ behandelt werden
 - ==URIs & IRIs== ermöglichen die eindeutige Identifizierung von “Dingen” und dienen als *Adressierungschemata*
 - Dinge sind ==Information-== und ==Non-Information Resources==
 - Wir unterscheiden zwischen _Designator_ und _Designatum_
@@ -64,6 +63,8 @@ Mit den Informationen aus "Kapitel 2: Technologische Grundlagen" können wir die
 - Die Semantik wird durch die Terme und logische Theorie, auf der eine ==Ontologiesprache== definiert ist, festgelegt
 - Beziehungen sollten durch _wohl-definierte Terme_ aus bekannten Ontologien oder Vokabularen representiert werden
 - Resourcen sollten durch URIs/IRIs von bekannten ==Domänen== (bspw. DBpedia) identifiziert werden
+- Beziehungen sollten als _First-Class Elemente_ behandelt werden
+- Sachverhalte werden in einem _Triple-Pattern_ kodiert
 :::
 
 <!-- ---
@@ -210,7 +211,7 @@ Steps:
 2. Identify *Concepts* (Classes)
 3. Identify *Properties* and *Data* (Numbers, Literals etc.)
 4. Represent as *Conceptual Graph* with *Stereotypes*
-5. Transform into *Serialized Graphs* using Mediawiki syntax
+5. Transform into *Serialized Graphs* using MediaWiki syntax
 
 
 
