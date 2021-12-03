@@ -35,11 +35,16 @@ Einführung in JavaScript | Functions  {.lightgreen .Big .skip}
 - The Special Role of Functions in JavaScript
 - Function Declaration versus Function Expression
 - Hoisting
-- Assigning a Function to a Variable
-- Adding a Function to an Object
-- Passing Functions to other Functions as Arguments
-- Returning a Function from a Function
-- Parameters in Functions
+- Function Types
+  - Constructor Functions
+  - Self-Invoking Functions
+  - Arrow Functions
+- Working with Functions
+  - Assigning a Function to a Variable
+  - Adding a Function to an Object
+  - Passing Functions to other Functions as Arguments
+  - Returning a Function from a Function
+  - Parameters in Functions
 
 
 
@@ -104,10 +109,15 @@ function add(num1, num2) {
   return num1 + num2;
 }
 ```
-
+<!--
 - Function declaration are **hoisted** to the top of the context^1^
   - ie., the function name is known ahead of time
-- Hence, such functions can be used before they are defined  
+- Hence, such functions can be used before they are defined   -->
+- Declared functions are named functions
+- Hoisted at the top of the scope^1^ (=context) in which they are defined
+- Used for ...
+  - normal functions
+  - **constructor functions** to generate reference values
 :::
 ::::
 :::: single
@@ -122,9 +132,14 @@ let add = function(num1, num2) {
 let result = add(5, 5);
 ```
 
-- Function expressions are anonymous function – ie., functions without name
-- Function expression can not be hoisted; they can only be referenced through the variable 
-- Function expressions are commonly used for handlers
+- Function expressions are anonymous function
+- Function expression can not be hoisted; 
+  - they can only be referenced through the variable 
+- Used for ...
+  - assignment expressions
+  - function parameters (e.g. for handlers)
+  - methods
+  - return values of functions
 
 :::
 ::::
@@ -132,7 +147,6 @@ let result = add(5, 5);
 
 ::: footnotes
 ^1^ The context is either the function, in which the declaration occurs or the global scope, i.e., the `window` object
-
 :::
 
 
@@ -175,6 +189,194 @@ Error
 :::
 ::::
 :::::
+
+
+
+---
+<!-- header: Function Types -->
+# Function Types
+
+
+---
+# Constructor Functions
+
+::::: columns
+:::: single
+- Functions invoked with `new` are called **Constructor Functions**
+- Constructor functions ...
+  - *define* ==reference types==, and 
+  - *return* a newly created ==reference value==
+- The _default return type_ is the new reference value (=instance of an reference type)
+- The instantiation process can be manipulated by explicitly specifying the _return value_ of a constructor function
+::::
+:::: single
+<!-- **Example** -->
+```js
+function Person(firstname, lastname, birthyear) {
+    "use strict";
+    this._firstname = firstname;
+    this._lastname = lastname;
+    this.age = new Date().getFullYear() - birthyear;
+    
+    this.sayName = function() {
+        console.log(
+          "My name is " + 
+          this._firstname + " " + 
+          this._lastname);
+    }
+}
+
+// Usage
+let p = new Person("Hans", "Haas", 1919);
+p.sayName(); // My name is Hans Haas
+```
+::::
+:::::
+
+
+
+---
+# Self-Invoking Functions
+
+::::: columns-center
+:::: single
+- Function expressions can be made =="self-invoking"==
+- aka ==Immediately Invoked Function Expression (IIFE)==
+- A self-invoking expression is started _automatically_ without being called and will be removed immediately when finished 
+- IIFE create a ==local scope== for variables and the function
+  - i.e., they a not visible globally
+  - no mismatch with identically named variables among scripts
+- Function expressions will _execute automatically_ if the expression is followed by `()`
+- A function declaration cannot be self-invoked
+- Parentheses `()` around the function indicate that it is a function expression
+::::
+:::: single
+**Example #1**
+```js
+(function () {
+  let x = "Hello World";  // I will invoke myself
+  console.log(x);
+})();
+```
+
+**Example #2**
+```html
+<!DOCTYPE html>
+<html>
+<body>
+<p>Functions can be invoked automatically without being called</p>
+<p id="demo"></p>
+<script>
+(function () {
+  document.getElementById("demo").textContent = 
+    "Hello! I called myself";
+})();
+</script>
+</body>
+</html>
+```
+::::
+:::::
+
+::: footnotes
+^1^ Please note: Anonymous functions are bound to a variable wherefore they are technically not anonymous; IIFE in contrast require more brackets but are technically indeed anonymous.
+
+^2^ Source: https://www.mediaevent.de/javascript/self-executing-functions.html
+:::
+
+
+
+--- 
+# Alternative Notations for Self-Invoking Functions
+
+Three common notations for Self-nvoking Functions^1^
+
+```js
+// Crockford's preference - parens on the inside
+(function() {
+  console.log('Welcome to the Internet. Please follow me.');
+} () );
+
+//The OPs example, parentheses on the outside
+(function() {
+  console.log('Welcome to the Internet. Please follow me.');
+}) ();
+
+//Using the exclamation mark operator
+//https://stackoverflow.com/a/5654929/1175496
+!function() {
+  console.log('Welcome to the Internet. Please follow me.');
+}();
+```
+
+::: footnotes
+^1^ Spaces have been added for reasons of readability and comprehensibility.
+:::
+
+
+---
+# Arrow Functions
+
+::::: columns
+:::: single
+- Arrow functions are a __short syntax__ for _function expressions_
+  - no `function` keyword 
+  - no `return` keyword & curly brackets `{}` in single statements
+  - no `()` when only one parameter is expected
+- Arrow functions do _not_ have their own `this`
+  - They use `this` from the calling context (ie. surrounding block)
+  - They are not well suited for defining object methods
+- Arrow functions are _not hoisted_
+  - They must be defined before they are used
+- There is no `arguments` objects in arrow functions
+
+::: gray smaller 
+**Please note**
+Return and the curly brackets can only be omitted if the function is a single statement. Because of this, it might be a good habit to always keep them.
+:::
+::::
+:::: single
+```js
+// ES5
+var x = function(x, y) {
+  return x * y;
+}
+
+// ES6
+const x = (x, y) => x * y;
+```
+
+```js
+// Usual notation
+let double = function (num) {
+   return num * 2;
+}
+
+// Shortest possible notation
+let double = num => num * 2; 
+
+// Recommended notation
+let double = (num) => { return num * 2; }
+```
+
+<!-- 
+```js
+const x = (x, y) => { return x * y };
+``` 
+-->
+
+::::
+:::::
+
+::: footnotes
+Source: https://www.mediaevent.de/javascript/arrow-function.html
+:::
+
+
+
+---
+<!-- header: Working with Functions -->
+# Working with Functions
 
 
 
@@ -228,9 +430,9 @@ window.onload = init;
 
 ::::: columns
 :::: single
-**Functions in Objects are called Methods**
+**Methods: Executable Property Values**
 
-- A property value of type function makes the property a **method**.
+- A property value of type `Function` makes the property a **method**.
 - Methods are treated the same way as properties except for they can be *executed* (i.e., their value is calculated).
 
   ```js
@@ -373,7 +575,7 @@ Fragen:
 ---
 # Parameters in Functions
 
-JS allows to pass any numbers of parameters to any functions since function parameters are stored in an array-like data structure called `arguments`.
+JavaScript allows to pass any number of ==parameters== to functions since function parameters are stored in an _array-like data structure_ called `arguments`
 ::::: columns
 :::: double
 ```js
