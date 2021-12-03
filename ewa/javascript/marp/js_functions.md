@@ -289,7 +289,7 @@ p.sayName(); // My name is Hans Haas
 --- 
 # Alternative Notations for Self-Invoking Functions
 
-Three common notations for Self-nvoking Functions^1^
+Three common notations exists for Self-Invoking Functions^1^
 
 ```js
 // Crockford's preference - parens on the inside
