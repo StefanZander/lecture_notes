@@ -231,6 +231,8 @@ console.log(name.last);                   // undefined
 - `===` Comparison without coercing the variables to another type
 - `==` Comparison with type coercion 
 
+::::: columns
+:::: triple
 ```js
 console.log("5" == 5);              // true
 console.log("5" === 5);             // false
@@ -238,7 +240,15 @@ console.log("5" === 5);             // false
 console.log(undefined == null);     // true
 console.log(undefined === null);    // false
 ```
-
+::::
+:::: double
+::: blue
+Equality of Primitives and Objects
+- **Primitives**: comparing the ==actual value==
+- **Objects**: comparing the ==memory location==
+:::
+::::
+:::::
 
 ---
 <!-- header: Reference Types -->
