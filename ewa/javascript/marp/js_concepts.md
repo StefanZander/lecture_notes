@@ -93,20 +93,20 @@ printFirstTwoLetters("5") // String is less than 2 chars
 
 ---
 <!-- header: ES6 Syntax -->
-# ES6 Syntax
+## Some new ES6 Syntax Features
 
-ES6/ES2015 syntax is widely used across the Web; learn it to better understand external JS code examples
-::::: columns
+<!-- ES6/ES2015 syntax is widely used across the Web; learn it to better understand external JS code examples -->
+::::: columns-center
 :::: single
 **Destructuring**
 ::::
 :::: double
 ```js
-var robotA = { name: "Bender" };
-var robotB = { name: "Flexo" };
+let robotA = { name: "Bender" };
+let robotB = { name: "Flexo" };
 
-var { name: nameA } = robotA;
-var { name: nameB } = robotB;
+let { name: nameA } = robotA;
+let { name: nameB } = robotB;
 
 console.log(nameA); // "Bender"
 console.log(nameB); // "Flexo"
@@ -114,39 +114,55 @@ console.log(nameB); // "Flexo"
 ::::
 :::: double
 ```js
-let options = {
-  title: "Menu",
-  width: 100,
-  height: 200
-};
+let options = {   title: "Menu",  
+                  width: 100, 
+                  height: 200 
+              };
 
 let {title, width, height} = options;
 
-alert(title);  // Menu
-alert(width);  // 100
-alert(height); // 200
+console.log(title, width, heigth); 
 ```
 ::::
 :::::
 
 ::::: columns-center
 :::: single
-The Spread Operator
+**The Spread Operator**
 ::::
 :::: double
 ```js
-
+let dateFields = [1970, 0, 1];  
+let d = new Date(...dateFields);
+```
+::::
+:::: double
+```js
+let obj1 = { foo: 'bar', x: 42 };
+let obj2 = { foo: 'baz', y: 13 };
+let mergedObj = { ...obj1, ...obj2 };
+// Object { foo: "baz", x: 42, y: 13 }
 ```
 ::::
 :::::
 
 ::::: columns-center
 :::: single
-Literal Strings
+**Literal Strings**
 ::::
 :::: double
 ```js
-
+const a = 101;
+const b = 42;
+const quiz = "Sum of " + a + " + " + b + 
+  " is " + (a + b) + ".";
+```
+::::
+:::: double
+```js
+// written as template literal
+const quiz = 
+  `Sum of ${a} + ${b} is ${(a + b)}.`;
 ```
 ::::
 :::::

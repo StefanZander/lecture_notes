@@ -147,7 +147,7 @@ To ask for pages with some specified annotations in order to retrieve additional
 
 
 ---
-# A Word about the Condition Syntax...
+## The Condition Syntax resembles the Annotation Syntax
 
 <!-- Please note: -->
 The _markup text_ for formulating ==query conditions== is exactly similar to the annotations embedded in wiki pages. 
@@ -163,7 +163,7 @@ The following queries show what this means: {.Bigskip}
   
 
 ---
-# Query Algebra – Part 1: Conjunctions
+# Query Algebra – Conjunctions
 
 :::: equalcolumns
 ::: 1st-column
@@ -197,7 +197,7 @@ SMW will ignore some characters such as trailing spaces or comma in numbers depe
 
 
 ---
-# Query Algebra – Part 2: Disjunctions
+# Query Algebra – Disjunctions
 
 **Disjunctions** are ==OR-conditions== that allow several _alternative conditions_ on query results. 
 A _disjunction_ requires that at least one of the possible alternatives is satisfied (ie. ==logical OR==).
@@ -285,7 +285,7 @@ Comparators work only for **property values** and not for conditions on categori
 ---
 # Search Features
 
-SMW supports a number of additional search features, which are not discussed in detail here^1^:
+SMW provides a number of additional search features, which we will not discuss in the lecture; details are available on the help-pages^1^:
 
 - *Search operators* shows how to refine search conditions and criteria using operators such as comparators or wildcards.
 - *Unions (OR)* of results describes how *disjunctions* (OR-conditions) can be used to combine query results on alternative conditions.
@@ -308,12 +308,10 @@ See https://www.semantic-mediawiki.org/wiki/Help:Selecting_pages
 
 Sometimes, it is necessary to *invert the direction of properties* in queries, in particular when asking for pages that contain a _subobject_.
 
-<!-- It is possible to *invert* the *direction* of SMW properties -->
-
 ::: definition
-==Inverse properties== do not ask for pages that contain a matching annotation but for the ==object value== of the annotation on pages where the property is used.
+==Inverse properties== do not ask for pages that contain a matching annotation but for the ==object value== of the annotation on pages, where the property is used.
 
-Quelle: eigene Definitoin angelehnt an https://www.semantic-mediawiki.org/wiki/Help:Inverse_properties
+Quelle: eigene Defintion angelehnt an https://www.semantic-mediawiki.org/wiki/Help:Inverse_properties
 :::
 
 **Example** {.Bigskip}
@@ -335,38 +333,21 @@ $\Rightarrow$ Inverse properties can be used in all SMW interfaces that take pro
 
 
 ---
-# How to Formulate Query Conditions 
+# Initial Example
 
-::: example
-**Example**
-The following domain knowledge is modelled in a Semantic MediaWiki
-
-> "A research group has a number of employees being members of it. 
-> These employees work in different projects, where each project has different topics it is concerned with."
+::: examlpe
+**Initial Situation**
+> A knowledge base contains the profile of all its employees in the form of wiki pages. 
+> The profile pages also contain the information about the research division, an employee belongs to in form of an annotation, the object of which refers to the research division's wiki page.
 :::
 
+**Question** {.Bigskip}
 
-
-**Question**: {.bigskip}
-
-> How can we satisfy the information need of displaying all the research topics a research group’s members are associated with through their project work on the research group’s wiki page? {.italic}
+> How can we find out the employees that belong to a specific research division ?
 
 ...or in other words
 
-> Which topics are a research group working on?^1^ {.italic}
-
-{.skip}
-
-::: centerbox warning  
-How can we model and satisfy this information need in Semantic MediaWiki ?
-:::
-{.skip}
-
-::: footnotes
-^1^ Assuming that topic information is encoded on the project pages using, e.g., `has_topic::Smart_Data` statements.
-:::
-
-
+> How can we satisfy the information need of displaying the names of all the employees that belong to a certain research devision, e.g., to Prof. Dr. Rudi Studer's Group ?
 
 
 ---
@@ -381,7 +362,7 @@ First consider the **structural composition** of the data model used to represen
 ::: 
 ::::
 :::: 2nd-column
-This **graphical representation** serves as basis for the formulation of ==query conditions==.
+The **instance graph** serves as basis for the formulation of ==query conditions==.
 - Therefore, think of query conditions as 
     ~> _graphs with conditional node values_.
 - Also consider the ==structural semantics== of involved elements.
@@ -398,7 +379,7 @@ This **graphical representation** serves as basis for the formulation of ==query
 ---
 # Formulating Queries I (Part 2)
 
-The structural composition of the knowledge graph can then be transformed in a ==query graph==
+The structural composition of the ==instance graph== can then be transformed in a ==query graph==
 
 ::::: equalcolumns bigskip
 :::: 1st-column
@@ -483,6 +464,43 @@ Consider the following conceptual _query graph semantics_ of the previous exampl
 
 
 
+
+---
+# How to Formulate Query Conditions for Complex Queries 
+
+::: example
+**Example**
+The following domain knowledge is modelled in a Semantic MediaWiki
+
+> "A research group has a number of employees being members of it. 
+> These employees work in different projects, where each project has different topics it is concerned with."
+:::
+
+
+
+**Question**: {.bigskip}
+
+> How can we satisfy the information need of displaying all the research topics a research group’s members are associated with through their project work on the research group’s wiki page? {.italic}
+
+...or in other words
+
+> Which topics are a research group working on?^1^ {.italic}
+
+{.skip}
+
+::: centerbox warning  
+How can we model and satisfy this information need in Semantic MediaWiki ?
+:::
+{.skip}
+
+::: footnotes
+^1^ Assuming that topic information is encoded on the project pages using, e.g., `has_topic::Smart_Data` statements.
+:::
+
+
+
+
+
 ---
 # Formulating Complex Queries
 
@@ -557,11 +575,11 @@ If we want to retrieve _all topics_, members of Prof. Studer's group are working
 {.BigSkip}
 
 ::: centerbox center warning small Bigskip
-When formulating queries in Semantic MediaWiki, always consider the structural semantics of pages (ie., how pages are linked together via properties).
+When formulating queries in Semantic MediaWiki, always consider the **structural semantics** of pages (ie., how pages are linked together via properties).
 :::
 ::::
 :::::
 
 ::: footnotes
-^1^ Assuming, that the query is placed on the group's page.
+^1^ Assuming, that the query is placed on the group's page; Category conditions are removed from the query for reasons of simplicity and comprehensibility.
 :::

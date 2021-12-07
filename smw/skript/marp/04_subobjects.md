@@ -22,7 +22,7 @@ Kapitel 4: Fortschrittliche Modellierungskonzepte in Semantic MediaWiki {.lightg
 
 ---
 <!-- header: Inhalte -->
-<!-- footer: Prof. Dr. Stefan Zander -->
+<!-- footer: Semantisches Wissensmanagement in Unternehmen | Fortschrittliche Modellierungskonzepte in Semantic MediaWiki | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences -->
 # Inhalte
 
 1. Motivation
@@ -109,8 +109,8 @@ Diese lassen sich in Semantic MediaWiki mittels ==Subobjects== abbilden.
 Erstellung eines neuen Subobjects auf der Meryl Streep Seite mit den properties `movie` und `role`
 ```
 {{#subobject:The Iron Lady 
- |role=Margaret Thatcher 
- |movie=The Iron Lady
+ |role=Margaret Thatcher        <!-- refers to role -->
+ |movie=The Iron Lady           <!-- refers to played_in -->
 }}
 ```
 ::::
@@ -136,9 +136,9 @@ Erstellung eines neuen Subobjects auf der Meryl Streep Seite mit den properties 
 ---
 # Tipp
 
-Um die **Abfragekomplexität** zu verringern kann es gelegentlich sinnvoll sein, innerhalb eines Subobjects Informationen zu hinterlegen, _auf welcher Seite es eingebettet ist_ (in RDF: zu welchem Subject es gehört). Dies kann mit einem zusätzlichen frei zu definierenden _Property_ realisiert werden, ==dessen Wert dem Namen der Seite entspricht, auf der das Subobject eingebettet ist==.
+Um die **Abfragekomplexität** zu verringern kann es gelegentlich sinnvoll sein, innerhalb eines Subobjects Informationen zu hinterlegen, _auf welcher Seite es eingebettet ist_ (in RDF: zu welchem Subject es gehört). Dies kann mit einem ==zusätzlichen frei zu definierenden Property== realisiert werden, ==dessen Wert dem Namen der Seite entspricht, auf der das Subobject eingebettet ist==.
 
-::::: columns
+::::: columns-center
 :::: double
 ::: example
 **Beispiel**
@@ -147,12 +147,12 @@ Stating that the subobject `The Iron Lady` was embedded on the `Meryl Streep` pa
 ```
 {{#subobject:The Iron Lady 
  ...
- |played by=Meryl Streep 
+ |played by=Meryl Streep  <!-- a more general property: 'refers_to_page' -->
 }}
 ```
 :::
 ::::
-:::: single
+:::: single small
 **Hinweis**:
 Falls das Subobject mittels einem Template transkludiert wird, so kann für die Angabe des Seitennamens das Magic Word `{{PAGENAME}}` verwendet werden.
 ::::
@@ -168,7 +168,7 @@ Falls das Subobject mittels einem Template transkludiert wird, so kann für die 
 ```
 ::::
 :::: single
-Bei **anonymen Subobjects** ist dies nicht möglich, da ein interner Bezeichner als Identifier vergeben wird, der im Sourcecode der wiki Seite nicht zu sehen ist.
+Bei **anonymen Subobjects** ist dies nicht möglich, da ein ==interner Bezeichner== als Identifier vergeben wird, der im Sourcecode der wiki Seite nicht zu sehen ist.
 ::::
 :::::
 
@@ -346,20 +346,20 @@ Source: https://www.semantic-mediawiki.org/wiki/Help:Subobjects_and_queries
 
 ::::: equalcolumns
 :::: 1st-column
-**_Motivation:_**
+**_Motivation_**
 Display the items (represented as subobjects) of all book orders issued in 2020.
 
-___Assumption:___ 
+___Assumption___ 
 Items are represented as subobjects embedded in order pages.
 
-___Solution:___ {.noskip}
+___Solution___ {.noskip}
 1. Draw a data graph of the involved entities
 2. Formulate the query conditions for the parent pages
 3. Insert the parent page query conditions into a subquery
 4. The subquery becomes the value of a query condition using the inverse `Has subobject` property
 ::::
 :::: 2nd-column
-___Example:___
+___Example___
 Build the _subquery_ (i.e. the query conditions for parent pages)
 ```
 [[Category:Buchbestellung]]

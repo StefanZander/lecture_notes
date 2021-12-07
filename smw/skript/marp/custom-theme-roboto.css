@@ -93,8 +93,8 @@ blockquote p {
 */
 
 pre {
-    border: 0;
-    background-color: #eee;
+    /* border: 0; */
+    background-color: #e6e6e6;
 }
 
 

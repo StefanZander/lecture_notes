@@ -26,7 +26,7 @@ Kapitel 3.2: Datenmodellierung mit Semantic MediaWiki {.lightgreen .Big .skip}
 
 ---
 <!-- header: Kapitel 1: Vorbemerkung -->
-<!-- footer: Semantisches Wissensmanagement in Unternehmen | Datenmodellierung mit Semantic MediaWiki | Prof. Dr. Stefan Zander | Hochschule Darmstadt -->
+<!-- footer: Semantisches Wissensmanagement in Unternehmen | Datenmodellierung mit Semantic MediaWiki | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences -->
 
 # Vorbemerkung
 

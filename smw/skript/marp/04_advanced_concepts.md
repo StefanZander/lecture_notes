@@ -21,17 +21,18 @@ paginate: true
 Kapitel 4: Fortschrittliche Ontologiemodellierung mittels Semantic MediaWiki {.lightgreen .Big}
 
 ---
-<!-- header: Kapitel 1: Page Forms -->
-<!-- footer: Prof. Dr. Stefan Zander -->
+<!-- header: Inhalte -->
+<!-- footer: Semantisches Wissensmanagement im Unternehmen | Fortschrittliche Ontologiemodellierung | Prof. Dr. Stefan Zander | Hochschule Darmstadt -->
 # Inhalte
 
 1. Page Forms
 2. Query Forms
-3. Fortgeschrittene Tipps
+3. Tipps für Fortgeschrittene
 
 
 
 ---
+<!-- header: Page Forms -->
 # Page Forms
 
 
@@ -75,7 +76,7 @@ Umfangreiche Dokumentation zu Page Forms: https://www.mediawiki.org/wiki/Extensi
 # Hauptbestandteile
 
 
-::::: columns
+::::: columns-center
 :::: single
 - Hauptbestandteil sind sog. ==Form Definition Pages== im `Form:` Namesraum.
 
@@ -87,7 +88,7 @@ Umfangreiche Dokumentation zu Page Forms: https://www.mediawiki.org/wiki/Extensi
 ::::
 :::: single
 ::: center
-here comes a picture
+![height:320px](./figures/form_definition_page.png)
 :::
 ::::
 :::::

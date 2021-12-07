@@ -33,7 +33,7 @@
 /* ========================
     CODE SNIPPETS
    ========================
-*/div#p>svg>foreignObject>section pre{border:0;background-color:#eee}
+*/div#p>svg>foreignObject>section pre{border:0;background-color:#e6e6e6}
 
 
 
@@ -278,53 +278,67 @@ printFirstTwoLetters(<span class="hljs-string">&quot;5&quot;</span>) <span class
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="4" data-paginate="true" data-header="ES6 Syntax" data-footer="Entwicklung Web-basierter Anwendungen | Einführung in JavaScript – Wichtige Konzepte | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="4" data-marpit-pagination-total="14" style="--paginate:true;--header:ES6 Syntax;--footer:Entwicklung Web-basierter Anwendungen | Einführung in JavaScript – Wichtige Konzepte | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
 <header>ES6 Syntax</header>
 
-<h1>ES6 Syntax</h1>
-<p>ES6/ES2015 syntax is widely used across the Web; learn it to better understand external JS code examples</p>
-<div class="columns">
+<h2>Some new ES6 Syntax Features</h2>
+
+<div class="columns-center">
 <div class="single">
 <p><strong>Destructuring</strong></p>
 </div>
 <div class="double">
-<pre><code class="language-js"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-keyword">var</span> robotA = { <span class="hljs-attr">name</span>: <span class="hljs-string">&quot;Bender&quot;</span> };
-<span class="hljs-keyword">var</span> robotB = { <span class="hljs-attr">name</span>: <span class="hljs-string">&quot;Flexo&quot;</span> };
+<pre><code class="language-js"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-keyword">let</span> robotA = { <span class="hljs-attr">name</span>: <span class="hljs-string">&quot;Bender&quot;</span> };
+<span class="hljs-keyword">let</span> robotB = { <span class="hljs-attr">name</span>: <span class="hljs-string">&quot;Flexo&quot;</span> };
 
-<span class="hljs-keyword">var</span> { <span class="hljs-attr">name</span>: nameA } = robotA;
-<span class="hljs-keyword">var</span> { <span class="hljs-attr">name</span>: nameB } = robotB;
+<span class="hljs-keyword">let</span> { <span class="hljs-attr">name</span>: nameA } = robotA;
+<span class="hljs-keyword">let</span> { <span class="hljs-attr">name</span>: nameB } = robotB;
 
 <span class="hljs-built_in">console</span>.log(nameA); <span class="hljs-comment">// &quot;Bender&quot;</span>
 <span class="hljs-built_in">console</span>.log(nameB); <span class="hljs-comment">// &quot;Flexo&quot;</span>
 </span></span></foreignObject></svg></code></pre>
 </div>
 <div class="double">
-<pre><code class="language-js"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-keyword">let</span> options = {
-  <span class="hljs-attr">title</span>: <span class="hljs-string">&quot;Menu&quot;</span>,
-  <span class="hljs-attr">width</span>: <span class="hljs-number">100</span>,
-  <span class="hljs-attr">height</span>: <span class="hljs-number">200</span>
-};
+<pre><code class="language-js"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-keyword">let</span> options = {   <span class="hljs-attr">title</span>: <span class="hljs-string">&quot;Menu&quot;</span>,  
+                  <span class="hljs-attr">width</span>: <span class="hljs-number">100</span>, 
+                  <span class="hljs-attr">height</span>: <span class="hljs-number">200</span> 
+              };
 
 <span class="hljs-keyword">let</span> {title, width, height} = options;
 
-alert(title);  <span class="hljs-comment">// Menu</span>
-alert(width);  <span class="hljs-comment">// 100</span>
-alert(height); <span class="hljs-comment">// 200</span>
+<span class="hljs-built_in">console</span>.log(title, width, heigth); 
 </span></span></foreignObject></svg></code></pre>
 </div>
 </div>
 <div class="columns-center">
 <div class="single">
-<p>The Spread Operator</p>
+<p><strong>The Spread Operator</strong></p>
 </div>
 <div class="double">
-<pre><code class="language-js"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>
+<pre><code class="language-js"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-keyword">let</span> dateFields = [<span class="hljs-number">1970</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>];  
+<span class="hljs-keyword">let</span> d = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(...dateFields);
+</span></span></foreignObject></svg></code></pre>
+</div>
+<div class="double">
+<pre><code class="language-js"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-keyword">let</span> obj1 = { <span class="hljs-attr">foo</span>: <span class="hljs-string">&#x27;bar&#x27;</span>, <span class="hljs-attr">x</span>: <span class="hljs-number">42</span> };
+<span class="hljs-keyword">let</span> obj2 = { <span class="hljs-attr">foo</span>: <span class="hljs-string">&#x27;baz&#x27;</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">13</span> };
+<span class="hljs-keyword">let</span> mergedObj = { ...obj1, ...obj2 };
+<span class="hljs-comment">// Object { foo: &quot;baz&quot;, x: 42, y: 13 }</span>
 </span></span></foreignObject></svg></code></pre>
 </div>
 </div>
 <div class="columns-center">
 <div class="single">
-<p>Literal Strings</p>
+<p><strong>Literal Strings</strong></p>
 </div>
 <div class="double">
-<pre><code class="language-js"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>
+<pre><code class="language-js"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-keyword">const</span> a = <span class="hljs-number">101</span>;
+<span class="hljs-keyword">const</span> b = <span class="hljs-number">42</span>;
+<span class="hljs-keyword">const</span> quiz = <span class="hljs-string">&quot;Sum of &quot;</span> + a + <span class="hljs-string">&quot; + &quot;</span> + b + 
+  <span class="hljs-string">&quot; is &quot;</span> + (a + b) + <span class="hljs-string">&quot;.&quot;</span>;
+</span></span></foreignObject></svg></code></pre>
+</div>
+<div class="double">
+<pre><code class="language-js"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-comment">// written as template literal</span>
+<span class="hljs-keyword">const</span> quiz = 
+  <span class="hljs-string">`Sum of <span class="hljs-subst">${a}</span> + <span class="hljs-subst">${b}</span> is <span class="hljs-subst">${(a + b)}</span>.`</span>;
 </span></span></foreignObject></svg></code></pre>
 </div>
 </div>
@@ -740,7 +754,7 @@ In order to use <code>await</code> regardless of an async function, it need to b
 <footer>Entwicklung Web-basierter Anwendungen | Einführung in JavaScript – Wichtige Konzepte | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences</footer>
 </section>
 <script>!function(){"use strict";const t="marpitSVGPolyfill:setZoomFactor,",e=Symbol();let r,o;function n(n){const i="object"==typeof n&&n.target||document,a="object"==typeof n?n.zoom:n;window[e]||(Object.defineProperty(window,e,{configurable:!0,value:!0}),window.addEventListener("message",(({data:e,origin:r})=>{if(r===window.origin)try{if(e&&"string"==typeof e&&e.startsWith(t)){const[,t]=e.split(","),r=Number.parseFloat(t);Number.isNaN(r)||(o=r)}}catch(t){console.error(t)}})));let l=!1;Array.from(i.querySelectorAll("svg[data-marpit-svg]"),(t=>{var e,n,i,s;t.style.transform||(t.style.transform="translateZ(0)");const c=a||o||t.currentScale||1;r!==c&&(r=c,l=c);const d=t.getBoundingClientRect(),{length:u}=t.children;for(let r=0;r<u;r+=1){const o=t.children[r],a=o.getScreenCTM();if(a){const t=null!==(n=null===(e=o.x)||void 0===e?void 0:e.baseVal.value)&&void 0!==n?n:0,r=null!==(s=null===(i=o.y)||void 0===i?void 0:i.baseVal.value)&&void 0!==s?s:0,l=o.firstElementChild,{style:u}=l;u.transformOrigin||(u.transformOrigin=`${-t}px ${-r}px`),u.transform=`scale(${c}) matrix(${a.a}, ${a.b}, ${a.c}, ${a.d}, ${a.e-d.left}, ${a.f-d.top}) translateZ(0.0001px)`}}})),!1!==l&&Array.from(i.querySelectorAll("iframe"),(({contentWindow:e})=>{null==e||e.postMessage(`${t}${l}`,"null"===window.origin?"*":window.origin)}))}r=1,o=void 0;const i=(t,e,r)=>{if(t.getAttribute(e)!==r)return t.setAttribute(e,r),!0};function a({once:t=!1,target:e=document}={}){const r="Apple Computer, Inc."===navigator.vendor?[n]:[];let o=!t;const a=()=>{for(const t of r)t({target:e});!function(t=document){Array.from(t.querySelectorAll('svg[data-marp-fitting="svg"]'),(t=>{var e;const r=t.firstChild,o=r.firstChild,{scrollWidth:n,scrollHeight:a}=o;let l,s=1;if(t.hasAttribute("data-marp-fitting-code")&&(l=null===(e=t.parentElement)||void 0===e?void 0:e.parentElement),t.hasAttribute("data-marp-fitting-math")&&(l=t.parentElement),l){const t=getComputedStyle(l),e=Math.ceil(l.clientWidth-parseFloat(t.paddingLeft||"0")-parseFloat(t.paddingRight||"0"));e&&(s=e)}const c=Math.max(n,s),d=Math.max(a,1),u=`0 0 ${c} ${d}`;i(r,"width",`${c}`),i(r,"height",`${d}`),i(t,"preserveAspectRatio",getComputedStyle(t).getPropertyValue("--preserve-aspect-ratio")||"xMinYMin meet"),i(t,"viewBox",u)&&t.classList.toggle("__reflow__")}))}(e),o&&window.requestAnimationFrame(a)};return a(),()=>{o=!1}}const l=Symbol(),s=document.currentScript;((t=document)=>{if("undefined"==typeof window)throw new Error("Marp Core's browser script is valid only in browser context.");if(t[l])return t[l];const e=a({target:t}),r=()=>{e(),delete t[l]};Object.defineProperty(t,l,{configurable:!0,value:r})})(s?s.getRootNode():document)}();
-</script></foreignObject></svg></div><div class="bespoke-marp-note" data-index="0" tabindex="0"><p>marp --engine ./engine.js --watch --theme-set custom-theme-roboto.css -- --allow-local-files js_concepts.md</p><p>marp --pdf --allow-local-files --engine ./engine.js --theme-set custom-theme-roboto.css -- js_concepts.md</p></div><div class="bespoke-marp-note" data-index="12" tabindex="0"><p>- marking a function as `async` signals the JS engine that it is called asynchronously
+</script></foreignObject></svg></div><div class="bespoke-marp-note" data-index="0" tabindex="0"><p>marp --engine ./engine.js --watch --theme-set custom-theme-roboto.css -- --allow-local-files js_concepts.md</p><p>marp --pdf --allow-local-files --engine ./engine.js --theme-set custom-theme-roboto.css -- js_concepts.md</p></div><div class="bespoke-marp-note" data-index="3" tabindex="0"><p>ES6/ES2015 syntax is widely used across the Web; learn it to better understand external JS code examples</p></div><div class="bespoke-marp-note" data-index="12" tabindex="0"><p>- marking a function as `async` signals the JS engine that it is called asynchronously
 - in asynchronous functions, we can use the `await` keyword
   - the literal meaning is that we 'await the response'
   - the JS engine automatically assigns the response value to the variable
