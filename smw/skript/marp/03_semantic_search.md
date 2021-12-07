@@ -23,7 +23,7 @@ Kapitel 3.3: Semantische Suche {.lightgreen .Big .skip}
 
 ---
 <!-- header: Kapitel 0: Vorbemerkung -->
-<!-- footer: Prof. Dr. Stefan Zander -->
+<!-- footer: Semantisches Wissensmanagement im Unternehmen | Semantische Suche | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences -->
 # Didaktischer Aufbau der Einheit
 
 Dieses Kapitel ist _zweigeteilt_:
@@ -122,15 +122,15 @@ To ask for pages with some specified annotations in order to retrieve additional
 **Structure**
 
 #ask Queries consist of _four parts_
-1. the `#ask` parser function
-2. query conditions
-3. printout statements, i.e., data to be displayed
-4. display options, i.e., how data are displayed
+1. The `#ask` **parser function**
+2. **Query conditions**, i.e., what pages to select
+3. **Printout statements**, i.e., data to be displayed
+4. **Display options**, i.e., how data are displayed
 :::
 ::: 2nd-column
 **Example**
 ```
-{{#ask:
+{{#ask:                     <!-- Parser Function -->
  [[Category:City]]          <!-- Query Conditions -->
  [[Located in::Germany]] 
  |?Population               <!-- Printout Statements -->
@@ -182,29 +182,29 @@ Similar, more readable notation
 :::
 ::::
 
-When using **many conditions** in _one query_, the result is _narrowed down_ to those pages that meet **all** the requirements. 
+When using **many conditions** in _one query_, the result is _narrowed down_ to those pages that meet ==**all** the requirements==. 
 Thus we have a ==logical AND==.
 
 ::: blue 
-Note that queries only return the articles that are _positively known to satisfy the required properties_: 
-if there is no property for the height of some actor, that actor will not be selected.
+Note that queries only return the articles that are ==positively known to satisfy the required properties== 
+$\Rightarrow$ If there is no property for the height of some actor, that actor page will not be selected.
 :::
 
 ::: centerbox warning Bigskip
-Please note:
-SMW will ignore some characters such as trailing spaces or comma in numbers depending on the datatype used. SMW also treat synonymous page names as identical resources; "Semantic wiki", "Semantic_wiki" and "semantic wiki" all refer to the same page.
+**Lexical Peculiarities**
+SMW will ignore some characters such as trailing spaces or comma in numbers depending on the datatype used. SMW also treat synonymous page names as **identical resources** $\rightarrow$ "Semantic wiki", "Semantic_wiki" and "semantic wiki" all refer to the same page.
 :::
 
 
 ---
 # Query Algebra – Part 2: Disjunctions
 
-**Disjunctions** are _OR-conditions_ that admit several _alternative conditions_ on query results. 
-A _disjunction_ requires that at least one (but maybe more than one) of the possible alternatives is satisfied (==logical OR==).
+**Disjunctions** are ==OR-conditions== that allow several _alternative conditions_ on query results. 
+A _disjunction_ requires that at least one of the possible alternatives is satisfied (ie. ==logical OR==).
 
 Semantic MediaWiki has two ways of writing _disjunctions_ in queries:
-- The operator `OR` is used for taking the union of two queries.
-- The operator `||` is used for disjunctions in property values, page names and category names.
+- The operator `OR` is used for taking the _union of two queries_
+- The operator `||` is used for disjunctions in *property values*, *page names*, and *category names*
 
 <!-- **Examples**
 :::: equalcolumns
@@ -320,11 +320,11 @@ Quelle: eigene Definitoin angelehnt an https://www.semantic-mediawiki.org/wiki/H
 ```
 {{#ask: [[has capital-::Germany]] }}
 ```
-- In this example, we do not ask for the page that contains a property with the given value but rather _for the value of the property entered to the page_ `Germany`.
+- In this example, we do not ask for the page that contains a property with the given value but rather for the _value of the property `has capital` entered to the page_ `Germany`.
 - In consequence `has capital-` has the meaning `is capital of`.
 
 ::: centerbox warning Bigskip
-Inverse properties can be used in all SMW interfaces that take properties, but not when adding data to a page.
+$\Rightarrow$ Inverse properties can be used in all SMW interfaces that take properties, but not when adding data to a page
 :::
 
 
