@@ -264,7 +264,53 @@ https://www.computerbase.de/forum/threads/warum-sind-closures-so-wichtig.1906523
 
 
 ---
+<!-- header: Asychronicity in JavaScript -->
 # Asynchronous JavaScript
+
+
+---
+## JavaScript is a Single-Threaded, Non-Blocking, Asynchronous PL
+
+::::: columns-center
+:::: single small
+**Function Execution Stack** (aka ==Call Stack==)
+<!-- - LIFO Data structure maintained internally by the JS engine -->
+- All invoked functions are added to the call stack
+- Completed functions are removed until the stack is empty
+- Functions are executed ==synchronously== one-by-one
+
+<!-- - Events or remote API calls might interrupt the execution -->
+**Callback Queue** (aka ==Task Queue==)
+- Callbacks are stored in this separate (FIFO) queue
+- The JS engine _periodically_ looks for new entries in the ==task queue== and once the ==call stack== is empty it shifts the first entry to the call stack and executes it synchronously (==$\Rightarrow$ event loop==)
+
+<!-- - Promises are special objects that help executing async code -->
+**Job Queue**
+- ==Promise executor functions== are stored in the ==job queue==
+- For each loop of the event loop, one macro task is completed out of the callback queue
+- Once that task is complete, the event loop visits the job queue and completes all micro-tasks in the job queue before it continues.
+<!-- - The JS engine uses a stack data structure to keep track of currently executed functions. The stack is called **Function Execution Stack**.
+- The Function Execution Stack (aka ==Call Stack==) executes the functions _sequentially_, line-by-line, one-by-one.
+- The browser/web APIs use ==callback functions== to complete thetasks when an asynchronous operation/delay is done. The callback function is placed in the callback queue.
+- The promise executor functions are placed in the job queue.
+- For each loop of the event loop, one macro task is completed out of the callback queue.
+- Once that task is complete, the event loop visits the job queue. It completes all the micro-tasks in the job queue before it looks for the next thing.
+- If both the queues get entries at the same point in time, the job queue gets preference over the callback queue. -->
+
+::::
+:::: single 
+::: blue centerbox center
+**Single-threaded** and **asychronous** – how does this work ???
+:::
+![](./figures/queues.png)
+::::
+:::::
+
+
+::: footnotes
+Source: https://www.freecodecamp.org/news/synchronous-vs-asynchronous-in-javascript/
+:::
+
 
 ---
 # Asynchronous Programming 

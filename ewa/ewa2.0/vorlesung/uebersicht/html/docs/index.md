@@ -178,12 +178,16 @@ EWA-Discord-Channel: <https://discord.gg/AC97TNBSJ6>
 !!! book
     **Lehrmaterialen**
 
+    - Ergänzende Slides von Prof. Zander    
+        - [Einführung in JavaScript](https://lernen.h-da.de/mod/resource/view.php?id=611929)
+        - [Funktionen in JavaScript](https://lernen.h-da.de/mod/resource/view.php?id=611930)
     - Foliensatz: Kap. 3 - 3.1.1
     - Lehrvideo: [Interaktive Webseiten I](https://electures.h-da.de/paella/ui/watch.html?id=ea56ce63-6cda-41ff-b96a-fbcfc5a7009c) – (00:00:00 – 00:44:39)
     - Das IMHO beste Buch zur Einführung in JavaScript: [The Principles of Object-Oriented JavaScript](https://www.oreilly.com/library/view/the-principles-of/9781457185304/)  
     – _mit ein wenig "Suchgeschick" findet man auch eine PDF-Version_
-    - Buch: [Understanding ECMAScript 6](https://leanpub.com/understandinges6/read/) (hier die [Sourcen](https://github.com/nzakas/understandinges6/tree/master/manuscript))
-    - Mozilla Web Documents: [Einführung in Objekt-orientiertes JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS)
+    - Zur Vertiefung
+        - Buch: [Understanding ECMAScript 6](https://leanpub.com/understandinges6/read/) (hier die [Sourcen](https://github.com/nzakas/understandinges6/tree/master/manuscript))
+      - Mozilla Web Documents: [Einführung in Objekt-orientiertes JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS)
 
 
 ### Einheit #7: JavaScript im Browser
@@ -205,23 +209,24 @@ EWA-Discord-Channel: <https://discord.gg/AC97TNBSJ6>
 
 ### Einheit #8: Forschrittliche Sprachkonzepte
 
-- Arrowfunctions
-- Closures
-- Promises
-- Async/await
+- Wie setzt man Error-Handling in JavaScript richtig ein ?
+- Was sind Closures und wofür werden sie verwendet ?
+- Wie funktioniert asynchrones JavaScript ?
+- Welche JavaScript Sprachkonstrukte ermöglichen die asynchrone Ausführung von Programmcode ?
 <!-- - [Subscribe to our mailing list](#){ .md-button } -->
 
 !!! book
     **Lehrmaterialen**
 
-    - Online-Skript von Prof. Zander: _in der Entstehung; Link kommt noch_
+    - Ergänzende Slides von Prof. Zander
+        - [Fortschrittliche JavaScript Sprachkonzepte](https://lernen.h-da.de/mod/resource/view.php?id=613808)
     - Closures
         - [MDN-Artikel zu Closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
         - [Closures als innere Funktionen](https://www.mediaevent.de/javascript/closures.html)
     - Gute Artikel zu Promises 
         - [JavaScript Promises – Explain Like I'm Five](https://blog.greenroots.info/javascript-promises-explain-like-i-am-five)
         - [JavaScript Promise Chain – The art of handling promises](https://blog.greenroots.info/javascript-promise-chain-the-art-of-handling-promises)
-    - async/await: [JavaScript async and await - in plain English, please](https://blog.greenroots.info/javascript-async-and-await-in-plain-english-please)
+    - Async/Await: [JavaScript async and await - in plain English, please](https://blog.greenroots.info/javascript-async-and-await-in-plain-english-please)
     - MDN Artikel zu [Inheritance in JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Inheritance)
 
 

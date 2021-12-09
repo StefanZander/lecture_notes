@@ -2,9 +2,6 @@ const fetch = require('node-fetch');
 
 // Using Objects in literal form as arguments
 
-// Callbacks
-// Promises
-// async / await
 
 // 3 different categories for asynchronous JS
 /**
@@ -14,87 +11,95 @@ const fetch = require('node-fetch');
  */
 
 
-//******************Callbacks *****************/
-
+//**********************************************/
+//****************** Callbacks *****************/
+//**********************************************/
 
 // Example #1: A Simple Callback
 
-// console.log("Hallo Welt - jetzt");
+console.log("Hallo Welt - jetzt");
 
-// setTimeout(() => {
-//     console.log("Hallo Welt – nach 1 Sec.")
-// }, 2000 ); 
+setTimeout(() => {
+    console.log("Hallo Welt – nach 1 Sec.")
+}, 2000 ); 
 
-// console.log("Dieser Code wird vor dem asynchronen Code ausgeführt...");
+console.log("Dieser Code wird vor dem asynchronen Code ausgeführt...");
 
 // Example #2
 // Nested callback functions --> "Callback-Hell"
 
-// let i = 0;
-// let stop = false;
+let i = 0;
+let stop = false;
 
-// setTimeout(() => { // first callback function; christmas-tree-pattern
-//     console.log("rot – " + i);
-//     setTimeout(() => {
-//         console.log("gelb – " + i);
-//         setTimeout(() => {
-//             console.log("grün – " + i);
-//             stop = true;
-//         }, 2000);
-//     }, 2000);
-// }, 2000);
+setTimeout(() => { // first callback function; christmas-tree-pattern
+    console.log("rot – " + i);
+    setTimeout(() => {
+        console.log("gelb – " + i);
+        setTimeout(() => {
+            console.log("grün – " + i);
+            stop = true;
+        }, 2000);
+    }, 2000);
+}, 2000);
 
-// const inc = setInterval(() => { 
-//     i = i + 1;
-//     if (stop === true) {
-//         clearInterval(inc);
-//     }
-// }, 500);
+const inc = setInterval(() => { 
+    i = i + 1;
+    if (stop === true) {
+        clearInterval(inc);
+    }
+}, 500);
 
 
 // Event handler for buttons
-// const btn;
-// btn.addEventListener("click", () => {
+const btn;
+btn.addEventListener("click", () => {
     
-// });
+});
 
 
 
-//************ PROMISES ************/ 
 
+
+//**********************************************/
+//****************** PROMISES ******************/ 
+//**********************************************/
 
 // Promises (success and fail path)
-// const myPromise = new Promise((resolve, reject) => {
-//     const rand = Math.floor(Math.random() *2);
-//     if (rand === 0) {
-//         resolve(rand);
-//     } else {
-//         reject(rand);
-//     }
-// } );
+const myPromise = new Promise((resolve, reject) => {
+    const rand = Math.floor(Math.random() *2);
+    if (rand === 0) {
+        resolve(rand);
+    } else {
+        reject(rand);
+    }
+} );
 
-// myPromise
-//     .then((rand) => console.log("Success – " + rand))
-//     .then(() => console.log("Ausgabe 2 im Erfolgsfall"))
-//     .catch((rand) => console.error("Fehlerfall – " + rand));
+myPromise
+    .then((rand) => console.log("Success – " + rand))
+    .then(() => console.log("Ausgabe 2 im Erfolgsfall"))
+    .catch((rand) => console.error("Fehlerfall – " + rand));
 
 
 
-//     // Fetch with promises
-// const url = "https://randomuser.me/api/";
-// fetch(url)
-//     .then((response) => response.json())
-//     .then((data) => {
-//         let users = data.results;
-//         console.log(users);
-//     })
-//     .catch((err) => console.error(err));
+// Fetch with promises
+const url = "https://randomuser.me/api/";
+fetch(url)
+    .then((response) => response.json())
+    .then((data) => {
+        let users = data.results;
+        console.log(users);
+    })
+    .catch((err) => console.error(err));
 
 // errors are handled inside the catch
 
 
 
-//************ ASYCH & AWAIT ************/ 
+
+
+//**********************************************/
+//*************** ASYCH & AWAIT ****************/ 
+//**********************************************/
 
 // async without error handling
 const url = "https://randomuser.me/api/";
@@ -104,7 +109,7 @@ const fetchUser = async () => {
     console.log(data);
 }
 
-// fetchUser();
+fetchUser();
 
 
 // async with error handling
@@ -127,20 +132,19 @@ console.log("Executed before Async call...");
 
 // async with arrow function
 const fetchUserDetails = async (userId) => {
-   // pretend we make an asynchronous call
+  // pretend we make an asynchronous call
   // and return the user details
   return {'name': 'Robin', 'likes': ['toys', 'pizzas']};
 }
 
 // await must be invoked in an async function
 (async () => {
-const user = await fetchUserDetails();
-console.log(user);
+    const user = await fetchUserDetails();
+    console.log(user);
 })();
 
 
 // Example with try...catch
-
 const validateUser = ({userId, password}) => {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
@@ -173,4 +177,55 @@ const app = async () => {
 // invoke the function app
 app();
 
+
+//**********************************************/
+//************** FURTHER EXAMPLES **************/
+//**********************************************/
+
+// Pass literal objects to a function
+function printMyProps(props) {
+    for (let p in props) {
+        console.log(`${p}: ${props[p]}`);
+    }
+}
+
+printMyProps( {name: "stefan", alter: 42 });
+
+function Person(name, age) {
+    this.name = name;
+    this.age = age;
+} 
+
+printMyProps(Person);
+
+let p = new Person("Hans", 88);
+printMyProps(p);
+
+
+
+// Notations
+
+// // Constructor function --> Reference Type
+// function Person(name, age) {
+//     this.name = name;
+//     this.age = age;
+// }
+
+// let p = new Person("Hans"); // new --> Constructor creates new Reference Value
+
+
+// // Literal Notation --> Reference Values
+// let p2 = {
+//     name: "Jack",  // own property
+//     age: 42
+// }
+
+
+// // DOM --> Document Object Model (DOM API)
+
+// btn.class = "pressed"; // <!--
+// btn.setAttribute("class=....")
+
+// // Schlecht
+// innerHtml = "<p> neuer <p> <article> ... Paragraph </p>"; 
 
