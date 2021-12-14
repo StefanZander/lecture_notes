@@ -40,7 +40,7 @@ Kapitel 4: Fortschrittliche Ontologiemodellierung mittels Semantic MediaWiki {.l
 # Ausgangsfrage
 
 ::: centerbox blue big center
-Wie kann man FachanwenderInnen darin unterstützen, semantisch-konforme und als Wissensgraph verarbeitbare Inhalte zu erzeugen ?
+Wie kann man FachanwenderInnen darin unterstützen, semantisch-konforme und als Wissensgraph verarbeitbare Inhalte zu erzeugen, ohne die zugrunde liegenden Technologien zu kennen ?
 :::
 
 
@@ -52,13 +52,13 @@ Wie kann man FachanwenderInnen darin unterstützen, semantisch-konforme und als 
 ==Page Forms== (aka Semantic Forms bis 2016) ist eine _Erweiterung_ für MediaWiki-Systeme.
 
 Sie ermöglicht NutzerInnen durch den Einsatz von **HTML5-Formularelementen**...
-- _neue Inhalte_ zu erstellen
-- _bestehende Inhalte_ zu modifizieren
+- _Neue Inhalte_ zu erstellen
+- _Bestehende Inhalte_ zu modifizieren
 - _Abfragen_ dynamisch zu erzeugen und auszuführen 
-    (--> Query Forms)
+    ($\Rightarrow$ Query Forms)
 
-Page Forms setzen auf _semantische Templates_ und erlauben **Parameterwerte** _dynamisch_ und _nutzerInnenfreundlich_ festzulegen.
-- Statt MediaWiki-Syntax füllen NutzerInnen Formularfelder aus, deren Werte in einen Wissensgraphen transcludiert werden.
+Page Forms nutzen ==semantische Templates== und erlauben **Parameterwerte** _individuell_ und _nutzerInnenfreundlich_ festzulegen
+- Statt MediaWiki-Syntax füllen NutzerInnen _Formularfelder_ aus, deren Werte in einen Wissensgraphen transcludiert werden
 ::::
 :::: single
 ::: center
@@ -78,11 +78,11 @@ Umfangreiche Dokumentation zu Page Forms: https://www.mediawiki.org/wiki/Extensi
 
 ::::: columns-center
 :::: single
-- Hauptbestandteil sind sog. ==Form Definition Pages== im `Form:` Namesraum.
+- Hauptbestandteil sind sog. ==Form Definition Pages== im `Form:` Namensraum
 
-- Bei Aufruf der Form wird der Markup-Code geparst und eine HTML5-konforme Formularelement-basierte Seite generiert.
+- Bei Aufruf der Form wird der _Markup-Code_ geparst und eine HTML5-konforme Formularelement-basierte Seite generiert
 
-- Auf dieser generierten Seite können anschließend die Parameterwerte der zugrunde liegenden Semantic Templates gesetzt werden.
+- Auf dieser generierten Seite können anschließend die _Parameterwerte_ der zugrunde liegenden _Semantic Templates_ gesetzt werden
 
 - Form Definitions können sich auf ganze Seiten oder einzelne Seitenbereiche (engl. Sections) beziehen, abhängig vom zugrunde liegenden Template
 ::::
@@ -101,18 +101,19 @@ Umfangreiche Dokumentation zu Page Forms: https://www.mediawiki.org/wiki/Extensi
 
 ::::: columns
 :::: single
-Page Forms use ==semantic templates== in order to _create new_ or _edit_ existing wiki pages. Template parameters are set with _form values_ when the template is embedded into a wiki page.
+Page Forms use ==semantic templates== in order to _create new_ or _edit_ existing wiki pages. Template parameters are set with ==form values== when the template is embedded into a wiki page.
 
-Usually, for each parameter in a template, Page Forms define a separate **input element declaration**, the value of which will then be assigned to the template parameter when the template call is embedded in the wiki page.
+Usually, for each parameter in a template, Page Forms define a separate ==input element declaration==, the value of which will then be assigned to the template parameter when the template call is embedded in the wiki page.
 
-Syntax:
+**Syntax**
 ```
 {{{field|title|mandatory|property=title|size=120|placeholder=The project's full title}}}
 ```
-
+::: smaller
 The second parameter (`|title`) in the `{{{field...}}}` tag refers to the named parameter (`{{{title|}}}`) in the semantic template a from is defined for, e.g., `[[title::{{{title|}}}]]`.
 
 https://www.mediawiki.org/wiki/Extension:Page_Forms/Defining_forms
+:::
 ::::
 :::: single
 ``` 
@@ -120,7 +121,6 @@ https://www.mediawiki.org/wiki/Extension:Page_Forms/Defining_forms
   {{#forminput:form=Project Factsheet v2}}
 </noinclude><includeonly>
 {{{info|add title=Add a new Project|edit title=Edit an existing project}}}
-
 {{{for template|Project Factsheet v2}}}
 {| class="formtable"
 ! Title: 
@@ -146,8 +146,7 @@ https://www.mediawiki.org/wiki/Extension:Page_Forms/Defining_forms
 ! Themenfelder: 
 | {{{field|topics|input type=tokens|property=has_topic|list|delimiter=;}}}
 |}
-{{{end template}}}
-</includeonly>
+{{{end template}}} </includeonly>
 ```
 ::::
 :::::
@@ -396,9 +395,10 @@ Source: Instructions taken and revised from https://www.mediawiki.org/wiki/Exten
 
 
 ---
-# Seitenerzeugung mittels Formularen
+<!-- # Seitenerzeugung mittels Formularen -->
+## Die 2 Wege zur Seitenerzeugung mittels Formularen
 
-Es gibt 2 Wege neue Seiten mittels Formularen zu erstellen oder zu editieren:
+<!-- Es gibt 2 Wege neue Seiten mittels Formularen zu erstellen oder zu editieren: -->
 
 ::::: columns small
 :::: single
