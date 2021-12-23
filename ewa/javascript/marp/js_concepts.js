@@ -1,6 +1,79 @@
 const fetch = require('node-fetch');
 
-// Using Objects in literal form as arguments
+
+//**********************************************/
+//******************** JSON ********************/
+//**********************************************/
+
+
+
+
+
+
+
+//**********************************************/
+//*************** Error Handling ***************/
+//**********************************************/
+
+// NO Error Handling
+const printFirstTwoLetters = (str) => {
+    const firstTwo = str.substring(0,2); 
+    console.log(firstTwo); // will not be executed
+}
+
+printFirstTwoLetters(5); // str.substring is not a function
+
+
+// WITH Error Handling
+const printFirstTwoLetters = (str) => {
+    "use strict";
+    try {
+        if (typeof str !== "string")
+            throw new Error("Parameter is not a String"); 
+        if (str.length < 2)
+            throw new Error("String is less than 2 chars"); 
+        const firstTwo = str.substring(0,2); 
+        console.log(firstTwo);
+    } catch (err) { 
+        console.log(err)
+    } 
+}
+
+printFirstTwoLetters(5) // Parameter is not a String
+printFirstTwoLetters("5") // String is less than 2 chars
+
+
+
+//**********************************************/
+//****************** Closures ******************/
+//**********************************************/
+
+function MyProtectedObj(param) {
+    const mySecretVariable = Math.floor(4711 * Math.random()); 
+    let name = param;
+    return {
+        getCode: function() {
+          return mySecretVariable;
+        },
+        setName: function(value) {
+          name = value;
+        },
+        getName: function() {
+          return name;
+        }
+    } 
+}
+
+let obj = MyProtectedObj("James"); 
+
+console.log(mySecretVariable); // Reference Error
+console.log(obj.mySecretVariable); // outputs 'undefined'
+
+obj.getCode(); //returns the randomly generated number
+obj.setName("John"); //ok
+obj.getName();
+
+
 
 
 // 3 different categories for asynchronous JS
@@ -20,10 +93,11 @@ const fetch = require('node-fetch');
 console.log("Hallo Welt - jetzt");
 
 setTimeout(() => {
-    console.log("Hallo Welt – nach 1 Sec.")
+    console.log("Hallo Welt – nach 1 Sec.")
 }, 2000 ); 
 
 console.log("Dieser Code wird vor dem asynchronen Code ausgeführt...");
+
 
 // Example #2
 // Nested callback functions --> "Callback-Hell"
@@ -82,6 +156,7 @@ myPromise
 
 
 // Fetch with promises
+const fetch = require('node-fetch');
 const url = "https://randomuser.me/api/";
 fetch(url)
     .then((response) => response.json())
@@ -90,7 +165,7 @@ fetch(url)
         console.log(users);
     })
     .catch((err) => console.error(err));
-
+console.log("request started...");
 // errors are handled inside the catch
 
 
@@ -102,6 +177,7 @@ fetch(url)
 //**********************************************/
 
 // async without error handling
+const fetch = require('node-fetch');
 const url = "https://randomuser.me/api/";
 const fetchUser = async () => {
     const res = await fetch(url);
@@ -113,6 +189,8 @@ fetchUser();
 
 
 // async with error handling
+const fetch = require('node-fetch');
+const url = "https://randomuser.me/api/";
 const fetchUserWithErrorHandling = async () => {
     try {
         const res = await fetch(url);
@@ -130,18 +208,23 @@ console.log("Executed before Async call...");
 
 
 
-// async with arrow function
+// Calling await in an async IIFP
 const fetchUserDetails = async (userId) => {
   // pretend we make an asynchronous call
   // and return the user details
   return {'name': 'Robin', 'likes': ['toys', 'pizzas']};
 }
 
-// await must be invoked in an async function
+// error
+const user = await fetchUserDetails();
+console.log(user);
+
+// await must be invoked in an async function (--> IIFP)
 (async () => {
     const user = await fetchUserDetails();
     console.log(user);
 })();
+
 
 
 // Example with try...catch
@@ -178,6 +261,8 @@ const app = async () => {
 app();
 
 
+
+
 //**********************************************/
 //************** FURTHER EXAMPLES **************/
 //**********************************************/
@@ -200,6 +285,32 @@ printMyProps(Person);
 
 let p = new Person("Hans", 88);
 printMyProps(p);
+
+
+
+
+
+//**********************************************/
+//******** Fetching for Airport Example ********/
+//**********************************************/
+
+const fetch = require('node-fetch');
+let url = "http://localhost/EWA/php/ajax_and_php/airport_provider_with_filter.php?filter=";
+let filter = "lo";
+
+const fetchAirports = async (url, filter) => {
+    try {
+        const res = await fetch(url+filter);
+        const data = await res.json();
+        console.log(data);
+    } catch(err) {
+        console.log(`An Error occured: ${err}`);
+    }
+}
+
+
+fetchAirports(url, filter);
+
 
 
 

@@ -23,7 +23,7 @@ paginate: true
 
 #### Prof. Dr. Stefan Linus Zander 
 
-Einführung in JavaScript | Wichtige Konzepte  {.lightgreen .Big .skip}
+Einführung in JavaScript | Wichtige Sprachkonzepte  {.lightgreen .Big .skip}
 
 
 ---
@@ -180,13 +180,16 @@ Source: https://www.youtube.com/watch?v=a00NRSFgHsY and https://javascript.info/
 :::: single
 - A closure is the combination of ==outer== and ==inner functions== 
 - A closure provides access to an outer function’s scope from an inner function
-- Closures are a common way to achieve ==encapsulation==, ie. hiding data from external and uncotrolled access
-- To use a closure, define a function inside another function and expose it. To expose a function, return it or pass it to another function.
-- The inner function will have access to the lexical scope of the outer function, even after the outer function has returned.
-- Usage scenarios
-  - _Isolation of protected variables_
-  - _Transportation of states to another scope_
-  - _Creation of stateful functions_
+- Closures are a common way to achieve ==encapsulation==, ie. <br/> $\leadsto$ _hiding data from external and uncontrolled access_
+- To use a closure, define a function inside another function and expose it – return it or pass it to another function
+- The inner function will have access to the ==lexical scope== of the outer function, even after the outer function has returned
+
+  ::: blue centerbox small BigSkip
+  **Usage Scenarios**
+    - Isolation of protected variables
+    - Transportation of states to another scope
+    - Creation of stateful functions
+  :::
 ::::
 :::: single
 ```js
@@ -545,7 +548,7 @@ fetchUserWithErrorHandling();
 ```
 ::: small
 - If the promise rejects, it throws an error that is handled by the `catch` block
-- Async/Await enables traditional error handling with `try...catch`
+- Async/Await enables standard ==error handling== with `try...catch`
 ::: small
 ::::
 :::::
