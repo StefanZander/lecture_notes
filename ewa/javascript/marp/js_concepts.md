@@ -610,3 +610,30 @@ In order to use `await` regardless of an async function, it need to be wrapped i
 ::: footnotes
 Source: https://blog.greenroots.info/javascript-async-and-await-in-plain-english-please
 :::
+
+
+---
+<!-- header: JavaScript Modules -->
+# JavaScript Modules
+
+::::: columns
+:::: single
+* Modules are used to separte code into files
+* Modules are self-contained units of code, stored in files
+
+
+::::
+:::: single
+```js
+Code
+```
+::::
+:::::
+
+
+::: footnotes
+Sources:
+- https://www.freecodecamp.org/news/javascript-modules-explained-with-examples/
+- https://www.freecodecamp.org/news/javascript-modules-beginners-guide/
+- https://www.freecodecamp.org/news/javascript-modules-a-beginner-s-guide-783f7d7a5fcc/
+:::
