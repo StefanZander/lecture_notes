@@ -5,6 +5,14 @@ const fetch = require('node-fetch');
 //******************** JSON ********************/
 //**********************************************/
 
+// JSON <==> AJAX
+// JSON <==> Literatl Notation of Objects
+
+let p1 = {
+    name: "Stefan", // prop #1
+    age: "25", // prop #2
+    likes: [ { name: "soccer" } , { name: "badminton" }]
+}
 
 
 
