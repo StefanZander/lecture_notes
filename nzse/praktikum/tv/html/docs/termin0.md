@@ -19,7 +19,7 @@
     - <http://developer.android.com/sdk/index.html>
     - <http://developer.android.com/sdk/installing/adding-packages.html>
 
-    Konfigurieren Sie den Emulator hinsichtlich der Displaygröße eher zurückhaltend – er ist (immer noch) ein Ressourcenfresser!
+    Konfigurieren Sie den Emulator hinsichtlich der Displaygröße eher zurückhaltend – er ist (noch immer) ein Ressourcenfresser!
 
 ## Aufgaben
 
@@ -76,7 +76,8 @@ public void onHelloWorldClick (View v)
 mit einer `Log.i`-Testausgabe und ordnen Sie die Methode dem `onClick`-Ereignis der TextView `Hello World` zu. Testen Sie durch Antippen des Textes `Hello World`.
 
 
-### Datenmodelle der Fernbedienungen (optional)
+
+### Datenmodelle der Applikationen (optional)
 Alle relevanten **Daten** und **Zustände** müssen in den mobilen Apps verwaltet werden; der Fernseher bzw. Stream-Server ist quasi ein _reines Darstellungsprogramm_. Überlegen Sie deshalb, welche Daten und Zustände innerhalb der Android-App **persistent gespeichert** werden sollen und welche nur **flüchtig**?
 
 !!! note
@@ -95,7 +96,7 @@ Fassen Sie alle persistenten Daten in einer Klasse zusammen und zeichnen Sie das
 
 ## Ergebnisse
 
-Die folgenden Ergebnisse müssen für eine erfolgreiche Testierung der Praktikumseinheit vorliegen:
+Die folgenden Ergebnisse müssen für eine erfolgreiche Testierung der Einheit vorliegen:
 
 !!! abstract
     __Ergebnisse:__

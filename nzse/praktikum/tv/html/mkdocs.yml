@@ -2,22 +2,22 @@ site_name: Praktikum zur LVA "Nutzerzentrierte Softwareentwicklung"
 
 nav:
   - 'Startseite': 'index.md'
-  - 'NZSE-Tagebuch': 'tagebuch.md'
-  - 'Corona-Modus': 'corona.md'
-  - 'Arbeiten mit BBB': 'bbb.md'
+#  - 'NZSE-Tagebuch': 'tagebuch.md'
+#  - 'Corona-Modus': 'corona.md'
+#  - 'Arbeiten mit BBB': 'bbb.md'
   - 'Vorbemerkung': 'vorbemerkung.md'
   - 'Projektmappe': 'projektmappe.md'
-  - 'Termin 0: Android Studio': 'termin0.md'
+  - 'Vorbereitung: Android Studio': 'termin0.md'
   - 'Termin 1: User Research': 'termin1.md'
   - 'Termin 2: UI Entwurf': 'termin2.md'
   - 'Termin 3: Layout': 'termin3.md'
   - 'Termin 4: Logik': 'termin4.md'
-  - 'Termin 5: Usability': 'termin5.md'
+  - 'Termin 5: App-Präsentation': 'termin5.md'
+  - 'Abschluss: Usability': 'termin6.md'
 
 theme:
   name: 'material'
   language: 'de'
-
   palette:
     primary: 'blue'
     accent: 'red'

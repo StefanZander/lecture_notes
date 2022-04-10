@@ -47,6 +47,10 @@ code, .md-typeset code.codehilite {
     /* font-family: 'Roboto Mono'; */
 }
 
+
+/* 
+    Links
+*/
 li>a[data-md-state="active"] {
     color: var(--toc_active_item_foreground);
     /* background-color: red; */
@@ -58,6 +62,19 @@ li.md-nav__item>a:hover {
     background-color: var(--toc_active_item_background);
     font-weight: bold;
 }
+
+
+/* Added to have a nice icon before text links  */
+.md-content .md-content__inner a::before {
+    font-family: 'Material Icons';
+    content: 'ads_click'; 
+    top: .1em;
+    margin-right: .1em;
+    position: relative;
+    color: gray;
+}
+
+
 
 
 /* .question {
@@ -103,6 +120,13 @@ div.md-content a:hover:not(.md-footer-nav__link) {
     background-color: var(--abstract_border_color);
 }
 
+/* IMPORTANT: 
+    In case icons will not be rendered correctly or at all, do the following steps
+    a) open Source #1
+    b) check the @font-face part for changes, in particular the src-property
+    c) copy the new src-value to this css
+    d) it should be working again (last time, the value changed and link was dead
+*/
 /* Dirty hack to enable Google Material Icons again using content-notation in CSS */
 /* Source: https://fonts.googleapis.com/icon?family=Material+Icons */
 /* Source 2: https://google.github.io/material-design-icons/ */
@@ -111,7 +135,7 @@ div.md-content a:hover:not(.md-footer-nav__link) {
     font-family: 'Material Icons';
     font-style: normal;
     font-weight: 400;
-    src: url(https://fonts.gstatic.com/s/materialicons/v50/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2) format('woff2');
+    src: url(https://fonts.gstatic.com/s/materialicons/v126/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2) format('woff2');
 }
 
 .material-icons {

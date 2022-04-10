@@ -6,7 +6,7 @@ const fetch = require('node-fetch');
 //**********************************************/
 
 // JSON <==> AJAX
-// JSON <==> Literatl Notation of Objects
+// JSON <==> Literal Notation of Objects
 
 let p1 = {
     name: "Stefan", // prop #1
@@ -203,7 +203,9 @@ const fetchUserWithErrorHandling = async () => {
     try {
         const res = await fetch(url);
         const data = await res.json();
+        // console.log(data);
         console.log("finished");
+
     } catch(err) {
         console.error(err);
     }
@@ -213,6 +215,8 @@ fetchUserWithErrorHandling();
 console.log("Executed before Async call...");
 for (let i = 0; i < 1000; i++) { }
 console.log("Executed before Async call...");
+
+// let s = setInterval(fetchUserWithErrorHandling, 2000);
 
 
 
@@ -319,6 +323,29 @@ const fetchAirports = async (url, filter) => {
 
 fetchAirports(url, filter);
 
+// Exam Example (remove)
+
+const ratings = [4, 6, 7, 2, 3, 5, 4, 1];
+
+async function calculateAverage(ratings) {
+    let sum = 0
+    let i = 0
+    for (;i < ratings.length; i++) {
+        sum = sum + ratings[i];
+        console.log(`i: ${i} – sum: ${sum}`);
+    }
+    return sum/i;
+}
+
+let avg;
+(async () => {
+    avg = await calculateAverage(ratings);
+    console.log(`Average: ${avg}`);
+})();
+
+console.log("Start...");
+
+
 
 
 
@@ -348,3 +375,34 @@ fetchAirports(url, filter);
 // // Schlecht
 // innerHtml = "<p> neuer <p> <article> ... Paragraph </p>"; 
 
+
+
+//**********************************************/
+//********* Prototypes and Inheritance *********/
+//**********************************************/
+
+function Book(title, author) {
+    this.title = title;
+    this.author = author;
+
+    this.print = function(aspect) {
+        console.log(this[aspect]);
+    }
+}
+
+let book1 = new Book("Die verlorene Ehre der Katharina Blum", "Heinrich Böll");
+book1.print("title");
+
+// console.log(bello.constructor.prototype);
+
+// not working
+// Dog.bark = function() { console.log("Miau") };
+// bello.bark();
+
+//alternatively: Dog.prototype
+book1.constructor.prototype.printTitle = function() {
+    this.print("title");
+    // console.log(this.title);
+}
+
+book1.printTitle();

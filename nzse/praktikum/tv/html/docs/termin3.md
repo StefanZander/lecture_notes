@@ -68,6 +68,12 @@ Das HTTP-Protokoll brauchen Sie für dieses Praktikum nicht weiter zu verstehen
 Informationen zur Kommunikation mit dem Twitch Stream-Server finden Sie auf den offiziellen Projektseiten:  
 <https://stream-server.h-da.io/>
 
+
+### Lebensmittelinformations-App
+
+Nähere Informationen zur Kommunikation mit der REST-API finden Sie auf der [Projektseite](openfoodfacts.md)
+
+
 ## Ergebnisse
 
 Die folgenden Ergebnisse müssen für eine erfolgreiche Testierung der Praktikumseinheit vorliegen:
@@ -78,3 +84,4 @@ Die folgenden Ergebnisse müssen für eine erfolgreiche Testierung der Praktikum
     - [ ] Fertiges Layout für Hoch- und Querformat
     - [ ] Implementierung der Navigation und Darlegung des Navigationskonzepts
     - [ ] Einbinden der Kommunikationsklassen (`HttpRequest.java` beim TV-Server; `StreamServerClient.java` beim Twitch-Server)
+    - [ ] Durchführen von ersten Aufrufen und Sichtung der erhaltenen JSON-Antworten
