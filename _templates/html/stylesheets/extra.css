@@ -48,6 +48,20 @@ code, .md-typeset code.codehilite {
 }
 
 
+
+
+
+/* =================================================
+    2022-04-15: Added for correct indentation of ul & ol
+   =================================================
+*/
+.md-typeset ol, .md-typeset ul {
+    padding: inherit;
+    /* margin: inherit; */
+}
+
+
+
 /* 
     Links
 */

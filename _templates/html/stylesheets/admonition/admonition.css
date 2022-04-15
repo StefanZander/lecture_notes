@@ -7,8 +7,9 @@ https://github.com/google/material-design-icons/blob/master/iconfont/codepoints 
     border-radius: 0rem;
     font-size: 0.8rem;
     /* padding:1rem; */
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    /* 2022-04-15: Disabled paddings because of mkdocs-material updates; not needed */
+    /* padding-left: 0.5rem; */
+    /* padding-right: 0.5rem; */
 }
 
 .md-typeset .admonition>p:nth-of-type(2) {

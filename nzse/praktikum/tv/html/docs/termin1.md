@@ -39,45 +39,73 @@
 
 #### Vorbereitung
 
-**Interviewleitfaden**: Erarbeiten Sie innerhalb ihres Teams einen **Interviewleitfaden**, d.h., überlegen Sie sich, welche Fragen Sie im Rahmen des Interviews ihren Personas (=Stakeholdern) stellen, um mehr über die Nutzungsgewohnheiten, Wünsche und Erwartungen zu erfahren. Notieren Sie diese in Form eines Leitfadens für die Durchführung eines **teilstandardisierten Interviews**. 
+1. **Interviewleitfaden**: Erarbeiten Sie innerhalb ihres Teams einen **Interviewleitfaden**, d.h., überlegen Sie sich, welche Fragen Sie im Rahmen des Interviews ihren Personas (=Stakeholdern) stellen, um mehr über die Nutzungsgewohnheiten, Wünsche und Erwartungen zu erfahren. Notieren Sie diese in Form eines Leitfadens für die Durchführung eines **teilstandardisierten Interviews**. 
 
-Das Interview dient als Grundlage der Erstellung von
+    Das Interview dient als Grundlage der Erstellung von
 
-* 1 Anwendungsszenario
-* (*optional*) funktionalen und qualitativen Anforderungen (inkl. Quantifizierung)
-* (*optional*) mind. 1 Begeisterungsfaktor
+    * Anwendungsszenarien
+    * (*optional*) funktionalen und qualitativen Anforderungen (inkl. Quantifizierung)
+    * (*optional*) mind. 1 Begeisterungsfaktor
+
+    !!! note
+        **Hinweis #1**: **Stellen Sie die richtigen Fragen**  
+        Stellen Sie _nicht_ irgendwelche Fragen; die Fragen sollen Ihnen helfen, die NutzerInnen und deren spezifische Bedürfnisse, Lebensgewohnheiten, Wünsche, Nutzungskontexte und Erwartungen besser zu verstehen. Die Antworten sind Basis für die Erarbeitung von Anwendungsszenarios, sowie  funktionalen und qualitativen Anforderung (inkl. Quantifizierung) und  Begeisterungsfaktoren (siehe KANO-Modell aus der VO).
+
+    !!! note
+        **Hinweis #2**: **Achten Sie auf eine "gute" Interviewvorbereitung und -durchführung**  
+        Je besser Sie das Interview planen und durchführen desto besser verwertbar sind die Resultate und Erkenntnisse. Beachten Sie deshalb die Prinzipien einer guten Interviewdurchführung (--> _schauen Sie sich hierzu ggf. noch einmal die Videos auf der NZSE-Moodleseite an_).
+
+        - Stellen Sie **offene Fragen**, bei denen BenutzerInnen über ihre **Erfahrungen** berichten können
+        - Vermeiden Sie **Suggestivfragen** – das ist vor allem dann, wenn Sie das Interview das erste Mal durchführen, sehr schwer umzusetzen --> _bemühen Sie sich und reflektieren Sie die Fragen vorab!_
+        - Fragen Sie _nicht_ nach irgendwelchen technischen Details; diese sind für die Benutzung irrelevant.  
+            ==--> _Konzentrieren Sie sich auf die **Nutzungserfahrung**, d.h., **Ziele**, den **Anwendungskontext** und die **Lebenssituationen** in denen ein Medium genutzt wird._==
+
+
+
+#### Durchführung
+
+
+
 
 !!! note
-    **Hinweis #1**: **Stellen Sie die richtigen Fragen**  
-    Stellen Sie _nicht_ irgendwelche Fragen; die Fragen sollen Ihnen helfen, die NutzerInnen und deren spezifische Bedürfnisse, Lebensgewohnheiten, Wünsche, Nutzungskontexte und Erwartungen besser zu verstehen. Die Antworten sind Basis für die Erarbeitung von Anwendungsszenarios, sowie  funktionalen und qualitativen Anforderung (inkl. Quantifizierung) und  Begeisterungsfaktoren (siehe KANO-Modell aus der VO).
+    **Durchführungsoptionen**  
+    Für die Durchführung der/des Interviews bieten sich mehrere Möglichkeiten:
 
-!!! note
-    **Hinweis #2**: **Achten Sie auf eine "gute" Interviewvorbereitung und -durchführung**  
-    Je besser Sie das Interview planen und durchführen desto besser verwertbar sind die Resultate und Erkenntnisse. Beachten Sie deshalb die Prinzipien einer guten Interviewdurchführung (--> _schauen Sie sich hierzu ggf. noch einmal die Videos auf der NZSE-Moodleseite an_).
+      1. Sie können das Interview während der Praktikumseinheiten vor Ort mit einer Peer-Gruppe durchführen.  
+      --> _Nähere Details zum Ablauf finden Sie in der folgenden Aufgabenbeschreibung._ 
+      1. Sie können das Interview außerhalb der Praktikumseinheiten in Eigenregie mit einer Peer-Gruppe oder anderen Personen durchführen.
+      2. Falls Sie Zugriff auf echte Personen haben, die ihren Stereotypen entsprechen, dann bitten Sie diese mit Ihnen bzw. Ihrer Gruppe das Interview durchzuführen. Sollte das nicht der Fall sein, dann bitten Sie Freunde / Verwandte / Bekannte / Eltern / Geschwister am Interview teilzunehmen und in die Rolle der Stereotypen zu schlüpfen.
 
-    - Stellen Sie **offene Fragen**, bei denen BenutzerInnen über ihre **Erfahrungen** berichten können
-    - Vermeiden Sie **Suggestivfragen** – das ist vor allem dann, wenn Sie das Interview das erste Mal durchführen, sehr schwer umzusetzen --> _bemühen Sie sich und reflektieren Sie die Fragen vorab!_
-    - Fragen Sie _nicht_ nach irgendwelchen technischen Details oder Features; diese sind für die Benutzung irrelevant.  
-        ==--> _Konzentrieren Sie sich auf die **Nutzungserfahrung**, d.h., **Ziele**, den **Anwendungskontext** und die **Lebenssituationen** in denen ein Medium konsumiert wird._==
+1. **Auswahl der Stereotypen**: Wählen Sie Personen für das Interview, die zu Ihren ausgewählten Stereotypen passen oder für das Interview in deren Rolle schlüpfen. Lassen Sie die Personen hierzu Ihre angefertigte Stereotypenbeschreibung lessen, so dass diese sich in die jeweilige Lebens- und Nutzungssituation hineinversetzen können.
 
+2. **Rollenfestlegen**: Bestimmen Sie aus Ihrem Team jeweils eine/n
+    - **Moderator**: diese Person führt das Interview durch und ist direkte Ansprechperson
+    - **Protokollant**: diese Person protokolliert das Gesagte und notiert Beobachtungen und Reaktionen der Probanden 
+    - **Supervisor** (_optional_): unterstützt und beobachtet die/den ModeratorIn bei der Durchführung und teilt die gewonnenen Eindrücke im Nachgang mit Ihnen und dem Team für eine gemeinsame Reflektion.
 
+3. **Interviewdurchführung**: Sind Interviewleidfaden, Stereotypenauswahl und die Rollenfestlegung abgeschlossen, dann führen Sie das Interview durch. 
 
-#### Ablauf und Aufgaben
-
-
-**Durchführungsoptionen**  
-
-Für die Durchführung der/des Interviews bieten sich mehrere Möglichkeiten:
-
-1. Sie können das Interview während der Praktikumseinheiten vor Ort mit einer Peer-Gruppe durchführen.  
-   --> _Nähere Details zum Ablauf finden Sie in der folgenden Aufgabenbeschreibung._ 
-2. Sie können das Interview außerhalb der Praktikumseinheiten in Eigenregie mit einer Peer-Gruppe oder anderen Personen durchführen.
-3. Falls Sie Zugriff auf echte Personen haben, die ihren Stereotypen entsprechen, dann bitten Sie diese mit Ihnen bzw. Ihrer Gruppe das Interview durchzuführen. Sollte das nicht der Fall sein, dann bitten Sie Freunde / Verwandte / Bekannte / Eltern / Geschwister am Interview teilzunehmen und in die Rolle der Stereotypen zu schlüpfen.
-
-!!! warning
-    **Interview aus der Stereotypenperspektive**  
-    Wichtig ist, dass die InterviewteilnehmerInnen, sofern sie nicht per se den Stereotpyen entsprechen, das Interview aus der Sicht selbiger durchführen, d.h., die Teilnehmenden schlüpfen in der **Rolle der Stereotypen** und beantworten die Fragen aus deren Blickwinkel. 
+    !!! warning
+        **Interview aus der Stereotypenperspektive**  
+        Wichtig ist, dass die InterviewteilnehmerInnen, sofern sie nicht per se den Stereotpyen entsprechen, das Interview aus der Sicht selbiger durchführen, d.h., die Teilnehmenden schlüpfen in der **Rolle der Stereotypen** und beantworten die Fragen aus deren Blickwinkel. 
         
+
+    !!! note
+        **Vorgehen für Optionen #1 und #2**
+
+        _Vorbemerkung:  
+        Es werden **2 Gruppen** benötigt. Gruppe 1 ist die eigene Gruppe (aus Sicht der Teilnehmer), Gruppe 2 ist die Peer-Gruppe._
+        
+        - Eine Person aus Gruppe 2 liest die **Stereotypbeschreibung** von Gruppe 1 und steigt in diese Rolle. Bei mehreren Interviews erfolt eine entspr. Aufteilung.
+        - Gruppe 1 bereitet das **teilstandardisierte Interview** vor (--> *siehe Vorlesungsunterlagen*)
+        - Gruppe 1 **interviewed** Gruppe 2 und notiert sich die wichtigsten Angaben inkl. Fragen (--> *Beantwortung offener Fragen am Ende*); 
+        - Nutzen Sie ggf. ein Handy etc. für Video-/Audioaufzeichnungen
+        - Gruppe 1 leitet aus den Angaben ein **Anwendungsszenario** ab und notiert dieses. Anschließend reflektieren Gruppe 1 und 2 dieses gemeinsam, um Ungereimtheiten zu identifizieren. <!--(*durch das Stellen entspr. Fragen ergibt sich dies bereits aus den Antworten*) -->
+        - (*optional*) Gruppe 1 leitet aus dem Anwendungszenario einige relevante **funktionale** und **qualitative Anforderung** ab
+        - (*optional*) Gruppe 1 stimmt die **Quantifizierbarkeit** der qualitativen Anforderung mit Gruppe 2 ab
+        - (*optional*) Gruppe 1 erarbeitet mit Gruppe 2 **einen Begeisterungsfaktor**
+        - dann Wechsel der Rollen
+
 <!-- 
         Der Austausch mit einer Peer-Gruppe dürfte sich aufgrund mangelnder physischer Präsenz schwierig gestalten. Sie haben 3 Optionen:  
         
@@ -85,31 +113,6 @@ Für die Durchführung der/des Interviews bieten sich mehrere Möglichkeiten:
         2. Verabreden Sie sich mit einer Peer-Gruppe über Jitsi und führen Sie das Interview online durch
         3. Falls Sie keinerlei Zugriff auf "externe" Personen haben, dann kann die/der Partner*in in die Rolle des Stereotypen schlüpfen (=_nicht bevorzugte Lösung_)  
 -->
-
-
-!!! note
-    **Vorgehen für Optionen #1 und #2** --> allgemein formulieren
-
-    Vorbemerkung:  
-    Es werden 2 Gruppen benötigt; Gruppe 1 ist die eigene Gruppe (aus Sicht der Teilnehmer), Gruppe 2 ist die Peer-Gruppe.
-
-    - Rollen für Gruppe 1:  
-      - Moderator: diese Person führt das Interview durch und ist direkte Ansprechperson
-      - Protokollant: diese Person protokolliert das Gesagte und notiert Beobachtungen und Reaktionen der Probanden 
-      - Supervisor (_optional_): unterstützt die/den ModeratorIn 
-
-    - Gruppe 2 liest die **Stereotypbeschreibung** aus Aufgabe 1 von Gruppe 1 und steigt in diese Rolle
-    - Gruppe 1 bereit das **teilstandardisierte Interview** vor (--> *siehe Vorlesungsunterlagen*)
-    - Gruppe 1 **interviewed** Gruppe 2 und notiert sich die wichtigsten Angaben inkl. Fragen (-->  *Beantwortung am Ende*); 
-        - Gruppe 1 legt vorab fest, wer in die Rolle des **Moderators** tritt und wer **protokolliert** (--> *sie können nicht beides gleichzeitig tun!*) 
-        - Nutzen Sie ggf. ein Handy etc. für Video-/Audioaufzeichnungen
-
-    - Gruppe 1 leitet aus den Angaben ein **Anwendungsszenario** ab und notiert dieses. Anschließend reflektieren Gruppe 1 und 2 dieses gemeinsam, um Ungereimtheiten zu identifizieren. <!--(*durch das Stellen entspr. Fragen ergibt sich dies bereits aus den Antworten*) -->
-    - (*optional*) Gruppe 1 leitet aus dem Anwendungszenario einige relevante **funktionale** und **qualitative Anforderung** ab
-    - (*optional*) Gruppe 1 stimmt die **Quantifizierbarkeit** der qualitativen Anforderung mit Gruppe 2 ab
-    - (*optional*) Gruppe 1 erarbeitet mit Gruppe 2 **einen Begeisterungsfaktor**
-    - dann Wechsel der Rollen
-
 
 
 
@@ -147,31 +150,30 @@ Für die Durchführung der/des Interviews bieten sich mehrere Möglichkeiten:
 Nun tauschen Sie die Rollen, d.h., die RE-Gruppe ist nun User-Gruppe und umgekehrt. -->
 
 
-### Anwendungsszenarios und Anforderungsspezifikation
+### Anwendungsszenarios 
 
-#### Anwendungsszenario
+1. **Anwendungsszenario**: Schreiben Sie aus den aus dem Interview gesammelten Erkenntnissen **mind. 1 Anwendungsszenario** pro Stereotyp. Dieses soll *lebensnah* und *anschaulich* sein und sich nicht in Details verlieren. Beziehen Sie sich nicht auf Knöpfe und deren Beschriftung (die sind ja noch gar nicht erfunden), sondern bleiben Sie auf der Ebene des mentalen Modells (dabei kann die Ich-Form helfen).
 
-Schreiben Sie aus den aus dem Interview gesammelten Erkenntnissen **mind. 1 Anwendungsszenario**. Dieses soll *lebensnah* und *anschaulich* sein und sich nicht in Details verlieren. Beziehen Sie sich nicht auf Knöpfe und deren Beschriftung (die sind ja noch gar nicht erfunden), sondern bleiben Sie auf der Ebene des mentalen Modells (dabei kann die Ich-Form helfen).
+### Anforderungsspezifikation (_optional_)
 
-#### Anforderungsspezifikation (_optional_)
+1. **Anforderungsdokumentation**:  
+    Notieren Sie auf Basis der/des Anwendungsszenarios mind. 1 funktionale und 1 qualitative Anforderung. Achten Sie auf eine **korrekte Formulierung** und überprüfen Sie auch, ob alle **Qualitätskriterien** hinreichend erfüllt werden. Überlegen Sie hierbei, wie die Einhaltung eines Qualitätskriteriums nachgewiesen werden kann. Verfeinern Sie die Anforderung, falls ein Qualitätskriterium überhaupt nicht eingehalten wird.
 
-Notieren Sie auf Basis der/des Anwendungsszenarios mind. 1 funktionale und 1 qualitative Anforderung. Achten Sie auf eine **korrekte Formulierung** und überprüfen Sie auch, ob alle **Qualitätskriterien** hinreichend erfüllt werden. Überlegen Sie hierbei, wie die Einhaltung eines Qualitätskriteriums nachgewiesen werden kann. Verfeinern Sie die Anforderung, falls ein Qualitätskriterium überhaupt nicht eingehalten wird.
-
-!!! note
-     **Formulierung:** In der Vorlesung haben Sie ein **Tool** zur angemessen Formulierung von Anforderungen kennen gelernt; wie heißt dieses? Überlegen Sie auch, warum man dieses einsetzen sollte.
+    !!! note
+        **Formulierung:** In der Vorlesung haben Sie ein **Tool** zur angemessen Formulierung von Anforderungen kennen gelernt; wie heißt dieses? Überlegen Sie auch, warum man dieses einsetzen sollte.
 
 <!--
 !!! note 
      **Quantifizierung:** Überprüfen Sie die Quantifizierbarkeit der beiden **Qualitätsanforderungen** und stellen Sie entsprechende **Quantifizierungsmerkmale** auf (*Hinweis: hier können Sie sich an den Beispielen aus der Vorlesung bzw. aus dem Skriptum orientieren*);
 -->
 
-#### Begeisterungsfaktor (_optional_)
+### Begeisterungsfaktoren (_optional_)
 
-Treten Sie mit Ihrem/Ihren Stereotypen in den Austausch und nutzen Sie Kreativitätstechniken um **Begeisterungsfaktoren** zu identifizieren. Notieren Sie diese und verfolgen Sie diese im weiteren Verlauf des Projekts.
+1. Treten Sie mit Ihrem/Ihren Stereotypen in den Austausch und nutzen Sie Kreativitätstechniken um **Begeisterungsfaktoren** zu identifizieren. Notieren Sie diese und verfolgen Sie diese im weiteren Verlauf des Projekts.
 
-!!! note
-    **Implementierung der Begeisterungsfaktoren**  
-    Abhängig von Aufwand und Komplexität müssen Sie die Begeisterungsfaktoren nicht implementieren. Es reicht, wenn Sie diese "mocken", d.h., demonstrieren, wie eine Implementierung selbiger aussehen könnte. Sie sollen die Begeisterungsfaktoren jedoch im weiteren Entwicklungszyklus (UI-Entwurf etc.) berücksichtigen.
+    !!! note
+        **Implementierung der Begeisterungsfaktoren**  
+        Abhängig von Aufwand und Komplexität müssen Sie die Begeisterungsfaktoren nicht implementieren. Es reicht, wenn Sie diese "mocken", d.h., demonstrieren, wie eine Implementierung selbiger aussehen könnte. Sie sollen die Begeisterungsfaktoren jedoch im weiteren Entwicklungszyklus (UI-Entwurf etc.) berücksichtigen.
 
 
 
