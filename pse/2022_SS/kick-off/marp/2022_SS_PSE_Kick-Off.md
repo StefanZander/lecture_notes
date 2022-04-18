@@ -53,9 +53,51 @@ Für *Studierende*, sagen Sie bitte kurz ...
 - ...welche **Erfahrungen** Sie mitbringen
 - ...mit welchen **Erwartungen** Sie in das Modul gehen
 
----
-# Allgemeine Informationen zum Modul
 
+---
+# Beteiligte Personen (1/2)
+
+
+**Hochschule Darmstadt**
+- **Prof. Dr. Stefan Linus Zander** (Modulverantwortlicher) – stefan.zander@h-da.de
+
+
+
+---
+# Beteiligte Personen (2/2)
+
+**Hochschule Darmstadt – Studierende**
+
+:::: columns
+::: single
+- TBA
+:::
+::: single
+- TBA
+:::
+::::
+
+
+---
+# Aufteilung in Projektteams
+
+:::: columns
+::: single
+**Projektteam Elektromobilität**
+- TBA
+:::
+::: single
+**Projektteam Gutachtenerzeugung**
+- TBA
+:::
+::::
+
+
+
+
+---
+<!-- header: Allgemeine Informationen zum Modul -->
+# Allgemeine Informationen zum Modul
 
 
 ---
@@ -118,7 +160,7 @@ Projekt Systementwicklung / Projekt Multimedia ist ein **7,5 CP Modul**.
 
 ---
 # Kommunikation
-- via **Discord**: <https://discord.com/invite/3dY8gFp7ay>
+- via **Discord**: _Link folgt_
   - für die Kommunikation der Projektteams untereinander
   - für die Kommunikation mit den Stakeholdern zu technischen Fragen
 - oder **Email** bei wichtigen und/oder offiziellen Dingen
@@ -140,7 +182,7 @@ Projekt Systementwicklung / Projekt Multimedia ist ein **7,5 CP Modul**.
 <!-- - Unternehmensseitig werden notwendige APIs etc. zur Verfügung gestellt – mehr Informationen dazu in der Projektvorstellung -->
 
 **Moodle**
-- Link zum Moodlekurs: <https://lernen.h-da.de/course/view.php?id=16702> (neuer Kurs!!!)
+- Link zum Moodlekurs: <https://lernen.h-da.de/course/view.php?id=17896> 
 - offizielle Dokumentationen werden über **Moodle** bereit gestellt
 - ebenso wie ergänzende Materialien
 
@@ -174,12 +216,12 @@ Die **Beteiligungsmatrix**
 
 
 ---
+<!-- header: Projektübersicht -->
 # Projekt #1: Car-Sharing-App für Elektromobilität
 
 
 ---
-# Projekt #1: Car-Sharing-App für Elektromobilität
-
+## Projekt #1: Car-Sharing-App für Elektromobilität
 
 ::: blue 
 **Ziel**: Entwicklung einer einfach nutzbaren Car-Sharing-App auf Basis moderner Web-Technologien.
@@ -215,21 +257,23 @@ Die konkreten Anforderungen müssen in Stakeholder-Interviews mittels User-Resea
   - Task 5: Erarbeitung eines Anforderungkatalogs
   - Task 6: Aufteilung der Anforderungen analog dem KANO-Modell und Finden von Begeisterungsfaktoren
 - **Milestones**:
-  - ==Deliverable 1== mit
-    - Anforderungsanalysedokument 
-    - Dokumentation der Stereotypenanalyse, 
-    - Stakeholder-Interviews, 
-    - Anwendungsszenarien und Use-Cases, Aufstellung eines Anforderungkatalogs
+  - ==Deliverable 1: User Research== mit
+    - Dokumentation aller relevanter Artefakte des User Research 
+      - Dokumentation der Stereotypenanalyse, 
+      - Stakeholder-Interviews
+      - Anwendungsszenarien und Use-Cases, 
+      - Anforderungsspezifikation mit Begeisterungsfaktoren 
+  - Anforderungkatalog inkl. Begeisterungsfaktoren
   
 ::: footnotes
-Hinweis: Die notwendigen Informationen zur Durchführung des User-Research finden sich in den Unterlagen des Moduls "NZSE" von Prof. Dr. Stefan Zander (siehe [Moodle]())
+Hinweis: Die notwendigen Informationen zur Durchführung des User-Research finden sich in den Unterlagen des [Moduls "NZSE"](https://projects.fbi.h-da.de/~s.zander/#nutzer-zentrierte-softwareentwicklung-nzse) von Prof. Dr. Stefan Zander (siehe [Moodle](https://lernen.h-da.de/course/view.php?id=6802))
 :::
 
 
 ---
 ## Workpackage 2: UI-Entwurf & Prototyping
 
-- **Ziel**: Aus den Erkenntnissen des User Research erste UI-Prototypen erarbeiten und mit den Stakeholdern testen um zu einem finalen, akzeptierten Design zu kommen
+- **Ziel**: _Aus den Erkenntnissen des User Research erste UI-Prototypen erarbeiten und mit den Stakeholdern testen um zu einem finalen, akzeptierten Design zu kommen._
 - **Task-Liste**:
   - Task 1: Erarbeitung der GUIs 
   - Task 2: Konzeption von User-Tests anhand der aus dem User-Research gewonnenen Erkenntnissen
@@ -237,7 +281,7 @@ Hinweis: Die notwendigen Informationen zur Durchführung des User-Research finde
   - Task 4: Ableitung von Verbesserungen und Überarbeitung des Designs
 - **Milestones**:
   - finaler Entwurf der Benutzungsschnittstellen (GUIs)
-  - Deliverable 2: UI-Entwurf (=Designkonzept)
+  - ==Deliverable 2: UI-Entwurf (=Designkonzept)==
     - Dokumentation des Designkonzepts für die User-Tests
     - Dokumentation der durchgeführten User-Tests
     - Dokumentation der gewonnenen Erkenntnisse
@@ -260,7 +304,6 @@ Hinweis: Die notwendigen Informationen zur Durchführung des User-Research finde
   - Festlegung des Systemdesigns 
 
 
-
 ---
 ## Workpackage 4: Implementierung, Usability-Evaluation, Deployment
 
@@ -281,49 +324,129 @@ Hinweis: Die notwendigen Informationen zur Durchführung des User-Research finde
 
 
 
-
 ---
-# Beteiligte Personen (1/2)
-
-
-**Hochschule Darmstadt**
-- **Prof. Dr. Stefan Linus Zander** (Modulverantwortlicher) – stefan.zander@h-da.de
-
-
-
+# Projekt 2: Automatisierte Gutachtenerzeugung mittels Semantic MediaWiki
 
 
 ---
-# Beteiligte Personen (2/2)
+## Zielsetzung
 
-**Hochschule Darmstadt – Studierende**
+::::: columns
+:::: single center
+![](./figures/gutachten_optionen.png)
 
-:::: columns
-::: single
-- TBA
-:::
-::: single
-- TBA
+::: blue small bigskip
+**Ziel**: Entwicklung einer Funktion zur benutzerfreundlichen Erstellung von Gutachten und zur Bewertung von akademischen Abschlussarbeiten auf Basis der Software Semantic MediaWiki.
 :::
 ::::
+:::: single center
+![height:500px](./figures/gutachten_printed.png)
+::::
+:::::
+
+
+---
+## Workpackage 1: Einarbeitung
+
+- **Ziel**: _Auseinandersetzung und Einarbeitung in die Software Semantic MediaWiki und der vorhandenen relvanten Extensions._
+- **Task-Liste**
+  - Task 1: Aufsetzen eines Testsystems
+  - Task 2: Einarbeitung und Auseinandersetzung mit der Software und den zugrunde liegenden Konzepten
+- **Milestones**
+  - Grundlagen der Ontologie-Entwicklung mittels Semantic MediaWiki sind bekannt
+  - Verständnis der Modellierungsprimitive
+  - Eigene Wissensgraphmodelle mittels RDF modellieren und erklären können
+
+
+::: footnotes
+Hinweis: Eine Vielzahl an relevanten Informationen findet sich im [Moodle-Kurs](https://lernen.h-da.de/course/view.php?id=11623) zur Lehrveranstaltung ["Semantisches Wissensmanagement im Unternehmen: Konzepte, Technologien, Anwendungen"](https://obs.fbi.h-da.de/mhb/modul.php?nr=30.2646&sem=20212)
+:::
+
+---
+## Workpackage 2: Konzeption
+
+- **Ziel**: _Konzeption und Ersprobung von verschiedenen Umsetzungsmöglichkeiten und Auswahl des besten Ansatzes._
+- **Task-Liste**
+  - Task 1: User Research und Anforderungsspezifikation (siehe WP1 von Projekt #1) 
+  - Task 2: Sammlung der entspr. Beurteilungskriterien und deren Ausprägungen
+  - Task 3: Untersuchung der verschiedenen Umsetzungsmöglichkeiten
+  - Task 4: Konzeption der Ablauflogik
+  - Task 5: Vorbereitung der Umsetzung
+- **Milestones**
+  - ==Deliverable 1: Anforderungs- und Ablaufspezifikation==
+    - Dokumentation des User Research und dessen Ergebnisse / Erkenntnisse
+    - Anforderungsspezifikation
+    - Ablaufspezifikation (formalisierte Darstellung des Prozesses aus techn. Sicht)
+  - ==Deliverable 2: Beurteilungskriterien==
+    - Katalog der Beurteilungskriterien und deren jew. Ausprägungsmerkmale
+  
+
+
+
+
+---
+## Workpackage 3: Umsetzung und Integration in das bestehende Semantic MediaWiki
+
+- **Ziel**: _Implementierung, Testen, Refinement und Integration in das bestehende Semantic MediaWiki-System des Fachbereichs._
+- **Task-Liste**
+  - Task 1: Implementierung
+  - Task 2: Testing und Refinement
+  - Task 3: Integration in bestehendes Semantic MediaWiki-System
+- **Milestones**
+  - ==Deliverable 3: System- und Anwendungsdokumentation==
+    - Technische Dokumentation
+    - Beschreibung der Funktionalität aus Anwendersicht
+  - Abgeschlossene Implementierung
+  - Abgeschlossene Integration 
+
+
+---
+# Fragen ?
+
+
+
+---
+<!-- header: Projektmanagement -->
+# Projektmanagement
+
+---
+# Projektmanagement – Teil 1
+
+::: blue centerbox small
+Da wir analog dem **Agilen Manifesto** vorgehen wollen, anbei ein paar Gedanken zum strategischen und operativen Projektmanagement und der Projektdurchführung. Die folgenden Informationen dienen gleichzeitig als Vorbereitung für die wöchentlichen **Jour fixes**.
+:::
+
+{.Skip}
+- Grundsätzlich: die Projektaufgaben (=Tasks der jeweiligen WPs) werden in wöchentlichen **Sprints** abgearbeitet^1^
+- Die **Detailarbeiten** pro Sprint (Research / Development / etc) legt jedes Team individuell fest
+- Jedes Projekt führt ein **Sprint**- und ein **Produkt-Backlog**. 
+  - Das Sprint-Backlog dokumentiert die einzelnen Aufgaben und Ziele eines Sprints für jedes Team. 
+  - Im Produkt-Backlog werden die Anforderungen der APs und der zugehörigen Tasks definiert und dokumentiert.
+- Die Sprint- und Produkt-Backlogs werden in den **Git-Repositories** der jeweiligen Projekte geführt.
+- Vor jedem Sprint steht die **Planung**; hier werden die Tasks der Arbeitspakete (=APs) aus der Projektbeschreibung in Teilaufgaben zerlegt und in das Sprint-Backlog übertragen (siehe vorheriger Punkt). 
+- Jeder Sprint wird im **Sprint-Backlog** dokumentiert (Planung & Review).
+
+::: footnotes
+^1^ Nach dem SCRUM Guide sollen Sprints eine zeitliche Dauer von 2-3 Wochen haben; da wir jedoch einen vergleichsweise kurzen und fest-definierten Zeitrahmen haben werden wir wöchentliche Sprints abhalten.
+:::
+
+
+
+---
+# Projektmanagement – Teil 2
+
+- Das **Produkt-Backlog** dient als Basis für das Sprint-Review und ist “Richtschnur” für die Planung des nä. Sprints 
+- Die MO-JFs sind also **Planungs**- und **Review-Meetings** zugleich. 
+- Zusätzlich kann dort in von den Teams und Stakeholdern definierten Zeitpunkten eine **Retrospektive** durchgeführt werden. 
+  - Spätestens nach der Erfüllung eines WPs soll eine Retrospektive stattfinden. 
+- Zusätzlich bzw. ergänzend zu den JFs finden Zwischenpräsentationen statt – idR. bei der Erreichung eines Meilensteins. Die Präsentationstermine werden durch die Stakeholder festgelegt.
+
+::: centerbox warning
+Wichtig: Agiles Vorgehen bedeutet, dass sich die Projektdurchführung den aktuellen Anforderungen und vorherrschenden Gegebenheiten anpasst. Sollte sich im Verlauf des Projektes herausstellen, dass eine Nachjustierung sinnvoll ist, dann werden wir diese gemeinsam besprechen und durchführen.
+:::
 
 
 ---
 # Aufteilung in Projektteams
 
-:::: columns
-::: single
-**Projektteam Elektromobilität**
-- TBA
-:::
-::: single
-**Projektteam Bewertungsplattform**
-- TBA
-:::
-::::
 
-
-
-
----
-# Fragen ?
