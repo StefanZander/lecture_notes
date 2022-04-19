@@ -67,7 +67,7 @@ Vierter Schritt
 
 
 
-### Aufgaben 3: Literaturrecherche 
+### Aufgabe 3: Literaturrecherche 
 
 1. Lesen Sie das Paper
 
@@ -82,10 +82,11 @@ Vierter Schritt
     4. Erläutern Sie Maßnahmen, wie sich das operative und strategische Wissensmanagement verbinden lässt.
 
 
-
+<!-- 
 ### Aufgabe 4: Reflektion der 1. Einheit
 
-1. Beantworten Sie die Fragen zur Lernzielkontrolle auf der letzten Seite des Foliensatzes zur 1. Einheit (Wissensmanagement).
+1. Beantworten Sie die Fragen zur Lernzielkontrolle auf der letzten Seite des Foliensatzes zur 1. Einheit (Wissensmanagement). 
+-->
 
 
 [^1]: Die folgenden Schritte stellen jeweils eine Verfeinerung bzw. Konkretisierung des beschriebenen Sachverhalts dar. 

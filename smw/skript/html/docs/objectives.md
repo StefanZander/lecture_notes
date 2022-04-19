@@ -12,7 +12,7 @@ Nach dem Absolvieren der Lehrveranstaltung sind die Studierende in der Lage...
 
 !!! abstract
     **Gesamtziel der Veranstaltung**  
-    Grundlegende Sprach- und Entwurfskonzepte aus dem Bereich der semantischen Wissensgraphmodellierung auf ein bestehendes Wissensmanagementproblem anzuwenden und mittels der Software Semantic MediaWiki umzusetzen.
+    Sie sollen die Fähigkeit besitzen, grundlegende Sprach- und Entwurfskonzepte aus dem Bereich der semantischen Wissensgraphmodellierung auf ein bestehendes Wissensmanagementproblem anwenden und mittels der Software Semantic MediaWiki umsetzen zu können.
 
 
 ### Lehrveranstaltungsinhalte
@@ -30,7 +30,7 @@ Konkret werden Inhalte aus folgenden **Fachgebieten** behandelt:
 * Abfragesprachen für semantische Wissensrepräsentationsmodelle
 * Semantic MediaWiki-Erweiterungen für das betr. Wissensmanagement
 
-Zusammenführung und Anwendung aller Inhalte in einem **Semesterprojekt**.
+Im 2. Teil: Zusammenführung und Anwendung aller Inhalte in einem **Semesterprojekt**.
 
 
 ### Zeitlicher Ablauf
@@ -38,11 +38,11 @@ Zusammenführung und Anwendung aller Inhalte in einem **Semesterprojekt**.
 
 - Woche 1: Kick-Off und Organisatorisches  
 - Woche 2: Einführung in das organisationale Wissensmanagement  
-- Woche 3: Technische Grundlagen semantischer Wissensrepräsentationsmodelle  
-- Woche 4: Einführung in Semantic MediaWiki  
-- Woche 5: Erweiterungen für die kollaborative Ontologieerstellung mit Semantic MediaWiki  
-- Woche 6 - 11: Individuelle Arbeit am Semesterprojekt   
-- Woche 12 - 13: Projektpräsentationen ~~und kurze mündliche Prüfung~~ am Semesterende
+- Woche 3 - 4: Technische Grundlagen semantischer Wissensrepräsentationsmodelle  
+- Woche 5: Einführung in Semantic MediaWiki  
+- Woche 6: Erweiterungen für die kollaborative Ontologieerstellung mit Semantic MediaWiki  
+- Woche 7 - 11: Individuelle Arbeit am Semesterprojekt   
+- Woche 12 - 13: Projektpräsentationen und kurze mündliche Prüfung am Semesterende
 
 
 
@@ -61,11 +61,11 @@ Woche 13: Prüfungsleistung   -->
 
 ### Durchführung
 
-Durchführung im WiSe 2021/2022 als Online-Lehrveranstaltung via **BigBlueButton (BBB)**
-: VO & UE: **DI, 09:00 - 11:45 Uhr** in [vFBI/028](<https://rooms.fbi.h-da.de/r/vFBI/028>)
+Durchführung im SoSe 2022 als Präsenz-Lehrveranstaltung – ggf. mit Unterstützung von **BigBlueButton (BBB)**
+: VO & UE: jeweils **dienstags** in **D14/01.04** & **D14/01.11**
 <!-- : UE: **MO, 14:15 - 15:45 Uhr** in [Raum D14/00.04](<https://rooms.fbi.h-da.de/D14/00.04>) oder via [Jitsi-Meeting](<https://meet.fbi.h-da.de/>) -->
-: * Im ersten Teil des Blocks besprechen wir inhaltliche Themen inkl. Demonstration praktischer Beispiele
-: * Im zweiten Teil arbeiten Sie selbständig an den Übungsaufgaben
+: * In der VO besprechen wir inhaltliche Themen inkl. Demonstration praktischer Beispiele
+: * In den Übungen arbeiten Sie selbständig oder im Team an den Übungsaufgaben
 
 
 Lehrveranstaltungsunterlagen
@@ -83,33 +83,44 @@ Lehrveranstaltungsunterlagen
         __Wer sich nicht registriert erhält keine Modulnote am Semesterende!__
 
 
-### Übung
+### Übung / Praktikum
 
-Parallel zur Vorlesungseinheit sind **Übungsaufgaben** zu bearbeiten... 
-: ...in denen das Wissen der Vorlesung verfestigt und angewendet werden muss
-: ...die auf das Semesterprojekt vorbereiten.
+Parallel zur Vorlesungseinheit sind **Übungsaufgaben** zu bearbeiten  
 
+- in denen das Wissen der Vorlesung verfestigt und angewendet werden muss
+- bereiten auf das Semesterprojekt vor
+- dienen als Grundlage für die mündl. Prüfung am Semesterende
+
+Die Übungsergebnisse werden in den VO-Einheiten besprochen. Hierzu stellen die Teilnehmenden ihre Lösungen im Plenum vor, die wir dann gem. diskutieren.
 
 <!-- ~~Die Bearbeitung der ersten beiden Übungsaufgaben ist __PVL__ und damit Pflicht für ein erfolgreiches Absolvieren der LVA.~~ -->
 <!-- Die Bearbeitung der Übungsaufgaben wird dringend empfohlen. Für eine konsequente und korrekte Bearbeitung aller Übungsaufgaben gibt es einen Bonus auf die Abschlussnote.  -->
 
 <!-- idR __eine Woche Bearbeitungszeit__ bis zur nächsten Vorlesungseinheit -->
 
+<!-- 
 Einreichung der Übungsaufgaben bis **Sonntag, 24:00 Uhr** der jeweiligen Vorlesungswoche via **Moodle**
 
 !!! warning
     **Verspätete Abgaben**  
     Verspätete Abgaben und/oder Abgaben via Email werden nicht akzeptiert und mit der **Note 5** bewertet. 
 
-Mehr Infos finden sich auf den jeweiligen Übungsseiten.
+Mehr Infos finden sich auf den jeweiligen Übungsseiten. 
+-->
 
 
 ### Beurteilung
 
 Die **Gesamtbeurteilung** der LVA setzt sich aus **2 Teilleitungen** zusammen
 : __70% Projektarbeit__ und __Präsentation__ (--> Semesterprojekt)
-: __30%__ Beurteilung der ausgearbeiteten __Übungsaufgaben__
-    : jeweils bis spätestens Sonntag, 24:00 Uhr der entspr. Vorlesungswoche  über Moodle hochzuladen
+: __30%__ mündlichen Prüfung am Semesterende
+
+    !!! warning
+        **Wichtig**: Trotz der 70/30-Gewichtung ist eine Note von 4,0 oder besser in _beiden_ Teilleistungen zwingende Voraussetzung für eine erfolgreiche Beurteilung. 
+
+<!-- : __30%__ Beurteilung der ausgearbeiteten __Übungsaufgaben__
+    : jeweils bis spätestens Sonntag, 24:00 Uhr der entspr. Vorlesungswoche  über Moodle hochzuladen 
+-->
 
 Für jede Teilleistung wird eine **Note** vergeben, die mit der jeweiligen Gewichtung in die **Gesamtnote** eingeht.
 
@@ -120,8 +131,8 @@ Für jede Teilleistung wird eine **Note** vergeben, die mit der jeweiligen Gewic
     1. Regelmäßige Teilnahe an den Veranstaltungen
     2. Aktive Mitarbeit im Semesterprojekt
     3. Teilnahme an der Abschlusspräsentation
-    4. Note von 4,0 oder besser bei Übungsaufgaben und Semesterprojekt
-    <!-- 5. Bearbeitung aller Übungsaufgaben (ist gleichzeitig auch PVL) -->
+    4. Note von mind. 4,0 oder besser bei mündl. Prüfung und dem Semesterprojekt
+    5. Bearbeitung der Übungsaufgaben 
 
 
 ### Semesterprojekt
@@ -139,7 +150,7 @@ Ziele und Durchführung:
 
 * Präsentation der Umsetzung des Semesterprojekts
 * Schwerpunkt liegt auf der Präsentation der technischen Umsetzung des Semesterprojekts in Form einer **Live-Demo**
-* Zeitliche Dauer pro Präsentation: __10-12 Minuten__ mit anschließendem Frage-Teil
+* Zeitliche Dauer pro Präsentation: __12-15 Minuten__ mit anschließendem Frage-Teil
 * Die Vorstellung der Problemstellung / Rollen / Domänen / zu adressierenden Informationsbedürfnissen kann mit einem Foliensatz erfolgen. Das Hauptaugenmerk liegt aber auf der __Live-Demonstration__ der Umsetzung mittels Semantic MediaWiki
 * Heben Sie in der Vorstellung besondere Problemstellung hervor und zeigen Sie, wie Sie diese modellierungstechnisch gelöst haben. Die ZuhörerInnen sollen einen Eindruck davon erhalten, wie Sie bestimmten Wissensmanagementherausforderungen technisch begegnet sind. Legen Sie also Ihre **Entwurfsentscheidungen** offen.
 * Sie müssen _nicht_ jedes einzelne Formular oder Template präsentieren; konzentrieren Sie sich auf die Wesentlichen und heben Sie dort die interessanten bzw. herausfordernden Aspekte hervor. 

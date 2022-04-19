@@ -56,7 +56,7 @@
 : * Rolle von Wissensmanagement in Organisationen bzw. warum Wissensmanagement für Organisationen immer wichtiger wird
 : Übungen besprochen -->
 
-
+<!-- 
 #### 2021-04-13
 : Organisatorisches (Aufbau des Kurses, Ziele, Lehrmaterialien, Ablauf Präsenzveranstaltung und Übungen)
 : im 2. Teil gem. Sammlung von Erwartungen und Wünschen an die Veranstaltung für ein gutes und zielgerichtetes Zusammenarbeiten
@@ -65,4 +65,4 @@
 : * zu bearbeiten ist Aufgabe 1 & 2 aus Übung #1 (Aufgabe 3 & 4 dann in der Folgewoche)
 : Aufgrund der extrem hohen Auslastung des Moduls sollen sich die Studierenden Gedanken machen, ob sie das Modul wirklich absolvieren wollen
 : * Nachricht an Prof. Altenbernd (Prodekan) mit der Bitte um weitere WPFs
-: * WPF Fortschrittliche Webentwicklung wird noch angeboten (entweder Semester-begleitend oder als Blockkurs im Aug./Sept.)
+: * WPF Fortschrittliche Webentwicklung wird noch angeboten (entweder Semester-begleitend oder als Blockkurs im Aug./Sept.) -->
