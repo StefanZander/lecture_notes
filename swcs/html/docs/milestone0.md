@@ -25,13 +25,14 @@
 
 3. Collect all **questions** that arise during your contemplation with the course material
     - Write down all questions and open issues that arise and 
-    - Bring them to the ~~in-class lecture~~ BigBlueButton (BBB) Meetings; they will be discussed and answered there
+    - Bring them to the in-class lectures; they will be discussed and answered there
 
     !!! warning
         **Take Responsibility!**  
-        One of the main principles of this course is to learn to take responsibility for your work and the outcome. Be aware, that this is not a regular university course in which you get all necessary information hand-feeded. Instead you are required to take actions, organize yourself, set goals, estimate and meet expectations, seek for support when you encounter problems or difficulties etc.  
+        One of the main principles of this course is to learn to __take responsibility for your work and the outcome__. Be aware, that this is _not_ a standard university course in which you get all necessary information hand-feeded. Instead you are required to take actions, organize yourself, set goals, estimate and meet expectations, seek for support when you encounter problems or difficulties etc.  
         
-        Remember, your course lecturer is always available and happy to help and support you – BUT the **initiative must come from your side**; --> this is part of your responsibility.
+        ==_Remember, your course lecturer is always available to help and support you – BUT the **initiative must come from your side**
+         --> this is part of your responsibility._==
 
     - If no questions arise, we assume that everything is clear to you – with all the consequences. 
 

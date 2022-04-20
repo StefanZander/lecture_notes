@@ -29,30 +29,30 @@
     - Use the [Springer LNCS template](add link)
     
     !!! note
-        **Note**: Write the Abstract from a perspective of what you *intend* to achieve. Change this perspective of what you *have* achieved for the final paper.
+        **Writing the Abstract**: Write the Abstract from a perspective of what you *intend* to achieve. Change this perspective of what you *have* achieved for the final paper.
 
 3. Submit both Factsheet and Abstract as a **single PDF file** via **EasyChair** (_registration required_)  
     <!-- - Use the following link for the module "**Scientific Writing for Computer Science**":
         - Link: <https://easychair.org/conferences/?conf=swcssose2020> -->
     - Use this link for the module "**Wissenschaftliches Arbeiten in der Informatik 2**":
-        - Link: <https://easychair.org/conferences/?conf=wai2-2021>
+        - Link: <https://easychair.org/conferences/?conf=wai2-2022>
     - **Register** both authors at the EasyChair system and enter all relevant information
   
         !!! note
-            **Note**: Both(!) authors need to register at the EasyChair system. Please use your official student email addresses for the registration as I will use these later to register you as Programme Committee (PC) Member for the reviews. If author and programme committee email addresses do *not* match, problems will occur during the paper assignment.
+            **Registration Policy**: Both(!) authors need to register at the EasyChair system. Please use your official student email addresses for the registration as I will use these later to register you as Programme Committee (PC) Member for the reviews. If author and programme committee email addresses do *not* match, problems will occur during the paper assignment.
 
     - **Upload** the document to the easychair system
         
         !!! warning
-            **Note**: Once you uploaded the paper, EasyChair assigns you a single slot. Use this slot during the entire semester, i.e., if you want to upload an updated version of the Factsheet and Abstract, just update (=overwrite) the already entered information.  
+            **Uploading or Updating your Paper in EasyChair**: Once you uploaded the paper, EasyChair assigns you a single slot. Use this slot during the entire semester, i.e., if you want to upload an updated version of the Factsheet and Abstract, just update (=overwrite) the already entered information.  
             --> __DO NOT CREATE A NEW SUBMISSION!__
 
 
-## Factsheet
+## Explanatory Information
+
+### The Factsheet
 
 The Factsheet describes **corner stones** of your research. It serves as **basis** for writing a meaningful and concise **abstract** and drives your research. The factsheet can (and should!) also be used as foundation for writing a **thesis exposé** for your intended thesis supervisor.
-
-### Structure
 
 Use the following structure and document each aspect with very few sentences:
 
@@ -81,12 +81,12 @@ The problem statement (often referred to as the motivation) is one of the crucia
 
 
 
-## Abstract
+### Abstract
 
 !!! warning
-    **Please Note**:  
+    **The Importance of the Abstract**:  
     The **abstract** is probably the **most important** and **most difficult** part to write of your paper.  
-    So it definitly pays off to put a lot of effort and thoughts in creating a sound and meaningful abstract.
+    Hence, it definitly pays off to put a lot of effort and thoughts in creating a sound and meaningful abstract.
 
 The abstract helps the reader to determine whether it is **worth their time** to read your paper and whether they find the information they are looking for in it.
 The abstract therefore should outline the **main insights** (=results) of your work together with a description of the problem space and the methodology applied in creating the insights.
@@ -115,8 +115,7 @@ These questions also serve as basis for **structuring** the abstract:
 As a consequence, the abstract should *not* be longer than **5 - 7 sentences** for a regular research paper (longer works can have a more comprehensive abstract, but it should never exceed the limit of one page length).
 
 !!! note
-    **A well-written abstract is short and precise!**  
-
+    **A well-written Abstract is short and precise!**  
     The abstract must be **precise** and **meaningful**. It should only be as long as necessary but as precise as possible! 
 
 

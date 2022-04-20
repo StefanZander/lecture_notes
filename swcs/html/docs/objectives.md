@@ -22,7 +22,7 @@ This site outlines the **main objectives** of this course together with a conden
 - Learn how to write a **review** for one of your colleagues‘ papers
 - Search for relevant literature in **scientific literature databases**
 - Learn how to write a scientific paper using **LaTeX**
-- Become acquianted with the **EasyChair** conference system ([_-->_ Link](https://easychair.org/))
+- Become acquianted with the [**EasyChair** conference system](https://easychair.org/)
 
 
 !!! warning

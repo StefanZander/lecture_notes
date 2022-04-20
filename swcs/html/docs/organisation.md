@@ -10,10 +10,10 @@ On this page, you find information about
 
 ## Communication
 
-- Usually via **email**, **skype** or as **indiviual appointments** via <https://meet.fbi.h-da.de>  
+- Usually via **email**, **BBB** or as **indiviual appointments** via <https://meet.fbi.h-da.de>  
     _-->_ contact me via email for arranging an individual appointment
 - Please use the following subject `WAI` __OR__ `SWCS` when asking questions via email:  
-    `[SWCS|WAI] {lastname_person1}, {lastname_person2}: {matter}` (without `{}`)
+    `[SWCS|WAI] {matter}` (without `{}`)
 
     !!! note
         Please note that the curly braces (`{}`) are indicators for tokens that should be replaced with the real names and matter (without `{}` of course).
@@ -25,10 +25,12 @@ On this page, you find information about
 
 ## In-Class Lectures
 
+<!--
 !!! warning 
     **Corona Update**  
     Due to the corona crisis, there will be **no in-class lectures** during the summer term 2021.  
-    Instead, we will use **BigBlueButton (BBB)** for all lectures (--> Link: <https://rooms.fbi.h-da.de/r/vFBI/002>). 
+    Instead, we will use **BigBlueButton (BBB)** for all lectures 
+-->
 
 - Dates of the lectures will be announced via Email and via the OBS Calendar
     - _-->_ so please make sure that your email and calendar subscription is up-to-date 
@@ -61,13 +63,13 @@ On this page, you find information about
 
 
 ## Submission of Results
-- All Milestones need to be submitted exclusively via the [EasyChair system](https://easychair.org)  
-    Link: See [Milestone #2](milestone2.md#tasks)
-- Please register yourself at the EasyChair system with your official student email-address (i.e., the one you use for the OBS system)
+- All Milestones need to be **submitted** exclusively via the [EasyChair system](https://easychair.org)  
+    - For the corresponding conference link, see [Milestone #2](milestone2.md#tasks)
+- Please **register** yourself at the EasyChair system with your official student email-address (i.e., the one you use for the OBS system)
 
 !!! note
     **Registration is Necessary**:  
-    Registration at the EasyChair system is needed to submit results and to prepare the reviews for your colleagues' works (--> see [Milestone #4](milestone4.md))
+    Registration at the EasyChair system is needed to submit results and to prepare the reviews for your colleagues' works (see [Milestone #4](milestone4.md))
 
 !!! warning
     **No Email Submissions!**  

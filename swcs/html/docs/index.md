@@ -25,6 +25,7 @@ The information on this site is separated into
 * [Overview, Objectives, and Literature Recommendations](objectives.md)
 * [Organisation](organisation.md)
 * [Schedule with Milestones](schedule.md)
+* [Link to the EasyChair Conference](https://easychair.org/conferences/?conf=wai2-2022)
 
 
 ## Milestones

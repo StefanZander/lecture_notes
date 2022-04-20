@@ -62,6 +62,13 @@ Für *Studierende*, sagen Sie bitte kurz ...
 - **Prof. Dr. Stefan Linus Zander** (Modulverantwortlicher) – stefan.zander@h-da.de
 
 
+**Klinikon GmbH^1^**
+- **Dipl. Volkswirt Roland Trefftz** (Projektleiter und Stakeholder) – trefftz@klinikon.com
+
+::: footnotes
+^1^ https://www.klinikon.com/
+:::
+
 
 ---
 # Beteiligte Personen (2/2)
@@ -234,7 +241,7 @@ Die **Beteiligungsmatrix**
 - Verwaltung von NutzerInnen und Fahrzeugen
 - Individualisierbares Dashboard mit div. Übersichten (Buchungen / Nutzung / gefahren Kilometer / Auslastung / etc.)
 - Einfache und vielfältige Reservierungsmöglichkeiten (bspw. über einen gem. Kalender / via Email etc.)
-- Schnittstelle zur Integration von Ladezustand und anderen technischen Merkmalen
+- Erforschung von Schnittstellen zur Integration von Telemetriedaten und anderen technischen Merkmalen (Ladezustand, Kilometer etc)
 - Einfachste Nutzung und Administration
 - Hohe Code- und Dokumentationsqualität
 
