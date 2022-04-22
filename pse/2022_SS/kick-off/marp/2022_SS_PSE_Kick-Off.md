@@ -77,14 +77,23 @@ Für *Studierende*, sagen Sie bitte kurz ...
 
 **Hochschule Darmstadt – Studierende**
 
-:::: columns
-::: single
-- TBA
+:::twocolumns
+- Buchholz	Tobias	– Tobias.Buchholz@stud.h-da.de
+- Dworski	Lukas	– Lukas.Dworski@stud.h-da.de
+- Füssel	Alexander	– Alexander.Fuessel@stud.h-da.de
+- Gabriel	Jan Morris	– Jan.M.Gabriel@stud.h-da.de
+- Kilb	Anna Katharina	– Anna.K.Kilb@stud.h-da.de
+- Lange	Ben	– Ben.Lange@stud.h-da.de
+- Leuthe	Nadine Christine	– Nadine.C.Leuthe@stud.h-da.de
+- Manhique	Manuel	– Manuel.Manhique@stud.h-da.de
+- Rahmi	Dwiresti Puspita	– Dwiresti.P.Rahmi@stud.h-da.de
+- Schuchhardt	Sven	– Sven.Schuchhardt@stud.h-da.de
+- Seifert	Tobias	– Tobias.Seifert@stud.h-da.de
+- Selian	Enrico Egen	– Enrico.E.Selian@stud.h-da.de
+- Ueno	Aki	– Aki.Ueno@stud.h-da.de
+- Wischnat	Julian	– Julian.Wischnat@stud.h-da.de
+- Yamoah	Cheryl Josephine	– Cheryl.J.Yamoah@stud.h-da.de
 :::
-::: single
-- TBA
-:::
-::::
 
 
 ---
@@ -93,11 +102,24 @@ Für *Studierende*, sagen Sie bitte kurz ...
 :::: columns
 ::: single
 **Projektteam Elektromobilität**
-- TBA
+- Tobias Buchholz
+- Alexander Füssel
+- Jan Morris Gabriel
+- Anna Kilb
+- Nadine Leuthe
+- Manuel Manhique
+- Sven Schuchhardt
+- Tobias Seifert
+- Enrico Egen Selian
+- Aki Ueno
+- Julian Wischnat
+- Cheryl Yamoah
 :::
 ::: single
 **Projektteam Gutachtenerzeugung**
-- TBA
+- Lukas Dworski
+- Ben Lange
+- Dwiresti Puspita Rahmi
 :::
 ::::
 
@@ -455,7 +477,5 @@ Wichtig: Agiles Vorgehen bedeutet, dass sich die Projektdurchführung den aktuel
 :::
 
 
----
-# Aufteilung in Projektteams
 
 
