@@ -23,18 +23,18 @@ paginate: true
 
 #### Prof. Dr. Stefan Linus Zander 
 
-Kick-Off-Meeting – 19.04.2022  {.lightgreen .Big .skip}
+Kick-Off-Meeting – 22.04.2022  {.lightgreen .Big .skip}
 
 
 ---
 <!-- header: Überblick -->
-<!-- footer: Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 19.04.2022 -->
+<!-- footer: Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 22.04.2022 -->
 
 # Agenda
 
 1. Gemeinsame Kennenlernrunde zu Beginn (alle)
 2. Allgemeine Informationen zum Modul (S. Zander)
-5. Vorstellung der Projekte und Arbeitspakete (S. Zander)
+5. Vorstellung der Projekte und Arbeitspakete (S. Zander, R. Trefftz)
 6. Projektassignments (alle)
 7. Gemeinsame Q&A-Session (alle)
 8. Nächste Schritte (alle)
@@ -58,12 +58,14 @@ Für *Studierende*, sagen Sie bitte kurz ...
 # Beteiligte Personen (1/2)
 
 
-**Hochschule Darmstadt**
-- **Prof. Dr. Stefan Linus Zander** (Modulverantwortlicher) – stefan.zander@h-da.de
+**Hochschule Darmstadt** {.BIGskip}
+- **Prof. Dr. Stefan Linus Zander** (Modulverantwortung und Projektleitung) – stefan.zander@h-da.de
 
 
-**Klinikon GmbH^1^**
-- **Dipl. Volkswirt Roland Trefftz** (Projektleiter und Stakeholder) – trefftz@klinikon.com
+
+
+**Klinikon GmbH^1^** {.Bigskip}
+- **Dipl. Volkswirt Roland Trefftz** (fachliche Projektleitung und Stakeholder) – trefftz@klinikon.com
 
 ::: footnotes
 ^1^ https://www.klinikon.com/
@@ -134,7 +136,7 @@ Quelle: Modulhandbuch des Fachbereichs Informatik mit individuellen Ergänzungen
 
 
 ---
-# Vorbereitung
+# Durchführung
 
 - Aufteilung der Studierenden in **2 Projektteams** analog den beiden Projekten
 - Jedes Projektteam bildet eigenverantwortlich **Dev.-/Research-Teams** (=2-3er Teams), die selbständig und eigenverantwortlich an den verschiedenen Arbeitspaketen arbeiten
