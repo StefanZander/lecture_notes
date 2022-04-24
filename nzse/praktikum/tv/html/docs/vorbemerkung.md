@@ -17,7 +17,7 @@ Aufgabenstellung zum Semesterprojekt "NutzerInnen-zentrierte Softwareentwicklung
 
 !!! warning
     **Neues Thema Lebensmittelinformations-App**  
-    Ab dem SoSe 2022 bieten wir ein drittes Semesterprojektthema im Kontext Verbraucherschutz bzw. Verbraucheraufklärung hinsichtlich der in Lebensmitteln enthaltenen Inhaltsstoffe. Hierdurch sollen Verbraucher in die Lage versetzt werden, informierte Kaufentscheidungen hinsichtlich der in Lebensmitteln enthaltenen Nährstoffe treffen zu können. 
+    Ab dem SoSe 2022 bieten wir ein drittes Semesterprojektthema im Kontext Verbraucherschutz bzw. Verbraucheraufklärung an. Hierdurch sollen Verbraucher in die Lage versetzt werden, informierte Kaufentscheidungen hinsichtlich der in Lebensmitteln enthaltenen Inhalts- bzw. Nährstoffe treffen zu können. 
 
 
 <!--Entwerfen Sie eine nutzerzentrierte und anwendungsfallorientierte **Fernbedienung** für einen "Fernseher" oder einen Twitch-Streaming Server. Die Fernbedienung sollen Sie als **Android-App** für ein Smartphone realisieren. Der "Fernseher" ist vorgegeben und wird im Praktikum simuliert durch eine gegebene **Java-Anwendung** auf dem PC, welche umschaltbare Standbilder anstelle laufender Fernsehprogramme zeigt. Die notwendigen Dateien finden Sie im [Moodle-Kurs des Moduls](https://lernen.h-da.de/course/view.php?id=6802).-->
@@ -28,15 +28,15 @@ Entwerfen Sie eine nutzerzentrierte und anwendungsfallorientierte **Steuerungsap
 
 - eine Steuerungs-App für einen **TV-Server** (=Fernseher)
 - eine Steuerungs-App für einen **Twitch Streaming-Server**
-- eine Lebensmittelinformations-App auf Basis der [OpenFoodFacts-API](https://openfoodfacts.github.io/api-documentation/) (--> weitere Infos auf der [Projektseite](openfoodfacts.md)).
+- eine **Lebensmittelinformations-App** auf Basis der [OpenFoodFacts-API](https://openfoodfacts.github.io/api-documentation/) (--> weitere Infos auf der [Projektseite](openfoodfacts.md)).
 
 Der TV-Server sowie der Twitch Streaming-Server sind bereits implementiert und können auf dem eigenen Laptop als eigenständig laufbare Programme installiert werden. 
 Während der Twitch Streaming-Server "live content" darstellt und eine **aktive Internet-Verbindung** benötigt, simuliert der TV-Server das laufende Fernsehprogramm in Form von umschaltbaren Standbildern.
 
-Die Lebensmittelinformations-App ist seit dem SoSe 2022 neu hinzugekommen. Nährere Informationen zu diesem Projekt sowie zu den zur Verfügung stehenden Daten / APIs finden sich auf der [Projektseite](openfoodfacts.md)
+Die **Lebensmittelinformations-App** ist seit dem SoSe 2022 neu hinzugekommen. Nährere Informationen zu diesem Projekt sowie zu den zur Verfügung stehenden Daten bzw. APIs finden sich auf der [Projektseite](openfoodfacts.md)
 
 !!! note
-    **Hinweis**: Die Wahl des Anwendungsszenarios (TV-Server / Twitch / Nahrungsmittelinfo-App) hängt von den eigenen Vorlieben ab und ist unabhängig für die Testierung des Praktikums. Einzig für die [Usability Evaluierung](termin5.md) müssen Sie für das Twitch- und Nahrungsmittelinfo-Szenario eigene Usability Tests entwerfen (_für den TV-Server sind diese vorgegeben, können aber  angepasst bzw. erweitert werden_).
+    **Hinweis**: Die Wahl des Anwendungsszenarios (TV-Server / Twitch / Nahrungsmittelinfo-App) hängt von den eigenen Vorlieben ab und ist unabhängig für die Testierung des Praktikums. Einzig für die [Usability Evaluierung](termin5.md) müssen Sie für das Twitch- und Nahrungsmittelinfo-Szenario eigene Usability Tests entwerfen (_für den TV-Server sind diese vorgegeben, können aber/sollen angepasst bzw. erweitert werden_).
 
 !!! note
     **Wichtig**:  Die Android-Apps für den TV- und Twitch-Streaming-Server sind reine "Steuerungsapplikationen". Innerhalb der App brauchen Sie _keinen_ Live-Content darzustellen (im Fall von Twitch). Vorschaubilder / Thumbnails / etc. können und sollen Sie natürlich einbinden.

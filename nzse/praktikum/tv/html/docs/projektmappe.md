@@ -48,11 +48,11 @@ Je nach Arbeitsauftrag sollen ebenso **Entwurfsentscheidungen**, **Verbesserunge
 
 - Die Projektmappe ist spätestens eine Woche nach dem jeweiligen Termin via Moodle einzureichen
     - Link: <https://lernen.h-da.de/course/view.php?id=6802#section-10> (Aktivität "Projektmappen")
-- In der Aktivität "Projektmappen" gibt es zu jedem Termin einen entspr. Slot. Dort übernimmt ein Mitglied aus der Gruppe den Upload bzw. die Aktualisierung.
+- In der Aktivität "Projektmappen" gibt es zu jedem Termin einen entspr. Slot. Dort übernimmt _ein Mitglied_ aus der Gruppe den Upload bzw. die Aktualisierung für das komplette Team.
 - Der Upload erfolgt analog der jeweiligen **Meilensteine**. Diese sind
-    - **MS#1: User Research** – nach Termin 1
-    - **MS#2: UI-Entwurf** – nach Termin 2
-    - **MS#4: Usability Evaluierung** – nach Termin 5
+    - **MS#1: User Research** – _Einreichung eine Woche nach Termin 1_
+    - **MS#2: UI-Entwurf** – _Einreichung eine Woche nach Termin 2_
+    - **MS#4: Usability Evaluierung** – _Einreichung am Ende des Semesters nach Termin 5_
   
 - Für **MS#3: App-Entwicklung und Präsentation** (während Termin 5) ist **KEINE EINREICHUNG** notwendig, da die Dokumentation hier in Form ihres App-Codes erfolgt.
 - Achten Sie streng darauf, die Einreichefrist einzuhalten. Verspätete Abgaben werden mit der Note 5 bewertet.
