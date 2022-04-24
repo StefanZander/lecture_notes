@@ -44,12 +44,15 @@ Eigentlich sollten Zugriffe aufs Netzwerk nicht im **UI Thread** gemacht werden 
 
 ### Videoaufzeichnung der App
 
+Selbstverständlich können Sie einschlägige Aspekte Ihrer App bzw. die Umsetzungsdemonstration vorab auf Video aufzeichnen und dieses veröffentlichen bzw. im Moodle-Forum verlinken.
+
     
 
 
 ## Ergebnisse
 
-Die folgenden Ergebnisse müssen für eine erfolgreiche Testierung der Praktikumseinheit vorliegen:
+<!-- Die folgenden Ergebnisse müssen für eine erfolgreiche Testierung der Praktikumseinheit vorliegen: -->
+Nach Abschluss dieser Einheit sollen die folgenden Artefakte vorliegen:
 
 !!! abstract
     __Ergebnisse:__

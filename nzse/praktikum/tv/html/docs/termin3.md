@@ -76,7 +76,8 @@ Nähere Informationen zur Kommunikation mit der REST-API finden Sie auf der [Pro
 
 ## Ergebnisse
 
-Die folgenden Ergebnisse müssen für eine erfolgreiche Testierung der Praktikumseinheit vorliegen:
+<!-- Die folgenden Ergebnisse müssen für eine erfolgreiche Testierung der Praktikumseinheit vorliegen: -->
+Nach Abschluss dieser Einheit sollen die folgenden Artefakte vorliegen:
 
 !!! abstract
     __Ergebnisse:__

@@ -34,11 +34,11 @@ Alle **Protokolle** aus den folgenden Teilaufgaben kommen in die Projektmappe.
 Der letzte Praktikumstermin ist zweitgeteilt:
 
 1. **Präsentation der App (im Präsenztermin)** 
-    - Im Präsenztermin präsentiert jede Gruppe in **max. 15 Minuten** die entwickelte App mittels BBB und Screensharing
-    - Die Präsentation kann am Emulator oder abgefilmt erfolgen.
+    - Im Präsenztermin präsentiert jede Gruppe in **max. 15 Minuten** die entwickelte App mittels geeigneter technischer Tools und Hardware <!--BBB und Screensharing-->
+    - Die Präsentation kann am Emulator oder einem realen Gerät erfolgen.
     - Präsentieren Sie alle Funktionen, die Sie umgesetzt haben (--> siehe [Termin 2](termin2.md)) einschl. etwaiger Leistungs- und Begeisterungsfaktoren. 
     - Alles was Sie nicht präsentieren kann nicht gewertet werden! Achten Sie deshalb darauf keine Zeit zu vergeuden.
-    - Stellen Sie VOR Beginn der Praktikumseinheit sicher, dass App und Server laufen und die Kommunikation funktioniert.
+    - Stellen Sie _VOR_ Beginn der Praktikumseinheit sicher, dass App und Server laufen und die Kommunikation funktioniert.
     - Bereiten Sie die Demonstration so vor, als würde die App das **erste Mal gestartet** werden. Löschen Sie alle Daten und Einstellungen vorab und versetzen Sie die App in den >>Urzustand<<.
     
         !!! note
@@ -51,7 +51,8 @@ Der letzte Praktikumstermin ist zweitgeteilt:
 
 2. **Usability Test und Inspection**
     - Führen Sie die Usability Evaluation und das Design Review wie im weiteren Verlauf beschrieben durch
-    - Fügen Sie alle zu erstellenden Artefakte (Testprotokolle etc.) der Projektmappe hinzu und laden sie diese bis zum __Ende (SO), 20:00 Uhr der darauf folgenden Woche__ in Moodle hoch. ==Verspätete Abgaben können nicht gewertet werden!==
+    - Fügen Sie alle zu erstellenden Artefakte (Testprotokolle etc.) der Projektmappe hinzu und laden sie diese bis zum __Ende (SO), 20:00 Uhr der darauf folgenden Woche__ in Moodle hoch.  
+    ==_Verspätete Abgaben können nicht gewertet werden!_==
     - Bereiten Sie die __Testprotokolle__ vor anhand der folgenden Test-Aufgaben und der [vorgegebenen Checklisten](https://lernen.h-da.de/mod/resource/view.php?id=218415), d.h. betrachten Sie die Checklisten als "Rohmaterial" und machen Sie daraus Protokollformulare.   
     - Die Testprotokolle sollen den Entwickler*innen bei der weiteren Verbesserung helfen (_keine Angst, die Verbesserungen müssen Sie im Praktikum nicht mehr umsetzen..._).
     - Die Vorlage zur Evaluation der Fernbedienungen findet sich in Moodle:  
@@ -63,29 +64,32 @@ Der letzte Praktikumstermin ist zweitgeteilt:
 
 ### Usability Test
 
+<!--
 !!! warning
     **Corona-Update**  
     Bitten Sie ein Familienmitglied oder eine andere externe Person den Test aus der Rolle des Stereotypen durchzuführen. Ggf. kann die/der Protokollant*in via Webcam beobachten und protokollieren. Falls Sie den Test am Emulator durchführen können Sie ein Screensharing oder ggf. sogar ein Tool wie [TeamViewer](https://www.teamviewer.com/de/) nutzen (falls die/der Tester nicht vor Ort anwesend ist).
+-->
 
-Zum **Usability Test** tun Sie sich mit Ihrer Peer-Gruppe zusammen:
+Zum **Usability Test** greifen Sie bitte wieder auf Ihre Stereotypen zurück. Falls Sie mit einer Peer-Gruppe gearbeitet haben, dann gehen Sie wie folgt vor:
 
-* für die App Ihrer Peer-Gruppe sind Sie Test-Benutzer und arbeiten die Test-Aufgaben ab
-* für Ihre eigene App sind Sie Test-Moderator (der/die eine) und Test-Beobachter (der/die andere)
+* für die App Ihrer Peer-Gruppe sind Mitglieder der eigenen Gruppe Test-Benutzer und arbeiten die Test-Aufgaben ab
+* für Ihre eigene App sind Mitglieder aus der eigenen Gruppe Test-Moderator und Test-Beobachter
 
 #### Thinking Aloud
-* Der Test-Benutzer arbeitet die **Test-Aufgaben** (vgl. Anwendungsszenarios und Anforderungen) ab. Der Test-Moderator gibt **keine Erklärung** und **keine Hilfestellung** und ermuntert den Test-Benutzer lediglich zum „**lauten Denken**“. Der Test-Beobachter protokolliert.
+* Der/Die Test-BenutzerIn arbeitet die **Test-Aufgaben** (vgl. Anwendungsszenarios und Anforderungen) ab. Der/Die Test-ModeratorIn gibt **keine Erklärung** und **keine Hilfestellung** und ermuntert den/die Test-BenutzerIn lediglich zum „**lauten Denken**“. Der/Die Test-BeobachterIn protokolliert.
 #### Interview
-* Direkt anschließend **interviewen** Test-Moderator und Test-Beobachter den Test-Benutzer um eventuelle **offene Fragen** zu klären. Der Test-Beobachter protokolliert.
+* Direkt anschließend **interviewen** Test-ModeratorIn und Test-BeobachterIn den/die Test-BenutzerIn, um eventuelle **offene Fragen** zu klären. Der/Die Test-BeobachterIn protokolliert.
 
 
 ### Usability Inspection
 
-!!! warning
-    **Corona-Update**  
-    Führen Sie die **Usability Inspection** und das **Design Review** für Ihre **eigene Applikation** durch. Beurteilen Sie die verschiedenen Aspekte kritisch und hinterfragen Sie getroffene Designentscheidungen. Dies kann natürlich keinen echten Durchlauf mit externen Personen ersetzen, aber Sie bekommen so zumindest eine Vorstellung davon wie beide Methoden durchgeführt werden.
+!!! note
+    **Suchen Sie sich eine Peer-Gruppe für die Usability Inspection**  
+    Führen Sie die **Usability Inspection** und das **Design Review** für die **Applikation Ihrer Peer-Gruppe** durch. Beurteilen Sie die verschiedenen Aspekte kritisch und hinterfragen Sie getroffene Designentscheidungen. Dies kann natürlich keinen echten Durchlauf mit externen Personen ersetzen, aber Sie bekommen so zumindest eine Vorstellung davon wie beide Methoden durchgeführt werden.
     
-    Falls Sie die Möglichkeit haben, dann können Sie die Inspektion stattdessen für die **App einer anderen Gruppe** durchführen. Dies kommt einer echten Usability Inspektion natürlich wesentlich näher. 
-    Dokumentieren Sie alles ausführlich (inkl. Metadaten zur Durchführung) und stellen Sie das Inspektionsprotokoll der anderen PR-Gruppe zur Verfügung. Fügen Sie beide Protokolle (das, welches Sie für die andere Gruppe erstellt haben und das von der anderen Gruppe erhaltene Protokoll) Ihrer Projektmappe hinzu.
+    <!--
+    Falls Sie die Möglichkeit haben, dann können Sie die Inspektion stattdessen für die **App einer anderen Gruppe** durchführen. Dies kommt einer echten Usability Inspektion natürlich wesentlich näher. -->
+    **Dokumentieren** Sie alles ausführlich (inkl. Metadaten zur Durchführung) und stellen Sie das **Inspektionsprotokoll** der anderen Praktikums-Gruppe zur Verfügung. Fügen Sie **beide Protokolle** (das, welches Sie für die andere Gruppe erstellt haben und das von der anderen Gruppe erhaltene Protokoll) Ihrer Projektmappe hinzu.
 
     
 Wenden Sie die "**Checkliste zur Usability Inspection**" auf die mobile App Ihrer Peer-Gruppe an. Übertragen Sie die allgemeinen Regeln sinnvoll auf die Applikation. Protokollieren Sie eventuelle Probleme und Defizite so, dass die Entwickler verstehen, inwiefern die App verbessert werden sollte.
@@ -113,17 +117,17 @@ Bewerten Sie die Fernbedienung Ihrer Peer-Gruppe unter Design Aspekten:
 
 
 ## Ergebnisse
-
-Die folgenden Ergebnisse müssen für eine erfolgreiche Testierung der Praktikumseinheit und einer erfolgreichen Endabnahme des Semesterprojekts vorliegen:
+<!-- 
+Die folgenden Ergebnisse müssen für eine erfolgreiche Testierung der Praktikumseinheit und einer erfolgreichen Endabnahme des Semesterprojekts vorliegen: -->
+Ihre Praktikumsmappe muss folgende ausgearbeitete Artefakte enthalten: 
 
 !!! abstract
     __Ergebnisse:__
 
-    Vorbereitete und ausgefüllte Protokolle für...
-
-    - [x] Thinking aloud Test und anschließendem Interview
-    - [x] Usability Inspection
-    - [x] Design Review
+    - [x] Liste der Testfälle 
+    - [x] Protokoll des Thinking aloud Tests und anschließendem Interview
+    - [x] Usability Inspection der eigenen Gruppe (Vorlage + Protokoll)
+    - [x] Design Review der eigenen Gruppe (Vorlage + Protokoll)
     - [x] Liste mit Verbesserungen (--> *abgeleitet aus den unterschiedlichen Protokollen*)
 
     **Ohne Testprotokolle ist kein erfolgreicher Abschluss möglich!**

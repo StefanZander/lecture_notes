@@ -29,21 +29,32 @@
 
     - Picture in Picture
     - Favoriten anlegen und verwalten
-    - Filterung der TopStreams nach min. _einer_ frei zu wählenden Eigenschaft (Sprache, Spiel, Kanal) ([--> Link](https://stream-server.h-da.io/reference/#twitchgettopstreams))
-    - Gamessuche ([--> Link](https://stream-server.h-da.io/reference/#twitchsearchgames)) <!-- see http://criticmarkup.com/users-guide.php -->
+    - Filterung der TopStreams nach min. _einer_ frei zu wählenden Eigenschaft (Sprache, Spiel, Kanal) ([Link](https://stream-server.h-da.io/reference/#twitchgettopstreams))
+    - Gamessuche ([Link](https://stream-server.h-da.io/reference/#twitchsearchgames)) <!-- see http://criticmarkup.com/users-guide.php -->
     - Umschalten zwischen themenverwandten Streams
     - Auswahl eines Streams
     - Pausieren eines Streams
     - Anzeige von online- und offline Streams
 
 
+    **Nahrungsmittelinformations-App**
+
+    - Abrufen von Basisinformationen zu Lebensmitteln
+    - Abruf von Nährwert-Bewertungen (engl. Nutrition Score)
+    - Eingabe von Barcodes und Abruf von Stammdaten / Basisinformationen auf Basis von Barcodes
+    - Abruf von Inhaltsstoffen und Allergenen zu Lebensmitteln
+    - ... 
+
+
 ## Aufgaben
 
 ### UI Entwurf (Paper Prototyping)
 
+<!--
 !!! warning
     **Corona-Update**:  
     Anstelle eines Paper-Prototypen können Sie auch Mock-ups oder eine Wireframe-basierte Konzeption der Oberflächen Ihrer Applikation erstellen (_mit allen Nachteilen gegenüber einer Paper-Prototyp-basierten Lösung_). 
+-->
 
 1. Entwerfen Sie die **Benutzungsoberfläche** der mobilen Applikationen in Form von konkreten Screen-Diagrammen als **Papier-Prototypen** (*bitte groß und gut erkennbar!*). 
 
@@ -73,27 +84,29 @@
 
 ### Testen
 
+<!--
 !!! warning
     **Corona-Update**:  
     Bitten Sie ein Familienmitglied oder eine andere externe Person die konzipierten Oberflächen aus Sicht des Stereotypen zu begutachten. Spielen Sie einige typische Anwendungsfälle mit Ihrem Stereotypen durch und beobachten Sie sehr genau, wie sie/er mit den Oberflächen interagiert.
+-->
 
 1. Entwickeln Sie eine Reihe von **repräsentativen Testfällen**, um eine erste Validierung der in ihrem Prototypen umgesetzten Entwurfsentscheidungen vornehmen zu können. So finden Sie heraus, ob das von Ihnen entwickelte Benutzungskonzept für ihre Stereotypen intuitiv nutzbar ist.
 
-2. **Testen** Sie Ihre Entwürfe mit Ihrer Peer-Gruppe und identifizieren Sie Ungereimtheiten und/oder Inkonsistenzen und Verbesserungen. Überlegen Sie, ob es gut und richtig ist, wenn Sie keine Verbesserungen identifizieren.
+2. **Testen** Sie Ihre Entwürfe mit Ihren Steretypen (bspw. verkörpert durch Ihre Peer-Gruppe oder Freunde/Verwandte/etc.) und identifizieren Sie Ungereimtheiten und/oder Inkonsistenzen und Verbesserungen. Überlegen Sie, ob es gut und richtig ist, wenn Sie keine Verbesserungen identifizieren.
 
     !!! note
         **Wichtig**:  
-        Die Peer-Gruppe testet Ihren Entwurf aus **Sicht des Stereotypen** sowie seiner/ihrer spezifischen Anforderungen!
+        Die Entwürfe sind aus **Sicht der/des Stereotypen** sowie seiner/ihrer spezifischen Anforderungen zu testen!
 
-        1. Überlegen Sie im Vorfeld, wie Sie Ihre Entwürfe sinnvoll testen (--> *Funktion vs. Use Case*); 
-        2. Entwickeln Sie **5-6 repräsentative Anwendungsfälle**, die Ihre Peer-Gruppe (in der Rolle des Stereotypen) durchspielen soll.
-        3. Geben Sie in **KEINEM FALL HINWEISE** oder Tipps, dies **verfälscht** Ihre Tests enorm. Wir wollen herausfinden, ob die getroffenen Designentscheidungen den mentalen Modellen des Stereotypen entsprechen und ob die UI für diesen intuitiv benutzbar ist. 
+        1. Überlegen Sie im Vorfeld, wie Sie Ihre Entwürfe sinnvoll testen (--> *funktionsorientiert vs. anwendungsfallorientiert*); 
+        2. Entwickeln Sie eine Handvoll **repräsentativer Anwendungsfälle**, die Ihre Stereotypen durchspielen sollen.
+        3. Geben Sie in **KEINEM FALL HINWEISE** oder Tipps, dies **verfälscht** Ihre Tests enorm. Wir wollen herausfinden, ob die getroffenen Designentscheidungen den mentalen Modellen des/der Stereotypen entsprechen und ob die UI für diese/n intuitiv benutzbar ist. 
         <!-- 4. Den Test können Sie auch zu Beginn der nächsten Einheit durchführen. -->
 
 
 ## Ergebnisse
 
-Die folgenden Ergebnisse müssen für eine erfolgreiche Testierung der Praktikumseinheit vorliegen:
+Ihre Praktikumsmappe muss folgende ausgearbeitete Artefakte enthalten: 
 
 !!! abstract
     __Ergebnisse:__
