@@ -121,9 +121,9 @@ Quelle: Bundeszentrale für politische Bildung: Wissensgesellschaft – Eine Ide
 ::: 2nd-column
 **Heute**:
 - Informationen werden von _allen Nutzern_ bereitgestellt
-- Aktive Rolle des Nutzers: _selbstgesteuerter, konstruktivere Prozess, fügt Informationen hinzu, verknüpft Informationen_
+- Aktive Rolle des Nutzers: _selbstgesteuerter, konstruktiver Prozess, fügt Informationen hinzu, verknüpft Informationen_
 - __Leitgedanke__: 
-    ==Wissen ist dynamisch und wird vom Nutzer auf Grund von Erfahrungen konstruiert und laufend verändert auf Basis praktischer Bedürfnisse==
+    ==Wissen ist dynamisch und wird von Akteuren auf Grund von Erfahrungen konstruiert und auf Basis praktischer Bedürfnisse laufend verändert==
 ::::
 
 <!-- | Industriegesellschaft |  | Wissensgesellschaft |

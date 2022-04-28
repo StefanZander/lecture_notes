@@ -91,6 +91,7 @@ Für *Studierende*, sagen Sie bitte kurz ...
 - Seifert	Tobias	– Tobias.Seifert@stud.h-da.de
 - Selian	Enrico Egen	– Enrico.E.Selian@stud.h-da.de
 - Ueno	Aki	– Aki.Ueno@stud.h-da.de
+- Ulmer Quentin – Quentin.Ulmer@stud.h-da.de
 - Wischnat	Julian	– Julian.Wischnat@stud.h-da.de
 - Yamoah	Cheryl Josephine	– Cheryl.J.Yamoah@stud.h-da.de
 :::
@@ -99,29 +100,36 @@ Für *Studierende*, sagen Sie bitte kurz ...
 ---
 # Aufteilung in Projektteams
 
-:::: columns
-::: single
+::::: columns
+:::: double blue
 **Projektteam Elektromobilität**
+::: twocolumns
 - Tobias Buchholz
 - Alexander Füssel
 - Jan Morris Gabriel
-- Anna Kilb
-- Nadine Leuthe
+- Anna Kilb^1^
+- Nadine Leuthe^1^
 - Manuel Manhique
 - Sven Schuchhardt
 - Tobias Seifert
 - Enrico Egen Selian
 - Aki Ueno
+- Quentin Ulmer
 - Julian Wischnat
 - Cheryl Yamoah
 :::
-::: single
+::::
+:::: single green
 **Projektteam Gutachtenerzeugung**
-- Lukas Dworski
+- Lukas Dworski^1^
 - Ben Lange
 - Dwiresti Puspita Rahmi
-:::
 ::::
+:::::
+
+::: footnotes
+^1^ Product Owner der jeweiligen Projekte
+:::
 
 
 
@@ -477,5 +485,21 @@ Wichtig: Agiles Vorgehen bedeutet, dass sich die Projektdurchführung den aktuel
 :::
 
 
+---
+<!-- header: Jour fixes -->
+# Jour fixes
+
+---
+# Jour fixe – MO, 25.04.2022
 
 
+- Beantwortung offener Fragen zu den Projekten
+- Erläuterung Vorgehensmodell
+- Festlegung Product Owner
+- Festlegung Dokumentation von Product Backlog und Sprint Backlog
+- Festlegung Dokumentation der Deliverables
+- sonstiges
+
+::: blue centerbox center Bigskip
+Im **Zielbild** wollen wir erreichen, dass Sie alle Informationen zur Verfügung haben, um den **1. Sprint** zu planen und durchzuführen.
+:::
