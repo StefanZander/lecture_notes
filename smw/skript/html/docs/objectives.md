@@ -62,9 +62,10 @@ Woche 13: Prüfungsleistung   -->
 ### Durchführung
 
 Durchführung im SoSe 2022 als Präsenz-Lehrveranstaltung – ggf. mit Unterstützung von **BigBlueButton (BBB)**
-: VO & UE: jeweils **dienstags** in **D14/01.04** & **D14/01.11**
-<!-- : UE: **MO, 14:15 - 15:45 Uhr** in [Raum D14/00.04](<https://rooms.fbi.h-da.de/D14/00.04>) oder via [Jitsi-Meeting](<https://meet.fbi.h-da.de/>) -->
+: VO: jeweils **dienstags** im 1. Block in **D14/01.04** 
 : * In der VO besprechen wir inhaltliche Themen inkl. Demonstration praktischer Beispiele
+: UE: online via **BBB** als **Praktikum-as-a-Service (PaaS)** mit 2 Slots 
+<!-- : UE: **MO, 14:15 - 15:45 Uhr** in [Raum D14/00.04](<https://rooms.fbi.h-da.de/D14/00.04>) oder via [Jitsi-Meeting](<https://meet.fbi.h-da.de/>) -->
 : * In den Übungen arbeiten Sie selbständig oder im Team an den Übungsaufgaben
 
 
@@ -90,23 +91,29 @@ Parallel zur Vorlesungseinheit sind **Übungsaufgaben** zu bearbeiten
 - in denen das Wissen der Vorlesung verfestigt und angewendet werden muss
 - bereiten auf das Semesterprojekt vor
 - dienen als Grundlage für die mündl. Prüfung am Semesterende
+- bieten die Möglichkeit **Bonuspunkte** für die theor. Prüfung zu sammeln
+- fungieren als PVL
 
-Die Übungsergebnisse werden in den VO-Einheiten besprochen. Hierzu stellen die Teilnehmenden ihre Lösungen im Plenum vor, die wir dann gem. diskutieren.
+Die Übungen werden im **Praktikum-as-a-Service-Modus** durchgeführt, d.h., es besteht _keine_ Anwesenheitspflicht und es ist den Teilnehmenden freigestellt, wann und in welchem Rahmen die Übungsaufgaben bearbeitet werden. Die im Stundenplan vorgesehenen Slots dienen als freiwillig nutzbares Angebot für Studierende, um Unterstützung bzw. Hilfestellung bei der Bearbeitung der Aufgaben zu erhalten oder offene Fragen zu klären.
+
+Die **Übungsergebnisse** werden in den VO-Einheiten besprochen. Hierzu stellen die Teilnehmenden ihre Lösungen im Plenum vor, die wir dann gem. diskutieren.
+
+Für herausragende Lösungen erhalten Sie **Bonuspunkte** für die theoretische Prüfung am Semesterende. Hierbei muss es sich jedoch um Lösungen handeln, die _weit über dem zu erwartenden Durchschnitt_ liegen, d.h., die eine **hohe kognitive Leistung** widerspiegeln. Für erwartbare Lösungen mit überschaubarem Aufwand erhalten Sie _keine_ Bonuspunkte.
 
 <!-- ~~Die Bearbeitung der ersten beiden Übungsaufgaben ist __PVL__ und damit Pflicht für ein erfolgreiches Absolvieren der LVA.~~ -->
 <!-- Die Bearbeitung der Übungsaufgaben wird dringend empfohlen. Für eine konsequente und korrekte Bearbeitung aller Übungsaufgaben gibt es einen Bonus auf die Abschlussnote.  -->
 
 <!-- idR __eine Woche Bearbeitungszeit__ bis zur nächsten Vorlesungseinheit -->
 
-<!-- 
-Einreichung der Übungsaufgaben bis **Sonntag, 24:00 Uhr** der jeweiligen Vorlesungswoche via **Moodle**
+
+Einreichung der Übungsaufgaben bis **Montag, 24:00 Uhr** der jeweiligen Vorlesungswoche via **Moodle**
 
 !!! warning
     **Verspätete Abgaben**  
-    Verspätete Abgaben und/oder Abgaben via Email werden nicht akzeptiert und mit der **Note 5** bewertet. 
+    Verspätete Abgaben und/oder Abgaben via Email werden nicht akzeptiert. 
 
-Mehr Infos finden sich auf den jeweiligen Übungsseiten. 
--->
+<!-- Mehr Infos finden sich auf den jeweiligen Übungsseiten.  -->
+
 
 
 ### Beurteilung
@@ -116,7 +123,7 @@ Die **Gesamtbeurteilung** der LVA setzt sich aus **2 Teilleitungen** zusammen
 : __30%__ mündlichen Prüfung am Semesterende
 
     !!! warning
-        **Wichtig**: Trotz der 70/30-Gewichtung ist eine Note von 4,0 oder besser in _beiden_ Teilleistungen zwingende Voraussetzung für eine erfolgreiche Beurteilung. 
+        **Wichtig**: Trotz der 70/30-Gewichtung ist eine Note von 4,0 oder besser in _beiden_ Teilleistungen zwingende Voraussetzung für eine erfolgreiche Beurteilung, ebenso wie die Bearbeitung der Übungsaufgaben. 
 
 <!-- : __30%__ Beurteilung der ausgearbeiteten __Übungsaufgaben__
     : jeweils bis spätestens Sonntag, 24:00 Uhr der entspr. Vorlesungswoche  über Moodle hochzuladen 
