@@ -92,7 +92,9 @@ Parallel zur Vorlesungseinheit sind **Übungsaufgaben** zu bearbeiten
 - bereiten auf das Semesterprojekt vor
 - dienen als Grundlage für die mündl. Prüfung am Semesterende
 - bieten die Möglichkeit **Bonuspunkte** für die theor. Prüfung zu sammeln
-- fungieren als PVL
+- fungieren als **PVL**
+
+Die Übungsaufgaben sind verpflichtend von allen Teilnehmenden zu bearbeiten und Voraussetzung für einen pos. Abschluss des Moduls. Eine **Nichtbearbeitung** der Übungsaufgaben führt automatisch zu einem Nichtbestehen. 
 
 Die Übungen werden im **Praktikum-as-a-Service-Modus** durchgeführt, d.h., es besteht _keine_ Anwesenheitspflicht und es ist den Teilnehmenden freigestellt, wann und in welchem Rahmen die Übungsaufgaben bearbeitet werden. Die im Stundenplan vorgesehenen Slots dienen als freiwillig nutzbares Angebot für Studierende, um Unterstützung bzw. Hilfestellung bei der Bearbeitung der Aufgaben zu erhalten oder offene Fragen zu klären.
 
