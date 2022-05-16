@@ -15,6 +15,7 @@ Auf den folgenden Seiten finden Sie die **Aufgaben** der jeweiligen Praktikumsei
 
 * [Vorbemerkung zum Praktikum](vorbemerkung.md)
 * [Projektmappe](projektmappe.md)
+* [Infos zum Projekt 'Lebensmittelinformations-App'](openfoodfacts.md)
 
 ## Einheiten
 

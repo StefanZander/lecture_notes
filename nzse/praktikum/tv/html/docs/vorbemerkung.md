@@ -28,12 +28,12 @@ Entwerfen Sie eine nutzerzentrierte und anwendungsfallorientierte **Steuerungsap
 
 - eine Steuerungs-App für einen **TV-Server** (=Fernseher)
 - eine Steuerungs-App für einen **Twitch Streaming-Server**
-- eine **Lebensmittelinformations-App** auf Basis der [OpenFoodFacts-API](https://openfoodfacts.github.io/api-documentation/) (--> weitere Infos auf der [Projektseite](openfoodfacts.md)).
+- eine **Lebensmittelinformations-App** ([Projektseite](openfoodfacts.md)) auf Basis der [OpenFoodFacts-API](https://openfoodfacts.github.io/api-documentation/) 
 
 Der TV-Server sowie der Twitch Streaming-Server sind bereits implementiert und können auf dem eigenen Laptop als eigenständig laufbare Programme installiert werden. 
 Während der Twitch Streaming-Server "live content" darstellt und eine **aktive Internet-Verbindung** benötigt, simuliert der TV-Server das laufende Fernsehprogramm in Form von umschaltbaren Standbildern.
 
-Die **Lebensmittelinformations-App** ist seit dem SoSe 2022 neu hinzugekommen. Nährere Informationen zu diesem Projekt sowie zu den zur Verfügung stehenden Daten bzw. APIs finden sich auf der [Projektseite](openfoodfacts.md)
+Die **Lebensmittelinformations-App** ist seit dem SoSe 2022 neu hinzugekommen. Nährere Informationen zu diesem Projekt sowie zu den zur Verfügung stehenden Daten bzw. APIs finden sich auf der [Projektseite](openfoodfacts.md) sowie unter [Tipps zur Nutzung der API](openfoodfacts_api_infos.md).
 
 !!! note
     **Hinweis**: Die Wahl des Anwendungsszenarios (TV-Server / Twitch / Nahrungsmittelinfo-App) hängt von den eigenen Vorlieben ab und ist unabhängig für die Testierung des Praktikums. Einzig für die [Usability Evaluierung](termin5.md) müssen Sie für das Twitch- und Nahrungsmittelinfo-Szenario eigene Usability Tests entwerfen (_für den TV-Server sind diese vorgegeben, können aber/sollen angepasst bzw. erweitert werden_).
