@@ -11,11 +11,12 @@ paginate: true
 
 /* @import 'default'; */
 /* @import url('user-theme2.css'); */
-
-
-
 </style>
 
+<!-- <script src="https://kit.fontawesome.com/8b20b734d0.js" crossorigin="anonymous"></script>  -->
+<!-- <script src="https://kit.fontawesome.com/bfb4213bb3.js" crossorigin="anonymous"></script> -->
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+ 
 <!-- marp --engine ./engine.js --watch --theme-set custom-theme-roboto.css -- --allow-local-files 2022_SS_PSE_Kick-Off.md -->
 <!-- marp --pdf --allow-local-files --engine ./engine.js --theme-set custom-theme-roboto.css -- 2022_SS_PSE_Kick-Off.md -->
 
@@ -502,4 +503,111 @@ Wichtig: Agiles Vorgehen bedeutet, dass sich die Projektdurchführung den aktuel
 
 ::: blue centerbox center Bigskip
 Im **Zielbild** wollen wir erreichen, dass Sie alle Informationen zur Verfügung haben, um den **1. Sprint** zu planen und durchzuführen.
+:::
+
+
+
+---
+<!-- header: Retrospektive -->
+# Retrospektive – Infos und Durchführung
+
+
+---
+# Infos zur Durchführung
+
+**Ziel**: _Subjektive Reflektion von Arbeitprozessen und Methodiken um zukünftige Sprints zu verbessern.:fa-heart: :fa-diagnoses:_
+
+**Methode**: ==__4 L__^1^==
+
+::::: blue 
+:::: columns
+::: single 
+:fa-heart: What I **LOVED**
+- Was lief richtig gut? :fa-check:
+- Was lief besser als erwartet? :fa-star:
+
+:fa-graduation-cap: What I **LEARNED**
+- Was habe ich gelernt? 
+- Was war eine neue Erfahrung?
+:::
+::: single 
+:fa-bolt: What I **LACKED**
+- Was habe ich vermisst?
+- Was hätte besser laufen können?
+
+:fa-question: What I **LONGED** for
+- Wonach habe ich mich gesehnt?
+- Was hat mir gefehlt?
+- Was hätte mir geholfen?
+:::
+::::
+:::::
+
+::: footnotes
+^1^ https://nativdigital.com/retro-methoden-4l/
+:::
+
+
+---
+# Aufgabe
+
+::::: centerbox center green
+**Aufgabe**: Jede/r bereitet bitte 1 Slide mit den ausgefüllten Aspekten analog nachstehender Vorlage vor und präsentiert diese im nächsten Meeting.
+:::::
+
+{.Skip} 
+
+Vorlage: 
+
+::::: columns 
+:::: single blue
+::: center
+What I **LOVED**
+:::
+- ...
+- ...
+- ...
+- ...
+<br/>
+::::
+:::: single blue
+::: center
+What I **LEARNED**
+:::
+- ...
+- ...
+- ...
+- ...
+<br/>
+::::
+:::: single blue
+::: center
+What I **LACKED**
+:::
+- ...
+- ...
+- ...
+- ...
+<br/>
+::::
+:::: single blue
+::: center
+What I **LONGED**
+:::
+- ...
+- ...
+- ...
+- ...
+<br/>
+::::
+:::::
+
+{.Skip}
+
+Anschließend werten wir die gesammelten Punkte gemeinsam aus (bspw. mit der Methode "_5X Warum_"^1^) und entwickeln Maßnahmen für die kommenden Sprints (bspw. mit der Methode "_Starfish_"^2^).
+
+::: footnotes
+^1^ https://nativdigital.com/retro-methoden-5x-warum/
+
+^2^ https://nativdigital.com/retro-methoden-starfish/
 :::
