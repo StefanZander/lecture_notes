@@ -13,7 +13,10 @@
 
 ### Themen
 
-Das Anwendungsgebiet (=*Gegenstandsbereich*) für das Semesterprojekt können Sie frei wählen.
+Das **Anwendungsgebiet** (=*Gegenstandsbereich*) für das Semesterprojekt können Sie **frei wählen**.
+
+!!! note
+    Themen dürfen mehrfach bearbeitet werden!
 
 Sofern Sie _kein_ eigenes Thema bearbeiten wollen, können Sie eines der im Folgendenen dargestellten Themen wählen:
 
@@ -22,8 +25,8 @@ Sofern Sie _kein_ eigenes Thema bearbeiten wollen, können Sie eines der im Folg
 
     - Abbildung von Fachbereichsrats-Protokollen in Semantic MediaWiki
     - Realisierung einer Literaturbeschaffungsplattform inkl. Bestellübersichten für den Fachbereich
-    - Realisierung einer Bewertungsplattform für studentische Abschlussarbeiten ggf. mit Studierendenverwaltung und PDF-Ausgabe des Beurteilungsbogens
-    - Verwaltung von Studierendenanmeldungen für Praxisphase und Abschlussarbeiten (ggf. gekoppelt mit Bewertungsplattform)
+    - Realisierung einer einfach nutzbaren Bewertungs-/Beurteilungsseite für studentische Abschlussarbeiten, ggf. mit PDF-Ausgabe des Beurteilungsbogens
+    - ~~Verwaltung von Studierendenanmeldungen für Praxisphase und Abschlussarbeiten (ggf. gekoppelt mit Bewertungsplattform)~~
     - ==++Neu++== Gemeinsame Plattform für Studierende zum Finden von Praktikumsstellen und Bewertung selbiger (_dieses System soll dann für alle Studierende freigeschaltet werden, so dass dies die Suche nach passenden Praktikumsstellen vereinfacht bzw. Studierende dabei unterstützt, die passende Stelle zu finden._)
 
 _Die genaue inhaltliche Festlegung erfolgt in bilateraler Abstimmung mit dem Betreuer._
@@ -57,7 +60,9 @@ Die Nummerierung lässt keine Rückschlüsse auf die Bearbeitungsreihenfolge zu.
 
     !!!note 
         **Über den Fachbereich gehostete SMW-Instanzen**  
-        Falls Sie über keine eigene Installation verfügen dann kontaktieren Sie uns bitte; wir werden IT-Services bitten, eine über den Fachbereich **gehostete Instanz** aufzusetzen. Auf diese Instanz kann allerdings *nur* mittel **VPN** zugegriffen werden und das Einspielen von Erweiterungen (=Extensions) ist nicht möglich.
+        Falls Sie über keine eigene Installation verfügen, dann __kontaktieren Sie uns bitte__; wir werden anschließend eine, über den Fachbereich **gehostete Instanz** aufsetzen. Auf diese Instanz kann allerdings *nur* mittel **VPN** zugegriffen werden und das Einspielen von Erweiterungen (=Extensions) ist nicht möglich. Die Instanz ist aber mit allen relevanten Extensions ausgestattet bzw. entsprechend vorkonfiguriert.
+
+        Bitte kontaktieren Sie uns wenn Sie eine solche Instanz benötigen.
 
 #### AP1: Problembeschreibung und Wissensmanagementfragestellung
 <!-- AP1: Problembeschreibung und Wissensmanagementfragestellung -->
