@@ -8,7 +8,7 @@ Hier finden sich die Inhalte der **wöchentlichen Vorlesungseinheiten** (erkennb
 
 Nutzen Sie die Lehrmaterialen zur **Vorbereitung** und die Leitfragen zur **Lernzielkontrolle**.
 
-Die erste Zahl im Titel bezieht sich auf die jeweilige **Vorlesungswoche** (vergleichen Sie hierzu den [EWA Semesterplan für das WiSe 2021/2022](https://lernen.h-da.de/mod/resource/view.php?id=213139) in Moodle), die zweite Zahl auf eine ggf. vorhandene thematische Unterteilung.
+Die erste Zahl im Titel bezieht sich auf die jeweilige **Vorlesungswoche** (vergleichen Sie hierzu den [EWA Semesterplan für das WiSe 2022/2023](https://lernen.h-da.de/mod/resource/view.php?id=213139) in Moodle), die zweite Zahl auf eine ggf. vorhandene thematische Unterteilung.
 
 EWA-Discord-Channel: <https://discord.gg/AC97TNBSJ6>
 
