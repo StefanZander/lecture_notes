@@ -58,7 +58,7 @@ The information on this site is separated into
 <!-- * [Kapitel #3: Semantische Wissensrepräsentation](./chapters/2/overview.md)  -->
 * [Kapitel #3: Semantic MediaWiki](./chapters/3/overview.md) 
 * [Kapitel #4: Semantic MediaWiki Extensions zum Ontology-Engineering](./chapters/4/overview.md)
-* ~~[Kapitel #5: Knowledge Graph Engineering](index.md)~~ (_nicht im SoSe 2021_)
+* ~~[Kapitel #5: Knowledge Graph Engineering](index.md)~~ (_nicht im WiSe 2022/2023_)
 
 
 ## Übungen zum Selbststudium

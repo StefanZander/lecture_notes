@@ -24,10 +24,12 @@ Sofern Sie _kein_ eigenes Thema bearbeiten wollen, können Sie eines der im Folg
     __Themenliste__
 
     - Abbildung von Fachbereichsrats-Protokollen in Semantic MediaWiki
-    - Realisierung einer Literaturbeschaffungsplattform inkl. Bestellübersichten für den Fachbereich
+    - ~~Realisierung einer Literaturbeschaffungsplattform inkl. Bestellübersichten für den Fachbereich~~
     - Realisierung einer einfach nutzbaren Bewertungs-/Beurteilungsseite für studentische Abschlussarbeiten, ggf. mit PDF-Ausgabe des Beurteilungsbogens
     - ~~Verwaltung von Studierendenanmeldungen für Praxisphase und Abschlussarbeiten (ggf. gekoppelt mit Bewertungsplattform)~~
-    - ==++Neu++== Gemeinsame Plattform für Studierende zum Finden von Praktikumsstellen und Bewertung selbiger (_dieses System soll dann für alle Studierende freigeschaltet werden, so dass dies die Suche nach passenden Praktikumsstellen vereinfacht bzw. Studierende dabei unterstützt, die passende Stelle zu finden._)
+    - Gemeinsame Plattform für Studierende zum Finden von Praktikumsstellen und Bewertung selbiger (_dieses System soll dann für alle Studierende freigeschaltet werden, so dass dies die Suche nach passenden Praktikumsstellen vereinfacht bzw. Studierende dabei unterstützt, die passende Stelle zu finden._)
+    - Verwaltung von Schulungen und Weiterbildungsmaßnahmen mit Kompetenzbetrachtung
+    - Automatisierte MitarbeiterInnenvorschläge auf Basis von angefragten Skills (bspw. bei Kundenanfragen von Personalvermittlungsagenturen). Die Skills von Mitarbeitenden ergeben sich in der Regel aus Projekteinsätzen.
 
 _Die genaue inhaltliche Festlegung erfolgt in bilateraler Abstimmung mit dem Betreuer._
 
@@ -90,7 +92,7 @@ Die Nummerierung lässt keine Rückschlüsse auf die Bearbeitungsreihenfolge zu.
 : Identifizierte NutzerInnen (vgl. ==Rollenkonzept==) sollen diese für die Erstellung neuer und Anpassung bestehender Informationen verwenden können.
 
 #### AP5: Abschlusspräsentation
-: Zusammenführung aller Arbeiten und Erkenntnisse in einer ==10-12-minütigen Live-Demonstration==.
+: Zusammenführung aller Arbeiten und Erkenntnisse in einer ==12-15-minütigen Live-Demonstration==.
 
 
 

@@ -23,7 +23,7 @@
     
     und beantworten Sie folgende Fragen:
 
-    1. Erläutern Sie anhand eines selbst gewählten Beispiels, wie sich die Wertschöpfung durch steigende Wissensintensität bzw. wissensintensive Technologien verändert / verbessert hat. <!-- S.7 Intelligente Produkte -->
+    1. Erläutern Sie anhand eines selbst gewählten Beispiels, wie sich die Wertschöpfung durch steigende Wissensintensität bzw. wissensintensive Technologien verändert und verbessert hat. <!-- S.7 Intelligente Produkte -->
     2. Tragen Sie Maßnahmen zusammen, die den Aufbau einer kollektiven Wissensbasis im Unternehmen unterstützen. Wie kann dies managementseitig ebenfalls unterstützt und gefördert werden?
     3. Erläutern Sie, warum eine kollektive Wissensbasis mehr ist, als die Summe der Experten eines Unternehmens.
     4. Warum ist das Konzept der "Lernenden Organisation" auch in nicht hoch-dynamischen Wirtschaftszweigen wichtig? 
@@ -34,7 +34,7 @@
 ### Aufgabe 2: Modellierung eines Gegenstandbereichs
 
 **Aufgabe**:  
-Überführen Sie den nachfolgend dargestellten Sachverhalt in ein minimales Datenmodell einer Sprache oder eines Formats (UML-Klassendiagramm / JSON / XML / ERM / etc.) Ihrer Wahl[^2]. Versuchen Sie den Sachverhalt so zu modellieren, dass Sie möglichst viele Informationen bzw. Fakten als "First-class Elemente" darstellen[^3], so dass diese möglichst präzise durch eine Suchalgebra angesprochen werden können:
+Überführen Sie den nachfolgend dargestellten Sachverhalt in ein minimales Datenmodell einer Sprache oder eines Formats (UML-Klassendiagramm / JSON / XML / ERM / etc.) Ihrer Wahl[^2]. Versuchen Sie den Sachverhalt so zu modellieren, dass Sie möglichst viele Informationen bzw. Fakten als "First-class Elemente" darstellen[^3], so dass diese möglichst präzise durch eine Suchalgebra angesprochen werden können. Starten Sie mit einem Grundmodell und erweitern Sie dies schrittweise (die neu hinzugekommenen bzw. präzisierten Aspekte sind jeweils *{++grün++}* hinterlegt):
 : "*{++Prof. Dr. Kai Renz wird neues Mitglied des Stundenplanerteams++}*."
 
 Ergänzen Sie nun Ihr Datenmodell um die folgenden konkretisierenden Sachverhalte[^1]:
