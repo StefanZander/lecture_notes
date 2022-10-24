@@ -405,7 +405,7 @@ blockquote p {
     FOOTNOTES
    ========================  
 */
-.footnotes {
+.footnotes__ {
     font-size: 0.6em;
     line-height: 1.2em;
     height: 100%;
@@ -416,7 +416,7 @@ blockquote p {
 }
 
 /* Trick: Use white text to display ruler before footnotes start */
-.footnotes::before {
+.footnotes__::before {
     content: ' ';
     color: white;
     border-top: solid .05em black;
@@ -434,11 +434,16 @@ sup {
     /* font-weight: normal; */
 }
 
+/* add some space before the footnotes line */
+.footnotes {
+    /* margin-top: 2em; */
+}
+
 /* display multi-line footnote text indented  */
 .footnotes p {
-    padding-left: .2em;
-    text-indent: -.6em;
-    margin-bottom: 0;
+    /* padding-left: .2em; */
+    /* text-indent: -.6em; */
+    margin-bottom: .2em;
 }
 
 
