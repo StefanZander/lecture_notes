@@ -148,30 +148,44 @@ Quelle: Modulhandbuch des Fachbereichs Informatik mit individuellen Ergänzungen
 # Durchführung
 
 - Aufteilung der Studierenden in **2 Projektteams** analog den beiden Projekten
-- Jedes Projektteam bildet eigenverantwortlich **Dev.-/Research-Teams** (=2-3er Teams), die selbständig und eigenverantwortlich an den verschiedenen Arbeitspaketen arbeiten
+- Jedes Projektteam bildet eigenverantwortlich **Sub-Teams (Dev.-/Research-Teams mit 2-3 Beteiligten)**, die selbständig und eigenverantwortlich an den verschiedenen Arbeitspaketen arbeiten
   - so lassen sich Arbeitspakete (=Sprints) parallel bearbeiten^1^
-- Jedes Projektteam bestimmt **1-2 Projektverantwortliche (=Product Owner)**^2^, die ...
+- Jedes Projektteam bestimmt **1 Projektverantwortliche/n (=Product Owner)**^2^, die ...
   - ... den *Projektfortschritt* kontrolliert
   - ... *Arbeitsergebnisse* einfordert
   - ... als *Ansprechpartner* des Projektteams fungieren
   - ... *Arbeitspakete* und Sprints koordinieren
   - ... für die *Qualitätskontrolle* verantwortlich sind
-  - ... mitarbeiten, aber auch Aufgaben *delegieren* können
+  - ... mitarbeiten, aber vor allem Aufgaben *delegieren* können
 - Projektdurchführung analog dem Scrum- und Design-Thinking Vorgehensmodell
 
 ::: footnotes
 ^1^ Durchführung analog dem Scrum-Modell (vgl. <https://scrumguides.org/docs/scrumguide/v1/Scrum-Guide-DE.pdf>)
-
-^2^ Idealerweise aus unterschiedlichen Dev.-/Research-Teams
 :::
 
 
 
 ---
-# Zeitliches Engagement
+# Zeitliches Engagement 
+
 Projekt Systementwicklung / Projekt Multimedia ist ein **7,5 CP Modul**.
 - Das Bachelorstudium sieht **30 CP** an Modulen pro Semester vor
-- Bei einer wöchentlichen Arbeitszeit von **42h** ergibt sich ein zeitlicher Aufwand von **10,5h** (ohne Pausen) über **16 Wochen** hinweg^1^
+- **1 CP** entspricht **30 Arbeitsstunden** laut den gängigen Berechnungsmodellen^1,2^
+- Der Arbeitunsumfang für das Modul entspricht deshalb **225 Arbeitsstunden**
+- Damit ergibt sich eine wöchentliche Arbeitszeit (ohne Pause) von **ca. 17,3 h - 18,75 h**.
+
+::: footnotes
+^1^ https://www.studis-online.de/Studieren/ects.php
+
+^2^ https://fbc.h-da.de/fileadmin/Dokumente/Pruefungsordnung/ABPO_AEnderung_2018-01-30.pdf
+:::
+
+
+---
+# Zeitliches Engagement – eine realistische Betrachtung
+Projekt Systementwicklung / Projekt Multimedia ist ein **7,5 CP Modul**.
+- Das Bachelorstudium sieht **30 CP** an Modulen pro Semester vor
+- Bei einer wöchentlichen Arbeitszeit von **42 h** ergibt sich ein zeitlicher Aufwand von **10,5 h** (ohne Pausen) über **16 Wochen** hinweg^1^
 - das ist das zeitliche Engagement, das wir von Ihnen einfordern
 - den zeitlichen Aufwand dürfen Sie frei einteilen
 <!-- - Zeitlicher Aufwand von **10,5h** wöchentliche Arbeitszeit (ohne Pausen) über **16 Wochen** hinweg^1^ -->
@@ -351,6 +365,9 @@ Hinweis: Die notwendigen Informationen zur Durchführung des User-Research finde
 
 
 
+
+
+
 ---
 # Projekt 2: Überführung der Fachbereichsratsprotokolle in eine semantische Wissensbasis
 
@@ -373,24 +390,68 @@ Die vielen wertvollen Informationen, die in Fachbereichsratsprotokollen enthalte
 - Aufarbeitung von SOTA-Ansätzen im Bereich NER oder IE
 - Untersuchung von Extractions Pipelines ()
 
+::: blue
+Wichtig: Der nachfolgende Projektplan ist nur eine grobe Orientierung und soll die Detailplanung unterstützen und erleichtern, diese jedoch nicht ersetzen. 
+:::
+
+---
+## Workpackage 1: Auseinandersetzung mit dem Thema
+
+- **Ziel**: _Erlangung eines umfassenden Verständnisses zu Aufgabenstellung, Zielen, Rahmenbedingungen, Erwartungen, benötigten Technologien etc._
+- **Task-Liste**
+  - Task x: Sichtung und Analyse der Fachbereichratsprotokolle
+  - Task x: Durchführung von Stakeholderinterviews
+  - Task x: Identifikation und Zusammentragung der Informationsbedürfnisse
+- **Meilensteine**
+  - ==Deliverable 1: Anforderungsspezifikation (aka Lastenheft)==
+    - Dokumentation der wesentlichen Anforderungen, Rahmenbedingungen, Zielen etc.
+    - Darlegung des geplanten Vorgehens (_Research Design_) mit Definition von Projektmeilensteinen etc. 
+    - Klassifikation der verschiedenen _Bestandteile_ eines Fachbereichratsprotokolls
+    - 
+
 
 
 ---
-## Workpackage 1: Einarbeitung
+## Workpackage 2: Literaturstudium und Technolgie-Research
 
-- **Ziel**: _Auseinandersetzung und Einarbeitung in die Software Semantic MediaWiki und der vorhandenen relvanten Extensions._
+- **Ziel:** _Wissensaufbau zu den erforderlichen Technologien und methodischen Ansätzen_
 - **Task-Liste**
-  - Task 1: Aufsetzen eines Testsystems
-  - Task 2: Einarbeitung und Auseinandersetzung mit der Software und den zugrunde liegenden Konzepten
-- **Milestones**
-  - Grundlagen der Ontologie-Entwicklung mittels Semantic MediaWiki sind bekannt
-  - Verständnis der Modellierungsprimitive
-  - Eigene Wissensgraphmodelle mittels RDF modellieren und erklären können
+  - Task x: Auseinandersetzung mit relevanten Technologien und Konzepten (NLP, Transformer, Wissensgraphen, Semantik, etc.)
+  - Task x: Sammlung und Auswertung von relevanten Projekten mit vergleichbaren Problemstellungen 
+  - Task x: Erarbeitung von Umsetzungsmöglichkeiten
+  - Task x: Research zum State-of-the-Art (SOTA)
+  - Task x: Analyse des SOTA und Abgleich der Umsetzungsmöglichkeiten mit der Anforderungsspezifikation
+- **Meilensteine**
+  - ==Deliverable 2: Technologie-Research und Vorgehensbeschreibung==
+    - Auf Basis des SOTA Darlegung der verschiedenen Umsetzungsmöglichkeiten inkl. deren Stärken und Schwächen
+    - Abgleich mit der Anforderungsspezifikation und Darlegung des gewählten methodischen Vorgehens einschl. involvierter Technologien
 
 
-::: footnotes
-Hinweis: Eine Vielzahl an relevanten Informationen findet sich im [Moodle-Kurs](https://lernen.h-da.de/course/view.php?id=11623) zur Lehrveranstaltung ["Semantisches Wissensmanagement im Unternehmen: Konzepte, Technologien, Anwendungen"](https://obs.fbi.h-da.de/mhb/modul.php?nr=30.2646&sem=20212)
-:::
+
+
+---
+## Workpackage 3: Technologische Realisierung
+
+- **Ziel** _Entwicklung von Demonstratoren als Beleg der technischen Umsetzbarkeit der Aufgabenstellung_
+- **Task-Liste**
+  - Task x: ...
+  - Task x: ...
+  - Task x: Auswahl und Aufbau des Backends (Storage-Infrastruktur)
+  - Task x: Auf
+- **Meilensteine**
+  - ==Lauffähige Demonstratoren 
+
+
+
+
+---
+## Workpage 4: Aufbau von Demonstratoren
+
+- **Ziel**: _Entwicklung von Demonstratoren für das Backend zur Demonstration der Nutzbarmachung bzw. des Zugriffs auf das enthaltene Faktenwissen_ 
+- **Task-Liste**
+  - Umsetzung der Informationsbedürfnisse in entspr. Abfragen
+  - 
+
 
 ---
 ## Workpackage 2: Konzeption

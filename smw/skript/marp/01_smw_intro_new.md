@@ -94,12 +94,12 @@ Quelle: Bundeszentrale für politische Bildung: Wissensgesellschaft – Eine Ide
 ::: single small
 __Sektoraler Wandel in Deutschland, Großbritannien und der EU__
 
-Der Anteil der verarbeitenden Industrie (in Deutschland mit den wichtigen Sektoren Automobil, Chemie, Pharmazeutika und dem Bereich der Investitionsgüter wie Maschinenbau, elektrische Ausrüstungen etc.) an der gesamtgesellschaftlichen Wertschöpfung schrumpft, meist verbunden mit einem Abbau von Arbeitsplätzen in diesem Sektor. Das ist ein langfristiger Trend, der freilich in den letzten zehn Jahren in Deutschland aufgehalten wurde, während er sich in der EU ungebremst fortsetzte. In Deutschland hat sich der Anteil des verarbeitenden Gewerbes an der Bruttowertschöpfung von 37 Prozent in 1971 auf 22,6 Prozent in 2011 verringert. Zum Vergleich: 1979 betrug im Großbritannien der industrielle Anteil 33 Prozent, 2011 lag er bei 10,8 Prozent. In diesem Zeitraum entstand in der Londoner City die moderne Finanzwirtschaft. In der EU fiel der entsprechende Anteil im Zeitraum von 2001 bis 2011 von 18 auf 15,5 Prozent.
+Der Anteil der _verarbeitenden Industrie_ (in Deutschland mit den wichtigen Sektoren Automobil, Chemie, Pharmazeutika und dem Bereich der Investitionsgüter wie Maschinenbau, elektrische Ausrüstungen etc.) an der gesamtgesellschaftlichen Wertschöpfung schrumpft, meist verbunden mit einem _Abbau von Arbeitsplätzen_ in diesem Sektor. Das ist ein langfristiger Trend, der freilich in den letzten zehn Jahren in Deutschland aufgehalten wurde, während er sich in der _EU ungebremst fortsetzte_. In Deutschland hat sich der Anteil des verarbeitenden Gewerbes an der Bruttowertschöpfung von 37 Prozent in 1971 auf _22,6 Prozent in 2011 verringert_. Zum Vergleich: 1979 betrug im Großbritannien der industrielle Anteil 33 Prozent, 2011 lag er bei 10,8 Prozent. In diesem Zeitraum entstand in der Londoner City die moderne Finanzwirtschaft. In der EU fiel der entsprechende Anteil im Zeitraum von 2001 bis 2011 von 18 auf 15,5 Prozent.
 :::
 ::: single small
 **Von Produktion zu Dienstleistung -- das Beispiel Automobilindustrie**
 
-Die Automobilindustrie produziert zwar noch immer Automobile. Die Aufgabe besteht heute aber zunehmend darin, nicht das physische Produkt Auto zu verkaufen, sondern Mobilitätsbedürfnisse der Kunden zu befriedigen. Die Menschen wollen das Auto nicht mehr unbedingt besitzen, sondern es dort nutzen, wo ihnen Fahrrad, Bahn oder Bus nicht ausreichen. Die Lösung dieser Fragen – zum Beispiel durch Car-Sharing eingebunden in weitere Nutzungsmöglichkeiten – erfordert kommunikative und logistische Leistungen, die weit über die Herstellung der physischen Produkte hinausgehen. Es geht um Kommunikation mit den Kunden und um Kooperation mit ihnen, die in gewisser Weise zu Koproduzenten des Mobilitätsangebots werden.
+Die Automobilindustrie produziert zwar noch immer Automobile. Die Aufgabe besteht heute aber zunehmend darin, nicht das physische Produkt Auto zu verkaufen, sondern _Mobilitätsbedürfnisse der Kunden_ zu befriedigen. Die Menschen wollen das Auto nicht mehr unbedingt besitzen, sondern es dort nutzen, wo ihnen Fahrrad, Bahn oder Bus nicht ausreichen. Die Lösung dieser Fragen – zum Beispiel durch Car-Sharing eingebunden in weitere Nutzungsmöglichkeiten – erfordert _kommunikative und logistische Leistungen, die weit über die Herstellung der physischen Produkte hinausgehen_. Es geht um Kommunikation mit den Kunden und um Kooperation mit ihnen, die in gewisser Weise zu Koproduzenten des Mobilitätsangebots werden.
 ::::
 
 ::: footnotes
@@ -113,15 +113,15 @@ Quelle: Bundeszentrale für politische Bildung: Wissensgesellschaft – Eine Ide
 :::: equalcolumns
 ::: 1st-column
 **Früher**:
-- Informationen werden von wenigen »Experten« bereitgestellt
-- passive Rolle des Nutzers: überwiegend rezeptiver Prozess der Informationsrecherche
+- Informationen werden von wenigen asugewählten »ExpertInnen« bereitgestellt
+- Passive Rolle der Nutzenden: überwiegend rezeptiver Prozess der Informationsrecherche
 - __Leitgedanke__: 
     ==Wissen ist statisch und wird wie ein Gut von einer Person zur anderen übertragen==
 :::
 ::: 2nd-column
 **Heute**:
-- Informationen werden von _allen Nutzern_ bereitgestellt
-- Aktive Rolle des Nutzers: _selbstgesteuerter, konstruktiver Prozess, fügt Informationen hinzu, verknüpft Informationen_
+- Informationen werden von _allen Nutzenden_ bereitgestellt
+- Aktive Rolle der Nutzenden: _selbstgesteuerter, konstruktiver Prozess, fügt Informationen hinzu, verknüpft Informationen; lebt "digital literacy"_
 - __Leitgedanke__: 
     ==Wissen ist dynamisch und wird von Akteuren auf Grund von Erfahrungen konstruiert und auf Basis praktischer Bedürfnisse laufend verändert==
 ::::
@@ -141,6 +141,18 @@ Quelle: Wilmar Raddatz, "Wissensgesellschaft – Was ist Wissen?"; abrufbar unte
 :::
 
 
+
+---
+## Zur Unterscheidung von Industrie- und Wissensgesellschaft
+
+
+::: centerbox BIGSKIP
+| Industriegesellschaft |  | Wissensgesellschaft |
+| --- | :---: | --- |
+| Sachkapital | $\longleftrightarrow$ | Wissenskapital  |
+| Hierarchie/Kontrolle | $\longleftrightarrow$ |  Vernetzung/Fokussierung |
+| Produkte | $\longleftrightarrow$ | Problemlösungen | 
+:::
 
 ---
 ## Warum wird Wissen zunehmend wichtiger für Unternehmen ?
@@ -188,7 +200,7 @@ Quelle: Wilmar Raddatz, "Wissensgesellschaft – Was ist Wissen?"; abrufbar unte
 
 ::::: columns
 :::: double
-Bekannt sind die folgenden Aussagen^1^
+Bekannt und anerkannt sind die folgenden Aussagen^1^
 > "We know more than we can tell."
 >
 > "If HP knew what HP knows, we would be three times as profitable"
@@ -220,14 +232,15 @@ Hierauf zielt das ==Wissensmanagement== ab.
 Bevor wir einen Versuch starten Wissen zu definieren ist es sinnvoll, den Wissensbegriff richtig ein- und abzugrenzen.
 :::
 
-Wissen ist {.longskip}
+{.skip}
 
+Wissen ist 
 - ... häufig das Ergebnis __bewusster Informationsverarbeitung__,
 - ... zusammengesetzt aus __Modellen__ über konkrete und abstrakte Objekte Ereignisse und Fakten, d.h. symbolische Strukturen, die im menschlichen Gedächtnis abgespeichert sind,
 - ... __kontext-situiert__ und __vernetzt__,
 - ... __handlungs-__ und __ziel-orientiert__.
 
-::: definition
+::: definition 
 ==Wissen== bezeichnet die Gesamtheit der Kenntnisse und Fähigkeiten, die Menschen zur Lösung von Problemen einsetzen. Wissen stützt sich auf Daten und Informationen, ist im Gegensatz zu diesen jedoch immer ==an Personen gebunden==. Daher müssen Daten-, Informations- und Wissensmanagement stets zusammenspielen.
 
 Quelle: Probst GJB., Raub S., Romhardt K., (2011): "Wissen managen – Wie Unternehmen ihre wertvollste Ressource optimal nutzen". 7. Auflage, Gabler, Frankfurt/Main; S.24
@@ -249,7 +262,6 @@ Grundsätzlich lassen sich ==2 Wissensarten== unterscheiden^1^:
 - ... kann auf verschiedenen Ebenen formalisiert werden 
 - ... kann in verschiedenen Formaten abgespeichert werden
 :::
-
 ::: green
 **Tacit / Implicit Knowledge** (=_Embodied Knowledge_)
 - ... im Gehirn gespeichert 
@@ -293,7 +305,6 @@ Quelle: http://qib.f-bb.de/wissensmanagement/thema/wissen/wissenstreppe.rsys
 - **Daten** entstehen, indem man Zeichen in eine Reihenfolge bringt
 - **Information** entsteht, indem man Daten eine Bedeutung zuordnet
 - **Wissen** entsteht durch die Vernetzung von Informationen. Wissen ist allerdings subjektiv und kann deshalb nicht direkt übertragen werden (es ist personifiziert). Wissen hängt sehr stark vom Erfahrungsschatz des Individuums ab.
-
 - **Können** entsteht aus der Umsetzung von Wissen in entsprechende Handlungen, da es natürlich nicht ausreicht, nur Wissen zu erwerben, sondern dieses erworbene Wissen auch in Fertigkeiten umgesetzt werden muss.
 - Erst das in **Handeln** umgesetzte Können stellt dieses auch unter Beweis. Hinzu kommt hier natürlich noch das Wollen, dem eine Mitarbeitermotivation vorausgehen muss. Handeln ist messbar und zeigt wie Personen, Gruppen oder Organisationen aus Informationen Wissen generieren und zur Lösung von Problemen einsetzen.
 - Die Fähigkeit, Wissen zur Problemlösung, also zweckorientiert in konkrete Handlungen einzusetzen, wird als **Kompetenz** einer Person, Gruppe oder Organisation bezeichnet.
@@ -500,7 +511,7 @@ in Anlehnung an: http://strategie-spektren.de/innovation/aufgaben-des-wissensman
 
 - Der Austausch von Wissen soll die Resonanzfähigkeit des Unternehmens erhöhen, und somit bestehende Denkmuster durchbrechen. Letztlich soll dadurch die Reaktionsfähigkeit erhöht werden, was ein zentrales Merkmale der ==agilen Organisation== ist. Das Wissensmanagement kann somit als eine wesentliche Voraussetzung für eine _digitale Transformation_ gesehen werden.
 
-- Eine Besondere Bedeutung hat das Wissensmanagement im Zusammenhang mit der ==Open Innovation==. Hier wird der Informations- und Wissensaustausch nicht nur als ein interner Prozess betrachtet, sondern als ein Austausch zwischen der internen Organisation und ihrer externen Umgebung (bspw. Kunden, Lieferanten, strategische Partner). Wissensmanagement ist also ein wichtiger Bestandteil des _Innovationsprozesses_.
+- Eine besondere Bedeutung hat das Wissensmanagement im Zusammenhang mit der ==Open Innovation==. Hier wird der Informations- und Wissensaustausch nicht nur als ein interner Prozess betrachtet, sondern als ein Austausch zwischen der internen Organisation und ihrer externen Umgebung (bspw. Kunden, Lieferanten, strategische Partner). Wissensmanagement ist also ein wichtiger Bestandteil des _Innovationsprozesses_.
 
 
 
