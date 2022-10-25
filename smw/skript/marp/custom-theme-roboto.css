@@ -481,6 +481,7 @@ pre {
     flex-direction: column;
     justify-content: flex-end;
     margin-left: .5em;
+    border-top: none;
 }
 
 /* Trick: Use white text to display ruler before footnotes start */

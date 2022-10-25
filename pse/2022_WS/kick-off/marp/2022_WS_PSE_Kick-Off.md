@@ -15,16 +15,16 @@ paginate: true
 
 <!-- <script src="https://kit.fontawesome.com/8b20b734d0.js" crossorigin="anonymous"></script>  -->
 <!-- <script src="https://kit.fontawesome.com/bfb4213bb3.js" crossorigin="anonymous"></script> -->
-<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<!-- <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> -->
  
-<!-- marp --engine ./engine.js --watch --theme-set custom-theme-roboto.css -- --allow-local-files 2022_SS_PSE_Kick-Off.md -->
-<!-- marp --pdf --allow-local-files --engine ./engine.js --theme-set custom-theme-roboto.css -- 2022_SS_PSE_Kick-Off.md -->
+<!-- marp --engine ./engine.js --watch --theme-set custom-theme-roboto.css -- --allow-local-files 2022_WS_PSE_Kick-Off.md -->
+<!-- marp --pdf --allow-local-files --engine ./engine.js --theme-set custom-theme-roboto.css -- 2022_WS_PSE_Kick-Off.md -->
 
-# Projekt Systementwicklung / Projekt Multimedia <br /> im SoSe 2022 
+# Projekt Systementwicklung / Projekt Multimedia <br /> im WiSe 2022/2023 
 
-#### Prof. Dr. Stefan Linus Zander 
+#### Prof. Dr. Stefan Linus Zander <br/> Dipl. Volkswirt Roland Trefftz
 
-Kick-Off-Meeting – 22.04.2022  {.lightgreen .Big .skip}
+Kick-Off-Meeting – xx.10.2022  {.lightgreen .Big .skip}
 
 
 ---
@@ -39,6 +39,7 @@ Kick-Off-Meeting – 22.04.2022  {.lightgreen .Big .skip}
 6. Projektassignments (alle)
 7. Gemeinsame Q&A-Session (alle)
 8. Nächste Schritte (alle)
+
 
 ---
 # Gemeinsames Kennenlernen
@@ -79,22 +80,15 @@ Für *Studierende*, sagen Sie bitte kurz ...
 **Hochschule Darmstadt – Studierende**
 
 :::twocolumns
-- Buchholz	Tobias	– Tobias.Buchholz@stud.h-da.de
-- Dworski	Lukas	– Lukas.Dworski@stud.h-da.de
-- Füssel	Alexander	– Alexander.Fuessel@stud.h-da.de
-- Gabriel	Jan Morris	– Jan.M.Gabriel@stud.h-da.de
-- Kilb	Anna Katharina	– Anna.K.Kilb@stud.h-da.de
-- Lange	Ben	– Ben.Lange@stud.h-da.de
-- Leuthe	Nadine Christine	– Nadine.C.Leuthe@stud.h-da.de
-- Manhique	Manuel	– Manuel.Manhique@stud.h-da.de
-- Rahmi	Dwiresti Puspita	– Dwiresti.P.Rahmi@stud.h-da.de
-- Schuchhardt	Sven	– Sven.Schuchhardt@stud.h-da.de
-- Seifert	Tobias	– Tobias.Seifert@stud.h-da.de
-- Selian	Enrico Egen	– Enrico.E.Selian@stud.h-da.de
-- Ueno	Aki	– Aki.Ueno@stud.h-da.de
-- Ulmer Quentin – Quentin.Ulmer@stud.h-da.de
-- Wischnat	Julian	– Julian.Wischnat@stud.h-da.de
-- Yamoah	Cheryl Josephine	– Cheryl.J.Yamoah@stud.h-da.de
+- Elsässer Dimitrij – Dimitrij.Elsaesser@stud.h-da.de
+- Engler Cedric – Cedric.Engler@stud.h-da.de
+- Führes Jasmin – Jasmin.Fuehres@stud.h-da.de
+- Gotha Etienne – Etienne.Gotha@stud.h-da.de
+- Räpple Lukas – Lukas.Raepple@stud.h-da.de
+- Steinrücken Niklas – Niklas.Steinruecken@stud.h-da.de
+- Suhr Leon – Leon.Suhr@stud.h-da.de
+- Thelen Tobias – Thelen.Tobias@stud.h-da.de
+- Weishäupl Daniel – Daniel.Weishaeupl@stud.h-da.de
 :::
 
 
@@ -102,29 +96,13 @@ Für *Studierende*, sagen Sie bitte kurz ...
 # Aufteilung in Projektteams
 
 ::::: columns
-:::: double blue
-**Projektteam Elektromobilität**
-::: twocolumns
-- Tobias Buchholz
-- Alexander Füssel
-- Jan Morris Gabriel
-- Anna Kilb^1^
-- Nadine Leuthe^1^
-- Manuel Manhique
-- Sven Schuchhardt
-- Tobias Seifert
-- Enrico Egen Selian
-- Aki Ueno
-- Quentin Ulmer
-- Julian Wischnat
-- Cheryl Yamoah
-:::
+:::: single blue
+**Projektteam RPN-Calculator**
+
 ::::
 :::: single green
-**Projektteam Gutachtenerzeugung**
-- Lukas Dworski^1^
-- Ben Lange
-- Dwiresti Puspita Rahmi
+**Projektteam Fachbereichsratsprotokolle**
+ 
 ::::
 :::::
 
@@ -170,33 +148,51 @@ Quelle: Modulhandbuch des Fachbereichs Informatik mit individuellen Ergänzungen
 # Durchführung
 
 - Aufteilung der Studierenden in **2 Projektteams** analog den beiden Projekten
-- Jedes Projektteam bildet eigenverantwortlich **Dev.-/Research-Teams** (=2-3er Teams), die selbständig und eigenverantwortlich an den verschiedenen Arbeitspaketen arbeiten
+- Jedes Projektteam bildet eigenverantwortlich **Sub-Teams (Dev.-/Research-Teams mit 2-3 Beteiligten)**, die selbständig und eigenverantwortlich an den verschiedenen Arbeitspaketen arbeiten
   - so lassen sich Arbeitspakete (=Sprints) parallel bearbeiten^1^
-- Jedes Projektteam bestimmt **1-2 Projektverantwortliche (=Product Owner)**^2^, die ...
+- Jedes Projektteam bestimmt **1 Projektverantwortliche/n (=Product Owner)**^2^, die ...
   - ... den *Projektfortschritt* kontrolliert
   - ... *Arbeitsergebnisse* einfordert
   - ... als *Ansprechpartner* des Projektteams fungieren
   - ... *Arbeitspakete* und Sprints koordinieren
   - ... für die *Qualitätskontrolle* verantwortlich sind
-  - ... mitarbeiten, aber auch Aufgaben *delegieren* können
+  - ... mitarbeiten, aber vor allem Aufgaben *delegieren* können
 - Projektdurchführung analog dem Scrum- und Design-Thinking Vorgehensmodell
 
 ::: footnotes
 ^1^ Durchführung analog dem Scrum-Modell (vgl. <https://scrumguides.org/docs/scrumguide/v1/Scrum-Guide-DE.pdf>)
-
-^2^ Idealerweise aus unterschiedlichen Dev.-/Research-Teams
 :::
 
 
 
 ---
-# Zeitliches Engagement
+# Zeitliches Engagement 
+
 Projekt Systementwicklung / Projekt Multimedia ist ein **7,5 CP Modul**.
-- Zeitlicher Aufwand von **10,5h** wöchentliche Arbeitszeit (ohne Pausen) über **13 Wochen** hinweg
+- Das Bachelorstudium sieht **30 CP** an Modulen pro Semester vor
+- **1 CP** entspricht **30 Arbeitsstunden** laut den gängigen Berechnungsmodellen^1,2^
+- Der Arbeitunsumfang für das Modul entspricht deshalb **225 Arbeitsstunden**
+- Damit ergibt sich eine wöchentliche Arbeitszeit (ohne Pause) von **ca. 17,3 h - 18,75 h**.
+
+::: footnotes
+^1^ https://www.studis-online.de/Studieren/ects.php
+
+^2^ https://fbc.h-da.de/fileadmin/Dokumente/Pruefungsordnung/ABPO_AEnderung_2018-01-30.pdf
+:::
+
+
+---
+# Zeitliches Engagement – eine realistische Betrachtung
+Projekt Systementwicklung / Projekt Multimedia ist ein **7,5 CP Modul**.
+- Das Bachelorstudium sieht **30 CP** an Modulen pro Semester vor
+- Bei einer wöchentlichen Arbeitszeit von **42 h** ergibt sich ein zeitlicher Aufwand von **10,5 h** (ohne Pausen) über **16 Wochen** hinweg^1^
 - das ist das zeitliche Engagement, das wir von Ihnen einfordern
 - den zeitlichen Aufwand dürfen Sie frei einteilen
+<!-- - Zeitlicher Aufwand von **10,5h** wöchentliche Arbeitszeit (ohne Pausen) über **16 Wochen** hinweg^1^ -->
 
-
+::: footnotes
+^1^ Vorlesungszeit (12 Wochen) + Lernwoche (1 Woche) + Prüfungszeit (3 Wochen)
+:::
 
 ---
 # Kommunikation
@@ -257,14 +253,19 @@ Die **Beteiligungsmatrix**
 
 ---
 <!-- header: Projektübersicht -->
-# Projekt #1: Car-Sharing-App für Elektromobilität
+# Projekt #1: RPN-Calculator
 
 
 ---
-## Projekt #1: Car-Sharing-App für Elektromobilität
+## Projekt #1: RPN-Calculator
 
+Detailierte Infos zu diesem Projekt finden sich ergänzenden Foliensatz.
+
+_Link zu Roland's Foliensatz_
+
+<!--
 ::: blue 
-**Ziel**: Entwicklung einer einfach nutzbaren Car-Sharing-App auf Basis moderner Web-Technologien.
+**Ziel**: Entwicklung eines intuitiv einfach nutzbaren RPN-Calculator auf Basis moderner Web-Technologien.
 :::
 
 {.HugeSkip}
@@ -278,10 +279,10 @@ Die **Beteiligungsmatrix**
 - Einfachste Nutzung und Administration
 - Hohe Code- und Dokumentationsqualität
 
-::: warning
-Die konkreten Anforderungen müssen in Stakeholder-Interviews mittels User-Research und Requirements Engineering Methoden erforscht und erarbeitet werden.
+::: warning 
+**Wichtig**: Die konkreten Anforderungen müssen in Stakeholder-Interviews mittels User-Research und Requirements-Engineering-Methoden erforscht und erarbeitet werden.
 :::
-
+-->
 
 
 ---
@@ -364,43 +365,93 @@ Hinweis: Die notwendigen Informationen zur Durchführung des User-Research finde
 
 
 
+
+
+
 ---
-# Projekt 2: Automatisierte Gutachtenerzeugung mittels Semantic MediaWiki
+# Projekt 2: Überführung der Fachbereichsratsprotokolle in eine semantische Wissensbasis
 
 
 ---
 ## Zielsetzung
 
-::::: columns
-:::: single center
-![](./figures/gutachten_optionen.png)
+:::: blue
+Die vielen wertvollen Informationen, die in Fachbereichsratsprotokollen enthalten sind, automatisiert extrahieren und nutzbar machen.
+::::
 
-::: blue small bigskip
-**Ziel**: Entwicklung einer Funktion zur benutzerfreundlichen Erstellung von Gutachten und zur Bewertung von akademischen Abschlussarbeiten auf Basis der Software Semantic MediaWiki.
+{.HugeSkip}
+
+- Erforschung und Begutachtung von aktuellen Ansätzen, um in Textdokumenten enthaltene Informationen (sog. Faktenwissen) automatisiert extrahieren und nutzbar machen
+  - Abbildung auf Wissensgraphen
+  - Named Entity Recognition (NER)
+  - mit Hilfe moderner NLP-Techniken
+- Fachbereichsratsprotokolle in einer NLP-Pipeline verarbeiten 
+- Überführung der Fachbereichsratsprotokolle in (semantische) Wissensgraphen unter zuhilfenahme von State-of-the-Art NLP-Technologien und Ansätze
+- Aufarbeitung von SOTA-Ansätzen im Bereich NER oder IE
+- Untersuchung von Extractions Pipelines ()
+
+::: blue
+Wichtig: Der nachfolgende Projektplan ist nur eine grobe Orientierung und soll die Detailplanung unterstützen und erleichtern, diese jedoch nicht ersetzen. 
 :::
-::::
-:::: single center
-![height:500px](./figures/gutachten_printed.png)
-::::
-:::::
+
+---
+## Workpackage 1: Auseinandersetzung mit dem Thema
+
+- **Ziel**: _Erlangung eines umfassenden Verständnisses zu Aufgabenstellung, Zielen, Rahmenbedingungen, Erwartungen, benötigten Technologien etc._
+- **Task-Liste**
+  - Task x: Sichtung und Analyse der Fachbereichratsprotokolle
+  - Task x: Durchführung von Stakeholderinterviews
+  - Task x: Identifikation und Zusammentragung der Informationsbedürfnisse
+- **Meilensteine**
+  - ==Deliverable 1: Anforderungsspezifikation (aka Lastenheft)==
+    - Dokumentation der wesentlichen Anforderungen, Rahmenbedingungen, Zielen etc.
+    - Darlegung des geplanten Vorgehens (_Research Design_) mit Definition von Projektmeilensteinen etc. 
+    - Klassifikation der verschiedenen _Bestandteile_ eines Fachbereichratsprotokolls
+    - 
+
 
 
 ---
-## Workpackage 1: Einarbeitung
+## Workpackage 2: Literaturstudium und Technolgie-Research
 
-- **Ziel**: _Auseinandersetzung und Einarbeitung in die Software Semantic MediaWiki und der vorhandenen relvanten Extensions._
+- **Ziel:** _Wissensaufbau zu den erforderlichen Technologien und methodischen Ansätzen_
 - **Task-Liste**
-  - Task 1: Aufsetzen eines Testsystems
-  - Task 2: Einarbeitung und Auseinandersetzung mit der Software und den zugrunde liegenden Konzepten
-- **Milestones**
-  - Grundlagen der Ontologie-Entwicklung mittels Semantic MediaWiki sind bekannt
-  - Verständnis der Modellierungsprimitive
-  - Eigene Wissensgraphmodelle mittels RDF modellieren und erklären können
+  - Task x: Auseinandersetzung mit relevanten Technologien und Konzepten (NLP, Transformer, Wissensgraphen, Semantik, etc.)
+  - Task x: Sammlung und Auswertung von relevanten Projekten mit vergleichbaren Problemstellungen 
+  - Task x: Erarbeitung von Umsetzungsmöglichkeiten
+  - Task x: Research zum State-of-the-Art (SOTA)
+  - Task x: Analyse des SOTA und Abgleich der Umsetzungsmöglichkeiten mit der Anforderungsspezifikation
+- **Meilensteine**
+  - ==Deliverable 2: Technologie-Research und Vorgehensbeschreibung==
+    - Auf Basis des SOTA Darlegung der verschiedenen Umsetzungsmöglichkeiten inkl. deren Stärken und Schwächen
+    - Abgleich mit der Anforderungsspezifikation und Darlegung des gewählten methodischen Vorgehens einschl. involvierter Technologien
 
 
-::: footnotes
-Hinweis: Eine Vielzahl an relevanten Informationen findet sich im [Moodle-Kurs](https://lernen.h-da.de/course/view.php?id=11623) zur Lehrveranstaltung ["Semantisches Wissensmanagement im Unternehmen: Konzepte, Technologien, Anwendungen"](https://obs.fbi.h-da.de/mhb/modul.php?nr=30.2646&sem=20212)
-:::
+
+
+---
+## Workpackage 3: Technologische Realisierung
+
+- **Ziel** _Entwicklung von Demonstratoren als Beleg der technischen Umsetzbarkeit der Aufgabenstellung_
+- **Task-Liste**
+  - Task x: ...
+  - Task x: ...
+  - Task x: Auswahl und Aufbau des Backends (Storage-Infrastruktur)
+  - Task x: Auf
+- **Meilensteine**
+  - ==Lauffähige Demonstratoren 
+
+
+
+
+---
+## Workpage 4: Aufbau von Demonstratoren
+
+- **Ziel**: _Entwicklung von Demonstratoren für das Backend zur Demonstration der Nutzbarmachung bzw. des Zugriffs auf das enthaltene Faktenwissen_ 
+- **Task-Liste**
+  - Umsetzung der Informationsbedürfnisse in entspr. Abfragen
+  - 
+
 
 ---
 ## Workpackage 2: Konzeption
@@ -439,6 +490,34 @@ Hinweis: Eine Vielzahl an relevanten Informationen findet sich im [Moodle-Kurs](
   - Abgeschlossene Implementierung
   - Abgeschlossene Integration 
 
+
+
+---
+## Ressourcen
+
+
+:::: twocolumns smaller
+- Knowledge Graph Generation From Text Using Neural Machine Translation Techniques <https://ieeexplore.ieee.org/document/9510164>
+- Neural Machine Translation for Semantic-Driven Q&A Systems in the Factory Planning <https://www.sciencedirect.com/science/article/pii/S2212827121000676>
+- https://towardsdatascience.com/transformers-89034557de14
+- Language Models are Open Knowledge Graphs https://youtu.be/NAJOZTNkhlI
+- Building a Knowledge Base from Texts: a Full Practical Example https://medium.com/nlplanet/building-a-knowledge-base-from-texts-a-full-practical-example-8dbbffb912fa
+- Text to Knowledge Graph https://medium.com/swlh/text-to-knowledge-graph-683002cde6e0
+- From Text to a Knowledge Graph: The Information Extraction Pipeline https://neo4j.com/blog/text-to-knowledge-graph-information-extraction-pipeline/
+- Knowledge Graph – A Powerful Data Science Technique to Mine Information from Text https://www.analyticsvidhya.com/blog/2019/10/how-to-build-knowledge-graph-text-using-spacy/
+- Knowledge Graphs 
+  - https://web.stanford.edu/~vinayc/kg/notes/How_To_Create_A_Knowledge_Graph_From_Text.html
+  - https://web.stanford.edu/~vinayc/kg/notes/KG_Notes_v1.pdf
+  - https://web.stanford.edu/~vinayc/kg/notes/
+  - https://web.stanford.edu/~vinayc/kg/notes/Table_Of_Contents.html
+- Attentention is all you need  https://arxiv.org/abs/1706.03762
+- Word2Vec-Paper Explained https://towardsdatascience.com/word2vec-research-paper-explained-205cb7eecc30
+- 
+::::
+
+::: footnotes
+Die hier aufgeführten Arbeiten sind als Empfehlung bzw. Einstieg in das Themengebiet zu verstehen. Die Liste ist weder vollständig noch erschöpfend. Eigene Recherchen sind zwingend notwendig.
+:::
 
 ---
 # Fragen ?
