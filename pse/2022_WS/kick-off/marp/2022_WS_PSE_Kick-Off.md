@@ -375,23 +375,23 @@ Hinweis: Die notwendigen Informationen zur Durchführung des User-Research finde
 ---
 ## Zielsetzung
 
-:::: blue
+:::: green
 Die vielen wertvollen Informationen, die in Fachbereichsratsprotokollen enthalten sind, automatisiert extrahieren und nutzbar machen.
 ::::
 
 {.HugeSkip}
 
-- Erforschung und Begutachtung von aktuellen Ansätzen, um in Textdokumenten enthaltene Informationen (sog. Faktenwissen) automatisiert extrahieren und nutzbar machen
+- Erforschung und Begutachtung von aktuellen Ansätzen, um in Textdokumenten enthaltene Informationen (sog. Faktenwissen) automatisiert zu extrahieren und nutzbar zu machen
   - Abbildung auf Wissensgraphen
   - Named Entity Recognition (NER)
   - mit Hilfe moderner NLP-Techniken
 - Fachbereichsratsprotokolle in einer NLP-Pipeline verarbeiten 
-- Überführung der Fachbereichsratsprotokolle in (semantische) Wissensgraphen unter zuhilfenahme von State-of-the-Art NLP-Technologien und Ansätze
+- Überführung der Fachbereichsratsprotokolle in (semantische) Wissensgraphen unter Zuhilfenahme von State-of-the-Art NLP-Technologien und Verarbeitungsansätzen
 - Aufarbeitung von SOTA-Ansätzen im Bereich NER oder IE
-- Untersuchung von Extractions Pipelines ()
+- Untersuchung und Vergleich von Extraction Pipelines 
 
 ::: blue
-Wichtig: Der nachfolgende Projektplan ist nur eine grobe Orientierung und soll die Detailplanung unterstützen und erleichtern, diese jedoch nicht ersetzen. 
+Wichtig: Der nachfolgende _Projektplan_ ist eine grobe Orientierung und soll die Detailplanung unterstützen und erleichtern, diese jedoch nicht ersetzen. 
 :::
 
 ---
@@ -399,15 +399,16 @@ Wichtig: Der nachfolgende Projektplan ist nur eine grobe Orientierung und soll d
 
 - **Ziel**: _Erlangung eines umfassenden Verständnisses zu Aufgabenstellung, Zielen, Rahmenbedingungen, Erwartungen, benötigten Technologien etc._
 - **Task-Liste**
-  - Task x: Sichtung und Analyse der Fachbereichratsprotokolle
-  - Task x: Durchführung von Stakeholderinterviews
-  - Task x: Identifikation und Zusammentragung der Informationsbedürfnisse
+  - Task 1: Sichtung und Analyse der Fachbereichratsprotokolle
+  - Task 2: Durchführung von Stakeholderinterviews
+  - Task 3: Identifikation und Zusammentragung der Informationsbedürfnisse
+  - Task 4: Sammlung von Anforderungen
 - **Meilensteine**
   - ==Deliverable 1: Anforderungsspezifikation (aka Lastenheft)==
     - Dokumentation der wesentlichen Anforderungen, Rahmenbedingungen, Zielen etc.
     - Darlegung des geplanten Vorgehens (_Research Design_) mit Definition von Projektmeilensteinen etc. 
     - Klassifikation der verschiedenen _Bestandteile_ eines Fachbereichratsprotokolls
-    - 
+    - Auflistung der zu erfüllenden Queries
 
 
 
@@ -416,15 +417,16 @@ Wichtig: Der nachfolgende Projektplan ist nur eine grobe Orientierung und soll d
 
 - **Ziel:** _Wissensaufbau zu den erforderlichen Technologien und methodischen Ansätzen_
 - **Task-Liste**
-  - Task x: Auseinandersetzung mit relevanten Technologien und Konzepten (NLP, Transformer, Wissensgraphen, Semantik, etc.)
-  - Task x: Sammlung und Auswertung von relevanten Projekten mit vergleichbaren Problemstellungen 
-  - Task x: Erarbeitung von Umsetzungsmöglichkeiten
-  - Task x: Research zum State-of-the-Art (SOTA)
-  - Task x: Analyse des SOTA und Abgleich der Umsetzungsmöglichkeiten mit der Anforderungsspezifikation
+  - Task 1: Auseinandersetzung mit relevanten Technologien und Konzepten (NLP, Transformer, Wissensgraphen, Semantik, etc.)
+  - Task 2: Sammlung und Auswertung von relevanten Projekten mit vergleichbaren Problemstellungen 
+  - Task 3: Erarbeitung von Umsetzungsmöglichkeiten
+  - Task 4: Research zum State-of-the-Art (SOTA)
+  - Task 5: Analyse des SOTA und Abgleich der Umsetzungsmöglichkeiten mit der Anforderungsspezifikation
 - **Meilensteine**
   - ==Deliverable 2: Technologie-Research und Vorgehensbeschreibung==
     - Auf Basis des SOTA Darlegung der verschiedenen Umsetzungsmöglichkeiten inkl. deren Stärken und Schwächen
     - Abgleich mit der Anforderungsspezifikation und Darlegung des gewählten methodischen Vorgehens einschl. involvierter Technologien
+    - Darlegung des konzeptionellen Vorgehens und Aufbaus
 
 
 
@@ -432,63 +434,26 @@ Wichtig: Der nachfolgende Projektplan ist nur eine grobe Orientierung und soll d
 ---
 ## Workpackage 3: Technologische Realisierung
 
-- **Ziel** _Entwicklung von Demonstratoren als Beleg der technischen Umsetzbarkeit der Aufgabenstellung_
+- **Ziel** _Entwicklung von Demonstratoren für das Backend zur Demonstration der Nutzbarmachung bzw. des Zugriffs auf das enthaltene Faktenwissen_ 
 - **Task-Liste**
-  - Task x: ...
-  - Task x: ...
-  - Task x: Auswahl und Aufbau des Backends (Storage-Infrastruktur)
-  - Task x: Auf
+  - Task 1: Umsetzung der Informationsbedürfnisse in entspr. Abfragen
+  - Task 2: Entwurf von Taxonomien / Ontologien zur Entitäts-Klassifikation
+  - Task 3: Auswahl und Aufbau der Verarbeitungspipeline (inkl. Storage-Infrastruktur) bzw. einer Wissensbasis
+  - Task 4: Refinement und Validierung
 - **Meilensteine**
-  - ==Lauffähige Demonstratoren 
+  - Lauffähige Demonstratoren mit denen FB-Protokolle in semantische Wissensgraphen umgewandelt und die enthaltenen Informationen abgefragt werden können
+  - ==Deliverable 3: Projektdokumentation + Demonstratoren==
+    - Dokumentation aller wesentlicher Projektschritte
+    - Dokumentation der Demonstratoren
 
 
 
 
----
-## Workpage 4: Aufbau von Demonstratoren
-
-- **Ziel**: _Entwicklung von Demonstratoren für das Backend zur Demonstration der Nutzbarmachung bzw. des Zugriffs auf das enthaltene Faktenwissen_ 
-- **Task-Liste**
-  - Umsetzung der Informationsbedürfnisse in entspr. Abfragen
-  - 
-
-
----
-## Workpackage 2: Konzeption
-
-- **Ziel**: _Konzeption und Ersprobung von verschiedenen Umsetzungsmöglichkeiten und Auswahl des besten Ansatzes._
-- **Task-Liste**
-  - Task 1: User Research und Anforderungsspezifikation (siehe WP1 von Projekt #1) 
-  - Task 2: Sammlung der entspr. Beurteilungskriterien und deren Ausprägungen
-  - Task 3: Untersuchung der verschiedenen Umsetzungsmöglichkeiten
-  - Task 4: Konzeption der Ablauflogik
-  - Task 5: Vorbereitung der Umsetzung
-- **Milestones**
-  - ==Deliverable 1: Anforderungs- und Ablaufspezifikation==
-    - Dokumentation des User Research und dessen Ergebnisse / Erkenntnisse
-    - Anforderungsspezifikation
-    - Ablaufspezifikation (formalisierte Darstellung des Prozesses aus techn. Sicht)
-  - ==Deliverable 2: Beurteilungskriterien==
-    - Katalog der Beurteilungskriterien und deren jew. Ausprägungsmerkmale
-  
+ 
 
 
 
 
----
-## Workpackage 3: Umsetzung und Integration in das bestehende Semantic MediaWiki
-
-- **Ziel**: _Implementierung, Testen, Refinement und Integration in das bestehende Semantic MediaWiki-System des Fachbereichs._
-- **Task-Liste**
-  - Task 1: Implementierung
-  - Task 2: Testing und Refinement
-  - Task 3: Integration in bestehendes Semantic MediaWiki-System
-- **Milestones**
-  - ==Deliverable 3: System- und Anwendungsdokumentation==
-    - Technische Dokumentation
-    - Beschreibung der Funktionalität aus Anwendersicht
-  - Abgeschlossene Implementierung
-  - Abgeschlossene Integration 
 
 
 
