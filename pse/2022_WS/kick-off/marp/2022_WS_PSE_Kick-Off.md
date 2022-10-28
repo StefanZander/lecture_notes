@@ -24,7 +24,7 @@ paginate: true
 
 #### Prof. Dr. Stefan Linus Zander <br/> Dipl. Volkswirt Roland Trefftz
 
-Kick-Off-Meeting – xx.10.2022  {.lightgreen .Big .skip}
+Kick-Off-Meeting – 27.10.2022  {.lightgreen .Big .skip}
 
 
 ---
@@ -86,7 +86,6 @@ Für *Studierende*, sagen Sie bitte kurz ...
 - Gotha Etienne – Etienne.Gotha@stud.h-da.de
 - Räpple Lukas – Lukas.Raepple@stud.h-da.de
 - Steinrücken Niklas – Niklas.Steinruecken@stud.h-da.de
-- Suhr Leon – Leon.Suhr@stud.h-da.de
 - Thelen Tobias – Thelen.Tobias@stud.h-da.de
 - Weishäupl Daniel – Daniel.Weishaeupl@stud.h-da.de
 :::
@@ -98,11 +97,18 @@ Für *Studierende*, sagen Sie bitte kurz ...
 ::::: columns
 :::: single blue
 **Projektteam RPN-Calculator**
-
+- Engler Cedric – Cedric.Engler@stud.h-da.de
+- Gotha Etienne – Etienne.Gotha@stud.h-da.de
+- Räpple Lukas – Lukas.Raepple@stud.h-da.de
+- Steinrücken Niklas – Niklas.Steinruecken@stud.h-da.de
+ 
 ::::
 :::: single green
 **Projektteam Fachbereichsratsprotokolle**
- 
+- Elsässer Dimitrij – Dimitrij.Elsaesser@stud.h-da.de
+- Führes Jasmin – Jasmin.Fuehres@stud.h-da.de
+- Thelen Tobias – Thelen.Tobias@stud.h-da.de
+- Weishäupl Daniel – Daniel.Weishaeupl@stud.h-da.de
 ::::
 :::::
 
@@ -252,16 +258,17 @@ Die **Beteiligungsmatrix**
 
 
 ---
-<!-- header: Projektübersicht -->
-# Projekt #1: RPN-Calculator
+<!-- header: Projektplanung -->
+## Projekt #1: Entwicklung eines innovativen RPN-Calculators mittels moderner Mobile-/Web-Entwicklungsframeworks
+### Betreuer: Roland Trefftz
 
 
 ---
 ## Projekt #1: RPN-Calculator
 
-Detailierte Infos zu diesem Projekt finden sich ergänzenden Foliensatz.
+Die Projektdetails und Aufgaben sind in einem separaten Foliensatz dargelegt. 
 
-_Link zu Roland's Foliensatz_
+Dieser findet sich im Moodle-Kurs der Veranstaltung. 
 
 <!--
 ::: blue 
@@ -285,91 +292,12 @@ _Link zu Roland's Foliensatz_
 -->
 
 
----
-<!-- header: Projektplanung -->
-## Workpackage 1: User Research
-
-- **Ziel**: _Benutzungsgruppenspezifische Nutzungsszenarien und -Anforderungen erforschen_
-- **Task-Liste**:
-  - Task 1: Stakeholderanalyse
-  - Task 2: Erarbeitung von Interviewleitfäden für die teilstandardisierten Interviews mit den Stakeholdern (=Stereotypen)
-  - Task 3: Durchführung und Auswertung der teilstandardisierten Interviews 
-  - Task 4: Erarbeitung von Anwendungsszenarien und Anwendungsfällen
-  - Task 5: Erarbeitung eines Anforderungkatalogs
-  - Task 6: Aufteilung der Anforderungen analog dem KANO-Modell und Finden von Begeisterungsfaktoren
-- **Milestones**:
-  - ==Deliverable 1: User Research== mit
-    - Dokumentation aller relevanter Artefakte des User Research 
-      - Dokumentation der Stereotypenanalyse, 
-      - Stakeholder-Interviews
-      - Anwendungsszenarien und Use-Cases, 
-      - Anforderungsspezifikation mit Begeisterungsfaktoren 
-  - Anforderungkatalog inkl. Begeisterungsfaktoren
-  
-::: footnotes
-Hinweis: Die notwendigen Informationen zur Durchführung des User-Research finden sich in den Unterlagen des [Moduls "NZSE"](https://projects.fbi.h-da.de/~s.zander/#nutzer-zentrierte-softwareentwicklung-nzse) von Prof. Dr. Stefan Zander (siehe [Moodle](https://lernen.h-da.de/course/view.php?id=6802))
-:::
 
 
 ---
-## Workpackage 2: UI-Entwurf & Prototyping
+## Projekt 2: Überführung der Fachbereichsratsprotokolle in eine semantische Wissensbasis mittels moderner NLP-/KI-Technologien
 
-- **Ziel**: _Aus den Erkenntnissen des User Research erste UI-Prototypen erarbeiten und mit den Stakeholdern testen um zu einem finalen, akzeptierten Design zu kommen._
-- **Task-Liste**:
-  - Task 1: Erarbeitung der GUIs 
-  - Task 2: Konzeption von User-Tests anhand der aus dem User-Research gewonnenen Erkenntnissen
-  - Task 3: Durchführung der User-Tests mit den Steretypen
-  - Task 4: Ableitung von Verbesserungen und Überarbeitung des Designs
-- **Milestones**:
-  - finaler Entwurf der Benutzungsschnittstellen (GUIs)
-  - ==Deliverable 2: UI-Entwurf (=Designkonzept)==
-    - Dokumentation des Designkonzepts für die User-Tests
-    - Dokumentation der durchgeführten User-Tests
-    - Dokumentation der gewonnenen Erkenntnisse
-    - Dokumentation des finalen UI-Entwurfs
-
-
----
-## Workpackage 3: Technologie-Research
-
-- **Ziel**: _Evaluierung der technologischen und architektonischen Umsetzungsmöglichkeiten; System-Grob- und -feinentwurf._
-- **Task-Liste**:
-  - Task 1: Sichtung aktueller Technologien bzw. Analyse technologischer- und architektonischer Umsetzungsmöglichkeiten auf Basis der Anforderungsspezifikation
-  - Task 2: Systemarchitekturentwurf
-  - Task 3: Vorbereitung der Implementierungsphase
-- **Milestones**:
-  - ==Deliverable 3: Technologie-Research==
-    - Evaluation der technologischen und architektonischen Umsetzungsmöglichkeiten
-    - Dokumentation des System-Grob- und -feinentwurfs
-  - Auswahl des Technologie-Stacks
-  - Festlegung des Systemdesigns 
-
-
----
-## Workpackage 4: Implementierung, Usability-Evaluation, Deployment
-
-- **Ziel**: _Implementierung der Anwendung (Frontend & Backend), Testing,  Durchführung von Usability-Evaluierungsmethoden und Fertigstellung der Dokumentation._
-- **Task-Liste**:
-  - Task 1: Implementierung
-  - Task 2: Usability Testing mittels heuristischer und empirischer Evaluationsmethoden 
-  - Task 3: Code- und Doc-Reviews
-  - Task 4: Deployment
-  - Task 5: Abschluss (Vervollständigung) von Implementierung und Dokumentation
-- **Milestones**
-  - ==Deliverable 4: Usability-Tests==
-    - Dokumentation der Usability-Test inkl. Testfällen
-    - Dokumentation der Erkenntnisse aus der Usability-Evaluation (=Auswertung)
-    - Dokumentation der Verbesserungen
-  - Abgeschlossene Implementierung sowie Deployment des Systems
-  - Übergabe des Systems sowie der Dokumentation
-
-
-
-
-
-
----
-# Projekt 2: Überführung der Fachbereichsratsprotokolle in eine semantische Wissensbasis
+### Betreuer: Stefan Zander
 
 
 ---
