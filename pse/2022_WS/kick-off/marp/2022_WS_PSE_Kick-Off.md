@@ -99,13 +99,13 @@ Für *Studierende*, sagen Sie bitte kurz ...
 **Projektteam RPN-Calculator**
 - Engler Cedric – Cedric.Engler@stud.h-da.de
 - Gotha Etienne – Etienne.Gotha@stud.h-da.de
-- Räpple Lukas – Lukas.Raepple@stud.h-da.de
+- Räpple Lukas – Lukas.Raepple@stud.h-da.de^1^
 - Steinrücken Niklas – Niklas.Steinruecken@stud.h-da.de
  
 ::::
 :::: single green
 **Projektteam Fachbereichsratsprotokolle**
-- Elsässer Dimitrij – Dimitrij.Elsaesser@stud.h-da.de
+- Elsässer Dimitrij – Dimitrij.Elsaesser@stud.h-da.de^1^
 - Führes Jasmin – Jasmin.Fuehres@stud.h-da.de
 - Thelen Tobias – Thelen.Tobias@stud.h-da.de
 - Weishäupl Daniel – Daniel.Weishaeupl@stud.h-da.de
@@ -463,7 +463,7 @@ Wichtig: Agiles Vorgehen bedeutet, dass sich die Projektdurchführung den aktuel
 # Jour fixes
 
 ---
-# Jour fixe – MO, 25.04.2022
+# Jour fixe – MO, 31.10.2022
 
 
 - Beantwortung offener Fragen zu den Projekten
