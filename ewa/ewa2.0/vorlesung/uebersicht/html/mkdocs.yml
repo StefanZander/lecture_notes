@@ -5,9 +5,7 @@ theme:
   palette:
     primary: deep orange
     accent: teal
-  font: 
-    text: Roboto Condensed
-    code: Roboto Mono
+  font: false
   icon:
     logo: material/library
   features:

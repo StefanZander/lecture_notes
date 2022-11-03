@@ -9,15 +9,28 @@
 @import url("./admonition/question.css") screen;
 @import url("./admonition/example.css") screen;
 @import url("./admonition/tip.css") screen;
-@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+/* @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 @import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap'); */
+
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: url('https://projects.fbi.h-da.de/~s.zander/fonts/RobotoCondensed-Regular.ttf');
+}
+
+
+/* @font-face {
+    font-family: 'Material Icons';
+    src: url('https://projects.fbi.h-da.de/~s.zander/fonts/icons/MaterialIcons-Regular.ttf');
+} */
+
 
 /* cf. https://developer.mozilla.org/en-US/docs/Web/CSS/font-smooth */ 
 body {
     /* 2021-05-05: disabled it to see how the roboto condensed font renders  */
     /* -webkit-font-smoothing: auto !important;  */ 
+    font-family: "Roboto Condensed";
 }
 
 .md-content__inner.md-typeset {
@@ -79,14 +92,15 @@ li.md-nav__item>a:hover {
 
 
 /* Added to have a nice icon before text links  */
-.md-content .md-content__inner a::before {
+/* 2022-11-03: Disabled since it should not be used for all links */
+/* .md-content .md-content__inner a::before {
     font-family: 'Material Icons';
-    content: 'ads_click'; 
+    content: 'share'; 
     top: .1em;
     margin-right: .1em;
     position: relative;
     color: gray;
-}
+} */
 
 
 
@@ -149,7 +163,8 @@ div.md-content a:hover:not(.md-footer-nav__link) {
     font-family: 'Material Icons';
     font-style: normal;
     font-weight: 400;
-    src: url(https://fonts.gstatic.com/s/materialicons/v126/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2) format('woff2');
+    src: url(https://projects.fbi.h-da.de/~s.zander/fonts/icons/MaterialIcons-Regular.ttf);
+    /* src: url(https://fonts.gstatic.com/s/materialicons/v126/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2) format('woff2'); */
 }
 
 .material-icons {

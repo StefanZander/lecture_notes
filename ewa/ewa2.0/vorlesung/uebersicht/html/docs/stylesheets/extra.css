@@ -1,4 +1,17 @@
-@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+/* @import url("https://fonts.googleapis.com/icon?family=Material+Icons"); */
+
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: url('https://projects.fbi.h-da.de/~s.zander/fonts/RobotoCondensed-Regular.ttf');
+}
+
+
+@font-face {
+    font-family: 'Material Icons';
+    src: url('https://projects.fbi.h-da.de/~s.zander/fonts/icons/MaterialIcons-Regular.ttf');
+    /* src: url('https://projects.fbi.h-da.de/~s.zander/fonts/icons/MaterialIconsOutlined-Regular.otf'); */
+}
+
 
 
 :root {
@@ -7,6 +20,9 @@
     --book_background_color: #f5f4f4;
 }
 
+body {
+    font-family: 'Roboto Condensed';
+}
 
 .md-typeset h1 {
     font-size: 4em;
@@ -71,7 +87,7 @@
 
 .md-typeset .admonition.book::before {
     font-family: 'Material Icons';
-    content: 'psychology'; 
+    content: 'psychology';  /* psychology */
     font-size: 1.6em;
     /* vertical-align: bottom; */
     padding-right: .3em;
@@ -85,7 +101,7 @@
 /* Added to have a nice icon before text links  */
 .md-content .md-content__inner a::before {
     font-family: 'Material Icons';
-    content: 'ads_click'; 
+    content: 'share';  /* 'ads_click' */
     top: .1em;
     margin-right: .1em;
     position: relative;

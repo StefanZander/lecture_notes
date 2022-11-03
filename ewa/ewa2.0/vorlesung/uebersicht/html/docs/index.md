@@ -158,14 +158,14 @@ EWA-Discord-Channel: <https://discord.gg/AC97TNBSJ6>
 
 ### Einheit #6: JavaScript – Sprachgrundlagen
 
-<!--
+
 !!! warning "Neue Einführung in JavaScript"
     __Wichtig: Hier weichen wir etwas vom Skript ab und es erfolgt eine eigene, umfassendere und tiefergehende Einführung in JavaScript.  
     Verpassen Sie also nicht die entsprechenden Vorlesungseinheiten!__
--->
 
-!!! info 
-    Aufgrund einer Weiterbildungsmaßnahme wird diese Einheit von **Thomas Hofmann** gehalten und orientiert sich an den VO-Unterlagen.
+
+<!-- !!! info 
+    Aufgrund einer Weiterbildungsmaßnahme wird diese Einheit von **Thomas Hofmann** gehalten und orientiert sich an den VO-Unterlagen. -->
 
 - Welche grundlegenden Konzepte unterscheiden JavaScript von gängigen OO-Programmiersprachen ?
 <!-- - Welche Datentypenarten bietet JavaScript ? -->

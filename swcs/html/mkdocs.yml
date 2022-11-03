@@ -36,9 +36,7 @@ theme:
   feature:
     tabs: false
 
-  font:
-    text: 'Roboto Condensed'
-    code: 'Fira mono'
+  font: false
 
 extra_css:
   - 'stylesheets/extra.css'
