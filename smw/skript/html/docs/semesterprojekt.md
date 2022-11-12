@@ -23,6 +23,8 @@ Sofern Sie _kein_ eigenes Thema bearbeiten wollen, können Sie eines der im Folg
 !!! example
     __Themenliste__
 
+    - Analyse der [FlexForm-Extension](https://www.open-csp.org/DevOps:Doc/FlexForm) mit Umsetzung vieler Beispiele
+    - Analyse der Unterschiede zwischen den Erweiterungen [PageForms](https://www.mediawiki.org/wiki/Extension:Page_Forms) and [FlexForms](https://www.mediawiki.org/wiki/Extension:FlexForm)
     - Abbildung von Fachbereichsrats-Protokollen in Semantic MediaWiki
     - ~~Realisierung einer Literaturbeschaffungsplattform inkl. Bestellübersichten für den Fachbereich~~
     - Realisierung einer einfach nutzbaren Bewertungs-/Beurteilungsseite für studentische Abschlussarbeiten, ggf. mit PDF-Ausgabe des Beurteilungsbogens

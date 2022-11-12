@@ -5,9 +5,28 @@
 @import url("./admonition/warning.css");
 @import url("./admonition/question.css");
 
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: url('https://projects.fbi.h-da.de/~s.zander/fonts/RobotoCondensed-Regular.ttf');
+ }
+ 
+ @font-face {
+    font-family: 'Roboto Condensed';
+    src: url('https://projects.fbi.h-da.de/~s.zander/fonts/RobotoCondensed-Bold.ttf');
+    font-weight: bold;
+ }
+ 
+ 
+ @font-face {
+    font-family: 'Material Icons';
+    src: url('https://projects.fbi.h-da.de/~s.zander/fonts/icons/MaterialIcons-Regular.ttf');
+    /* src: url('https://projects.fbi.h-da.de/~s.zander/fonts/icons/MaterialIconsOutlined-Regular.otf'); */
+ }
+
 
 body {
     counter-reset: figure;
+    font-family: "Roboto Condensed";
 }
 
 
