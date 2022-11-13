@@ -26,7 +26,7 @@
 2. Write an **Abstract** based on the information outlined in the Factsheet.
     - The Abstract must be meaningful and only as long as necessary but as precise as possible  
       _(approx. 100 – 200 words; not longer than 5-7 sentences)_
-    - Use the [Springer LNCS template](add link)
+    - Use the [Springer LNCS template](https://www.springer.com/gp/computer-science/lncs/new-latex-templates-available/15634678)
     
     !!! note
         **Writing the Abstract**: Write the Abstract from a perspective of what you *intend* to achieve. Change this perspective of what you *have* achieved for the final paper.
