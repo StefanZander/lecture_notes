@@ -27,7 +27,7 @@ Einführung in JavaScript  {.lightgreen .Big .skip}
 
 
 ---
-<!-- footer: Entwicklung Web-basierter Anwendungen | Einführung in JavaScript – Funktionen | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences -->
+<!-- footer: Entwicklung Web-basierter Anwendungen | Einführung in JavaScript | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences -->
 
 # Outline
 
@@ -224,6 +224,130 @@ console.log(name.last);                   // undefined
 ::: footnotes
 ^1^ Primitive wrapper types are **special reference types** for String, Number, and Boolean primitive types that allow to use them as if they were reference values without introducing a new syntax.
 :::
+
+
+
+---
+# Global Scope and Local Scope
+
+:::: columns
+::: single
+**Global Scope**
+
+- A variable declared at the top of a program or outside of a function is considered a global scope variable.
+:::
+::: single
+```js
+let myName = "Thomas";
+
+function sayHello() {
+  console.log("Hello, my name is " + myName);
+}
+
+sayHello()    // Hello, my name is Thomas
+```
+:::
+::::
+
+
+:::: columns
+::: single
+**Local Scope (aka Function Scope)**
+
+- A variable declared in a function body is only visible within the function body and its inner-functions. 
+- It will be deleted when the function is removed from the call stack.
+:::
+::: single
+```js
+function sayHello() {
+  let myName = "Thomas";
+  console.log("Hello, my name is " + myName);
+}
+
+function sayGoodbye() {
+  console.log("Have a nice day " + myName);
+}
+
+sayHello()    // Hello, my name is Thomas
+sayGoodbye()  // Error
+```
+:::
+::: single
+```js
+let myName = "Thomas";
+
+function sayHello() {
+  let myName = "Georg";
+  console.log("Hello, my name is " + myName);
+}
+
+function sayGoodbye() {
+  console.log("Have a nice day " + myName);
+}
+
+sayHello()    // Hello, my name is Georg
+sayGoodbye()  // Have a nice day Thomas
+```
+:::
+::::
+
+
+---
+# Declaring Variables using let, var, and const
+
+:::: columns
+::: single
+**Let**
+:::
+::: dec
+- `let` declares a variable in a certain scope
+- Introduced with ES2015 (ES6)
+:::
+::: dec
+```js
+
+```
+:::
+::::
+
+:::: columns
+::: single
+**Var**
+- `var` declares a variable in a global scope
+- the variable is always hoisted to the top of the scope (e.g. the function in which `var` is used.)
+- Should not be used
+:::
+::: single
+```js
+function getValue(condition) {
+    if (condition) {
+        var value = "blue";
+        // other code
+        return value;
+    } else {
+        // value exists here with a value of undefined
+        return null;
+    }
+    // value exists here with a value of undefined
+}
+```
+:::
+::::
+
+:::: columns
+::: single
+**Const**
+- `const` is used to define constants, the value of which is fixed and can not be changed during runtime
+:::
+::: single
+```js
+
+```
+:::
+::::
+
+
+
 
 ---
 # Comparisons 

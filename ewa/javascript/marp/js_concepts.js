@@ -406,3 +406,16 @@ book1.constructor.prototype.printTitle = function() {
 }
 
 book1.printTitle();
+
+
+
+// Added by SZA to test code snippets
+
+function sayHello() {
+    var myName = "Stefan"
+    console.log("Hello, my name is " + myName);
+}
+
+sayHello();
+
+console.log(myName);
