@@ -419,3 +419,17 @@ function sayHello() {
 sayHello();
 
 console.log(myName);
+
+
+
+function getValue(condition) {
+    if (condition) {
+        value  = "green";
+        // value is hoisted to the top of the function
+        let value 
+    } 
+    // value = "green"; // value should not exist here
+    console.log(value);
+}
+
+getValue(true);

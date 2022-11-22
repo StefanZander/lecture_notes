@@ -47,7 +47,7 @@ Einführung in JavaScript  {.lightgreen .Big .skip}
 
 ::::: columns-center
 :::: single
-::: orange-box centerbox center
+::: orangebox centerbox center
 Object-based $\neq$ Object-oriented
 :::
 ::::
@@ -62,7 +62,7 @@ Object-based $\neq$ Object-oriented
 
 ::::: columns-center
 :::: single
-::: blue centerbox center
+::: bluebox centerbox center
 JavaScript $\leftrightarrow$ Flexibility
 :::
 ::::
@@ -76,7 +76,7 @@ JavaScript $\leftrightarrow$ Flexibility
 
 ::::: columns-center
 :::: single
-::: green centerbox center
+::: greenbox centerbox center
 $\rightarrow$ Objects $\leftarrow$
 :::
 ::::
@@ -88,7 +88,7 @@ $\rightarrow$ Objects $\leftarrow$
 ::::
 :::::
 
-::: warning center skip
+::: redbox center skip
 So, working with and understanding objects is key to understanding JavaScript as a language.
 :::
 
@@ -100,7 +100,7 @@ So, working with and understanding objects is key to understanding JavaScript as
 
 :::::: columns
 ::::: single
-:::: green
+:::: greenbox
 ::: centerbox center Big
 **Primitive Types**
 :::
@@ -119,7 +119,7 @@ So, working with and understanding objects is key to understanding JavaScript as
 ::::
 :::::
 ::::: single
-:::: blue
+:::: bluebox
 ::: centerbox center Big
 **Reference Types**
 :::
@@ -137,7 +137,7 @@ So, working with and understanding objects is key to understanding JavaScript as
 :::::
 ::::::
 
-::: centerbox warning skip
+::: centerbox redbox skip
 Each variable in JavaScript is associated with a specific primitive or reference type
 :::
 
@@ -293,58 +293,73 @@ sayGoodbye()  // Have a nice day Thomas
 
 
 ---
-# Declaring Variables using let, var, and const
+## Declaring Variables using `let`, `var`, and `const`
 
-:::: columns
-::: single
-**Let**
-:::
-::: dec
-- `let` declares a variable in a certain scope
-- Introduced with ES2015 (ES6)
-:::
-::: dec
-```js
 
-```
-:::
-::::
-
-:::: columns
+:::: centercontent columns small
 ::: single
 **Var**
-- `var` declares a variable in a global scope
-- the variable is always hoisted to the top of the scope (e.g. the function in which `var` is used.)
+:::
+::: oct
+- `var` declares a variable in a _global scope_
+- The variable is always ==hoisted== to the _top_ of the scope (e.g. the function in which `var` is used.)
 - Should not be used
 :::
-::: single
+::: oct
 ```js
 function getValue(condition) {
     if (condition) {
-        var value = "blue";
-        // other code
-        return value;
-    } else {
-        // value exists here with a value of undefined
-        return null;
-    }
-    // value exists here with a value of undefined
+        value  = "green";
+        // value is hoisted to the top of the function
+        var value 
+    } 
+    // value = "green"; // value should not exist here
+    console.log(value); // displays 'green'
 }
 ```
 :::
 ::::
 
-:::: columns
+:::: centercontent columns small
 ::: single
-**Const**
-- `const` is used to define constants, the value of which is fixed and can not be changed during runtime
+**Let**
 :::
-::: single
+::: oct
+- Introduced with ES2015 (ES6) and preferred notion
+- `let` declares a variable in the _current scope_ (function of block – indicated by `{` and `}`)
+- `let` declarations are _NOT hoisted_, so declare them at the beginning of a block
+:::
+::: oct
 ```js
-
+function getValue(condition) {
+    if (condition) {
+        value  = "green";
+        // value is hoisted to the top of the function
+        let value 
+    } 
+    console.log(value); // Reference Error
+}
 ```
 :::
 ::::
+
+::::: centercontent columns small
+:::: single 
+**Const**
+::::
+:::: oct
+- `const` is used to define constants, the value of which can not be changed once declared
+- Constants are only valid in their block 
+::::
+:::: oct
+```js
+if (condition) {
+    const maxItems = 5;
+}
+// maxItems isn't accessible here
+```
+::::
+:::::
 
 
 
@@ -366,7 +381,7 @@ console.log(undefined === null);    // false
 ```
 ::::
 :::: double
-::: blue
+::: bluebox
 Equality of Primitives and Objects
 - **Primitives**: comparing the ==actual value==
 - **Objects**: comparing the ==memory location==
@@ -399,7 +414,7 @@ Equality of Primitives and Objects
   - the **value** can hold any kind of primitive or reference value
 ::::
 :::: single
-::: blue smaller italic
+::: bluebox smaller italic
 **Naming Convention**
 Although reference types are objects, it is useful to distinguish them from reference values. Hence, when we talk about *objects*, we refer to instances of reference types, ie., reference values. When we talk about *reference types*, we use this denominator.
 :::
@@ -451,7 +466,7 @@ let b = new Book("ECMAScript 6", 2015);
   };
   ```
 
-  ::: warning centerbox center small
+  ::: redbox centerbox center small
   Please note the different syntax of the literal notation!
   :::
 ::::
@@ -634,7 +649,7 @@ const a3 = colors.concat(points);
     ```
   ::::
   :::: single
-  ::: smaller center blue
+  ::: smaller center bluebox
   Think about, what does the `typeof` operator return for each operation?
   :::
   ::::
