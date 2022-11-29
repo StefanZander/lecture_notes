@@ -100,7 +100,7 @@ So, working with and understanding objects is key to understanding JavaScript as
 
 :::::: columns
 ::::: single
-:::: greenbox
+:::: task
 ::: centerbox center Big
 **Primitive Types**
 :::
@@ -182,6 +182,7 @@ console.log(typeof undefined);  // "undefined"
 ```
 ::::
 :::::
+
 
 
 ---
@@ -292,6 +293,7 @@ sayGoodbye()  // Have a nice day Thomas
 ::::
 
 
+
 ---
 ## Declaring Variables using `let`, `var`, and `const`
 
@@ -360,6 +362,67 @@ if (condition) {
 ```
 ::::
 :::::
+
+
+
+---
+## Experimental: Declaring Variables using `let`, `var`, and `const`
+
+
+:::: small grid3col widthauto vertical-align-top horizontal-left
+::: redbox
+**Var**
+:::
+
+- `var` declares a variable in a _global scope_
+- Variable is always ==hoisted== to the scope's _top_ (e.g. function in which `var` is used.)
+- Usage might result in unwanted side-effects; [should not be used]{.red}
+
+```js
+function getValue(condition) {
+  if (condition) {
+    value  = "green";
+    // hoisted to top of the function
+    var value 
+  } 
+  // value should not exist here
+  console.log(value); // displays 'green'
+}
+```
+
+[**Let**]{.greenbox}
+
+
+- Introduced with [ES2015]{.red} {.red}(ES6) and [preferred]{.redbox} notion
+- `let` declares a variable in the _current scope_ (function or block)
+- `let` declarations are _NOT hoisted_; use them at the beginning of a block
+
+```js
+function getValue(condition) {
+    if (condition) {
+        value  = "green";
+          let value // value is not hoisted
+    } 
+    console.log(value); // Reference Error
+}
+```
+
+
+[**Const**]{.greenbox}
+
+- `const` defines constants; the values can not be changed once declared
+- Constants are only valid in their block 
+
+```js
+if (condition) {
+    const maxItems = 5;
+}
+// maxItems isn't accessible here
+```
+
+::::
+
+
 
 
 

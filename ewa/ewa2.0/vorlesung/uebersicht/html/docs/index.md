@@ -277,7 +277,7 @@ EWA-Discord-Channel: <https://discord.gg/AC97TNBSJ6>
 
     - Foliensatz: Kap. 4.5 - 4.7
     - Lehrvideo: [Gestaltung von Webseiten I](https://electures.h-da.de/paella/ui/watch.html?id=9b3895e1-3427-4dbe-a77f-f43529603c99) – (00:00:00 – 01:31:48)
-    - Zur Vertiefung: [Sehr gute und anschauliche Einführung in die Funktionsweise der Flexbox]( https://www.freecodecamp.org/news/css-flexbox-complete-guide/)
+    - Zur Vertiefung: [Sehr gute und anschauliche Einführung in die Funktionsweise der Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
     - Für Interessierte: [Ein Vergleich der CSS Präprozessoren SASS vs. LESS](https://lernen.h-da.de/mod/resource/view.php?id=215259)
 
 
