@@ -3,6 +3,22 @@
 // ================================================
 // Code-testbed for JavaScript Lecture Examples
 
+
+function getValue(condition) {
+
+    if (condition) {
+        value  = "green";
+        // value is hoisted to the top of the function
+        // value = "red"
+        let value;
+    } else {  value = "red" }
+    // value = "green"; // value should not exist here
+    console.log(value); // displays 'green'
+}
+
+getValue(true)
+getValue(false)
+
 // primitive types
 let color1 = "blue";
 let color2 = color1;
@@ -68,17 +84,17 @@ console.log(typeof undefined);      // "undefined"
 // Primitive Type Wrappers --> allows to use Primitive Types
 // as if they were Reference Types (ie. Objects)
 // Use of primitive methods
-var name = "Nicholas";
-var lowercaseName = name.toLowerCase(); // convert to lowercase
-var firstLetter = name.charAt(0);       // get first character
-var middleOfName = name.substring(2, 5); // get characters 2-4
+let name = "Nicholas";
+let lowercaseName = name.toLowerCase(); // convert to lowercase
+let firstLetter = name.charAt(0);       // get first character
+let middleOfName = name.substring(2, 5); // get characters 2-4
 
-var count = 10;
-var fixedCount = count.toFixed(2); // convert to "10.00"
-var hexCount = count.toString(16); // convert to "a"
+let count = 10;
+let fixedCount = count.toFixed(2); // convert to "10.00"
+let hexCount = count.toString(16); // convert to "a"
 
-var flag = true;
-var stringFlag = flag.toString(); // convert to "true"
+let flag = true;
+let stringFlag = flag.toString(); // convert to "true"
 
 
 
@@ -92,18 +108,18 @@ var stringFlag = flag.toString(); // convert to "true"
 // ================================================
 // Create Object with Literal Notation
 
-var book1 = {
+let book1 = {
     name: "The Principles of Object-Oriented JavaScript",
     year: 2014
 };
 
-var book2 = {
+let book2 = {
     "name": "The Principles of Object-Oriented JavaScript",
     "year": 2014
 };
 
 
-var book3 = new Object();
+let book3 = new Object();
 book3.name = "The Principles of Object-Oriented JavaScript";
 book3.year = 2014;
 
@@ -124,7 +140,7 @@ console.log(book1 === book2); // false
 // ================================================
 // ================================================
 // Primitive Types are no objects
-var name = "Hans";
+let name = "Hans";
 name.last = "Haas";
 
 console.log(name.last); // undefined
@@ -161,7 +177,7 @@ function Student(fullname, matr) {
     }
 }
 
-var john = new Person("John", "Doe", 1986);
+let john = new Person("John", "Doe", 1986);
 
 // Be aware that 'this' is now bound to the global window-object and not the instance
 // Forbidden in strict mode (--> does not allow a binding of this to the global object)
@@ -176,7 +192,7 @@ let hans = Person("Hans", "Haas", 1932);
 // ================================================
 // ================================================
 // Accessing Properties in Objects
-var person = new Object();
+let person = new Object();
 
 person.firstname = "John";
 person.surname = "Doe";
@@ -185,7 +201,7 @@ person["surname"] = "Doe"; // alternative notation
 
 console.log(person.firstname);
 
-var s = "firstname";
+let s = "firstname";
 console.log(person[s]);              // John
 
 console.log(person["firstname"]);    // John
@@ -226,9 +242,9 @@ console.log(person.hasOwnProperty("toString")); // false
 // ================================================
 // #36 Enumerations on property keys; keys are stored in _keys
 // Example does not work in latest chrome version
-var _keys = Object.keys(person);
+let _keys = Object.keys(person);
 
-for (props in _keys) { // does not retrieves props but can be iterated with index var
+for (props in _keys) { // does not retrieves props but can be iterated with index let
     console.log("Own Property: " + person.hasOwnProperty(_keys[props]));
     console.log("Key: " + _keys[props]);
     console.log("Value: " + person[_keys[props]]);
