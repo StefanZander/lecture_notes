@@ -166,7 +166,7 @@ function sayHi() {
     function scribble() {
         var str = this.firstname + " " + this.lastname;
         var result = "";
-        for (var i = 0; i < str.length; i++ ) {
+        for (let i = 0; i < str.length; i++ ) {
             if (i % 2 == 0) {
                 result = result + str.charAt(i).toUpperCase();
             } else {
@@ -179,7 +179,7 @@ function sayHi() {
     function dashed() {
         var str = this.firstname + " " + this.lastname;
         var result = "";
-        for (var i = 0; i < str.length; i++ ) {
+        for (let i = 0; i < str.length; i++ ) {
             if (i != this.firstname.length) {
                 result = result + "_";
             }
