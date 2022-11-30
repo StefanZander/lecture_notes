@@ -13,7 +13,7 @@ function add(num1, num2) {
 
 
 // function expression == anonymous fcts // callbacks // async
-let add = function(num1, num2) {
+var add = function(num1, num2) {
     return num1 + num2;
   }; // mind the semicolon ';' at the expression's end
   
@@ -188,7 +188,7 @@ function sayHi() {
         return result;
     }
     
-    var p = new Person("Peter", "Pan");
+    let p = new Person("Peter", "Pan");
     p.decode();
     p.decode = scribble;
     p.decode();
@@ -206,7 +206,7 @@ function sayHi() {
     
     function saySomething(name) {
         return function sayHello() {
-            console.log("Hello, my name is ... " + name); // 'this.name' does not work since it looks for the value of a 'name' property in the property to which saySomething was assigned to.
+            return("Hello, my name is ... " + name); // 'this.name' does not work since it looks for the value of a 'name' property in the property to which saySomething was assigned to.
         };
     }
     
@@ -217,9 +217,11 @@ function sayHi() {
     
     // The following calls demonstrate the difference 
     // between constructor and normal functions
-    x = new saySomething(); // x and saySomething are two different objects
-    
-    y = saySomething; // assigning a reference to saySomething
+    x = new saySomething(); // (B) x and saySomething are two different objects
+    let z = x;
+
+    y = saySomething; // (A) assigning a reference to saySomething
+
     
     saySomething.desc = "some descr.";
     
@@ -249,7 +251,7 @@ function sum() {
 
 console.log(sum(1, 2)); // 3
 console.log(sum(3, 4, 5, 6)); // 18
-console.log(sum(50 + 50 )); // 50
+console.log(sum(50 + 50 )); // 100
 console.log(sum()); // 0
 
 
