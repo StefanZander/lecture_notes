@@ -35,7 +35,7 @@ function Person(firstname, lastname, birthyear) {
         console.log("My name is " + this._firstname + " " + this._lastname);
     } 
 
-    // return new Dog(); // Q: sinnvoll? -ja
+    // return new Dog(); // Q: sinnvoll? 
 }
 
 function Dog() {
@@ -104,7 +104,7 @@ function sayHi() {
     
     sayHi(); // outputs "Hi!" 
     
-    var say_something = sayHi;
+    let say_something = sayHi;
     
     say_something();       // outputs "Hi!"
     
@@ -114,9 +114,9 @@ function sayHi() {
         return num + 1; 
     }
     
-    var plusOne = addOne; 
+    let plusOne = addOne; 
     
-    var result = plusOne(1); // outputs '2'
+    let result = plusOne(1); // outputs '2'
     
     
     // Example 3: Handler
