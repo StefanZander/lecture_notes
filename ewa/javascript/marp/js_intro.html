@@ -51,9 +51,11 @@
     /* padding: 2.8em;  */}div#p>svg>foreignObject>section :is(h1,marp-h1){font-size:calc(var(--marpit-root-font-size, 1rem) * 3.0); /* was 3.2/3.0 */
     /* background-color: rgb(10, 40, 72);
     display: inline;
-    color: white; */color:rgb(20,111,201);font-weight:600
-    /* font-family: 'Barlow Semi Condensed';  */}div#p>svg>foreignObject>section :is(h2,marp-h2){font-size:calc(var(--marpit-root-font-size, 1rem) * 2.4);
-    /* color: #246; */ /* added to have identical color to h1 */color:rgb(20,111,201) /* new color for headlines */}div#p>svg>foreignObject>section :is(h4,marp-h4){color:rgb(42,104,175);font-style:normal;font-weight:400}
+    color: white; */
+    /* color:rgb(20, 111, 201); */
+    /* color: rgb(10, 40, 72); */font-weight:600
+    /* font-family: 'Barlow Semi Condensed';  */}div#p>svg>foreignObject>section :is(h2,marp-h2){font-size:calc(var(--marpit-root-font-size, 1rem) * 2.4);color:#246 /* added to have identical color to h1 */
+    /* color:rgb(20, 111, 201); */ /* new color for headlines */}div#p>svg>foreignObject>section :is(h4,marp-h4){color:rgb(42,104,175);font-style:normal;font-weight:400}
 
 
 /* Code fragments in texts */div#p>svg>foreignObject>section code{
@@ -349,143 +351,6 @@
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="4" data-paginate="true" data-footer="Entwicklung Web-basierter Anwendungen | Einführung in JavaScript | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-header="Foundational Concepts" data-theme="custom-theme-roboto" data-marpit-pagination="4" data-marpit-pagination-total="24" style="--paginate:true;--footer:Entwicklung Web-basierter Anwendungen | Einführung in JavaScript | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--header:Foundational Concepts;--theme:custom-theme-roboto;">
 <header>Foundational Concepts</header>
-<h1>JavaScript employs two Types of Datatypes</h1>
-
-<div class="columns">
-<div class="single">
-<div class="task">
-<div class="centerbox center Big">
-<p><strong>Primitive Types</strong></p>
-</div>
-<ul>
-<li>Primitive types are stored as <strong>simple data types</strong>
-<ul>
-<li>ie., the variable object holds the actual value</li>
-</ul>
-</li>
-<li>JS has 5 primitive types
-<ul>
-<li><strong>Boolean</strong> – true or false</li>
-<li><strong>Number</strong> – integer or floating point number</li>
-<li><strong>String</strong> – character or sequence of characters</li>
-<li><strong>Null</strong> – a primitive type with only one value <code>null</code></li>
-<li><strong>Undefined</strong> – value assigned to unitialized variables</li>
-</ul>
-</li>
-<li>Primitive types <code>Boolean</code>, <code>Number</code>, and <code>String</code> are treated as reference types to make the language more consistent</li>
-<li>All primitive types have literal value representations</li>
-</ul>
-</div>
-</div>
-<div class="single">
-<div class="bluebox">
-<div class="centerbox center Big">
-<p><strong>Reference Types</strong></p>
-</div>
-<ul>
-<li>Reference types are stored as <strong>objects</strong>
-<ul>
-<li>i.e., the variable object holds a reference to the memory location where the actual object data are stored</li>
-</ul>
-</li>
-<li>Objects are the main building blocks of JavaScript</li>
-<li>Objects are extremely <strong>flexible</strong> and <strong>powerful</strong>
-<ul>
-<li>Since JavaScript has no formal concept of classes, objects resemble the role of both <strong>types</strong> and <strong>instances</strong></li>
-</ul>
-</li>
-<li>Reference types serve as <strong>blueprints</strong> for reference values</li>
-<li>Reference values are <strong>instances</strong> of reference types</li>
-<li>JavaScript contains a set of built-in reference types such as <code>Array</code>, <code>Date</code>, <code>Error</code>, <code>Function</code>, <code>RegExp</code></li>
-</ul>
-</div>
-</div>
-</div>
-<div class="centerbox redbox skip">
-<p>Each variable in JavaScript is associated with a specific primitive or reference type</p>
-</div>
-<footer>Entwicklung Web-basierter Anwendungen | Einführung in JavaScript | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences</footer>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="5" data-paginate="true" data-footer="Entwicklung Web-basierter Anwendungen | Einführung in JavaScript | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-header="Primitive Types" data-theme="custom-theme-roboto" data-marpit-pagination="5" data-marpit-pagination-total="24" style="--paginate:true;--footer:Entwicklung Web-basierter Anwendungen | Einführung in JavaScript | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--header:Primitive Types;--theme:custom-theme-roboto;">
-<header>Primitive Types</header>
-
-<h1>Working with Primitive Types</h1>
-<div class="columns">
-<div class="single">
-<p><strong>A) Defining Primitive Types</strong></p>
-<ul>
-<li>A variable holding a primitive directly contains the primitive value</li>
-<li>Values are represented as literals and stored directly in the variable object</li>
-</ul>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-js"><span class="hljs-keyword">let</span> color1 = <span class="hljs-string">&quot;red&quot;</span>; 
-<span class="hljs-keyword">let</span> color2 = color1;
-
-<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(color1); <span class="hljs-comment">// red</span>
-<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(color2); <span class="hljs-comment">// red</span>
-
-color1 = <span class="hljs-string">&quot;blue&quot;</span>; 
-
-<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(color1); <span class="hljs-comment">// blue</span>
-<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(color2); <span class="hljs-comment">// red</span>
-</code></pre>
-</div>
-<div class="single">
-<p><strong>B) Identifying Primitive Types</strong></p>
-<ul>
-<li>The <code>typeof</code> operator identifies a primitive type</li>
-<li>It returns the type in form of a string</li>
-</ul>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-js"><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-keyword">typeof</span> <span class="hljs-string">&quot;Nicholas&quot;</span>); <span class="hljs-comment">// &quot;string&quot;</span>
-<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-keyword">typeof</span> <span class="hljs-number">10</span>);         <span class="hljs-comment">// &quot;number&quot;</span>
-<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-keyword">typeof</span> <span class="hljs-number">5.1</span>);        <span class="hljs-comment">// &quot;number&quot;</span>
-<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-keyword">typeof</span> <span class="hljs-literal">true</span>);       <span class="hljs-comment">// &quot;boolean&quot; </span>
-<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-keyword">typeof</span> <span class="hljs-literal">undefined</span>);  <span class="hljs-comment">// &quot;undefined&quot;</span>
-</code></pre>
-</div>
-</div>
-<footer>Entwicklung Web-basierter Anwendungen | Einführung in JavaScript | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences</footer>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="6" data-paginate="true" data-footer="Entwicklung Web-basierter Anwendungen | Einführung in JavaScript | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-header="Primitive Types" data-theme="custom-theme-roboto" data-marpit-pagination="6" data-marpit-pagination-total="24" style="--paginate:true;--footer:Entwicklung Web-basierter Anwendungen | Einführung in JavaScript | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--header:Primitive Types;--theme:custom-theme-roboto;">
-<header>Primitive Types</header>
-<h1>Primitive Wrapper Types</h1>
-<div class="columns">
-<div class="double">
-<p>The primitive types</p>
-<ul>
-<li><code>String</code></li>
-<li><code>Number</code></li>
-<li><code>Boolean</code></li>
-</ul>
-<p>have <strong>primitive wrapper types</strong><sup>1</sup> that allow them to be used like objects.</p>
-<p>Primitive wrapper types are <em>special reference types</em> that are automatically created whenever one of the tree types are read.</p>
-<p>This proces is called <mark>autoboxing</mark>.</p>
-</div>
-<div class="triple">
-<p>Examples</p>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-js"><span class="hljs-keyword">let</span> name = <span class="hljs-string">&quot;Nicholas&quot;</span>;
-<span class="hljs-keyword">let</span> lowercaseName = name.<span class="hljs-title function_">toLowerCase</span>();   <span class="hljs-comment">// convert to lowercase</span>
-<span class="hljs-keyword">let</span> firstLetter = name.<span class="hljs-title function_">charAt</span>(<span class="hljs-number">0</span>);         <span class="hljs-comment">// get first character</span>
-<span class="hljs-keyword">let</span> middleOfName = name.<span class="hljs-title function_">substring</span>(<span class="hljs-number">2</span>, <span class="hljs-number">5</span>);  <span class="hljs-comment">// get characters 2-4</span>
-
-<span class="hljs-keyword">let</span> count = <span class="hljs-number">10</span>;
-<span class="hljs-keyword">let</span> fixedCount = count.<span class="hljs-title function_">toFixed</span>(<span class="hljs-number">2</span>);        <span class="hljs-comment">// convert to &quot;10.00&quot;</span>
-<span class="hljs-keyword">let</span> hexCount = count.<span class="hljs-title function_">toString</span>(<span class="hljs-number">16</span>);        <span class="hljs-comment">// convert to &quot;a&quot;</span>
-
-<span class="hljs-keyword">let</span> flag = <span class="hljs-literal">true</span>;
-<span class="hljs-keyword">let</span> stringFlag = flag.<span class="hljs-title function_">toString</span>();         <span class="hljs-comment">// convert to &quot;true&quot;</span>
-
-name.<span class="hljs-property">last</span> = <span class="hljs-string">&quot;zakas&quot;</span>;
-<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(name.<span class="hljs-property">last</span>);                   <span class="hljs-comment">// undefined</span>
-</code></pre>
-</div>
-</div>
-<div class="footnotes">
-<p><sup>1</sup> Primitive wrapper types are <strong>special reference types</strong> for String, Number, and Boolean primitive types that allow to use them as if they were reference values without introducing a new syntax.</p>
-</div>
-<footer>Entwicklung Web-basierter Anwendungen | Einführung in JavaScript | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences</footer>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="7" data-paginate="true" data-footer="Entwicklung Web-basierter Anwendungen | Einführung in JavaScript | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-header="Primitive Types" data-theme="custom-theme-roboto" data-marpit-pagination="7" data-marpit-pagination-total="24" style="--paginate:true;--footer:Entwicklung Web-basierter Anwendungen | Einführung in JavaScript | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--header:Primitive Types;--theme:custom-theme-roboto;">
-<header>Primitive Types</header>
 <h1>Global Scope and Local Scope</h1>
 <div class="columns">
 <div class="single">
@@ -546,8 +411,8 @@ name.<span class="hljs-property">last</span> = <span class="hljs-string">&quot;z
 </div>
 <footer>Entwicklung Web-basierter Anwendungen | Einführung in JavaScript | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="8" data-paginate="true" data-footer="Entwicklung Web-basierter Anwendungen | Einführung in JavaScript | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-header="Primitive Types" data-theme="custom-theme-roboto" data-marpit-pagination="8" data-marpit-pagination-total="24" style="--paginate:true;--footer:Entwicklung Web-basierter Anwendungen | Einführung in JavaScript | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--header:Primitive Types;--theme:custom-theme-roboto;">
-<header>Primitive Types</header>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="5" data-paginate="true" data-footer="Entwicklung Web-basierter Anwendungen | Einführung in JavaScript | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-header="Foundational Concepts" data-theme="custom-theme-roboto" data-marpit-pagination="5" data-marpit-pagination-total="24" style="--paginate:true;--footer:Entwicklung Web-basierter Anwendungen | Einführung in JavaScript | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--header:Foundational Concepts;--theme:custom-theme-roboto;">
+<header>Foundational Concepts</header>
 <h2>Declaring Variables using <code>let</code>, <code>var</code>, and <code>const</code></h2>
 <div class="centercontent columns small">
 <div class="single">
@@ -616,28 +481,10 @@ name.<span class="hljs-property">last</span> = <span class="hljs-string">&quot;z
 </div>
 <footer>Entwicklung Web-basierter Anwendungen | Einführung in JavaScript | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="9" data-paginate="true" data-footer="Entwicklung Web-basierter Anwendungen | Einführung in JavaScript | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-header="Primitive Types" data-theme="custom-theme-roboto" data-marpit-pagination="9" data-marpit-pagination-total="24" style="--paginate:true;--footer:Entwicklung Web-basierter Anwendungen | Einführung in JavaScript | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--header:Primitive Types;--theme:custom-theme-roboto;">
-<header>Primitive Types</header>
-<h2>Experimental: Declaring Variables using <code>let</code>, <code>var</code>, and <code>const</code></h2>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="6" data-paginate="true" data-footer="Entwicklung Web-basierter Anwendungen | Einführung in JavaScript | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-header="Foundational Concepts" data-theme="custom-theme-roboto" data-marpit-pagination="6" data-marpit-pagination-total="24" style="--paginate:true;--footer:Entwicklung Web-basierter Anwendungen | Einführung in JavaScript | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--header:Foundational Concepts;--theme:custom-theme-roboto;">
+<header>Foundational Concepts</header>
+<h2>Declaring Variables and Constants using <code>let</code> and <code>const</code></h2>
 <div class="small grid3col widthauto vertical-align-top horizontal-left">
-<div class="redbox">
-<p><strong>Var</strong></p>
-</div>
-<ul>
-<li><code>var</code> declares a variable in a <em>global scope</em></li>
-<li>Variable is always <mark>hoisted</mark> to the scope's <em>top</em> (e.g. function in which <code>var</code> is used.)</li>
-<li>Usage might result in unwanted side-effects; <span class="red">should not be used</span></li>
-</ul>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-js"><span class="hljs-keyword">function</span> <span class="hljs-title function_">getValue</span>(<span class="hljs-params">condition</span>) {
-  <span class="hljs-keyword">if</span> (condition) {
-    value  = <span class="hljs-string">&quot;green&quot;</span>;
-    <span class="hljs-comment">// hoisted to top of the function</span>
-    <span class="hljs-keyword">var</span> value 
-  } 
-  <span class="hljs-comment">// value should not exist here</span>
-  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(value); <span class="hljs-comment">// displays &#x27;green&#x27;</span>
-}
-</code></pre>
 <p><span class="greenbox"><strong>Let</strong></span></p>
 <ul>
 <li>Introduced with <span class="red">ES2015</span> {.red}(ES6) and <span class="redbox">preferred</span> notion</li>
@@ -662,11 +509,27 @@ name.<span class="hljs-property">last</span> = <span class="hljs-string">&quot;z
 }
 <span class="hljs-comment">// maxItems isn&#x27;t accessible here</span>
 </code></pre>
+<p><strong class="redbox">Var</strong></p>
+<ul>
+<li><code>var</code> declares a variable in a <em>global scope</em></li>
+<li>Variable is always <mark>hoisted</mark> to the scope's <em>top</em> (e.g. function in which <code>var</code> is used.)</li>
+<li>Usage might result in unwanted side-effects; <span class="red">should not be used</span></li>
+</ul>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-js"><span class="hljs-keyword">function</span> <span class="hljs-title function_">getValue</span>(<span class="hljs-params">condition</span>) {
+  <span class="hljs-keyword">if</span> (condition) {
+    value  = <span class="hljs-string">&quot;green&quot;</span>;
+    <span class="hljs-comment">// hoisted to top of the function</span>
+    <span class="hljs-keyword">var</span> value 
+  } 
+  <span class="hljs-comment">// value should not exist here</span>
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(value); <span class="hljs-comment">// displays &#x27;green&#x27;</span>
+}
+</code></pre>
 </div>
 <footer>Entwicklung Web-basierter Anwendungen | Einführung in JavaScript | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="10" data-paginate="true" data-footer="Entwicklung Web-basierter Anwendungen | Einführung in JavaScript | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-header="Primitive Types" data-theme="custom-theme-roboto" data-marpit-pagination="10" data-marpit-pagination-total="24" style="--paginate:true;--footer:Entwicklung Web-basierter Anwendungen | Einführung in JavaScript | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--header:Primitive Types;--theme:custom-theme-roboto;">
-<header>Primitive Types</header>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="7" data-paginate="true" data-footer="Entwicklung Web-basierter Anwendungen | Einführung in JavaScript | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-header="Foundational Concepts" data-theme="custom-theme-roboto" data-marpit-pagination="7" data-marpit-pagination-total="24" style="--paginate:true;--footer:Entwicklung Web-basierter Anwendungen | Einführung in JavaScript | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--header:Foundational Concepts;--theme:custom-theme-roboto;">
+<header>Foundational Concepts</header>
 <h1>Comparisons</h1>
 <ul>
 <li><code>===</code> Comparison without coercing the variables to another type</li>
@@ -693,6 +556,144 @@ name.<span class="hljs-property">last</span> = <span class="hljs-string">&quot;z
 </div>
 <footer>Entwicklung Web-basierter Anwendungen | Einführung in JavaScript | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences</footer>
 </section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="8" data-paginate="true" data-footer="Entwicklung Web-basierter Anwendungen | Einführung in JavaScript | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-header="Foundational Concepts" data-theme="custom-theme-roboto" data-marpit-pagination="8" data-marpit-pagination-total="24" style="--paginate:true;--footer:Entwicklung Web-basierter Anwendungen | Einführung in JavaScript | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--header:Foundational Concepts;--theme:custom-theme-roboto;">
+<header>Foundational Concepts</header>
+<h2>JavaScript employs two Types of Datatypes</h2>
+
+<div class="columns">
+<div class="single">
+<div class="task">
+<div class="centerbox center Big">
+<p><strong>Primitive Types</strong></p>
+</div>
+<ul>
+<li>Primitive types are stored as <strong>simple data types</strong>
+<ul>
+<li>ie., the variable object holds the actual value</li>
+</ul>
+</li>
+<li>JS has 5 primitive types
+<ul>
+<li><strong>Boolean</strong> – true or false</li>
+<li><strong>Number</strong> – integer or floating point number</li>
+<li><strong>String</strong> – character or sequence of characters</li>
+<li><strong>Null</strong> – a primitive type with only one value <code>null</code></li>
+<li><strong>Undefined</strong> – value assigned to unitialized variables</li>
+</ul>
+</li>
+<li>Primitive types <code>Boolean</code>, <code>Number</code>, and <code>String</code> are treated as reference types to make the language more consistent</li>
+<li>All primitive types have literal value representations</li>
+</ul>
+</div>
+</div>
+<div class="single">
+<div class="bluebox">
+<div class="centerbox center Big">
+<p><strong>Objects</strong></p>
+</div>
+
+<ul>
+<li>Objects are the main building blocks of JavaScript</li>
+<li>Objects are extremely <strong>flexible</strong> and <strong>powerful</strong>
+<ul>
+<li>Since JavaScript has no formal concept of classes, objects resemble the role of both <strong>types</strong> and <strong>instances</strong></li>
+<li>Even functions are objects</li>
+</ul>
+</li>
+<li>Objects in JavaScript exist as both <strong>reference types</strong> and <strong>reference values</strong></li>
+<li>The <strong>role</strong> objects play depends on their usage
+<ul>
+<li>an object in <em>literal form</em> serves as instance</li>
+<li>an object used as <em>constructor</em> makes it a <em>reference type</em> and resembles the class-concept of OO languages</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="centerbox redbox skip">
+<p>Each variable in JavaScript is associated with a specific primitive or reference type</p>
+</div>
+<footer>Entwicklung Web-basierter Anwendungen | Einführung in JavaScript | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="9" data-paginate="true" data-footer="Entwicklung Web-basierter Anwendungen | Einführung in JavaScript | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-header="Primitive Types" data-theme="custom-theme-roboto" data-marpit-pagination="9" data-marpit-pagination-total="24" style="--paginate:true;--footer:Entwicklung Web-basierter Anwendungen | Einführung in JavaScript | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--header:Primitive Types;--theme:custom-theme-roboto;">
+<header>Primitive Types</header>
+
+<h1>Working with Primitive Types</h1>
+<div class="columns">
+<div class="single">
+<p><strong>A) Defining Primitive Types</strong></p>
+<ul>
+<li>A variable holding a primitive directly contains the primitive value</li>
+<li>Values are represented as literals and stored directly in the variable object</li>
+</ul>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-js"><span class="hljs-keyword">let</span> color1 = <span class="hljs-string">&quot;red&quot;</span>; 
+<span class="hljs-keyword">let</span> color2 = color1;
+
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(color1); <span class="hljs-comment">// red</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(color2); <span class="hljs-comment">// red</span>
+
+color1 = <span class="hljs-string">&quot;blue&quot;</span>; 
+
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(color1); <span class="hljs-comment">// blue</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(color2); <span class="hljs-comment">// red</span>
+</code></pre>
+</div>
+<div class="single">
+<p><strong>B) Identifying Primitive Types</strong></p>
+<ul>
+<li>The <code>typeof</code> operator identifies a primitive type</li>
+<li>It returns the type in form of a string</li>
+</ul>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-js"><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-keyword">typeof</span> <span class="hljs-string">&quot;Nicholas&quot;</span>); <span class="hljs-comment">// &quot;string&quot;</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-keyword">typeof</span> <span class="hljs-number">10</span>);         <span class="hljs-comment">// &quot;number&quot;</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-keyword">typeof</span> <span class="hljs-number">5.1</span>);        <span class="hljs-comment">// &quot;number&quot;</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-keyword">typeof</span> <span class="hljs-literal">true</span>);       <span class="hljs-comment">// &quot;boolean&quot; </span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-keyword">typeof</span> <span class="hljs-literal">undefined</span>);  <span class="hljs-comment">// &quot;undefined&quot;</span>
+</code></pre>
+</div>
+</div>
+<footer>Entwicklung Web-basierter Anwendungen | Einführung in JavaScript | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="10" data-paginate="true" data-footer="Entwicklung Web-basierter Anwendungen | Einführung in JavaScript | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-header="Primitive Types" data-theme="custom-theme-roboto" data-marpit-pagination="10" data-marpit-pagination-total="24" style="--paginate:true;--footer:Entwicklung Web-basierter Anwendungen | Einführung in JavaScript | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--header:Primitive Types;--theme:custom-theme-roboto;">
+<header>Primitive Types</header>
+<h1>Primitive Wrapper Types</h1>
+<div class="columns">
+<div class="double">
+<p>The primitive types</p>
+<ul>
+<li><code>String</code></li>
+<li><code>Number</code></li>
+<li><code>Boolean</code></li>
+</ul>
+<p>have <strong>primitive wrapper types</strong><sup>1</sup> that allow them to be used like objects.</p>
+<p>Primitive wrapper types are <em>special reference types</em> that are automatically created whenever one of the tree types are read.</p>
+<p>This proces is called <mark>autoboxing</mark>.</p>
+</div>
+<div class="triple">
+<p>Examples</p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-js"><span class="hljs-keyword">let</span> name = <span class="hljs-string">&quot;Nicholas&quot;</span>;
+<span class="hljs-keyword">let</span> lowercaseName = name.<span class="hljs-title function_">toLowerCase</span>();   <span class="hljs-comment">// convert to lowercase</span>
+<span class="hljs-keyword">let</span> firstLetter = name.<span class="hljs-title function_">charAt</span>(<span class="hljs-number">0</span>);         <span class="hljs-comment">// get first character</span>
+<span class="hljs-keyword">let</span> middleOfName = name.<span class="hljs-title function_">substring</span>(<span class="hljs-number">2</span>, <span class="hljs-number">5</span>);  <span class="hljs-comment">// get characters 2-4</span>
+
+<span class="hljs-keyword">let</span> count = <span class="hljs-number">10</span>;
+<span class="hljs-keyword">let</span> fixedCount = count.<span class="hljs-title function_">toFixed</span>(<span class="hljs-number">2</span>);        <span class="hljs-comment">// convert to &quot;10.00&quot;</span>
+<span class="hljs-keyword">let</span> hexCount = count.<span class="hljs-title function_">toString</span>(<span class="hljs-number">16</span>);        <span class="hljs-comment">// convert to &quot;a&quot;</span>
+
+<span class="hljs-keyword">let</span> flag = <span class="hljs-literal">true</span>;
+<span class="hljs-keyword">let</span> stringFlag = flag.<span class="hljs-title function_">toString</span>();         <span class="hljs-comment">// convert to &quot;true&quot;</span>
+
+name.<span class="hljs-property">last</span> = <span class="hljs-string">&quot;zakas&quot;</span>;
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(name.<span class="hljs-property">last</span>);                   <span class="hljs-comment">// undefined</span>
+</code></pre>
+</div>
+</div>
+<div class="footnotes">
+<p><sup>1</sup> Primitive wrapper types are <strong>special reference types</strong> for String, Number, and Boolean primitive types that allow to use them as if they were reference values without introducing a new syntax.</p>
+</div>
+<footer>Entwicklung Web-basierter Anwendungen | Einführung in JavaScript | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences</footer>
+</section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="11" data-paginate="true" data-footer="Entwicklung Web-basierter Anwendungen | Einführung in JavaScript | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-header="Reference Types" data-theme="custom-theme-roboto" data-marpit-pagination="11" data-marpit-pagination-total="24" style="--paginate:true;--footer:Entwicklung Web-basierter Anwendungen | Einführung in JavaScript | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--header:Reference Types;--theme:custom-theme-roboto;">
 <header>Reference Types</header>
 
@@ -705,11 +706,9 @@ name.<span class="hljs-property">last</span> = <span class="hljs-string">&quot;z
 <div class="columns-center">
 <div class="quad">
 <ul>
-<li>Objects in JavaScript exist as both <strong>reference types</strong> and <strong>reference values</strong></li>
-<li>The <strong>role</strong> objects play depends on their usage
+<li>Reference types are stored as <strong>objects</strong>
 <ul>
-<li>an object in <em>literal form</em> serves as instance</li>
-<li>an object used as <em>constructor</em> serves as reference type and resembles the class-concept of OO languages</li>
+<li>i.e., the variable object holds a reference to the memory location where the actual object data are stored</li>
 </ul>
 </li>
 <li>Reference types can be specified in different notations
@@ -718,16 +717,9 @@ name.<span class="hljs-property">last</span> = <span class="hljs-string">&quot;z
 <li><strong>Constructor Function</strong>: the reference type serves as <em>blueprint</em> for other reference values of the same type</li>
 </ul>
 </li>
-</ul>
-
-<ul>
-<li>Objects in JavaScript consists of an <strong>unordered list of properties</strong></li>
-<li><strong>Properties</strong> are <em>key-value pairs</em> where
-<ul>
-<li>the <strong>key</strong> is always a string and serves as name for the value</li>
-<li>the <strong>value</strong> can hold any kind of primitive or reference value</li>
-</ul>
-</li>
+<li>Reference types serve as <strong>blueprints</strong> for reference values</li>
+<li>Reference values are <strong>instances</strong> of reference types</li>
+<li>JavaScript contains a set of built-in reference types such as <code>Array</code>, <code>Date</code>, <code>Error</code>, <code>Function</code>, <code>RegExp</code></li>
 </ul>
 </div>
 <div class="single">
@@ -982,6 +974,13 @@ points.<span class="hljs-title function_">push</span>(<span class="hljs-number">
 <h1>Properties</h1>
 <ul>
 <li>Properties are the main building blocks of objects</li>
+<li>Objects consists of an <strong>unordered list</strong> of <strong>properties</strong></li>
+<li><strong>Properties</strong> are <em>key-value pairs</em> where
+<ul>
+<li>the <strong>key</strong> is always a string and serves as name for the value</li>
+<li>the <strong>value</strong> can hold any kind of primitive or reference value</li>
+</ul>
+</li>
 <li>Objects can thus be perceived as <strong>hash tables</strong>
 <ul>
 <li>The <em>values</em> of their properties can be accessed in an <em>associative form</em> through their <em>keys</em>.</li>
@@ -1261,7 +1260,7 @@ person1[key] = <span class="hljs-string">&quot;82&quot;</span>;
 <footer>Entwicklung Web-basierter Anwendungen | Einführung in JavaScript | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences</footer>
 </section>
 <script>!function(){"use strict";const t={h1:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"1"},style:"display: block; font-size: 2em; margin-block-start: 0.67em; margin-block-end: 0.67em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h2:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"2"},style:"display: block; font-size: 1.5em; margin-block-start: 0.83em; margin-block-end: 0.83em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h3:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"3"},style:"display: block; font-size: 1.17em; margin-block-start: 1em; margin-block-end: 1em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h4:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"4"},style:"display: block; margin-block-start: 1.33em; margin-block-end: 1.33em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h5:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"5"},style:"display: block; font-size: 0.83em; margin-block-start: 1.67em; margin-block-end: 1.67em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h6:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"6"},style:"display: block; font-size: 0.67em; margin-block-start: 2.33em; margin-block-end: 2.33em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},span:{proto:()=>HTMLSpanElement},pre:{proto:()=>HTMLElement,style:"display: block; font-family: monospace; white-space: pre; margin: 1em 0; --marp-auto-scaling-white-space: pre;"}},e="data-marp-auto-scaling-wrapper",i="data-marp-auto-scaling-svg",n="data-marp-auto-scaling-container";class o extends HTMLElement{constructor(){super(),this.svgPreserveAspectRatio="xMinYMid meet";const t=t=>([e])=>{const{width:i,height:n}=e.contentRect;this[t]={width:i,height:n},this.updateSVGRect()};this.attachShadow({mode:"open"}),this.containerObserver=new ResizeObserver(t("containerSize")),this.wrapperObserver=new ResizeObserver(t("wrapperSize"))}static get observedAttributes(){return["data-downscale-only"]}connectedCallback(){var t,o,s,r,a;this.shadowRoot.innerHTML=`\n<style>\n  svg[${i}] { display: block; width: 100%; height: auto; vertical-align: top; }\n  span[${n}] { display: table; white-space: var(--marp-auto-scaling-white-space, nowrap); width: max-content; }\n</style>\n<div ${e}>\n  <svg part="svg" ${i}>\n    <foreignObject><span ${n}><slot></slot></span></foreignObject>\n  </svg>\n</div>\n    `.split(/\n\s*/).join(""),this.wrapper=null!==(t=this.shadowRoot.querySelector(`div[${e}]`))&&void 0!==t?t:void 0;const l=this.svg;this.svg=null!==(s=null===(o=this.wrapper)||void 0===o?void 0:o.querySelector(`svg[${i}]`))&&void 0!==s?s:void 0,this.svg!==l&&(this.svgComputedStyle=this.svg?window.getComputedStyle(this.svg):void 0),this.container=null!==(a=null===(r=this.svg)||void 0===r?void 0:r.querySelector(`span[${n}]`))&&void 0!==a?a:void 0,this.observe()}disconnectedCallback(){this.svg=void 0,this.svgComputedStyle=void 0,this.wrapper=void 0,this.container=void 0,this.observe()}attributeChangedCallback(){this.observe()}observe(){this.containerObserver.disconnect(),this.wrapperObserver.disconnect(),this.wrapper&&this.wrapperObserver.observe(this.wrapper),this.container&&this.containerObserver.observe(this.container),this.svgComputedStyle&&this.observeSVGStyle(this.svgComputedStyle)}observeSVGStyle(t){const e=()=>{const i=(()=>{const e=t.getPropertyValue("--preserve-aspect-ratio");if(e)return e.trim();return`x${(({textAlign:t,direction:e})=>{if(t.endsWith("left"))return"Min";if(t.endsWith("right"))return"Max";if("start"===t||"end"===t){let i="rtl"===e;return"end"===t&&(i=!i),i?"Max":"Min"}return"Mid"})(t)}YMid meet`})();i!==this.svgPreserveAspectRatio&&(this.svgPreserveAspectRatio=i,this.updateSVGRect()),t===this.svgComputedStyle&&requestAnimationFrame(e)};e()}updateSVGRect(){var t,e,i,n,o,s,r;let a=Math.ceil(null!==(e=null===(t=this.containerSize)||void 0===t?void 0:t.width)&&void 0!==e?e:0);const l=Math.ceil(null!==(n=null===(i=this.containerSize)||void 0===i?void 0:i.height)&&void 0!==n?n:0);void 0!==this.dataset.downscaleOnly&&(a=Math.max(a,null!==(s=null===(o=this.wrapperSize)||void 0===o?void 0:o.width)&&void 0!==s?s:0));const c=null===(r=this.svg)||void 0===r?void 0:r.querySelector(":scope > foreignObject");if(null==c||c.setAttribute("width",`${a}`),null==c||c.setAttribute("height",`${l}`),this.svg&&(this.svg.setAttribute("viewBox",`0 0 ${a} ${l}`),this.svg.setAttribute("preserveAspectRatio",this.svgPreserveAspectRatio),this.svg.style.height=a<=0||l<=0?"0":""),this.container){const t=this.svgPreserveAspectRatio.toLowerCase();this.container.style.marginLeft=t.startsWith("xmid")||t.startsWith("xmax")?"auto":"0",this.container.style.marginRight=t.startsWith("xmi")?"auto":"0"}}}const s=(t,{attrs:e={},style:i})=>class extends t{constructor(...t){super(...t);for(const[t,i]of Object.entries(e))this.hasAttribute(t)||this.setAttribute(t,i);this.attachShadow({mode:"open"})}static get observedAttributes(){return["data-auto-scaling"]}connectedCallback(){this._update()}attributeChangedCallback(){this._update()}_update(){const t=i?`<style>:host { ${i} }</style>`:"";let e="<slot></slot>";const{autoScaling:n}=this.dataset;if(void 0!==n){e=`<marp-auto-scaling exportparts="svg:auto-scaling" ${"downscale-only"===n?"data-downscale-only":""}>${e}</marp-auto-scaling>`}this.shadowRoot.innerHTML=t+e}};let r;const a=Symbol(),l="marpitSVGPolyfill:setZoomFactor,",c=Symbol();let d,p;function g(t){const e="object"==typeof t&&t.target||document,i="object"==typeof t?t.zoom:t;window[c]||(Object.defineProperty(window,c,{configurable:!0,value:!0}),window.addEventListener("message",(({data:t,origin:e})=>{if(e===window.origin)try{if(t&&"string"==typeof t&&t.startsWith(l)){const[,e]=t.split(","),i=Number.parseFloat(e);Number.isNaN(i)||(p=i)}}catch(t){console.error(t)}})));let n=!1;Array.from(e.querySelectorAll("svg[data-marpit-svg]"),(t=>{var e,o,s,r;t.style.transform||(t.style.transform="translateZ(0)");const a=i||p||t.currentScale||1;d!==a&&(d=a,n=a);const l=t.getBoundingClientRect(),{length:c}=t.children;for(let i=0;i<c;i+=1){const n=t.children[i];if(n.getScreenCTM){const t=n.getScreenCTM();if(t){const i=null!==(o=null===(e=n.x)||void 0===e?void 0:e.baseVal.value)&&void 0!==o?o:0,c=null!==(r=null===(s=n.y)||void 0===s?void 0:s.baseVal.value)&&void 0!==r?r:0,d=n.children.length;for(let e=0;e<d;e+=1){const o=n.children[e];if("SECTION"===o.tagName){const{style:e}=o;e.transformOrigin||(e.transformOrigin=`${-i}px ${-c}px`),e.transform=`scale(${a}) matrix(${t.a}, ${t.b}, ${t.c}, ${t.d}, ${t.e-l.left}, ${t.f-l.top}) translateZ(0.0001px)`;break}}}}}})),!1!==n&&Array.from(e.querySelectorAll("iframe"),(({contentWindow:t})=>{null==t||t.postMessage(`${l}${n}`,"null"===window.origin?"*":window.origin)}))}function h({once:t=!1,target:e=document}={}){const i="Apple Computer, Inc."===navigator.vendor?[g]:[];let n=!t;const o=()=>{for(const t of i)t({target:e});n&&window.requestAnimationFrame(o)};return o(),()=>{n=!1}}d=1,p=void 0;const m=Symbol(),v=(e=document)=>{if("undefined"==typeof window)throw new Error("Marp Core's browser script is valid only in browser context.");if(((e=document)=>{const i=window[a];i||customElements.define("marp-auto-scaling",o);for(const n of Object.keys(t)){const o=`marp-${n}`,a=t[n].proto();null!=r||(r=!!document.createElement("div",{is:"marp-auto-scaling"}).outerHTML.startsWith("<div is")),r&&a!==HTMLElement?i||customElements.define(o,s(a,{style:t[n].style}),{extends:n}):(i||customElements.define(o,s(HTMLElement,t[n])),e.querySelectorAll(`${n}[is="${o}"]`).forEach((t=>{t.outerHTML=t.outerHTML.replace(new RegExp(`^<${n}`,"i"),`<${o}`).replace(new RegExp(`</${n}>$`,"i"),`</${o}>`)})))}window[a]=!0})(e),e[m])return e[m];const i=h({target:e}),n=()=>{i(),delete e[m]},l=Object.assign(n,{cleanup:n,update:()=>v(e)});return Object.defineProperty(e,m,{configurable:!0,value:l}),l},u=document.currentScript;v(u?u.getRootNode():document)}();
-</script></foreignObject></svg></div><div class="bespoke-marp-note" data-index="0" tabindex="0"><p>marp --engine ./engine.js --watch --theme-set custom-theme-roboto.css -- --allow-local-files js_intro.md</p><p>marp --pdf --allow-local-files --engine ./engine.js --theme-set custom-theme-roboto.css -- js_intro.md</p></div><div class="bespoke-marp-note" data-index="2" tabindex="0"><p>- before you can do anything in OO, you need to create a class</p></div><div class="bespoke-marp-note" data-index="3" tabindex="0"><p>JS employs two primary data types</p><p>- **Identification**: `typeof` returns type as `string`</p><p>- Reference types and reference values are objects in JS</p><p>- **Identification**: `instanceof` returns `true|false`</p></div><div class="bespoke-marp-note" data-index="11" tabindex="0"><p>- Reference types and reference values are objects in JS</p><p>- Instances of reference types are called **reference values**</p></div><div class="bespoke-marp-note" data-index="12" tabindex="0"><p>- A literal allows to define a reference value without explicitly creating an object using the `new` operator and the object's constructor</p><p>---
+</script></foreignObject></svg></div><div class="bespoke-marp-note" data-index="0" tabindex="0"><p>marp --engine ./engine.js --watch --theme-set custom-theme-roboto.css -- --allow-local-files js_intro.md</p><p>marp --pdf --allow-local-files --engine ./engine.js --theme-set custom-theme-roboto.css -- js_intro.md</p></div><div class="bespoke-marp-note" data-index="2" tabindex="0"><p>- before you can do anything in OO, you need to create a class</p></div><div class="bespoke-marp-note" data-index="7" tabindex="0"><p>JS employs two primary data types</p><p>- **Identification**: `typeof` returns type as `string`</p><p>- Reference types and reference values are objects in JS</p><p>- Reference types and reference values are objects in JS</p><p>- **Identification**: `instanceof` returns `true|false`</p></div><div class="bespoke-marp-note" data-index="12" tabindex="0"><p>- A literal allows to define a reference value without explicitly creating an object using the `new` operator and the object's constructor</p><p>---
 # Adding and Removing Properties
 
 Properties are name/value-pairs stored on an object

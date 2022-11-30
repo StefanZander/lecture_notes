@@ -93,140 +93,6 @@ So, working with and understanding objects is key to understanding JavaScript as
 :::
 
 
---- 
-# JavaScript employs two Types of Datatypes
-
-<!-- JS employs two primary data types -->
-
-:::::: columns
-::::: single
-:::: task
-::: centerbox center Big
-**Primitive Types**
-:::
-
-- Primitive types are stored as **simple data types**
-  - ie., the variable object holds the actual value
-- JS has 5 primitive types
-  - **Boolean** – true or false
-  - **Number** – integer or floating point number
-  - **String** – character or sequence of characters
-  - **Null** – a primitive type with only one value `null`
-  - **Undefined** – value assigned to unitialized variables
-- Primitive types `Boolean`, `Number`, and `String` are treated as reference types to make the language more consistent
-- All primitive types have literal value representations
-<!-- - **Identification**: `typeof` returns type as `string` -->
-::::
-:::::
-::::: single
-:::: bluebox
-::: centerbox center Big
-**Reference Types**
-:::
-- Reference types are stored as **objects** 
-  - i.e., the variable object holds a reference to the memory location where the actual object data are stored
-- Objects are the main building blocks of JavaScript
-- Objects are extremely **flexible** and **powerful**
-  - Since JavaScript has no formal concept of classes, objects resemble the role of both **types** and **instances**
-- Reference types serve as **blueprints** for reference values
-- Reference values are **instances** of reference types
-- JavaScript contains a set of built-in reference types such as `Array`, `Date`, `Error`, `Function`, `RegExp`
-<!-- - Reference types and reference values are objects in JS -->
-<!-- - **Identification**: `instanceof` returns `true|false` -->
-::::
-:::::
-::::::
-
-::: centerbox redbox skip
-Each variable in JavaScript is associated with a specific primitive or reference type
-:::
-
-
-
----
-<!-- header: Primitive Types -->
-# Working with Primitive Types
-
-::::: columns
-:::: single
-**A) Defining Primitive Types** 
-
-- A variable holding a primitive directly contains the primitive value
-- Values are represented as literals and stored directly in the variable object
-
-```js
-let color1 = "red"; 
-let color2 = color1;
-
-console.log(color1); // red
-console.log(color2); // red
-
-color1 = "blue"; 
-
-console.log(color1); // blue
-console.log(color2); // red
-```
-::::
-:::: single
-**B) Identifying Primitive Types**
-
-- The `typeof` operator identifies a primitive type
-- It returns the type in form of a string
-
-```js
-console.log(typeof "Nicholas"); // "string"
-console.log(typeof 10);         // "number"
-console.log(typeof 5.1);        // "number"
-console.log(typeof true);       // "boolean" 
-console.log(typeof undefined);  // "undefined"
-```
-::::
-:::::
-
-
-
----
-# Primitive Wrapper Types
-
-::::: columns
-::::double
-The primitive types 
-- `String`
-- `Number`
-- `Boolean`
-
-have **primitive wrapper types**^1^ that allow them to be used like objects.
-
-Primitive wrapper types are *special reference types* that are automatically created whenever one of the tree types are read. 
-
-This proces is called ==autoboxing==.
-::::
-:::: triple
-Examples
-```js
-let name = "Nicholas";
-let lowercaseName = name.toLowerCase();   // convert to lowercase
-let firstLetter = name.charAt(0);         // get first character
-let middleOfName = name.substring(2, 5);  // get characters 2-4
-
-let count = 10;
-let fixedCount = count.toFixed(2);        // convert to "10.00"
-let hexCount = count.toString(16);        // convert to "a"
-
-let flag = true;
-let stringFlag = flag.toString();         // convert to "true"
-
-name.last = "zakas";
-console.log(name.last);                   // undefined
-``` 
-::::
-:::::
-
-::: footnotes
-^1^ Primitive wrapper types are **special reference types** for String, Number, and Boolean primitive types that allow to use them as if they were reference values without introducing a new syntax.
-:::
-
-
 
 ---
 # Global Scope and Local Scope
@@ -366,30 +232,10 @@ if (condition) {
 
 
 ---
-## Experimental: Declaring Variables using `let`, `var`, and `const`
+## Declaring Variables and Constants using `let` and `const`
 
 
 :::: small grid3col widthauto vertical-align-top horizontal-left
-::: redbox
-**Var**
-:::
-
-- `var` declares a variable in a _global scope_
-- Variable is always ==hoisted== to the scope's _top_ (e.g. function in which `var` is used.)
-- Usage might result in unwanted side-effects; [should not be used]{.red}
-
-```js
-function getValue(condition) {
-  if (condition) {
-    value  = "green";
-    // hoisted to top of the function
-    var value 
-  } 
-  // value should not exist here
-  console.log(value); // displays 'green'
-}
-```
-
 [**Let**]{.greenbox}
 
 
@@ -420,9 +266,25 @@ if (condition) {
 // maxItems isn't accessible here
 ```
 
+
+**Var**{.redbox}
+
+- `var` declares a variable in a _global scope_
+- Variable is always ==hoisted== to the scope's _top_ (e.g. function in which `var` is used.)
+- Usage might result in unwanted side-effects; [should not be used]{.red}
+
+```js
+function getValue(condition) {
+  if (condition) {
+    value  = "green";
+    // hoisted to top of the function
+    var value 
+  } 
+  // value should not exist here
+  console.log(value); // displays 'green'
+}
+```
 ::::
-
-
 
 
 
@@ -452,6 +314,148 @@ Equality of Primitives and Objects
 ::::
 :::::
 
+
+
+
+--- 
+## JavaScript employs two Types of Datatypes
+
+<!-- JS employs two primary data types -->
+
+:::::: columns
+::::: single
+:::: task
+::: centerbox center Big
+**Primitive Types**
+:::
+
+- Primitive types are stored as **simple data types**
+  - ie., the variable object holds the actual value
+- JS has 5 primitive types
+  - **Boolean** – true or false
+  - **Number** – integer or floating point number
+  - **String** – character or sequence of characters
+  - **Null** – a primitive type with only one value `null`
+  - **Undefined** – value assigned to unitialized variables
+- Primitive types `Boolean`, `Number`, and `String` are treated as reference types to make the language more consistent
+- All primitive types have literal value representations
+<!-- - **Identification**: `typeof` returns type as `string` -->
+::::
+:::::
+::::: single
+:::: bluebox
+::: centerbox center Big
+**Objects**
+:::
+<!-- - Reference types and reference values are objects in JS -->
+- Objects are the main building blocks of JavaScript
+- Objects are extremely **flexible** and **powerful**
+  - Since JavaScript has no formal concept of classes, objects resemble the role of both **types** and **instances**
+  - Even functions are objects
+- Objects in JavaScript exist as both **reference types** and **reference values**
+- The **role** objects play depends on their usage
+  - an object in _literal form_ serves as instance 
+  - an object used as _constructor_ makes it a _reference type_ and resembles the class-concept of OO languages
+
+<!-- - Reference types and reference values are objects in JS -->
+<!-- - **Identification**: `instanceof` returns `true|false` -->
+::::
+:::::
+::::::
+
+::: centerbox redbox skip
+Each variable in JavaScript is associated with a specific primitive or reference type
+:::
+
+
+
+---
+<!-- header: Primitive Types -->
+# Working with Primitive Types
+
+::::: columns
+:::: single
+**A) Defining Primitive Types** 
+
+- A variable holding a primitive directly contains the primitive value
+- Values are represented as literals and stored directly in the variable object
+
+```js
+let color1 = "red"; 
+let color2 = color1;
+
+console.log(color1); // red
+console.log(color2); // red
+
+color1 = "blue"; 
+
+console.log(color1); // blue
+console.log(color2); // red
+```
+::::
+:::: single
+**B) Identifying Primitive Types**
+
+- The `typeof` operator identifies a primitive type
+- It returns the type in form of a string
+
+```js
+console.log(typeof "Nicholas"); // "string"
+console.log(typeof 10);         // "number"
+console.log(typeof 5.1);        // "number"
+console.log(typeof true);       // "boolean" 
+console.log(typeof undefined);  // "undefined"
+```
+::::
+:::::
+
+
+
+---
+# Primitive Wrapper Types
+
+::::: columns
+::::double
+The primitive types 
+- `String`
+- `Number`
+- `Boolean`
+
+have **primitive wrapper types**^1^ that allow them to be used like objects.
+
+Primitive wrapper types are *special reference types* that are automatically created whenever one of the tree types are read. 
+
+This proces is called ==autoboxing==.
+::::
+:::: triple
+Examples
+```js
+let name = "Nicholas";
+let lowercaseName = name.toLowerCase();   // convert to lowercase
+let firstLetter = name.charAt(0);         // get first character
+let middleOfName = name.substring(2, 5);  // get characters 2-4
+
+let count = 10;
+let fixedCount = count.toFixed(2);        // convert to "10.00"
+let hexCount = count.toString(16);        // convert to "a"
+
+let flag = true;
+let stringFlag = flag.toString();         // convert to "true"
+
+name.last = "zakas";
+console.log(name.last);                   // undefined
+``` 
+::::
+:::::
+
+::: footnotes
+^1^ Primitive wrapper types are **special reference types** for String, Number, and Boolean primitive types that allow to use them as if they were reference values without introducing a new syntax.
+:::
+
+
+
+
+
 ---
 <!-- header: Reference Types -->
 # Reference Types and Reference Values
@@ -462,19 +466,14 @@ Equality of Primitives and Objects
 
 ::::: columns-center
 :::: quad
-<!-- - Reference types and reference values are objects in JS -->
-- Objects in JavaScript exist as both **reference types** and **reference values**
-- The **role** objects play depends on their usage
-  - an object in _literal form_ serves as instance 
-  - an object used as _constructor_ serves as reference type and resembles the class-concept of OO languages
+- Reference types are stored as **objects** 
+  - i.e., the variable object holds a reference to the memory location where the actual object data are stored
 - Reference types can be specified in different notations
   - **Literal Form**: used to define a reference value, ie., instance of a reference type
   - **Constructor Function**: the reference type serves as *blueprint* for other reference values of the same type
-<!-- - Instances of reference types are called **reference values** -->
-- Objects in JavaScript consists of an **unordered list of properties**
-- **Properties** are *key-value pairs* where
-  - the **key** is always a string and serves as name for the value
-  - the **value** can hold any kind of primitive or reference value
+- Reference types serve as **blueprints** for reference values
+- Reference values are **instances** of reference types
+- JavaScript contains a set of built-in reference types such as `Array`, `Date`, `Error`, `Function`, `RegExp`
 ::::
 :::: single
 ::: bluebox smaller italic
@@ -734,6 +733,10 @@ const a3 = colors.concat(points);
 # Properties
 
 - Properties are the main building blocks of objects
+- Objects consists of an **unordered list** of **properties**
+- **Properties** are *key-value pairs* where
+  - the **key** is always a string and serves as name for the value
+  - the **value** can hold any kind of primitive or reference value
 - Objects can thus be perceived as **hash tables**
   - The *values* of their properties can be accessed in an *associative form* through their *keys*.
 - Property **keys** are represented as string literals
