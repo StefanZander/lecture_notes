@@ -3,6 +3,7 @@ marp: true
 theme: custom-theme-roboto
 paginate: true
 ---
+
 <style>
 /**
  * @theme enable-all-auto-scaling
@@ -11,8 +12,6 @@ paginate: true
 
 /* @import 'default'; */
 /* @import url('user-theme2.css'); */
-
-
 
 </style>
 
@@ -57,11 +56,11 @@ Einführung in JavaScript | Functions  {.lightgreen .Big .skip}
 
 ::::: columns-center skip
 :::: double
-::: blue big
+::: bluebox big
 1. **Assign a function to a variable**
-2. **Add to an object**
+2. **Add a function to an object**
 3. **Pass to other functions as arguments**
-4. **Return them from functions** 
+4. **Return functions from functions** 
 {.nobottommargin}
 :::
 ::::
@@ -74,7 +73,7 @@ $\Rightarrow$ This makes JavaScript functions incredibly powerful!
 
 ::::: columns-bottom
 :::: double
-::: gray smaller
+::: graybox smaller
 **How does this work ?**
 Functions have a **special internal property** called `[[Call]]` that other objects don't have^1^
 - The `[[Call]]` internal property is unique to functions and indicates that the ==object can be executed==
@@ -99,7 +98,7 @@ $\Rightarrow$ Understanding this behavior is central to a good understanding of 
 
 ::::: columns
 :::: single
-::: green
+::: greenbox
 **Declaration** {.Big .center}
 
 ```js
@@ -116,12 +115,12 @@ function add(num1, num2) {
 - Declared functions are named functions
 - Hoisted at the top of the scope^1^ (=context) in which they are defined
 - Used for ...
-  - normal functions
+  - normal named functions that return something
   - **constructor functions** to generate reference values
 :::
 ::::
 :::: single
-::: blue
+::: bluebox
 **Expression** {.Big .center}
 
 ```js
@@ -168,7 +167,7 @@ function add(num1, num2) {
   return num1 + num2;
 }
 ```
-::: center Skip Big green centerbox
+::: center Skip Big greenbox centerbox
 OK
 :::
 ::::
@@ -204,10 +203,11 @@ Error
 :::: single
 - Functions invoked with `new` are called **Constructor Functions**
 - Constructor functions ...
-  - *define* ==reference types==, and 
+  - *define* ==reference types== 
   - *return* a newly created ==reference value==
 - The _default return type_ is the new reference value (=instance of an reference type)
 - The instantiation process can be manipulated by explicitly specifying the _return value_ of a constructor function
+- Constructor function should be named using the _camel-case notation_
 ::::
 :::: single
 <!-- **Example** -->
@@ -324,13 +324,13 @@ Three common notations exists for Self-Invoking Functions^1^
   - no `return` keyword & curly brackets `{}` in single statements
   - no `()` when only one parameter is expected
 - Arrow functions do _not_ have their own `this`
-  - They use `this` from the calling context (ie. surrounding block)
+  - They use `this` from the _calling context_ (ie. surrounding block)
   - They are not well suited for defining object methods
 - Arrow functions are _not hoisted_
   - They must be defined before they are used
-- There is no `arguments` objects in arrow functions
+- There is no `arguments` object in arrow functions
 
-::: gray smaller 
+::: graybox smaller 
 **Please note**
 Return and the curly brackets can only be omitted if the function is a single statement. Because of this, it might be a good habit to always keep them.
 :::
@@ -428,11 +428,11 @@ window.onload = init;
 ---
 # Adding a Function to an Object
 
-::::: columns
+::::: columns 
 :::: single
 **Methods: Executable Property Values**
 
-- A property value of type `Function` makes the property a **method**.
+- A property value of type `function` makes the property a **method**.
 - Methods are treated the same way as properties except for they can be *executed* (i.e., their value is calculated).
 
   ```js
@@ -445,7 +445,7 @@ window.onload = init;
 
   person.sayName();   // outputs "Nicholas"
   ```
-  ::: small green noborder
+  ::: small greenbox 
   **Think about**  
   What is the difference between `person.name` and `this.name` ? 
   :::
@@ -485,7 +485,7 @@ sayNameForAll();    // outputs "Michael"
 
 
 ---
-# Passing Functions to other Functions as Arguments
+## Passing Functions to other Functions as Arguments
 
 
 ::::: columns
@@ -598,11 +598,47 @@ console.log(sum(50));           // 50
 console.log(sum());             // 0
 ```
 ::::
-:::: single
-::: blue
+:::: single vert-top
+::: bluebox 
 **Function Overloading**
 
-Many OO-languages support function overloading (=a combination of function name plus the number and types of parameters the function expects). Since JavaScript functions can accept any numbers of parameters, they don't have signatures which means that function overloading is not possible.
+Many OO-languages support _function overloading_ (ie. a combination of function name plus the number and types of parameters the function expects). Since JavaScript functions can accept _any numbers of parameters_, they do not have signatures which means that ==function overloading is not possible==.
 :::
 ::::
 :::::
+
+
+
+---
+<!-- header: Summary -->
+# Summary
+
+
+---
+# :far-lightbulb: Points to Remember
+
+::::: columns
+:::: double
+- Functions in javascript are objects that have an internal `[[call]]` property 
+  - Their values can be calculated
+- Since functions are __first-class objects__, JavaScript allows to ...
+  - assign functions to variables
+  - add functions to objects
+  - pass functions to other functions as arguments
+  - return functions from functions
+- Functions used with `new` makes them ==constructors==
+  - `new` creates a new object rather than copies are reference from the original object
+  - The object to be created can be controlled using the `return` statement
+- Functions can be defined as ==function declarations== and ==function expressions==
+- The ==arrow-notation== should be used with caution^1^ 
+::::
+:::: single vert-center
+![](figures/brain3.png)
+::::
+:::::
+
+::: footnotes
+^1^ Arrow-functions behave differently compared to function declarations (e.g. `this` refers to the global scope rather than to the current object.)
+:::
+
+<!-- Sehr gute JS-Tutorial-Quelle https://www.tutorialstonight.com/js/js-objects#javascript-object-using-class -->

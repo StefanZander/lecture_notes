@@ -11,9 +11,6 @@ paginate: true
 
 /* @import 'default'; */
 /* @import url('user-theme2.css'); */
-
-
-
 </style>
 
 <!-- marp --engine ./engine.js --watch --theme-set custom-theme-roboto.css -- --allow-local-files js_intro.md -->
@@ -161,85 +158,14 @@ sayGoodbye()  // Have a nice day Thomas
 
 
 ---
-## Declaring Variables using `let`, `var`, and `const`
-
-
-:::: centercontent columns small
-::: single
-**Var**
-:::
-::: oct
-- `var` declares a variable in a _global scope_
-- The variable is always ==hoisted== to the _top_ of the scope (e.g. the function in which `var` is used.)
-- Should not be used
-:::
-::: oct
-```js
-function getValue(condition) {
-    if (condition) {
-        value  = "green";
-        // value is hoisted to the top of the function
-        var value 
-    } 
-    // value = "green"; // value should not exist here
-    console.log(value); // displays 'green'
-}
-```
-:::
-::::
-
-:::: centercontent columns small
-::: single
-**Let**
-:::
-::: oct
-- Introduced with ES2015 (ES6) and preferred notion
-- `let` declares a variable in the _current scope_ (function of block – indicated by `{` and `}`)
-- `let` declarations are _NOT hoisted_, so declare them at the beginning of a block
-:::
-::: oct
-```js
-function getValue(condition) {
-    if (condition) {
-        value  = "green";
-        // value is hoisted to the top of the function
-        let value 
-    } 
-    console.log(value); // Reference Error
-}
-```
-:::
-::::
-
-::::: centercontent columns small
-:::: single 
-**Const**
-::::
-:::: oct
-- `const` is used to define constants, the value of which can not be changed once declared
-- Constants are only valid in their block 
-::::
-:::: oct
-```js
-if (condition) {
-    const maxItems = 5;
-}
-// maxItems isn't accessible here
-```
-::::
-:::::
-
-
-
----
 ## Declaring Variables and Constants using `let` and `const`
 
 
 :::: small grid3col widthauto vertical-align-top horizontal-left
-[**Let**]{.greenbox}
+:far-thumbs-up: **Let** 
 
 
-- Introduced with [ES2015]{.red} {.red}(ES6) and [preferred]{.redbox} notion
+- Introduced with ES2015 and is the _preferred notion_
 - `let` declares a variable in the _current scope_ (function or block)
 - `let` declarations are _NOT hoisted_; use them at the beginning of a block
 
@@ -253,21 +179,7 @@ function getValue(condition) {
 }
 ```
 
-
-[**Const**]{.greenbox}
-
-- `const` defines constants; the values can not be changed once declared
-- Constants are only valid in their block 
-
-```js
-if (condition) {
-    const maxItems = 5;
-}
-// maxItems isn't accessible here
-```
-
-
-**Var**{.redbox}
+:far-thumbs-down: **Var** 
 
 - `var` declares a variable in a _global scope_
 - Variable is always ==hoisted== to the scope's _top_ (e.g. function in which `var` is used.)
@@ -283,6 +195,18 @@ function getValue(condition) {
   // value should not exist here
   console.log(value); // displays 'green'
 }
+```
+
+:far-thumbs-up: **Const** 
+
+- `const` defines constants; the values can not be changed once declared
+- Constants are only valid in their block 
+
+```js
+if (condition) {
+    const maxItems = 5;
+}
+// maxItems isn't accessible here
 ```
 ::::
 
@@ -331,7 +255,7 @@ Equality of Primitives and Objects
 
 - Primitive types are stored as **simple data types**
   - ie., the variable object holds the actual value
-- JS has 5 primitive types
+- JS has ~~5~~ 7 primitive types  :fa-people-group:
   - **Boolean** – true or false
   - **Number** – integer or floating point number
   - **String** – character or sequence of characters
@@ -349,14 +273,13 @@ Equality of Primitives and Objects
 :::
 <!-- - Reference types and reference values are objects in JS -->
 - Objects are the main building blocks of JavaScript
-- Objects are extremely **flexible** and **powerful**
-  - Since JavaScript has no formal concept of classes, objects resemble the role of both **types** and **instances**
-  - Even functions are objects
-- Objects in JavaScript exist as both **reference types** and **reference values**
-- The **role** objects play depends on their usage
-  - an object in _literal form_ serves as instance 
-  - an object used as _constructor_ makes it a _reference type_ and resembles the class-concept of OO languages
-
+  - Even functions are objects :far-thumbs-up:
+- Objects are extremely flexible and powerful
+  - Objects serve as both **instances** and **types** (ie. _blueprints_) since JavaScript has no formal concept of classes 
+- The role objects play depends on their usage
+  - object in __literal form__ serves as ==instance== or ==reference value==
+  - object used as __constructor__ makes it a ==reference type== and resembles the class-concept of OO languages
+- Objects in JavaScript exist as both **reference types** or **reference values**
 <!-- - Reference types and reference values are objects in JS -->
 <!-- - **Identification**: `instanceof` returns `true|false` -->
 ::::
@@ -364,7 +287,7 @@ Equality of Primitives and Objects
 ::::::
 
 ::: centerbox redbox skip
-Each variable in JavaScript is associated with a specific primitive or reference type
+Each variable in JavaScript is associated with either a specific primitive or an object
 :::
 
 
@@ -454,6 +377,90 @@ console.log(name.last);                   // undefined
 
 
 
+---
+# Objects
+
+::::: columns
+:::: double
+- Properties are the main building blocks of objects
+- Properties are represented as ==name-value-pairs== stored on an object
+- Properties are managed and accessed 
+- Properties can be added to and removed from objects at any time
+  - $\leadsto$ This allows objects to be modified whenever you want – even if you did not define them in the first place^1^.
+
+
+
+::::
+:::: single
+![](figures/objects.webp)
+::::
+:::::
+
+::: footnotes
+^1^ There are ways to prevent object modifications such as Closures (cf. Lecture about Advanced JavaScript Language Concepts)
+
+Picture Source: https://www.tutorialstonight.com/js/js-objects
+:::
+
+---
+# Instantiating Objects^1^
+
+::::: columns
+:::: single
+**A) Usign the `new` Operator with a Constructor**
+- A constructor is a function that uses `new` to create an object
+- Any function can be a constructor^1^
+- Such functions are called **Constructor functions**
+```js
+function Book(name, year) {
+  this.name = name;
+  this.year = year;
+}
+let b = new Book("ECMAScript 6", 2015);
+```
+
+**B) Using the `Object()` Function as Constructor**
+  ```js
+    let book = new Object();
+    book.name = "The Principles of Object-Oriented JavaScript"; 
+    book.year = 2014;
+  ```
+
+::::
+:::: single
+**C) Using the Literal Notation**^2^
+- Objects (=reference values) can be directly created using the literal notation syntax without `new` operator and constructor.
+  ```js
+  let book = {
+    name: "The Principles of Object-Oriented JavaScript",
+    year: 2014
+  };
+  ```
+
+- Property names can also be represented as string literals
+  ```js
+  let book = {
+    "name": "The Principles of Object-Oriented JavaScript",
+    "year": 2014
+  };
+  ```
+
+  ::: redbox centerbox center small
+  Please note the different syntax of the literal notation!
+  :::
+::::
+:::::
+
+::: footnotes
+^1^ Constructors start with an upper case (capital letter) by convention to distinguish them from non-constructor functions.
+
+^2^ A literal allows to define a reference value without explicitly creating an object using the `new` operator and the object's constructor.
+:::
+
+
+
+
+
 
 
 ---
@@ -484,81 +491,6 @@ Although reference types are objects, it is useful to distinguish them from refe
 :::::
 
 
-
----
-# Instantiating Objects
-
-::::: columns
-:::: single
-**A) Usign the `new` Operator with a Constructor**
-- A constructor is a function that uses `new` to create an object
-- Any function can be a constructor^1^
-- Such functions are called **Constructor functions**
-```js
-function Book(name, year) {
-  this.name = name;
-  this.year = year;
-}
-let b = new Book("ECMAScript 6", 2015);
-```
-
-**B) Using the `Object()` Function as Constructor**
-  ```js
-    let book = new Object();
-    book.name = "The Principles of Object-Oriented JavaScript"; 
-    book.year = 2014;
-  ```
-
-::::
-:::: single
-**C) Using the Literal Notation**
-- Objects (=reference values) can be directly created using the literal notation syntax without `new` operator and constructor.
-  ```js
-  let book = {
-    name: "The Principles of Object-Oriented JavaScript",
-    year: 2014
-  };
-  ```
-
-- Property names can also be represented as string literals
-  ```js
-  let book = {
-    "name": "The Principles of Object-Oriented JavaScript",
-    "year": 2014
-  };
-  ```
-
-  ::: redbox centerbox center small
-  Please note the different syntax of the literal notation!
-  :::
-::::
-:::::
-
-<!-- - A literal allows to define a reference value without explicitly creating an object using the `new` operator and the object's constructor -->
-
-
-::: footnotes
-^1^ Constructors start with an upper case (capital letter) by convention to distinguish them from non-constructor functions.
-:::
-
-
-<!--
----
-# Adding and Removing Properties
-
-Properties are name/value-pairs stored on an object
-
-Properties can be added to and removed from objects at any time.
-
-This allows objects to be modified whenever you want – even if you did not define them in the first place^1^.
-
-
-
-
-::: footnotes
-^1^ There are ways to prevent object modifications
-:::
--->
 
 
 ---
@@ -676,7 +608,6 @@ const a3 = colors.concat(points);
   console.log(object instanceof Array);       // false
   console.log(reflect instanceof Function);   // true
   console.log(reflect instanceof Object);     // true
-
   console.log(Array.isArray(items));          // true
   console.log(typeof reflect);                // "function"
   ```
@@ -732,6 +663,8 @@ const a3 = colors.concat(points);
 ---
 # Properties
 
+:::: columns
+::: double
 - Properties are the main building blocks of objects
 - Objects consists of an **unordered list** of **properties**
 - **Properties** are *key-value pairs* where
@@ -744,7 +677,11 @@ const a3 = colors.concat(points);
 - When the value of a property is a function, it is called a **method**
 - **Methods** are reference values that can be *executed*
   - They contain a special internal property called `[[call]]` that signals that the value needs to be exectuted
-
+::: 
+::: single
+![](./figures/plan.png)
+:::
+::::
 <!--
 - Assigning an object to a variable actually assigns a _pointer_ of the _memory location_ to the variable
   - i.e., the variable object contains the pointer
@@ -1030,3 +967,41 @@ Person.prototype = {
 ::::
 :::::
 
+
+
+
+
+
+---
+<!-- header: Summary -->
+# Summary
+
+
+---
+# :far-lightbulb: Points to Remember
+
+::::: columns
+:::: double
+- JavaScript is a _dynamically-typed object-based_ programming language
+- It employs two different forms of data types: ==primitive types== and ==objects==
+- Objects are either ==reference values==^1^ or ==reference types== depending on their usage
+- There are 4 ways to create an object in JavaScrip: (a) object literal, (b) object constructor, (c) object.create method and (d) using class syntax^2^.
+- An object is a container that holds ==properties== in form of _key-value pairs_.
+- Properties of a javascript object can be accessed in 2 different methods: 
+  (a) using the dot (`.`) operator and (b) square brackets (`[...]`).
+- Properties can be added to or removed from objects at any time.
+- There are 2 different types of properties: ==own properties== and ==prototype properties==
+- `this` keyword inside a javascript object refers to the object itself.
+::::
+:::: single vert-center
+![](figures/brain3.png)
+::::
+:::::
+
+::: footnotes
+^1^ Also denoted as instances or instance values
+
+^2^ Object instantiation using the class syntax notation is not discussed in these slides
+:::
+
+<!-- Sehr gute JS-Tutorial-Quelle https://www.tutorialstonight.com/js/js-objects#javascript-object-using-class -->

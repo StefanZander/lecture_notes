@@ -7,13 +7,12 @@ const markdownItAttrs = require('markdown-it-attrs')
 const markdownItContainer = require('markdown-it-container')
 const markdownItFootnote = require('markdown-it-footnote')
 const markdownItDiv = require('markdown-it-div')
-const markdownIt = require('markdown-it')
+// const markdownIt = require('markdown-it')
 const markdownItFontAwesome = require('markdown-it-fontawesome')
 const markdownItDef = require('markdown-it-deflist')
 const mermaidIt = require('mermaid-it') //not working
 const markdownItInlineColor = require('@gerhobbelt/markdown-it-inline-text-color')
 const markdownItBracketedSpans = require('markdown-it-bracketed-spans')
-const mdi = require('markdown-it-mdi');
 
 module.exports = (opts) => new Marp(opts)
 // module.exports = (opts) => new Marp({
@@ -33,16 +32,14 @@ module.exports = (opts) => new Marp(opts)
 .use(markdownItContainer, '1st-col')
 .use(markdownItContainer, '2nd-col')
 .use(markdownItContainer, '3nd-col')
-// .use(markdownItFootnote)
+.use(markdownItFootnote)
 // .use(require('markdown-it-footnote'))
 .use(require('markdown-it-sup'))
 .use(markdownItDiv)
 .use(markdownItDef)
 .use(markdownItInlineColor)
 .use(markdownItBracketedSpans)
-.use(markdownItFontAwesome)
-.use(mermaidIt)
-.use(mdi);
+.use(markdownItFontAwesome);
 
 
 // .use(require('markdown-it-mark'))
