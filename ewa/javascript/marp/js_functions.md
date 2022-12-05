@@ -168,7 +168,7 @@ function add(num1, num2) {
 }
 ```
 ::: center Skip Big greenbox centerbox
-OK
+:fas-circle-check: OK
 :::
 ::::
 :::: single
@@ -184,7 +184,7 @@ let add = function (num1, num2) {
 };
 ```
 ::: center Skip Big warning centerbox
-Error
+:fas-circle-exclamation: Error
 :::
 ::::
 :::::
