@@ -134,7 +134,7 @@ Erstellung eines neuen Subobjects auf der Meryl Streep Seite mit den properties 
 
 
 ---
-# Tipp
+## Tipp (TODO: Add Code for Previous Example)
 
 Um die **Abfragekomplexität** zu verringern kann es gelegentlich sinnvoll sein, innerhalb eines Subobjects Informationen zu hinterlegen, _auf welcher Seite es eingebettet ist_ (in RDF: zu welchem Subject es gehört). Dies kann mit einem ==zusätzlichen frei zu definierenden Property== realisiert werden, ==dessen Wert dem Namen der Seite entspricht, auf der das Subobject eingebettet ist==.
 
@@ -203,9 +203,11 @@ Edit the page to see the template text.
 ```
 
 
+---
+# Working with Subobjects
 
 ---
-# Multiple Values for the same Subobject Property 
+## Multiple Values for the same Subobject Property 
 
 ::::: equalcolumns small
 :::: 1st-column
@@ -267,7 +269,7 @@ Source: https://www.semantic-mediawiki.org/wiki/Help:Adding_subobjects#Specifyin
 
 
 ---
-# Subobjects: Querying using #ask
+# Displaying Subobject Data using #ask (TODO: Provide better example)
 
 Using `#subobject` does not print out anything on the screen. To show the subobject data directly on the page where they are defined use an _ask query_ `{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] }}` with ==inverse property== and add it after the definition of the subobjects.
 
@@ -312,20 +314,21 @@ Source: https://www.semantic-mediawiki.org/wiki/Help:Subobjects_and_queries
 
 
 ---
-# Searching for Pages with certain Subobject Properties
+## Searching for Pages with certain Subobject Properties
 
 <!-- Motivation: _Displaying properties of a specific subobject's parent page_ -->
 
 <!-- Solution: _Use ==subqueries== to query for certain, characteristic subobject properties (=subproperties)_ -->
 
-In some business cases, it is necessary to search for pages with certain subobject properties and display their properties.
+In some cases, it is necessary to search for pages with certain subobject properties and display their properties.
 The solution is to use ==subqueries== to query for certain subobject properties (e.g. a type property) – so called ==subproperties==.
 <!-- When you want to query for (parent) pages that have certain subobject properties (===subproperties==), you can use subqueries: -->
 
 **Example**
 ```
 {{#ask:
- [[Has subobject::<q>[[YourSubobjectProperty::Foo]]</q>]]
+<!-- Selects only those pages that contain a subobject with the specified property values -->
+ [[Has subobject::<q>[[YourSubobjectProperty::Foo]]</q>]] 
  |?YourParentProperty1
  |?YourParentProperty2
 }}
@@ -346,7 +349,7 @@ Source: https://www.semantic-mediawiki.org/wiki/Help:Subobjects_and_queries
 
 ::::: equalcolumns
 :::: 1st-column
-**_Motivation_**
+**_Motivation_ (TODO: Make more general**
 Display the items (represented as subobjects) of all book orders issued in 2020.
 
 ___Assumption___ 
