@@ -44,6 +44,7 @@ const printFirstTwoLetters = (str) => {
         console.log(firstTwo);
     } catch (err) { 
         console.log(err)
+        // console.log("Further instructions might follow...")
     } 
 }
 
