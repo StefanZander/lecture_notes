@@ -159,8 +159,8 @@ const myPromise = new Promise((resolve, reject) => {
 
 myPromise
     .then((rand) => console.log("Success – " + rand))
-    .then(() => console.log("Ausgabe 2 im Erfolgsfall"))
-    .catch((rand) => console.error("Fehlerfall – " + rand));
+    .then(() => console.log("Folgeausgabe nur im Erfolgsfall"))
+    .catch((rand) => console.error("Fehlerfall da Ergebnis neq 0 – " + rand));
 
 
 
