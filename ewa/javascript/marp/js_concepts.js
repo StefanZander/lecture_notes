@@ -165,7 +165,7 @@ myPromise
 
 
 // Fetch with promises
-const fetch = require('node-fetch');
+// const fetch = require('node-fetch');
 const url = "https://randomuser.me/api/";
 fetch(url)
     .then((response) => response.json())
@@ -186,7 +186,7 @@ console.log("request started...");
 //**********************************************/
 
 // async without error handling
-const fetch = require('node-fetch');
+// const fetch = import('node-fetch');
 const url = "https://randomuser.me/api/";
 const fetchUser = async () => {
     const res = await fetch(url);
@@ -198,7 +198,7 @@ fetchUser();
 
 
 // async with error handling
-const fetch = require('node-fetch');
+// const fetch = require('node-fetch');
 const url = "https://randomuser.me/api/";
 const fetchUserWithErrorHandling = async () => {
     try {
@@ -394,11 +394,8 @@ function Book(title, author) {
 let book1 = new Book("Die verlorene Ehre der Katharina Blum", "Heinrich Böll");
 book1.print("title");
 
-// console.log(bello.constructor.prototype);
-
-// not working
-// Dog.bark = function() { console.log("Miau") };
-// bello.bark();
+let book2 = new Book("Principles of OO-JavaScript", "John Doe");
+book2.print("title");
 
 //alternatively: Dog.prototype
 book1.constructor.prototype.printTitle = function() {
@@ -406,7 +403,23 @@ book1.constructor.prototype.printTitle = function() {
     // console.log(this.title);
 }
 
+// alternative notation:
+Book.prototype.printAuthor = function() {
+    this.print("author");
+}
+
+
 book1.printTitle();
+
+// can book2 access printTitle() although it was defined for book1?
+book2.printTitle();
+
+// is printAuthor also available for book1 and book2?
+book2.printAuthor();
+book1.printAuthor();
+
+
+
 
 
 
