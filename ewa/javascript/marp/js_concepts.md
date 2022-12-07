@@ -637,3 +637,33 @@ Sources:
 - https://www.freecodecamp.org/news/javascript-modules-beginners-guide/
 - https://www.freecodecamp.org/news/javascript-modules-a-beginner-s-guide-783f7d7a5fcc/
 :::
+
+
+
+---
+<!-- header: Summary -->
+# Summary
+
+
+---
+# :far-lightbulb: Points to Remember
+
+::::: columns
+:::: double
+- Unsafe code should always be wrapped in a `try-catch()` block
+- Closures allow to hide data from external and uncontrolled access through a combination of inner and outer function
+- Closures work both when executed as function as well as constructors
+- JavaScript employs different data structure in order to enable asynchronocity
+  - functions are executed in a call stack 
+  - callbacks are so-called macro-tasks and processed in the ... queue 
+  - promises are micro-tasks and processed in the ... 
+- The event loop priorizes micro tasks over macro tasks which are executed only when the call stack is empty
+- Callback functions, Promises, and functions encapsulated in async and await are executed asynchronously
+::::
+:::: single vert-center
+![](figures/brain3.png)
+::::
+:::::
+
+
+<!-- Sehr gute JS-Tutorial-Quelle https://www.tutorialstonight.com/js/js-objects#javascript-object-using-class -->

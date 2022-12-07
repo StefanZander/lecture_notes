@@ -62,12 +62,14 @@ function MyProtectedObj(param) {
     let name = param;
     return {
         getCode: function() {
+            console.log(mySecretVariable);
           return mySecretVariable;
         },
         setName: function(value) {
           name = value;
         },
         getName: function() {
+            console.log(name);
           return name;
         }
     } 
@@ -75,12 +77,24 @@ function MyProtectedObj(param) {
 
 let obj = MyProtectedObj("James"); 
 
-console.log(mySecretVariable); // Reference Error
-console.log(obj.mySecretVariable); // outputs 'undefined'
+// do closures also work by using "new" --> used as constructors?
+obj = new MyProtectedObj("James");
+
+obj.setName("Uschi");
+obj.getName();
+
+obj.setName("Alex");
+obj.getName();
+
+// console.log(mySecretVariable); // Reference Error
+// console.log(obj.mySecretVariable); // outputs 'undefined'
+obj.mySecretVariable = "1000";
 
 obj.getCode(); //returns the randomly generated number
 obj.setName("John"); //ok
 obj.getName();
+
+
 
 
 
@@ -397,7 +411,6 @@ book1.print("title");
 let book2 = new Book("Principles of OO-JavaScript", "John Doe");
 book2.print("title");
 
-//alternatively: Dog.prototype
 book1.constructor.prototype.printTitle = function() {
     this.print("title");
     // console.log(this.title);
@@ -407,7 +420,6 @@ book1.constructor.prototype.printTitle = function() {
 Book.prototype.printAuthor = function() {
     this.print("author");
 }
-
 
 book1.printTitle();
 
