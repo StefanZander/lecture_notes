@@ -11,13 +11,14 @@ paginate: true
 
 /* @import 'default'; */
 /* @import url('user-theme2.css'); */
-
-
-
 </style>
+
+
 
 <!-- marp --engine ./engine.js --watch --theme-set custom-theme-roboto.css -- --allow-local-files js_concepts.md -->
 <!-- marp --pdf --allow-local-files --engine ./engine.js --theme-set custom-theme-roboto.css -- js_concepts.md -->
+
+
 
 # Entwicklung Web-basierter Anwendungen
 
@@ -54,7 +55,7 @@ Einführung in JavaScript | Wichtige Sprachkonzepte  {.lightgreen .Big .skip}
     - e.g. in node.js, an unhandled error might cause your server to shut down
 - Throw `Error` objects in case of unexpected events
 
-::: blue small centerbox BIGskip
+::: bluebox small centerbox BIGskip
 **Error Handling is a kind of mindset**
 Prepare your code for things that can go wrong & handle them nicely!
 :::
@@ -184,7 +185,7 @@ Source: https://www.youtube.com/watch?v=a00NRSFgHsY and https://javascript.info/
 - To use a closure, define a function inside another function and expose it – return it or pass it to another function
 - The inner function will have access to the ==lexical scope== of the outer function, even after the outer function has returned
 
-  ::: blue centerbox small BigSkip
+  ::: bluebox centerbox small BigSkip
   **Usage Scenarios**
     - Isolation of protected variables
     - Transportation of states to another scope
@@ -196,7 +197,6 @@ Source: https://www.youtube.com/watch?v=a00NRSFgHsY and https://javascript.info/
 function MyProtectedObj(param) {
   const mySecretVariable = Math.floor(4711 * Math.random());
   let name = param;
-
   return { 
     getCode: function() { 
       return mySecretVariable;
@@ -226,11 +226,13 @@ obj.getName();          //outputs 'John'
 
 
 ---
-# Closure – Pitfalls
+# Closures – Pitfalls
 
 ::::: columns
 :::: double
-Be careful, `this` does not work in closures
+::: redbox center 
+:fas-warning: Be careful, `this` does not work in closures :fas-warning:
+:::
 ::::
 :::: triple
 ```js
@@ -260,8 +262,7 @@ console.log(mySecretVariable);  // outputs the generated number
 :::::
 
 ::: footnotes
-Sources: https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-closure-b2f0d2152b36 and 
-https://www.computerbase.de/forum/threads/warum-sind-closures-so-wichtig.1906523/
+Sources: https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-closure-b2f0d2152b36 and https://www.computerbase.de/forum/threads/warum-sind-closures-so-wichtig.1906523/
 :::
 
 
@@ -288,7 +289,7 @@ https://www.computerbase.de/forum/threads/warum-sind-closures-so-wichtig.1906523
 - The JS engine _periodically_ looks for new entries in the ==task queue== and once the ==call stack== is empty it shifts the first entry to the call stack and executes it synchronously (==$\Rightarrow$ event loop==)
 
 <!-- - Promises are special objects that help executing async code -->
-**Job Queue**
+**Job Queue** ($\rightarrow$ ==Micro Tasks==)
 - ==Promise executor functions== are stored in the ==job queue==
 - For each loop of the event loop, one macro task is completed out of the callback queue
 - Once that task is complete, the event loop visits the job queue and completes all micro-tasks in the job queue before it continues.
@@ -302,8 +303,8 @@ https://www.computerbase.de/forum/threads/warum-sind-closures-so-wichtig.1906523
 
 ::::
 :::: single 
-::: blue centerbox center
-**Single-threaded** and **asychronous** – how does this work ???
+::: bluebox centerbox center
+:fa-code-branch: **Single-threaded** and **asychronous** – here is how it works :fas-magnifying-glass:
 :::
 ![](./figures/queues.png)
 ::::
@@ -318,15 +319,21 @@ Source: https://www.freecodecamp.org/news/synchronous-vs-asynchronous-in-javascr
 ---
 # Asynchronous Programming 
 
+::::: columns
+:::: double
+- Javascript is a ==single-threaded==, ==non-blocking==, ==asychronous==, _dynamically_, and _weakly-typed_ programming language
 - JavaScript has some *unique features* for the ==asynchronous execution== of code
 - The 3 _most important concepts_ are
-
-::::: centerbox blue Skip Big 
-1.) **Callbacks**
-2.) **Promises**
-3.) **Async & Await**
+  ::: center bluebox Skip Big 
+  1.) **Callbacks**
+  2.) **Promises**
+  3.) **Async & Await**
+  :::
+::::
+:::: triple
+![](./figures/sync_vs_async.png)
+::::
 :::::
-
 
 ---
 <!-- header: Callback Functions -->
@@ -335,13 +342,13 @@ Source: https://www.freecodecamp.org/news/synchronous-vs-asynchronous-in-javascr
 
 ::::: columns
 :::: single
-- ==Callbacks== are a _central element_ in ==asynchronous JavaScript==
-- Callbacks are ==(mostly anonymous) functions== that will be called when a previously defined ==event== occurs
-- Callbacks are implement ==handler functions==; they are called ==asynchronously== by the JavaScript engine
+- ==Callbacks== are a _central element_ in asynchronous JavaScript
+- Callbacks are _(mostly anonymous)_ ==functions== that will be called when a previously defined ==event== occurs
+- Callbacks are implement as ==handler functions==; they are called ==asynchronously== by the JavaScript engine
 - Callbacks are most commonly used to ...
-  - handle ==input events==
-  - processes recieved ==JSON data== from AJAX requests
-- Callbacks can become _problematic_ $\rightarrow$ ==Callback-Hell==
+  - handle ==input events== 
+  - process recieved ==JSON data== from AJAX requests
+- Callbacks can become _problematic_ $\rightarrow$ :fa-circle-radiation: ==Callback-Hell==
 ::::
 :::: single
 ```js
@@ -372,7 +379,7 @@ btn.addEventListener("click", () => { ... });
 ---
 # Callback-Hell
 
-The **callback-hell** denotes a ==christmas tree like pattern== of ==nested callback handlers==
+The :fa-circle-radiation: **callback-hell** denotes a ==christmas-tree-like pattern== of ==nested callback handlers==
 
 
 ::::: columns-bottom
@@ -547,8 +554,8 @@ const fetchUserWithErrorHandling = async () => {
 fetchUserWithErrorHandling();
 ```
 ::: small
-- If the promise rejects, it throws an error that is handled by the `catch` block
-- Async/Await enables standard ==error handling== with `try...catch`
+- If the promise _rejects_, it throws an _error_ that is handled by the `catch`-block
+- `async`/`await` enables standard ==error handling== with `try...catch`
 ::: small
 ::::
 :::::
@@ -572,7 +579,7 @@ const fetchUserDetails = async (userId) => {
 ```
 ::::
 :::: double
-**Remember**
+:far-lightbulb: **Remember**
 An async function always encapsulates its return value in a promise
 ::::
 :::::
@@ -586,7 +593,7 @@ console.log(user);
 ```
 ::::
 :::: double
-**Remember**
+:far-lightbulb: **Remember**
 `await` can only be called inside an async function
 ::::
 :::::
@@ -602,7 +609,7 @@ console.log(user);
 ```
 ::::
 :::: double
-**Remember**
+:far-lightbulb: **Remember**
 In order to use `await` regardless of an async function, it need to be wrapped in an async IIFE
 ::::
 :::::
@@ -618,9 +625,9 @@ Source: https://blog.greenroots.info/javascript-async-and-await-in-plain-english
 
 ::::: columns
 :::: single
-* Modules are used to separte code into files
-* Modules are self-contained units of code, stored in files
-
+- Modules are used to separte code into files
+- Modules are self-contained units of code, stored in files
+- more to come...
 
 ::::
 :::: single
@@ -650,15 +657,15 @@ Sources:
 
 ::::: columns
 :::: double
-- Unsafe code should always be wrapped in a `try-catch()` block
-- Closures allow to hide data from external and uncontrolled access through a combination of inner and outer function
-- Closures work both when executed as function as well as constructors
-- JavaScript employs different data structure in order to enable asynchronocity
-  - functions are executed in a call stack 
-  - callbacks are so-called macro-tasks and processed in the ... queue 
-  - promises are micro-tasks and processed in the ... 
-- The event loop priorizes micro tasks over macro tasks which are executed only when the call stack is empty
-- Callback functions, Promises, and functions encapsulated in async and await are executed asynchronously
+- _Unsafe code_ should always be wrapped in a `try-catch()`-block
+- ==Closures== allow to hide data from external and uncontrolled access through a _combination_ of _inner_ and _outer function_
+- Closures work both when executed as function as well as ==constructors==
+- JavaScript employs different language structures in order to enable _asynchronocity_
+  - Functions are put to and executed in the ==call stack==
+  - ==Callbacks== are so-called ==macro-tasks== and processed in the ==Callback== or ==Task Queue== 
+  - ==Promises== are ==micro-tasks== and processed in the ==Job Queue== 
+- The ==event loop== priorizes micro tasks over macro tasks which are executed only when the call stack is empty
+- Callback functions, Promises, and functions encapsulated in `async` and `await` are executed asynchronously
 ::::
 :::: single vert-center
 ![](figures/brain3.png)
