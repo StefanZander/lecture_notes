@@ -163,10 +163,11 @@ btn.addEventListener("click", () => {
 
 // Promises (success and fail path)
 const myPromise = new Promise((resolve, reject) => {
-    const rand = Math.floor(Math.random() *2);
-    if (rand === 0) {
+    const rand = Math.floor(Math.random() *2); // 0 or 1
+    if (rand === 0) { // success
         resolve(rand);
-    } else {
+    } else { // failure
+        console.log("Failure: " + rand);
         reject(rand);
     }
 } );
@@ -182,10 +183,10 @@ myPromise
 // const fetch = require('node-fetch');
 const url = "https://randomuser.me/api/";
 fetch(url)
-    .then((response) => response.json())
+    .then((response) => {console.log("...im 1. then(...) - " + response.toString()); return response.json(); })
     .then((data) => {
         let users = data.results;
-        console.log(users);
+        console.log("users");
     })
     .catch((err) => console.error(err));
 console.log("request started...");
@@ -205,10 +206,12 @@ const url = "https://randomuser.me/api/";
 const fetchUser = async () => {
     const res = await fetch(url);
     const data = await res.json();
-    console.log(data);
+    // console.log(data);
 }
 
-fetchUser();
+let result = fetchUser();
+console.log(typeof result);
+console.log(result instanceof Promise);
 
 
 // async with error handling
