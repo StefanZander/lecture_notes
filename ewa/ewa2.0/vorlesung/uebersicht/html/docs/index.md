@@ -241,7 +241,7 @@ EWA-Discord-Channel: <https://discord.gg/AC97TNBSJ6>
     **Lehrmaterialen**
 
     - Foliensatz: Kap. 3.2.1 - 3.2.4
-    - Lehrvideo: [Interaktive Webseiten II](https://electures.h-da.de/paella/ui/watch.html?id=9b3895e1-3427-4dbe-a77f-f43529603c99) – (00:00:00 – 01:12:32)
+    - Lehrvideo: [Interaktive Webseiten II](https://cloud.h-da.de/index.php/s/oLWciJ4XeEnpSoP?dir=undefined&openfile=37552598) – (00:00:00 – 01:12:32)
 
 
 
