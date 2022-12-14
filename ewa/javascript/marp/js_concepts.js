@@ -167,8 +167,10 @@ const myPromise = new Promise((resolve, reject) => {
     if (rand === 0) { // success
         resolve(rand);
     } else { // failure
-        console.log("Failure: " + rand);
+        console.log("Failure case: " + rand);
         reject(rand);
+        // alternatively, we could throw an Error
+        // throw new Error("Random number was " + rand);
     }
 } );
 
@@ -180,7 +182,7 @@ myPromise
 
 
 // Fetch with promises
-// const fetch = require('node-fetch');
+const fetch = require('node-fetch');
 const url = "https://randomuser.me/api/";
 fetch(url)
     .then((response) => {console.log("...im 1. then(...) - " + response.toString()); return response.json(); })
