@@ -116,7 +116,7 @@ obj.getName();
 console.log("Hallo Welt - jetzt");
 
 setTimeout(() => {
-    console.log("Hallo Welt – nach 1 Sec.")
+    console.log("Hallo Welt – nach 2 Sec.")
 }, 2000 ); 
 
 console.log("Dieser Code wird vor dem asynchronen Code ausgeführt...");
@@ -162,7 +162,7 @@ btn.addEventListener("click", () => {
 //**********************************************/
 
 // Promises (success and fail path)
-const myPromise = new Promise((resolve, reject) => {
+const myPromise = new Promise( (resolve, reject) => {
     const rand = Math.floor(Math.random() *2); // 0 or 1
     if (rand === 0) { // success
         resolve(rand);
@@ -175,20 +175,20 @@ const myPromise = new Promise((resolve, reject) => {
 } );
 
 myPromise
-    .then((rand) => console.log("Success – " + rand))
+    .then((bla) => { console.log("Success – " + bla+4); } )
     .then(() => console.log("Folgeausgabe nur im Erfolgsfall"))
     .catch((rand) => console.error("Fehlerfall da Ergebnis neq 0 – " + rand));
 
 
 
 // Fetch with promises
-const fetch = require('node-fetch');
+const fetch = require('cross-fetch');
 const url = "https://randomuser.me/api/";
 fetch(url)
-    .then((response) => {console.log("...im 1. then(...) - " + response.toString()); return response.json(); })
+    .then((response) => response.json() )
     .then((data) => {
         let users = data.results;
-        console.log("users");
+        console.log("users"); // change to display data
     })
     .catch((err) => console.error(err));
 console.log("request started...");
@@ -203,7 +203,7 @@ console.log("request started...");
 //**********************************************/
 
 // async without error handling
-// const fetch = import('node-fetch');
+const fetch = require('cross-fetch');
 const url = "https://randomuser.me/api/";
 const fetchUser = async () => {
     const res = await fetch(url);
@@ -264,9 +264,9 @@ const validateUser = ({userId, password}) => {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             if (userId && password) {
-                resolve(`${userId} you have been authenticated successfully!!!`);
+                resolve(`${userId}, you have been authenticated successfully!!!`);
             } else {
-                reject({message: 'userId or Password could be blank!'});
+                reject({message: 'Error: UserId or Password could be blank!'});
             }
 
         }, 2000);
@@ -275,9 +275,9 @@ const validateUser = ({userId, password}) => {
 
 
 const app = async () => {
-    const data = {
-        userId: '',
-        password: ''
+    const data = { // credentials
+        userId: 'max',
+        password: '1234'
     };
 
     try {
@@ -291,7 +291,7 @@ const app = async () => {
 
 // invoke the function app
 app();
-
+console.log("cheching...");
 
 
 
@@ -326,7 +326,8 @@ printMyProps(p);
 //******** Fetching for Airport Example ********/
 //**********************************************/
 
-const fetch = require('node-fetch');
+// const fetch = require('node-fetch');
+const fetch = require('cross-fetch');
 let url = "http://localhost/EWA/php/ajax_and_php/airport_provider_with_filter.php?filter=";
 let filter = "lo";
 
