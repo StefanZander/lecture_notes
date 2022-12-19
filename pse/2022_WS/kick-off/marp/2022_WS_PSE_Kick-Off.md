@@ -512,7 +512,7 @@ Im **Zielbild** wollen wir erreichen, dass Sie alle Informationen zur Verfügung
 ---
 # Infos zur Durchführung
 
-**Ziel**: _Subjektive Reflektion von Arbeitprozessen und Methodiken um zukünftige Sprints zu verbessern.:fa-heart: :fa-diagnoses:_
+**Ziel**: _Subjektive Reflektion von Arbeitprozessen und Methodiken um zukünftige Sprints zu verbessern._
 
 **Methode**: ==__4 L__^1^==
 
@@ -520,8 +520,8 @@ Im **Zielbild** wollen wir erreichen, dass Sie alle Informationen zur Verfügung
 :::: columns
 ::: single 
 :fa-heart: What I **LOVED**
-- Was lief richtig gut? :fa-check:
-- Was lief besser als erwartet? :fa-star:
+- Was lief richtig gut? 
+- Was lief besser als erwartet?
 
 :fa-graduation-cap: What I **LEARNED**
 - Was habe ich gelernt? 
@@ -567,7 +567,7 @@ What I **LOVED**
 - ...
 <br/>
 ::::
-:::: single blue
+:::: single bluebox
 ::: center
 What I **LEARNED**
 :::
@@ -577,7 +577,7 @@ What I **LEARNED**
 - ...
 <br/>
 ::::
-:::: single blue
+:::: single bluebox
 ::: center
 What I **LACKED**
 :::
@@ -587,7 +587,7 @@ What I **LACKED**
 - ...
 <br/>
 ::::
-:::: single blue
+:::: single bluebox
 ::: center
 What I **LONGED**
 :::
