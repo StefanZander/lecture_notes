@@ -29,7 +29,7 @@ Kick-Off-Meeting – 27.10.2022  {.lightgreen .Big .skip}
 
 ---
 <!-- header: Überblick -->
-<!-- footer: Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 22.04.2022 -->
+<!-- footer: Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 27.10.2022 -->
 
 # Agenda
 
@@ -95,7 +95,7 @@ Für *Studierende*, sagen Sie bitte kurz ...
 # Aufteilung in Projektteams
 
 ::::: columns
-:::: single blue
+:::: single bluebox
 **Projektteam RPN-Calculator**
 - Engler Cedric – Cedric.Engler@stud.h-da.de
 - Gotha Etienne – Etienne.Gotha@stud.h-da.de
@@ -103,7 +103,7 @@ Für *Studierende*, sagen Sie bitte kurz ...
 - Steinrücken Niklas – Niklas.Steinruecken@stud.h-da.de
  
 ::::
-:::: single green
+:::: single greenbox
 **Projektteam Fachbereichsratsprotokolle**
 - Elsässer Dimitrij – Dimitrij.Elsaesser@stud.h-da.de^1^
 - Führes Jasmin – Jasmin.Fuehres@stud.h-da.de
@@ -362,7 +362,7 @@ Wichtig: Der nachfolgende _Projektplan_ ist eine grobe Orientierung und soll die
 ---
 ## Workpackage 3: Technologische Realisierung
 
-- **Ziel** _Entwicklung von Demonstratoren für das Backend zur Demonstration der Nutzbarmachung bzw. des Zugriffs auf das enthaltene Faktenwissen_ 
+- **Ziel:** _Entwicklung von Demonstratoren für das Backend zur Demonstration der Nutzbarmachung bzw. des Zugriffs auf das enthaltene Faktenwissen_ 
 - **Task-Liste**
   - Task 1: Umsetzung der Informationsbedürfnisse in entspr. Abfragen
   - Task 2: Entwurf von Taxonomien / Ontologien zur Entitäts-Klassifikation
@@ -376,6 +376,31 @@ Wichtig: Der nachfolgende _Projektplan_ ist eine grobe Orientierung und soll die
 
 
 
+---
+## Workpackage 0: Detailprojektplanung
+
+- **Ziel:** _Entwurf eines Detailprojektplans auf Basis des Projektgrobplans_ 
+- **Detailaufgaben**
+  - Legen Sie Zeitpunkte für die *Fertigstellung* der Meilensteine bzw. Arbeitspakete fest
+  - Prüfen Sie alle Tasks auf *Verständlichkeit* und *Vollständigkeit*; Fragen Sie nach, falls ein Task unverständlich und/oder mehrdeutig ist
+  - Prüfen Sie die Tasks auf *Erfüllbarkeit*, d.h., machen Sie sich Gedanken über Kriterien und deren Herkunft, anhand derer sich der Erfüllungsgrad eines Tasks festmachen lässt.
+  - Beginnen Sie mit der Strategischen Projektplanung, d.h., planen Sie Ihr Projekt vom Ende zum Anfang.
+    - Legen Sie Ziele (=Arbeitspakete) und den Erfüllungszeitpunkt fest
+    - Definieren Sie Ziele für die jeweiligen Arbeitspakete
+    - Teilen Sie das Gesamtprojektbudget aller Teammitglieder auf die Arbeitspakete auf^1^
+  - Legen Sie die **Dokumentationsinfrastruktur** an
+    - GitLab-Repo
+    - Kanban- / Scrum-Boardsoftware
+    - etc.
+
+::: bluebox centerbox center
+Stellen Sie den Detailprojektplan im 1. Jour fixe vor und klären Sie dort offene Punkte
+:::
+  
+
+::: footnotes
+^1^ Während des Projekts überprüfen Sie in regelmäßigen Abständen, in wie weit Ihre IST-Zahlen von der SOLL-Planung abweicht. Thematisieren Sie dies in den Jours fixes.
+:::
 
  
 
