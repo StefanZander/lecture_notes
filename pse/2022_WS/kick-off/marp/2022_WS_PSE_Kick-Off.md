@@ -449,7 +449,7 @@ Die hier aufgeführten Arbeiten sind als Empfehlung bzw. Einstieg in das Themeng
 ---
 # Projektmanagement – Teil 1
 
-::: blue centerbox small
+::: bluebox centerbox small
 Da wir analog dem **Agilen Manifesto** vorgehen wollen, anbei ein paar Gedanken zum strategischen und operativen Projektmanagement und der Projektdurchführung. Die folgenden Informationen dienen gleichzeitig als Vorbereitung für die wöchentlichen **Jour fixes**.
 :::
 
@@ -516,7 +516,7 @@ Im **Zielbild** wollen wir erreichen, dass Sie alle Informationen zur Verfügung
 
 **Methode**: ==__4 L__^1^==
 
-::::: blue 
+::::: bluebox 
 :::: columns
 ::: single 
 :fa-heart: What I **LOVED**
@@ -548,7 +548,7 @@ Im **Zielbild** wollen wir erreichen, dass Sie alle Informationen zur Verfügung
 ---
 # Aufgabe
 
-::::: centerbox center green
+::::: centerbox center greenbox
 **Aufgabe**: Jede/r bereitet bitte 1 Slide mit den ausgefüllten Aspekten analog nachstehender Vorlage vor und präsentiert diese im nächsten Meeting.
 :::::
 
@@ -557,7 +557,7 @@ Im **Zielbild** wollen wir erreichen, dass Sie alle Informationen zur Verfügung
 Vorlage: 
 
 ::::: columns 
-:::: single blue
+:::: single bluebox
 ::: center
 What I **LOVED**
 :::
