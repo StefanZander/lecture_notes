@@ -165,7 +165,7 @@ btn.addEventListener("click", () => {
 const myPromise = new Promise( (resolve, reject) => {
     const rand = Math.floor(Math.random() *2); // 0 or 1
     if (rand === 0) { // success
-        resolve(rand);
+        resolve({ "name": "Bello", "type": "Hund"} );
     } else { // failure
         console.log("Failure case: " + rand);
         reject(rand);
@@ -175,10 +175,10 @@ const myPromise = new Promise( (resolve, reject) => {
 } );
 
 myPromise
-    .then((bla) => { console.log("Success – " + bla+4); } )
+    .then((bla) => { console.log(`Success – ${bla.name} ist ein ${bla.type};`); } )
     .then(() => console.log("Folgeausgabe nur im Erfolgsfall"))
     .catch((rand) => console.error("Fehlerfall da Ergebnis neq 0 – " + rand));
-
+console.log("Diese Ausgabe kommt VOR dem Then...")
 
 
 // Fetch with promises
@@ -208,24 +208,25 @@ const url = "https://randomuser.me/api/";
 const fetchUser = async () => {
     const res = await fetch(url);
     const data = await res.json();
-    // console.log(data);
+    console.log(data);
 }
 
 let result = fetchUser();
+console.log("Diese Ausgabe kommt VOR fetch user...")
 console.log(typeof result);
 console.log(result instanceof Promise);
 
 
 // async with error handling
 // const fetch = require('node-fetch');
+const fetch = require('cross-fetch');
 const url = "https://randomuser.me/api/";
 const fetchUserWithErrorHandling = async () => {
     try {
         const res = await fetch(url);
         const data = await res.json();
-        // console.log(data);
+        // console.log(data); // we could output data
         console.log("finished");
-
     } catch(err) {
         console.error(err);
     }
@@ -329,7 +330,7 @@ printMyProps(p);
 // const fetch = require('node-fetch');
 const fetch = require('cross-fetch');
 let url = "http://localhost/EWA/php/ajax_and_php/airport_provider_with_filter.php?filter=";
-let filter = "lo";
+let filter = "xxx";
 
 const fetchAirports = async (url, filter) => {
     try {
