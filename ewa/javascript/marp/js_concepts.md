@@ -397,7 +397,7 @@ Source: https://www.javascripttutorial.net/javascript-call-stack/
 
 
 ::: footnotes
-Source: https://www.freecodecamp.org/news/synchronous-vs-asynchronous-in-javascript/
+Source: https://www.freecodecamp.org/news/synchronous-vs-asynchronous-in-javascript/ and https://www.javascripttutorial.net/javascript-event-loop/
 :::
 
 
