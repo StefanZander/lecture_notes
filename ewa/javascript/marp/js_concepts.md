@@ -44,7 +44,7 @@ Einführung in JavaScript | Wichtige Sprachkonzepte  {.lightgreen .Big .skip}
 
 ---
 <!-- header: Error Handling -->
-# Error Handling
+# Error Handling :fa-bomb:
 
 ::::: columns
 :::: single
@@ -72,14 +72,12 @@ printFirstTwoLetters(5) // str.substring is not a function
 ```js
 // WITH Error Handling
 const printFirstTwoLetters = (str) => {
-    "use strict";
     try {
         if (typeof str !== "string") 
             throw new Error("Parameter is not a String");
         if (str.length < 2)
             throw new Error("String is less than 2 chars");
-        const firstTwo = str.substring(0,2);
-        console.log(firstTwo);
+        console.log(str.substring(0,2));
     } catch (err) {
         console.log(err)
     }
@@ -175,7 +173,7 @@ Source: https://www.youtube.com/watch?v=a00NRSFgHsY and https://javascript.info/
 
 ---
 <!-- header: Closures -->
-# Closures
+# Closures :fa-lock:
 
 ::::: columns
 :::: single
@@ -186,7 +184,7 @@ Source: https://www.youtube.com/watch?v=a00NRSFgHsY and https://javascript.info/
 - The inner function will have access to the ==lexical scope== of the outer function, even after the outer function has returned
 
   ::: bluebox centerbox small BigSkip
-  **Usage Scenarios**
+  **Usage Scenarios** :fa-person-dots-from-line:
     - Isolation of protected variables
     - Transportation of states to another scope
     - Creation of stateful functions
@@ -270,6 +268,93 @@ Sources: https://medium.com/javascript-scene/master-the-javascript-interview-wha
 ---
 <!-- header: Asychronicity in JavaScript -->
 # Asynchronous JavaScript
+
+
+
+---
+<!-- header: <br/> -->
+## How JavaScript executes Code :fa-person-running: – The Execution Context
+
+
+::::: columns
+:::: single vert-bottom
+The JavaScript engine executes code in __execution contexts__ 
+1. the ==global exection context== or 
+2. ==function execution contexts== 
+
+Each execution context has two phases: 
+1. _Creation Phase_
+   - Creation of `this`-object and binding it to the exection context
+   - Memory heap setup to store variables and function declarations  
+   - Initializing variables
+2. _Execution Phase_
+   - Code is executed line-by-line (ie sychronously) 
+   - Values are assigned to variables
+   - Function calls are executed
+::: centerbox center redbox
+For each function call, the JavaScript engine creates a new function execution context.
+:::
+::::
+:::: single
+::: grid2col widthauto
+![](./figures/execution_context_1.png)
+
+![](./figures/execution_context.png)
+:::
+::: bluebox centerbox center
+To keep track of all the execution contexts, the JavaScript engine uses the **call stack**.
+:::
+::::
+:::::
+
+::: footnotes
+Source: https://www.javascripttutorial.net/javascript-execution-context/
+:::
+
+
+
+---
+## The Call Stack :fab-stack-overflow:
+
+::::: columns
+:::: single
+The call stack works based on the _LIFO principle_
+
+When executing a script, the JavaScript engine creates a global execution context and pushes it on top of the call stack
+
+Whenever a function is called, the JavaScript engine creates a function execution context for the function, pushes it on top of the call stack, and starts executing the function.
+
+If a function calls another function, the JavaScript engine creates a new function execution context for the function being called and pushes it on top of the call stack.
+
+When the current function completes, the JavaScript engine pops it off the call stack and resumes the execution where it left off.
+
+The script will stop when the call stack is empty.
+::::
+:::: single
+JavaScript uses a ==call stack== to manage ==execution contexts==:
+- Global execution context
+- function execution contexts
+
+```js
+function add(a, b) {
+    return a + b;
+}
+
+function average(a, b) {
+    return add(a, b) / 2;
+}
+
+let x = average(10, 20);
+```
+
+![](./figures/call_stack.png)
+::::
+:::::
+
+::: footnotes
+Source: https://www.javascripttutorial.net/javascript-call-stack/
+:::
+
 
 
 ---
@@ -376,10 +461,11 @@ btn.addEventListener("click", () => { ... });
 :::::
 
 
+
 ---
 # Callback-Hell
 
-The :fa-circle-radiation: **callback-hell** denotes a ==christmas-tree-like pattern== of ==nested callback handlers==
+The :fa-circle-radiation: **callback-hell** denotes a _christmas-tree-like pattern_ of ==nested callback handlers==
 
 
 ::::: columns-bottom
@@ -425,14 +511,14 @@ Output
 
 ::::: columns
 :::: single
-- Promises are objects for making _asynchronous calls_
+- A ==Promise== is an _object_ that represents the completion or failure of an _asynchronous operation_
   - a ==value== is created in a success case
   - an ==error== is created if the promise does not complete
-- The ==promise constructor== expects an ==executor function== with two ==callback functions== as arguments
+- The ==promise constructor== expects an ==executor function== with two ==callback functions== as arguments:
   - `resolve` indicates a _successful completion_ of the task  
   - `reject` indicates the occurence of an _error_
-- Callback functions are used to announce the _outcome_
-- The callback functions are provided by JavaScript
+- The callback functions are provided by JavaScript and announce the _outcome_
+- They can hold individial _data objects_
 - Promises have three ==handler methods==
   - `.then()` accepts `result` and `error` as arguments
   - `.catch()` used to handle error cases
@@ -443,8 +529,8 @@ Output
 // Example
 const myPromise = new Promise((resolve, reject) => {
     const rand = Math.floor(Math.random() * 2); // '0' or '1'
-    if (rand === 0) {
-        resolve(rand);
+    if (rand === 1) {
+        resolve(rand); // resolve can hold individal data
     } else {
         reject(new Error("Fehlerfall – " + rand));
     }
@@ -463,6 +549,8 @@ myPromise
 ::: footnotes
 Source: https://blog.greenroots.info/javascript-promises-explain-like-i-am-five
 :::
+
+
 
 ---
 # Fetch with Promises
@@ -565,6 +653,7 @@ fetchUserWithErrorHandling();
 :::
 
 
+
 ---
 ## Await must be Invoked in an async Function
 
@@ -619,9 +708,10 @@ Source: https://blog.greenroots.info/javascript-async-and-await-in-plain-english
 :::
 
 
+
 ---
 <!-- header: JavaScript Modules -->
-# JavaScript Modules
+# JavaScript Modules – Comming soon...
 
 ::::: columns
 :::: single
