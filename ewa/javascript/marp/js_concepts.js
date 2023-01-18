@@ -165,7 +165,7 @@ btn.addEventListener("click", () => {
 const myPromise = new Promise( (resolve, reject) => {
     const rand = Math.floor(Math.random() *2); // 0 or 1
     if (rand === 0) { // success
-        resolve({ "name": "Bello", "type": "Hund"} );
+        resolve({ "name": "Bello", "type": "Dog"}); // changed from rand to an object
     } else { // failure
         console.log("Failure case: " + rand);
         reject(rand);
@@ -175,10 +175,10 @@ const myPromise = new Promise( (resolve, reject) => {
 } );
 
 myPromise
-    .then((bla) => { console.log(`Success – ${bla.name} ist ein ${bla.type};`); } )
+    .then((bla) => { console.log(`Success – ${bla.name} ist ein ${bla.type}`); } )
     .then(() => console.log("Folgeausgabe nur im Erfolgsfall"))
     .catch((rand) => console.error("Fehlerfall da Ergebnis neq 0 – " + rand));
-console.log("Diese Ausgabe kommt VOR dem Then...")
+console.log("Diese Ausgabe kommt VOR dem Promise...");
 
 
 // Fetch with promises
@@ -204,6 +204,7 @@ console.log("request started...");
 
 // async without error handling
 const fetch = require('cross-fetch');
+// const fetch = require('node-fetch');
 const url = "https://randomuser.me/api/";
 const fetchUser = async () => {
     const res = await fetch(url);
