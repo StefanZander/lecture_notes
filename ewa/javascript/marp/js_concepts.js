@@ -164,7 +164,7 @@ btn.addEventListener("click", () => {
 // Promises (success and fail path)
 const myPromise = new Promise( (resolve, reject) => {
     const rand = Math.floor(Math.random() *2); // 0 or 1
-    if (rand === 0) { // success
+    if (rand === 1) { // success
         resolve({ "name": "Bello", "type": "Dog"}); // changed from rand to an object
     } else { // failure
         console.log("Failure case: " + rand);
@@ -175,9 +175,9 @@ const myPromise = new Promise( (resolve, reject) => {
 } );
 
 myPromise
-    .then((bla) => { console.log(`Success – ${bla.name} ist ein ${bla.type}`); } )
+    .then((data) => { console.log(`Success – ${data.name} ist ein ${data.type}`); } ) // promise accepts only one data parameter
     .then(() => console.log("Folgeausgabe nur im Erfolgsfall"))
-    .catch((rand) => console.error("Fehlerfall da Ergebnis neq 0 – " + rand));
+    .catch((data) => console.error("Fehlerfall da Ergebnis neq 0 – " + data));
 console.log("Diese Ausgabe kommt VOR dem Promise...");
 
 
