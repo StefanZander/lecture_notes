@@ -208,6 +208,13 @@ Source: https://onlinelibrary.wiley.com/doi/full/10.1002/aaai.12033
 
 
 
+---
+## KGs in AI /CV
+
+In CV, an image is represented as a set of objects with a set of properties, where each object corresponds to a bounding box, identified by an object detector, and the objects are interconnected by a set of named relationships that are predicted by a model trained for identifying visual relationships. In Figure 4, a CV algorithm produces the KG shown to the right with objects such as a woman, a cow, and a mask, and relationships such as holding, feeding, and others. In modern CV research, such a KG is referred to as a scene graph (Chen et al. 2019), which has become a central tool for achieving compositional behavior in CV algorithms. That is, once a CV algorithm has been trained to recognize certain objects, then by leveraging scene graphs, it can be trained to recognize any combination of those objects with fewer examples. Scene graphs also provide the foundation for tasks such as visual question answering (Zhu et al. 2016).
+
+
+
 
 ---
 # The Impact of Knowledge Graphs is already visible 
