@@ -26,7 +26,7 @@ math: mathjax
 
 #### Prof. Dr. Stefan Linus Zander 
 
-Data Graphs {.lightgreen .Big .skip}
+Data Graph Types {.lightgreen .Big .skip}
 
 
 ---
@@ -43,7 +43,7 @@ We then discuss the primitives that form the basis of __graph query languages__ 
 
 
 ---
-## Didactical Model
+## A Word about the Teaching Methodology used during the theoretical Parts of this Module
 
 - At the core, we start with a mathematical definition and representation of graphs
 - we then use extend these definition towards a graph-based model in CS
@@ -53,7 +53,7 @@ We then discuss the primitives that form the basis of __graph query languages__ 
 
 :::: bluebox center marg2
 **Didactical Model**
-This lecture uses a continuum of _increasing "intelligence"_ as a didactical model to explain the the additions needed for the transition of simple data graphs towards semantic knowledge graphs. 
+This lecture uses a continuum of _increasing complexity_ applied to data graphs to explain the additional concepts and features needed for their transistion into semantic knowledge graphs as a didactical model.
 ::::
 
 
@@ -114,6 +114,40 @@ Using a data-graph model removes the necessity of an upfront schema and facilita
 4. Graph Datasets
 5. Other Graph Data Models
 6. Graph Stores
+
+
+
+
+---
+## Directed Edge-Labelled Graphs
+
+::: definition
+A ==directed edge-labelled graph== (sometimes called _multi-relational graph_) is a tuple $G = (V, E, L)$, where 
+- $V \subseteq \mathbf{Con}$ is a set of nodes, 
+- $L \subseteq \mathbf{Con}$ is a set of edge labels, and 
+- $E = V \times L \times V$ is a set of edges with $\mathbf{Con}$ being a countable infinite set of constants.
+
+Source: https://kgbook.org/
+:::
+
+::::: columns
+:::: single 
+**Remarks**
+- $V$ and $L$ are _not disjoint_, ie., a node can also serve as an edge-label
+- Nodes and edge labels can be present without any associated edge
+- The above definition can be extended by the previous restrictions if necessary 
+  - some graph databases implement these restrictions
+::::
+:::: single
+**Characteristics**
+- ==Nodes== are used to represent entities (TODO: define)
+- ==Edges== represent binary relations between those entities.
+- Adding information typically involves adding new nodes and edges
+- Incomplete information is expressed by omitting a particular edge (eg. `start-` and/or `end-time`)
+::::
+:::::
+
+
 
 
 
@@ -270,4 +304,95 @@ Source: https://kgbook.org/
 :::: double
 ::: center
 ![width:600px](figures/property_graphs.png)
+:::
 ::::
+:::::
+
+
+
+---
+## Organizing multiple Data Graphs in a Graph Dataset 
+
+::::: columns 
+:::: double
+**Background**
+Multiple directed edge-labelled graphs can be merged by taking their union but it is often _desirable to manage several graphs rather than one monolithic graph_.
+E.g. multiple graphs from different sources can be processed (update, refine, etc) differently by distinguishing untrustworthy sources from more trustworthy ones.
+
+**Constituents**
+A ==graph dataset== usually consists of a 
+1. set of named graphs and 
+2. a default graph. 
+
+Each _named graph_ is a pair of a _graph ID_ and a _graph_. 
+The default graph is a graph without an ID, and is referenced “by default”.
+
+
+**Extensions**
+Graph names can also be used as nodes in a graph. 
+Furthermore, nodes and edges can be repeated across graphs, where the same node in different graphs will typically refer to the same entity, allowing data on that entity to be integrated when merging graphs.
+::::
+:::: single
+::: caption 
+![text](./figures/graph_dataset_fake_news.png)
+A graph dataset for representing fake news propagation (source: https://github.com/mdepak/fake-news-propagation)
+:::
+::::
+:::::
+
+
+
+---
+## A formal Definition for Graph Datasets
+
+::: definition
+A ==named graph== is a pair $(n,G)$ where 
+- $G$ is a ==data graph==, and 
+- $n \in \mathbf{Con}$ is a ==graph name==.
+
+A ==graph dataset== is a pair $D = (G_{D},N)$, where
+- $G_{D}$ is a data graph called ==the default graph== and
+- $N$ is either the empty set, or a set of ==named graphs== $\{(n_{1}, G_{1}), \dots ,(n_{k}, G_{k})\}\ (k > 0)$ such that if $i \neq j$ then $n_{i} \neq n_{j}$ for all $1 \leqslant i \leqslant k, 1 \leqslant j \leqslant k$.
+
+Source: kgbook.org
+:::
+
+**Additional remarks**
+- We assume that all data graphs featured in a given graph dataset follow the same model (directed edge-labelled graph, heterogeneous graph, property graph, etc).
+- The concept of graph datasets generalises straightforwardly to datasets of other types of graphs
+
+
+
+---
+## Other Graph Data Models and Stores (hypergraphs / hypernodes) – TODO: add more information
+
+Labelled property graphs, property graphs, and heterogeneous/homogeneous grpahs are popular examples of graph representations. 
+
+Other graph data models exist that use _complex nodes_ that may contain individual edges or nested graphs (sometimes called _hypernodes_).
+
+Mathematical notation of a hypergraph defines complex edges that connect sets rather than pairs of nodes.
+
+Hypergraphs are thus also a special type of knowledge graph and can be converted into a simpler graph data model and vice versa.
+
+
+
+---
+## Graph Stores
+
+A variety of techniques have been proposed for storing and indexing graphs, facilitating the efficient evaluation of queries 
+
+Directed edge-labelled graphs can be stored in relational databases either in form of 
+- a single relation of arity three (triple table), 
+- as a binary relation for each property (vertical partitioning), 
+- or as $n$-ary relations for entities of a given type (property tables)
+
+Custom (so-called native) storage techniques have also been developed for a variety of graph models (TODO: provide examples), providing efficient access for finding nodes, edges, and their adjacent elements.
+
+A number of systems further allow for distributing graphs over multiple machines based on popular NoSQL stores or custom partitioning schemes. 
+
+
+
+---
+## Summary
+
+
