@@ -49,6 +49,7 @@ Knowledge, Knowledge Representation, and Understanding {.lightgreen .Big .skip}
 ::::: columns
 :::: single
 **Philosophically**
+- (Attributes to the epistemological perspective)
 - Knowledge is a subset of all true believes
 - Huge disconsensus in philosophy about the different conceptions and definitions
 - One largely beliefed definition is JTB

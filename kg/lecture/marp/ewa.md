@@ -89,5 +89,5 @@ Unser Ziel ist es, Sie mit dem Basistechnologien von Web-Applikationen vertraut 
 
 
 ::: bluebox center marg3
-Unser Ziel ist es, Sie mit Basistechnologien und -konzepten vertraut zu machen, so dass Sie darauf aufbauend mit modernen Web-Frameworks arbeiten können.
+Unser Ziel ist es, Sie mit **Basistechnologien** und **-konzepten** derart vertraut zu machen, so dass Sie sich darauf aufbauend gut in **moderne Web-Frameworks** einarbeiten können.
 :::
