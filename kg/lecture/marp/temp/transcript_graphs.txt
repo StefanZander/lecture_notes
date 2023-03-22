@@ -1,0 +1,523 @@
+
+0:00
+Hello everyone. So far in the series on data structures,
+0:03
+we have talked about some of the linear data structures like array,
+0:07
+linked list, stack and queue. In all these structure, data is arranged in a linear or
+0:13
+sequential manner, so we can call them linear data structures
+0:17
+and we've also talked about tree which is a non-linear data structure.
+0:22
+Tree is a hierarchical structure. Now as we understand data structures are ways to
+0:27
+store and organize data,
+0:29
+and for different kinds of data we use different kinds of data structures.
+0:33
+In this lesson, we're going to introduce you to another non linear data
+0:37
+structure
+0:38
+that has got its application in a wide number of scenarios in computer science.
+0:42
+It is used to model and represent a variety of systems
+0:46
+and this data structure is graph.
+0:49
+When we study data structures, we often first study them as
+0:53
+mathematical or logical models. Here also,
+0:57
+we will first study graph as a mathematical or logical model
+1:00
+and we will go into implementation details later.
+1:03
+Okay so let's get started. A graph just like a tree
+1:07
+is a collection of objects or entities that we call
+1:10
+nodes or vertices, connected to each other through
+1:14
+a set of edges. But in a tree
+1:18
+connections are bound to be in a certain way. In a tree that our rules
+1:22
+dictating the connection among the nodes. In a tree with
+1:26
+N Nodes, we must have exactly
+1:29
+N - 1 edges. One edge for
+1:32
+each parent child relationship. As we know an edge
+1:36
+in a tree is for a parent child relationship and all nodes in a tree
+1:40
+except the root node would have apparent would have exactly 1 parent
+1:45
+and that's why if they are N nodes, it must be exactly N - 1 edges.
+1:50
+In a tree, all nodes must be reachable from the root
+1:53
+and there must be exactly one possible path from root
+1:57
+to a node. Now in a graph there are no rules
+2:01
+dictating the connection among the nodes. A graph contains
+2:05
+a set of nodes and a set of edges
+2:08
+and edges can be connecting nodes in any possible way.
+2:11
+Tree is only a special kind of graph. Now graph
+2:15
+as a concept has been studied extensively in mathematics.
+2:19
+If you have taken a course on discrete mathematics
+2:22
+then you must be knowing about graphs already. In computer science, we basically
+2:27
+study and implement the same concept of graph from mathematics.
+2:30
+The study of graph is often referred to as
+2:33
+graph theory. In pure mathematical terms
+2:37
+we can define graph something like this.
+2:40
+A graph G is in order pair of a set V of vertices
+2:45
+and a set E of edges. Now I'm using some mathematical jargon here.
+2:50
+An ordered pair is just a pair of mathematical objects
+2:54
+in which the order of objects in the pair
+2:57
+matters. This is how we write and represent an ordered
+3:01
+pair, objects separated by comma put within parenthesis.
+3:05
+Now because the order here matters. We can say that V
+3:09
+is the first object in the pair and E is the second object.
+3:13
+An ordered pair A, B is not equal to B, A
+3:17
+unless A and B are equal.
+3:20
+In our definition of graph here, first object in the pair
+3:24
+must always be a set of vertices and the second object must be a set of edges
+3:29
+that's why we are calling the pair an ordered pair.
+3:33
+We also have concept of unordered pair. An unordered pair
+3:38
+is simply a set of two elements. Order is not important here.
+3:42
+We write an unordered pair using curly brackets or braces.
+3:45
+Because the order is not important here, unordered pair
+3:49
+A, B is equal to B, A. It doesn't matter which object is first and
+3:54
+which object is second. Okay coming back, so
+3:58
+a graph of is an ordered pair of a set of vertices and a set of
+4:01
+edges and G = (V,E) is a formal mathematical notation
+4:06
+that we use to define a graph. Now I have a graph drawn here
+4:10
+in the right. This graph is 8 vertices and 10 edges.
+4:15
+What I want to do is I want give some names to these vertices
+4:19
+because each node in a graph must have some identification.
+4:22
+It can be a name or it can be an index.
+4:26
+I'm naming these vertices as V1, V2
+4:30
+V3, V4, V5 and so on, and this naming is not indicative of any order.
+4:35
+There is no 1st, 2nd and 3rd Node here. I could give
+4:39
+any name to any node. So my set of vertices here
+4:43
+is this. We have 8 elements in the set V1, V2, V3, V4,
+4:48
+V5, V6, V7 and V8. So this is my set of vertices for this graph.
+4:54
+Now what's my set of edges. To answer this
+4:58
+we first need to know how to represent an edge.
+5:02
+An edge is uniquely identified by it's 2
+5:05
+endpoints, so we can just write the names of the two endpoint
+5:10
+of an edge as a pair and it can be a representation for the edge.
+5:16
+But edges can be of two types. We can have
+5:19
+a directed edge in which connection is one-way
+5:23
+or we can have an undirected edge in which connection is two way.
+5:28
+In this example graph that I'm showing here, edges are undirected
+5:32
+but if you remember the tree that I had shown earlier
+5:36
+then we had directed edges in that tree. With this directed edge that I'm showing
+5:41
+you here,
+5:41
+we are saying that there is link or path
+5:45
+from vertex U to V but we cannot assume a path from V to U.
+5:50
+This connection is one way. For a directed edge,
+5:53
+one of the endpoints would be the origin and other end point would be
+5:58
+the destination and we draw the edge with
+6:01
+an arrow head pointing towards the destination.
+6:05
+For our edge here, origin is U and destination is V.
+6:10
+A directed edge can be to represented as an ordered pair,
+6:13
+first element in the pair can be the origin and second element can be the
+6:17
+destination.
+6:19
+So with this directed edge represented as ordered pair
+6:22
+(U,V), we have a path from U to V.
+6:26
+If we want a path from V to U, when need to draw
+6:30
+another directed edge here with V as origin
+6:33
+and U as destination and this edge can be the represented as ordered pair
+6:38
+(V,U), the upper one here is (U,V) and the below one is
+6:43
+(V,U) and they are not same.
+6:46
+Now if the edge is undirected, the connection
+6:49
+is 2 way and undirected edge can be to represented as an
+6:53
+unordered pair here because the edge is bi directional
+6:57
+origin and destination are not fixed. We only need to know what two end points
+7:01
+have been connected by the edge.
+7:04
+So now that we know how to present edges, we can write the set of edges for this
+7:08
+example graph here.
+7:10
+We have an undirected edge between V1 and V2
+7:14
+then we have 1 between V1 and V3 and then be have V1 V4.
+7:19
+This is really simple and just go ahead and write all of them.
+7:22
+So this is my set of edges. Typically in a graph,
+7:26
+all edges would either be directed or undirected.
+7:30
+It's possible for a graph to have both directed and undirected edges
+7:34
+but we are not going to study such graphs, we are only going to study graphs
+7:38
+in which all edges would either be directed or
+7:42
+undirected. A graph with all directed edges
+7:45
+is called a directed graph or digraph
+7:49
+and a graph with all undirected ages is called an undirected graph.
+7:54
+There is no special name for an undirected graph.
+7:57
+Usually, if the graph directed, we explicitly say that it's
+8:02
+directed graph or digraph. So these are two types of graphs.
+8:06
+Directed graph or digraph in which edges
+8:09
+are uni-directional or ordered pairs and
+8:12
+undirected graph in which edges are bi-directional
+8:16
+or unordered pairs. Now many real-world systems and
+8:20
+problems can be modeled using a graph. Graphs can be used to represent
+8:25
+any collection of objects having some kind of
+8:28
+pairwise relationship. Let's have a look at some of the interesting examples.
+8:33
+A social network like Facebook can be represented as an
+8:37
+undirected graph. A user would be a node in the graph
+8:41
+and if 2 user are friends, there would be an edge connecting them.
+8:46
+A real social network would have millions and billions of nodes.
+8:50
+I can show only few in my diagram here because I'm short of space.
+8:53
+Now social network is an undirected graphs because friendship
+8:57
+is a mutual relationship. If I'm your friend, you are my friend too.
+9:01
+So connections have to be 2 way. Now once a system
+9:05
+is modeled as a graph a lot of problems can easily be solved
+9:10
+by applying standard algorithms in graph theory.
+9:13
+Like here in this social network, let's say we want to do something like
+9:17
+suggest friends to a user. Let's say we want to suggest some connections to
+9:22
+Rama.
+9:23
+One possible approach to do so can be suggesting friends of friends
+9:27
+who are not connected already. Rama has 3 friends,
+9:31
+Ella, Bob and Katie and friends of
+9:34
+3 that are not connected to Rama already
+9:38
+can be suggested. There is no friend of Ella which is not connected to Rama
+9:41
+already.
+9:42
+Bob however, has 3 friends Tom, Sam,
+9:46
+and Lee that are not friends with Rama so they can be suggested
+9:50
+and katie has two friends Lee and Swati
+9:54
+that are not connected to Rama.We have counted Lee already,
+9:57
+so in all we can suggest these for users to Rama.
+10:02
+Now even though we described this problem in context of a social network.
+10:06
+This is a standard graph problem. The problem here in
+10:10
+pure graph terms is finding all nodes having lenght of
+10:14
+shortest path from a given node equal to 2.
+10:18
+Standard algorithms can be applied to solve this problem.
+10:21
+We'll talk about concepts like path in a graph in some time.
+10:24
+For now just know that the problem that we just described in context of
+10:28
+a social network is a standard graph problem.
+10:32
+Okay so a social network like Facebook is an undirected graph
+10:36
+Now let's have a look at another example. Interlinked
+10:40
+web pages on the internet or the World Wide Web
+10:43
+can be represented as a directed graph. A web page
+10:47
+that would have a unique address or URL would be a node in the graph
+10:52
+and we can have a directed edge if a page contains link to another page.
+10:58
+Now once again, there are billions of pages on the web
+11:01
+but I can show only few here. The edges in this graph are directed because
+11:06
+that relationship is not mutual this time.
+11:09
+If page A has a link to page B then it's not necessary that page B will
+11:14
+also have a link to page A.
+11:16
+Let's say one of the pages on mycodeschool.com has
+11:19
+a tutorial on graph and on this page
+11:22
+I have put a link to Wikipedia article on graph.
+11:26
+Let's assume that in this example graph that I am showing you here.
+11:29
+Page P is my mycodeschool tutorial on graph
+11:33
+with this address or URL mycodeschool.com/videos/graph
+11:37
+and lets say, page Q is the Wikipedia article on graph
+11:42
+with this URL Wikipedia/org/wiki/graph.
+11:46
+Now on my page that is page
+11:49
+P, I have put a link to the Wikipedia page on graph.
+11:53
+If you are on page P, you can click on this link and go to page Q
+11:58
+but Wikipedia has not reciprocated to my favor by putting
+12:02
+a link back to my page. So if you are on page Q
+12:06
+you cannot click on the link can come to page P. Connection here
+12:09
+is one way and that's why we have drawn a directed egde here.
+12:13
+Okay now once again if we are able to present
+12:17
+web as a directed graph, we can apply standard graph theory algorithms to
+12:22
+solve problems and to perform tasks.
+12:25
+One of the tasks that search engines like Google perform very regularly
+12:30
+is web crawling. Search engines use a program called web crawler
+12:35
+that systematically browsers the World Wide Web
+12:38
+to collect and store data about web pages. Search engines can then use this
+12:43
+data
+12:43
+to provide quick and accurate results against search queries.
+12:48
+Now even though in this context, we are using a nice and heavy term like web
+12:52
+crawling.
+12:53
+Web crawling is basically graph traversal
+12:56
+or in simpler words, act of visiting all nodes in a graph
+13:01
+and no prizes for guessing that there are standard algorithms for graph
+13:05
+traversal.
+13:06
+We will be studying graph traversal algorithms in a later lessons.
+13:09
+Okay now the next thing that I want to talk about is concept of a
+13:13
+weighted graph. Sometimes in a graph, all connections cannot be treated as equal.
+13:19
+Some connections can be preferable to others
+13:22
+like for example we can represent
+13:25
+intercity road network that is the network of highways and
+13:29
+free ways between cities as an undirected graph.
+13:33
+I'm assuming that all highways would be bi-directional.
+13:36
+Intra-city road network that is road network within a city
+13:41
+would definitely have one-way roads and so
+13:44
+Intra-city network must be represented as a directed graph
+13:48
+but intercity road network in my opinion can be represented as an
+13:52
+undirected graph. Now clearly we cannot treat all connections as equal here.
+13:57
+Roads would be of different lengths and to perform a lot of tasks
+14:00
+to solve a lot of problems, we need to take length of roads into account.
+14:05
+In such cases, we associate some weight or
+14:08
+cost with every edge. We label the edges with their weights.
+14:12
+In this case weight can be lenght of the roads, so what to do here is I'll just
+14:17
+label this edges with some values for the lenghts.
+14:22
+Let's say these values are in kilometers
+14:25
+and now edges in this graph are weighted and this graph can be called weighted
+14:30
+graph.
+14:31
+Let's say in this graph, we want to pick the best route
+14:35
+from city A to city D.
+14:38
+Have a look at these four possible routes, I am showing them in different
+14:41
+colors.
+14:43
+Now if I would treat all edges as equal
+14:46
+then I would say that the green route through B and C
+14:50
+and a red route through E and F are equally good.
+14:54
+Both these paths have to three edges and this yellow route through E
+14:58
+is the best because we have only two edges in this path.
+15:03
+But with different weights assigned to the connections, I need to add up
+15:07
+weights of edges in a path to calculate total cost.
+15:11
+When I'm taking weight into account shortest route
+15:14
+is through B and C. Connections have different weights and
+15:18
+this is really important here in this graph. Actually, we can look at all the
+15:22
+graphs as weighted graphs
+15:24
+An unweighted graph can basically be seen as
+15:27
+a weighted graph in which weight of all the edges
+15:30
+is same and typically we assume to weight as one.
+15:35
+Okay so we have represented inter-city cities road network as
+15:39
+weighted undirected graph. Social network was an unweighted undirected graph
+15:45
+and World Wide Web was an unweighted directed graph
+15:49
+and this one is a weighted undirected graph.
+15:53
+Now this was inter-city road network. I think intra-city road network that is
+15:58
+road network within a city can be modeled as
+16:01
+a weighted directed graph because in a city that would be some one ways.
+16:06
+Intersections in interest city's road network would be Nodes
+16:10
+and road segments would be our edges,
+16:14
+and by the way we can also draw an undirected graph as directed.
+16:19
+It's just that for each undirected edge we will have 2 directed edges.
+16:24
+We may not be able to redraw a directed graph has undirected
+16:27
+but we can always redraw an undirected graph as directed.
+16:32
+Okay I'll stop here now. This much is good for an introductory lesson.
+16:36
+In next lesson, we will talk about some more properties of graph.
+16:40
+This is it for this lesson. Thanks for watching !
