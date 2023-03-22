@@ -44,7 +44,44 @@ Knowledge, Knowledge Representation, and Understanding {.lightgreen .Big .skip}
 
 
 ---
-## Knowledge is best explained trough a contiuum of increasing Specificity 
+## Knowledge can be explained^*^ philosophically, pragmatically, and technically
+
+::::: columns
+:::: single
+**Philosophically**
+- Knowledge is a subset of all true believes
+- Huge disconsensus in philosophy about the different conceptions and definitions
+- One largely beliefed definition is JTB
+- The american philosopher Edmund Gettier disapproved the JTB by providing a number of counter examples – also known as the Gettier Cases
+::::
+:::: single
+**Pragmatically**
+- several models have been proposed to explain the nature of knowledge, mostly in the context of certain scenarios (e.g. CPS, Industry 4.0, Innovation etc.)
+- The most prominent ones among others are
+  - The Wissenstreppe 4.0 by Claus North
+  - The SECI-Model
+  - The Knowledge Pyramid by Ackoff, 1999
+::::
+:::: single
+**Technically**
+- Knowledge needs a form of manifestation to be represented in machine-processable models.
+- This area is denoted as (formal) knowledge representationn
+- It makes extensive use of different logical theories to represent knowledge in formal, unambiguous ways while being able to draw inferences on the model's constituents 
+::::
+:::::
+
+::: footnotes
+^*^ As we will see, there is no universally accepted definition of/for 'Knowledge'
+:::
+
+---
+## So what do we do now...?
+
+The simplest approach for defining knowledge is to define it on the basis of a continuum of increasing meaning and value in terms of the intentions and actions an agent can perform based on the contemplation of elements being constituents of  
+
+
+---
+## Knowledge is best explained through a Continuum of increasing Specificity and Meaningfulness
 
 ::::: gridncol widthauto horizontal-center
 Symbols
@@ -86,23 +123,18 @@ digraph rdf {
 ```
 :::::
 
+::::: columns
+:::: single
+![](figures/tiger_shark.png)
+::::
+:::: single vert-center
 $$ \text{Galeocerdo cuvier} \sqsubseteq \text{Animal} \sqcap \forall \text{maxLength}.7,8$$
+::::
+
+:::::
 
 
 
-
-
-
----
-::: center Huge
-33,6
-:::
-
-
----
-::: center Huge
-33,6 m
-:::
 
 
 ---
@@ -179,6 +211,9 @@ Knowledge is what we know about the world around us. It is what we have learned 
 ::::
 :::: single
 ![](figures/jtb_model_of_knowledge.png)
+::: caption
+The Gettier problem is motivated by the idea that some justified true beliefs do not amount to knowledge; they are the result of lucky coincidents.
+:::
 ::::
 :::::
 
@@ -190,7 +225,7 @@ Sources: (1) https://en.wikipedia.org/wiki/Gettier_problem and (2) https://en.wi
 ---
 ## Knowledge as justified true belief (JTB)
 
-::::: columns
+::::: columns 
 :::: single
 **Truth**
 - Knowledge implies truth
@@ -209,10 +244,9 @@ Sources: (1) https://en.wikipedia.org/wiki/Gettier_problem and (2) https://en.wi
 ::::
 :::: single
 **Justification**
-- Justification is based on the idea that having a true belief is not sufficient for knowledge
-- and knowledge implies more than just being right about something. 
-- So beliefs based on dogmatic opinions, blind guesses, or erroneous reasoning do not constitute knowledge even if they are true.
-  - e.g. For example, if someone believes that Machu Picchu is in Peru because both expressions end with the letter u, this true belief does not constitute knowledge.
-- So true beliefs that are based on good justification constitute knowledge
+- Justification is based on the idea that having a true belief is not sufficient for knowledge since knowledge implies more than just being right about something. 
+- Bliefs based on dogmatic opinions, blind guesses, or erroneous reasoning do not constitute knowledge even if they are true.
+  - e.g. For example, if someone believes that Machu Picchu is in Peru because both expressions end with the letter 'u', this true belief does not constitute knowledge.
+- True beliefs that are based on good justification constitute knowledge <!-- e.g. a person visiting peru knows that Machu Picchu is in Peru -->
 ::::
 :::::
