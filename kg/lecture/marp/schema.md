@@ -63,21 +63,19 @@ usually using a term such as `type`
 Classes can have relations among other and organized hierarchically forming superclasses and subclasses
 
 ::::: columns
-:::: single
-::: center huge
-**Classes**
+:::: single greenbox
+**Classes** {.center .Big}
 - semantics can be added to classes to form class hierarchies
 - class hierarchies usually represent type hierarchies, ie., manifestations of taxonomical classification systems for expressing generalization and specialisation relationships between members of such classes
-:::
 ::::
 :::: single
-::: center Huge
+::: center Big bluebox
 **Properties**
+:::
 - semantics for relations aka properties
 - property hierarchies
 - domain: relating the source node that participates in a relation to a certin class
 - range: relating the target node of a relation to a certain class
-:::
 ::::
 :::::
 
@@ -87,8 +85,8 @@ Classes can have relations among other and organized hierarchically forming supe
 ## Overview of simple Schema Semantics
 
 ::: center
-![](figures/class_hierarchy.png)
-![](figures/table_of_simple_semantics.png)
+![width:600px](figures/class_hierarchy.png)
+![width:600px](figures/table_of_simple_semantics.png)
 :::
 
 

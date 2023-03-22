@@ -10,10 +10,12 @@ const markdownItDiv = require('markdown-it-div')
 const markdownIt = require('markdown-it')
 const markdownItFontAwesome = require('markdown-it-fontawesome')
 const markdownItDef = require('markdown-it-deflist')
-// const mermaidIt = require('mermaid-it') //not working
+// const mermaidIt = require('markdown-it-mermaid') //not working
 const markdownItInlineColor = require('@gerhobbelt/markdown-it-inline-text-color')
 const markdownItBracketedSpans = require('markdown-it-bracketed-spans')
-// const mdi = require('markdown-it-mdi')
+const mdi = require('markdown-it-mdi') // addes material design icons
+const markdownItGraphviz = require('markdown-it-graphviz-exc') // adds graphviz-support
+
 
 module.exports = (opts) => new Marp(opts)
 // module.exports = (opts) => new Marp({
@@ -40,9 +42,10 @@ module.exports = (opts) => new Marp(opts)
 .use(markdownItDef)
 .use(markdownItInlineColor)
 .use(markdownItBracketedSpans)
-.use(markdownItFontAwesome);
+.use(markdownItFontAwesome)
 // .use(mermaidIt)
-// .use(mdi);
+.use(markdownItGraphviz) // added 2023-03-21 by SZA
+.use(mdi);
 
 
 // .use(require('markdown-it-mark'))
