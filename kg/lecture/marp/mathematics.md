@@ -744,6 +744,83 @@ If any other path is possible, there must be a simple path.
 
 
 
+
+---
+## Properties of Graphs: Strongly Connected Graphs 
+
+::: bluebox center marg4 space
+A **graph** is a ==strongly connected graph== if there is a path from any vertex to any other vertex.
+:::
+
+::::: columns 
+:::: single center 
+```graphviz
+graph G {
+    node [shape=circle];
+    nodesep=1.5;
+    label="A connected graph"; 
+    {rank=same; 2;};
+    {rank=same; 3; 1;};
+    {rank=same; 4; 5;};
+    1 [label="v&#x2081;"];
+    2 [label="v&#x2082;"];
+    3 [label="v&#x2083;"];
+    4 [label="v&#x2084;"];
+    5 [label="v&#x2085;"];
+    1 -- 2;
+    2 -- 3;
+    3 -- 4;
+    4 -- 5;
+}
+```
+<!-- If an edge would be removed, the graph would be not connected -->
+::::
+:::: single center vert-bottom
+```graphviz
+digraph G {
+    node [shape=circle];
+    nodesep=1.5;
+    label="A weakly connected graph"; 
+    {rank=same; 2;};
+    {rank=same; 3; 1;};
+    1 [label="v&#x2081;"];
+    2 [label="v&#x2082;"];
+    3 [label="v&#x2083;"];
+    1 -> 3;
+    1 -> 2;
+    3 -> 2;
+}
+```
+::::
+:::: single center vert-bottom
+```graphviz
+digraph G {
+    node [shape=circle];
+    nodesep=1.5;
+    label="A strongly connected graph"; 
+    {rank=same; 1;};
+    {rank=same; 2; 4;};
+    {rank=same; 3;};
+    1 [label="v&#x2081;"];
+    2 [label="v&#x2082;"];
+    3 [label="v&#x2083;"];
+    4 [label="v&#x2084;"];
+    1 -> 4;
+    2 -> 1;
+    2 -> 3;
+    2 -> 4;
+    3 -> 4;
+    4 -> 2;
+}
+```
+::::
+:::::
+
+
+The degree and type of connectedness is an important concept in graph theory.
+
+
+
 ---
 ## Properties of Graphs: Cycles
 
@@ -824,82 +901,4 @@ digraph G {
 ```
 ::::
 :::::
-
-
-
----
-## Properties of Graphs: Strongly Connected Graphs 
-
-::: bluebox center marg4 space
-A **graph** is a ==strongly connected graph== if there is a path from any vertex to any other vertex.
-:::
-
-::::: columns 
-:::: single center 
-```graphviz
-graph G {
-    node [shape=circle];
-    nodesep=1.5;
-    label="A connected graph"; 
-    {rank=same; 2;};
-    {rank=same; 3; 1;};
-    {rank=same; 4; 5;};
-    1 [label="v&#x2081;"];
-    2 [label="v&#x2082;"];
-    3 [label="v&#x2083;"];
-    4 [label="v&#x2084;"];
-    5 [label="v&#x2085;"];
-    1 -- 2;
-    2 -- 3;
-    3 -- 4;
-    4 -- 5;
-}
-```
-<!-- If an edge would be removed, the graph would be not connected -->
-::::
-:::: single center vert-bottom
-```graphviz
-digraph G {
-    node [shape=circle];
-    nodesep=1.5;
-    label="A weakly connected graph"; 
-    {rank=same; 2;};
-    {rank=same; 3; 1;};
-    1 [label="v&#x2081;"];
-    2 [label="v&#x2082;"];
-    3 [label="v&#x2083;"];
-    1 -> 3;
-    1 -> 2;
-    3 -> 2;
-}
-```
-::::
-:::: single center vert-bottom
-```graphviz
-digraph G {
-    node [shape=circle];
-    nodesep=1.5;
-    label="A strongly connected graph"; 
-    {rank=same; 1;};
-    {rank=same; 2; 4;};
-    {rank=same; 3;};
-    1 [label="v&#x2081;"];
-    2 [label="v&#x2082;"];
-    3 [label="v&#x2083;"];
-    4 [label="v&#x2084;"];
-    1 -> 4;
-    2 -> 1;
-    2 -> 3;
-    2 -> 4;
-    3 -> 4;
-    4 -> 2;
-}
-```
-::::
-:::::
-
-
-The degree and type of connectedness is an important concept in graph theory.
-
-
 
