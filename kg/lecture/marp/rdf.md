@@ -117,6 +117,74 @@ digraph G {
 ```
 
 
+
+---
+## In order to use RDF for encoding KGs, the following questions need to be answered
+
+- How to represent vertices and edges in RDF KGs ?
+- How to represent data and data values ?
+- How can we express n-ary relationships ?
+- How to provide identity for elements in the graph ?
+- How to identify "things" ?
+- How to distinguish "things" from representations about those "things" ?
+- How to encode / serialize RDF graphs ?
+- How to implement and integrate semantics ?
+- How to share RDF graphs among applications and systems ?
+
+
+
+---
+## What does RDF stands for ?
+
+::: grid2col widthauto vertical-align-center
+[**R**]{.red .Huge}**essource** 
+
+$\leadsto$ can be or refer to **everything** that is **uniquely identifiable** by an URI/IRI and must be **referencable**
+
+[__D__]{.red .Huge}**escription**
+
+$\leadsto$ representation of **properties** and **relationships** among resources in form of **directed graphs**
+
+[**F**]{.red .Huge}**ramework**
+
+$\leadsto$ conflation of **Web technologies**, **protocols**, and **standards** (URI, HTTP, XML, JSON) and **formal logics** (semantics)
+:::
+
+
+
+---
+## How data are represented in RDF
+<!-- _class: nothead -->
+
+- Facts in RDF are expressed as **statements** in the form of `<subject> <predicate> <object>`-triples
+
+- Statement (ie RDF-triples)
+  | []()   |<!-- --> |<!-- -->      |<!-- -->       |<!-- -->                    |
+  |-----------|------|-----------------|---------------|----------------------------|
+  | Subject   | i.e. | Resource        | $\rightarrow$ | URI/IRI or Blank node      |
+  | Predicate | i.e. | Property        | $\rightarrow$ | URI/IRI                    |
+  | Object    | i.e. | Object or Value | $\rightarrow$ | URI/IRI or (Typed) Literal |
+
+- All RDF statements follow the same **logical schema** and are represented as a **list of triples** 
+
+- An RDF document can be **represented graphically** in different forms
+  - Common representation form is a ==Node-Edge-Node graph==
+
+- Due to the **uniqueness** of node and edge **identifiers**, an RDF graph can be **reconstructed** from the list of triples
+
+
+---
+## Elements of RDF graphs
+
+- **URIs**
+  - enable the unique identification of resources 
+  
+- **Literals**
+  - describe data values that do not have a specific existence
+
+- **Blank Nodes**
+  - enable statements about the existence of individuals and their properties without naming them explicitly
+
 ---
 ## Identifiers in RDF: How should we refer to vertices?
 
@@ -196,10 +264,11 @@ Source: Krötzsch
 ---
 ## Why IRIs?
 
-**URIs may seem a bit complicated**
+**IRIs/URIs may seem a bit complicated**
 - They look a bit technical and complex
 - They are hard to display or draw in a graph
 - The guidelines just given may seem quite demanding to newcomers
+- They can not be dereferenced just like URLs
 
 **However, it’s not that hard**
 - RDF can work with any form of IRI (most tools would probably accept any Latin-letter string with a colon inside!)
@@ -216,6 +285,166 @@ Source: Krötzsch
 
 ---
 ## Content Negotiation
+
+
+
+
+---
+## How to represent data values in RDF ?
+
+**IRIs should not be used to represent data values**
+- IRIs can represent anything, 
+- but *data values* (numbers, strings, times, . . . ) should _not_ be represented by IRIs!
+
+**Why not use IRIs here too?**
+
+1. Data values are the same everywhere $\leadsto$ no use in application-specific IRIs
+2. Many RDF-based applications need a built-in understanding of data values (e.g., for sorting content)
+3. Data values are usually more "interpreted" than IRIs.
+   - Example: Using a hypothetical scheme "integer", the IRIs `integer:42` and `integer:+42` would be different, but intuitively they should represent the same number.
+
+
+
+
+---
+## Encoding Data Values in RDF
+
+```graphviz
+digraph G {
+    //graph [rankdir=LR];
+    node [fontname="Barlow Semi Condensed", fontsize=14];
+    edge [fontname="Barlow Semi Condensed", fontsize=14];
+    nodesep=.5;
+    //label="Example RDF graph with data values"; 
+    //{rank=same; 1;};
+    //{rank=same; 2; 4;};
+    //{rank=same; 3;};
+    1 [label="<http://dbpedia.org/resource/Greenhouse_effect>"];
+    2 [label="<http://dbpedia.org/resource/Joseph_Fourier>"];
+    3 [label="\"Treibhauseffekt\"^^xsd:string", shape=box, color=blue, fontcolor=blue];
+    4 [label="<http://dbpedia.org/resource/Auxerre>"];
+    5 [label="\"1768-03-21\"^^xsd:date", shape=box, color=blue, fontcolor=blue];
+    6 [label="<http://dbpedia.org/resource/France>"];
+    1 -> 2 [label="<http://dbpedia.org/ontology/discoverer>"];
+    1 -> 3 [label="<http://www.w3.org/2000/01/rdf-schema#label>", color=blue, fontcolor=blue];
+    2 -> 4 [label="<http://dbpedia.org/ontology/birthplace>"];
+    2 -> 5 [label="<http://dbpedia.org/ontology/birthdate>"];
+    4 -> 6 [label="<http://dbpedia.org/ontology/country>"];
+}
+```
+
+- Data values in RDF are written in the format `"lexical value"^^datatype-IRI`.
+- They are drawn as rectangular nodes in graphs.
+
+
+
+---
+## RDF Datatypes
+
+::: definition
+A ==datatype== in RDF is specified by the following components:
+- The ==value space== is the set of possible values of this type.
+- The ==lexical space== is a set of (Unicode) strings that can be used to denote values of this type.
+- the ==lexical-to-value mapping== is a function that maps each string from the lexical space to an element of the value space.
+
+Source: Definition taken from Krötzsch, 2021
+:::
+
+
+Datatypes for RDF must be identified by IRIs (known to software that supports them).
+
+::: greenbox
+**Example**: 
+The W3C standard XML Schema defines the datatype **integer**, identified by the IRI http://www.w3.org/2001/XMLSchema#integer. It has the **value space** of all integer numbers (of arbitrarily large absolute value), the **lexical space** of finite-length strings of decimal digits (`0–9`) with an optional leading sign (`−` or `+`), and the expected **lexical-to-value mapping**.
+:::
+
+
+
+---
+## An Overview of available XSD datatypes in RDF
+
+::: right
+![height:600px](figures/rdf_xsd_datatypes.png)
+:::
+
+
+
+---
+## RDF datatype Literals
+
+::::: columns
+:::: single bluebox
+**Literals** {.center .Big}
+
+- Used for the representation of **data values**
+- Representation as **strings**
+- Interpretation depending on the **data type** associated with a Literal
+- Literals _without_ type information are **untyped** and treated as **plain strings**
+- Represented as **boxes** in visualized RDF graphs
+::::
+:::: single greenbox
+**Typed Literals** {.center .Big}
+
+- Typed literals are expressed via XML Schema data types
+  - Namespace: `http://www.w3.org/2001/XMLSchema#`
+- Language tags indicate the natural language of a text
+  - Example: `"Semantik"@de`, `"Semantics"@en`
+- Data types allow for a **semantic interpretation** of object values
+- Data types are represented by **URIs** and can be arbitrarily chosen, but **XML Schema data types** are commonly used in RDF graphs 
+- Syntax: `"Data_value"^^Data_Type_URI`
+::::
+:::::
+
+
+
+---
+## Blank Nodes
+
+::::: columns
+:::: single
+RDF also supports vertices that are not identified by a IRI, called ==blank nodes== or ==bnodes==.
+- Used to model **multi-valued relations** (e.g. `rdf:value`)
+- Used for _auxiliary resources_ that do not need a name
+- Similar to _existentially quantified variables_ in logic
+
+::: bluebox
+**Blank nodes** indicate the existence of an individual with specific attributes, but without providing **external identification** or URI-based reference information.
+:::
+
+::::
+:::: single
+**Example**: Blank nodes have historically been used for auxiliary vertices
+
+```graphviz
+digraph G {
+    //graph [rankdir=LR];
+    node [fontname="Barlow Semi Condensed", fontsize=14];
+    edge [fontname="Barlow Semi Condensed", fontsize=14];
+    nodesep=.5;
+    //label="Example RDF graph with data values"; 
+    //{rank=same; 1;};
+    //{rank=same; 2; 4;};
+    //{rank=same; 3;};
+    1 [label="<https://dbpedia.org/resource/Hochschule_Darmstadt>"];
+    2 [label="  ", color=blue, fontcolor=blue];
+    3 [label="\"49.86638888888889\"^^xsd:decimal", shape=box ];
+    4 [label="\"8.633333333333333\"^^xsd:decimal", shape=box ];
+    1 -> 2 [label="<http://www.georss.org/georss/point>", color=blue];
+    2 -> 3 [label="<wgs84:latitude>", color=blue];
+    2 -> 4 [label="<wgs84:longitude>", color=blue];
+}
+```
+
+::: smaller graybox spacebefore marg2
+**Note**: 
+Today, bnodes are largely avoided. They still occur in the RDF-encoding of the OWL Web Ontology Language, but specialised tools are used in this application anyway.
+:::
+::::
+:::::
+
+
+
+
 
 
 ---
