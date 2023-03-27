@@ -163,7 +163,7 @@ $\leadsto$ conflation of **Web technologies**, **protocols**, and **standards** 
   |-----------|------|-----------------|---------------|----------------------------|
   | Subject   | i.e. | Resource        | $\rightarrow$ | URI/IRI or Blank node      |
   | Predicate | i.e. | Property        | $\rightarrow$ | URI/IRI                    |
-  | Object    | i.e. | Object or Value | $\rightarrow$ | URI/IRI or (Typed) Literal |
+  | Object    | i.e. | Object or Value | $\rightarrow$ | URI/IRI or Blank node or (Typed) Literal |
 
 - All RDF statements follow the same **logical schema** and are represented as a **list of triples** 
 
@@ -398,6 +398,44 @@ The W3C standard XML Schema defines the datatype **integer**, identified by the 
 
 
 ---
+## RDF Properties
+
+RDF uses ==IRIs== in **predicate** positions
+- Resources represented by predicates are called ==properties==
+- We can _make statements about properties by using their IRIs as subjects in triples_
+
+::: graybox marg2 space
+**Example**: It is common to assign labels to properties, and many applications display these labels to show triples that use these properties as their predicate.
+:::
+
+:::: columns
+::: single
+```graphviz
+digraph G {
+    //graph [rankdir=LR];
+    node [fontname="Barlow Semi Condensed", fontsize=14];
+    edge [fontname="Barlow Semi Condensed", fontsize=14];
+    nodesep=.5;
+    //label="Example RDF graph with data values"; 
+    //{rank=same; 1;};
+    //{rank=same; 2; 4;};
+    //{rank=same; 3;};
+    1 [label="some property IRI"];
+    2 [label="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"];
+    1 -> 2 [label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"];
+}
+```
+:::
+::: single
+We can declare a resource as a property using special RDF vocabulary:
+
+Much further information about a property can be specified using properties of RDF and other standard vocabularies (esp. OWL)
+:::
+::::
+
+
+
+---
 ## Blank Nodes
 
 ::::: columns
@@ -486,3 +524,9 @@ Source: Baker-Coyle-Petiya: Multi-Entity Models of Resource Description in the S
 - **Non-Unique Naming Assumption (NUNA)**
   - As a matter of principle, things described in RDF data can have more than one name. Because URIs are used in RDF as names, anything may be identified by more than one URI.
   - Things are not assumed to be different because they have different names.
+
+
+---
+## TODO: How to model Data with RDF + Provide overview of the base vocabular of RDF (what terms does the framework define...?)
+
+TODO: also make the sequence more consistent
