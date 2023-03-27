@@ -45,8 +45,8 @@ In order to exchange RDF graphs, **concrete syntacic forms** are needed to **enc
 
 **There are numerous syntactic formats available**:
 
-- [*N-Triples*]{ .Big} is a simple line-based format
-- *Turtle* adds convenient abbreviations to N-Triples 
+- :fa-magnifying-glass: *N-Triples* is a simple line-based format 
+- :fa-magnifying-glass: *Turtle* adds convenient abbreviations to N-Triples 
 - *JSON-LD* for encoding RDF graphs in JSON
 - *RDF/XML* for encoding RDF graphs in XML
 - *RDFa* for embedding RDF graphs into HTML
@@ -131,7 +131,7 @@ There are several other shortcuts and simplifications. Full specification at htt
 
 
 ---
-## Example
+## Example: Using prefixes for resources and data values and a base IRI
 
 ::: center space
 ```graphviz
@@ -273,7 +273,7 @@ digraph G {
 
 
 ---
-## Turtle: How to model multi-value relations 
+## Turtle: Using Blank nodes to model multi-value relations 
 
 ::: center space
 ```graphviz
@@ -310,7 +310,7 @@ digraph G {
 
 
 ---
-## Turtle: How to model multi-value relations 
+## Turtle: Serialising anonymous blank nodes 
 
 ::: center space
 ```graphviz
@@ -357,7 +357,7 @@ digraph G {
 
 
 ---
-## Turtle: How to model multi-value relations 
+## Turtle: Serialising locally identifyable blank nodes 
 
 ::: center space
 ```graphviz
