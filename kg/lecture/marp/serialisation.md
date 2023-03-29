@@ -476,3 +476,25 @@ Only some specialised syntactic forms can serialise RDF datasets with named grap
 ::: bluebox
 The semantics of named graphs was left open by the Working Group. Are all graphs’ triples asserted to hold, or just those in the default graph? Do the IRIs of graphs denote the resource that is the set of triples given, or something else? $\leadsto$ currently application-dependent
 :::
+
+
+---
+## Summary
+
+
+::::: centercontent columns 
+:::: double
+- RDF allows for expressing simple facts
+  - Anne is the mother or Merula
+- It is desirable to express more generic knowledge
+  - Mothers are female
+  - If somebody has a daughter, this person is a parent
+- Such kind of knowledge is called **schema knowledge** or **terminological knowledge**
+- **RDF Schema** allows for schema knowledge modeling (although with less expressivity than OWL)
+::::
+:::: single
+::: center
+![](figures/brain3.png)
+:::
+::::
+:::::
