@@ -143,3 +143,109 @@ We discuss
 - how ontologies can be **formally defined**, 
 - how they relate to existing **logical frameworks**, and 
 - how **reasoning** can be conducted with respect to such ontologies
+
+
+
+
+---
+# Ontology Features 
+
+
+---
+## Ontology Features: Introduction
+
+Beyond our base assumptions, we can associate certain **patterns** in the data graph with ==semantic conditions== that _define which interpretations satisfy it_.
+- we can add a semantic condition to enforce that if our data graph contains the edge `p–subp. of➛q`, then any edge `x–parrow tip rightwardy` in the domain graph of the interpretation must also have a corresponding edge `x–qarrow tip rightwardy` to satisfy the data graph. 
+
+**Example**:
+```rdf
+Semantic condition:       :p    rdfs:subPropertyOf      :q
+
+Domain graph:             :x    :p    :y
+
+Data graph:               :x    :q    :y
+```
+
+These **semantic conditions** then form the ==features== of an ontology language. 
+We will discuss such features by means of the ontology language OWL on the following slides.
+
+
+
+
+---
+## Ontology Features for Individuals
+
+OWL provides the follow features for describing the formal, model-theoretic semantics of individuals.
+
+**Assertions**: we can assert (binary) relations between individuals using edges such as `Santa Lucía–city➛Santiago`. 
+Ie., we refer to the condition that the relation is given in the domain graph of the interpretation; if so, the interpretation satisfies the axiom.
+
+**Same entity**: Based on the OWA, we can state that two terms refer to the same entity
+- e.g. `Región V–same as➛Región de Valparaíso` (add example from Sack)
+
+**Different from**:  two terms refer to different entities, where, e.g., `Valparaíso–diff. from➛Región de Valparaíso` distinguishes the city from the region of the same name. 
+
+**Negation**: We may also state that a relation does _not hold_ using ==negation==, which can be serialised as a graph using a form of **reification**.
+
+
+
+---
+## Overview of Ontology Features for Individuals
+
+::: center
+![](figures/ontology_features_for_individuals.png)
+:::
+
+
+
+---
+## For later: Ontology Features for Property Axioms
+
+
+With OWL, additional semantics can be defined for a pair of properties:
+- (specialization and generalizations – RDFS)
+- equivalence /equivalent
+- inverse 
+- disjontness / disjoint
+- transitivity / transitive
+- symmetric
+- asymmetric
+- reflexive
+- irreflexive 
+
+Multiplicity: we can also define the multiplicity of the relation denoted by properties based on being
+- functional (ie., many-to-one)
+- inverse-functional (ie. one-to-many)
+
+
+
+---
+## Additional Semantics for Properties
+
+Key: We may further define a key for a class, denoting the set of properties whose values uniquely identify the entities of that class.
+
+Chain: A path expression only allowing concatenation of properties such that pairs of entities related by the chain are also related by the given property.
+
+
+---
+## Overview of Ontology features for property axioms (1/3)
+
+::: center
+![](figures/ontology_features_for_property_axioms_1.png)
+:::
+
+
+---
+## Overview of Ontology features for property axioms (2/3)
+
+::: center
+![](figures/ontology_features_for_property_axioms_2.png)
+:::
+
+
+---
+## Overview of Ontology features for property axioms (3/3)
+
+::: center
+![](figures/ontology_features_for_property_axioms_3.png)
+:::
