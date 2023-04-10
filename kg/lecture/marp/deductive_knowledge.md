@@ -107,6 +107,33 @@ Under the OWA, an interpretation containing the edge $x\rightarrow p \rightarrow
 
 
 ---
+## Interpretations
+
+The OWA and NUNA allow an infinite number of possible interpretations (models) for a data graph.
+
+However, the addition of axioms to a model limits the number of possible interpretations. 
+
+E.g. by declaring a property as irreflexiv, the following assertion is no longer a possible model of the graph:
+
+```
+:x      :y          :z .      // assertion in the data graph
+:a      :a          :a .  // is a model of the graph (the OWA and NUNA allows to map multiple nodes to one entity in the model)
+
+as long as the following assertion holds
+
+x = y = z = a 
+
+By adding addtional axioms with semantic conditions to the graph, we restrict models for the graph:
+
+:x      :y          :z .
+:y      rdf:type    owl:IrreflexiveObjectProperty .
+
+With these axioms, the above interpretation is no longer a model of the graph as it breaks the irreflexive axiom condition.
+```
+
+
+
+---
 ## Move to Beginning: How can we derive new knowledge ? Humans derive new knowledge based on commonsense and domain knowledge
 
 ::::: spaceafter columns 
