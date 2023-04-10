@@ -1,7 +1,4 @@
 
-0:00
-Hello everyone. So far in the series on data structures,
-0:03
 we have talked about some of the linear data structures like array,
 0:07
 linked list, stack and queue. In all these structure, data is arranged in a linear or
@@ -16,9 +13,8 @@ store and organize data,
 0:29
 and for different kinds of data we use different kinds of data structures.
 0:33
-In this lesson, we're going to introduce you to another non linear data
-0:37
-structure
+
+In this lesson, we're going to introduce you to another non linear data structure
 0:38
 that has got its application in a wide number of scenarios in computer science.
 0:42
@@ -26,6 +22,7 @@ It is used to model and represent a variety of systems
 0:46
 and this data structure is graph.
 0:49
+
 When we study data structures, we often first study them as
 0:53
 mathematical or logical models. Here also,
@@ -33,20 +30,17 @@ mathematical or logical models. Here also,
 we will first study graph as a mathematical or logical model
 1:00
 and we will go into implementation details later.
-1:03
-Okay so let's get started. A graph just like a tree
-1:07
-is a collection of objects or entities that we call
-1:10
+
+A graph just like a tree is a collection of objects or entities that we call 
 nodes or vertices, connected to each other through
 1:14
-a set of edges. But in a tree
+a set of edges. 
+
+But in a tree
 1:18
 connections are bound to be in a certain way. In a tree that our rules
 1:22
-dictating the connection among the nodes. In a tree with
-1:26
-N Nodes, we must have exactly
+dictating the connection among the nodes. In a tree with N Nodes, we must have exactly
 1:29
 N - 1 edges. One edge for
 1:32
@@ -54,7 +48,7 @@ each parent child relationship. As we know an edge
 1:36
 in a tree is for a parent child relationship and all nodes in a tree
 1:40
-except the root node would have apparent would have exactly 1 parent
+except the root node would have exactly 1 parent
 1:45
 and that's why if they are N nodes, it must be exactly N - 1 edges.
 1:50
@@ -70,22 +64,24 @@ a set of nodes and a set of edges
 2:08
 and edges can be connecting nodes in any possible way.
 2:11
-Tree is only a special kind of graph. Now graph
-2:15
-as a concept has been studied extensively in mathematics.
+Tree is only a special kind of graph. 
+
+Now graph as a concept has been studied extensively in mathematics.
 2:19
 If you have taken a course on discrete mathematics
 2:22
 then you must be knowing about graphs already. In computer science, we basically
 2:27
 study and implement the same concept of graph from mathematics.
-2:30
+
+
 The study of graph is often referred to as
 2:33
 graph theory. In pure mathematical terms
 2:37
 we can define graph something like this.
-2:40
+
+
 A graph G is in order pair of a set V of vertices
 2:45
 and a set E of edges. Now I'm using some mathematical jargon here.
@@ -101,7 +97,8 @@ pair, objects separated by comma put within parenthesis.
 Now because the order here matters. We can say that V
 3:09
 is the first object in the pair and E is the second object.
-3:13
+
+
 An ordered pair A, B is not equal to B, A
 3:17
 unless A and B are equal.
