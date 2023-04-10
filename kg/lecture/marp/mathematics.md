@@ -157,3 +157,748 @@ graph G {
 ---
 ## Trees and Graphs share a number of common attributes
 
+
+::::: columns
+:::: single
+::: center
+```graphviz
+digraph G {
+  label="Tree";
+  node [shape=circle];
+  1 -> 2;
+  1 -> 3;
+  2 -> 4;
+  2 -> 5;
+  3 -> 6;
+  3 -> 7;
+//  5 -> 8;
+//  5 -> 9;
+}
+```
+:::
+
+- A tree with $N$ nodes has $N-1$ edges
+  - one edge for each parent-child relationship
+- All nodes in a tree except the root have exactly one parent
+- All nodes must be reachable from the root through exactly one defined path
+- _Any tree is also a graph_
+
+::::
+:::: single
+::: center
+```graphviz
+graph G {
+    label="Graph";
+    node [shape=circle];
+    {rank=same; 1; 2;}
+    {rank=same; 3; 4; 5; 6;}
+    {rank=same; 7; 8;}
+    1 -- 2;
+    1 -- 3;
+    1 -- 4;
+    2 -- 5;
+    2 -- 6;
+    3 -- 7;
+    4 -- 8;
+    5 -- 8;
+    6 -- 8;
+    7 -- 8;
+}
+```
+:::
+
+- A graph consists of a set of nodes and edges
+- In Graph Theory, nodes are usually called vertices
+- No rules that dictate the connection among nodes, ie., edges can be connected in any possible way
+- CS usually adapts the mathematical notion of graphs 
+- CS studies graphs and related algorithms in Graph Theory
+::::
+:::::
+
+
+
+---
+## A Mathematical Definition of Graphs
+
+::::: columns
+:::: single
+
+**Graph**
+::: marg2
+A graph $G$ is an ordered pair of a set $V$ of vertices and a set $E$ of edges. 
+
+  $$ G = (V,E)$$
+
+<!-- Since the order matters, $V$ is the first object in the pair and $E$ is the second object. -->
+
+Ordered pair: $\quad \quad (a,b) \neq (b,a) \quad \text{if} \ \ a \neq b$
+
+Unordered pair: $\quad \quad \{ a , b \} = \{ {b,a} \}$
+
+<!-- An edge is represented by the pairs of vertices it connects. -->
+:::
+
+**Edges**
+```graphviz
+digraph G {
+    label="directed";
+    nodesep=1.5;
+    //splines="spline";
+    node [shape=circle];
+    graph [rankdir=LR];
+    u -> v [label="(u,v)"];
+    v -> u [label="(v,u)"];
+    //u -> w;
+}
+```
+
+```graphviz
+graph G {
+    label="undirected";
+    splines="curved";
+    node [shape=circle];
+    graph [rankdir=LR; ];
+    u -- v [label="{u,v}"];
+    //v -- w;
+    //u -- w;
+}
+```
+
+
+::::
+:::: single vert-center
+::: center
+```graphviz
+graph G {
+    node [shape=circle];
+    nodesep=.5;
+    {rank=same; 1; 2;};
+    {rank=same; 3; 4; 5; 6;};
+    {rank=same; 7; 8;};
+    1 [label="v&#x2081;"];
+    2 [label="v&#x2082;"];
+    3 [label="v&#x2083;"];
+    4 [label="v&#x2084;"];
+    5 [label="v&#x2085;"];
+    6 [label="v&#x2086;"];
+    7 [label="v&#x2087;"];
+    8 [label="v&#x2088;"];
+    1 -- 2;
+    1 -- 3;
+    1 -- 4;
+    2 -- 5;
+    2 -- 6;
+    3 -- 7;
+    4 -- 8;
+    5 -- 8;
+    6 -- 8;
+    7 -- 8; // [label=<Regular<SUB>subscript</SUB>>];
+}
+```
+:::
+
+$$ V = \{ v_1, v_2, v_3, v_4, v_5, v_6, v_7 ,v_8 \} $$
+
+$$ \begin{align} 
+E = \{ &\{v_1,v_2\}, \{v_1,v_3\}, \{v_1,v_4\}, \{v_2,v_5\}, \\
+&\{v_2,v_6\}, \{v_3,v_7\}, \{v_4,v_8\}, \{v_5,v_8\}, \\
+& \{v_6,v_8\}, \{v_7,v_8\} \}
+\end{align}$$
+
+::::
+:::::
+
+
+
+---
+## Directed vs. Undirected Graphs
+
+
+::::: columns-center
+:::: single center
+```graphviz
+digraph G {
+    node [shape=circle];
+    nodesep=1;
+    splines="spline";
+    label="a directed graph or Digraph"; 
+    {rank=same; 1; 2;};
+    {rank=same; 3; 4; 5;};
+    {rank=same; 6;};
+    1 [label="v&#x2081;"];
+    2 [label="v&#x2082;"];
+    3 [label="v&#x2083;"];
+    4 [label="v&#x2084;"];
+    5 [label="v&#x2085;"];
+    6 [label="v&#x2086;"];
+    1 -> 2;
+    1 -> 3;
+    1 -> 4;
+    2 -> 4;
+    2 -> 5;
+    4 -> 1;
+    4 -> 6;
+    6 -> 3;
+    6 -> 5;
+}
+```
+::::
+:::: single center
+```graphviz
+graph G {
+    node [shape=circle];
+    nodesep=.5;
+    label="an undirected graph"; 
+    {rank=same; 1; 2;};
+    {rank=same; 3; 4; 5; 6;};
+    {rank=same; 7; 8;};
+    1 [label="v&#x2081;"];
+    2 [label="v&#x2082;"];
+    3 [label="v&#x2083;"];
+    4 [label="v&#x2084;"];
+    5 [label="v&#x2085;"];
+    6 [label="v&#x2086;"];
+    7 [label="v&#x2087;"];
+    8 [label="v&#x2088;"];
+    1 -- 2;
+    1 -- 3;
+    1 -- 4;
+    2 -- 5;
+    2 -- 6;
+    3 -- 7;
+    4 -- 8;
+    5 -- 8;
+    6 -- 8;
+    7 -- 8;
+}
+```
+::::
+:::::
+
+**Remarks**
+- Many real-world systems or problems can be modelled using a graph.
+- Graphs can be used to represent any collection of objects having some kind of pairwise relationship.
+
+
+---
+## Example Graphs: Social Network
+
+::::: columns
+:::: double center
+```graphviz
+graph G {
+    node [shape=rectangle];
+    nodesep=.5;
+    //splines=true;
+    label="A social network graph"; 
+    // graph [rankdir=LR];
+    {rank=same; 1; 2;};
+    {rank=same; 3; 4; 5; 6;};
+    {rank=same; 7; 8;};
+    {rank=same; 9; };
+    1 [label="Uschi"];
+    2 [label="Thomas"];
+    3 [label="Katja"];
+    4 [label="Horst"];
+    5 [label="Manfred"];
+    6 [label="Berta"];
+    7 [label="Klaus"];
+    8 [label="Karl-Heinz"];
+    9 [label="Waltraud"];
+    // 10 [label="Siglinde"];
+    1 -- 2;
+    1 -- 3;
+    1 -- 9;
+    1 -- 5;
+    2 -- 6;
+    // 3 -- 6;
+    4 -- 2;
+    4 -- 6;
+    5 -- 7;
+    5 -- 9;
+    6 -- 8;
+    7 -- 2;
+    7 -- 4;
+    7 -- 9;
+    8 -- 5;
+    8 -- 4;
+    9 -- 3;
+  /*  10 -- 6;
+    10 -- 9;
+    10 -- 7;
+    */
+}
+```
+::::
+:::: single
+- Social networks are usually represented as undirected graphs since friendships are mutual relationship
+- Vertices represents persons and edges represent friend relationships 
+- A lot of problems can be solved by applying standard algorithms from graph theory
+  - e.g. suggesting friends of friends who are not connected
+  - e.g. can we suggest some friends for 'Katja'?
+- Standard graph problem: Find all nodes having a shortest path length of '2' from 'Katja' 
+::::
+:::::
+
+
+
+---
+## Example Graphs: Interlinked Web Pages
+
+::::: columns
+:::: double center
+```graphviz
+digraph G {
+    node [shape=rectangle];
+    nodesep=1;
+    //splines=true;
+    label="link relations between web pages"; 
+    //graph [rankdir=LR];
+    //{rank=same; 1; 2; 3;};
+    // {rank=same; 4; 5; 6;};
+    // {rank=same; 7; 8; 9;};
+    1 [label="Page A"];
+    2 [label="Page B"];
+    3 [label="Page C"];
+    4 [label="Page D"];
+    5 [label="Page E"];
+    6 [label="Page F"];
+    7 [label="Page G"];
+    8 [label="Page H"];
+    9 [label="Page I"];
+    1 -> 2;
+    2 -> 3;
+    2 -> 4;
+    3 -> 5;
+    4 -> 5;
+    5 -> 3;
+    6 -> 9;
+    7 -> 4;
+    8 -> 5;
+    8 -> 9;
+}
+```
+::::
+:::: single
+- A vertice represents a web page with a unique URL 
+- An edge represents a link from one page to another
+- The edges are directed because the relationship is not mutual
+- Application Scenario: Web Crawling to collect and store data about web pages
+- Web crawling is basically graph traversal
+::::
+:::::
+
+
+---
+##  Example Graphs: Road Networks
+
+::::: columns
+:::: double center
+```graphviz
+graph G {
+    node [shape=rectangle];
+    nodesep=.5;
+    splines=line;
+    label="Intercity road network (assuming that all highways are bidirectional)"; 
+    graph [rankdir=LR];
+//    {rank=same; 2;};
+//    {rank=same; 7;};
+    {rank=same; 1; 3;};
+    {rank=same; 4;};
+    {rank=same; 5; };
+    {rank=same; 6; 7};
+    1 [label="City A"];
+    2 [label="City B"];
+    3 [label="City C"];
+    4 [label="City D"];
+    5 [label="City E"];
+    6 [label="City F"];
+    7 [label="City G"];
+    8 [label="City H"];
+    1 -- 2 [label="110"];
+    2 -- 3 [label="150"];
+    3 -- 4 [label="90"];
+    3 -- 7 [label="500"];
+    4 -- 5 [label="400"];
+    4 -- 6 [label="280"];
+    4 -- 8 [label="350"];
+    5 -- 1 [label="300"];
+    5 -- 6 [label="230"];
+    6 -- 8 [label="100"];
+}
+```
+
+Some application scenarios require a different treatment of edges
+::::
+:::: single
+- Edges represent bidirectional intercity connections
+- Values associated with edges are denoted as weight or cost
+- Such graphs are calles weighted graphs
+- Connections must be treated differently due to their varying lengths
+- Associating a weight or cost to a connection accounts for their length
+- We label the vertices according to their length
+- Problem: What is the shortest direction from 'City F' to 'City B'?
+  - with weights added to connections we can calculate the weigths and find the shortest route.
+- All graphs can be treated as weighted graphs
+- Road networks can be represented as weighted undirected graphs
+::::
+:::::
+
+
+
+---
+## Properties of Graphs
+
+::::: columns
+:::: single
+**Self-Loop**
+::::
+:::: quad
+```graphviz
+graph G {
+    nodesep=.7;
+    graph [rankdir=LR];
+    layout="fdp";
+    //splines="spline";
+    node [shape=circle];
+    u [label=""];
+    u -- u [label=""];
+}
+```
+
+```graphviz
+digraph G {
+    nodesep=.7;
+    //splines="spline";
+    layout="fdp";
+    node [shape=circle];
+    graph [rankdir=LR];
+    u [label=""];
+    u -> u;
+}
+```
+::::
+:::::
+
+::::: columns
+:::: single
+**Multi-Edge**
+::::
+:::: quad
+```graphviz
+graph G {
+    nodesep=.5;
+    graph [rankdir=LR];
+    node [shape=circle];
+    layout="sfdp";
+    u [label=""];
+    v [label=""];
+    u -- v [label=""];
+    v -- u;
+}
+```
+
+```graphviz
+digraph G {
+    nodesep=.5;
+    graph [rankdir=LR];
+    node [shape=circle];
+    //sep="2";
+    layout="sfdp";
+    u [label=""];
+    v [label=""];
+    u -> v [label=""];
+    u -> v;
+}
+```
+
+If there are no self-loops or multi-edges, the graph is a simple graph.
+::::
+:::::
+
+
+::::: columns
+:::: single
+**Number of Edges**
+::::
+:::: single
+```graphviz
+digraph G {
+    nodesep=1;
+    //graph [rankdir=LR];
+    node [shape=circle];
+    layout="fdp";
+    sep="1.5";
+    {rank=same; 1; 2;};
+    {rank=same; 3; 4;};
+    1 [label="v&#x2081;"];
+    2 [label="v&#x2082;"];
+    3 [label="v&#x2083;"];
+    4 [label="v&#x2084;"];
+    1 -> 2 [color="blue"];
+    1 -> 3 [color="blue"];
+    1 -> 4 [color="blue"];
+    2 -> 1 [color="red"];
+    2 -> 3 [color="red"];
+    2 -> 4 [color="red"];
+    3 -> 1 [color="green"];
+    3 -> 2 [color="green"];
+    3 -> 4 [color="green"];
+    4 -> 1 [color="orange"];
+    4 -> 2 [color="orange"];
+    4 -> 3 [color="orange"];
+}
+```
+::::
+:::: double
+$$ \begin{align} 
+V &= \{v_1, v_2, v_3, v_4 \} \\
+|V| &= 4
+\end{align} $$
+
+$$\begin{align} \text{if} \ |V| = n \ \text{then} \\ 
+&0 \leqq |E| \leqq n(n-1), \quad &\text{if directed} \\
+&0 \leqq |E| \leqq \frac{n(n-1)}{2}, &\text{if undirected}
+\end{align} $$
+
+Assuming no self-loop or multi-edge.
+
+$$\begin{align*}
+&\text{if} \ |V| = 10,& &|E| \leqq 90 \\
+&\text{if} \ |V| = 100,& &|E| \leqq 9900
+\end{align*} $$
+
+A graph is ==dense==, if the number of edges is close to its max.
+A graph is ==sparse==, if the number of edges is close to $|V|$.
+
+However, there is no defined boundaries for dense and sparse, it depends on the context.
+
+This classification is important, since a lot of decisions are made based on whether the graph is dense or sparse (e.g. choosing a different storage structure in computer's memory for dense graphs (ie adjacency matrix vs. adjacency list)).
+
+::::
+:::::
+
+
+---
+## Properties of Graphs: Paths, Walks, and Trails
+
+
+::::: columns
+:::: double
+**Path**: A path is a sequence of vertices where each adjacent pair is connected by an edge.
+
+$$ < v_1, v_2, v_6, v_8, v_5, v_2, v_1, v_4 > $$
+
+**Simple Path**: a path in which no vertices (and thus no edges) are repeated.
+
+$$ < v_1, v_2, v_6, v_8 > $$
+
+In graph theory there is some consistency between the terms ==path== and ==walk==. 
+
+**Walk**: a walk is a sequence of vertices where each adjacent pair is connected by an edge.
+
+$$ < v_1, v_2, v_6, v_8, v_5, v_2, v_1, v_4 > $$
+
+A (simple) **path** thus is a walk in which no vertices and (thus no edges) are repeated.
+
+$$ < v_1, v_2, v_6, v_8 > $$
+
+**Trail**: a walk in which vertices can be repeated but no edges are repeated.
+
+$$ < v_1, v_2, v_5, v_8, v_4, v_1, v_3 > $$
+
+::::
+:::: single
+```graphviz
+graph G {
+    node [shape=circle];
+    nodesep=.5;
+    label="an undirected graph"; 
+    {rank=same; 1; 2;};
+    {rank=same; 3; 4; 5; 6;};
+    {rank=same; 7; 8;};
+    1 [label="v&#x2081;"];
+    2 [label="v&#x2082;"];
+    3 [label="v&#x2083;"];
+    4 [label="v&#x2084;"];
+    5 [label="v&#x2085;"];
+    6 [label="v&#x2086;"];
+    7 [label="v&#x2087;"];
+    8 [label="v&#x2088;"];
+    1 -- 2;
+    1 -- 3;
+    1 -- 4;
+    2 -- 5;
+    2 -- 6;
+    3 -- 7;
+    4 -- 8;
+    5 -- 8;
+    6 -- 8;
+    7 -- 8;
+}
+```
+
+If any other path is possible, there must be a simple path.
+::::
+:::::
+
+
+
+
+---
+## Properties of Graphs: Strongly Connected Graphs 
+
+::: bluebox center marg4 space
+A **graph** is a ==strongly connected graph== if there is a path from any vertex to any other vertex.
+:::
+
+::::: columns 
+:::: single center 
+```graphviz
+graph G {
+    node [shape=circle];
+    nodesep=1.5;
+    label="A connected graph"; 
+    {rank=same; 2;};
+    {rank=same; 3; 1;};
+    {rank=same; 4; 5;};
+    1 [label="v&#x2081;"];
+    2 [label="v&#x2082;"];
+    3 [label="v&#x2083;"];
+    4 [label="v&#x2084;"];
+    5 [label="v&#x2085;"];
+    1 -- 2;
+    2 -- 3;
+    3 -- 4;
+    4 -- 5;
+}
+```
+<!-- If an edge would be removed, the graph would be not connected -->
+::::
+:::: single center vert-bottom
+```graphviz
+digraph G {
+    node [shape=circle];
+    nodesep=1.5;
+    label="A weakly connected graph"; 
+    {rank=same; 2;};
+    {rank=same; 3; 1;};
+    1 [label="v&#x2081;"];
+    2 [label="v&#x2082;"];
+    3 [label="v&#x2083;"];
+    1 -> 3;
+    1 -> 2;
+    3 -> 2;
+}
+```
+::::
+:::: single center vert-bottom
+```graphviz
+digraph G {
+    node [shape=circle];
+    nodesep=1.5;
+    label="A strongly connected graph"; 
+    {rank=same; 1;};
+    {rank=same; 2; 4;};
+    {rank=same; 3;};
+    1 [label="v&#x2081;"];
+    2 [label="v&#x2082;"];
+    3 [label="v&#x2083;"];
+    4 [label="v&#x2084;"];
+    1 -> 4;
+    2 -> 1;
+    2 -> 3;
+    2 -> 4;
+    3 -> 4;
+    4 -> 2;
+}
+```
+::::
+:::::
+
+
+The degree and type of connectedness is an important concept in graph theory.
+
+
+
+---
+## Properties of Graphs: Cycles
+
+
+::::: columns
+:::: double
+
+A **closed walk** starts and ends at the same vertex and its length is $>0$. 
+$$ < v_1, v_2, v_5, v_8, v_4, v_1 > $$
+
+A (simple) **cycle** is a closed walk with no repetition other than start and end.
+$$ < v_1, v_2, v_5, v_8, v_4, v_1 > $$
+
+An **acyclic graph** is a graph with no cycles.
+
+A tree with undirected edges would be an undirected acyclic graph
+
+A tree would not have a simple cycle. 
+
+A **directed acyclic graph** is often called ==DAG==.
+
+Common problem in DAGs: Finding the shortest route from one vertice to another.
+
+
+
+::::
+:::: single
+```graphviz
+graph G {
+    node [shape=circle];
+    nodesep=.5;
+    label="an undirected graph"; 
+    {rank=same; 1; 2;};
+    {rank=same; 3; 4; 5; 6;};
+    {rank=same; 7; 8;};
+    1 [label="v&#x2081;"];
+    2 [label="v&#x2082;"];
+    3 [label="v&#x2083;"];
+    4 [label="v&#x2084;"];
+    5 [label="v&#x2085;"];
+    6 [label="v&#x2086;"];
+    7 [label="v&#x2087;"];
+    8 [label="v&#x2088;"];
+    1 -- 2;
+    1 -- 3;
+    1 -- 4;
+    2 -- 5;
+    2 -- 6;
+    3 -- 7;
+    4 -- 8;
+    5 -- 8;
+    6 -- 8;
+    7 -- 8;
+}
+```
+
+```graphviz
+digraph G {
+    node [shape=circle];
+    graph [rankdir=LR];
+    nodesep=1.0;
+    label="A directed acyclic graph (DAG)"; 
+    //{rank=same; 1;};
+    //{rank=same; 2; 4;};
+    //{rank=same; 3;};
+    1 [label="v&#x2081;"];
+    2 [label="v&#x2082;"];
+    3 [label="v&#x2083;"];
+    4 [label="v&#x2084;"];
+    5 [label="v&#x2085;"];
+    1 -> 2;
+    1 -> 3;
+    2 -> 4;
+    3 -> 4;
+    3 -> 5;
+    4 -> 5;
+}
+```
+::::
+:::::
+
