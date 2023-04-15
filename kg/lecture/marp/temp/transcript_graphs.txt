@@ -32,112 +32,74 @@ we will first study graph as a mathematical or logical model
 and we will go into implementation details later.
 
 A graph just like a tree is a collection of objects or entities that we call 
-nodes or vertices, connected to each other through
-1:14
-a set of edges. 
+nodes or vertices, connected to each other through a set of edges. 
 
-But in a tree
-1:18
-connections are bound to be in a certain way. In a tree that our rules
-1:22
-dictating the connection among the nodes. In a tree with N Nodes, we must have exactly
-1:29
-N - 1 edges. One edge for
-1:32
-each parent child relationship. As we know an edge
-1:36
-in a tree is for a parent child relationship and all nodes in a tree
-1:40
-except the root node would have exactly 1 parent
-1:45
-and that's why if they are N nodes, it must be exactly N - 1 edges.
-1:50
-In a tree, all nodes must be reachable from the root
-1:53
-and there must be exactly one possible path from root
-1:57
-to a node. Now in a graph there are no rules
-2:01
-dictating the connection among the nodes. A graph contains
-2:05
-a set of nodes and a set of edges
-2:08
-and edges can be connecting nodes in any possible way.
-2:11
-Tree is only a special kind of graph. 
+But in a tree connections are bound to be in a certain way. 
+In a tree there are rules dictating the connection among the nodes. 
 
-Now graph as a concept has been studied extensively in mathematics.
-2:19
+In a tree with N Nodes, we must have exactly N - 1 edges. 
+One edge for each parent child relationship. 
+
+As we know an edge in a tree is for a parent child relationship and all nodes in a tree
+except the root node would have exactly 1 parent and that's why if they are N nodes, 
+it must be exactly N - 1 edges.
+
+In a tree, all nodes must be reachable from the root 
+and there must be exactly one possible path from root to a node. 
+
+Now in a graph there are no rules dictating the connection among the nodes. 
+A graph contains a set of nodes and a set of edges and edges can be connecting nodes in any possible way.
+
+A Tree is only a special kind of graph. 
+
+Graph as a concept has been studied extensively in mathematics.
+
 If you have taken a course on discrete mathematics
-2:22
-then you must be knowing about graphs already. In computer science, we basically
-2:27
-study and implement the same concept of graph from mathematics.
+then you must be knowing about graphs already. 
+In computer science, we basically study and implement the same concept of graph from mathematics.
 
 
-The study of graph is often referred to as
-2:33
-graph theory. In pure mathematical terms
-2:37
-we can define graph something like this.
+The study of graph is often referred to as graph theory. 
+In pure mathematical terms we can define graph something like this.
 
 
-A graph G is in order pair of a set V of vertices
-2:45
-and a set E of edges. Now I'm using some mathematical jargon here.
-2:50
-An ordered pair is just a pair of mathematical objects
-2:54
-in which the order of objects in the pair
-2:57
-matters. This is how we write and represent an ordered
-3:01
-pair, objects separated by comma put within parenthesis.
-3:05
-Now because the order here matters. We can say that V
-3:09
+A graph G is in order pair of a set V of vertices and a set E of edges. 
+Now I'm using some mathematical jargon here.
+
+An ordered pair is just a pair of mathematical objects in which the order of objects in the pair matters.
+
+This is how we write and represent an ordered pair, objects separated by comma put within parenthesis.
+
+Now because the order here matters. We can say that V 
 is the first object in the pair and E is the second object.
 
 
-An ordered pair A, B is not equal to B, A
-3:17
-unless A and B are equal.
-3:20
+An ordered pair A, B is not equal to B, A unless A and B are equal.
+
 In our definition of graph here, first object in the pair
-3:24
 must always be a set of vertices and the second object must be a set of edges
-3:29
 that's why we are calling the pair an ordered pair.
-3:33
-We also have concept of unordered pair. An unordered pair
-3:38
-is simply a set of two elements. Order is not important here.
-3:42
+
+We also have concept of unordered pair. 
+An unordered pair is simply a set of two elements. Order is not important here.
 We write an unordered pair using curly brackets or braces.
-3:45
-Because the order is not important here, unordered pair
-3:49
-A, B is equal to B, A. It doesn't matter which object is first and
-3:54
-which object is second. Okay coming back, so
-3:58
+
+Because the order is not important here, unordered pair A, B is equal to B, A. 
+It doesn't matter which object is first and which object is second. 
+
+Okay coming back, so
 a graph of is an ordered pair of a set of vertices and a set of
-4:01
 edges and G = (V,E) is a formal mathematical notation
-4:06
-that we use to define a graph. Now I have a graph drawn here
-4:10
-in the right. This graph is 8 vertices and 10 edges.
-4:15
+that we use to define a graph. 
+
+Now I have a graph drawn here in the right. This graph is 8 vertices and 10 edges.
+
 What I want to do is I want give some names to these vertices
-4:19
 because each node in a graph must have some identification.
-4:22
+
 It can be a name or it can be an index.
-4:26
-I'm naming these vertices as V1, V2
-4:30
-V3, V4, V5 and so on, and this naming is not indicative of any order.
+
+I'm naming these vertices as V1, V2, V3, V4, V5 and so on, and this naming is not indicative of any order.
 4:35
 There is no 1st, 2nd and 3rd Node here. I could give
 4:39
