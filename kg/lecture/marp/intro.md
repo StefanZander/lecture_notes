@@ -124,6 +124,7 @@ The modern incarnation of the term stems from the 2012 announcement of the ==Goo
 ## Now, every big company has their own knowledge graph
 ![bg right height:600px](figures/gartner_hype_cycle_2020.png)
 
+**The industrial uptake makes it hard to ignore KGs**
 - *Airbnb* ("Homes you may like"), 
 - *Amazon* (product recommendations engine; Alexa), 
 - *eBay* (eBay Shopper Experience Graph), 
@@ -133,7 +134,7 @@ The modern incarnation of the term stems from the 2012 announcement of the ==Goo
 - *Microsoft* (Cortana), 
 - *Uber* (Uber Technology Platform)
 
-**The industrial uptake makes it hard to ignore KGs**
+
 
 ::: bluebox center
 The _core idea_ of using graphs is to represent data, often enhanced with means to explicitly represent knowledge
