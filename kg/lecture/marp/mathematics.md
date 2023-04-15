@@ -30,12 +30,12 @@ A Mathematical Introduction to Graphs in Computer Science {.lightgreen .Big .ski
 
 
 ---
-<!-- header: Overview -->
+<!-- header: Properties of Graphs -->
 <!-- footer: Foundations of Semantic Knowledge Graphs | Data Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences -->
 
 ## What you will learn in this Unit
 
-...
+We will discuss the mathematical foundation underlying knowledge graphs.
 
 
 
@@ -380,10 +380,12 @@ graph G {
 - Graphs can be used to represent any collection of objects having some kind of pairwise relationship.
 
 
+
+
 ---
 ## Example Graphs: Social Network
 
-::::: columns
+::::: columns-center
 :::: double center
 ```graphviz
 graph G {
@@ -431,12 +433,13 @@ graph G {
 ```
 ::::
 :::: single
-- Social networks are usually represented as undirected graphs since friendships are mutual relationship
-- Vertices represents persons and edges represent friend relationships 
+- **Social networks** are usually represented as _undirected graphs_ since friendships are mutual relationship
+- Vertices represents _persons_ and edges represent _friend relationships_ 
 - A lot of problems can be solved by applying standard algorithms from graph theory
   - e.g. suggesting friends of friends who are not connected
   - e.g. can we suggest some friends for 'Katja'?
-- Standard graph problem: Find all nodes having a shortest path length of '2' from 'Katja' 
+- Standard graph problem: 
+  _[Find all nodes having a shortest path length of '2' from 'Katja']{.kursiv}_
 ::::
 :::::
 
@@ -445,7 +448,7 @@ graph G {
 ---
 ## Example Graphs: Interlinked Web Pages
 
-::::: columns
+::::: columns-center
 :::: double center
 ```graphviz
 digraph G {
@@ -480,20 +483,38 @@ digraph G {
 ```
 ::::
 :::: single
-- A vertice represents a web page with a unique URL 
-- An edge represents a link from one page to another
-- The edges are directed because the relationship is not mutual
-- Application Scenario: Web Crawling to collect and store data about web pages
-- Web crawling is basically graph traversal
+- A vertice represents a _web page_ with a unique URL 
+- An edge represents a _link_ from one page to another
+- The edges are _directed_ because the relationship is _not mutual_
+- Application Scenario: ==Web Crawling== to collect and store data about web pages
+- Web crawling is basically ==graph traversal==
+- Standard graph probelm: 
+  **Centrality** (degree, betweenness, closeness, eigenvector, etc)
 ::::
 :::::
+
+
+<!-- Graph centrality refers to a set of measures that quantify the importance or influence of nodes in a network or graph. In other words, centrality measures identify which nodes are most central or essential in a network.
+
+There are several types of centrality measures, including degree centrality, betweenness centrality, closeness centrality, and eigenvector centrality.
+
+Degree centrality is based on the number of connections a node has to other nodes in the network. Nodes with high degree centrality are often referred to as "hubs" in the network.
+
+Betweenness centrality measures the extent to which a node lies on paths between other nodes in the network. Nodes with high betweenness centrality are important for facilitating communication between different parts of the network.
+
+Closeness centrality measures how quickly a node can reach all other nodes in the network. Nodes with high closeness centrality are typically well-connected to other nodes in the network and can quickly communicate with them.
+
+Eigenvector centrality is based on the idea that the importance of a node depends on the importance of its neighbors. Nodes with high eigenvector centrality are connected to other nodes that are also important in the network.
+
+Overall, centrality measures are useful for identifying key players or nodes in a network, understanding how information or influence flows through the network, and predicting how the network will behave under different conditions. -->
 
 
 ---
 ##  Example Graphs: Road Networks
 
 ::::: columns
-:::: double center
+:::: double
+::: center
 ```graphviz
 graph G {
     node [shape=rectangle];
@@ -527,27 +548,28 @@ graph G {
     6 -- 8 [label="100"];
 }
 ```
-
-Some application scenarios require a different treatment of edges
+:::
+::: bluebox small
+**Problem**: _What is the shortest direction from 'City F' to 'City B' ?_ {.smallskip}
+- With weights added to connections we can accumulate the single weigths and find the shortest route
+:::
 ::::
 :::: single
-- Edges represent bidirectional intercity connections
-- Values associated with edges are denoted as weight or cost
-- Such graphs are calles weighted graphs
+- _Edges_ represent _bidirectional intercity connections_
+- Associating a weight or cost to a connection accounts for their _length_
+- _Values_ associated with edges are denoted as ==weight== or ==cost==
+- Such graphs are called ==weighted graphs==
 - Connections must be treated differently due to their varying lengths
-- Associating a weight or cost to a connection accounts for their length
-- We label the vertices according to their length
-- Problem: What is the shortest direction from 'City F' to 'City B'?
-  - with weights added to connections we can calculate the weigths and find the shortest route.
+- Road networks can be represented as ==weighted undirected graphs==
+- Some application scenarios require a different treatment of edges
 - All graphs can be treated as weighted graphs
-- Road networks can be represented as weighted undirected graphs
 ::::
 :::::
 
 
 
 ---
-## Properties of Graphs
+## Properties of Graphs (1/2)
 
 ::::: columns
 :::: single
@@ -612,10 +634,14 @@ digraph G {
 }
 ```
 
-If there are no self-loops or multi-edges, the graph is a simple graph.
+If there are no self-loops or multi-edges, the graph is a ==simple graph==.
 ::::
 :::::
 
+
+
+---
+## Properties of Graphs (2/2)
 
 ::::: columns
 :::: single
@@ -667,6 +693,8 @@ $$\begin{align*}
 &\text{if} \ |V| = 10,& &|E| \leqq 90 \\
 &\text{if} \ |V| = 100,& &|E| \leqq 9900
 \end{align*} $$
+::::
+:::::
 
 A graph is ==dense==, if the number of edges is close to its max.
 A graph is ==sparse==, if the number of edges is close to $|V|$.
@@ -675,15 +703,17 @@ However, there is no defined boundaries for dense and sparse, it depends on the 
 
 This classification is important, since a lot of decisions are made based on whether the graph is dense or sparse (e.g. choosing a different storage structure in computer's memory for dense graphs (ie adjacency matrix vs. adjacency list)).
 
-::::
-:::::
+
+
+
+
 
 
 ---
 ## Properties of Graphs: Paths, Walks, and Trails
 
 
-::::: columns
+::::: columns-center
 :::: double
 **Path**: A path is a sequence of vertices where each adjacent pair is connected by an edge.
 
@@ -752,7 +782,7 @@ If any other path is possible, there must be a simple path.
 A **graph** is a ==strongly connected graph== if there is a path from any vertex to any other vertex.
 :::
 
-::::: columns 
+::::: columns-center
 :::: single center 
 ```graphviz
 graph G {
@@ -817,7 +847,7 @@ digraph G {
 :::::
 
 
-The degree and type of connectedness is an important concept in graph theory.
+The degree and type of **connectedness** is an important concept in graph theory.
 
 
 
@@ -825,7 +855,7 @@ The degree and type of connectedness is an important concept in graph theory.
 ## Properties of Graphs: Cycles
 
 
-::::: columns
+::::: columns-center
 :::: double
 
 A **closed walk** starts and ends at the same vertex and its length is $>0$. 
@@ -843,8 +873,6 @@ A tree would not have a simple cycle.
 A **directed acyclic graph** is often called ==DAG==.
 
 Common problem in DAGs: Finding the shortest route from one vertice to another.
-
-
 
 ::::
 :::: single
@@ -902,3 +930,41 @@ digraph G {
 ::::
 :::::
 
+
+
+---
+## Representing graphs: Adjacency Matrix
+
+There are several ways for representing graphs in Computer Science.
+
+::: definition spaceafter
+The ==adjacency matrix== of a graph $G = ⟨V, E⟩$ is the boolean $|V| \times |V|$ matrix that contains, at any coordinate $⟨v_1,v_2⟩$, the value $1$ if there is an edge connecting $v_1$ and $v_2$.
+
+Source: Introduction to Knowlege Graphs, Prof. Dr. Markus Krötzsch, TU Dresden
+:::
+
+**Notes**
+- Adjacency matrices for undirected graphs are symmetric.
+- Loops (if allowed) show up as $1$ in the diagonal.
+- The matrix could be adapted to multi-graphs by storing the numbers of edges. 
+- The matrix could be adapted to labelled simple graphs by storing the labels.
+
+
+
+---
+## Representing graphs: Adjacency List
+
+There are several ways for representing graphs in Computer Science.
+
+::: definition spaceafter
+The ==adjacency list== of a graph $G = ⟨V,E⟩$ is the list of all of its edges.
+
+Source: Introduction to Knowlege Graphs, Prof. Dr. Markus Krötzsch, TU Dresden
+:::
+
+**Notes**
+- We can write edges as pairs (order is irrelevant for undirected graphs)
+- Loops (if allowed) show up as edges with repeated vertices
+- The list could be adapted to _multi-graphs_ by adding the number of edges to each line, or by allowing repeated lines
+- The list could be adapted to _labelled graphs_ by adding labels to each line (for multi-graph: repeat lines rather than also storing number).
+- The list does not encode $V$: vertices without edges are missing (might be listed separately if relevant to application)
