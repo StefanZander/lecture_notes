@@ -31,7 +31,8 @@ In a tree, all nodes must be reachable from the root
 and there must be exactly one possible path from root to a node. 
 
 Now in a graph there are no rules dictating the connection among the nodes. 
-A graph contains a set of nodes and a set of edges and edges can be connecting nodes in any possible way.
+A graph contains a set of nodes and a set of edges and 
+edges can be connecting nodes in any possible way.
 
 A Tree is only a special kind of graph. 
 
@@ -49,9 +50,11 @@ In pure mathematical terms we can define graph something like this.
 A graph G is in order pair of a set V of vertices and a set E of edges. 
 Now I'm using some mathematical jargon here.
 
-An ordered pair is just a pair of mathematical objects in which the order of objects in the pair matters.
+An ordered pair is just a pair of mathematical objects 
+in which the order of objects in the pair matters.
 
-This is how we write and represent an ordered pair, objects separated by comma put within parenthesis.
+This is how we write and represent an ordered pair, 
+objects separated by comma put within parenthesis.
 
 Now because the order here matters. We can say that V 
 is the first object in the pair and E is the second object.
@@ -70,10 +73,8 @@ We write an unordered pair using curly brackets or braces.
 Because the order is not important here, unordered pair A, B is equal to B, A. 
 It doesn't matter which object is first and which object is second. 
 
-Okay coming back, so
-a graph of is an ordered pair of a set of vertices and a set of
-edges and G = (V,E) is a formal mathematical notation
-that we use to define a graph. 
+Okay coming back, so a graph of is an ordered pair of a set of vertices and a set of
+edges and G = (V,E) is a formal mathematical notation that we use to define a graph. 
 
 Now I have a graph drawn here in the right. This graph is 8 vertices and 10 edges.
 
@@ -82,18 +83,19 @@ because each node in a graph must have some identification.
 
 It can be a name or it can be an index.
 
-I'm naming these vertices as V1, V2, V3, V4, V5 and so on, and this naming is not indicative of any order.
+I'm naming these vertices as V1, V2, V3, V4, V5 and so on, 
+and this naming is not indicative of any order.
 There is no 1st, 2nd and 3rd Node here. I could give
-any name to any node. So my set of vertices here
-is this. 
+any name to any node. So my set of vertices here is this. 
+
 We have 8 elements in the set V1, V2, V3, V4, V5, V6, V7 and V8. 
 So this is my set of vertices for this graph.
 
 Now what's my set of edges. To answer this
 we first need to know how to represent an edge.
 
-An edge is uniquely identified by it's 2
-endpoints, so we can just write the names of the two endpoint
+An edge is uniquely identified by it's 2 endpoints, 
+so we can just write the names of the two endpoint
 of an edge as a pair and it can be a representation for the edge.
 
 But edges can be of two types. We can have
@@ -121,8 +123,7 @@ So with this directed edge represented as ordered pair (U,V), we have a path fro
 
 If we want a path from V to U, when need to draw another directed edge here with V as origin
 and U as destination and this edge can be the represented as ordered pair
-(V,U), the upper one here is (U,V) and the below one is
-(V,U) and they are not same.
+(V,U), the upper one here is (U,V) and the below one is (V,U) and they are not same.
 
 Now if the edge is undirected, the connection
 is 2 way and undirected edge can be to represented as an
@@ -153,27 +154,22 @@ and a graph with all undirected ages is called an undirected graph.
 
 There is no special name for an undirected graph.
 
-Usually, if the graph directed, we explicitly say that it's
-directed graph or digraph. So these are two types of graphs.
-Directed graph or digraph in which edges
-are uni-directional or ordered pairs and
-undirected graph in which edges are bi-directional
-or unordered pairs. 
+Usually, if the graph directed, we explicitly say that it's directed graph or digraph. 
+So these are two types of graphs.
+Directed graph or digraph in which edges are uni-directional or ordered pairs and
+undirected graph in which edges are bi-directional or unordered pairs. 
 
-Now many real-world systems and
-problems can be modeled using a graph. 
+Now many real-world systems and problems can be modeled using a graph. 
 
-Graphs can be used to represent
-any collection of objects having some kind of
-pairwise relationship. 
+Graphs can be used to represent any collection of objects 
+having some kind of pairwise relationship. 
 
 Let's have a look at some of the interesting examples.
 
-A social network like Facebook can be represented as an
-undirected graph. 
+A social network like Facebook can be represented as an undirected graph. 
 
-A user would be a node in the graph
-and if 2 user are friends, there would be an edge connecting them.
+A user would be a node in the graph and if 2 user are friends, 
+there would be an edge connecting them.
 
 A real social network would have millions and billions of nodes.
 
@@ -184,8 +180,7 @@ is a mutual relationship. If I'm your friend, you are my friend too.
 
 So connections have to be 2 way. 
 
-Now once a system
-is modeled as a graph a lot of problems can easily be solved
+Now once a system is modeled as a graph a lot of problems can easily be solved
 by applying standard algorithms in graph theory.
 
 Like here in this social network, let's say we want to do something like
@@ -241,18 +236,15 @@ with this address or URL mycodeschool.com/videos/graph
 and lets say, page Q is the Wikipedia article on graph
 with this URL Wikipedia/org/wiki/graph.
 
-Now on my page that is page
-P, I have put a link to the Wikipedia page on graph.
+Now on my page that is page P, I have put a link to the Wikipedia page on graph.
 If you are on page P, you can click on this link and go to page Q
 but Wikipedia has not reciprocated to my favor by putting
 a link back to my page. 
 
-So if you are on page Q
-you cannot click on the link can come to page P. Connection here
-is one way and that's why we have drawn a directed egde here.
-Okay now once again if we are able to present
-web as a directed graph, we can apply standard graph theory algorithms to
-solve problems and to perform tasks.
+So if you are on page Q you cannot click on the link can come to page P. 
+Connection here is one way and that's why we have drawn a directed egde here.
+Okay now once again if we are able to present web as a directed graph, 
+we can apply standard graph theory algorithms to solve problems and to perform tasks.
 
 One of the tasks that search engines like Google perform very regularly
 is web crawling. Search engines use a program called web crawler
@@ -262,8 +254,8 @@ to provide quick and accurate results against search queries.
 
 Now even though in this context, we are using a nice and heavy term like web crawling.
 
-Web crawling is basically graph traversal
-or in simpler words, act of visiting all nodes in a graph
+Web crawling is basically graph traversal or in simpler words, 
+act of visiting all nodes in a graph
 and no prizes for guessing that there are standard algorithms for graph traversal.
 
 We will be studying graph traversal algorithms in a later lessons.
@@ -271,16 +263,14 @@ We will be studying graph traversal algorithms in a later lessons.
 Okay now the next thing that I want to talk about is concept of a weighted graph. 
 Sometimes in a graph, all connections cannot be treated as equal.
 
-Some connections can be preferable to others
-like for example we can represent
+Some connections can be preferable to others like for example we can represent
 intercity road network that is the network of highways and
 free ways between cities as an undirected graph.
 
 I'm assuming that all highways would be bi-directional.
 Intra-city road network that is road network within a city
-would definitely have one-way roads and so
-Intra-city network must be represented as a directed graph
-but intercity road network in my opinion can be represented as an
+would definitely have one-way roads and so Intra-city network must be represented 
+as a directed graph but intercity road network in my opinion can be represented as an
 undirected graph. 
 
 Now clearly we cannot treat all connections as equal here.
