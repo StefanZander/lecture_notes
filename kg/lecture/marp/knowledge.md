@@ -33,13 +33,12 @@ Knowledge, Knowledge Representation, and Understanding {.lightgreen .Big .skip}
 <!-- header: Overview -->
 <!-- footer: Foundations of Semantic Knowledge Graphs | Data Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences -->
 
-## What you will learn in this Unit
+<!-- ## What you will learn in this Unit
 
-...
+... -->
 
 
----
-# What is Knowledge?
+# What is Knowledge and how can it be utilized in IS ?
 
 
 
@@ -49,15 +48,15 @@ Knowledge, Knowledge Representation, and Understanding {.lightgreen .Big .skip}
 ::::: columns
 :::: single
 **Philosophically**
-- (Attributes to the epistemological perspective)
-- Knowledge is a subset of all true believes
+- Attributes to the epistemological perspective
 - Huge disconsensus in philosophy about the different conceptions and definitions
-- One largely beliefed definition is JTB
-- The american philosopher Edmund Gettier disapproved the JTB by providing a number of counter examples – also known as the Gettier Cases
+- Knowledge is a subset of all true believes
+- One largely accepted definition is [Justified]{.kursiv} True Belief (JTB)
+- The american philosopher Edmund Gettier disapproved the JTB by providing a number of counter examples – also known as the _Gettier Cases_
 ::::
 :::: single
 **Pragmatically**
-- several models have been proposed to explain the nature of knowledge, mostly in the context of certain scenarios (e.g. CPS, Industry 4.0, Innovation etc.)
+- several _models_ have been proposed to explain the nature of knowledge, mostly in the context of certain scenarios (e.g. CPS, Industry 4.0, Innovation etc.)
 - The most prominent ones among others are
   - The Wissenstreppe 4.0 by Claus North
   - The SECI-Model
@@ -194,11 +193,11 @@ Knowledge is what we know about the world around us. It is what we have learned 
 
 
 ---
-## Knowledge as justified true belief (JTB)
+## Knowledge as Justified true belief (JTB)
 
 ::::: columns
 :::: single
-- The JTB account of knowledge is the claim that knowledge can be conceptually analyzed as justified true belief, which is to say that the meaning of sentences such as "Smith knows that it rained today" can be given with the following set of conditions, which are necessary and sufficient for knowledge to obtain:
+- The JTB account of knowledge is the claim that knowledge can be conceptually analyzed as _justified true belief_, which is to say that the meaning of sentences such as "Smith knows that it rained today" can be given with the following set of conditions, which are *necessary* and *sufficient* for knowledge to obtain:
 
 - An agent $S$ knows that a proposition $P$ is true if and only if:
   1. $P$ is true, and
@@ -245,9 +244,38 @@ Sources: (1) https://en.wikipedia.org/wiki/Gettier_problem and (2) https://en.wi
 ::::
 :::: single
 **Justification**
-- Justification is based on the idea that having a true belief is not sufficient for knowledge since knowledge implies more than just being right about something. 
-- Bliefs based on dogmatic opinions, blind guesses, or erroneous reasoning do not constitute knowledge even if they are true.
-  - e.g. For example, if someone believes that Machu Picchu is in Peru because both expressions end with the letter 'u', this true belief does not constitute knowledge.
-- True beliefs that are based on good justification constitute knowledge <!-- e.g. a person visiting peru knows that Machu Picchu is in Peru -->
+- Justification is based on the idea that having a true belief is not sufficient for knowledge since it implies more than just being right about sth. 
+- Beliefs based on dogmatic opinions, blind guesses, or erroneous reasoning do not constitute knowledge even if they are true.
+  - e.g. if someone believes that Machu Picchu is in Peru because both expressions end with 'u', this true belief doesn't constitute knowledge.
+- ==True beliefs that are based on good justification constitute knowledge== 
+  - e.g. a person visiting peru knows that Machu Picchu is in Peru
 ::::
 :::::
+
+
+
+---
+## A classic example of JTB
+
+One classic example of justified true belief is the following scenario:
+
+::: graybox spaceafter kursiv
+**Example**
+Imagine that you look at your watch and see that it's currently 2:00 PM. You believe that it's 2:00 PM, and this belief is true, because it matches what you see on your watch. However, your belief is not based on a mere guess or a hunch - it's justified, because you have several reasons to believe that your watch is accurate. For example, you may have set your watch to the correct time earlier in the day, and you may have checked it against another reliable timepiece.
+:::
+
+- So in this example, you have a justified true belief that it's currently 2:00 PM. 
+- Your belief is true, because it corresponds to reality, and it's justified, because you have good reasons to believe it. 
+
+
+---
+## Another example of JTB
+
+::: graybox spaceafter kursiv
+**Example**
+Suppose you have a friend named Sarah who you know to be a reliable source of information. One day, Sarah tells you that it's currently raining outside. You believe Sarah's statement to be true, because you trust her and have no reason to doubt her. Additionally, when you look outside, you see that the ground is wet and people are carrying umbrellas, which confirms Sarah's statement.
+:::
+
+- In this scenario, you have a justified true belief that it's raining outside. 
+- Your belief is true, because it corresponds to reality, and it's justified, because you have good reasons to believe it. 
+- You trust your friend Sarah, and you can see that the ground is wet and people are carrying umbrellas.

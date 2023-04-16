@@ -73,42 +73,26 @@ In this part of the lecture, we consider graphs from a formal, _mathematical_ pe
 :::::
 
 ::: bluebox center marg4
-This course is for students and people who are new to knowledge graphs. As such, we do not assume that participants have specific expertise or background knoweldge on knowledge graphs.
+This course is for students and people who are new to knowledge graphs. As such, we do **not** assume that participants have specific expertise or background knoweldge on knowledge graphs.
 :::
 
 
 
 
----
-# The Impact of Knowledge Graphs is already visible 
 
 
 
----
-## Applications: Knowledge Graphs influence Search Behaviour
 
-Based on Rand Fishkin’s latest study (see sources), more than 50% of searches result in no clicks.
-
-::::: columns
-:::: single
-![](figures/google_search_click_study.png)
-::::
-::::single
-![](figures/seo_knowledge_panel.jpg)
-::::
-:::::
-
-The Knowledge Graph helps Google in answering queries directly using a knowldge panel; cf. the query for "what is seo" on the right picture.
-
-::: footnotes
-Sources: https://ahrefs.com/blog/google-knowledge-graph/ and https://sparktoro.com/blog/less-than-half-of-google-searches-now-result-in-a-click/
-:::
 
 
 
 
 ---
 <!-- header: "" -->
+## What are Knowledge Graphs and why should we talk about them ?
+
+
+---
 ## A Brief History of Knowledge Graphs
 
 The modern incarnation of the term stems from the 2012 announcement of the ==Google Knowledge Graph== 
@@ -211,7 +195,12 @@ Source: https://www.slideshare.net/soeren1611/knowledge-graph-introduction (Slid
 
 
 ---
+# The Impact of Knowledge Graphs is already visible 
+
+
+---
 ##  Key Application Areas for Knowledge Graphs
+<!-- note: The impact is visible in a number of domains -->
 
 ::::: columns
 :::: triple
@@ -237,6 +226,30 @@ Source: https://www.slideshare.net/soeren1611/knowledge-graph-introduction (Slid
 ::: footnotes
 Source: Chaudhri, V. K., Baru, C., Chittar, N., Dong, X. L., Genesereth, M., Hendler, J., Kalyanpur, A., Lenat, D., Sequeda, J., Vrandečić, D., and Wang, K. 2022. "Knowledge graphs: Introduction, history, and perspectives.". AI Magazine 43: 17–29. https://doi.org/10.1002/aaai.12033
 :::
+
+
+
+---
+## Knowledge Graphs influence Search Behaviour
+
+Based on a recent study (see sources), more than **50% of Web searches** result in **no clicks**.
+
+::::: columns
+:::: single
+![](figures/google_search_click_study.png)
+::::
+::::single
+![](figures/seo_knowledge_panel.jpg)
+::::
+:::::
+
+The Knowledge Graph helps Google in answering queries directly using a **knowldge panel**; $\leftsto$ the query for "what is seo" on the right picture
+
+::: footnotes
+Sources: https://ahrefs.com/blog/google-knowledge-graph/ and https://sparktoro.com/blog/less-than-half-of-google-searches-now-result-in-a-click/
+:::
+
+
 
 
 ---
@@ -267,7 +280,7 @@ Consider the Wikipedia page for the town "Winterthur", which includes a list of 
 
 
 ---
-## Additional Examples: Datacommons
+## Datacommons interlink many open and freely accessible data sources
 
 
 ::::: columns-center
@@ -287,7 +300,7 @@ https://datacommons.org/ is another publicly available large KG that incorporate
 
 
 ---
-## Additional Examples: Datacommons visualisations on COVID-19
+## Data analysis about COVID-19 affection indicators 
 
 ::::: columns-center
 :::: triple
@@ -308,11 +321,15 @@ This _Colab notebook_ digs deeper, performing a causal analysis to discover the 
 ::::
 :::::
 
+::: footnotes
+Source: Datacommons webpage
+:::
+
 
 
 ---
 <!-- header: "" -->
-## Examples: Datacommons visualisations on environmental issues
+## Visualisations about environmental issues from the datacommons KG
 
 ::::: columns-bottom
 :::: single center
@@ -366,14 +383,14 @@ The **meaning** of the data stored in enterprise databases is _hidden in logic_ 
 ---
 ## New and exciting aspects of the use of KGs for data integration
 
-1. First, the integrated information may come from text and other _unstructured sources_ (for example, news, social media, and others) as well as _structured data sources_ (for example, relational databases). As many information extraction systems already output information in triples, using a ==generic schema of triples== substantially reduces the cost of starting such data integration projects.
+1. First, the integrated information may come from text and other _unstructured sources_ (for example, news, social media, and others) as well as _structured data sources_ (for example, relational databases). As many information extraction systems already output information in triples, using a ==generic schema of triples== substantially __reduces the cost__ of starting _data integration projects_.
 
-2. Second, it can be easier to _adapt_ a triple-based schema in response to _changes_ than the comparable effort required to adapt a traditional relational database. This is because a relational system is typically modeled to support the application, and thus, _schema changes often require database reorganization_.
+2. Second, it can be easier to ==adapt a triple-based schema== in response to __changes__ than the comparable effort required to adapt a traditional relational database. This is because a _relational system is typically modeled to support the application_, and thus, _schema changes often require database reorganization_.
 
-3. Lastly, modern KG engines are highly optimized for _answering questions_ that require traversing the graph relationships in the data. 
+3. Lastly, modern KG engines are highly optimized for __answering questions__ that require _traversing_ the _graph relationships_ in the data. 
 
 ::: bluebox center marg4 spacebefore
-Due to the relative ease of creating and visualizing the schema and the availability of built-in analytics operations, KGs are becoming a popular solution for turning data into intelligence in the enterprises.
+Due to the relative ease of creating and visualizing the **schema** and the availability of **built-in analytics operations**, KGs are becoming a popular solution for turning **data** into **intelligence** in organisations and enterprises.
 :::
 
 ::: footnotes
@@ -404,13 +421,17 @@ A CV algorithm produces the KG (aka ==scene graph==) shown to the left with obje
 ::::
 :::::
 
+::: footnotes
+Source: https://onlinelibrary.wiley.com/doi/full/10.1002/aaai.12033
+:::
+
 
 
 
 ---
 ## What are the Benefits of Knowledge Graphs
 
-A _graph-based abstraction_ of knowledge has numerous benefits in professional scenarios when compared with traditional data organisation systems such as the relational model or NoSQL alternatives.
+A __graph-based abstraction__ of knowledge has numerous benefits in professional scenarios when compared with traditional data organisation systems such as the relational model or NoSQL alternatives.
 - Graphs provide a ==concise and intuitive abstraction== for a variety of domains, where edges capture the relations between the entities inherent in the domain.
 - Graphs allow maintainers to ==postpone the definition of a schema==, allowing the data and its scope to evolve in a more flexible manner than typically possible in a relational setting, particularly for capturing _incomplete knowledge_.
 -  Unlike (other) NoSQL models, ==specialised graph query languages== support not only standard relational operators (joins, unions, projections, etc.), but also _navigational operators_ for recursively finding entities connected through _arbitrary-length paths_.
@@ -418,8 +439,8 @@ A _graph-based abstraction_ of knowledge has numerous benefits in professional s
 -  ==Scalable frameworks for graph analytics== can be leveraged for computing centrality, clustering, summarisation, etc., in order to gain insights about the domain being described. 
 -  Various representations have also been developed that support applying ==machine learning techniques== directly over graphs.
   
-::: bluebox center
-In summary, the decision to build and use a knowledge graph opens up a range of techniques that can be brought to bear for integrating and extracting value from diverse sources of data.
+::: bluebox center marg2
+:fa-wand-magic-sparkles: In summary, the decision to build and use a knowledge graph opens up a range of techniques that can be brought to bear for integrating and extracting value from diverse sources of data.
 :::
 
 
@@ -510,7 +531,7 @@ Source: Compiled from Lecture Materials about Knowledge Graphs from Prof. Dr. Ma
 
 
 ---
-## Each Graph Representation (Matrix, List) has its Pros :far-thumbs-up: and Cons :far-thumbs-down:
+## Each Graph Representation has its Pros :far-thumbs-up: and Cons :far-thumbs-down:
 
 ::::: columns
 :::: single
@@ -520,7 +541,7 @@ Source: Compiled from Lecture Materials about Knowledge Graphs from Prof. Dr. Ma
 - :far-thumbs-down: space inefficient for sparse graphs
 - :far-thumbs-down: not natural for _labelled multi-graphs_
 
-Example
+![width:460px](figures/adjacency_matrix.png)
 ::::
 :::: single
 **List**
@@ -529,7 +550,7 @@ Example
 - :far-thumbs-down: harder to process (esp. if edge order can be random)
 - :far-thumbs-down: not space efficient for dense graphs
 
-Example
+![width:500px](figures/adjacency_list2.png)
 ::::
 :::::
 
@@ -538,25 +559,7 @@ Note: Knowledge graphs are typically sparse and labelled, but parallel processin
 :::
 
 ::: footnotes
-Source: Lecture Slides of Prof. Dr. Markus Krötzsch
+Source: Lecture Slides of Prof. Dr. Markus Krötzsch, TU Dresden; Pictures taken from https://www.cs.mtsu.edu/~xyang/3080/
 :::
 
 
-
----
-## Search and Query
-
-Search and query operations on KGs can be reduced to ==graph navigation==. 
-
-::: greenbox
-**Example** For example, in a friendship KG, to obtain the friends of the friends of a person A, one can first navigate the graph from A to all nodes B connected to it by a relation labeled as friend. One can then recursively navigate to all nodes C connected by the friend relation to each B. 
-:::
-
-
-- Directed labeled graph representation and graph algorithms are effective for several classes of problems (NAME THEM). 
-- They are, however, insufficient to capture all inferences of interest. 
-- We will discuss this in more detail in a later section on big semantics versus little semantics.
-
-::: footnotes
-Source: https://onlinelibrary.wiley.com/doi/full/10.1002/aaai.12033
-:::
