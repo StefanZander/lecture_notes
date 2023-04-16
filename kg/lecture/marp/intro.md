@@ -24,7 +24,7 @@ paginate: true
 
 #### Prof. Dr. Stefan Linus Zander 
 
-Knowledge Graphs {.lightgreen .Big .skip}
+Introduction to Knowledge Graphs {.lightgreen .Big .skip}
 
 
 ---
@@ -486,23 +486,6 @@ Moreover, knowledge graphs are typically:
 Source: Defintion taken from Knowledge Graph lecture from Prof. Dr. Markus Krötzsch, TU Dresden
 ::::
 
-
-
----
-## What is the meaning of 'Knowledge' in Knowledge Graphs ?
-![bg right:30%](figures/idea_and_ontology.jpeg)
-
-By ==knowledge==, we refer to something that is _known_. 
-
-- Such knowledge may be accumulated from _external sources_, or extracted from the _knowledge graph itself_ 
-- Knowledge may be _composed_ of ==simple== or ==quantified statements== 
-  - "Santiago is the capital of Chile" (simple assertion) 
-  - "all capitals are cities" (quantified assertion)
-- Simple statements can be accumulated as _edges_ in the data graph
-- The accumulation of quantified statements requires a _more expressive way_ to represent knowledge such as ==ontologies== or ==rules==
-- _Deductive methods_ can be used to entail and accumulate further knowledge 
-  - e.g. "Santiago is a city"
-- Additional knowledge – based on simple or quantified statements – can also be extracted from and accumulated by the knowledge graph using _inductive methods_
 
 
 
