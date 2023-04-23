@@ -212,7 +212,7 @@ Source: https://www.slideshare.net/soeren1611/knowledge-graph-introduction (Slid
    
 3. The deployment in _organisations_ or _enterprises_ in order to
    1. _improve **search** and **discovery**_ by explicit relationships
-   2. _enable better **decision-making**_ through holisting views on data
+   2. _enable better **decision-making**_ through holistic views on data
    3. _enhance **customer experience**_ through personalized and connected information
    4. _facilitate **data integration**_ by generic, domain-independent KRFs
    5. _support **knowledge management**_ by centralized KBs
@@ -243,7 +243,7 @@ Based on a recent study (see sources), more than **50% of Web searches** result 
 ::::
 :::::
 
-The Knowledge Graph helps Google in answering queries directly using a **knowldge panel**; $\leftsto$ the query for "what is seo" on the right picture
+The Knowledge Graph helps Google in answering queries directly using a **knowldge panel**; $\leadsto$ the query for "what is seo" on the right picture
 
 ::: footnotes
 Sources: https://ahrefs.com/blog/google-knowledge-graph/ and https://sparktoro.com/blog/less-than-half-of-google-searches-now-result-in-a-click/
@@ -272,7 +272,7 @@ Sources: https://ahrefs.com/blog/google-knowledge-graph/ and https://sparktoro.c
 :::: double 
 ::: graybox smaller
 **Example** 
-Consider the Wikipedia page for the town "Winterthur", which includes a list of all of Winterthur's twin towns: two are in Switzerland, one in the Czech Republic, and one in Austria. Wikipedia also has an entry for the city, Ontario, in California, which lists Winterthur as its sister city. The “sister city” and “twin city” relationships are meant to be identical as well as reciprocal. Thus, if a city A is a sister (twin) of another city B, then B must be a sister (twin) of A. In Wikipedia, “Sister cities” and “Twin towns” are simply section headings without any relationship/linkage specified between the two. Therefore, it is difficult to detect this discrepancy automatically. In contrast, the Wikidata representation of Winterthur includes a relationship called twinned administrative body, which includes the city of Ontario, CA. As this relationship is defined to be a symmetrical relationship in the KG, a SPARQL query engine can infer that the Wikidata page for the city of Ontario, CA is to be linked to the Wikidata page of Winterthur.
+Consider the Wikipedia page for the town "Winterthur", which includes a list of all of Winterthur's twin towns: two are in Switzerland, one in the Czech Republic, and one in Austria. Wikipedia also has an entry for the city, Ontario, in California, which lists Winterthur as its sister city. The "sister city" and "twin city" relationships are meant to be identical as well as reciprocal. Thus, if a city A is a sister (twin) of another city B, then B must be a sister (twin) of A. In Wikipedia, "Sister cities" and "Twin towns" are simply section headings without any relationship/linkage specified between the two. Therefore, it is difficult to detect this discrepancy automatically. In contrast, the Wikidata representation of Winterthur includes a relationship called **twinned administrative body**, which includes the city of Ontario, CA. As this relationship is defined to be a **symmetrical** relationship in the KG, a SPARQL query engine can infer that the Wikidata page for the city of Ontario, CA is to be linked to the Wikidata page of Winterthur.
 :::
 ::::
 :::::
@@ -314,7 +314,7 @@ For example, we see that _Covid-19 infection rates are highly correlated_
 
 Of course, these are just correlations. 
 
-This _Colab notebook_ digs deeper, performing a causal analysis to discover the _most variables most causally predictive of Covid-19 occurrence and morbidity_.
+By performing a causal analysis, it is possible to discover the _most variables most causally predictive of Covid-19 occurrence and morbidity_.
 ::::
 :::: double center
 ![](figures/covid.png)
@@ -381,7 +381,7 @@ The **meaning** of the data stored in enterprise databases is _hidden in logic_ 
 
 
 ---
-## New and exciting aspects of the use of KGs for data integration
+## New and exciting aspects of using KGs for data integration
 
 1. First, the integrated information may come from text and other _unstructured sources_ (for example, news, social media, and others) as well as _structured data sources_ (for example, relational databases). As many information extraction systems already output information in triples, using a ==generic schema of triples== substantially __reduces the cost__ of starting _data integration projects_.
 
@@ -408,8 +408,8 @@ Source: https://onlinelibrary.wiley.com/doi/full/10.1002/aaai.12033
 
 ::: graybox small
 A ==scene graph== became a central tool for achieving compositional behavior in CV algorithms. {.smallskip}
-- Once a CV algorithm is able to recognize certain objects, by leveraging scene graphs, it can be trained to recognize any combination of those objects with fewer examples. 
-- Scene graphs also provide the foundation for tasks such as visual question answering.
+- Once a CV algorithm is able to recognize certain objects, by leveraging scene graphs, it can be trained to **recognize any combination** of those objects with fewer examples. 
+- Scene graphs also provide the foundation for tasks such as **visual question answering**.
 :::
 
 ::::
@@ -436,7 +436,7 @@ A __graph-based abstraction__ of knowledge has numerous benefits in professional
 - Graphs allow maintainers to ==postpone the definition of a schema==, allowing the data and its scope to evolve in a more flexible manner than typically possible in a relational setting, particularly for capturing _incomplete knowledge_.
 -  Unlike (other) NoSQL models, ==specialised graph query languages== support not only standard relational operators (joins, unions, projections, etc.), but also _navigational operators_ for recursively finding entities connected through _arbitrary-length paths_.
 -  ==Standard knowledge representation formalisms== – such as _ontologies_ and _rules_ – can be employed to define and reason about the _semantics_ of the terms used to label and describe the nodes and edges in the graph.
--  ==Scalable frameworks for graph analytics== can be leveraged for computing centrality, clustering, summarisation, etc., in order to gain insights about the domain being described. 
+-  ==Scalable frameworks for graph analytics== can be leveraged for computing *centrality*, *clustering*, *summarisation*, etc., in order to gain insights about the domain being described. 
 -  Various representations have also been developed that support applying ==machine learning techniques== directly over graphs.
   
 ::: bluebox center marg2
@@ -444,105 +444,5 @@ A __graph-based abstraction__ of knowledge has numerous benefits in professional
 :::
 
 
-
----
-# Attempts for Defining Knowledge Graphs
-
-
----
-## Knowledge Graphs have many contentious definitions ranging from specific technical proposals to more inclusive general proposals
-
-
-
-An inclusive definition attempt{.Large}
-
-::::: definition
-A knowledge graph can be conceived as a graph of data intended to accumulate and convey knowledge of the real world, whose nodes represent entities of interest and whose edges represent relations between these entities. 
-
-Adapted from...
-:::::
-
-The ==graph of data== (aka data graph) conforms to a __graph-based data model__, which may be a _directed edge-labelled graph_, a _property graph_, etc.
-
-
-
----
-<!-- ## Another Attempt for a Knowledge Graph Definition -->
-## Knowledge Graphs embody a number of characteristic properties
-
-:::: definition
-A Knowledge Graph is a data set that is:
-- ==structured== (in the form of a specific data structure)
-- ==normalised== (consisting of small units, such as vertices and edges)
-- ==connected== (defined by the – possibly distant – connections between objects)
-
-Moreover, knowledge graphs are typically:
-- ==explicit== (created purposefully with an intended meaning)
-- ==declarative== (meaningful in itself, independent of a particular implementation or algorithm)
-- ==annotated== (enriched with contextual information to record additional details and meta-data)
-- ==non-hierarchical== (more than just a tree-structure)
-- ==large== (millions rather than hundreds of elements)
-
-Source: Defintion taken from Knowledge Graph lecture from Prof. Dr. Markus Krötzsch, TU Dresden
-::::
-
-
-
-
----
-##  Graph Representations in Mathematics are not sufficient for Knowledge Graph Representations in Computer Science 
-
-We have seen that graphs can be encoded in several ways: 
-- _Adjacency matrix_ (and variants)
-- _Adjacency list_ (and variants)
-- Other derived representations
-
-This is enough to store and manipulate graphs in software, but it is not enough to exchange graphs across applications.
-
-**Open questions**:
-- What kind(s) of graph do we want to exchange?
-- How are vertices given (numbers? strings? specific ids? . . . )?
-- Are edge labels supported and what are they?
-- Can the graph include values of data types (integer? float? string? times? . . . )? 
-- How exactly are these things encoded in bytes in a file?
-
-
-
-::: footnotes
-Source: Compiled from Lecture Materials about Knowledge Graphs from Prof. Dr. Markus Krötzsch, TU Dresden
-:::
-
-
----
-## Each Graph Representation has its Pros :far-thumbs-up: and Cons :far-thumbs-down:
-
-::::: columns
-:::: single
-**Matrix**
-- :far-thumbs-up: space efficient for dense graphs (1 bit per edge)
-- :far-thumbs-up: can be processed with matrix operations (highly parallel)
-- :far-thumbs-down: space inefficient for sparse graphs
-- :far-thumbs-down: not natural for _labelled multi-graphs_
-
-![width:460px](figures/adjacency_matrix.png)
-::::
-:::: single
-**List**
-- :far-thumbs-up: space efficient for sparse graphs;
-- :far-thumbs-up: easy to use for labelled multi-graphs;
-- :far-thumbs-down: harder to process (esp. if edge order can be random)
-- :far-thumbs-down: not space efficient for dense graphs
-
-![width:500px](figures/adjacency_list2.png)
-::::
-:::::
-
-::: bluebox center marg15
-Note: Knowledge graphs are typically sparse and labelled, but parallel processing still makes matrices attractive in some applications.
-:::
-
-::: footnotes
-Source: Lecture Slides of Prof. Dr. Markus Krötzsch, TU Dresden; Pictures taken from https://www.cs.mtsu.edu/~xyang/3080/
-:::
 
 

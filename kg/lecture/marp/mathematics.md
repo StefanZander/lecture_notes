@@ -569,7 +569,7 @@ graph G {
 
 
 ---
-## Properties of Graphs (1/2)
+## Special edge types
 
 ::::: columns
 :::: single
@@ -634,9 +634,13 @@ digraph G {
 }
 ```
 
-If there are no self-loops or multi-edges, the graph is a ==simple graph==.
+A graph is called ==multi-edge graph==, if it contains pairs of vertices that are connected by more than one edge.
 ::::
 :::::
+
+::: bluebox center marg5 spacebefore
+If there are no self-loops or multi-edges in a graph, it is a ==simple graph==.
+:::
 
 
 
@@ -696,12 +700,12 @@ $$\begin{align*}
 ::::
 :::::
 
-A graph is ==dense==, if the number of edges is close to its max.
+A graph is ==dense==, if the number of edges is close to the maximum number of possible edges.
 A graph is ==sparse==, if the number of edges is close to $|V|$.
 
-However, there is no defined boundaries for dense and sparse, it depends on the context.
+However, there are no defined boundaries for classifying a graph as dense or sparse $\leadsto$ it all depends on the context.
 
-This classification is important, since a lot of decisions are made based on whether the graph is dense or sparse (e.g. choosing a different storage structure in computer's memory for dense graphs (ie adjacency matrix vs. adjacency list)).
+This classification is important, since a lot of decisions are made based on whether the graph is dense or sparse (e.g. choosing a different storage structure in computer's memory for dense graphs (ie adjacency matrix vs. adjacency list used for sparse graphs)).
 
 
 
@@ -715,27 +719,26 @@ This classification is important, since a lot of decisions are made based on whe
 
 ::::: columns-center
 :::: double
-**Path**: A path is a sequence of vertices where each adjacent pair is connected by an edge.
+In graph theory there is some inconsistency between the terms ==path== and ==walk==. 
+
+A ==walk== is a sequence of vertices where each adjacent pair is connected by an edge.
 
 $$ < v_1, v_2, v_6, v_8, v_5, v_2, v_1, v_4 > $$
 
-**Simple Path**: a path in which no vertices (and thus no edges) are repeated.
+
+A ==path== is a walk with no repeated _vertex_ 
+
+$$ < v_1, v_2, v_6, v_8, v_7, v_3 > $$
+
+A ==simple path== is a walk in which no _vertices_ and _edges_ are repeated.
 
 $$ < v_1, v_2, v_6, v_8 > $$
 
-In graph theory there is some consistency between the terms ==path== and ==walk==. 
-
-**Walk**: a walk is a sequence of vertices where each adjacent pair is connected by an edge.
-
-$$ < v_1, v_2, v_6, v_8, v_5, v_2, v_1, v_4 > $$
-
-A (simple) **path** thus is a walk in which no vertices and (thus no edges) are repeated.
-
-$$ < v_1, v_2, v_6, v_8 > $$
-
-**Trail**: a walk in which vertices can be repeated but no edges are repeated.
+A ==trail== is a walk with no repeated _edge_ (vertices can be repeated)
 
 $$ < v_1, v_2, v_5, v_8, v_4, v_1, v_3 > $$
+
+The ==length== of a *walk* *trail*, *path* or cycle is its __number of edges__.
 
 ::::
 :::: single
@@ -768,10 +771,13 @@ graph G {
 }
 ```
 
-If any other path is possible, there must be a simple path.
+If any other path is possible, there must be a simple path $\Leftrightarrow$ if there is a simple path, any other "path" is also possible
 ::::
 :::::
 
+::: footnotes
+Walk and path are often used as synonyms but most often when we say path we mean simple path, a path in which vertices and edges are not repeated.
+:::
 
 
 
@@ -933,6 +939,13 @@ digraph G {
 
 
 ---
+<!-- header: "" -->
+# Graph Representation
+
+
+
+---
+<!-- header: Graph Representations -->
 ## Representing graphs: Adjacency Matrix
 
 There are several ways for representing graphs in Computer Science.
@@ -968,3 +981,66 @@ Source: Introduction to Knowlege Graphs, Prof. Dr. Markus Krötzsch, TU Dresden
 - The list could be adapted to _multi-graphs_ by adding the number of edges to each line, or by allowing repeated lines
 - The list could be adapted to _labelled graphs_ by adding labels to each line (for multi-graph: repeat lines rather than also storing number).
 - The list does not encode $V$: vertices without edges are missing (might be listed separately if relevant to application)
+
+
+
+
+---
+## Each graph representation has its pros :far-thumbs-up: and cons :far-thumbs-down:
+
+::::: columns
+:::: single
+**Adjacency Matrix**
+- :far-thumbs-up: space efficient for dense graphs (1 bit per edge)
+- :far-thumbs-up: can be processed with matrix operations (highly parallel)
+- :far-thumbs-down: space inefficient for sparse graphs
+- :far-thumbs-down: not natural for _labelled multi-graphs_
+
+![width:460px](figures/adjacency_matrix.png)
+::::
+:::: single
+**Adjecency List**
+- :far-thumbs-up: space efficient for sparse graphs;
+- :far-thumbs-up: easy to use for labelled multi-graphs;
+- :far-thumbs-down: harder to process (esp. if edge order can be random)
+- :far-thumbs-down: not space efficient for dense graphs
+
+![width:500px](figures/adjacency_list2.png)
+::::
+:::::
+
+::: bluebox center marg15
+Note: **Knowledge graphs** are typically **sparse** and **labelled**, but parallel processing still makes matrices attractive in some applications.
+:::
+
+::: footnotes
+Source: Lecture Slides of Prof. Dr. Markus Krötzsch, TU Dresden; Pictures taken from https://www.cs.mtsu.edu/~xyang/3080/
+:::
+
+
+
+
+---
+##  Graph representations in mathematics are not sufficient for knowledge graph representations in Computer Science 
+
+We have seen that graphs can be encoded in several ways: 
+- _Adjacency matrix_ (and variants)
+- _Adjacency list_ (and variants)
+- Other derived representations
+
+This works for storing and manipulating graphs in software, but it is insufficient to _encode meaning_ and _exchange graphs across apps_.
+
+**Open questions**:
+- What kind(s) of graph do we want to exchange ?
+- How are vertices given (numbers? strings? specific ids? ... ) ?
+- Are edge labels supported and what are they ?
+- Can the graph include values of data types (integer? float? string? times? ... )? 
+- How exactly are these things encoded in bytes in a file?
+
+::: footnotes
+Source: Compiled from Lecture Materials about Knowledge Graphs from Prof. Dr. Markus Krötzsch, TU Dresden
+:::
+
+
+
+

@@ -156,7 +156,6 @@ and a graph is called sparse if the number of edges is really less
 typically close to a number of vertices and not more than that.
 
 There is no defined boundary for what can be called dense and what can be called sparse. 
-
 It all depends on context but this is an important classification. 
 
 While working with graphs, a lot of decisions are made based on whether the graph is
@@ -169,6 +168,10 @@ We typically store a dense graphs and something called adjacency matrix,
 and for a sparse graph we typically use something called adjacency list. 
 
 I'll be talking about adjacency matrix and adjacency list in next lesson. 
+
+
+## path, walks, Trails
+
 Okay, now the next concept that I want to talk about is concept of path in a graph. 
 
 A path in a graph is a sequence of vertices where each adjacent
@@ -183,14 +186,8 @@ In a directed graph, all edges must also be aligned in 1 direction the direction
 
 A path is called simple path if no vertices are repeated
 and if vertices are not repeated then edges will also not be repeated.
-
 So in a simple path both vertices and edges are not repeated.
 
-This path A B F H that I have highlighted here
-is a simple path but we could also have a path like this. 
-
-Here, start vertex is A and end vertex is D. 
-In this path, 1 edge and 2 vertices are repeated.
 
 In graph theory, there is some inconsistency in use of this term path.
 
@@ -226,6 +223,10 @@ so this is what I'm going to do throughout our lessons.
 
 I'm going to say path and by path, I'll mean simple path
 and if it's not a simple path I'll say it explicitly.
+
+
+
+## Connection
 
 A graph is called strongly connected if in the graph
 there is a path from any vertex to any other vertex.

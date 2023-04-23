@@ -29,21 +29,22 @@ math: mathjax
 Data Graph Types {.lightgreen .Big .skip}
 
 
----
-<!-- header: Overview -->
-<!-- footer: Foundations of Semantic Knowledge Graphs | Data Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences -->
 
+
+<!-- 
 ## What you will learn in this Lecture
 
 
 We first discuss a __selection of graph-structured data models__ that are commonly used in practice to represent data graphs. 
 
 We then discuss the primitives that form the basis of __graph query languages__ used to interrogate such data graphs.
-
+ -->
 
 
 ---
-## A Word about the Teaching Methodology used during the theoretical Parts of this Module
+<!-- header: Teaching Methodology -->
+<!-- footer: Foundations of Semantic Knowledge Graphs | Data Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences -->
+## A word about the teaching methodology used during the theoretical parts of this module
 
 - At the core, we start with a mathematical definition and representation of graphs
 - we then use extend these definition towards a graph-based model in CS
@@ -51,27 +52,27 @@ We then discuss the primitives that form the basis of __graph query languages__ 
 - We then add schema, identity, and context to transform data graphs into knowledge graphs
 - We add semantics and ontologies to build semantic knowledge graphs and introduce a representation framework for SKGs
 
-:::: bluebox center marg2
+:::: bluebox center marg2 spacebefore
 **Didactical Model**
-This lecture uses a continuum of _increasing complexity_ applied to data graphs to explain the additional concepts and features needed for their transistion into semantic knowledge graphs as a didactical model.
+This lecture uses a *continuum* of _increasing complexity_ applied to data graphs to explain the additional concepts and features needed for their transistion into semantic knowledge graphs as a didactical model.
 ::::
 
 
 ---
-## A Graph-based Data Representation provides a number of Advantages over other, traditional Data Models
+<!-- header: Motivation -->
+## Motivation: A graph-based data representation provides a number of advantages over other, traditional data models
 
-Why there is a need for data graphs
-
+<!-- Why there is a need for data graphs -->
 ::::: columns
 :::: single
-- Requirements and peculiarities of domains of interest are often not fully known at the beginning
+- Requirements and peculiarities of domains of interest are often _not fully known_ at the beginning
 - Additional features might needed
-  - multi-language support
-  - multiple names and descriptions
-  - multiple types
-  - incomplete or missing information might harm schema compliance
-- Schemas might evolve over time as the complexity of the domain of interest increases
-- Schema adaptations are expensive and require lots of testing and validation
+  - *multi-language support*
+  - *multiple names* and *descriptions*
+  - *multiple types*
+  - incomplete or missing information might harm *schema compliance*
+- Schemas might *evolve over time* as the complexity of the domain of interest increases
+- *Schema adaptations* are expensive and require lots of testing and validation
   - remodelling, reloading, and reindexing of data needed
 - Diversity 
 
@@ -80,25 +81,21 @@ Why there is a need for data graphs
 **Example**
 
 Initial schema for an event database (table with 5 columns)
-$$
-Event(\underline{name}, venue, type, \underline{start}, end)
-$$
+```
+Event(name*, venue, type, start*, end)     *uniqueness
+```
 A more flexible and elaborated schema solution
 
-$$
-EventName(id,name), EventStart(id,start), EventEnd(id,end), EventVenue(id,venue), EventType(id,type) 
-$$
+```
+EventName(id,name),   EventStart(id,start), 
+EventEnd(id,end),     EventVenue(id,venue), 
+EventType(id,type) 
+```
 
-$$
-f(x) = \int_{-\infty}^\infty
-    \hat f(\xi)\,e^{2 \pi i \xi x}
-    \,d\xi
-$$
-
-Remodelling often results in binary relations between entities --> close to modelling a graph
-
-::: bluebox center small
-Using a data-graph model removes the necessity of an upfront schema and facilitates refinements
+::: bluebox small smallskip
+- Remodelling often results in binary relations between entities 
+  $\leadsto$ close to modelling a graph
+- Using a data-graph model removes the necessity of an **upfront schema** and facilitates refinements
 :::
 ::::
 :::::
@@ -106,6 +103,7 @@ Using a data-graph model removes the necessity of an upfront schema and facilita
 
 
 ---
+<!-- header: Data Graph Types -->
 ## Overview of the different Types of Data Graphs
 
 1. Directed Edge-Labelled Graphs
@@ -150,7 +148,7 @@ Source: https://kgbook.org/
 
 
 
-
+<!-- 
 ---
 ## Directed Edge-Labelled Graphs
 
@@ -178,7 +176,7 @@ Source: https://kgbook.org/
 - Incomplete information is expressed by omitting a particular edge (eg. start- and/or end-time)
 ::::
 :::::
-
+ -->
 
 
 ---
@@ -209,14 +207,14 @@ Source: https://kgbook.org/
 :::::
 
 ::: footnotes
-^1^ Link to RDF
+^1^ [Resource Description Framework (RDF)](https://www.w3.org/RDF/)
 :::
 
-
+<!-- 
 ---
 ## The foundation of any knowledge graphs rests on the principle of first applying a graph abstraction to data
 
-...
+... -->
 
 
 ---
@@ -249,6 +247,7 @@ Source: https://kgbook.org/
 - An edge is called ==homogeneous==, if it is between two nodes of the same type
   - e.g., (City:Munich) partner_town_of (City:Edinburgh)
 - If the **type** between two adjacent nodes is different, the edge is called ==heterogeneous==
+  - e.g., (City:Santiago) capital (Country:Chile)
 - Such graphs typically only support **many-to-one relations** between nodes and types 
   - as opposed to directed edge-labelled graphs which can contain untyped nodes
 :::
@@ -311,35 +310,49 @@ Source: https://kgbook.org/
 
 
 ---
-## Organizing multiple Data Graphs in a Graph Dataset 
+## Organizing multiple data graphs in a graph dataset 
 
 ::::: columns 
 :::: double
 **Background**
 Multiple directed edge-labelled graphs can be merged by taking their union but it is often _desirable to manage several graphs rather than one monolithic graph_.
-E.g. multiple graphs from different sources can be processed (update, refine, etc) differently by distinguishing untrustworthy sources from more trustworthy ones.
 
 **Constituents**
-A ==graph dataset== usually consists of a 
-1. set of named graphs and 
-2. a default graph. 
+A ==graph dataset== usually consists of a {.smallskip}
+1. set of _named graphs_ and 
+2. a _default graph_. 
 
 Each _named graph_ is a pair of a _graph ID_ and a _graph_. 
-The default graph is a graph without an ID, and is referenced “by default”.
+The _default graph_ is a graph without an ID, and is referenced "by default".
 
 
-**Extensions**
-Graph names can also be used as nodes in a graph. 
-Furthermore, nodes and edges can be repeated across graphs, where the same node in different graphs will typically refer to the same entity, allowing data on that entity to be integrated when merging graphs.
+**Extensions** {.smallskip}
+- Graph names can also be used as nodes in a graph. 
+- Vertices and edges can be _repeated across graphs_, 
+  - the same node in different graphs will typically refer to the same entity, allowing data on that entity to be integrated when merging graphs.
 ::::
 :::: single
 ::: caption 
 ![text](./figures/graph_dataset_fake_news.png)
 A graph dataset for representing fake news propagation (source: https://github.com/mdepak/fake-news-propagation)
 :::
+
+::: graybox smallest
+Multiple graphs from different sources can be processed (update, refine, etc) differently by distinguishing untrustworthy sources from more trustworthy ones.
+:::
 ::::
 :::::
 
+
+---
+## Example
+![bg right:70% width:100%](figures/graph_dataset.png)
+
+Graph dataset based on directed edge-labelled graphs with two named graphs and a default graph describing events and routes
+
+::: footnotes
+Source: https://kgbook.org/#subsub-graphdataset
+:::
 
 
 ---
@@ -364,15 +377,17 @@ Source: kgbook.org
 
 
 ---
-## Other Graph Data Models and Stores (hypergraphs / hypernodes) – TODO: add more information
+## Other Graph Data Models and Stores (hypergraphs or hypernodes)
 
-Labelled property graphs, property graphs, and heterogeneous/homogeneous grpahs are popular examples of graph representations. 
+- Labelled property graphs, property graphs, and heterogeneous/homogeneous graphs are popular examples of graph representations. 
 
-Other graph data models exist that use _complex nodes_ that may contain individual edges or nested graphs (sometimes called _hypernodes_).
+- Other graph data models exist that use _complex nodes_ that may contain {.smallskip}
+  - individual _edges_ or 
+  - _nested graphs_ (sometimes called _hypernodes_).
 
-Mathematical notation of a hypergraph defines complex edges that connect sets rather than pairs of nodes.
+- Mathematical notation of a _hypergraph_ defines complex edges that _connect sets_ rather than pairs of nodes.
 
-Hypergraphs are thus also a special type of knowledge graph and can be converted into a simpler graph data model and vice versa.
+- Hypergraphs are thus also a special type of knowledge graph and can be converted into a simpler graph data model and vice versa.
 
 
 
@@ -382,17 +397,55 @@ Hypergraphs are thus also a special type of knowledge graph and can be converted
 A variety of techniques have been proposed for storing and indexing graphs, facilitating the efficient evaluation of queries 
 
 Directed edge-labelled graphs can be stored in relational databases either in form of 
-- a single relation of arity three (triple table), 
-- as a binary relation for each property (vertical partitioning), 
-- or as $n$-ary relations for entities of a given type (property tables)
+- a _single relation of arity tree_ (triple table), 
+- as a _binary relation for each property_ (vertical partitioning), 
+- or as _$n$-ary relations for entities of a given type_ (property tables)
 
-Custom (so-called native) storage techniques have also been developed for a variety of graph models (TODO: provide examples), providing efficient access for finding nodes, edges, and their adjacent elements.
+Custom (so-called native) storage techniques have also been developed for a variety of graph models, providing efficient access for finding nodes, edges, and their adjacent elements.
 
 A number of systems further allow for distributing graphs over multiple machines based on popular NoSQL stores or custom partitioning schemes. 
 
 
 
+
+
 ---
-## Summary
+# Attempts for Defining Knowledge Graphs
 
 
+---
+## Knowledge Graphs have many contentious definitions ranging from specific technical proposals to more inclusive general proposals
+
+
+
+An inclusive definition attempt{.Large}
+
+::::: definition
+A knowledge graph can be conceived as a graph of data intended to accumulate and convey knowledge of the real world, whose nodes represent entities of interest and whose edges represent relations between these entities. 
+
+Adapted from...
+:::::
+
+The ==graph of data== (aka data graph) conforms to a __graph-based data model__, which may be a _directed edge-labelled graph_, a _property graph_, etc.
+
+
+
+---
+<!-- ## Another Attempt for a Knowledge Graph Definition -->
+## Knowledge Graphs embody a number of characteristic properties
+
+:::: definition
+A Knowledge Graph is a data set that is:
+- ==structured== (in the form of a specific data structure)
+- ==normalised== (consisting of small units, such as vertices and edges)
+- ==connected== (defined by the – possibly distant – connections between objects)
+
+Moreover, knowledge graphs are typically:
+- ==explicit== (created purposefully with an intended meaning)
+- ==declarative== (meaningful in itself, independent of a particular implementation or algorithm)
+- ==annotated== (enriched with contextual information to record additional details and meta-data)
+- ==non-hierarchical== (more than just a tree-structure)
+- ==large== (millions rather than hundreds of elements)
+
+Source: Defintion taken from Knowledge Graph lecture from Prof. Dr. Markus Krötzsch, TU Dresden
+::::
