@@ -31,9 +31,71 @@ A Framework for Encoding Semantic Knowledge Graphs – The Resource Description
 <!-- header: Overview -->
 <!-- footer: Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences -->
 
-# Outline
+## Preamble: What makes a data graph a knowledge graph ?
 
-- ...
+We have learned about the different types of data graphs and the elements that constitute a data graph.
+
+In order to transform a data graph into a knowledge graph, we need additional features:
+- *Identity*
+- *Schema knowledge*
+- *Contextual knowledge*
+- *Semantics* 
+
+...and we need a ==knowledge representation framework== in which these features can be encoded
+
+::: redbox center spacebefore
+$\leadsto$ We therefore discuss **RDF** and the __RDF Schema data-modelling vocabulary__ that allow for the creation of knowledge graphs
+:::
+
+
+---
+## Outline
+
+:::: grid3col vertical-align-top widthfixed gap2em
+::: bluebox 
+**Part I: RDF**
+- Concepts and Elements
+- How to identify things
+- Reification
+- Serialisation Formats
+:::
+
+::: bluebox 
+**RDF Schema**
+- Motivation
+- Classes and Properties
+- Examples and Pitfalls
+- RDF Schema Inferencing
+:::
+
+:::
+:::
+
+::: orangebox
+**Part II: Deductive Knowledge**
+- Ontologies
+- Interpretations and Models
+- Ontology Language Features 
+- Reasoning using DLs and Rules
+:::
+
+::: greenbox
+**Part III: Querying RDF Graphs**
+- Introduction to SPARQL
+- Concepts and Elements
+- SPARQL Examples
+- SPARQL Query Endpoints
+:::
+
+:::
+- **KG Applications** (if time)
+  - Wikidata
+  - DBpedia
+  - Linked Open Data
+:::
+::::
+
+
 
 
 ---
@@ -134,7 +196,7 @@ digraph G {
 
 
 ---
-## What does RDF stands for ?
+## What does RDF stand for ?
 
 ::: grid2col widthauto vertical-align-center
 [**R**]{.red .Huge}**essource** 
@@ -173,17 +235,44 @@ $\leadsto$ conflation of **Web technologies**, **protocols**, and **standards** 
 - Due to the **uniqueness** of node and edge **identifiers**, an RDF graph can be **reconstructed** from the list of triples
 
 
+
 ---
 ## Elements of RDF graphs
 
-- **URIs**
+- **URIs/IRIs**
   - enable the unique identification of resources 
   
 - **Literals**
-  - describe data values that do not have a specific existence
+  - describe data values that do not have a specific existence; can be typed or untyped (=plain)
 
 - **Blank Nodes**
   - enable statements about the existence of individuals and their properties without naming them explicitly
+
+
+
+---
+# How to identify things...
+
+
+---
+## Information resources versus non-information resources
+
+In the Web, we distinguish between Information Resources and Non-Information Resources.
+
+These concepts allow us to distinguish between the actual "thing" (ie designatum) and representations about it (ie designators).
+
+A "thing" can be anything – a physical object, a city, a person, an animal, a feeling, an event etc.
+
+URIs/IRIs are used to identify things. 
+
+URLs allow to retrieve the content of information resources.
+$\leadsto$ information resources are dereferencable; non-information resources are not
+
+Non-information resources and information resources are "linked" together via content negotiation.
+
+By using globally defined IRIs, the Web can be transformed into a linked data space ($\rightarrow$ see Linked Data Cloud)
+
+
 
 ---
 ## Identifiers in RDF: How should we refer to vertices?
@@ -362,11 +451,11 @@ The W3C standard XML Schema defines the datatype **integer**, identified by the 
 
 ---
 ## An Overview of available XSD datatypes in RDF
+![bg right:60% height:100%](figures/rdf_xsd_datatypes.png)
 
-::: right
-![height:600px](figures/rdf_xsd_datatypes.png)
-:::
+{.Bigskip}
 
+More Information: https://www.w3.org/TR/xmlschema11-2/
 
 
 ---
