@@ -48,6 +48,7 @@ $\leadsto$ We therefore discuss **RDF** and the __RDF Schema data-modelling voca
 :::
 
 
+
 ---
 ## Outline
 
@@ -94,6 +95,22 @@ $\leadsto$ We therefore discuss **RDF** and the __RDF Schema data-modelling voca
   - Linked Open Data
 :::
 ::::
+
+
+
+
+---
+## In order to use RDF for encoding KGs, the following questions need to be answered
+
+- How to represent vertices and edges in RDF KGs ?
+- How to represent data and data values ?
+- How can we express n-ary relationships ?
+- How to provide identity for elements in the graph ?
+- How to identify "things" ?
+- How to distinguish "things" from representations about those "things" ?
+- How to encode / serialize RDF graphs ?
+- How to implement and integrate semantics ?
+- How to share RDF graphs among applications and systems ?
 
 
 
@@ -147,6 +164,26 @@ W3C = World Wide Web Consortium
 :::
 
 
+
+---
+## What does RDF stand for ?
+
+::: grid2col widthauto vertical-align-center
+[**R**]{.red .Huge}**essource** 
+
+$\leadsto$ can be or refer to **everything** that is **uniquely identifiable** by an URI/IRI and must be **referencable**
+
+[__D__]{.red .Huge}**escription**
+
+$\leadsto$ representation of **properties** and **relationships** among resources in form of **directed graphs**
+
+[**F**]{.red .Huge}**ramework**
+
+$\leadsto$ conflation of **Web technologies**, **protocols**, and **standards** (URI, HTTP, XML, JSON) and **formal logics** (semantics)
+:::
+
+
+
 ---
 ## How to represent data in RDF
 
@@ -178,39 +215,6 @@ digraph G {
 }
 ```
 
-
-
----
-## In order to use RDF for encoding KGs, the following questions need to be answered
-
-- How to represent vertices and edges in RDF KGs ?
-- How to represent data and data values ?
-- How can we express n-ary relationships ?
-- How to provide identity for elements in the graph ?
-- How to identify "things" ?
-- How to distinguish "things" from representations about those "things" ?
-- How to encode / serialize RDF graphs ?
-- How to implement and integrate semantics ?
-- How to share RDF graphs among applications and systems ?
-
-
-
----
-## What does RDF stand for ?
-
-::: grid2col widthauto vertical-align-center
-[**R**]{.red .Huge}**essource** 
-
-$\leadsto$ can be or refer to **everything** that is **uniquely identifiable** by an URI/IRI and must be **referencable**
-
-[__D__]{.red .Huge}**escription**
-
-$\leadsto$ representation of **properties** and **relationships** among resources in form of **directed graphs**
-
-[**F**]{.red .Huge}**ramework**
-
-$\leadsto$ conflation of **Web technologies**, **protocols**, and **standards** (URI, HTTP, XML, JSON) and **formal logics** (semantics)
-:::
 
 
 
@@ -255,22 +259,23 @@ $\leadsto$ conflation of **Web technologies**, **protocols**, and **standards** 
 
 
 ---
-## Information resources versus non-information resources
+## Information resources versus non-information resources :far-star:
 
-In the Web, we distinguish between Information Resources and Non-Information Resources.
+In the Web, we distinguish between ==Information Resources== and ==Non-Information Resources==.
 
-These concepts allow us to distinguish between the actual "thing" (ie designatum) and representations about it (ie designators).
+These concepts allow us to distinguish between the actual "thing" (ie ==designatum==) and representations about it (ie ==designators==).
 
-A "thing" can be anything – a physical object, a city, a person, an animal, a feeling, an event etc.
+A "thing" can be *anything* – a physical object, a city, a person, an animal, a feeling, an event etc.
 
-URIs/IRIs are used to identify things. 
+==URIs/IRIs== are used to *identify things*. 
 
 URLs allow to retrieve the content of information resources.
-$\leadsto$ information resources are dereferencable; non-information resources are not
+$\leadsto$ information resources are *dereferencable*; non-information resources are *not*
 
-Non-information resources and information resources are "linked" together via content negotiation.
+Non-information resources and information resources are "linked" together via ==content negotiation==.
 
-By using globally defined IRIs, the Web can be transformed into a linked data space ($\rightarrow$ see Linked Data Cloud)
+By using _globally defined IRIs_, the Web can be transformed into a _linked data space_ ($\rightarrow$ see Linked Data Cloud)
+
 
 
 
