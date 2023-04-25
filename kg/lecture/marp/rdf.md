@@ -280,6 +280,15 @@ By using _globally defined IRIs_, the Web can be transformed into a _linked data
 
 
 ---
+## Content Negotiation
+![bg right:70%](figures/content_negotiation.png)
+
+::: footnotes
+Source: https://www.w3.org/blog/2006/02/content-negotiation/
+:::
+
+
+---
 ## Identifiers in RDF: How should we refer to vertices?
 
 ::: definition
@@ -350,7 +359,7 @@ Where do the **IRIs** that we use in graphs come from?
 :::
 
 ::: footnotes
-Source: Krötzsch
+Source: Lecture slides from Prof. Dr. Markus Krötzsch
 :::
 
 
@@ -373,12 +382,6 @@ Source: Krötzsch
 ::: footnotes
 Source: Krötzsch
 :::
-
-
-
-
----
-## Content Negotiation
 
 
 
