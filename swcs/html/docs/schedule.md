@@ -10,19 +10,19 @@ The following syllabus information intend to help you structure your work and ac
 - Week 1: Read introductory material + start forming groups ([MS0](milestone0.md))
 - Week 2: Find topics + start reading topic-related material ([MS1](milestone1.md)) 
 - Week 3: Become familiar with the topic and the state of the art + start preparing Factsheet & Abstract
-- Week 4: Finalize Factsheet & Abstract and submit ([MS2](milestone2.md)) --- _==Deadline: MON, 2022-11-14 (EOD)==_
+- Week 4: Finalize Factsheet & Abstract and submit ([MS2](milestone2.md)) --- _==Deadline: xxx, 2023-xx-xx (EOD)==_
 - Week 5: Feedback for [MS2](milestone2.md) + Research
 - Week 6: Research
 - Week 7: Research
 - Week 8: Research
-- Week 9: Upload review version of paper + enter paper bids ([MS3](milestone3.md)) --- _==Deadline: SUN, 2022-12-11 (EOD)==_[^1]
-- Week 10: Review Week ([MS4](milestone4.md)) --- _==Deadline: MON, 2022-12-19==_
+- Week 9: Upload review version of paper + enter paper bids ([MS3](milestone3.md)) --- _==Deadline: xxx, 2023-xx-xx (EOD)==_[^1]
+- Week 10: Review Week ([MS4](milestone4.md)) --- _==Deadline: MON, 2023-xx-xx==_
 - Week 11: Integrate feedback + paper revision + start preparing the final presentations
-- Week 12: Final presentations ([MS5](milestone5.md)) --- _Deadline: 13.07.2022_
+- Week 12: Final presentations ([MS5](milestone5.md)) --- _==Date: 2023-xx-xx, xx:xx - xx:xx==_
 <!-- - Week 13: Paper revision -->
-- Week 15: Finalization and submission of research paper ([MS6](milestone6.md)) --- _Deadline: 01.08.2022 (EOD)_
+- Week 15: Finalization and submission of research paper ([MS6](milestone6.md)) --- _==Deadline: xxx (EOD)==_
 
-[^1]: I will start the bidding process on MON, 2022-12-12.
+[^1]: I will start the bidding process on xxx, 202x-xx-xx.
 
 
 

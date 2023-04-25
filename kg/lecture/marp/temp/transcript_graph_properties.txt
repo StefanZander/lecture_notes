@@ -1,0 +1,320 @@
+In our previous lesson, we introduced you to graphs.
+
+We defined graph as a mathematical or logical model
+and talked about some of the properties and applications of graph.
+
+Now in this lesson, we will discuss some more properties of graph
+but first I want to do a quick recap of what we have discussed in our previous lesson.
+
+A graph can be defined as an ordered pair of a set of vertices and a set of edges.
+
+We use this formal mathematical notation G = (V,E)
+to define a graph, here V is set of vertices and E is set of edges. 
+
+Ordered pair is just a pair of mathematical objects in which order of objects in the pair matters.
+It matters which element is first and which element is second in the pair.
+
+Now as we know to denote number of elements in a set that we also call cardinality of a set. 
+We use the same notation that we used for modulus or absolute value.
+
+So this is how we can denote number of vertices and number of edges in a graph. 
+Number of vertices would be number of elements in set V and 
+number of edges would be number of elements in set E. 
+
+Moving forward, this is how I'm going to denote number of vertices and
+number of edges in all my explanations. Now as we had discussed earlier,
+edges in a graph can either be directed that is 1 way connections
+or undirected that is 2 way connections. 
+
+A graph with only directed edges is called a directed graph or digraph and 
+a graph with only undirected edges is called a undirected graph.
+
+Now sometimes all connections in a graph cannot be treated as equal, 
+so we label edges with some weight or cost like what i'm showing here 
+and a graph in which some value is associated 
+to connections as cost or weight is called a weighted graph.
+
+A graph is unweighted if there is no cost distinction among edges. 
+Okay, now we can also have some special kind of edges in a graph.
+
+These edges complicate algorithms and make working with graphs difficult
+but I'm going to talk about them anyway. 
+
+An edge is called a self loop or self edge if it involves only 1 vertex.
+If both endpoint of an edge are same then it's called a self loop. 
+
+We can have a self loop in both directed and undirected
+graphs but the question is why would we ever have a self loop in a graph.
+
+Well, sometimes if edges are depicting some relationship or connection
+that's possible with the same node as origin as well as destination
+then we can have a self loop. 
+
+For example as we discussed in our previous lesson,
+interlinked web pages on the internet or the world wide web can be
+it presented as a directed graph. 
+
+A page with a unique URL can be a node in the
+graph and we can have a directed
+edge if a page contains link to another page. 
+
+Now we can have a self loop in this graph because its very much possible for a
+webpage to have a link to itself. 
+
+Have a look at this webpage mycodeschool.com/videos.
+
+In the header, we have links for workouts page, problems page and videos page. 
+Right now I'm already on videos page but I can still click on videos link 
+and all that will happen with the click is refresh because I'm already on videos page. 
+
+My origin and destination are same here, so if I'm representing 
+world wide web as a directed graph the way we just discussed then we have self loop here.
+
+Now the next special type of edge that I want to talk about is multi-edge.
+
+An edge is called a multi-edge if it occurs more than once in a graph. 
+Once again, we can have a multi-edge in both directed and undirected graphs.
+
+First multi edge that I'm showing you here is undirected and the second 1 is directed.
+
+Now once again, the question why should be ever have a multi-edge.
+
+Well, let's say we are representing flight network between cities as a graph.
+
+A city would be a node and we can have an edge if
+there is a direct flight connection between any 2 cities,
+but then there can be multiple flights between a pair of cities.
+
+These flights would have different names and may have different costs.
+
+If I want to keep the information about all the flights in my graph, I can draw multi-edges. 
+
+I can draw 1 directed edge foreach flight and then I can label an edge 
+with its cost or any other property.
+
+I just labeled edges here with some random flight numbers.
+Now as we were saying earlier, self loops and multi-edges often complicate working with graph. 
+Their presence means we need to take extra care while solving problems.
+If a graph contains no self loops or multi-edge then it's called a simple graph.
+
+In our lessons, we will mostly be dealing with simple graphs.
+
+Now I want you to answer a very simple question. 
+Given a number of vertices in a simple graphs that is a a graph with 
+no self loops or multi-edge, what would be maximum possible number of edges.
+
+Well, let's see. Let's say, we want to draw a directed graph with 4 vertices. 
+I have drawn 4 vertices here.
+
+I'll name these vertices V1, V2, V3 and V4.
+So this is my set of vertices. Number of elements in set V is 4. 
+Now it's perfectly fine if I choose not to draw any age here. This will still be a graph.
+
+Set of edges can be empty, nodes can be totally disconnected.
+
+So minimum possible number of edges in a graph is zero.
+
+Now if this is a directed graph, what do you think can be maximum number of edges here.
+
+Well, each node can have directed edges to all other nodes.
+
+In this figure here, each node can have directed edges to 3 other nodes. 
+We have 4 nodes in total, so maximum possible number of edges here is 4 * 3 that is 12. 
+
+I have shown edges originating from a vertex in same color here.
+
+This is the maximum that we can draw if there is no self loop or multi-edges. 
+In general if there are N vertices then maximum number of edges 
+in a directed graph would be N * (N - 1), so in a simple 
+directed graph of number of edges would be in this range 0 to N * (N-1). 
+
+Now what do you think would be the maximum for an undirected graphs.
+
+In an undirected graph, we can have only 1 bi-directional edge between a pair of nodes. 
+We can't have 2 edges in different directions,
+so here the maximum would be half of maximum for directed.
+
+So if the graph is simple and undirected number of edges would be
+in the range 0 to (N * (N - 1)) / 2.
+
+Remember this is true only if there is no self loop or multi-edge.
+
+Now if you can see number of edges in the graph can be really really large
+compared to a number of vertices.
+
+For example if number of vertices in a directed graph
+is equal to 10, maximum number of edges would be 90. 
+
+If number of vertices is 100, maximum number of edges would be 9900.
+
+Maximum number of edges would be close to Square of number of vertices.
+
+A graph is called dense if number of edges in the graph is close to maximum
+possible number of edges
+that is if the number of edges is of order of square of number of vertices,
+and a graph is called sparse if the number of edges is really less
+typically close to a number of vertices and not more than that.
+
+There is no defined boundary for what can be called dense and what can be called sparse. 
+It all depends on context but this is an important classification. 
+
+While working with graphs, a lot of decisions are made based on whether the graph is
+dense or sparse. 
+
+For example we typically choose a different kind of
+storage structure in computer's memory for a dense graph.
+
+We typically store a dense graphs and something called adjacency matrix,
+and for a sparse graph we typically use something called adjacency list. 
+
+I'll be talking about adjacency matrix and adjacency list in next lesson. 
+
+
+## path, walks, Trails
+
+Okay, now the next concept that I want to talk about is concept of path in a graph. 
+
+A path in a graph is a sequence of vertices where each adjacent
+pair in the sequence is connected by an edge.
+
+I'm highlighting the path here in this example graph. 
+This sequence of vertices A B F and H is a path in this graph.
+
+Now we have an undirected graph here, edges are bi-directional.
+
+In a directed graph, all edges must also be aligned in 1 direction the direction of the path.
+
+A path is called simple path if no vertices are repeated
+and if vertices are not repeated then edges will also not be repeated.
+So in a simple path both vertices and edges are not repeated.
+
+
+In graph theory, there is some inconsistency in use of this term path.
+
+Most of the time, when we say path we mean a simple path
+and if repetition is possible we used this term walk. 
+
+So a path is basically a walk in which no vertices or edges are repeated.
+
+A walk is called a trail if vertices can be repeated but edges cannot be repeated. 
+I'm highlighting a trail here in this example graph.
+
+Okay, now I want to say this once again walk and path are often 
+used as synonyms but most often when we say path we mean simple path, 
+a path in which vertices and edges are not repeated. 
+
+Between 2 different vertices if there is
+a walk in which vertices or edges are repeated
+like this walk that I'am showing you here in this example graph
+then there must also be a path or simple path
+that is a walk in which vertices or edges
+would not be repeated. 
+
+In this walk that I'm showing you here, we're starting at A and we are ending our walk at C.
+
+There is a simple path from A to C with just 1 edge.
+
+All we need to do is, we need to avoid going to B E H D and then coming back again to A. 
+
+So this is why we mostly talk about simple path between 2 vertices
+because if any other walk is possible simple path is also possible
+and it makes most sense to look for a simple path
+so this is what I'm going to do throughout our lessons. 
+
+I'm going to say path and by path, I'll mean simple path
+and if it's not a simple path I'll say it explicitly.
+
+
+
+## Connection
+
+A graph is called strongly connected if in the graph
+there is a path from any vertex to any other vertex.
+
+If it's an undirected graphs, we simply call it connected
+and if it's a directed graph, we call it strongly connected.
+
+In leftmost and rightmost graphs that I'm showing you here,
+we have a path from any vertex to any other vertex
+but in this graph in the middle, we do not have a path from
+any vertex to any other vertex. 
+
+We cannot go from vertex C to A. We can go from A to C but we cannot go from
+C to A, So this is not a strongly connected graph.
+
+Remember if it's an undirected graph, we simply say connected and if it's
+a directed graph we say a strongly connected. 
+If a directed graph is not strongly connected but can be turned into connected graph
+by treating all edges as undirected then such a directed graph is called weakly connected.
+
+If we just ignore the directions of edges here, this is connected
+but I would recommend that you just remember connected and strongly connected.
+
+This leftmost undirected graph is connected.
+
+I removed 1 of the edges and now this is not connected.
+
+Now we have 2 disjoint connected components here
+but the graph overall is not connected.
+
+Connectedness of a graph is are really important property.
+
+If you remember, intracity road network with a city
+that would have a lot of 1 ways can be present as a directed graph.
+
+Now an intra-city road network should always be strongly connected.
+
+We should be able to reach any street from any street, any intersection to any intersection. 
+
+Okay, now that we understand concept of path.
+
+Next, I want to talk about cycle in a graph.
+
+A walk is called a closed walk if
+it starts an ends at same vertex
+like what i'm showing here and there is 1 more condition,
+the length of the walk must be greater than 0.
+
+Length of a walk or path is number of edges in the path
+like for this closed walk that I'm showing you here.
+
+length is 5 because we have 5 edges in this walk.
+
+So a closed walk is a walk that starts and ends at same vertex
+and the length of which is greater than 0. 
+Now some may call closed walk a cycle but generally we used the term cycle
+for a simple cycle. 
+
+A simple cycle is a close walk in which other than start and
+end vertices no other vertex or edge is repeated. 
+
+Right now, what I'm showing you here in this example graphs is
+a simple cycle or we can just say cycle.
+
+A graph with no cycle is called an acyclic graph.
+
+A tree if drawn with undirected edges would be an example of
+and undirected acyclic graphs. 
+
+Here in this tree, we can have a closed walk but we cannot have a simple cycle.
+
+In this closed walk that I'm showing you here, our edge is repeated.
+
+There would be no simple cycle in a tree and apart from tree,
+we can have other kind of undirected acyclic graphs also.
+
+A tree also has to be connected. Now we can also have
+a directed acyclic graph, as you can see here also we do not have any cycle.
+
+You cannot have a path of lenght greater than 0 starting and ending at the same vertex.
+
+A directed cyclic graph is often called a DAG. 
+A cycles in a graph cause a lot of issues
+in designing algorithms for problems like finding shortest route
+from 1 vertex to another
+and we will talk about cycles a lot when we will study some of these advanced
+algorithm in coming lessons.
+
+For this lesson, I'll stop here now. In our next lesson, we will discuss
+ways of creating and storing graph in computers memory.
+This is it for this lesson. Thanks for watching.
