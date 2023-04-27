@@ -342,157 +342,6 @@ digraph G {
 ```
 
 
----
-## Which IRIs to use in an RDF Graph?
-
-Where do the **IRIs** that we use in graphs come from?
-- _They can be newly created for an application_ ==$\leadsto$ avoid confusion with resources in other graphs :fas-bomb:==
-- _They can be IRIs that are already in common use_ ==$\leadsto$ support information integration and re-use across graphs :far-thumbs-up:==
-
-::: bluebox spacebefore
-**Guidelines for creating new IRIs:**
-1. Check if you could re-use an existing IRI $\leadsto$ avoid duplication if feasible
-2. Use http(s) IRIs $\leadsto$ useful protocols, registries, resolution mechanisms
-3. Create new IRIs based on domains that you own $\leadsto$ clear ownership; no danger of clashing with other people’s IRIs
-4. Don’t use URLs of existing web pages, unless you want to store data about pages $\leadsto$ avoid confusion between pages and more abstract resources
-5. Make your IRIs return some useful content via http(s) $\leadsto$ helps others to get information about your resources
-:::
-
-::: footnotes
-Source: Lecture slides from Prof. Dr. Markus Krötzsch
-:::
-
-
-
----
-## Why IRIs?
-
-**IRIs/URIs may seem a bit complicated**
-- They look a bit technical and complex
-- They are hard to display or draw in a graph
-- The guidelines just given may seem quite demanding to newcomers
-- They can not be dereferenced just like URLs
-
-**However, it’s not that hard**
-- RDF can work with any form of IRI (most tools would probably accept any Latin-letter string with a colon inside!)
-- The guidelines help sharing graphs across applications – a strength of RDF
-- Internet domain name registration is a very simple way to define ownership in a global data space
-- IRIs should not be shown to users (we will introduce human-readable labels soon)
-
-::: footnotes
-Source: Krötzsch
-:::
-
-
-
-
----
-## How to represent data values in RDF ?
-
-**IRIs should not be used to represent data values**
-- IRIs can represent anything, 
-- but *data values* (numbers, strings, times, . . . ) should _not_ be represented by IRIs!
-
-**Why not use IRIs here too?**
-
-1. Data values are the same everywhere $\leadsto$ no use in application-specific IRIs
-2. Many RDF-based applications need a built-in understanding of data values (e.g., for sorting content)
-3. Data values are usually more "interpreted" than IRIs.
-   - Example: Using a hypothetical scheme "integer", the IRIs `integer:42` and `integer:+42` would be different, but intuitively they should represent the same number.
-
-
-
-
----
-## Encoding Data Values in RDF
-
-```graphviz
-digraph G {
-    //graph [rankdir=LR];
-    node [fontname="Barlow Semi Condensed", fontsize=14];
-    edge [fontname="Barlow Semi Condensed", fontsize=14];
-    nodesep=.5;
-    //label="Example RDF graph with data values"; 
-    //{rank=same; 1;};
-    //{rank=same; 2; 4;};
-    //{rank=same; 3;};
-    1 [label="<http://dbpedia.org/resource/Greenhouse_effect>"];
-    2 [label="<http://dbpedia.org/resource/Joseph_Fourier>"];
-    3 [label="\"Treibhauseffekt\"^^xsd:string", shape=box, color=blue, fontcolor=blue];
-    4 [label="<http://dbpedia.org/resource/Auxerre>"];
-    5 [label="\"1768-03-21\"^^xsd:date", shape=box, color=blue, fontcolor=blue];
-    6 [label="<http://dbpedia.org/resource/France>"];
-    1 -> 2 [label="<http://dbpedia.org/ontology/discoverer>"];
-    1 -> 3 [label="<http://www.w3.org/2000/01/rdf-schema#label>", color=blue, fontcolor=blue];
-    2 -> 4 [label="<http://dbpedia.org/ontology/birthplace>"];
-    2 -> 5 [label="<http://dbpedia.org/ontology/birthdate>"];
-    4 -> 6 [label="<http://dbpedia.org/ontology/country>"];
-}
-```
-
-- Data values in RDF are written in the format `"lexical value"^^datatype-IRI`.
-- They are drawn as rectangular nodes in graphs.
-
-
-
----
-## RDF Datatypes
-
-::: definition
-A ==datatype== in RDF is specified by the following components:
-- The ==value space== is the set of possible values of this type.
-- The ==lexical space== is a set of (Unicode) strings that can be used to denote values of this type.
-- the ==lexical-to-value mapping== is a function that maps each string from the lexical space to an element of the value space.
-
-Source: Definition taken from Krötzsch, 2021
-:::
-
-
-Datatypes for RDF must be identified by IRIs (known to software that supports them).
-
-::: greenbox
-**Example**: 
-The W3C standard XML Schema defines the datatype **integer**, identified by the IRI http://www.w3.org/2001/XMLSchema#integer. It has the **value space** of all integer numbers (of arbitrarily large absolute value), the **lexical space** of finite-length strings of decimal digits (`0–9`) with an optional leading sign (`−` or `+`), and the expected **lexical-to-value mapping**.
-:::
-
-
-
----
-## An Overview of available XSD datatypes in RDF
-![bg right:60% height:100%](figures/rdf_xsd_datatypes.png)
-
-{.Bigskip}
-
-More Information: https://www.w3.org/TR/xmlschema11-2/
-
-
----
-## RDF datatype Literals
-
-::::: columns
-:::: single bluebox
-**Literals** {.center .Big}
-
-- Used for the representation of **data values**
-- Representation as **strings**
-- Interpretation depending on the **data type** associated with a Literal
-- Literals _without_ type information are **untyped** and treated as **plain strings**
-- Represented as **boxes** in visualized RDF graphs
-::::
-:::: single greenbox
-**Typed Literals** {.center .Big}
-
-- Typed literals are expressed via XML Schema data types
-  - Namespace: `http://www.w3.org/2001/XMLSchema#`
-- Language tags indicate the natural language of a text
-  - Example: `"Semantik"@de`, `"Semantics"@en`
-- Data types allow for a **semantic interpretation** of object values
-- Data types are represented by **URIs** and can be arbitrarily chosen, but **XML Schema data types** are commonly used in RDF graphs 
-- Syntax: `"Data_value"^^Data_Type_URI`
-::::
-:::::
-
-
 
 ---
 ## RDF Properties
@@ -529,6 +378,165 @@ We can declare a resource as a property using special RDF vocabulary:
 Much further information about a property can be specified using properties of RDF and other standard vocabularies (esp. OWL)
 :::
 ::::
+
+
+
+---
+## Which IRIs to use in an RDF Graph?
+
+Where do the **IRIs** that we use in graphs come from?
+- _They can be newly created for an application_ ==$\leadsto$ avoid confusion with resources in other graphs :fas-bomb:==
+- _They can be IRIs that are already in common use_ ==$\leadsto$ support information integration and re-use across graphs :far-thumbs-up:==
+
+::: bluebox spacebefore
+**Guidelines for creating new IRIs:**
+1. Check if you could re-use an existing IRI $\leadsto$ avoid duplication if feasible
+2. Use http(s) IRIs $\leadsto$ useful protocols, registries, resolution mechanisms
+3. Create new IRIs based on domains that you own $\leadsto$ clear ownership; no danger of clashing with other people’s IRIs
+4. Don’t use URLs of existing web pages, unless you want to store data about pages $\leadsto$ avoid confusion between pages and more abstract resources
+5. Make your IRIs return some useful content via http(s) $\leadsto$ helps others to get information about your resources
+:::
+
+::: footnotes
+Source: Lecture slide from Prof. Dr. Markus Krötzsch
+:::
+
+
+
+---
+## Excursus: Why IRIs ?
+
+**IRIs/URIs may seem a bit complicated**
+- They look a bit technical and complex
+- They are hard to display or draw in a graph
+- The guidelines just given may seem quite demanding to newcomers
+- They can not be dereferenced just like URLs
+
+**However, it’s not that hard**
+- RDF can work with any form of IRI (most tools would probably accept any Latin-letter string with a colon inside!)
+- The guidelines help sharing graphs across applications – a strength of RDF
+- Internet domain name registration is a very simple way to define ownership in a global data space
+- IRIs should not be shown to users (we will introduce human-readable labels soon)
+
+::: footnotes
+Source: Lecture slide from Prof. Dr. Markus Krötzsch
+:::
+
+
+
+---
+# How to represent data values in RDF ?
+
+
+---
+## How to represent data values in RDF ?
+
+**IRIs should not be used to represent data values**
+- IRIs can represent almost anything
+- but *data values* (numbers, strings, times, . . . ) should _not_ be represented by IRIs!
+
+**Why not use IRIs here too?**
+
+1. Data values are _the same everywhere_ $\leadsto$ no use in application-specific IRIs
+2. Many RDF-based applications need a _built-in understanding_ of data values (e.g., for sorting content)
+3. Data values are usually _more "interpreted"_ than IRIs.
+   - Example: Using a hypothetical scheme "integer", the IRIs `integer:42` and `integer:+42` would be different, but intuitively they should represent the same number.
+
+
+
+---
+## RDF Datatypes
+
+::: definition
+A ==datatype== in RDF is specified by the following components:
+- The ==value space== is the set of possible values of this type.
+- The ==lexical space== is a set of (Unicode) strings that can be used to denote values of this type.
+- the ==lexical-to-value mapping== is a function that maps each string from the lexical space to an element of the value space.
+
+Source: Definition taken from Krötzsch, 2021
+:::
+
+
+Datatypes for RDF must be identified by IRIs (known to software that supports them).
+
+::: greenbox
+**Example**: 
+The W3C standard XML Schema defines the datatype **integer**, identified by the IRI http://www.w3.org/2001/XMLSchema#integer. It has the **value space** of all integer numbers (of arbitrarily large absolute value), the **lexical space** of finite-length strings of decimal digits (`0–9`) with an optional leading sign (`−` or `+`), and the expected **lexical-to-value mapping**.
+:::
+
+
+
+---
+## RDF supports different forms of data type literals
+
+::::: columns
+:::: single bluebox
+**Literals** {.center .Big}
+
+- Used for the representation of **data values**
+- Representation as **strings**
+- Interpretation depending on the **data type** associated with a Literal
+- Literals _without_ type information are **untyped** and treated as **plain strings**
+- Represented as **boxes** in visualized RDF graphs
+::::
+:::: single greenbox
+**Typed Literals** {.center .Big}
+
+- Typed literals are expressed via XML Schema data types
+  - Namespace: `http://www.w3.org/2001/XMLSchema#`
+- Language tags indicate the natural language of a text
+  - Example: `"Semantik"@de`, `"Semantics"@en`
+- Data types allow for a **semantic interpretation** of object values
+- Data types are represented by **URIs** and can be arbitrarily chosen, but **XML Schema data types** are commonly used in RDF graphs 
+- Syntax: `"Data_value"^^Data_Type_URI`
+::::
+:::::
+
+
+
+---
+## Encoding Data Values in RDF
+
+```graphviz
+digraph G {
+    //graph [rankdir=LR];
+    node [fontname="Barlow Semi Condensed", fontsize=14];
+    edge [fontname="Barlow Semi Condensed", fontsize=14];
+    nodesep=.5;
+    //label="Example RDF graph with data values"; 
+    //{rank=same; 1;};
+    //{rank=same; 2; 4;};
+    //{rank=same; 3;};
+    1 [label="<http://dbpedia.org/resource/Greenhouse_effect>"];
+    2 [label="<http://dbpedia.org/resource/Joseph_Fourier>"];
+    3 [label="\"Treibhauseffekt\"^^xsd:string", shape=box, color=blue, fontcolor=blue];
+    4 [label="<http://dbpedia.org/resource/Auxerre>"];
+    5 [label="\"1768-03-21\"^^xsd:date", shape=box, color=blue, fontcolor=blue];
+    6 [label="<http://dbpedia.org/resource/France>"];
+    1 -> 2 [label="<http://dbpedia.org/ontology/discoverer>"];
+    1 -> 3 [label="<http://www.w3.org/2000/01/rdf-schema#label>", color=blue, fontcolor=blue];
+    2 -> 4 [label="<http://dbpedia.org/ontology/birthplace>"];
+    2 -> 5 [label="<http://dbpedia.org/ontology/birthdate>"];
+    4 -> 6 [label="<http://dbpedia.org/ontology/country>"];
+}
+```
+
+- Data values in RDF are written in the format `"lexical value"^^datatype-IRI`.
+- They are drawn as rectangular nodes in graphs.
+
+
+
+
+---
+## An Overview of available XSD datatypes in RDF
+![bg right:60% height:100%](figures/rdf_xsd_datatypes.png)
+
+{.Bigskip}
+
+More Information: https://www.w3.org/TR/xmlschema11-2/
+
+
+
 
 
 
@@ -578,9 +586,172 @@ Today, bnodes are largely avoided. They still occur in the RDF-encoding of the O
 :::::
 
 
+---
+## Modelling in RDF using Blank Nodes
+
+:::: greenbox 
+**Task:** Please represent the following statement as an RDF graph
+
+[The lecture "Knowledge Graphs" takes place twice a week – on TUE in Room D14/1.04 and on WED in room D14/4.03.]{.kursiv}
+::::
 
 
 
+
+---
+## RDF Reification
+
+:::: bluebox spaceafter
+- **Question**
+  How do we model propositions about propositions ?
+::::
+
+:::: greenbox spaceafter
+- **Example**
+
+  How can we model the following assumption ?
+  
+  ["The detective supposes that the buttler killed the gardener"]{.kursiv}
+::::
+
+- This is problematic in RDF
+- In the german language, such circumstance is often indicated by the word "[dass]{.kursiv}"
+
+
+
+---
+## RDF Reification: Solution #1
+
+- **Example** {.spaceafter}
+
+  ["The detective supposes that the buttler killed the gardener"]{.kursiv}
+
+
+- **Solution #1** {.spaceafter}
+
+  ```text
+  ex:detective      ex:supposes     "The butler killed the gardener." .
+  ```
+
+::: graybox 
+**Shortcomings** :fa-lightning:
+- Literal will not be referenced in other triples
+- Inherent meaning (semantics) of statement is lost
+:::
+
+
+
+---
+## RDF Reification: Solution #2
+
+- **Example** {.spaceafter}
+
+  ["The detective supposes that the buttler killed the gardener"]{.kursiv}
+
+
+- **Solution #1** {.spaceafter}
+
+  ```text
+  ex:detective      ex:supposes     ex:theButlerKilledTheGardener .
+  ```
+
+::: graybox 
+**Shortcomings** :fa-lightning:
+- Does not capture the full meaning of the proposition
+- Semantics and inner structure of the assertion is lost
+:::
+
+
+
+---
+## RDF Reification
+
+::::: columns
+:::: single
+Solution: **nested triples** 
+- Object of the previous triple is a triple of its own
+- Draws the idea from _many-valued relations_ (blank nodes)
+
+{.spaceafter}
+
+**Auxiliary node** is used to refer to the whole statement
+- Access to inner structure of represented triple is connected via a ==blank node== with
+  - `rdf:subject`, referring to a statement’s subject 
+  - `rdf:predicate`, referring to a statement’s predicate 
+  - `rdf:object`, referring to the object properties
+- Corresponding triple is called ==reified==
+::::
+:::: single
+**Correct Model**
+
+```turtle
+ex:theory         rdf:subject         ex:butler .
+ex:theory         rdf:predicate       ex:hasKilled .
+ex:theory         rdf:object          ex:gardener .
+
+ex:detective      ex:supposes         ex:theory .
+```
+
+```graphviz
+digraph G {
+    //graph [rankdir=LR];
+    node [fontname="Barlow Semi Condensed", fontsize=14];
+    edge [fontname="Barlow Semi Condensed", fontsize=14];
+    nodesep=.5;
+    //label="Correct reified model"; 
+    //{rank=same; 1;};
+    //{rank=same; 2; 4;};
+    //{rank=same; 3;};
+    1 [label="ex:detective"];
+    2 [label="ex:theory"];
+    3 [label="ex:butler"];
+    4 [label="ex:hasKilled"];
+    5 [label="ex:gardener"];
+    1 -> 2 [label="ex:supposes"];
+    2 -> 3 [label="rdf:subject"];
+    2 -> 4 [label="rdf:predicate"];
+    2 -> 5 [label="rdf:object"];
+}
+```
+::::
+:::::
+
+
+
+---
+## Reification: Claims about Facts
+
+::: graybox spaceafter
+**Example**
+
+["Wikipedia states that carbon dioxide was discovered by Jan Baptist van Helmont."]{.kursiv}
+:::
+
+::: center spacebefore
+```graphviz
+digraph G {
+    //graph [rankdir=LR];
+    node [fontname="Barlow Semi Condensed", fontsize=14];
+    edge [fontname="Barlow Semi Condensed", fontsize=14];
+    nodesep=1.2;
+    //label="Correct reified model"; 
+    {rank=same; 1; 2; 3;};
+    //{rank=same; 2; 4;};
+    //{rank=same; 3;};
+    1 [label="dbr:Wikipedia"];
+    2 [label="ex:WikiStatement"];
+    3 [label="rdf:Statement"];
+    4 [label="dbr:Carbon_Dioxide"];
+    5 [label="dbo:discoveredBy"];
+    6 [label="dbr:Jan_Baptist_van_Helmont"];
+    1 -> 2 [label="ex:states"];
+    2 -> 3 [label="rdf:type"];
+    2 -> 4 [label="rdf:subject"];
+    2 -> 5 [label="rdf:predicate"];
+    2 -> 6 [label="rdf:object"];
+}
+```
+:::
 
 ---
 ## Design Principles of RDF
