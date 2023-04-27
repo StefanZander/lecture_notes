@@ -50,6 +50,26 @@ $\leadsto$ We therefore discuss **RDF** and the __RDF Schema data-modelling voca
 
 
 ---
+## RDF – The Lingua Franca for Data Integration
+
+- RDF is **simple**
+- RDF enables a **data-model-agnostic integration** ~> it **encodes and combines all kinds of data models** (relational, taxonomic, graphs, object-oriented, hierarchical, schema-driven, etc...) 
+- RDF supports **distributed data** and **schemas**
+- RDF allows to **seamlessly evolve** simple semantic representations (e.g. vocabularies) into more complex and expressive ones (e.g. ontologies)
+- Small **representational units** (URIs / IRIs / triples) facilitate mixing and mashing
+- RDF can be viewed from **many perspectives**: facts, graphs, ER, logical axioms, objects, frames etc.
+- RDF **integrates well with other formalisms** such as *HTML* (RDFa), *XML* (RDF/XML), *JSON* (JSON-LD), *CSV*, .... 
+- Linking and referencing between different knowlegde bases, systems, and platforms facilitates the creation of **sustainable data ecosystems** (e.g. Web of Data, DBpedia, etc.)
+- RDF can be used to create **meta data annotation frameworks** for Web resources
+
+::: footnotes
+Source: Adapted and complemented from https://www.slideshare.net/soeren1611/knowledge-graph-introduction (use this source for additional slide content)
+:::
+
+
+
+
+---
 ## Outline
 
 :::: grid3col vertical-align-top widthfixed gap2em
@@ -113,24 +133,6 @@ $\leadsto$ We therefore discuss **RDF** and the __RDF Schema data-modelling voca
 - How to share RDF graphs among applications and systems ?
 
 
-
-
----
-## RDF – The Lingua Franca for Data Integration – TODO: MOVE
-
-- RDF is **simple**
-- RDF enables a **data-model-agnostic integration** ~> it **encodes and combines all kinds of data models** (relational, taxonomic, graphs, object-oriented, hierarchical, schema-driven, etc...) 
-- RDF supports **distributed data** and **schemas**
-- RDF allows to **seamlessly evolve** simple semantic representations (e.g. vocabularies) into more complex and expressive ones (e.g. ontologies)
-- Small **representational units** (URIs / IRIs / triples) facilitate mixing and mashing
-- RDF can be viewed from **many perspectives**: facts, graphs, ER, logical axioms, objects, frames etc.
-- RDF **integrates well with other formalisms** such as *HTML* (RDFa), *XML* (RDF/XML), *JSON* (JSON-LD), *CSV*, .... 
-- Linking and referencing between different knowlegde bases, systems, and platforms facilitates the creation of **sustainable data ecosystems** (e.g. Web of Data, DBpedia, etc.)
-- RDF can be used to create **meta data annotation frameworks** for Web resources
-
-::: footnotes
-Source: Adapted and complemented from https://www.slideshare.net/soeren1611/knowledge-graph-introduction (use this source for additional slide content)
-:::
 
 
 
@@ -537,6 +539,8 @@ More Information: https://www.w3.org/TR/xmlschema11-2/
 
 
 
+---
+# Advanced Features
 
 
 
@@ -769,15 +773,16 @@ What is the _use_ of reification ?
 - Relations and classes can be transformed into instances potentially resulting in **type conflicts**
 - Risk to define infinite **recursions** and **cycles**
 :::
-::: double
-![](figures/reification_and_named_graphs.png)
+::: single
+![](figures/named_graphs_example.svg)
 :::
 ::::
 
 ::: footnotes
 - Source: Lecture slide adapted from Prof. Dr. Harald Sack; 
-- Picture taken from: https://www.researchgate.net/publication/257230986_Linked_Data_and_Time_-_Modeling_Researcher_Life_Lines_by_Events
+- Picture taken from: https://www.ontotext.com/knowledgehub/fundamentals/what-is-rdf-star/ 
 - Interesting reads about potential RDF extensions: https://arxiv.org/pdf/1406.3399.pdf and https://www.ontotext.com/knowledgehub/fundamentals/what-is-rdf-star/
+- https://github.com/w3c/rdf-star/tree/main/presentations
 :::
 
 
