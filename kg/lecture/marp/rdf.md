@@ -753,6 +753,36 @@ digraph G {
 ```
 :::
 
+
+
+---
+## Reification: Summary
+
+:::: columns
+::: single
+What is the _use_ of reification ?
+- Modelling **data provenance**
+- Formalizing statements about **reliability** and **trust**
+- Define **metadata** about statements
+
+==But reification should be used with caution...== {.spacebefore}
+- Relations and classes can be transformed into instances potentially resulting in **type conflicts**
+- Risk to define infinite **recursions** and **cycles**
+:::
+::: double
+![](figures/reification_and_named_graphs.png)
+:::
+::::
+
+::: footnotes
+- Source: Lecture slide adapted from Prof. Dr. Harald Sack; 
+- Picture taken from: https://www.researchgate.net/publication/257230986_Linked_Data_and_Time_-_Modeling_Researcher_Life_Lines_by_Events
+- Interesting reads about potential RDF extensions: https://arxiv.org/pdf/1406.3399.pdf and https://www.ontotext.com/knowledgehub/fundamentals/what-is-rdf-star/
+:::
+
+
+
+
 ---
 ## Design Principles of RDF
 
