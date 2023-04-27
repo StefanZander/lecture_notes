@@ -63,7 +63,7 @@ $\leadsto$ We therefore discuss **RDF** and the __RDF Schema data-modelling voca
 - RDF can be used to create **meta data annotation frameworks** for Web resources
 
 ::: footnotes
-Source: Adapted and complemented from https://www.slideshare.net/soeren1611/knowledge-graph-introduction (use this source for additional slide content)
+Source: Adapted and complemented from https://www.slideshare.net/soeren1611/knowledge-graph-introduction
 :::
 
 
@@ -812,6 +812,10 @@ Source: Baker-Coyle-Petiya: Multi-Entity Models of Resource Description in the S
 
 
 ---
+# Design Principles of RDF
+
+
+---
 ## Design Principles of RDF
 
 - **"Anyone can say anything about anything."**
@@ -829,7 +833,9 @@ Source: Baker-Coyle-Petiya: Multi-Entity Models of Resource Description in the S
   - Things are not assumed to be different because they have different names.
 
 
+<!-- 
 ---
 ## TODO: How to model Data with RDF + Provide overview of the base vocabular of RDF (what terms does the framework define...?)
 
-TODO: also make the sequence more consistent
+TODO: also make the sequence more consistent 
+-->
