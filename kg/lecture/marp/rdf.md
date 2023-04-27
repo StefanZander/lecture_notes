@@ -281,7 +281,7 @@ By using _globally defined IRIs_, the Web can be transformed into a _linked data
 
 ---
 ## Content Negotiation
-![bg right:70%](figures/content_negotiation.png)
+![bg right:70% width:90%](figures/content_negotiation.png)
 
 ::: footnotes
 Source: https://www.w3.org/blog/2006/02/content-negotiation/
