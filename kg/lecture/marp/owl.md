@@ -36,59 +36,22 @@ Integrating Ontologies and Ontology Language OWL {.lightgreen .Big .skip}
 We have learned about the different types of data graphs and the elements that constitute a data graph.
 
 In order to transform a data graph into a knowledge graph, we need additional features:
-- *Identity*
-- *Schema knowledge*
-- *Contextual knowledge*
+- Knowledge Representation Framework :fa-check:
+- Identity :fa-check:
+- Schema knowledge :fa-check:
+- Contextual knowledge :fa-check:
 - *Semantics* 
 
-...and we need a ==knowledge representation framework== in which these features can be encoded
+
 
 ::: redbox center spacebefore
 $\leadsto$ We therefore discuss **RDF** and the __RDF Schema data-modelling vocabulary__ that allow for the creation of knowledge graphs
 :::
 
 
----
-## Components of OWL Ontologies
-
-**Individuals**
-- Individuals represent objects in the domain of interest
-- OWL does not use the UNA, ie., two different names could refer to the same individual
-- In OWL, we must clearly specify for individuals whether they are the same or different from each other
-
-**Properties** 
-- Properties represent binary relations on individuals $\leadsto$ properties link two individuals together
-- Properties can have different characteristics (being inverse, functional, inverse functional, symetric etc)
-- Properties are calles roles in description logics or slots in Protégé
-
-**Classes**
-- OWL interprets classes as sets that contain individuals
-- Classes are described using precise formal descriptions that state precisely the requirements for membership
-- Classes can be organized in a super-subclass-hierarchies called a taxonomy
-- Classes are sometimes denoted as concepts – but classes are concrete representations of concepts
-
 
 ---
 ## Components of OWL Ontologies
-
-- **Individuals**
-  - Individuals represent objects in the domain of interest
-  - OWL does not use the UNA, ie., two different names could refer to the same individual
-  - In OWL, we must clearly specify for individuals whether they are the same or different from each other
-- **Properties** 
-  - Properties represent binary relations on individuals $\leadsto$ properties link two individuals together
-  - Properties can have different characteristics (being inverse, functional, inverse functional, symetric etc)
-  - Properties are calles roles in description logics or slots in Protégé
-- **Classes**
-  - OWL interprets classes as sets that contain individuals
-  - Classes are described using precise formal descriptions that state precisely the requirements for membership
-  - Classes can be organized in a super-subclass-hierarchies called a taxonomy
-  - Classes are sometimes denoted as concepts – but classes are concrete representations of concepts
-
-
----
-## Components of OWL Ontologies
-
 
 :::: columns
 ::: single
@@ -186,6 +149,54 @@ Source: OWL Pizza Tutorial der University of Manchester
 ---
 # Ontology Features 
 ![bg right:50%](figures/ontology_ancient_greek.webp)
+
+
+---
+## Disjont Classes
+
+==OWL Classes are assumed to ‘overlap’== $\leadsto$ We therefore cannot assume that an individual is not a member of a particular class simply because it has not been asserted to be a member of that class. 
+
+
+In order to ‘separate’ a group of classes they must made ==disjoint== from one another. 
+
+This ensures that an individual which has been asserted to be a member of one of the classes in the group cannot be a member of any other classes in that group. 
+
+As example `Pizza`, `PizzaTopping` and `PizzaBase` can be made disjoint from one another. 
+
+This means that it is not possible for an individual to be a member of a combination of these classes – it would not make sense for an individual to be a Pizza and a PizzaBase!
+
+
+
+
+---
+## What does it actually mean to be a subclass of something in OWL? 
+
+::::: columns-center
+:::: single
+**Example**
+What does it mean for `VegetableTopping` to be a subclass of `PizzaTopping`, or for `TomatoTopping` to be a subclass of `VegetableTopping`? 
+
+$\Rightarrow$ In OWL subclass means ==necessary implication==.
+
+::: bluebox 
+:fa-warning: **Meaning**
+In other words, if `VegetableTopping` is a subclass of `PizzaTopping` then **ALL** instances of `VegetableTopping` are instances of `PizzaTopping`, without exception — if something is a `VegetableTopping` then this implies that it is also a `PizzaTopping`.
+:::
+::::
+:::: single
+::: center
+![width:360px](figure/../figures/owl_subclass_semantics.png)
+::: 
+::: caption
+All individuals that are members of the class `TomatoTopping` are members of the class `VegetableTopping` and members of the class `PizzaTopping` as we have stated that `TomatoTopping` is a subclass of `VegetableTopping` which is a subclass of `PizzaTopping`.
+:::
+::::
+:::::
+
+
+
+---
+# Properties
 
 
 
