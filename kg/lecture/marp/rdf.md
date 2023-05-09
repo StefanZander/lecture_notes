@@ -137,6 +137,7 @@ Source: Adapted and complemented from https://www.slideshare.net/soeren1611/know
 
 
 ---
+<!-- header: Introduction to RDF -->
 ## The Resource Description Framework (RDF)
 
 ::::: columns
@@ -187,6 +188,7 @@ $\leadsto$ conflation of **Web technologies**, **protocols**, and **standards** 
 
 
 ---
+<!-- header: How to represent data in RDF -->
 ## How to represent data in RDF
 
 **RDF** allows for specifying graphs that are:
@@ -257,6 +259,7 @@ digraph G {
 
 
 ---
+<!-- header: How to identify things -->
 # How to identify things...
 
 
@@ -427,6 +430,7 @@ Source: Lecture slide from Prof. Dr. Markus Krötzsch
 
 
 ---
+<!-- header: How to represent data values in RDF -->
 # How to represent data values in RDF ?
 
 
@@ -545,6 +549,7 @@ More Information: https://www.w3.org/TR/xmlschema11-2/
 
 
 ---
+<!-- header: Blank Nodes -->
 ## Blank Nodes
 
 ::::: columns
@@ -603,6 +608,7 @@ Today, bnodes are largely avoided. They still occur in the RDF-encoding of the O
 
 
 ---
+<!-- header: RDF Reification -->
 ## RDF Reification
 
 :::: bluebox spaceafter
@@ -789,6 +795,14 @@ What is the _use_ of reification ?
 
 
 ---
+# Design Principles of RDF
+
+
+
+
+
+---
+<!-- header: Design Principles of RDF -->
 ## Design Principles of RDF
 
 ::: grid2col widthauto
@@ -810,9 +824,6 @@ Source: Baker-Coyle-Petiya: Multi-Entity Models of Resource Description in the S
 :::
 
 
-
----
-# Design Principles of RDF
 
 
 ---
