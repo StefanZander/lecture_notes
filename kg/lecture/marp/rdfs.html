@@ -75,8 +75,11 @@
 /* Code fragments in texts */div#p>svg>foreignObject>section code{
     /* font-family: 'Open Sans Condensed'; */font-family:'M+ 1m';
     /* font-size: .9em; */font-weight:400;border:solid .06em lightgray;padding:.2em .2em .2em 0.2em;background-color:#e6e6e6;white-space:pre}div#p>svg>foreignObject>section em{color:rgb(42,104,175);font-style:normal}div#p>svg>foreignObject>section mark{color:rgb(202,69,33);background-color:inherit}div#p>svg>foreignObject>section blockquote p em{color:inherit;font-style:italic}div#p>svg>foreignObject>section blockquote p{color:inherit;font-style:italic
-    /* background-color: #f1f2f4; */}div#p>svg>foreignObject>section .kursiv{font-style:italic}div#p>svg>foreignObject>section .inverse{background-color:#246;color:whitesmoke;padding-left:.2em}
+    /* background-color: #f1f2f4; */}div#p>svg>foreignObject>section .kursiv{font-style:italic!important}div#p>svg>foreignObject>section .inverse{background-color:#246;color:whitesmoke
+    /* padding-left: .2em; */}
 
+/* used to display inline text inversely */div#p>svg>foreignObject>section .importantterm{background-color:#ffd9b1;border:2px solid orange;padding:0 .12em;border-radius:.3em}div#p>svg>foreignObject>section .inversered{background-color:#b30000;color:white;padding:0 .2em;border-radius:.4em
+    /* vertical-align: super; */}
 
 
 /* ========================
@@ -98,7 +101,8 @@
 
 /* Example container */div#p>svg>foreignObject>section .example,div#p>svg>foreignObject>section .graybox{background-color:rgb(238,238,238);border:solid calc(var(--marpit-root-font-size, 1rem) * 0.2) rgb(123,123,123);padding:0 calc(var(--marpit-root-font-size, 1rem) * 0.6) 0 calc(var(--marpit-root-font-size, 1rem) * 0.6);color:#323232}div#p>svg>foreignObject>section .example>p:last-child,div#p>svg>foreignObject>section .graybox>p:last-child{margin-bottom:0.16em}
 
-/* Orange Box container */div#p>svg>foreignObject>section .orangebox{background-color:rgb(255,231,220);border:solid calc(var(--marpit-root-font-size, 1rem) * 0.2) rgb(211,88,11);padding:0 calc(var(--marpit-root-font-size, 1rem) * 0.6) 0 calc(var(--marpit-root-font-size, 1rem) * 0.6);color:rgb(211,88,11)}div#p>svg>foreignObject>section .orangebox>p:last-child{margin-bottom:0.16em}
+/* Orange Box container */div#p>svg>foreignObject>section .orangebox{
+    /* background-color: rgb(255, 246, 220); */background-color:rgb(255,234,220);border:solid calc(var(--marpit-root-font-size, 1rem) * 0.2) rgb(211,88,11);padding:0 calc(var(--marpit-root-font-size, 1rem) * 0.6) 0 calc(var(--marpit-root-font-size, 1rem) * 0.6);color:rgb(211,88,11)}div#p>svg>foreignObject>section .orangebox>p:last-child{margin-bottom:0.16em}
 
 
 /* Warning Box (used warning since 'red' is reserved for font color */div#p>svg>foreignObject>section .redbox,div#p>svg>foreignObject>section .warning{background-color:#ffe6e6;border:solid calc(var(--marpit-root-font-size, 1rem) * 0.2) #cc0000;padding:0 calc(var(--marpit-root-font-size, 1rem) * 0.6) 0 calc(var(--marpit-root-font-size, 1rem) * 0.6);color:#b30000}div#p>svg>foreignObject>section .redbox>p:last-child,div#p>svg>foreignObject>section .warning>p:last-child{margin-bottom:0.16em}
@@ -139,6 +143,7 @@
     margin-bottom: .2em;
 } */
 
+/* Added to remove borders from color boxes */div#p>svg>foreignObject>section .noborder{border:none!important}div#p>svg>foreignObject>section .padding025em{padding:.25em!important}
 
 
 
@@ -152,6 +157,14 @@
 */div#p>svg>foreignObject>section .marg1{margin:0 1em}div#p>svg>foreignObject>section .marg2{margin:0 2em}div#p>svg>foreignObject>section .marg3{margin:0 3em}div#p>svg>foreignObject>section .marg4{margin:0 4em}div#p>svg>foreignObject>section .marg5{margin:0 5em}div#p>svg>foreignObject>section .marg10{width:80%;margin:auto}div#p>svg>foreignObject>section .marg15{width:70%;margin:auto}div#p>svg>foreignObject>section .marg20{width:60%;margin:auto}div#p>svg>foreignObject>section .marg25{width:50%;margin:auto}div#p>svg>foreignObject>section .marg30{width:40%;margin:auto}
 
 
+
+/* ===========================
+    PADDING FOR BOXES
+   ===========================
+*/
+/* 
+    Add a left and right padding to content in boxes 
+*/div#p>svg>foreignObject>section .pad2{padding-left:2em;padding-right:2em}div#p>svg>foreignObject>section .pad3{padding-left:3em;padding-right:3em}div#p>svg>foreignObject>section .pad4{padding-left:4em;padding-right:4em}
 
 
 /* ===========================
@@ -188,7 +201,7 @@ of a flex item such as single etc. */
     GRID LAYOUT
    ========================
 */div#p>svg>foreignObject>section .grid{display:grid;
-    /* need to initialize grid values */--grid-align-vertical:start;--grid-align-horizontal:start;--grid-column-width:auto}div#p>svg>foreignObject>section .vertical-align-center{--grid-align-vertical:center}div#p>svg>foreignObject>section .vertical-align-top{--grid-align-vertical:start}div#p>svg>foreignObject>section .vertical-align-bottom{--grid-align-vertical:end}div#p>svg>foreignObject>section .horizontal-left{--grid-align-horizontal:start}div#p>svg>foreignObject>section .horizontal-center{--grid-align-horizontal:center}div#p>svg>foreignObject>section .horizontal-right{--grid-align-horizontal:end}div#p>svg>foreignObject>section .widthauto{--grid-column-width:auto}div#p>svg>foreignObject>section .widthfixed{--grid-column-width:1fr}div#p>svg>foreignObject>section .grid2col{display:grid;grid-template-columns:var(--grid-column-width) var(--grid-column-width);align-items:var(--grid-align-vertical);justify-items:var(--grid-align-horizontal)}div#p>svg>foreignObject>section .grid3col{display:grid;grid-template-columns:var(--grid-column-width) var(--grid-column-width) var(--grid-column-width);align-items:var(--grid-align-vertical);justify-items:var(--grid-align-horizontal)}div#p>svg>foreignObject>section .grid4col{display:grid;grid-template-columns:var(--grid-column-width) var(--grid-column-width) var(--grid-column-width) var(--grid-column-width);align-items:var(--grid-align-vertical);justify-items:var(--grid-align-horizontal)}div#p>svg>foreignObject>section .grid5col{display:grid;grid-template-columns:repeat(5,var(--grid-column-width));align-items:var(--grid-align-vertical);justify-items:var(--grid-align-horizontal)}div#p>svg>foreignObject>section .gridncol{display:grid;grid-template-columns:repeat(7,var(--grid-column-width));align-items:var(--grid-align-vertical);justify-items:var(--grid-align-horizontal)}div#p>svg>foreignObject>section .grid3varcol{display:grid;grid-template-columns:5em 33% auto}div#p>svg>foreignObject>section .gap2em{gap:2em 2em}div#p>svg>foreignObject>section .gap1em{gap:1em 1em}
+    /* need to initialize grid values */--grid-align-vertical:start;--grid-align-horizontal:start;--grid-column-width:auto}div#p>svg>foreignObject>section .vertical-align-center{--grid-align-vertical:center}div#p>svg>foreignObject>section .vertical-align-top{--grid-align-vertical:start}div#p>svg>foreignObject>section .vertical-align-bottom{--grid-align-vertical:end}div#p>svg>foreignObject>section .horizontal-left{--grid-align-horizontal:start}div#p>svg>foreignObject>section .horizontal-center{--grid-align-horizontal:center}div#p>svg>foreignObject>section .horizontal-right{--grid-align-horizontal:end}div#p>svg>foreignObject>section .widthauto{--grid-column-width:auto}div#p>svg>foreignObject>section .widthfixed{--grid-column-width:1fr}div#p>svg>foreignObject>section .grid2col{display:grid;grid-template-columns:var(--grid-column-width) var(--grid-column-width);align-items:var(--grid-align-vertical);justify-items:var(--grid-align-horizontal)}div#p>svg>foreignObject>section .grid3col{display:grid;grid-template-columns:var(--grid-column-width) var(--grid-column-width) var(--grid-column-width);align-items:var(--grid-align-vertical);justify-items:var(--grid-align-horizontal)}div#p>svg>foreignObject>section .grid4col{display:grid;grid-template-columns:var(--grid-column-width) var(--grid-column-width) var(--grid-column-width) var(--grid-column-width);align-items:var(--grid-align-vertical);justify-items:var(--grid-align-horizontal)}div#p>svg>foreignObject>section .grid5col{display:grid;grid-template-columns:repeat(5,var(--grid-column-width));align-items:var(--grid-align-vertical);justify-items:var(--grid-align-horizontal)}div#p>svg>foreignObject>section .gridncol{display:grid;grid-template-columns:repeat(7,var(--grid-column-width));align-items:var(--grid-align-vertical);justify-items:var(--grid-align-horizontal)}div#p>svg>foreignObject>section .grid3varcol{display:grid;grid-template-columns:5em 33% auto}div#p>svg>foreignObject>section .gap3em{gap:3em 3em}div#p>svg>foreignObject>section .gap2em{gap:2em 2em}div#p>svg>foreignObject>section .gap1em{gap:1em 1em}
 
 
 
@@ -204,9 +217,9 @@ of a flex item such as single etc. */
    ========================
 */div#p>svg>foreignObject>section .BIGSKIP{margin-top:calc(var(--marpit-root-font-size, 1rem) * 6)}div#p>svg>foreignObject>section .BIGskip{margin-top:calc(var(--marpit-root-font-size, 1rem) * 4)}div#p>svg>foreignObject>section .Bigskip,div#p>svg>foreignObject>section .SKIP{margin-top:calc(var(--marpit-root-font-size, 1rem) * 2)}div#p>svg>foreignObject>section .Skip,div#p>svg>foreignObject>section .bigskip{margin-top:calc(var(--marpit-root-font-size, 1rem) * 1.5)}div#p>svg>foreignObject>section .skip{margin-top:calc(var(--marpit-root-font-size, 1rem) * 1)}div#p>svg>foreignObject>section .shortskip{margin-top:calc(var(--marpit-root-font-size, 1rem) * 0.5)}div#p>svg>foreignObject>section .tinyskip{margin-top:calc(var(--marpit-root-font-size, 1rem) * 0.2)}
 
-/* Use this when a bulleted list should start immediately after a paragraph */div#p>svg>foreignObject>section .nobottommargin,div#p>svg>foreignObject>section .noskip{margin-bottom:0em}
+/* Use this when a bulleted list should start immediately after a paragraph */div#p>svg>foreignObject>section .nobottommargin,div#p>svg>foreignObject>section .noskip{margin-bottom:0em}div#p>svg>foreignObject>section .smallskip{margin-bottom:0.25em}
 
-/* inserts a space after an element (eg box) */div#p>svg>foreignObject>section .space{margin-bottom:2em}div#p>svg>foreignObject>section .spacebefore{margin-top:2em}
+/* inserts a space after an element (eg box) */div#p>svg>foreignObject>section .space,div#p>svg>foreignObject>section .spaceafter{margin-bottom:2em}div#p>svg>foreignObject>section .spacebefore{margin-top:2em}
 
 
 /* ========================
@@ -214,7 +227,7 @@ of a flex item such as single etc. */
    ========================
 */div#p>svg>foreignObject>section .centerbox{margin-left:auto;margin-right:auto}
 
-/* IMPORTANT: center also works for flexboxes and single/double etc. */div#p>svg>foreignObject>section .center,div#p>svg>foreignObject>section .centertext{text-align:center}div#p>svg>foreignObject>section .right{text-align:right}div#p>svg>foreignObject>section .left{text-align:left}
+/* IMPORTANT: center also works for flexboxes and single/double etc. */div#p>svg>foreignObject>section .center,div#p>svg>foreignObject>section .centertext{text-align:center}div#p>svg>foreignObject>section .right{text-align:right!important}div#p>svg>foreignObject>section .left{text-align:left}
 
 
 
@@ -321,7 +334,13 @@ of a flex item such as single etc. */
    ========================
 */
 
-/* Places a textbox around words in a sentence; use with [text]{.box} */div#p>svg>foreignObject>section .box{border-radius:.16em;border-width:.08em;border-style:solid;padding-left:.2em;padding-right:.2em}div#p>svg>foreignObject>section .greenbox{border-color:darkgreen;color:darkgreen;background-color:rgb(216,255,226)}div#p>svg>foreignObject>section .orangebox{border-color:rgb(236,119,9);color:rgb(200,97,0);background-color:rgb(255,235,208)}
+/* Places a textbox around words in a sentence; use with [text]{.box} */div#p>svg>foreignObject>section .box{border-radius:.16em;border-width:.08em;border-style:solid;padding-left:.2em;padding-right:.2em}div#p>svg>foreignObject>section .greenbox{border-color:darkgreen;color:darkgreen;background-color:rgb(216,255,226)}
+
+/* .orangebox {
+    border-color: rgb(236, 119, 9);
+    color: rgb(200, 97, 0);
+    background-color: rgb(255, 235, 208);
+} */
 
 /**
  * @theme enable-all-auto-scaling
@@ -330,22 +349,42 @@ of a flex item such as single etc. */
 
 /* @import 'default'; */
 
-/* @import url('user-theme2.css'); */div#p>svg>foreignObject>section[data-marpit-advanced-background=background]{columns:initial!important;display:block!important;padding:0!important}div#p>svg>foreignObject>section[data-marpit-advanced-background=background]:after,div#p>svg>foreignObject>section[data-marpit-advanced-background=background]:before,div#p>svg>foreignObject>section[data-marpit-advanced-background=content]:after,div#p>svg>foreignObject>section[data-marpit-advanced-background=content]:before{display:none!important}div#p>svg>foreignObject>section[data-marpit-advanced-background=background]>div[data-marpit-advanced-background-container]{all:initial;display:flex;flex-direction:row;height:100%;overflow:hidden;width:100%}div#p>svg>foreignObject>section[data-marpit-advanced-background=background]>div[data-marpit-advanced-background-container][data-marpit-advanced-background-direction=vertical]{flex-direction:column}div#p>svg>foreignObject>section[data-marpit-advanced-background=background][data-marpit-advanced-background-split]>div[data-marpit-advanced-background-container]{width:var(--marpit-advanced-background-split,50%)}div#p>svg>foreignObject>section[data-marpit-advanced-background=background][data-marpit-advanced-background-split=right]>div[data-marpit-advanced-background-container]{margin-left:calc(100% - var(--marpit-advanced-background-split, 50%))}div#p>svg>foreignObject>section[data-marpit-advanced-background=background]>div[data-marpit-advanced-background-container]>figure{all:initial;background-position:center;background-repeat:no-repeat;background-size:cover;flex:auto;margin:0}div#p>svg>foreignObject>section[data-marpit-advanced-background=content],div#p>svg>foreignObject>section[data-marpit-advanced-background=pseudo]{background:transparent!important}div#p>svg>foreignObject>section[data-marpit-advanced-background=pseudo],div#p>svg[data-marpit-svg]>foreignObject[data-marpit-advanced-background=pseudo]{pointer-events:none!important}div#p>svg>foreignObject>section[data-marpit-advanced-background-split]{width:100%;height:100%}</style></head><body><div class="bespoke-marp-osc"><button data-bespoke-marp-osc="prev" tabindex="-1" title="Previous slide">Previous slide</button><span data-bespoke-marp-osc="page"></span><button data-bespoke-marp-osc="next" tabindex="-1" title="Next slide">Next slide</button><button data-bespoke-marp-osc="fullscreen" tabindex="-1" title="Toggle fullscreen (f)">Toggle fullscreen</button><button data-bespoke-marp-osc="presenter" tabindex="-1" title="Open presenter view (p)">Open presenter view</button></div><div id="p"><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="1" data-paginate="true" data-theme="custom-theme-roboto" data-marpit-pagination="1" data-marpit-pagination-total="25" style="--paginate:true;--theme:custom-theme-roboto;">
+/* @import url('user-theme2.css'); */div#p>svg>foreignObject>section[data-marpit-advanced-background=background]{columns:initial!important;display:block!important;padding:0!important}div#p>svg>foreignObject>section[data-marpit-advanced-background=background]:after,div#p>svg>foreignObject>section[data-marpit-advanced-background=background]:before,div#p>svg>foreignObject>section[data-marpit-advanced-background=content]:after,div#p>svg>foreignObject>section[data-marpit-advanced-background=content]:before{display:none!important}div#p>svg>foreignObject>section[data-marpit-advanced-background=background]>div[data-marpit-advanced-background-container]{all:initial;display:flex;flex-direction:row;height:100%;overflow:hidden;width:100%}div#p>svg>foreignObject>section[data-marpit-advanced-background=background]>div[data-marpit-advanced-background-container][data-marpit-advanced-background-direction=vertical]{flex-direction:column}div#p>svg>foreignObject>section[data-marpit-advanced-background=background][data-marpit-advanced-background-split]>div[data-marpit-advanced-background-container]{width:var(--marpit-advanced-background-split,50%)}div#p>svg>foreignObject>section[data-marpit-advanced-background=background][data-marpit-advanced-background-split=right]>div[data-marpit-advanced-background-container]{margin-left:calc(100% - var(--marpit-advanced-background-split, 50%))}div#p>svg>foreignObject>section[data-marpit-advanced-background=background]>div[data-marpit-advanced-background-container]>figure{all:initial;background-position:center;background-repeat:no-repeat;background-size:cover;flex:auto;margin:0}div#p>svg>foreignObject>section[data-marpit-advanced-background=content],div#p>svg>foreignObject>section[data-marpit-advanced-background=pseudo]{background:transparent!important}div#p>svg>foreignObject>section[data-marpit-advanced-background=pseudo],div#p>svg[data-marpit-svg]>foreignObject[data-marpit-advanced-background=pseudo]{pointer-events:none!important}div#p>svg>foreignObject>section[data-marpit-advanced-background-split]{width:100%;height:100%}</style></head><body><div class="bespoke-marp-osc"><button data-bespoke-marp-osc="prev" tabindex="-1" title="Previous slide">Previous slide</button><span data-bespoke-marp-osc="page"></span><button data-bespoke-marp-osc="next" tabindex="-1" title="Next slide">Next slide</button><button data-bespoke-marp-osc="fullscreen" tabindex="-1" title="Toggle fullscreen (f)">Toggle fullscreen</button><button data-bespoke-marp-osc="presenter" tabindex="-1" title="Open presenter view (p)">Open presenter view</button></div><div id="p"><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="1" data-paginate="true" data-theme="custom-theme-roboto" data-marpit-pagination="1" data-marpit-pagination-total="26" style="--paginate:true;--theme:custom-theme-roboto;">
 <h1>Foundations of Semantic Knowledge Graphs</h1>
 <h4>Prof. Dr. Stefan Linus Zander</h4>
 <p class="lightgreen Big skip">Modelling Data with RDF Schema</p>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="2" data-paginate="true" data-header="Overview" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="2" data-marpit-pagination-total="25" style="--paginate:true;--header:Overview;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section data-paginate="true" data-header="Overview" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="2" data-marpit-pagination-total="26" style="--paginate:true;--header:Overview;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;--marpit-advanced-background-split:50%;" data-marpit-advanced-background="background" data-marpit-advanced-background-split="right"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;figures/greenhouse-effects-by-natural-and-human-activities.jpg&quot;);background-size:90% auto;"></figure></div></section></foreignObject><foreignObject width="50%" height="720"><section id="2" data-paginate="true" data-header="Overview" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="2" data-marpit-pagination-total="26" style="--paginate:true;--header:Overview;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;--marpit-advanced-background-split:50%;" data-marpit-advanced-background="content" data-marpit-advanced-background-split="right">
 <header>Overview</header>
 
 <h1>Outline</h1>
 <ul>
-<li>...</li>
+<li>Introduction to RDF Schema</li>
+<li>Modelling with RDF/S
+<ul>
+<li>Classes and Instances</li>
+<li>Defining Classes</li>
+<li>Classes and Subclasses</li>
+<li>Subclass Semantics</li>
+<li>Class Hierarchies</li>
+<li>Properties</li>
+<li>Property Hierarchies</li>
+<li>Restrictions on Properties</li>
+</ul>
+</li>
+<li>RDF/S Language Features
+<ul>
+<li>Predefined Classes and Properties</li>
+<li>How to describe Schema Information in RDF/S</li>
+</ul>
+</li>
+<li>A holistic RDF Schema Example</li>
 </ul>
 <footer>Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="3" data-paginate="true" data-header="Overview" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="3" data-marpit-pagination-total="25" style="--paginate:true;--header:Overview;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
-<header>Overview</header>
+</foreignObject><foreignObject width="1280" height="720" data-marpit-advanced-background="pseudo"><section data-paginate="true" data-header="Overview" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="2" data-marpit-pagination-total="26" style="" data-marpit-advanced-background="pseudo" data-marpit-advanced-background-split="right"></section></foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="3" data-paginate="true" data-header="Review" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="3" data-marpit-pagination-total="26" style="--paginate:true;--header:Review;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
+<header>Review</header>
+
 <h2>Review: RDF Graphs</h2>
 <p>The <strong>W3C Resource Description Framework</strong> considers three types of <mark>RDF terms</mark>:</p>
 <ul>
@@ -367,11 +406,10 @@ of a flex item such as single etc. */
 </ul>
 <footer>Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="4" data-paginate="true" data-header="Overview" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="4" data-marpit-pagination-total="25" style="--paginate:true;--header:Overview;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
-<header>Overview</header>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section data-paginate="true" data-header="Motivation" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="4" data-marpit-pagination-total="26" style="--paginate:true;--header:Motivation;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;--marpit-advanced-background-split:50%;" data-marpit-advanced-background="background" data-marpit-advanced-background-split="right"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;figures/zoologists_classify.webp&quot;);background-size:auto 90%;"></figure></div></section></foreignObject><foreignObject width="50%" height="720"><section id="4" data-paginate="true" data-header="Motivation" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="4" data-marpit-pagination-total="26" style="--paginate:true;--header:Motivation;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;--marpit-advanced-background-split:50%;" data-marpit-advanced-background="content" data-marpit-advanced-background-split="right">
+<header>Motivation</header>
+
 <h2>Motivation</h2>
-<div class="columns">
-<div class="single">
 <ul>
 <li>RDF allows for making arbitrary assertions about individual resources and their relationships on the Web</li>
 <li>Preferable:
@@ -384,44 +422,52 @@ of a flex item such as single etc. */
 </li>
 <li><strong>RDFS</strong> allows for the <strong>explicit specification</strong> of <strong>schematic</strong> and <strong>terminological knowledge</strong> (also <em>factual knowledge</em>) about resources</li>
 </ul>
-</div>
-<div class="single">
-<p>add image</p>
-</div>
+<div class="footnotes">
+<p>Picture Source: <a href="https://www.nhbs.com/how-zoologists-organize-things-book">https://www.nhbs.com/how-zoologists-organize-things-book</a></p>
 </div>
 <footer>Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="5" data-paginate="true" data-header="Overview" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="5" data-marpit-pagination-total="25" style="--paginate:true;--header:Overview;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
-<header>Overview</header>
+</foreignObject><foreignObject width="1280" height="720" data-marpit-advanced-background="pseudo"><section data-paginate="true" data-header="Motivation" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="4" data-marpit-pagination-total="26" style="" data-marpit-advanced-background="pseudo" data-marpit-advanced-background-split="right"></section></foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="5" data-paginate="true" data-header="RDF Schema" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="5" data-marpit-pagination-total="26" style="--paginate:true;--header:RDF Schema;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
+<header>RDF Schema</header>
+
 <h2>RDF Schema</h2>
+<div class="columns">
+<div class="double">
 <ul>
-<li>RDFS simply defines a data model and a vocabulary for the creation of RDF statements</li>
-<li>Official name: &quot;RDF Vocabulary Description Language&quot;</li>
+<li><strong>RDFS</strong> simply defines a <em>data model</em> and a <em>vocabulary</em> for the creation of RDF statements</li>
+<li>Official name: &quot;<mark>RDF Vocabulary Description Language</mark>&quot;</li>
 <li>RDF Schema provides a <em>data-modelling vocabulary</em> for RDF data</li>
-<li>RDF Schema allows:
+</ul>
+<p><strong>RDF Schema allows</strong></p>
 <ul>
 <li>Definition of <strong>classes</strong></li>
 <li>Definition of <strong>properties</strong> and <strong>restrictions</strong></li>
-<li>Definition of <strong>hierarchies</strong>
+<li>Definition of <em>hierarchies</em>
 <ul>
-<li>Subclasses and superclasses</li>
-<li>Subproperties and superproperties</li>
+<li><strong>Subclasses</strong> and <strong>superclasses</strong></li>
+<li><strong>Subproperties</strong> and <strong>superproperties</strong></li>
 </ul>
 </li>
 </ul>
-</li>
-</ul>
+</div>
+<div class="triple">
+<div class="center">
+<p><img src="figures/rdfs_language_model.gif" alt="" /></p>
+</div>
+</div>
+</div>
 <footer>Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="6" data-paginate="true" data-header="Overview" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="6" data-marpit-pagination-total="25" style="--paginate:true;--header:Overview;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
-<header>Overview</header>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="6" data-paginate="true" data-header="RDF Schema" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="6" data-marpit-pagination-total="26" style="--paginate:true;--header:RDF Schema;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
+<header>RDF Schema</header>
 <h2>RDF Schema (2/2)</h2>
 <div class="columns">
 <div class="double">
 <ul>
 <li>Part of the W3C RDF Recommendation (<a href="https://www.w3.org/TR/rdf-schema/">https://www.w3.org/TR/rdf-schema/</a>)</li>
 <li>Namespace: <code>http://www.w3.org/2000/01/rdf-schema#</code></li>
-<li>RDFS is a specific RDF vocabulary <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0.188ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="0.756ex" role="img" focusable="false" viewBox="0 -417 1000 334"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="21DD" d="M76 230Q68 230 62 237T56 250Q56 257 63 264T91 291Q102 300 108 306L159 351Q168 356 177 351L218 316L303 239L353 195Q376 214 403 239L488 316L529 351Q538 356 546 351Q548 350 594 310L638 270H848L841 278Q813 309 792 344T763 396T755 416Q755 417 778 417H801Q817 367 856 323T943 250Q895 221 856 177T801 83H778Q755 83 755 84Q755 86 762 103T791 156T841 222L848 230H737Q625 230 622 232Q620 233 599 251T558 288L537 306Q537 305 451 228T362 149Q353 146 345 149Q341 150 255 227T169 306Q167 306 129 270Q123 265 115 257T102 245T93 237T84 232T76 230Z"></path></g></g></g></svg></mjx-container> ie., every RDFS document is also a valid RDF document</li>
+<li>RDFS is a specific RDF vocabulary<br />
+<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0.188ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="0.756ex" role="img" focusable="false" viewBox="0 -417 1000 334"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="21DD" d="M76 230Q68 230 62 237T56 250Q56 257 63 264T91 291Q102 300 108 306L159 351Q168 356 177 351L218 316L303 239L353 195Q376 214 403 239L488 316L529 351Q538 356 546 351Q548 350 594 310L638 270H848L841 278Q813 309 792 344T763 396T755 416Q755 417 778 417H801Q817 367 856 323T943 250Q895 221 856 177T801 83H778Q755 83 755 84Q755 86 762 103T791 156T841 222L848 230H737Q625 230 622 232Q620 233 599 251T558 288L537 306Q537 305 451 228T362 149Q353 146 345 149Q341 150 255 227T169 306Q167 306 129 270Q123 265 115 257T102 245T93 237T84 232T76 230Z"></path></g></g></g></svg></mjx-container> ie., every RDFS document is also a valid RDF document</li>
 <li>RDFS is also <strong>meta vocabulary</strong> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0.188ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="0.756ex" role="img" focusable="false" viewBox="0 -417 1000 334"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="21DD" d="M76 230Q68 230 62 237T56 250Q56 257 63 264T91 291Q102 300 108 306L159 351Q168 356 177 351L218 316L303 239L353 195Q376 214 403 239L488 316L529 351Q538 356 546 351Q548 350 594 310L638 270H848L841 278Q813 309 792 344T763 396T755 416Q755 417 778 417H801Q817 367 856 323T943 250Q895 221 856 177T801 83H778Q755 83 755 84Q755 86 762 103T791 156T841 222L848 230H737Q625 230 622 232Q620 233 599 251T558 288L537 306Q537 305 451 228T362 149Q353 146 345 149Q341 150 255 227T169 306Q167 306 129 270Q123 265 115 257T102 245T93 237T84 232T76 230Z"></path></g></g></g></svg></mjx-container> allows for the specification of the <strong>semantics</strong> of arbitrary <strong>RDF vocabularies</strong> (or parts of it)</li>
 <li>Every software with RDFS capabilities is able to comprehend the incorporated RDFS semantics correctly</li>
 <li>RDFS allows for defining <strong>lightweight ontologies</strong></li>
@@ -433,19 +479,25 @@ of a flex item such as single etc. */
 </div>
 <footer>Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="7" data-paginate="true" data-header="Overview" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="7" data-marpit-pagination-total="25" style="--paginate:true;--header:Overview;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
-<header>Overview</header>
-<h2>Modelling with RDFS: Classes and Instances</h2>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="7" data-paginate="true" data-header="Modelling with RDF/S" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="7" data-marpit-pagination-total="26" style="--paginate:true;--header:Modelling with RDF/S;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
+<header>Modelling with RDF/S</header>
+
+<h1>Modelling with RDF/S</h1>
+<footer>Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="8" data-paginate="true" data-header="Modelling with RDF/S" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="8" data-marpit-pagination-total="26" style="--paginate:true;--header:Modelling with RDF/S;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
+<header>Modelling with RDF/S</header>
+<h2>Modelling with RDF/S: Classes and Instances</h2>
 <ul>
 <li>
 <p>Resources can be marked as <strong>instances</strong> of a class using the <code>rdf:type</code> property</p>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-xml">ex:semanticWeb rdf:type ex:Lehrbuch .
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-xml">ex:semanticWeb      rdf:type      ex:Lehrbuch .
 </code></pre>
 <p><i class="fas fa-comment-dots"></i> <span class="kursiv small">assigns the object’s URI to the subject as its (new) type, i.e., the resource <code>ex:semanticWeb</code> is a (new) instance of the class <code>ex:Lehrbuch</code></span></p>
 </li>
 <li>
 <p>Class association or class assignment is <em>not exclusive</em>, i.e., a resource can be <em>instance of many classes</em>:</p>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-json">ex<span class="hljs-punctuation">:</span>semanticWeb rdf<span class="hljs-punctuation">:</span>type ex<span class="hljs-punctuation">:</span>Lecture .
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-json">ex<span class="hljs-punctuation">:</span>semanticWeb      rdf<span class="hljs-punctuation">:</span>type       ex<span class="hljs-punctuation">:</span>Lecture .
 </code></pre>
 </li>
 <li>
@@ -460,22 +512,22 @@ Explicit designation of an URI/IRI as belonging to the <mark>class of all classe
 </ul>
 <footer>Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="8" data-paginate="true" data-header="Overview" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="8" data-marpit-pagination-total="25" style="--paginate:true;--header:Overview;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
-<header>Overview</header>
-<h2>Modelling with RDFS: Defining Classes</h2>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="9" data-paginate="true" data-header="Modelling with RDF/S" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="9" data-marpit-pagination-total="26" style="--paginate:true;--header:Modelling with RDF/S;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
+<header>Modelling with RDF/S</header>
+<h2>Modelling with RDF/S: Defining Classes</h2>
 <ul>
 <li>
 <p>Preferable: <mark>unique designation of an URI as class</mark></p>
 </li>
 <li>
 <p>Designating (typifying) an URI as a class with <code>rdfs:Class</code></p>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-atom">ex:Lehrbuch rdf:type rdfs:Class .
-ex:semanticWeb rdf:type ex:Lehrbuch .
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-atom">ex:Lehrbuch           rdf:type        rdfs:Class .
+ex:semanticWeb        rdf:type        ex:Lehrbuch .
 </code></pre>
 </li>
 <li>
 <p><code>rdfs:Class</code> is the <em>class of all classes</em> and hence also contains <em>itself</em> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0.188ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="0.756ex" role="img" focusable="false" viewBox="0 -417 1000 334"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="21DD" d="M76 230Q68 230 62 237T56 250Q56 257 63 264T91 291Q102 300 108 306L159 351Q168 356 177 351L218 316L303 239L353 195Q376 214 403 239L488 316L529 351Q538 356 546 351Q548 350 594 310L638 270H848L841 278Q813 309 792 344T763 396T755 416Q755 417 778 417H801Q817 367 856 323T943 250Q895 221 856 177T801 83H778Q755 83 755 84Q755 86 762 103T791 156T841 222L848 230H737Q625 230 622 232Q620 233 599 251T558 288L537 306Q537 305 451 228T362 149Q353 146 345 149Q341 150 255 227T169 306Q167 306 129 270Q123 265 115 257T102 245T93 237T84 232T76 230Z"></path></g></g></g></svg></mjx-container> i.e., the following statement is valid:</p>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-html">rdfs:Class rdf:type rdfs:Class .
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-html">rdfs:Class            rdf:type        rdfs:Class .
 </code></pre>
 </li>
 </ul>
@@ -488,9 +540,9 @@ ex:semanticWeb rdf:type ex:Lehrbuch .
 </div>
 <footer>Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="9" data-paginate="true" data-header="Overview" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="9" data-marpit-pagination-total="25" style="--paginate:true;--header:Overview;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
-<header>Overview</header>
-<h2>Modelling with RDFS: Classes and Subclasses</h2>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="10" data-paginate="true" data-header="Modelling with RDF/S" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="10" data-marpit-pagination-total="26" style="--paginate:true;--header:Modelling with RDF/S;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
+<header>Modelling with RDF/S</header>
+<h2>Modelling with RDF/S: Classes and Subclasses</h2>
 <p><strong>Problem</strong> <i class="far fa-face-frown"></i></p>
 <ul>
 <li>
@@ -498,8 +550,8 @@ ex:semanticWeb rdf:type ex:Lehrbuch .
 </li>
 <li>
 <p>Asserting <code>ex:semanticWeb rdf:type ex:Book</code> allows only for adding one specific resource</p>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-rdf">ex:Textbook rdf:type rdfs:Class .
-ex:semanticWeb rdf:type ex:Textbook .
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-rdf">ex:Textbook         rdf:type        rdfs:Class .
+ex:semanticWeb      rdf:type        ex:Textbook .
 </code></pre>
 </li>
 <li>
@@ -508,35 +560,35 @@ ex:semanticWeb rdf:type ex:Textbook .
 </ul>
 <p><strong>Solution</strong> <i class="far fa-face-grin-stars"></i></p>
 <ul>
-<li>Asserting that every <code>ex:Textbook</code> is also an <code>ex:Book</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0.188ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="0.756ex" role="img" focusable="false" viewBox="0 -417 1000 334"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="21DD" d="M76 230Q68 230 62 237T56 250Q56 257 63 264T91 291Q102 300 108 306L159 351Q168 356 177 351L218 316L303 239L353 195Q376 214 403 239L488 316L529 351Q538 356 546 351Q548 350 594 310L638 270H848L841 278Q813 309 792 344T763 396T755 416Q755 417 778 417H801Q817 367 856 323T943 250Q895 221 856 177T801 83H778Q755 83 755 84Q755 86 762 103T791 156T841 222L848 230H737Q625 230 622 232Q620 233 599 251T558 288L537 306Q537 305 451 228T362 149Q353 146 345 149Q341 150 255 227T169 306Q167 306 129 270Q123 265 115 257T102 245T93 237T84 232T76 230Z"></path></g></g></g></svg></mjx-container> i.e., every instance of <code>ex:Textbook</code> is also an instance of <code>ex:Book</code><pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-rdf">ex:Textbook rdfs:subClassOf ex:Book .
+<li>Asserting that every <code>ex:Textbook</code> is also an <code>ex:Book</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0.188ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="0.756ex" role="img" focusable="false" viewBox="0 -417 1000 334"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="21DD" d="M76 230Q68 230 62 237T56 250Q56 257 63 264T91 291Q102 300 108 306L159 351Q168 356 177 351L218 316L303 239L353 195Q376 214 403 239L488 316L529 351Q538 356 546 351Q548 350 594 310L638 270H848L841 278Q813 309 792 344T763 396T755 416Q755 417 778 417H801Q817 367 856 323T943 250Q895 221 856 177T801 83H778Q755 83 755 84Q755 86 762 103T791 156T841 222L848 230H737Q625 230 622 232Q620 233 599 251T558 288L537 306Q537 305 451 228T362 149Q353 146 345 149Q341 150 255 227T169 306Q167 306 129 270Q123 265 115 257T102 245T93 237T84 232T76 230Z"></path></g></g></g></svg></mjx-container> i.e., every instance of <code>ex:Textbook</code> is also an instance of <code>ex:Book</code><pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-rdf">ex:Textbook       rdfs:subClassOf       ex:Book .
 </code></pre>
 </li>
 </ul>
 <footer>Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="10" data-paginate="true" data-header="Overview" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="10" data-marpit-pagination-total="25" style="--paginate:true;--header:Overview;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
-<header>Overview</header>
-<h2>Modelling with RDFS: Subclass Semantics</h2>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="11" data-paginate="true" data-header="Modelling with RDF/S" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="11" data-marpit-pagination-total="26" style="--paginate:true;--header:Modelling with RDF/S;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
+<header>Modelling with RDF/S</header>
+<h2>Modelling with RDF/S: Subclass Semantics</h2>
 <ul>
 <li>
 <p><code>rdfs:subClassOf</code> is <strong>reflexive</strong> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0.188ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="0.756ex" role="img" focusable="false" viewBox="0 -417 1000 334"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="21DD" d="M76 230Q68 230 62 237T56 250Q56 257 63 264T91 291Q102 300 108 306L159 351Q168 356 177 351L218 316L303 239L353 195Q376 214 403 239L488 316L529 351Q538 356 546 351Q548 350 594 310L638 270H848L841 278Q813 309 792 344T763 396T755 416Q755 417 778 417H801Q817 367 856 323T943 250Q895 221 856 177T801 83H778Q755 83 755 84Q755 86 762 103T791 156T841 222L848 230H737Q625 230 622 232Q620 233 599 251T558 288L537 306Q537 305 451 228T362 149Q353 146 345 149Q341 150 255 227T169 306Q167 306 129 270Q123 265 115 257T102 245T93 237T84 232T76 230Z"></path></g></g></g></svg></mjx-container> i.e., <em>every class is subclass of its own</em></p>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-turtle">ex:Lehrbuch rdfs:subClassOf ex:Lehrbuch
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-turtle">ex:Lehrbuch         rdfs:subClassOf       ex:Lehrbuch
 </code></pre>
 <p>is a valid statement</p>
 </li>
 <li>
 <p><strong>Equality</strong> of two classes can be expressed via <mark>mutual subclass relationships</mark></p>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-rdf">ex:Hospital    rdfs:subClassOf ex:Krankenhaus .
-ex:Krankenhaus rdfs:subClassOf ex:Hospital .
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-rdf">ex:Hospital         rdfs:subClassOf       ex:Krankenhaus .
+ex:Krankenhaus      rdfs:subClassOf       ex:Hospital .
 </code></pre>
 <p>Every instance of <code>ex:Hospital</code> is also an instance of <code>ex:Krankenhaus</code> and vice versa</p>
 </li>
 </ul>
 <footer>Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="11" data-paginate="true" data-header="Overview" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="11" data-marpit-pagination-total="25" style="--paginate:true;--header:Overview;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
-<header>Overview</header>
-<h2>Modelling with RDFS: Class Hierarchies</h2>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="12" data-paginate="true" data-header="Modelling with RDF/S" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="12" data-marpit-pagination-total="26" style="--paginate:true;--header:Modelling with RDF/S;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
+<header>Modelling with RDF/S</header>
+<h2>Modelling with RDF/S: Class Hierarchies</h2>
 <ul>
 <li>
 <p><code>rdfs:subClassOf</code> allows for defining complex <strong>class hierarchies</strong> (so-called <mark>Taxonomies</mark>)</p>
@@ -559,8 +611,8 @@ ex:Journal    rdfs:subClassOf     ex:Printmedium .
 </ul>
 <footer>Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="12" data-paginate="true" data-header="Overview" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="12" data-marpit-pagination-total="25" style="--paginate:true;--header:Overview;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
-<header>Overview</header>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="13" data-paginate="true" data-header="Modelling with RDF/S" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="13" data-marpit-pagination-total="26" style="--paginate:true;--header:Modelling with RDF/S;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
+<header>Modelling with RDF/S</header>
 <h2>Modelling with RDF/S: Properties</h2>
 <ul>
 <li><strong>Properties</strong> in RDF(S) are treated as <mark>first-class citizens</mark></li>
@@ -570,8 +622,8 @@ ex:Journal    rdfs:subClassOf     ex:Printmedium .
 </ul>
 <footer>Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="13" data-paginate="true" data-header="Overview" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="13" data-marpit-pagination-total="25" style="--paginate:true;--header:Overview;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
-<header>Overview</header>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="14" data-paginate="true" data-header="Modelling with RDF/S" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="14" data-marpit-pagination-total="26" style="--paginate:true;--header:Modelling with RDF/S;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
+<header>Modelling with RDF/S</header>
 <h2>Modelling with RDF/S: Property Hierarchies</h2>
 <ul>
 <li>
@@ -592,8 +644,8 @@ ex:markus                 ex:happilyMarriedTo       ex:anja .
 </ul>
 <footer>Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="14" data-paginate="true" data-header="Overview" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="14" data-marpit-pagination-total="25" style="--paginate:true;--header:Overview;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
-<header>Overview</header>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="15" data-paginate="true" data-header="Modelling with RDF/S" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="15" data-marpit-pagination-total="26" style="--paginate:true;--header:Modelling with RDF/S;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
+<header>Modelling with RDF/S</header>
 <h2>Modelling with RDF/S: Restrictions on Properties</h2>
 <p><mark>Restrictions</mark> allow us to state that a <em>certain property can only be between things of a certain type</em></p>
 <ul>
@@ -621,8 +673,8 @@ ex:markus                 ex:happilyMarriedTo       ex:anja .
 </ul>
 <footer>Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="15" data-paginate="true" data-header="Overview" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="15" data-marpit-pagination-total="25" style="--paginate:true;--header:Overview;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
-<header>Overview</header>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="16" data-paginate="true" data-header="Modelling with RDF/S" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="16" data-marpit-pagination-total="26" style="--paginate:true;--header:Modelling with RDF/S;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
+<header>Modelling with RDF/S</header>
 <h2>Modelling with RDF/S: Example about Property Restrictions</h2>
 <p><strong>Example</strong>: All individuals that are married are persons</p>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code>ex:isMarriedTo      rdfs:domain           ex:Person .
@@ -640,14 +692,14 @@ ex:Jane             rdf:type              ex:Person .
 </code></pre>
 <footer>Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="16" data-paginate="true" data-header="Overview" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="16" data-marpit-pagination-total="25" style="--paginate:true;--header:Overview;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
-<header>Overview</header>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="17" data-paginate="true" data-header="Modelling with RDF/S" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="17" data-marpit-pagination-total="26" style="--paginate:true;--header:Modelling with RDF/S;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
+<header>Modelling with RDF/S</header>
 <h2>Modelling with RDF/S: Property Restrictions Pitfalls <i class="fa fa-person-falling-burst"></i></h2>
 <ul>
 <li>
 <p><strong>Example 1</strong>:</p>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code>ex:authorOf rdfs:range ex:Textbook .
-ex:authorOf rdfs:range ex:Storybook .
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code>ex:authorOf           rdfs:range          ex:Textbook .
+ex:authorOf           rdfs:range          ex:Storybook .
 </code></pre>
 <p>State that everything in the <code>rdfs:range</code> of <code>ex:author</code> is both a <code>ex:Textbook</code> and a <code>ex:Storybook</code></p>
 </li>
@@ -666,13 +718,14 @@ ex:pascal             ex:isMarriedTo      ex:instituteAIFB .
 </ul>
 <footer>Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="17" data-paginate="true" data-header="Overview" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="17" data-marpit-pagination-total="25" style="--paginate:true;--header:Overview;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
-<header>Overview</header>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="18" data-paginate="true" data-header="RDF/S Language Features" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="18" data-marpit-pagination-total="26" style="--paginate:true;--header:RDF/S Language Features;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
+<header>RDF/S Language Features</header>
+
 <h1>RDF/S Language Features</h1>
 <footer>Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="18" data-paginate="true" data-header="Overview" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="18" data-marpit-pagination-total="25" style="--paginate:true;--header:Overview;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
-<header>Overview</header>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="19" data-paginate="true" data-header="RDF/S Language Features" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="19" data-marpit-pagination-total="26" style="--paginate:true;--header:RDF/S Language Features;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
+<header>RDF/S Language Features</header>
 <h2>RDFS Language Features</h2>
 <p>Everything in the RDF model is a resource</p>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-rdf">rdfs:Class            rdf:type        rdfs:Resource .
@@ -683,9 +736,9 @@ rdfs:Datatype         rdf:type        rdfs:Resource .
 </code></pre>
 <footer>Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="19" data-paginate="true" data-header="Overview" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="19" data-marpit-pagination-total="25" style="--paginate:true;--header:Overview;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
-<header>Overview</header>
-<h2>Predefined Classes by RDFS</h2>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="20" data-paginate="true" data-header="RDF/S Language Features" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="20" data-marpit-pagination-total="26" style="--paginate:true;--header:RDF/S Language Features;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
+<header>RDF/S Language Features</header>
+<h2>Predefined Classes by RDF/S</h2>
 <ul>
 <li><code>rdfs:Class</code>
 <ul>
@@ -723,9 +776,9 @@ rdfs:Datatype         rdf:type        rdfs:Resource .
 </div>
 <footer>Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="20" data-paginate="true" data-header="Overview" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="20" data-marpit-pagination-total="25" style="--paginate:true;--header:Overview;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
-<header>Overview</header>
-<h2>Properties defined by RDFS</h2>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="21" data-paginate="true" data-header="RDF/S Language Features" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="21" data-marpit-pagination-total="26" style="--paginate:true;--header:RDF/S Language Features;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
+<header>RDF/S Language Features</header>
+<h2>Properties defined by RDF/S</h2>
 <ul>
 <li><code>rdfs:subClassOf</code>
 <ul>
@@ -770,16 +823,16 @@ rdfs:Datatype         rdf:type        rdfs:Resource .
 </ul>
 <footer>Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="21" data-paginate="true" data-header="Overview" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="21" data-marpit-pagination-total="25" style="--paginate:true;--header:Overview;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
-<header>Overview</header>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="22" data-paginate="true" data-header="RDF/S Language Features" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="22" data-marpit-pagination-total="26" style="--paginate:true;--header:RDF/S Language Features;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
+<header>RDF/S Language Features</header>
 <h2>How to describe Schema Information in RDF/S</h2>
 <ul>
 <li>Triples about properties can also be used to specify <em>how properties should be used</em>.</li>
-<li><strong>Example</strong>: RDF provides several properties for describing properties:<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">PropertyIRI</span>&gt;</span>   rdf:type      rdfs:Property .     # declare resource as property
-<span class="hljs-tag">&lt;<span class="hljs-name">PropertyIRI</span>&gt;</span>   rdfs:label    &quot;some label&quot;@en .   # assign label
+<li><strong>Example</strong>: RDF provides several properties for describing properties:<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">PropertyIRI</span>&gt;</span>   rdf:type      rdfs:Property .                         # declare resource as property
+<span class="hljs-tag">&lt;<span class="hljs-name">PropertyIRI</span>&gt;</span>   rdfs:label    &quot;some label&quot;@en .                       # assign label
 <span class="hljs-tag">&lt;<span class="hljs-name">PropertyIRI</span>&gt;</span>   rdfs:comment  &quot;Some human-readable comment&quot;@en . 
-<span class="hljs-tag">&lt;<span class="hljs-name">PropertyIRI</span>&gt;</span>   rdfs:range    xsd:decimal .       # define range datatype
-<span class="hljs-tag">&lt;<span class="hljs-name">PropertyIRI</span>&gt;</span>   rdfs:domain   <span class="hljs-tag">&lt;<span class="hljs-name">classIRI</span>&gt;</span> .        # define domain type (class)
+<span class="hljs-tag">&lt;<span class="hljs-name">PropertyIRI</span>&gt;</span>   rdfs:range    xsd:decimal .                           # define range datatype
+<span class="hljs-tag">&lt;<span class="hljs-name">PropertyIRI</span>&gt;</span>   rdfs:domain   <span class="hljs-tag">&lt;<span class="hljs-name">classIRI</span>&gt;</span> .                            # define domain type (class)
 </code></pre>
 </li>
 <li>There are <em>many properties beyond those from the RDF standard</em> for such purposes,<br />
@@ -794,21 +847,19 @@ rdfs:Datatype         rdf:type        rdfs:Resource .
 </ul>
 <footer>Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="22" data-paginate="true" data-header="Overview" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="22" data-marpit-pagination-total="25" style="--paginate:true;--header:Overview;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
-<header>Overview</header>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="23" data-paginate="true" data-header="RDF/S Language Features" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="23" data-marpit-pagination-total="26" style="--paginate:true;--header:RDF/S Language Features;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
+<header>RDF/S Language Features</header>
 <h2>A Simplified RDF Schema Language Model</h2>
 <div class="center">
 <p><img src="figures/rdfs_language_model.gif" alt="" style="width:900px;" /></p>
 </div>
 <footer>Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="23" data-paginate="true" data-header="Overview" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="23" data-marpit-pagination-total="25" style="--paginate:true;--header:Overview;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
-<header>Overview</header>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="24" data-paginate="true" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="24" data-marpit-pagination-total="26" style="--paginate:true;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
 <h1>RDF Schema Example</h1>
 <footer>Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="24" data-paginate="true" data-header="Overview" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="24" data-marpit-pagination-total="25" style="--paginate:true;--header:Overview;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
-<header>Overview</header>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="25" data-paginate="true" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="25" data-marpit-pagination-total="26" style="--paginate:true;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
 <h2>RDF Schema Example</h2>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code>@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .               @prefix owl:  &lt;http://www.w3.org/2002/07/owl#&gt;
 @prefix rdf:  &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .         @prefix :     &lt;http://example.org/Climate#&gt; .
@@ -834,8 +885,7 @@ rdfs:Datatype         rdf:type        rdfs:Resource .
 </code></pre>
 <footer>Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="25" data-paginate="true" data-header="Overview" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="25" data-marpit-pagination-total="25" style="--paginate:true;--header:Overview;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
-<header>Overview</header>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="26" data-paginate="true" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="26" data-marpit-pagination-total="26" style="--paginate:true;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
 <h2>RDF Schema Summary by Example</h2>
 <div class="center">
 <p><img src="figures/rdf-rdfs-1.jpg" alt="" style="width:900px;" /></p>

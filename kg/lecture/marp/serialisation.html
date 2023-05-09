@@ -75,8 +75,11 @@
 /* Code fragments in texts */div#p>svg>foreignObject>section code{
     /* font-family: 'Open Sans Condensed'; */font-family:'M+ 1m';
     /* font-size: .9em; */font-weight:400;border:solid .06em lightgray;padding:.2em .2em .2em 0.2em;background-color:#e6e6e6;white-space:pre}div#p>svg>foreignObject>section em{color:rgb(42,104,175);font-style:normal}div#p>svg>foreignObject>section mark{color:rgb(202,69,33);background-color:inherit}div#p>svg>foreignObject>section blockquote p em{color:inherit;font-style:italic}div#p>svg>foreignObject>section blockquote p{color:inherit;font-style:italic
-    /* background-color: #f1f2f4; */}div#p>svg>foreignObject>section .kursiv{font-style:italic}div#p>svg>foreignObject>section .inverse{background-color:#246;color:whitesmoke;padding-left:.2em}
+    /* background-color: #f1f2f4; */}div#p>svg>foreignObject>section .kursiv{font-style:italic!important}div#p>svg>foreignObject>section .inverse{background-color:#246;color:whitesmoke
+    /* padding-left: .2em; */}
 
+/* used to display inline text inversely */div#p>svg>foreignObject>section .importantterm{background-color:#ffd9b1;border:2px solid orange;padding:0 .12em;border-radius:.3em}div#p>svg>foreignObject>section .inversered{background-color:#b30000;color:white;padding:0 .2em;border-radius:.4em
+    /* vertical-align: super; */}
 
 
 /* ========================
@@ -98,7 +101,8 @@
 
 /* Example container */div#p>svg>foreignObject>section .example,div#p>svg>foreignObject>section .graybox{background-color:rgb(238,238,238);border:solid calc(var(--marpit-root-font-size, 1rem) * 0.2) rgb(123,123,123);padding:0 calc(var(--marpit-root-font-size, 1rem) * 0.6) 0 calc(var(--marpit-root-font-size, 1rem) * 0.6);color:#323232}div#p>svg>foreignObject>section .example>p:last-child,div#p>svg>foreignObject>section .graybox>p:last-child{margin-bottom:0.16em}
 
-/* Orange Box container */div#p>svg>foreignObject>section .orangebox{background-color:rgb(255,231,220);border:solid calc(var(--marpit-root-font-size, 1rem) * 0.2) rgb(211,88,11);padding:0 calc(var(--marpit-root-font-size, 1rem) * 0.6) 0 calc(var(--marpit-root-font-size, 1rem) * 0.6);color:rgb(211,88,11)}div#p>svg>foreignObject>section .orangebox>p:last-child{margin-bottom:0.16em}
+/* Orange Box container */div#p>svg>foreignObject>section .orangebox{
+    /* background-color: rgb(255, 246, 220); */background-color:rgb(255,234,220);border:solid calc(var(--marpit-root-font-size, 1rem) * 0.2) rgb(211,88,11);padding:0 calc(var(--marpit-root-font-size, 1rem) * 0.6) 0 calc(var(--marpit-root-font-size, 1rem) * 0.6);color:rgb(211,88,11)}div#p>svg>foreignObject>section .orangebox>p:last-child{margin-bottom:0.16em}
 
 
 /* Warning Box (used warning since 'red' is reserved for font color */div#p>svg>foreignObject>section .redbox,div#p>svg>foreignObject>section .warning{background-color:#ffe6e6;border:solid calc(var(--marpit-root-font-size, 1rem) * 0.2) #cc0000;padding:0 calc(var(--marpit-root-font-size, 1rem) * 0.6) 0 calc(var(--marpit-root-font-size, 1rem) * 0.6);color:#b30000}div#p>svg>foreignObject>section .redbox>p:last-child,div#p>svg>foreignObject>section .warning>p:last-child{margin-bottom:0.16em}
@@ -139,6 +143,7 @@
     margin-bottom: .2em;
 } */
 
+/* Added to remove borders from color boxes */div#p>svg>foreignObject>section .noborder{border:none!important}div#p>svg>foreignObject>section .padding025em{padding:.25em!important}
 
 
 
@@ -152,6 +157,14 @@
 */div#p>svg>foreignObject>section .marg1{margin:0 1em}div#p>svg>foreignObject>section .marg2{margin:0 2em}div#p>svg>foreignObject>section .marg3{margin:0 3em}div#p>svg>foreignObject>section .marg4{margin:0 4em}div#p>svg>foreignObject>section .marg5{margin:0 5em}div#p>svg>foreignObject>section .marg10{width:80%;margin:auto}div#p>svg>foreignObject>section .marg15{width:70%;margin:auto}div#p>svg>foreignObject>section .marg20{width:60%;margin:auto}div#p>svg>foreignObject>section .marg25{width:50%;margin:auto}div#p>svg>foreignObject>section .marg30{width:40%;margin:auto}
 
 
+
+/* ===========================
+    PADDING FOR BOXES
+   ===========================
+*/
+/* 
+    Add a left and right padding to content in boxes 
+*/div#p>svg>foreignObject>section .pad2{padding-left:2em;padding-right:2em}div#p>svg>foreignObject>section .pad3{padding-left:3em;padding-right:3em}div#p>svg>foreignObject>section .pad4{padding-left:4em;padding-right:4em}
 
 
 /* ===========================
@@ -188,7 +201,7 @@ of a flex item such as single etc. */
     GRID LAYOUT
    ========================
 */div#p>svg>foreignObject>section .grid{display:grid;
-    /* need to initialize grid values */--grid-align-vertical:start;--grid-align-horizontal:start;--grid-column-width:auto}div#p>svg>foreignObject>section .vertical-align-center{--grid-align-vertical:center}div#p>svg>foreignObject>section .vertical-align-top{--grid-align-vertical:start}div#p>svg>foreignObject>section .vertical-align-bottom{--grid-align-vertical:end}div#p>svg>foreignObject>section .horizontal-left{--grid-align-horizontal:start}div#p>svg>foreignObject>section .horizontal-center{--grid-align-horizontal:center}div#p>svg>foreignObject>section .horizontal-right{--grid-align-horizontal:end}div#p>svg>foreignObject>section .widthauto{--grid-column-width:auto}div#p>svg>foreignObject>section .widthfixed{--grid-column-width:1fr}div#p>svg>foreignObject>section .grid2col{display:grid;grid-template-columns:var(--grid-column-width) var(--grid-column-width);align-items:var(--grid-align-vertical);justify-items:var(--grid-align-horizontal)}div#p>svg>foreignObject>section .grid3col{display:grid;grid-template-columns:var(--grid-column-width) var(--grid-column-width) var(--grid-column-width);align-items:var(--grid-align-vertical);justify-items:var(--grid-align-horizontal)}div#p>svg>foreignObject>section .grid4col{display:grid;grid-template-columns:var(--grid-column-width) var(--grid-column-width) var(--grid-column-width) var(--grid-column-width);align-items:var(--grid-align-vertical);justify-items:var(--grid-align-horizontal)}div#p>svg>foreignObject>section .grid5col{display:grid;grid-template-columns:repeat(5,var(--grid-column-width));align-items:var(--grid-align-vertical);justify-items:var(--grid-align-horizontal)}div#p>svg>foreignObject>section .gridncol{display:grid;grid-template-columns:repeat(7,var(--grid-column-width));align-items:var(--grid-align-vertical);justify-items:var(--grid-align-horizontal)}div#p>svg>foreignObject>section .grid3varcol{display:grid;grid-template-columns:5em 33% auto}div#p>svg>foreignObject>section .gap2em{gap:2em 2em}div#p>svg>foreignObject>section .gap1em{gap:1em 1em}
+    /* need to initialize grid values */--grid-align-vertical:start;--grid-align-horizontal:start;--grid-column-width:auto}div#p>svg>foreignObject>section .vertical-align-center{--grid-align-vertical:center}div#p>svg>foreignObject>section .vertical-align-top{--grid-align-vertical:start}div#p>svg>foreignObject>section .vertical-align-bottom{--grid-align-vertical:end}div#p>svg>foreignObject>section .horizontal-left{--grid-align-horizontal:start}div#p>svg>foreignObject>section .horizontal-center{--grid-align-horizontal:center}div#p>svg>foreignObject>section .horizontal-right{--grid-align-horizontal:end}div#p>svg>foreignObject>section .widthauto{--grid-column-width:auto}div#p>svg>foreignObject>section .widthfixed{--grid-column-width:1fr}div#p>svg>foreignObject>section .grid2col{display:grid;grid-template-columns:var(--grid-column-width) var(--grid-column-width);align-items:var(--grid-align-vertical);justify-items:var(--grid-align-horizontal)}div#p>svg>foreignObject>section .grid3col{display:grid;grid-template-columns:var(--grid-column-width) var(--grid-column-width) var(--grid-column-width);align-items:var(--grid-align-vertical);justify-items:var(--grid-align-horizontal)}div#p>svg>foreignObject>section .grid4col{display:grid;grid-template-columns:var(--grid-column-width) var(--grid-column-width) var(--grid-column-width) var(--grid-column-width);align-items:var(--grid-align-vertical);justify-items:var(--grid-align-horizontal)}div#p>svg>foreignObject>section .grid5col{display:grid;grid-template-columns:repeat(5,var(--grid-column-width));align-items:var(--grid-align-vertical);justify-items:var(--grid-align-horizontal)}div#p>svg>foreignObject>section .gridncol{display:grid;grid-template-columns:repeat(7,var(--grid-column-width));align-items:var(--grid-align-vertical);justify-items:var(--grid-align-horizontal)}div#p>svg>foreignObject>section .grid3varcol{display:grid;grid-template-columns:5em 33% auto}div#p>svg>foreignObject>section .gap3em{gap:3em 3em}div#p>svg>foreignObject>section .gap2em{gap:2em 2em}div#p>svg>foreignObject>section .gap1em{gap:1em 1em}
 
 
 
@@ -204,9 +217,9 @@ of a flex item such as single etc. */
    ========================
 */div#p>svg>foreignObject>section .BIGSKIP{margin-top:calc(var(--marpit-root-font-size, 1rem) * 6)}div#p>svg>foreignObject>section .BIGskip{margin-top:calc(var(--marpit-root-font-size, 1rem) * 4)}div#p>svg>foreignObject>section .Bigskip,div#p>svg>foreignObject>section .SKIP{margin-top:calc(var(--marpit-root-font-size, 1rem) * 2)}div#p>svg>foreignObject>section .Skip,div#p>svg>foreignObject>section .bigskip{margin-top:calc(var(--marpit-root-font-size, 1rem) * 1.5)}div#p>svg>foreignObject>section .skip{margin-top:calc(var(--marpit-root-font-size, 1rem) * 1)}div#p>svg>foreignObject>section .shortskip{margin-top:calc(var(--marpit-root-font-size, 1rem) * 0.5)}div#p>svg>foreignObject>section .tinyskip{margin-top:calc(var(--marpit-root-font-size, 1rem) * 0.2)}
 
-/* Use this when a bulleted list should start immediately after a paragraph */div#p>svg>foreignObject>section .nobottommargin,div#p>svg>foreignObject>section .noskip{margin-bottom:0em}
+/* Use this when a bulleted list should start immediately after a paragraph */div#p>svg>foreignObject>section .nobottommargin,div#p>svg>foreignObject>section .noskip{margin-bottom:0em}div#p>svg>foreignObject>section .smallskip{margin-bottom:0.25em}
 
-/* inserts a space after an element (eg box) */div#p>svg>foreignObject>section .space{margin-bottom:2em}div#p>svg>foreignObject>section .spacebefore{margin-top:2em}
+/* inserts a space after an element (eg box) */div#p>svg>foreignObject>section .space,div#p>svg>foreignObject>section .spaceafter{margin-bottom:2em}div#p>svg>foreignObject>section .spacebefore{margin-top:2em}
 
 
 /* ========================
@@ -214,7 +227,7 @@ of a flex item such as single etc. */
    ========================
 */div#p>svg>foreignObject>section .centerbox{margin-left:auto;margin-right:auto}
 
-/* IMPORTANT: center also works for flexboxes and single/double etc. */div#p>svg>foreignObject>section .center,div#p>svg>foreignObject>section .centertext{text-align:center}div#p>svg>foreignObject>section .right{text-align:right}div#p>svg>foreignObject>section .left{text-align:left}
+/* IMPORTANT: center also works for flexboxes and single/double etc. */div#p>svg>foreignObject>section .center,div#p>svg>foreignObject>section .centertext{text-align:center}div#p>svg>foreignObject>section .right{text-align:right!important}div#p>svg>foreignObject>section .left{text-align:left}
 
 
 
@@ -306,7 +319,7 @@ of a flex item such as single etc. */
 /* removes the border from boxes */div#p>svg>foreignObject>section .noborder{border:none!important}
 
 /* places flexbox content vertically centered */
-/* need to be placed in prior to columns */div#p>svg>foreignObject>section .centercontent{align-items:center}
+/* need to be placed prior to columns */div#p>svg>foreignObject>section .centercontent{align-items:center}
 
 /* places flexbox content to the right ent */div#p>svg>foreignObject>section .rightalignedcontent{align-items:flex-end}
 
@@ -321,7 +334,13 @@ of a flex item such as single etc. */
    ========================
 */
 
-/* Places a textbox around words in a sentence; use with [text]{.box} */div#p>svg>foreignObject>section .box{border-radius:.16em;border-width:.08em;border-style:solid;padding-left:.2em;padding-right:.2em}div#p>svg>foreignObject>section .greenbox{border-color:darkgreen;color:darkgreen;background-color:rgb(216,255,226)}div#p>svg>foreignObject>section .orangebox{border-color:rgb(216,123,8);color:rgb(216,123,8);background-color:rgb(253,230,196)}
+/* Places a textbox around words in a sentence; use with [text]{.box} */div#p>svg>foreignObject>section .box{border-radius:.16em;border-width:.08em;border-style:solid;padding-left:.2em;padding-right:.2em}div#p>svg>foreignObject>section .greenbox{border-color:darkgreen;color:darkgreen;background-color:rgb(216,255,226)}
+
+/* .orangebox {
+    border-color: rgb(236, 119, 9);
+    color: rgb(200, 97, 0);
+    background-color: rgb(255, 235, 208);
+} */
 
 /**
  * @theme enable-all-auto-scaling
@@ -340,7 +359,13 @@ of a flex item such as single etc. */
 
 <h1>Outline</h1>
 <ul>
-<li>...</li>
+<li>Overview</li>
+<li>N-Triples</li>
+<li>Turtle (Terse RDF Triple Language) Notation</li>
+<li>Other Syntacic Formats</li>
+<li>Common Namespaces and Prefixes</li>
+<li>RDF Datasets</li>
+<li>Summary</li>
 </ul>
 <footer>Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences</footer>
 </section>
@@ -360,8 +385,9 @@ In order to exchange RDF graphs, <strong>concrete syntacic forms</strong> are ne
 <p>Further historic/unofficial formats exist but are hardly relevant today.</p>
 <footer>Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="4" data-paginate="true" data-header="Overview" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="4" data-marpit-pagination-total="19" style="--paginate:true;--header:Overview;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
-<header>Overview</header>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="4" data-paginate="true" data-header="Serialization Formats" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="4" data-marpit-pagination-total="19" style="--paginate:true;--header:Serialization Formats;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
+<header>Serialization Formats</header>
+
 <h2>N-Triples</h2>
 <p>N-Triples is almost the simplest format conceivable:</p>
 <ul>
@@ -379,8 +405,8 @@ In order to exchange RDF graphs, <strong>concrete syntacic forms</strong> are ne
 <p>Full specification at <a href="https://www.w3.org/TR/n-triples/">https://www.w3.org/TR/n-triples/</a></p>
 <footer>Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="5" data-paginate="true" data-header="Overview" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="5" data-marpit-pagination-total="19" style="--paginate:true;--header:Overview;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
-<header>Overview</header>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="5" data-paginate="true" data-header="Serialization Formats" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="5" data-marpit-pagination-total="19" style="--paginate:true;--header:Serialization Formats;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
+<header>Serialization Formats</header>
 <h2>Example</h2>
 <div class="center space">
 <svg width="725pt" height="131pt" viewBox="0.00 0.00 724.78 131.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -429,8 +455,8 @@ In order to exchange RDF graphs, <strong>concrete syntacic forms</strong> are ne
 </code></pre>
 <footer>Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="6" data-paginate="true" data-header="Overview" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="6" data-marpit-pagination-total="19" style="--paginate:true;--header:Overview;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
-<header>Overview</header>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="6" data-paginate="true" data-header="Serialization Formats" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="6" data-marpit-pagination-total="19" style="--paginate:true;--header:Serialization Formats;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
+<header>Serialization Formats</header>
 <h2>N-Triples Summary</h2>
 <p><strong>Advantages</strong> <i class="far fa-thumbs-up"></i></p>
 <ul>
@@ -445,8 +471,8 @@ In order to exchange RDF graphs, <strong>concrete syntacic forms</strong> are ne
 </ul>
 <footer>Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="7" data-paginate="true" data-header="Overview" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="7" data-marpit-pagination-total="19" style="--paginate:true;--header:Overview;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
-<header>Overview</header>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="7" data-paginate="true" data-header="Serialization Formats" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="7" data-marpit-pagination-total="19" style="--paginate:true;--header:Serialization Formats;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
+<header>Serialization Formats</header>
 <h2>Turtle (Terse RDF Triple Language) Notation</h2>
 <p>The <mark>Turtle</mark> format <strong>extends N-Triples</strong> with several <strong>convenient abbreviations</strong>:</p>
 <ul>
@@ -460,8 +486,8 @@ In order to exchange RDF graphs, <strong>concrete syntacic forms</strong> are ne
 <p>There are several other shortcuts and simplifications. Full specification at <a href="https://www.w3.org/TR/turtle/">https://www.w3.org/TR/turtle/</a>.</p>
 <footer>Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="8" data-paginate="true" data-header="Overview" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="8" data-marpit-pagination-total="19" style="--paginate:true;--header:Overview;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
-<header>Overview</header>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="8" data-paginate="true" data-header="Serialization Formats" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="8" data-marpit-pagination-total="19" style="--paginate:true;--header:Serialization Formats;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
+<header>Serialization Formats</header>
 <h2>Example: Using prefixes for resources and data values and a base IRI</h2>
 <div class="center space">
 <svg width="725pt" height="131pt" viewBox="0.00 0.00 724.78 131.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -516,8 +542,8 @@ In order to exchange RDF graphs, <strong>concrete syntacic forms</strong> are ne
 </ul>
 <footer>Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="9" data-paginate="true" data-header="Overview" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="9" data-marpit-pagination-total="19" style="--paginate:true;--header:Overview;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
-<header>Overview</header>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="9" data-paginate="true" data-header="Serialization Formats" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="9" data-marpit-pagination-total="19" style="--paginate:true;--header:Serialization Formats;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
+<header>Serialization Formats</header>
 <h2>Turtle: Use of Semicolon by example</h2>
 <div class="center space">
 <svg width="725pt" height="131pt" viewBox="0.00 0.00 724.78 131.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -568,8 +594,8 @@ In order to exchange RDF graphs, <strong>concrete syntacic forms</strong> are ne
 </code></pre>
 <footer>Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="10" data-paginate="true" data-header="Overview" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="10" data-marpit-pagination-total="19" style="--paginate:true;--header:Overview;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
-<header>Overview</header>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="10" data-paginate="true" data-header="Serialization Formats" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="10" data-marpit-pagination-total="19" style="--paginate:true;--header:Serialization Formats;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
+<header>Serialization Formats</header>
 <h2>Turtle-Abbreviations: Use of Comma by example</h2>
 <div class="center space">
 <svg width="793pt" height="188pt" viewBox="0.00 0.00 793.22 188.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -633,8 +659,8 @@ In order to exchange RDF graphs, <strong>concrete syntacic forms</strong> are ne
 </code></pre>
 <footer>Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="11" data-paginate="true" data-header="Overview" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="11" data-marpit-pagination-total="19" style="--paginate:true;--header:Overview;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
-<header>Overview</header>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="11" data-paginate="true" data-header="Serialization Formats" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="11" data-marpit-pagination-total="19" style="--paginate:true;--header:Serialization Formats;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
+<header>Serialization Formats</header>
 <h2>Turtle: How to model multi-value relations</h2>
 <div class="center space">
 <svg width="704pt" height="131pt" viewBox="0.00 0.00 704.21 131.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -708,8 +734,8 @@ In order to exchange RDF graphs, <strong>concrete syntacic forms</strong> are ne
 </ul>
 <footer>Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="12" data-paginate="true" data-header="Overview" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="12" data-marpit-pagination-total="19" style="--paginate:true;--header:Overview;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
-<header>Overview</header>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="12" data-paginate="true" data-header="Serialization Formats" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="12" data-marpit-pagination-total="19" style="--paginate:true;--header:Serialization Formats;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
+<header>Serialization Formats</header>
 <h2>Turtle: Using Blank nodes to model multi-value relations</h2>
 <div class="center space">
 <svg width="704pt" height="218pt" viewBox="0.00 0.00 704.21 218.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -810,8 +836,8 @@ In order to exchange RDF graphs, <strong>concrete syntacic forms</strong> are ne
 </ul>
 <footer>Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="13" data-paginate="true" data-header="Overview" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="13" data-marpit-pagination-total="19" style="--paginate:true;--header:Overview;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
-<header>Overview</header>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="13" data-paginate="true" data-header="Serialization Formats" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="13" data-marpit-pagination-total="19" style="--paginate:true;--header:Serialization Formats;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
+<header>Serialization Formats</header>
 <h2>Turtle: Serialising anonymous blank nodes</h2>
 <div class="center space">
 <svg width="704pt" height="218pt" viewBox="0.00 0.00 704.21 218.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -915,8 +941,8 @@ In order to exchange RDF graphs, <strong>concrete syntacic forms</strong> are ne
 </code></pre>
 <footer>Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="14" data-paginate="true" data-header="Overview" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="14" data-marpit-pagination-total="19" style="--paginate:true;--header:Overview;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
-<header>Overview</header>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="14" data-paginate="true" data-header="Serialization Formats" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="14" data-marpit-pagination-total="19" style="--paginate:true;--header:Serialization Formats;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
+<header>Serialization Formats</header>
 <h2>Turtle: Serialising locally identifyable blank nodes</h2>
 <div class="center space">
 <svg width="704pt" height="218pt" viewBox="0.00 0.00 704.21 218.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -1021,8 +1047,8 @@ _:ID2 dbo:discoverer &lt;John_Black&gt; ;
 </code></pre>
 <footer>Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="15" data-paginate="true" data-header="Overview" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="15" data-marpit-pagination-total="19" style="--paginate:true;--header:Overview;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
-<header>Overview</header>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="15" data-paginate="true" data-header="Serialization Formats" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="15" data-marpit-pagination-total="19" style="--paginate:true;--header:Serialization Formats;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
+<header>Serialization Formats</header>
 <h2>Turtle Summary</h2>
 <p><strong>Advantages</strong> <i class="far fa-thumbs-up"></i></p>
 <ul>
@@ -1036,8 +1062,8 @@ _:ID2 dbo:discoverer &lt;John_Black&gt; ;
 </ul>
 <footer>Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="16" data-paginate="true" data-header="Overview" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="16" data-marpit-pagination-total="19" style="--paginate:true;--header:Overview;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
-<header>Overview</header>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="16" data-paginate="true" data-header="Serialization Formats" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="16" data-marpit-pagination-total="19" style="--paginate:true;--header:Serialization Formats;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
+<header>Serialization Formats</header>
 <h2>Other Syntacic Formats</h2>
 <p>There are various further syntactic forms:</p>
 <ul>
@@ -1067,8 +1093,8 @@ _:ID2 dbo:discoverer &lt;John_Black&gt; ;
 </div>
 <footer>Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="17" data-paginate="true" data-header="Overview" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="17" data-marpit-pagination-total="19" style="--paginate:true;--header:Overview;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
-<header>Overview</header>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="17" data-paginate="true" data-header="Serialization Formats" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="17" data-marpit-pagination-total="19" style="--paginate:true;--header:Serialization Formats;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
+<header>Serialization Formats</header>
 <h2>Common namespaces/prefixes</h2>
 <p>Many syntactic encodings of RDF support some abbreviation mechanism for IRIs by declaring some form of <em>namespaces</em> or <em>prefixes</em>.</p>
 <p>While prefixes can usually be declared freely, there are some standard prefixes that are conventionally used and virtually always declared in the same way. They include:</p>
@@ -1104,8 +1130,8 @@ _:ID2 dbo:discoverer &lt;John_Black&gt; ;
 <p>Abbreviations such as <code>xsd:dateTime</code> are sometimes called <mark>qualified names</mark> (qnames)</p>
 <footer>Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="18" data-paginate="true" data-header="Overview" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="18" data-marpit-pagination-total="19" style="--paginate:true;--header:Overview;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
-<header>Overview</header>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="18" data-paginate="true" data-header="Serialization Formats" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="18" data-marpit-pagination-total="19" style="--paginate:true;--header:Serialization Formats;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
+<header>Serialization Formats</header>
 <h2>RDF Datasets</h2>
 <p>RDF 1.1 also supports datasets that consist of several graphs:</p>
 <ul>
@@ -1124,8 +1150,8 @@ _:ID2 dbo:discoverer &lt;John_Black&gt; ;
 </div>
 <footer>Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="19" data-paginate="true" data-header="Overview" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="19" data-marpit-pagination-total="19" style="--paginate:true;--header:Overview;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
-<header>Overview</header>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="19" data-paginate="true" data-header="Serialization Formats" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="19" data-marpit-pagination-total="19" style="--paginate:true;--header:Serialization Formats;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
+<header>Serialization Formats</header>
 <h2>Summary</h2>
 <div class="centercontent columns">
 <div class="double">

@@ -30,13 +30,28 @@ Modelling Data with RDF Schema {.lightgreen .Big .skip}
 ---
 <!-- header: Overview -->
 <!-- footer: Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences -->
+![bg right:50% width:90%](figures/greenhouse-effects-by-natural-and-human-activities.jpg)
 
 # Outline
 
-- ...
+- Introduction to RDF Schema
+- Modelling with RDF/S
+  - Classes and Instances
+  - Defining Classes
+  - Classes and Subclasses
+  - Subclass Semantics
+  - Class Hierarchies
+  - Properties
+  - Property Hierarchies
+  - Restrictions on Properties
+- RDF/S Language Features
+  - Predefined Classes and Properties
+  - How to describe Schema Information in RDF/S
+- A holistic RDF Schema Example 
 
 
 ---
+<!-- header: Review -->
 ## Review: RDF Graphs
 
 The **W3C Resource Description Framework** considers three types of ==RDF terms==: 
@@ -55,10 +70,10 @@ $\leadsto$ naturally viewed as hypergraphs with ternary edges
 
 
 ---
+<!-- header: Motivation -->
+![bg right:50% height:90%](figures/zoologists_classify.webp)
 ## Motivation
 
-::::: columns
-:::: single
 - RDF allows for making arbitrary assertions about individual resources and their relationships on the Web
 - Preferable:
   - To make assertions about __generic sets__ of __individuals__ (ie. ==classes==)  
@@ -67,38 +82,47 @@ $\leadsto$ naturally viewed as hypergraphs with ternary edges
   [e.g. publisher are organizations / authors are persons / etc.]{.kursiv}
 - **RDFS** allows for the **explicit specification** of **schematic** and **terminological knowledge** (also _factual knowledge_) about resources
 
+::: footnotes
+Picture Source: https://www.nhbs.com/how-zoologists-organize-things-book
+:::
+
+
+
+---
+<!-- header: RDF Schema -->
+## RDF Schema
+
+::::: columns
+:::: double
+- **RDFS** simply defines a *data model* and a *vocabulary* for the creation of RDF statements
+- Official name: "==RDF Vocabulary Description Language==" 
+- RDF Schema provides a _data-modelling vocabulary_ for RDF data
+
+**RDF Schema allows**
+- Definition of **classes**
+- Definition of **properties** and **restrictions**
+- Definition of *hierarchies*
+  - **Subclasses** and **superclasses**
+  - **Subproperties** and **superproperties**
 ::::
-:::: single
-add image
+:::: triple
+::: center
+![](figures/rdfs_language_model.gif)
+:::
 ::::
 :::::
 
 
 
 ---
-## RDF Schema
-
-- RDFS simply defines a data model and a vocabulary for the creation of RDF statements
-- Official name: "RDF Vocabulary Description Language" 
-- RDF Schema provides a _data-modelling vocabulary_ for RDF data
-- RDF Schema allows:
-  - Definition of **classes**
-  - Definition of **properties** and **restrictions**
-  - Definition of **hierarchies**
-    - Subclasses and superclasses
-    - Subproperties and superproperties
-
-
-
----
 ## RDF Schema (2/2)
-
 
 ::::: columns
 :::: double
 - Part of the W3C RDF Recommendation (https://www.w3.org/TR/rdf-schema/)
 - Namespace: `http://www.w3.org/2000/01/rdf-schema#`
-- RDFS is a specific RDF vocabulary $\leadsto$ ie., every RDFS document is also a valid RDF document
+- RDFS is a specific RDF vocabulary 
+  $\leadsto$ ie., every RDFS document is also a valid RDF document
 - RDFS is also **meta vocabulary** $\leadsto$ allows for the specification of the **semantics** of arbitrary **RDF vocabularies** (or parts of it)
 - Every software with RDFS capabilities is able to comprehend the incorporated RDFS semantics correctly
 - RDFS allows for defining **lightweight ontologies**
@@ -112,12 +136,17 @@ add image
 
 
 ---
-## Modelling with RDFS: Classes and Instances
+<!-- header: Modelling with RDF/S -->
+# Modelling with RDF/S
+
+
+---
+## Modelling with RDF/S: Classes and Instances
 
 - Resources can be marked as **instances** of a class using the `rdf:type` property
   
   ```xml
-  ex:semanticWeb rdf:type ex:Lehrbuch .
+  ex:semanticWeb      rdf:type      ex:Lehrbuch .
   ```
 
   :fas-comment-dots: [assigns the object’s URI to the subject as its (new) type, i.e., the resource `ex:semanticWeb` is a (new) instance of the class `ex:Lehrbuch`]{.kursiv .small}
@@ -125,7 +154,7 @@ add image
 - Class association or class assignment is _not exclusive_, i.e., a resource can be _instance of many classes_:
   
   ```json
-  ex:semanticWeb rdf:type ex:Lecture .
+  ex:semanticWeb      rdf:type       ex:Lecture .
   ```
 
 - **Problem** :far-face-frown: 
@@ -138,19 +167,19 @@ add image
 
 
 ---
-## Modelling with RDFS: Defining Classes
+## Modelling with RDF/S: Defining Classes
 
 - Preferable: ==unique designation of an URI as class==
   
 - Designating (typifying) an URI as a class with `rdfs:Class` 
   ```atom
-  ex:Lehrbuch rdf:type rdfs:Class .
-  ex:semanticWeb rdf:type ex:Lehrbuch .
+  ex:Lehrbuch           rdf:type        rdfs:Class .
+  ex:semanticWeb        rdf:type        ex:Lehrbuch .
   ```
 
 - `rdfs:Class` is the _class of all classes_ and hence also contains _itself_ $\leadsto$ i.e., the following statement is valid:
   ```html
-  rdfs:Class rdf:type rdfs:Class .
+  rdfs:Class            rdf:type        rdfs:Class .
   ```
 
 ::: bluebox centerbox
@@ -162,15 +191,15 @@ add image
 
 
 ---
-## Modelling with RDFS: Classes and Subclasses
+## Modelling with RDF/S: Classes and Subclasses
 
 **Problem** :far-face-frown:
 - Search for `ex:Book` only returns such publications that are of this type $\leadsto$ i.e., no instances of class `ex:Textbook` are retrieved
 
 - Asserting `ex:semanticWeb rdf:type ex:Book` allows only for adding one specific resource
   ```rdf
-  ex:Textbook rdf:type rdfs:Class .
-  ex:semanticWeb rdf:type ex:Textbook .
+  ex:Textbook         rdf:type        rdfs:Class .
+  ex:semanticWeb      rdf:type        ex:Textbook .
   ```
 
 - This _explicit inclusion_ of all instances of a class is cumbersome and leads to large RDF documents
@@ -179,31 +208,31 @@ add image
 **Solution** :far-face-grin-stars:
 - Asserting that every `ex:Textbook` is also an `ex:Book` $\leadsto$ i.e., every instance of `ex:Textbook` is also an instance of `ex:Book`
   ```rdf
-  ex:Textbook rdfs:subClassOf ex:Book .
+  ex:Textbook       rdfs:subClassOf       ex:Book .
   ```
 
 
 
 ---
-## Modelling with RDFS: Subclass Semantics
+## Modelling with RDF/S: Subclass Semantics
 
 - `rdfs:subClassOf` is **reflexive** $\leadsto$ i.e., _every class is subclass of its own_
   ```turtle
-  ex:Lehrbuch rdfs:subClassOf ex:Lehrbuch
+  ex:Lehrbuch         rdfs:subClassOf       ex:Lehrbuch
   ``` 
   is a valid statement
 
 - **Equality** of two classes can be expressed via ==mutual subclass relationships==
   ```rdf
-  ex:Hospital    rdfs:subClassOf ex:Krankenhaus .
-  ex:Krankenhaus rdfs:subClassOf ex:Hospital .
+  ex:Hospital         rdfs:subClassOf       ex:Krankenhaus .
+  ex:Krankenhaus      rdfs:subClassOf       ex:Hospital .
   ```
   Every instance of `ex:Hospital` is also an instance of `ex:Krankenhaus` and vice versa
 
 
 
 ---
-## Modelling with RDFS: Class Hierarchies
+## Modelling with RDF/S: Class Hierarchies
 
 - `rdfs:subClassOf` allows for defining complex **class hierarchies** (so-called ==Taxonomies==)
   ```xml
@@ -303,8 +332,8 @@ ex:hasAge           rdfs:range            xsd:nonNegativeInteger .
 
 - **Example 1**:
   ```
-  ex:authorOf rdfs:range ex:Textbook .
-  ex:authorOf rdfs:range ex:Storybook .
+  ex:authorOf           rdfs:range          ex:Textbook .
+  ex:authorOf           rdfs:range          ex:Storybook .
   ```
   State that everything in the `rdfs:range` of `ex:author` is both a `ex:Textbook` and a `ex:Storybook`
 
@@ -325,6 +354,7 @@ ex:hasAge           rdfs:range            xsd:nonNegativeInteger .
 
 
 ---
+<!-- header: RDF/S Language Features -->
 # RDF/S Language Features
 
 
@@ -342,8 +372,9 @@ rdfs:Datatype         rdf:type        rdfs:Resource .
 ```
 
 
+
 ---
-## Predefined Classes by RDFS
+## Predefined Classes by RDF/S
 
 - `rdfs:Class`
   - defines an abstract object and is applied (with rdf:type) to create instances 
@@ -363,8 +394,9 @@ A good summary of all RDF/S language elements is given in the W3C RDFS specifica
 :::
 
 
+
 ---
-## Properties defined by RDFS
+## Properties defined by RDF/S
 
 - `rdfs:subClassOf`
   - transitive property to define inheritance hierarchies for classes
@@ -392,11 +424,11 @@ A good summary of all RDF/S language elements is given in the W3C RDFS specifica
 - Triples about properties can also be used to specify _how properties should be used_.
 - **Example**: RDF provides several properties for describing properties:
   ```xml
-  <PropertyIRI>   rdf:type      rdfs:Property .     # declare resource as property
-  <PropertyIRI>   rdfs:label    "some label"@en .   # assign label
+  <PropertyIRI>   rdf:type      rdfs:Property .                         # declare resource as property
+  <PropertyIRI>   rdfs:label    "some label"@en .                       # assign label
   <PropertyIRI>   rdfs:comment  "Some human-readable comment"@en . 
-  <PropertyIRI>   rdfs:range    xsd:decimal .       # define range datatype
-  <PropertyIRI>   rdfs:domain   <classIRI> .        # define domain type (class)
+  <PropertyIRI>   rdfs:range    xsd:decimal .                           # define range datatype
+  <PropertyIRI>   rdfs:domain   <classIRI> .                            # define domain type (class)
   ```
 - There are _many properties beyond those from the RDF standard_ for such purposes, 
   $\leadsto$ e.g., `rdfs:label` can be replaced by `<http://schema.org/name>` or `<http://www.w3.org/2004/02/skos/core#prefLabel>`
@@ -417,6 +449,7 @@ A good summary of all RDF/S language elements is given in the W3C RDFS specifica
 :::
 
 ---
+<!-- header: "" -->
 # RDF Schema Example
 
 ---
@@ -451,6 +484,7 @@ A good summary of all RDF/S language elements is given in the W3C RDFS specifica
                             rdfs:label      "Joseph Black"@en ;
                             rdfs:comment    "co-discovered CO2" .
 ```
+
 
 
 ---
