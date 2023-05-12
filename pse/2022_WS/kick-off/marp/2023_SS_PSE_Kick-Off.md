@@ -65,6 +65,17 @@ Für *Studierende*, sagen Sie bitte kurz ...
   - Website: https://fbi.h-da.de/personen/stefan-zander
 
 
+**Klinikon GmbH^1^** {.Bigskip}
+- **Dipl. Volkswirt Roland Trefftz** (fachliche Projektleitung und Stakeholder) – trefftz@klinikon.com
+
+
+**Fachliche Begleitung** {.Bigskip}
+- **Marcus Raphael Schül** (Solutionarchitekt und Stakeholder) – mail@marcus-schuel.de
+
+::: footnotes
+^1^ https://www.klinikon.com/
+:::
+
 
 ---
 # Beteiligte Personen (2/2)
@@ -181,6 +192,10 @@ Projekt Systementwicklung / Projekt Multimedia ist ein **7,5 CP Modul**.
 - den zeitlichen Aufwand dürfen Sie frei einteilen
 <!-- - Zeitlicher Aufwand von **10,5h** wöchentliche Arbeitszeit (ohne Pausen) über **16 Wochen** hinweg^1^ -->
 
+::: redbox center
+In Summe veranschlagen wir für das Projekt ein **Gesamtzeitbudget** von **320h**
+:::
+
 ::: footnotes
 ^1^ Vorlesungszeit (12 Wochen) + Lernwoche (1 Woche) + Prüfungszeit (3 Wochen)
 :::
@@ -242,24 +257,31 @@ Die **Beteiligungsmatrix**
 
 
 
+---
+## Fragen / TBD / TODOs
+
+- Wo Docker-Container hosten (IT-Services/hda/etc)? Budget existiert
+- Lade- und Lastmanagement sollte mit in die App integriert werden (Marcus)
+  - Laden aus technisch- und kaufmännischer Sicht 
+  - State-of-Charge (aka Ladezustand) des Fahrzeugs sollte immer sichtbar/abrufbar sein um informierte Entscheidungen treffen zu können (bspw. Einkaufsfahrt jetzt mit halb-vollem Auto vs. Fahrt in 3h mit vollem Auto aber geschlossenem Supermarkt)
+- TODO (SZA): Gemeinsamer Termin mit J. Wischnat und den neuen Entwicklern finden
+- TODO (RT): Bug an J. Wischnat kommunizieren
+- 
 
 
-
-<!--
-## Projekt #1: Entwicklung eines innovativen RPN-Calculators mittels moderner Mobile-/Web-Entwicklungsframeworks
-### Betreuer: Roland Trefftz
 
 
 ---
-## Projekt #1: RPN-Calculator
+<!-- header: Projektplanung -->
+# Projekt #1: Erweiterung & Refactoring der we3ve-App
 
-Die Projektdetails und Aufgaben sind in einem separaten Foliensatz dargelegt. 
+### Betreuer: Roland Trefftz, Stefan Zander, Marcus Schül
 
-Dieser findet sich im Moodle-Kurs der Veranstaltung. 
-
+---
+## Projekt #1: Ursprüngliche allgemeine Anforderungen der App
 
 ::: blue 
-**Ziel**: Entwicklung eines intuitiv einfach nutzbaren RPN-Calculator auf Basis moderner Web-Technologien.
+**Ziel**: Entwicklung einer einfach nutzbaren Car-Sharing-App auf Basis moderner Web-Technologien.
 :::
 
 {.HugeSkip}
@@ -273,16 +295,129 @@ Dieser findet sich im Moodle-Kurs der Veranstaltung.
 - Einfachste Nutzung und Administration
 - Hohe Code- und Dokumentationsqualität
 
-::: warning 
-**Wichtig**: Die konkreten Anforderungen müssen in Stakeholder-Interviews mittels User-Research und Requirements-Engineering-Methoden erforscht und erarbeitet werden.
+::: warning
+Die konkreten Anforderungen müssen in Stakeholder-Interviews mittels User-Research und Requirements Engineering Methoden erforscht und erarbeitet werden.
 :::
+
+
+
+---
+## Workpackage 1: Erweiterung der App um neue Funktionalität (1/2)
+
+![](figures/mindmap_neue_features.png)
+
+
+
+---
+<!-- 
+## Workpackage 1: Erweiterung der App um neue Funktionalität (2/2)
+
+- **Ziel**: _Implementierung der Anwendung (Frontend & Backend), Testing,  Durchführung von Usability-Evaluierungsmethoden und Fertigstellung der Dokumentation._
+- **Task-Liste**:
+  - Task 1: Abrechnungsfunktion
+  - Task 2: State-of-Charge // automatisiertes Auslesen von Fahrtzeug-/Fahrdaten 
+  - Task 3: Code- und Doc-Reviews
+  - Task 4: Deployment
+  - Task 5: Abschluss (Vervollständigung) von Implementierung und Dokumentation
+- **Milestones**
+  - ==Deliverable 5: Usability-Tests==
+    - Dokumentation der Usability-Test inkl. Testfällen
+    - Dokumentation der Erkenntnisse aus der Usability-Evaluation (=Auswertung)
+    - Dokumentation der Verbesserungen
+  - Abgeschlossene Implementierung sowie Deployment des Systems
+  - Übergabe des Systems sowie der Dokumentation 
+  - 
 -->
 
 
 
 
 ---
-<!-- header: Projektplanung -->
+# Ursprüngliche Projektplanung und Ergebnisartefakte der ersten Projektphase
+
+---
+## Workpackage 1: User Research
+
+- **Ziel**: _Benutzungsgruppenspezifische Nutzungsszenarien und -Anforderungen erforschen_
+- **Task-Liste**:
+  - Task 1: Stakeholderanalyse
+  - Task 2: Erarbeitung von Interviewleitfäden für die teilstandardisierten Interviews mit den Stakeholdern (=Stereotypen)
+  - Task 3: Durchführung und Auswertung der teilstandardisierten Interviews 
+  - Task 4: Erarbeitung von Anwendungsszenarien und Anwendungsfällen
+  - Task 5: Erarbeitung eines Anforderungkatalogs
+  - Task 6: Aufteilung der Anforderungen analog dem KANO-Modell und Finden von Begeisterungsfaktoren
+- **Milestones**:
+  - ==Deliverable 1: User Research== mit
+    - Dokumentation aller relevanter Artefakte des User Research 
+      - Dokumentation der Stereotypenanalyse, 
+      - Stakeholder-Interviews
+      - Anwendungsszenarien und Use-Cases, 
+      - Anforderungsspezifikation mit Begeisterungsfaktoren 
+  - Anforderungkatalog inkl. Begeisterungsfaktoren
+  
+::: footnotes
+Hinweis: Die notwendigen Informationen zur Durchführung des User-Research finden sich in den Unterlagen des [Moduls "NZSE"](https://projects.fbi.h-da.de/~s.zander/#nutzer-zentrierte-softwareentwicklung-nzse) von Prof. Dr. Stefan Zander (siehe [Moodle](https://lernen.h-da.de/course/view.php?id=6802))
+:::
+
+
+---
+## Workpackage 2: UI-Entwurf & Prototyping
+
+- **Ziel**: _Aus den Erkenntnissen des User Research erste UI-Prototypen erarbeiten und mit den Stakeholdern testen um zu einem finalen, akzeptierten Design zu kommen._
+- **Task-Liste**:
+  - Task 1: Erarbeitung der GUIs 
+  - Task 2: Konzeption von User-Tests anhand der aus dem User-Research gewonnenen Erkenntnissen
+  - Task 3: Durchführung der User-Tests mit den Steretypen
+  - Task 4: Ableitung von Verbesserungen und Überarbeitung des Designs
+- **Milestones**:
+  - finaler Entwurf der Benutzungsschnittstellen (GUIs)
+  - ==Deliverable 2: UI-Entwurf (=Designkonzept)==
+    - Dokumentation des Designkonzepts für die User-Tests
+    - Dokumentation der durchgeführten User-Tests
+    - Dokumentation der gewonnenen Erkenntnisse
+    - Dokumentation des finalen UI-Entwurfs
+
+
+---
+## Workpackage 3: Technologie-Research
+
+- **Ziel**: _Evaluierung der technologischen und architektonischen Umsetzungsmöglichkeiten; System-Grob- und -feinentwurf._
+- **Task-Liste**:
+  - Task 1: Sichtung aktueller Technologien bzw. Analyse technologischer- und architektonischer Umsetzungsmöglichkeiten auf Basis der Anforderungsspezifikation
+  - Task 2: Systemarchitekturentwurf
+  - Task 3: Vorbereitung der Implementierungsphase
+- **Milestones**:
+  - ==Deliverable 3: Technologie-Research==
+    - Evaluation der technologischen und architektonischen Umsetzungsmöglichkeiten
+    - Dokumentation des System-Grob- und -feinentwurfs
+  - Auswahl des Technologie-Stacks
+  - Festlegung des Systemdesigns 
+
+
+---
+## Workpackage 4: Implementierung, Usability-Evaluation, Deployment
+
+- **Ziel**: _Implementierung der Anwendung (Frontend & Backend), Testing,  Durchführung von Usability-Evaluierungsmethoden und Fertigstellung der Dokumentation._
+- **Task-Liste**:
+  - Task 1: Implementierung
+  - Task 2: Usability Testing mittels heuristischer und empirischer Evaluationsmethoden 
+  - Task 3: Code- und Doc-Reviews
+  - Task 4: Deployment
+  - Task 5: Abschluss (Vervollständigung) von Implementierung und Dokumentation
+- **Milestones**
+  - ==Deliverable 4: Usability-Tests==
+    - Dokumentation der Usability-Test inkl. Testfällen
+    - Dokumentation der Erkenntnisse aus der Usability-Evaluation (=Auswertung)
+    - Dokumentation der Verbesserungen
+  - Abgeschlossene Implementierung sowie Deployment des Systems
+  - Übergabe des Systems sowie der Dokumentation
+
+
+
+
+
+
+
 ## Projekt: Überführung der Fachbereichsratsprotokolle in eine semantische Wissensbasis mittels moderner NLP-/KI-Technologien
 
 ### Betreuer: Stefan Zander

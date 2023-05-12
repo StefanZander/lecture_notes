@@ -24,7 +24,7 @@ paginate: true
 
 #### Prof. Dr. Stefan Linus Zander 
 
-Integrating Ontologies and Ontology Language OWL {.lightgreen .Big .skip}
+Defining Ontologies and the Ontology Language OWL {.lightgreen .Big .skip}
 
 
 ---
@@ -36,10 +36,10 @@ Integrating Ontologies and Ontology Language OWL {.lightgreen .Big .skip}
 We have learned about the different types of data graphs and the elements that constitute a data graph.
 
 In order to transform a data graph into a knowledge graph, we need additional features:
-- Knowledge Representation Framework :fa-check:
-- Identity :fa-check:
-- Schema knowledge :fa-check:
-- Contextual knowledge :fa-check:
+- *Knowledge Representation Framework* :fa-check:
+- *Identity* :fa-check:
+- *Schema knowledge* :fa-check:
+- *Contextual knowledge* :fa-check:
 - *Semantics* 
 
 
@@ -48,6 +48,13 @@ In order to transform a data graph into a knowledge graph, we need additional fe
 $\leadsto$ We therefore discuss **RDF** and the __RDF Schema data-modelling vocabulary__ that allow for the creation of knowledge graphs
 :::
 
+
+
+---
+## What will we learn in this section
+
+- How to define more complex expressions, the semantics of which exceeds those of RDF/S
+- 
 
 
 ---
@@ -76,27 +83,6 @@ $\leadsto$ We therefore discuss **RDF** and the __RDF Schema data-modelling voca
 :::
 ::::
 
-
----
-## Classes in OWL
-
-In OWL classes are built up of descriptions that specify the conditions that must be satisfied by an individual for it to be a member of the class.
-
-
-
-
-
----
-![bg right:42% width:70%](figures/owl_property_types.png)
-## OWL Property Types
-
-OWL distinguishes between 3 types of properties
-- Object Properties
-  - represent relationships between individuals, i.e., they link one individual to another
-- Datatype Properties
-  - ...
-- Annotation Properties
-  - allow to add additional information to classes, individuals, and object/datatype properties
 
 
 
@@ -148,8 +134,30 @@ Source: OWL Pizza Tutorial der University of Manchester
 
 ---
 # Ontology Features 
+
+## –Classes
 ![bg right:50%](figures/ontology_ancient_greek.webp)
 
+
+---
+## Classes in OWL
+
+Classes are interpreted as sets that contain individuals.
+
+Classes are described using formal, ie. mathematical descriptions that precisely state the requirements from class membership.
+
+Example: `SafetyLaserScanner ⊑ ∃hasCapability.SafeMonitoringOf2DFields`
+
+In OWL classes are built up of descriptions that specify the conditions that must be satisfied by an individual for it to be a member of the class.
+
+OWL distinguishes between
+- primitive classes – classes that only have necessary conditions
+- defined classes – classes that have at least one set of necessary and sufficient conditions; any individual that satisfies these conditions (ie., the definition) becomes member of that class; class membership is expressed by necessary and sufficient conditions
+
+:::: redbox
+**Important** :fa-warning:
+Automatic classification only works with defined classes $\leadsto$ a reasoner can only automatically classify classes under defined classes.
+::::
 
 ---
 ## Disjont Classes
@@ -196,7 +204,145 @@ All individuals that are members of the class `TomatoTopping` are members of the
 
 
 ---
-# Properties
+# Ontology Features 
+## $\leadsto$ Properties
+![bg right:50%](figures/ontology_ancient_greek.webp)
+
+
+
+
+---
+<!-- header: Properties -->
+![bg right:42% width:70%](figures/owl_property_types.png)
+## OWL Property Types
+
+OWL distinguishes between **3 types** of **properties**
+- ==Object Properties==
+  - represent relationships between individuals, i.e., they link one individual to another
+- ==Datatype Properties==
+  - ...
+- ==Annotation Properties==
+  - allow to add additional information to classes, individuals, and object/datatype properties
+
+
+
+---
+## OWL Object Property Characteristics
+
+### Inverse Properties
+::::: columns
+:::: single
+- Each object property may have a corresponding inverse property. 
+- If some property links individual a to individual b then its inverse property will link individual b to individual a. 
+::::
+:::: single center
+![width:400px](figure/../figures/inverse_property.png)
+::::
+:::::
+
+
+### Functional Properties
+::::: columns
+:::: single
+- For a given individual, there can be *at most* one individual that is related to the individual via the property.
+- Functional properties are also known as *single valued properties* and also *features*.
+::::
+:::: single center
+![](figure/../figures/functional_property.png)
+::::
+:::::
+
+
+
+
+---
+## OWL Object Property Characteristics
+
+
+::::: columns-bottom
+:::: single
+### Inverse Functional Properties
+
+- If a property is inverse functional then it means that the inverse property is functional. 
+- For a given individual, there can be at most one individual related to that individual via the property. 
+::::
+:::: single center
+![width:500px](figure/../figures/inverse_functional_property.png)
+::::
+:::::
+
+::::: columns-bottom
+:::: single
+### Transitive Properties
+
+- If a property is transitive, and the property `P` relates individual `a` to individual `b`, and also individual `b` to individual `c`, then we can infer that individual `a` is related to individual `c` via property `P`.
+- The inverse of a transitive property should also be transitive.
+- If a property is transitive then it cannot be functional
+::::
+:::: single center
+![width:430px](figure/../figures/transitive_property.png)
+::::
+:::::
+
+
+
+---
+## OWL Object Property Characteristics
+
+### Symmetric Properties
+::::: columns-center
+:::: single
+- If a property `P` is symmetric, and the property relates individual `a` to individual `b` then individual `b` is also related to individual `a` via property `P`
+- In other words: the property is its own inverse property.
+::::
+:::: single center
+![width:400px](figure/../figures/symmetric_property.png)
+::::
+:::::
+
+::::: columns-bottom
+:::: single
+### Asymmetric Properties
+
+- If a property `P` is asymmetric, and the property relates individual `a` to individual `b` then individual `b` cannot be related to individual `a` via property `P`.
+::::
+:::: single center
+![width:400px](figure/../figures/asymmetric_property.png)
+::::
+:::::
+
+
+
+---
+## OWL Object Property Characteristics (4/4)
+
+
+::::: columns-center
+:::: single
+### Reflexive Properties
+
+- A property `P` is said to be reflexive when the property must relate individual `a` to itself.
+- E.g. `knows` is such a property that could be defined as being reflexive
+::::
+:::: single center
+![width:480px](figure/../figures/reflexive_property.png)
+::::
+:::::
+
+### Irreflexive Properties
+::::: columns-center
+:::: single
+- If a property `P` is irreflexive, it can be described as a property that relates an individual `a` to individual `b`, where individual `a` and individual `b` are not the same.
+- E.g., an individual `Alice` can be related to individual `Bob` along the property `motherOf`, but `Alice` cannot be `motherOf` herself.
+::::
+:::: single center
+![width:480px](figure/../figures/irreflexive_property.png)
+::::
+:::::
+
+
+
+
 
 
 
