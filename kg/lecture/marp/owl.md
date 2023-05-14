@@ -343,6 +343,8 @@ OWL distinguishes between **3 types** of **properties**
 
 
 
+---
+# Describing and Defining Classes
 
 
 
@@ -365,18 +367,92 @@ OWL distinguishes between the following **types** of restrictions
 
 
 
+
+---
+## Quantifier Restrictions
+
+
+Quantifier restrictions consist of three parts:
+1. A ==quantifier==, which is either the ==existential quantifier (some)==, or the ==universal quantifier (only)==. 
+2. A ==property==, along which the restriction acts.
+3. A ==filler== that is a class description.
+
+For a given individual, the quantifier effectively puts **constraints** on the **relationships** that the individual participates in. 
+
+It does this by either 
+- specifying that **at least one** kind of relationship must exist, 
+- or by specifying the **only** kinds of relationships that can exist (if they exist).
+
+
+
 ---
 ## Existential Restrictions ($\exists$)
 
-Existential restrictions are by far the most common type of restrictions in OWL ontologies. 
+==Existential restrictions== are by far the _most common type_ of restrictions in OWL ontologies. 
 
-An ==existential restriction== describes a class of individuals that have **at least one** (some) **relationship** along a **specified property** to an **individual** that is a member of a **specified class**. 
+An ==existential restriction== describes a **class of individuals** that have **at least one** (some) **relationship** along a **specified property** to an **individual** that is a member of a **specified class**. 
 
-For example, `hasBase some PizzaBase` describes all of the individuals that have at least one relationship along the `hasBase` property to an individual that is a member of the class `PizzaBase` — in more natural English, all of the individuals that have at least one pizza base.
+**Example** :fa-pencil:
+- `hasTopping some MozarellaTopping` describes an annonymous class of individuals that have at least one (some) `hasTopping` relationship to an individual that is members of `MozzarellaTopping`
+- The restriction acts along the `hasTopping` property, and has a ==filler== `MozzarellaTopping`.
+- Protégé uses the keyword `some` and the _class expression editor_
+
+
+::: bluebox spacebefore
+**Remember** :fa-wand-magic-sparkles:
+A restriction describes an anonymous class (an unnamed class). The anonymous class contains all of the individuals that satisfy the restriction – i.e. all of the individuals that have the relationships required to be a member of the class.
+:::
 
 
 
+---
+## Existential Restrictions ($\exists$) 
 
+::::: columns
+:::: single
+::: small
+The class `Pizza` is described to be a subclass of `Thing` and a subclass of the things that have a base which is some kind of `PizzaBase`.
+
+Notice that these are **necessary conditions** — if something is a `Pizza` it is *necessary* for it to be a member of the class `Thing` and *necessary* for it to have a kind of `PizzaBase`.
+
+More formally, for something to be a `Pizza` it is necessary for it to be in a relationship with an individual that is a member of the class `PizzaBase` via the property `hasBase`.
+
+When restrictions are used to describe classes, they actually specify **anonymous superclasses** of the class being described. For example, we could say that `MargheritaPizza` is a subclass of, amongst other things, `Pizza` and also a subclass of the things that have at least one topping that is `MozzarellaTopping`.
+:::
+::::
+:::: single center
+![](figures/existential_restriction_schema.png)
+::: caption
+A Schematic Description of a Pizza — In order for something to be a Pizza it is necessary for it to have a (at least one) PizzaBase — A Pizza is a subclass of the things that have at least one PizzaBase
+::::
+:::::
+
+::: footnotes
+In OWL, everything is a member of the class `Thing`.
+:::
+
+
+
+---
+## Existential Restrictions ($\exists$) 
+
+::::: columns
+:::: single
+::: small
+We have added restrictions to `MargeritaPizza` to say that a `MargheritaPizza` is a `NamedPizza` that has at least one kind of `MozzarellaTopping` and at least one kind of `TomatoTopping`.
+
+More formally (reading the class description view line by line), if something is a member of the class `MargheritaPizza` ...
+- it is *necessary* for it to be a member of the class `NamedPizza` 
+- and it is *necessary* for it to be a member of the anonymous class of things that are linked to at least one member of the class `MozzarellaTopping` via the property `hasTopping`, 
+- and it is *necessary* for it to be a member of the anonymous class of things that are linked to at least one member of the class `TomatoTopping` via the property `hasTopping`.
+:::
+::::
+:::: single center
+![](figures/existential_restriction_protege.jpg)
+::: caption
+The Class Description View Showing A Description Of a `MargheritaPizza`
+::::
+:::::
 
 
 
