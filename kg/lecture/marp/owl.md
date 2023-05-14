@@ -40,7 +40,7 @@ In order to transform a data graph into a knowledge graph, we need additional fe
 - *Identity* :fa-check:
 - *Schema knowledge* :fa-check:
 - *Contextual knowledge* :fa-check:
-- *Semantics* 
+- *Semantics* :fa-magnifying-glass:
 
 
 
@@ -451,6 +451,136 @@ More formally (reading the class description view line by line), if something is
 ![](figures/existential_restriction_protege.jpg)
 ::: caption
 The Class Description View Showing A Description Of a `MargheritaPizza`
+::::
+:::::
+
+
+
+---
+## Universal Restrictions ($\forall$) 
+
+With existential restrictions, we could not say, that **all** relationships of individuals must be to members of a specific class. 
+
+==Universal restrictions== (represented by the symbol ==$\forall$==) describe the set of individuals that, for a _given property_, **only have relationships** to other individuals that are members of a _specific class_. 
+- Universal restrictions constrain the relationships along a given property to individuals that are members of a specific class. 
+  - **Example**: The universal restriction $\forall$ `hasTopping MozzarellaTopping` describes the individuals all of whose `hasTopping` relationships are to members of the class `MozzarellaTopping` — the individuals do not have a `hasTopping` relationships to individuals that aren’t members of the class `MozzarellaTopping`.
+- Universal restrictions are also known as `allValuesFrom` restrictions, or `only` restrictions since they *constrain* ==the filler== for a given property to a *specific class*. 
+
+
+<!-- In the previous example, we used the existential restriction `hasTopping some MozzarellaTopping` to describe the individuals that have _at least one_ relationship along the property `hasTopping` to an individual that is a member of the class `MozzarellaTopping`.  
+
+::: red
+$\Rightarrow$ This restriction does not imply that all of the `hasTopping` relationships must be to a member of the class `MozzarellaTopping`. 
+:::
+-->
+<!-- To restrict the relationships for a given property to individuals that are members of a specific class we must use a universal restriction. -->
+
+
+:::: redbox spacebefore
+:fa-warning: **Warning**
+A feature of universal restrictions is, that for the given property, the set of individuals that the restriction describes will also contain the individuals that do not have any relationship along this property to any other individuals. 
+::::
+
+
+
+---
+## Universal Restrictions ($\forall$) 
+
+:::: redbox space
+**Remember** :fa-circle-exclamation:
+
+An important point to note is that universal restrictions do not ‘guarentee’ the **existence** of a relationship for a given property. 
+$\leadsto$ They merely state that if such a relationship for the given property exists, then it must be with an individual that is a member of a specified class.
+::::
+
+**Example**
+- The restriction, $\forall$ `hasTopping TomatoTopping`  describes the anonymous class of individuals that **only** have `hasTopping` relationships to individuals that are members of the class `TomatoTopping`, **OR**, individuals that definitely do not participate in any `hasTopping` relationships at all.
+
+
+---
+## Universal Restrictions ($\forall$) – Example
+
+::::: columns
+:::: single small
+A common mistake is to use an intersection instead of a union.{.red}
+- For example, `CheeseTopping` ⊓ `VegetableTopping`. 
+  - This reads, `CheeseTopping` *and* `VegetableTopping`. Although "CheeseTopping and Vegetable" might be a natural thing to say in English, this logically means something that is _simultaneously_ a kind of `CheeseTopping` *and* `VegetableTopping`. 
+  - If the classes `CheeseTopping` and `VegetableTopping` were not *disjoint*, this would have been a logically legitimate thing to say – it would not be inconsistent and therefore would not be ‘spotted’ by a reasoner.
+
+- In the above example it might have been tempting to create _two universal restrictions_ — one for `CheeseTopping` (∀ `hasTopping CheeseTopping`) and one for `VegetableTopping` (∀ `hasTopping VegetableTopping`). However, when *multiple restrictions* are used (for any type of restriction) the *total description* is taken to be the *intersection* of the *individual restrictions*. This would have therefore been equivalent to one restriction with a filler that is the intersection of Moz- zarellaTopping and TomatoTopping — as explained above this would have been logically incorrect.
+::::
+:::: single small
+![](figures/universal_restriction_protege.jpg)
+
+- This means that if something is a member of the class `VegetarianPizza` it is *necessary* for it to be a kind of `Pizza` **and** it is *necessary* for it to **only** (∀ universal quantifier) have toppings that are kinds of `CheeseTopping` **or** kinds of `VegetableTopping`.
+- In other words, all `hasTopping` relationships that individuals which are members of the class `VegetarianPizza` participate in must be to individuals that are either members of the class `CheeseTopping` or `VegetableTopping`.
+- The class `VegetarianPizza` also contains individuals that are `Pizza`s and do not participate in any `hasTopping` relationships.
+::::
+:::::
+
+
+
+---
+## Cardinality Restrictions
+
+Cardinality restrictions are used to talk about the *number of relationships* that an individual may participate in for a given property.
+
+::::: columns 
+:::: single small bluebox
+**Minimum Cardinality Restrictions (≥)**
+- Specify the _minimum_ number of relationships that an individual must participate in for a given property.
+- For example `≥ hasTopping 3` describes the individuals that participate in **at least** three `hasTopping` relationships. 
+- Minimum cardinality restrictions place _no maximum limit_ on the number of relationships that an individual can participate in for a given property.
+::::
+:::: single small bluebox
+**Maximum Cardinality Restrictions (≤)**
+- Specify the _maximum_ number of relationships that an individual can participate in for a given property. 
+- For example `≤ hasTopping 2` describes the class of individuals that participate in **at most** two `hasTopping` relationships. 
+- Maximum cardinality restrictions place _no minimum limit_ on the number of relationships that an individual must participate in for a specific property.
+::::
+:::: single small bluebox
+**Cardinality Restrictions (=)**
+- Specify the _exact_ number of relationships that an individual must participate in for a given property. 
+- For example `= hasTopping 5` describes the set of individuals that participate in **exactly** five `hasTopping` relationships. 
+- Cardinality restriction is a _syntactic short hand_ for using a _combination_ of a minimum cardinality restriction and a maximum cardinality restriction. 
+::::
+:::::
+
+::: footnotes
+For example the above cardinality restriction could be represented by using the intersection of the two restrictions: `≤ hasTopping 5`, and, `≥ hasTopping 5`.
+:::
+
+
+
+---
+## hasValue-Restriction
+
+A ==hasValue restriction== (∋) describes an anonymous class of individuals that are related to another **specific individual** along a specified property. 
+
+**Example**
+`hasCountryOfOrigin ∋ Italy` $+$ `MozarellaTopping` is from Italy $\rightarrow$ `MozarellaTopping` $\sqsubseteq$ `hasCountryOfOrigin value Italy`
+
+- Contrast this with a quantifier restriction where the individuals that are described by the quantifier restriction are related to **any indvidual from a specified class** along a specified property. 
+
+:::: bluebox small
+**Semantic equivalence via enumerated classes**
+hasValue restrictions are semantically equivalent to an existential restriction along the same property as the hasValue restriction, which has a _filler_ that is an _enumerated class_ that contains the individual (and only the individual) used in the hasValue restriction.
+::::
+
+
+
+
+---
+## hasValue-Restriction
+
+::::: columns
+:::: single
+![](figures/hasvalue_restriction_schema.png)
+::::
+:::: single
+- The figure shows a schematic view of the hasValue restriction `prop ∋ abc`. 
+- This restriction describes the anonymous class of individuals that have at least one relationship along the `prop` property to the specific individual `abc`.
+- The dashed lines indicate that this type of restriction does not constrain the property used in the hasValue restriction solely to the individual used in the hasValue restriction.
 ::::
 :::::
 
