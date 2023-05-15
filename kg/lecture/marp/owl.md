@@ -494,20 +494,20 @@ $\leadsto$ They merely state that if such a relationship for the given property 
 ::::
 
 **Example**
-- The restriction, $\forall$ `hasTopping TomatoTopping`  describes the anonymous class of individuals that **only** have `hasTopping` relationships to individuals that are members of the class `TomatoTopping`, **OR**, individuals that definitely do not participate in any `hasTopping` relationships at all.
+- The restriction, $\forall$ `hasTopping TomatoTopping` describes the anonymous class of individuals that **only** have `hasTopping` relationships to individuals that are members of the class `TomatoTopping`, **OR**, individuals that definitely do not participate in any `hasTopping` relationships at all.
 
 
 ---
-## Universal Restrictions ($\forall$) – Example
+## Universal Restrictions ($\forall$) – Pitfalls and Example
 
 ::::: columns
 :::: single small
 A common mistake is to use an intersection instead of a union.{.red}
 - For example, `CheeseTopping` ⊓ `VegetableTopping`. 
-  - This reads, `CheeseTopping` *and* `VegetableTopping`. Although "CheeseTopping and Vegetable" might be a natural thing to say in English, this logically means something that is _simultaneously_ a kind of `CheeseTopping` *and* `VegetableTopping`. 
-  - If the classes `CheeseTopping` and `VegetableTopping` were not *disjoint*, this would have been a logically legitimate thing to say – it would not be inconsistent and therefore would not be ‘spotted’ by a reasoner.
+  - This reads, `CheeseTopping` *and* `VegetableTopping`. Although "CheeseTopping and Vegetable" might be a natural thing to say in English, this logically means something that is _simultaneously_ a kind of `CheeseTopping` *AND* `VegetableTopping`. 
+  - If the classes `CheeseTopping` and `VegetableTopping` were *not disjoint*, this would have been a logically legitimate thing to say – it would not be inconsistent and therefore would not be ‘spotted’ by a reasoner.
 
-- In the above example it might have been tempting to create _two universal restrictions_ — one for `CheeseTopping` (∀ `hasTopping CheeseTopping`) and one for `VegetableTopping` (∀ `hasTopping VegetableTopping`). However, when *multiple restrictions* are used (for any type of restriction) the *total description* is taken to be the *intersection* of the *individual restrictions*. This would have therefore been equivalent to one restriction with a filler that is the intersection of Moz- zarellaTopping and TomatoTopping — as explained above this would have been logically incorrect.
+- In the example it might have been tempting to create _two universal restrictions_ — one for `CheeseTopping` (`∀ hasTopping CheeseTopping`) and one for `VegetableTopping` (`∀ hasTopping VegetableTopping`). However, when *multiple restrictions* are used (for any type of restriction) the *total description* is taken to be the **intersection** of the *individual restrictions*. This would have therefore been equivalent to one restriction with a filler that is the intersection of `MozzarellaTopping` and `TomatoTopping` — as explained above this would have been logically incorrect.
 ::::
 :::: single small
 ![](figures/universal_restriction_protege.jpg)
@@ -517,6 +517,36 @@ A common mistake is to use an intersection instead of a union.{.red}
 - The class `VegetarianPizza` also contains individuals that are `Pizza`s and do not participate in any `hasTopping` relationships.
 ::::
 :::::
+
+
+
+---
+## Universal Restrictions ($\forall$) – Pitfalls and Example
+
+::::: columns
+:::: single 
+::: small
+<!-- **Common mistakes**  -->
+1. **Use an intersection instead of a union**
+   - For example, `CheeseTopping` ⊓ `VegetableTopping`. 
+     - This reads, `CheeseTopping` *and* `VegetableTopping`. Although "CheeseTopping and Vegetable" might be a natural thing to say in English, this logically means something that is _simultaneously_ a kind of `CheeseTopping` *AND* `VegetableTopping`. 
+     - If the classes `CheeseTopping` and `VegetableTopping` were *not disjoint*, this would have been a logically legitimate thing to say – it would not be inconsistent and therefore would not be ‘spotted’ by a reasoner.
+
+2. [**Create two universal restrictions**]{.noskip .red}
+   - one for `CheeseTopping` (`∀ hasTopping CheeseTopping`) and 
+   - one for `VegetableTopping` (`∀ hasTopping VegetableTopping`). 
+     - When *multiple restrictions* are used (for any type of restriction) the *total description* is taken to be the **intersection** of the *individual restrictions*. This would have therefore been equivalent to one restriction with a filler that is the intersection of `MozzarellaTopping` and `TomatoTopping` — as explained above this would have been logically incorrect.
+:::
+::::
+:::: single small
+![](figures/universal_restriction_protege.jpg)
+
+- This means that if something is a member of the class `VegetarianPizza` it is *necessary* for it to be a kind of `Pizza` **and** it is *necessary* for it to **only** (∀ universal quantifier) have toppings that are kinds of `CheeseTopping` **or** kinds of `VegetableTopping`.
+- In other words, all `hasTopping` relationships that individuals which are members of the class `VegetarianPizza` participate in must be to individuals that are either members of the class `CheeseTopping` or `VegetableTopping`.
+- The class `VegetarianPizza` also contains individuals that are `Pizza`s and do not participate in any `hasTopping` relationships.
+::::
+:::::
+
 
 
 
@@ -555,14 +585,17 @@ For example the above cardinality restriction could be represented by using the 
 ---
 ## hasValue-Restriction
 
-A ==hasValue restriction== (∋) describes an anonymous class of individuals that are related to another **specific individual** along a specified property. 
+::: redbox spaceafter
+A ==hasValue restriction== (∋) describes an anonymous class of individuals that are related to another **specific individual** along a **specified property**. 
+:::
+
 
 **Example**
 `hasCountryOfOrigin ∋ Italy` $+$ `MozarellaTopping` is from Italy $\rightarrow$ `MozarellaTopping` $\sqsubseteq$ `hasCountryOfOrigin value Italy`
 
 - Contrast this with a quantifier restriction where the individuals that are described by the quantifier restriction are related to **any indvidual from a specified class** along a specified property. 
 
-:::: bluebox small
+:::: bluebox small spacebefore
 **Semantic equivalence via enumerated classes**
 hasValue restrictions are semantically equivalent to an existential restriction along the same property as the hasValue restriction, which has a _filler_ that is an _enumerated class_ that contains the individual (and only the individual) used in the hasValue restriction.
 ::::
@@ -573,7 +606,7 @@ hasValue restrictions are semantically equivalent to an existential restriction 
 ---
 ## hasValue-Restriction
 
-::::: columns
+::::: columns-center
 :::: single
 ![](figures/hasvalue_restriction_schema.png)
 ::::
@@ -583,6 +616,168 @@ hasValue restrictions are semantically equivalent to an existential restriction 
 - The dashed lines indicate that this type of restriction does not constrain the property used in the hasValue restriction solely to the individual used in the hasValue restriction.
 ::::
 :::::
+
+
+
+---
+## How to formulate class descriptions using restrictions
+
+Restrictions in class descriptions can be formulated in two different ways:
+- As ==necessary conditions==
+  - If something is a member of this class then it is necessary to fulfil these conditions 
+  - With necessary conditions alone, we cannot say – "If something fulfils these conditions then it must be a member of this class"
+  - A class that only has necessary conditions is known as a **Primitive Class**.
+- As ==sufficient AND necessary conditions==
+  - Not only are the conditions necessary for membership of the class, they are also sufficient to determine that any (random) individual that satisfies them must be a member of the class 
+  - Necessary conditions are simply called **Superclasses** in Protégé. Necessary and sufficient condition are called **Equivalent classes**.
+  - A class that has at least one set of necessary and sufficient conditions is known as a **Defined Class**.
+
+
+---
+## Necessary and Sufficient Conditions
+![bg right:50% width:90%](figures/necessary_and_sufficient_conditions.png)
+
+:::: graybox small
+**To summarize**:
+- If class `A` is described using _necessary conditions_, then we can say that if an individual is a member of class `A` it must satisfy the conditions. 
+- We cannot say that any (random) individual satisfying these conditions must be member of class `A`. 
+- However, if class `A` is now defined using _necessary AND sufficient conditions_, we can now say that if any (random) individual satisfies these conditions then it must be a member of class `A`. 
+- The conditions are not only necessary for membership of `A` but also sufficient to determine that something satisfying these conditions is a member of `A`.
+::::
+
+
+
+---
+## How are necessary and sufficient conditions useful in practice ?
+
+::::: columns-bottom
+:::: single
+Suppose 
+- we have another class `B`, 
+- we know that any individuals being members of class `B` also satisfy the conditions that define class `A`. 
+
+We can determine that 
+- class `B` is ==subsumed by== class `A` 
+- $\Rightarrow$ `B` is a **subclass** of `A`. 
+
+::: bluebox center spacebefore
+Checking for ==class subsumption== is a _key task_ of a description logic reasoner for automatically computing _classification hierarchies_.
+:::
+::::
+:::: single center
+![width:500px](figures/model_interpretation.jpg)
+::::
+:::::
+
+
+
+---
+## Overview of class types in OWL
+
+- Primitive Classes – are classes with only necessary conditions
+- Defined Classes – classes with at least one set of necessary and sufficient conditions
+
+
+
+
+
+---
+## Computing automated classifications using the reasoner 
+:::: bluebox 
+**Important**: 
+- It is important to understand that a reasoner can only automatically classify classes under defined classes - i.e. classes with at least one set of necessary and sufficient conditions.
+- Without a reasoner it is very difficult to keep large ontologies in a maintainable and logically correct state.
+- The use of a reasoner to compute subclass-superclass relationships between classes becomes almost vital.
+- In cases where ontologies can have classes that have many superclasses (multiple inheritance) it is almost always a good idea to construct the class hierarchy as a simple tree. 
+- Classes in the asserted hierarchy (manually constructed hierarchy) therefore have no more than one superclass. 
+- Computing and maintaining multiple inheritance is the job of the reasoner. 
+- This helps to keep the ontology in a maintainable and modular state. 
+- Not only does this promote the reuse of the ontology by other ontologies and applications, it also minimises human errors that are inherent in maintaining a multiple inheritance hierarchy.
+::::
+
+::: footnotes
+See illustrations on page 58 of the OWL pizza tutorial about asserted and inferred hierarchy
+:::
+
+
+
+
+---
+## Automated classification and open world reasoning
+
+**Motivation** :fa-dumbbell:
+- `MargheritaPizza` and `SohoPizza` should by classified by the reasoner as `VegetarianPizza` based on their `hasTopping` relationsships to vegetarian individuals, e.g., being members of the classes `CheeseTopping` or `VegetableTopping` and their subclasses.
+
+**Observation** :fa-binoculars: 
+- Despite creating a definition for `VegetarianPizza` using necessary and sufficient conditions, `MargheritaPizza` and `SohoPizza` were not classified as subclasses of it. 
+
+**Problem** :fa-cloud-bolt:
+- Reasoning in OWL is based on what is known as the ==open world assumption (OWA)== or as ==open world reasoning (OWR)==. 
+- The open world assumption means that we cannot assume something doesn’t exist until it is explicitly stated that it does not exist. 
+- Because something hasn’t been stated to be true, it cannot be assumed to be false — it is assumed that ‘the knowledge just hasn’t been added to the knowledge base’.
+
+
+---
+## What does it mean for our vegetarian pizzas...?
+
+::::: columns-center
+:::: single
+- In the case of our pizzas, we have stated that `MargheritaPizza` has toppings that are kinds of `MozzarellaTopping` and also kinds of `TomatoTopping`. 
+
+- Because of the open world assumption, until we explicitly say that a `MargheritaPizza` only has these kinds of toppings, it is assumed (by the reasoner) that a `MargheritaPizza` could have other toppings. 
+
+- To specify explicitly that a `MargheritaPizza` has toppings that are kinds of `MozzarellaTopping` or kinds of `TomatoTopping` and only kinds of `MozzarellaTopping` or `TomatoTopping`, we must add what is known as a ==closure axiom== on the `hasTopping` property.
+::::
+:::: single center
+![](figures/pizza3.jpg)
+::::
+:::::
+
+
+
+---
+## Closure Axiom
+
+
+A closure axiom on a property consists of a ==universal restriction== along the property to say that _it can only be filled by the specified fillers_. 
+The restriction has a _filler_ that is the _union of the fillers_ that occur in the _existential restrictions_ for the property.
+
+::::: columns
+:::: single
+::: graybox small
+**Explanation**
+
+This now says that 
+- if an individual is a member of the class `MargeritaPizza` 
+
+then 
+- it must be a member of the class `Pizza`, 
+- and it must have at least one topping that is a kind of `MozzarellaTopping` 
+- and it must have at least one topping that is a member of the class `TomatoTopping` 
+- and the toppings must only be kinds of `MozzarellaTopping` or `TomatoTopping`.
+:::
+::::
+:::: double
+::: center
+![width:800px](figures/closure_axiom_protege.png)
+:::
+::: redbox small
+A common error in situations such as above is to **only** use **universal restrictions** in descriptions. For example, describing a `MargheritaPizza` by making it a subclass of `Pizza` and then only using `∀ hasTopping (MozzarellaTopping ⊔ TomatoTopping)` without any existential restrictions. However, because of the semantics of the universal restriction, this actually means either: things that are `Pizza`s and only have toppings that are `MozzarellaTopping` or `TomatoTopping`, OR, things that are `Pizza`s and do not have any toppings at all.
+:::
+::::
+:::::
+
+
+
+---
+## What a Reasoner can do with ontological semantics
+
+Ontologies described by OWL can be processed by a reasoner
+- A reasoner can test whether a class is a subclass of another class
+- A reasoner can compute the inferred ontology hierarchy
+- A reasoner can perform consistency checking
+  - i.e., based on the descriptions (conditions) of a class, a reasoner can check whether or not it is possible for a class to have any instances
+  - An inconsistent class can not have any instances 
 
 
 
