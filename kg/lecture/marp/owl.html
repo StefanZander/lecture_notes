@@ -374,10 +374,11 @@ of a flex item such as single etc. */
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="3" data-paginate="true" data-header="Overview" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="3" data-marpit-pagination-total="38" style="--paginate:true;--header:Overview;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
 <header>Overview</header>
-<h2>What will we learn in this section</h2>
+<h2>What will we learn in this section <i class="fa fa-graduation-cap"></i></h2>
 <ul>
 <li>How to define more complex expressions, the semantics of which exceeds those of RDF/S</li>
-<li></li>
+<li>We will learn how to design ontologies for the use in KGs</li>
+<li>We will learn about formal concepts and how they can be used for modelling aspects of a domain</li>
 </ul>
 <footer>Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences</footer>
 </section>
@@ -478,7 +479,7 @@ Automatic classification only works with defined classes <mjx-container class="M
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="8" data-paginate="true" data-header="Overview" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="8" data-marpit-pagination-total="38" style="--paginate:true;--header:Overview;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
 <header>Overview</header>
-<h2>Disjont Classes</h2>
+<h2>Disjoint Classes</h2>
 <p><mark>OWL Classes are assumed to ‘overlap’</mark> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0.188ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="0.756ex" role="img" focusable="false" viewBox="0 -417 1000 334"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="21DD" d="M76 230Q68 230 62 237T56 250Q56 257 63 264T91 291Q102 300 108 306L159 351Q168 356 177 351L218 316L303 239L353 195Q376 214 403 239L488 316L529 351Q538 356 546 351Q548 350 594 310L638 270H848L841 278Q813 309 792 344T763 396T755 416Q755 417 778 417H801Q817 367 856 323T943 250Q895 221 856 177T801 83H778Q755 83 755 84Q755 86 762 103T791 156T841 222L848 230H737Q625 230 622 232Q620 233 599 251T558 288L537 306Q537 305 451 228T362 149Q353 146 345 149Q341 150 255 227T169 306Q167 306 129 270Q123 265 115 257T102 245T93 237T84 232T76 230Z"></path></g></g></g></svg></mjx-container> We therefore cannot assume that an individual is not a member of a particular class simply because it has not been asserted to be a member of that class.</p>
 <p>In order to ‘separate’ a group of classes they must made <mark>disjoint</mark> from one another.</p>
 <p>This ensures that an individual which has been asserted to be a member of one of the classes in the group cannot be a member of any other classes in that group.</p>
@@ -685,13 +686,15 @@ A <strong>restriction</strong> describes a <strong>class of individuals</strong>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="18" data-paginate="true" data-header="Property Restrictions" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="18" data-marpit-pagination-total="38" style="--paginate:true;--header:Property Restrictions;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
 <header>Property Restrictions</header>
 <h2>Quantifier Restrictions</h2>
-<p>Quantifier restrictions consist of three parts:</p>
+<p><em>Quantifier restrictions</em> consist of <em>three</em> parts:</p>
 <ol>
 <li>A <mark>quantifier</mark>, which is either the <mark>existential quantifier (some)</mark>, or the <mark>universal quantifier (only)</mark>.</li>
 <li>A <mark>property</mark>, along which the restriction acts.</li>
 <li>A <mark>filler</mark> that is a class description.</li>
 </ol>
+<div class="redbox spaceafter">
 <p>For a given individual, the quantifier effectively puts <strong>constraints</strong> on the <strong>relationships</strong> that the individual participates in.</p>
+</div>
 <p>It does this by either</p>
 <ul>
 <li>specifying that <strong>at least one</strong> kind of relationship must exist,</li>
@@ -723,7 +726,11 @@ A restriction describes an anonymous class (an unnamed class). The anonymous cla
 <div class="single">
 <div class="small">
 <p>The class <code>Pizza</code> is described to be a subclass of <code>Thing</code> and a subclass of the things that have a base which is some kind of <code>PizzaBase</code>.</p>
-<p>Notice that these are <strong>necessary conditions</strong> — if something is a <code>Pizza</code> it is <em>necessary</em> for it to be a member of the class <code>Thing</code> and <em>necessary</em> for it to have a kind of <code>PizzaBase</code>.</p>
+<p>Notice that these are <strong>necessary conditions</strong> — if something is a <code>Pizza</code></p>
+<ul>
+<li>it is <em>necessary</em> for it to be a member of the class <code>Thing</code> and</li>
+<li><em>necessary</em> for it to have a kind of <code>PizzaBase</code>.</li>
+</ul>
 <p>More formally, for something to be a <code>Pizza</code> it is necessary for it to be in a relationship with an individual that is a member of the class <code>PizzaBase</code> via the property <code>hasBase</code>.</p>
 <p>When restrictions are used to describe classes, they actually specify <strong>anonymous superclasses</strong> of the class being described. For example, we could say that <code>MargheritaPizza</code> is a subclass of, amongst other things, <code>Pizza</code> and also a subclass of the things that have at least one topping that is <code>MozzarellaTopping</code>.</p>
 </div>
@@ -742,11 +749,11 @@ A restriction describes an anonymous class (an unnamed class). The anonymous cla
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="21" data-paginate="true" data-header="Property Restrictions" data-footer="Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences" data-theme="custom-theme-roboto" data-marpit-pagination="21" data-marpit-pagination-total="38" style="--paginate:true;--header:Property Restrictions;--footer:Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences;--theme:custom-theme-roboto;">
 <header>Property Restrictions</header>
-<h2>Existential Restrictions (<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="1.258ex" height="1.57ex" role="img" focusable="false" viewBox="0 -694 556 694"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="2203" d="M56 661T56 674T70 694H487Q497 686 500 679V15Q497 10 487 1L279 0H70Q56 7 56 20T70 40H460V327H84Q70 334 70 347T84 367H460V654H70Q56 661 56 674Z"></path></g></g></g></svg></mjx-container>)</h2>
+<h2>Existential Restrictions (<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="1.258ex" height="1.57ex" role="img" focusable="false" viewBox="0 -694 556 694"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="2203" d="M56 661T56 674T70 694H487Q497 686 500 679V15Q497 10 487 1L279 0H70Q56 7 56 20T70 40H460V327H84Q70 334 70 347T84 367H460V654H70Q56 661 56 674Z"></path></g></g></g></svg></mjx-container>) – Example</h2>
 <div class="columns">
 <div class="single">
 <div class="small">
-<p>We have added restrictions to <code>MargeritaPizza</code> to say that a <code>MargheritaPizza</code> is a <code>NamedPizza</code> that has at least one kind of <code>MozzarellaTopping</code> and at least one kind of <code>TomatoTopping</code>.</p>
+<p>We can add restrictions to <code>MargeritaPizza</code> to say that a <code>MargheritaPizza</code> is a <code>NamedPizza</code> that has at least one kind of <code>MozzarellaTopping</code> and at least one kind of <code>TomatoTopping</code>.</p>
 <p>More formally (reading the class description view line by line), if something is a member of the class <code>MargheritaPizza</code> ...</p>
 <ul>
 <li>it is <em>necessary</em> for it to be a member of the class <code>NamedPizza</code></li>

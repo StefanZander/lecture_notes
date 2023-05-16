@@ -51,10 +51,11 @@ $\leadsto$ We therefore discuss **RDF** and the __RDF Schema data-modelling voca
 
 
 ---
-## What will we learn in this section
+## What will we learn in this section :fa-graduation-cap:
 
 - How to define more complex expressions, the semantics of which exceeds those of RDF/S
-- 
+- We will learn how to design ontologies for the use in KGs
+- We will learn about formal concepts and how they can be used for modelling aspects of a domain
 
 
 ---
@@ -160,7 +161,7 @@ Automatic classification only works with defined classes $\leadsto$ a reasoner c
 ::::
 
 ---
-## Disjont Classes
+## Disjoint Classes
 
 ==OWL Classes are assumed to ‘overlap’== $\leadsto$ We therefore cannot assume that an individual is not a member of a particular class simply because it has not been asserted to be a member of that class. 
 
@@ -372,12 +373,14 @@ OWL distinguishes between the following **types** of restrictions
 ## Quantifier Restrictions
 
 
-Quantifier restrictions consist of three parts:
+_Quantifier restrictions_ consist of _three_ parts:
 1. A ==quantifier==, which is either the ==existential quantifier (some)==, or the ==universal quantifier (only)==. 
 2. A ==property==, along which the restriction acts.
 3. A ==filler== that is a class description.
 
+::: redbox spaceafter
 For a given individual, the quantifier effectively puts **constraints** on the **relationships** that the individual participates in. 
+:::
 
 It does this by either 
 - specifying that **at least one** kind of relationship must exist, 
@@ -413,7 +416,9 @@ A restriction describes an anonymous class (an unnamed class). The anonymous cla
 ::: small
 The class `Pizza` is described to be a subclass of `Thing` and a subclass of the things that have a base which is some kind of `PizzaBase`.
 
-Notice that these are **necessary conditions** — if something is a `Pizza` it is *necessary* for it to be a member of the class `Thing` and *necessary* for it to have a kind of `PizzaBase`.
+Notice that these are **necessary conditions** — if something is a `Pizza` 
+- it is *necessary* for it to be a member of the class `Thing` and 
+- *necessary* for it to have a kind of `PizzaBase`.
 
 More formally, for something to be a `Pizza` it is necessary for it to be in a relationship with an individual that is a member of the class `PizzaBase` via the property `hasBase`.
 
@@ -434,12 +439,12 @@ In OWL, everything is a member of the class `Thing`.
 
 
 ---
-## Existential Restrictions ($\exists$) 
+## Existential Restrictions ($\exists$) – Example
 
 ::::: columns
 :::: single
 ::: small
-We have added restrictions to `MargeritaPizza` to say that a `MargheritaPizza` is a `NamedPizza` that has at least one kind of `MozzarellaTopping` and at least one kind of `TomatoTopping`.
+We can add restrictions to `MargeritaPizza` to say that a `MargheritaPizza` is a `NamedPizza` that has at least one kind of `MozzarellaTopping` and at least one kind of `TomatoTopping`.
 
 More formally (reading the class description view line by line), if something is a member of the class `MargheritaPizza` ...
 - it is *necessary* for it to be a member of the class `NamedPizza` 
