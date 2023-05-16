@@ -446,7 +446,7 @@ In OWL, everything is a member of the class `Thing`.
 ::: small
 We can add restrictions to `MargeritaPizza` to say that a `MargheritaPizza` is a `NamedPizza` that has at least one kind of `MozzarellaTopping` and at least one kind of `TomatoTopping`.
 
-More formally (reading the class description view line by line), if something is a member of the class `MargheritaPizza` ...
+More formally (reading the class description view line by line), if something is a member of the class `MargheritaPizza`...
 - it is *necessary* for it to be a member of the class `NamedPizza` 
 - and it is *necessary* for it to be a member of the anonymous class of things that are linked to at least one member of the class `MozzarellaTopping` via the property `hasTopping`, 
 - and it is *necessary* for it to be a member of the anonymous class of things that are linked to at least one member of the class `TomatoTopping` via the property `hasTopping`.
@@ -464,7 +464,7 @@ The Class Description View Showing A Description Of a `MargheritaPizza`
 ---
 ## Universal Restrictions ($\forall$) 
 
-With existential restrictions, we could not say, that **all** relationships of individuals must be to members of a specific class. 
+With existential restrictions, we could *not* say, that **all** relationships of individuals must be to members of a specific class. 
 
 ==Universal restrictions== (represented by the symbol ==$\forall$==) describe the set of individuals that, for a _given property_, **only have relationships** to other individuals that are members of a _specific class_. 
 - Universal restrictions constrain the relationships along a given property to individuals that are members of a specific class. 
@@ -502,42 +502,22 @@ $\leadsto$ They merely state that if such a relationship for the given property 
 - The restriction, $\forall$ `hasTopping TomatoTopping` describes the anonymous class of individuals that **only** have `hasTopping` relationships to individuals that are members of the class `TomatoTopping`, **OR**, individuals that definitely do not participate in any `hasTopping` relationships at all.
 
 
----
-## Universal Restrictions ($\forall$) – Pitfalls and Example
-
-::::: columns
-:::: single small
-A common mistake is to use an intersection instead of a union.{.red}
-- For example, `CheeseTopping` ⊓ `VegetableTopping`. 
-  - This reads, `CheeseTopping` *and* `VegetableTopping`. Although "CheeseTopping and Vegetable" might be a natural thing to say in English, this logically means something that is _simultaneously_ a kind of `CheeseTopping` *AND* `VegetableTopping`. 
-  - If the classes `CheeseTopping` and `VegetableTopping` were *not disjoint*, this would have been a logically legitimate thing to say – it would not be inconsistent and therefore would not be ‘spotted’ by a reasoner.
-
-- In the example it might have been tempting to create _two universal restrictions_ — one for `CheeseTopping` (`∀ hasTopping CheeseTopping`) and one for `VegetableTopping` (`∀ hasTopping VegetableTopping`). However, when *multiple restrictions* are used (for any type of restriction) the *total description* is taken to be the **intersection** of the *individual restrictions*. This would have therefore been equivalent to one restriction with a filler that is the intersection of `MozzarellaTopping` and `TomatoTopping` — as explained above this would have been logically incorrect.
-::::
-:::: single small
-![](figures/universal_restriction_protege.jpg)
-
-- This means that if something is a member of the class `VegetarianPizza` it is *necessary* for it to be a kind of `Pizza` **and** it is *necessary* for it to **only** (∀ universal quantifier) have toppings that are kinds of `CheeseTopping` **or** kinds of `VegetableTopping`.
-- In other words, all `hasTopping` relationships that individuals which are members of the class `VegetarianPizza` participate in must be to individuals that are either members of the class `CheeseTopping` or `VegetableTopping`.
-- The class `VegetarianPizza` also contains individuals that are `Pizza`s and do not participate in any `hasTopping` relationships.
-::::
-:::::
-
 
 
 ---
-## Universal Restrictions ($\forall$) – Pitfalls and Example
+## Common pitfalls in universal restrictions
 
-::::: columns
+::::: columns-bottom
 :::: single 
-::: small
+::: small 
 <!-- **Common mistakes**  -->
-1. **Use an intersection instead of a union**
+1. [**Use an intersection instead of a union** :fa-warning:]{.red}
    - For example, `CheeseTopping` ⊓ `VegetableTopping`. 
      - This reads, `CheeseTopping` *and* `VegetableTopping`. Although "CheeseTopping and Vegetable" might be a natural thing to say in English, this logically means something that is _simultaneously_ a kind of `CheeseTopping` *AND* `VegetableTopping`. 
      - If the classes `CheeseTopping` and `VegetableTopping` were *not disjoint*, this would have been a logically legitimate thing to say – it would not be inconsistent and therefore would not be ‘spotted’ by a reasoner.
-
-2. [**Create two universal restrictions**]{.noskip .red}
+:::
+::: small
+2. [**Create two universal restrictions** :fa-warning:]{.noskip .red}
    - one for `CheeseTopping` (`∀ hasTopping CheeseTopping`) and 
    - one for `VegetableTopping` (`∀ hasTopping VegetableTopping`). 
      - When *multiple restrictions* are used (for any type of restriction) the *total description* is taken to be the **intersection** of the *individual restrictions*. This would have therefore been equivalent to one restriction with a filler that is the intersection of `MozzarellaTopping` and `TomatoTopping` — as explained above this would have been logically incorrect.
@@ -546,9 +526,12 @@ A common mistake is to use an intersection instead of a union.{.red}
 :::: single small
 ![](figures/universal_restriction_protege.jpg)
 
-- This means that if something is a member of the class `VegetarianPizza` it is *necessary* for it to be a kind of `Pizza` **and** it is *necessary* for it to **only** (∀ universal quantifier) have toppings that are kinds of `CheeseTopping` **or** kinds of `VegetableTopping`.
-- In other words, all `hasTopping` relationships that individuals which are members of the class `VegetarianPizza` participate in must be to individuals that are either members of the class `CheeseTopping` or `VegetableTopping`.
+::: small
+[**How to do it right** :fa-circle-check:]{.green}
+- If something is a member of the class `VegetarianPizza` it is *necessary* for it to be a kind of `Pizza` **and** it is *necessary* for it to **only** (∀ universal quantifier) have toppings that are kinds of `CheeseTopping` **or** kinds of `VegetableTopping`.
+- In other words, all `hasTopping` relationships that individuals, which are members of the class `VegetarianPizza` participate in must be to individuals that are either members of the class `CheeseTopping` or `VegetableTopping`.
 - The class `VegetarianPizza` also contains individuals that are `Pizza`s and do not participate in any `hasTopping` relationships.
+:::
 ::::
 :::::
 
@@ -627,29 +610,35 @@ hasValue restrictions are semantically equivalent to an existential restriction 
 ---
 ## How to formulate class descriptions using restrictions
 
-Restrictions in class descriptions can be formulated in two different ways:
-- As ==necessary conditions==
+**Restrictions** in class descriptions can be formulated in _two different ways_:
+- As ==necessary conditions :fa-person-circle-exclamation:==
   - If something is a member of this class then it is necessary to fulfil these conditions 
   - With necessary conditions alone, we cannot say – "If something fulfils these conditions then it must be a member of this class"
   - A class that only has necessary conditions is known as a **Primitive Class**.
-- As ==sufficient AND necessary conditions==
+- As ==sufficient AND necessary conditions :fa-person-circle-check:==
   - Not only are the conditions necessary for membership of the class, they are also sufficient to determine that any (random) individual that satisfies them must be a member of the class 
   - Necessary conditions are simply called **Superclasses** in Protégé. Necessary and sufficient condition are called **Equivalent classes**.
   - A class that has at least one set of necessary and sufficient conditions is known as a **Defined Class**.
 
 
+
 ---
 ## Necessary and Sufficient Conditions
-![bg right:50% width:90%](figures/necessary_and_sufficient_conditions.png)
 
-:::: graybox small
-**To summarize**:
+::::: columns-center
+:::: single
+::: graybox small
+**What does it mean to use a specific type of condition**:
 - If class `A` is described using _necessary conditions_, then we can say that if an individual is a member of class `A` it must satisfy the conditions. 
 - We cannot say that any (random) individual satisfying these conditions must be member of class `A`. 
-- However, if class `A` is now defined using _necessary AND sufficient conditions_, we can now say that if any (random) individual satisfies these conditions then it must be a member of class `A`. 
-- The conditions are not only necessary for membership of `A` but also sufficient to determine that something satisfying these conditions is a member of `A`.
+- If class `A` is defined using _necessary AND sufficient conditions_, we can say that if any (random) individual satisfies these conditions then it must be a member of class `A`. 
+- The conditions are not only necessary for membership of `A` but also _sufficient_ to determine that something satisfying these conditions is a member of `A`.
+:::
 ::::
-
+:::: single center
+![](figures/necessary_and_sufficient_conditions.png)
+::::
+:::::
 
 
 ---
@@ -657,16 +646,16 @@ Restrictions in class descriptions can be formulated in two different ways:
 
 ::::: columns-bottom
 :::: single
-Suppose 
+Suppose the following...
 - we have another class `B`, 
 - we know that any individuals being members of class `B` also satisfy the conditions that define class `A`. 
 
-We can determine that 
+We can determine that...
 - class `B` is ==subsumed by== class `A` 
 - $\Rightarrow$ `B` is a **subclass** of `A`. 
 
 ::: bluebox center spacebefore
-Checking for ==class subsumption== is a _key task_ of a description logic reasoner for automatically computing _classification hierarchies_.
+Checking for ==class subsumption== is a _key task_ of a description logic reasoner for automatically computing ==lassification hierarchies==.
 :::
 ::::
 :::: single center
@@ -729,9 +718,9 @@ See illustrations on page 58 of the OWL pizza tutorial about asserted and inferr
 :::: single
 - In the case of our pizzas, we have stated that `MargheritaPizza` has toppings that are kinds of `MozzarellaTopping` and also kinds of `TomatoTopping`. 
 
-- Because of the open world assumption, until we explicitly say that a `MargheritaPizza` only has these kinds of toppings, it is assumed (by the reasoner) that a `MargheritaPizza` could have other toppings. 
+- Because of the *open world assumption*, until we explicitly say that a `MargheritaPizza` only has these kinds of toppings, the reasoner assumes that a `MargheritaPizza` could have other toppings. 
 
-- To specify explicitly that a `MargheritaPizza` has toppings that are kinds of `MozzarellaTopping` or kinds of `TomatoTopping` and only kinds of `MozzarellaTopping` or `TomatoTopping`, we must add what is known as a ==closure axiom== on the `hasTopping` property.
+- To specify explicitly that a `MargheritaPizza` has toppings that are only kinds of `MozzarellaTopping` or `TomatoTopping`, we must add a ==closure axiom== on the `hasTopping` property.
 ::::
 :::: single center
 ![](figures/pizza3.jpg)
