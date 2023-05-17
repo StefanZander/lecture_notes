@@ -101,7 +101,8 @@
 
 /* Example container */div#p>svg>foreignObject>section .example,div#p>svg>foreignObject>section .graybox{background-color:rgb(238,238,238);border:solid calc(var(--marpit-root-font-size, 1rem) * 0.2) rgb(123,123,123);padding:0 calc(var(--marpit-root-font-size, 1rem) * 0.6) 0 calc(var(--marpit-root-font-size, 1rem) * 0.6);color:#323232}div#p>svg>foreignObject>section .example>p:last-child,div#p>svg>foreignObject>section .graybox>p:last-child{margin-bottom:0.16em}
 
-/* Orange Box container */div#p>svg>foreignObject>section .orangebox{background-color:rgb(255,231,220);border:solid calc(var(--marpit-root-font-size, 1rem) * 0.2) rgb(211,88,11);padding:0 calc(var(--marpit-root-font-size, 1rem) * 0.6) 0 calc(var(--marpit-root-font-size, 1rem) * 0.6);color:rgb(211,88,11)}div#p>svg>foreignObject>section .orangebox>p:last-child{margin-bottom:0.16em}
+/* Orange Box container */div#p>svg>foreignObject>section .orangebox{
+    /* background-color: rgb(255, 246, 220); */background-color:rgb(255,234,220);border:solid calc(var(--marpit-root-font-size, 1rem) * 0.2) rgb(211,88,11);padding:0 calc(var(--marpit-root-font-size, 1rem) * 0.6) 0 calc(var(--marpit-root-font-size, 1rem) * 0.6);color:rgb(211,88,11)}div#p>svg>foreignObject>section .orangebox>p:last-child{margin-bottom:0.16em}
 
 
 /* Warning Box (used warning since 'red' is reserved for font color */div#p>svg>foreignObject>section .redbox,div#p>svg>foreignObject>section .warning{background-color:#ffe6e6;border:solid calc(var(--marpit-root-font-size, 1rem) * 0.2) #cc0000;padding:0 calc(var(--marpit-root-font-size, 1rem) * 0.6) 0 calc(var(--marpit-root-font-size, 1rem) * 0.6);color:#b30000}div#p>svg>foreignObject>section .redbox>p:last-child,div#p>svg>foreignObject>section .warning>p:last-child{margin-bottom:0.16em}
@@ -256,8 +257,7 @@ of a flex item such as single etc. */
 /* ========================
     COLORS
    ========================  
-*/div#p>svg>foreignObject>section .darkgray{color:#4a4a4a}div#p>svg>foreignObject>section .gray{color:gray}div#p>svg>foreignObject>section .red{color:#c60000}div#p>svg>foreignObject>section .darkred{color:rgb(198,2,2)}div#p>svg>foreignObject>section .lightgreen{color:#1eab79}div#p>svg>foreignObject>section .lightblue{color:rgb(36,140,188)}div#p>svg>foreignObject>section .blue{color:rgb(42,112,193)}div#p>svg>foreignObject>section .darkblue{color:rgb(8,64,123)}div#p>svg>foreignObject>section .orange{color:rgb(211,88,11)}div#p>svg>foreignObject>section .pink{color:rgb(199,1,159)}
-
+*/div#p>svg>foreignObject>section .darkgray{color:#4a4a4a}div#p>svg>foreignObject>section .gray{color:gray}div#p>svg>foreignObject>section .red{color:#c60000}div#p>svg>foreignObject>section .darkred{color:rgb(198,2,2)}div#p>svg>foreignObject>section .lightgreen{color:#1eab79}div#p>svg>foreignObject>section .lightblue{color:rgb(36,140,188)}div#p>svg>foreignObject>section .blue{color:rgb(42,112,193)}div#p>svg>foreignObject>section .darkblue{color:rgb(8,64,123)}div#p>svg>foreignObject>section .orange{color:rgb(211,88,11)}div#p>svg>foreignObject>section .pink{color:rgb(199,1,159)}div#p>svg>foreignObject>section .green{color:#007427}
 
 
 /* ========================
@@ -333,7 +333,13 @@ of a flex item such as single etc. */
    ========================
 */
 
-/* Places a textbox around words in a sentence; use with [text]{.box} */div#p>svg>foreignObject>section .box{border-radius:.16em;border-width:.08em;border-style:solid;padding-left:.2em;padding-right:.2em}div#p>svg>foreignObject>section .greenbox{border-color:darkgreen;color:darkgreen;background-color:rgb(216,255,226)}div#p>svg>foreignObject>section .orangebox{border-color:rgb(236,119,9);color:rgb(200,97,0);background-color:rgb(255,235,208)}
+/* Places a textbox around words in a sentence; use with [text]{.box} */div#p>svg>foreignObject>section .box{border-radius:.16em;border-width:.08em;border-style:solid;padding-left:.2em;padding-right:.2em}div#p>svg>foreignObject>section .greenbox{border-color:darkgreen;color:darkgreen;background-color:rgb(216,255,226)}
+
+/* .orangebox {
+    border-color: rgb(236, 119, 9);
+    color: rgb(200, 97, 0);
+    background-color: rgb(255, 235, 208);
+} */
 
 /**
  * @theme enable-all-auto-scaling
@@ -342,12 +348,12 @@ of a flex item such as single etc. */
 
 /* @import 'default'; */
 
-/* @import url('user-theme2.css'); */div#p>svg>foreignObject>section[data-marpit-advanced-background=background]{columns:initial!important;display:block!important;padding:0!important}div#p>svg>foreignObject>section[data-marpit-advanced-background=background]:after,div#p>svg>foreignObject>section[data-marpit-advanced-background=background]:before,div#p>svg>foreignObject>section[data-marpit-advanced-background=content]:after,div#p>svg>foreignObject>section[data-marpit-advanced-background=content]:before{display:none!important}div#p>svg>foreignObject>section[data-marpit-advanced-background=background]>div[data-marpit-advanced-background-container]{all:initial;display:flex;flex-direction:row;height:100%;overflow:hidden;width:100%}div#p>svg>foreignObject>section[data-marpit-advanced-background=background]>div[data-marpit-advanced-background-container][data-marpit-advanced-background-direction=vertical]{flex-direction:column}div#p>svg>foreignObject>section[data-marpit-advanced-background=background][data-marpit-advanced-background-split]>div[data-marpit-advanced-background-container]{width:var(--marpit-advanced-background-split,50%)}div#p>svg>foreignObject>section[data-marpit-advanced-background=background][data-marpit-advanced-background-split=right]>div[data-marpit-advanced-background-container]{margin-left:calc(100% - var(--marpit-advanced-background-split, 50%))}div#p>svg>foreignObject>section[data-marpit-advanced-background=background]>div[data-marpit-advanced-background-container]>figure{all:initial;background-position:center;background-repeat:no-repeat;background-size:cover;flex:auto;margin:0}div#p>svg>foreignObject>section[data-marpit-advanced-background=content],div#p>svg>foreignObject>section[data-marpit-advanced-background=pseudo]{background:transparent!important}div#p>svg>foreignObject>section[data-marpit-advanced-background=pseudo],div#p>svg[data-marpit-svg]>foreignObject[data-marpit-advanced-background=pseudo]{pointer-events:none!important}div#p>svg>foreignObject>section[data-marpit-advanced-background-split]{width:100%;height:100%}</style></head><body><div class="bespoke-marp-osc"><button data-bespoke-marp-osc="prev" tabindex="-1" title="Previous slide">Previous slide</button><span data-bespoke-marp-osc="page"></span><button data-bespoke-marp-osc="next" tabindex="-1" title="Next slide">Next slide</button><button data-bespoke-marp-osc="fullscreen" tabindex="-1" title="Toggle fullscreen (f)">Toggle fullscreen</button><button data-bespoke-marp-osc="presenter" tabindex="-1" title="Open presenter view (p)">Open presenter view</button></div><div id="p"><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="1" data-paginate="true" data-theme="custom-theme-roboto" data-marpit-pagination="1" data-marpit-pagination-total="27" style="--paginate:true;--theme:custom-theme-roboto;">
-<h1>Projekt Systementwicklung / Projekt Multimedia <br /> im SoSe 2023</h1>
-<h4>Prof. Dr. Stefan Linus Zander</h4>
+/* @import url('user-theme2.css'); */div#p>svg>foreignObject>section[data-marpit-advanced-background=background]{columns:initial!important;display:block!important;padding:0!important}div#p>svg>foreignObject>section[data-marpit-advanced-background=background]:after,div#p>svg>foreignObject>section[data-marpit-advanced-background=background]:before,div#p>svg>foreignObject>section[data-marpit-advanced-background=content]:after,div#p>svg>foreignObject>section[data-marpit-advanced-background=content]:before{display:none!important}div#p>svg>foreignObject>section[data-marpit-advanced-background=background]>div[data-marpit-advanced-background-container]{all:initial;display:flex;flex-direction:row;height:100%;overflow:hidden;width:100%}div#p>svg>foreignObject>section[data-marpit-advanced-background=background]>div[data-marpit-advanced-background-container][data-marpit-advanced-background-direction=vertical]{flex-direction:column}div#p>svg>foreignObject>section[data-marpit-advanced-background=background][data-marpit-advanced-background-split]>div[data-marpit-advanced-background-container]{width:var(--marpit-advanced-background-split,50%)}div#p>svg>foreignObject>section[data-marpit-advanced-background=background][data-marpit-advanced-background-split=right]>div[data-marpit-advanced-background-container]{margin-left:calc(100% - var(--marpit-advanced-background-split, 50%))}div#p>svg>foreignObject>section[data-marpit-advanced-background=background]>div[data-marpit-advanced-background-container]>figure{all:initial;background-position:center;background-repeat:no-repeat;background-size:cover;flex:auto;margin:0}div#p>svg>foreignObject>section[data-marpit-advanced-background=content],div#p>svg>foreignObject>section[data-marpit-advanced-background=pseudo]{background:transparent!important}div#p>svg>foreignObject>section[data-marpit-advanced-background=pseudo],div#p>svg[data-marpit-svg]>foreignObject[data-marpit-advanced-background=pseudo]{pointer-events:none!important}div#p>svg>foreignObject>section[data-marpit-advanced-background-split]{width:100%;height:100%}</style></head><body><div class="bespoke-marp-osc"><button data-bespoke-marp-osc="prev" tabindex="-1" title="Previous slide">Previous slide</button><span data-bespoke-marp-osc="page"></span><button data-bespoke-marp-osc="next" tabindex="-1" title="Next slide">Next slide</button><button data-bespoke-marp-osc="fullscreen" tabindex="-1" title="Toggle fullscreen (f)">Toggle fullscreen</button><button data-bespoke-marp-osc="presenter" tabindex="-1" title="Open presenter view (p)">Open presenter view</button></div><div id="p"><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="1" data-paginate="true" data-theme="custom-theme-roboto" data-marpit-pagination="1" data-marpit-pagination-total="29" style="--paginate:true;--theme:custom-theme-roboto;">
+<h1>Master-Projekt-Systementwicklung im SoSe 2023</h1>
+<h4>Prof. Dr. Stefan Linus Zander – Dipl. Volkswirt Roland Trefftz</h4>
 <p class="lightgreen Big skip">Kick-Off-Meeting – 03.05.2023 </p>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="2" data-paginate="true" data-header="Überblick" data-footer="Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023" data-theme="custom-theme-roboto" data-marpit-pagination="2" data-marpit-pagination-total="27" style="--paginate:true;--header:Überblick;--footer:Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023;--theme:custom-theme-roboto;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="2" data-paginate="true" data-header="Überblick" data-footer="Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023" data-theme="custom-theme-roboto" data-marpit-pagination="2" data-marpit-pagination-total="29" style="--paginate:true;--header:Überblick;--footer:Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023;--theme:custom-theme-roboto;">
 <header>Überblick</header>
 
 <h1>Agenda</h1>
@@ -361,7 +367,7 @@ of a flex item such as single etc. */
 </ol>
 <footer>Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="3" data-paginate="true" data-header="Überblick" data-footer="Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023" data-theme="custom-theme-roboto" data-marpit-pagination="3" data-marpit-pagination-total="27" style="--paginate:true;--header:Überblick;--footer:Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023;--theme:custom-theme-roboto;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="3" data-paginate="true" data-header="Überblick" data-footer="Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023" data-theme="custom-theme-roboto" data-marpit-pagination="3" data-marpit-pagination-total="29" style="--paginate:true;--header:Überblick;--footer:Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023;--theme:custom-theme-roboto;">
 <header>Überblick</header>
 <h1>Gemeinsames Kennenlernen</h1>
 
@@ -376,7 +382,7 @@ of a flex item such as single etc. */
 </ul>
 <footer>Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="4" data-paginate="true" data-header="Überblick" data-footer="Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023" data-theme="custom-theme-roboto" data-marpit-pagination="4" data-marpit-pagination-total="27" style="--paginate:true;--header:Überblick;--footer:Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023;--theme:custom-theme-roboto;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="4" data-paginate="true" data-header="Überblick" data-footer="Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023" data-theme="custom-theme-roboto" data-marpit-pagination="4" data-marpit-pagination-total="29" style="--paginate:true;--header:Überblick;--footer:Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023;--theme:custom-theme-roboto;">
 <header>Überblick</header>
 <h1>Beteiligte Personen (1/2)</h1>
 <p class="BIGskip"><strong>Hochschule Darmstadt</strong></p>
@@ -388,9 +394,20 @@ of a flex item such as single etc. */
 </ul>
 </li>
 </ul>
+<p class="Bigskip"><strong>Klinikon GmbH<sup>1</sup></strong></p>
+<ul>
+<li><strong>Dipl. Volkswirt Roland Trefftz</strong> (fachliche Projektleitung und Stakeholder) – <a href="mailto:trefftz@klinikon.com">trefftz@klinikon.com</a></li>
+</ul>
+<p class="Bigskip"><strong>Fachliche Begleitung</strong></p>
+<ul>
+<li><strong>Marcus Raphael Schül</strong> (Solutionarchitekt und Stakeholder) – <a href="mailto:mail@marcus-schuel.de">mail@marcus-schuel.de</a></li>
+</ul>
+<div class="footnotes">
+<p><sup>1</sup> <a href="https://www.klinikon.com/">https://www.klinikon.com/</a></p>
+</div>
 <footer>Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="5" data-paginate="true" data-header="Überblick" data-footer="Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023" data-theme="custom-theme-roboto" data-marpit-pagination="5" data-marpit-pagination-total="27" style="--paginate:true;--header:Überblick;--footer:Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023;--theme:custom-theme-roboto;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="5" data-paginate="true" data-header="Überblick" data-footer="Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023" data-theme="custom-theme-roboto" data-marpit-pagination="5" data-marpit-pagination-total="29" style="--paginate:true;--header:Überblick;--footer:Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023;--theme:custom-theme-roboto;">
 <header>Überblick</header>
 <h1>Beteiligte Personen (2/2)</h1>
 <p><strong>Hochschule Darmstadt – Studierende</strong></p>
@@ -400,13 +417,13 @@ of a flex item such as single etc. */
 </ul>
 <footer>Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="6" data-paginate="true" data-header="Allgemeine Informationen zum Modul" data-footer="Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023" data-theme="custom-theme-roboto" data-marpit-pagination="6" data-marpit-pagination-total="27" style="--paginate:true;--header:Allgemeine Informationen zum Modul;--footer:Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023;--theme:custom-theme-roboto;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="6" data-paginate="true" data-header="Allgemeine Informationen zum Modul" data-footer="Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023" data-theme="custom-theme-roboto" data-marpit-pagination="6" data-marpit-pagination-total="29" style="--paginate:true;--header:Allgemeine Informationen zum Modul;--footer:Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023;--theme:custom-theme-roboto;">
 <header>Allgemeine Informationen zum Modul</header>
 
 <h1>Allgemeine Informationen zum Modul</h1>
 <footer>Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="7" data-paginate="true" data-header="Allgemeine Informationen zum Modul" data-footer="Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023" data-theme="custom-theme-roboto" data-marpit-pagination="7" data-marpit-pagination-total="27" style="--paginate:true;--header:Allgemeine Informationen zum Modul;--footer:Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023;--theme:custom-theme-roboto;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="7" data-paginate="true" data-header="Allgemeine Informationen zum Modul" data-footer="Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023" data-theme="custom-theme-roboto" data-marpit-pagination="7" data-marpit-pagination-total="29" style="--paginate:true;--header:Allgemeine Informationen zum Modul;--footer:Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023;--theme:custom-theme-roboto;">
 <header>Allgemeine Informationen zum Modul</header>
 <h1>Lernziele</h1>
 <div class="columns">
@@ -435,7 +452,7 @@ of a flex item such as single etc. */
 </div>
 <footer>Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="8" data-paginate="true" data-header="Allgemeine Informationen zum Modul" data-footer="Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023" data-theme="custom-theme-roboto" data-marpit-pagination="8" data-marpit-pagination-total="27" style="--paginate:true;--header:Allgemeine Informationen zum Modul;--footer:Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023;--theme:custom-theme-roboto;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="8" data-paginate="true" data-header="Allgemeine Informationen zum Modul" data-footer="Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023" data-theme="custom-theme-roboto" data-marpit-pagination="8" data-marpit-pagination-total="29" style="--paginate:true;--header:Allgemeine Informationen zum Modul;--footer:Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023;--theme:custom-theme-roboto;">
 <header>Allgemeine Informationen zum Modul</header>
 <h1>Durchführung</h1>
 <ul>
@@ -462,7 +479,7 @@ of a flex item such as single etc. */
 </div>
 <footer>Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="9" data-paginate="true" data-header="Allgemeine Informationen zum Modul" data-footer="Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023" data-theme="custom-theme-roboto" data-marpit-pagination="9" data-marpit-pagination-total="27" style="--paginate:true;--header:Allgemeine Informationen zum Modul;--footer:Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023;--theme:custom-theme-roboto;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="9" data-paginate="true" data-header="Allgemeine Informationen zum Modul" data-footer="Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023" data-theme="custom-theme-roboto" data-marpit-pagination="9" data-marpit-pagination-total="29" style="--paginate:true;--header:Allgemeine Informationen zum Modul;--footer:Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023;--theme:custom-theme-roboto;">
 <header>Allgemeine Informationen zum Modul</header>
 <h1>Zeitliches Engagement – eine realistische Betrachtung</h1>
 <p>Projekt Systementwicklung / Projekt Multimedia ist ein <strong>7,5 CP Modul</strong>.</p>
@@ -473,12 +490,15 @@ of a flex item such as single etc. */
 <li>den zeitlichen Aufwand dürfen Sie frei einteilen</li>
 </ul>
 
+<div class="redbox center">
+<p>In Summe veranschlagen wir für das Projekt ein <strong>Gesamtzeitbudget</strong> von <strong>320h</strong></p>
+</div>
 <div class="footnotes">
 <p><sup>1</sup> Vorlesungszeit (12 Wochen) + Lernwoche (1 Woche) + Prüfungszeit (3 Wochen)</p>
 </div>
 <footer>Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="10" data-paginate="true" data-header="Allgemeine Informationen zum Modul" data-footer="Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023" data-theme="custom-theme-roboto" data-marpit-pagination="10" data-marpit-pagination-total="27" style="--paginate:true;--header:Allgemeine Informationen zum Modul;--footer:Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023;--theme:custom-theme-roboto;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="10" data-paginate="true" data-header="Allgemeine Informationen zum Modul" data-footer="Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023" data-theme="custom-theme-roboto" data-marpit-pagination="10" data-marpit-pagination-total="29" style="--paginate:true;--header:Allgemeine Informationen zum Modul;--footer:Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023;--theme:custom-theme-roboto;">
 <header>Allgemeine Informationen zum Modul</header>
 <h1>Kommunikation</h1>
 <ul>
@@ -503,7 +523,7 @@ of a flex item such as single etc. */
 </ul>
 <footer>Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="11" data-paginate="true" data-header="Allgemeine Informationen zum Modul" data-footer="Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023" data-theme="custom-theme-roboto" data-marpit-pagination="11" data-marpit-pagination-total="27" style="--paginate:true;--header:Allgemeine Informationen zum Modul;--footer:Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023;--theme:custom-theme-roboto;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="11" data-paginate="true" data-header="Allgemeine Informationen zum Modul" data-footer="Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023" data-theme="custom-theme-roboto" data-marpit-pagination="11" data-marpit-pagination-total="29" style="--paginate:true;--header:Allgemeine Informationen zum Modul;--footer:Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023;--theme:custom-theme-roboto;">
 <header>Allgemeine Informationen zum Modul</header>
 <h1>Entwicklungsplattform und Dokumentation</h1>
 <p><strong>GitLab</strong></p>
@@ -521,7 +541,7 @@ of a flex item such as single etc. */
 </ul>
 <footer>Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="12" data-paginate="true" data-header="Allgemeine Informationen zum Modul" data-footer="Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023" data-theme="custom-theme-roboto" data-marpit-pagination="12" data-marpit-pagination-total="27" style="--paginate:true;--header:Allgemeine Informationen zum Modul;--footer:Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023;--theme:custom-theme-roboto;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="12" data-paginate="true" data-header="Allgemeine Informationen zum Modul" data-footer="Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023" data-theme="custom-theme-roboto" data-marpit-pagination="12" data-marpit-pagination-total="29" style="--paginate:true;--header:Allgemeine Informationen zum Modul;--footer:Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023;--theme:custom-theme-roboto;">
 <header>Allgemeine Informationen zum Modul</header>
 <h1>Bewertungskriterien</h1>
 <div class="columns">
@@ -557,198 +577,199 @@ of a flex item such as single etc. */
 </div>
 <footer>Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="13" data-paginate="true" data-header="Projektplanung" data-footer="Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023" data-theme="custom-theme-roboto" data-marpit-pagination="13" data-marpit-pagination-total="27" style="--paginate:true;--header:Projektplanung;--footer:Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023;--theme:custom-theme-roboto;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="13" data-paginate="true" data-header="Allgemeine Informationen zum Modul" data-footer="Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023" data-theme="custom-theme-roboto" data-marpit-pagination="13" data-marpit-pagination-total="29" style="--paginate:true;--header:Allgemeine Informationen zum Modul;--footer:Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023;--theme:custom-theme-roboto;">
+<header>Allgemeine Informationen zum Modul</header>
+<h2>Fragen / TBD / TODOs</h2>
+<ul>
+<li>Wo Docker-Container hosten (IT-Services/hda/etc)? Budget existiert</li>
+<li>Lade- und Lastmanagement sollte mit in die App integriert werden (Marcus)
+<ul>
+<li>Laden aus technisch- und kaufmännischer Sicht</li>
+<li>State-of-Charge (aka Ladezustand) des Fahrzeugs sollte immer sichtbar/abrufbar sein um informierte Entscheidungen treffen zu können (bspw. Einkaufsfahrt jetzt mit halb-vollem Auto vs. Fahrt in 3h mit vollem Auto aber geschlossenem Supermarkt)</li>
+</ul>
+</li>
+<li>TODO (SZA): Gemeinsamer Termin mit J. Wischnat und den neuen Entwicklern finden</li>
+<li>TODO (RT): Bug an J. Wischnat kommunizieren</li>
+<li></li>
+</ul>
+<footer>Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="14" data-paginate="true" data-header="Projektplanung" data-footer="Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023" data-theme="custom-theme-roboto" data-marpit-pagination="14" data-marpit-pagination-total="29" style="--paginate:true;--header:Projektplanung;--footer:Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023;--theme:custom-theme-roboto;">
 <header>Projektplanung</header>
 
-<h2>Projekt: Überführung der Fachbereichsratsprotokolle in eine semantische Wissensbasis mittels moderner NLP-/KI-Technologien</h2>
-<h3>Betreuer: Stefan Zander</h3>
+<h1>Projekt #1: Erweiterung &amp; Refactoring der we3ve-App</h1>
+<h3>Betreuer: Roland Trefftz, Stefan Zander, Marcus Schül</h3>
 <footer>Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="14" data-paginate="true" data-header="Projektplanung" data-footer="Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023" data-theme="custom-theme-roboto" data-marpit-pagination="14" data-marpit-pagination-total="27" style="--paginate:true;--header:Projektplanung;--footer:Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023;--theme:custom-theme-roboto;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="15" data-paginate="true" data-header="Projektplanung" data-footer="Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023" data-theme="custom-theme-roboto" data-marpit-pagination="15" data-marpit-pagination-total="29" style="--paginate:true;--header:Projektplanung;--footer:Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023;--theme:custom-theme-roboto;">
 <header>Projektplanung</header>
-<h2>Zielsetzung</h2>
-<div class="green">
-<p>Die vielen wertvollen Informationen, die in Fachbereichsratsprotokollen enthalten sind, automatisiert extrahieren und nutzbar machen.</p>
+<h2>Projekt #1: Ursprüngliche allgemeine Anforderungen der App</h2>
+<div class="blue">
+<p><strong>Ziel</strong>: Entwicklung einer einfach nutzbaren Car-Sharing-App auf Basis moderner Web-Technologien.</p>
 </div>
 <p class="HugeSkip"></p>
+<p><strong>Allgemeine Anforderungen</strong></p>
 <ul>
-<li>Erforschung und Begutachtung von aktuellen Ansätzen, um in Textdokumenten enthaltene Informationen (sog. Faktenwissen) automatisiert zu extrahieren und nutzbar zu machen
-<ul>
-<li>Abbildung auf Wissensgraphen</li>
-<li>Named Entity Recognition (NER)</li>
-<li>mit Hilfe moderner NLP-Techniken</li>
+<li>Lauffähig im Web und auf mobilen Endgeräten</li>
+<li>Verwaltung von NutzerInnen und Fahrzeugen</li>
+<li>Individualisierbares Dashboard mit div. Übersichten (Buchungen / Nutzung / gefahren Kilometer / Auslastung / etc.)</li>
+<li>Einfache und vielfältige Reservierungsmöglichkeiten (bspw. über einen gem. Kalender / via Email etc.)</li>
+<li>Erforschung von Schnittstellen zur Integration von Telemetriedaten und anderen technischen Merkmalen (Ladezustand, Kilometer etc)</li>
+<li>Einfachste Nutzung und Administration</li>
+<li>Hohe Code- und Dokumentationsqualität</li>
 </ul>
-</li>
-<li>Fachbereichsratsprotokolle in einer NLP-Pipeline verarbeiten</li>
-<li>Überführung der Fachbereichsratsprotokolle in (semantische) Wissensgraphen unter Zuhilfenahme von State-of-the-Art NLP-Technologien und Verarbeitungsansätzen</li>
-<li>Aufarbeitung von SOTA-Ansätzen im Bereich NER oder IE</li>
-<li>Untersuchung und Vergleich von Extraction Pipelines</li>
-</ul>
-<div class="blue">
-<p>Wichtig: Der nachfolgende <em>Projektplan</em> ist eine grobe Orientierung und soll die Detailplanung unterstützen und erleichtern, diese jedoch nicht ersetzen.</p>
+<div class="warning">
+<p>Die konkreten Anforderungen müssen in Stakeholder-Interviews mittels User-Research und Requirements Engineering Methoden erforscht und erarbeitet werden.</p>
 </div>
 <footer>Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="15" data-paginate="true" data-header="Projektplanung" data-footer="Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023" data-theme="custom-theme-roboto" data-marpit-pagination="15" data-marpit-pagination-total="27" style="--paginate:true;--header:Projektplanung;--footer:Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023;--theme:custom-theme-roboto;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="16" data-paginate="true" data-header="Projektplanung" data-footer="Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023" data-theme="custom-theme-roboto" data-marpit-pagination="16" data-marpit-pagination-total="29" style="--paginate:true;--header:Projektplanung;--footer:Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023;--theme:custom-theme-roboto;">
 <header>Projektplanung</header>
-<h2>Workpackage 1: Auseinandersetzung mit dem Thema</h2>
-<ul>
-<li><strong>Ziel</strong>: <em>Erlangung eines umfassenden Verständnisses zu Aufgabenstellung, Zielen, Rahmenbedingungen, Erwartungen, benötigten Technologien etc.</em></li>
-<li><strong>Task-Liste</strong>
-<ul>
-<li>Task 1: Sichtung und Analyse der Fachbereichratsprotokolle</li>
-<li>Task 2: Durchführung von Stakeholderinterviews</li>
-<li>Task 3: Identifikation und Zusammentragung der Informationsbedürfnisse</li>
-<li>Task 4: Sammlung von Anforderungen</li>
-</ul>
-</li>
-<li><strong>Meilensteine</strong>
-<ul>
-<li><mark>Deliverable 1: Anforderungsspezifikation (aka Lastenheft)</mark>
-<ul>
-<li>Dokumentation der wesentlichen Anforderungen, Rahmenbedingungen, Zielen etc.</li>
-<li>Darlegung des geplanten Vorgehens (<em>Research Design</em>) mit Definition von Projektmeilensteinen etc.</li>
-<li>Klassifikation der verschiedenen <em>Bestandteile</em> eines Fachbereichratsprotokolls</li>
-<li>Auflistung der zu erfüllenden Queries</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+<h2>Workpackage 1: Erweiterung der App um neue Funktionalität</h2>
+<p><img src="figures/mindmap_neue_features.png" alt="" /></p>
 <footer>Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="16" data-paginate="true" data-header="Projektplanung" data-footer="Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023" data-theme="custom-theme-roboto" data-marpit-pagination="16" data-marpit-pagination-total="27" style="--paginate:true;--header:Projektplanung;--footer:Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023;--theme:custom-theme-roboto;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="17" data-paginate="true" data-header="Projektplanung" data-footer="Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023" data-theme="custom-theme-roboto" data-marpit-pagination="17" data-marpit-pagination-total="29" style="--paginate:true;--header:Projektplanung;--footer:Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023;--theme:custom-theme-roboto;">
 <header>Projektplanung</header>
-<h2>Workpackage 2: Literaturstudium und Technolgie-Research</h2>
-<ul>
-<li><strong>Ziel:</strong> <em>Wissensaufbau zu den erforderlichen Technologien und methodischen Ansätzen</em></li>
-<li><strong>Task-Liste</strong>
-<ul>
-<li>Task 1: Auseinandersetzung mit relevanten Technologien und Konzepten (NLP, Transformer, Wissensgraphen, Semantik, etc.)</li>
-<li>Task 2: Sammlung und Auswertung von relevanten Projekten mit vergleichbaren Problemstellungen</li>
-<li>Task 3: Erarbeitung von Umsetzungsmöglichkeiten</li>
-<li>Task 4: Research zum State-of-the-Art (SOTA)</li>
-<li>Task 5: Analyse des SOTA und Abgleich der Umsetzungsmöglichkeiten mit der Anforderungsspezifikation</li>
-</ul>
-</li>
-<li><strong>Meilensteine</strong>
-<ul>
-<li><mark>Deliverable 2: Technologie-Research und Vorgehensbeschreibung</mark>
-<ul>
-<li>Auf Basis des SOTA Darlegung der verschiedenen Umsetzungsmöglichkeiten inkl. deren Stärken und Schwächen</li>
-<li>Abgleich mit der Anforderungsspezifikation und Darlegung des gewählten methodischen Vorgehens einschl. involvierter Technologien</li>
-<li>Darlegung des konzeptionellen Vorgehens und Aufbaus</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+<h1>Ursprüngliche Projektplanung und Ergebnisartefakte der ersten Projektphase</h1>
 <footer>Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="17" data-paginate="true" data-header="Projektplanung" data-footer="Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023" data-theme="custom-theme-roboto" data-marpit-pagination="17" data-marpit-pagination-total="27" style="--paginate:true;--header:Projektplanung;--footer:Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023;--theme:custom-theme-roboto;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="18" data-paginate="true" data-header="Projektplanung" data-footer="Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023" data-theme="custom-theme-roboto" data-marpit-pagination="18" data-marpit-pagination-total="29" style="--paginate:true;--header:Projektplanung;--footer:Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023;--theme:custom-theme-roboto;">
 <header>Projektplanung</header>
-<h2>Workpackage 3: Technologische Realisierung</h2>
+<h2>Workpackage 1: User Research</h2>
 <ul>
-<li><strong>Ziel:</strong> <em>Entwicklung von Demonstratoren für das Backend zur Demonstration der Nutzbarmachung bzw. des Zugriffs auf das enthaltene Faktenwissen</em></li>
-<li><strong>Task-Liste</strong>
+<li><strong>Ziel</strong>: <em>Benutzungsgruppenspezifische Nutzungsszenarien und -Anforderungen erforschen</em></li>
+<li><strong>Task-Liste</strong>:
 <ul>
-<li>Task 1: Umsetzung der Informationsbedürfnisse in entspr. Abfragen</li>
-<li>Task 2: Entwurf von Taxonomien / Ontologien zur Entitäts-Klassifikation</li>
-<li>Task 3: Auswahl und Aufbau der Verarbeitungspipeline (inkl. Storage-Infrastruktur) bzw. einer Wissensbasis</li>
-<li>Task 4: Refinement und Validierung</li>
+<li>Task 1: Stakeholderanalyse</li>
+<li>Task 2: Erarbeitung von Interviewleitfäden für die teilstandardisierten Interviews mit den Stakeholdern (=Stereotypen)</li>
+<li>Task 3: Durchführung und Auswertung der teilstandardisierten Interviews</li>
+<li>Task 4: Erarbeitung von Anwendungsszenarien und Anwendungsfällen</li>
+<li>Task 5: Erarbeitung eines Anforderungkatalogs</li>
+<li>Task 6: Aufteilung der Anforderungen analog dem KANO-Modell und Finden von Begeisterungsfaktoren</li>
 </ul>
 </li>
-<li><strong>Meilensteine</strong>
+<li><strong>Milestones</strong>:
 <ul>
-<li>Lauffähige Demonstratoren mit denen FB-Protokolle in semantische Wissensgraphen umgewandelt und die enthaltenen Informationen abgefragt werden können</li>
-<li><mark>Deliverable 3: Projektdokumentation + Demonstratoren</mark>
+<li><mark>Deliverable 1: User Research</mark> mit
 <ul>
-<li>Dokumentation aller wesentlicher Projektschritte</li>
-<li>Dokumentation der Demonstratoren</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<footer>Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023</footer>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="18" data-paginate="true" data-header="Projektplanung" data-footer="Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023" data-theme="custom-theme-roboto" data-marpit-pagination="18" data-marpit-pagination-total="27" style="--paginate:true;--header:Projektplanung;--footer:Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023;--theme:custom-theme-roboto;">
-<header>Projektplanung</header>
-<h2>Workpackage 0: Detailprojektplanung</h2>
+<li>Dokumentation aller relevanter Artefakte des User Research
 <ul>
-<li><strong>Ziel:</strong> <em>Entwurf eines Detailprojektplans auf Basis des Projektgrobplans</em></li>
-<li><strong>Detailaufgaben</strong>
-<ul>
-<li>Legen Sie Zeitpunkte für die <em>Fertigstellung</em> der Meilensteine bzw. Arbeitspakete fest</li>
-<li>Prüfen Sie alle Tasks auf <em>Verständlichkeit</em> und <em>Vollständigkeit</em>; Fragen Sie nach, falls ein Task unverständlich und/oder mehrdeutig ist</li>
-<li>Prüfen Sie die Tasks auf <em>Erfüllbarkeit</em>, d.h., machen Sie sich Gedanken über Kriterien und deren Herkunft, anhand derer sich der Erfüllungsgrad eines Tasks festmachen lässt.</li>
-<li>Beginnen Sie mit der Strategischen Projektplanung, d.h., planen Sie Ihr Projekt vom Ende zum Anfang.
-<ul>
-<li>Legen Sie Ziele (=Arbeitspakete) und den Erfüllungszeitpunkt fest</li>
-<li>Definieren Sie Ziele für die jeweiligen Arbeitspakete</li>
-<li>Teilen Sie das Gesamtprojektbudget aller Teammitglieder auf die Arbeitspakete auf<sup>1</sup></li>
-</ul>
-</li>
-<li>Legen Sie die <strong>Dokumentationsinfrastruktur</strong> an
-<ul>
-<li>GitLab-Repo</li>
-<li>Kanban- / Scrum-Boardsoftware</li>
-<li>etc.</li>
+<li>Dokumentation der Stereotypenanalyse,</li>
+<li>Stakeholder-Interviews</li>
+<li>Anwendungsszenarien und Use-Cases,</li>
+<li>Anforderungsspezifikation mit Begeisterungsfaktoren</li>
 </ul>
 </li>
 </ul>
 </li>
+<li>Anforderungkatalog inkl. Begeisterungsfaktoren</li>
 </ul>
-<div class="bluebox centerbox center">
-<p>Stellen Sie den Detailprojektplan im 1. Jour fixe vor und klären Sie dort offene Punkte</p>
-</div>
+</li>
+</ul>
 <div class="footnotes">
-<p><sup>1</sup> Während des Projekts überprüfen Sie in regelmäßigen Abständen, in wie weit Ihre IST-Zahlen von der SOLL-Planung abweicht. Thematisieren Sie dies in den Jours fixes.</p>
+<p>Hinweis: Die notwendigen Informationen zur Durchführung des User-Research finden sich in den Unterlagen des <a href="https://projects.fbi.h-da.de/~s.zander/#nutzer-zentrierte-softwareentwicklung-nzse">Moduls &quot;NZSE&quot;</a> von Prof. Dr. Stefan Zander (siehe <a href="https://lernen.h-da.de/course/view.php?id=6802">Moodle</a>)</p>
 </div>
 <footer>Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="19" data-paginate="true" data-header="Projektplanung" data-footer="Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023" data-theme="custom-theme-roboto" data-marpit-pagination="19" data-marpit-pagination-total="27" style="--paginate:true;--header:Projektplanung;--footer:Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023;--theme:custom-theme-roboto;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="19" data-paginate="true" data-header="Projektplanung" data-footer="Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023" data-theme="custom-theme-roboto" data-marpit-pagination="19" data-marpit-pagination-total="29" style="--paginate:true;--header:Projektplanung;--footer:Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023;--theme:custom-theme-roboto;">
 <header>Projektplanung</header>
-<h2>Ressourcen</h2>
-<div class="twocolumns smaller">
+<h2>Workpackage 2: UI-Entwurf &amp; Prototyping</h2>
 <ul>
-<li>Knowledge Graph Generation From Text Using Neural Machine Translation Techniques <a href="https://ieeexplore.ieee.org/document/9510164">https://ieeexplore.ieee.org/document/9510164</a></li>
-<li>Neural Machine Translation for Semantic-Driven Q&amp;A Systems in the Factory Planning <a href="https://www.sciencedirect.com/science/article/pii/S2212827121000676">https://www.sciencedirect.com/science/article/pii/S2212827121000676</a></li>
-<li><a href="https://towardsdatascience.com/transformers-89034557de14">https://towardsdatascience.com/transformers-89034557de14</a></li>
-<li>Language Models are Open Knowledge Graphs <a href="https://youtu.be/NAJOZTNkhlI">https://youtu.be/NAJOZTNkhlI</a></li>
-<li>Building a Knowledge Base from Texts: a Full Practical Example <a href="https://medium.com/nlplanet/building-a-knowledge-base-from-texts-a-full-practical-example-8dbbffb912fa">https://medium.com/nlplanet/building-a-knowledge-base-from-texts-a-full-practical-example-8dbbffb912fa</a></li>
-<li>Text to Knowledge Graph <a href="https://medium.com/swlh/text-to-knowledge-graph-683002cde6e0">https://medium.com/swlh/text-to-knowledge-graph-683002cde6e0</a></li>
-<li>From Text to a Knowledge Graph: The Information Extraction Pipeline <a href="https://neo4j.com/blog/text-to-knowledge-graph-information-extraction-pipeline/">https://neo4j.com/blog/text-to-knowledge-graph-information-extraction-pipeline/</a></li>
-<li>Knowledge Graph – A Powerful Data Science Technique to Mine Information from Text <a href="https://www.analyticsvidhya.com/blog/2019/10/how-to-build-knowledge-graph-text-using-spacy/">https://www.analyticsvidhya.com/blog/2019/10/how-to-build-knowledge-graph-text-using-spacy/</a></li>
-<li>Knowledge Graphs
+<li><strong>Ziel</strong>: <em>Aus den Erkenntnissen des User Research erste UI-Prototypen erarbeiten und mit den Stakeholdern testen um zu einem finalen, akzeptierten Design zu kommen.</em></li>
+<li><strong>Task-Liste</strong>:
 <ul>
-<li><a href="https://web.stanford.edu/~vinayc/kg/notes/How_To_Create_A_Knowledge_Graph_From_Text.html">https://web.stanford.edu/~vinayc/kg/notes/How_To_Create_A_Knowledge_Graph_From_Text.html</a></li>
-<li><a href="https://web.stanford.edu/~vinayc/kg/notes/KG_Notes_v1.pdf">https://web.stanford.edu/~vinayc/kg/notes/KG_Notes_v1.pdf</a></li>
-<li><a href="https://web.stanford.edu/~vinayc/kg/notes/">https://web.stanford.edu/~vinayc/kg/notes/</a></li>
-<li><a href="https://web.stanford.edu/~vinayc/kg/notes/Table_Of_Contents.html">https://web.stanford.edu/~vinayc/kg/notes/Table_Of_Contents.html</a></li>
+<li>Task 1: Erarbeitung der GUIs</li>
+<li>Task 2: Konzeption von User-Tests anhand der aus dem User-Research gewonnenen Erkenntnissen</li>
+<li>Task 3: Durchführung der User-Tests mit den Steretypen</li>
+<li>Task 4: Ableitung von Verbesserungen und Überarbeitung des Designs</li>
 </ul>
 </li>
-<li>Attentention is all you need  <a href="https://arxiv.org/abs/1706.03762">https://arxiv.org/abs/1706.03762</a></li>
-<li>Word2Vec-Paper Explained <a href="https://towardsdatascience.com/word2vec-research-paper-explained-205cb7eecc30">https://towardsdatascience.com/word2vec-research-paper-explained-205cb7eecc30</a></li>
+<li><strong>Milestones</strong>:
+<ul>
+<li>finaler Entwurf der Benutzungsschnittstellen (GUIs)</li>
+<li><mark>Deliverable 2: UI-Entwurf (=Designkonzept)</mark>
+<ul>
+<li>Dokumentation des Designkonzepts für die User-Tests</li>
+<li>Dokumentation der durchgeführten User-Tests</li>
+<li>Dokumentation der gewonnenen Erkenntnisse</li>
+<li>Dokumentation des finalen UI-Entwurfs</li>
 </ul>
-</div>
-<div class="footnotes">
-<p>Die hier aufgeführten Arbeiten sind als Empfehlung bzw. Einstieg in das Themengebiet zu verstehen. Die Liste ist weder vollständig noch erschöpfend. Eigene Recherchen sind zwingend notwendig.</p>
-</div>
+</li>
+</ul>
+</li>
+</ul>
 <footer>Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="20" data-paginate="true" data-header="Projektplanung" data-footer="Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023" data-theme="custom-theme-roboto" data-marpit-pagination="20" data-marpit-pagination-total="27" style="--paginate:true;--header:Projektplanung;--footer:Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023;--theme:custom-theme-roboto;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="20" data-paginate="true" data-header="Projektplanung" data-footer="Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023" data-theme="custom-theme-roboto" data-marpit-pagination="20" data-marpit-pagination-total="29" style="--paginate:true;--header:Projektplanung;--footer:Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023;--theme:custom-theme-roboto;">
+<header>Projektplanung</header>
+<h2>Workpackage 3: Technologie-Research</h2>
+<ul>
+<li><strong>Ziel</strong>: <em>Evaluierung der technologischen und architektonischen Umsetzungsmöglichkeiten; System-Grob- und -feinentwurf.</em></li>
+<li><strong>Task-Liste</strong>:
+<ul>
+<li>Task 1: Sichtung aktueller Technologien bzw. Analyse technologischer- und architektonischer Umsetzungsmöglichkeiten auf Basis der Anforderungsspezifikation</li>
+<li>Task 2: Systemarchitekturentwurf</li>
+<li>Task 3: Vorbereitung der Implementierungsphase</li>
+</ul>
+</li>
+<li><strong>Milestones</strong>:
+<ul>
+<li><mark>Deliverable 3: Technologie-Research</mark>
+<ul>
+<li>Evaluation der technologischen und architektonischen Umsetzungsmöglichkeiten</li>
+<li>Dokumentation des System-Grob- und -feinentwurfs</li>
+</ul>
+</li>
+<li>Auswahl des Technologie-Stacks</li>
+<li>Festlegung des Systemdesigns</li>
+</ul>
+</li>
+</ul>
+<footer>Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="21" data-paginate="true" data-header="Projektplanung" data-footer="Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023" data-theme="custom-theme-roboto" data-marpit-pagination="21" data-marpit-pagination-total="29" style="--paginate:true;--header:Projektplanung;--footer:Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023;--theme:custom-theme-roboto;">
+<header>Projektplanung</header>
+<h2>Workpackage 4: Implementierung, Usability-Evaluation, Deployment</h2>
+<ul>
+<li><strong>Ziel</strong>: <em>Implementierung der Anwendung (Frontend &amp; Backend), Testing,  Durchführung von Usability-Evaluierungsmethoden und Fertigstellung der Dokumentation.</em></li>
+<li><strong>Task-Liste</strong>:
+<ul>
+<li>Task 1: Implementierung</li>
+<li>Task 2: Usability Testing mittels heuristischer und empirischer Evaluationsmethoden</li>
+<li>Task 3: Code- und Doc-Reviews</li>
+<li>Task 4: Deployment</li>
+<li>Task 5: Abschluss (Vervollständigung) von Implementierung und Dokumentation</li>
+</ul>
+</li>
+<li><strong>Milestones</strong>
+<ul>
+<li><mark>Deliverable 4: Usability-Tests</mark>
+<ul>
+<li>Dokumentation der Usability-Test inkl. Testfällen</li>
+<li>Dokumentation der Erkenntnisse aus der Usability-Evaluation (=Auswertung)</li>
+<li>Dokumentation der Verbesserungen</li>
+</ul>
+</li>
+<li>Abgeschlossene Implementierung sowie Deployment des Systems</li>
+<li>Übergabe des Systems sowie der Dokumentation</li>
+</ul>
+</li>
+</ul>
+<footer>Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="22" data-paginate="true" data-header="Projektplanung" data-footer="Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023" data-theme="custom-theme-roboto" data-marpit-pagination="22" data-marpit-pagination-total="29" style="--paginate:true;--header:Projektplanung;--footer:Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023;--theme:custom-theme-roboto;">
 <header>Projektplanung</header>
 <h1>Fragen ?</h1>
 <footer>Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="21" data-paginate="true" data-header="Projektmanagement" data-footer="Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023" data-theme="custom-theme-roboto" data-marpit-pagination="21" data-marpit-pagination-total="27" style="--paginate:true;--header:Projektmanagement;--footer:Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023;--theme:custom-theme-roboto;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="23" data-paginate="true" data-header="Projektmanagement" data-footer="Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023" data-theme="custom-theme-roboto" data-marpit-pagination="23" data-marpit-pagination-total="29" style="--paginate:true;--header:Projektmanagement;--footer:Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023;--theme:custom-theme-roboto;">
 <header>Projektmanagement</header>
 
 <h1>Projektmanagement</h1>
 <footer>Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="22" data-paginate="true" data-header="Projektmanagement" data-footer="Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023" data-theme="custom-theme-roboto" data-marpit-pagination="22" data-marpit-pagination-total="27" style="--paginate:true;--header:Projektmanagement;--footer:Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023;--theme:custom-theme-roboto;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="24" data-paginate="true" data-header="Projektmanagement" data-footer="Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023" data-theme="custom-theme-roboto" data-marpit-pagination="24" data-marpit-pagination-total="29" style="--paginate:true;--header:Projektmanagement;--footer:Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023;--theme:custom-theme-roboto;">
 <header>Projektmanagement</header>
 <h1>Projektmanagement – Teil 1</h1>
 <div class="bluebox centerbox small">
@@ -773,7 +794,7 @@ of a flex item such as single etc. */
 </div>
 <footer>Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="23" data-paginate="true" data-header="Projektmanagement" data-footer="Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023" data-theme="custom-theme-roboto" data-marpit-pagination="23" data-marpit-pagination-total="27" style="--paginate:true;--header:Projektmanagement;--footer:Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023;--theme:custom-theme-roboto;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="25" data-paginate="true" data-header="Projektmanagement" data-footer="Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023" data-theme="custom-theme-roboto" data-marpit-pagination="25" data-marpit-pagination-total="29" style="--paginate:true;--header:Projektmanagement;--footer:Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023;--theme:custom-theme-roboto;">
 <header>Projektmanagement</header>
 <h1>Projektmanagement – Teil 2</h1>
 <ul>
@@ -791,19 +812,19 @@ of a flex item such as single etc. */
 </div>
 <footer>Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="24" data-paginate="true" data-header="Jour fixes" data-footer="Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023" data-theme="custom-theme-roboto" data-marpit-pagination="24" data-marpit-pagination-total="27" style="--paginate:true;--header:Jour fixes;--footer:Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023;--theme:custom-theme-roboto;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="26" data-paginate="true" data-header="Jour fixes" data-footer="Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023" data-theme="custom-theme-roboto" data-marpit-pagination="26" data-marpit-pagination-total="29" style="--paginate:true;--header:Jour fixes;--footer:Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023;--theme:custom-theme-roboto;">
 <header>Jour fixes</header>
 
 <h1>Jour fixes</h1>
 <footer>Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="25" data-paginate="true" data-header="Retrospektive" data-footer="Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023" data-theme="custom-theme-roboto" data-marpit-pagination="25" data-marpit-pagination-total="27" style="--paginate:true;--header:Retrospektive;--footer:Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023;--theme:custom-theme-roboto;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="27" data-paginate="true" data-header="Retrospektive" data-footer="Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023" data-theme="custom-theme-roboto" data-marpit-pagination="27" data-marpit-pagination-total="29" style="--paginate:true;--header:Retrospektive;--footer:Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023;--theme:custom-theme-roboto;">
 <header>Retrospektive</header>
 
 <h1>Retrospektive – Infos und Durchführung</h1>
 <footer>Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="26" data-paginate="true" data-header="Retrospektive" data-footer="Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023" data-theme="custom-theme-roboto" data-marpit-pagination="26" data-marpit-pagination-total="27" style="--paginate:true;--header:Retrospektive;--footer:Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023;--theme:custom-theme-roboto;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="28" data-paginate="true" data-header="Retrospektive" data-footer="Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023" data-theme="custom-theme-roboto" data-marpit-pagination="28" data-marpit-pagination-total="29" style="--paginate:true;--header:Retrospektive;--footer:Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023;--theme:custom-theme-roboto;">
 <header>Retrospektive</header>
 <h1>Infos zur Durchführung</h1>
 <p><strong>Ziel</strong>: <em>Subjektive Reflektion von Arbeitprozessen und Methodiken um zukünftige Sprints zu verbessern.</em></p>
@@ -842,7 +863,7 @@ of a flex item such as single etc. */
 </div>
 <footer>Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="27" data-paginate="true" data-header="Retrospektive" data-footer="Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023" data-theme="custom-theme-roboto" data-marpit-pagination="27" data-marpit-pagination-total="27" style="--paginate:true;--header:Retrospektive;--footer:Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023;--theme:custom-theme-roboto;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="29" data-paginate="true" data-header="Retrospektive" data-footer="Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023" data-theme="custom-theme-roboto" data-marpit-pagination="29" data-marpit-pagination-total="29" style="--paginate:true;--header:Retrospektive;--footer:Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023;--theme:custom-theme-roboto;">
 <header>Retrospektive</header>
 <h1>Aufgabe</h1>
 <div class="centerbox center greenbox">
@@ -945,36 +966,159 @@ Projekt Systementwicklung / Projekt Multimedia ist ein **7,5 CP Modul**.
 ^1^ https://www.studis-online.de/Studieren/ects.php
 
 ^2^ https://fbc.h-da.de/fileadmin/Dokumente/Pruefungsordnung/ABPO_AEnderung_2018-01-30.pdf
-:::</p></div><div class="bespoke-marp-note" data-index="8" tabindex="0"><p>- Zeitlicher Aufwand von **10,5h** wöchentliche Arbeitszeit (ohne Pausen) über **16 Wochen** hinweg^1^</p></div><div class="bespoke-marp-note" data-index="10" tabindex="0"><p>- Unternehmensseitig werden notwendige APIs etc. zur Verfügung gestellt – mehr Informationen dazu in der Projektvorstellung</p></div><div class="bespoke-marp-note" data-index="11" tabindex="0"><p>## Projekt #1: Entwicklung eines innovativen RPN-Calculators mittels moderner Mobile-/Web-Entwicklungsframeworks
-### Betreuer: Roland Trefftz
+:::</p></div><div class="bespoke-marp-note" data-index="8" tabindex="0"><p>- Zeitlicher Aufwand von **10,5h** wöchentliche Arbeitszeit (ohne Pausen) über **16 Wochen** hinweg^1^</p></div><div class="bespoke-marp-note" data-index="10" tabindex="0"><p>- Unternehmensseitig werden notwendige APIs etc. zur Verfügung gestellt – mehr Informationen dazu in der Projektvorstellung</p></div><div class="bespoke-marp-note" data-index="15" tabindex="0"><p>---
+## Workpackage 1: Erweiterung der App um neue Funktionalität (2/2)
+
+- **Ziel**: _Implementierung der Anwendung (Frontend &amp; Backend), Testing,  Durchführung von Usability-Evaluierungsmethoden und Fertigstellung der Dokumentation._
+- **Task-Liste**:
+  - Task 1: Abrechnungsfunktion
+  - Task 2: State-of-Charge // automatisiertes Auslesen von Fahrtzeug-/Fahrdaten 
+  - Task 3: Code- und Doc-Reviews
+  - Task 4: Deployment
+  - Task 5: Abschluss (Vervollständigung) von Implementierung und Dokumentation
+- **Milestones**
+  - ==Deliverable 5: Usability-Tests==
+    - Dokumentation der Usability-Test inkl. Testfällen
+    - Dokumentation der Erkenntnisse aus der Usability-Evaluation (=Auswertung)
+    - Dokumentation der Verbesserungen
+  - Abgeschlossene Implementierung sowie Deployment des Systems
+  - Übergabe des Systems sowie der Dokumentation 
+  -</p></div><div class="bespoke-marp-note" data-index="20" tabindex="0"><p>## Projekt: Überführung der Fachbereichsratsprotokolle in eine semantische Wissensbasis mittels moderner NLP-/KI-Technologien
+
+### Betreuer: Stefan Zander
 
 
 ---
-## Projekt #1: RPN-Calculator
+## Zielsetzung
 
-Die Projektdetails und Aufgaben sind in einem separaten Foliensatz dargelegt. 
-
-Dieser findet sich im Moodle-Kurs der Veranstaltung. 
-
-
-::: blue 
-**Ziel**: Entwicklung eines intuitiv einfach nutzbaren RPN-Calculator auf Basis moderner Web-Technologien.
-:::
+:::: green
+Die vielen wertvollen Informationen, die in Fachbereichsratsprotokollen enthalten sind, automatisiert extrahieren und nutzbar machen.
+::::
 
 {.HugeSkip}
 
-**Allgemeine Anforderungen** 
-- Lauffähig im Web und auf mobilen Endgeräten
-- Verwaltung von NutzerInnen und Fahrzeugen
-- Individualisierbares Dashboard mit div. Übersichten (Buchungen / Nutzung / gefahren Kilometer / Auslastung / etc.)
-- Einfache und vielfältige Reservierungsmöglichkeiten (bspw. über einen gem. Kalender / via Email etc.)
-- Erforschung von Schnittstellen zur Integration von Telemetriedaten und anderen technischen Merkmalen (Ladezustand, Kilometer etc)
-- Einfachste Nutzung und Administration
-- Hohe Code- und Dokumentationsqualität
+- Erforschung und Begutachtung von aktuellen Ansätzen, um in Textdokumenten enthaltene Informationen (sog. Faktenwissen) automatisiert zu extrahieren und nutzbar zu machen
+  - Abbildung auf Wissensgraphen
+  - Named Entity Recognition (NER)
+  - mit Hilfe moderner NLP-Techniken
+- Fachbereichsratsprotokolle in einer NLP-Pipeline verarbeiten 
+- Überführung der Fachbereichsratsprotokolle in (semantische) Wissensgraphen unter Zuhilfenahme von State-of-the-Art NLP-Technologien und Verarbeitungsansätzen
+- Aufarbeitung von SOTA-Ansätzen im Bereich NER oder IE
+- Untersuchung und Vergleich von Extraction Pipelines 
 
-::: warning 
-**Wichtig**: Die konkreten Anforderungen müssen in Stakeholder-Interviews mittels User-Research und Requirements-Engineering-Methoden erforscht und erarbeitet werden.
-:::</p></div><div class="bespoke-marp-note" data-index="23" tabindex="0"><p>---
+::: blue
+Wichtig: Der nachfolgende _Projektplan_ ist eine grobe Orientierung und soll die Detailplanung unterstützen und erleichtern, diese jedoch nicht ersetzen. 
+:::
+
+---
+## Workpackage 1: Auseinandersetzung mit dem Thema
+
+- **Ziel**: _Erlangung eines umfassenden Verständnisses zu Aufgabenstellung, Zielen, Rahmenbedingungen, Erwartungen, benötigten Technologien etc._
+- **Task-Liste**
+  - Task 1: Sichtung und Analyse der Fachbereichratsprotokolle
+  - Task 2: Durchführung von Stakeholderinterviews
+  - Task 3: Identifikation und Zusammentragung der Informationsbedürfnisse
+  - Task 4: Sammlung von Anforderungen
+- **Meilensteine**
+  - ==Deliverable 1: Anforderungsspezifikation (aka Lastenheft)==
+    - Dokumentation der wesentlichen Anforderungen, Rahmenbedingungen, Zielen etc.
+    - Darlegung des geplanten Vorgehens (_Research Design_) mit Definition von Projektmeilensteinen etc. 
+    - Klassifikation der verschiedenen _Bestandteile_ eines Fachbereichratsprotokolls
+    - Auflistung der zu erfüllenden Queries
+
+
+
+---
+## Workpackage 2: Literaturstudium und Technolgie-Research
+
+- **Ziel:** _Wissensaufbau zu den erforderlichen Technologien und methodischen Ansätzen_
+- **Task-Liste**
+  - Task 1: Auseinandersetzung mit relevanten Technologien und Konzepten (NLP, Transformer, Wissensgraphen, Semantik, etc.)
+  - Task 2: Sammlung und Auswertung von relevanten Projekten mit vergleichbaren Problemstellungen 
+  - Task 3: Erarbeitung von Umsetzungsmöglichkeiten
+  - Task 4: Research zum State-of-the-Art (SOTA)
+  - Task 5: Analyse des SOTA und Abgleich der Umsetzungsmöglichkeiten mit der Anforderungsspezifikation
+- **Meilensteine**
+  - ==Deliverable 2: Technologie-Research und Vorgehensbeschreibung==
+    - Auf Basis des SOTA Darlegung der verschiedenen Umsetzungsmöglichkeiten inkl. deren Stärken und Schwächen
+    - Abgleich mit der Anforderungsspezifikation und Darlegung des gewählten methodischen Vorgehens einschl. involvierter Technologien
+    - Darlegung des konzeptionellen Vorgehens und Aufbaus
+
+
+
+
+---
+## Workpackage 3: Technologische Realisierung
+
+- **Ziel:** _Entwicklung von Demonstratoren für das Backend zur Demonstration der Nutzbarmachung bzw. des Zugriffs auf das enthaltene Faktenwissen_ 
+- **Task-Liste**
+  - Task 1: Umsetzung der Informationsbedürfnisse in entspr. Abfragen
+  - Task 2: Entwurf von Taxonomien / Ontologien zur Entitäts-Klassifikation
+  - Task 3: Auswahl und Aufbau der Verarbeitungspipeline (inkl. Storage-Infrastruktur) bzw. einer Wissensbasis
+  - Task 4: Refinement und Validierung
+- **Meilensteine**
+  - Lauffähige Demonstratoren mit denen FB-Protokolle in semantische Wissensgraphen umgewandelt und die enthaltenen Informationen abgefragt werden können
+  - ==Deliverable 3: Projektdokumentation + Demonstratoren==
+    - Dokumentation aller wesentlicher Projektschritte
+    - Dokumentation der Demonstratoren
+
+
+
+---
+## Workpackage 0: Detailprojektplanung
+
+- **Ziel:** _Entwurf eines Detailprojektplans auf Basis des Projektgrobplans_ 
+- **Detailaufgaben**
+  - Legen Sie Zeitpunkte für die *Fertigstellung* der Meilensteine bzw. Arbeitspakete fest
+  - Prüfen Sie alle Tasks auf *Verständlichkeit* und *Vollständigkeit*; Fragen Sie nach, falls ein Task unverständlich und/oder mehrdeutig ist
+  - Prüfen Sie die Tasks auf *Erfüllbarkeit*, d.h., machen Sie sich Gedanken über Kriterien und deren Herkunft, anhand derer sich der Erfüllungsgrad eines Tasks festmachen lässt.
+  - Beginnen Sie mit der Strategischen Projektplanung, d.h., planen Sie Ihr Projekt vom Ende zum Anfang.
+    - Legen Sie Ziele (=Arbeitspakete) und den Erfüllungszeitpunkt fest
+    - Definieren Sie Ziele für die jeweiligen Arbeitspakete
+    - Teilen Sie das Gesamtprojektbudget aller Teammitglieder auf die Arbeitspakete auf^1^
+  - Legen Sie die **Dokumentationsinfrastruktur** an
+    - GitLab-Repo
+    - Kanban- / Scrum-Boardsoftware
+    - etc.
+
+::: bluebox centerbox center
+Stellen Sie den Detailprojektplan im 1. Jour fixe vor und klären Sie dort offene Punkte
+:::
+  
+
+::: footnotes
+^1^ Während des Projekts überprüfen Sie in regelmäßigen Abständen, in wie weit Ihre IST-Zahlen von der SOLL-Planung abweicht. Thematisieren Sie dies in den Jours fixes.
+:::
+
+
+
+
+
+---
+## Ressourcen
+
+
+:::: twocolumns smaller
+- Knowledge Graph Generation From Text Using Neural Machine Translation Techniques &lt;https://ieeexplore.ieee.org/document/9510164&gt;
+- Neural Machine Translation for Semantic-Driven Q&amp;A Systems in the Factory Planning &lt;https://www.sciencedirect.com/science/article/pii/S2212827121000676&gt;
+- https://towardsdatascience.com/transformers-89034557de14
+- Language Models are Open Knowledge Graphs https://youtu.be/NAJOZTNkhlI
+- Building a Knowledge Base from Texts: a Full Practical Example https://medium.com/nlplanet/building-a-knowledge-base-from-texts-a-full-practical-example-8dbbffb912fa
+- Text to Knowledge Graph https://medium.com/swlh/text-to-knowledge-graph-683002cde6e0
+- From Text to a Knowledge Graph: The Information Extraction Pipeline https://neo4j.com/blog/text-to-knowledge-graph-information-extraction-pipeline/
+- Knowledge Graph – A Powerful Data Science Technique to Mine Information from Text https://www.analyticsvidhya.com/blog/2019/10/how-to-build-knowledge-graph-text-using-spacy/
+- Knowledge Graphs 
+  - https://web.stanford.edu/~vinayc/kg/notes/How_To_Create_A_Knowledge_Graph_From_Text.html
+  - https://web.stanford.edu/~vinayc/kg/notes/KG_Notes_v1.pdf
+  - https://web.stanford.edu/~vinayc/kg/notes/
+  - https://web.stanford.edu/~vinayc/kg/notes/Table_Of_Contents.html
+- Attentention is all you need  https://arxiv.org/abs/1706.03762
+- Word2Vec-Paper Explained https://towardsdatascience.com/word2vec-research-paper-explained-205cb7eecc30
+::::
+
+::: footnotes
+Die hier aufgeführten Arbeiten sind als Empfehlung bzw. Einstieg in das Themengebiet zu verstehen. Die Liste ist weder vollständig noch erschöpfend. Eigene Recherchen sind zwingend notwendig.
+:::</p></div><div class="bespoke-marp-note" data-index="25" tabindex="0"><p>---
 # Jour fixe – MO, 31.10.2022
 
 

@@ -20,9 +20,9 @@ paginate: true
 <!-- marp --engine ./engine.js --watch --theme-set custom-theme-roboto.css -- --allow-local-files 2023_SS_PSE_Kick-Off.md -->
 <!-- marp --pdf --allow-local-files --engine ./engine.js --theme-set custom-theme-roboto.css -- 2023_SS_PSE_Kick-Off.md -->
 
-# Projekt Systementwicklung / Projekt Multimedia <br /> im SoSe 2023 
+# Master-Projekt-Systementwicklung im SoSe 2023 
 
-#### Prof. Dr. Stefan Linus Zander 
+#### Prof. Dr. Stefan Linus Zander – Dipl. Volkswirt Roland Trefftz
 
 Kick-Off-Meeting – 03.05.2023  {.lightgreen .Big .skip}
 
@@ -302,14 +302,13 @@ Die konkreten Anforderungen müssen in Stakeholder-Interviews mittels User-Resea
 
 
 ---
-## Workpackage 1: Erweiterung der App um neue Funktionalität (1/2)
+## Workpackage 1: Erweiterung der App um neue Funktionalität
 
 ![](figures/mindmap_neue_features.png)
 
 
-
----
 <!-- 
+---
 ## Workpackage 1: Erweiterung der App um neue Funktionalität (2/2)
 
 - **Ziel**: _Implementierung der Anwendung (Frontend & Backend), Testing,  Durchführung von Usability-Evaluierungsmethoden und Fertigstellung der Dokumentation._
@@ -417,7 +416,7 @@ Hinweis: Die notwendigen Informationen zur Durchführung des User-Research finde
 
 
 
-
+<!--
 ## Projekt: Überführung der Fachbereichsratsprotokolle in eine semantische Wissensbasis mittels moderner NLP-/KI-Technologien
 
 ### Betreuer: Stefan Zander
@@ -525,10 +524,6 @@ Stellen Sie den Detailprojektplan im 1. Jour fixe vor und klären Sie dort offen
 ^1^ Während des Projekts überprüfen Sie in regelmäßigen Abständen, in wie weit Ihre IST-Zahlen von der SOLL-Planung abweicht. Thematisieren Sie dies in den Jours fixes.
 :::
 
- 
-
-
-
 
 
 
@@ -558,6 +553,9 @@ Stellen Sie den Detailprojektplan im 1. Jour fixe vor und klären Sie dort offen
 ::: footnotes
 Die hier aufgeführten Arbeiten sind als Empfehlung bzw. Einstieg in das Themengebiet zu verstehen. Die Liste ist weder vollständig noch erschöpfend. Eigene Recherchen sind zwingend notwendig.
 :::
+
+-->
+
 
 ---
 # Fragen ?
