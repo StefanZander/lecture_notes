@@ -30,41 +30,36 @@ Logical Inferencing using RDF Schema {.lightgreen .Big .skip}
 ---
 <!-- header: Overview -->
 <!-- footer: Foundations of Semantic Knowledge Graphs | A Formal Introduction to Graphs | Prof. Dr. Stefan Zander | Hochschule Darmstadt – University of Applied Sciences -->
-
-# Outline
-
-- ...
-
-
-
----
-## Knowledge Representation Formulas: What we can express using formal semantics
+## Knowledge Representation Formulas: <br/>What we can express using formal semantics...
 
 ::: twocolumns
-Conditions on class membership
+*Conditions on class membership*
 - all mammals are warm-blooded
 - if you don't eat meat, you are a vegetarian
 
-Relation between classes
+*Relation between classes*
 - all cities are populated cities
 - every class is equivalent to itself
 
-Assertions on class membership
+*Assertions on class membership*
 - Darmstadt is a city
 
-Characteristics on properties
+*Characteristics on properties*
 - hasCapital only relates to countries or cities
 - partOf is a transitive property
 
-Assertions on property relations
+*Assertions on property relations*
 - hasCapital(Berlin, Germany)
 
-Assertions on equality
+*Assertions on equality*
 - morning star = evening star = venus
 :::
 
+<!-- TODO: Add relations between properties (eg being friend means to know sby  ) -->
+
 
 ---
+<!-- header: RDF/S Entailments -->
 ## Basic Inferencing: Class membership and hierarchy entailments
 
 ::::: columns
@@ -108,6 +103,7 @@ digraph G {
 ```
 ::::
 :::::
+
 
 
 ---
@@ -229,26 +225,12 @@ digraph G {
   ```
 
 
-
+<!-- 
 ---
 ## Add Overview of Entailment rules
 
-
-
-
----
-## RDF Schema: Observations and Summary
-
-- Properties are first-class citizen
-  ...not part of classes as in object oriented programming (OOP/UML)
-  ...domain and range restrictions are tricky and should be avoided
-
-- No strict distinction between **schema** and **data level**
-
-- RDF Schema entailment rules do not include **negation**
-
-- No notion of equality  
-
+Did not find the source
+ -->
 
 
 ---
@@ -271,17 +253,41 @@ digraph G {
 
 
 
+
+---
+## RDF Schema: Observations :fa-binoculars:
+
+- **Properties** are *first-class citizen*
+  ...not part of classes as in object oriented programming (OOP/UML)
+  ...domain and range restrictions are tricky and should be avoided
+
+- No strict distinction between **schema** and **data level**
+
+- RDF Schema entailment rules do not include **negation**
+
+- No notion of **equality**  
+
+
+
 ---
 ## RDF Schema: Summary
 
+::::: columns
+:::: triple
 - Without **formal semantics**, the Web of Data is **meaningless**
 
 - Distinction between **classes**, **properties**, and **instances** (schema vs. data)
 
-- RDF Schema employes a number of **reserved symbols** (ie language terms) for defining individual vocabularies
+- RDF Schema employes a number of **reserved symbols** (ie *language terms*) for defining individual vocabularies
 
-- **Entailment rules** are expressed using reserved symbols / are computed based on the semantics of reserved symbols
+- **Entailment rules** are expressed using *reserved symbols* 
+  $\leadsto$ *are computed based on the semantics of reserved symbols*
 
-- **Inferencing** denotes the application of entailment rules to formulas to produce **new facts**
+- **Inferencing** denotes the application of ==entailment rules== to formulas to produce **new facts**
 
 - RDF Schema is **not** very **expressive**
+::::
+:::: double
+![](figures/brain4.jpg)
+::::
+:::::

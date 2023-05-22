@@ -33,7 +33,10 @@ Deductive Knowledge {.lightgreen .Big .skip}
 
 # Outline
 
-- ...
+- Ontologies
+- Interpretations and Models
+- Ontology Language Features 
+- Reasoning using DLs and Rules
 
 
 ---
@@ -116,6 +119,9 @@ Once instructed in this manner, machines can (often) apply deductions with a pre
 ::: center spacebefore
 ![width:720px](figures/directed_labelled_graph_example.svg)
 :::
+::: caption
+Source: https://kgbook.org/#chap-deductive
+:::
 ::::
 :::: double
 **Query**: "find festivals located in Santiago"
@@ -143,22 +149,22 @@ Once instructed in this manner, machines can (often) apply deductions with a pre
 
 In the following, we will learn about ways in which _more complex entailments_ can be expressed and automated. 
 
-Though we could leverage a number of **logical frameworks** for these purposes (e.g., First-Order Logic, Datalog, Prolog, Answer Set Programming, etc.), we focus on ==[ontologies]{.inversered}==, which 
-- constitute a ==:fa-square-root-variable: formal representation of knowledge== 
-- that, importantly for us, _:fa-diagram-project: can be represented as a graph_ 
+A number of **logical frameworks** could be leverages for these purposes (e.g., *First-Order Logic*, *Datalog*, *Prolog*, *Answer Set Programming*, etc.), we focus on [ontologies]{.inversered}, which... 
+- ...constitute a ==:fa-square-root-variable: formal representation of knowledge== 
+- ...can be represented as a _:fa-diagram-project:graph_ 
 
-We discuss 
-- how ==ontologies== can be _formally defined_, 
-- how they relate to existing _logical frameworks_, and 
-- how _reasoning_ can be conducted with respect to such ontologies
+We discuss... 
+- ...how ==ontologies== can be _formally defined_, 
+- ...how they can be created using *ontology languages*, and
+- ...how _reasoning_ can be conducted with respect to such ontologies
 
 
 
 ---
-## What is an Ontology
+## What is an Ontology ?
 ![bg right:25% ](figures/ontology_ancient_greek.webp)
 
-To enable entailment, we must be precise about what the terms we use mean.
+To enable *entailment*, we must be *precise* about what the terms we use *mean*.
 
 ::: definition
 An ontology is then a concrete, formal representation of what terms mean within the scope in which they are used (e.g., a given domain).
@@ -172,7 +178,60 @@ Ontologies can guide how graph data are modelled.
 
 Given that ontologies are formal representations, they can be used to automate entailment.
 
-The usefulness of an ontology depends on the **level of agreement** on what that ontology defines, how detailed it is, and how broadly and consistently it is adopted $\leadsto$ thus enhancing interoperability
+The usefulness of an ontology depends on the **level of agreement** on what that ontology defines, how detailed it is, and how broadly and consistently it is adopted $\leadsto$ thus enhancing interoperability.
+
+
+
+---
+## A Definition of Ontologies
+![bg right:25% ](figures/ontology_ancient_greek.webp)
+
+::: definition
+An ==ontology== is a formal, explicit specification of a shared conceptualization.
+
+Source: Studer, Benjamins, Fensel. "Knowledge Engineering: Principles und Methods." Data und Knowledge Engineering. 25 (1998) 161-197 based on Tom Gruber 1993.
+:::
+
+- :fa-square-root-variable: **formal** 
+  - based on mathematics and logics
+  - interpretable by machines
+  - specific algorithms are able to compute the correctness (ie satisfiability) of an ontology
+- :fa-pen-to-square: **explicit specification** 
+  - described in axiomatic forms, ie., semantics of the terms are expressed in form of logical axioms 
+  - An ontology language is used for expressing elements of a domain
+- :fa-people-group: **shared conceptualisation**
+  - common understanding about the elements and constituents of a domain
+  - created by a group of experts
+  - reflect consensual knowlegde plus a shared committment
+
+
+
+
+
+---
+## Additional popular ontology definitions
+![bg right:25% ](figures/ontology_ancient_greek.webp)
+
+1. ["An ontology defines the basic terms and relations comprising the vocabulary of a topic area, as well as the rules for combining terms and relations to define extensions to the vocabulary."]{.kursiv}
+  [_Neches, R.; Fikes, R.; Finin, T.; Gruber, T.; Patil, R.; Senator, T.; Swartout, W.R. Enabling Technology for Knowledge Sharing. AI Magazine. Winter 1991. 36-56_]{.smaller}
+
+2. ["An ontology is a hierarchically structured set of terms for describing a domain that can be used as a skeletal foundation for a knowledge base."]{.kursiv}
+  [_B. Swartout; R. Patil; k. Knight; T. Russ. Toward Distributed Use of Large-Scale Ontologies. Ontological Engineering. AAAI-97 Spring Symposium Series. 1997. 138-148_]{.smaller}
+
+2. ["An ontology provides the means for describing explicitly the conceptualization behind the knowledge represented in a knowledge base."]{.kursiv}
+  [_A. Bernaras; I. Laresgoiti; J. Correra. Building und Reusing Ontologies for Electrical Network Applications. ECAI96. 12th European Conference on Artificial Intelligence. Ed. John Wiley & Sons, Ltd. 298-302_]{.smaller}
+
+
+
+---
+## Ontologies Summary
+![bg right:25% ](figures/ontology_ancient_greek.webp)
+
+- An ontology is a *set* of *axioms*
+- *Axioms* describe the formal semantics of the concepts used in and defined by an ontology
+- *Concepts* are organized in a taxonomical classification system and identified via their symbols
+- An *ontology language* defines the set of ontology lanugage elements that can be used for the formulation of axioms
+- The expressivity of an ontology language is determined by *description logic* upon which it is built (cf. ALC, EL++, SHOIN(D), SROIQ(D) ...)
 
 
 
@@ -287,21 +346,24 @@ We will discuss such features by means of the ontology language OWL on the follo
 
 
 
+---
+# Ontology Features for Individuals
 
 ---
 ## Ontology Features for Individuals
 
-OWL provides the follow features for describing the formal, model-theoretic semantics of individuals.
+OWL provides the following *features* for describing the formal, model-theoretic semantics of individuals.
 
-**Assertions**: we can assert (binary) relations between individuals using edges such as `Santa Lucía–city➛Santiago`. 
-Ie., we refer to the condition that the relation is given in the domain graph of the interpretation; if so, the interpretation satisfies the axiom.
+- **Assertions**: we can assert (binary) relations between individuals using edges such as `Santa Lucía–city➛Santiago`. 
+  - Ie., we refer to the condition that the relation is given in the domain graph of the interpretation; if so, the interpretation satisfies the axiom.
 
-**Same entity**: Based on the OWA, we can state that two terms refer to the same entity
-- e.g. `Región V–same as➛Región de Valparaíso` (add example from Sack)
+- **Same entity**: Based on the OWA, we can state that two terms refer to the same entity
+  - e.g. `Región V–same as➛Región de Valparaíso` (**add example from Sack**)
 
-**Different from**:  two terms refer to different entities, where, e.g., `Valparaíso–diff. from➛Región de Valparaíso` distinguishes the city from the region of the same name. 
+- **Different from**:  two terms refer to different entities, where, 
+  - e.g., `Valparaíso–diff. from➛Región de Valparaíso` distinguishes the city from the region of the same name. 
 
-**Negation**: We may also state that a relation does _not hold_ using ==negation==, which can be serialised as a graph using a form of **reification**.
+- **Negation**: We may also state that a relation does _not hold_ using ==negation==, which can be serialised as a graph using a form of **reification**.
 
 
 
@@ -315,32 +377,35 @@ Ie., we refer to the condition that the relation is given in the domain graph of
 
 
 ---
-## For later: Ontology Features for Property Axioms
-
-
-With OWL, additional semantics can be defined for a pair of properties:
-- (specialization and generalizations – RDFS)
-- equivalence /equivalent
-- inverse 
-- disjontness / disjoint
-- transitivity / transitive
-- symmetric
-- asymmetric
-- reflexive
-- irreflexive 
-
-Multiplicity: we can also define the multiplicity of the relation denoted by properties based on being
-- functional (ie., many-to-one)
-- inverse-functional (ie. one-to-many)
-
-
+# Ontology Features for Property Axioms
 
 ---
-## Additional Semantics for Properties
+## Ontology Features for Property Axioms
 
-Key: We may further define a key for a class, denoting the set of properties whose values uniquely identify the entities of that class.
+::::: columns
+:::: single
+For a **pair of properties**, additional semantics can be defined using OWL (see OWL slides)
+- from RDFS: *specialization* and *generalizations*
+- *equivalence* 
+- *inverse* 
+- *disjontness* 
+- *transitivity*
+- *symmetric*
+- *asymmetric*
+- *reflexive*
+- *irreflexive* 
+::::
+:::: single
+**Multiplicity**: we can also define the multiplicity of the relation denoted by properties based on being
+- *functional* (ie., many-to-one)
+- *inverse-functional* (ie. one-to-many)
 
-Chain: A path expression only allowing concatenation of properties such that pairs of entities related by the chain are also related by the given property.
+**Key**: We may further define a *key* for a class, denoting the set of properties whose values *uniquely identify* the entities of that class.
+
+**Chain**: A *path expression* only allowing *concatenation* of *properties* such that pairs of entities related by the chain are also related by the given property.
+::::
+:::::
+
 
 
 ---
@@ -369,20 +434,23 @@ Chain: A path expression only allowing concatenation of properties such that pai
 
 
 ---
+# Ontology Features for Class Axioms
+
+---
 ## Ontology Features for Class Axioms
 
 :::twocolumns
-Given a pair of **classes**, OWL allows for defining that they are
-- related via a *super-/subclass-relation*
+A **pair of classes** can be defined as  
+- being in a *super-/subclass-relation*
 - *equivalent*
 - *disjont*
 
-Novel classes can be defined by 
-- __I.) applying _set operators_ to other classes__
+**Novel classes** can be defined by... 
+- __I.) ...applying _set operators_ to other classes__
   - one can define a novel class as the *complement* of another class
   - the *union* or *intersection* of a list (of arbitrary length) of other classes
   - an *enumeration* of all of its instances
-- __II.) based on _conditions / restrictions_ that the properties of its instances satisfy__
+- __II.) ...based on _conditions / restrictions_ that the properties of its instances satisfy__
   - by placing _restrictions_ on a particular property $p$, one can define classes whose instances are all of the entities that have: 
     - _some value_ from a given class on $p$
     - _all values_ from a given class on $p$
