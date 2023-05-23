@@ -1,0 +1,23 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .               
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .         
+@prefix :     <http://example.org/Climate#> .
+
+:Greenhouse_gas     rdf:type              rdfs:Class ;                      
+                    rdfs:subClassOf       :Air_pollutant .  
+:Person             rdf:type              rdfs:Class .
+:Scientist          rdfs:subClassOf       :Person . 
+:Physicist          rdfs:subClassOf       :Scientist .
+:Chemist            rdfs:subClassOf       :Scientist .
+
+:discoverer         rdf:type              rdf:Property ;              
+                    rdfs:domain           owl:Thing ;
+                    rdfs:range            :Person .
+
+:Carbon_dioxide             rdf:type        :Greenhouse_gas ; 
+                            :discoverer     :Jan_Baptist_van_Helmont ;
+                            :discoverer     :Joseph_Black .
+:Jan_Baptist_van_Helmont    rdf:type        :Physicist .
+:Joseph_Black               rdf:type        :Chemist ;
+                            rdfs:label      "Joseph Black"@en ;
+                            rdfs:comment    "co-discovered CO2" .

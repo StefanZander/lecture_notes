@@ -292,13 +292,18 @@ By using _globally defined IRIs_, the Web can be transformed into a _linked data
 Source: https://www.w3.org/blog/2006/02/content-negotiation/
 :::
 
-<!-- 
+
+
+---
+## Content Negotiation – Try it on your own
+
+```script
 curl -I https://dbpedia.org/resource/Darmstadt
 
 curl -I -H "Accept:application/rdf+xml" https://dbpedia.org/resource/Darmstadt
 
 curl -I  https://dbpedia.org/data/Darmstadt.xml
- -->
+```
 
 
 
