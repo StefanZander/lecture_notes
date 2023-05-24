@@ -424,7 +424,7 @@ A good summary of all RDF/S language elements is given in the W3C RDFS specifica
 - Triples about properties can also be used to specify _how properties should be used_.
 - **Example**: RDF provides several properties for describing properties:
   ```xml
-  <PropertyIRI>   rdf:type      rdfs:Property .                         # declare resource as property
+  <PropertyIRI>   rdf:type      rdf:Property .                          # declare resource as property
   <PropertyIRI>   rdfs:label    "some label"@en .                       # assign label
   <PropertyIRI>   rdfs:comment  "Some human-readable comment"@en . 
   <PropertyIRI>   rdfs:range    xsd:decimal .                           # define range datatype
