@@ -24,7 +24,7 @@ paginate: true
 
 #### Prof. Dr. Stefan Linus Zander 
 
-Deductive Knowledge {.lightgreen .Big .skip}
+Deductive Knowledge and Ontologies{.lightgreen .Big .skip}
 
 
 ---
@@ -143,20 +143,25 @@ Source: https://kgbook.org/#chap-deductive
 
 
 ---
+<!-- header: Ontologies -->
 ## How Ontologies can help us to automatically compute entailments based on formal semantics
 ![bg right:25% ](figures/ontology_ancient_greek.webp)
 
 
-In the following, we will learn about ways in which _more complex entailments_ can be expressed and automated. 
+We will learn about ways in which __more complex entailments__ can be expressed and automated. 
 
-A number of **logical frameworks** could be leverages for these purposes (e.g., *First-Order Logic*, *Datalog*, *Prolog*, *Answer Set Programming*, etc.), we focus on [ontologies]{.inversered}, which... 
-- ...constitute a ==:fa-square-root-variable: formal representation of knowledge== 
+A number of **logical frameworks** could be leverages for these purposes (e.g., *First-Order Logic*, *Datalog*, *Prolog*, *Answer Set Programming*, etc.). 
+
+::: bluebox spaceafter1em
+We focus on [ontologies]{.inversered .Big}, which... 
+- ...constitute a _:fa-square-root-variable: formal representation of knowledge_
 - ...can be represented as a _:fa-diagram-project:graph_ 
+:::
 
 We discuss... 
 - ...how ==ontologies== can be _formally defined_, 
-- ...how they can be created using *ontology languages*, and
-- ...how _reasoning_ can be conducted with respect to such ontologies
+- ...how they can be created using ==ontology languages==, and
+- ...how new facts can be deduced via ==reasoning== based on entailment regimes 
 
 
 
@@ -172,13 +177,16 @@ An ontology is then a concrete, formal representation of what terms mean within 
 Source: https://kgbook.org/#ssec-ontologies
 :::
 
-The term stems from the philosophical study of ontology, concerning the kinds of entities that exist, the nature of their existence, what kinds of properties they have, and how they may be identified and categorised.
+- The term stems from the *philosophical study* of ontology, concerning the kinds of entities that exist, the nature of their existence, what kinds of properties they have, and how they may be identified and categorised.
 
-Ontologies can guide how graph data are modelled.
+- Ontologies can _guide_ how graph data are _modelled_.
 
-Given that ontologies are formal representations, they can be used to automate entailment.
+- Given that ontologies are formal representations, they can be used to _automate entailment_.
 
-The usefulness of an ontology depends on the **level of agreement** on what that ontology defines, how detailed it is, and how broadly and consistently it is adopted $\leadsto$ thus enhancing interoperability.
+- The **usefulness** of an ontology depends on 
+  - the _level of agreement_ on what that ontology defines, 
+  - how *detailed* it is, and 
+  - how broadly and consistently it is *adopted* $\leadsto$ thus enhancing interoperability.
 
 
 
@@ -196,9 +204,11 @@ Source: Studer, Benjamins, Fensel. "Knowledge Engineering: Principles und Method
   - based on mathematics and logics
   - interpretable by machines
   - specific algorithms are able to compute the correctness (ie satisfiability) of an ontology
+
 - :fa-pen-to-square: **explicit specification** 
   - described in axiomatic forms, ie., semantics of the terms are expressed in form of logical axioms 
   - An ontology language is used for expressing elements of a domain
+
 - :fa-people-group: **shared conceptualisation**
   - common understanding about the elements and constituents of a domain
   - created by a group of experts
@@ -224,6 +234,23 @@ Source: Studer, Benjamins, Fensel. "Knowledge Engineering: Principles und Method
 
 
 ---
+## The Ontology Spectrum 
+
+::: spacebefore
+![width:1100px](figures/ontology_spectrum_2.ppm)
+:::
+
+
+
+---
+<!-- header: "" -->
+![bg height:640px](figures/ontology_spectrum_1.jpg)
+
+
+
+
+---
+<!-- header: Ontologies -->
 ## Ontologies Summary
 ![bg right:25% ](figures/ontology_ancient_greek.webp)
 
@@ -237,7 +264,7 @@ Source: Studer, Benjamins, Fensel. "Knowledge Engineering: Principles und Method
 
 
 ---
-# Interpretations and Models
+# Excursus: Interpretations and Models
 
 ---
 ## Interpretations and Models
@@ -327,6 +354,7 @@ With these axioms, the above interpretation is no longer a model of the graph as
 
 
 ---
+<!-- header: Ontology Features -->
 ## Ontology Features: Introduction
 
 Beyond our base assumptions, we can associate certain **patterns** in the data graph with ==semantic conditions== that _define which interpretations satisfy it_.
@@ -354,17 +382,22 @@ We will discuss such features by means of the ontology language OWL on the follo
 
 OWL provides the following *features* for describing the formal, model-theoretic semantics of individuals.
 
-- **Assertions**: we can assert (binary) relations between individuals using edges such as `Santa Lucía–city➛Santiago`. 
-  - Ie., we refer to the condition that the relation is given in the domain graph of the interpretation; if so, the interpretation satisfies the axiom.
+- **Assertions**: we can assert (binary) relations between individuals using edges 
+  - e.g. `:Santa Lucía  :hasCity  :Santiago .` 
+  - $\leadsto$ i.e. we refer to the condition that the relation is given in the domain graph of the interpretation; if so, the interpretation satisfies the axiom.
 
 - **Same entity**: Based on the OWA, we can state that two terms refer to the same entity
-  - e.g. `Región V–same as➛Región de Valparaíso` (**add example from Sack**)
+  - e.g. `:CarbonDioxide   owl:sameAs   :ARX012345`
 
-- **Different from**:  two terms refer to different entities, where, 
-  - e.g., `Valparaíso–diff. from➛Región de Valparaíso` distinguishes the city from the region of the same name. 
+- **Different from**:  In OWL everything might be potentially identical if we don’t explicitly state the difference 
+  - e.g. `:Valparaíso  owl:differentFrom  :Región de Valparaíso` distinguishes the city from the region of the same name. 
 
-- **Negation**: We may also state that a relation does _not hold_ using ==negation==, which can be serialised as a graph using a form of **reification**.
+- **Negation**: We can state that a relation does _not hold_ using ==negation==, which can be serialised as a graph using a form of **reification**.
+  - e.g. `NegativeObjectPropertyAssertion( :hasWife :Bill :Mary )`
 
+::: footnotes
+Examples are taken from: Harald Sack's Lecture on Knowledge Graphs, https://kgbook.org,  and Section 4.4 of the OWL2-Primer (https://www.w3.org/TR/owl2-primer/)
+:::
 
 
 ---
