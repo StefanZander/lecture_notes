@@ -417,8 +417,8 @@ Examples are taken from: Harald Sack's Lecture on Knowledge Graphs, https://kgbo
 
 ::::: columns
 :::: single
-For a **pair of properties**, additional semantics can be defined using OWL (see OWL slides)
-- from RDFS: *specialization* and *generalizations*
+For a **pair of properties**, ==additional semantics== can be defined using OWL ($\leadsto$ more infos on the OWL slides)
+- *specialization* and *generalizations* (see RDFS slides)
 - *equivalence* 
 - *inverse* 
 - *disjontness* 
