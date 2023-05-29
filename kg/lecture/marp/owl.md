@@ -24,7 +24,7 @@ paginate: true
 
 #### Prof. Dr. Stefan Linus Zander 
 
-Defining Ontologies and the Ontology Language OWL {.lightgreen .Big .skip}
+Creating Ontologies and the Ontology Language OWL {.lightgreen .Big .skip}
 
 
 ---
@@ -56,6 +56,156 @@ $\leadsto$ We therefore discuss **RDF** and the __RDF Schema data-modelling voca
 - How to define more complex expressions, the semantics of which exceeds those of RDF/S
 - We will learn how to design ontologies for the use in KGs
 - We will learn about formal concepts and how they can be used for modelling aspects of a domain
+
+
+
+---
+<!-- header: Why RDFS is not sufficient -->
+# Why RDFS is not sufficient...
+
+::: small kursiv Skip
+Disclaimer: This section was motivated by Prof. Dr. Harald Sack. All examples were originally published in this OWL lecture slides.
+:::
+
+---
+## Locality of global properties
+
+**Example**
+:::: center
+```graphviz
+digraph G {
+    graph [rankdir=TB];
+    nodesep=1.0;
+    // label="A example RDF graph"; 
+    // {rank=same; 2; 1; 3;};
+    // {rank=same; 4;};
+    // {rank=same; 5;};
+    1 [label="Animal"];
+    2 [label="eats"];
+    3 [label="Food"];
+    4 [label="Vegetables"];
+    5 [label="Meat"];
+    //6 [label="France"];
+    2 -> 1 [label="rdfs:domain"];
+    2 -> 3 [label="rdfs:range"];
+    4 -> 3 [label="rdfs:subClassOf"];
+    5 -> 3 [label="rdfs:subClassOf"];
+    // 4 -> 6 [label="country"];
+}
+```
+::::
+
+- A cow only eats vegetables
+- Other animals only eat meat
+
+
+
+---
+## Disjunctive Classes
+
+**Example**
+:::: center
+```graphviz
+digraph G {
+    graph [rankdir=TB];
+    nodesep=.5;
+    // label="A example RDF graph"; 
+    // {rank=same; 1; 4;};
+    // {rank=same; 2;};
+    // {rank=same; 3;};
+    1 [label="People"];
+    2 [label="DeadPeople"];
+    3 [label="LivingPeople"];
+    4 [label="≠"];
+    // 5 [label="Meat"];
+    //6 [label="France"];
+    2 -> 1 [label="rdfs:subClassOf"];
+    3 -> 1 [label="rdfs:subClassOf"];
+    2 -> 4 [label=""];
+    3 -> 4 [label=""];
+}
+```
+::::
+
+- RDFS subclass relations can not express disjunctive class or subclass membership
+
+
+
+---
+## Class combinations
+
+**Example**
+:::: center
+```graphviz
+digraph G {
+    graph [rankdir=TB];
+    nodesep=.5;
+    // label="A example RDF graph"; 
+    // {rank=same; 1; 4;};
+    // {rank=same; 2;};
+    // {rank=same; 3;};
+    1 [label="Road User"];
+    2 [label="Motorist"];
+    3 [label="Motorcyclist"];
+    4 [label="Pedestrian"];
+    5 [label="Cyclist"];
+    //6 [label="France"];
+    2 -> 1 [label="rdfs:subClassOf"];
+    3 -> 1 [label="rdfs:subClassOf"];
+    4 -> 1 [label="rdfs:subClassOf"];
+    5 -> 1 [label="rdfs:subClassOf"];
+}
+```
+::::
+
+- Combination of classes define a new class
+- New class contains only members from given class combinations
+
+
+
+---
+## Cardinality constraints
+
+**Example**
+:::: center
+```graphviz
+digraph G {
+    graph [rankdir=LR];
+    nodesep=1.5;
+    // label="A example RDF graph"; 
+    // {rank=same; 1; 4;};
+    // {rank=same; 2;};
+    // {rank=same; 3;};
+    1 [label="Human"];
+    2 [label="Parent"];
+    1 -> 2 [label="parent"];
+    2 -> 1 [label="rdfs:subClassOf"];
+}
+```
+::::
+
+- Every human usually has two parents
+
+
+---
+## Additional limitations
+
+**Special Property Constraints**
+- Transitivity (e.g. „is greater than“)
+- Uniqueness (e.g. „is mother of“)
+- Inversiveness (e.g. „is parent of“ and „is child of“)
+
+**General Problem of RDF(S)**
+- RDF(S) does not have the possibility of negation
+  `:harald rdf:type :Vegetarian .`
+  `:harald rdf:type :NonVegetarian . `
+  ...does not automatically generate a contradiction
+
+
+
+---
+# How to design Ontologies using OWL(2)
+
 
 
 ---
@@ -134,6 +284,7 @@ Source: OWL Pizza Tutorial der University of Manchester
 
 
 ---
+<!-- header: -->
 # Ontology Features 
 
 ## –Classes
@@ -141,19 +292,20 @@ Source: OWL Pizza Tutorial der University of Manchester
 
 
 ---
+<!-- header: Classes in OWL -->
 ## Classes in OWL
 
-Classes are interpreted as sets that contain individuals.
+:fa-circle-exclamation: Classes are interpreted as ==sets== that _contain individuals_.
 
 Classes are described using formal, ie. mathematical descriptions that precisely state the requirements from class membership.
 
 Example: `SafetyLaserScanner ⊑ ∃hasCapability.SafeMonitoringOf2DFields`
 
-In OWL classes are built up of descriptions that specify the conditions that must be satisfied by an individual for it to be a member of the class.
+In OWL, classes are built up of _descriptions_ that specify the _conditions_ that must be satisfied by an individual for it to be a member of the class.
 
 OWL distinguishes between
-- primitive classes – classes that only have necessary conditions
-- defined classes – classes that have at least one set of necessary and sufficient conditions; any individual that satisfies these conditions (ie., the definition) becomes member of that class; class membership is expressed by necessary and sufficient conditions
+- ==primitive classes== – classes that only have necessary conditions
+- ==defined classes== – classes that have at least one set of _necessary_ and _sufficient conditions_; any individual that satisfies these conditions (ie., the definition) becomes member of that class; class membership is expressed by necessary and sufficient conditions
 
 :::: redbox
 **Important** :fa-warning:
@@ -163,22 +315,21 @@ Automatic classification only works with defined classes $\leadsto$ a reasoner c
 ---
 ## Disjoint Classes
 
-==OWL Classes are assumed to ‘overlap’== $\leadsto$ We therefore cannot assume that an individual is not a member of a particular class simply because it has not been asserted to be a member of that class. 
+:fa-circle-exclamation: ==OWL Classes are assumed to ‘overlap’== 
+- $\leadsto$ We cannot assume that an individual is not a member of a particular class simply because it has not been asserted to be a member of that class. 
 
 
-In order to ‘separate’ a group of classes they must made ==disjoint== from one another. 
+In order to ‘_separate_’ a group of classes they must made ==disjoint== from one another. 
+- This ensures that an individual which has been asserted to be a member of one of the classes in the group cannot be a member of any other classes in that group. 
 
-This ensures that an individual which has been asserted to be a member of one of the classes in the group cannot be a member of any other classes in that group. 
-
-As example `Pizza`, `PizzaTopping` and `PizzaBase` can be made disjoint from one another. 
-
-This means that it is not possible for an individual to be a member of a combination of these classes – it would not make sense for an individual to be a Pizza and a PizzaBase!
+As example `Pizza`, `PizzaTopping` and `PizzaBase` must be made _disjoint_ from one another. 
+- This means that it is not possible for an individual to be a member of a combination of these classes – it would not make sense for an individual to be a `Pizza` and a `PizzaBase`!
 
 
 
 
 ---
-## What does it actually mean to be a subclass of something in OWL? 
+## What does it actually mean to be a subclass of something in OWL ? 
 
 ::::: columns-center
 :::: single
@@ -187,9 +338,9 @@ What does it mean for `VegetableTopping` to be a subclass of `PizzaTopping`, or 
 
 $\Rightarrow$ In OWL subclass means ==necessary implication==.
 
-::: bluebox 
+::: bluebox spacebefore
 :fa-warning: **Meaning**
-In other words, if `VegetableTopping` is a subclass of `PizzaTopping` then **ALL** instances of `VegetableTopping` are instances of `PizzaTopping`, without exception — if something is a `VegetableTopping` then this implies that it is also a `PizzaTopping`.
+If `VegetableTopping` is a subclass of `PizzaTopping` then **ALL** instances of `VegetableTopping` are instances of `PizzaTopping`, _without exception_ — if something is a `VegetableTopping` then this implies that it is also a `PizzaTopping`.
 :::
 ::::
 :::: single
@@ -205,6 +356,7 @@ All individuals that are members of the class `TomatoTopping` are members of the
 
 
 ---
+<!-- header: "" -->
 # Ontology Features 
 ## $\leadsto$ Properties
 ![bg right:50%](figures/ontology_ancient_greek.webp)
@@ -221,7 +373,7 @@ OWL distinguishes between **3 types** of **properties**
 - ==Object Properties==
   - represent relationships between individuals, i.e., they link one individual to another
 - ==Datatype Properties==
-  - ...
+  - the range of those properties is a simple datatype, most commonly defined as XML Schema datatype (`xsd`-prefixed)
 - ==Annotation Properties==
   - allow to add additional information to classes, individuals, and object/datatype properties
 
@@ -233,8 +385,8 @@ OWL distinguishes between **3 types** of **properties**
 ### Inverse Properties
 ::::: columns
 :::: single
-- Each object property may have a corresponding inverse property. 
-- If some property links individual a to individual b then its inverse property will link individual b to individual a. 
+- Each object property may have a corresponding _inverse property_. 
+- If some property links individual `a` to individual `b` then its inverse property will link individual `b` to individual `a`. 
 ::::
 :::: single center
 ![width:400px](figure/../figures/inverse_property.png)
@@ -264,7 +416,7 @@ OWL distinguishes between **3 types** of **properties**
 :::: single
 ### Inverse Functional Properties
 
-- If a property is inverse functional then it means that the inverse property is functional. 
+- If a property is _inverse functional_ then it means that the inverse property is functional. 
 - For a given individual, there can be at most one individual related to that individual via the property. 
 ::::
 :::: single center
@@ -276,8 +428,8 @@ OWL distinguishes between **3 types** of **properties**
 :::: single
 ### Transitive Properties
 
-- If a property is transitive, and the property `P` relates individual `a` to individual `b`, and also individual `b` to individual `c`, then we can infer that individual `a` is related to individual `c` via property `P`.
-- The inverse of a transitive property should also be transitive.
+- If a property is _transitive_, and the property `P` relates individual `a` to individual `b`, and also individual `b` to individual `c`, then we can infer that individual `a` is related to individual `c` via property `P`.
+- The _inverse_ of a transitive property should also be transitive.
 - If a property is transitive then it cannot be functional
 ::::
 :::: single center
@@ -293,8 +445,8 @@ OWL distinguishes between **3 types** of **properties**
 ### Symmetric Properties
 ::::: columns-center
 :::: single
-- If a property `P` is symmetric, and the property relates individual `a` to individual `b` then individual `b` is also related to individual `a` via property `P`
-- In other words: the property is its own inverse property.
+- If a property `P` is *symmetric*, and the property relates individual `a` to individual `b` then individual `b` is also related to individual `a` via property `P`
+- In other words – the property is its _own inverse property_.
 ::::
 :::: single center
 ![width:400px](figure/../figures/symmetric_property.png)
@@ -305,7 +457,7 @@ OWL distinguishes between **3 types** of **properties**
 :::: single
 ### Asymmetric Properties
 
-- If a property `P` is asymmetric, and the property relates individual `a` to individual `b` then individual `b` cannot be related to individual `a` via property `P`.
+- If a property `P` is *asymmetric*, and the property relates individual `a` to individual `b` then individual `b` cannot be related to individual `a` via property `P`.
 ::::
 :::: single center
 ![width:400px](figure/../figures/asymmetric_property.png)
@@ -322,7 +474,7 @@ OWL distinguishes between **3 types** of **properties**
 :::: single
 ### Reflexive Properties
 
-- A property `P` is said to be reflexive when the property must relate individual `a` to itself.
+- A property `P` is said to be *reflexive* when the property must relate individual `a` to itself.
 - E.g. `knows` is such a property that could be defined as being reflexive
 ::::
 :::: single center
@@ -333,7 +485,7 @@ OWL distinguishes between **3 types** of **properties**
 ### Irreflexive Properties
 ::::: columns-center
 :::: single
-- If a property `P` is irreflexive, it can be described as a property that relates an individual `a` to individual `b`, where individual `a` and individual `b` are not the same.
+- If a property `P` is *irreflexive*, it can be described as a property that relates an individual `a` to individual `b`, where individual `a` and individual `b` are not the same.
 - E.g., an individual `Alice` can be related to individual `Bob` along the property `motherOf`, but `Alice` cannot be `motherOf` herself.
 ::::
 :::: single center
@@ -345,6 +497,7 @@ OWL distinguishes between **3 types** of **properties**
 
 
 ---
+<!-- header: "" -->
 # Describing and Defining Classes
 
 
@@ -379,7 +532,7 @@ _Quantifier restrictions_ consist of _three_ parts:
 3. A ==filler== that is a class description.
 
 ::: redbox spaceafter
-For a given individual, the quantifier effectively puts **constraints** on the **relationships** that the individual participates in. 
+:fa-warning: For a given individual, the quantifier effectively puts **constraints** on the **relationships** that the individual participates in. 
 :::
 
 It does this by either 
@@ -396,7 +549,7 @@ It does this by either
 An ==existential restriction== describes a **class of individuals** that have **at least one** (some) **relationship** along a **specified property** to an **individual** that is a member of a **specified class**. 
 
 **Example** :fa-pencil:
-- `hasTopping some MozarellaTopping` describes an annonymous class of individuals that have at least one (some) `hasTopping` relationship to an individual that is members of `MozzarellaTopping`
+- `hasTopping some MozarellaTopping` describes an _annonymous class_ of individuals that have at least one (some) `hasTopping` relationship to an individual that is members of `MozzarellaTopping`
 - The restriction acts along the `hasTopping` property, and has a ==filler== `MozzarellaTopping`.
 - Protégé uses the keyword `some` and the _class expression editor_
 
@@ -416,13 +569,13 @@ A restriction describes an anonymous class (an unnamed class). The anonymous cla
 ::: small
 The class `Pizza` is described to be a subclass of `Thing` and a subclass of the things that have a base which is some kind of `PizzaBase`.
 
-Notice that these are **necessary conditions** — if something is a `Pizza` 
-- it is *necessary* for it to be a member of the class `Thing` and 
-- *necessary* for it to have a kind of `PizzaBase`.
+Notice that these are **necessary conditions** — if something is a `Pizza`... 
+- ...it is *necessary* for it to be a member of the class `Thing` and 
+- ...*necessary* for it to have a kind of `PizzaBase`.
 
 More formally, for something to be a `Pizza` it is necessary for it to be in a relationship with an individual that is a member of the class `PizzaBase` via the property `hasBase`.
 
-When restrictions are used to describe classes, they actually specify **anonymous superclasses** of the class being described. For example, we could say that `MargheritaPizza` is a subclass of, amongst other things, `Pizza` and also a subclass of the things that have at least one topping that is `MozzarellaTopping`.
+When restrictions are used to describe classes, they actually specify ==anonymous superclasses== of the class being described. For example, we could say that `MargheritaPizza` is a subclass of, amongst other things, `Pizza` and also a subclass of the things that have at least one topping that is `MozzarellaTopping`.
 :::
 ::::
 :::: single center
@@ -445,11 +598,15 @@ In OWL, everything is a member of the class `Thing`.
 :::: single
 ::: small
 We can add restrictions to `MargeritaPizza` to say that a `MargheritaPizza` is a `NamedPizza` that has at least one kind of `MozzarellaTopping` and at least one kind of `TomatoTopping`.
+:::
 
-More formally (reading the class description view line by line), if something is a member of the class `MargheritaPizza`...
-- it is *necessary* for it to be a member of the class `NamedPizza` 
-- and it is *necessary* for it to be a member of the anonymous class of things that are linked to at least one member of the class `MozzarellaTopping` via the property `hasTopping`, 
-- and it is *necessary* for it to be a member of the anonymous class of things that are linked to at least one member of the class `TomatoTopping` via the property `hasTopping`.
+::: graybox small
+**More formally** (reading the class description view line by line)
+
+If something is a member of the class `MargheritaPizza`...
+- ...it is *necessary* for it to be a member of the class `NamedPizza` 
+- ...and it is *necessary* for it to be a member of the anonymous class of things that are linked to at least one member of the class `MozzarellaTopping` via the property `hasTopping`, 
+- ...and it is *necessary* for it to be a member of the anonymous class of things that are linked to at least one member of the class `TomatoTopping` via the property `hasTopping`.
 :::
 ::::
 :::: single center
@@ -464,7 +621,7 @@ The Class Description View Showing A Description Of a `MargheritaPizza`
 ---
 ## Universal Restrictions ($\forall$) 
 
-With existential restrictions, we could *not* say, that **all** relationships of individuals must be to members of a specific class. 
+:fa-circle-exclamation: With existential restrictions, we could *not* say, that **all** relationships of individuals must be to members of a specific class. 
 
 ==Universal restrictions== (represented by the symbol ==$\forall$==) describe the set of individuals that, for a _given property_, **only have relationships** to other individuals that are members of a _specific class_. 
 - Universal restrictions constrain the relationships along a given property to individuals that are members of a specific class. 
@@ -492,7 +649,7 @@ A feature of universal restrictions is, that for the given property, the set of 
 ## Universal Restrictions ($\forall$) 
 
 :::: redbox space
-**Remember** :fa-circle-exclamation:
+:fa-circle-exclamation: **Remember** 
 
 An important point to note is that universal restrictions do not ‘guarentee’ the **existence** of a relationship for a given property. 
 $\leadsto$ They merely state that if such a relationship for the given property exists, then it must be with an individual that is a member of a specified class.
@@ -574,14 +731,20 @@ For example the above cardinality restriction could be represented by using the 
 ## hasValue-Restriction
 
 ::: redbox spaceafter
-A ==hasValue restriction== (∋) describes an anonymous class of individuals that are related to another **specific individual** along a **specified property**. 
+A __hasValue restriction__ ('∋') describes the **set of individuals** that have __at least one relationship__ along a **specified property** to a **specific individual**, i.e., it defines an anonymous class of individuals that are related to another specific individual along a specified property. 
 :::
 
-
+::::: columns
+:::: single
 **Example**
-`hasCountryOfOrigin ∋ Italy` $+$ `MozarellaTopping` is from Italy $\rightarrow$ `MozarellaTopping` $\sqsubseteq$ `hasCountryOfOrigin value Italy`
-
-- Contrast this with a quantifier restriction where the individuals that are described by the quantifier restriction are related to **any indvidual from a specified class** along a specified property. 
+- We can state that an ingredient is from a specific country, e.g., that `MozarellaTopping` is from `Italy` 
+`MozarellaTopping` $\sqsubseteq$ `hasCountryOfOrigin value Italy` ('Italy' being an individual)
+::::
+:::: single
+![](figures/hasValue_example.jpg)
+::::
+:::::
+- :fa-circle-exclamation: Contrast this with a quantifier restriction where the individuals that are described by the quantifier restriction are related to **any indvidual** from a specified class along a specified property. 
 
 :::: bluebox small spacebefore
 **Semantic equivalence via enumerated classes**
@@ -655,7 +818,7 @@ We can determine that...
 - $\Rightarrow$ `B` is a **subclass** of `A`. 
 
 ::: bluebox center spacebefore
-Checking for ==class subsumption== is a _key task_ of a description logic reasoner for automatically computing ==lassification hierarchies==.
+Checking for ==class subsumption== is a _key task_ of a DL reasoner for automatically computing ==classification hierarchies==.
 :::
 ::::
 :::: single center
@@ -665,12 +828,13 @@ Checking for ==class subsumption== is a _key task_ of a description logic reason
 
 
 
----
+<!--
+
 ## Overview of class types in OWL
 
 - Primitive Classes – are classes with only necessary conditions
 - Defined Classes – classes with at least one set of necessary and sufficient conditions
-
+-->
 
 
 
@@ -741,8 +905,8 @@ The restriction has a _filler_ that is the _union of the fillers_ that occur in 
 ::: graybox small
 **Explanation**
 
-This now says that 
-- if an individual is a member of the class `MargeritaPizza` 
+This now says that... 
+- ...if an individual is a member of the class `MargeritaPizza` 
 
 then 
 - it must be a member of the class `Pizza`, 
@@ -760,6 +924,28 @@ A common error in situations such as above is to **only** use **universal restri
 :::
 ::::
 :::::
+
+
+
+
+
+
+
+---
+<!-- header: Resoning -->
+# Reasoning
+
+
+---
+## Basic Inference Types
+
+- **Subsumption** – find out whether class C is a *subclass of* D, i.e., C ⊑ D
+- **Class Equivalence** – find out whether class C is *equivalent* to D, i.e., C ≡ D
+- **Class Disjointness** – find out whether C and D *disjoint*, i.e., C ⊓ D ⊑ ⊥
+- **Global Consistency** – find out whether a knowledge base is globally *consistent*, i.e., that it has a model
+- **Class Consistency** – e.g., find out whether a given *class* C is consistent, i.e., show that C ⊑ ⊥ is not a logical consequence of the given knowledge base
+- **Instance Checking** – e.g., find out if an *individual* a belongs to a class C, i.e., check whether C(a) is a logical consequence of the given knowledge base
+- **Instance Retrieval** – find *all individuals* that are members of a given class or class expression
 
 
 

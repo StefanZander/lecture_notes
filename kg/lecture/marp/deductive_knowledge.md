@@ -33,15 +33,34 @@ Deductive Knowledge and Ontologies{.lightgreen .Big .skip}
 
 # Outline
 
+- Knowledge Types for Deduction
 - Ontologies
 - Interpretations and Models
 - Ontology Language Features 
-- Reasoning using DLs and Rules
+- Basic Reasoning Types
+
 
 
 ---
-## We can deduce more from the data graph than what the edges explicitly indicate
+<!-- header: Motivation -->
+## What additional information can we deduce from the following graph ?
 
+::::  center 
+![width:900px](figures/directed_labelled_graph_example.svg)
+::::
+
+::: footnotes
+Source: Aidan Hogan, Eva Blomqvist, Michael Cochez, Claudia d’Amato, Gerard de Melo, Claudio Gutierrez, Sabrina Kirrane, José Emilio Labra Gayo, Roberto Navigli, Sebastian Neumaier, Axel-Cyrille Ngonga Ngomo, Axel Polleres, Sabbir M. Rashid, Anisa Rula, Lukas Schmelzeisen, Juan Sequeda, Steffen Staab, Antoine Zimmermann (2021) Knowledge Graphs, Synthesis Lectures on Data, Semantics, and Knowledge, No. 22, 1–237, DOI: 10.2200/S01125ED1V01Y202109DSK022, Springer. 
+:::
+
+<!-- 
+ - the Ñam festival (EID15) will be located in Santiago, even though the graph does not contain an edge EID15–location➛Santiago. 
+ - We may further deduce that the cities connected by flights must have some airport nearby, even though the graph does not contain nodes referring to these airports. 
+ -->
+
+
+---
+## We can deduce more from a graph than what edges explicitly indicate
 
 ::::: centercontent columns
 :::: double center 
@@ -55,7 +74,7 @@ Deductive Knowledge and Ontologies{.lightgreen .Big .skip}
 :::::
 
 ::: redbox centerbox spacebefore
-Given **data** as premise $+$ some **general rules** we know a priori $\rightarrow$ we can use a **deductive process** to derive new data.
+:fa-robot: Given **data** as premise $+$ some **general rules** we know a priori $\rightarrow$ we can use a **deductive process** to __derive new data__.
 :::
 
 
@@ -85,7 +104,7 @@ Given **data** as premise $+$ some **general rules** we know a priori $\rightarr
 
 _:fa-warning: Machines, in contrast, do not have a priori access to such deductive faculties_ 
 
-- Machines need **formal instructions** in terms of ==premises== and ==entailment regimes== to produce similar deductions to what humans can make 
+- Machines need **formal instructions** in terms of ==premises== and ==entailment regimes== to produce similar deductions w.r.t. humans
 - In this way, we will be making more of the **meaning** (i.e., ==semantics==) of the graph **explicit** in a **machine-readable format**.
 - ==Entailment regimes== formalise the conclusions that logically follow as a consequence of a given set of premises.
 
@@ -100,10 +119,11 @@ These **deductions** may serve a range of applications, such as
 - _improving query answering_
 - _(deductive) classification_
 - _finding inconsistencies_
+- _deducing class memberships_
 - etc.
 
 
-Once instructed in this manner, machines can (often) apply deductions with a precision, efficiency, and scale beyond human performance.
+:fa-wand-magic-sparkles: Once instructed, machines can (often) apply deductions with a precision, efficiency, and scale beyond human performance.
 
 
 
@@ -131,7 +151,7 @@ Source: https://kgbook.org/#chap-deductive
 :::
 
 **Explanations**
-- without entailment regimes, the graph pattern would return no results
+- Without entailment regimes, the graph pattern would return no results
   - no node of type `festival`
   - nothing has directly the location `Santigao`
 - `Ñam` could be automatically entailed if we stated that 
@@ -150,7 +170,8 @@ Source: https://kgbook.org/#chap-deductive
 
 We will learn about ways in which __more complex entailments__ can be expressed and automated. 
 
-A number of **logical frameworks** could be leverages for these purposes (e.g., *First-Order Logic*, *Datalog*, *Prolog*, *Answer Set Programming*, etc.). 
+A number of **logical frameworks** could be leverages for these purposes 
+$\leadsto$ e.g. *First-Order Logic*, *Datalog*, *Prolog*, *Answer Set Programming* etc. 
 
 ::: bluebox spaceafter1em
 We focus on [ontologies]{.inversered .Big}, which... 
@@ -172,16 +193,16 @@ We discuss...
 To enable *entailment*, we must be *precise* about what the terms we use *mean*.
 
 ::: definition
-An ontology is then a concrete, formal representation of what terms mean within the scope in which they are used (e.g., a given domain).
+An ==ontology== is a concrete, formal representation of what terms mean within the scope in which they are used (e.g., a given domain), formulated using an ==ontology language==.
 
-Source: https://kgbook.org/#ssec-ontologies
+Source: based on https://kgbook.org/#ssec-ontologies
 :::
 
 - The term stems from the *philosophical study* of ontology, concerning the kinds of entities that exist, the nature of their existence, what kinds of properties they have, and how they may be identified and categorised.
 
 - Ontologies can _guide_ how graph data are _modelled_.
 
-- Given that ontologies are formal representations, they can be used to _automate entailment_.
+- Given that ontologies are formal representations, they can be used to ==automate entailment==.
 
 - The **usefulness** of an ontology depends on 
   - the _level of agreement_ on what that ontology defines, 
@@ -191,7 +212,7 @@ Source: https://kgbook.org/#ssec-ontologies
 
 
 ---
-## A Definition of Ontologies
+## A widely accepted definition of ontologies in CS
 ![bg right:25% ](figures/ontology_ancient_greek.webp)
 
 ::: definition
@@ -350,27 +371,34 @@ With these axioms, the above interpretation is no longer a model of the graph as
 
 
 ---
-# Ontology Features 
+# Ontology Features
+
+- ...for Individuals
+- ...for Properties
+- ...for Classes
 
 
 ---
 <!-- header: Ontology Features -->
 ## Ontology Features: Introduction
 
-Beyond our base assumptions, we can associate certain **patterns** in the data graph with ==semantic conditions== that _define which interpretations satisfy it_.
-- we can add a semantic condition to enforce that if our data graph contains the edge `p–subp. of➛q`, then any edge `x–parrow tip rightwardy` in the domain graph of the interpretation must also have a corresponding edge `x–qarrow tip rightwardy` to satisfy the data graph. 
+**Premise**
+- We can associate _certain patterns_ in the data graph with ==semantic conditions== that define _which interpretations satisfy it_.
+  
+**Example**
+- E.g. we can add a _semantic condition_ to enforce that if our data graph contains the edge `:p rdfs:subPropertyOf :q`, then any edge `:x :p :y` in the domain graph of the interpretation must also have a corresponding edge `:x :q :y` to satisfy the data graph. <br/><br/>
+  ```rdf
+  Data graph:               :p    rdfs:subPropertyOf    :q .    (a)
+                            :x        :q                :y .    (b)
 
-**Example**:
-```rdf
-Semantic condition:       :p    rdfs:subPropertyOf      :q
-
-Domain graph:             :x    :p    :y
-
-Data graph:               :x    :q    :y
-```
+  Semantic Condition:       (c)   →   (a)   ⋀   (b) .
+  
+  Domain graph:             :x    :p    :y .                    (c)
+  ```
 
 These **semantic conditions** then form the ==features== of an ontology language. 
-We will discuss such features by means of the ontology language OWL on the following slides.
+We will discuss such features by means of the ontology language OWL in the upcomming chapter.
+
 
 
 
@@ -442,7 +470,7 @@ For a **pair of properties**, ==additional semantics== can be defined using OWL 
 
 
 ---
-## Overview of Ontology features for property axioms (1/3)
+## Overview of ontology features for property axioms (1/3)
 
 ::: center
 ![](figures/ontology_features_for_property_axioms_1.png)
@@ -450,7 +478,7 @@ For a **pair of properties**, ==additional semantics== can be defined using OWL 
 
 
 ---
-## Overview of Ontology features for property axioms (2/3)
+## Overview of ontology features for property axioms (2/3)
 
 ::: center
 ![](figures/ontology_features_for_property_axioms_2.png)
@@ -458,7 +486,7 @@ For a **pair of properties**, ==additional semantics== can be defined using OWL 
 
 
 ---
-## Overview of Ontology features for property axioms (3/3)
+## Overview of ontology features for property axioms (3/3)
 
 ::: center
 ![](figures/ontology_features_for_property_axioms_3.png)
@@ -496,7 +524,7 @@ A **pair of classes** can be defined as
 
 
 ---
-## Overview of Ontology features for class axioms (1/3)
+## Overview of ontology features for class axioms (1/3)
 
 ::: center
 ![](figures/ontology_features_for_classes_1.png)
@@ -504,7 +532,7 @@ A **pair of classes** can be defined as
 
 
 ---
-## Overview of Ontology features for class axioms (2/3)
+## Overview of ontology features for class axioms (2/3)
 
 ::: center
 ![](figures/ontology_features_for_classes_2.png)
@@ -512,26 +540,12 @@ A **pair of classes** can be defined as
 
 
 ---
-## Overview of Ontology features for class axioms (3/3)
+## Overview of ontology features for class axioms (3/3)
 
 ::: center
 ![](figures/ontology_features_for_classes_3.png)
 :::
 
 
-
-
 ---
-# Reasoning
-
-
----
-## Basic Inference Types
-
-- **Subsumption** – find out whether class C is a *subclass of* D, i.e., C ⊑ D
-- **Class Equivalence** – find out whether class C is *equivalent* to D, i.e., C ≡ D
-- **Class Disjointness** – find out whether C and D *disjoint*, i.e., C ⊓ D ⊑ ⊥
-- **Global Consistency** – find out whether a knowledge base is globally *consistent*, i.e., that it has a model
-- **Class Consistency** – e.g., find out whether a given *class* C is consistent, i.e., show that C ⊑ ⊥ is not a logical consequence of the given knowledge base
-- **Instance Checking** – e.g., find out if an *individual* a belongs to a class C, i.e., check whether C(a) is a logical consequence of the given knowledge base
-- **Instance Retrieval** – find *all individuals* that are members of a given class or class expression
+## In the next lecture, we will talk about how to create ontologies using OWL and Protégé
