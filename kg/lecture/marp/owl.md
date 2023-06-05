@@ -74,18 +74,19 @@ Disclaimer: This section was motivated by Prof. Dr. Harald Sack. All examples we
 :::: center
 ```graphviz
 digraph G {
-    graph [rankdir=TB];
-    nodesep=1.0;
+    graph [rankdir=BT];
+    node [fontname="Barlow Semi Condensed", fontsize=14, ordering=out];
+    edge [fontname="Barlow Semi Condensed", fontsize=14];
+    nodesep=1;
     // label="A example RDF graph"; 
-    // {rank=same; 2; 1; 3;};
+    {rank=same; 1 -> 2 -> 3 [style="invis"]};
     // {rank=same; 4;};
     // {rank=same; 5;};
-    1 [label="Animal"];
-    2 [label="eats"];
-    3 [label="Food"];
-    4 [label="Vegetables"];
-    5 [label="Meat"];
-    //6 [label="France"];
+    1 [label="Animal" ];
+    2 [label="eats" ];
+    3 [label="Food" pos="0,0!"];
+    4 [label="Vegetables" pos="1,1!"];
+    5 [label="Meat" pos="-1,1!"];
     2 -> 1 [label="rdfs:domain"];
     2 -> 3 [label="rdfs:range"];
     4 -> 3 [label="rdfs:subClassOf"];
@@ -107,18 +108,18 @@ digraph G {
 :::: center
 ```graphviz
 digraph G {
-    graph [rankdir=TB];
-    nodesep=.5;
+    graph [rankdir=BT];
+    node [fontname="Barlow Semi Condensed", fontsize=14, ordering=out];
+    edge [fontname="Barlow Semi Condensed", fontsize=14];
+    nodesep=1;
     // label="A example RDF graph"; 
-    // {rank=same; 1; 4;};
+    // {rank=same; 1 -> 4 [style="invis"]};
     // {rank=same; 2;};
     // {rank=same; 3;};
     1 [label="People"];
     2 [label="DeadPeople"];
     3 [label="LivingPeople"];
     4 [label="≠"];
-    // 5 [label="Meat"];
-    //6 [label="France"];
     2 -> 1 [label="rdfs:subClassOf"];
     3 -> 1 [label="rdfs:subClassOf"];
     2 -> 4 [label=""];
