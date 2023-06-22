@@ -24,3 +24,4 @@ ewa/pdf/http2/src/figures/.DS_Store
 *.nav
 *.vrb
 *.fdb_latexmk
+site/
