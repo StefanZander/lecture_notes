@@ -1,0 +1,54 @@
+@import url("./basic/colors.css");
+@import url("./basic/figures.css");
+@import url("./basic/blockquotes.css");
+@import url("./basic/headlines.css") screen;
+@import url("./admonition/admonition.css") screen;
+@import url("./admonition/note.css") screen;
+@import url("./admonition/abstract.css") screen;
+@import url("./admonition/warning.css") screen;
+@import url("./admonition/question.css") screen;
+@import url("./admonition/example.css") screen;
+
+
+
+li>a[data-md-state="active"] {
+    color: var(--toc_active_item_foreground);
+    /* background-color: red; */
+    font-weight: bold;
+}
+
+li.md-nav__item>a:hover {
+    color: var(--toc_active_item_foreground);
+    background-color: var(--toc_active_item_background);
+    font-weight: bold;
+}
+
+
+/* .question {
+    background-color: #fcffd6 !important;
+} */
+
+
+/* SZ: added to have more space between bullet lists */
+.md-typeset ol li, .md-typeset ul li {
+    margin-bottom: 1em;
+}
+
+
+div.md-content a:hover:not(.md-footer-nav__link) {
+    background-color:var(--link_hover_background_color);
+    color: var(--link_hover_text_color);
+    /* font-weight: bold; */
+    transition-duration: 0s;
+}
+
+
+/* Captured from browser */
+.md-nav__link[data-md-state=blur] {
+    color: rgba(0,0,0,.14);
+}
+
+
+/* }  */
+/* end SCREEN ONLY */ 
+

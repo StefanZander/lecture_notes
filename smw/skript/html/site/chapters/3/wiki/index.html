@@ -1,0 +1,613 @@
+
+<!doctype html>
+<html lang="de" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.8">
+    
+    
+      
+        <title>Was ist ein Wiki ? - Semantisches Wissensmanagement mit Semantic MediaWiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.644de097.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.e6a45f82.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#2094f3">
+        
+      
+    
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="blue" data-md-color-accent="red">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#was-ist-ein-wiki" class="md-skip">
+          Zum Inhalt
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Semantisches Wissensmanagement mit Semantic MediaWiki" class="md-header__button md-logo" aria-label="Semantisches Wissensmanagement mit Semantic MediaWiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Semantisches Wissensmanagement mit Semantic MediaWiki
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Was ist ein Wiki ?
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Suche" placeholder="Suche" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Suche">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Zurücksetzen" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Suche wird initialisiert
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Semantisches Wissensmanagement mit Semantic MediaWiki" class="md-nav__button md-logo" aria-label="Semantisches Wissensmanagement mit Semantic MediaWiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Semantisches Wissensmanagement mit Semantic MediaWiki
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        Startseite
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tagebuch/" class="md-nav__link">
+        Tagebuch der LVA
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../objectives/" class="md-nav__link">
+        Allgemeine Informationen
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../kapitel1/" class="md-nav__link">
+        Kapitel 1: Einführung
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2/overview/" class="md-nav__link">
+        Kapitel 2: Technische Grundlagen
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../overview/" class="md-nav__link">
+        Kapitel 3: Semantic MediaWiki
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../4/overview/" class="md-nav__link">
+        Kapitel 4: Erweiterungen
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../exercises/ue1/" class="md-nav__link">
+        Übung 1: Wissensmanagement
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../exercises/ue2/" class="md-nav__link">
+        Übung 2: Wissensmodellierung
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../exercises/ue3/" class="md-nav__link">
+        Übung 3: Semantic MediaWiki
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../exercises/ue4/" class="md-nav__link">
+        Übung 4: Vertiefung
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../semesterprojekt/" class="md-nav__link">
+        Semesterprojekt
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#eigenschaften" class="md-nav__link">
+    Eigenschaften
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#komponenten-eines-wiki-systems" class="md-nav__link">
+    Komponenten eines Wiki-Systems
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mediawiki" class="md-nav__link">
+    MediaWiki
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sprachelemente" class="md-nav__link">
+    Sprachelemente
+  </a>
+  
+    <nav class="md-nav" aria-label="Sprachelemente">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#seiten" class="md-nav__link">
+    Seiten
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#namensraume" class="md-nav__link">
+    Namensräume
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vorlagen" class="md-nav__link">
+    Vorlagen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kategorien" class="md-nav__link">
+    Kategorien
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<h1 id="was-ist-ein-wiki">Was ist ein Wiki ?</h1>
+<p><img alt="Wiki-Wiki Shuttle from Wikimedia" src="../../../figures/wiki-wiki-bus.jpg" /> <em>The Wiki-Wiki bus shuttle at the Honolulu International Airport (Quelle: https://commons.wikimedia.org/wiki/File:HNL_Wiki_Wiki_Bus.jpg)</em></p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Definition</strong>: &laquo; <strong>Wiki</strong> &raquo;<br />
+ Ein Wiki ist ein <strong>webbasiertes Hypertext-System</strong>, das es Benutzenden ermöglicht, Webseiten direkt (d.h. ohne Programmierung) und online in einem Web-Browser zu erzeugen, zu lesen und zu ändern.</p>
+</div>
+<h3 id="eigenschaften">Eigenschaften</h3>
+<ul>
+<li>Hypertext-System mit eigener, einfach erlernbaren <strong>Markup-Sprache</strong></li>
+<li>Inhalte sind frei erweiter-, les- und veränderbar</li>
+<li>Die Wiki-Engine ist ein vereinfachtes Content-Management-System</li>
+<li>Ein Benutzer kann <strong>jede Seite</strong> eines Wikis verändern, eine neue Seite erstellen</li>
+<li><em>&ldquo;Wiki promotes meaningful topic associations between different pages by making page link creation almost intuitively easy&rdquo;</em><sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup><ul>
+<li>Verweise zwischen einzelnen Seiten möglich</li>
+<li>Kennzeichnung ob Verweis existiert oder nicht (<em>~&gt; großer Vorteil gegenüber dem bestehenden Web</em>)</li>
+</ul>
+</li>
+<li>ein Wiki ist <strong>niemals vollständig</strong> oder perfekt und unterliegt einem <strong>ständigen Prozess</strong> von<ul>
+<li>Erschaffung </li>
+<li>Kollaboration</li>
+</ul>
+</li>
+<li>Inkludierte Versionsverwaltung der Inhalte (<em>~&gt; ebenfalls ein großer Vorteil gegenüber dem Web</em>)</li>
+<li>Wiki ist <strong>frei</strong><ul>
+<li>Quelltext: Gnu General Public License</li>
+<li>Jede/r kann im Rahmen der Möglichkeiten tun und lassen was sie will</li>
+</ul>
+</li>
+<li>Wiki ist <strong>kollaborativ</strong><ul>
+<li>Zusammenarbeit mit anderen</li>
+<li>schnelle Informationsbereitstellung, -korrektur</li>
+</ul>
+</li>
+<li>Wiki ist von Natur aus <strong>demokratisch</strong><ul>
+<li>Jeder hat die gleichen Rechte</li>
+<li>damit erlaubt es eine Zusammenarbeit im Netz ohne Accounts und Passwörter</li>
+</ul>
+</li>
+<li>Wiki ist <strong>erweiterbar</strong><ul>
+<li>modularer Aufbau</li>
+<li>Programmierschnittstellen</li>
+</ul>
+</li>
+</ul>
+<p><em>Quelle: Rick Hegewald, &ldquo;Ontologien und (semantische) Wikis&rdquo;, Problemseminar Ontologie-Management Institut für Informatik - Universität Leipzig</em></p>
+<h3 id="komponenten-eines-wiki-systems">Komponenten eines Wiki-Systems</h3>
+<p>Es gibt unterschiedliche Implementierungen von Wiki-Systemen; Die am häufigsten verwendeten Komponenten sind</p>
+<ul>
+<li>Datenbank</li>
+<li>Versionsverwaltung</li>
+<li>Suchfunktion</li>
+</ul>
+<h3 id="mediawiki">MediaWiki</h3>
+<ul>
+<li>Open-source Wiki-Software</li>
+<li>Technische Basisplattform der Wikipedia</li>
+</ul>
+<h3 id="sprachelemente">Sprachelemente</h3>
+<p>Wikis stellen eine Reihe von Sprachelementen zur Erstellung und Verwaltung von Inhalten bereit:</p>
+<ul>
+<li>Seiten, </li>
+<li>Namensräume, </li>
+<li>Kategorien, </li>
+<li>Vorlagen</li>
+<li>Magic Words<ul>
+<li>Parser Funktionen</li>
+<li>Variablen</li>
+<li>Behavior switches </li>
+</ul>
+</li>
+<li>etc.</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Groß- und Kleinschreibung beachten!</strong><br />
+Bitte beachten Sie, dass MediaWiki und damit auch Semantic MediaWiki zwischen Groß- und Kleinschreibung bei Seitennamen etc., d.h., in der URL unterscheidet!</p>
+</div>
+<h4 id="seiten">Seiten</h4>
+<ul>
+<li>grundlegende Inhalts-Einheit: <strong>Wiki-Seite</strong> mit <strong>Titel</strong></li>
+<li><strong>Hyperlinks</strong> zur Herstellung von direkten Verbindungen zwischen Seiten</li>
+<li>Auszeichnungssprache <strong>Wikitext</strong></li>
+<li>wird durch MediaWiki in HTML5 übersetzt</li>
+</ul>
+<h4 id="namensraume">Namensräume</h4>
+<ul>
+<li>Namensräume dienen der Gruppierung von Seiten</li>
+<li>Funktionen können auf bestimmte Namensräume eingeschränkt werden</li>
+<li>Mediawiki hat standardmäßig <strong>18 Namensräume</strong></li>
+<li>Textseiten stehen standardmäßig im Namenraum <code>Main</code></li>
+</ul>
+<h4 id="vorlagen">Vorlagen</h4>
+<ul>
+<li>Vorlagen sind Wikiseiten, deren Inhalt in andere Seiten <strong>transkludiert</strong> (d.h. per Referenz eingebunden) wird</li>
+<li>Verwendungsmöglichkeiten<ul>
+<li>Standardisierung von Inhaltsteilen</li>
+<li>Reduzierter Wartungsaufwand für mehrfach verwendete Inhalte</li>
+<li>Corporate Design</li>
+<li>Identische Header/Footer Informationen</li>
+</ul>
+</li>
+</ul>
+<h4 id="kategorien">Kategorien</h4>
+<ul>
+<li>MediaWiki ermöglicht das Klassifizieren von Seiten mit Kategorien</li>
+<li>Die Zuordnung einer Seite zu einer Kategorie erfolgt durch Einfügen von <code>[[Kategorie:Kategorienname]]</code> im Quelltext</li>
+<li>Eine Seite kann mehreren Kategorien zugeordnet werden</li>
+<li>Kategorien werden am Ende der Seite angezeigt</li>
+<li>Eine Hierarchiebildung der Kategorien ist durch Zuordnung von Kategorien zu Kategorien möglich</li>
+</ul>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>Bo Leuf, Ward Cunningham, &ldquo;The Wiki Way: Quick Collaboration on the Web&rdquo;, Addison-Wesley, 2001.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.5e67fbfe.min.js", "translations": {"clipboard.copied": "In Zwischenablage kopiert", "clipboard.copy": "In Zwischenablage kopieren", "search.config.lang": "de", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Suche", "search.result.more.one": "1 weiteres Suchergebnis auf dieser Seite", "search.result.more.other": "# weitere Suchergebnisse auf dieser Seite", "search.result.none": "Keine Suchergebnisse", "search.result.one": "1 Suchergebnis", "search.result.other": "# Suchergebnisse", "search.result.placeholder": "Suchbegriff eingeben", "search.result.term.missing": "Es fehlt", "select.version.title": "Version ausw\u00e4hlen"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.c44cc438.min.js"></script>
+      
+        <script src="../../../javascript/extra.js"></script>
+      
+    
+  </body>
+</html>

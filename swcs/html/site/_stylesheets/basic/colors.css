@@ -1,0 +1,27 @@
+:root {
+    --primary-color: #128bcd;
+    --secondary-color: green;
+
+    --toc_active_item_foreground: red;
+    --toc_active_item_background: white;
+
+    --note_border_color: #2c8fcd;
+    --note_background_color: #d6efff;
+
+    --abstract_border_color: #bbbaba;
+    --abstract_background_color: #f5f4f4;
+
+    --warning_border_color: #dc9090;
+    --warning_background_color: #ffd6d6;
+
+    --question_border_color: #dc9346;
+    --question_background_color: #ffebd6;
+    --question_text_background_color: rgb(254, 247, 236);
+
+    --text_shadow_color: white;
+
+    --link_text_color: var(--primary-color);
+    --link_background: white;
+    --link_hover_text_color: white;
+    --link_hover_background_color: var(--primary-color);
+}

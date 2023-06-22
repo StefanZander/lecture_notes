@@ -1,0 +1,848 @@
+
+<!doctype html>
+<html lang="de" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.3">
+    
+    
+      
+        <title>Threads & Communication - Android & Android Studio</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.e35208c4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ef6f36e2.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#2094f3">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,400i,700%7CRoboto+mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto Condensed";--md-code-font-family:"Roboto mono"}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="blue" data-md-color-accent="red">
+  
+    
+    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#threads-and-thread-communication" class="md-skip">
+          Zum Inhalt
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Android &amp; Android Studio" class="md-header__button md-logo" aria-label="Android & Android Studio" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Android & Android Studio
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Threads & Communication
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Suche" placeholder="Suche" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Suche wird initialisiert
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Android &amp; Android Studio" class="md-nav__button md-logo" aria-label="Android & Android Studio" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Android & Android Studio
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Index
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generics/" class="md-nav__link">
+        Collections und Generics
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../serialisierung/" class="md-nav__link">
+        Serialisierung und Persistenz
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../singleton/" class="md-nav__link">
+        Singleton
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../serialized_singleton/" class="md-nav__link">
+        Serialized Singleton
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../grundlagen/" class="md-nav__link">
+        Grundlagen
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../activities/" class="md-nav__link">
+        Activities & Intents
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../handler/" class="md-nav__link">
+        Handler
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../json/" class="md-nav__link">
+        JSON
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data_storage/" class="md-nav__link">
+        Data Storage
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../actionbar/" class="md-nav__link">
+        App Bar
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../recycler_view/" class="md-nav__link">
+        RecyclerView
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../asynctask/" class="md-nav__link">
+        AsyncTask
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Threads & Communication
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Threads & Communication
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-threads-and-why-use-them" class="md-nav__link">
+    What are Threads and why use them ?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-implement-threads-in-java" class="md-nav__link">
+    How to implement Threads in Java
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-threads-in-android" class="md-nav__link">
+    Using Threads in Android
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#thread-communication" class="md-nav__link">
+    Thread Communication
+  </a>
+  
+    <nav class="md-nav" aria-label="Thread Communication">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#communication-via-message-handlers" class="md-nav__link">
+    Communication via Message Handlers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#implementing-the-handler" class="md-nav__link">
+    Implementing the Handler
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#invoking-commands-on-ui-elements-of-the-ui-thread" class="md-nav__link">
+    Invoking Commands on UI Elements of the UI Thread
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#invoking-threads" class="md-nav__link">
+    Invoking Threads
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-threads-and-why-use-them" class="md-nav__link">
+    What are Threads and why use them ?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-implement-threads-in-java" class="md-nav__link">
+    How to implement Threads in Java
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-threads-in-android" class="md-nav__link">
+    Using Threads in Android
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#thread-communication" class="md-nav__link">
+    Thread Communication
+  </a>
+  
+    <nav class="md-nav" aria-label="Thread Communication">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#communication-via-message-handlers" class="md-nav__link">
+    Communication via Message Handlers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#implementing-the-handler" class="md-nav__link">
+    Implementing the Handler
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#invoking-commands-on-ui-elements-of-the-ui-thread" class="md-nav__link">
+    Invoking Commands on UI Elements of the UI Thread
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#invoking-threads" class="md-nav__link">
+    Invoking Threads
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="threads-and-thread-communication">Threads and Thread Communication</h1>
+<h2 id="what-are-threads-and-why-use-them">What are Threads and why use them ?</h2>
+<p>Threads keeps to UI Thread from having to perform resource or run-time intensive operations that would slow down an app or programm. </p>
+<p>A common way to prevent this is to execute runtime intensive operations in separate <strong>runtime environments</strong> called <strong>threads</strong>.</p>
+<p>Those threads will be executed in parallel to a main thread (in particular on multi-core hardweare architectures) a</p>
+<h2 id="how-to-implement-threads-in-java">How to implement Threads in Java</h2>
+<p>There are two methods on how to implement Threads in Java:</p>
+<ol>
+<li>
+<p>Using a <strong>individual class</strong> that extends <code>Thread</code> and overrides the <code>run()</code> method:
+    <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span> <span class="kd">extends</span> <span class="n">Thread</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">run</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;This code is running in a thread&quot;</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span> <span class="n">args</span><span class="o">[]</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">Main</span> <span class="n">m</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Main</span><span class="p">();</span>
+        <span class="n">m</span><span class="p">.</span><span class="na">start</span><span class="p">();</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+</td></tr></table></p>
+</li>
+<li>
+<p>Using a <strong>individual class</strong> that implements the <code>Runnable</code> interface and implements the <code>run()</code> method:
+    <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span> <span class="kd">implements</span> <span class="n">Runnable</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">run</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;This code is running in a thread&quot;</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+</td></tr></table></p>
+</li>
+</ol>
+<h2 id="using-threads-in-android">Using Threads in Android</h2>
+<p>Threads can be implemented in a separate class or added to a method&rsquo;s body in form of <strong>an annonymous Thread object</strong> that takes an implementation of the <code>Runnable</code> interface in form of an annonymous inner class passed to its constructor.</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kd">public</span> <span class="kt">void</span> <span class="nf">anIndividualMethod</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">new</span> <span class="n">Thread</span><span class="p">(</span><span class="k">new</span> <span class="n">Runnable</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nd">@Override</span>
+        <span class="kd">public</span> <span class="kt">void</span> <span class="nf">run</span><span class="p">()</span> <span class="p">{</span>
+            <span class="k">try</span> <span class="p">{</span>
+                <span class="n">JSONObject</span> <span class="n">obj</span> <span class="o">=</span> <span class="n">httpRequest</span><span class="p">.</span><span class="na">sendHttp</span><span class="p">(</span><span class="s">&quot;scanChannels&quot;</span><span class="p">);</span>
+            <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="n">IOException</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">Log</span><span class="p">.</span><span class="na">e</span><span class="p">(</span><span class="n">TAG</span><span class="p">,</span> <span class="n">e</span><span class="p">.</span><span class="na">getMessage</span><span class="p">());</span>
+            <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="n">JSONException</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">Log</span><span class="p">.</span><span class="na">e</span><span class="p">(</span><span class="n">TAG</span><span class="p">,</span> <span class="n">e</span><span class="p">.</span><span class="na">getMessage</span><span class="p">());</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}).</span><span class="na">start</span><span class="p">();</span> <span class="c1">// don&#39;t forget to start the Thread obj</span>
+<span class="p">}</span>
+</code></pre></div>
+</td></tr></table>
+
+<h2 id="thread-communication">Thread Communication</h2>
+<p>A common way for threads or AsyncTasks to communicate with the UI thread from which they were initiated is via <strong>Handler</strong>.</p>
+<p><img alt="" src="../figures/handler.png" /><em>A handler receives messages from background threads and updates views on the UI thread (Source: <a href="https://stackoverflow.com/questions/13840007/what-exactly-does-the-post-method-do">stackoverflow.com</a>)</em> </p>
+<p>Handler encapsulate a <strong>message queue</strong> (the Looper) that allows a Thread (incl. the UI thread) to receive messages from other Threads.</p>
+<p>For processing received messages, the Thread in which the handler was instantiated has to implement the <code>handleMessage()</code> callback method.</p>
+<p><code class="highlight"><span class="kd">public</span> <span class="kt">void</span> <span class="nf">handleMessage</span> <span class="p">(</span><span class="n">Message</span> <span class="n">msg</span><span class="p">)</span></code> </p>
+<p>In that way, handlers allow the realization of an <strong>asynchronous communication</strong> between different threads.</p>
+<h3 id="communication-via-message-handlers">Communication via Message Handlers</h3>
+<p>The Thread requires a reference of the Handler instance of the receiving Thread.</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kd">public</span> <span class="kt">void</span> <span class="nf">doChannelScanAsThread</span><span class="p">(</span><span class="n">View</span> <span class="n">view</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">new</span> <span class="n">Thread</span><span class="p">(</span><span class="k">new</span> <span class="n">Runnable</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nd">@Override</span>
+        <span class="kd">public</span> <span class="kt">void</span> <span class="nf">run</span><span class="p">()</span> <span class="p">{</span>
+            <span class="k">try</span> <span class="p">{</span>
+                <span class="n">JSONObject</span> <span class="n">obj</span> <span class="o">=</span> <span class="n">httpRequest</span><span class="p">.</span><span class="na">sendHttp</span><span class="p">(</span><span class="s">&quot;scanChannels&quot;</span><span class="p">);</span>
+
+<span class="hll">                <span class="n">Message</span> <span class="n">msg</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Message</span><span class="p">();</span>
+</span><span class="hll">                <span class="n">Bundle</span> <span class="n">bundle</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Bundle</span><span class="p">();</span>
+</span><span class="hll">                <span class="n">bundle</span><span class="p">.</span><span class="na">putString</span><span class="p">(</span><span class="n">MainActivity</span><span class="p">.</span><span class="na">HANDLER_MESSAGE_KEY</span><span class="p">,</span> <span class="n">obj</span><span class="p">.</span><span class="na">toString</span><span class="p">());</span>
+</span><span class="hll">                <span class="n">msg</span><span class="p">.</span><span class="na">setData</span><span class="p">(</span><span class="n">bundle</span><span class="p">);</span>
+</span><span class="hll">                <span class="n">mMessageHandler</span><span class="p">.</span><span class="na">sendMessage</span><span class="p">(</span><span class="n">msg</span><span class="p">);</span>
+</span>            <span class="p">}</span>
+            <span class="p">...</span>
+</code></pre></div>
+</td></tr></table>
+
+<h3 id="implementing-the-handler">Implementing the Handler</h3>
+<p>The main (or receiving) Thread needs to instantiate a new message handler and pass this instance as references to the threads it wants to receive messages from.</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="c1">// The Handler object used to receive Message objects from Threads (since they can&#39;t write to widgets created by main thread)</span>
+<span class="kd">private</span> <span class="n">Handler</span> <span class="n">mMessageHandler</span><span class="p">;</span>
+
+<span class="c1">// Instantiate Handler that receives messages from Threads or AsyncTasks</span>
+<span class="c1">// see https://stackoverflow.com/questions/13840007/what-exactly-does-the-post-method-do</span>
+<span class="k">this</span><span class="p">.</span><span class="na">mMessageHandler</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Handler</span><span class="p">(</span><span class="n">getMainLooper</span><span class="p">())</span> <span class="p">{</span>
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">handleMessage</span><span class="p">(</span><span class="n">Message</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">super</span><span class="p">.</span><span class="na">handleMessage</span><span class="p">(</span><span class="n">msg</span><span class="p">);</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">msg</span><span class="p">.</span><span class="na">what</span> <span class="o">==</span> <span class="n">MAIN_ACTIVITY_TOAST_MESSAGE_INT_KEY</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">Toast</span><span class="p">.</span><span class="na">makeText</span><span class="p">(</span><span class="n">getApplicationContext</span><span class="p">(),(</span><span class="n">String</span><span class="p">)</span><span class="n">msg</span><span class="p">.</span><span class="na">obj</span><span class="p">,</span> <span class="n">Toast</span><span class="p">.</span><span class="na">LENGTH_SHORT</span><span class="p">).</span><span class="na">show</span><span class="p">();</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+            <span class="n">txtResponse</span><span class="p">.</span><span class="na">append</span><span class="p">(</span><span class="s">&quot;\n&quot;</span> <span class="o">+</span> <span class="n">msg</span><span class="p">.</span><span class="na">getData</span><span class="p">().</span><span class="na">getString</span><span class="p">(</span><span class="n">HANDLER_MESSAGE_KEY</span><span class="p">));</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">};</span>
+</code></pre></div>
+</td></tr></table>
+
+<h3 id="invoking-commands-on-ui-elements-of-the-ui-thread">Invoking Commands on UI Elements of the UI Thread</h3>
+<p>Another possibility on how to pass data to the UI Threads is via the <code>post()</code> methods of its UI elements.</p>
+<p><strong>Example</strong>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kd">public</span> <span class="kt">void</span> <span class="nf">doChannelScanAsThread</span><span class="p">(</span><span class="n">View</span> <span class="n">view</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">new</span> <span class="n">Thread</span><span class="p">(</span><span class="k">new</span> <span class="n">Runnable</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nd">@Override</span>
+        <span class="kd">public</span> <span class="kt">void</span> <span class="nf">run</span><span class="p">()</span> <span class="p">{</span>
+            <span class="k">try</span> <span class="p">{</span>
+                <span class="n">JSONObject</span> <span class="n">obj</span> <span class="o">=</span> <span class="n">httpRequest</span><span class="p">.</span><span class="na">sendHttp</span><span class="p">(</span><span class="s">&quot;scanChannels&quot;</span><span class="p">);</span>
+
+<span class="hll">                <span class="n">txtResponse</span><span class="p">.</span><span class="na">post</span><span class="p">(</span><span class="k">new</span> <span class="n">Runnable</span><span class="p">()</span> <span class="p">{</span>
+</span><span class="hll">                    <span class="nd">@Override</span>
+</span><span class="hll">                    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">run</span><span class="p">()</span> <span class="p">{</span>
+</span><span class="hll">                        <span class="n">txtResponse</span><span class="p">.</span><span class="na">setText</span><span class="p">(</span><span class="n">obj</span><span class="p">.</span><span class="na">toString</span><span class="p">());</span>
+</span><span class="hll">                    <span class="p">}</span>
+</span><span class="hll">                <span class="p">});</span>
+</span>            <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="n">IOException</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">Log</span><span class="p">.</span><span class="na">e</span><span class="p">(</span><span class="n">TAG</span><span class="p">,</span> <span class="n">e</span><span class="p">.</span><span class="na">getMessage</span><span class="p">());</span>
+            <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="n">JSONException</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">Log</span><span class="p">.</span><span class="na">e</span><span class="p">(</span><span class="n">TAG</span><span class="p">,</span> <span class="n">e</span><span class="p">.</span><span class="na">getMessage</span><span class="p">());</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}).</span><span class="na">start</span><span class="p">();</span>
+<span class="p">}</span>
+</code></pre></div>
+</td></tr></table></p>
+<h2 id="invoking-threads">Invoking Threads</h2>
+<p>There are several ways on how to realize concurrent operations or tasks</p>
+<ol>
+<li>By subclassing the <code>AsyncTask</code> class and implementing a new AsyncTask</li>
+<li>By implementing the runnable interface and passig it to as argument to  <code class="highlight"><span class="n">AsyncTask</span><span class="p">.</span><span class="na">execute</span><span class="p">(</span><span class="k">new</span> <span class="n">Runnable</span><span class="p">()</span> <span class="p">{...}</span> <span class="p">)</span></code></li>
+<li>By creating a new class and implementing the <code>Runnable</code> interface</li>
+<li>By using the <code>Thread</code> class from the <code>java.lang.Thread</code> package</li>
+<li>By using classes from the <code>java.util.concurrent</code> package </li>
+</ol>
+<p>In this lecture, we only concentrate on the first three methods and specifically investigate AsyncTasks.</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="../asynctask/" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Zurück
+              </span>
+              AsyncTask
+            </div>
+          </div>
+        </a>
+      
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "In Zwischenablage kopieren", "clipboard.copied": "In Zwischenablage kopiert", "search.config.lang": "de", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Suche", "search.result.placeholder": "Suchbegriff eingeben", "search.result.none": "Keine Suchergebnisse", "search.result.one": "1 Suchergebnis", "search.result.other": "# Suchergebnisse", "search.result.more.one": "1 weiteres Suchergebnis auf dieser Seite", "search.result.more.other": "# weitere Suchergebnisse auf dieser Seite", "search.result.term.missing": "Es fehlt"}, "search": "../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.4ea5477f.min.js"></script>
+      
+        <script src="../javascript/extra.js"></script>
+      
+    
+  </body>
+</html>

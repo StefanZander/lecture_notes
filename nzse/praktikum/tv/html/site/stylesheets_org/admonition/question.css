@@ -1,0 +1,36 @@
+.md-typeset .admonition.question {
+    border-left: solid 0.25rem var(--question_border_color);
+    background-color: var(--question_background_color);
+}
+
+.admonition.question>* {
+    margin-left: 1.5rem;
+}
+
+.admonition.question .admonition-title {
+    display: none;
+}
+
+.admonition.question::before {
+    font-family: 'Material Icons';
+    content: '\e8af'; /* e91f */
+    font-size: 1.2rem;
+    padding-right: .3rem;
+    text-shadow: .01rem .01rem var(--text_shadow_color);
+    padding-top: 0.5rem;
+    float: left;
+}
+
+.md-typeset details.question {
+    font-size: .8rem;
+    border-radius: 0;
+}
+
+.md-typeset details.question>summary::before {
+    font-size: 1.2rem;
+}
+
+.md-typeset details.question>summary {
+    padding-left: 2.2rem;
+}
+

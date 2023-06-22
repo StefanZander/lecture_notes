@@ -1,0 +1,25 @@
+.md-typeset .admonition.note {
+    border-left: solid 0.25rem var(--note_border_color);
+    background-color: var(--note_background_color);
+}
+
+
+.admonition.note>* {
+    margin-left: 1.5rem;
+}
+
+.admonition.note .admonition-title {
+    display: none;
+}
+
+.admonition.note::before {
+    font-family: 'Material Icons';
+    content: '\e85d'; /* e91f e88f */
+    font-size: 1.2rem;
+    /* vertical-align: bottom; */
+    padding-right: .3rem;
+    text-shadow: .01rem .01rem var(--text_shadow_color);
+    padding-top: 0.3rem;
+    float: left;
+}
+

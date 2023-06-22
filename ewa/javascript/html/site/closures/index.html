@@ -1,0 +1,179 @@
+<!doctype html><html lang="de" class="no-js"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="x-ua-compatible" content="ie=edge"><meta name="lang:clipboard.copy" content="In Zwischenablage kopieren"><meta name="lang:clipboard.copied" content="In Zwischenablage kopiert"><meta name="lang:search.language" content="de"><meta name="lang:search.pipeline.stopwords" content="True"><meta name="lang:search.pipeline.trimmer" content="True"><meta name="lang:search.result.none" content="Keine Suchergebnisse"><meta name="lang:search.result.one" content="1 Suchergebnis"><meta name="lang:search.result.other" content="# Suchergebnisse"><meta name="lang:search.tokenizer" content="[\s\-]+"><link rel="shortcut icon" href="../assets/images/favicon.png"><meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.3.1"><title>Closures - Introduction to JavaScript</title><link rel="stylesheet" href="../assets/stylesheets/application.4031d38b.css"><link rel="stylesheet" href="../assets/stylesheets/application-palette.224b79ff.css"><meta name="theme-color" content="#2196f3"><script src="../assets/javascripts/modernizr.74668098.js"></script><link href="https://fonts.gstatic.com" rel="preconnect" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Zilla+Slab:300,400,400i,700|Fira+mono&display=swap"><style>body,input{font-family:"Zilla Slab","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Fira mono","Courier New",Courier,monospace}</style><link rel="stylesheet" href="../assets/fonts/material-icons.css"><link rel="stylesheet" href="../stylesheets/extra.css"></head><body dir="ltr" data-md-color-primary="blue" data-md-color-accent="red"><svg class="md-svg"><defs></defs></svg> <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off"> <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off"> <label class="md-overlay" data-md-component="overlay" for="__drawer"></label><a href="#closures" tabindex="1" class="md-skip">Zum Inhalt </a><header class="md-header" data-md-component="header"><nav class="md-header-nav md-grid"><div class="md-flex"><div class="md-flex__cell md-flex__cell--shrink"><a href=".." title="Introduction to JavaScript" class="md-header-nav__button md-logo"><i class="md-icon"></i></a></div><div class="md-flex__cell md-flex__cell--shrink"><label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label></div><div class="md-flex__cell md-flex__cell--stretch"><div class="md-flex__ellipsis md-header-nav__title" data-md-component="title"><span class="md-header-nav__topic">Introduction to JavaScript</span><span class="md-header-nav__topic">Closures</span></div></div><div class="md-flex__cell md-flex__cell--shrink"><label class="md-icon md-icon--search md-header-nav__button" for="__search"></label><div class="md-search" data-md-component="search" role="dialog"><label class="md-search__overlay" for="__search"></label><div class="md-search__inner" role="search"><form class="md-search__form" name="search"><input type="text" class="md-search__input" name="query" placeholder="Suche" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active"> <label class="md-icon md-search__icon" for="__search"></label> <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">&#xE5CD;</button></form><div class="md-search__output"><div class="md-search__scrollwrap" data-md-scrollfix><div class="md-search-result" data-md-component="result"><div class="md-search-result__meta">Suchbegriff eingeben</div><ol class="md-search-result__list"></ol></div></div></div></div></div></div></div></nav></header><div class="md-container"><main class="md-main"><div class="md-main__inner md-grid" data-md-component="container"><div class="md-sidebar md-sidebar--primary" data-md-component="navigation"><div class="md-sidebar__scrollwrap"><div class="md-sidebar__inner"><nav class="md-nav md-nav--primary" data-md-level="0"><label class="md-nav__title md-nav__title--site" for="__drawer"><a href=".." title="Introduction to JavaScript" class="md-nav__button md-logo"><i class="md-icon"></i></a>Introduction to JavaScript</label><ul class="md-nav__list" data-md-scrollfix><li class="md-nav__item"><a href=".." title="Index" class="md-nav__link">Index</a></li><li class="md-nav__item"><a href="../introduction/" title="Language Concepts" class="md-nav__link">Language Concepts</a></li><li class="md-nav__item"><a href="../functions/" title="Functions" class="md-nav__link">Functions</a></li><li class="md-nav__item"><a href="../objects/" title="Objects" class="md-nav__link">Objects</a></li><li class="md-nav__item md-nav__item--active"><input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc"><label class="md-nav__link md-nav__link--active" for="__toc">Closures</label><a href="./" title="Closures" class="md-nav__link md-nav__link--active">Closures</a><nav class="md-nav md-nav--secondary"><label class="md-nav__title" for="__toc">Inhaltsverzeichnis</label><ul class="md-nav__list" data-md-scrollfix><li class="md-nav__item"><a href="#motivation" title="Motivation" class="md-nav__link">Motivation</a><nav class="md-nav"><ul class="md-nav__list"><li class="md-nav__item"><a href="#what-is-a-closure" title="What is a Closure?" class="md-nav__link">What is a Closure?</a></li><li class="md-nav__item"><a href="#usage" title="Usage" class="md-nav__link">Usage</a></li><li class="md-nav__item"><a href="#einsatzzwecke" title="Einsatzzwecke" class="md-nav__link">Einsatzzwecke</a></li><li class="md-nav__item"><a href="#example" title="Example" class="md-nav__link">Example</a></li></ul></nav></li><li class="md-nav__item"><a href="#pitfalls" title="Pitfalls" class="md-nav__link">Pitfalls</a></li><li class="md-nav__item"><a href="#disclaimer" title="Disclaimer" class="md-nav__link">Disclaimer</a></li></ul></nav></li></ul></nav></div></div></div><div class="md-sidebar md-sidebar--secondary" data-md-component="toc"><div class="md-sidebar__scrollwrap"><div class="md-sidebar__inner"><nav class="md-nav md-nav--secondary"><label class="md-nav__title" for="__toc">Inhaltsverzeichnis</label><ul class="md-nav__list" data-md-scrollfix><li class="md-nav__item"><a href="#motivation" title="Motivation" class="md-nav__link">Motivation</a><nav class="md-nav"><ul class="md-nav__list"><li class="md-nav__item"><a href="#what-is-a-closure" title="What is a Closure?" class="md-nav__link">What is a Closure?</a></li><li class="md-nav__item"><a href="#usage" title="Usage" class="md-nav__link">Usage</a></li><li class="md-nav__item"><a href="#einsatzzwecke" title="Einsatzzwecke" class="md-nav__link">Einsatzzwecke</a></li><li class="md-nav__item"><a href="#example" title="Example" class="md-nav__link">Example</a></li></ul></nav></li><li class="md-nav__item"><a href="#pitfalls" title="Pitfalls" class="md-nav__link">Pitfalls</a></li><li class="md-nav__item"><a href="#disclaimer" title="Disclaimer" class="md-nav__link">Disclaimer</a></li></ul></nav></div></div></div><div class="md-content"><article class="md-content__inner md-typeset"><h1 id="closures">Closures</h1>
+<div class="admonition abstract">
+<p class="admonition-title">Abstract</p>
+<p><strong>Summary</strong></p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Protected variables are defined in the outer scope of the function and can be accessed by exposing the inner functional scope </li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Closures are a common way to achieve encapsulation (ie. hiding data from external and uncotrolled access) </li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Closures consist of an outer and inner function</li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Note:</strong> The app bar should be implemented using the <strong>Android Toolbar</strong> to make it available for a wide range of devices. According to the Android developer guidelines, the appcompat <a href="https://developer.android.com/reference/android/support/v7/widget/Toolbar.html">Toolbar</a> has the best compatibility support.  </p>
+</div>
+<h2 id="motivation">Motivation</h2>
+<p>Closure == dt. Einschließen bzw. Abschluss </p>
+<h3 id="what-is-a-closure">What is a Closure?</h3>
+<p>A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment). In other words, a closure gives you access to an outer function’s scope from an inner function. In JavaScript, closures are created every time a function is created, at function creation time.</p>
+<p>To use a closure, define a function inside another function and expose it. To expose a function, return it or pass it to another function.</p>
+<p>The inner function will have access to the variables in the outer function scope, even after the outer function has returned.</p>
+<h3 id="usage">Usage</h3>
+<p>In JavaScript, closures are the primary mechanism used to enable <strong>data privacy</strong>. 
+Data privacy is an essential property that helps in programming to an interface, not an implementation. This is an important concept in building robust software because implementation details are more likely to change in breaking ways than interface contracts.</p>
+<p>When you use closures for data privacy, the enclosed variables are only in scope within the containing (outer) function. You can’t get at the data from an outside scope except through the object’s privileged methods. In JavaScript, any exposed method defined within the closure scope is privileged.</p>
+<h3 id="einsatzzwecke">Einsatzzwecke</h3>
+<ul>
+<li>
+<p><strong>Closures erlauben die Isolierung von Variablen</strong><br />
+    Außerhalb einer Closure liegen alle Variablen auf dem Window-Object und das kann unvorhergesehene Konsequenzen haben, bspw. wenn externe Scripte eingebunden werden. Hier kann es passieren, dass Variablen ungewusst überschrieben werden oder ähnliches.</p>
+</li>
+<li>
+<p><strong>Transport von definierten Zuständen (<em>=States</em>) von einem Scope in einen anderen</strong><br />
+    Was wird eingeschlossen: State, also Variablen die einen zugeordneten Wert haben.<br />
+    Der Nutzen: Transport von State von einem Scope in einen komplett anderen Scope.</p>
+<p>Im u.g. Beispiel ist der State <code class="codehilite"><span class="kd">let</span> <span class="nx">obj</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">MyProtectedObj</span><span class="p">(</span><span class="s2">&quot;James&quot;</span><span class="p">)</span></code> eingeschlossen in einem Closure und kann jetzt über die Variable <code class="codehilite"><span class="n">a</span></code> "woanders" hin transportiert werden, d.h., an ein anderes Object (in einem anderen Scope) übergeben werden.</p>
+<p>Also Funktion+State. Offensichtlich sehr ähnlich zu einem Objekt, welches ja ebenso Funktion+State kapselt, aber eben auch mehrere Funktionen beinhalten kann.</p>
+</li>
+<li>
+<p><strong>Closures can be used to create stateful functions</strong>
+    Closures can also be used to create stateful functions whose return values may be influenced by their internal state, e.g.:</p>
+</li>
+</ul>
+<h3 id="example">Example</h3>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kd">function</span> <span class="nx">MyProtectedObj</span><span class="p">(</span><span class="nx">param</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kr">const</span> <span class="nx">mySecretVariable</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="mi">4711</span> <span class="o">*</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">());</span>
+  <span class="kd">let</span> <span class="nx">name</span> <span class="o">=</span> <span class="nx">param</span><span class="p">;</span>
+
+  <span class="k">return</span> <span class="p">{</span> 
+    <span class="nx">getCode</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span> 
+      <span class="k">return</span> <span class="nx">mySecretVariable</span><span class="p">;</span>
+    <span class="p">},</span>
+    <span class="nx">setName</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">value</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">name</span> <span class="o">=</span> <span class="nx">value</span><span class="p">;</span>
+    <span class="p">},</span>
+    <span class="nx">getName</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+      <span class="k">return</span> <span class="nx">name</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table>
+
+<p>The closure function can be used like that</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kd">let</span> <span class="nx">obj</span> <span class="o">=</span> <span class="nx">MyProtectedObj</span><span class="p">(</span><span class="s2">&quot;James&quot;</span><span class="p">);</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">mySecretVariable</span><span class="p">);</span>      <span class="c1">// Reference Error </span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">obj</span><span class="p">.</span><span class="nx">mySecretVariable</span><span class="p">);</span>  <span class="c1">// outputs &#39;undefined&#39;</span>
+
+<span class="nx">obj</span><span class="p">.</span><span class="nx">getCode</span><span class="p">();</span>  <span class="c1">//returns the randomly generated number</span>
+<span class="nx">obj</span><span class="p">.</span><span class="nx">setName</span><span class="p">(</span><span class="s2">&quot;John&quot;</span><span class="p">);</span>  <span class="c1">//ok</span>
+<span class="nx">obj</span><span class="p">.</span><span class="nx">getName</span><span class="p">();</span>  <span class="c1">//outputs &#39;John&#39;</span>
+</pre></div>
+</td></tr></table>
+
+<h2 id="pitfalls">Pitfalls</h2>
+<p>Be careful, using <code class="codehilite"><span class="k">this</span></code> does not work in closures
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kd">function</span> <span class="nx">MyProtectedObj</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">mySecretVariable</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="mi">4711</span> <span class="o">*</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">());</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="nx">name</span><span class="p">;</span>
+
+  <span class="k">return</span> <span class="p">{</span> 
+    <span class="nx">getCode</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span> 
+      <span class="k">return</span> <span class="nx">mySecretVariable</span><span class="p">;</span>
+    <span class="p">},</span>
+    <span class="nx">setCode</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">value</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">mySecretVariable</span> <span class="o">=</span> <span class="nx">value</span><span class="p">;</span>
+    <span class="p">},</span>
+    <span class="nx">getName</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+      <span class="k">return</span> <span class="nx">name</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">let</span> <span class="nx">obj</span> <span class="o">=</span> <span class="nx">MyProtectedObj</span><span class="p">(</span><span class="s2">&quot;James&quot;</span><span class="p">);</span>
+
+<span class="c1">//works since mySecretVariable is bound to the global scope</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">mySecretVariable</span><span class="p">);</span> <span class="c1">// ...</span>
+</pre></div>
+</td></tr></table></p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kd">var</span> <span class="nx">c</span> <span class="o">=</span> <span class="p">(</span><span class="nx">person</span><span class="p">(</span><span class="nx">name</span><span class="p">){</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="nx">name</span><span class="p">;</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">age</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+  <span class="k">return</span> <span class="p">{</span>
+    <span class="nx">getOlder</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+      <span class="k">this</span><span class="p">.</span><span class="nx">age</span><span class="o">++</span><span class="p">;</span>
+    <span class="p">},</span>
+    <span class="nx">printAge</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">age</span><span class="p">);</span>
+    <span class="p">}</span> 
+  <span class="p">}</span>
+<span class="p">})();</span>
+</pre></div>
+</td></tr></table>
+
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Please note</strong> that the returning object must not access the variables via <code class="codehilite"><span class="n">this</span></code></p>
+</div>
+<h2 id="disclaimer">Disclaimer</h2>
+<p>Most of the information in this lecture has been compiled from the following sources:</p>
+<ul>
+<li><a href="https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-closure-b2f0d2152b36">https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-closure-b2f0d2152b36</a></li>
+<li><a href="https://www.computerbase.de/forum/threads/warum-sind-closures-so-wichtig.1906523/">https://www.computerbase.de/forum/threads/warum-sind-closures-so-wichtig.1906523/</a></li>
+</ul></article></div></div></main><footer class="md-footer"><div class="md-footer-nav"><nav class="md-footer-nav__inner md-grid"><a href="../objects/" title="Objects" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev"><div class="md-flex__cell md-flex__cell--shrink"><i class="md-icon md-icon--arrow-back md-footer-nav__button"></i></div><div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title"><span class="md-flex__ellipsis"><span class="md-footer-nav__direction">Zurück</span>Objects</span></div></a></nav></div><div class="md-footer-meta md-typeset"><div class="md-footer-meta__inner md-grid"><div class="md-footer-copyright">powered by <a href="https://www.mkdocs.org">MkDocs</a> and <a href="https://squidfunk.github.io/mkdocs-material/">Material for MkDocs</a></div></div></div></footer></div><script src="../assets/javascripts/application.b260a35d.js"></script><script src="../assets/javascripts/lunr/lunr.stemmer.support.js"></script><script src="../assets/javascripts/lunr/lunr.de.js"></script><script>app.initialize({version:"1.0.4",url:{base:".."}})</script><script src="../javascript/extra.js"></script></body></html>

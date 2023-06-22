@@ -1,0 +1,28 @@
+.md-typeset .admonition.abstract {
+    border-left: solid 0.25rem var(--abstract_border_color) !important;
+    background-color: var(--abstract_background_color) !important;
+}
+
+/* .abstract>*:nth-of-type(2):before {
+    font-weight: bold;
+    text-shadow: .02em .02em white;
+} */
+
+/* .admonition.abstract>*:first-child {
+    margin-left: 0;
+} */
+
+.admonition.abstract>*{
+    margin-left: 1.5rem;
+}
+
+.admonition.abstract::before {
+    font-family: 'Material Icons' !important;
+    content: '\e8d0';
+    font-size: 1.2rem;
+    text-shadow: .01rem .01rem white;
+    vertical-align: bottom;
+    padding-right: 0.3rem;
+    padding-top: 0.3rem;
+    float: left;
+}

@@ -1,0 +1,630 @@
+
+<!doctype html>
+<html lang="de" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../common_mistakes/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.3">
+    
+    
+      
+        <title>Tipps - Scientific Writing for Computer Science</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.c4a75a56.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.a0c5b2b5.min.css">
+      
+      
+
+    
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="red">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#what-makes-a-good-scientific-paper" class="md-skip">
+          Zum Inhalt
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Kopfzeile">
+    <a href=".." title="Scientific Writing for Computer Science" class="md-header__button md-logo" aria-label="Scientific Writing for Computer Science" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Scientific Writing for Computer Science
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Tipps
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Suche" placeholder="Suche" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Suche">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Zurücksetzen" aria-label="Zurücksetzen" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Suche wird initialisiert
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Scientific Writing for Computer Science" class="md-nav__button md-logo" aria-label="Scientific Writing for Computer Science" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Scientific Writing for Computer Science
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Main Page
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../objectives/" class="md-nav__link">
+        Objectives
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../organisation/" class="md-nav__link">
+        Organisation
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../schedule/" class="md-nav__link">
+        Schedule
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../scientific_writing/" class="md-nav__link">
+        Scientific Writing
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../structure/" class="md-nav__link">
+        Structure
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../milestone0/" class="md-nav__link">
+        MS0: Introductory Material
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../milestone1/" class="md-nav__link">
+        MS1: Group and Topic
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../milestone2/" class="md-nav__link">
+        MS2: Factsheet & Abstract
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../milestone3/" class="md-nav__link">
+        MS3: Paper Draft
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../milestone4/" class="md-nav__link">
+        MS4: Review
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../milestone5/" class="md-nav__link">
+        MS5: Final Presentation
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../milestone6/" class="md-nav__link">
+        MS6: Final Paper
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../common_mistakes/" class="md-nav__link">
+        Common Mistakes
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Tipps
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Tipps
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#key-questions-to-be-asked" class="md-nav__link">
+    Key Questions to be Asked
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#developing-a-technical-artifact" class="md-nav__link">
+    Developing a Technical Artifact
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#some-further-tipps" class="md-nav__link">
+    Some Further Tipps
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#key-questions-to-be-asked" class="md-nav__link">
+    Key Questions to be Asked
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#developing-a-technical-artifact" class="md-nav__link">
+    Developing a Technical Artifact
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#some-further-tipps" class="md-nav__link">
+    Some Further Tipps
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="what-makes-a-good-scientific-paper">What makes a good Scientific Paper?</h1>
+<h3 id="key-questions-to-be-asked">Key Questions to be Asked</h3>
+<blockquote>
+<p>What makes a good scientific paper? </p>
+</blockquote>
+<p>Before you begin, ask the following questions:</p>
+<ul>
+<li>Does it clearly motivate and clearly formulate the <strong>research question</strong>?</li>
+<li>Does it outline the current knowledge of the <strong>problem domain</strong>, as well as the state of <strong>existing solutions</strong>?</li>
+<li>Does it present clearly any <strong>preliminary ideas</strong>, the proposed <strong>approach</strong> and the <strong>results</strong> achieved so far?</li>
+<li>Does it sketch the <strong>research methodology</strong> that is applied?</li>
+<li>Does it point out the <strong>contributions</strong> of the applicant to the problem solution?</li>
+<li>Does it state in what aspects the suggested solution is <strong>different</strong>, <strong>new</strong>, or <strong>better</strong> as compared to <strong>existing approaches</strong> to the problem?</li>
+<li>Does it state how the attained results are <strong>evaluated</strong> or compared to existing approaches to the problem?</li>
+<li>Does it state how and by whom the <strong>expected results</strong> can be applied?</li>
+</ul>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p><strong>Source</strong>: <a href="https://www.researchgate.net/publication/255993683_How_to_Write_Good_Scientific_Papers_A_Comprehensive_Guide">https://www.researchgate.net/publication/255993683_How_to_Write_Good_Scientific_Papers_A_Comprehensive_Guide</a>   (<em>Adapted with slight modifications</em>)</p>
+</div>
+<h3 id="developing-a-technical-artifact">Developing a Technical Artifact</h3>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Please note</strong>:<br />
+The following information are important! Diregarding them severely harms your paper&rsquo;s quality and assessment.</p>
+</div>
+<p>Here is what you should do if your task is to develop an algorithm / module / component / system etc.</p>
+<ul>
+<li>Do not just develop it and think everything is fine (from a methodological point of view it is not; it is not even heuristiaclly valid)</li>
+<li>Put the problem to the front, i.e., make the problem your starting point</li>
+<li>Implement different approaches (that all solve or contribute towards solving the problem – or parts of it)</li>
+<li>Then define KPIs that help you to assess the quality of a solution and that allow to compare the different solutions based on the extent to which they solve (or help solving) the problem</li>
+<li>Conduct the analysis and compare the different approaches (methodology: comparative analysis) </li>
+<li>Present and discuss your findings</li>
+</ul>
+<h3 id="some-further-tipps">Some Further Tipps</h3>
+<ul>
+<li><strong>Always keep the reader in mind</strong> <ul>
+<li>Outline and explain your descisions </li>
+<li>Provide enough evidence that allows the reader to make an informed assessment about the validity and appropriateness of the choosen and applied methodology as well as about the derived conclusions </li>
+</ul>
+</li>
+<li><strong>Focus on clarity rather than using jargon</strong><ul>
+<li>Use passive style only when needed; in CS the active is often the better and preferred style<br />
+  e.g. not <em>&ldquo;it could be seen that&hellip;&rdquo;</em> – better: <em>&ldquo;the data shows that&hellip;&rdquo;</em></li>
+</ul>
+</li>
+<li><strong>Make sure your claims are not exaggerated</strong><ul>
+<li>Stick to the facts and generated results</li>
+<li>Discuss findings in the context of the paper&rsquo;s problem domain</li>
+</ul>
+</li>
+<li><strong>A scientific paper follows a well-established structure</strong> <ul>
+<li>Use the <a href="../structure/">structural recommendation</a> provided in this course materials in order to help readers in understanding the semantics of parts of our work by conveying the context in which the information is presented.</li>
+</ul>
+</li>
+<li><strong>Mention the research problem in the title</strong><ul>
+<li>Unlike the worlds of newspaper reporting and marketing press releases, the title of a scientific paper should describe the aim of the work (=the problem to be tackled) not the results.</li>
+</ul>
+</li>
+<li><strong>Cosider the related and relevant literature thoroughly</strong><ul>
+<li>Pay attention to a good and critical coverage of related literature</li>
+</ul>
+</li>
+</ul>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "In Zwischenablage kopiert", "clipboard.copy": "In Zwischenablage kopieren", "search.result.more.one": "1 weiteres Suchergebnis auf dieser Seite", "search.result.more.other": "# weitere Suchergebnisse auf dieser Seite", "search.result.none": "Keine Suchergebnisse", "search.result.one": "1 Suchergebnis", "search.result.other": "# Suchergebnisse", "search.result.placeholder": "Suchbegriff eingeben", "search.result.term.missing": "Es fehlt", "select.version": "Version ausw\u00e4hlen"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.efa0ade1.min.js"></script>
+      
+        <script src="../javascript/extra.js"></script>
+      
+    
+  </body>
+</html>

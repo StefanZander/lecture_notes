@@ -1,0 +1,737 @@
+
+<!doctype html>
+<html lang="de" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.15">
+    
+    
+      
+        <title>OpenFoodFacts - Praktikum zur LVA "Nutzerzentrierte Softwareentwicklung"</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.26e3688c.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ecc896b0.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i%7CRoboto+mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto Condensed";--md-code-font:"Roboto mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="red">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#openfoodfacts" class="md-skip">
+          Zum Inhalt
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Kopfzeile">
+    <a href=".." title="Praktikum zur LVA &#34;Nutzerzentrierte Softwareentwicklung&#34;" class="md-header__button md-logo" aria-label="Praktikum zur LVA "Nutzerzentrierte Softwareentwicklung"" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Praktikum zur LVA "Nutzerzentrierte Softwareentwicklung"
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              OpenFoodFacts
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Suche" placeholder="Suche" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Suche">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Zurücksetzen" aria-label="Zurücksetzen" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Suche wird initialisiert
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Praktikum zur LVA &#34;Nutzerzentrierte Softwareentwicklung&#34;" class="md-nav__button md-logo" aria-label="Praktikum zur LVA "Nutzerzentrierte Softwareentwicklung"" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Praktikum zur LVA "Nutzerzentrierte Softwareentwicklung"
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Startseite
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vorbemerkung/" class="md-nav__link">
+        Vorbemerkung
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../projektmappe/" class="md-nav__link">
+        Projektmappe
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../termin0/" class="md-nav__link">
+        Vorbereitung: Android Studio
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../termin1/" class="md-nav__link">
+        Termin 1: User Research
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../termin2/" class="md-nav__link">
+        Termin 2: UI Entwurf
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../termin3/" class="md-nav__link">
+        Termin 3: Layout
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../termin4/" class="md-nav__link">
+        Termin 4: Logik
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../termin5/" class="md-nav__link">
+        Termin 5: App-Präsentation
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../termin6/" class="md-nav__link">
+        Abschluss: Usability
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#allgemeine-informationen" class="md-nav__link">
+    Allgemeine Informationen
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#abfragemoglichkeiten" class="md-nav__link">
+    Abfragemöglichkeiten
+  </a>
+  
+    <nav class="md-nav" aria-label="Abfragemöglichkeiten">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#direkte-abfrage-mittels-barcode" class="md-nav__link">
+    Direkte Abfrage mittels Barcode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filterung-von-informationen" class="md-nav__link">
+    Filterung von Informationen
+  </a>
+  
+    <nav class="md-nav" aria-label="Filterung von Informationen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#auswahl-relevanter-feldnamen" class="md-nav__link">
+    Auswahl relevanter Feldnamen
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zusatzliche-abfrageoptionen" class="md-nav__link">
+    Zusätzliche Abfrageoptionen
+  </a>
+  
+    <nav class="md-nav" aria-label="Zusätzliche Abfrageoptionen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#abfrage-aller-in-deutscher-sprache-hinterlegte-nahrstoffe" class="md-nav__link">
+    Abfrage aller in Deutscher Sprache hinterlegte Nährstoffe
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#abfrage-von-produktbildern" class="md-nav__link">
+    Abfrage von Produktbildern
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#general-requests" class="md-nav__link">
+    General Requests
+  </a>
+  
+    <nav class="md-nav" aria-label="General Requests">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#base-url" class="md-nav__link">
+    Base URL
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#output-fields" class="md-nav__link">
+    Output Fields
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#qr-and-barcode-scanner-tutorials" class="md-nav__link">
+    QR- and Barcode-Scanner Tutorials
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="openfoodfacts">OpenFoodFacts</h1>
+<p>Die folgende Seite enthält einige Informationen und Hinweise, die Ihnen das Arbeiten mit der openfoodfacts-API erleichtern und vereinfachen sollen. Bitte beachten Sie, dass diese Seite bzw. die darin enthaltenen Informationen volatil sind und sich ändern können bzw. angepasst werden.
+Ergänzungen, Erweiterungen, etc. sind generell herzlich willkommen.</p>
+<h2 id="allgemeine-informationen">Allgemeine Informationen</h2>
+<p>Die Dokumentation der API mit einigen Beispielaufrufen finden sie hier: 
+<a href="https://openfoodfacts.github.io/api-documentation/">https://openfoodfacts.github.io/api-documentation/</a></p>
+<p>Auf die API kann <strong>ohne Authentifizierungsinformationen</strong> zugegriffen werden. Eine Registrierung oder ein OAuth 2.0-Token ist nicht notwendig.</p>
+<p>Basis-URL für die Abfrage von Produkten aus Deutschland: <code>https://de-de.openfoodfacts.org/api/v2/</code><br />
+Richten Sie alle Anfragen an die API über diese URL.</p>
+<p>Es gibt eine sehr hilfreiche <strong>Visual Studio Code Extension</strong> mit Namen &ldquo;Thunder Client&rdquo;, mittels der sich auf einfache Art und Weise Rest-API-Aufrufe durchführen und analysieren lassen. </p>
+<p>Ich empfehle die Verwendung eines solchen Tools bzw. einer derartigen Extension für die Untersuchung der openfoodfacts-API.</p>
+<h2 id="abfragemoglichkeiten">Abfragemöglichkeiten</h2>
+<h3 id="direkte-abfrage-mittels-barcode">Direkte Abfrage mittels Barcode</h3>
+<p>Ergänzung der Base-URI um <code>/product/BARCODE</code>.</p>
+<p>Beispiel:<br />
+<a href="https://de-de.openfoodfacts.org/api/v2/product/5449000000996">https://de-de.openfoodfacts.org/api/v2/product/5449000000996</a></p>
+<p>Eine solche Abfrage liefert alle zu einem Produkt hinterlegte Informationen.</p>
+<h3 id="filterung-von-informationen">Filterung von Informationen</h3>
+<p>Die Produktdatensätze sind idR sehr sehr umfangreich (teilweise mit &gt; 4000 Zeilen JSON-Code pro Produkt). Es ist deshalb sinnvoll, mittels <strong>Filterung</strong> (Query-Parameter <code>fields=FELDNAME</code>) nur die relevanten Stammdaten abzufragen. </p>
+<p>Syntax: <code>&amp;fields=FELDNAME,FELDNAME,...,FELDNAME</code></p>
+<p>Beispiel: <a href="https://de-de.openfoodfacts.org/api/v2/product/5449000000996&amp;fields=product_name_de">https://de-de.openfoodfacts.org/api/v2/product/5449000000996&amp;fields=product_name_de</a></p>
+<p>Es lassen sich verschiedene Felder kombinieren (konjungieren):<br />
+<a href="https://de-de.openfoodfacts.org/api/v2/product/5449000000996&amp;fields=product_name_de,ingredients_text_with_allergens_de,nutriscore_grade,nutrient_levels,nutriscore_data">https://de-de.openfoodfacts.org/api/v2/product/5449000000996&amp;fields=product_name_de,ingredients_text_with_allergens_de,nutriscore_grade,nutrient_levels,nutriscore_data</a></p>
+<p>Beispiel einer Antwort:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;5449000000996&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;product&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;ingredients_text_with_allergens_de&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Wasser, Zucker, Kohlensäure, Farbstoff E150d, Säuerungsmittel: E338, natürliche Aromen inklusive Koffein&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;nutrient_levels&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;fat&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;low&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;salt&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;low&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;saturated-fat&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;low&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;sugars&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;high&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;nutriscore_data&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;energy&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">180</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;energy_points&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;energy_value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">180</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;fiber&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;fiber_points&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;fiber_value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;fruits_vegetables_nuts_colza_walnut_olive_oils&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;fruits_vegetables_nuts_colza_walnut_olive_oils_points&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;fruits_vegetables_nuts_colza_walnut_olive_oils_value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;grade&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;e&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;is_beverage&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;is_cheese&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;is_fat&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;is_water&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;negative_points&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">14</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;positive_points&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;proteins&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;proteins_points&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;proteins_value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;saturated_fat&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;saturated_fat_points&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;saturated_fat_ratio&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;saturated_fat_ratio_points&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;saturated_fat_ratio_value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;saturated_fat_value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;score&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">14</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;sodium&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;sodium_points&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;sodium_value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;sugars&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">10.6</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;sugars_points&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">8</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;sugars_value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">10.6</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;nutriscore_grade&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;e&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;product_name_de&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Coca-Cola&quot;</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;status_verbose&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;product found&quot;</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<h4 id="auswahl-relevanter-feldnamen">Auswahl relevanter Feldnamen</h4>
+<p>Im folgenden findet sich eine Auswahl an relevanten Feldnamen eines Produktdatensatzes. Neben diesen Daten sind noch eine ganze Menge weiterer Daten enthalten, die ausgewertet werden können. Diese Aufzählung stellt nur eine Auswahl potentiell interessanter Informationen dar und soll Ihnen den Einstieg in die API erleichtern.</p>
+<ul>
+<li><code>image_front_url</code>: Produktbild</li>
+<li><code>ingredients_text_de</code>: Auflistung der Inhaltsstoffe</li>
+<li><code>ingredients_text_with_allergens_de</code>: </li>
+<li><code>nutrient_levels</code>: object where each property represents one nutrition aspect and its level (low, high)</li>
+<li><code>nutrient_levels_tags</code>: Daten analog dem vorherigen Parameter allerdings als Zeichenkette repräsentiert.</li>
+<li><code>nutriments</code>: enthält eine Auflistung der verschiedenen Nährwerte repräsentiert als Object Properties.</li>
+<li><code>nutriscore_data</code>: complex object with many properties that represent nutrition score data (e.g., &ldquo;negative points&rdquo;)</li>
+<li><code>nutriscore_grade</code>: Eingruppierung (Klassifikation) eines Produkts in eine von 5 Nährwertbereiche: A, B, C, D, E</li>
+<li><code>nutrition_grades_tags</code>: Array with score tags</li>
+<li><code>nova_group</code>: Gibt den Verarbeitungsgrad eines Produktes von natürlich bis hoch verarbeitet an</li>
+<li><code>product_name</code>: Produktname; falls der Productname leer ist muss ggf.  <code>generic_product_name</code> abgerufen werden</li>
+<li><code>product_name_de</code>: deutscher Produktname</li>
+<li><code>quantity</code>: Mengeninformation</li>
+<li><code>"selected_images -&gt; "front" -&gt; "display" -&gt; "de"</code>: Foto der deutschen Produktverpackung</li>
+<li><code>stores</code>: Names der / des Geschäfts welches das Produkt anbietet</li>
+<li><code>url</code>: originäre Produktwebseite mit aufbereiteten Informationen</li>
+</ul>
+<h3 id="zusatzliche-abfrageoptionen">Zusätzliche Abfrageoptionen</h3>
+<h4 id="abfrage-aller-in-deutscher-sprache-hinterlegte-nahrstoffe">Abfrage aller in Deutscher Sprache hinterlegte Nährstoffe</h4>
+<p>Beispiel:  <a href="https://de.openfoodfacts.org/cgi/nutrients.pl">https://de.openfoodfacts.org/cgi/nutrients.pl</a></p>
+<h4 id="abfrage-von-produktbildern">Abfrage von Produktbildern</h4>
+<p>&hellip;</p>
+<p>Abfrage mittels Suchparameter
+Grundsätzliches: 
+a) <code>de.</code>-Präfix ist notwendig, um ausschließlich Produkte aus Deutschland zu erhalten
+b) Accept-Header muss auf <code>application/json</code> gesetzt werden oder es muss der Query-Parameter <code>&amp;json=true</code> an die URL angehängt werden.</p>
+<p>Suche nach US-Frühstückszerealien:<br />
+<a href="https://us.openfoodfacts.org/cgi/search.pl?action=process&amp;tagtype_0=categories&amp;tag_contains_0=contains&amp;tag_0=breakfast_cereals&amp;json=true">https://us.openfoodfacts.org/cgi/search.pl?action=process&amp;tagtype_0=categories&amp;tag_contains_0=contains&amp;tag_0=breakfast_cereals&amp;json=true</a></p>
+<p>Suche nach italienischem Essen mit hohem Nährwert (A):<br />
+<a href="https://it.openfoodfacts.org/cgi/search.pl?action=process&amp;tagtype_1=nutrition_grades&amp;tag_contains_1=contains&amp;tag_1=A&amp;json=true">https://it.openfoodfacts.org/cgi/search.pl?action=process&amp;tagtype_1=nutrition_grades&amp;tag_contains_1=contains&amp;tag_1=A&amp;json=true</a></p>
+<p>Zeige alle deutschen Lebensmittel mit einer Nährwertqualität von A an<br />
+<a href="https://de.openfoodfacts.org/cgi/search.pl?action=process&amp;tagtype_0=nutrition_grades&amp;tag_contains_0=contains&amp;tag_0=A&amp;json=true">https://de.openfoodfacts.org/cgi/search.pl?action=process&amp;tagtype_0=nutrition_grades&amp;tag_contains_0=contains&amp;tag_0=A&amp;json=true</a></p>
+<p>Mit einem Filter kann die Ergebnismenge reduziert werden
+https://de.openfoodfacts.org/cgi/search.pl?action=process&amp;tagtype_0=nutrition_grades&amp;tag_contains_0=contains&amp;tag_0=A&amp;fields=product_name&amp;json=true</p>
+<p>Tipp:
+Über die Suchmaske https://de.openfoodfacts.org/cgi/search.pl erhalten Sie einen Überblick über die verschiedenen Suchparamter und Abfragemöglichkeiten.</p>
+<p>Auf der Ergebnisseite finden Sie folgenden Link</p>
+<p><code>Permanentlink zu diesen Suchergebnissen, kann über E-Mail und in sozialen Netzwerken geteilt werden</code></p>
+<p>Wenn Sie diesen Link kopieren, dann erhalten Sie den entsprechenden API-Aufruf, also bspw.</p>
+<p><code>https://de.openfoodfacts.org/cgi/search.pl?action=process&amp;tagtype_0=nutrition_grades&amp;tag_contains_0=contains&amp;tag_0=A&amp;tagtype_1=stores&amp;tag_contains_1=contains&amp;tag_1=Lidl&amp;sort_by=unique_scans_n&amp;page_size=20</code></p>
+<p>Wenn Sie hier den <code>page_size</code> Parameter entfernen und stattdessen <code>json=true</code> anfügen, dann erhalten Sie die Resultate im JSON-Format.</p>
+<p><code>https://de.openfoodfacts.org/cgi/search.pl?action=process&amp;tagtype_0=nutrition_grades&amp;tag_contains_0=contains&amp;tag_0=A&amp;tagtype_1=stores&amp;tag_contains_1=contains&amp;tag_1=Lidl&amp;sort_by=unique_scans_n&amp;json=true</code></p>
+<p>Abfrage: Zeige alle Lebensmittel mit einem hohen &ldquo;Beta-Carotin&rdquo;-Gehalt an:</p>
+<h2 id="general-requests">General Requests</h2>
+<h3 id="base-url">Base URL</h3>
+<p>https://de-de.openfoodfacts.org/api/v2/</p>
+<p>Get Information about a product:
+https://de-de.openfoodfacts.org/api/v2/product/5449000000996</p>
+<h3 id="output-fields">Output Fields</h3>
+<p>Allow to reduce the payload-size and retrieves only the specified fields</p>
+<p>https://world.openpetfoodfacts.org/api/v0/product/20106836.json?fields=generic_name</p>
+<p>Beispiele</p>
+<p>https://de-de.openfoodfacts.org/api/v2/product/5449000000996?fields=product_name_de</p>
+<p>https://de-de.openfoodfacts.org/api/v2/product/5449000000996?fields=product_name_de,ingredients_text_with_allergens_de</p>
+<p>Coca-Cola Dose 0,33l
+https://de-de.openfoodfacts.org/api/v2/product/5449000000996?fields=product_name_de,ingredients_text_with_allergens_de,nutriscore_grade,nutrient_levels,nutriscore_data</p>
+<p>Grafschafter Roggen Vollkorn Knäckebrot:
+https://de-de.openfoodfacts.org/api/v2/product/4056489189121?fields=product_name_de,ingredients_text_with_allergens_de,nutriscore_grade,nutrient_levels,nutriscore_data</p>
+<p>Anzeige aller Produkte bei Lidl, die eine Nährwertklassifikation von &lsquo;A&rsquo; haben:
+https://de.openfoodfacts.org/cgi/search.pl?action=process&amp;tagtype_0=nutrition_grades&amp;tag_contains_0=contains&amp;tag_0=A&amp;tagtype_1=stores&amp;tag_contains_1=contains&amp;tag_1=Lidl&amp;sort_by=unique_scans_n&amp;json=true&amp;fields=product_name_de,ingredients_text_with_allergens_de,nutriscore_grade,nutrient_levels,nutriscore_data</p>
+<h2 id="qr-and-barcode-scanner-tutorials">QR- and Barcode-Scanner Tutorials</h2>
+<p>Anbei eine Auswahl von Tutorials die zeigen, wie Barcodescanner in Form von externen Bibliotheken in das eigene Android-Projekt eingebunden werden kann.</p>
+<ol>
+<li>https://youtu.be/drH63NpSWyk</li>
+<li>very detailed tutorial with lots of explanations</li>
+<li>good to follow</li>
+<li>
+<p>based on Library</p>
+<ul>
+<li>https://github.com/yuriy-budiyev/code-scanner</li>
+</ul>
+</li>
+<li>
+<p>https://youtu.be/u2pgSu9RhYo</p>
+<ul>
+<li>automates a lot of things and can easly by integrated</li>
+<li>tutorial is in Java; uses intents</li>
+<li>Library</li>
+<li>https://github.com/journeyapps/zxing-android-embedded</li>
+</ul>
+</li>
+</ol>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "In Zwischenablage kopiert", "clipboard.copy": "In Zwischenablage kopieren", "search.result.more.one": "1 weiteres Suchergebnis auf dieser Seite", "search.result.more.other": "# weitere Suchergebnisse auf dieser Seite", "search.result.none": "Keine Suchergebnisse", "search.result.one": "1 Suchergebnis", "search.result.other": "# Suchergebnisse", "search.result.placeholder": "Suchbegriff eingeben", "search.result.term.missing": "Es fehlt", "select.version": "Version ausw\u00e4hlen"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.b4d07000.min.js"></script>
+      
+        <script src="../javascript/extra.js"></script>
+      
+    
+  </body>
+</html>

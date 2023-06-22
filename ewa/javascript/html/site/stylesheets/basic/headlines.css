@@ -1,0 +1,28 @@
+.md-content__inner.md-typeset h3 {
+    /* background-color: black; */
+    /* display: inline-flex; */
+    color: black;
+    font-family: 'Zilla Slab', Roboto, serif;
+    font-size: 1.4rem;
+    font-weight: 900; 
+    margin-top: 2rem;
+    padding-bottom: 0.15em;
+    /* padding-left: 0.5rem; */
+    /* padding-right: 0.5rem; */
+}
+
+.md-content__inner.md-typeset h2 {
+    /* background-color: black; */
+    color: var(--primary-color);    /*#009688; */
+    font-weight: 300; 
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    padding-left: 0.15rem;
+    font-size: 2.0rem; 
+    border-top: 0.15rem solid var(--primary-color);
+    border-bottom: 0.15rem solid var(--primary-color);
+}
+
+.md-content__inner.md-typeset h1 {
+    font-size: 3rem;
+}

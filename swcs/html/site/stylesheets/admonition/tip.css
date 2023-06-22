@@ -1,0 +1,25 @@
+.md-typeset .admonition.tip {
+    border-left: solid 0.25rem var(--tip_border_color);
+    background-color: var(--tip_background_color);
+}
+
+
+.admonition.tip>* {
+    margin-left: 1.5rem;
+}
+
+.admonition.tip .admonition-title {
+    display: none;
+}
+
+.admonition.tip::before {
+    font-family: 'Material Icons';
+    content: '\e150'; /* e91f e88f */
+    font-size: 1.2rem;
+    /* vertical-align: bottom; */
+    padding-right: .3rem;
+    text-shadow: .01rem .01rem var(--text_shadow_color);
+    padding-top: 0.3rem;
+    float: left;
+}
+

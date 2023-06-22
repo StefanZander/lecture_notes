@@ -1,0 +1,559 @@
+
+<!doctype html>
+<html lang="de" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.3">
+    
+    
+      
+        <title>The Introduction - Scientific Writing for Computer Science</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.c4a75a56.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.a0c5b2b5.min.css">
+      
+      
+
+    
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="red">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#the-introduction" class="md-skip">
+          Zum Inhalt
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Kopfzeile">
+    <a href="../.." title="Scientific Writing for Computer Science" class="md-header__button md-logo" aria-label="Scientific Writing for Computer Science" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Scientific Writing for Computer Science
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              The Introduction
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Suche" placeholder="Suche" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Suche">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Zurücksetzen" aria-label="Zurücksetzen" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Suche wird initialisiert
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Scientific Writing for Computer Science" class="md-nav__button md-logo" aria-label="Scientific Writing for Computer Science" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Scientific Writing for Computer Science
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Main Page
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../objectives/" class="md-nav__link">
+        Objectives
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../organisation/" class="md-nav__link">
+        Organisation
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../schedule/" class="md-nav__link">
+        Schedule
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../scientific_writing/" class="md-nav__link">
+        Scientific Writing
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../structure/" class="md-nav__link">
+        Structure
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../milestone0/" class="md-nav__link">
+        MS0: Introductory Material
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../milestone1/" class="md-nav__link">
+        MS1: Group and Topic
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../milestone2/" class="md-nav__link">
+        MS2: Factsheet & Abstract
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../milestone3/" class="md-nav__link">
+        MS3: Paper Draft
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../milestone4/" class="md-nav__link">
+        MS4: Review
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../milestone5/" class="md-nav__link">
+        MS5: Final Presentation
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../milestone6/" class="md-nav__link">
+        MS6: Final Paper
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../common_mistakes/" class="md-nav__link">
+        Common Mistakes
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../good_paper/" class="md-nav__link">
+        Tipps
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#function" class="md-nav__link">
+    Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#style" class="md-nav__link">
+    Style
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#structure" class="md-nav__link">
+    Structure
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="the-introduction">The Introduction</h1>
+<h3 id="function">Function</h3>
+<p>The function of the Introduction is to&hellip;</p>
+<ul>
+<li>&hellip;establish the context of the work being reported. This is accomplished by discussing the relevant primary research literature (with citations) and summarizing our current understanding of the problem you are investigating;</li>
+<li>&hellip;state the purpose of the work in the form of the hypothesis, question, or problem you investigated; and,</li>
+<li>&hellip;briefly explain your rationale and approach and, whenever possible, the possible outcomes your study can reveal.</li>
+</ul>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p><strong>The Introduction must answer the questions&hellip;</strong></p>
+<ul>
+<li><em>&ldquo;What was I studying?&rdquo;</em></li>
+<li><em>&ldquo;Why was it an important question?&rdquo;</em></li>
+<li><em>&ldquo;What did we know about it before I did this study?&rdquo;</em></li>
+<li><em>&ldquo;How will this study advance our knowledge?&rdquo;</em></li>
+</ul>
+</div>
+<h3 id="style">Style</h3>
+<ul>
+<li>Use subheadlines (e.g. Motivation, Research Problem, Contributions etc.) when necessary or appropriate</li>
+<li>Use the active voice as much as possible.</li>
+<li>Include the current state of the art (SOTA) to motivate the problem</li>
+<li>A good introduction often uses a &ldquo;vivid&rdquo; example to illustrate the problem</li>
+<li>A good introduction also contains lots of refs to related works or the SOTA to illustrate and motivate the problem or to explain the current state of the art (<em>using refs to explain the current state of the art should be self-speaking</em>)</li>
+</ul>
+<h3 id="structure">Structure</h3>
+<p>The structure of the Introduction can be thought of as an <strong>inverted triangle</strong> – the broadest part at the top representing the most general information and focusing down to the specific problem you studied. Organize the information to present the more general aspects of the topic early in the Introduction, then narrow toward the more specific topical information that provides context, finally arriving at your statement of purpose and rationale. A good way to get on track is to sketch out the Introduction backwards; start with the specific purpose and then decide what is the scientific context in which you are asking the question(s) your study addresses. Once the scientific context is decided, then you&rsquo;ll have a good sense of what level and type of general information with which the Introduction should begin.</p>
+<p>Here is the information should flow in your Introduction:</p>
+<ul>
+<li>
+<p><strong>Begin your Introduction by clearly identifying the subject area of interest.</strong><br />
+    Do this by using key words from your Title in the first few sentences of the Introduction to get it focused directly on topic at the appropriate level. This insures that you get to the primary subject matter quickly without losing focus, or discussing information that is too general. For example, in the mouse behavior paper, the words hormones and behavior would likely appear within the first one or two sentences of the Introduction.</p>
+</li>
+<li>
+<p><strong>Establish the context by providing a brief and balanced review of the pertinent published literature that is available on the subject.</strong><br />
+    The key is to summarize (for the reader) what we knew about the specific problem before you did your experiments or studies. This is accomplished with a general review of the primary research literature (with citations) but should not include very specific, lengthy explanations that you will probably discuss in greater detail later in the Discussion. The judgment of what is general or specific is difficult at first, but with practice and reading of the scientific literature you will develop e firmer sense of your audience. In the mouse behavior paper, for example, you would begin the Introduction at the level of mating behavior in general, then quickly focus to mouse mating behaviors and then hormonal regulation of behavior. Lead the reader to your statement of purpose/hypothesis by focusing your literature review from the more general context (the big picture e.g., hormonal modulation of behaviors) to the more specific topic of interest to you (e.g., role/effects of reproductive hormones, especially estrogen, in modulating specific sexual behaviors of mice.)</p>
+</li>
+<li>
+<p><strong>What literature should you look for in your review of what we know about the problem?</strong><br />
+    Focus your efforts on the primary research journals - the journals that publish original research articles. Although you may read some general background references (encyclopedias, textbooks, lab manuals, style manuals, etc.) to get yourself acquainted with the subject area, do not cite these, becasue they contain information that is considered fundamental or &ldquo;common&rdquo; knowledge wqithin the discipline. Cite, instead, articles that reported specific results relevant to your study. Learn, as soon as possible, how to find the primary literature (research journals) and review articles rather than depending on reference books. The articles listed in the Literature Cited of relevant papers you find are a good starting point to move backwards in a line of inquiry. Most academic libraries support the Citation Index - an index which is useful for tracking a line of inquiry forward in time. Some of the newer search engines will actually send you alerts of new papers that cite particular articles of interest to you. Review articles are particularly useful because they summarize all the research done on a narrow subject area over a brief period of time (a year to a few years in most cases).</p>
+</li>
+<li>
+<p><strong>Be sure to clearly state the purpose and /or hypothesis that you investigated.</strong><br />
+    When you are first learning to write in this format it is okay, and actually preferable, to use a pat statement like, &ldquo;The purpose of this study was to....&rdquo; or &ldquo;We investigated three possible mechanisms to explain the &hellip; (1) blah, blah..(2) etc. It is most usual to place the statement of purpose near the end of the Introduction, often as the topic sentence of the final paragraph. It is not necessary (or even desirable) to use the words &ldquo;hypothesis&rdquo; or &ldquo;null hypothesis&rdquo;, since these are usually implicit if you clearly state your purpose and expectations.</p>
+</li>
+<li>
+<p><strong>Provide a clear statement of the rationale for your approach to the problem studied.</strong><br />
+    For example: State briefly how you approached the problem (e.g., you studied oxidative respiration pathways in isolated mitochondria of cauliflower). This will usually follow your statement of purpose in the last paragraph of the Introduction. Why did you choose this kind of experiment or experimental design? What are the scientific merits of this particular model system? What advantages does it confer in answering the particular question(s) you are posing? Do not discuss here the actual techniques or protocols used in your study (this will be done in the Methodology section); your readers will be quite familiar with the usual techniques and approaches used in your field. If you are using a novel (new, revolutionary, never used before) technique or methodology, the merits of the new technique/method versus the previously used methods should be presented in the Introduction.</p>
+</li>
+</ul>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "In Zwischenablage kopiert", "clipboard.copy": "In Zwischenablage kopieren", "search.result.more.one": "1 weiteres Suchergebnis auf dieser Seite", "search.result.more.other": "# weitere Suchergebnisse auf dieser Seite", "search.result.none": "Keine Suchergebnisse", "search.result.one": "1 Suchergebnis", "search.result.other": "# Suchergebnisse", "search.result.placeholder": "Suchbegriff eingeben", "search.result.term.missing": "Es fehlt", "select.version": "Version ausw\u00e4hlen"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.efa0ade1.min.js"></script>
+      
+        <script src="../../javascript/extra.js"></script>
+      
+    
+  </body>
+</html>

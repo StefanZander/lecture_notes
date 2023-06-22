@@ -1,0 +1,684 @@
+
+<!doctype html>
+<html lang="de" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.8">
+    
+    
+      
+        <title>Page Forms (aka Semantic Forms) - Semantisches Wissensmanagement mit Semantic MediaWiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.644de097.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.e6a45f82.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#2094f3">
+        
+      
+    
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="blue" data-md-color-accent="red">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#page-forms-aka-semantic-forms" class="md-skip">
+          Zum Inhalt
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Semantisches Wissensmanagement mit Semantic MediaWiki" class="md-header__button md-logo" aria-label="Semantisches Wissensmanagement mit Semantic MediaWiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Semantisches Wissensmanagement mit Semantic MediaWiki
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Page Forms (aka Semantic Forms)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Suche" placeholder="Suche" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Suche">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Zurücksetzen" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Suche wird initialisiert
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Semantisches Wissensmanagement mit Semantic MediaWiki" class="md-nav__button md-logo" aria-label="Semantisches Wissensmanagement mit Semantic MediaWiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Semantisches Wissensmanagement mit Semantic MediaWiki
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        Startseite
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tagebuch/" class="md-nav__link">
+        Tagebuch der LVA
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../objectives/" class="md-nav__link">
+        Allgemeine Informationen
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../kapitel1/" class="md-nav__link">
+        Kapitel 1: Einführung
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2/overview/" class="md-nav__link">
+        Kapitel 2: Technische Grundlagen
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../3/overview/" class="md-nav__link">
+        Kapitel 3: Semantic MediaWiki
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../overview/" class="md-nav__link">
+        Kapitel 4: Erweiterungen
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../exercises/ue1/" class="md-nav__link">
+        Übung 1: Wissensmanagement
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../exercises/ue2/" class="md-nav__link">
+        Übung 2: Wissensmodellierung
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../exercises/ue3/" class="md-nav__link">
+        Übung 3: Semantic MediaWiki
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../exercises/ue4/" class="md-nav__link">
+        Übung 4: Vertiefung
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../semesterprojekt/" class="md-nav__link">
+        Semesterprojekt
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-page-forms-work" class="md-nav__link">
+    How Page Forms Work
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#combining-page-forms-and-semantic-templates" class="md-nav__link">
+    Combining Page Forms and Semantic Templates
+  </a>
+  
+    <nav class="md-nav" aria-label="Combining Page Forms and Semantic Templates">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#multiple-instance-templates" class="md-nav__link">
+    Multiple-Instance Templates
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wiki-page" class="md-nav__link">
+    Wiki Page
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#template" class="md-nav__link">
+    Template
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#formular" class="md-nav__link">
+    Formular
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formular-data-with-subobjects" class="md-nav__link">
+    Formular Data with Subobjects
+  </a>
+  
+    <nav class="md-nav" aria-label="Formular Data with Subobjects">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#subobject-template" class="md-nav__link">
+    Subobject Template
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<h1 id="page-forms-aka-semantic-forms">Page Forms (aka Semantic Forms)</h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Official Documentation</strong><br />
+You will find alot of useful information about page forms in the official documentation pages  </p>
+<ul>
+<li>Defining forms<br />
+<a href="https://www.mediawiki.org/wiki/Extension:Page_Forms/Defining_forms">https://www.mediawiki.org/wiki/Extension:Page_Forms/Defining_forms</a></li>
+</ul>
+</div>
+<p>Page Forms allow to create and edit <strong>semantic annotations</strong> via <strong>HTML5 forms</strong>. </p>
+<p>Page Forms work in conjunction with <strong>semantic templates</strong>, i.e., they direct user inputs to template parameters and use them as values when transcluding template content.</p>
+<p>In technical terms, Page Forms are <strong>form-definition templates</strong> that declaratively describe properties and behaviour of HTML5 forms and <strong>interlink</strong> these with semantic templates for which they are defined.
+In that way, users can create new SMW pages or alter existing ones by filling out Web forms while ensuring that the <strong>semantic annotations remain consistent</strong> and apply to the data and domain models upon which the knowledge graphs of a Semantic MediaWiki system are built.</p>
+<h3 id="how-page-forms-work">How Page Forms Work</h3>
+<p>Page Forms use semantic templates in order to create new or edit existing wiki pages.
+Parameters in templates are assigned with form values when the template is embedded into a wiki page.  </p>
+<p>Usually, for each parameter in a template, Page Forms defines a separate input element declaration the value of which will then be assigned to the template parameter when the template call is embedded in the wiki page. </p>
+<p><code>{{{field|title|mandatory|property=title|size=120|placeholder=The project's full title}}}</code></p>
+<p>The second parameter (<code>|title</code>) in the <code>{{{field...}}}</code> tag refers to the named parameter (<code>{{{title|}}}</code>) in the semantic template a from is defined for.</p>
+<p><code>[[title::{{{title|}}}]]</code></p>
+<h3 id="combining-page-forms-and-semantic-templates">Combining Page Forms and Semantic Templates</h3>
+<ol>
+<li>
+<p>Embedded Templates<br />
+<a href="https://www.mediawiki.org/wiki/Extension:Page_Forms/Defining_forms#Embedded_templates">https://www.mediawiki.org/wiki/Extension:Page_Forms/Defining_forms#Embedded_templates</a></p>
+</li>
+<li>
+<p>Multiple-Instance Templates<br />
+<a href="https://www.mediawiki.org/wiki/Extension:Page_Forms/Defining_forms#Multiple-instance_templates">https://www.mediawiki.org/wiki/Extension:Page_Forms/Defining_forms#Multiple-instance_templates</a></p>
+</li>
+</ol>
+<h4 id="multiple-instance-templates">Multiple-Instance Templates</h4>
+<p>If you add the &lsquo;multiple&rsquo; parameter to a template, it will allow for multiple (or no) instances of this template in the form, and therefore in the generated page. </p>
+<p>You can rename the &ldquo;Add another&rdquo; button to any other text, using the &ldquo;add button text=&rdquo; parameter. For instance, to change the button to read &ldquo;Add another occupation&rdquo; for a template called &ldquo;Occupation&rdquo;, you could have &ldquo;{{{for template|Occupation|multiple|add button text=Add another occupation}}}&rdquo;.</p>
+<p>You can set the minimum and maximum number of instances users can set for such a template, using the &ldquo;minimum instances=&rdquo; and &ldquo;maximum instances=&rdquo; parameters, respectively.</p>
+<p>If you want to semantically store all the data contained in these multiple-instance templates, it is recommended to use Semantic MediaWiki&rsquo;s subobjects. (If you use subobjects, you should not name them, so that each subobject gets an automatically-assigned name[1].)</p>
+<h4 id="wiki-page">Wiki Page</h4>
+<div class="highlight"><pre><span></span><code>{{Project Factsheet v1
+ |title=ReApp – Wiederverwendbare Roboterapplikationen für flexible Roboteranlagen basierend auf ROS-Industrial
+ |acronym=ReApp
+ |budget=2000000
+ |start_date=01.01.2014
+ |end_date=31.12.2016
+ |description=Das Projekt ReApp greift die Konzepte von ROS-Industrial auf, um standardisierte Schnittstellen zu definieren und Soft- sowie Hardwarebibliotheken anzulegen, die echtes Plug-and-Play verschiedenster Komponenten erlauben. Zusammen mit einem Katalog wiederverwendbarer intelligenter Dienste und einer modellgetriebenen Entwicklungsumgebung – der ReApp-Engineering Workbench – sollen sich Robotersysteme schneller und kostengünstiger an spezifische Anforderungen vor allem kleiner und mittlerer Unternehmen (KMU) anpassen lassen.
+ |members=Matthias Frank; Stefan Zander
+ |topics=Semantic Technologies; Robotik; Model-Driven Development
+}}
+</code></pre></div>
+
+<h4 id="template">Template</h4>
+<div class="highlight"><pre><span></span><code>&lt;noinclude&gt;
+This is the &quot;Project Factsheet v1&quot; template.
+It should be called in the following format:
+&lt;pre&gt;
+{{Project Factsheet v1
+|title=
+|acronym=
+|budget=
+|start_date=
+|end_date=
+|description=
+|members= {Name der Mitglieder getrennt durch &#39;;&#39;}
+|topics= {Forschungsfelder, mehrere Angaben durch &#39;;&#39; trennen}
+}}
+&lt;/pre&gt;
+Edit the page to see the template text.
+&lt;/noinclude&gt;&lt;includeonly&gt;{| class=&quot;wikitable&quot;
+! Projektname
+| [[title::{{{title|}}}]]
+|-
+! Akronym
+| [[acronym::{{{acronym|}}}]]
+|-
+! Budget
+| [[has_budget::{{{budget|}}}]]
+|-
+! Projektstart
+| [[has_start_date::{{{start_date|}}}]]
+|-
+! Projektende
+| [[has_end_date::{{{end_date|}}}]]
+|-
+! Beschreibung
+| [[has_description::{{{description|}}}]]
+|-
+! Mitarbeiter
+{{#set:
+ has_member={{{members|}}}
+ |+sep=;
+}}
+| {{#show: {{PAGENAME}} |?has_member }} 
+|-
+! Forschungsthemen
+{{#set:
+ has_topic={{{topics|}}}
+ |+sep=;
+}}
+| {{#show: {{PAGENAME}} |?has_topic }} 
+|-
+|}
+
+[[Category:Research Project]]
+&lt;/includeonly&gt;
+</code></pre></div>
+
+<h4 id="formular">Formular</h4>
+<div class="highlight"><pre><span></span><code>&lt;noinclude&gt;
+This is the &quot;Project Factsheet v1&quot; form.
+To create a page with this form, enter the page name below;
+if a page with that name already exists, you will be sent to a form to edit that page.
+
+
+{{#forminput:form=Project Factsheet v1}}
+
+&lt;/noinclude&gt;&lt;includeonly&gt;
+&lt;div id=&quot;wikiPreview&quot; style=&quot;display: none; padding-bottom: 25px; margin-bottom: 25px; border-bottom: 1px solid #AAAAAA;&quot;&gt;&lt;/div&gt;
+{{{for template|Project Factsheet v1}}}
+{| class=&quot;formtable&quot;
+! Title: 
+| {{{field|title|mandatory|property=title|size=120|placeholder=please enter the full title of the project}}}
+|-
+! Acronym: 
+| {{{field|acronym|mandatory|property=acronym|size=20|placeholder=Please enter the project&#39;s short name (acronym)}}}
+|-
+! Budget: 
+| {{{field|budget|input type=text|property=has_budget|size=20|placeholder=Please enter the project&#39;s budget}}} EUR
+|-
+! Projektstart: 
+| {{{field|start_date|input type=datepicker|highlight days of week=1,2,3,4,5|property=has_start_date|date format=dd.mm.yyyy}}}
+|-
+! Projektende: 
+| {{{field|end_date|input type=datepicker|disable days of week=0,6|property=has_end_date}}}
+|-
+! Beschreibung: 
+| {{{field|description|input type=textarea|property=has_description|cols=80|rows=20|placeholder=Please enter the project&#39;s description|autogrow}}}
+|-
+! Mitarbeiter: 
+| {{{field|members|input type=tokens|property=has_member|list|delimiter=;}}}
+|-
+! Themenfelder: 
+| {{{field|topics|input type=tokens|property=has_topic|list|delimiter=;}}}
+|}
+{{{end template}}}
+
+&#39;&#39;&#39;Free text:&#39;&#39;&#39;
+
+{{{standard input|free text|rows=10}}}
+
+
+{{{standard input|summary}}}
+
+{{{standard input|minor edit}}} {{{standard input|watch}}}
+
+{{{standard input|save}}} {{{standard input|preview}}} {{{standard input|changes}}} {{{standard input|cancel}}}
+&lt;/includeonly&gt;
+</code></pre></div>
+
+<h3 id="formular-data-with-subobjects">Formular Data with Subobjects</h3>
+<h4 id="subobject-template">Subobject Template</h4>
+<div class="highlight"><pre><span></span><code>&lt;noinclude&gt;
+This is the &quot;Project member with role&quot; subobject template.
+It should be called in the following format:
+&lt;pre&gt;
+{{Project member with role
+|project=
+|role=
+|start_date=
+|end_date=
+|member=
+}}
+&lt;/pre&gt;
+Edit the page to see the template text.
+&lt;/noinclude&gt;&lt;includeonly&gt;
+{{#subobject:
+ |Refers to project={{{project|}}}
+ |Has role={{{role|}}}
+ |Has start date={{{start_date|}}}
+ |Has end date={{{end_date|}}}
+ |Has member={{{member|}}}
+ |Type=subobject
+}}
+&lt;/includeonly&gt;
+</code></pre></div>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.5e67fbfe.min.js", "translations": {"clipboard.copied": "In Zwischenablage kopiert", "clipboard.copy": "In Zwischenablage kopieren", "search.config.lang": "de", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Suche", "search.result.more.one": "1 weiteres Suchergebnis auf dieser Seite", "search.result.more.other": "# weitere Suchergebnisse auf dieser Seite", "search.result.none": "Keine Suchergebnisse", "search.result.one": "1 Suchergebnis", "search.result.other": "# Suchergebnisse", "search.result.placeholder": "Suchbegriff eingeben", "search.result.term.missing": "Es fehlt", "select.version.title": "Version ausw\u00e4hlen"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.c44cc438.min.js"></script>
+      
+        <script src="../../../javascript/extra.js"></script>
+      
+    
+  </body>
+</html>

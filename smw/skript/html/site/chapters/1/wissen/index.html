@@ -1,0 +1,579 @@
+
+<!doctype html>
+<html lang="de" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.8">
+    
+    
+      
+        <title>Was ist Wissen? - Semantisches Wissensmanagement mit Semantic MediaWiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.644de097.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.e6a45f82.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#2094f3">
+        
+      
+    
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="blue" data-md-color-accent="red">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#was-ist-wissen" class="md-skip">
+          Zum Inhalt
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Semantisches Wissensmanagement mit Semantic MediaWiki" class="md-header__button md-logo" aria-label="Semantisches Wissensmanagement mit Semantic MediaWiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Semantisches Wissensmanagement mit Semantic MediaWiki
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Was ist Wissen?
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Suche" placeholder="Suche" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Suche">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Zurücksetzen" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Suche wird initialisiert
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Semantisches Wissensmanagement mit Semantic MediaWiki" class="md-nav__button md-logo" aria-label="Semantisches Wissensmanagement mit Semantic MediaWiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Semantisches Wissensmanagement mit Semantic MediaWiki
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        Startseite
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tagebuch/" class="md-nav__link">
+        Tagebuch der LVA
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../objectives/" class="md-nav__link">
+        Allgemeine Informationen
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../kapitel1/" class="md-nav__link">
+        Kapitel 1: Einführung
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2/overview/" class="md-nav__link">
+        Kapitel 2: Technische Grundlagen
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../3/overview/" class="md-nav__link">
+        Kapitel 3: Semantic MediaWiki
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../4/overview/" class="md-nav__link">
+        Kapitel 4: Erweiterungen
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../exercises/ue1/" class="md-nav__link">
+        Übung 1: Wissensmanagement
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../exercises/ue2/" class="md-nav__link">
+        Übung 2: Wissensmodellierung
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../exercises/ue3/" class="md-nav__link">
+        Übung 3: Semantic MediaWiki
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../exercises/ue4/" class="md-nav__link">
+        Übung 4: Vertiefung
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../semesterprojekt/" class="md-nav__link">
+        Semesterprojekt
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#die-wissenstreppe-nach-klaus-north" class="md-nav__link">
+    Die Wissenstreppe nach Klaus North
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#was-ist-wissen-eine-pragmatische-arbeitsdefinition" class="md-nav__link">
+    Was ist Wissen ? – Eine pragmatische Arbeitsdefinition
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wissensarten" class="md-nav__link">
+    Wissensarten
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#das-seci-modell" class="md-nav__link">
+    Das SECI-Modell
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<h1 id="was-ist-wissen">Was ist Wissen?</h1>
+<p>Bevor wir einen Versuch starten Wissen zu definieren ist es sinnvoll, den Wissensbegriff richtig ein- und abzugrenzen. 
+Hierzu gibt es verschiedene <strong>Modelle</strong>; eines der bekanntesten und etabliertesten Modelle ist die <strong>Wissenstreppe</strong> von Klaus North.</p>
+<h3 id="die-wissenstreppe-nach-klaus-north">Die Wissenstreppe nach Klaus North</h3>
+<p><img alt="Wissenstreppe" src="../../../figures/wissenstreppe_north_web.jpg" /> <em>Die Wissenstreppe aufgestellt von Klaus North (Quelle: &hellip;)</em></p>
+<p>Erläuterungen zur Wissenstreppe</p>
+<ul>
+<li><strong>Zeichen</strong> bestehen aus Buchstaben, Zahlen etc. aber auch Beobachtungen</li>
+<li><strong>Daten</strong> entstehen, indem man Zeichen in eine Reihenfolge bringt</li>
+<li><strong>Information</strong> entsteht, indem man Daten eine Bedeutung zuordnet</li>
+<li><strong>Wissen</strong> entsteht durch die Vernetzung von Informationen. Wissen ist allerdings subjektiv und kann deshalb nicht direkt übertragen werden (es ist <em>personifiziert</em>). Wissen hängt sehr stark vom Erfahrungsschatz des Individuums ab.</li>
+<li><strong>Können</strong> entsteht aus der Umsetzung von Wissen in entsprechende Handlungen, da es natürlich nicht ausreicht, nur Wissen zu erwerben, sondern dieses erworbene Wissen auch in Fertigkeiten umgesetzt werden muss.</li>
+<li>Erst das in <strong>Handeln</strong> umgesetzte Können stellt dieses auch unter Beweis. Hinzu kommt hier natürlich noch das Wollen, dem eine Mitarbeitermotivation vorausgehen muss. Handeln ist messbar und zeigt wie Personen, Gruppen oder Organisationen aus Informationen Wissen generieren und zur Lösung von Problemen einsetzen.</li>
+<li>Die Fähigkeit, Wissen zur Problemlösung, also zweckorientiert in konkrete Handlungen einzusetzen, wird als <strong>Kompetenz</strong> einer Person, Gruppe oder Organisation bezeichnet.</li>
+<li><strong>Kernkompetenzen</strong> beruhen auf explizit gemachtem Wissen und setzen sich aus Fähigkeiten und Technologien zusammen. Sie generieren Werte bei Kunden und sind einzigartig gegenüber Wettbewerbern, schaffen somit Zugang zu neuen Märkten. Deshalb drücken Kernkompetenzen auch die <strong>Wettbewerbsfähigkeit</strong> eines Unternehmens aus.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Lehrvideo zur Wissenstreppe</strong><br />
+Die einzelnen Stufen der Wissenstreppe werden auch sehr schön in diesem <a href="https://www.youtube.com/watch?v=VW7ArONW4dA">Kurzvideo</a> dargestellt.</p>
+</div>
+<h3 id="was-ist-wissen-eine-pragmatische-arbeitsdefinition">Was ist Wissen ? – Eine pragmatische Arbeitsdefinition</h3>
+<dl>
+<dt>Wissen ist</dt>
+<dd>&hellip; häufig das Ergebnis <strong>bewusster</strong> Informationsverarbeitung,</dd>
+<dd>&hellip; zusammengesetzt aus <strong>Modellen</strong> über konkrete und abstrakte Objekte, Ereignisse und Fakten, d.h. <strong>symbolische Strukturen</strong>, die im <mark>menschlichen Gedächtnis</mark> abgespeichert sind,</dd>
+<dd>&hellip; kontext-situiert und vernetzt,</dd>
+<dd>&hellip; handlungs- und ziel-orientiert.</dd>
+</dl>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Definition</strong>: &laquo; <strong>Wissen</strong> &raquo;<br />
+Wissen bezeichnet die Gesamtheit der Kenntnisse und Fähigkeiten, die Menschen zur Lösung von Problemen einsetzen.</p>
+<p>(<em>Quelle: Probst GJB., Raub S., Romhardt K., (2006): Wissen managen – Wie Unternehmen ihre wertvollste Ressource optimal nutzen. 5. Aufl. Gabler, Frankfurt/Main; S.22</em>)</p>
+</div>
+<h3 id="wissensarten">Wissensarten</h3>
+<p>nach <em>Michael Polanyi (1966), &ldquo;The Tacit Dimension&rdquo;, University of Chicago Press: Chicago</em></p>
+<p>Bekannt sind die folgenden Aussagen</p>
+<blockquote>
+<p>&ldquo;We know more than we can tell.&rdquo;</p>
+<p>&ldquo;If HP knew what HP knows, we would be three times as profitable&rdquo;</p>
+</blockquote>
+<p><em>(vgl. Hinds, P. J.; Pfeffer, J. (2003): Why Organizations Don’t &ldquo;Know What They Know&rdquo;: Cognitive and Motivational Factors Affecting the Transfer of Expertise. In: Ackerman, M. S.; Pipek, V.; Wulf, V. (2003) (Eds.): Sharing Expertise. Beyond Knowledge Management, pp. 3-26)</em></p>
+<table>
+<thead>
+<tr>
+<th><strong>Explicit Knowledge</strong></th>
+<th><strong>Tacit / Implicit Knowledge</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&hellip; kann kommuniziert werden</td>
+<td>&hellip; im Gehirn gespeichert</td>
+</tr>
+<tr>
+<td>&hellip; kann auf verschiedenen Ebenen formalisiert werden</td>
+<td>&hellip; schwer zu kommunizieren</td>
+</tr>
+<tr>
+<td>&hellip; kann in verschiedenen Formaten abgespeichert werden <br/> &nbsp;&nbsp;&nbsp;&nbsp;(Dokumente, Datenbanken, etc.)</td>
+<td>&hellip; nicht/kaum zu formalisieren</td>
+</tr>
+<tr>
+<td>&rarr; <strong>Disembodied Knowledge</strong></td>
+<td>&rarr; <strong>Embodied Knowledge</strong></td>
+</tr>
+</tbody>
+</table>
+<dl>
+<dt>Explizites Wissen</dt>
+<dd>&hellip;ist Faktenwissen, eindeutig kodifizierbar und mittels Sprache eindeutig kommunizierbar.</dd>
+<dt>Implizites bzw. <em>verborgenes</em> Wissen</dt>
+<dd>&hellip;ist Erfahrungs- und Handlungswissen, das an Personen gebunden ist; ist nur schwer und nicht vollständig explizierbar (d.h., in Worte zu fassen)</dd>
+</dl>
+<p>Nur ca. <strong>20%</strong> des in einer Organisation vorhandenen Wissens ist <strong>dokumentiert</strong> (&rarr; explicit knowledge).<br />
+<strong>80%</strong> des relevanten Wissens ist verborgenes, <strong>implizites Wissen</strong> (&rarr; tacit and implicit knowledge).<br />
+<em>Quelle: https://de.slideshare.net/mcwyrsch/wissensmanagement-in-unternehmen</em></p>
+<h3 id="das-seci-modell">Das SECI-Modell</h3>
+<p>Das SECI-Modell stellt das implizite, d.h., <strong>Personen-gebundene</strong> und <strong>schwer verbalisierbare Erfahrungswissen</strong> von Mitarbeitern in den Mittelpunkt. Es erläutert, wie dieses Wissen für eine Organisation aktiviert werden kann.</p>
+<p>Es unterscheidet sich von anderen Wissensmanagement dadurch, dass es den Fokus auf eine einzige Fragestellung lenkt, nämlich – <em>wie neues Wissen in Organisationen entsteht</em>.</p>
+<p>Neues Wissen entsteht in einem <strong>kontinuierlichen Transformationsprozess</strong> zwischen dem impliziten und dem expliziten Wissen, d.h., die Wissengenerierung beruht auf einem Prozess der dynamischen Transformation von implizitem zu explizitem Wissen und vice versa.</p>
+<p><img alt="Das SECI-Modell" src="../../../figures/seci_model_2.png" /> <em>Das SECI-Modell nach Nonaka und Takeuchi (Quelle: eigene Internetrecherche)</em></p>
+<p>Es unterscheidet die folgenden <strong>4 Phasen</strong>, welche im einem iterativen und inkrementellen Transformationsprozess durchlaufen werden:</p>
+<dl>
+<dt><strong>Sozialisierung</strong></dt>
+<dd>Implizites Wissen wird geteilt durch Beobachtung, gemeinsames Tun und durch nicht verbalisierte Handlungen. Die Weitergabe von implizitem Wissen in einer Gruppe erfordert einen <strong>Wissensraum</strong>, dieser muss, damit die Sozialisierung funktioniert, 3 Eigenschaften aufweisen: (&rarr; geteiltes Verständnis und einer gemeinsamen Sprache mit gegenseitigem Vertrauten (=<em>Grundlage des gesamten Prozesses der Wissengenerierung und des Wissensaustausches</em>)). </dd>
+<dt><strong>Externalisierung</strong></dt>
+<dd>Mitglieder einer Gruppe fassen das Wissen in Sprache und teilen es mit anderen. Aus implizitem Wissen entsteht explizites. </dd>
+<dt><strong>Kombination</strong></dt>
+<dd>Explizites kann nun mit existierendem Wissen neu kombiniert werden. Hier ruht Potential für Innovation. Neues Wissen entsteht nicht aus dem &ldquo;Nichts&rdquo; sondern dadurch, dass neue Akteure neues Wissen in die Organisation einbringen (Frage: Aus welchen Quellen kann dieses Wissen stammen?)</dd>
+<dt><strong>Internalisierung</strong></dt>
+<dd>Entsteht in der Phase der Kombination neues Wissen, so wird dieses nun wieder von den Individuen internalisiert, d.h., mit dem eigenen Wissen kombiniert und dadurch wieder in implizites Wissen überführt. (~&gt; Prozess der Bewußtseinsbildung).</dd>
+</dl>
+<p>Wichtig, das Kollektiv baut immer auf dem neu entstandenen Wissen auf (&rarr; <em>iterativ-inkrementeller Transformationsprozess</em>). </p>
+<p>Entscheidend bei dem Modell von Nonaka &amp; Takeuchi ist die Transformation von individuellem in kollektives Wissen, d.h., von einem personenbezogenen in ein allgemein zugängliches Wissen (=<em>die Wissensbasis der Organisation</em>).</p>
+<dl>
+<dt>Voraussetzungen seitens der Organisation</dt>
+<dd><strong>Intention</strong> &rarr; klare Wissensziele (der Organisation)</dd>
+<dd><strong>Autonomie</strong> &rarr; Eigenverantwortung, Selbstorganisation und Freiräume</dd>
+<dd><strong>Instabilität</strong> &rarr; Bereitschaft Bestehendes zu hinterfragen und zu verändern</dd>
+<dd><strong>Redundanz</strong> &rarr; sollte nicht vermieden werden; &ldquo;Zuviel&rdquo; an Informationen eröffnet neue Perspektiven</dd>
+<dd><strong>Interne Vielfalt</strong> &rarr; Diversität der Mitglieder und Prozesse</dd>
+<dt><strong>Fazit</strong></dt>
+<dd>Das SECI-Modell verbindet als eines der wenigen Modelle Wissensmanagement mit Innovation und versteht Innovation als kollektiven Prozess<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>. Besondere Bedeutung kommt hierbei der Kommunikation und Kollaboration zu gute. Ziel ist nicht den Prozess bis auf&rsquo;s &ldquo;Kleinste&rdquo; zu managen, sondern Rahmenbedingungen zu schaffen, in denen ein derartiger kollektiver Transformationsprozess entstehen kann (=Systemische Sicht). </dd>
+</dl>
+<p><em>Quelle: Nonaka, Takeuchi; &ldquo;Die Organisation des Wissens – Wie japanische Unternehmen eine brachliegende Ressource nutzbar machen&rdquo;; 2. Auflage, 2012,
+Campus Verlag, ISBN 978-3-593-39631-6</em></p>
+<!-- Nonaka und Takeuchi gelten als die Erfinder des SECI-Modells*) aus dem Jahr 1995, bei dem die soziale Interaktion eine zentrale Rolle spielt. In der Phase der Sozialisation wird implizites Wissen ausgetauscht. Zumindest zwei Personen tauschen also ihre Erfahrungen z. B. in einem persönlichen Gespräch oder durch Beobachtung und Nachahmung aus. Das implizite Wissen des Senders wird zum impliziten Wissen des Empfängers. In der Phase der Externalisierung entsteht durch Kodifizierung bzw. 
+Dokumentation Wissen. Dabei wird das implizite Wissen dokumentiert bzw. erfasst und somit zu explizitem Wissen, das schließlich in einem unternehmensweiten, zentralen System zur Verfügung gestellt wird. Das implizite Wissen des Senders wird zu explizitem Wissen. In der Phase der Kombination wird durch das Zusammenfügen von bestehendem Wissen systemisches Wissen. Die Kombination findet vor allem dann statt, wenn sich mehrere Personen zu einem Thema austauschen und dabei neues Wissen generieren. Das bestehende explizite Wissen wird zu neuem expliziten Wissen kombiniert. In der Phase der Internalisierung wird Wissen wiederum individuell gelernt bzw. operationalisiert. Das explizite Wissen wird also wieder zu implizitem Wissen. -->
+
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>Innovation ist nicht das Resultat eines &ldquo;Heureka&rdquo;-Prozesses eines Individuums&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.5e67fbfe.min.js", "translations": {"clipboard.copied": "In Zwischenablage kopiert", "clipboard.copy": "In Zwischenablage kopieren", "search.config.lang": "de", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Suche", "search.result.more.one": "1 weiteres Suchergebnis auf dieser Seite", "search.result.more.other": "# weitere Suchergebnisse auf dieser Seite", "search.result.none": "Keine Suchergebnisse", "search.result.one": "1 Suchergebnis", "search.result.other": "# Suchergebnisse", "search.result.placeholder": "Suchbegriff eingeben", "search.result.term.missing": "Es fehlt", "select.version.title": "Version ausw\u00e4hlen"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.c44cc438.min.js"></script>
+      
+        <script src="../../../javascript/extra.js"></script>
+      
+    
+  </body>
+</html>

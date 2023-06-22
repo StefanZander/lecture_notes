@@ -1,0 +1,706 @@
+
+<!doctype html>
+<html lang="de" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../projektmappe/">
+      
+      
+        <link rel="next" href="../termin1/">
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.15">
+    
+    
+      
+        <title>Vorbereitung: Android Studio - Praktikum zur LVA "Nutzerzentrierte Softwareentwicklung"</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.26e3688c.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ecc896b0.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i%7CRoboto+mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto Condensed";--md-code-font:"Roboto mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="red">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#kennen-lernen-von-java-android-und-android-studio-zu-hause" class="md-skip">
+          Zum Inhalt
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Kopfzeile">
+    <a href=".." title="Praktikum zur LVA &#34;Nutzerzentrierte Softwareentwicklung&#34;" class="md-header__button md-logo" aria-label="Praktikum zur LVA "Nutzerzentrierte Softwareentwicklung"" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Praktikum zur LVA "Nutzerzentrierte Softwareentwicklung"
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Vorbereitung: Android Studio
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Suche" placeholder="Suche" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Suche">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Zurücksetzen" aria-label="Zurücksetzen" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Suche wird initialisiert
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Praktikum zur LVA &#34;Nutzerzentrierte Softwareentwicklung&#34;" class="md-nav__button md-logo" aria-label="Praktikum zur LVA "Nutzerzentrierte Softwareentwicklung"" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Praktikum zur LVA "Nutzerzentrierte Softwareentwicklung"
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Startseite
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vorbemerkung/" class="md-nav__link">
+        Vorbemerkung
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../projektmappe/" class="md-nav__link">
+        Projektmappe
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Vorbereitung: Android Studio
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Vorbereitung: Android Studio
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#aufgaben" class="md-nav__link">
+    Aufgaben
+  </a>
+  
+    <nav class="md-nav" aria-label="Aufgaben">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#generieren-einer-applikation" class="md-nav__link">
+    Generieren einer Applikation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ubersetzen-und-testen" class="md-nav__link">
+    Übersetzen und Testen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#erforschen-sie-das-hilfesystem" class="md-nav__link">
+    Erforschen Sie das Hilfesystem
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#debuggen" class="md-nav__link">
+    Debuggen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#java-verstehen" class="md-nav__link">
+    Java verstehen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lebenszyklus-der-activity" class="md-nav__link">
+    Lebenszyklus der Activity
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ereignisbehandlung" class="md-nav__link">
+    Ereignisbehandlung
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#datenmodelle-der-applikationen-optional" class="md-nav__link">
+    Datenmodelle der Applikationen (optional)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ergebnisse" class="md-nav__link">
+    Ergebnisse
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../termin1/" class="md-nav__link">
+        Termin 1: User Research
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../termin2/" class="md-nav__link">
+        Termin 2: UI Entwurf
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../termin3/" class="md-nav__link">
+        Termin 3: Layout
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../termin4/" class="md-nav__link">
+        Termin 4: Logik
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../termin5/" class="md-nav__link">
+        Termin 5: App-Präsentation
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../termin6/" class="md-nav__link">
+        Abschluss: Usability
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#aufgaben" class="md-nav__link">
+    Aufgaben
+  </a>
+  
+    <nav class="md-nav" aria-label="Aufgaben">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#generieren-einer-applikation" class="md-nav__link">
+    Generieren einer Applikation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ubersetzen-und-testen" class="md-nav__link">
+    Übersetzen und Testen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#erforschen-sie-das-hilfesystem" class="md-nav__link">
+    Erforschen Sie das Hilfesystem
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#debuggen" class="md-nav__link">
+    Debuggen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#java-verstehen" class="md-nav__link">
+    Java verstehen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lebenszyklus-der-activity" class="md-nav__link">
+    Lebenszyklus der Activity
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ereignisbehandlung" class="md-nav__link">
+    Ereignisbehandlung
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#datenmodelle-der-applikationen-optional" class="md-nav__link">
+    Datenmodelle der Applikationen (optional)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ergebnisse" class="md-nav__link">
+    Ergebnisse
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="kennen-lernen-von-java-android-und-android-studio-zu-hause">Kennen lernen von Java, Android und Android Studio (&rarr; zu Hause)</h1>
+<div class="admonition abstract">
+<p class="admonition-title">Abstract</p>
+<p><strong>Lernziele</strong></p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Sie können einfache Android Projekte mit Android Studio anlegen</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Sie verstehen die Grundstruktur einer Android App</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Sie kennen den Lebenszyklus von Activities</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Sie kennen die wichtigsten Hilfsmittel in Android Studio</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Sie verstehen die Konzepte &ldquo;Datenmodell&rdquo; und &ldquo;Persistenz&rdquo; im Kontext einer Android-Anwendung</li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Hinweis #1:</strong> Wenn Sie zum Testen und Debuggen Ihr eigenes Handy verwenden wollen, bringen Sie bitte ein passendes USB-Kabel mit. Im Normalfall ist das Kabel des Ladegeräts dazu geeignet. Verbinden Sie das Handy via USB-Kabel mit dem Entwicklungs-PC (Ihr Notebook oder der Labor-PC), schalten Sie das Handy ein, aktivieren Sie Entwickleroptionen und darin USB-Debugging.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Hinweis #2:</strong> Vermutlich werden Sie Android Studio und den Emulator auf Ihrem eigenen Laptop installieren; Infos hierzu finden Sie unter </p>
+<ul>
+<li><a href="http://developer.android.com/sdk/index.html">http://developer.android.com/sdk/index.html</a></li>
+<li><a href="http://developer.android.com/sdk/installing/adding-packages.html">http://developer.android.com/sdk/installing/adding-packages.html</a></li>
+</ul>
+<p>Konfigurieren Sie den Emulator hinsichtlich der Displaygröße eher zurückhaltend – er ist (noch immer) ein Ressourcenfresser!</p>
+</div>
+<h2 id="aufgaben">Aufgaben</h2>
+<h3 id="generieren-einer-applikation">Generieren einer Applikation</h3>
+<p>Legen Sie ein neues Projekt an mit einer <code>Empty Activity</code> (d.h. abgeleitet von <code>AppCompatActivity</code>). Eine Hilfe zum Einstieg finden Sie im Skript in der Datei <code>NZSE_4_AndroidStudio.pdf</code> im Moodle-Kurs zur LVA. Machen Sie sich mit den verschiedenen Ansichten von Android Studio vertraut.</p>
+<h3 id="ubersetzen-und-testen">Übersetzen und Testen</h3>
+<ul>
+<li>Menü <code>Build</code> &rarr; <code>Make Project</code> </li>
+<li>Menü <code>Run</code> &rarr; <code>Run app</code></li>
+</ul>
+<p>Eventuelle Fehlermeldungen finden Sie im Fenster <code>0: Messages</code>, Laufzeitfehler und Log im Fenster <code>6: Android</code></p>
+<h3 id="erforschen-sie-das-hilfesystem">Erforschen Sie das Hilfesystem</h3>
+<ul>
+<li>Hilfe zur Entwicklungsumgebung Hilfe zur API &rarr; <code>F1</code></li>
+<li>Hilfe zur API &rarr; rechter Mausklick auf Klassen- oder Methodenname &rarr; <code>Search with Google</code></li>
+</ul>
+<h3 id="debuggen">Debuggen</h3>
+<p>Setzen Sie ein paar <strong>Haltepunkte</strong> (Mausklick auf linken Rand im Java Editor). Menü <code>Run</code> &rarr; <code>Debug app</code>. Lassen Sie das Programm von Haltepunkt zu Haltepunkt laufen; nutzen Sie auch den Einzelschrittmodus. Schauen Sie in Variable hinein.</p>
+<h3 id="java-verstehen">Java verstehen</h3>
+<p>Schauen Sie sich den <strong>generierten Java-Code</strong> genau an und kommentieren Sie jede halbwegs interessante Zeile. Schauen Sie sich die im Quellcode <strong>referenzierten Ressourcen</strong> im XML-Editor an.</p>
+<p>Was hat es mit der Klasse <code>R</code> auf sich? Suchen Sie die Datei <code>R.java</code> im Windows Explorer / Finder / etc.</p>
+<h3 id="lebenszyklus-der-activity">Lebenszyklus der Activity</h3>
+<p>Fügen Sie einen parameterlosen Konstruktor zur Activity hinzu. Überschreiben Sie die Methoden <code>onPause</code>, <code>onStop</code>, <code>onResume</code> und <code>onSaveInstanceState</code>: rechter Mausklick im Quellcode der Activity &rarr; <code>Generate</code> &rarr; <code>Override Methods</code> &rarr; <code>...</code></p>
+<p>Fügen Sie in jeder dieser Methoden und in <code>onCreate</code> eine Testausgabe ein:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">Log</span><span class="p">.</span><span class="na">i</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;AppName&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;MethodenName&quot;</span><span class="p">);</span>
+</code></pre></div></td></tr></table></div>
+<p>Spielen Sie folgende Testfälle durch und beobachten Sie dabei die Testausgaben im Fenster <code>6: Android</code> (Sie können die Testausgaben filtern mit <code>Log Level = Info</code> und Ihrem AppName):</p>
+<ul>
+<li>App aufrufen</li>
+<li>Home Screen aufrufen</li>
+<li>App aufrufen</li>
+<li>App beenden mittels Zurück-Button</li>
+<li>App aufrufen</li>
+<li>Handy drehen (Hochformat / Querformat; im Emulator mit <code>Ctrl</code>+<code>F11</code> simulieren)</li>
+</ul>
+<p>Untersuchen Sie mit dem Debugger und mit den Testausgaben folgende Fragen:</p>
+<ul>
+<li>Wann und in welcher Reihenfolge werden die Methoden aufgerufen?</li>
+<li>Wie lange lebt das Activity-Objekt?</li>
+</ul>
+<h3 id="ereignisbehandlung">Ereignisbehandlung</h3>
+<p>Schreiben Sie eine Methode
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">onHelloWorldClick</span><span class="w"> </span><span class="p">(</span><span class="n">View</span><span class="w"> </span><span class="n">v</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+mit einer <code>Log.i</code>-Testausgabe und ordnen Sie die Methode dem <code>onClick</code>-Ereignis der TextView <code>Hello World</code> zu. Testen Sie durch Antippen des Textes <code>Hello World</code>.</p>
+<h3 id="datenmodelle-der-applikationen-optional">Datenmodelle der Applikationen (optional)</h3>
+<p>Alle relevanten <strong>Daten</strong> und <strong>Zustände</strong> müssen in den mobilen Apps verwaltet werden; der Fernseher bzw. Stream-Server ist quasi ein <em>reines Darstellungsprogramm</em>. Überlegen Sie deshalb, welche Daten und Zustände innerhalb der Android-App <strong>persistent gespeichert</strong> werden sollen und welche nur <strong>flüchtig</strong>?</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Bedenken Sie:</strong> </p>
+<ul>
+<li>Während einer Fernsehsendung oder dem Betrachten eines Streamingkanals macht man vielleicht noch andere Dinge mit dem Handy.</li>
+<li>Eine andere Frage ist, welche Parameter beim Ausschalten des Fernsehers bzw. des Streaming-Servers in Grundstellung gehen sollen. </li>
+</ul>
+</div>
+<p>Fassen Sie alle persistenten Daten in einer Klasse zusammen und zeichnen Sie das Klassendiagramm dieser persistenten Klasse (die Implementierung folgt in <a href="../termin4/">Termin 4: Logik</a>).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Tipp:</strong> für das Ergebnis des Kanalscans empfiehlt sich eine <code class="highlight"><span class="nx">ArrayList</span><span class="o">&lt;</span><span class="nx">Channel</span><span class="o">&gt;</span></code>.<br />
+<span class="critic comment">TODO: Tipp für Twitch-Streaming Server</span></p>
+</div>
+<h2 id="ergebnisse">Ergebnisse</h2>
+<p>Die folgenden Ergebnisse müssen für eine erfolgreiche Testierung der Einheit vorliegen:</p>
+<div class="admonition abstract">
+<p class="admonition-title">Abstract</p>
+<p><strong>Ergebnisse:</strong></p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Verständnis, was es mit der Klasse <code>R.java</code> auf sich hat</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Überschriebene Methoden <code>onPause</code>, <code>onStop</code>, <code>onResume</code>, <code>onCreate</code> und <code>onSaveInstanceState</code></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Dokumentierte Ausgabe der Testfälle</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> (<em>optional</em>) Klassendiagramm der zu persistierenden Daten</li>
+</ul>
+</div>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "In Zwischenablage kopiert", "clipboard.copy": "In Zwischenablage kopieren", "search.result.more.one": "1 weiteres Suchergebnis auf dieser Seite", "search.result.more.other": "# weitere Suchergebnisse auf dieser Seite", "search.result.none": "Keine Suchergebnisse", "search.result.one": "1 Suchergebnis", "search.result.other": "# Suchergebnisse", "search.result.placeholder": "Suchbegriff eingeben", "search.result.term.missing": "Es fehlt", "select.version": "Version ausw\u00e4hlen"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.b4d07000.min.js"></script>
+      
+        <script src="../javascript/extra.js"></script>
+      
+    
+  </body>
+</html>

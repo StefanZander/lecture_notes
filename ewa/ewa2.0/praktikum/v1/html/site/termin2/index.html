@@ -1,0 +1,671 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.0.1">
+    
+    
+      
+        <title>Termin 2: PHP – Seitenklassen - Praktikum zur LVA "Entwicklung Web-basierter Anwendungen"</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.982221ab.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.224b79ff.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#2196f3">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.1f0bcf2b.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Zilla+Slab:300,400,400i,700|Fira+mono">
+        <style>body,input{font-family:"Zilla Slab","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Fira mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="blue" data-md-color-accent="red">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#php-seitenklassen-datenbankzugriff-sessionmanagement-und-sicherheit" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="Praktikum zur LVA "Entwicklung Web-basierter Anwendungen"" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Praktikum zur LVA "Entwicklung Web-basierter Anwendungen"
+            </span>
+            <span class="md-header-nav__topic">
+              Termin 2: PHP – Seitenklassen
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href=".." title="Praktikum zur LVA "Entwicklung Web-basierter Anwendungen"" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Praktikum zur LVA "Entwicklung Web-basierter Anwendungen"
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Startseite" class="md-nav__link">
+      Startseite
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../vorbemerkung/" title="Vorbemerkungen" class="md-nav__link">
+      Vorbemerkungen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../anforderungen/" title="Anforderungen" class="md-nav__link">
+      Anforderungen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../termin0/" title="Termin 0: HTML" class="md-nav__link">
+      Termin 0: HTML
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../termin1/" title="Termin 1: PHP – Erste Schritte" class="md-nav__link">
+      Termin 1: PHP – Erste Schritte
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Termin 2: PHP – Seitenklassen
+      </label>
+    
+    <a href="./" title="Termin 2: PHP – Seitenklassen" class="md-nav__link md-nav__link--active">
+      Termin 2: PHP – Seitenklassen
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#vorbereitung" title="Vorbereitung" class="md-nav__link">
+    Vorbereitung
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aufgaben" title="Aufgaben" class="md-nav__link">
+    Aufgaben
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dynamische-seitengenerierung-mittels-seitenklassen" title="Dynamische Seitengenerierung mittels Seitenklassen" class="md-nav__link">
+    Dynamische Seitengenerierung mittels Seitenklassen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#datenbankzugriff-mittels-mysqli" title="Datenbankzugriff mittels MySQLi" class="md-nav__link">
+    Datenbankzugriff mittels MySQLi
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sessionmanagement-und-sicherheit" title="Sessionmanagement und Sicherheit" class="md-nav__link">
+    Sessionmanagement und Sicherheit
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ergebnisse" title="Ergebnisse" class="md-nav__link">
+    Ergebnisse
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../termin3/" title="Termin 3: JavaScript, AJAX, JSON" class="md-nav__link">
+      Termin 3: JavaScript, AJAX, JSON
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../termin4/" title="Termin 4: CSS & Media Queries" class="md-nav__link">
+      Termin 4: CSS & Media Queries
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../termin5/" title="Termin 5: Abnahme" class="md-nav__link">
+      Termin 5: Abnahme
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#vorbereitung" title="Vorbereitung" class="md-nav__link">
+    Vorbereitung
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aufgaben" title="Aufgaben" class="md-nav__link">
+    Aufgaben
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dynamische-seitengenerierung-mittels-seitenklassen" title="Dynamische Seitengenerierung mittels Seitenklassen" class="md-nav__link">
+    Dynamische Seitengenerierung mittels Seitenklassen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#datenbankzugriff-mittels-mysqli" title="Datenbankzugriff mittels MySQLi" class="md-nav__link">
+    Datenbankzugriff mittels MySQLi
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sessionmanagement-und-sicherheit" title="Sessionmanagement und Sicherheit" class="md-nav__link">
+    Sessionmanagement und Sicherheit
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ergebnisse" title="Ergebnisse" class="md-nav__link">
+    Ergebnisse
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="php-seitenklassen-datenbankzugriff-sessionmanagement-und-sicherheit">PHP: Seitenklassen, Datenbankzugriff, Sessionmanagement und Sicherheit</h1>
+<div class="admonition abstract">
+<p class="admonition-title">Abstract</p>
+<p><strong>Lernziele</strong></p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Sie können mit PHP und MySQLi einen Datenbankzugriff realisieren</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Sie können die Objekt-orientierte Programmierung mit PHP umsetzen</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Sie verstehen die grundlegende Funktionsweise der Seiten- und Blockklassenarchitektur</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Sie können ein einfaches Sessionmanagement mit PHP implementieren</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Sie können eine Web-Applikation gegen SQL-Injection und Cross-Site-Scripting (XSS) absichern</li>
+</ul>
+</div>
+<p>Ziel dieser Einheit ist die Entwicklung von sauberem, d.h., gut wartbarem,  strukturiertem und objektorientierten PHP-Code. Hierzu setzen wir die <strong>Seiten-</strong> und <strong>Blockklassen</strong> ein. Ferner stellen wir in dieser Einheit die <strong>Datenbankanbindung</strong> zur Web-Applikation her und implementieren eine leichtgewichtige Form des <strong>Sessionmanagements</strong>. Abschließend sichern wir die Web-Applikation gegen <strong>SQL-Injection</strong> und <strong>Cross-Site-Scripting (XSS)</strong> ab. </p>
+<h2 id="vorbereitung">Vorbereitung</h2>
+<ol>
+<li>Der Webserver ist installiert und funktioniert ordnungsgemäß</li>
+<li>Die in <a href="../termin1/">Termin 1: PHP – Erste Schritte</a> erstellten PHP-Seiten werden ordnungsgemäß vom Webserver ausgeliefert, d.h., diese sind unter der URL <code class="codehilite">http://127.0.0.1/...</code> abrufbar
+<!-- 3. Der von den PHP-Seiten erzeugte HTML-Code ist standardkonform;  --></li>
+<li>Die Standardkonformität des von den PHP-Seiten erzeugten HTML-Codes wurde durch einen HTML5-Validator überprüft und nachgewiesen</li>
+</ol>
+<h2 id="aufgaben">Aufgaben</h2>
+<h3 id="dynamische-seitengenerierung-mittels-seitenklassen">Dynamische Seitengenerierung mittels Seitenklassen</h3>
+<ol>
+<li>
+<p>Laden Sie die <strong>Zulieferung</strong> für das Praktikum von der <a href="https://lernen.h-da.de/course/view.php?id=6940">EWA-Moodleseite</a> herunter:</p>
+<ul>
+<li><code class="codehilite">PageTemplate.php</code> dient als Vorlage für die 4 Seiten <ol>
+<li><code class="codehilite">Bestellung.php</code></li>
+<li><code class="codehilite">Kunde.php</code></li>
+<li><code class="codehilite">Baecker.php</code>  </li>
+<li><code class="codehilite">Fahrer.php</code></li>
+</ol>
+</li>
+<li><code class="codehilite">Page.php</code> ist die gemeinsame Basisklasse dieser 4 Seiten-Klassen und soll die Datenbank öffnen und schließen und den HTML-Rahmen erzeugen</li>
+<li><code class="codehilite">BlockTemplate.php</code> dient als Vorlage für einzelne Blöcke innerhalb der Seiten</li>
+<li><code class="codehilite">Pizzaservice_Documentation.pdf</code> enthält eine Dokumentation der Klassen mit Klassendiagramm und Sequenzdiagramm</li>
+</ul>
+</li>
+<li>
+<p>Versuchen Sie mit der Dokumentation und dem Quellcode das <strong>Zusammenspiel der verschiedenen Klassen</strong> zu verstehen. Klären Sie folgende Fragen:</p>
+<ul>
+<li>Wo erfolgt der eigentliche Aufruf zur Erstellung einer HTML-Seite?</li>
+<li>Was tun die Methoden <code class="codehilite">getViewData()</code>, <code class="codehilite">generateView()</code> und <code class="codehilite">processReceivedData()</code>?</li>
+<li>Wo wird der HTML-Rahmen erzeugt? Wo wird er ausgegeben?</li>
+</ul>
+</li>
+<li>
+<p>Legen Sie <strong>4 Kopien</strong> der Klasse <code class="codehilite">PageTemplate.php</code> an und nennen Sie die Dateien <code class="codehilite">Bestellung.php</code>, <code class="codehilite">Kunde.php</code>, <code class="codehilite">Baecker.php</code> und <code class="codehilite">Fahrer.php</code>. Ändern Sie auch die Klassennamen und Verweise auf die Klasse innerhalb der Dateien.</p>
+</li>
+<li>
+<p>Verteilen Sie Ihren <strong>PHP-Code</strong> aus der vorherigen Einheit in die zuständigen Methoden der 5 Klassen <code class="codehilite">Page</code>, <code class="codehilite">Bestellung</code>, <code class="codehilite">Kunde</code>, <code class="codehilite">Baecker</code> und <code class="codehilite">Fahrer</code> (die Kommentare in den Dateien helfen dabei).  </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Hinweise</strong>:</p>
+<ul>
+<li>HTML-Ausgaben erfolgen nur in <code class="codehilite">generateView()</code>!</li>
+<li>Die Struktur wird besser, wenn Sie Speisekarte, Warenkorb-Formular und Statusansicht unter Verwendung von <code class="codehilite">BlockTemplate.php</code> realisieren (das ist aber optional)</li>
+<li>Die Ausgabe größerer HTML-Abschnitte ist mit der <a href="http://php.net/manual/de/language.types.string.php#language.types.string.syntax.heredoc">Heredoc-Notation</a> besonders einfach. Achten Sie darauf, dass die Endmarke in der ersten Spalte beginnen muss und höchstens noch ein <code class="codehilite">;</code> folgen darf</li>
+<li>Die Methoden der gegebenen Klassen dürfen auch zusätzliche Parameter bekommen</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Schreiben Sie <strong>Hilfs-Methoden</strong> oder <strong>zusätzliche Klassen</strong> nach Bedarf</p>
+</li>
+<li>
+<p>Prüfen Sie, ob die neuen PHP-Seiten als Ausgabe die ursprünglichen statischen HTML-Seiten erzeugen und ob dieser Code immer noch <strong>standardkonform</strong> ist.</p>
+<!-- !!! note 
+    **Hinweis**: Alle Seiten müssen **objektorientiert** unter Verwendung der gegebenen Templates (<a href="https://lernen.h-da.de/course/view.php?id=6940">Download</a> von der EWA-Moodleseite) implementiert werden! -->
+
+</li>
+</ol>
+<h3 id="datenbankzugriff-mittels-mysqli">Datenbankzugriff mittels MySQLi</h3>
+<ol>
+<li>
+<p>Entwerfen Sie das <strong>Datenmodell</strong> für den Pizzaservice. </p>
+<p>Nutzen Sie bspw. das folgende Schema:
+   <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">Angebot</span><span class="o">:</span>         <span class="n">PizzaName</span><span class="o">,</span> <span class="n">Bilddatei</span><span class="o">,</span> <span class="n">Preis</span>
+<span class="n">BestelltePizza</span><span class="o">:</span>  <span class="n">PizzaID</span><span class="o">,</span> <span class="n">fBestellungID</span><span class="o">,</span> <span class="n">fPizzaName</span><span class="o">,</span> <span class="n">Status</span>
+<span class="n">Bestellung</span><span class="o">:</span>      <span class="n">BestellungID</span><span class="o">,</span> <span class="n">Adresse</span><span class="o">,</span> <span class="n">Bestellzeitpunkt</span>
+</pre></div>
+</td></tr></table></p>
+</li>
+<li>
+<p>Implementieren Sie das <strong>Datenmodell</strong> mit <code class="codehilite">phpMyAdmin</code></p>
+<ol>
+<li>verwenden Sie die Kollation <code class="codehilite">utf8_unicode_ci</code> (im Vorgabewert <code class="codehilite">utf8_general_ci</code> gilt nicht ß=ss)</li>
+<li><code class="codehilite">PizzaName</code>, <code class="codehilite">PizzaID</code>, <code class="codehilite">BestellungID</code> sind <strong>Primärschlüssel</strong>; IDs mit Autoincrement</li>
+<li>Realisieren Sie die Verknüpfungen zwischen den Primärschlüsseln und den Fremdschlüsseln <code class="codehilite">fBestellungID</code>, <code class="codehilite">fPizzaName</code> in der Datenbank.<br />
+<em>Tipp: Mit dem "Designer" in <code class="codehilite">phpMyAdmin</code> können Sie die Beziehungen grafisch eintragen</em></li>
+<li>Füllen Sie die Tabelle "<code class="codehilite">Angebot</code>" manuell mit <code class="codehilite">phpMyAdmin</code>.</li>
+<li>Tipp zum Bestellzeitpunkt: MySQL-Funktion <code class="codehilite">CURRENT_TIMESTAMP</code> als Standardwert des Feldes.</li>
+</ol>
+</li>
+<li>
+<p>Implementieren Sie die <strong>Datenbankzugriffe</strong> (Select, Insert Into, Update) in den zuständigen Methoden der Klassen und ersetzen Sie die statischen Codeteile durch den Datenbankzugriffscode</p>
+<ol>
+<li>Der Zugriff auf die Datenbank erfolgt objektorientiert über die Klasse <code class="codehilite">MySQLi</code>. </li>
+<li>Zugriff auf die Datenbank erfolgt nur in <code class="codehilite">getViewData()</code> und <code class="codehilite">processReceivedData()</code>.</li>
+<li>Testen und Debuggen Sie Ihren Code &rarr; <code class="codehilite">error_reporting(E_ALL)</code> hilft dabei</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Tipps zur Umsetzung</p>
+<ul>
+<li><code class="codehilite">var_dump($variable)</code> für die schnelle Testausgabe zwischendurch</li>
+<li><code class="codehilite">number_format($zahl, $nachkommastellen)</code> formatiert <code class="codehilite">$zahl</code></li>
+<li><code class="codehilite">$mysqli-&gt;insert_id</code> liefert die Autoincrement-ID nach <code class="codehilite">INSERT INTO</code></li>
+<li>Tabellen- und Feldnamen in MySQL ggf. in ` (Gravis / accent grave) einklammern</li>
+<li>prüfen Sie mit <code class="codehilite">phpMyAdmin</code> ob die Datenbankeinträge korrekt erstellt werden</li>
+</ul>
+</div>
+</li>
+</ol>
+<h3 id="sessionmanagement-und-sicherheit">Sessionmanagement und Sicherheit</h3>
+<ol>
+<li>
+<p>Der Kunde soll auf seiner Statusseite nur diejenigen Pizzen sehen, die er selbst zuletzt bestellt hat. Implementieren Sie dieses Feature mittels <strong>Sessionverwaltung</strong>:  </p>
+<p>Speichern Sie die letzte <code class="codehilite">AuftragsNr</code> in der Session und filtern Sie damit die Pizzaliste</p>
+</li>
+<li>
+<p>Verhindern Sie <strong>SQL-Injection</strong> mit Hilfe von <code class="codehilite">real_escape_string</code>.  </p>
+<p>Test: geben Sie <code class="codehilite">/ &#39; &quot; \</code> als Lieferadresse ein; diese Zeichen müssen auf der Fahrerseite genau so erscheinen.</p>
+</li>
+<li>
+<p>Verhindern Sie <strong>Cross Site Scripting</strong> mit Hilfe von <code class="codehilite">htmlspecialchars</code>.  </p>
+<p>Test
+  : geben Sie <code class="codehilite"><span class="nt">&lt;b&gt;</span>xxx<span class="nt">&lt;/b&gt;</span></code> als Lieferadresse ein; dies muss genau so in der Datenbank und in der Ausgabe auf der Fahrerseite erscheinen</p>
+</li>
+<li>
+<p>Testen und validieren Sie die generierten Seiten.</p>
+</li>
+</ol>
+<h2 id="ergebnisse">Ergebnisse</h2>
+<p>Die folgenden Ergebnisse müssen für eine erfolgreiche Durchführung der Praktikumseinheit vorliegen:</p>
+<div class="admonition abstract">
+<p class="admonition-title">Abstract</p>
+<p><strong>Ergebnisse:</strong></p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Implementierung der Seiten <code class="codehilite">Bestellung.php</code>, <code class="codehilite">Kunde.php</code>, <code class="codehilite">Baecker.php</code> und <code class="codehilite">Fahrer.php</code> mittels Seitenklassen und (optional) Blockklassen.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Implementierung der Datenbankzugriffe mittels <code class="codehilite">MySQLi</code></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Sessionmanagement auf der Kundenseite</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Absicherung der Web-Applikation gegen SQL-Injection und Cross-Site-Scripting (XSS)</li>
+</ul>
+</div>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../termin1/" title="Termin 1: PHP – Erste Schritte" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Termin 1: PHP – Erste Schritte
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../termin3/" title="Termin 3: JavaScript, AJAX, JSON" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Termin 3: JavaScript, AJAX, JSON
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.b806dc00.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+        <script src="../javascript/extra.js"></script>
+      
+    
+  </body>
+</html>

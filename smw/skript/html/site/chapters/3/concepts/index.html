@@ -1,0 +1,574 @@
+
+<!doctype html>
+<html lang="de" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.8">
+    
+    
+      
+        <title>Concepts - Semantisches Wissensmanagement mit Semantic MediaWiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.644de097.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.e6a45f82.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#2094f3">
+        
+      
+    
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="blue" data-md-color-accent="red">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#concepts" class="md-skip">
+          Zum Inhalt
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Semantisches Wissensmanagement mit Semantic MediaWiki" class="md-header__button md-logo" aria-label="Semantisches Wissensmanagement mit Semantic MediaWiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Semantisches Wissensmanagement mit Semantic MediaWiki
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Concepts
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Suche" placeholder="Suche" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Suche">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Zurücksetzen" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Suche wird initialisiert
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Semantisches Wissensmanagement mit Semantic MediaWiki" class="md-nav__button md-logo" aria-label="Semantisches Wissensmanagement mit Semantic MediaWiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Semantisches Wissensmanagement mit Semantic MediaWiki
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        Startseite
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tagebuch/" class="md-nav__link">
+        Tagebuch der LVA
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../objectives/" class="md-nav__link">
+        Allgemeine Informationen
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../kapitel1/" class="md-nav__link">
+        Kapitel 1: Einführung
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2/overview/" class="md-nav__link">
+        Kapitel 2: Technische Grundlagen
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../overview/" class="md-nav__link">
+        Kapitel 3: Semantic MediaWiki
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../4/overview/" class="md-nav__link">
+        Kapitel 4: Erweiterungen
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../exercises/ue1/" class="md-nav__link">
+        Übung 1: Wissensmanagement
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../exercises/ue2/" class="md-nav__link">
+        Übung 2: Wissensmodellierung
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../exercises/ue3/" class="md-nav__link">
+        Übung 3: Semantic MediaWiki
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../exercises/ue4/" class="md-nav__link">
+        Übung 4: Vertiefung
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../semesterprojekt/" class="md-nav__link">
+        Semesterprojekt
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#motivation" class="md-nav__link">
+    Motivation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#definition" class="md-nav__link">
+    Definition
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#function" class="md-nav__link">
+    Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#syntax" class="md-nav__link">
+    Syntax
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<h1 id="concepts">Concepts</h1>
+<div class="admonition abstract">
+<p class="admonition-title">Abstract</p>
+<p><strong>Summary</strong><br />
+A concept is a Semantic MediaWiki page in the <code>Concept:</code> namespace that serve as a category by <strong>dynamically linking</strong> pages to it, <em>iff</em> such pages satisfy the <strong>conditions</strong> defined as <code>#ask</code> query on the concept page. </p>
+</div>
+<h3 id="motivation">Motivation</h3>
+<p>Problem</p>
+<ul>
+<li>Sometimes, it is useful to determine memberships to categories based on the occurrence of some specific property values.</li>
+<li>Reviewing whether membership conditions are still satisfied and manually altering categories is cumbersome and error-prone</li>
+</ul>
+<p>Use Case</p>
+<ul>
+<li>Automatically annotate all currently running projects with a dedicated category based on the evaluation of start and end date</li>
+</ul>
+<h3 id="definition">Definition</h3>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Definition</strong>: &laquo; <strong>Concept</strong> &raquo;<br />
+Concepts are pages in the <code>Concept:</code> namespace and allow to dynamically compute page memberships based on the evaluation of query conditions defined on the concept page.</p>
+<p><em>Quelle: Eigene Definition angelehnt an <a href="https://www.semantic-mediawiki.org/wiki/Help:Concepts">https://www.semantic-mediawiki.org/wiki/Help:Concepts</a></em></p>
+</div>
+<h3 id="function">Function</h3>
+<dl>
+<dt>Concepts</dt>
+<dd>&hellip; are pages defined in the <code>Concept:</code> <strong>namespace</strong></dd>
+<dd>&hellip; serve as categories with individually evaluated memberships</dd>
+<dd>&hellip; are declared using the <code>#concept</code> parser function</dd>
+<dd>&hellip; dynamically link pages to categories based on formulated <strong>query conditions</strong></dd>
+<dd>&hellip; conditions are specified in the form of an <code>#ask</code> query</dd>
+<dd>&hellip; results of the <code>#ask</code> query automatically become members of the concept</dd>
+<dd>&hellip; can be <strong>browsed</strong> to view the contents of some concept – similar to category pages </dd>
+<dd>&hellip; can be used in <strong>semantic queries</strong> just like categories</dd>
+<dd>&hellip; are very useful in <strong>Page Forms</strong> for defining autocompletion values</dd>
+<dt>Additional Remarks:</dt>
+<dd>Concept pages can have <strong>additional content</strong> (e.g. wikitext) – but this text does not have any effect on the definition of the concept.</dd>
+<dd>The <code>#concept</code> parser function can <em>only</em> be used on pages in the <code>Concept:</code> namespace </dd>
+</dl>
+<h3 id="syntax">Syntax</h3>
+<h3 id="example">Example</h3>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p><strong>Example</strong><br />
+Using the concept named <code class="highlight"><span class="w">Semantic MediaWiki Cons 2012</span></code> in an <code>#ask</code> query to display the location of all SMW conferences held in 2012:</p>
+<p><strong>Syntax</strong>
+<div class="highlight"><pre><span></span><code><span class="w">{{#ask:</span>
+<span class="w">[[Concept:Semantic MediaWiki Cons 2012]]</span>
+<span class="w">|?Has location=Location </span>
+<span class="w">|format=table</span>
+<span class="w">|headers=plain </span>
+<span class="w">|mainlabel=Event</span>
+<span class="w">}}</span>
+</code></pre></div></p>
+<p><strong>Result</strong></p>
+<table>
+<thead>
+<tr>
+<th>Event</th>
+<th>Location</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SMWCon Fall 2012</td>
+<td>Cologne, Germany</td>
+</tr>
+<tr>
+<td>SMWCon Spring 2012</td>
+<td>Carlsbad, CA, USA</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- First Term
+:   This is the definition of the first term.
+
+**First Term**
+:     This is the <<definition>> of the first term.
+
+Usage of Categories
+: Browse contents like categories
+: This is another definition of the second term.
+
+This is a "paragraph" introducing:
+
+<div class="highlight"><pre><span></span><code>a one-line code block
+</code></pre></div>
+
+Footnotes[^1] have a label[^@#$%] and the footnote's content.
+
+[^1]: This is a footnote content.
+[^@#$%]: A footnote on the label: "@#$%". -->
+
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p><strong>Example</strong><br />
+<em>Instead of annotating all currently running projects with a specific category (that certainly will be invalid for some projects after a certain amount of time), we can define a dynamic category in form of a concept.</em></p>
+<div class="highlight"><pre><span></span><code><span class="w">{{#concept:</span>
+<span class="w">[[Category:Project]]</span>
+<span class="w">[[Has planned start::&lt; {{CURRENTYEAR}}-{{CURRENTMONTH}}-{{CURRENTDAY2}}]]</span>
+<span class="w">[[Has planned finish::&gt; {{CURRENTYEAR}}-{{CURRENTMONTH}}-{{CURRENTDAY2}}]]</span>
+<span class="w">|All currently running projects</span>
+<span class="w">}}</span>
+</code></pre></div>
+
+</div>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.5e67fbfe.min.js", "translations": {"clipboard.copied": "In Zwischenablage kopiert", "clipboard.copy": "In Zwischenablage kopieren", "search.config.lang": "de", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Suche", "search.result.more.one": "1 weiteres Suchergebnis auf dieser Seite", "search.result.more.other": "# weitere Suchergebnisse auf dieser Seite", "search.result.none": "Keine Suchergebnisse", "search.result.one": "1 Suchergebnis", "search.result.other": "# Suchergebnisse", "search.result.placeholder": "Suchbegriff eingeben", "search.result.term.missing": "Es fehlt", "select.version.title": "Version ausw\u00e4hlen"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.c44cc438.min.js"></script>
+      
+        <script src="../../../javascript/extra.js"></script>
+      
+    
+  </body>
+</html>

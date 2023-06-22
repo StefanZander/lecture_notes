@@ -1,0 +1,1217 @@
+
+<!doctype html>
+<html lang="de" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.3">
+    
+    
+      
+        <title>App Bar - Android & Android Studio</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.e35208c4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ef6f36e2.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#2094f3">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,400i,700%7CRoboto+mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto Condensed";--md-code-font-family:"Roboto mono"}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="blue" data-md-color-accent="red">
+  
+    
+    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#android-app-bar-aka-action-bar" class="md-skip">
+          Zum Inhalt
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Android &amp; Android Studio" class="md-header__button md-logo" aria-label="Android & Android Studio" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Android & Android Studio
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              App Bar
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Suche" placeholder="Suche" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Suche wird initialisiert
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Android &amp; Android Studio" class="md-nav__button md-logo" aria-label="Android & Android Studio" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Android & Android Studio
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Index
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generics/" class="md-nav__link">
+        Collections und Generics
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../serialisierung/" class="md-nav__link">
+        Serialisierung und Persistenz
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../singleton/" class="md-nav__link">
+        Singleton
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../serialized_singleton/" class="md-nav__link">
+        Serialized Singleton
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../grundlagen/" class="md-nav__link">
+        Grundlagen
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../activities/" class="md-nav__link">
+        Activities & Intents
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../handler/" class="md-nav__link">
+        Handler
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../json/" class="md-nav__link">
+        JSON
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data_storage/" class="md-nav__link">
+        Data Storage
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          App Bar
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        App Bar
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#choosing-the-app-bar-implementation" class="md-nav__link">
+    Choosing the App Bar Implementation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-a-toolbar-to-an-activity" class="md-nav__link">
+    Adding a Toolbar to an Activity
+  </a>
+  
+    <nav class="md-nav" aria-label="Adding a Toolbar to an Activity">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#set-the-necessary-support-libraries" class="md-nav__link">
+    Set the necessary Support Libraries
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extend-appcompatactivity" class="md-nav__link">
+    Extend AppCompatActivity
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#set-the-noactionbar-theme" class="md-nav__link">
+    Set the NoActionBar Theme
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#set-the-toolbars-layout" class="md-nav__link">
+    Set the Toolbar's Layout
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#call-setsupportactionbar" class="md-nav__link">
+    Call setSupportActionBar()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#defining-and-handling-actions" class="md-nav__link">
+    Defining and Handling Actions
+  </a>
+  
+    <nav class="md-nav" aria-label="Defining and Handling Actions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defining-action-buttons" class="md-nav__link">
+    Defining Action Buttons
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setting-actions-on-the-toolbar" class="md-nav__link">
+    Setting Actions on the Toolbar
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#respond-to-actions" class="md-nav__link">
+    Respond to Actions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-an-up-action" class="md-nav__link">
+    Adding an Up Action
+  </a>
+  
+    <nav class="md-nav" aria-label="Adding an Up Action">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#declaring-a-parent-activity" class="md-nav__link">
+    Declaring a Parent Activity
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enable-the-up-button" class="md-nav__link">
+    Enable the Up Button
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#action-views-and-action-providers" class="md-nav__link">
+    Action Views and Action Providers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disclaimer" class="md-nav__link">
+    Disclaimer
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../recycler_view/" class="md-nav__link">
+        RecyclerView
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../asynctask/" class="md-nav__link">
+        AsyncTask
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../thread_communication/" class="md-nav__link">
+        Threads & Communication
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#choosing-the-app-bar-implementation" class="md-nav__link">
+    Choosing the App Bar Implementation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-a-toolbar-to-an-activity" class="md-nav__link">
+    Adding a Toolbar to an Activity
+  </a>
+  
+    <nav class="md-nav" aria-label="Adding a Toolbar to an Activity">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#set-the-necessary-support-libraries" class="md-nav__link">
+    Set the necessary Support Libraries
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extend-appcompatactivity" class="md-nav__link">
+    Extend AppCompatActivity
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#set-the-noactionbar-theme" class="md-nav__link">
+    Set the NoActionBar Theme
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#set-the-toolbars-layout" class="md-nav__link">
+    Set the Toolbar's Layout
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#call-setsupportactionbar" class="md-nav__link">
+    Call setSupportActionBar()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#defining-and-handling-actions" class="md-nav__link">
+    Defining and Handling Actions
+  </a>
+  
+    <nav class="md-nav" aria-label="Defining and Handling Actions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defining-action-buttons" class="md-nav__link">
+    Defining Action Buttons
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setting-actions-on-the-toolbar" class="md-nav__link">
+    Setting Actions on the Toolbar
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#respond-to-actions" class="md-nav__link">
+    Respond to Actions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-an-up-action" class="md-nav__link">
+    Adding an Up Action
+  </a>
+  
+    <nav class="md-nav" aria-label="Adding an Up Action">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#declaring-a-parent-activity" class="md-nav__link">
+    Declaring a Parent Activity
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enable-the-up-button" class="md-nav__link">
+    Enable the Up Button
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#action-views-and-action-providers" class="md-nav__link">
+    Action Views and Action Providers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disclaimer" class="md-nav__link">
+    Disclaimer
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="android-app-bar-aka-action-bar">Android App Bar (aka Action Bar)</h1>
+<div class="admonition abstract">
+<p class="admonition-title">Abstract</p>
+<p><strong>Lernziele</strong></p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Sie kennen die technischen Grundlagen der Android Action Bar</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Sie können eine Action Bar in ihre Applikation integrieren</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Sie verstehen wie sie Actions definieren und der Action Bar hinzufügen</li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Note:</strong> The app bar should be implemented using the <strong>Android Toolbar</strong> to make it available for a wide range of devices. According to the Android developer guidelines, the appcompat <a href="https://developer.android.com/reference/android/support/v7/widget/Toolbar.html">Toolbar</a> has the best compatibility support.  </p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Support Library has been superceded by Android Jetpack</strong><br />
+With the introduction of Android Jetpack and AndroidX, the support libraries are migrated into Android Jetpack for applications using API Level 28 (Android 9) and above. 
+So if you plan to implement your application for Android Version &gt; 8.0, you could use Android Jetpack instead of the support libaries (earlier versions still need to make use of the support libraries as outlined in this documentation).<br />
+<em>Source: <a href="https://developer.android.com/topic/libraries/support-library/setup">https://developer.android.com/topic/libraries/support-library/setup</a></em></p>
+</div>
+<h2 id="introduction">Introduction</h2>
+<p>The <strong>app bar</strong>, also known as the <em>action bar</em>, is one of the <em>most important design elements</em> in your app&rsquo;s activities, because it provides a visual structure and interactive elements that are familiar to users. Using the app bar makes your app <strong>consistent with other Android apps</strong>, allowing users to quickly understand how to operate your app and have a great experience. </p>
+<p>The key functions of the app bar are as follows:</p>
+<ul>
+<li>A dedicated space for giving your app an identity and indicating the user&rsquo;s location in the app.</li>
+<li>Access to important actions in a predictable way, such as search.</li>
+<li>Support for navigation and view switching (with tabs or drop-down lists).</li>
+</ul>
+<p>This lecture describes how to use the <a href="https://developer.android.com/tools/support-library/features.html#v7-appcompat">v7 appcompat</a> support library&rsquo;s <a href="https://developer.android.com/reference/android/support/v7/widget/Toolbar.html">Toolbar</a> widget as an app bar. </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Note:</strong> There are other ways to implement an app bar—for example, some themes set up an ActionBar as an app bar by default—but using the <strong>appcompat Toolbar</strong> makes it easy to set up an app bar that works on the <strong>widest range of devices</strong>, and also gives you room to customize your app bar later on as your app develops.</p>
+</div>
+<h2 id="choosing-the-app-bar-implementation">Choosing the App Bar Implementation</h2>
+<p>In its most basic form, the action bar displays the <strong>title for the activity</strong> on one side and an <strong>overflow menu</strong> on the other. Even in this simple form, the app bar provides useful information to the users, and helps to give Android apps a consistent look and feel.</p>
+<p><img alt="The App Bar" src="../figures/appbar/appbar.png" /><em>An app bar with the app title and an overflow menu</em></p>
+<p>Beginning with Android 3.0 (API level 11), all activities that use the default theme have an <code>ActionBar</code> as an app bar. However, app bar features have gradually been added to the native <a href="https://developer.android.com/reference/android/app/ActionBar.html">ActionBar</a> over various Android releases. As a result, the <strong>native <code>ActionBar</code> behaves differently</strong> depending on what version of the Android system a device may be using. By contrast, the <strong>most recent features are added to the support library&rsquo;s version of <code>Toolbar</code></strong>, and they are available on any device that can use the support library.</p>
+<p>For this reason, it is <strong>recommended to use the support library&rsquo;s <code>Toolbar</code> class to implement activities&rsquo; app bars</strong>. Using the support library&rsquo;s toolbar helps ensure that an app will have consistent behavior across the widest range of devices. For example, the <a href="https://developer.android.com/reference/android/support/v7/widget/Toolbar.html">Toolbar</a> widget provides a <a href="https://developer.android.com/design/material/index.html">material design</a> experience on devices running Android 2.1 (API level 7) or later, but the native action bar doesn&rsquo;t support material design unless the device is running Android 5.0 (API level 21) or later.</p>
+<h2 id="adding-a-toolbar-to-an-activity">Adding a Toolbar to an Activity</h2>
+<p>These steps describe how to set up a <code>Toolbar</code> as an activity&rsquo;s app bar:</p>
+<h3 id="set-the-necessary-support-libraries">Set the necessary Support Libraries</h3>
+<p>Add the <a href="https://developer.android.com/tools/support-library/features.html#v7-appcompat">v7 appcompat</a> <strong>support library</strong> to your project, as described in <a href="https://developer.android.com/topic/libraries/support-library/setup">Support Library Setup</a>.</p>
+<p>In order to use a Support Library, you must modify the <strong>application&rsquo;s project&rsquo;s classpath dependencies</strong> within the development environment. This procedure must be performed for <em>each Support Library</em> that should be used.</p>
+<p>To add a Support Library to your application project, include <strong>Google&rsquo;s Maven repository</strong> in your <strong>top-level</strong> <code>build.gradle</code> file.</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">allprojects</span> <span class="o">{</span>
+    <span class="n">repositories</span> <span class="o">{</span>
+        <span class="n">google</span><span class="o">()</span>
+
+        <span class="c1">// If you&#39;re using a version of Gradle lower than 4.1, you must</span>
+        <span class="c1">// instead use:</span>
+        <span class="c1">//</span>
+        <span class="c1">// maven {</span>
+        <span class="c1">//     url &#39;https://maven.google.com&#39;</span>
+        <span class="c1">// }</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div>
+</td></tr></table>
+
+<p>Then, add the support library to the <code>dependencies</code> section:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">dependencies</span> <span class="o">{</span>
+    <span class="o">...</span>
+    <span class="n">implementation</span> <span class="s2">&quot;com.android.support:support-core-utils:27.1.1&quot;</span>
+<span class="o">}</span>
+</code></pre></div>
+</td></tr></table>
+
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Note #1:</strong> The <code>compile</code> command in the dependencies section is deprecated by the end of 2018. Use <code>implementation</code> instead.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Note #2:</strong> Make sure that the <code>:support-core-utils</code> version number matches that of the <code>:appcompat-v7</code> version number, otherwise runtime errors might occur. </p>
+<p>The following excerpt from the <code>build.gradle (Module:app)</code> file uses version <code>26.1.0</code>:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">dependencies</span> <span class="o">{</span>
+<span class="hll">    <span class="n">implementation</span> <span class="s1">&#39;com.android.support:support-core-utils:26.1.0&#39;</span>
+</span>    <span class="n">implementation</span> <span class="nf">fileTree</span><span class="o">(</span><span class="nl">dir:</span> <span class="s1">&#39;libs&#39;</span><span class="o">,</span> <span class="nl">include:</span> <span class="o">[</span><span class="s1">&#39;*.jar&#39;</span><span class="o">])</span>
+<span class="hll">    <span class="n">implementation</span> <span class="s1">&#39;com.android.support:appcompat-v7:26.1.0&#39;</span>
+</span>    <span class="n">implementation</span> <span class="s1">&#39;com.android.support.constraint:constraint-layout:1.1.1&#39;</span>
+    <span class="n">testImplementation</span> <span class="s1">&#39;junit:junit:4.12&#39;</span>
+    <span class="n">androidTestImplementation</span> <span class="s1">&#39;com.android.support.test:runner:1.0.2&#39;</span>
+    <span class="n">androidTestImplementation</span> <span class="s1">&#39;com.android.support.test.espresso:espresso-core:3.0.2&#39;</span>
+<span class="o">}</span>
+</code></pre></div>
+</td></tr></table>
+
+</div>
+<h3 id="extend-appcompatactivity">Extend <code>AppCompatActivity</code></h3>
+<p>Make sure the activity class extends <code>AppCompatActivity</code>, as illustrated below:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">MyActivity</span> <span class="kd">extends</span> <span class="n">AppCompatActivity</span> <span class="p">{</span>
+<span class="c1">// ...</span>
+<span class="p">}</span>
+</code></pre></div>
+</td></tr></table>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Note:</strong> You need to make this change for <em>every activity</em> in your app that uses a Toolbar as an app bar.</p>
+</div>
+<h3 id="set-the-noactionbar-theme">Set the <code>NoActionBar</code> Theme</h3>
+<p>In the <strong>app manifest</strong>, set the <code>&lt;application&gt;</code> element to use one of appcompat&rsquo;s <a href="https://developer.android.com/reference/android/support/v7/appcompat/R.style.html#Theme_AppCompat_NoActionBar">NoActionBar</a> themes. Using one of these themes prevents the app from using the native <code>ActionBar</code> class to provide the app bar. For example:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nt">&lt;application</span>
+    <span class="na">android:theme=</span><span class="s">&quot;@style/Theme.AppCompat.Light.NoActionBar&quot;</span>
+<span class="nt">/&gt;</span>
+</code></pre></div>
+</td></tr></table>
+
+<h3 id="set-the-toolbars-layout">Set the Toolbar&rsquo;s Layout</h3>
+<p>Add a <code>Toolbar</code> to the activity&rsquo;s layout. For example, the following layout code adds a <code>Toolbar</code> and gives it the appearance of floating above the activity:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nt">&lt;android.support.v7.widget.Toolbar</span>
+    <span class="na">android:id=</span><span class="s">&quot;@+id/my_toolbar&quot;</span>
+    <span class="na">android:layout_width=</span><span class="s">&quot;match_parent&quot;</span>
+    <span class="na">android:layout_height=</span><span class="s">&quot;?attr/actionBarSize&quot;</span>
+    <span class="na">android:background=</span><span class="s">&quot;?attr/colorPrimary&quot;</span>
+    <span class="na">android:elevation=</span><span class="s">&quot;4dp&quot;</span>
+    <span class="na">android:theme=</span><span class="s">&quot;@style/ThemeOverlay.AppCompat.ActionBar&quot;</span>
+    <span class="na">app:popupTheme=</span><span class="s">&quot;@style/ThemeOverlay.AppCompat.Light&quot;</span><span class="nt">/&gt;</span>
+</code></pre></div>
+</td></tr></table>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Note:</strong> The Material Design specification recommends that app bars should have an <strong>elevation</strong> of <strong>4 dp</strong>.</p>
+</div>
+<p>Position the toolbar at the top of the activity&rsquo;s layout, since you are using it as an app bar.</p>
+<h3 id="call-setsupportactionbar">Call <code>setSupportActionBar()</code></h3>
+<p>In the activity&rsquo;s <code>onCreate()</code> method, call the activity&rsquo;s <code>setSupportActionBar()</code> method, and pass the activity&rsquo;s toolbar. This method sets the toolbar as the app bar for the activity.</p>
+<p>For example:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5
+6
+7</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@Override</span>
+<span class="kd">protected</span> <span class="kt">void</span> <span class="nf">onCreate</span><span class="p">(</span><span class="n">Bundle</span> <span class="n">savedInstanceState</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">super</span><span class="p">.</span><span class="na">onCreate</span><span class="p">(</span><span class="n">savedInstanceState</span><span class="p">);</span>
+    <span class="n">setContentView</span><span class="p">(</span><span class="n">R</span><span class="p">.</span><span class="na">layout</span><span class="p">.</span><span class="na">activity_my</span><span class="p">);</span>
+    <span class="n">Toolbar</span> <span class="n">myToolbar</span> <span class="o">=</span> <span class="p">(</span><span class="n">Toolbar</span><span class="p">)</span> <span class="n">findViewById</span><span class="p">(</span><span class="n">R</span><span class="p">.</span><span class="na">id</span><span class="p">.</span><span class="na">my_toolbar</span><span class="p">);</span>
+    <span class="n">setSupportActionBar</span><span class="p">(</span><span class="n">myToolbar</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+</td></tr></table>
+
+<p>Make sure that you import the correct Toolbar library, as illustrated below; otherwise the <code>setSupportActionBar()</code> method won&rsquo;t work.</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">android.support.v7.widget.Toolbar</span><span class="p">;</span>
+</code></pre></div>
+</td></tr></table>
+
+<p>Your app now has a basic action bar. By default, the action bar contains just the name of the app and an overflow menu. The options menu initially contains just the Settings item. </p>
+<p>You can add more actions to the action bar and the overflow menu, as described in the next Section &rarr; <em>Adding and Handling Actions</em>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Hint: Use App Bar Utility Methods</strong></p>
+<p>Once you set the toolbar as an activity&rsquo;s app bar, you have access to the various <strong>utility methods</strong> provided by the v7 appcompat support library&rsquo;s <code>ActionBar</code> class. This approach lets you do a number of useful things, like hide and show the app bar.</p>
+<p>To use the <strong>ActionBar utility methods</strong>, call the activity&rsquo;s <code>getSupportActionBar()</code> method. This method returns a reference to an appcompat <code>ActionBar</code> object. Once you have that reference, you can call any of the ActionBar methods to <strong>adjust the app bar</strong>. For example, to hide the app bar, call <code>ActionBar.hide()</code>.</p>
+</div>
+<h2 id="defining-and-handling-actions">Defining and Handling Actions</h2>
+<p>The app bar allows you to <strong>add buttons</strong> for <strong>user actions</strong>. This feature lets you put the most important actions for the current context right at the top of the app. For example, a photo browsing app might show share and create album buttons at the top when the user is looking at their photo roll; when the user looks at an individual photo, the app might show crop and filter buttons.</p>
+<p><strong>Space</strong> in the app bar is <strong>limited</strong>. If an app declares <em>more actions</em> than can fit in the app bar, the app bar send the excess actions to an <strong>overflow menu</strong>. The app can also specify that an action <strong>should always be shown</strong> in the <strong>overflow menu</strong>, instead of being displayed on the app bar.</p>
+<p><img alt="" src="../figures/appbar/appbar_with_action_button.png" /><em>An app bar with a single action button and an overflow menu.</em></p>
+<h3 id="defining-action-buttons">Defining Action Buttons</h3>
+<p>All action buttons and other items available in the action overflow are defined in an <strong>XML menu resource</strong> (&rarr; see <a href="https://developer.android.com/guide/topics/resources/menu-resource.html">https://developer.android.com/guide/topics/resources/menu-resource.html</a>). </p>
+<p>To <strong>add actions</strong> to the action bar, create a <strong>new XML file</strong> in your project&rsquo;s <code>res/menu/</code> directory.</p>
+<p>The menu can be accessed (e.g. by the <code>MenuInflater</code> class) using <code>R.menu.{name_of_your_menu_xml_file}.xml</code>.</p>
+<p>Add an <code>&lt;item&gt;</code> element for each item you want to include in the action bar, as shown in the following code example of a menu XML file:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nt">&lt;menu</span> <span class="na">xmlns:android=</span><span class="s">&quot;http://schemas.android.com/apk/res/android&quot;</span> <span class="nt">&gt;</span>
+
+    <span class="c">&lt;!-- &quot;Mark Favorite&quot;, should appear as action button if possible --&gt;</span>
+    <span class="nt">&lt;item</span>
+        <span class="na">android:id=</span><span class="s">&quot;@+id/action_favorite&quot;</span>
+        <span class="na">android:icon=</span><span class="s">&quot;@drawable/ic_favorite_black_48dp&quot;</span>
+        <span class="na">android:title=</span><span class="s">&quot;@string/action_favorite&quot;</span>
+        <span class="na">app:showAsAction=</span><span class="s">&quot;ifRoom&quot;</span><span class="nt">/&gt;</span>
+
+    <span class="c">&lt;!-- Settings, should always be in the overflow --&gt;</span>
+    <span class="nt">&lt;item</span> <span class="na">android:id=</span><span class="s">&quot;@+id/action_settings&quot;</span>
+          <span class="na">android:title=</span><span class="s">&quot;@string/action_settings&quot;</span>
+          <span class="na">app:showAsAction=</span><span class="s">&quot;never&quot;</span><span class="nt">/&gt;</span>
+
+<span class="nt">&lt;/menu&gt;</span>
+</code></pre></div>
+</td></tr></table>
+
+<p>The <code>app:showAsAction</code> attribute specifies whether the <strong>action should be shown as a button</strong> on the app bar.</p>
+<ul>
+<li>If you set <code>app:showAsAction="ifRoom"</code> (as in the example code&rsquo;s favorite action), the action is displayed as a <strong>button</strong> <em>if</em> there is <strong>room in the app bar</strong> for it; if there is <em>not</em> enough room, excess actions are sent to the <strong>overflow menu</strong>. </li>
+<li>If you set <code>app:showAsAction="never"</code> (as in the example code&rsquo;s settings action), the action is <strong>always listed in the overflow menu</strong>, <em>not</em> displayed in the app bar.</li>
+</ul>
+<p>The system uses the <strong>action&rsquo;s icon</strong> as the action button, if the action is displayed in the app bar. </p>
+<p>You can find many useful icons on the <a href="https://www.google.com/design/icons/">Material Icons</a> page.</p>
+<h3 id="setting-actions-on-the-toolbar">Setting Actions on the Toolbar</h3>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Attention:</strong> This step is ommitted in the app bar&rsquo;s official google developer documents!</p>
+</div>
+<p><strong>Actions</strong> should be included in the <strong>options menu</strong>, which is part of the Toolbar if the application is developed for <strong>Android 3.0 (API level 11) and higher</strong>. </p>
+<p>By default, the system places all items in the <strong>action overflow</strong>, which the user can reveal with the action overflow icon on the right side of the app bar (or by pressing the device Menu button, if available). To enable quick access to important actions, you can promote a few items to appear in the app bar by adding <code>android:showAsAction="ifRoom"</code> to the corresponding <code>&lt;item&gt;</code> elements (see Figure 3).</p>
+<p><img alt="" src="../figures/appbar/actionbar_with_actions.png" /><em>The Google Play Movies app, showing a search button and the action overflow button.</em></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Hint:</strong> You can declare items for the options menu from either your Activity subclass or a Fragment subclass. If both your activity and fragment(s) declare items for the options menu, they are combined in the UI. The activity&rsquo;s items appear first, followed by those of each fragment in the order in which each fragment is added to the activity. If necessary, you can re-order the menu items with the <code>android:orderInCategory</code> attribute in each <code>&lt;item&gt;</code> you need to move.</p>
+</div>
+<p>To specify the options menu for an activity, override <code>onCreateOptionsMenu()</code> (fragments provide their own <code>onCreateOptionsMenu()</code> callback). In this method, you can <strong>inflate</strong> your <strong>menu resource</strong> (defined in XML) into the Menu provided in the callback. For example:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@Override</span>
+<span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">onCreateOptionsMenu</span><span class="p">(</span><span class="n">Menu</span> <span class="n">menu</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">MenuInflater</span> <span class="n">inflater</span> <span class="o">=</span> <span class="n">getMenuInflater</span><span class="p">();</span>
+    <span class="n">inflater</span><span class="p">.</span><span class="na">inflate</span><span class="p">(</span><span class="n">R</span><span class="p">.</span><span class="na">menu</span><span class="p">.</span><span class="na">action_items</span><span class="p">,</span> <span class="n">menu</span><span class="p">);</span>
+    <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+</td></tr></table>
+
+<p>You can also add menu items using <code>add()</code> and retrieve items with <code>findItem()</code> to revise their properties with MenuItem APIs.</p>
+<p>If you&rsquo;ve developed your application for <strong>Android 2.3.x and lower</strong>, the system calls <code>onCreateOptionsMenu()</code> to create the options menu when the user opens the menu for the first time.
+If you&rsquo;ve developed for <strong>Android 3.0 and higher</strong>, the system calls <code>onCreateOptionsMenu()</code> when <strong>starting the activity</strong>, in order to <strong>show items to the app bar</strong>.</p>
+<h3 id="respond-to-actions">Respond to Actions</h3>
+<p>When the user selects one of the app bar items, the system calls the activity&rsquo;s <code>onOptionsItemSelected()</code> callback method, and passes a <code>MenuItem</code> object to indicate which item was clicked. In your implementation of <code>onOptionsItemSelected()</code>, call the <code>MenuItem.getItemId()</code> method to determine which item was pressed. The <code>ID</code> returned matches the value you declared in the corresponding <code>&lt;item&gt;</code> element&rsquo;s <code>android:id</code> attribute.</p>
+<p>For example, the following code checks to see which action the user selected. If the method does not recognize the user&rsquo;s action, it invokes the superclass method:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@Override</span>
+<span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">onOptionsItemSelected</span><span class="p">(</span><span class="n">MenuItem</span> <span class="n">item</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">switch</span> <span class="p">(</span><span class="n">item</span><span class="p">.</span><span class="na">getItemId</span><span class="p">())</span> <span class="p">{</span>
+        <span class="k">case</span> <span class="n">R</span><span class="p">.</span><span class="na">id</span><span class="p">.</span><span class="na">action_settings</span><span class="p">:</span>
+            <span class="c1">// User chose the &quot;Settings&quot; item, show the app settings UI...</span>
+            <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
+
+        <span class="k">case</span> <span class="n">R</span><span class="p">.</span><span class="na">id</span><span class="p">.</span><span class="na">action_favorite</span><span class="p">:</span>
+            <span class="c1">// User chose the &quot;Favorite&quot; action, mark the current item</span>
+            <span class="c1">// as a favorite...</span>
+            <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
+
+<span class="nl">        default:</span>
+            <span class="c1">// If we got here, the user&#39;s action was not recognized.</span>
+            <span class="c1">// Invoke the superclass to handle it.</span>
+            <span class="k">return</span> <span class="kd">super</span><span class="p">.</span><span class="na">onOptionsItemSelected</span><span class="p">(</span><span class="n">item</span><span class="p">);</span>
+
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+</td></tr></table>
+
+<h2 id="adding-an-up-action">Adding an Up Action</h2>
+<p>An app should make it easy for users to find their way back to the app&rsquo;s main screen. One simple way to do this is to provide an <strong>Up button</strong> on the app bar for all activities except the main one. When the user selects the Up button, the app navigates to the parent activity.</p>
+<p>This section shows you how to add an Up button to an activity by declaring the activity&rsquo;s parent in the manifest, and enabling the app bar&rsquo;s Up button.</p>
+<h3 id="declaring-a-parent-activity">Declaring a Parent Activity</h3>
+<p>To support the <strong>up functionality</strong> in an activity, you need to declare the <strong>activity&rsquo;s parent</strong>. This is done in the <strong>app manifest</strong>, by setting an <code>android:parentActivityName</code> attribute.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Note:</strong> The <code>android:parentActivityName</code> attribute was introduced in Android 4.1 (API level 16). To support devices with older versions of Android, define a <code>&lt;meta-data&gt;</code> name-value pair, where the name is <code>"android.support.PARENT_ACTIVITY"</code> and the value is the name of the parent activity.</p>
+</div>
+<p>For example, suppose an app has a main activity named <code>MainActivity</code> and a single child activity. The following manifest code declares both activities, and specifies the parent/child relationship:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nt">&lt;application</span> <span class="err">...</span> <span class="nt">&gt;</span>
+    ...
+
+    <span class="c">&lt;!-- The main/home activity (it has no parent activity) --&gt;</span>
+
+    <span class="nt">&lt;activity</span>
+        <span class="na">android:name=</span><span class="s">&quot;com.example.myfirstapp.MainActivity&quot;</span> <span class="err">...</span><span class="nt">&gt;</span>
+        ...
+    <span class="nt">&lt;/activity&gt;</span>
+
+    <span class="c">&lt;!-- A child of the main activity --&gt;</span>
+    <span class="nt">&lt;activity</span>
+        <span class="na">android:name=</span><span class="s">&quot;com.example.myfirstapp.MyChildActivity&quot;</span>
+        <span class="na">android:label=</span><span class="s">&quot;@string/title_activity_child&quot;</span>
+        <span class="na">android:parentActivityName=</span><span class="s">&quot;com.example.myfirstapp.MainActivity&quot;</span> <span class="nt">&gt;</span>
+
+        <span class="c">&lt;!-- Parent activity meta-data to support 4.0 and lower --&gt;</span>
+        <span class="nt">&lt;meta-data</span>
+            <span class="na">android:name=</span><span class="s">&quot;android.support.PARENT_ACTIVITY&quot;</span>
+            <span class="na">android:value=</span><span class="s">&quot;com.example.myfirstapp.MainActivity&quot;</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;/activity&gt;</span>
+<span class="nt">&lt;/application&gt;</span>
+</code></pre></div>
+</td></tr></table>
+
+<h3 id="enable-the-up-button">Enable the Up Button</h3>
+<p>To enable the Up button for an activity that has a parent activity, call the app bar&rsquo;s <code>setDisplayHomeAsUpEnabled()</code> method. Typically, this would be done when the activity is created. For example, the following <code>onCreate()</code> method sets a Toolbar as the app bar for <code>MyChildActivity</code>, then enables that app bar&rsquo;s Up button:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@Override</span>
+<span class="kd">protected</span> <span class="kt">void</span> <span class="nf">onCreate</span><span class="p">(</span><span class="n">Bundle</span> <span class="n">savedInstanceState</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">super</span><span class="p">.</span><span class="na">onCreate</span><span class="p">(</span><span class="n">savedInstanceState</span><span class="p">);</span>
+    <span class="n">setContentView</span><span class="p">(</span><span class="n">R</span><span class="p">.</span><span class="na">layout</span><span class="p">.</span><span class="na">activity_my_child</span><span class="p">);</span>
+
+    <span class="c1">// my_child_toolbar is defined in the layout file</span>
+    <span class="n">Toolbar</span> <span class="n">myChildToolbar</span> <span class="o">=</span>
+        <span class="p">(</span><span class="n">Toolbar</span><span class="p">)</span> <span class="n">findViewById</span><span class="p">(</span><span class="n">R</span><span class="p">.</span><span class="na">id</span><span class="p">.</span><span class="na">my_child_toolbar</span><span class="p">);</span>
+    <span class="n">setSupportActionBar</span><span class="p">(</span><span class="n">myChildToolbar</span><span class="p">);</span>
+
+    <span class="c1">// Get a support ActionBar corresponding to this toolbar</span>
+    <span class="n">ActionBar</span> <span class="n">ab</span> <span class="o">=</span> <span class="n">getSupportActionBar</span><span class="p">();</span>
+
+    <span class="c1">// Enable the Up button</span>
+    <span class="n">ab</span><span class="p">.</span><span class="na">setDisplayHomeAsUpEnabled</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+</td></tr></table>
+
+<p>There is no need to catch the up action in the activity&rsquo;s <code>onOptionsItemSelected()</code> method. Instead, that method should call its superclass, as shown in Respond to Actions. The superclass method responds to the Up selection by navigating to the parent activity, as specified in the app manifest.</p>
+<h2 id="action-views-and-action-providers">Action Views and Action Providers</h2>
+<p>Action Views and Action Providers are advanced topics and will not be covered in this lecture. However, more information can be found on the official android developer pages <a href="https://developer.android.com/training/appbar/action-views">https://developer.android.com/training/appbar/action-views</a>.</p>
+<h2 id="disclaimer">Disclaimer</h2>
+<p>Most of the information in this lecture has been compiled from the following sources:</p>
+<ul>
+<li><a href="https://developer.android.com/training/appbar/">https://developer.android.com/training/appbar/</a></li>
+<li><a href="https://developer.android.com/guide/topics/ui/menus">https://developer.android.com/guide/topics/ui/menus</a></li>
+<li><a href="http://www.vogella.com/tutorials/AndroidActionBar/article.html">http://www.vogella.com/tutorials/AndroidActionBar/article.html</a></li>
+</ul>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="../data_storage/" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Zurück
+              </span>
+              Data Storage
+            </div>
+          </div>
+        </a>
+      
+      
+        <a href="../recycler_view/" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Weiter
+              </span>
+              RecyclerView
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "In Zwischenablage kopieren", "clipboard.copied": "In Zwischenablage kopiert", "search.config.lang": "de", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Suche", "search.result.placeholder": "Suchbegriff eingeben", "search.result.none": "Keine Suchergebnisse", "search.result.one": "1 Suchergebnis", "search.result.other": "# Suchergebnisse", "search.result.more.one": "1 weiteres Suchergebnis auf dieser Seite", "search.result.more.other": "# weitere Suchergebnisse auf dieser Seite", "search.result.term.missing": "Es fehlt"}, "search": "../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.4ea5477f.min.js"></script>
+      
+        <script src="../javascript/extra.js"></script>
+      
+    
+  </body>
+</html>

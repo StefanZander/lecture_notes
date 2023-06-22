@@ -1,0 +1,649 @@
+
+<!doctype html>
+<html lang="de" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.3">
+    
+    
+      
+        <title>Das Exposé - Scientific Writing for Computer Science</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.c4a75a56.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.a0c5b2b5.min.css">
+      
+      
+
+    
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="red">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#das-expose" class="md-skip">
+          Zum Inhalt
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Kopfzeile">
+    <a href=".." title="Scientific Writing for Computer Science" class="md-header__button md-logo" aria-label="Scientific Writing for Computer Science" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Scientific Writing for Computer Science
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Das Exposé
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Suche" placeholder="Suche" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Suche">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Zurücksetzen" aria-label="Zurücksetzen" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Suche wird initialisiert
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Scientific Writing for Computer Science" class="md-nav__button md-logo" aria-label="Scientific Writing for Computer Science" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Scientific Writing for Computer Science
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Main Page
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../objectives/" class="md-nav__link">
+        Objectives
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../organisation/" class="md-nav__link">
+        Organisation
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../schedule/" class="md-nav__link">
+        Schedule
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../scientific_writing/" class="md-nav__link">
+        Scientific Writing
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../structure/" class="md-nav__link">
+        Structure
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../milestone0/" class="md-nav__link">
+        MS0: Introductory Material
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../milestone1/" class="md-nav__link">
+        MS1: Group and Topic
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../milestone2/" class="md-nav__link">
+        MS2: Factsheet & Abstract
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../milestone3/" class="md-nav__link">
+        MS3: Paper Draft
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../milestone4/" class="md-nav__link">
+        MS4: Review
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../milestone5/" class="md-nav__link">
+        MS5: Final Presentation
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../milestone6/" class="md-nav__link">
+        MS6: Final Paper
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../common_mistakes/" class="md-nav__link">
+        Common Mistakes
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../good_paper/" class="md-nav__link">
+        Tipps
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ubersicht" class="md-nav__link">
+    Übersicht
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aufbau" class="md-nav__link">
+    Aufbau
+  </a>
+  
+    <nav class="md-nav" aria-label="Aufbau">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vorlaufiger-titel" class="md-nav__link">
+    Vorläufiger Titel
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#problemstellung" class="md-nav__link">
+    Problemstellung
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#forschungsfragen" class="md-nav__link">
+    Forschungsfragen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#geplante-aktivitaten" class="md-nav__link">
+    Geplante Aktivitäten
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#evaluierung" class="md-nav__link">
+    Evaluierung
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#referenzen" class="md-nav__link">
+    Referenzen
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vorgehen" class="md-nav__link">
+    Vorgehen
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="das-expose">Das Exposé</h1>
+<p><code class="highlight"><span class="nx">header</span><span class="p">(</span><span class="s1">&#39;Location: http://meineSeite.php/&#39;</span><span class="p">);</span></code></p>
+<div class="admonition abstract">
+<p class="admonition-title">Abstract</p>
+<p><strong>Lernziele</strong></p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Sie kennen die wesentlichen Elemente und Struktur eines Exposés</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Sie kennen Rolle und Aufgabe eines Exposés</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Sie können ein Exposé zur Ihrer Abschlussarbeit analog der dargestellten Struktur verfassen</li>
+</ul>
+</div>
+<p>In dieser Einheit erfahren Sie, wie Sie das Exposé zu Ihrer Abschlussarbeit erstellen und welche Aspekte es beschreiben muss. </p>
+<h2 id="ubersicht">Übersicht</h2>
+<p>Dem Exposé sollte folgende Struktur zu Grunde liegen:</p>
+<ol>
+<li><strong>Vorläufiger Titel</strong> (=Arbeitstitel)  </li>
+<li><strong>Problemstellung</strong>  </li>
+<li><strong>Forschungsfragen</strong></li>
+<li><strong>Geplante Aktivitäten</strong></li>
+<li><strong>Evaluierung</strong></li>
+<li><strong>Referenzen</strong></li>
+</ol>
+<h2 id="aufbau">Aufbau</h2>
+<h3 id="vorlaufiger-titel">Vorläufiger Titel</h3>
+<p>Der vorläufige Titel der Arbeit. Dieser kann sich selbstverständlich noch im weiteren Verlauf der Arbeit ändern.  </p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Wichtig</strong>: Der Titel sollte die <strong>Problemstellung widerspiegeln</strong> und nur so lang wie nötig sein. Verwenden Sie ggf. einen <strong>Untertitel</strong> und halten Sie den Haupttitel so knapp wie möglich. Vermeiden Sie übermäßig lange oder komplexe Titel &ndash; diese verwässern nur die eigentliche Zielsetzung der Arbeit. </p>
+</div>
+<h3 id="problemstellung">Problemstellung</h3>
+<p>Die Problemstellung ist eines der wesentlichen und wichtigsten Elemente eines Exposés. Hier legen Sie die spezifische Problemstellung, mit der sich Ihre Arbeit auseinandersetzt, dar.</p>
+<p>Die Problemstellung sollte knapp aber präzise beschrieben sein. Die Struktur kann dem <a href="https://de.wikipedia.org/wiki/Prinzip_der_umgekehrten_Pyramide">Prinzip der invertierten Pyramide</a> folgen, d.h., die wesentlichen Probleme sollten zu Beginn genannt werden. Erst danach folgen Hintergrundinformationen sowie die Einbettung in den Arbeitskontext und ggf. weitere Einzelheiten.</p>
+<p>Häufig wird die Problemstellung wie eine Einleitung bzw. die Hinführung zu einem Thema formuliert. Das kann fallweise in Ordnung sein. Generell sollte aber die spezifische Problemstellung, mit der sich die Arbeit auseinandersetzt in Vordergrund stehen. </p>
+<p>Ein weiteres Problem ist, dass die Problemstellung oftmals nicht konkret genug und sehr allgemein formuliert ist. Das ist aus mehreren Gründen problematisch. Die Arbeit soll einen konkreten Beitrag zur Beantwortung der Problemstellung liefern, und je konkreter die Problemstellung formuliert ist, desto klarer kann später die weitere Ausarbeitung erfolgen. Zudem lässt sich so leichter überprüfen, ob die Beiträge Ihrer Arbeit die aufgeworfene Problemstellung bereits hinreichend genau beantworten.</p>
+<h3 id="forschungsfragen">Forschungsfragen</h3>
+<p>Der nächste sehr wichtige Bestandteil.</p>
+<p>Die Forschungsfragen definieren den <strong>inhaltlichen Rahmen</strong> der Arbeit. Sie leiten sich aus der <strong>Problemstellung</strong> ab.</p>
+<p>Für die BA/MA empfiehlt es sich idR nicht mehr als <strong>2-3 Forschungsfragen</strong> zu haben. Ggf. können Sie nachgelagerte oder untergeordnete Fragestellungen definieren. Die Hauptforschungsfragen sollten sich jedoch an der genannten Zahl orientieren.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Wichtig</strong>: Forschungsfragen werden oftmals zu allgemein, zu unpräzise und nicht überprüfbar formuliert.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Ein Beispiel:  </p>
+<p><em>&ldquo;Wie lassen sich Big Data Technologien für xyz einsetzen?&rdquo;</em></p>
+</div>
+<p>Diese Forschungsfrage ist zu unspezifisch und nicht überprüfbar, d.h., diese Forschungsfrage drückt <strong>keine Qualität einer Lösung</strong> aus. Es wird nicht klar, wie gut der Einsatz letztendlich ist bzw. werden keine Metriken definiert, anhand derer sich die Güte einer Lösung festmachen lässt.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Ein besseres Beispiel: </p>
+<p><em>&ldquo;Führt der Einsatz des Big Data Frameworks xyz zu einer 50%-igen Verbesserung der Durchsatzrate im Anwendungsfall A1?&rdquo;</em></p>
+</div>
+<p>Im Rahmen der <strong>Evaluierung</strong> kann nun untersucht werden, ob der Einsatz wirklich zu einer entsprechenden Verbesserung im genannten Anwendungsfall geführt hat.</p>
+<p>Forschungsfragen sollten deshalb <strong>präzise</strong>, <strong>spezifisch</strong> und <strong>überprüfbar</strong> formuliert werden. Nur dann sind Forschungsfragen in der Lage, den inhaltlichen Rahmen der Abschlussarbeitformal sauber und präzise zu definieren.</p>
+<h3 id="geplante-aktivitaten">Geplante Aktivitäten</h3>
+<p>Die geplanten Aktivitäten (auch <em>Beiträge</em> oder engl. <em>&ldquo;Contributions&rdquo;</em> genannt) beschreiben die im Rahmen der Arbeit durchgeführten Aktivitäten. Ihr Ziel ist die Erstellung von <strong>Ergebnisartefakten</strong>, welche als Grundlage für die anschließende <strong>Evaluierung</strong> dienen.</p>
+<p>Jede Aktivität verfolgt ein <strong>Ziel</strong>, aus dessen Erreichung ein bestimmtes Ergebnis resultiert sowie eine <strong>Methodik</strong>, mit der das Ziel erreicht werden soll. </p>
+<p>Im Exposé besteht dieser Abschnitt aus mehreren <strong>Unterabschnitten</strong> und liefert einen groben Überblick über die geplanten Aktivitäten. </p>
+<p>Verwenden Sie zur Beschreibung der geplanten Aktivitäten die nachstehende <strong>Struktur</strong> und beschreiben Sie jeden Punkt mit max. 1 Satz:</p>
+<ol>
+<li>Aktivität</li>
+<li>Methode</li>
+<li>Erwartete Ergebnisse</li>
+</ol>
+<p>Führen Sie alle wesentlichen Aktivitäten auf; dies sollen keine 20 Aktivitäten sein, aber <strong>4-7 wesentliche Aktivitäten</strong> sollten Sie benennen.</p>
+<h3 id="evaluierung">Evaluierung</h3>
+<p>Jede gute bzw. sehr gute BA/MA braucht eine Evaluierung! Oder anders ausgedrückt: Ohne Evaluierung wird es sehr schwer, eine gute oder sehr gute Arbeit zu verfassen bzw. eine entsprechende Beurteilung zu erlangen.</p>
+<p>Die Evaluierung ist der nächste wesentliche Baustein einer guten wissenschaftlichen Arbeit. In der Evaluierung wird der <em>Impact</em> bzw. die Qualität der erarbeiteten Ergebnisse bzw. Ergebnisartefakte im Hinblick auf deren Beitrag zur Beantwortung der Forschungsfragen untersucht und bewertet. </p>
+<p>Die Evaluierungskriterien richten sich idR nach den Forschungsfragen und sollten angemessene, d.h., belastbare Kriterien bzw. Aspekte umfassen, die einer Beantwortung der Forschungsfragen zuträglich sind.</p>
+<p>Verwenden Sie hier analog zur Beschreibung der geplanten Aktivitäten auch eine Unterstruktur und beschreiben Sie jeden Aspekt mit max. 1 Satz:</p>
+<ol>
+<li>Evaluierungsgegenstand</li>
+<li>Evaluierungsmethode</li>
+</ol>
+<p>So wird klar, <em>was</em> Sie untersuchen und welche <em>Methode</em> Sie planen einzusetzen.</p>
+<h3 id="referenzen">Referenzen</h3>
+<p>Führen Sie hier erste Referenzen auf, welche Sie in der weiteren Ausarbeitung heranziehen (werden).</p>
+<h2 id="vorgehen">Vorgehen</h2>
+<p>IdR reichen Sie eine erste Fassung des Exposés zur Begutachtung durch Ihre Betreuerin/Ihren Betreuer ein. Diese wird Ihnen anschließend mit Anmerkungen versehen zur Überarbeitung zurück gegeben. Die überarbeitete Fassung muss alle im ersten Durchlauf adressierten Verbesserungen bzw. Anmerkungen aufgreifen und diese berücksichtigen.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Wichtig</strong>: Bitte <strong>markieren Sie alle Änderungen</strong> in der überarbeiteten Fassung (bspw. durch Hervorhebung, andere farbliche Darstellung oder die Verwendung des Überarbeitungs- bzw. Nachverfolgungsmodus im Textverarbeitungsprogramm). So ist für den Betreuer sofort ersichtlich, welche Stellen sich gegenüber der Erstversion geändert haben bzw. in welcher Form die Anmerkungen eingang in die Zweitfassung des Exposés gefunden haben.</p>
+</div>
+<!-- ## Ergebnisse
+
+Die folgenden Ergebnisse müssen für eine erfolgreiche Durchführung der Praktikumseinheit vorliegen:
+
+!!! abstract
+    __Ergebnisse:__
+
+    - [ ] 
+    - [ ]  -->
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "In Zwischenablage kopiert", "clipboard.copy": "In Zwischenablage kopieren", "search.result.more.one": "1 weiteres Suchergebnis auf dieser Seite", "search.result.more.other": "# weitere Suchergebnisse auf dieser Seite", "search.result.none": "Keine Suchergebnisse", "search.result.one": "1 Suchergebnis", "search.result.other": "# Suchergebnisse", "search.result.placeholder": "Suchbegriff eingeben", "search.result.term.missing": "Es fehlt", "select.version": "Version ausw\u00e4hlen"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.efa0ade1.min.js"></script>
+      
+        <script src="../javascript/extra.js"></script>
+      
+    
+  </body>
+</html>

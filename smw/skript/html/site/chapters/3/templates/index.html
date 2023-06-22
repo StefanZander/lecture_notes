@@ -1,0 +1,671 @@
+
+<!doctype html>
+<html lang="de" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.8">
+    
+    
+      
+        <title>Introduction to Templates - Semantisches Wissensmanagement mit Semantic MediaWiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.644de097.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.e6a45f82.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#2094f3">
+        
+      
+    
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="blue" data-md-color-accent="red">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#introduction-to-templates" class="md-skip">
+          Zum Inhalt
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Semantisches Wissensmanagement mit Semantic MediaWiki" class="md-header__button md-logo" aria-label="Semantisches Wissensmanagement mit Semantic MediaWiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Semantisches Wissensmanagement mit Semantic MediaWiki
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Introduction to Templates
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Suche" placeholder="Suche" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Suche">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Zurücksetzen" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Suche wird initialisiert
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Semantisches Wissensmanagement mit Semantic MediaWiki" class="md-nav__button md-logo" aria-label="Semantisches Wissensmanagement mit Semantic MediaWiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Semantisches Wissensmanagement mit Semantic MediaWiki
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        Startseite
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tagebuch/" class="md-nav__link">
+        Tagebuch der LVA
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../objectives/" class="md-nav__link">
+        Allgemeine Informationen
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../kapitel1/" class="md-nav__link">
+        Kapitel 1: Einführung
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2/overview/" class="md-nav__link">
+        Kapitel 2: Technische Grundlagen
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../overview/" class="md-nav__link">
+        Kapitel 3: Semantic MediaWiki
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../4/overview/" class="md-nav__link">
+        Kapitel 4: Erweiterungen
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../exercises/ue1/" class="md-nav__link">
+        Übung 1: Wissensmanagement
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../exercises/ue2/" class="md-nav__link">
+        Übung 2: Wissensmodellierung
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../exercises/ue3/" class="md-nav__link">
+        Übung 3: Semantic MediaWiki
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../exercises/ue4/" class="md-nav__link">
+        Übung 4: Vertiefung
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../semesterprojekt/" class="md-nav__link">
+        Semesterprojekt
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#function" class="md-nav__link">
+    Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#syntax" class="md-nav__link">
+    Syntax
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    Parameters
+  </a>
+  
+    <nav class="md-nav" aria-label="Parameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#specification-in-templates" class="md-nav__link">
+    Specification in Templates
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usage-in-transcluded-pages" class="md-nav__link">
+    Usage in Transcluded Pages
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creation" class="md-nav__link">
+    Creation
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<h1 id="introduction-to-templates">Introduction to Templates</h1>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>Task</strong><br />
+Please read all the details about Templates on the official MediaWiki pages<br />
+<a href="https://www.mediawiki.org/wiki/Help:Templates">https://www.mediawiki.org/wiki/Help:Templates</a></p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Excellent tutorial videos about templates</strong><br />
+YouTube hosts some excellent videos about the basic principles and formatting of templates</p>
+<ul>
+<li>Introduction to templates<br />
+<a href="https://www.youtube.com/watch?v=IJ4BM5MFXmc">https://www.youtube.com/watch?v=IJ4BM5MFXmc</a></li>
+<li>Basic formatting of templates<br />
+<a href="https://youtu.be/SsLahlGX0Ls">https://youtu.be/SsLahlGX0Ls</a></li>
+<li>Template Variables<br />
+<a href="https://youtu.be/X0QD5HT2qgc">https://youtu.be/X0QD5HT2qgc</a> </li>
+</ul>
+</div>
+<!-- ### Motivation
+
+
+
+### Terminology
+
+Transclusion
+: ...
+
+Template
+: ... -->
+
+<!-- Template
+
+Motivation
+
+Creation
+
+Usage -->
+
+<h3 id="function">Function</h3>
+<p>Templates allow for the inclusion of pre-defined content in wiki pages.</p>
+<p>This form of inclusion is called <strong>Transclusion</strong></p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Definition</strong>: &raquo;<strong>Transclusion</strong>&laquo;<br />
+Transclusion describes the process of embedding content defined in a template into another page. 
+Transcluded content can be parameterized by specifying individual values for the parameters defined in the template page.  </p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Explanatory Video about Transclusion</strong><br />
+An excellent explanatory video about transclusion with elaborations about the different transclusion commands is available at<br />
+<a href="https://www.youtube.com/watch?v=SsLahlGX0Ls&amp;list=PLw2YgbWET_ph1IGqIyiZD8w9FIHlYASui&amp;index=8">https://www.youtube.com/watch?v=SsLahlGX0Ls&amp;list=PLw2YgbWET_ph1IGqIyiZD8w9FIHlYASui&amp;index=8</a></p>
+</div>
+<dl>
+<dt>Templates</dt>
+<dd>&hellip; can be created as any wiki page, but must be defined in the <code>Template:</code> namespace</dd>
+<dd>&hellip; can contain almost any kind of wiki content</dd>
+<dd>&hellip; can have parameters the values of which will be inserted in the template&rsquo;s content during transclusion</dd>
+<dd>&hellip; often hold semantic properties or subobjects in Semantic MediaWiki</dd>
+</dl>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Definition</strong>: &raquo;<strong>Template</strong>&laquo;<br />
+A template is a wikipage defined in the <code>Template:</code> namespace that contains content that can be transcluded in other wiki pages.</p>
+</div>
+<dl>
+<dt>Templates are often used for <strong>harmonizing</strong><sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> semantic data and reducing semantic drift</dt>
+<dd>&hellip;by using pre-defined <strong>semantic properties</strong> in a template page</dd>
+<dd>&hellip;and by setting their allowed values through template <strong>parameters</strong> (often in conjunction with Page Forms)</dd>
+<dd>~&gt; So, every page that transcludes a template contains the same semantic data and structure</dd>
+</dl>
+<h3 id="syntax">Syntax</h3>
+<p>The following example displays a template with named parameters for entering new research grants</p>
+<!-- ``` diff
+<noinclude> 
+  Dies ist die Vorlage zum Anlegen allgemeiner Informationen über Unternehmen 
+  (bspw. im Zuge potentieller Industriekooperationen oder Use Case Partner).
+
+  Sie sollte im folgenden Format genutzt werden: 
+  <pre> 
+    {{FactSheet_Company 
+     |Name=
+     |Adresse= {Fließtext inkl. Wikisyntax} 
+     |Ansprechpartner_extern= {Name+Kontaktdaten; Mehrere Ansprechpartner durch ';' trennen } 
+     |Branche= {Auflistung relevanter Bereiche -- getrennt durch ';'}
+     |Zugehöriges Projekt= {Projekte in denen man bereits zusammengearbeitet hat -- getrennt durch ';'} 
+     |Sonstiges= {Fließtext inkl. Wikisyntax} 
+     |Website={URL der Website} 
+     |Ansprechpartner_intern={Name des internen Ansprechpartners -- getrennt durch ';'} }} 
+  </pre> 
+  Klicken Sie auf „Bearbeiten“, um den Quelltext der Vorlage anzusehen. 
+</noinclude>
+<includeonly>
+  [[Name::{{{Name|}}}]] 
+  [[Website::{{{Website|}}}]] 
+  [[Adresse::{{{Adresse|}}}]] [[Branche::{{{Branche|}}}]] 
+  [[Ansprechpartner_extern::{{{Ansprechpartner_extern|}}}]]|+sep=; 
+  [[Sonstiges::{{{Sonstiges|}}}]] 
+  [[Zugehöriges Projekt::{{{Zugehöriges Projekt|}}}]] |+sep=; 
+  [[Ansprechpartner_intern::{{{Ansprechpartner_intern|}}}]] |+sep=; 
+  [[Kategorie:Unternehmen]] 
+</includeonly>
+``` -->
+
+<div class="highlight"><pre><span></span><code><span class="w">&lt;noinclude&gt; </span>
+<span class="w">Dies ist die Vorlage zum Anlegen neuer nationaler und europäischer Förderprogramme. </span>
+<span class="w">Zum Anlegen eines neuen Förderprogramms einfach den folgenden Ausschnitt in den Quelltext </span>
+<span class="w">der neuen Seite kopieren und die Parameter entsprechend belegen: </span>
+<span class="w">&lt;pre&gt; </span>
+<span class="w"> </span> {{Förderprogramm <span class="w"></span>
+<span class="w"> </span>  |Name= <span class="w"></span>
+<span class="w"> </span>  |Akronym= <span class="w"></span>
+<span class="w"> </span>  |Webseite= <span class="w"></span>
+<span class="w"> </span>  |Deadline= <span class="w"></span>
+<span class="w"> </span>  |Beschreibung= <span class="w"></span>
+<span class="w"> </span>  |Sonstige_Informationen= <span class="w"></span>
+<span class="w"> </span> }} <span class="w"></span>
+<span class="w">&lt;/pre&gt; </span>
+<span class="w">Das Template sollte im oben dargestellten Format genutzt werden. </span>
+<span class="w">Bis auf das Attribut Deadline können alle Felder mit Freitext befüllt werden; </span>
+<span class="w">das Attribut Deadline erwartet Datumsangaben (nicht &#39;Ende September&#39; sondern &#39;30.09.2016&#39;). </span>
+<span class="w">&lt;/noinclude&gt; </span>
+<span class="w">&lt;!-- **** Hier beginnt das eigentliche Template **** --&gt; </span>
+<span class="w">&lt;includeonly&gt; </span>
+<span class="w"> </span> [[Category:Förderprogramm]] <span class="w"></span>
+<span class="w"> </span> [[Name::{{{Name|}}}]] <span class="w"></span>
+<span class="w"> </span> [[Akronym::{{{Akronym|}}}]] <span class="w"></span>
+<span class="w"> </span> [[Webseite::{{{Webseite|}}}]] <span class="w"></span>
+<span class="w"> </span> [[Deadline::{{{Deadline|}}}]] <span class="w"></span>
+<span class="w"> </span> [[Beschreibung::{{{Beschreibung|}}}]] <span class="w"></span>
+<span class="w"> </span> [[Sonstiges::{{{Sonstige_Informationen|}}}]] <span class="w"></span>
+<span class="w">&lt;/includeonly&gt;</span>
+</code></pre></div>
+
+<h3 id="parameters">Parameters</h3>
+<p>Templates can have <strong>parameters</strong> that allow for passing individual data to template content that is to be transcluded.</p>
+<h4 id="specification-in-templates">Specification in Templates</h4>
+<dl>
+<dt>Parameters within templates can either be specified</dt>
+<dd>&hellip; anonymously via the sequence of occurrence, i.e., <code class="highlight"><span class="w">{{{1}}}</span></code>, <code class="highlight"><span class="w">{{{2}}}</span></code>, etc.</dd>
+<dd>&hellip; via specific parameter names, i.e., <code class="highlight"><span class="w">{{{Parameter_name|default_value}}}</span></code></dd>
+</dl>
+<p>Please note that parameters in templates need to be specified with three curly brackets <code>{{{Prameter_name||Parameter_number}}}</code> (N.B. &lsquo;<code>||</code>&lsquo; means &lsquo;OR&rsquo; and is not part of the parameter syntax)
+<div class="highlight"><pre><span></span><code><span class="w">Syntax:</span>
+<span class="gh">=======</span><span class="w"></span>
+<span class="w">{{{Parameter_name}}}       OR       {{{Parameter_number}}}</span>
+
+<span class="w">Example:</span>
+<span class="gh">========</span><span class="w"></span>
+<span class="w">{{{project}}}              OR       {{{1}}}</span>
+</code></pre></div></p>
+<h4 id="usage-in-transcluded-pages">Usage in Transcluded Pages</h4>
+<h3 id="creation">Creation</h3>
+<p>Every template needs to a have a <strong>unique page name</strong> in the <code>Template:</code> namespace; they can be created as any other wikipage.</p>
+<p>Template URL: <code class="highlight"><span class="w">{Semantic_MediaWiki_URL}\Template:Template_name</span></code>
+Template Name: <code>Template_name</code></p>
+<div class="highlight"><pre><span></span><code><span class="w">&lt;!-- additional content --&gt;</span>
+<span class="w">...</span>
+<span class="w">[[property_1_name::{{{parameter_1_name}}}]]</span>
+<span class="w">[[property_2_name::{{{parameter_2_name}}}]]</span>
+<span class="w">... </span>
+<span class="w">&lt;!-- additional content --&gt;</span>
+</code></pre></div>
+
+<p>Usage on a different wiki page – without parameters specified:
+<div class="highlight"><pre><span></span><code><span class="w">{{Template_name}}</span>
+</code></pre></div></p>
+<p>Usage – with parameters specified on the page where the template it to be transcluded
+<div class="highlight"><pre><span></span><code><span class="w">{Template_name</span>
+<span class="w">|parameter1=value1</span>
+<span class="w">|parameter2=value2</span>
+<span class="w">|...</span>
+<span class="w">}}</span>
+</code></pre></div></p>
+<p>Templates can be used in any place in a page.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Always explicitly specify transcluding content</strong><br />
+It is recommended to explicitly markup the content in a template that is to be transcluded and separate it from supplemental or instructional content that describes the usage of the template.<br />
+MediaWiki provides distinct commands (<code>&lt;include_only/&gt;</code>, <code>&lt;no_include/&gt;</code>) to control the transclusion of template content and separate it from e.g. instructional content on how to use the template.</p>
+</div>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>Harmonizing means to make something consistent and compatible&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.5e67fbfe.min.js", "translations": {"clipboard.copied": "In Zwischenablage kopiert", "clipboard.copy": "In Zwischenablage kopieren", "search.config.lang": "de", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Suche", "search.result.more.one": "1 weiteres Suchergebnis auf dieser Seite", "search.result.more.other": "# weitere Suchergebnisse auf dieser Seite", "search.result.none": "Keine Suchergebnisse", "search.result.one": "1 Suchergebnis", "search.result.other": "# Suchergebnisse", "search.result.placeholder": "Suchbegriff eingeben", "search.result.term.missing": "Es fehlt", "select.version.title": "Version ausw\u00e4hlen"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.c44cc438.min.js"></script>
+      
+        <script src="../../../javascript/extra.js"></script>
+      
+    
+  </body>
+</html>
