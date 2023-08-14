@@ -36,6 +36,41 @@ copyright: Copyright &copy; 2017 - 2023 – Prof. Dr. Stefan Zander
 repo_url: https://github.com/StefanZander/lecture_notes/tree/master/hci/praktikum/html
 repo_name: /hci/praktikum
 
+edit_uri: docs/
+
 plugins:
   - search:
       lang: de
+  - git-revision-date-localized:
+      enable_creation_date: true
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - toc:
+      permalink: true
+  - tables
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.smartsymbols
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  
+
+  
