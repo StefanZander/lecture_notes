@@ -11,8 +11,7 @@
     Bitte vermerken Sie auch die Namen alle Teammitglieder auf dem Deckblatt.
 -->
 
-!!! warning
-    **Einreichetermin**  
+!!! warning "Einreichedatum"
     Die Projektmappe ist jeweils bis **MI, 24:00 Uhr** in der Woche nach dem jeweiligen Praktikumstermin in Moodle hochzuladen (Details siehe unten).
 
 ### Grundsätzliches zur Projektmappe
@@ -21,8 +20,8 @@ Die Projektmappe dokumentiert alle **Entwicklungsschritte** sowie Zwischen- und 
 Sie ist das Pendant zum **Product Backlog** in agilen Vorgehensmodellen und enthält darüber hinaus noch weitere wichtige und relevante Informationen. 
 Je nach Arbeitsauftrag sollen ebenso **Entwurfsentscheidungen**, **Verbesserungen** und **Reflektionen** dokumentiert werden. Die zu dokumentierenden Artefakte sind in den Aufgabenbeschreibungen der jewiligen Meilensteine aufgeführt.
 
-!!! Note
-    **Tipp:** Vergewissern Sie sich anhand des **Skripts**, was mit den geforderten Diagrammen und Dokumenten gemeint ist. Diese Diagramme und Dokumente zu verstehen ist eines der Lernziele der Veranstaltung und beurteilungsrelevant!
+!!! info "Diagramm- und Dokumentarten verstehen"
+    **Tipp:** Vergewissern Sie sich anhand der **Vorlesungsunterlagen**, was mit den geforderten Diagrammen und Dokumenten gemeint ist. Diese Diagramme und Dokumente zu verstehen ist eines der Lernziele der Veranstaltung und beurteilungsrelevant!
 
 
 ### Formale Anforderungen
@@ -40,8 +39,8 @@ Je nach Arbeitsauftrag sollen ebenso **Entwurfsentscheidungen**, **Verbesserunge
 
 - Die Projektmappe ist kontinuierlich zu pflegen und zum jeweiligen Abgabetermin im Gruppensolt in Moodle hochzuladen bzw. zu aktualisieren.
 
-!!! warning
-    **Achtung**: Die Nichteinhaltung der formalen Anforderungen führt zu **Punktabzügen**.
+!!! danger "Achtung: Punktabzug"
+    Die Nichteinhaltung der **formalen Anforderungen** führt zu **Punktabzügen**.
 
 
 ### Das Einreicheprocedere

@@ -1,4 +1,4 @@
-# Kennen lernen von Java, Android und Android Studio (--> zu Hause)
+# Kennen lernen von Flutter (--> zu Hause)
 
 
 !!! abstract

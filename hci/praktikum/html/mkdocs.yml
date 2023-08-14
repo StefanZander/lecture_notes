@@ -1,5 +1,12 @@
 site_name: HCI-Praktikumsaufgaben
 
+nav:
+  - Projektmappe: projektmappe.md
+  - Termin 0: termin0.md
+  - Termin 1: termin1.md
+
+
+
 theme:
   name: material
   palette:
