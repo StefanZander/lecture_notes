@@ -1,4 +1,4 @@
-# Welcome to MkDocs
+# Willkommen auf den HCI-Praktikumsaufgaben
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 

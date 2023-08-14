@@ -1,1 +1,41 @@
-site_name: My Docs
+site_name: HCI-Praktikumsaufgaben
+
+theme:
+  name: material
+  palette:
+    primary: blue
+    accent: deep orange
+  font:
+    text: Roboto Condensed
+  icon:
+    repo: fontawesome/brands/github
+    edit: material/pencil 
+    view: material/eye
+  language: de
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - toc.follow
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - search.share
+    - navigation.footer
+    - content.action.edit
+
+extra:
+  social:
+    - icon: fontawesome/brands/mastodon 
+      link: https://fbi.h-da.de/~s.zander
+      name: hda profile page of Prof. Dr. Stefan Zander
+
+copyright: Copyright &copy; 2017 - 2023 – Prof. Dr. Stefan Zander
+
+repo_url: https://github.com/StefanZander/lecture_notes/tree/master/hci/praktikum/html
+repo_name: /hci/praktikum
+
+plugins:
+  - search:
+      lang: de
