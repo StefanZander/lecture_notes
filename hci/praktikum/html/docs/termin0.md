@@ -1,20 +1,18 @@
 # Kennen lernen von Flutter (--> zu Hause)
 
 
-!!! abstract
-    **Lernziele**
-
+!!! success "Lernziele"
     - [x] Sie können einfache Android Projekte mit Android Studio anlegen
     - [x] Sie verstehen die Grundstruktur einer Android App
     - [x] Sie kennen den Lebenszyklus von Activities
     - [x] Sie kennen die wichtigsten Hilfsmittel in Android Studio
     - [x] Sie verstehen die Konzepte "Datenmodell" und "Persistenz" im Kontext einer Android-Anwendung
 
-!!! note
-    **Hinweis #1:** Wenn Sie zum Testen und Debuggen Ihr eigenes Handy verwenden wollen, bringen Sie bitte ein passendes USB-Kabel mit. Im Normalfall ist das Kabel des Ladegeräts dazu geeignet. Verbinden Sie das Handy via USB-Kabel mit dem Entwicklungs-PC (Ihr Notebook oder der Labor-PC), schalten Sie das Handy ein, aktivieren Sie Entwickleroptionen und darin USB-Debugging.
+!!! info "Debugging am eigenen Gerät"
+    Wenn Sie zum Testen und Debuggen Ihr eigenes Handy verwenden wollen, bringen Sie bitte ein passendes USB-Kabel mit. Im Normalfall ist das Kabel des Ladegeräts dazu geeignet. Verbinden Sie das Handy via USB-Kabel mit dem Entwicklungs-PC (Ihr Notebook oder der Labor-PC), schalten Sie das Handy ein, aktivieren Sie Entwickleroptionen und darin USB-Debugging.
 
-!!! note
-    **Hinweis #2:** Vermutlich werden Sie Android Studio und den Emulator auf Ihrem eigenen Laptop installieren; Infos hierzu finden Sie unter 
+!!! info "Konfiguration der Entwicklungsumgebung"
+    Vermutlich werden Sie Android Studio und den Emulator auf Ihrem eigenen Laptop installieren; Infos hierzu finden Sie unter 
 
     - <http://developer.android.com/sdk/index.html>
     - <http://developer.android.com/sdk/installing/adding-packages.html>
@@ -98,10 +96,8 @@ Fassen Sie alle persistenten Daten in einer Klasse zusammen und zeichnen Sie das
 
 Die folgenden Ergebnisse müssen für eine erfolgreiche Testierung der Einheit vorliegen:
 
-!!! abstract
-    __Ergebnisse:__
-
-    - [x] Verständnis, was es mit der Klasse `R.java` auf sich hat
-    - [x] Überschriebene Methoden `onPause`, `onStop`, `onResume`, `onCreate` und `onSaveInstanceState`
-    - [x] Dokumentierte Ausgabe der Testfälle
-    - [x] (*optional*) Klassendiagramm der zu persistierenden Daten
+!!! success "Ergebnisse"
+    - [ ] Verständnis, was es mit der Klasse `R.java` auf sich hat
+    - [ ] Überschriebene Methoden `onPause`, `onStop`, `onResume`, `onCreate` und `onSaveInstanceState`
+    - [ ] Dokumentierte Ausgabe der Testfälle
+    - [ ] (*optional*) Klassendiagramm der zu persistierenden Daten

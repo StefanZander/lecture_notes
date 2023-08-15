@@ -56,8 +56,8 @@ Je nach Arbeitsauftrag sollen ebenso **Entwurfsentscheidungen**, **Verbesserunge
 - Für **MS#3: App-Entwicklung und Präsentation** (während Termin 5) ist **KEINE EINREICHUNG** notwendig, da die Dokumentation hier in Form ihres App-Codes erfolgt.
 - Achten Sie streng darauf, die Einreichefrist einzuhalten. Verspätete Abgaben werden mit der Note 5 bewertet.
 
-!!! warning
-    **Achtung**: Versäumen Sie es, die Projektmappe rechtzeitig vor der Abgabe zu aktualisieren, so wird der jeweilige Meilenstein mit der **Note 5** bewertet. 
+!!! warning "Aktualisieren Sie die Projektmappe regelmäßig und rechtzeitig"
+    Versäumen Sie es, die Projektmappe rechtzeitig vor der Abgabe zu aktualisieren, so wird der jeweilige Meilenstein mit der **Note 5** bzw. **0 Punkte** bewertet. 
 
 
 
