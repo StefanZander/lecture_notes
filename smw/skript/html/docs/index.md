@@ -4,7 +4,7 @@
 
 **Belegnummer**: [30.2626](https://obs.fbi.h-da.de/mhb/modul.php?nr=30.2646&sem=20212)
 
-**Discord-Channel**: Link will be entered when available
+**Discord-Channel**: Link will be added when available
 
  <!-- Welcome to the course pages of the module "Introduction to Ontology-based Knowledge Management with Semantic MediaWiki". -->
 
