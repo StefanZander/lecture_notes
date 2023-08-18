@@ -24,6 +24,7 @@ theme:
     accent: deep orange
   font:
     text: Roboto Condensed
+    code: Roboto Mono
   icon:
     repo: fontawesome/brands/github
     edit: material/pencil 

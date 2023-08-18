@@ -27,6 +27,10 @@ theme:
   name: 'material'
   language: 'de'
 
+  font:
+    text: Roboto Condensed
+    code: Roboto Mono
+
   palette:
     primary: 'blue'
     accent: 'red'
@@ -39,8 +43,6 @@ theme:
 extra_css:
   - 'stylesheets/extra.css'
 
-extra_javascript:
-  - 'javascript/extra.js'
 
 markdown_extensions:
   - admonition
