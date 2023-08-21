@@ -1,0 +1,106 @@
+site_name: Das Praxismodul
+
+nav:
+  - 'Startseite': 'index.md'
+#  - 'NZSE-Tagebuch': 'tagebuch.md'
+#  - 'Corona-Modus': 'corona.md'
+#  - 'Arbeiten mit BBB': 'bbb.md'
+  - 'Allgemeine Informationen': 'allg_informationen.md'
+  - 'Start im Unternehmen': 'start_im_unternehmen.md'
+  - 'Abschlussbericht': 'bericht.md'
+  - 'Q&A': 'q_a.md'
+  - 'Das Exposé': 'expose.md'
+
+  
+
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      accent: red
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+        primary: deep purple
+        accent: red
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: red
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+
+  font:
+    text: Roboto Condensed
+    code: Roboto Mono
+  icon:
+    repo: fontawesome/brands/github
+    edit: material/pencil 
+    view: material/eye
+  language: de
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - toc.follow
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - search.share
+    - navigation.footer
+    - content.action.edit
+
+extra:
+  social:
+    - icon: fontawesome/brands/mastodon 
+      link: https://fbi.h-da.de/~s.zander
+      name: hda profile page of Prof. Dr. Stefan Zander
+
+copyright: Copyright &copy; 2017 - 2023 – Prof. Dr. Stefan Zander
+
+repo_url: https://github.com/StefanZander/lecture_notes/tree/master/hci/praktikum/html
+repo_name: /hci/praktikum
+
+edit_uri: docs/
+
+plugins:
+  - search:
+      lang: de
+  - git-revision-date-localized:
+      enable_creation_date: false
+      type: custom
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - toc:
+      permalink: true
+  - tables
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.smartsymbols
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  
+
+  
