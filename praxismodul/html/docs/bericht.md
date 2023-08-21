@@ -1,14 +1,14 @@
 # Der Praxisphasenbericht
 
 
-!!! warning
+!!! info "Ohne Abschlussbericht keine Testierung"
     Der Abschlussbericht ist neben dem Kolloquium wesentlicher Bestandteil für ein erfolgreiches Absolvieren der Praxisphase.
 
 ### Funktion
 
 Der Praxisbericht soll wesentliche Eckpunkte und Inhalte ihrer Praxisphase beschreiben. 
 
-Neben der inhaltlichen Darlegung der Themengebiete und Technologien ist uns eine **persönliche Reflektion des Erlebten** (--> Teil B) sehr wichtig.
+Neben der inhaltlichen Darlegung der Themengebiete und Technologien ist uns eine **persönliche Reflektion des Erlebten** und der **Lessons Lerned** (--> Teil B) sehr wichtig.
 
 Hierbei geht es *nicht* darum, sich in einem besonders guten Lichte darzustellen (*es findet keine Bewertung oder Beurteilung statt*), sondern ehrlich und offen über das Erlebte zu berichten und dieses zu reflektieren. Es ist völlig normal, dass nicht alle Dinge optimal verlaufen; umso wichtiger ist es deshalb, diese Dinge noch einmal zu überdenken und zu schauen, welche Lehren man aus dem Erlebten und dem eigenen Umgang damit ziehen kann. Das ist ein kontinuierlicher Lernprozess, der Sie Ihr ganzes Leben lang begleiten wird. Je offener und konstruktiver Sie damit umgehen, desto mehr profitieren Sie davon!
 
@@ -32,7 +32,7 @@ Die Struktur ist **nicht-normativ**, d.h., sie ist als Vorschlag zu verstehen. T
     * **Teil A: Technologien und Themenfelder**
         * Kurzer inhaltlicher Abriss der Praxisphase – an welchen Themen / Technologien / etc. haben Sie gearbeitet
         * Welche neuen Themen / Methoden / Arbeitsweisen haben Sie kennen gelernt
-    * **Teil B: Reflektion der eigenen Arbeit + Arbeitshaltung**
+    * **Teil B: Reflektion der eigenen Arbeit und der Arbeitshaltung**
         * Wie haben Sie die Praxisphase und die Arbeit erlebt
         * Was ist Ihnen gut gelungen 
         * Wo bzw. bei welchen Themen / in welchen Situationen hatten Sie Schwierigkeiten 
@@ -45,8 +45,7 @@ Die Struktur ist **nicht-normativ**, d.h., sie ist als Vorschlag zu verstehen. T
 * ggf. Anhänge 
     * Dinge die Sie als wichtig und relevant erachten, die aber nicht zwingend Bestandteil des Inhaltsteil sein müssen, sondern die dortigen Ausführungen ergänzen / untermauern / etc.
 
-!!! warning
-    **Wichtig:**  
+!!! danger "Einhaltung der formalen und inhaltliche Anforderungen"
     Sollte der Bericht in wesentlichen Punkten von obiger Struktur abweichen, wesentliche Inhalte nicht adressieren, oder in Form, Umfang, Darstellung erhebliche Mängel aufweisen, dann werden wir diesen nicht akzeptieren, womit Ihnen eine wesentliche Voraussetzung für die Anmeldung der Bachelorarbeit fehlt. Achten Sie also in jedem Fall auf eine ordentliche und gewissenhafte Darstellung – zumal Umfang und Aufwand wirklich überschaubar sind. 
 
 
@@ -54,9 +53,10 @@ Die Struktur ist **nicht-normativ**, d.h., sie ist als Vorschlag zu verstehen. T
 
 ## Ergebnisse
 
-Die folgenden Ergebnisse müssen für eine erfolgreiche Durchführung der Praktikumseinheit vorliegen:
+Die folgenden Ergebnisse müssen für eine erfolgreiche Testierung des Moduls vorliegen:
 
-!!! abstract
-    __Ergebnisse:__
+!!! success "Ergebnisse"
 
-    - [x] Praktiumsbericht, hochgeladen über den Moodle-Kurs der Veranstaltung
+    - [x] Praktiumsbericht als einzelne PDF-Datei, hochgeladen über den Moodle-Kurs der Veranstaltung
+    - [x] Teilnahme am Kolloquium; Vorbereitung eines Kurzvortrags
+    - [x] Senden des Zwischenberichts zur Praktikumshälfte  
