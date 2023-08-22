@@ -1,8 +1,6 @@
 # Häufig gestellte Fragen und Antworten
 
-!!! abstract
-    **Lernziele**
-
+!!! success "Lernziele"
     - [x] Sie kennen die organisatorischen und administrativen Rahmenbedingungen der Praxisphase
     - [x] Sie wissen, welche Nachweise Sie für die erfolgreiche Absolvierung der Praxisphase benötigen
     - [x] Sie wissen, welche Punkte Sie direkt mit Ihrem/er BetreuerIn klären und welche mit Ihrem Arbeitgeber oder dem Prüfungssekretariat  

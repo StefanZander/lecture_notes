@@ -11,8 +11,8 @@ nav:
   - 'Q&A': 'q_a.md'
   - 'Das Exposé': 'expose.md'
 
-  
-
+extra_css:
+  - stylesheets/extra.css
 
 theme:
   name: material
@@ -56,9 +56,9 @@ theme:
 
 extra:
   social:
-    - icon: fontawesome/brands/mastodon 
+    - icon: fontawesome/solid/person-biking 
       link: https://fbi.h-da.de/~s.zander
-      name: hda profile page of Prof. Dr. Stefan Zander
+      name: personal page of Prof. Dr. Stefan Zander at h_da
 
 copyright: Copyright &copy; 2017 - 2023 – Prof. Dr. Stefan Zander
 

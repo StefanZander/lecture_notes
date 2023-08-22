@@ -4,7 +4,7 @@
 !!! info "Ohne Abschlussbericht keine Testierung"
     Der Abschlussbericht ist neben dem Kolloquium wesentlicher Bestandteil für ein erfolgreiches Absolvieren der Praxisphase.
 
-### Funktion
+## Funktion
 
 Der Praxisbericht soll wesentliche Eckpunkte und Inhalte ihrer Praxisphase beschreiben. 
 
@@ -12,7 +12,7 @@ Neben der inhaltlichen Darlegung der Themengebiete und Technologien ist uns eine
 
 Hierbei geht es *nicht* darum, sich in einem besonders guten Lichte darzustellen (*es findet keine Bewertung oder Beurteilung statt*), sondern ehrlich und offen über das Erlebte zu berichten und dieses zu reflektieren. Es ist völlig normal, dass nicht alle Dinge optimal verlaufen; umso wichtiger ist es deshalb, diese Dinge noch einmal zu überdenken und zu schauen, welche Lehren man aus dem Erlebten und dem eigenen Umgang damit ziehen kann. Das ist ein kontinuierlicher Lernprozess, der Sie Ihr ganzes Leben lang begleiten wird. Je offener und konstruktiver Sie damit umgehen, desto mehr profitieren Sie davon!
 
-### Stil und Umfang
+## Stil und Umfang
 
 * **Umfang**: 5 - 8 Inhaltsseiten ohne Anhang, Inhaltsverzeichnis, etc.
 * **Sprache**: Deutsch oder Englisch
@@ -22,7 +22,7 @@ Hierbei geht es *nicht* darum, sich in einem besonders guten Lichte darzustellen
 * **Abgabedatum**: Unmittelbar nach Beendigung der Praxisphase
 
 
-### Struktur
+## Struktur
 
 Die Struktur ist **nicht-normativ**, d.h., sie ist als Vorschlag zu verstehen. Trotzdem empfehlen wir Ihnen, sich an den Strukturvorschlag zu halten. 
 

@@ -4,7 +4,7 @@ wir hoffen, Sie sind gut in die Praxisphase gestartet und haben nette KollegInne
 
 Wir werden Sie in den kommenden Wochen in Ihrer Praxisphase betreuen (die Zuteilung zwischen Betreuer:in und Studierenden erfolgt individuell). Betreuen heißt für uns, Ihnen für **Fragen zur Verfügung** zu stehen, Ihnen **Feedback zu geben** und Sie bei **Problemen zu unterstützen**. Die **Initiative** liegt jedoch auf Ihrer Seite, d.h. wenn Sie keine Fragen stellen werden wir nicht aktiv. Des Weiteren werden wir versuchen, bei Problemen oder offenen Punkten Ihre BetreuerInnen telefonisch oder online zu kontaktieren.
 
-### Unsere Erwartungen an Sie:
+## Unsere Erwartungen an Sie:
 
 * Zur **Mitte Ihrer Praxisphase** schicken Sie unaufgefordert eine kurze **Mail**, in der Sie auf folgende Punkte eingehen:
     * Was haben Sie bisher gemacht?
@@ -30,7 +30,7 @@ Besorgen Sie sich schon jetzt eine Vorlage. Im **Bericht** der Praxisphase geht 
 Falls Sie ein interessantes Thema für die **Bachelorarbeit** finden, dann fangen Sie bereits jetzt mit der Literaturrecherche (ACM, IEEE, SpringerLink etc.) an und dokumentieren Sie Ihre Suche, d.h. notieren Sie, nach welchen Stichworten/Kriterien/Filter Sie wo gesucht haben und warum Sie meinen, dass die Treffer etwas mit Ihrer Arbeit zu tun haben. 
 
 
-### Lebensweisheiten aus dem Arbeitsleben
+## Lebensweisheiten aus dem Arbeitsleben
 
 Zum Abschluss noch ein paar **Lebensweisheiten** aus dem Arbeitsleben – vielleicht ist für den einen oder anderen etwas dabei. Nichts davon ist allgemeingültig oder auf die Goldwaage zu legen...
 
