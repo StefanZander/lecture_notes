@@ -15,13 +15,11 @@
 
 Das **Anwendungsgebiet** (=*Gegenstandsbereich*) für das Semesterprojekt können Sie **frei wählen**.
 
-!!! note
-    Themen dürfen mehrfach bearbeitet werden!
+!!! info "Hinweis: Themen dürfen mehrfach bearbeitet werden!"
 
 Sofern Sie _kein_ eigenes Thema bearbeiten wollen, können Sie eines der im Folgendenen dargestellten Themen wählen:
 
-!!! example
-    __Themenliste__
+!!! example "Themenvorschläge"
 
     - Analyse der [FlexForm-Extension](https://www.open-csp.org/DevOps:Doc/FlexForm) mit Umsetzung vieler Beispiele
     - Analyse der Unterschiede zwischen den Erweiterungen [PageForms](https://www.mediawiki.org/wiki/Extension:Page_Forms) and [FlexForms](https://www.mediawiki.org/wiki/Extension:FlexForm)
@@ -62,11 +60,10 @@ Die Nummerierung lässt keine Rückschlüsse auf die Bearbeitungsreihenfolge zu.
 #### AP0: Installtation Semantic MediaWiki
 : Installation eines Semantic MediaWiki Systems mit einschlägigen Erweiterungen  
 
-    !!!note 
-        **Über den Fachbereich gehostete SMW-Instanzen**  
+    !!! info "Über den Fachbereich gehostete SMW-Instanzen"
         Falls Sie über keine eigene Installation verfügen, dann __kontaktieren Sie uns bitte__; wir werden anschließend eine, über den Fachbereich **gehostete Instanz** aufsetzen. Auf diese Instanz kann allerdings *nur* mittel **VPN** zugegriffen werden und das Einspielen von Erweiterungen (=Extensions) ist nicht möglich. Die Instanz ist aber mit allen relevanten Extensions ausgestattet bzw. entsprechend vorkonfiguriert.
 
-        Bitte kontaktieren Sie uns wenn Sie eine solche Instanz benötigen.
+        _Bitte kontaktieren Sie uns wenn Sie eine solche Instanz benötigen._
 
 #### AP1: Problembeschreibung und Wissensmanagementfragestellung
 <!-- AP1: Problembeschreibung und Wissensmanagementfragestellung -->
