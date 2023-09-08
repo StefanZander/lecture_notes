@@ -185,9 +185,11 @@ div.md-content a:hover:not(.md-footer-nav__link) {
     font-feature-settings: 'liga';
   }
 
+@media (max-width: 768px) {
   #semantisches-wissensmanagement-im-unternehmen-konzepte-technologien-anwendung {
     font-size: 1.5rem;
   }
+}
 
 /* }  */
 /* end SCREEN ONLY */ 
