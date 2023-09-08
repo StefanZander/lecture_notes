@@ -2,8 +2,7 @@
 
 # Technologische Grundlagen semantischer Wissensrepräsentationsmodelle
 
-!!! abstract
-    **Leitfragen**  
+!!! question "Leitfragen"
 
     - Wie lässt sich das Wissensmanagement mit technischen Maßnahmen unterstützen ?
     - Warum sind semantische Wissensgraphen geeignete Datenstrukturmodelle ?
@@ -38,7 +37,8 @@
 - [Lektion 3: Welche Rolle spielt der Mensch im Wissensmanagement ?](...) -->
 
 
-Die o.g. Gliederung ist Bestandteil des Foliensatzes zum 2. Kapitel. Hier wird aus Demonstrations- und Verständlichkeitsgründen ausnahmsweise auf einen Foliensatz zurück gegriffen (insbesondere, um den schrittweisen Aufbau von Wissensgraphen zu demonstrieren).
+Die o.g. Gliederung ist Bestandteil des Foliensatzes zum 2. Kapitel. 
+<!-- Hier wird aus Demonstrations- und Verständlichkeitsgründen ausnahmsweise auf einen Foliensatz zurück gegriffen (insbesondere, um den schrittweisen Aufbau von Wissensgraphen zu demonstrieren). -->
 
 Der Foliensatz zu Kapitel 2 ist im Moodle-Kurs der Veranstaltung hinterlegt. 
 : [Kapitel 2: Technische Grundlagen der Wissengraphmodellierung](https://lernen.h-da.de/mod/resource/view.php?id=359550)

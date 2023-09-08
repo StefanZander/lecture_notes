@@ -10,9 +10,9 @@ Nach dem Absolvieren der Lehrveranstaltung sind die Studierende in der Lage...
 * [x] ...die relevanten Entitäten eines **Gegenstandbereichs** und deren Beziehungen untereinander zu formalisieren und in einen Ontologie-basierten Wissensgraphen zu überführen
 * [x] ...leichtgewichtige Ontologien und semantische Wissensgraphen mittels der Software **Semantic MediaWiki** zu implementieren und zu verfeinern
 
-!!! abstract
-    **Gesamtziel der Veranstaltung**  
+!!! success "Gesamtziel der Veranstaltung"
     Sie sollen die Fähigkeit besitzen, grundlegende Sprach- und Entwurfskonzepte aus dem Bereich der semantischen Wissensgraphmodellierung auf ein bestehendes Wissensmanagementproblem anwenden und mittels der Software Semantic MediaWiki umsetzen zu können.
+
 
 
 ### Lehrveranstaltungsinhalte
@@ -33,8 +33,10 @@ Konkret werden Inhalte aus folgenden **Fachgebieten** behandelt:
 Im 2. Teil: Zusammenführung und Anwendung aller Inhalte in einem **Semesterprojekt**.
 
 
+
 ### Zeitlicher Ablauf
 
+!!! danger "Nicht relevant im Rahmen der Durchführung als Blocklehrveranstaltung."
 
 - Woche 1: Kick-Off und Organisatorisches  
 - Woche 2: Einführung in das organisationale Wissensmanagement  
@@ -62,7 +64,9 @@ Woche 13: Prüfungsleistung   -->
 
 ### Durchführung
 
-Durchführung im WiSe 2022 als Hybrid-Lehrveranstaltung mit Unterstützung von **BigBlueButton (BBB)**
+!!! danger "Nicht relevant im Rahmen der Durchführung als Blocklehrveranstaltung."
+
+Durchführung im WiSe 2023/2024 als Block-Lehrveranstaltung mit Unterstützung von **BigBlueButton (BBB)**
 : VO: jeweils **dienstags** im 1. Block in **D14/04.04** 
 : * In der VO besprechen wir inhaltliche Themen inkl. Demonstration praktischer Beispiele
 : UE: online via **BBB** als **Praktikum-as-a-Service (PaaS)** mit 2 Slots 
@@ -71,7 +75,7 @@ Durchführung im WiSe 2022 als Hybrid-Lehrveranstaltung mit Unterstützung von *
 
 
 Lehrveranstaltungsunterlagen
-: ...verfügbar als [Onlineskript](https://projects.fbi.h-da.de/~s.zander/smw/html) 
+: ...verfügbar als [Onlineskript](https://zander-smw.netlify.app/) 
 : ...und im [Moodle-Kurs](https://lernen.h-da.de/course/view.php?id=11623) der LVA
 
     * ergänzende Unterlagen (Paper / Foliensätze / etc.)
@@ -79,30 +83,33 @@ Lehrveranstaltungsunterlagen
     * Festlegung der Teams für das Semesterprojekt
     * Ankündigungs- und Diskussionsforum
 
-    !!! warning
-        **Registrierung im Moodle-Kurs**  
+    !!! warning "Registrierung im Moodle-Kurs notwendig" 
         Die Registrierung im Moodle-Kurs der LVA ist Pflicht, da auf dieser Grundlage die Gruppenzuteilung sowie das Semesterprojekt organisiert wird! 
         __Wer sich nicht registriert erhält keine Modulnote am Semesterende!__
 
 
 ### Übung als Praktikum-as-a-Service
 
+!!! danger "Nicht relevant im Rahmen der Durchführung als Blocklehrveranstaltung."
+
 Parallel zur Vorlesungseinheit sind selbständig **Übungsaufgaben** zu bearbeiten  
 
-- in denen das Wissen der Vorlesung vertieft und angewendet werden muss
-- diese bereiten auf das Semesterprojekt vor
-- dienen als Grundlage für die Prüfung am Semesterende
+- ...in denen das Wissen der Vorlesung vertieft und angewendet werden muss
+- ...diese bereiten auf das Semesterprojekt vor
+- ...dienen als Grundlage für die Prüfung am Semesterende
+- ...fungieren als **PVL**
 <!-- - bieten die Möglichkeit **Bonuspunkte** für die theor. Prüfung zu sammeln -->
-- fungieren als **PVL**
 
-!!! warning
-    Die Übungsaufgaben sind verpflichtend von allen Teilnehmenden zu bearbeiten und Voraussetzung für einen pos. Abschluss des Moduls. Eine **Nichtbearbeitung** der Übungsaufgaben führt automatisch zu einem Nichtbestehen.
+!!! warning "Verpflichtende Bearbeitung der Übungsaufgaben"
+    Die Übungsaufgaben sind verpflichtend von allen Teilnehmenden zu bearbeiten und Voraussetzung für einen positiven Abschluss des Moduls.  
+    Eine **Nichtbearbeitung** der Übungsaufgaben führt automatisch zu einem Nichtbestehen.
 
 Die Übungen werden im **Praktikum-as-a-Service-Modus** durchgeführt, d.h., es besteht _keine_ Anwesenheitspflicht und es ist den Teilnehmenden freigestellt, wann und in welchem Rahmen die Übungsaufgaben bearbeitet werden. Die im Stundenplan vorgesehenen Slots dienen als freiwillig nutzbares Angebot für Studierende, um Unterstützung bzw. Hilfestellung bei der Bearbeitung der Aufgaben zu erhalten oder offene Fragen zu klären.
 
 Die **Übungsergebnisse** werden in den VO-Einheiten besprochen. Hierzu stellen die Teilnehmenden ihre Lösungen im Plenum vor, die wir dann gem. diskutieren.
+<!-- Für die Vorstellung von besonders gut ausgearbeiteten Lösungen besteht die Möglilchkeit, **Bonuspunkte** für die theoretische Leistungsfeststellung zu erhalten.  -->
 
-Für herausragende Lösungen erhalten Sie **Bonuspunkte** für die theoretische Prüfung am Semesterende. Hierbei muss es sich jedoch um Lösungen handeln, die _weit über dem zu erwartenden Durchschnitt_ liegen, d.h., die eine **hohe kognitive Leistung** widerspiegeln. Für erwartbare Lösungen mit überschaubarem Aufwand erhalten Sie _keine_ Bonuspunkte. Damit Sie Bonuspunkte erhalten, müssen Sie die Lösung im Plenum vorstellen.
+Für herausragende Lösungen erhalten Sie **Bonuspunkte** für die theoretische Prüfung am Semesterende. Hierbei muss es sich jedoch um Lösungen handeln, die _weit_ über dem zu erwartenden Durchschnitt liegen, d.h., die eine **hohe kognitive Leistung** widerspiegeln. Für erwartbare Lösungen mit überschaubarem Aufwand erhalten Sie _keine_ Bonuspunkte. Damit Sie Bonuspunkte erhalten, müssen Sie die Lösung im Plenum vorstellen.
 
 <!-- ~~Die Bearbeitung der ersten beiden Übungsaufgaben ist __PVL__ und damit Pflicht für ein erfolgreiches Absolvieren der LVA.~~ -->
 <!-- Die Bearbeitung der Übungsaufgaben wird dringend empfohlen. Für eine konsequente und korrekte Bearbeitung aller Übungsaufgaben gibt es einen Bonus auf die Abschlussnote.  -->
@@ -112,8 +119,7 @@ Für herausragende Lösungen erhalten Sie **Bonuspunkte** für die theoretische 
 
 Einreichung der Übungsaufgaben bis **Montag, 24:00 Uhr** in der darauf folgenden Vorlesungswoche via **Moodle**
 
-!!! warning
-    **Verspätete Abgaben**  
+!!! danger "Verspätete Abgaben"
     Verspätete Abgaben und/oder Abgaben via Email werden nicht akzeptiert. 
 
 <!-- Mehr Infos finden sich auf den jeweiligen Übungsseiten.  -->
@@ -126,8 +132,8 @@ Die **Gesamtbeurteilung** der LVA setzt sich aus **2 Teilleitungen** zusammen
 : __70% Projektarbeit__ und __Präsentation__ (--> Semesterprojekt)
 : __30% Prüfung__ (idR schrifltich) am Semesterende
 
-    !!! warning
-        **Wichtig**: Trotz der 70/30-Gewichtung ist eine Note von 4,0 oder besser in _beiden_ Teilleistungen zwingende Voraussetzung für eine erfolgreiche Beurteilung, ebenso wie die Bearbeitung der Übungsaufgaben. 
+    !!! info "Hinweis zur Gewichtung"
+        Trotz der 70/30-Gewichtung ist eine **Note** von **4,0** oder besser in _beiden_ Teilleistungen zwingende Voraussetzung für eine erfolgreiche Beurteilung, ebenso wie die Bearbeitung der Übungsaufgaben. 
 
 <!-- : __30%__ Beurteilung der ausgearbeiteten __Übungsaufgaben__
     : jeweils bis spätestens Sonntag, 24:00 Uhr der entspr. Vorlesungswoche  über Moodle hochzuladen 
@@ -136,8 +142,7 @@ Die **Gesamtbeurteilung** der LVA setzt sich aus **2 Teilleitungen** zusammen
 Für jede Teilleistung wird eine **Note** vergeben, die mit der jeweiligen Gewichtung in die **Gesamtnote** eingeht.
 
 
-!!! note
-    **Voraussetzung für eine erfolgreiche Absolvierung**
+!!! success "Voraussetzung für eine erfolgreiche Absolvierung"
 
     1. Regelmäßige Teilnahe an den Veranstaltungen
     2. Aktive Mitarbeit im Semesterprojekt
@@ -148,7 +153,7 @@ Für jede Teilleistung wird eine **Note** vergeben, die mit der jeweiligen Gewic
 
 ### Semesterprojekt
 
-* Durchführung in __3er Teams__. Die Gruppen-Konstellation wird in der letzten VO-Einheit festgelegt und durch die TeilnehmerInnen im Moodle-Kurs hinterlegt ([-->Link](https://lernen.h-da.de/mod/data/view.php?id=357528))
+* Durchführung in __3-4er Teams__. Die Gruppen-Konstellation wird in der letzten theoretischen VO-Einheit festgelegt und durch die TeilnehmerInnen im Moodle-Kurs hinterlegt ([-->Link](https://lernen.h-da.de/mod/data/view.php?id=357528))
 * Praktische Umsetzung eines Wissensmanagementproblems mittels **Semantic MediaWiki**
 * Die Festlegung des Wissensmanagementproblems und der Domäne erfolgt in Abstimmung mit dem Betreuer
 * **Präsentation** der Umsetzung am Semesterende via BBB

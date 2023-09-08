@@ -1,7 +1,6 @@
 # Kapitel 1: Einführung in das Wissensmanagement
 
-!!! abstract
-    **Leitfragen**  
+!!! question "Leitfragen"
 
     - Was ist Wissen ?
     - Warum benötigen Unternehmen ein funktionierendes Wissensmanagement ?
@@ -19,11 +18,9 @@
 Der aktualisierte **Foliensatz** zu Kapitel 1 ist im Moodle-Kurs der Veranstaltung hinterlegt. 
 : [Kapitel 1: Einführung in das Wissensmanagement](https://lernen.h-da.de/mod/resource/view.php?id=517924)
 
-!!! warning
-    **Neue Foliensätze**  
+!!! warning "Neue Foliensätze"
     Seit dem SoSe 2021 sind die **Lehrinhalte in Folienform** aufbereitet. 
-    Die bestehenden Skript-Inhalte bleiben für das Selbststudium weiterhin online verfügbar, werden jedoch nicht ergänzt oder überarbeitet.  
-    Prüfungsrelevant sind die hier verlinkten bzw. im Moodle-Kurs hinterlegten Foliensätze.
+    Die bestehenden Skript-Inhalte bleiben für das Selbststudium weiterhin online verfügbar, werden jedoch nicht ergänzt oder überarbeitet. **Prüfungsrelevant** sind die hier verlinkten bzw. im Moodle-Kurs hinterlegten Foliensätze.
 
 
 ### Gliederung

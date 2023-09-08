@@ -47,3 +47,6 @@ Das Exposé ist Bestandteil des Anmeldeprozesses einer Abschlussarbeit und liefe
 
 ----
 Diese Unterlagen wurden mit [MkDocs](http://mkdocs.org), [Markdown](https://en.wikipedia.org/wiki/Markdown) und [Visual Studio Code](https://code.visualstudio.com/) erstellt und mit dem individuell angepassten [Material Theme for MkDocs](https://squidfunk.github.io/mkdocs-material/) gerendert.
+
+<!-- Excellent site with lots of ranked mkdocs plugin 
+https://github.com/mkdocs/catalog -->

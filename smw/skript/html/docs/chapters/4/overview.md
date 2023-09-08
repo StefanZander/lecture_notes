@@ -1,8 +1,7 @@
 # Kapitel 4: Erweiterungen und Fortschrittliche Modellierungskonzepte
 
 
-!!! abstract
-    **Leitfragen**  
+!!! question "Leitfragen"
 
     - Durch welche technischen Maßnahmen können FachanwenderInnen am Aufbau semantischer Wissensgraphen beteiligt werden ?
     - Wie lassen sich n-äre Beziehungen in Semantic MediaWiki abbilden ?
@@ -11,15 +10,14 @@
 
 
 Die Foliensätze zu **Kapitel 4** sind im Moodle-Kurs der Veranstaltung hinterlegt. 
-: [Kapitel 4a: Fortschrittliche Modellierungstechniken in Semantic MediaWiki](https://lernen.h-da.de/mod/resource/view.php?id=529554)
-: [Kapitel 4b: Erweiterungen zur kollaborativen Ontologieerstellung und Tipps](https://lernen.h-da.de/mod/resource/view.php?id=529565)
+
+- [Kapitel 4a: Fortschrittliche Modellierungstechniken in Semantic MediaWiki](https://lernen.h-da.de/mod/resource/view.php?id=529554)
+- [Kapitel 4b: Erweiterungen zur kollaborativen Ontologieerstellung und Tipps](https://lernen.h-da.de/mod/resource/view.php?id=529565)
 
 
-!!! warning
-    **Neue Foliensätze**  
+!!! warning "Neue Foliensätze"
     Seit dem SoSe 2021 sind die **Lehrinhalte in Folienform** aufbereitet. 
-    Die bestehenden Skript-Inhalte bleiben für das Selbststudium weiterhin online verfügbar, werden jedoch nicht ergänzt oder überarbeitet.  
-    Prüfungsrelevant sind die hier verlinkten bzw. im Moodle-Kurs hinterlegten Foliensätze.
+    Die bestehenden Skript-Inhalte bleiben für das Selbststudium weiterhin online verfügbar, werden jedoch nicht ergänzt oder überarbeitet. **Prüfungsrelevant** sind die hier verlinkten bzw. im Moodle-Kurs hinterlegten Foliensätze.
 
 
 ### Gliederung

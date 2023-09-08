@@ -1,0 +1,51 @@
+.md-content__inner.md-typeset h3 {
+  /* background-color: black; */
+  /* display: inline-flex; */
+  /* color: rgb(50, 174, 112); */
+  color: #1cab7e;
+  /* color: var(--tip_border_color); */
+  font-family: 'Barlow Condensed';
+  font-size: 1.7rem;
+  font-weight: 400; /* was 900 for Zilla Slab /*
+  margin-top: 2rem;
+  padding-bottom: 0.15em;
+  /* padding-left: 0.5rem; */
+  /* padding-right: 0.5rem; */
+}
+
+.md-content__inner.md-typeset h2 {
+  /* background-color: black; */
+  /* color: var(--h2-primary-color);  */
+  color: var(--md-primary-fg-color--light);    
+  font-weight: 300; 
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+  padding-left: 0.15rem;
+  font-size: 2.0rem; 
+  border-top: 0.15rem solid var(--md-primary-fg-color--light);
+  border-bottom: 0.15rem solid var(--md-primary-fg-color--light);
+}
+
+/* USE THIS FOR ZILLA SLAB */
+/* .md-content__inner.md-typeset h1 {
+  font-size: 3rem;
+} */
+
+
+/* USE THIS FOR BARLOW FONTS */
+.md-content__inner.md-typeset h1 {
+  font-size: 3rem;
+  font-family: 'Barlow Condensed';
+  font-weight: 400; 
+}
+
+:root {
+  --h2-primary-color: #888;
+  --h2-secondary-color: #888;
+}
+
+
+/* SZA: Admonitions have the same textsize as usual text */
+.md-typeset .admonition {
+  font-size: .9em;
+}
