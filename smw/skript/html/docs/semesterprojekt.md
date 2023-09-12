@@ -2,13 +2,13 @@
 
 
 ### Allgemeines
-: Durchführung in **3er Teams**; Konstellation und Thema bitte in __Moodle__ hinterlegen ([-->Link](https://lernen.h-da.de/mod/data/view.php?id=357528))
+: Durchführung in **3-4er Teams**; Konstellation und Thema bitte in __Moodle__ hinterlegen ([-->Link](https://lernen.h-da.de/mod/data/view.php?id=357528))
 
 : **Praktische Umsetzung** eines Wissensmanagementproblems mittels Semantic MediaWiki mit allen verfügbaren Sprachelementen und einschlägigen Erweiterungen
 
 : Die Festlegung des **Wissensmanagementproblems** und der Domäne (=Anwendungsgebiet) erfolgt in Abstimmung mit dem Betreuer
 
-: **Präsention** der Umsetzung am Semesterende via BBB
+: **Präsention** der Umsetzung am Semesterende
 
 
 ### Themen

@@ -130,7 +130,7 @@ Einreichung der Übungsaufgaben bis **Montag, 24:00 Uhr** in der darauf folgende
 
 Die **Gesamtbeurteilung** der LVA setzt sich aus **2 Teilleitungen** zusammen
 : __70% Projektarbeit__ und __Präsentation__ (--> Semesterprojekt)
-: __30% Prüfung__ (idR schrifltich) am Semesterende
+: __30% Prüfung__ (idR schrifltich) am Semester-/Veranstaltungsende
 
     !!! info "Hinweis zur Gewichtung"
         Trotz der 70/30-Gewichtung ist eine **Note** von **4,0** oder besser in _beiden_ Teilleistungen zwingende Voraussetzung für eine erfolgreiche Beurteilung, ebenso wie die Bearbeitung der Übungsaufgaben. 
@@ -151,12 +151,25 @@ Für jede Teilleistung wird eine **Note** vergeben, die mit der jeweiligen Gewic
     5. Bearbeitung und Einreichung der Übungsaufgaben 
 
 
+
+### Die Beteiligungsmatrix 
+
+Zusätzlich ist im Anschluss an die Abnahme der Projektarbeit eine **Beteiligungsmatrix** einzureichen, welche die Beiträge der Gruppenmitglieder zum Semsterprojekt prozentual quantifiziert. Auf Basis der quantifizierten Beiträge der Gruppenmitglieder erfolgt dann ggf. eine Auf- oder Abwertung der Semesterprojektnote. Hintergrund ist besonderes und über das erwartbare Maß hinausgehendes Engagement zu würdigen. Entsprechend erfolgt ggf. eine Abwertung bei Mitgliedern, deren Gesamtbetrag merklich unter dem durchschnittlichen Engagement liegt. Die Hohheit bzw. **Verantwortung** liegt bei den jeweiligen Gruppen selbst, d.h., die Gruppen regeln die Aufteilung selbständig und intern. 
+
+Sollten Sie bei diesem Vorgang **Unterstützung** oder **Moderation** benötigen, dann wenden Sie sich gerne an mich. 
+
+Die Erfahrung aus mehreren Semestern und unterschiedlichen Lehrveranstaltungen zeigt, dass die Beteilungsmatrix zu einer faireren und ausgewogeneren Beurteilung führt.
+
+
+
+
+
 ### Semesterprojekt
 
 * Durchführung in __3-4er Teams__. Die Gruppen-Konstellation wird in der letzten theoretischen VO-Einheit festgelegt und durch die TeilnehmerInnen im Moodle-Kurs hinterlegt ([-->Link](https://lernen.h-da.de/mod/data/view.php?id=357528))
 * Praktische Umsetzung eines Wissensmanagementproblems mittels **Semantic MediaWiki**
 * Die Festlegung des Wissensmanagementproblems und der Domäne erfolgt in Abstimmung mit dem Betreuer
-* **Präsentation** der Umsetzung am Semesterende via BBB
+* **Präsentation** der Umsetzung am Semester-/Veranstaltungsende
 * Mehr Informationen finden sich auf der [Semesterprojektseite](semesterprojekt.md)
 
 
