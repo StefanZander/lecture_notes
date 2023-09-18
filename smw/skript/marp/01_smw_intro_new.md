@@ -67,16 +67,16 @@ Kapitel 1: Einführung in das Wissensmanagement {.lightgreen .Big .skip}
 # Von der Industrie- zur Wissensgesellschaft
 <!-- beschäftigungsanteil_inland -->
 
-::: twocolumns
-Mitte der 1960er Jahre waren über __50% aller Beschäftigten__ in der Industrie tätig.
+::: twocolumns small
+Mitte der 1960er Jahre – __50% aller Beschäftigten__ in der Industrie tätig.
 
 Seit dieser Zeit hat sich die __Produktivität__ durch Automatisierung __versechsfacht__(!) und durch die Globalisierung hat sich die Massenproduktion der meisten Güter weltweit verteilt.
 
-Inzwischen ist die Mehrheit der Bevölkerung im **Dienstleistungsbereich** beschäftigt.
+Mehrheit der Bevölkerung inzwischen im **Dienstleistungsbereich** beschäftigt.
 
 Durch die zunehmende Digitalisierung werden __wissensbasierte Dienstleistungen__ zum dominanten Wirtschaftssegment.
 
-Während vor wenigen Jahren noch von der Informationsgesellschaft gesprochen wurde, welche die Industriegesellschaft beerben sollte, ist es heute Konsens, dass die Ablösung der Industriegesellschaft treffender durch den Begriff der __Wissensgesellschaft__ umschrieben werden sollte.
+Während vor wenigen Jahren noch von der Informationsgesellschaft gesprochen wurde, welche die Industriegesellschaft beerben sollte, ist es heute Konsens, dass die Ablösung der Industriegesellschaft treffender durch den Begriff der *__Wissensgesellschaft__* umschrieben werden sollte.
 
 ![](../html/docs/figures/wissensgesellschaft.jpg)
 :::
@@ -92,12 +92,12 @@ Quelle: Bundeszentrale für politische Bildung: Wissensgesellschaft – Eine Ide
 
 :::: columns 
 ::: single small
-__Sektoraler Wandel in Deutschland, Großbritannien und der EU__
+__Sektoraler Wandel in Deutschland, Großbritannien und der EU__ :fas-earth-europe:
 
 Der Anteil der _verarbeitenden Industrie_ (in Deutschland mit den wichtigen Sektoren Automobil, Chemie, Pharmazeutika und dem Bereich der Investitionsgüter wie Maschinenbau, elektrische Ausrüstungen etc.) an der gesamtgesellschaftlichen Wertschöpfung schrumpft, meist verbunden mit einem _Abbau von Arbeitsplätzen_ in diesem Sektor. Das ist ein langfristiger Trend, der freilich in den letzten zehn Jahren in Deutschland aufgehalten wurde, während er sich in der _EU ungebremst fortsetzte_. In Deutschland hat sich der Anteil des verarbeitenden Gewerbes an der Bruttowertschöpfung von 37 Prozent in 1971 auf _22,6 Prozent in 2011 verringert_. Zum Vergleich: 1979 betrug im Großbritannien der industrielle Anteil 33 Prozent, 2011 lag er bei 10,8 Prozent. In diesem Zeitraum entstand in der Londoner City die moderne Finanzwirtschaft. In der EU fiel der entsprechende Anteil im Zeitraum von 2001 bis 2011 von 18 auf 15,5 Prozent.
 :::
 ::: single small
-**Von Produktion zu Dienstleistung -- das Beispiel Automobilindustrie**
+**Von Produktion zu Dienstleistung – das Beispiel Automobilindustrie** :fas-car:
 
 Die Automobilindustrie produziert zwar noch immer Automobile. Die Aufgabe besteht heute aber zunehmend darin, nicht das physische Produkt Auto zu verkaufen, sondern _Mobilitätsbedürfnisse der Kunden_ zu befriedigen. Die Menschen wollen das Auto nicht mehr unbedingt besitzen, sondern es dort nutzen, wo ihnen Fahrrad, Bahn oder Bus nicht ausreichen. Die Lösung dieser Fragen – zum Beispiel durch Car-Sharing eingebunden in weitere Nutzungsmöglichkeiten – erfordert _kommunikative und logistische Leistungen, die weit über die Herstellung der physischen Produkte hinausgehen_. Es geht um Kommunikation mit den Kunden und um Kooperation mit ihnen, die in gewisser Weise zu Koproduzenten des Mobilitätsangebots werden.
 ::::
@@ -110,21 +110,21 @@ Quelle: Bundeszentrale für politische Bildung: Wissensgesellschaft – Eine Ide
 ---
 # Die Wissensgesellschaft
 
-:::: equalcolumns
-::: 1st-column
-**Früher**:
-- Informationen werden von wenigen asugewählten »ExpertInnen« bereitgestellt
+::::: columns
+:::: single
+**Früher** :fas-tractor: :
+- Informationen werden von wenigen ausgewählten »ExpertInnen« bereitgestellt
 - Passive Rolle der Nutzenden: überwiegend rezeptiver Prozess der Informationsrecherche
 - __Leitgedanke__: 
     ==Wissen ist statisch und wird wie ein Gut von einer Person zur anderen übertragen==
-:::
-::: 2nd-column
-**Heute**:
+::::
+:::: single
+**Heute** :fas-computer: :
 - Informationen werden von _allen Nutzenden_ bereitgestellt
 - Aktive Rolle der Nutzenden: _selbstgesteuerter, konstruktiver Prozess, fügt Informationen hinzu, verknüpft Informationen; lebt "digital literacy"_
 - __Leitgedanke__: 
     ==Wissen ist dynamisch und wird von Akteuren auf Grund von Erfahrungen konstruiert und auf Basis praktischer Bedürfnisse laufend verändert==
-::::
+:::::
 
 <!-- | Industriegesellschaft |  | Wissensgesellschaft |
 | --- | :---: | --- |
@@ -132,8 +132,8 @@ Quelle: Bundeszentrale für politische Bildung: Wissensgesellschaft – Eine Ide
 | Hierarchie/Kontrolle | -- |  Vernetzung/Fokussierung |
 | Produkte | -- | Problemlösungen |  -->
 
-::: blue skip
-Gefragt ist nicht formelles, abrufbares Wissen, sondern Formen "__lebendigen Wissens__", wie Erfahrungswissen, Urteilsvermögen, Selbstorganisation, etc. Nicht alles Wissen, aber wissen, wo es zu finden ist. Wichtig werden Fähigkeiten wie die Generierung, Konstruktion und Auswahl von Wissen.
+::: bluebox skip
+Gefragt ist nicht formelles, abrufbares Wissen, sondern Formen "__lebendigen Wissens__", wie *Erfahrungswissen*, *Urteilsvermögen*, *Selbstorganisation*, etc. Nicht alles Wissen, aber wissen, wo es zu finden ist. Wichtig werden Fähigkeiten wie die Generierung, Konstruktion, Selektion und Vernetzung von Wissen.
 :::
 
 ::: footnotes
@@ -147,7 +147,7 @@ Quelle: Wilmar Raddatz, "Wissensgesellschaft – Was ist Wissen?"; abrufbar unte
 
 
 ::: centerbox BIGSKIP
-| Industriegesellschaft |  | Wissensgesellschaft |
+| Industriegesellschaft :fas-industry: |  | Wissensgesellschaft :fas-brain:|
 | --- | :---: | --- |
 | Sachkapital | $\longleftrightarrow$ | Wissenskapital  |
 | Hierarchie/Kontrolle | $\longleftrightarrow$ |  Vernetzung/Fokussierung |
@@ -158,7 +158,7 @@ Quelle: Wilmar Raddatz, "Wissensgesellschaft – Was ist Wissen?"; abrufbar unte
 ## Warum wird Wissen zunehmend wichtiger für Unternehmen ?
 
 :::: columns
-::: 1st-col {.left}
+::: single
 - **Wissensintensive** Geschäftsprozesse, Dienstleistungen und Produkte werden bedeutender
     - Anteil der Wissensarbeiter in Organisationen nimmt zu 
         (Ingenieure, Manager, Berater, Entwickler, Forscher, ...)
@@ -169,7 +169,7 @@ Quelle: Wilmar Raddatz, "Wissensgesellschaft – Was ist Wissen?"; abrufbar unte
 - **Demographischer Wandel** in Europa
     - Zunahme des Fachkräftemangels in vielen Branchen absehbar
 :::
-::: 2nd-col {.right}
+::: single
 - Firmen arbeiten zunehmend **verteilt** und **global** 
     - Virtuelle Unternehmen
     - Komplexe Wertschöpfungsnetzwerke
@@ -182,8 +182,8 @@ Quelle: Wilmar Raddatz, "Wissensgesellschaft – Was ist Wissen?"; abrufbar unte
 :::
 ::::
 
-::: blue small skip  
-**Wichtig**: Einige der vorstehenden Argumente gelten nicht nur für Gewinn-orientierte Unternehmen, sondern auch in der öffentlichen Verwaltung, Forschung & Lehre und in Non-Governmental Organizations (NGOs).
+::: bluebox small skip  
+:fas-triangle-exclamation: **Wichtig**: Einige der vorstehenden Argumente gelten nicht nur für Gewinn-orientierte Unternehmen, sondern auch in der öffentlichen Verwaltung, Forschung & Lehre und in Non-Governmental Organizations (NGOs).
 :::
 
 
@@ -195,40 +195,11 @@ Quelle: Wilmar Raddatz, "Wissensgesellschaft – Was ist Wissen?"; abrufbar unte
 <!-- header: Kapitel 2: Was ist Wissen -->
 # Was ist Wissen ?
 
----
-# Welche Rolle spielt "Wissen" im Unternehmen ?
-
-::::: columns
-:::: double
-Bekannt und anerkannt sind die folgenden Aussagen^1^
-> "We know more than we can tell."
->
-> "If HP knew what HP knows, we would be three times as profitable"
-
-Nur ca. **20%** des in einer Organisation vorhandenen Wissens ist dokumentiert. 
-**80%** des relevanten Wissens ist verborgenes, implizites Wissen.^2^
-
-Eine der größten Herausforderungen in und für Unternehmen besteht darin, das für ihre Geschäftsbereiche _relevante Wissen_ zu identifizieren und zu nutzen. 
-
-Hierauf zielt das ==Wissensmanagement== ab.
-::::
-:::: single
-![](./figures/iceberg.jpg)
-::::
-:::::
-
-
-::: footnotes
-^1^ vgl. Hinds, P. J.; Pfeffer, J. (2003): Why Organizations Don’t “Know What They Know”: Cognitive and Motivational Factors Affecting the Transfer of Expertise. In: Ackerman, M. S.; Pipek, V.; Wulf, V. (2003) (Eds.): Sharing Expertise. Beyond Knowledge Management, pp. 3-26
-
-^2^ Quelle: https://de.slideshare.net/mcwyrsch/Wissensmanagement-in-unternehmen
-:::
-
 
 ---
 ## Was ist Wissen ? – Eine pragmatische Arbeitsdefinition 
 
-::: blue center
+::: bluebox center
 Bevor wir einen Versuch starten Wissen zu definieren ist es sinnvoll, den Wissensbegriff richtig ein- und abzugrenzen.
 :::
 
@@ -241,7 +212,7 @@ Wissen ist
 - ... __handlungs-__ und __ziel-orientiert__.
 
 ::: definition 
-==Wissen== bezeichnet die Gesamtheit der Kenntnisse und Fähigkeiten, die Menschen zur Lösung von Problemen einsetzen. Wissen stützt sich auf Daten und Informationen, ist im Gegensatz zu diesen jedoch immer ==an Personen gebunden==. Daher müssen Daten-, Informations- und Wissensmanagement stets zusammenspielen.
+==Wissen== bezeichnet die Gesamtheit der Kenntnisse und Fähigkeiten, die Menschen zur ==Lösung von Problemen== einsetzen. Wissen stützt sich auf Daten und Informationen, ist im Gegensatz zu diesen jedoch immer ==an Personen gebunden==. Daher müssen Daten-, Informations- und Wissensmanagement stets zusammenspielen.
 
 Quelle: Probst GJB., Raub S., Romhardt K., (2011): "Wissen managen – Wie Unternehmen ihre wertvollste Ressource optimal nutzen". 7. Auflage, Gabler, Frankfurt/Main; S.24
 :::
@@ -256,13 +227,13 @@ nach Michael Polanyi (1966), “The Tacit Dimension”, University of Chicago Pr
 Grundsätzlich lassen sich ==2 Wissensarten== unterscheiden^1^:
 
 :::: twocolumns
-::: blue
+::: bluebox
 **Explicit Knowledge** (=_Disembodied Knowledge_)
 - ... kann kommuniziert werden
 - ... kann auf verschiedenen Ebenen formalisiert werden 
 - ... kann in verschiedenen Formaten abgespeichert werden
 :::
-::: green
+::: greenbox
 **Tacit / Implicit Knowledge** (=_Embodied Knowledge_)
 - ... im Gehirn gespeichert 
 - ... schwer zu kommunizieren
@@ -283,7 +254,7 @@ _Implizites bzw. verborgenes Wissen_
 
 ---
 <!-- header: Kapitel 3: Wissensmodelle -->
-# Kapitel 3: Wissenmodelle
+# Kapitel 3: Wissensmodelle
 
 
 ---
@@ -311,15 +282,17 @@ Quelle: http://qib.f-bb.de/wissensmanagement/thema/wissen/wissenstreppe.rsys
 - **Kernkompetenzen** beruhen auf explizit gemachtem Wissen und setzen sich aus Fähigkeiten und Technologien zusammen. Sie generieren Werte bei Kunden und sind einzigartig gegenüber Wettbewerbern, schaffen somit Zugang zu neuen Märkten. Deshalb drücken Kernkompetenzen auch die **Wettbewerbsfähigkeit** eines Unternehmens aus.
 :::
 
-::: blue skip centerbox
+::: bluebox skip centerbox
 __Lehrvideo zur Wissenstreppe__: Die einzelnen Stufen der Wissenstreppe werden auch sehr schön in diesem [Kurzvideo](https://www.youtube.com/watch?v=VW7ArONW4dA) dargestellt.
 :::
+
+
 
 ---
 # Das SECI-Modell
 
 :::: columns
-::: 1st-col {.left}
+::: triple
 Das SECI-Modell stellt das implizite, d.h., **Personen-gebundene** und **schwer verbalisierbare Erfahrungswissen** von Mitarbeitern in den Mittelpunkt. Es erläutert, _wie dieses Wissen für eine Organisation aktiviert_ werden kann.
 
 Es unterscheidet sich von anderen Wissensmanagementmodellen dadurch, dass es den Fokus auf eine einzige Fragestellung lenkt, nämlich – _wie neues Wissen in Organisationen entsteht_.
@@ -328,7 +301,7 @@ Neues Wissen entsteht in einem **kontinuierlichen Transformationsprozess** zwisc
 
 Entscheidend bei dem Modell von Nonaka & Takeuchi ist die __Transformation von individuellem in kollektives Wissen__, d.h., von einem personenbezogenen in ein allgemein zugängliches Wissen (=die Wissensbasis der Organisation).
 ::: 
-::: 2nd-col {.left}
+::: double
 ![width:1600px](./figures/seci_model_5.png)
 :::
 ::::
@@ -362,7 +335,7 @@ Internalisierung
 
 
 ---
-# Das SECI-Modell: Voraussetzungen und Fazit
+## Das SECI-Modell: Organisatorische Voraussetzungen und Fazit
 
 Voraussetzungen seitens der Organisation^2^
 
@@ -386,8 +359,41 @@ Voraussetzungen seitens der Organisation^2^
 <!-- header: Kapitel 4: Was ist Wissensmanagement -->
 # Was ist Wissensmanagement und warum wird dies für Unternehmen im Zeitalter der Digitalisierung immer wichtiger ?
 
----
 
+
+---
+# Welche Rolle spielt "Wissen" im Unternehmen ?
+
+::::: columns
+:::: double
+Bekannt und anerkannt sind die folgenden Aussagen^1^
+> "We know more than we can tell."
+>
+> "If HP knew what HP knows, we would be three times as profitable"
+
+Nur ca. **20%** des in einer Organisation vorhandenen Wissens ist dokumentiert. 
+**80%** des relevanten Wissens ist verborgenes, implizites Wissen.^2^
+
+Eine der größten Herausforderungen in und für Unternehmen besteht darin, das für ihre Geschäftsbereiche _relevante Wissen_ zu identifizieren und zu nutzen. 
+
+Hierauf zielt das ==Wissensmanagement== ab.
+::::
+:::: single
+![](./figures/iceberg.jpg)
+::::
+:::::
+
+
+::: footnotes
+^1^ vgl. Hinds, P. J.; Pfeffer, J. (2003): Why Organizations Don’t “Know What They Know”: Cognitive and Motivational Factors Affecting the Transfer of Expertise. In: Ackerman, M. S.; Pipek, V.; Wulf, V. (2003) (Eds.): Sharing Expertise. Beyond Knowledge Management, pp. 3-26
+
+^2^ Quelle: https://de.slideshare.net/mcwyrsch/Wissensmanagement-in-unternehmen
+:::
+
+
+
+
+---
 # Was ist Wissensmanagement
 
 ::: definition
@@ -414,7 +420,7 @@ Wissensmanagement^1^ dient dazu{.skip}
 
 ::::: columns
 :::: triple
-::: blue
+::: bluebox
 **Fragestellungen**
 
 - Wie lässt sich individuelles und organisationales Wissen systematisch nutzen und weiterentwickeln ?
@@ -433,7 +439,7 @@ Wissensmanagement^1^ dient dazu{.skip}
 ::: center
 ![height:198px](./figures/discuss.jpg)
 ::: 
-::: gray
+::: graybox
 **Aufgabe**
 
 Diskutieren Sie die einzelnen Fragestellungen in Gruppen; jede Gruppe behandelt eine Fragestellung. Die gefundenen Antworten werden anschließend im Plenum vorgestellt und reflektiert. 
@@ -443,7 +449,7 @@ Diskutieren Sie die einzelnen Fragestellungen in Gruppen; jede Gruppe behandelt 
 
 
 ---
-# Typische Wissensmanagementprobleme
+# Typische Wissensmanagementprobleme :fas-bomb:
 
 :::: twocolumns 
 - Verfügbares Wissen wächst exponentiell
@@ -487,7 +493,7 @@ in Anlehnung an: http://strategie-spektren.de/innovation/aufgaben-des-wissensman
 
 ::::: columns
 :::: single
-- Mitarbeiterwissen verfügbar machen
+- MitarbeiterInnenwissen verfügbar machen
 - Benennung und Strukturierung von Wissen
 - Wissensweitergabe ermöglichen und fördern
 - Integration von relevantem Wissen in den Arbeitsfluss
@@ -507,9 +513,9 @@ in Anlehnung an: http://strategie-spektren.de/innovation/aufgaben-des-wissensman
 
 
 ---
-# Ziele des Wissensmanagements
+# :fas-bullseye: Ziele des Wissensmanagements
 
-- Der Austausch von Wissen soll die Resonanzfähigkeit des Unternehmens erhöhen, und somit bestehende Denkmuster durchbrechen. Letztlich soll dadurch die Reaktionsfähigkeit erhöht werden, was ein zentrales Merkmale der ==agilen Organisation== ist. Das Wissensmanagement kann somit als eine wesentliche Voraussetzung für eine _digitale Transformation_ gesehen werden.
+- Der Austausch von Wissen soll die *Resonanzfähigkeit* des Unternehmens erhöhen, und somit bestehende Denkmuster durchbrechen. Letztlich soll dadurch die Reaktionsfähigkeit erhöht werden, was ein zentrales Merkmale der ==agilen Organisation== ist. Das Wissensmanagement kann somit als eine wesentliche Voraussetzung für eine _digitale Transformation_ gesehen werden.
 
 - Eine besondere Bedeutung hat das Wissensmanagement im Zusammenhang mit der ==Open Innovation==. Hier wird der Informations- und Wissensaustausch nicht nur als ein interner Prozess betrachtet, sondern als ein Austausch zwischen der internen Organisation und ihrer externen Umgebung (bspw. Kunden, Lieferanten, strategische Partner). Wissensmanagement ist also ein wichtiger Bestandteil des _Innovationsprozesses_.
 
@@ -518,7 +524,7 @@ in Anlehnung an: http://strategie-spektren.de/innovation/aufgaben-des-wissensman
 ---
 # Effekte durch Wissensmanagement
 
-::: blue
+::: bluebox
 Gemäss heutigen Erfahrungen spart man durch Wissensmanagement **20-25%** der **bisherigen Aufwendungen** ein und erreicht eine **Qualitätssteigerung** von **ca. 20%**.^1^
 :::
 
@@ -539,7 +545,7 @@ Gemäss heutigen Erfahrungen spart man durch Wissensmanagement **20-25%** der **
 
 ---
 <!-- header: Kapitel 5: Die Rolle des Menschen im Wissensmanagement -->
-# Die Rolle des Menschen im Wissensmanagement
+# Die Rolle des Menschen :fas-person: im Wissensmanagement
 
 
 ---
@@ -563,15 +569,15 @@ Quelle: TRENDREPORT “Auf Wissen bauen – mit systematischem Wissensmanagement
 
 ---
 <!-- footer: Prof. Dr. Stefan Zander -->
-# Die Rolle der Mitarbeiter
+# Die Rolle der Mitarbeitenden :fas-users:
 
 ::::: columns
 :::: single
-::: blue
+::: bluebox
 __"Neue" Eigenschaften__
 
-- Der Mitarbeiter ist _Know-How Träger_
-- Untereinander sind die Mitarbeiter _Coach_ oder _Mentor_
+- Der Mitarbeitende ist _Know-How Träger_
+- Untereinander sind die Mitarbeitenden _Coach_ oder _Mentor_
 - Die Erfahrung zählt, _Führung erfolgt durch Kompetenz_
 - _Communities_ (Fachgruppen) werden gebildet
 - Sie sind aktiv in den _Wissensprozessen_ eingebunden
@@ -579,14 +585,14 @@ __"Neue" Eigenschaften__
 :::
 ::::
 :::: single
-::: green
+::: greenbox
 __...und ihre Auswirkungen__
 
-- Hohe Wertschätzung der einzelnen Mitarbeiter
-- Veränderte Arbeitsweise
-- Erhöhtes Zusammengehörigkeitsgefühl
-- Höhere Identifikation mit der Firma, weniger Fluktuation
-- Freierer Umgang mit Ideen
+- Hohe Wertschätzung :fas-coins: der einzelnen Mitarbeitenden
+- Veränderte Arbeitsweise :fas-person-digging:
+- Erhöhtes Zusammengehörigkeitsgefühl :fas-people-group:
+- Höhere Identifikation mit dem Unternehmen; dadurch weniger Fluktuation :fas-plane-slash:
+- Freierer Umgang mit Ideen :fas-lightbulb:
 :::
 ::::
 :::::
@@ -603,7 +609,7 @@ Quelle: https://de.slideshare.net/mcwyrsch/wissensmanagement-in-unternehmen
 ---
 # Lernzielkontrolle
 
-::: green
+::: greenbox
 **Aufgaben**
 
 Beantworten Sie folgende Fragen:
