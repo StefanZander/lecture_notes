@@ -1,8 +1,6 @@
 # Übung 4: Semantische Wissensgraphmodellierung mit Semantic MediaWiki (cont.)
 
-!!! abstract
-    **Lernziele**
-
+!!! success "Lernziele"
     * [x] Sie können einen Ausschnitt eines Gegenstandbereichs mit Semantic MediaWiki in einen semantischen Wissensgraphen überführen
     * [x] Sie kennen die wesentlichen Beschreibungselemente von Semantic MediaWiki
     * [x] Sie können terminologisches Wissen mittels Semantic MediaWiki beschreiben
@@ -58,8 +56,7 @@ Hinweise:
     - Semantic Compound Queries  
         <https://www.mediawiki.org/wiki/Extension:Semantic_Compound_Queries>
       
-    !!! note
-        **Hinweis**:  
+    !!! note "Extensions"  
         Eine Übersicht aktueller Extensions finden Sie hier  
         <https://www.semantic-mediawiki.org/wiki/Help:Semantic_MediaWiki_extensions>  
 

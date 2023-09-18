@@ -1,8 +1,6 @@
 # Übung 3: Semantische Wissensgraphmodellierung mit Semantic MediaWiki
 
-!!! abstract
-    **Lernziele**
-
+!!! success "Lernziele"
     * [x] Sie können einen Ausschnitt eines Gegenstandbereichs mit Semantic MediaWiki in einen semantischen Wissensgraphen überführen
     * [x] Sie kennen die wesentlichen Beschreibungselemente von Semantic MediaWiki
     * [x] Sie können terminologisches Wissen mittels Semantic MediaWiki beschreiben
@@ -18,7 +16,7 @@
     von Markus Krötzsch, Denny Vrandecic, Max Völkel, Heiko Haller, Rudi Studer (--> [Link in Moodle](https://lernen.h-da.de/mod/resource/view.php?id=363801)) 
 
  
-    !!! note
+    !!! note "Zusätzliche Literatur"
         Weitere Literatur zu Semantic MediaWiki finden Sie auch online unter  
         <https://www.semantic-mediawiki.org/wiki/Semantic_MediaWiki_publications>
 

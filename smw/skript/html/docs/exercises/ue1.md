@@ -1,8 +1,6 @@
 # Übung 1: Literaturrecherche und Wissensmodellierung
 
-!!! abstract
-    **Lernziele**
-
+!!! success "Lernziele"
     * [x] Sie können wesentliche Bestandteile eines organisationsweiten Wissensmanagements benennen
     * [x] Sie können die Unterschiede zwischen Daten – Informationen – Wissen  darlegen
     * [x] Sie kennen mehrere Wissensmanagement-Modelle sowie deren Unterschiede
@@ -67,7 +65,7 @@ Vierter Schritt
 
 
 
-### Aufgabe 3: Literaturrecherche 
+### Aufgabe 3: Literaturrecherche (nicht im Wise 2023/2024)
 
 1. Lesen Sie das Paper
 

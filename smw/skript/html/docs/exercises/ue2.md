@@ -1,8 +1,6 @@
 # Übung 2: Semantische Wissensgraphmodellierung
 
-!!! abstract
-    **Lernziele**
-
+!!! success "Lernziele"
     * [x] Sie können einen Ausschnitt eines Gegenstandbereichs in einen semantischen Wissensgraphen überführen
     * [x] Sie können Wissensgraphen mittels dem Resource Description Framework (RDF) darstellen
     * [x] Sie verstehen die Rolle von Ontologien in semantischen Wissensgraphen
