@@ -4,7 +4,7 @@
 
 The following syllabus information intend to help you structure your work and achievements – especially during the present times. Meeting the Milestones is a hard requirement.
 
-!!! warning
+!!! warning "Carefully consider the Syllabus"
     Please read and follow the **syllabus information** carefully! Disregarding them will lead to a **grading penalty** and might harm the sucessful completion of the course.
 
 - Week 1: Read introductory material + start forming groups ([MS0](milestone0.md))

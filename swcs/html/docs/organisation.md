@@ -1,21 +1,21 @@
 # Organisation
 
-On this page, you find information about
+!!! success "On this page, you find information about..."
 
-- ...how to properly **communicate** with your instructor
-- ...the **in-class lectures** 
-- ...how you can request **tutorials** or **supervision**
-- ...how to **submit** your results
-- ...the **grading**.
+    - [x] ...how to properly **communicate** with your instructor
+    - [x] ...the **in-class lectures** 
+    - [x] ...how you can request **tutorials** or **supervision**
+    - [x] ...how to **submit** your results
+    - [x] ...the **grading**.
 
 ## Communication
 
-- Usually via **email**, **BBB** or as **indiviual appointments** via <https://meet.fbi.h-da.de>  
+- Usually via **email**, **BBB** or as **indiviual appointments** via <https://meet.fbi.h-da.de> or via <https://rooms.h-da.de/r?room=Zander%2C+Stefan+%28fbi%29> 
     _-->_ contact me via email for arranging an individual appointment
 - Please use the following subject `WAI` __OR__ `SWCS` when asking questions via email:  
     `[SWCS|WAI] {matter}` (without `{}`)
 
-    !!! note
+    !!! info "Please consider the correct email subject"
         Please note that the curly braces (`{}`) are indicators for tokens that should be replaced with the real names and matter (without `{}` of course).
 
         Please also enter the **correct module** (WAI/SWCS) your request is referring to.
@@ -67,12 +67,10 @@ On this page, you find information about
     - For the corresponding conference link, see [Milestone #2](milestone2.md#tasks)
 - Please **register** yourself at the EasyChair system with your official student email-address (i.e., the one you use for the OBS system)
 
-!!! note
-    **Registration is Necessary**:  
+!!! warning "Registration is Necessary"
     Registration at the EasyChair system is needed to submit results and to prepare the reviews for your colleagues' works (see [Milestone #4](milestone4.md))
 
-!!! warning
-    **No Email Submissions!**  
+!!! danger "No Email Submissions"
     Email submissions will *not* be accepted and result in a **0 point** assessment for the milestone!  
     All results need to be submitted via EasyChair.
 
@@ -92,6 +90,6 @@ On this page, you find information about
 
 * Your **final mark** is calculated from the aggregated points
 
-    !!! note
+    !!! tip "Bonus Points"
         **Note**: You will recieve **bonus points** for exceptionally well elaborated results.
 

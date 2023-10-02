@@ -3,9 +3,7 @@
 <!-- !!! question
     This milstone will be graded with factor: **1** -->
 
-!!! abstract
-    **Objectives**
-
+!!! success "Objectives"
     - [x] You are capable of presenting your research in a scientifically sound way
     - [x] You know what distinguishes a scientific presentation from other forms of presentation
  
@@ -51,9 +49,7 @@ The
 
 This includes an assessment of the following aspects:
 
-!!! example
-    **Assessment aspects**:
-
+!!! info "Assessment aspects"
     - The work is properly motivated
     - The problem space is clearly defined and separated from unrelated issues or things
     - RQs are clearly and correctly formulated (max. 2-3)
@@ -100,8 +96,6 @@ Please make sure to consider the following things:
 
 The following results need to be achieved in order to meet the formal requirements of this milestone:
 
-!!! abstract
-    __Results:__
-
-    - [ ] Attendance at final presentations
-    - [ ] Conducted presentation
+!!! success "Results"
+    - [x] Attendance at final presentations
+    - [x] Conducted presentation

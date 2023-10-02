@@ -2,9 +2,8 @@
 
 This site outlines the **main objectives** of this course together with a condensed list of **crucial elements** that scientific works exhibit. More details and background information about these elements can be found in the **literature recommendations**.
 
-!!! warning
-    **Preamble**      
-    Scientfic writing is like learning to swim – you can read a thousand books but you only learn how to swim when being in the water. Just like swimming, your scientific  writing skills increase through practice, through hands-on work!
+!!! warning "Practice is Important"
+    Scientfic writing is like learning to swim :fontawesome-solid-person-swimming: – you can read a thousand books but you only learn how to swim when being in the water. Just like swimming, your scientific  writing skills increase through practice, through hands-on work!
 
 
 ## Objectives
@@ -25,8 +24,7 @@ This site outlines the **main objectives** of this course together with a conden
 - Become acquianted with the [**EasyChair** conference system](https://easychair.org/)
 
 
-!!! warning
-    **Please Note**:  
+!!! warning "Learn to work efficiently and effectively"  
     Maybe the **most important objective** of this course is to experience and learn how to **independently work** on a subject in an efficient, coordinated, and systematic way so that defined **quality standards** *(=those that make a good scientific paper; --> see [Elements of Scientific Work](objectives.md#elements_of_scientific_work))* are reached. 
 
 
@@ -61,10 +59,8 @@ You will discover a lot, mostly more detailed in the lecture and through your li
         Be advised: Anything you take from external works need to be indicated, i.e., cited.
         Only take a max. of 3 words directly from external works, not more. 
 
-        !!! warning
-            **Important**: 
-            
-            Do __not copy whole paragraphs from external works__ and only provide one citation at the paragraph's end. This counts as plagiarism and will be treated as such (with all consequences).
+        !!! danger "Avoid Plagiarism – do not copy entire paragraphs"            
+            Do __not copy whole paragraphs from external works__ and only provide one citation at the paragraph's end. This counts as plagiarism and will be treated as such – with all consequences.
 
         The LaTeX template provided for this course is already pre-configured and implements a common citation style; so there is no need to modify that.
     
@@ -79,8 +75,7 @@ You will discover a lot, mostly more detailed in the lecture and through your li
 
 - *and many more...*
 
-!!! note
-    **Recommended Literature**:  
+!!! note "Recommended Literature"  
     Consult the literature recommendations for more details and background information. It helps a lot.
 
 

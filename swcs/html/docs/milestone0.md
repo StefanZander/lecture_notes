@@ -1,8 +1,6 @@
 # Introductory Material (Milestone #0)
 
-!!! abstract
-    **Objectives**
-
+!!! success "Objectives"
     - [x] Become familiar with terms, concepts, and work practices related to "Science"
     - [x] Find a topic that is of interest for both of you
     - [x] Enter your group constellation and topic into the SWCS Moodle course
@@ -27,8 +25,7 @@
     - Write down all questions and open issues that arise and 
     - Bring them to the in-class lectures; they will be discussed and answered there
 
-    !!! warning
-        **Take Responsibility!**  
+    !!! warning "Take Responsibility!"
         One of the main principles of this course is to learn to __take responsibility for your work and the outcome__. Be aware, that this is _not_ a standard university course in which you get all necessary information hand-feeded. Instead you are required to take actions, organize yourself, set goals, estimate and meet expectations, seek for support when you encounter problems or difficulties etc.  
         
         ==_Remember, your course lecturer is always available to help and support you – BUT the **initiative must come from your side**
@@ -40,9 +37,7 @@
 
 The following results need to be achieved in order to meet the formal requirements of this milestone:
 
-!!! abstract
-    __Results:__
-
-    - [ ] You have red and understood the contents of the introductory materials
-    - [ ] You know the milestones and results expected from you for sucessfully passing the course
-    - [ ] You have collect all your questions electronically or on a piece of paper 
+!!! success "Results"
+    - [x] You have red and understood the contents of the introductory materials
+    - [x] You know the milestones and results expected from you for sucessfully passing the course
+    - [x] You have collect all your questions electronically or on a piece of paper 

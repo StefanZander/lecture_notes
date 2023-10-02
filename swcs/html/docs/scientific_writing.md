@@ -83,7 +83,7 @@ The first task to accomplish as you begin the process of writing is to **order a
 
  Knowing your audience helps you to decide what information to include–––you would write a very different article for a narrow, highly technical, disciplinary journal vs. one that went out to a broad range of disciplines. Similarly, you would write a paper for an audience of other.
 
-!!! note
+!!! tip "Consider your colleagues' knowledge level"
     **Hint**: For the preparation of the final presentation and the research paper, concentrate on the knowledge level of your colleagues.
 
 
@@ -94,8 +94,7 @@ Your writing should be in **complete sentences** and **easily understood**. It s
 
 It is important to **write clearly and concisely**. Make sure that every **paragraph** has a **clear topic sentence** and that the paragraph content supports the topic. The goal is to report your findings and conclusions clearly, and with as few words as necessary. Your audience (other scientists usually) are not interested in flowery prose, they want to know *your* **findings**. 
 
-!!! note
-    **Remember**  
+!!! info "Writing is Thinking and Vice Versa"
     Writing and thinking are closely linked enterprises - many people have noted that, "fuzzy writing reflects fuzzy thinking." When people have difficulty translating their ideas into words, they generally do not know the material as well as they think.
 
 
@@ -119,13 +118,13 @@ It is important to **write clearly and concisely**. Make sure that every **parag
 - **Use Active Verbs**:  
     Use active verbs whenever possible; writing that overly uses passive verbs (is, was, has, have, had) is deadly to read and almost always results in more words than necessary to say the same thing.
 
-    !!! example
+    !!! example "Active Language"
         **Example**
 
         ACTIVE: *"the mouse consumed oxygen at a higher rate..."*  
         PASSIVE: *"oxygen was consumed by the mouse at a higher rate.."*
 
-    !!! note
+    !!! info "Active voice increases the clarity and effectiveness of your writing"
         The clarity and effectiveness of your writing will improve dramatically as you increase the use of the active voice.
 
 - **References**:  

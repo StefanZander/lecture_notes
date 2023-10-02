@@ -3,9 +3,7 @@
 <!-- !!! question
     This milstone will be graded with factor: **1** -->
 
-!!! abstract
-    **Objectives**
-
+!!! success "Objectives"
     - [x] You are capable of finishing your scientific paper and submit it via EsayChair
     - [x] You are familiar with the main elements of good scientific work practices and can apply them to your own scientific paper  
     - [x] You know which elements make up a good scientific paper 
@@ -37,9 +35,7 @@
 
 The following results need to be achieved in order to meet the formal requirements of this milestone:
 
-!!! abstract
-    __Results:__
-
-    - [ ] Preparation of a final version of the scientific paper
-    - [ ] Submisison of the paper to the EasyChair system
-    - [ ] Finalized information in the EasyChair system (updated title and abstract)
+!!! success "Results"
+    - [x] Preparation of a final version of the scientific paper
+    - [x] Submisison of the paper to the EasyChair system
+    - [x] Finalized information in the EasyChair system (updated title and abstract)

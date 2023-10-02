@@ -3,9 +3,7 @@
 <!-- !!! question
     This milstone will be graded with factor: **1** -->
 
-!!! abstract
-    **Objectives**
-
+!!! success "Objectives"
     - [x] You are capable of setting up a software infrastructure for authoring scientific papers using LaTeX 
     - [x] Prepare a first draft of your paper that serves as basis for the review (--> [Milestone #4](milestone4.md))  
     
@@ -36,9 +34,7 @@
 
 The following results need to be achieved in order to meet the formal requirements of this milestone:
 
-!!! abstract
-    __Results:__
-
-    - [ ] Preparation of a first draft of the scientific paper
-    - [ ] Uploading of the paper to the EasyChair system
-    - [ ] Updated information in the EasyChair system (_optional_)
+!!! success "Results"
+    - [x] Preparation of a first draft of the scientific paper
+    - [x] Uploading of the paper to the EasyChair system
+    - [x] Updated information in the EasyChair system (_optional_)

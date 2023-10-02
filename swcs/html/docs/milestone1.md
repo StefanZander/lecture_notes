@@ -1,8 +1,6 @@
 # Determination of Group and Topic (Milestone #1)
 
-!!! abstract
-    **Objectives**
-
+!!! success "Objectives"
     - [x] Find a colleague with whom you from a WAI2 group to work through the semester
     - [x] Find a topic that is of interest for both of you
     - [x] Enter your group constellation and topic into the WAI2 Moodle course
@@ -14,9 +12,7 @@
 
 1. Form **groups** of two people
      
-    !!! note
-        **Enter Partner Request in WAI2 Moodle Forum**: 
-        
+    !!! info "Enter Partner Request in WAI2 Moodle Forum"        
         In case you are looking for an WAI2 partner, please use the **WAI2 Moodle forum** to enter a **request** there. This is the most transparent and preferable way since other students can find you there. 
 
 2. Each group has to choose an **individual topic** that serves as a basis for the scientific work  
@@ -31,9 +27,7 @@
 
 The following results need to be achieved in order to meet the formal requirements of this milestone:
 
-!!! abstract
-    __Results:__
-
-    - [ ] You formed a group of two people and researched possible topics of interest
-    - [ ] You selected on topic that you are going research in depth
-    - [ ] Group constellation and topic have been entered in the WAI2 Moodle course
+!!! success "Results"
+    - [x] You formed a group of two people and researched possible topics of interest
+    - [x] You selected on topic that you are going research in depth
+    - [x] Group constellation and topic have been entered in the WAI2 Moodle course

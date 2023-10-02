@@ -4,9 +4,7 @@
     This milstone will be graded with factor: **1** -->
 
 
-!!! abstract
-    **Objectives**
-
+!!! success "Objectives"
     - [x] You are familiar with the main elements a good abstract must contain
     - [x] You can write an abstract for your research paper
     - [x] You know the role and function of an fact sheet 
@@ -28,8 +26,8 @@
       _(approx. 100 – 200 words; not longer than 5-7 sentences)_
     - Use the [Springer LNCS template](https://www.springer.com/gp/computer-science/lncs/new-latex-templates-available/15634678)
     
-    !!! note
-        **Writing the Abstract**: Write the Abstract from a perspective of what you *intend* to achieve. Change this perspective of what you *have* achieved for the final paper.
+    !!! info "Writing the Abstract" 
+        Write the Abstract from a perspective of what you *intend* to achieve. Change this perspective of what you *have* achieved for the final paper.
 
 3. Submit both Factsheet and Abstract as a **single PDF file** via **EasyChair** (_registration required_)  
     <!-- - Use the following link for the module "**Scientific Writing for Computer Science**":
@@ -39,13 +37,13 @@
         <!-- - <https://resource-cms.springernature.com/springer-cms/rest/v1/content/19238648/data/v4> -->
     - **Register** both authors at the EasyChair system and enter all relevant information
   
-        !!! note
-            **Registration Policy**: Both(!) authors need to register at the EasyChair system. Please use your official student email addresses for the registration as I will use these later to register you as Programme Committee (PC) Member for the reviews. If author and programme committee email addresses do *not* match, problems will occur during the paper assignment.
+        !!! info "Registration Policy"
+            Both(!) authors need to register at the EasyChair system. Please use your official student email addresses for the registration as I will use these later to register you as Programme Committee (PC) Member for the reviews. If author and programme committee email addresses do *not* match, problems will occur during the paper assignment.
 
     - **Upload** the document to the easychair system
         
-        !!! warning
-            **Uploading or Updating your Paper in EasyChair**: Once you uploaded the paper, EasyChair assigns you a single slot. Use this slot during the entire semester, i.e., if you want to upload an updated version of the Factsheet and Abstract, just update (=overwrite) the already entered information.  
+        !!! warning "Uploading and Updating your Paper in EasyChair" 
+            Once you uploaded the paper, EasyChair assigns you a single slot. Use this slot during the entire semester, i.e., if you want to upload an updated version of the Factsheet and Abstract, just update (=overwrite) the already entered information.  
             --> __DO NOT CREATE A NEW SUBMISSION!__
 
 
@@ -57,7 +55,7 @@ The Factsheet describes **corner stones** of your research. It serves as **basis
 
 Use the following structure and document each aspect with very few sentences:
 
-- <https://projects.fbi.h-da.de/~s.zander/wai/html/expose/>
+- <https://zander-praxismodul.netlify.app/expose/>
 
 <!-- 1. **Title and (optionally) Subheading**
 2. **Problem Statement** ie., what is the problem and why is it a problem (the motivation of your work)
@@ -84,8 +82,7 @@ The problem statement (often referred to as the motivation) is one of the crucia
 
 ### Abstract
 
-!!! warning
-    **The Importance of the Abstract**:  
+!!! warning "The Importance of the Abstract"
     The **abstract** is probably the **most important** and **most difficult** part to write of your paper.  
     Hence, it definitly pays off to put a lot of effort and thoughts in creating a sound and meaningful abstract.
 
@@ -115,8 +112,7 @@ These questions also serve as basis for **structuring** the abstract:
 
 As a consequence, the abstract should *not* be longer than **5 - 7 sentences** for a regular research paper (longer works can have a more comprehensive abstract, but it should never exceed the limit of one page length).
 
-!!! note
-    **A well-written Abstract is short and precise!**  
+!!! info "A well-written Abstract is short and precise!"
     The abstract must be **precise** and **meaningful**. It should only be as long as necessary but as precise as possible! 
 
 
@@ -129,9 +125,7 @@ As a consequence, the abstract should *not* be longer than **5 - 7 sentences** f
 
 The following results need to be achieved in order to meet the formal requirements of this milestone:
 
-!!! abstract
-    __Results:__
-
-    - [ ] Preparation of Factsheet and Abstract based on the given information
-    - [ ] Registration of both authors at the easychair system
-    - [ ] Submission of both Factsheet and Abstract as a single PDF document via easychair
+!!! success "Results"
+    - [x] Preparation of Factsheet and Abstract based on the given information
+    - [x] Registration of both authors at the easychair system
+    - [x] Submission of both Factsheet and Abstract as a single PDF document via easychair

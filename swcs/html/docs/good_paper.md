@@ -15,15 +15,14 @@ Before you begin, ask the following questions:
 * Does it state how the attained results are **evaluated** or compared to existing approaches to the problem?
 * Does it state how and by whom the **expected results** can be applied?
 
-!!! Example
+!!! info "More Information about how to write a good scientific paper"
     **Source**: <https://www.researchgate.net/publication/255993683_How_to_Write_Good_Scientific_Papers_A_Comprehensive_Guide>   (_Adapted with slight modifications_)
 
 
 ### Developing a Technical Artifact
 
-!!! warning
-    **Please note**:  
-    The following information are important! Diregarding them severely harms your paper's quality and assessment.
+!!! info "Carefully consider the following Information"
+    The following information are important! Disregarding them severely harms your paper's quality and assessment.
 
 
 Here is what you should do if your task is to develop an algorithm / module / component / system etc.

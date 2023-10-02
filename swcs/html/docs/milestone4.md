@@ -3,9 +3,7 @@
 <!-- !!! question
     This milstone will be graded with factor: **1** -->
 
-!!! abstract
-    **Objectives**
-
+!!! success "Objectives"
     - [x] You are able to apply the principles and methods of proper scientific work practices to other works in form of a review.
     - [x] You are capable of writing a scientific review
     - [x] You know how to submit a review via EasyChair 
@@ -24,9 +22,7 @@ The **peer review** is one of the corner stones of the scientific circus. The ob
 
 3. Enter your **paper bids** 
 
-    !!! example
-        **Please specify one of the four options for _each_ paper listed in the biddings' overview**:
-        
+    !!! info "Please specify one of the four options for _each_ paper listed in the biddings' overview"        
         1. *I want to review*
         2. *I can review*
         3. *I don‘t want to review*
@@ -82,9 +78,7 @@ The
 
 The following results need to be achieved in order to meet the formal requirements of this milestone:
 
-!!! abstract
-    __Results:__
-
-    - [ ] Accepted PC Member invitation
-    - [ ] Paper bids entered into the system
-    - [ ] Submission of review via EasyChair *within* the deadline 
+!!! success "Results"
+    - [x] Accepted PC Member invitation
+    - [x] Paper bids entered into the system
+    - [x] Submission of review via EasyChair *within* the deadline 
