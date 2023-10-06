@@ -1,67 +1,105 @@
-site_name: EWA-Uebersicht
+site_name: "EWA-Uebersicht"
+
 
 theme:
   name: material
   palette:
-    primary: deep orange
-    accent: teal
-  font: false
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      accent: red
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+        primary: deep purple
+        accent: red
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: light blue
+      accent: teal
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+  font:
+    text: Roboto Condensed
+    code: Roboto Mono
+
   icon:
-    logo: material/library
+    repo: fontawesome/brands/github
+    edit: material/pencil 
+    view: material/eye
+  
+  language: de
+  
   features:
     - navigation.instant
-    - navigation.top   
-
-plugins:
-  - search:
-      lang: de
+    - navigation.tracking
+    - toc.follow
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - search.share
+    - navigation.footer
+    - content.action.edit
 
 extra_css:
-  - stylesheets/extra.css
+  - 'stylesheets/extra_new.css'
 
 extra:
   social:
-    - icon: fontawesome/solid/paper-plane
-      link: mailto:stefan.zander@h-da.de
-      name: mail me
+    - icon: fontawesome/solid/person-biking 
+      link: https://fbi.h-da.de/~s.zander
+      name: personal page of Prof. Dr. Stefan Zander at h_da
+
+copyright: Copyright &copy; 2017 - 2023 – Prof. Dr. Stefan Zander
+
+repo_url: https://github.com/StefanZander/lecture_notes/tree/master/ewa/ewa2.0/vorlesung/uebersicht/html
+repo_name: ewa topics
+
+edit_uri: docs/
+
+
+plugins:
+  - search:
+      lang: en
+  - git-revision-date-localized:
+      enable_creation_date: false
+      type: custom
+
 
 markdown_extensions:
+  - abbr
+  - admonition
+  - smarty:
+      smart_angled_quotes: true  
+  - attr_list
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
-  - smarty
-  - abbr
-  - pymdownx.snippets
-  - admonition
-  - pymdownx.details
-  - pymdownx.inlinehilite
-  - pymdownx.highlight:
-      linenums: true
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
-  - attr_list
-  - pymdownx.keys
-  - pymdownx.tabbed
+  - def_list
   - footnotes
-  - pymdownx.critic
-  - pymdownx.betterem:
-      smart_enable: all
+  - toc:
+      permalink: true
+  - tables
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem
   - pymdownx.caret
   - pymdownx.mark
   - pymdownx.tilde
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      linenums: true
+      line_spans: __span
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
   - pymdownx.smartsymbols
-  - attr_list
-  - def_list
+  - pymdownx.snippets
+  - pymdownx.superfences
   - pymdownx.tasklist:
       custom_checkbox: true
-  - pymdownx.arithmatex:
-      generic: true
-  - meta
-
-
-
-
-
+  - pymdownx.critic

@@ -1,0 +1,67 @@
+site_name: EWA-Uebersicht
+
+theme:
+  name: material
+  palette:
+    primary: deep orange
+    accent: teal
+  font: false
+  icon:
+    logo: material/library
+  features:
+    - navigation.instant
+    - navigation.top   
+
+plugins:
+  - search:
+      lang: de
+
+extra_css:
+  - stylesheets/extra.css
+
+extra:
+  social:
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:stefan.zander@h-da.de
+      name: mail me
+
+markdown_extensions:
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - smarty
+  - abbr
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.highlight:
+      linenums: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - attr_list
+  - pymdownx.keys
+  - pymdownx.tabbed
+  - footnotes
+  - pymdownx.critic
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.smartsymbols
+  - attr_list
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.arithmatex:
+      generic: true
+  - meta
+
+
+
+
+
