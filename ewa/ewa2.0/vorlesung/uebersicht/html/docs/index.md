@@ -146,8 +146,8 @@ EWA-Discord-Channel: <https://discord.gg/AC97TNBSJ6>
 
 
 !!! warning "Neue Einführung in JavaScript"
-    __Wichtig: Hier weichen wir etwas vom Skript ab und es erfolgt eine eigene, umfassendere und tiefergehende Einführung in JavaScript.  
-    Verpassen Sie also nicht die entsprechenden Vorlesungseinheiten!__
+    Wichtig: Hier weichen wir etwas vom Skript ab und es erfolgt eine eigene, umfassendere und tiefergehende Einführung in JavaScript.  
+    _Verpassen Sie also nicht die entsprechenden Vorlesungseinheiten!_
 
 
 <!-- !!! info 

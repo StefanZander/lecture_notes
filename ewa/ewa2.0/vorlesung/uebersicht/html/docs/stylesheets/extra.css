@@ -92,3 +92,9 @@ body {
     position: relative;
     color: gray;
 } */
+
+
+/* SZA: Admonitions have the same textsize as usual text */
+.md-typeset .admonition {
+    font-size: .9em;
+  }
