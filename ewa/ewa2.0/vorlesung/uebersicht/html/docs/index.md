@@ -8,7 +8,7 @@ Hier finden sich die Inhalte der **wöchentlichen Vorlesungseinheiten** (erkennb
 
 Nutzen Sie die Lehrmaterialen zur **Vorbereitung** und die Leitfragen zur **Lernzielkontrolle**.
 
-Die erste Zahl im Titel bezieht sich auf die jeweilige **Vorlesungswoche** (vergleichen Sie hierzu den [EWA Semesterplan für das WiSe 2022/2023](https://lernen.h-da.de/mod/resource/view.php?id=213139) in Moodle), die zweite Zahl auf eine ggf. vorhandene thematische Unterteilung.
+Die erste Zahl im Titel bezieht sich auf die jeweilige **Vorlesungswoche** (vergleichen Sie hierzu den [EWA Semesterplan für das aktuelle Semester](https://lernen.h-da.de/mod/resource/view.php?id=213139) in Moodle), die zweite Zahl auf eine ggf. vorhandene thematische Unterteilung.
 
 EWA-Discord-Channel: <https://discord.gg/AC97TNBSJ6>
 
@@ -27,9 +27,7 @@ EWA-Discord-Channel: <https://discord.gg/AC97TNBSJ6>
 - Welche Unterstützungsangebote gibt es; wo bekomme ich Hilfe ?
 - Was erwartet mich und was wird von mir erwartet ?
 
-!!! book
-    **Materialien**:
-
+!!! abstract "Lehrmaterialien"
     - Der [Einführungsfoliensatz](https://lernen.h-da.de/mod/resource/view.php?id=231312)
     - Die [Vorlesungs- und Praktikumstermine](https://lernen.h-da.de/mod/resource/view.php?id=213139)
     - Für Interessierte: [Ein Ausflug in die Entstehung des World Wide Web](https://lernen.h-da.de/mod/resource/view.php?id=275887)
@@ -49,12 +47,11 @@ EWA-Discord-Channel: <https://discord.gg/AC97TNBSJ6>
 - Wie werden die Inhalte im Web beschrieben ?
 - Woraus besteht eine Webseite ?
 
-!!! book 
-    __Lehrmaterialen__
-
+!!! abstract "Lehrmaterialen"
     - Foliensatz: Kap. 1.1 & 1.2 
     - Lehrvideo: [Einleitung](https://electures.h-da.de/paella/ui/watch.html?id=64d5324e-cdd8-4416-99e9-29acf6d55b4d) – (00:00:00 - 00:17:20)
     - Lehrvideo: [Statische Webseiten](https://electures.h-da.de/paella/ui/watch.html?id=53af8ad4-e22b-4010-808a-0d8a1d2e4834) – (00:00:00 - 00:47:19)
+
 
 
 ### Einheit #2.2: HTML
@@ -67,9 +64,7 @@ EWA-Discord-Channel: <https://discord.gg/AC97TNBSJ6>
 - `id` vs. `class` – wofür benötigt man welches Attribut ?
 - Wie speichert man Daten in Webseiten ? – das wunderbare `data`-Attribut
 
-!!! book
-    **Lehrmaterialen**
-
+!!! abstract "Lehrmaterialen"
     - Foliensatz: Kap. 1.3 - 1.3.2
     - Lehrvideo: [Statische Webseiten](https://electures.h-da.de/paella/ui/watch.html?id=53af8ad4-e22b-4010-808a-0d8a1d2e4834) – (00:47:20 - 01:05:54)
 
@@ -82,12 +77,11 @@ EWA-Discord-Channel: <https://discord.gg/AC97TNBSJ6>
 - Was sind Formulare und wie funktionieren diese ?
 - Wie funktioniert ein Webserver ?
 
-!!! book
-    **Lehrmaterialen**
-
+!!! abstract "Lehrmaterialen"
     - Foliensatz: Kap. 1.3.3 & 1.3.4
     - Lehrvideo: [Statische Webseiten](https://electures.h-da.de/paella/ui/watch.html?id=53af8ad4-e22b-4010-808a-0d8a1d2e4834) – (01:05:55 – 01:28:50)
     - Lehrvideo: [Infrastruktur und Querschnittsthemen II](https://electures.h-da.de/paella/ui/watch.html?id=f887c2ab-a21c-4bdf-8a96-547da22ff401) – (HTTP/S: 00:00:00 – 00:21:48)
+
 
 
 ## Teil II: Dynamische Webseiten
@@ -99,9 +93,7 @@ EWA-Discord-Channel: <https://discord.gg/AC97TNBSJ6>
 - Wie tauschen PHP-Seiten Daten aus ?
 - Welche Sicherheitsstandards müssen beachtet weden ?
 
-!!! book
-    **Lehrmaterialien**
-
+!!! abstract "Lehrmaterialen"
     - Foliensatz: Kap. 2 - 2.1 & 2.4
     - Lehrvideo: [Dynamische Webseiten I](https://electures.h-da.de/paella/ui/watch.html?id=9e9d2250-4e8c-4a2c-93e7-3e9e566d0572) – (00:00:00 – 01:24:28)
     - Für Interessierte: [Anleitungsvideo für das Debuggen mit PhpStorm und Docker](https://electures.h-da.de/paella/ui/watch.html?id=3bb6798f-b73c-41cb-a08f-362af5c56023)
@@ -115,9 +107,7 @@ EWA-Discord-Channel: <https://discord.gg/AC97TNBSJ6>
 - Wie liest man Daten aus einer DB aus und bindet diese in eine mit PHP generierte Webseite ein ?
 - Welche Sicherheitsanforderungen muss man berücksichtigen ?
 
-!!! book
-    **Lehrmaterialen**
-
+!!! abstract "Lehrmaterialen"
     - Foliensatz: Kap. 2.2
     - Lehrvideo: [Dynamische Webseiten I](https://electures.h-da.de/paella/ui/watch.html?id=9e9d2250-4e8c-4a2c-93e7-3e9e566d0572) – (01:24:30 – 01:49:07)
 
@@ -130,9 +120,7 @@ EWA-Discord-Channel: <https://discord.gg/AC97TNBSJ6>
 - Wie funktionieren Seitenklassen ?
 - Welche Nachteile bieten Seitenklassen und wie lassen sich diese verbessern ?
 
-!!! book
-    **Lehrmaterialen**
-
+!!! abstract "Lehrmaterialen"
     - Foliensatz: Kap. 2.3 & Kap 2.4
     - Lehrvideo: [Dynamische Webseiten II](https://electures.h-da.de/paella/ui/watch.html?id=b25604ce-af11-4893-ae8b-2994839bc643) – (00:00:00 – 01:10:30)
 
@@ -144,9 +132,7 @@ EWA-Discord-Channel: <https://discord.gg/AC97TNBSJ6>
 - Was sind Sessions ?
 - Warum funktionieren Sessions nur in Verbindung mit Cookies wirklich gut ?
 
-!!! book
-    **Lehrmaterialen**
-
+!!! abstract "Lehrmaterialen"
     - Foliensatz: Kap. 2.5
     - Skriptum von Prof. Zander zu [Cookies und Sessions](https://lernen.h-da.de/mod/resource/view.php?id=218410)
     - Lehrvideo: [Dynamische Webseiten II](https://electures.h-da.de/paella/ui/watch.html?id=b25604ce-af11-4893-ae8b-2994839bc643) – (01:10:32 – 01:44:12)
@@ -175,9 +161,7 @@ EWA-Discord-Channel: <https://discord.gg/AC97TNBSJ6>
 - Wie werden Objekte in JavaScript erzeugt und behandelt ?
 - Wie funktioniert Vererbung in JavaScript ?
 
-!!! book
-    **Lehrmaterialen**
-
+!!! abstract "Lehrmaterialen"
     - Ergänzende Slides von Prof. Zander    
         - [Einführung in JavaScript](https://lernen.h-da.de/mod/resource/view.php?id=611929)
         - [Funktionen in JavaScript](https://lernen.h-da.de/mod/resource/view.php?id=611930)
@@ -199,9 +183,7 @@ EWA-Discord-Channel: <https://discord.gg/AC97TNBSJ6>
 - Was sind Handler ?
 - Wie lassen sich Handler mittels JavaScript implementieren ?
 
-!!! book
-    **Lehrmaterialen**
-
+!!! abstract "Lehrmaterialen"
     - Foliensatz: Kap. 3.1.2 - 3.1.4
     - Lehrvideo: [Interaktive Webseiten I](https://electures.h-da.de/paella/ui/watch.html?id=ea56ce63-6cda-41ff-b96a-fbcfc5a7009c) – (00:44:40 – 01:42:48)
     - Youtube-Video zu [JavaScript-Handlern](https://www.youtube.com/watch?v=6gO8ut4gz3A&t=921s)
@@ -215,9 +197,7 @@ EWA-Discord-Channel: <https://discord.gg/AC97TNBSJ6>
 - Welche JavaScript Sprachkonstrukte ermöglichen die asynchrone Ausführung von Programmcode ?
 <!-- - [Subscribe to our mailing list](#){ .md-button } -->
 
-!!! book
-    **Lehrmaterialen**
-
+!!! abstract "Lehrmaterialen"
     - Ergänzende Slides von Prof. Zander
         - [Fortschrittliche JavaScript Sprachkonzepte](https://lernen.h-da.de/mod/resource/view.php?id=613808)
     - Closures
@@ -237,9 +217,7 @@ EWA-Discord-Channel: <https://discord.gg/AC97TNBSJ6>
 - Welche Rolle spielt JSON beim asynchronen Datenaustausch ?
 <!-- - AJAX und SPA  -->
 
-!!! book
-    **Lehrmaterialen**
-
+!!! abstract "Lehrmaterialen"
     - Foliensatz: Kap. 3.2.1 - 3.2.4
     - Lehrvideo: [Interaktive Webseiten II](https://cloud.h-da.de/index.php/s/oLWciJ4XeEnpSoP?dir=undefined&openfile=37552598) – (00:00:00 – 01:12:32)
 
@@ -257,9 +235,7 @@ EWA-Discord-Channel: <https://discord.gg/AC97TNBSJ6>
 - Wie funktioniert die Float-Eigenschaft ?
 - Wie lässt sich das Positionierungsverhalten von DOM-Elementen bestimmen ?- 
 
-!!! book
-    **Lehrmaterialen**
-
+!!! abstract "Lehrmaterialen"
     - Foliensatz: Kap. 4 - 4.4
     - Lehrvideo: [Gestaltung von Webseiten I](https://electures.h-da.de/paella/ui/watch.html?id=c8ccc751-b9bb-4308-bea2-5926dfcecc5e) – (00:00:00 – 01:31:48)
 
@@ -272,9 +248,7 @@ EWA-Discord-Channel: <https://discord.gg/AC97TNBSJ6>
 - Was ist das Flexbox-Modul und welche Möglichkeiten bietet es ?
 - Wie erstellt man ein responsives Design mit Mediaqueries und Flexbox ?
 
-!!! book
-    **Lehrmaterialen**
-
+!!! abstract "Lehrmaterialen"
     - Foliensatz: Kap. 4.5 - 4.7
     - Lehrvideo: [Gestaltung von Webseiten I](https://electures.h-da.de/paella/ui/watch.html?id=9b3895e1-3427-4dbe-a77f-f43529603c99) – (00:00:00 – 01:31:48)
     - Zur Vertiefung: [Sehr gute und anschauliche Einführung in die Funktionsweise der Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
@@ -301,8 +275,6 @@ Lehrmaterial
 - Wie lassen sich Webseiten mit Selenium testen ?
 - Welche Besonderheiten besitzen Web-Applikationen gegenüber traditionellen Desktop-Applikationen ?
 
-!!! book
-    **Lehrmaterialien**
-
+!!! abstract "Lehrmaterialen"
     - Foliensatz: Kap. 5.7.4 – Folie 436 & 437
     - Lehrvideo: [Infrastruktur und Querschnittsthemen III](https://electures.h-da.de/paella/ui/watch.html?id=a6cbe6a2-1b87-4d0e-9ae1-38ffce4e2a40) – (00:50:53 - 00:58:50)
