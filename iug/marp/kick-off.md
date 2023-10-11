@@ -19,14 +19,15 @@ paginate: true
 <!-- marp --pdf --allow-local-files --engine ./engine.js --theme-set custom-theme-roboto.css -- kick-off.md -->
 
 
-
+<!-- ![bg vertical 100%](figures/robot_looking_at_city.webp) -->
 # Informatik und Gesellschaft {.Huge}
 
-#### Dipl. Soz. Bettina von Römer & Prof. Dr. Stefan Linus Zander 
+#### Dipl. Soz. Bettina von Römer & Prof. Dr. Stefan Linus Zander
 
 
 Kick-Off und Organisation 
 17.10.2023 {.lightgreen .Big .Bigskip}
+
 
 
 ---
@@ -115,7 +116,7 @@ Kick-Off und Organisation
 
 
 ---
-# Allgemeines
+# Allgemeines :fa-chalkboard:
 
 - **Lehrformat: Seminar**
   - 2,5 CP
@@ -214,13 +215,13 @@ Bildquelle: https://c4.wallpaperflare.com/wallpaper/710/270/417/1898-austrian-pa
 
 
 ---
-# Anforderungen
+# Anforderungen :fa-person-digging:
 
 **Vorbereitung und Leitung einer Seminarstunde**
 - Gruppenpräsentation, Interaktion und Diskussionsleitung zu einem Thema (max. 55 min)
 - Zeitmanagement ist IHRE Aufgabe!
 
-**Erstellung eines Quizzes zu einer Seminarstunde**
+**Erstellung eines Quizzes zu Ihrer Seminarstunde**
 - Durchführung des Quizzes in der Woche nach Ihrer eigenen Präsentation
 
 
@@ -241,7 +242,7 @@ Bildquelle: https://c4.wallpaperflare.com/wallpaper/710/270/417/1898-austrian-pa
 **Aktive Beteiligung an den Diskussionen**
 - Aktivität & Aufmerksamkeit
 - Redebereitschaft & Diskussionslust
-- _Nutzung von elektronischen Geräten ausschließlich zu Seminarzwecken (kein Coding oder sonst. Tätigkeiten) :far-hand-point-up:_ 
+- ==Nutzung von elektronischen Geräten ausschließlich zu Seminarzwecken (kein Coding oder sonst. Tätigkeiten) :far-hand-point-up:== 
 
 **Aktive Vorbereitung ihres Themas mehrere Wochen im Voraus** 
 - Lesen der bereitgestellten Literatur
@@ -260,7 +261,7 @@ Bildquelle: https://c4.wallpaperflare.com/wallpaper/710/270/417/1898-austrian-pa
 ## Gruppenpräsentation :fa-people-group:
 <!-- ![bg right:20% ](figures/ontology_ancient_greek.webp) -->
 
-- **Gruppen von 3(-4) Studierenden halten eine gemeinsame Präsentation**
+- **Gruppen von 3(-4) Studierenden halten eine [gemeinsame]{.underline} Präsentation**
    - Ausgeglichene Zeiteinteilung
    - Präsentation baut aufeinander auf (keine 4 aneinandergereihten Präsentationen)
    - Jeweils kurze Vorstellung der Präsentierenden (wir müssen wissen wer spricht!)
@@ -283,12 +284,59 @@ Bildquelle: https://c4.wallpaperflare.com/wallpaper/710/270/417/1898-austrian-pa
 
 
 
+
 ---
-## Quiz :fa-dice:
+## Quiz :fa-dice: (1/2)
 
-TBA
+::: twocolumns 
+**Zielsetzung** {.big .center .inverseblue}
+- für Gruppe: 
+  - Feedback, wie gut das Plenum die zentralen Inhalte aufgenommen hat
+- für Plenum: 
+  - Sichtbarmachung, wie gut der Vortag verstanden wurde 
+  ($\leadsto$ was blieb hängen...)
+- für alle Studierenden:
+  - Möglichkeit, durch sehr gute Leistungen in den Quizzes eine Aufwertung der Seminarnote zu erhalten
 
 
+**Aufgabe** {.big .center .inversegreen}
+- für Gruppe
+  - Herausarbeitung der wesentlichen Inhalte etc. der Seminarstunde und Überführung in ein Hörsaalquiz in der Folgewoche
+  - Durchführung des Quizzes zu Beginn der Folgestunde
+  - Verwaltung und Export der Rangliste
+- für Studierende
+  - Registration mit Matrikelnummer am jeweiligen Quiz 
+  - regelmäßige Teilnahme
+:::
+
+
+---
+## Quiz :fa-dice: (2/2)
+
+
+::::: columns-center
+:::: double
+**Durchführung** 
+- Tool: **Quizizz** (https://quizizz.com/?lng=de)
+  - kostenlose Registrierung mind. eines Mitglieds
+- Teilnehmende registrieren sich zu Beginn einer Veranstaltung/des Quizzes mit der Matrikelnummer 
+- Auslegung des Quizzes auf etwa 8 - 10 Minuten
+- Fragen zeitlich begrenzen; gerne mit unterschiedlichen Fragetypen(1)^1^
+- Präsentation des Quizzes und der Ergebnisse und Rangliste am Beamer
+- Exportieren der Rangliste als `.csv` und Upload im Moodle-Forum
+- Übertragung der Rangliste in das bereit gestellte Template (Link in Moodle)
+::::
+:::: single bluebox small
+**Regeln** :fa-medal:
+- Beste 5 Teilnehmende am Semesterende erhalten eine Aufwertung :fa-arrow-trend-up: von bis zu einer Notenstufe auf die Seminarnote
+- Schlechteste 3 Teilnehmende am Semesterende erhalten eine Abwertung :fa-arrow-trend-down: von 0,3 auf die Seminarnote
+- bei mehr als 3 Nicht-Teilnahmen 0,3 Abzug :fa-arrow-trend-down: auf die Seminarnote; für jede weitere Nicht-Teilnahme Abzug :fa-arrow-trend-down: von 0,1 auf die Seminarnote
+::::
+:::::
+
+::: footnotes
+(1)^1^ In der freien/kostenlosen Version sind die Fragetypen stark begrenzt. 
+:::
 
 
 
@@ -304,11 +352,12 @@ TBA
 
 - Zeitplan:
    - Start: pünktlich
+   - 5 Minuten: Fragen; Vorbereitung des Quizzes; Registrierung der Teilnehmenden
    - 10 Minuten: Durchführung des Quizzes zum Thema aus der Vorwoche
-   - 5 Minuten: Kurzes Plenumsfeedback zum Quiz
+   - 5 Minuten: Kurzes Reflexion des Quizzes
    - 55 Minuten: Präsentation, Diskussion und Interaktion
    - 15 Minuten: Feedback zur Präsentation
-   - Ende: 13:25 Uhr
+   - Ende: 13:30 Uhr
    - bei Bedarf: zus. Feedback und/oder Coaching der nachfolgenden Gruppe
 
 
@@ -344,15 +393,15 @@ TBA
 # Bewertungskriterien :fa-trophy:
 
 ::::: grid2col widthauto horizontal-left vertical-align-top gap1em
-:fa-person-chalkboard: **Präsentation** {.blue}
+:fa-person-chalkboard: **Präsentation** {.blue .big}
 
 :::
 Hauptnote; ggf. individuelle Auf- bzw. Abwertung je nach Leistung
-**Leistung**: Leiten der Seminarstunde (Vorbereitung, Präsentation, Moderation, Interkation) 
-**Erwartung**: Fundierte Quellenarbeit (vorgegebene + eigene); schlüssige und nachvollziehbare Ausarbeitung; Moderation
+**Leistung**: Leiten der Seminarstunde (Vorbereitung, Präsentation, Moderation, Interaktion) 
+**Erwartung**: Fundierte Quellenarbeit (vorgegebene + eigene); schlüssige, nachvollziehbare Ausarbeitung; Moderation
 :::
 
-:fa-dice: **Quiz** {.blue}
+:fa-dice: **Quiz** {.blue .big}
 
 :::
 Auf- bzw. Abwertung der Hauptnote entspr. der Ausarbeitung
@@ -360,14 +409,14 @@ Auf- bzw. Abwertung der Hauptnote entspr. der Ausarbeitung
 **Erwartung**: Angemessene Komplexität und Umfang; Schlüssigkeit und Nachvollziehbarkeit
 :::
 
-:fa-ranking-star: **Rangliste** {.blue}
+:fa-ranking-star: **Rangliste** {.blue .big}
 
 :::
-Optional; Möglichkeit zur Verbesserung der Note um max. eine Haupt-Notenstufe (+ 1,0)
+Möglichkeit zur Verbesserung der Hauptnote um bis zu einer Haupt-Notenstufe; bei Nichtteilnahme Abzug 
 **Leistung**: Belegung der Top-5-Plätze in der Gesamtabrechnung der Quizzes
 :::
 
-:fa-comment: **Mitarbeit** {.blue}
+:fa-comment: **Mitarbeit** {.blue .big}
 
 Optional; Verbesserung der Note um eine minor Notenstufe (+/- 0,3) durch individuelle Mitarbeit
 **Leistung**: Sichtbarkeit; fortwährende fundierte und konstruktive Beiträge; Beteiligung an Diskussion etc.
@@ -395,18 +444,33 @@ Optional; Verbesserung der Note um eine minor Notenstufe (+/- 0,3) durch individ
 - Themenwahl/Gruppenwahl – Eintragung via Moodle heute Abend ab 20 Uhr möglich
   - Abschluss bis Montag, 23.10.2023, 12:00 Uhr
 
-- Bereiten Sie Ihr Thema rechtzeitig vor
+- Bereiten Sie Ihr Thema rechtzeitig vor (_starten Sie gleich!_)
    - Lesen Sie Ihr Thema und Ihre Quellen aufmerksam durch
    - Lesen Sie alle anderen Themen, um Überschneidungen zu minimieren
      - Einige Themen sind sehr nah beieinander, bleiben Sie in Ihrem Thema!
    - Machen Sie sich Ihren Zeitplan bewusst:
       - 2 Wochen vor Ihrer Präsentation sollen Sie Ihre Vorbereitung und Quellen abgeben (:fa-right-long: per Mail an Dozentin und Dozent)
 
-- Bereiten Sie sich mit Ihrer Gruppe auf den "Coaching"-Termin am 7.11. vor!
+- Bereiten Sie sich mit Ihrer Gruppe auf den "Coaching"-Termin am 30.10/7.11. vor!
    - Gruppen stellen Fragestellung und Ideen für die Ausarbeitung vor und bekommen Feedback von den Dozierenden und Kommiliton*innen
 
-- ==Lesen / Hören Sie zur Einstimmung Unterhaltungslektüre aus dem Werbeblock== -- BEIBEHALTEN?
+- Lesen bzw. Hören Sie zur Einstimmung Unterhaltungslektüre aus dem Werbeblock 
 
 - Beteiligen Sie sich aktiv an den Diskussionen
 
 - Haben Sie Spaß :far-face-smile:
+
+
+
+---
+# Präsentationsthemen :fa-person-chalkboard:
+
+1. Infokratie – Digitalisierung und die Krise der Demokratie
+2. Die (digital) transparenten Bürger
+3. Digitale Diskriminierung
+4. Desinformationskampagnen im Wahlkampf
+5. Medienkompetenz oder Digitale Demenz? Zum Einfluss der Digitalisierung auf Erziehung und Bildung
+6. Typischer Informatiker – ist auf jeden Fall männlich und was noch?
+7. Cognitive Warfare - Der große Informationskrieg
+8. Hinter der KI: Clickworking als moderne „Sklavenarbeit“?
+9. Kommunikation – „always on, aber nie da“ (alone together) 
