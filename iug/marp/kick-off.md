@@ -451,10 +451,10 @@ Optional; Verbesserung der Note um eine minor Notenstufe (+/- 0,3) durch individ
    - Machen Sie sich Ihren Zeitplan bewusst:
       - 2 Wochen vor Ihrer Präsentation sollen Sie Ihre Vorbereitung und Quellen abgeben (:fa-right-long: per Mail an Dozentin und Dozent)
 
-- Bereiten Sie sich mit Ihrer Gruppe auf den "Coaching"-Termin am 30.10/7.11. vor!
+- Bereiten Sie sich mit Ihrer Gruppe auf den "Coaching"-Termin am 31.10/7.11. vor!
    - Gruppen stellen Fragestellung und Ideen für die Ausarbeitung vor und bekommen Feedback von den Dozierenden und Kommiliton*innen
 
-- Lesen bzw. Hören Sie zur Einstimmung Unterhaltungslektüre aus dem Werbeblock 
+<!-- - Lesen bzw. Hören Sie zur Einstimmung Unterhaltungslektüre aus dem Werbeblock  -->
 
 - Beteiligen Sie sich aktiv an den Diskussionen
 
