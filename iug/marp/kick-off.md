@@ -116,6 +116,42 @@ Kick-Off und Organisation
 
 
 ---
+# Interessante Quellen zum Selbststudium
+
+
+::::: columns
+:::: triple
+- [The Next Global Superpower Isn't Who You Think | Ian Bremmer | TED](https://youtu.be/uiUPD-z9DTg?si=nMt-72CvdQtUDarH)
+  - Ein beachtenswerter TED-Talk des US-amerikanischen Politikwissenschaftlers Ian Bremmer über die Rolle und Macht von Tech-Unternehmen im Rahmen einer neuen/veränderten Weltordnung.
+
+- [U$A – Die Dollar-Demokratie](https://youtu.be/_H7HvXFwKO0?si=YKLN40NC03eZhgtB)
+  - Sehenswerte arte-Doku die aufzeigt, wie Geld bei amerikanischen Wahlen, egal ob in Washington oder in der Provinz, die Wahlergebnisse und somit die gesamte Politik in den USA bestimmt. 
+
+- [Fake America Great Again](https://vimeo.com/471514311)
+  - Die arte-Dokumentation zeigt am Beispiel des Wahlsieges des ehem. US-Präsidenten Trump, wie durch gezielte Datenanalyse und soziale Medien Wahlen gewonnen werden
+
+- [Whose Job does AI automate?](https://youtu.be/gjDRDrOrH94?si=HHzs29hO8NJmgX5l)
+  - Interessante Abschlusskeynote auf dem Web Summit Rio 2023 von Cassie Kozyrkov (former Chief Decision Scientist at Google) über die aktuelle AI-Entwicklung.
+
+- [Birds Aren’t Real? How a Conspiracy Takes Flight | Peter McIndoe | TED](https://youtu.be/3VEkzweBJPM?si=eqyJtbWJVWisKqAl)
+
+::: center orangebox marg25
+Weitere Vorschläge aus dem Plenum ?
+:::
+
+::::
+:::: single center
+[![width:200px](https://img.youtube.com/vi/uiUPD-z9DTg/0.jpg)](https://youtu.be/uiUPD-z9DTg?si=nMt-72CvdQtUDarH)
+
+[![width:200px](https://img.youtube.com/vi/gjDRDrOrH94/0.jpg)](https://youtu.be/gjDRDrOrH94?si=HHzs29hO8NJmgX5l)
+
+![width:200px](https://img.youtube.com/vi/_H7HvXFwKO0/0.jpg)
+::::
+:::::
+
+
+
+---
 # Allgemeines :fa-chalkboard:
 
 - **Lehrformat: Seminar**
@@ -124,13 +160,13 @@ Kick-Off und Organisation
   - Anwesenheitspflicht bei allen Terminen
 
 - **Erläuterung 2,5 CP**
-  - 1 CP entspricht 25-30 Std. Arbeit
+  - 1 CP entspricht 25 - 30 Std. Arbeit
   - Entsprechend 2,5 CP = ca. 60 - 75 Std.
   - Vollzeitstudium geht von 30 CP pro Semester aus, das entspricht
   - 2,5 CP ≙ 8,5 %, d.h. bei 6-Tage-Woche ½ Tag pro Woche (4 Std.)
 
 - **Letzte Möglichkeit zur Abmeldung: Ende der Restplatzvergabe (siehe OBS)**
-  - danach Note 5 bei Nichtabgabe
+  - danach Note 5 bei Nichtabgabe/Nichtteilnahme
 
 
 
@@ -151,7 +187,7 @@ Kick-Off und Organisation
 - NICHT abdriften in technische Details
 
 **Wöchentlich eine Präsentation zu einem relevanten Thema**
-- Gruppenpräsentation (3/4 Personen)
+- Gruppenpräsentation (2-3 Personen)
 - Diskussion im Plenum
 
 **Erstellung eines Quizzes zu den wichtigsten Inhalten des Vortrags**
@@ -188,7 +224,7 @@ Bildquelle: https://c4.wallpaperflare.com/wallpaper/556/603/706/1892-on-the-terr
 
 ---
 # Was wird von Ihnen verlangt ?
-![bg right:30% ](figures/men_lifting_stone.jpg)
+![bg left:33% ](figures/men_lifting_stone.jpg)
 
 <!-- ::::: columns-center
 :::: single -->
@@ -261,7 +297,7 @@ Bildquelle: https://c4.wallpaperflare.com/wallpaper/710/270/417/1898-austrian-pa
 ## Gruppenpräsentation :fa-people-group:
 <!-- ![bg right:20% ](figures/ontology_ancient_greek.webp) -->
 
-- **Gruppen von 3(-4) Studierenden halten eine [gemeinsame]{.underline} Präsentation**
+- **Gruppen von 2-3 Studierenden halten eine [gemeinsame]{.underline} Präsentation**
    - Ausgeglichene Zeiteinteilung
    - Präsentation baut aufeinander auf (keine 4 aneinandergereihten Präsentationen)
    - Jeweils kurze Vorstellung der Präsentierenden (wir müssen wissen wer spricht!)
@@ -294,7 +330,7 @@ Bildquelle: https://c4.wallpaperflare.com/wallpaper/710/270/417/1898-austrian-pa
   - Feedback, wie gut das Plenum die zentralen Inhalte aufgenommen hat
 - für Plenum: 
   - Sichtbarmachung, wie gut der Vortag verstanden wurde 
-  ($\leadsto$ was blieb hängen...)
+  $\leadsto$ was blieb hängen...
 - für alle Studierenden:
   - Möglichkeit, durch sehr gute Leistungen in den Quizzes eine Aufwertung der Seminarnote zu erhalten
 
@@ -319,16 +355,16 @@ Bildquelle: https://c4.wallpaperflare.com/wallpaper/710/270/417/1898-austrian-pa
 **Durchführung** 
 - Tool: **Quizizz** (https://quizizz.com/?lng=de)
   - kostenlose Registrierung mind. eines Mitglieds
-- Teilnehmende registrieren sich zu Beginn einer Veranstaltung/des Quizzes mit der Matrikelnummer 
-- Auslegung des Quizzes auf etwa 8 - 10 Minuten
+- Teilnehmende registrieren sich zu Beginn des Quizzes mit der *Matrikelnummer* 
+- Auslegung des Quizzes auf etwa *8 - 10 Minuten*
 - Fragen zeitlich begrenzen; gerne mit unterschiedlichen Fragetypen(1)^1^
 - Präsentation des Quizzes und der Ergebnisse und Rangliste am Beamer
 - Exportieren der Rangliste als `.csv` und Upload im Moodle-Forum
 - Übertragung der Rangliste in das bereit gestellte Template (Link in Moodle)
 ::::
 :::: single bluebox small
-**Regeln** :fa-medal:
-- Beste 5 Teilnehmende am Semesterende erhalten eine Aufwertung :fa-arrow-trend-up: von bis zu einer Notenstufe auf die Seminarnote
+**Regeln** :fa-medal: {.big .center}
+- Beste 4 Teilnehmende am Semesterende erhalten eine Aufwertung :fa-arrow-trend-up: von bis zu einer Notenstufe auf die Seminarnote
 - Schlechteste 3 Teilnehmende am Semesterende erhalten eine Abwertung :fa-arrow-trend-down: von 0,3 auf die Seminarnote
 - bei mehr als 3 Nicht-Teilnahmen 0,3 Abzug :fa-arrow-trend-down: auf die Seminarnote; für jede weitere Nicht-Teilnahme Abzug :fa-arrow-trend-down: von 0,1 auf die Seminarnote
 ::::
@@ -365,24 +401,25 @@ Bildquelle: https://c4.wallpaperflare.com/wallpaper/710/270/417/1898-austrian-pa
 ---
 # Semestertermine :far-calendar:
 
-- **1. Termin: Kickoff und Orga (heute 17.10.2023)**
+- **1. Termin: Kickoff und Organisation (heute 17.10.2023)**
    - Gruppen- und Themenfindung
 
 - **2. Termin: Einführung der Dozierenden** (Themenfindung abgeschlossen)
+  - Impulsvortrag zu Demokratie und Digitalisierung
 
 - **3. & 4. Termin: Worauf kommt es bei den Präsentationen an?**
    - Gruppencoaching: Alle Gruppen haben Ihr Thema und stellen die jeweiligen Fragestellungen und Vorgehensweise vor
 
-- **5.–13. Termin: insgesamt 9 Themen/Gruppen**
+- **5. & 6. Termin: Vorbereitung der Seminarstunden** 
+  - selbständige Gruppenarbeit; keine Präsenzveranstaltung; bei Bedarf Coaching und Feedback durch Dozierende
+
+- **7.–13. Termin: insgesamt 9 Themen & 7 Gruppen**
   - Präsentation
   - Diskussion
   - Quiz
 
 - **14. Termin (06.02.2024)**
-  - Puffer
-  - Vorlesungsevaluation
-  - Feedback
-  - Abschluss
+  - Puffer / Quiz / Vorlesungsevaluation / Feeback / Abschluss
 
 
 
@@ -393,34 +430,35 @@ Bildquelle: https://c4.wallpaperflare.com/wallpaper/710/270/417/1898-austrian-pa
 # Bewertungskriterien :fa-trophy:
 
 ::::: grid2col widthauto horizontal-left vertical-align-top gap1em
-:fa-person-chalkboard: **Präsentation** {.blue .big}
+:fa-person-chalkboard: **Präsentation** {.redbox .big}
 
-:::
+::: redbox
 Hauptnote; ggf. individuelle Auf- bzw. Abwertung je nach Leistung
 **Leistung**: Leiten der Seminarstunde (Vorbereitung, Präsentation, Moderation, Interaktion) 
-**Erwartung**: Fundierte Quellenarbeit (vorgegebene + eigene); schlüssige, nachvollziehbare Ausarbeitung; Moderation
+**Erwartung**: Fundierte Quellenarbeit (vorgegebene + eigene); schlüssige, nachvollziehbare Ausarbeitung; souveräne Moderation und Präsentation
 :::
 
-:fa-dice: **Quiz** {.blue .big}
+:fa-dice: **Quiz** {.bluebox .big}
 
-:::
-Auf- bzw. Abwertung der Hauptnote entspr. der Ausarbeitung
-**Leistung**: Vorbereitung und Durchführung eines Quizzes zu den wesentlichen Inhalten und Lernzielen des Themas 
+::: bluebox
+Auf- bzw. Abwertung der Hauptnote entspr. der Ausarbeitung 
+**Leistung**: Vorbereitung und Durchführung eines Quizzes zu den wesentlichen Inhalten & Lernzielen  
 **Erwartung**: Angemessene Komplexität und Umfang; Schlüssigkeit und Nachvollziehbarkeit
 :::
 
-:fa-ranking-star: **Rangliste** {.blue .big}
+:fa-ranking-star: **Rangliste** {.bluebox .big}
 
-:::
+::: bluebox
 Möglichkeit zur Verbesserung der Hauptnote um bis zu einer Haupt-Notenstufe; bei Nichtteilnahme Abzug 
-**Leistung**: Belegung der Top-5-Plätze in der Gesamtabrechnung der Quizzes
+**Leistung**: Belegung der Top-Plätze in der Gesamtabrechnung der Quizzes
 :::
 
-:fa-comment: **Mitarbeit** {.blue .big}
+:fa-comment: **Mitarbeit** {.greenbox .big}
 
+::: greenbox
 Optional; Verbesserung der Note um eine minor Notenstufe (+/- 0,3) durch individuelle Mitarbeit
 **Leistung**: Sichtbarkeit; fortwährende fundierte und konstruktive Beiträge; Beteiligung an Diskussion etc.
-
+:::
 :::::
 
 
