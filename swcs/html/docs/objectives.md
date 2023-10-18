@@ -44,7 +44,7 @@ You will discover a lot, mostly more detailed in the lecture and through your li
     Ensure the appropriateness of the chosen methodology for tackling an identified problem so that others, when applying your methodology, are likely to gather the same or comparable results (--> *Reproducability*)
 
 - **External Validity**  
-    Consider the replicability and transferability of the applied methodology and obtained results (--> *Generalisation*). Your results should be verifable by emperical research results. Others should be able to apply your researched results to comparable problems. Validate the appropriateness of your methodology and generated insights by demonstrating that they also apply to comparable problems and yield similar results.
+    Consider the replicability and transferability of the applied methodology and obtained results (--> *Generalisation*). Your results should be verifable by emperical research results. Others should be able to apply your researched results to comparable problems. Validate the appropriateness of your methodology and generated insights by demonstrating that they also apply to comparable problems and yield similar results.
 
 - **Internal Validity**  
     Make sure that the logical consistency of the applied causality chain is maintained, i.e., that you used the appropriate set of methods for takling a problem and that the conclusions you draw from your observations are both verifyable and valid  (--> *"Inducability"*)
