@@ -7,9 +7,7 @@ The **findings** or **results** of the evaluation of your idea (i.e., your appro
 
 The role of the discussion in the usual research workflow is briefly sketched below:
 
-!!! example
-    **The usual research workflow is as follows**:
-
+!!! example "The usual research workflow is as follows"
     - You identified a problem and created one or some ideas on how to solve it
     - Specific aspects of the problem were formulated as research questions (usually based on some observations and in conjunction with a hypothesis)
     - Your idea is then implemented and evaluated 

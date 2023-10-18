@@ -86,7 +86,7 @@ Please make sure to consider the following things:
 - Is the SOTA considered?
 - Is the work and problem domain well motivated?
 - Are all contributions clearly ”visible”?
-- Are all results verified and validated (--> see internal, external, and construct validity)?
+- Are all results verified and validated (--> see internal, external, and construct validity)?
 - Is the reference list complete?
 
 

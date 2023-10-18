@@ -16,8 +16,6 @@
 * The acknowledgements section does not exhibit a distinct structure; it is just 1-2 full text sentences.
 
 
-    !!! example
-        **Example**:
-
+    !!! example "Example"
         "*This work was supported in part by the National Science Foundation under awards 0133749, 0205724, 0326105, and 0527729, and by a grant from Intel Corporation.*"
 

@@ -9,9 +9,7 @@ The function of the Introduction is to...
 - ...briefly explain your rationale and approach and, whenever possible, the possible outcomes your study can reveal.
 
 
-!!! example
-    **The Introduction must answer the questions...**
-
+!!! example "The Introduction must answer the questions..."
     - *"What was I studying?"*
     - *"Why was it an important question?"*
     - *"What did we know about it before I did this study?"*

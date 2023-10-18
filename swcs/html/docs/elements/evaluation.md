@@ -1,7 +1,6 @@
 # The Evaluation
 
-!!! warning
-    **Please note**:  
+!!! warning "Please note"
     This section only provides a rough overview. Conducting a proper evaluation in CS requires extensive and thorough planing and conduct of proper scientific methods.  
     We only use a rather basic set of methods in this course.  
     For more in-depth information, consult the  relevant literature. 

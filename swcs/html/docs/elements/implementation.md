@@ -7,8 +7,7 @@ In order to measure the impact of a solution (the approach), an operationalisati
 
 The implementation section describes the realisation of the approach (or some parts of it), mainly for the purpose of enabling its evaluation.
 
-!!! note 
-    **Please note**:  
+!!! info "Please note"
     The implemantation should *not* "add" something new to the approach or to a concept described in the approach section. Its main purpose is to demonstrate one implementation of it. 
 
 

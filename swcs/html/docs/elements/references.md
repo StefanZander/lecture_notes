@@ -1,18 +1,16 @@
 # References
 
-!!! note
-    **Please note:**  
+!!! info "Creating the Bibliography in LaTeX"  
     LaTeX creates this list automatically for you based on the works you cited in your paper.
 
     Please inform yourself about the citation style when submitting a paper to a conference etc. Usually, such information is provided by the organisators on the Website.
+
 
 ### Function
 
 * Outlines the research artifacts (mostly published academic papers) that you used in your paper, i.e., that your research and work is built upon
 
-    !!! warning 
-        **Please consider the following information carefully**:
-        
+    !!! warning "Please consider the following information carefully"        
         In your paper, the references should be **credible** and **verifiable references**!  
         References to blogs, industry-focused white papers or general Web pages cannot be trusted in providing credible viewpoints.
 

@@ -22,9 +22,7 @@ Usually there are three ways of structuring the related work section
     * the selection of works seems arbitrary
     * no separation of works is deployed
 
-    !!! example
-
-        **Example**:
+    !!! example "Example"
 
         > 2.1 Related Work
 
@@ -34,13 +32,13 @@ Usually there are three ways of structuring the related work section
 
         >This paper details an experiment in which a number of participants were trained using virtual reality alongside standard training and then they performed a surgery. Their results were compared to a control group of trainees who only received standard training.
 
-        >Alin Moldoveanu, Florica Moldoveanu, Ionut Negoi, et al. Challenges and Is- sues For Successfully Applying Virtual Reality In Medical Rehabilitation, The 11th International Scientific Conference eLearning and Software for Education Bucharest, April 23-24, 2015 [4].
+        >Alin Moldoveanu, Florica Moldoveanu, Ionut Negoi, et al. Challenges and Issues For Successfully Applying Virtual Reality In Medical Rehabilitation, The 11th International Scientific Conference eLearning and Software for Education Bucharest, April 23-24, 2015 [4].
 
         >This paper outlines some important issues regarding virtual reality and medical rehabilitation. Some of the issues include cost and issues with the user interface.
         
         >Lan Li, Fei Yu, et al. Application of virtual reality technology in clinical medicine, Am J Transl Res. 2017 [5].
 
-        >This paper discusses VR’s application in numerous surgeries such as in orthope- dics, as well as treatment for pain management in patients.
+        >This paper discusses VR’s application in numerous surgeries such as in orthopedics, as well as treatment for pain management in patients.
 
 * **The Ugly**
     * The method for selecting related works is outlined
