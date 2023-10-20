@@ -410,10 +410,10 @@ Bildquelle: https://c4.wallpaperflare.com/wallpaper/710/270/417/1898-austrian-pa
 - **3. & 4. Termin: Worauf kommt es bei den Präsentationen an?**
    - Gruppencoaching: Alle Gruppen haben Ihr Thema und stellen die jeweiligen Fragestellungen und Vorgehensweise vor
 
-- **5. & 6. Termin: Vorbereitung der Seminarstunden** 
+- **5. - 7. Termin: Vorbereitung der Seminarstunden** 
   - selbständige Gruppenarbeit; keine Präsenzveranstaltung; bei Bedarf Coaching und Feedback durch Dozierende
 
-- **7.–13. Termin: insgesamt 9 Themen & 7 Gruppen**
+- **8. – 13. Termin: insgesamt 9 Themen & 6 Gruppen** (Themen und Temine in Moodle)
   - Präsentation
   - Diskussion
   - Quiz
@@ -479,8 +479,8 @@ Optional; Verbesserung der Note um eine minor Notenstufe (+/- 0,3) durch individ
 ---
 # Nächste Schritte :fa-shoe-prints:
 
-- Themenwahl/Gruppenwahl – Eintragung via Moodle heute Abend ab 20 Uhr möglich
-  - Abschluss bis Montag, 23.10.2023, 12:00 Uhr
+- Themenwahl/Gruppenwahl – Eintragung via Moodle in der 2. Vorlesungsstunde
+  - Abschluss bis _Dienstag, 24.10.2023, 24:00 Uhr_
 
 - Bereiten Sie Ihr Thema rechtzeitig vor (_starten Sie gleich!_)
    - Lesen Sie Ihr Thema und Ihre Quellen aufmerksam durch
