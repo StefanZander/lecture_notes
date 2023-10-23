@@ -17,19 +17,19 @@ paginate: true
 <!-- <script src="https://kit.fontawesome.com/bfb4213bb3.js" crossorigin="anonymous"></script> -->
 <!-- <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> -->
  
-<!-- marp --engine ./engine.js --watch --theme-set custom-theme-roboto.css -- --allow-local-files 2023_SS_PSE_Kick-Off.md -->
-<!-- marp --pdf --allow-local-files --engine ./engine.js --theme-set custom-theme-roboto.css -- 2023_SS_PSE_Kick-Off.md -->
+<!-- marp --engine ./engine.js --watch --theme-set custom-theme-roboto.css -- --allow-local-files 2023_WS_PSE_Kick-Off.md -->
+<!-- marp --pdf --allow-local-files --engine ./engine.js --theme-set custom-theme-roboto.css -- 2023_WS_PSE_Kick-Off.md -->
 
-# Master-Projekt-Systementwicklung im SoSe 2023 
+# Projekt-Systementwicklung / Projekt KMI im WiSe 2023 
 
-#### Prof. Dr. Stefan Linus Zander – Dipl. Volkswirt Roland Trefftz
+#### Prof. Dr. Stefan Linus Zander – Dipl. Volkswirt Roland Trefftz – Lars Kleinschmidt (BSc)
 
-Kick-Off-Meeting – 03.05.2023  {.lightgreen .Big .skip}
+Kick-Off-Meeting – 24.10.2023  {.lightgreen .Big .skip}
 
 
 ---
 <!-- header: Überblick -->
-<!-- footer: Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 03.05.2023 -->
+<!-- footer: Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 24.10.2023 -->
 
 # Agenda
 
@@ -59,22 +59,22 @@ Für *Studierende*, sagen Sie bitte kurz ...
 ---
 # Beteiligte Personen (1/2)
 
-**Hochschule Darmstadt** {.BIGskip}
-- **Prof. Dr. Stefan Linus Zander** (Modulverantwortung und Projektleitung) 
+**Hochschule Darmstadt** 
+- **Prof. Dr. Stefan Linus Zander** (Modulverantwortung und Lehrveranstaltungsleitung) 
   - Email: stefan.zander@h-da.de 
   - Website: https://fbi.h-da.de/personen/stefan-zander
 
+- **Lars Kleinschmidt** (Technische Projektleitung – CTO) 
+  - Email: Lars.Kleinschmidt@stud.h-da.de
 
-**Klinikon GmbH^1^** {.Bigskip}
-- **Dipl. Volkswirt Roland Trefftz** (fachliche Projektleitung und Stakeholder) – trefftz@klinikon.com
+
+**Klinikon GmbH** {.Bigskip}
+- **Dipl. Volkswirt Roland Trefftz** (fachliche Projektleitung und Stakeholder) 
+  - Email: trefftz@klinikon.com
+  - Website: https://www.klinikon.com/
 
 
-**Fachliche Begleitung** {.Bigskip}
-- **Marcus Raphael Schül** (Solutionarchitekt und Stakeholder) – mail@marcus-schuel.de
 
-::: footnotes
-^1^ https://www.klinikon.com/
-:::
 
 
 ---
@@ -82,9 +82,26 @@ Für *Studierende*, sagen Sie bitte kurz ...
 
 **Hochschule Darmstadt – Studierende**
 
-- Boschert, Michele – Michele.Boschert@stud.h-da.de
-- Kleinschmidt, Lars  – Lars.Kleinschmidt@stud.h-da.de
-
+::::: columns
+:::: triple
+- Gil, Marco Antonio – marcoantonio.gil@stud.h-da.de
+- Kutzer, Frederik – Frederik.Kutzer@stud.h-da.de
+- Le, Thanh Trung – thanhtrung.le@stud.h-da.de
+- Walter, Bastian	– bastian.walter@stud.h-da.de
+::::
+:::: quad
+- Bauss, Bela	– Bela.Bauss@stud.h-da.de
+- Heitmann, Kilian – kilian.heitmann@stud.h-da.de
+- Jesske, Benjamin – Benjamin.Jesske@stud.h-da.de
+- Kajouj, Yassine	– Yassine.Kajouj@stud.h-da.de
+- Kieferle, Christian – Christian.Kieferle@stud.h-da.de
+- Putranto, Bernhard Ricardo – Bernhard.R.Putranto@stud.h-da.de
+- Syed, Aniq Hussain – aniqhussain.syed@stud.h-da.de
+- Tanhansen, Vinsky Strauss – Vinsky.S.Tanhansen@stud.h-da.de
+- Tran, Dang Quang – dangquang.tran@stud.h-da.de
+- Wend, Marwin – Marwin.Wend@stud.h-da.de
+::::
+:::::
 
 
 <!-- ---
@@ -149,15 +166,15 @@ Quelle: Modulhandbuch des Fachbereichs Informatik mit individuellen Ergänzungen
 ---
 # Durchführung
 
-- Aufteilung der Studierenden in **2 Projektteams** analog den beiden Projekten
-- Jedes Projektteam bildet eigenverantwortlich **Sub-Teams (Dev.-/Research-Teams mit 2-3 Beteiligten)**, die selbständig und eigenverantwortlich an den verschiedenen Arbeitspaketen arbeiten
+- Aufteilung der Studierenden in **Projektteams** entsprechend der Arbeitspakete (siehe Projektplan)
+- Jedes Projektteam arbeitet selbständig und eigenverantwortlich an den zugehörigen Arbeitspaketen 
   - so lassen sich Arbeitspakete (=Sprints) parallel bearbeiten^1^
-- Jedes Projektteam bestimmt **1 Projektverantwortliche/n (=Product Owner)**^2^, die ...
+- Jedes Projektteam bestimmt **1 Projektverantwortliche/n (aka WP-Owner)**, die/der ...
   - ... den *Projektfortschritt* kontrolliert
   - ... *Arbeitsergebnisse* einfordert
-  - ... als *Ansprechpartner* des Projektteams fungieren
+  - ... als *Ansprechpartner* für das Projektteam und die Auftraggeber fungieren
   - ... *Arbeitspakete* und Sprints koordinieren
-  - ... für die *Qualitätskontrolle* verantwortlich sind
+  - ... für die *Qualitätskontrolle* verantwortlich ist
   - ... mitarbeiten, aber vor allem Aufgaben *delegieren* können
 - Projektdurchführung analog dem Scrum- und Design-Thinking Vorgehensmodell
 
@@ -188,16 +205,16 @@ Projekt Systementwicklung / Projekt Multimedia ist ein **7,5 CP Modul**.
 Projekt Systementwicklung / Projekt Multimedia ist ein **7,5 CP Modul**.
 - Das Bachelor-/Masterstudium sieht **30 CP** an Modulen pro Semester vor
 - Bei einer wöchentlichen Arbeitszeit von **42 h** ergibt sich ein zeitlicher Aufwand von **10,5 h** (ohne Pausen) über **16 Wochen** hinweg^1^
-- das ist das zeitliche Engagement, das wir von Ihnen einfordern
-- den zeitlichen Aufwand dürfen Sie frei einteilen
+- Dass ist das zeitliche Engagement, das wir von Ihnen einfordern
+- Den zeitlichen Aufwand dürfen Sie frei einteilen
 <!-- - Zeitlicher Aufwand von **10,5h** wöchentliche Arbeitszeit (ohne Pausen) über **16 Wochen** hinweg^1^ -->
 
-::: redbox center
-In Summe veranschlagen wir für das Projekt ein **Gesamtzeitbudget** von **320h**
+::: redbox center marg20 Bigskip
+In Summe veranschlagen wir pro Person ein **Gesamtzeitbudget** von **160h**
 :::
 
 ::: footnotes
-^1^ Vorlesungszeit (12 Wochen) + Lernwoche (1 Woche) + Prüfungszeit (3 Wochen)
+^1^ Vorlesungszeit (14 Wochen) + Lernwoche (1 Woche) + Prüfungszeit (1 Woche)
 :::
 
 ---
@@ -208,9 +225,9 @@ In Summe veranschlagen wir für das Projekt ein **Gesamtzeitbudget** von **320h*
 - oder **Email** bei wichtigen und/oder offiziellen Dingen
   - achten sie auf einen aussagekräftigen Betreff
   - bitte alle Verantwortlichen in cc mit aufnehmen
-- wöchentliche **Jour fixe** (ca. 30-45 Min pro Projektteam) mit den Stakeholdern
-  - Durchführung mittels geeigneter Online-Tools (bspw. BBB etc.)
-  - Pflichttermin für alle Beteiligte
+- wöchentliche **Jour fixe** (ca. 60-90 Min für alle Projektteams) mit den Stakeholdern
+  - Durchführung mittels BBB (vFBI/002)
+  - Pflichttermin für alle Beteiligten
 
 
 
@@ -218,12 +235,13 @@ In Summe veranschlagen wir für das Projekt ein **Gesamtzeitbudget** von **320h*
 # Entwicklungsplattform und Dokumentation
 
 **GitLab**
-- jede Gruppe benutzt ein eigenes **GitLab-Repository** 
+- Das we3ve-Projekt hat 3 GitLab-Reps; die Studierenden werden von uns dort eingeschrieben 
 - dort werden Programmcode und Dokumentation (Deliverables) gehostet
 - bitte direkt selbst erstellen und die Teammitglieder hinzufühgen
 <!-- - Unternehmensseitig werden notwendige APIs etc. zur Verfügung gestellt – mehr Informationen dazu in der Projektvorstellung -->
+<!-- - jede Gruppe benutzt ein eigenes **GitLab-Repository**  -->
 
-**Moodle** (nicht im SoSe 2023)
+**Moodle**
 - Link zum Moodlekurs: <https://lernen.h-da.de/course/view.php?id=17896> 
 - offizielle Dokumentationen werden über **Moodle** bereit gestellt
 - ebenso wie ergänzende Materialien
@@ -248,7 +266,7 @@ In die **Gesamtbewertung** fließt ein
 Die **Beteiligungsmatrix**
 - ... ist von jedem Projektteam verplichtend zu führen
 - ... beziffert den *%-tualen Beitrag* eines Teammitglieds
-  - d.h., sie beziffert den Beitragsumfang, den ein Teammitglied zu einem Ergebnisartefarkt geleistet hat
+  - d.h., Sie beziffert den Beitragsumfang, den ein Teammitglied zu einem Ergebnisartefarkt geleistet hat
 - ... ist in Form einer *Matrix* zu dokumentieren
   - bspw. in den jeweiligen Deliverables
 - ... wird von den Projektgruppen *eigenverantwortlich* erstellt
@@ -256,7 +274,7 @@ Die **Beteiligungsmatrix**
 ::::
 
 
-
+<!-- 
 ---
 ## Fragen / TBD / TODOs
 
@@ -266,19 +284,19 @@ Die **Beteiligungsmatrix**
   - State-of-Charge (aka Ladezustand) des Fahrzeugs sollte immer sichtbar/abrufbar sein um informierte Entscheidungen treffen zu können (bspw. Einkaufsfahrt jetzt mit halb-vollem Auto vs. Fahrt in 3h mit vollem Auto aber geschlossenem Supermarkt)
 - TODO (SZA): Gemeinsamer Termin mit J. Wischnat und den neuen Entwicklern finden
 - TODO (RT): Bug an J. Wischnat kommunizieren
-- 
+-->
 
 
 
 
 ---
-<!-- header: Projektplanung -->
-# Projekt #1: Erweiterung & Refactoring der we3ve-App
+<!-- header: "" -->
+# Erweiterung der we3ve-App
 
-### Betreuer: Roland Trefftz, Stefan Zander, Marcus Schül
+<!-- ### Betreuer: Roland Trefftz, Stefan Zander, Marcus Schül -->
 
 ---
-## Projekt #1: Ursprüngliche allgemeine Anforderungen der App
+## Übergeordnete Anforderungen an die App
 
 ::: blue 
 **Ziel**: Entwicklung einer einfach nutzbaren Car-Sharing-App auf Basis moderner Web-Technologien.
@@ -288,24 +306,189 @@ Die **Beteiligungsmatrix**
 
 **Allgemeine Anforderungen** 
 - Lauffähig im Web und auf mobilen Endgeräten
-- Verwaltung von NutzerInnen und Fahrzeugen
+- Verwaltung von NutzerInnen, Buchungsreservierungen und Fahrzeugen
 - Individualisierbares Dashboard mit div. Übersichten (Buchungen / Nutzung / gefahren Kilometer / Auslastung / etc.)
 - Einfache und vielfältige Reservierungsmöglichkeiten (bspw. über einen gem. Kalender / via Email etc.)
 - Erforschung von Schnittstellen zur Integration von Telemetriedaten und anderen technischen Merkmalen (Ladezustand, Kilometer etc)
 - Einfachste Nutzung und Administration
 - Hohe Code- und Dokumentationsqualität
 
-::: warning
-Die konkreten Anforderungen müssen in Stakeholder-Interviews mittels User-Research und Requirements Engineering Methoden erforscht und erarbeitet werden.
+::: warning center
+Die konkreten Anforderungen müssen in Stakeholder-Interviews mittels User-Research und Requirements-Engineering-Methoden erforscht und erarbeitet werden.
 :::
 
 
 
 ---
-## Workpackage 1: Erweiterung der App um neue Funktionalität
+## WP 1.1: Bezahl- und Abrechungsfunktion
 
-![](figures/mindmap_neue_features.png)
+- **Ziel**
+  - Evaluierung von versch. SOTA Bezahlfunktionen hinsichtlich des Einsatzes in der App
+  - In-App-Bezahlen (Google, Apple), Guthabenkarten, Kreditkarten, Lastschriften, Rechnungsversand mit Überweisung -  (mit/ohne QR-Code)
 
+- **Tasks**
+  - Erforschung der verschiedenen Wege um eine schlanke Bezahlfunktionen zu realisieren
+  - Darstellung der digitalen Bezahlkette, wer sind die Player, DSGVO, technischer Aufwand, Wegstrecke zurImplementierung/Umsetzung
+  - Welche Einschränkungen gibt es durch Vorgaben von Google und Apple?
+
+- **Meilensteine**
+  - Research: Die gängigen Bezahlmöglichkeiten sind recherchiert, die beteiligten Institutionen mit Ihren technischen Lösungen recherchiert und in einer Punktematrix bewertet.
+  - Der Aufwand zur Umsetzung der favorisierten Lösung(en) wurde valide geschätzt.
+  - Technisch darstellbare Möglichkeiten (z. B. Lastschrift) werden auch im Projekt umgesetzt
+  - Favorisierte, anspruchsvollere Lösungen werden im nächsten Semesterprojekt umgesetzt
+
+
+---
+## WP 1.2: Abrechungsfunktion
+
+- Ziel: 
+  - Implementierung von Abrechungsfunktionalität verbunden mit verschiedenen Export-Funktionen (Roland)
+
+- Tasks
+  - Erforschung der verschiedenen Wege um eine Abrechnungsfunktion inkl. Export zu realisieren
+
+- Deliverables / Resultate
+  - TBD
+
+
+
+---
+## WP 2: Verbesserter Kalender
+
+- **Ausgangssituation**
+  - In der Flutter-App kann über eine Monatsübersicht der Tag ausgewählt werden, in separaten Feldern können Uhrzeit und Dauer der Fahrzeugreservierung angesteuert werden.
+  - Es gibt aktuell keine Möglichkeit über Links-Rechts-Pfeile oder Wischgesten im In-App-Kalender zu navigieren. Nutzer melden, dass sie gern à la Google- oder Apple-Calender auch direkt in der Tagesansicht das Zeitfenster der Reservierung auswählen und festlegen würden. 
+  - Unpraktisch ist auch, dass es für ein/mehrere Fahrzeuge keine Wochenübersicht gibt, um zu sehen, wo freie Termine sind bzw. welches meine Reservierungen (mit vor-/nachgelagerten Reservierungen) sind.
+  - Aktuell gibt es keine Möglichkeit, sich seine eigenen Reservierungstermine in den eigenen Desktop-/Handy-Kalender zu exportieren.
+ 
+- **Anforderungen**
+  - Komfortablere Kalender-Funktionalitäten, Unterstützung von Wischgesten
+  - Wochenübersicht für ein/meherer Fahrzeuge der Nachbarschaft - Identifikation freier Slots
+  - "Kalender-Abo" in private Kalender (Synchronisation mit privatem Kalender --> Reservierung im pers. Outlook-Kalender und Export in App (=Reservierung von Fahrzeugen über den eigenen pers. Kalender, z. B. ics-Termine exportieren o. ä.)
+ 
+
+
+---
+## WP 3: iOS-App
+
+- **Ziel**
+  - Erforschung, wie weit man die bestehende Flutter-/Android-App anpassen muss, um diese für iOS nutzbar zu machen
+    - Wie sehr muss man die Codebasen trennen um eine gute Funktionalität auf allen Plattformen zu erhalten, während gleichzeitig der Code maintainable bleibt - und ohne riesigen Mehrwaufwand bei der Weiterentwicklung
+  - ggf. Auskopplung eines eigenen iOS-Projekts (bei eigenem xCode-Projekt benötigen alle Entwickler-Innen einen eigenen Mac...)
+
+- **Tasks**
+  - Research und Evaluierung, welchen Entwicklungsaufwand eine eigene iOS-App vs. einer Flutter-iOS bedeutet. 
+  - Darstellung ob eigene iOS-App wirklich Praktikabel und höheren Mehrwert ggü. Flutter-iOS-App bietet (Qualitativ u. sinnvolle Kennzahlen - Erfahrungswerte aus anderen Projekten)
+  - Umsetzung der aktuellen Flutter-App (mit den Neuerungen im Projekt) auf die iOS-Plattform
+ 
+- **Meilensteine**
+  - Die aktuelle App (mit allen Erweiterungen) funktioniert auch flüssig und fehlerfrei im "Cupertino-Design" auf iOS
+
+
+
+
+---
+## WP 4: Erforschung von Sicherheitsaspekten für das Deployment & Veröffentlichung der App 
+
+- **Ausgangssituation**
+  - Im letzten PSE-Carsharing-Projekt (SS 23) wurde das Backend von Firebase (Google) auf einen ExpressJS Server umgestellt. (Damit einher ging eine Reduktion des Dockercontainers um den Faktor 100, eine deutliche Performance-Steigerung/Reagibilität und eine breite Installationsfähigkeit auf unterschiedlichen Servern (self-hosting oder gehosteten Servern).)
+  - Die damaligen Entwickler weisen darauf hin, dass sie sich in der Entwicklung des neuen backends nicht mit möglichen intrusion/attack-Szenarien durch bösartige Dritte beschäftigt hätten. Vorteil von Firebese als backend-as-a-service ist, dass man sich um solche Funktionalitäten nicht zu kümmern braucht, da dies vom Dienstleister (hier: Google) abgedeckt wird.
+  - Bei einem eigenen backend stellen sich sehr wohl Fragen nach der Absicherung ggü. Eindringen von Dritten, Schadsoftware, ransomware, etc.
+
+- **Tasks**
+  - Research: Identifiziere die eindeutigen Angriffs-/Infektionszenarien, die ein Dritter auf die frontend/backend-Kombination starten kann.
+  - Mit welchem Aufwand kann ich welche Verteidigung/Abwehr betreiben, um ein Eingriff/Eindringen zu vermeiden.
+  - Schätze den Aufwand ab, der mit der entsprechenden Verteidugng/Abwehr einher geht. 
+  - Setze die effektivsten Verteidungs-/Abwehrmechanismen um.
+
+- **Deliverables / Resultate**
+  - Darstellung wesentlicher Bedrohungsszenarien (Research) - incl. Priorisierung und Maßnahmenkatalog
+  - Umsetzung der wesentlichen (und darstellbaren) Maßnahmen.
+
+
+
+---
+## WP 5: Erforschung (und Umsetzung) von Möglichkeiten Telemetriedaten aus Fahrzeugen auszulesen und ihres Einsatzes in der we3ve-App 
+
+- **Ausgangssituation**
+  - Wir haben bei der Nutzung von eFahrzeugen die Herausforderung, dass der Ladestand des Akkus für den nachfolgenden Sharer eine kritische Größe zum Erreichen seines Ziels ist. Gern würden wir die bordeigenen Daten jedes Fahrzeugherstellers (insbesondere km-Stand und Akku-Stand/Reichweite bei e-Autos) in die App einspielen, um die Routenplanung verlässlicher zu gestalten. Da jeder Hersteller seine eigene Plattform entwickelt, ist eine herstellerspezifische Programmierung aufwändig. Seinerzeit wurde die Möglichkeit untersucht, einen Dongle mit OBD2-Schnittstelle (Service-Dongle für Werkstätten zum Auslesen der Telemetriedaten) permanent am Fahrzeug zu installieren und darüber in die App auszulesen. Diese wurde jedoch wieder verworfen, da unpraktisch, nicht sehr verlässlich (mechanische Beschädigung), keine Absicherung gegen externes Eindringen (Bluetooth, etc.) gegeben, u.a.m. Gesucht wird eine Möglichkeit, die Daten (idealerweise hersteller-/plattformübergreifend) auszulesen und sie für die Zwecke der App (verbleibende km, Ladedauer des Akkus, km-Stand zu Start und Ende der Fahrt) zur Verfügung zu stellen. Sollte das nicht realisierbar sein, gibt es die Möglichkeit über open-source-maps die gefahrenen km (zurückgelegte Wegstrecke) verlässlich für die Planung und Abrechnung darzustellen? Diese Daten sind Voraussetzung für die Umsetzung von Punkt 1 "Bezahlfunktion"
+
+
+- **Tasks**
+  - Bereitstellen der Informationen in der App: km-Stand Fahrzeug, (= km zum Start), km-Stand Fahrtende, Saldo: gefahrene km, Akkustand in der we3ve-App, Rest-km lt. Akku
+  - Falls keine plattformübergreifende Abbildung der Telemetriedaten i. d. we3ve-App möglich, dann workaround über open-source-map prüfen. 
+  - Umsetzung der geeignetsten Alternative lt. Recherche
+  - Erforschung wie solche Daten fälschungssicher erhoben werden können.
+
+
+
+---
+## WP 6: Telemetriedatenerhebung über die App-Nutzung
+
+- **Ausgangsituation**
+  - Mit Erweiterung der Funktionalitäten sollte es auch interne Auswertungsmöglichkeiten zur Nutzung der unterschiedlichen Funktionalitäten, Fehlermeldungen/Abstürzen, etc. geben.
+
+- **Tasks**
+  - Welche Funktionalitäten werden wie genutzt? Wird etwas gar nicht benutzt? Was sind die "Kernfunktionen"?
+  - Wann stürzt die App ab? (inkl. Fehlermeldung)
+
+- **Deliverables / Resultate**
+  - Research der wichtigsten Kennzahlen
+  - Prüfung, ob dies in der App (oder per Datensexport) außerhalb erfolgen soll.
+  - Umsetzung und visualisierung der identifizierten Auswertungsmöglichkeiten
+
+
+---
+## WP 7: Umsetzung der Pushbenachrichtigungen (insbesondere bei iOS)
+
+- **Voraussetzungen**
+  - Entscheidung ob iOS-App-Version oder nicht
+  - Umsetzung der iOS-Version + Developeraccount zum Testen der Push-Benachrichtigungen (=notwendig)
+
+- **Ausgangssituation**
+  - In der 1. Version der App (Flutter-App mit Firebase als backend) gab es die Funktion einer integrierte Push-Benachrichtigung zu verschicken. Mit Umstellung auf das neue Backend musste diese Benachrichtigung auf einen schlanken e-mail-Client umgestellt werden. Dies bedeutet einen Bruch in der Kommunikation.
+  - Probleme:    
+    - Firebase nicht erwünscht
+    - Wie können fremde Nachbarschaften Push-Nachrichten senden?
+
+- **Tasks**
+  - Research: welche technischen Optionen gibt es? Frei oder kostenpflichtige Lösungen 
+  - Implementation der gewählten Lösung
+
+
+---
+## WP 8: Design und Deployment einer Website & Darstellung im Play- und App-Store
+
+- **Ausgangssituation**
+  - Für die App gibt es mittlerweile eine eigene Domain we3ve.de. Aktuell ist dies das frontend für die web-app.
+Gedacht ist, eine homepage zur Erläuterung des Projekts. Darstellung der Einrichtung einer eigenen backend-Instanz etc. einzurichtien und auch die wesentlichen Funktionalitäten der App zu erläutern.
+
+- **Tasks**
+  - Erforschung der verschiedenen Alternativen (Hugo / Mkdocs / Read the Docs / etc.)
+  - Schwerpunkt auf guter Maintenance
+  - Hauptsprache Deutsch - automatische Übersetzung auf Englisch per ML
+
+- **Meilensteine**
+  - Die App/das Projekt hat eine eigene. Homepage für Nutzer (Download aus dem App-Store) - für IT-Affine (Aufsetzen eines eigenen backends).
+  - Im Google Play-Store als auch im Apple App-Store ist die App und ihre Funktionalität attraktiv für den Nutzer dargestellt und lädt zum download ein.
+
+
+
+---
+## WP 9: Usability-Verbesserungen an der App 
+
+- **Ziel**
+  - Optimierung der Nutzbarkeit der App durch empirische und heuristische Usability-Evaluierungsmethoden
+
+- **Tasks**
+  - Sammlung aktueller Ansätze aus der Usabilityforschung und Evaluierung der App gegen diese Ansätze (=heuristische Usability-Evaluierung)
+  - Durchführung eines Interviews mit einem Powernutzer (Jörg Kasper) und ggf. weiteren
+  - Erarbeitung von Verbesserungsmöglichkeiten
+  - Implementierung der Verbesserungen im Abstimmung mit den Dev-Teams und den Stakeholdern
+
+- **Meilensteine**
+  - Sammlung und Bewertung aktueller Usability-Evaluierungsansätze mit Verbesserungsvorschlägen für die App
+  - Dokumentiertes Interview mit Jörg Kasper u.a.
 
 <!-- 
 ---
@@ -598,7 +781,7 @@ Da wir analog dem **Agilen Manifesto** vorgehen wollen, anbei ein paar Gedanken 
   - Spätestens nach der Erfüllung eines WPs soll eine Retrospektive stattfinden. 
 - Zusätzlich bzw. ergänzend zu den JFs finden Zwischenpräsentationen statt – idR. bei der Erreichung eines Meilensteins. Die Präsentationstermine werden durch die Stakeholder festgelegt.
 
-::: centerbox warning
+::: centerbox warning Bigskip
 Wichtig: Agiles Vorgehen bedeutet, dass sich die Projektdurchführung den aktuellen Anforderungen und vorherrschenden Gegebenheiten anpasst. Sollte sich im Verlauf des Projektes herausstellen, dass eine Nachjustierung sinnvoll ist, dann werden wir diese gemeinsam besprechen und durchführen.
 :::
 
