@@ -512,3 +512,8 @@ Optional; Verbesserung der Note um eine minor Notenstufe (+/- 0,3) durch individ
 7. Cognitive Warfare - Der große Informationskrieg
 8. Hinter der KI: Clickworking als moderne „Sklavenarbeit“?
 9. Kommunikation – „always on, aber nie da“ (alone together) 
+
+
+---
+<!-- # Themenauswahl durch die Studierenden -->
+![](https://static.mentimeter.com/screenshot/1-bitte-ranken-sie-die-themen-nach-interesse.jpg?maxage=600&w=1920&h=1080&url=https%3A%2F%2Fwww.mentimeter.com%2Fapp%2Fpresentation%2Falpqfmr4q24i36ztudch6ahikhqq8mey%2Fyb7cy5njkg36%2Fpreview%3Fp%3D0&cache_buster=7)
