@@ -83,13 +83,13 @@ Für *Studierende*, sagen Sie bitte kurz ...
 **Hochschule Darmstadt – Studierende**
 
 ::::: columns
-:::: triple
+:::: quad
 - Gil, Marco Antonio – marcoantonio.gil@stud.h-da.de
 - Kutzer, Frederik – Frederik.Kutzer@stud.h-da.de
 - Le, Thanh Trung – thanhtrung.le@stud.h-da.de
 - Walter, Bastian	– bastian.walter@stud.h-da.de
 ::::
-:::: quad
+:::: quin
 - Bauss, Bela	– Bela.Bauss@stud.h-da.de
 - Heitmann, Kilian – kilian.heitmann@stud.h-da.de
 - Jesske, Benjamin – Benjamin.Jesske@stud.h-da.de
@@ -200,6 +200,7 @@ Projekt Systementwicklung / Projekt Multimedia ist ein **7,5 CP Modul**.
 ::: -->
 
 
+
 ---
 # Zeitliches Engagement – eine realistische Betrachtung
 Projekt Systementwicklung / Projekt Multimedia ist ein **7,5 CP Modul**.
@@ -217,9 +218,11 @@ In Summe veranschlagen wir pro Person ein **Gesamtzeitbudget** von **160h**
 ^1^ Vorlesungszeit (14 Wochen) + Lernwoche (1 Woche) + Prüfungszeit (1 Woche)
 :::
 
+
+
 ---
 # Kommunikation
-- via **Discord**: _Link folgt_
+- via **Discord** (wenn gewünscht): _Link folgt_
   - für die Kommunikation der Projektteams untereinander
   - für die Kommunikation mit den Stakeholdern zu technischen Fragen
 - oder **Email** bei wichtigen und/oder offiziellen Dingen
@@ -235,9 +238,9 @@ In Summe veranschlagen wir pro Person ein **Gesamtzeitbudget** von **160h**
 # Entwicklungsplattform und Dokumentation
 
 **GitLab**
-- Das we3ve-Projekt hat 3 GitLab-Reps; die Studierenden werden von uns dort eingeschrieben 
+- Das we3ve-Projekt hat 3 GitLab-Repos; die Studierenden werden von uns dort eingeschrieben 
 - dort werden Programmcode und Dokumentation (Deliverables) gehostet
-- bitte direkt selbst erstellen und die Teammitglieder hinzufühgen
+- Zus. Repos bitte direkt selbst erstellen und die Teammitglieder hinzufühgen
 <!-- - Unternehmensseitig werden notwendige APIs etc. zur Verfügung gestellt – mehr Informationen dazu in der Projektvorstellung -->
 <!-- - jede Gruppe benutzt ein eigenes **GitLab-Repository**  -->
 
@@ -320,15 +323,15 @@ Die konkreten Anforderungen müssen in Stakeholder-Interviews mittels User-Resea
 
 
 ---
-## WP 1.1: Bezahl- und Abrechungsfunktion
+## WP 1.1: Bezahl- und Abrechungsfunktion (RT)
 
 - **Ziel**
-  - Evaluierung von versch. SOTA Bezahlfunktionen hinsichtlich des Einsatzes in der App
-  - In-App-Bezahlen (Google, Apple), Guthabenkarten, Kreditkarten, Lastschriften, Rechnungsversand mit Überweisung -  (mit/ohne QR-Code)
+  - Evaluierung von versch. _state-of-the-art Bezahlfunktionen_ hinsichtlich des Einsatzes in der App
+  - In-App-Bezahlen (Google, Apple), Guthabenkarten, Kreditkarten, Lastschriften, Rechnungsversand mit Überweisung – (mit/ohne QR-Code)
 
 - **Tasks**
   - Erforschung der verschiedenen Wege um eine schlanke Bezahlfunktionen zu realisieren
-  - Darstellung der digitalen Bezahlkette, wer sind die Player, DSGVO, technischer Aufwand, Wegstrecke zurImplementierung/Umsetzung
+  - Darstellung der digitalen Bezahlkette, wer sind die Player, DSGVO, technischer Aufwand, Wegstrecke zur Implementierung/Umsetzung
   - Welche Einschränkungen gibt es durch Vorgaben von Google und Apple?
 
 - **Meilensteine**
@@ -339,13 +342,14 @@ Die konkreten Anforderungen müssen in Stakeholder-Interviews mittels User-Resea
 
 
 ---
-## WP 1.2: Abrechungsfunktion
+## WP 1.2: Abrechungsfunktion (RT)
 
 - Ziel: 
-  - Implementierung von Abrechungsfunktionalität verbunden mit verschiedenen Export-Funktionen (Roland)
+  - Implementierung von Abrechungsfunktionalität verbunden mit verschiedenen Export-Funktionen
 
 - Tasks
   - Erforschung der verschiedenen Wege um eine Abrechnungsfunktion inkl. Export zu realisieren
+  - Erforschung, welche Abrechnungsdaten exportiert werden sollen
 
 - Deliverables / Resultate
   - TBD
@@ -353,13 +357,13 @@ Die konkreten Anforderungen müssen in Stakeholder-Interviews mittels User-Resea
 
 
 ---
-## WP 2: Verbesserter Kalender
+## WP 2: Verbesserter Kalender (RT)
 
 - **Ausgangssituation**
   - In der Flutter-App kann über eine Monatsübersicht der Tag ausgewählt werden, in separaten Feldern können Uhrzeit und Dauer der Fahrzeugreservierung angesteuert werden.
-  - Es gibt aktuell keine Möglichkeit über Links-Rechts-Pfeile oder Wischgesten im In-App-Kalender zu navigieren. Nutzer melden, dass sie gern à la Google- oder Apple-Calender auch direkt in der Tagesansicht das Zeitfenster der Reservierung auswählen und festlegen würden. 
-  - Unpraktisch ist auch, dass es für ein/mehrere Fahrzeuge keine Wochenübersicht gibt, um zu sehen, wo freie Termine sind bzw. welches meine Reservierungen (mit vor-/nachgelagerten Reservierungen) sind.
-  - Aktuell gibt es keine Möglichkeit, sich seine eigenen Reservierungstermine in den eigenen Desktop-/Handy-Kalender zu exportieren.
+  - Es gibt aktuell keine Möglichkeit über _Links-Rechts-Pfeile_ oder _Wischgesten_ im In-App-Kalender zu navigieren. Nutzer melden, dass sie gern à la Google- oder Apple-Calender auch direkt in der Tagesansicht das Zeitfenster der Reservierung auswählen und festlegen würden. 
+  - Unpraktisch ist auch, dass es für ein/mehrere Fahrzeuge keine _Wochenübersicht_ gibt, um zu sehen, wo freie Termine sind bzw. welches meine Reservierungen (mit vor-/nachgelagerten Reservierungen) sind.
+  - Aktuell gibt es keine Möglichkeit, sich seine _eigenen Reservierungstermine_ in den eigenen Desktop-/Handy-Kalender zu _exportieren_.
  
 - **Anforderungen**
   - Komfortablere Kalender-Funktionalitäten, Unterstützung von Wischgesten
@@ -369,7 +373,7 @@ Die konkreten Anforderungen müssen in Stakeholder-Interviews mittels User-Resea
 
 
 ---
-## WP 3: iOS-App
+## WP 3: iOS-App (LK)
 
 - **Ziel**
   - Erforschung, wie weit man die bestehende Flutter-/Android-App anpassen muss, um diese für iOS nutzbar zu machen
@@ -388,7 +392,7 @@ Die konkreten Anforderungen müssen in Stakeholder-Interviews mittels User-Resea
 
 
 ---
-## WP 4: Erforschung von Sicherheitsaspekten für das Deployment & Veröffentlichung der App 
+## WP 4: Erforschung von Sicherheitsaspekten für das Deployment & Veröffentlichung der App (RT)
 
 - **Ausgangssituation**
   - Im letzten PSE-Carsharing-Projekt (SS 23) wurde das Backend von Firebase (Google) auf einen ExpressJS Server umgestellt. (Damit einher ging eine Reduktion des Dockercontainers um den Faktor 100, eine deutliche Performance-Steigerung/Reagibilität und eine breite Installationsfähigkeit auf unterschiedlichen Servern (self-hosting oder gehosteten Servern).)
@@ -408,10 +412,10 @@ Die konkreten Anforderungen müssen in Stakeholder-Interviews mittels User-Resea
 
 
 ---
-## WP 5: Erforschung (und Umsetzung) von Möglichkeiten Telemetriedaten aus Fahrzeugen auszulesen und ihres Einsatzes in der we3ve-App 
+## WP 5: Erforschung (und Umsetzung) von Möglichkeiten Telemetriedaten aus Fahrzeugen auszulesen und ihres Einsatzes in der we3ve-App (RT)
 
 - **Ausgangssituation**
-  - Wir haben bei der Nutzung von eFahrzeugen die Herausforderung, dass der Ladestand des Akkus für den nachfolgenden Sharer eine kritische Größe zum Erreichen seines Ziels ist. Gern würden wir die bordeigenen Daten jedes Fahrzeugherstellers (insbesondere km-Stand und Akku-Stand/Reichweite bei e-Autos) in die App einspielen, um die Routenplanung verlässlicher zu gestalten. Da jeder Hersteller seine eigene Plattform entwickelt, ist eine herstellerspezifische Programmierung aufwändig. Seinerzeit wurde die Möglichkeit untersucht, einen Dongle mit OBD2-Schnittstelle (Service-Dongle für Werkstätten zum Auslesen der Telemetriedaten) permanent am Fahrzeug zu installieren und darüber in die App auszulesen. Diese wurde jedoch wieder verworfen, da unpraktisch, nicht sehr verlässlich (mechanische Beschädigung), keine Absicherung gegen externes Eindringen (Bluetooth, etc.) gegeben, u.a.m. Gesucht wird eine Möglichkeit, die Daten (idealerweise hersteller-/plattformübergreifend) auszulesen und sie für die Zwecke der App (verbleibende km, Ladedauer des Akkus, km-Stand zu Start und Ende der Fahrt) zur Verfügung zu stellen. Sollte das nicht realisierbar sein, gibt es die Möglichkeit über open-source-maps die gefahrenen km (zurückgelegte Wegstrecke) verlässlich für die Planung und Abrechnung darzustellen? Diese Daten sind Voraussetzung für die Umsetzung von Punkt 1 "Bezahlfunktion"
+  - Wir haben bei der Nutzung von eFahrzeugen die Herausforderung, dass der _Ladestand des Akkus_ für den nachfolgenden Sharer eine kritische Größe zum Erreichen seines Ziels ist. Gern würden wir die _bordeigenen Daten_ jedes Fahrzeugherstellers (insbesondere km-Stand und Akku-Stand/Reichweite bei e-Autos) in die App einspielen, um die Routenplanung verlässlicher zu gestalten. Da jeder Hersteller seine eigene Plattform entwickelt, ist eine herstellerspezifische Programmierung aufwändig. Seinerzeit wurde die Möglichkeit untersucht, einen Dongle mit OBD2-Schnittstelle (Service-Dongle für Werkstätten zum Auslesen der Telemetriedaten) permanent am Fahrzeug zu installieren und darüber in die App auszulesen. Diese wurde jedoch wieder verworfen, da unpraktisch, nicht sehr verlässlich (mechanische Beschädigung), keine Absicherung gegen externes Eindringen (Bluetooth, etc.) gegeben, u.a.m. Gesucht wird eine Möglichkeit, die _Daten_ (idealerweise hersteller-/plattformübergreifend) _auszulesen_ und sie für die Zwecke der App (verbleibende km, Ladedauer des Akkus, km-Stand zu Start und Ende der Fahrt) zur Verfügung zu stellen. Sollte das nicht realisierbar sein, gibt es die Möglichkeit über _open-source-maps_ die gefahrenen km (zurückgelegte Wegstrecke) verlässlich für die Planung und Abrechnung darzustellen? Diese Daten sind Voraussetzung für die Umsetzung von Punkt 1 "Bezahlfunktion"
 
 
 - **Tasks**
@@ -423,7 +427,7 @@ Die konkreten Anforderungen müssen in Stakeholder-Interviews mittels User-Resea
 
 
 ---
-## WP 6: Telemetriedatenerhebung über die App-Nutzung
+## WP 6: Telemetriedatenerhebung über die App-Nutzung (LK)
 
 - **Ausgangsituation**
   - Mit Erweiterung der Funktionalitäten sollte es auch interne Auswertungsmöglichkeiten zur Nutzung der unterschiedlichen Funktionalitäten, Fehlermeldungen/Abstürzen, etc. geben.
@@ -439,7 +443,7 @@ Die konkreten Anforderungen müssen in Stakeholder-Interviews mittels User-Resea
 
 
 ---
-## WP 7: Umsetzung der Pushbenachrichtigungen (insbesondere bei iOS)
+## WP 7: Umsetzung der Pushbenachrichtigungen (insbesondere bei iOS) (LK)
 
 - **Voraussetzungen**
   - Entscheidung ob iOS-App-Version oder nicht
@@ -457,7 +461,7 @@ Die konkreten Anforderungen müssen in Stakeholder-Interviews mittels User-Resea
 
 
 ---
-## WP 8: Design und Deployment einer Website & Darstellung im Play- und App-Store
+## WP 8: Design und Deployment einer Website & Darstellung im Play- und App-Store (SZ/RT)
 
 - **Ausgangssituation**
   - Für die App gibt es mittlerweile eine eigene Domain we3ve.de. Aktuell ist dies das frontend für die web-app.
@@ -475,10 +479,11 @@ Gedacht ist, eine homepage zur Erläuterung des Projekts. Darstellung der Einric
 
 
 ---
-## WP 9: Usability-Verbesserungen an der App 
+## WP 9: Usability-Verbesserungen + Bugfixing an der App (SZ/LK)
 
 - **Ziel**
   - Optimierung der Nutzbarkeit der App durch empirische und heuristische Usability-Evaluierungsmethoden
+  - Eliminierung von Bugs etc.
 
 - **Tasks**
   - Sammlung aktueller Ansätze aus der Usabilityforschung und Evaluierung der App gegen diese Ansätze (=heuristische Usability-Evaluierung)
@@ -490,11 +495,13 @@ Gedacht ist, eine homepage zur Erläuterung des Projekts. Darstellung der Einric
   - Sammlung und Bewertung aktueller Usability-Evaluierungsansätze mit Verbesserungsvorschlägen für die App
   - Dokumentiertes Interview mit Jörg Kasper u.a.
 
+
+
 <!-- 
 ---
 ## Workpackage 1: Erweiterung der App um neue Funktionalität (2/2)
 
-- **Ziel**: _Implementierung der Anwendung (Frontend & Backend), Testing,  Durchführung von Usability-Evaluierungsmethoden und Fertigstellung der Dokumentation._
+- **Ziel**: _Implementierung der Anwendung (Frontend & Backend), Testing, Durchführung von Usability-Evaluierungsmethoden und Fertigstellung der Dokumentation._
 - **Task-Liste**:
   - Task 1: Abrechnungsfunktion
   - Task 2: State-of-Charge // automatisiertes Auslesen von Fahrtzeug-/Fahrdaten 
