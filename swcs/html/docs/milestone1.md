@@ -17,7 +17,7 @@
 
 2. Each group has to choose an **individual topic** that serves as a basis for the scientific work  
     Topic must be related to Computer Science
-3. Enter group and topic information into the [WAI2 Moodle page](https://lernen.h-da.de/course/view.php?id=8565)  
+3. Enter group and topic information into the [SWCS Moodle page](https://lernen.h-da.de/course/view.php?id=6893)  
     See [Schedule](schedule.md) for deadline of [Milestone #1](milestone1.md)
 
 
