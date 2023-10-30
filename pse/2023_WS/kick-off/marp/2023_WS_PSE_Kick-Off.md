@@ -222,7 +222,7 @@ In Summe veranschlagen wir pro Person ein **Gesamtzeitbudget** von **160h**
 
 ---
 # Kommunikation
-- via **Discord** (wenn gewünscht): _Link folgt_
+- via **Discord** (wenn gewünscht): :fab-discord: https://discord.gg/NQ6U4JrP
   - für die Kommunikation der Projektteams untereinander
   - für die Kommunikation mit den Stakeholdern zu technischen Fragen
 - oder **Email** bei wichtigen und/oder offiziellen Dingen
@@ -323,7 +323,59 @@ Die konkreten Anforderungen müssen in Stakeholder-Interviews mittels User-Resea
 
 
 ---
-## WP 1.1: Bezahl- und Abrechungsfunktion (RT)
+## Übersicht der Arbeitspakete 
+
+- WP 1: Bezahl- und Abrechungsfunktion (RT) _(3-4 Personen; sofort; Prio 1)_
+- WP 2: Verbesserter Kalender (RT) _(2-3 Personen; sofort; Prio 1)_
+- WP 3: iOS-App (LK) _(4 Personen; sofort; Prio 1)_
+- WP 4: Erforschung von Sicherheitsaspekten für das Deployment & Veröffentlichung der App (RT) (offen; später; Prio 2)
+- WP 5: Erforschung (und Umsetzung) von Möglichkeiten Telemetriedaten aus Fahrzeugen auszulesen und ihres Einsatzes in der we3ve-App (RT) *(3 Personen; sofort; Prio 1)*
+- WP 6: Telemetriedatenerhebung über die App-Nutzung (LK) (3-4 Personen; später; Prio 2)
+- WP 7: Umsetzung der Pushbenachrichtigungen (insbesondere bei iOS) (LK) (2-4 Personen; bel.; Prio 2)
+- WP 8: Design und Deployment einer Website & Darstellung im Play- und App-Store (SZ/RT) _(2-3 Personen; sofort; Prio 1)_
+- WP 9: Usability-Verbesserungen + Bugfixing an der App (SZ/LK) _(3-4 Personen; sofort; Prio 1)_
+
+
+
+---
+## Aufteilung der Arbeitspakete
+
+:::: columns
+::: single
+- **WP 1: Bezahl- und Abrechungsfunktion (RT)** _(3-4 Personen)_
+  - Bastian Walter
+  - Benjamin Jesske
+
+- **WP 2: Verbesserter Kalender (RT**) _(2-3 Personen)_
+  - Marwin Wend
+  - Bela Bauss
+  - Christian Kieferle
+  - Marco Antonio Gil
+
+- **WP 3: iOS-App (LK)** _(4 Personen)_
+  - Aniq Syed
+  - Yassine Kajouj
+  - Kilian Heitmann
+  - Bernhard Ricardo Putranto
+:::
+::: single
+- **WP 8: Design und Deployment einer Website & Darstellung im Play- und App-Store (SZ/RT)** _(2-3 Personen)_
+  - Thanh Trung Le
+  - Dang Quang Tran
+  - Frederik Kutzer (Prio 2)
+
+- **WP 9: Usability-Verbesserungen + Bugfixing an der App (SZ/LK)** _(3-4 Personen)_
+  - Frederik Kutzer
+  - Aniq Syed (Prio 2)
+  - Vinsky Strauss TanHanSen
+  - Kilian Heitmann (Prio 2)
+:::
+::::
+
+
+
+---
+## WP 1.1: Bezahl- und Abrechungsfunktion (RT) (3-4 Personen; sofort; Prio 1)
 
 - **Ziel**
   - Evaluierung von versch. _state-of-the-art Bezahlfunktionen_ hinsichtlich des Einsatzes in der App
@@ -357,7 +409,7 @@ Die konkreten Anforderungen müssen in Stakeholder-Interviews mittels User-Resea
 
 
 ---
-## WP 2: Verbesserter Kalender (RT)
+## WP 2: Verbesserter Kalender (RT) (2-3 Personen; sofort; Prio 1)
 
 - **Ausgangssituation**
   - In der Flutter-App kann über eine Monatsübersicht der Tag ausgewählt werden, in separaten Feldern können Uhrzeit und Dauer der Fahrzeugreservierung angesteuert werden.
@@ -373,7 +425,7 @@ Die konkreten Anforderungen müssen in Stakeholder-Interviews mittels User-Resea
 
 
 ---
-## WP 3: iOS-App (LK)
+## WP 3: iOS-App (LK) (4 Personen; sofort; Prio 1)
 
 - **Ziel**
   - Erforschung, wie weit man die bestehende Flutter-/Android-App anpassen muss, um diese für iOS nutzbar zu machen
@@ -392,7 +444,7 @@ Die konkreten Anforderungen müssen in Stakeholder-Interviews mittels User-Resea
 
 
 ---
-## WP 4: Erforschung von Sicherheitsaspekten für das Deployment & Veröffentlichung der App (RT)
+## WP 4: Erforschung von Sicherheitsaspekten für das Deployment & Veröffentlichung der App (RT) (offen; später; Prio 2)
 
 - **Ausgangssituation**
   - Im letzten PSE-Carsharing-Projekt (SS 23) wurde das Backend von Firebase (Google) auf einen ExpressJS Server umgestellt. (Damit einher ging eine Reduktion des Dockercontainers um den Faktor 100, eine deutliche Performance-Steigerung/Reagibilität und eine breite Installationsfähigkeit auf unterschiedlichen Servern (self-hosting oder gehosteten Servern).)
@@ -412,14 +464,14 @@ Die konkreten Anforderungen müssen in Stakeholder-Interviews mittels User-Resea
 
 
 ---
-## WP 5: Erforschung (und Umsetzung) von Möglichkeiten Telemetriedaten aus Fahrzeugen auszulesen und ihres Einsatzes in der we3ve-App (RT)
+## WP 5: Erforschung (und Umsetzung) von Möglichkeiten Telemetriedaten aus Fahrzeugen auszulesen und ihres Einsatzes in der we3ve-App (RT) (3 Personen; sofort; Prio )
 
 - **Ausgangssituation**
   - Wir haben bei der Nutzung von eFahrzeugen die Herausforderung, dass der _Ladestand des Akkus_ für den nachfolgenden Sharer eine kritische Größe zum Erreichen seines Ziels ist. Gern würden wir die _bordeigenen Daten_ jedes Fahrzeugherstellers (insbesondere km-Stand und Akku-Stand/Reichweite bei e-Autos) in die App einspielen, um die Routenplanung verlässlicher zu gestalten. Da jeder Hersteller seine eigene Plattform entwickelt, ist eine herstellerspezifische Programmierung aufwändig. Seinerzeit wurde die Möglichkeit untersucht, einen Dongle mit OBD2-Schnittstelle (Service-Dongle für Werkstätten zum Auslesen der Telemetriedaten) permanent am Fahrzeug zu installieren und darüber in die App auszulesen. Diese wurde jedoch wieder verworfen, da unpraktisch, nicht sehr verlässlich (mechanische Beschädigung), keine Absicherung gegen externes Eindringen (Bluetooth, etc.) gegeben, u.a.m. Gesucht wird eine Möglichkeit, die _Daten_ (idealerweise hersteller-/plattformübergreifend) _auszulesen_ und sie für die Zwecke der App (verbleibende km, Ladedauer des Akkus, km-Stand zu Start und Ende der Fahrt) zur Verfügung zu stellen. Sollte das nicht realisierbar sein, gibt es die Möglichkeit über _open-source-maps_ die gefahrenen km (zurückgelegte Wegstrecke) verlässlich für die Planung und Abrechnung darzustellen? Diese Daten sind Voraussetzung für die Umsetzung von Punkt 1 "Bezahlfunktion"
 
 
 - **Tasks**
-  - Bereitstellen der Informationen in der App: km-Stand Fahrzeug, (= km zum Start), km-Stand Fahrtende, Saldo: gefahrene km, Akkustand in der we3ve-App, Rest-km lt. Akku
+  - Bereitstellen der Informationen in der App: km-Stand Fahrzeug, (=km zum Start), km-Stand Fahrtende, Saldo: gefahrene km, Akkustand in der we3ve-App, Rest-km lt. Akku
   - Falls keine plattformübergreifende Abbildung der Telemetriedaten i. d. we3ve-App möglich, dann workaround über open-source-map prüfen. 
   - Umsetzung der geeignetsten Alternative lt. Recherche
   - Erforschung wie solche Daten fälschungssicher erhoben werden können.
@@ -427,7 +479,7 @@ Die konkreten Anforderungen müssen in Stakeholder-Interviews mittels User-Resea
 
 
 ---
-## WP 6: Telemetriedatenerhebung über die App-Nutzung (LK)
+## WP 6: Telemetriedatenerhebung über die App-Nutzung (LK) (3-4 Personen; später; Prio 2)
 
 - **Ausgangsituation**
   - Mit Erweiterung der Funktionalitäten sollte es auch interne Auswertungsmöglichkeiten zur Nutzung der unterschiedlichen Funktionalitäten, Fehlermeldungen/Abstürzen, etc. geben.
@@ -443,7 +495,7 @@ Die konkreten Anforderungen müssen in Stakeholder-Interviews mittels User-Resea
 
 
 ---
-## WP 7: Umsetzung der Pushbenachrichtigungen (insbesondere bei iOS) (LK)
+## WP 7: Umsetzung der Pushbenachrichtigungen (insbesondere bei iOS) (LK) (2-4 Personen; bel.; Prio 2)
 
 - **Voraussetzungen**
   - Entscheidung ob iOS-App-Version oder nicht
@@ -461,13 +513,14 @@ Die konkreten Anforderungen müssen in Stakeholder-Interviews mittels User-Resea
 
 
 ---
-## WP 8: Design und Deployment einer Website & Darstellung im Play- und App-Store (SZ/RT)
+## WP 8: Design und Deployment einer Website & Darstellung im Play- und App-Store (SZ/RT) (2-3 Personen; sofort; Prio 1)
 
 - **Ausgangssituation**
   - Für die App gibt es mittlerweile eine eigene Domain we3ve.de. Aktuell ist dies das frontend für die web-app.
 Gedacht ist, eine homepage zur Erläuterung des Projekts. Darstellung der Einrichtung einer eigenen backend-Instanz etc. einzurichtien und auch die wesentlichen Funktionalitäten der App zu erläutern.
 
 - **Tasks**
+  - Erforschung, welche Aspekte für Neunutzende wichtig sind, um Interesse für das Projekt zu entwickeln
   - Erforschung der verschiedenen Alternativen (Hugo / Mkdocs / Read the Docs / etc.)
   - Schwerpunkt auf guter Maintenance
   - Hauptsprache Deutsch - automatische Übersetzung auf Englisch per ML
@@ -475,11 +528,13 @@ Gedacht ist, eine homepage zur Erläuterung des Projekts. Darstellung der Einric
 - **Meilensteine**
   - Die App/das Projekt hat eine eigene. Homepage für Nutzer (Download aus dem App-Store) - für IT-Affine (Aufsetzen eines eigenen backends).
   - Im Google Play-Store als auch im Apple App-Store ist die App und ihre Funktionalität attraktiv für den Nutzer dargestellt und lädt zum download ein.
+  - Dokumentierter User Research
 
+<!-- Organisation nicht unterschätzen -->
 
 
 ---
-## WP 9: Usability-Verbesserungen + Bugfixing an der App (SZ/LK)
+## WP 9: Usability-Verbesserungen + Bugfixing an der App (SZ/LK) (3 Personen; später; Prio 1)
 
 - **Ziel**
   - Optimierung der Nutzbarkeit der App durch empirische und heuristische Usability-Evaluierungsmethoden
