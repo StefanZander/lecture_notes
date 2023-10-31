@@ -353,8 +353,10 @@ Bildquelle: https://c4.wallpaperflare.com/wallpaper/710/270/417/1898-austrian-pa
 ::::: columns-center
 :::: double
 **Durchführung** 
-- Tool: **Quizizz** (https://quizizz.com/?lng=de)
-  - kostenlose Registrierung mind. eines Mitglieds
+- Tools: 
+  - **Quizizz** (https://quizizz.com/?lng=de) oder 
+  - **arsnova.click** (https://arsnova.click/)
+  - kostenlose Registrierung mind. eines Mitglieds (nur bei Quizizz)
 - Teilnehmende registrieren sich zu Beginn des Quizzes mit der *Matrikelnummer* 
 - Auslegung des Quizzes auf etwa *8 - 10 Minuten*
 - Fragen zeitlich begrenzen; gerne mit unterschiedlichen Fragetypen(1)^1^
