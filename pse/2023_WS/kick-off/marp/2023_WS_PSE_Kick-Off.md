@@ -84,7 +84,7 @@ Für *Studierende*, sagen Sie bitte kurz ...
 
 ::::: columns
 :::: quad
-- Gil, Marco Antonio – marcoantonio.gil@stud.h-da.de
+- ~~Gil, Marco Antonio – marcoantonio.gil@stud.h-da.de~~
 - Kutzer, Frederik – Frederik.Kutzer@stud.h-da.de
 - Le, Thanh Trung – thanhtrung.le@stud.h-da.de
 - Walter, Bastian	– bastian.walter@stud.h-da.de
@@ -342,30 +342,30 @@ Die konkreten Anforderungen müssen in Stakeholder-Interviews mittels User-Resea
 
 :::: columns
 ::: single
-- **WP 1: Bezahl- und Abrechungsfunktion (RT)** _(3-4 Personen)_
-  - Bastian Walter
-  - Benjamin Jesske
+- **WP 1: Bezahl- und Abrechungsfunktion (RT)** _(3-4 Personen)_ ==WP-Lead offen==
+  - Bastian Walter 
+  - Benjamin Jesske 
 
 - **WP 2: Verbesserter Kalender (RT**) _(2-3 Personen)_
-  - Marwin Wend
+  - ==Marwin Wend (Lead)==
   - Bela Bauss
   - Christian Kieferle
-  - Marco Antonio Gil
+  <!-- - ~~Marco Antonio Gil~~ -->
 
 - **WP 3: iOS-App (LK)** _(4 Personen)_
   - Aniq Syed
   - Yassine Kajouj
-  - Kilian Heitmann
+  - ==Kilian Heitmann (Lead)==
   - Bernhard Ricardo Putranto
 :::
 ::: single
 - **WP 8: Design und Deployment einer Website & Darstellung im Play- und App-Store (SZ/RT)** _(2-3 Personen)_
-  - Thanh Trung Le
+  - ==Thanh Trung Le (Lead)==
   - Dang Quang Tran
   - Frederik Kutzer (Prio 2)
 
 - **WP 9: Usability-Verbesserungen + Bugfixing an der App (SZ/LK)** _(3-4 Personen)_
-  - Frederik Kutzer
+  - ==Frederik Kutzer (Lead)==
   - Aniq Syed (Prio 2)
   - Vinsky Strauss TanHanSen
   - Kilian Heitmann (Prio 2)
