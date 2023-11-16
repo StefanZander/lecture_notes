@@ -68,6 +68,20 @@ Im Rahmen der **Evaluierung** kann nun untersucht werden, ob der Einsatz wirklic
 
 Forschungsfragen sollten deshalb **präzise**, **spezifisch** und **überprüfbar** formuliert werden. Nur dann sind Forschungsfragen in der Lage, den inhaltlichen Rahmen der Abschlussarbeit formal sauber und präzise zu definieren.
 
+??? info "Für Interessierte zum Weiterlesen ein paar weitere Beispiele zur Formulierung von Forschungsfragen"
+    - Wie muss Innovation X gestaltet sein, damit in einem spezifischen Kontext Y das Ziel Z erreicht wird?
+    - Welche Anforderungen ergeben sich an die Innovation I / Komponente K / etc.?
+    - Welche Einflussfaktoren muss man bei der Entwicklung von Innovation I beachten?
+    - Welche bestehenden Lösungen existieren, was sind Stärken und Schwächen dieser Lösungen? Inwieweit erfüllen sie die Anforderungen? Wie muss die bestehende Lösung an den Kontext Y angepasst werden?
+    - Welche Kontextfaktoren spielen bei Problem X eine Rolle?
+    - Mit welchen Mitteln/Methoden/Maßnahmen/... kann man Problem X lösen?
+    - Welche Erwartungen haben die Beteiligten an Maßnahme M?
+    - Welche Maßnahmen eignen sich (z.B. aus Sicht der Beteiligten, aus Sicht von Expert_innen, ...), um Ziel Z zu erreichen?
+    - Welche Schwierigkeiten entstehen bei der Umsetzung?
+    - Wie bewerten die Beteiligten die Maßnahme M / die Innovation I?
+    - Inwieweit bewährt sich die Lösung X in der Praxis? Welche Auswirkungen sind feststellbar?
+
+    _Kudos an Prof. Dr. Christian Spannagel für die Bereitstellung der Beispiele_
 
 
 ### Geplante Aktivitäten

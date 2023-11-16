@@ -342,8 +342,8 @@ Die konkreten Anforderungen müssen in Stakeholder-Interviews mittels User-Resea
 
 :::: columns
 ::: single
-- **WP 1: Bezahl- und Abrechungsfunktion (RT)** _(3-4 Personen)_ ==WP-Lead offen==
-  - Bastian Walter 
+- **WP 1/2: Bezahl- und Abrechungsfunktion (RT)** _(3-4 Personen)_
+  - ==Bastian Walter==
   - Benjamin Jesske 
 
 - **WP 2: Verbesserter Kalender (RT**) _(2-3 Personen)_
@@ -385,26 +385,41 @@ Die konkreten Anforderungen müssen in Stakeholder-Interviews mittels User-Resea
   - Erforschung der verschiedenen Wege um eine schlanke Bezahlfunktionen zu realisieren
   - Darstellung der digitalen Bezahlkette, wer sind die Player, DSGVO, technischer Aufwand, Wegstrecke zur Implementierung/Umsetzung
   - Welche Einschränkungen gibt es durch Vorgaben von Google und Apple?
+  - User-Research:  Welche Bezahlarten/rhythmen wollen Fahrer bzw. Fahrzeughalter haben? (Bezahlung pro Fahrt/Micropayment; Monatliche Sammelrechnung; feste Monatspauschale 
 
-- **Meilensteine**
-  - Research: Die gängigen Bezahlmöglichkeiten sind recherchiert, die beteiligten Institutionen mit Ihren technischen Lösungen recherchiert und in einer Punktematrix bewertet.
-  - Der Aufwand zur Umsetzung der favorisierten Lösung(en) wurde valide geschätzt.
-  - Technisch darstellbare Möglichkeiten (z. B. Lastschrift) werden auch im Projekt umgesetzt
-  - Favorisierte, anspruchsvollere Lösungen werden im nächsten Semesterprojekt umgesetzt
+---
+## WP 1.1: Bezahl- und Abrechungsfunktion (RT) (3-4 Personen; sofort; Prio 1)
+
+
+- **Resulte / Meilensteine**
+  - *Block: Technische Bezahloptionen*
+    - Research: Die gängigen Bezahlmöglichkeiten sind recherchiert, die beteiligten Institutionen mit Ihren technischen Lösungen recherchiert und in einer Punktematrix bewertet.
+    - Research: 1-2 Interviews mit GLS-Bank/Sparkasse o. ä. zu online-Bezahllösungen sind geführt und dokumentiert
+    - Der Aufwand zur Umsetzung der favorisierten Lösung(en) wurde valide geschätzt.
+    - Technisch darstellbare Möglichkeiten (z. B. Lastschrift) werden auch im Projekt umgesetzt
+    - Favorisierte, anspruchsvollere Lösungen werden im nächsten Semesterprojekt umgesetzt
+  - *Block: User-Research - Bezahlarten & -rhythmen für Fahrer u. Fahrzeughalter*
+    - Interviews mit 3-4 potenziellen Nutzern (Fahrern & Fahrzeughaltern)
+    - Auswertung der wichtigsten Bezahlarten & -rhytmen 
+    - Umsetzung der präferierten u. praktikablen Lösung
+    - Test und Dokumentation
 
 
 ---
 ## WP 1.2: Abrechungsfunktion (RT)
 
 - Ziel: 
-  - Implementierung von Abrechungsfunktionalität verbunden mit verschiedenen Export-Funktionen
+  - Implementierung von Controlling-/Reporting-/Abrechungsfunktionalität verbunden mit verschiedenen Export-Funktionen
 
 - Tasks
-  - Erforschung der verschiedenen Wege um eine Abrechnungsfunktion inkl. Export zu realisieren
-  - Erforschung, welche Abrechnungsdaten exportiert werden sollen
+  - Erforschung der verschiedenen Wege um Reporting/Controlling inkl. Export zu realisieren
+  - User-Research: Was für Reporting wollen Fahrer/Fahrzeughalter und welche Daten/Kennzahlen?
+  - Umsetzung des Reportings (nach Fahrer/Fahrzeughalter/Admins der Nachbarschaft-DSGVO)
 
-- Deliverables / Resultate
-  - TBD
+- Resultate/ Meilensteine
+   - User-Research: Welches Reporting wollen Fahrer und Fahrzeughalter?
+   - Umsetzung des Reportings
+   - Test & Dokumentation
 
 
 
@@ -423,6 +438,20 @@ Die konkreten Anforderungen müssen in Stakeholder-Interviews mittels User-Resea
   - "Kalender-Abo" in private Kalender (Synchronisation mit privatem Kalender --> Reservierung im pers. Outlook-Kalender und Export in App (=Reservierung von Fahrzeugen über den eigenen pers. Kalender, z. B. ics-Termine exportieren o. ä.)
  
 
+---
+## WP 2: Verbesserter Kalender (RT) (2-3 Personen; sofort; Prio 1)
+
+- **Tasks**
+  - Durchführung einer Anforderungsanalyse (User Research etc.)
+  - Implementierung der neuen Kalenderfunktionalität
+  - Tests 
+  - ...
+
+- **Resultate / Meilensteine**
+  - Dokumentierte Anforderungsanalyse (Deliverable 1)
+  - Umsetzung des Kalenders
+  - erfolgreiche Tests & Dokumentation
+
 
 ---
 ## WP 3: iOS-App (LK) (4 Personen; sofort; Prio 1)
@@ -435,10 +464,14 @@ Die konkreten Anforderungen müssen in Stakeholder-Interviews mittels User-Resea
 - **Tasks**
   - Research und Evaluierung, welchen Entwicklungsaufwand eine eigene iOS-App vs. einer Flutter-iOS bedeutet. 
   - Darstellung ob eigene iOS-App wirklich Praktikabel und höheren Mehrwert ggü. Flutter-iOS-App bietet (Qualitativ u. sinnvolle Kennzahlen - Erfahrungswerte aus anderen Projekten)
-  - Umsetzung der aktuellen Flutter-App (mit den Neuerungen im Projekt) auf die iOS-Plattform
+  - Umsetzung der aktuellen Flutter-App (mit den Neuerungen im Projekt) auf die iOS-Plattform / Entwicklung selbstständiger iOS App
  
-- **Meilensteine**
-  - Die aktuelle App (mit allen Erweiterungen) funktioniert auch flüssig und fehlerfrei im "Cupertino-Design" auf iOS
+- **Meilensteine / Resultate**
+  - Fundierte Dokumentation der Entscheidung (=empfohlenes Vorgehen) (Deliverable 1)
+  - Die aktuelle Flutter-App (mit allen Erweiterungen) funktioniert auch flüssig und im "Cupertino-Design" auf iOS
+ODER
+  - Eine eigenständige iOS App wurde entwickelt
+  - Entwicklungs- / technische Dokumentation der App sowie der Tests
 
 
 
@@ -447,7 +480,7 @@ Die konkreten Anforderungen müssen in Stakeholder-Interviews mittels User-Resea
 ## WP 4: Erforschung von Sicherheitsaspekten für das Deployment & Veröffentlichung der App (RT) (offen; später; Prio 2)
 
 - **Ausgangssituation**
-  - Im letzten PSE-Carsharing-Projekt (SS 23) wurde das Backend von Firebase (Google) auf einen ExpressJS Server umgestellt. (Damit einher ging eine Reduktion des Dockercontainers um den Faktor 100, eine deutliche Performance-Steigerung/Reagibilität und eine breite Installationsfähigkeit auf unterschiedlichen Servern (self-hosting oder gehosteten Servern).)
+  - Im letzten PSE-Carsharing-Projekt (SS 23) wurde das Backend von Firebase (Google) auf einen ExpressJS Server umgestellt. 
   - Die damaligen Entwickler weisen darauf hin, dass sie sich in der Entwicklung des neuen backends nicht mit möglichen intrusion/attack-Szenarien durch bösartige Dritte beschäftigt hätten. Vorteil von Firebese als backend-as-a-service ist, dass man sich um solche Funktionalitäten nicht zu kümmern braucht, da dies vom Dienstleister (hier: Google) abgedeckt wird.
   - Bei einem eigenen backend stellen sich sehr wohl Fragen nach der Absicherung ggü. Eindringen von Dritten, Schadsoftware, ransomware, etc.
 
@@ -459,7 +492,7 @@ Die konkreten Anforderungen müssen in Stakeholder-Interviews mittels User-Resea
 
 - **Deliverables / Resultate**
   - Darstellung wesentlicher Bedrohungsszenarien (Research) - incl. Priorisierung und Maßnahmenkatalog
-  - Umsetzung der wesentlichen (und darstellbaren) Maßnahmen.
+  - Die wesentlichen (und darstellbaren) Maßnahmen sind umgesetzt.
 
 
 
@@ -467,14 +500,25 @@ Die konkreten Anforderungen müssen in Stakeholder-Interviews mittels User-Resea
 ## WP 5: Erforschung (und Umsetzung) von Möglichkeiten Telemetriedaten aus Fahrzeugen auszulesen und ihres Einsatzes in der we3ve-App (RT) (3 Personen; sofort; Prio )
 
 - **Ausgangssituation**
-  - Wir haben bei der Nutzung von eFahrzeugen die Herausforderung, dass der _Ladestand des Akkus_ für den nachfolgenden Sharer eine kritische Größe zum Erreichen seines Ziels ist. Gern würden wir die _bordeigenen Daten_ jedes Fahrzeugherstellers (insbesondere km-Stand und Akku-Stand/Reichweite bei e-Autos) in die App einspielen, um die Routenplanung verlässlicher zu gestalten. Da jeder Hersteller seine eigene Plattform entwickelt, ist eine herstellerspezifische Programmierung aufwändig. Seinerzeit wurde die Möglichkeit untersucht, einen Dongle mit OBD2-Schnittstelle (Service-Dongle für Werkstätten zum Auslesen der Telemetriedaten) permanent am Fahrzeug zu installieren und darüber in die App auszulesen. Diese wurde jedoch wieder verworfen, da unpraktisch, nicht sehr verlässlich (mechanische Beschädigung), keine Absicherung gegen externes Eindringen (Bluetooth, etc.) gegeben, u.a.m. Gesucht wird eine Möglichkeit, die _Daten_ (idealerweise hersteller-/plattformübergreifend) _auszulesen_ und sie für die Zwecke der App (verbleibende km, Ladedauer des Akkus, km-Stand zu Start und Ende der Fahrt) zur Verfügung zu stellen. Sollte das nicht realisierbar sein, gibt es die Möglichkeit über _open-source-maps_ die gefahrenen km (zurückgelegte Wegstrecke) verlässlich für die Planung und Abrechnung darzustellen? Diese Daten sind Voraussetzung für die Umsetzung von Punkt 1 "Bezahlfunktion"
+  - Wir haben bei der Nutzung von eFahrzeugen die Herausforderung, dass der _Ladestand des Akkus_ für den nachfolgenden Sharer eine kritische Größe zum Erreichen seines Ziels ist. Gern würden wir die _bordeigenen Daten_ jedes Fahrzeugherstellers (insbesondere km-Stand und Akku-Stand/Reichweite bei e-Autos) in die App einspielen, um die Routenplanung verlässlicher zu gestalten. Da jeder Hersteller seine eigene Plattform entwickelt, ist eine herstellerspezifische Programmierung aufwändig. Seinerzeit wurde die Möglichkeit untersucht, einen Dongle mit OBD2-Schnittstelle (Service-Dongle für Werkstätten zum Auslesen der Telemetriedaten) permanent am Fahrzeug zu installieren und darüber in die App auszulesen. Diese wurde jedoch wieder verworfen, da unpraktisch, nicht sehr verlässlich (mechanische Beschädigung), keine Absicherung gegen externes Eindringen (Bluetooth, etc.) gegeben, u.a.m. 
+  - Gesucht wird eine Möglichkeit, die _Daten_ (idealerweise hersteller-/plattformübergreifend) _auszulesen_ und sie für die Zwecke der App (verbleibende km, Ladedauer des Akkus, km-Stand zu Start und Ende der Fahrt) zur Verfügung zu stellen. 
+  - Sollte das nicht realisierbar sein, gibt es die Möglichkeit über _open-source-maps_ die gefahrenen km (zurückgelegte Wegstrecke) verlässlich für die Planung und Abrechnung darzustellen? Diese Daten sind Voraussetzung für die Umsetzung von Punkt 1 "Bezahlfunktion"
 
+
+---
+## WP 5: Erforschung (und Umsetzung) von Möglichkeiten Telemetriedaten aus Fahrzeugen auszulesen und ihres Einsatzes in der we3ve-App (RT) (3 Personen; sofort; Prio )
+
+- **Gewünscht**:
+  - Bereitstellen der Informationen in der App: km-Stand Fahrzeug, (= km zum Start), km-Stand Fahrtende, Saldo: gefahrene km, Akkustand in der we3ve-App, Rest-km lt. Akku
+  - Falls keine plattformübergreifende Abbildung der Telemetriedaten i. d. we3ve-App möglich, dann workaround über open-source-map prüfen. 
 
 - **Tasks**
-  - Bereitstellen der Informationen in der App: km-Stand Fahrzeug, (=km zum Start), km-Stand Fahrtende, Saldo: gefahrene km, Akkustand in der we3ve-App, Rest-km lt. Akku
-  - Falls keine plattformübergreifende Abbildung der Telemetriedaten i. d. we3ve-App möglich, dann workaround über open-source-map prüfen. 
-  - Umsetzung der geeignetsten Alternative lt. Recherche
   - Erforschung wie solche Daten fälschungssicher erhoben werden können.
+  - Umsetzung der geeignetsten Alternative lt. Recherche
+
+- **Resultate / Meilensteine**
+  - Dokumentation der Research-Ergebnisse
+  - soweit möglich Umsetzung der Ergebnisse, da Voraussetzung für WP 1 - Bezahlung
 
 
 
@@ -483,15 +527,18 @@ Die konkreten Anforderungen müssen in Stakeholder-Interviews mittels User-Resea
 
 - **Ausgangsituation**
   - Mit Erweiterung der Funktionalitäten sollte es auch interne Auswertungsmöglichkeiten zur Nutzung der unterschiedlichen Funktionalitäten, Fehlermeldungen/Abstürzen, etc. geben.
+  - Beispielfragen: "Welche Funktionalitäten werden wie genutzt? Wird etwas gar nicht benutzt? Was sind die "Kernfunktionen"?" oder "Wann stürzt die App ab? (inkl. Fehlermeldung)"
 
 - **Tasks**
-  - Welche Funktionalitäten werden wie genutzt? Wird etwas gar nicht benutzt? Was sind die "Kernfunktionen"?
-  - Wann stürzt die App ab? (inkl. Fehlermeldung)
-
-- **Deliverables / Resultate**
   - Research der wichtigsten Kennzahlen
-  - Prüfung, ob dies in der App (oder per Datensexport) außerhalb erfolgen soll.
-  - Umsetzung und visualisierung der identifizierten Auswertungsmöglichkeiten
+  - Research der technischen Möglichkeiten zur Telemetriedatenerhebung
+  - Umsetzung der Telemetriedatenerhebung
+  - Visualisierung der Telemetriedaten
+
+- **Resultate / Meilensteine**
+  - Dokumentation der ermittelten Grundlagen (Wichtige Kennzahlen etc.) und der technischen Möglichkeiten
+  - Implementierung
+
 
 
 ---
@@ -499,17 +546,23 @@ Die konkreten Anforderungen müssen in Stakeholder-Interviews mittels User-Resea
 
 - **Voraussetzungen**
   - Entscheidung ob iOS-App-Version oder nicht
-  - Umsetzung der iOS-Version + Developeraccount zum Testen der Push-Benachrichtigungen (=notwendig)
+  - Umsetzung der iOS-Version + Developeraccount
+  - Zum Testen der Push-Benachrichtigungen ist ein Developeraccount notwendig
 
 - **Ausgangssituation**
-  - In der 1. Version der App (Flutter-App mit Firebase als backend) gab es die Funktion einer integrierte Push-Benachrichtigung zu verschicken. Mit Umstellung auf das neue Backend musste diese Benachrichtigung auf einen schlanken e-mail-Client umgestellt werden. Dies bedeutet einen Bruch in der Kommunikation.
-  - Probleme:    
-    - Firebase nicht erwünscht
-    - Wie können fremde Nachbarschaften Push-Nachrichten senden?
+  - In der 1. Version der App (Flutter-App mit Firebase als backend)  gab es die Funktion einer integrierte Push-Benachrichtigung zu verschicken. Mit Umstellung auf das neue Backend musste diese Benachrichtigung auf einen schlanken e-mail-Client umgestellt werden. Dies bedeutet einen Bruch in der Kommunikation.
+  Probleme:
+    
+    1. Firebase nicht erwünscht
+    2. Wie können fremde Nachbarschaften (mit eigenen Servern!) Push-Nachrichten senden?
 
 - **Tasks**
-  - Research: welche technischen Optionen gibt es? Frei oder kostenpflichtige Lösungen 
+  - Research: welche technischen Optionen gibt es? (Frei oder kostenpflichtige Lösungen / Welche Vor- und Nachteile gibt es)
   - Implementation der gewählten Lösung
+
+- **Deliverables / Resultate**
+  - Dokumentierung der Research-Ergebnisse
+  - Gewählte Lösung ist implementiert
 
 
 ---
@@ -517,18 +570,22 @@ Die konkreten Anforderungen müssen in Stakeholder-Interviews mittels User-Resea
 
 - **Ausgangssituation**
   - Für die App gibt es mittlerweile eine eigene Domain we3ve.de. Aktuell ist dies das frontend für die web-app.
-Gedacht ist, eine homepage zur Erläuterung des Projekts. Darstellung der Einrichtung einer eigenen backend-Instanz etc. einzurichtien und auch die wesentlichen Funktionalitäten der App zu erläutern.
+  - Gedacht ist, eine Homepage zur Vorstellung  des Projekts und Erläuterung der wichtigsten Funktionen/Voraussetzungen (bspw. Einrichtung einer eigenen backend-Instanz etc.)
+  - Schwerpunkt auf guter Maintenance.
+
 
 - **Tasks**
-  - Erforschung, welche Aspekte für Neunutzende wichtig sind, um Interesse für das Projekt zu entwickeln
-  - Erforschung der verschiedenen Alternativen (Hugo / Mkdocs / Read the Docs / etc.)
-  - Schwerpunkt auf guter Maintenance
-  - Hauptsprache Deutsch - automatische Übersetzung auf Englisch per ML
+  - Research der verschiedenen Web-basierten Dokumentationsalternativen (Hugo / Mkdocs / Read the Docs / etc.)
+  - Research: Was benötigen wir für die Einstellung der App in App- und Playstore?
+  - Implementierung und Deployment der Website
+  - Erstellung der Inhalte für App- und Playstore
+  - Einstellung in App- und Playstore
+  - Anfertigung der Benutzungsdokumentation
 
-- **Meilensteine**
-  - Die App/das Projekt hat eine eigene. Homepage für Nutzer (Download aus dem App-Store) - für IT-Affine (Aufsetzen eines eigenen backends).
-  - Im Google Play-Store als auch im Apple App-Store ist die App und ihre Funktionalität attraktiv für den Nutzer dargestellt und lädt zum download ein.
-  - Dokumentierter User Research
+- **Deliverables / Resultate**
+  - Die App/das Projekt hat eine eigene. Homepage für Nutzer (Download aus dem App-Store) - für IT-Affine (Aufsetzen eines eigenen Backends).
+  - Im Google Play-Store als auch im Apple App-Store ist die App und ihre Funktionalität attraktiv für den Nutzer dargestellt und lädt zum Download ein.
+  - Benutzungsdokumentation (inkl. Vorgehen bei Anpassungen der Website etc.) (Deliverable 1)
 
 <!-- Organisation nicht unterschätzen -->
 
@@ -541,14 +598,16 @@ Gedacht ist, eine homepage zur Erläuterung des Projekts. Darstellung der Einric
   - Eliminierung von Bugs etc.
 
 - **Tasks**
-  - Sammlung aktueller Ansätze aus der Usabilityforschung und Evaluierung der App gegen diese Ansätze (=heuristische Usability-Evaluierung)
-  - Durchführung eines Interviews mit einem Powernutzer (Jörg Kasper) und ggf. weiteren
+  - Sammlung aktueller Ansätze aus der Usabilityforschung und Testen der App gegen diese Ansätze (=heuristische Usability-Evaluierung)
+  - Durchführung eines Interviews mit Power- und ggf. neuen Nutzenden (u.a. Jörg Kasper, Roland Trefftz, etc.) 
   - Erarbeitung von Verbesserungsmöglichkeiten
-  - Implementierung der Verbesserungen im Abstimmung mit den Dev-Teams und den Stakeholdern
+  - Implementierung der Verbesserungen im Abstimmung mit den Dev-Teams
+  - Erforschung wie die Flutter-App weitestgehend automatisiert getestet werden kann 
 
-- **Meilensteine**
-  - Sammlung und Bewertung aktueller Usability-Evaluierungsansätze mit Verbesserungsvorschlägen für die App
-  - Dokumentiertes Interview mit Jörg Kasper u.a.
+- **Resultate / Meilensteine**
+  - Sammlung und Bewertung aktueller Usability-Evaluierungsansätze mit Verbesserungsvorschlägen für die App (Deliverable 1)
+  - Dokumentiertes Interview mit den Power- und ggf. neuen Nutzenden (u.a. Jörg Kasper, Roland Trefftz) (Deliverable 2)
+  - Umgesetzte Verbesserungen
 
 
 
