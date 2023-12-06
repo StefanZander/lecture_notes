@@ -48,7 +48,8 @@ const printFirstTwoLetters = (str) => {
     } 
 }
 
-printFirstTwoLetters(5) // Parameter is not a String
+printFirstTwoLetters("Hallo")
+// printFirstTwoLetters(5) // Parameter is not a String
 printFirstTwoLetters("5") // String is less than 2 chars
 
 

@@ -26,7 +26,7 @@ console.log(result);
 
 
 // constructor functions
-function Person(firstname, lastname, birthyear) {
+function Person(firstname, lastname, birthyear, isAnimal) {
     "use strict";
     this._firstname = firstname;
     this._lastname = lastname;
@@ -35,7 +35,8 @@ function Person(firstname, lastname, birthyear) {
         console.log("My name is " + this._firstname + " " + this._lastname);
     } 
 
-    // return new Dog(); // Q: sinnvoll? 
+    if (isAnimal)
+        return new Dog(); // Q: sinnvoll? 
 }
 
 function Dog() {
@@ -46,11 +47,11 @@ function Dog() {
 
 
 // Usage
-let p = new Person("Hans", "Haas", 1919); 
-// p.sayName(); 
+let p = new Person("Hans", "Haas", 1919, false); 
+p.sayName(); 
 // p.wuff();
-p.bark = function() {console.log("wuff"); };
-p.bark();
+// p.bark = function() {console.log("wuff"); };
+// p.bark();
 
 console.log(p instanceof Person);
 
@@ -98,15 +99,15 @@ const v = (x, y) => { return x * y };
 
 // Example 1
 function sayHi() {
-    //    console.log("Hi!");
-        return "Hi!";
-    }
+//    console.log("Hi!");
+    return "Hi!";
+}
     
-    sayHi(); // outputs "Hi!" 
+sayHi(); // outputs "Hi!" 
     
-    let say_something = sayHi;
+let say_something = sayHi;
     
-    say_something();       // outputs "Hi!"
+say_something();       // outputs "Hi!"
     
     
     // Example 2
@@ -157,8 +158,15 @@ function sayHi() {
         this.decode = function() {
             return this.firstname + " " + this.lastname;
         }
+        this.toString = function() { 
+            console.log("says: " + this.firstname)
+        }
     }
-    
+
+    // let p = new Person("Max", "Moritz");
+    // p.toString();
+
+ 
     function lower() {
         return this.firstname.toLowerCase() + " " + this.lastname.toLowerCase();
     }
@@ -239,15 +247,21 @@ function sum() {
     var result = 0,
         i = 0,
         len = arguments.length;
-    
-    while (i < len) {
-        result += arguments[i];
-        i++;
+    try {
+        while (i < len) {
+            if (typeof arguments[i] !== Number) {
+                throw new Error("Can only add numbers");
+            }
+            result += arguments[i];
+            i++;
+        }
+    } catch (err) { 
+        console.log(err)
     }
     return result;
 }
 
-console.log(sum(1, 2)); // 3
+console.log(sum(1, "2")); // 3
 console.log(sum(3, 4, 5, 6)); // 18
 console.log(sum(50 + 50 )); // 100
 console.log(sum()); // 0
