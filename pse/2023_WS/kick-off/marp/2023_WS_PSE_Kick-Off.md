@@ -20,7 +20,7 @@ paginate: true
 <!-- marp --engine ./engine.js --watch --theme-set custom-theme-roboto.css -- --allow-local-files 2023_WS_PSE_Kick-Off.md -->
 <!-- marp --pdf --allow-local-files --engine ./engine.js --theme-set custom-theme-roboto.css -- 2023_WS_PSE_Kick-Off.md -->
 
-# Projekt-Systementwicklung / Projekt KMI im WiSe 2023 
+# Projekt-Systementwicklung / Projekt KMI im WiSe 2023  
 
 #### Prof. Dr. Stefan Linus Zander – Dipl. Volkswirt Roland Trefftz – Lars Kleinschmidt (BSc)
 
