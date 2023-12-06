@@ -217,11 +217,9 @@ function sayHi() {
     
     // The following calls demonstrate the difference 
     // between constructor and normal functions
-    x = new saySomething(); // (B) x and saySomething are two different objects
-    let z = x;
-
     y = saySomething; // (A) assigning a reference to saySomething
 
+    x = new saySomething(); // (B) x and saySomething are two different objects
     
     saySomething.desc = "some descr.";
     
