@@ -314,6 +314,95 @@ Three common notations exists for Self-Invoking Functions^1^
 :::
 
 
+
+---
+## When to use Immediately Invoked Function Expressions (1/2)
+
+::::: columns
+:::: single
+**Abgrenzung des Gültigkeitsbereichs (Scope Isolation):**
+
+IIFE ermöglichen die Schaffung eines eigenen Gültigkeitsbereichs für Variablen. Dadurch werden Konflikte mit globalen Variablen vermieden und verhindert, dass Variablen in anderen Teilen des Codes versehentlich überschrieben werden.
+```javascript
+(function() {
+  // Gültigkeitsbereich ist auf die IIFE begrenzt
+  var localVar = 'Nur in der IIFE sichtbar';
+  console.log(localVar);
+})();
+```
+::::
+:::: single
+**Modulare Programmierung**
+
+IIFE sind nützlich, um Module zu erstellen und zu verhindern, dass Variablen oder Funktionen in den globalen Bereich durchsickern. Dies fördert das Konzept der modularen Programmierung.
+```javascript
+
+var myModule = (function() {
+  var privateVar = 'Geheime Variable';
+
+  function privateFunction() {
+    console.log('Geheime Funktion');
+  }
+
+  return {
+    publicVar: 'Öffentliche Variable',
+    publicFunction: function() {
+      console.log('Öffentliche Funktion');
+    }
+  };
+})();
+
+console.log(myModule.publicVar); // Öffentliche Variable
+myModule.publicFunction(); // Öffentliche Funktion
+```
+::::
+:::::
+
+
+---
+## When to use Immediately Invoked Function Expressions (2/2)
+
+::::: columns
+:::: single
+**3. Vermeidung von Namenskonflikten**
+
+IIFE helfen dabei, Namenskonflikte zu vermeiden, indem sie sicherstellen, dass Variablen und Funktionen nur in dem Kontext existieren, in dem sie benötigt werden.
+
+```javascript
+var myApp = myApp || {};
+
+myApp.namespace = (function() {
+  // Hier können Sie sichere Variablen und Funktionen erstellen
+  // ohne den globalen Namespace zu verschmutzen
+  return {
+    // ...
+  };
+})();
+```
+::::
+:::: single
+**4. Schutz vor unbeabsichtigtem globalen Scope**
+
+Da IIFE ihren eigenen Gültigkeitsbereich haben, helfen sie dabei, unbeabsichtigte globale Variablen zu verhindern, die potenzielle Fehler in komplexen Anwendungen verursachen könnten.
+
+```javascript
+(function() {
+  // Code innerhalb der IIFE hat keinen Einfluss auf den globalen Bereich
+  var localVar = 'Lokale Variable';
+  console.log(localVar);
+})();
+
+console.log(typeof localVar); // undefined
+```
+::::
+:::::
+
+IIFE sind ein leistungsfähiges Werkzeug, um sauberen und sicheren Code in JavaScript zu schreiben, insbesondere wenn es um den Schutz des Gültigkeitsbereichs und die Vermeidung von Konflikten geht.
+
+
+
+
+
 ---
 # Arrow Functions
 
