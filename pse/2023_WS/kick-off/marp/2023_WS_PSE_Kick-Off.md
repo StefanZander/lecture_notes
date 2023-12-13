@@ -347,10 +347,10 @@ Die konkreten Anforderungen müssen in Stakeholder-Interviews mittels User-Resea
   - Benjamin Jesske 
 
 - **WP 2: Verbesserter Kalender (RT**) _(2-3 Personen)_
-  - ==Marwin Wend (Lead)==
-  - Bela Bauss
-  - Christian Kieferle
-  <!-- - ~~Marco Antonio Gil~~ -->
+  - ~~Marwin Wend~~
+  - ==Bela Bauss (Lead)==
+  - ~~Christian Kieferle~~
+  - ~~Marco Antonio Gil~~
 
 - **WP 3: iOS-App (LK)** _(4 Personen)_
   - Aniq Syed
