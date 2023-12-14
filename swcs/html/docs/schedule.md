@@ -15,7 +15,7 @@ The following syllabus information intend to help you structure your work and ac
 - Week 6: Research
 - Week 7: Research
 - Week 8: Research
-- Week 9: Upload review version of paper + enter paper bids ([MS3](milestone3.md)) --- _==Deadline: MON, 2024-01-02 (EOBD)==_[^1]
+- Week 9: Upload review version of paper + enter paper bids ([MS3](milestone3.md)) --- _==Deadline: TUE, 2024-01-02 (EOBD)==_[^1]
 - Week 10: Review Week ([MS4](milestone4.md)) --- _==Deadline: FRI, 2024-01-12 (EOBD)==_
 - Week 11: Integrate feedback + paper revision + start preparing the final presentations
 - Week 12: Final presentations ([MS5](milestone5.md)) --- _==Date: 2024-01-30, 10:00 - 12:00==_
