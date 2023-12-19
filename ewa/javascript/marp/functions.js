@@ -110,24 +110,24 @@ let say_something = sayHi;
 say_something();       // outputs "Hi!"
     
     
-    // Example 2
-    function addOne(num) {
-        return num + 1; 
-    }
+// Example 2
+function addOne(num) {
+    return num + 1; 
+}
+
+let plusOne = addOne; 
+
+let result = plusOne(1); // outputs '2'
+
+
+// Example 3: Handler
+function init() {
+    alert("Page has been fully loaded.");
+}
+
+window.onload = init;
+
     
-    let plusOne = addOne; 
-    
-    let result = plusOne(1); // outputs '2'
-    
-    
-    // Example 3: Handler
-    function init() {
-        alert("Page has been fully loaded.");
-    }
-    
-    window.onload = init;
-    
-        
     
     
     // ================================================
