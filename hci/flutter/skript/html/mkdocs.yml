@@ -9,7 +9,7 @@ theme:
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: blue
+      primary: teal
       accent: red
       toggle:
         icon: material/brightness-7 
@@ -18,8 +18,8 @@ theme:
         accent: red
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: light blue
-      accent: teal
+      primary: teal
+      accent: deep orange
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
@@ -57,8 +57,8 @@ extra:
 
 copyright: Copyright &copy; 2017 - 2023 – Prof. Dr. Stefan Zander
 
-repo_url: https://github.com/StefanZander/lecture_notes/tree/master/swcs/html
-repo_name: swcs
+repo_url: https://github.com/StefanZander/lecture_notes/tree/master/hci/flutter/skript/html
+repo_name: flutter docu
 
 edit_uri: docs/
 
