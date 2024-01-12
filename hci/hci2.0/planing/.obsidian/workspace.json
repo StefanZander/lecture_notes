@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Übersicht Vorlesungseinheiten.md",
+                "file": "Flutter – Übersicht der VO-Inhalte.md",
                 "mode": "source",
                 "source": false
               }
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Übersicht Vorlesungseinheiten.md",
+                "file": "Flutter – Übersicht der VO-Inhalte.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Übersicht Vorlesungseinheiten.md",
+                "file": "Flutter – Übersicht der VO-Inhalte.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Übersicht Vorlesungseinheiten.md"
+                "file": "Flutter – Übersicht der VO-Inhalte.md"
               }
             }
           }
@@ -185,9 +185,9 @@
   },
   "active": "2deb9044c32b1e13",
   "lastOpenFiles": [
+    "Übersicht Vorlesungseinheiten.md",
     "Praktikum.md",
     "Flutter-Links.md",
-    "Flutter – Übersicht der VO-Inhalte.md",
-    "Übersicht Vorlesungseinheiten.md"
+    "Flutter – Übersicht der VO-Inhalte.md"
   ]
 }
