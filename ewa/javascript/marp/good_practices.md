@@ -86,3 +86,51 @@ function increment(counter: number) {
 ::: footnotes
 More information: https://dev.to/codeofrelevancy/you-need-to-know-about-pure-functions-impure-functions-in-javascript-57
 :::
+
+
+
+---
+## Guard Clauses Technique 
+
+A guard clause is a programming technique used to improve the readability and maintainability of code by handling special cases or conditions at the beginning of a function or method, often with an early return or an exception. The purpose of guard clauses is to check for specific conditions that would make the normal execution of the function unnecessary, and if those conditions are met, exit the function early.
+
+::::: columns
+:::: single
+```js
+function anyFunction() {
+  if (wifi) {
+    if  (login) {
+      if (admin) {
+        showAdminPanel();
+      } else {
+        console.log("no admin");
+      }
+    } else {
+      console.log("not logged in");
+    }
+  } else {
+    console.log("wifi not activated");
+  }
+}
+```
+::::
+:::: single
+```js
+function anyFunction() {
+  if (!wifi) { //reversed condition
+    console.log("wifi not activated");
+    return;
+  }
+  if (!login) { //reversed condition
+    console.log("please log in");
+    return;
+  }
+  if (!admin) { //reversed condition
+    console.log("no admin");
+    return;
+  }
+  // further code
+}
+```
+::::
+:::::

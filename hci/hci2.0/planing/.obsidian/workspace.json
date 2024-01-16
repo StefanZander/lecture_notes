@@ -18,8 +18,45 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "9e032eeb372b7147",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Flutter-Links.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2deb9044c32b1e13",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Flutter – Übersicht der VO-Inhalte.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f05ff6f485cd2887",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Übersicht Vorlesungseinheiten.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -85,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Übersicht Vorlesungseinheiten.md",
+                "file": "Flutter – Übersicht der VO-Inhalte.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Übersicht Vorlesungseinheiten.md",
+                "file": "Flutter – Übersicht der VO-Inhalte.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Übersicht Vorlesungseinheiten.md"
+                "file": "Flutter – Übersicht der VO-Inhalte.md"
               }
             }
           }
@@ -146,8 +183,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "005364725f4a46bc",
+  "active": "2deb9044c32b1e13",
   "lastOpenFiles": [
-    "Übersicht Vorlesungseinheiten.md"
+    "Übersicht Vorlesungseinheiten.md",
+    "Praktikum.md",
+    "Flutter-Links.md",
+    "Flutter – Übersicht der VO-Inhalte.md"
   ]
 }
