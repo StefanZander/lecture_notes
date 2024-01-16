@@ -163,6 +163,10 @@ btn.addEventListener("click", () => {
 //**********************************************/
 
 // Promises (success and fail path)
+// The promise takes an executor function, that 
+// expects two callback functions provided by the system;
+// callback methods can take individual names
+// callback methods can have individual data
 const myPromise = new Promise( (resolve, reject) => {
     const rand = Math.floor(Math.random() *2); // 0 or 1
     if (rand === 1) { // success

@@ -38,6 +38,30 @@ let b = new MyProtectedObj("Jack"); // called as constructor
 
 
 
+function StudiStore() {
+  const marks = [];
+  return {
+    addMark: function(mark) {
+      marks.push(mark);
+      return marks.length;
+    },
+    getAmount: function() {
+      return marks.length;
+    },
+    getMarks: function() {
+      return marks;
+    },
+    removeMark: function(index) {
+      if (!(index >= 0)) return -1;
+      if (!(index < marks.length)) return -2;
+      marks.splice(index, 1);
+      return 0;
+    },
+    printMarks: function() {
+      console.log(marks);
+    }
+  }
+}
 
 
 
