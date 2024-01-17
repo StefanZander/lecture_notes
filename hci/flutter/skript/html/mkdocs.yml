@@ -2,6 +2,7 @@ site_name: "Einführung in Flutter und Dart"
 
 nav:
   - 'Main Page': 'index.md'
+  - 'Dart': './themen/dart.md'
 
 
 theme:

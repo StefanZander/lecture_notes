@@ -19,6 +19,7 @@ let p1 = {
 
 
 
+
 //**********************************************/
 //*************** Error Handling ***************/
 //**********************************************/
@@ -29,7 +30,12 @@ const printFirstTwoLetters = (str) => {
     console.log(firstTwo); // will not be executed
 }
 
-printFirstTwoLetters(5); // str.substring is not a function
+printFirstTwoLetters("5"); // str.substring is not a function
+
+
+
+
+
 
 
 // WITH Error Handling
@@ -57,6 +63,10 @@ printFirstTwoLetters("5") // String is less than 2 chars
 //**********************************************/
 //****************** Closures ******************/
 //**********************************************/
+//
+// Lexical Scoping defines how variable names are resolved in nested functions: inner functions contain the scope of parent functions even if the parent function has returned.
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures?retiredLocale=de#lexical_scoping
+
 
 function MyProtectedObj(param) {
     const mySecretVariable = Math.floor(4711 * Math.random()); 
@@ -125,6 +135,9 @@ console.log("Dieser Code wird vor dem asynchronen Code ausgeführt...");
 
 // Example #2
 // Nested callback functions --> "Callback-Hell"
+// The setTimeout() method calls a function after a number of milliseconds.
+// The setInterval() method calls a function at specified intervals (in milliseconds).
+// TODO: change interval times for demonstration
 
 let i = 0;
 let stop = false;
@@ -170,7 +183,8 @@ btn.addEventListener("click", () => {
 const myPromise = new Promise( (resolve, reject) => {
     const rand = Math.floor(Math.random() *2); // 0 or 1
     if (rand === 1) { // success
-        resolve({ "name": "Bello", "type": "Dog"}); // changed from rand to an object
+        resolve(rand); 
+        // resolve({ "name": "Bello", "type": "Dog"}); // pass individual data
     } else { // failure
         console.log("Failure case: " + rand);
         reject(rand);
@@ -180,7 +194,8 @@ const myPromise = new Promise( (resolve, reject) => {
 } );
 
 myPromise
-    .then((data) => { console.log(`Success – ${data.name} ist ein ${data.type}`); } ) // promise accepts only one data parameter
+    .then((data) => { console.log(`Success – ${data}`); } ) // promise accepts only one data parameter
+//     .then((data) => { console.log(`Success – ${data.name} ist ein ${data.type}`); } ) // print passed data
     .then(() => console.log("Folgeausgabe nur im Erfolgsfall"))
     .catch((data) => console.error("Fehlerfall da Ergebnis neq 0 – " + data));
 console.log("Diese Ausgabe kommt VOR dem Promise...");
@@ -193,7 +208,7 @@ fetch(url)
     .then((response) => response.json() )
     .then((data) => {
         let users = data.results;
-        console.log("users"); // change to display data
+        console.log(users); // change to display data
     })
     .catch((err) => console.error(err));
 console.log("request started...");
@@ -219,8 +234,8 @@ const fetchUser = async () => {
 
 let result = fetchUser();
 console.log("Diese Ausgabe kommt VOR fetch user...")
-console.log(typeof result);
-console.log(result instanceof Promise);
+// console.log(typeof result);
+// console.log(result instanceof Promise);
 
 
 // async with error handling
@@ -298,7 +313,7 @@ const app = async () => {
 
 // invoke the function app
 app();
-console.log("cheching...");
+console.log("checking...");
 
 
 
