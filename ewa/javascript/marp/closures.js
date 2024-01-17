@@ -4,6 +4,8 @@
 // ================================================
 // Creating Closures
 // Source: https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-closure-b2f0d2152b36
+// Lexical Scoping defines how variable names are resolved in nested functions: inner functions contain the scope of parent functions even if the parent function has returned.
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures?retiredLocale=de#lexical_scoping
  
 function MyProtectedObj(param) {
   const mySecretVariable = "4711";
