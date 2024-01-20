@@ -22,7 +22,7 @@ The following syllabus information intend to help you structure your work and ac
 <!-- - Week 13: Paper revision -->
 - Week 15: Finalization and submission of research paper ([MS6](milestone6.md)) --- _==Deadline: xxx (EOD)==_
 
-[^1]: I will start the bidding process on xxx, 202x-xx-xx.
+[^1]: I will start the bidding process on WED, 2024-01-04.
 
 
 
