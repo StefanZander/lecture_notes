@@ -178,6 +178,7 @@ function Student(fullname, matr) {
 }
 
 let john = new Person("John", "Doe", 1986);
+console.log(john);
 
 // Be aware that 'this' is now bound to the global window-object and not the instance
 // Forbidden in strict mode (--> does not allow a binding of this to the global object)

@@ -30,7 +30,7 @@ const printFirstTwoLetters = (str) => {
     console.log(firstTwo); // will not be executed
 }
 
-printFirstTwoLetters("5"); // str.substring is not a function
+printFirstTwoLetters(3); // str.substring is not a function
 
 
 
