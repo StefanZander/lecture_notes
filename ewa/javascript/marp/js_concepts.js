@@ -56,7 +56,7 @@ const printFirstTwoLetters = (str) => {
 
 printFirstTwoLetters("Hallo")
 // printFirstTwoLetters(5) // Parameter is not a String
-printFirstTwoLetters("5") // String is less than 2 chars
+printFirstTwoLetters(5) // String is less than 2 chars
 
 
 
@@ -127,6 +127,7 @@ obj.getName();
 console.log("Hallo Welt - jetzt");
 
 setTimeout(() => {
+    // async code
     console.log("Hallo Welt – nach 2 Sec.")
 }, 2000 ); 
 
@@ -198,6 +199,7 @@ myPromise
 //     .then((data) => { console.log(`Success – ${data.name} ist ein ${data.type}`); } ) // print passed data
     .then(() => console.log("Folgeausgabe nur im Erfolgsfall"))
     .catch((data) => console.error("Fehlerfall da Ergebnis neq 0 – " + data));
+
 console.log("Diese Ausgabe kommt VOR dem Promise...");
 
 
@@ -219,7 +221,7 @@ console.log("request started...");
 
 
 //**********************************************/
-//*************** ASYCH & AWAIT ****************/ 
+//*************** ASYNC & AWAIT ****************/ 
 //**********************************************/
 
 // async without error handling
@@ -233,15 +235,17 @@ const fetchUser = async () => {
 }
 
 let result = fetchUser();
-console.log("Diese Ausgabe kommt VOR fetch user...")
-// console.log(typeof result);
-// console.log(result instanceof Promise);
+console.log("Diese Ausgabe kommt VOR fetch user...");
+// console.log(typeof result); 
+// console.log(result instanceof Promise); 
+
+
 
 
 // async with error handling
 // const fetch = require('node-fetch');
 const fetch = require('cross-fetch');
-const url = "https://randomuser.me/api/";
+const url = "https://_randomuser.me/api/";
 const fetchUserWithErrorHandling = async () => {
     try {
         const res = await fetch(url);
@@ -249,8 +253,10 @@ const fetchUserWithErrorHandling = async () => {
         // console.log(data); // we could output data
         console.log("finished");
     } catch(err) {
-        console.error(err);
+        // console.error(err);
+        console.log("Es gab einen Fehler.");
     }
+    // ... // this code would not be executed w/o try-catch
 }
 
 fetchUserWithErrorHandling();
@@ -259,6 +265,9 @@ for (let i = 0; i < 1000; i++) { }
 console.log("Executed before Async call...");
 
 // let s = setInterval(fetchUserWithErrorHandling, 2000);
+
+
+
 
 
 
@@ -437,7 +446,7 @@ let book1 = new Book("Die verlorene Ehre der Katharina Blum", "Heinrich Böll");
 book1.print("title");
 
 let book2 = new Book("Principles of OO-JavaScript", "John Doe");
-book2.print("title");
+book2.print("author");
 
 book1.constructor.prototype.printTitle = function() {
     this.print("title");
