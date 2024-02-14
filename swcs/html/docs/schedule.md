@@ -20,7 +20,7 @@ The following syllabus information intend to help you structure your work and ac
 - Week 11: Integrate feedback + paper revision + start preparing the final presentations
 - Week 12: Final presentations ([MS5](milestone5.md)) --- _==Date: 2024-02-06, 10:00 - 12:00==_
 <!-- - Week 13: Paper revision -->
-- Week 15: Finalization and submission of research paper ([MS6](milestone6.md)) --- _==Deadline: xxx (EOD)==_
+- Week 15: Finalization and submission of research paper ([MS6](milestone6.md)) --- _==Deadline: SUN, 2024-02-25 (EOD)==_
 
 [^1]: I will start the bidding process on WED, 2024-01-04.
 
