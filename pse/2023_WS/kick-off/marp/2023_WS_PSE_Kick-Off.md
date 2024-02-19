@@ -342,29 +342,39 @@ Die konkreten Anforderungen müssen in Stakeholder-Interviews mittels User-Resea
 
 :::: columns
 ::: single
-- **WP 1/2: Bezahl- und Abrechungsfunktion (RT)** _(3-4 Personen)_
-  - ==Bastian Walter==
+- **WP 1/2: Bezahl- und Abrechungsfunktion (RT)** <!-- _(3-4 Personen)_ -->
+  - ==Bastian Walter (Lead)==
   - Benjamin Jesske 
 
 - **WP 2: Verbesserter Kalender (RT**) _(2-3 Personen)_
-  - ~~Marwin Wend~~
   - ==Bela Bauss (Lead)==
+  - Bernhard Ricardo Putranto (Prio 2)
+  <!-- - ~~Marwin Wend~~
   - ~~Christian Kieferle~~
-  - ~~Marco Antonio Gil~~
+  - ~~Marco Antonio Gil~~ -->
 
 - **WP 3: iOS-App (LK)** _(4 Personen)_
-  - Aniq Syed
-  - Yassine Kajouj
-  - ==Kilian Heitmann (Lead)==
-  - Bernhard Ricardo Putranto
+- **WP 7: Push-Benachrichtigungen**
+  - Aniq Syed ?
+  - Yassine Kajouj ?
+  - ==Kilian Heitmann (Lead WP3)== ?
+  - Bernhard Ricardo Putranto ?
+ 
 :::
 ::: single
-- **WP 8: Design und Deployment einer Website & Darstellung im Play- und App-Store (SZ/RT)** _(2-3 Personen)_
+- **WP5: Telemetriedaten auslesen und verarbeiten (RT)**
+  - ==Bela Bauss (Lead)==
+  - Bastian Walter (Prio 2)
+  - Vinsky Strauss TanHanSen
+  - Yassine Kajouj
+
+
+- **WP 8: Website & App-Stores (SZ/RT)** <!-- _(2-3 Personen)_ -->
   - ==Thanh Trung Le (Lead)==
   - Dang Quang Tran
   - Frederik Kutzer (Prio 2)
 
-- **WP 9: Usability-Verbesserungen + Bugfixing an der App (SZ/LK)** _(3-4 Personen)_
+- **WP 9: Usability-Verbesserungen + Bugfixing (SZ/LK)**  <!--_(3-4 Personen)_ -->
   - ==Frederik Kutzer (Lead)==
   - Aniq Syed (Prio 2)
   - Vinsky Strauss TanHanSen

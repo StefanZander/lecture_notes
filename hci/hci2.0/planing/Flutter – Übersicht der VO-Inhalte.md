@@ -19,4 +19,11 @@ Themen
 
 Wichtig:
 - diese Anforderungen müssen auch im Semesterprojekt in der App enthalten sein
+- Ute
+	- klarmachen, was eine API ist
+	- Datenfluss und Datenflusslogik klarer machen (Studis kennen das oft nicht; Fragen: wo kommend die Daten her; wo gehen diese hin; was passiert mit denen usw.)
+	- darlegen, was Statemanagement ist (wo muss man etwas triggern damit der Screen neu gezeichnet wird)
+	- Konzept klar machen: was ist ein Ereignis; was ist ein Handler etc.
+	- Konzeptuelle Ebene sehr wichtig
+	- Datenhaltung ist noch nicht bekannt (Speicherung in Dateien)
 
