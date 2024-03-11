@@ -9,7 +9,7 @@
     - Umgang mit Mixins, Interfaces und abstrakten Klassen
     - Asynchronität 
     - Exceptions
-    - ...
+    - ... 
 
 !!! note "Warum ist dieses Kapiel wichtig...?"
     Dart ist die Programmiersprache für die Erstellung von Flutter-Apps. 
@@ -17,6 +17,10 @@
 
 !!! note "Was lernen Sie in dieser Einheit..."
     - ....
+  
+!!! note "Voraussetzung für diese Einheit (das sollten sie kennen)"
+    - ...
+  
 
 
 Quellen:
@@ -24,4 +28,3 @@ Quellen:
   - Stellt alle wesentlichen Sprechkonzepte und -elemente vor, die für die Entwicklung mit FLutter benötigt werden
 - Eine Übersicht der wesentlichen Sprachkonzepte
   - https://dart.dev/language#important-concepts
-

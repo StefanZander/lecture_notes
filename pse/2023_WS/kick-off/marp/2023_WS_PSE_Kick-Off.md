@@ -371,7 +371,7 @@ Die konkreten Anforderungen müssen in Stakeholder-Interviews mittels User-Resea
 
 - **WP 8: Website & App-Stores (SZ/RT)** <!-- _(2-3 Personen)_ -->
   - ==Thanh Trung Le (Lead)==
-  - Dang Quang Tran
+  - Dang Quang Tran (ausgeschieden)
   - Frederik Kutzer (Prio 2)
 
 - **WP 9: Usability-Verbesserungen + Bugfixing (SZ/LK)**  <!--_(3-4 Personen)_ -->

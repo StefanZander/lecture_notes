@@ -5,7 +5,7 @@ Begleitmaterial zur Veranstaltung "Human Computer Interaction" (Modulnummer xxxx
 ## Inhalte
 
 1. [Einführung in Flutter / Grundlegende Konzepte und Besonderheiten]()
-2. Grundlagen der Sprache "Dart"
+2. [Grundlagen der Sprache "Dart"](./themen/dart.md)
 3. Wie designed man eine App / Grundbausteine/Grundgerüst einer Flutter-App
 4. Widgets (--> welche UI-Elemente gibt es und wie bindet man diese ein?)
 5. Verhalten 
