@@ -16,6 +16,10 @@ The following pages contain information about
 * course milestones to achieve in order to successfully pass the course, 
 * instructions for successfully completing the practical part.
 
+!!! info "Infos zum Blockkurs im Sommersemester 2024"
+    Im Sommersemester 2024 wird die Lehrveranstaltung als 2-wöchiger Blockkurs vor Ort an der h_da angeboten. Im ersten Teil der Veranstaltung (MO-DO) werden die theoretischen Grundlagen und Technologien vermittelt. Im zweiten Teil erfolgt die selbständige Bearbeitung eines selbstgewählten Themas in Form eines Gruppenprojekts (Zeitraum: FR - DO der folgenden Woche). Am FR der zweiten Woche finden die Abschlusspräsentationen der Gruppenprojekte sowie ein –– je nach Teilnehmendenzahl –– kurzer mündlicher oder schriftlicher Test statt. Die Lehreinheiten dauern von 9:00 bis ca. 13:00 Uhr. Der Nachmittag ist für die selbständige Auseinandersetzung mit den Lehrinhalten des Vormittags sowie der Bearbeitung von Übungsaufgaben vorgesehen. Während der Projektphase finden keine Übungen statt, so dass die Studierenden sich voll auf die Projektarbeit konzentrieren können. 
+
+
 !!! info "Language and Revision Policy"
     The lecture materials are written in both English and German language. That means, for some parts, the language changes from English to German in vice versa. The reason for that is, that the course's contents are continuously extended and new content is added immediately after its verification and validation. The course's content is treated as a "living standard".
 

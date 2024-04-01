@@ -31,6 +31,15 @@ The main thing to learn is to combine widgets into a tree-like structure in orde
 
 The most important tool in Flutter is the refactor function – called by pressing `CMD`+`.`.
 
+The `https://pub.dev/packages/provider` provider library provides some convenience methods to expose and work with state data.
+
+### Dart
+
+Dart uses a shorthand notation for the instantiation of classes.
+
+Instead of `var obj = new Classname(...)` you can write in Dart `var obj = Classname()`. So it is quite common in Flutter source code to read this notation form.
+
+
 
 ### Data Store and State Management
 

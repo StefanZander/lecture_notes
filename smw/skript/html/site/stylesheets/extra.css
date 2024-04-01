@@ -14,10 +14,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap'); */
 
-@font-face {
+/* @font-face {
     font-family: 'Roboto Condensed';
     src: url('https://projects.fbi.h-da.de/~s.zander/fonts/RobotoCondensed-Regular.ttf');
-}
+} */
 
 
 /* @font-face {
@@ -163,8 +163,8 @@ div.md-content a:hover:not(.md-footer-nav__link) {
     font-family: 'Material Icons';
     font-style: normal;
     font-weight: 400;
-    src: url(https://projects.fbi.h-da.de/~s.zander/fonts/icons/MaterialIcons-Regular.ttf);
-    /* src: url(https://fonts.gstatic.com/s/materialicons/v126/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2) format('woff2'); */
+    /* src: url(https://projects.fbi.h-da.de/~s.zander/fonts/icons/MaterialIcons-Regular.ttf); */
+    src: url(https://fonts.gstatic.com/s/materialicons/v126/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2) format('woff2');
 }
 
 .material-icons {
