@@ -18,6 +18,7 @@
 	- 
 
 - Bootstrap into Dart
+	- [The dart team compiled a number of useful resources to get to know the dart language] A quick introduction to and overview of the Dart language from the flutter team.
 	- New to the [Dart](https://dart.dev/) language? We compiled our favorite resources to help you quickly learn Dart. Many people have reported that [Dart is easy and fun to learn](https://docs.flutter.dev/resources/faq#why-did-flutter-choose-to-use-dart). We hope these resources make Dart easy for you to learn, too.
 	- https://docs.flutter.dev/resources/bootstrap-into-dart
 
@@ -32,7 +33,7 @@
 		- Guides for style, authoring documentation, usage, and more.
 	- [Asynchronous programming: futures, async, await](https://dart.dev/codelabs/async-await) 
 		- Learn how to write asynchronous code using futures and the `async` and `await` keywords.
-	- [Asynchronous programming: streams](https://dart.dev/tutorials/language/streams)
+	- [Asynchronous programming: streams](https://dart.dev/tutorials/language/streams) (not part of the lecture)
 		- Learn how to use streams to perform asynchronous I/O and event handling.
 
 - Flutter FAQ
@@ -42,7 +43,7 @@
 
 
 Flutter-Teil in VO
-- Eine Übersicht, auf der die Themen + Links aufgeführt sind, mit denen sich die Studierenden auseinander setzen müssen.
+- [ok] Eine Übersicht, auf der die Themen + Links aufgeführt sind, mit denen sich die Studierenden auseinander setzen müssen.
 - In VO kann man dann Aufgaben / UE dazu machen
 - Übersicht auch für enthaltene Anforderungen in der App im Semesterprojekt
 - 

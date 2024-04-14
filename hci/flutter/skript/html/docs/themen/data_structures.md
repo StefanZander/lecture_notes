@@ -1,5 +1,11 @@
 # Data Structures
 
+A typed list is the common way to store individual data objects (e.g. shopping cart items)
+
+```dart
+List<Type>   e.g.  List<>
+```
+
 Nice article that demonstrates and explains how to combine individual data classes with widgets: <https://docs.flutter.dev/cookbook/lists/mixed-list>
 
 In a nutshell

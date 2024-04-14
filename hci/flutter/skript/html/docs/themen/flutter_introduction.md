@@ -67,14 +67,15 @@ Define: Mutable and Immutable
 ### Widgets
 
 Every widget defines a `build()` method. 
-- This method is automatically called every time the widgets circumstances change so that the widget is always up to date.
+- This method is automatically called every time the widget's circumstances change so that the widget is always up to date.
 - It always returns a widget or more typically a nested tree of widgets
-- Complext visual UI elements should be treated as a separate widget
+- Complext visual UI elements should be encapsulated in and treated as a separate widget
 - Having separate widgets for separate logical parts of your UI is an important way of managing complexity in Flutter.
 - Many Flutter widgets contain standard implicit animations. Hence, they will smoothly interpolate between values so that the UI doesn't just "jump" between states. 
 
 
 `Scaffold` is a helpful widget found in the vast majority of Flutter apps
+- it allows for defining a app bar, a navigation bar, and a floating action button (commonly designated as FAB).
 
 The `watch()` method allows the class to keep track of the app's current state
 
