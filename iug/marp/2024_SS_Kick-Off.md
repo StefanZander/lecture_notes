@@ -15,8 +15,8 @@ paginate: true
 
 
 
-<!-- marp --engine ./engine.js --watch --theme-set custom-theme-roboto.css -- --allow-local-files kick-off.md -->
-<!-- marp --pdf --allow-local-files --engine ./engine.js --theme-set custom-theme-roboto.css -- kick-off.md -->
+<!-- marp --engine ./engine.js --watch --theme-set custom-theme-roboto.css -- --allow-local-files 2024_SS_Kick-Off.md -->
+<!-- marp --pdf --allow-local-files --engine ./engine.js --theme-set custom-theme-roboto.css -- 2024_SS_Kick-Off.md -->
 
 
 <!-- ![bg vertical 100%](figures/robot_looking_at_city.webp) -->
@@ -32,7 +32,7 @@ Kick-Off und Organisation
 
 ---
 <!-- header: ""Organisation und Durchführung"" -->
-<!-- footer: Römer & Zander | Informatik und Gesellschaft | Wintersemester 2023/2024 | Kick-Off – 17.10.2023  -->
+<!-- footer: von Römer & Zander | Informatik und Gesellschaft | Sommersemester 2024 | Kick-Off – 16.04.2024  -->
 
 # Heutige Agenda
 ![bg right:48% 175%](figures/landscape.jpg)
@@ -178,16 +178,14 @@ Weitere Vorschläge aus dem Plenum ?
 :::: single -->
 **Informatikthemen mit Gesellschaftsbezug**
 - In was für einer Gesellschaft wollen *SIE* leben?
-  - Diskussion / Mentimeter
-- Wie mitgestalten?
+- Wie mitgestalten? Wo Verantwortung übernehmen?
 - An welchen Stellen ist das für die Informatik relevant?
-   - Diskussion / Mentimeter
 
 **Reflexion der gesellschaftlichen Aspekte der Informatik**
 - NICHT abdriften in technische Details
 
 **Wöchentlich eine Präsentation zu einem relevanten Thema**
-- Gruppenpräsentation (2-3 Personen)
+- Gruppenpräsentation (3-4 Personen)
 - Diskussion im Plenum
 
 **Erstellung eines Quizzes zu den wichtigsten Inhalten des Vortrags**
@@ -212,6 +210,7 @@ Bildquelle: https://c4.wallpaperflare.com/wallpaper/556/603/706/1892-on-the-terr
 ::::: columns-center
 :::: double
 - Die Studierenden sollen die **Bedingungen**, **Wirkungen** und **Folgen** des **informatorischen Handelns** und **Gestaltens** in der **Gesellschaft** analysieren, verstehen und beurteilen lernen. 
+
 - Sie sollen die Grundlagen zur Wahrnehmung der **eigenen Verantwortung** gegenüber den vom **Informationstechnik-Einsatz Betroffenen** und zur Umsetzung in individuelles und gemeinsames, **gesellschaftlich wirksames** und **verantwortliches Handeln** lernen.
 ::::
 :::: single
@@ -234,17 +233,17 @@ Bildquelle: https://c4.wallpaperflare.com/wallpaper/556/603/706/1892-on-the-terr
 - Lesefreude & Schreibbereitschaft
 - Wöchentliche Teilnahme
 - Textlektüre (jede Woche)
-- Gruppenvortrag und Diskussionsleitung (1 mal)
-- Quiz-Erstellung und Durchführung (1 mal)
+- Gruppenvortrag und Diskussionsleitung (1x)
+- Quiz-Erstellung und Durchführung (1x)
 <!-- ::::
 :::: single
 ![](figures/men_lifting_stone.jpg)
 ::::
 ::::: -->
 
-<!-- ::: footnotes
+::: footnotes
 Bildquelle: https://c4.wallpaperflare.com/wallpaper/710/270/417/1898-austrian-painter-austrian-painter-oil-on-canvas-franz-von-defregger-hd-wallpaper-preview.jpg
-::: -->
+:::
 
 
 
@@ -264,6 +263,7 @@ Bildquelle: https://c4.wallpaperflare.com/wallpaper/710/270/417/1898-austrian-pa
 **Anwesenheitspflicht in jeder Seminarstunde**
 - Abwesenheit mit schriftlichem Nachweis per E-Mail:
   - Ärztliches Attest (Arbeitsunfähigkeitsbescheinigung)
+- Ein zweites unentschuldigtes Fehlen führt zum Nichtbestehen des Moduls
   <!-- - Corona: PCR- oder Bürgertest Ergebnis (Bescheinigung) -->
 
 
@@ -298,7 +298,7 @@ Bildquelle: https://c4.wallpaperflare.com/wallpaper/710/270/417/1898-austrian-pa
 <!-- ![bg right:20% ](figures/ontology_ancient_greek.webp) -->
 
 - **Gruppen von 3-4 Studierenden halten eine [gemeinsame]{.underline} Präsentation**
-   - Ausgeglichene Zeiteinteilung
+   - Ausgeglichene Zeiteinteilung :far-clock:
    - Präsentation baut aufeinander auf (keine streng aneinandergereihten Präsentationen)
    - Jeweils kurze Vorstellung der Präsentierenden (wir müssen wissen wer spricht!)
    - Präsentation und Diskussion müssen nicht unbedingt getrennt nacheinander erfolgen
@@ -307,16 +307,16 @@ Bildquelle: https://c4.wallpaperflare.com/wallpaper/710/270/417/1898-austrian-pa
 - **Sie stellen ihr Thema anregend vor und leiten hin zu einer Diskussion**
   - Mit Gesellschaftsbezug!
   - Keine technischen Details oder Sachvorträge, aber korrekte Definition und Einordnung ihres Themas
-  - Stellen Sie Thesen vor (oder auf) die aufrütteln, provozieren, zum Diskutieren einladen
+  - Stellen Sie Thesen vor (oder auf) die aufrütteln :fas-person-circle-exclamation:, provozieren :fas-heart-circle-exclamation:, zum Diskutieren :fas-comments: einladen
 
-- **Sie kennen ihr Thema, ihre Kommilitonen lernen etwas neues**
+- **Sie kennen ihr Thema – ihre Kommilitonen lernen etwas neues**
    - Keine „Zusammenfassung“ der vorgegebenen Quellen
    - Quellen sind Startpunkt und Grundlage Ihrer eigenen Recherche
    - Sie sind relativ frei in der Gestaltung ihres Themas
 
 - **Formalien**
   - wissenschaftliche Quellenangaben (bei Bildern, Zitaten und Studien direkt auf der Folie), Seitenzahlen, …
-  - Abgabe der Präsentation durch Hochladen im Forum als PDF: **noch am gleichen Tag**
+  - Abgabe der Präsentation durch Hochladen im Moodle-Forum als PDF: **noch am gleichen Tag**
 
 
 
@@ -325,21 +325,21 @@ Bildquelle: https://c4.wallpaperflare.com/wallpaper/710/270/417/1898-austrian-pa
 ## Quiz :fa-dice: (1/2)
 
 ::: twocolumns 
-**Zielsetzung** {.big .center .inverseblue}
-- für Gruppe: 
-  - Feedback, wie gut das Plenum die zentralen Inhalte aufgenommen hat
-- für Plenum: 
-  - Sichtbarmachung, wie gut der Vortag verstanden wurde 
-  $\leadsto$ was blieb hängen...
-- für alle Studierenden:
-  - Möglichkeit, durch sehr gute Leistungen in den Quizzes eine Aufwertung der Seminarnote zu erhalten
-
-
-**Aufgabe** {.big .center .inversegreen}
+:fas-bullseye: **Zielsetzung** {.big .center .inverseblue}
 - für Gruppe
-  - Herausarbeitung der wesentlichen Inhalte etc. der Seminarstunde und Überführung in ein Hörsaalquiz in der Folgewoche
-  - Durchführung des Quizzes zu Beginn der Folgestunde
-  - Verwaltung und Export der Rangliste
+  - Feedback, wie gut das Plenum die zentralen Inhalte aufgenommen hat
+- für Plenum
+  - Sichtbarmachung, wie gut der Vortag verstanden wurde 
+  $\leadsto$ was blieb hängen?!
+- für alle Studierenden
+  - Möglichkeit, durch sehr gute Leistungen in den Quizzes eine *Aufwertung* der Seminarnote zu erhalten
+
+
+:fas-list-check: **Aufgabe** {.big .center .inversegreen}
+- für Gruppe
+  - Herausarbeitung der _wesentlichen Inhalte_ etc. der Seminarstunde und Überführung in ein Hörsaalquiz in der Folgewoche
+  - Durchführung des Quizzes zu Beginn der Folgeveranstaltung
+  - Verwaltung und Export der Rangliste (--> Vorlage in Moodle)
 - für Studierende
   - Registration mit Matrikelnummer am jeweiligen Quiz 
   - regelmäßige Teilnahme
@@ -352,13 +352,13 @@ Bildquelle: https://c4.wallpaperflare.com/wallpaper/710/270/417/1898-austrian-pa
 
 ::::: columns-center
 :::: double
-**Durchführung** 
+:fas-truck-fast: **Durchführung** 
 - Tools: 
   - **Quizizz** (https://quizizz.com/?lng=de) oder 
   - **arsnova.click** (https://arsnova.click/)
   - kostenlose Registrierung mind. eines Mitglieds (nur bei Quizizz)
 - Teilnehmende registrieren sich zu Beginn des Quizzes mit der *Matrikelnummer* 
-- Auslegung des Quizzes auf etwa *8 - 10 Minuten*
+- Auslegung des Quizzes auf etwa *8 - 10 Minuten (max.)* 
 - Fragen zeitlich begrenzen; gerne mit unterschiedlichen Fragetypen(1)^1^
 - Präsentation des Quizzes und der Ergebnisse und Rangliste am Beamer
 - Exportieren der Rangliste als `.csv` und Upload im Moodle-Forum
@@ -384,11 +384,11 @@ Bildquelle: https://c4.wallpaperflare.com/wallpaper/710/270/417/1898-austrian-pa
 
 - Die Seminarstunde wird von der jeweiligen Gruppe "ausgerichtet"
    - Zeitüberschreitung wird sanktioniert:
-      - Weiße Karte:	0 Minuten übrig:	Noch kein Abzug	– Kommen Sie zum Ende.
-      - Gelbe Karte:	2 Minuten überzogen:	0,3 Notenpunkte Abzug	– Kommen Sie zum Ende!
-      - Rote Karte:	5 Minuten überzogen:	1 Notenpunkt Abzug	– Abbruch durch Dozent_in
+      - *Weiße Karte*:	0 Minuten übrig –	Noch kein Abzug	– Kommen Sie zum Ende.
+      - *Gelbe Karte*:	2 Minuten überzogen –	0,3 Notenpunkte Abzug	– Kommen Sie zum Ende!
+      - *Rote Karte*:	5 Minuten überzogen –	1 Notenpunkt Abzug	– Abbruch durch Dozent_in
 
-- Zeitplan:
+- :far-clock: Zeitplan:
    - Start: pünktlich
    - 5 Minuten: Fragen; Vorbereitung des Quizzes; Registrierung der Teilnehmenden
    - 10 Minuten: Durchführung des Quizzes zum Thema aus der Vorwoche
@@ -416,17 +416,17 @@ Bildquelle: https://c4.wallpaperflare.com/wallpaper/710/270/417/1898-austrian-pa
    - Vorstellung der wichtigsten Präsentationstechniken
    - Vorstellung der Quizzsysteme
    - Gruppencoaching: Alle Gruppen haben Ihr Thema und stellen die jeweiligen Fragestellungen und Vorgehensweise vor
-<!--
-- **5. - 7. Termin: Vorbereitung der Seminarstunden** 
-  - selbständige Gruppenarbeit; keine Präsenzveranstaltung; bei Bedarf Coaching und Feedback durch Dozierende
--->
 
-- **4. – 13. Termin: insgesamt 13 Themen & 10 Gruppen** (Themen und Temine in Moodle)
+- **4. Termin: Vorbereitung der Seminarstunden** 
+  - selbständige Gruppenarbeit; keine Präsenzveranstaltung; bei Bedarf Coaching und Feedback durch Dozierende
+
+
+- **5. – 13. Termin: insgesamt 12 Themen & 9 Gruppen** (Themen und Termine in Moodle)
   - Präsentation
   - Diskussion
   - Quiz
 
-- **14. Termin (xx.07.2024)**
+- **14. Termin (16.07.2024)**
   - Puffer / Quiz / Vorlesungsevaluation / Feeback / Abschluss
 
 
@@ -507,7 +507,7 @@ Optional; Verbesserung der Note um eine minor Notenstufe (+/- 0,3) durch individ
 - Haben Sie Spaß :far-face-smile:
 
 
-
+<!--
 ---
 # Präsentationsthemen :fa-person-chalkboard:
 
@@ -520,9 +520,30 @@ Optional; Verbesserung der Note um eine minor Notenstufe (+/- 0,3) durch individ
 7. Cognitive Warfare - Der große Informationskrieg
 8. Hinter der KI: Clickworking als moderne „Sklavenarbeit“?
 9. Kommunikation – „always on, aber nie da“ (alone together) 
-+ neue Themen
+10. Ist TikTok eine Gefahr für uns und unsere demokratischen Grundprinzipien?
+11. 
+-->
+
+---
+# Präsentationsthemen :fa-person-chalkboard:
+
+1. Typischer Informatiker – ist auf jeden Fall männlich und was noch?
+2. Die digital transparenten Bürger*innen - In welcher Gesellschaft wollen wir leben?
+3. Infokratie: Digitalisierung und die Krise der Demokratie
+4. Digitale Diskriminierung: Bias in der Programmierung und ihre Folgen für die Gesellschaft
+5. Desinformationskampagnen im Wahlkampf: Angriff auf die demokratische Grundordnung
+6. Die Veränderung der Kommunikation: "Alone together"
+7. Cognitive Warfare: Der große Informationskrieg
+8. Hinter der KI: Clickworking als modernen Sklavenarbeit?
+9. Sind Systeme wie TikTok eine Gefahr für uns als Gesellschaft und unsere demokratischen Grundprinzipien?
+10. Ressourcenabbau für IT-Produkte
+11. Digitalsierung und Energieverbrauch
+12. ChatGPT in Studium und Lehre - Nur ein neues Werkzeug oder mehr?
 
 
 ---
+## Freibleibend für Ergebnis der Themenpriorisierung
 <!-- # Themenauswahl durch die Studierenden -->
+<!-- 
 ![](https://static.mentimeter.com/screenshot/1-bitte-ranken-sie-die-themen-nach-interesse.jpg?maxage=600&w=1920&h=1080&url=https%3A%2F%2Fwww.mentimeter.com%2Fapp%2Fpresentation%2Falpqfmr4q24i36ztudch6ahikhqq8mey%2Fyb7cy5njkg36%2Fpreview%3Fp%3D0&cache_buster=7)
+-->
