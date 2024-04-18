@@ -20,16 +20,16 @@ paginate: true
 <!-- marp --engine ./engine.js --watch --theme-set custom-theme-roboto.css -- --allow-local-files 2023_WS_PSE_Kick-Off.md -->
 <!-- marp --pdf --allow-local-files --engine ./engine.js --theme-set custom-theme-roboto.css -- 2023_WS_PSE_Kick-Off.md -->
 
-# Projekt-Systementwicklung / Projekt KMI im WiSe 2023  
+# Projekt-Systementwicklung / Projekt KMI im SoSe 2024  
 
 #### Prof. Dr. Stefan Linus Zander – Dipl. Volkswirt Roland Trefftz – Lars Kleinschmidt (BSc)
 
-Kick-Off-Meeting – 24.10.2023  {.lightgreen .Big .skip}
+Kick-Off-Meeting – 22.04.2024  {.lightgreen .Big .skip}
 
 
 ---
 <!-- header: Überblick -->
-<!-- footer: Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 24.10.2023 -->
+<!-- footer: Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 22.04.2024 -->
 
 # Agenda
 
@@ -84,22 +84,22 @@ Für *Studierende*, sagen Sie bitte kurz ...
 
 ::::: columns
 :::: quad
-- ~~Gil, Marco Antonio – marcoantonio.gil@stud.h-da.de~~
-- Kutzer, Frederik – Frederik.Kutzer@stud.h-da.de
-- Le, Thanh Trung – thanhtrung.le@stud.h-da.de
-- Walter, Bastian	– bastian.walter@stud.h-da.de
+- Bahammou, Ayoub	– ayoub.bahammou@stud.h-da.de
+- Bibaj, Leon	– Leon.Bibaj@stud.h-da.de
+- Boussaguia, Mohamed – Mohamed.Boussaguia@stud.h-da.de
+- Conzen, Tobias – Tobias.Conzen@stud.h-da.de
+- Gener Lopez, Teresa – teresa.generlopez@stud.h-da.de
+- Hübner, Maximilian – Maximilian.Huebner@stud.h-da.de
 ::::
 :::: quin
-- Bauss, Bela	– Bela.Bauss@stud.h-da.de
-- Heitmann, Kilian – kilian.heitmann@stud.h-da.de
-- Jesske, Benjamin – Benjamin.Jesske@stud.h-da.de
-- Kajouj, Yassine	– Yassine.Kajouj@stud.h-da.de
-- Kieferle, Christian – Christian.Kieferle@stud.h-da.de
-- Putranto, Bernhard Ricardo – Bernhard.R.Putranto@stud.h-da.de
-- Syed, Aniq Hussain – aniqhussain.syed@stud.h-da.de
-- Tanhansen, Vinsky Strauss – Vinsky.S.Tanhansen@stud.h-da.de
-- Tran, Dang Quang – dangquang.tran@stud.h-da.de
-- Wend, Marwin – Marwin.Wend@stud.h-da.de
+- Kwasny, Marco – Marco.Kwasny@stud.h-da.de
+- Lupus, Max – max.lupus@stud.h-da.de
+- Nandha, Sanjeev – Sanjeev.Nandha@stud.h-da.de
+- Niazi, Mina – Mina.Niazi@stud.h-da.de
+- Spengler, Etienne – Etienne.Spengler@stud.h-da.de
+- Tchouankam Ngansop, Paul Arnaud – Paul.A.Ngansop@stud.h-da.de
+- Wolf, Samuel – Samuel.Wolf@stud.h-da.de
+
 ::::
 :::::
 

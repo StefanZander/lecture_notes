@@ -417,7 +417,7 @@ Bildquelle: https://c4.wallpaperflare.com/wallpaper/710/270/417/1898-austrian-pa
    - Vorstellung der Quizzsysteme
    - Gruppencoaching: Alle Gruppen haben Ihr Thema und stellen die jeweiligen Fragestellungen und Vorgehensweise vor
 
-- **4. Termin: Vorbereitung der Seminarstunden** 
+- **4. & 5. Termin: Vorbereitung der Seminarstunden** 
   - selbständige Gruppenarbeit; keine Präsenzveranstaltung; bei Bedarf Coaching und Feedback durch Dozierende
 
 
@@ -527,17 +527,17 @@ Optional; Verbesserung der Note um eine minor Notenstufe (+/- 0,3) durch individ
 ---
 # Präsentationsthemen :fa-person-chalkboard:
 
-1. Typischer Informatiker – ist auf jeden Fall männlich und was noch?
+1. ~~Typischer Informatiker – ist auf jeden Fall männlich und was noch?~~
 2. Die digital transparenten Bürger*innen - In welcher Gesellschaft wollen wir leben?
-3. Infokratie: Digitalisierung und die Krise der Demokratie
+3. ~~Infokratie: Digitalisierung und die Krise der Demokratie~~
 4. Digitale Diskriminierung: Bias in der Programmierung und ihre Folgen für die Gesellschaft
 5. Desinformationskampagnen im Wahlkampf: Angriff auf die demokratische Grundordnung
 6. Die Veränderung der Kommunikation: "Alone together"
-7. Cognitive Warfare: Der große Informationskrieg
+7. ~~Cognitive Warfare: Der große Informationskrieg~~
 8. Hinter der KI: Clickworking als modernen Sklavenarbeit?
 9. Sind Systeme wie TikTok eine Gefahr für uns als Gesellschaft und unsere demokratischen Grundprinzipien?
 10. Ressourcenabbau für IT-Produkte
-11. Digitalsierung und Energieverbrauch
+11. ~~Digitalsierung und Energieverbrauch~~
 12. ChatGPT in Studium und Lehre - Nur ein neues Werkzeug oder mehr?
 
 
