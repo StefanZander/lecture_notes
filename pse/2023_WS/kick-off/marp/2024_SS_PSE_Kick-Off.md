@@ -676,13 +676,13 @@ Da wir analog dem **Agilen Manifesto** vorgehen wollen, anbei ein paar Gedanken 
 :::
 
 {.Skip}
-- Grundsätzlich: die Projektaufgaben (=Tasks der jeweiligen WPs) werden in wöchentlichen **Sprints** abgearbeitet^1^
+- Grundsätzlich: die Projektaufgaben (=Tasks der jeweiligen WPs bzw. User Stories) werden in wöchentlichen **Sprints** abgearbeitet^1^
 - Die **Detailarbeiten** pro Sprint (Research / Development / etc) legt jedes Team individuell fest
 - Jedes Projekt führt ein **Sprint**- und ein **Produkt-Backlog**. 
   - Das Sprint-Backlog dokumentiert die einzelnen Aufgaben und Ziele eines Sprints für jedes Team. 
-  - Im Produkt-Backlog werden die Anforderungen der APs und der zugehörigen Tasks definiert und dokumentiert.
-- Die Sprint- und Produkt-Backlogs werden in den **Git-Repositories** der jeweiligen Projekte geführt.
-- Vor jedem Sprint steht die **Planung**; hier werden die Tasks der Arbeitspakete (=APs) aus der Projektbeschreibung in Teilaufgaben zerlegt und in das Sprint-Backlog übertragen (siehe vorheriger Punkt). 
+  - Im Produkt-Backlog werden die Anforderungen in Form von User Stories und  zugehöriger Tasks definiert und dokumentiert.
+- Die Sprint- und Produkt-Backlogs werden in Taiga geführt ~~den **Git-Repositories** der jeweiligen Projekte geführt.~~
+- Vor jedem Sprint steht die **Planung**; hier werden die Tasks der Arbeitspakete (=APs) aus der Projektbeschreibung in Teilaufgaben (=User Stories und Tasks) zerlegt und in das Sprint-Backlog übertragen (siehe vorheriger Punkt). 
 - Jeder Sprint wird im **Sprint-Backlog** dokumentiert (Planung & Review).
 
 ::: footnotes
@@ -703,6 +703,65 @@ Da wir analog dem **Agilen Manifesto** vorgehen wollen, anbei ein paar Gedanken 
 ::: centerbox warning Bigskip
 Wichtig: Agiles Vorgehen bedeutet, dass sich die Projektdurchführung den aktuellen Anforderungen und vorherrschenden Gegebenheiten anpasst. Sollte sich im Verlauf des Projektes herausstellen, dass eine Nachjustierung sinnvoll ist, dann werden wir diese gemeinsam besprechen und durchführen.
 :::
+
+
+
+---
+# Projektmanagement – Grundlagen (1/2)
+
+::::: columns
+:::: single
+- **Rolle von Epics**:
+  - Epics sind umfangreiche, grobe Beschreibungen von Funktionen oder Anforderungen, die zu groß sind, um in einem einzelnen Sprint umgesetzt zu werden.
+  - Sie dienen dazu, komplexe Projekte oder Initiativen in überschaubare Teile zu zerlegen, die dann in einzelnen Sprints bearbeitet werden können.
+  - Epics helfen dabei, den Gesamtüberblick über die Vision oder die großen Ziele des Projekts zu bewahren, während die Details schrittweise entwickelt werden.
+  - Sie unterstützen die Produkt-Roadmap und helfen bei der Priorisierung von Arbeitselementen im Product Backlog.
+::::
+:::: single
+- **Rolle von Sprints**:
+  - Sprints sind feste Zeitspannen, typischerweise zwei bis vier Wochen lang, in denen ein Entwicklungsteam an der Umsetzung von Aufgaben arbeitet, um ein messbares Inkrement des Produkts zu liefern.
+  - Während eines Sprints arbeitet das Team an den Aufgaben, die im Sprint Backlog festgelegt wurden, und arbeitet darauf hin, die definierten Sprintziele zu erreichen.
+  - Sprints bieten einen klaren Zeitrahmen und fördern die Iteration und kontinuierliche Verbesserung, indem sie eine regelmäßige Lieferung von Produktinkrementen ermöglichen.
+  - Die Sprint-Zyklen erleichtern außerdem die Anpassung an sich ändernde Anforderungen oder Prioritäten, da das Team regelmäßig Feedback erhält und seine Pläne entsprechend anpassen kann.
+::::
+:::::
+
+---
+# Projektmanagement – Grundlagen (2/2)
+
+::::: columns
+:::: single
+- **Rolle von User Stories**:
+  - User Stories sind kurze, prägnante Beschreibungen von Funktionen oder Anforderungen aus der Perspektive des Benutzers.
+  - Sie dienen dazu, die Bedürfnisse der Benutzer zu verstehen und zu priorisieren und den Fokus auf den Wert zu legen, den eine bestimmte Funktionalität für den Benutzer hat.
+  - User Stories helfen dabei, Anforderungen in leicht verständliche Einheiten zu zerlegen, die vom Entwicklungsteam implementiert werden können.
+  - Sie unterstützen die Kommunikation zwischen den Stakeholdern und dem Entwicklungsteam und helfen dabei, ein gemeinsames Verständnis der Anforderungen zu entwickeln.
+::::
+:::: single
+- **Rolle von Tasks**:
+  - Tasks sind konkrete Einheiten von Arbeit, die erforderlich sind, um eine User Story oder ein Arbeitspaket innerhalb eines Sprints abzuschließen.
+  - Sie sind detaillierte Aufgaben, die vom Entwicklungsteam identifiziert und umgesetzt werden müssen, um die Funktionalität gemäß der User Story zu implementieren.
+  - Tasks helfen dabei, den Arbeitsaufwand zu strukturieren und zu planen, indem sie die einzelnen Schritte für die Umsetzung einer Funktionalität aufzeigen.
+  - Sie unterstützen die Zusammenarbeit im Team, indem sie die Aufgaben aufteilen und den Fortschritt verfolgen.
+::::
+:::::
+
+:::  bluebox center marg2 small
+Insgesamt ermöglichen User Stories und Tasks eine effektive Planung, Umsetzung und Verfolgung von Anforderungen in agilen Projekten. User Stories legen den Rahmen für die Funktionalitäten fest und betonen den Nutzen für den Benutzer, während Tasks den detaillierten Arbeitsaufwand für die Umsetzung dieser Funktionalitäten definieren und den Teammitgliedern helfen, ihre Arbeit zu organisieren.
+:::
+
+
+
+---
+# Projektmanagement – Zusammenfassung
+
+- Epic = Funktionalität (WP in Projektbeschreibung)
+- Sprint = Workpackage (Bearbeitung der User Stories eines Epics)
+- User Story = Anforderung aus Kundensicht 
+- Task = Aufgabe (Teil einer User Story)
+- Product Backlog = enthält alle User Stories
+- Sprint Backlog = enthält ausgewählte User Stories aus dem Product Backlog
+- Points = definierten Aufwand / Umfang / Komplexität eines Tasks
 
 
 ---

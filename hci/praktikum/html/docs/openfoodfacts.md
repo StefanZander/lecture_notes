@@ -4,7 +4,7 @@ Dies ist ein erstmals im SoSe 2022 angebotenes neues Semesterprojekt, das sich m
 
 Zur Unterstützung dieser Ziele soll die [OpenFoodFacs-API](https://openfoodfacts.github.io/api-documentation/) des [gleichnamigen Projektes](https://de.openfoodfacts.org/) verwendet werden. 
 
-Das **OpenFoodFacts-Projekt** setzt da an, wo die Politik (und insbesondere die vergangenen CDU/CSU-geführten Bundesregierungen) die Interessen von Lobbyverbänden der Lebensmittelindustrie höher gewichtet, als den Wunsch und die Notwendigkeit vieler Menschen nach Transparenz und Unterstützung bei der Auswahl gesunder Lebensmittel. Hierzu liefert das [OpenFoodFacts-Projekt](https://de.openfoodfacts.org/) zu den gespeicherten Produkten [umfangreiche Nährwertinformationen](https://de.openfoodfacts.org/produkt/3017620425035/nutella-ferrero) und auch eine **Lebensmittelampel**, den sog. [Nutri-Score](https://www.br.de/nachrichten/wissen/nutri-score-lebensmittelamppel-deutschland,R83Ye4G).
+Das **OpenFoodFacts-Projekt** setzt da an, wo die Politik (und insbesondere die vergangenen CDU/CSU-geführten Bundesregierungen) die Interessen von Lobbyverbänden der Lebensmittelindustrie höher gewichtet hat, als den Wunsch und die Notwendigkeit vieler Menschen nach Transparenz und Unterstützung bei der Auswahl gesunder Lebensmittel. Hierzu liefert das [OpenFoodFacts-Projekt](https://de.openfoodfacts.org/) zu den gespeicherten Produkten [umfangreiche Nährwertinformationen](https://de.openfoodfacts.org/produkt/3017620425035/nutella-ferrero) und auch eine **Lebensmittelampel**, den sog. [Nutri-Score](https://www.br.de/nachrichten/wissen/nutri-score-lebensmittelamppel-deutschland,R83Ye4G).
 
 Das OpenFoodFacts-Projekt ist gemeinnützig und stellt alle gehosteten Informationen **frei** und **kostenlos** zur Verfügung.
 
@@ -28,5 +28,5 @@ Lebensphasen aus und wie kann man dieses verbessern?
 - Welche Informationen sind überhaupt relevant für eine Kaufentscheidung?
 
 
-!!! note
-    Ziel ist also nicht, den NutzerInnen einfach eine App an die Hand zu geben, sondern zu erforschen, unter welchen Voraussetzungen und Rahmenbedingungen eine derartige App einen **Mehrwert** liefert. Dieser Mehrwert kann für die verschiedenen Personengruppen unterschiedlich aussehen. 
+!!! note "Projektziel"
+    Ziel ist also *nicht*, den NutzerInnen einfach eine App an die Hand zu geben, sondern zu erforschen, unter welchen Voraussetzungen und Rahmenbedingungen eine derartige App einen **Mehrwert** liefert. Dieser Mehrwert kann für die verschiedenen Personengruppen unterschiedlich aussehen. 
