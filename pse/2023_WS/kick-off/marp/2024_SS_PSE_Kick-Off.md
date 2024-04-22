@@ -89,6 +89,7 @@ Für *Studierende*, sagen Sie bitte kurz ...
 - Boussaguia, Mohamed – Mohamed.Boussaguia@stud.h-da.de
 - Conzen, Tobias – Tobias.Conzen@stud.h-da.de
 - Gener Lopez, Teresa – teresa.generlopez@stud.h-da.de
+- Noumboussi Tayon, Guirauld – Guirauld.Tayon@stud.h-da.de
 - Hübner, Maximilian – Maximilian.Huebner@stud.h-da.de
 ::::
 :::: single
@@ -223,9 +224,9 @@ In Summe veranschlagen wir pro Person ein :far-clock: **Gesamtzeitbudget** von *
 ---
 # Zeitschiene :far-clock:
 
-**Wichtige Deadlines**
+:fas-timeline: **Wichtige Deadlines**
 - Laufzeit: max. 14 Wochen
-- **Ende WP-Bearbeitungszeit: 07.07. (EOD)**
+- **Ende WP-Bearbeitungszeit: 07.07. (EOD) (sharp!)**
 - **Ende Migration: 14.07. (EOD)**
   - Projekt ist in den Master gemerged
   - Begleitung der Migration durch dediziertes Team
@@ -234,11 +235,13 @@ In Summe veranschlagen wir pro Person ein :far-clock: **Gesamtzeitbudget** von *
   - Bugfixing durch gesamte Gruppe
   - Einreichung und Bearbeitung von Features
   - Testen mit den Apple-/Android-Testtools 
-- **Offizielles Projektende: 28.07.**
+- **Offizielles Projektende: 28.07.** :fas-hourglass-end:
+
+
 
 ---
-# Kommunikation
-- via :fab-discord: **Discord**:  https://discord.gg/NQ6U4JrP
+# Kommunikation :fas-people-arrows:
+- via :fab-discord: **Discord**:  https://discord.gg/35n8QnWv
   - für die Kommunikation der Projektteams untereinander
   - für die Kommunikation mit dem CTO zu technischen Fragen
 - :fas-envelope: **Email** bei wichtigen und/oder offiziellen Dingen
@@ -256,22 +259,22 @@ In Summe veranschlagen wir pro Person ein :far-clock: **Gesamtzeitbudget** von *
 ---
 # Entwicklungsplattform und Dokumentation
 
-**GitLab**
-- Das we3ve-Projekt hat 3 GitLab-Repos; die Studierenden werden von uns dort eingeschrieben 
-- dort werden Programmcode und Dokumentation (Deliverables) gehostet
+**GitLab** :fab-gitlab:
+- Das we3ve-Projekt hat **6 GitLab-Repos**; die Studierenden werden von uns dort eingeschrieben 
+- dort werden Programmcode und Dokumentation (Deliverables, Research, Transcripts etc.) gehostet
 - Zus. Repos bitte direkt selbst erstellen und die Teammitglieder hinzufühgen
 <!-- - Unternehmensseitig werden notwendige APIs etc. zur Verfügung gestellt – mehr Informationen dazu in der Projektvorstellung -->
 <!-- - jede Gruppe benutzt ein eigenes **GitLab-Repository**  -->
 
-**Moodle**
+**Moodle** :fas-graduation-cap:
 - Link zum Moodlekurs: <https://lernen.h-da.de/course/view.php?id=17896> 
 - offizielle Dokumentationen werden über **Moodle** bereit gestellt
 - ebenso wie ergänzende Materialien
 
-**Taiga**
-- offizielles Projektmanagementtool ab diesem Semester
-- Bitte nutzen Sie dieses für die **Projektplanung** und **Projektdokumentation** (APs, Tasks, DoD, Backlog, Issues, Meetings etc)
-- Link: TBA
+**Taiga** :fas-list-check: 
+- offizielles **Projektmanagementtool** ab diesem Semester
+- Bitte nutzen Sie dieses für die **Projektplanung** und **Projektdokumentation** (APs, Tasks, DoD, Backlog, Issues, Meetings etc.)
+- Link: <http://taiga.fgmmgr.users.h-da.cloud/project/we3ve/>
 
 
 
@@ -320,6 +323,8 @@ Die **Beteiligungsmatrix**
 <!-- header: "" -->
 # Erweiterung der we3ve-App
 
+Projektdoku: <https://diy.vcd.org/projekte/we3ve>
+
 <!-- ### Betreuer: Roland Trefftz, Stefan Zander, Marcus Schül -->
 
 ---
@@ -345,7 +350,7 @@ Die konkreten Anforderungen müssen in Stakeholder-Interviews mittels User-Resea
 :::
 
 
-
+<!--
 ---
 ## Übersicht der Arbeitspakete – alt
 
@@ -358,19 +363,19 @@ Die konkreten Anforderungen müssen in Stakeholder-Interviews mittels User-Resea
 - WP 7: Umsetzung der Pushbenachrichtigungen (insbesondere bei iOS) (LK) (2-4 Personen; bel.; Prio 2)
 - WP 8: Design und Deployment einer Website & Darstellung im Play- und App-Store (SZ/RT) _(2-3 Personen; sofort; Prio 1)_
 - WP 9: Usability-Verbesserungen + Bugfixing an der App (SZ/LK) _(3-4 Personen; sofort; Prio 1)_
-
+-->
 
 
 ---
-## Übersicht der Arbeitspakete – neu
+## Übersicht der Arbeitspakete :fas-cubes: – neu
 
 - WP: Bezahl- und Abrechnungsfunktion (RT)
-- WP: Erforschung von Möglichkeiten, Telemetriedaten aus Fahrzeugen auszulesen und in der we3ve-App einzusetzen (RT)
-- WP: Design und Deployment einer Website (SZ/RT)
-- WP: Guidelines für Deployment im Play- und App-Store (SZ/RT)
+- WP: Erforschung von Möglichkeiten, Telemetriedaten aus Fahrzeugen auszulesen und in der we3ve-App einzusetzen (RT/LK)
+- WP: Design und Deployment einer Website (SZ/RT/LK)
+- WP: Guidelines für Deployment im Play- und App-Store (SZ/RT/LK)
 - WP: Automatisiertes Deployment in App-Stores und auf Server (LK)
 - WP: Entwicklung von automatisierten Tests für Backend und Frontend (LK)
-- WP: Bugfixing und Integration (LK)
+- WP: Bugfixing und Integration (LK) :fas-medal:
 
 
 
@@ -500,7 +505,7 @@ Die konkreten Anforderungen müssen in Stakeholder-Interviews mittels User-Resea
 
 
 ---
-## WP: Erforschung (und Umsetzung) von Möglichkeiten Telemetriedaten aus Fahrzeugen auszulesen und ihres Einsatzes in der we3ve-App (RT) (3 Personen; sofort; Prio )
+## WP: Erforschung (und Umsetzung) von Möglichkeiten Telemetriedaten aus Fahrzeugen auszulesen und ihres Einsatzes in der we3ve-App (RT) 
 
 - **Gewünscht**:
   - Bereitstellen der Informationen in der App: km-Stand Fahrzeug, (= km zum Start), km-Stand Fahrtende, Saldo: gefahrene km, Akkustand in der we3ve-App, Rest-km lt. Akku
@@ -764,9 +769,32 @@ Insgesamt ermöglichen User Stories und Tasks eine effektive Planung, Umsetzung 
 - Points = definierten Aufwand / Umfang / Komplexität eines Tasks
 
 
+
+
+---
+# Nächste Schritte :fas-shoe-prints:
+
+- Festlegung der WP-Leader
+- Anlegen der Taiga-Accounts
+- Definition der User Stories (Anforderungen) und Tasks durch WP-Owner in Taiga
+- Lokale Installation des we3ve-Projects
+- we3ve-Projekt lokal zum Laufen bekommen
+- weitere Einstieg in Flutter
+- Kontaktaufnahme mit Stakeholdern um WPs (Epics) weiter auszudefinieren
+
 ---
 <!-- header: Jour fixes -->
-# Jour fixes
+# Jour fixes :fas-users:
+
+- Durchführung wöchentlich zu einem festen Termin
+- Dokumentation der Gesprächsinhalte durch einen festgelegten Studieren in Taiga(wöchentliche Rotation)
+- Darlegung der wichtigsten Ereignisse/Ergebnisse in der vergangenen Woche (Retrospektive)
+- Darlegung der Aktivitäten in der aktuellen Woche (geplante Aktivitäten)
+- Klären von offenen Fragen etc. 
+- Gemeinsames Controlling / gemeinsame Reflektion der WP-Planung 
+- Teilnahme für alle Studierenden verpflichtend (mit Web-Cam. :fas-video:)
+
+
 
 <!-- 
 ---
