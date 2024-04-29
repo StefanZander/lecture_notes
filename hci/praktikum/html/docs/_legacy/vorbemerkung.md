@@ -7,20 +7,19 @@
 <!-- # Fernbedienung für einen „Fernseher“ -->
 
 <!-- # Aufgabenstellung -->
-# Nutzenden-zentrierte Enwicklung einer mobilen App
+# NutzerInnen-zentrierte Enwicklung einer mobilen App
 
-Aufgabenstellung zum Semesterprojekt "Nutzenden-zentrierte Softwareentwicklung" (engl.Human-Centered Design) (Version 5.0)
+Aufgabenstellung zum Semesterprojekt "NutzerInnen-zentrierte Softwareentwicklung" (engl.Human-Centered Design) (Version 5.0)
 
 
 !!! info "Vorbemerkung zum Themenangebot"
-    Neben dem vorbereiteten Themenangebot (TV-Server, Mobile Twitch-App, Lebensmittelinformationsapp) können Sie nach Absprache mit dem Lehrveranstaltungsleiter ein **eigenes Projekt** in einer **selbstgewählten Anwendungsdomäne** entwickeln.
-    
-    *Tipp: Achten Sie bei der Wahl der Anwendungsdomäne auf einen einfachen/direkten Zugang zu potentiellen Benutzenden, da Sie diese in den Entwicklungsprozess integrieren sollen/müssen. Je realistischer die gewonnenen Anforderungen und Erkenntnisse sind, desto besser wird Ihre App nutzbar sein.*
+    Das Thema "Fernsehgerät" und "Twitch Stream-Server" wurde nur deshalb für das Praktikum gewählt, weil Sie dadurch einen _leichten Zugang zur Anwendungsdomäne_ und zu potentiellen Benutzern haben. Die hier praktizierten Methoden sind aber nicht auf Consumer-Anwendungen beschränkt, sondern passen ebenso für andere "Datenverarbeitungsanwendungen".
 
-    
-!!! info "Transferierbarkeit der Methodologie"
-    Die hier praktizierten Methoden sind nicht auf Consumer-Anwendungen beschränkt, sondern passen ebenso für andere "Datenverarbeitungsanwendungen".
+!!! warning "Neues Thema: Lebensmittelinformations-App"  
+    Ab dem SoSe 2022 bieten wir ein drittes Semesterprojektthema im Kontext Verbraucherschutz bzw. Verbraucheraufklärung an. Hierdurch sollen Verbraucher in die Lage versetzt werden, informierte Kaufentscheidungen hinsichtlich der in Lebensmitteln enthaltenen Inhalts- bzw. Nährstoffe treffen zu können. 
 
+
+<!--Entwerfen Sie eine nutzerzentrierte und anwendungsfallorientierte **Fernbedienung** für einen "Fernseher" oder einen Twitch-Streaming Server. Die Fernbedienung sollen Sie als **Android-App** für ein Smartphone realisieren. Der "Fernseher" ist vorgegeben und wird im Praktikum simuliert durch eine gegebene **Java-Anwendung** auf dem PC, welche umschaltbare Standbilder anstelle laufender Fernsehprogramme zeigt. Die notwendigen Dateien finden Sie im [Moodle-Kurs des Moduls](https://lernen.h-da.de/course/view.php?id=6802).-->
 
 ### Übersicht
 

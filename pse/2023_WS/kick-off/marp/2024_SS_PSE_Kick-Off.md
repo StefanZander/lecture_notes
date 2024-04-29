@@ -274,7 +274,7 @@ In Summe veranschlagen wir pro Person ein :far-clock: **Gesamtzeitbudget** von *
 **Taiga** :fas-list-check: 
 - offizielles **Projektmanagementtool** ab diesem Semester
 - Bitte nutzen Sie dieses für die **Projektplanung** und **Projektdokumentation** (APs, Tasks, DoD, Backlog, Issues, Meetings etc.)
-- Link: <http://taiga.fgmmgr.users.h-da.cloud/project/we3ve/>
+- Link: <https://taiga.fgmmgr.users.h-da.cloud/project/we3ve/>
 
 
 
@@ -379,84 +379,56 @@ Die konkreten Anforderungen müssen in Stakeholder-Interviews mittels User-Resea
 
 
 
-<!--
----
-## Aufteilung der Arbeitspakete
-
-:::: columns
-::: single
-- **WP : Bezahl- und Abrechungsfunktion (RT)** 
-  - 
-
-- **WP 2: Verbesserter Kalender (RT**) _(2-3 Personen)_
-  - 
-
-- **WP 7: Push-Benachrichtigungen** _(4 Personen)_
-  - 
- 
-:::
-::: single
-- **WP: Telemetriedaten auslesen und verarbeiten (RT)**
-  - 
-
-
-- **WP : Website & App-Stores (SZ/RT)** 
-  - 
-
-- **WP : Usability-Verbesserungen + Bugfixing (SZ/LK)**  
-  - 
-:::
-::::
--->
 
 
 ---
-## WP 1.1: Bezahlfunktion (RT)
+## WP: Bezahlfunktion (RT)
 
+::: small
+Im WS23/24 wurde ein Research gemacht. Ergebnis: Einbindung von Paypal als Bezahlplattform zwischen Nutzer an Fahrzeug-Halter (keine fiskalische Einbindung von we3ve.de) empfohlen. Weitere interessante Optionen (im nachhinein entdeckt) sind secupay.com oder qwist.com – beide können auch Lastschrift-Transaktionen tätigen und sind vermutlich preiswerter als Paypal.
+:::
+
+::: twocolumns
 - **Ziel**
-  - Evaluierung von versch. _state-of-the-art Bezahlfunktionen_ hinsichtlich des Einsatzes in der App
-  - In-App-Bezahlen (Google, Apple), Guthabenkarten, Kreditkarten, Lastschriften, Rechnungsversand mit Überweisung – (mit/ohne QR-Code)
-
-- **Tasks**
-  - Erforschung der verschiedenen Wege um eine schlanke Bezahlfunktionen zu realisieren
-  - Darstellung der digitalen Bezahlkette, wer sind die Player, DSGVO, technischer Aufwand, Wegstrecke zur Implementierung/Umsetzung
-  - Welche Einschränkungen gibt es durch Vorgaben von Google und Apple?
-  - User-Research:  Welche Bezahlarten/rhythmen wollen Fahrer bzw. Fahrzeughalter haben? (Bezahlung pro Fahrt/Micropayment; Monatliche Sammelrechnung; feste Monatspauschale 
+  - Implementierung von zwei verschiedenen In-App-Bezahlmöglichkeiten durch einen zugelassenen Finanzdienstleister. Die gesamte Transaktion erfolgt dabei auf seiner Bezahlplattform. We3ve stellt nur die Transaktionsdaten (Namen, Bankdaten, Euro-Betrag) zur Verfügung.
+  - Voraussetzung für die Bezahlung ist die Generierung eines Fahrtenbelegs:
+    - Einzeltransaktion je Fahrt (micropayment) oder
+    - Sammeltransaktion (z. B. einmal monatlich) mit Auflistung aller Fahrten. Dieser Beleg ist im WP „Abrechnungsfunktion - Fahrtenbeleg“ zu generieren. Die Anforderungen für den Beleg erstellt WP Fahrtenbeleg.
+  - Opt-Out-Regelung zur Bezahlfunktion
 
 
+- **Definition of Done**
+  - Der Bezahlweg ist mit drei verschiedenen Usern im mock up getestet und abgestimmt worden.
+  - Zwei verschiedene Bezahl-Funktionen (Paypal und noch ein weiteres) sind zur Bezahlung in der App integriert.
+    - Mit Integration des WP in die finale Version können die Tester auf drei verschiedene Arten ein micropayment machen:
+    - Paypal, weitere Alternative, Bezahlung außerhalb der App (Opt out-Zahlung) – diese ist auch dokumentiert.
+    - Auf die jeweilige Rechtslage wird der Benutzer mit Buchung der Bezahlung hingewiesen.
+    - Es gibt in der App (gern auch auf der Homepage) eine Anleitung zur Einrichtung der neuen Bezahlfunktionalität
+  - Test & Dokumentation
+:::
 
----
-## WP 1.1: Bezahlfunktion (RT)
-
-- **Resulte / Meilensteine**
-  - *Block: Technische Bezahloptionen*
-    - Research: Die gängigen Bezahlmöglichkeiten sind recherchiert, die beteiligten Institutionen mit Ihren technischen Lösungen recherchiert und in einer Punktematrix bewertet.
-    - Research: 1-2 Interviews mit GLS-Bank/Sparkasse o. ä. zu online-Bezahllösungen sind geführt und dokumentiert
-    - Der Aufwand zur Umsetzung der favorisierten Lösung(en) wurde valide geschätzt.
-    - Technisch darstellbare Möglichkeiten (z. B. Lastschrift) werden auch im Projekt umgesetzt
-    - Favorisierte, anspruchsvollere Lösungen werden im nächsten Semesterprojekt umgesetzt
-  - *Block: User-Research - Bezahlarten & -rhythmen für Fahrer u. Fahrzeughalter*
-    - Interviews mit 3-4 potenziellen Nutzern (Fahrern & Fahrzeughaltern)
-    - Auswertung der wichtigsten Bezahlarten & -rhytmen 
-    - Umsetzung der präferierten u. praktikablen Lösung
-    - Test und Dokumentation
 
 
 ---
-## WP 1.2: Abrechungsfunktion (RT)
-
-- **Ziel** 
-  - Implementierung von Controlling-/Reporting-/Abrechungsfunktionalität verbunden mit verschiedenen Export-Funktionen
+## WP Abrechnungsfunktion / Fahrten-Beleg (RT)
+ 
+- **Ziel**
+  - Fahrten-Beleg: Der Fahrzeug-Halter legt die Art der Bezahlung fest und damit auch, ob je Fahrt/je Abrechnungsperiode ein Fahrtenbeleg bzw. eine Sammelrechnung generiert wird.
+  - Der Fahrten-Beleg ist Grundlage der Bezahltransaktion (WP Bezahlen). Eine evtl. In-App-Bezahlung ist im Reporting zu kennzeichnen.
+  - Reporting-/Abrechnungsfunktionalität – Zu den gesammelten Fahrten je Fahrzeug und Halter wird eine Reporting- und Abrechnungsfunktionalität mit verschiedenen Export-Funktionen erarbeitet.
 
 - **Tasks**
-  - Erforschung der verschiedenen Wege um Reporting/Controlling inkl. Export zu realisieren
-  - User-Research: Was für Reporting wollen Fahrer/Fahrzeughalter und welche Daten/Kennzahlen?
-  - Umsetzung des Reportings (nach Fahrer/Fahrzeughalter/Admins der Nachbarschaft-DSGVO)
+  - Verschiedene Alternativen für Fahrtenbeleg/Reporting & Controlling incl. Export erarbeiten
+  - User-Research: welche Variante wollen Fahrer/Fahrzeughalter und welche Daten/Kennzahlen?
+  - Mock up Testing: Mit zwei-drei Test-Nutzern wurde die UX getestet und vereinbart.
+  - Umsetzung von Fahrten-Beleg und Reporting (nach Fahrer/Halter/Nachbarschaftsadmin/DSGVO)
 
-- **Resultate/ Meilensteine**
-   - User-Research: Welches Reporting wollen Fahrer und Fahrzeughalter?
-   - Umsetzung des Reportings
-   - Test & Dokumentation
+- **Definitions of Done**
+  - User-Research: Belege & Reporting für Driver und Owner
+  - Umsetzung von Belege, Reportings und Export
+  - Test & Dokumentation
+
+
 
 
 
@@ -496,28 +468,26 @@ Die konkreten Anforderungen müssen in Stakeholder-Interviews mittels User-Resea
 
 
 ---
-## WP: Erforschung (und Umsetzung) von Möglichkeiten Telemetriedaten aus Fahrzeugen auszulesen und ihres Einsatzes in der we3ve-App (RT)
+## WP: Telemetrie-Daten aus Fahrzeugen auslesen und Ihr Einsatz in we3ve
 
-- **Ausgangssituation**
-  - Wir haben bei der Nutzung von eFahrzeugen die Herausforderung, dass der _Ladestand des Akkus_ für den nachfolgenden Sharer eine kritische Größe zum Erreichen seines Ziels ist. Gern würden wir die _bordeigenen Daten_ jedes Fahrzeugherstellers (insbesondere km-Stand und Akku-Stand/Reichweite bei e-Autos) in die App einspielen, um die Routenplanung verlässlicher zu gestalten. Da jeder Hersteller seine eigene Plattform entwickelt, ist eine herstellerspezifische Programmierung aufwändig. Seinerzeit wurde die Möglichkeit untersucht, einen Dongle mit OBD2-Schnittstelle (Service-Dongle für Werkstätten zum Auslesen der Telemetriedaten) permanent am Fahrzeug zu installieren und darüber in die App auszulesen. Diese wurde jedoch wieder verworfen, da unpraktisch, nicht sehr verlässlich (mechanische Beschädigung), keine Absicherung gegen externes Eindringen (Bluetooth, etc.) gegeben, u.a.m. 
-  - Gesucht wird eine Möglichkeit, die _Daten_ (idealerweise hersteller-/plattformübergreifend) _auszulesen_ und sie für die Zwecke der App (verbleibende km, Ladedauer des Akkus, km-Stand zu Start und Ende der Fahrt) zur Verfügung zu stellen. 
-  - Sollte das nicht realisierbar sein, gibt es die Möglichkeit über _open-source-maps_ die gefahrenen km (zurückgelegte Wegstrecke) verlässlich für die Planung und Abrechnung darzustellen? Diese Daten sind Voraussetzung für die Umsetzung von Punkt 1 "Bezahlfunktion"
+Im WS 23/24 wurde ein Research zu diesem Thema gemacht: Android Auto wurde als favorisierte Telemetrie-Option festgelegt. Zu iOS gibt es außer der händischen Eingabe noch keine automatisierte Lösung.
 
-
----
-## WP: Erforschung (und Umsetzung) von Möglichkeiten Telemetriedaten aus Fahrzeugen auszulesen und ihres Einsatzes in der we3ve-App (RT) 
-
-- **Gewünscht**:
-  - Bereitstellen der Informationen in der App: km-Stand Fahrzeug, (= km zum Start), km-Stand Fahrtende, Saldo: gefahrene km, Akkustand in der we3ve-App, Rest-km lt. Akku
-  - Falls keine plattformübergreifende Abbildung der Telemetriedaten i. d. we3ve-App möglich, dann workaround über open-source-map prüfen. 
+- **Ziel**
+  - Bereitstellen von Kennzahlen in we3ve:
+    - km-Stand (Fahrt Anfang, Fahrt Ende, Differenz: gefahrene km)
+    - Akkustand in we3ve-App, Rest-km lt. Akku
+    - Falls keine Telemetrie möglich ist, dann manuelle Eingabe der km zu Beginn und Ende der Fahrt (+ gefahrene km)
+  - Opt-out durch Fahrzeughalter für sein Fahrzeug möglich
+  - Übergabe dieser Daten an WP Fahrten-Beleg/Abrechnungsfunktionalität
 
 - **Tasks**
-  - Erforschung wie solche Daten fälschungssicher erhoben werden können.
-  - Umsetzung der geeignetsten Alternative lt. Recherche
-
-- **Resultate / Meilensteine**
-  - Dokumentation der Research-Ergebnisse
-  - soweit möglich Umsetzung der Ergebnisse, da Voraussetzung für WP 1 - Bezahlung
+  - User-Research: mit mehreren Nutzern im Mock up die Nutzung/Führung durch diese Funktionalität gehen.
+  - Umsetzung beider Alternativen
+ 
+- **Definition of Done**
+  - Umsetzung der Ergebnisse (mindestens händische Alternative)
+  - Ergebnisse können in WP Fahrten-Beleg/Abrechnungsfunktion übernommen werden
+  - Test & Dokumentation
 
 
 
