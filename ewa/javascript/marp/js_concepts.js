@@ -275,19 +275,31 @@ console.log("Executed before Async call...");
 const fetchUserDetails = async (userId) => {
   // pretend we make an asynchronous call
   // and return the user details
+  for (let i = 0; i < 10000000; i++) {
+    for (let j = 0; j < 1000; j++);
+  }
   return {'name': 'Robin', 'likes': ['toys', 'pizzas']};
 }
 
+// alternative method
+async function fetchUserDetails2() {
+    for (let i = 0; i < 10000000; i++) {
+        for (let j = 0; j < 1000; j++);
+      }
+      return {'name': 'Robin', 'likes': ['toys', 'pizzas']};
+}
+
 // error
-const user = await fetchUserDetails();
+const user = fetchUserDetails();
 console.log(user);
+console.log("Ende.");
 
 // await must be invoked in an async function (--> IIFP)
 (async () => {
-    const user = await fetchUserDetails();
+    const user = await fetchUserDetails2();
     console.log(user);
 })();
-
+console.log("Ende.");
 
 
 // Example with try...catch
