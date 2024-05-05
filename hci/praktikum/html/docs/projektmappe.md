@@ -18,7 +18,13 @@
 
 Die Projektmappe dokumentiert alle **Entwicklungsschritte** sowie Zwischen- und Endergebnisse der jeweiligen Projektphasen und Meilensteine. 
 Sie ist das Pendant zum **Product Backlog** in agilen Vorgehensmodellen und enthält darüber hinaus noch weitere wichtige und relevante Informationen. 
-Je nach Arbeitsauftrag sollen ebenso **Entwurfsentscheidungen**, **Verbesserungen** und **Reflektionen** dokumentiert werden. Die zu dokumentierenden Artefakte sind in den Aufgabenbeschreibungen der jewiligen Meilensteine aufgeführt.
+Je nach Arbeitsauftrag sollen 
+
+- **Entwurfsentscheidungen**, 
+- **Verbesserungen** und 
+- **Reflektionen** 
+
+dokumentiert werden. Die zu dokumentierenden Artefakte sind in den Aufgabenbeschreibungen der jewiligen Meilensteine aufgeführt.
 
 !!! info "Diagramm- und Dokumentarten verstehen"
     **Tipp:** Vergewissern Sie sich anhand der **Vorlesungsunterlagen**, was mit den geforderten Diagrammen und Dokumenten gemeint ist. Diese Diagramme und Dokumente zu verstehen ist eines der Lernziele der Veranstaltung und beurteilungsrelevant!
@@ -27,11 +33,11 @@ Je nach Arbeitsauftrag sollen ebenso **Entwurfsentscheidungen**, **Verbesserunge
 ### Formale Anforderungen
 
 - Die Projektmappe ist elektronisch als ein gesamtes **PDF** zu führen 
-- Sie enthält ein Deckblatt, auf dem der Projektname sowie die vollständigen Namen inkl. Matrikelnummern als Gruppenmitglieder verzeichnet ist
-- Die einzelnen Kapitel entsprechen den Meilensteinen
-- Im Anhang können weitere Informationen hinzugefügt werden (bspw. Interview-Transkriptionen etc.)
+- Sie enthält ein **Deckblatt**, auf dem der Projektname sowie die vollständigen Namen inkl. Matrikelnummern als Gruppenmitglieder verzeichnet ist
+- Die einzelnen Kapitel entsprechen den **Meilensteinen**
+- Im **Anhang** können weitere Informationen hinzugefügt werden (bspw. Interview-Transkriptionen etc.)
 - Das Dokumentationstool bzw. die Dokumentationsumgebung (bspw. Markdown, LaTeX, etc.) ist den Gruppen freigestellt
-- Als Dateinamen verwenden Sie bitte folgendes Format
+- Als **Dateinamen** verwenden Sie bitte folgendes Format
 
     `Projektmappe_Gr{Nr}_{Projektname}.pdf`
 
@@ -54,7 +60,7 @@ Je nach Arbeitsauftrag sollen ebenso **Entwurfsentscheidungen**, **Verbesserunge
     - **MS#4: Usability Evaluierung** – _Einreichung am Ende des Semesters nach Termin 5_
   
 - Für **MS#3: App-Entwicklung und Präsentation** (während Termin 5) ist **KEINE EINREICHUNG** notwendig, da die Dokumentation hier in Form ihres App-Codes erfolgt.
-- Achten Sie streng darauf, die Einreichefrist einzuhalten. Verspätete Abgaben werden mit der Note 5 bewertet.
+- ==Achten Sie streng darauf, die Einreichefrist einzuhalten. Verspätete Abgaben werden mit der Note 5 bewertet.==
 
 !!! warning "Aktualisieren Sie die Projektmappe regelmäßig und rechtzeitig"
     Versäumen Sie es, die Projektmappe rechtzeitig vor der Abgabe zu aktualisieren, so wird der jeweilige Meilenstein mit der **Note 5** bzw. **0 Punkte** bewertet. 

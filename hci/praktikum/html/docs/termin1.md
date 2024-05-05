@@ -1,9 +1,7 @@
 # User Research
 
 
-!!! abstract 
-    **Lernziele**
-
+!!! success "Lernziele"
     - [x] Die Sicht-, Denk- und Arbeitsweise verschiedener BenutzerInnen kennen lernen und sich in sie hinein versetzen
     - [x] Finden und Verstehen der bei Benutzenden in der Praxis auftretenden Anwendungsfälle
     - [x] Unterscheidung von technischen Funktionen und benutzerorientierten Anwendungsszenarien
@@ -29,10 +27,9 @@
     Erweitern Sie die Personen- und Kriterienliste hin zu einer Matrix, in der die Merkmalsausprägungen enthalten sind.
 
 3. **Stereotypbeschreibung**: Fertigen Sie für _mindestens_ eine dieser Personen (mit besonders starker Ausprägung der Kriterien) eine anschaulische und lebendige **Stereotypbeschreibung** mit fiktivem oder echtem Namen, Bild, Alter, Geschlecht, Ausbildung, Vorlieben, Hobbys, Charaktereigenschaften etc. an. Anhand dieser Stereotypbeschreibung und des darauf aufbauenden **Anwendungsszenarios** sollen Sie sich später immer wieder vergewissern können, ob das entworfene Design auch wirklich zu diesen Personen passt.
-<!--    Fertigen Sie für *eine* dieser Personen eine **Stereotypenbeschreibung** an, d.h. schreiben Sie **lebendige**, **anschauliche Steckbriefe** mit fiktiven oder echten Namen, Bild, Alter, Geschlecht, Ausbildung, Vorlieben, Hobbys, Charaktereigenschaften etc. Anhand dieser Stereotypenbeschreibungen sollen Sie sich später immer wieder vergewissern können, ob die entworfene Fernbedienung auch wirklich zu diesen Personen passt. -->
 
-    !!! note
-        **Hinweis**: Die Stereotypbeschreibung enthält vor allem Informationen zu **Charaktereigenschaften** und etwaige **Lebensumstände**; sie soll *keine* Details zur TV-, Twitch- oder einer sonstigen App-Nutzung enthalten! Diese Informationen erfragen bzw. erfahren Sie ja erst durch das Interview. 
+    !!! info "Welche Informationen stehen in der Stereotypbeschreibung" 
+        Die Stereotypbeschreibung enthält vor allem Informationen zu **Charaktereigenschaften** und etwaige **Lebensumstände**; sie soll *keine* Details zur TV-, Twitch- oder einer sonstigen App-Nutzung enthalten! Diese Informationen erfragen bzw. erfahren Sie ja erst durch das Interview. 
 
 
 ### Interview 
@@ -47,18 +44,16 @@
     * (*optional*) funktionalen und qualitativen Anforderungen (inkl. Quantifizierung)
     * (*optional*) mind. 1 Begeisterungsfaktor
 
-    !!! note
-        **Hinweis #1**: **Stellen Sie die richtigen Fragen**  
+    !!! danger "Stellen Sie die richtigen Fragen"
         Stellen Sie _nicht_ irgendwelche Fragen; die Fragen sollen Ihnen helfen, die NutzerInnen und deren spezifische Bedürfnisse, Lebensgewohnheiten, Wünsche, Nutzungskontexte und Erwartungen besser zu verstehen. Die Antworten sind Basis für die Erarbeitung von Anwendungsszenarios, sowie  funktionalen und qualitativen Anforderung (inkl. Quantifizierung) und  Begeisterungsfaktoren (siehe KANO-Modell aus der VO).
 
-    !!! note
-        **Hinweis #2**: **Achten Sie auf eine "gute" Interviewvorbereitung und -durchführung**  
-        Je besser Sie das Interview planen und durchführen desto besser verwertbar sind die Resultate und Erkenntnisse. Beachten Sie deshalb die Prinzipien einer guten Interviewdurchführung (--> _schauen Sie sich hierzu ggf. noch einmal die Videos auf der NZSE-Moodleseite an_).
+    !!! danger "Achten Sie auf eine "gute" Interviewvorbereitung und -durchführung"
+        Je besser Sie das Interview planen und durchführen desto besser verwertbar sind die Resultate und Erkenntnisse. Beachten Sie deshalb die Prinzipien einer guten Interviewdurchführung (--> _schauen Sie sich hierzu ggf. noch einmal die Videos auf der HCI-Moodleseite an_).
 
         - Stellen Sie **offene Fragen**, bei denen BenutzerInnen über ihre **Erfahrungen** berichten können
-        - Vermeiden Sie **Suggestivfragen** – das ist vor allem dann, wenn Sie das Interview das erste Mal durchführen, sehr schwer umzusetzen --> _bemühen Sie sich und reflektieren Sie die Fragen vorab!_
+        - Vermeiden Sie **Suggestivfragen** – das ist, wenn Sie das Interview das erste Mal durchführen, sehr schwer umzusetzen --> _bemühen Sie sich und reflektieren Sie die Fragen vorab!_
         - Fragen Sie _nicht_ nach irgendwelchen technischen Details; diese sind für die Benutzung irrelevant.  
-            ==--> _Konzentrieren Sie sich auf die **Nutzungserfahrung**, d.h., **Ziele**, den **Anwendungskontext** und die **Lebenssituationen** in denen ein Medium genutzt wird._==
+            ==--> _Konzentrieren Sie sich auf die **Nutzungserfahrung**, d.h., **Ziele**, den **Anwendungskontext** und die **Lebenssituationen** in denen ein Medium / eine Sache / etc. genutzt wird._==
 
 
 
@@ -67,14 +62,13 @@
 
 
 
-!!! note
-    **Durchführungsoptionen**  
+!!! warning "Durchführungsoptionen der Interviews"
     Für die Durchführung der/des Interviews bieten sich mehrere Möglichkeiten:
 
-      1. Sie können das Interview während der Praktikumseinheiten vor Ort mit einer Peer-Gruppe durchführen.  
+      1. :fontawesome-regular-thumbs-down: Sie können das Interview während der Praktikumseinheiten vor Ort mit einer Peer-Gruppe durchführen.  
       --> _Nähere Details zum Ablauf finden Sie in der folgenden Aufgabenbeschreibung._ 
-      1. Sie können das Interview außerhalb der Praktikumseinheiten in Eigenregie mit einer Peer-Gruppe oder anderen Personen durchführen.
-      2. Falls Sie Zugriff auf echte Personen haben, die ihren Stereotypen entsprechen, dann bitten Sie diese mit Ihnen bzw. Ihrer Gruppe das Interview durchzuführen. Sollte das nicht der Fall sein, dann bitten Sie Freunde / Verwandte / Bekannte / Eltern / Geschwister am Interview teilzunehmen und in die Rolle der Stereotypen zu schlüpfen.
+      2. :fontawesome-regular-thumbs-down: Sie können das Interview außerhalb der Praktikumseinheiten in Eigenregie mit einer Peer-Gruppe oder anderen Personen durchführen.
+      3. :fontawesome-regular-thumbs-up: _(beste Option)_: Falls Sie Zugriff auf **echte Personen** haben, die ihren **Stereotypen** entsprechen, dann bitten Sie diese mit Ihnen bzw. Ihrer Gruppe das Interview durchzuführen. Sollte das nicht der Fall sein, dann bitten Sie Freunde / Verwandte / Bekannte / Eltern / Geschwister am Interview teilzunehmen und in die Rolle der Stereotypen zu schlüpfen.
 
 1. **Auswahl der Stereotypen**: Wählen Sie Personen für das Interview, die zu Ihren ausgewählten Stereotypen passen oder für das Interview in deren Rolle schlüpfen. Lassen Sie die Personen hierzu Ihre angefertigte Stereotypenbeschreibung lessen, so dass diese sich in die jeweilige Lebens- und Nutzungssituation hineinversetzen können.
 
@@ -85,13 +79,11 @@
 
 3. **Interviewdurchführung**: Sind Interviewleidfaden, Stereotypenauswahl und die Rollenfestlegung abgeschlossen, dann führen Sie das Interview durch. 
 
-    !!! warning
-        **Interview aus der Stereotypenperspektive**  
+    !!! warning "Interview aus der Stereotypenperspektive"
         Wichtig ist, dass die InterviewteilnehmerInnen, sofern sie nicht per se den Stereotpyen entsprechen, das Interview aus der Sicht selbiger durchführen, d.h., die Teilnehmenden schlüpfen in der **Rolle der Stereotypen** und beantworten die Fragen aus deren Blickwinkel. 
         
 
-    !!! note
-        **Vorgehen für Optionen #1 und #2**
+    !!! info "Vorgehen für Optionen #1 und #2"
 
         _Vorbemerkung:  
         Es werden **2 Gruppen** benötigt. Gruppe 1 ist die eigene Gruppe (aus Sicht der Teilnehmer), Gruppe 2 ist die Peer-Gruppe._
@@ -159,8 +151,8 @@ Nun tauschen Sie die Rollen, d.h., die RE-Gruppe ist nun User-Gruppe und umgekeh
 1. **Anforderungsdokumentation**:  
     Notieren Sie auf Basis der/des Anwendungsszenarios mind. 1 funktionale und 1 qualitative Anforderung. Achten Sie auf eine **korrekte Formulierung** und überprüfen Sie auch, ob alle **Qualitätskriterien** hinreichend erfüllt werden. Überlegen Sie hierbei, wie die Einhaltung eines Qualitätskriteriums nachgewiesen werden kann. Verfeinern Sie die Anforderung, falls ein Qualitätskriterium überhaupt nicht eingehalten wird.
 
-    !!! note
-        **Formulierung:** In der Vorlesung haben Sie ein **Tool** zur angemessen Formulierung von Anforderungen kennen gelernt; wie heißt dieses? Überlegen Sie auch, warum man dieses einsetzen sollte.
+    !!! tip "Korrekte Formulierung" 
+        In der Vorlesung haben Sie ein **Tool** zur angemessen Formulierung von Anforderungen kennen gelernt; wie heißt dieses? Überlegen Sie auch, warum man dieses einsetzen sollte.
 
 <!--
 !!! note 
@@ -171,8 +163,7 @@ Nun tauschen Sie die Rollen, d.h., die RE-Gruppe ist nun User-Gruppe und umgekeh
 
 1. Treten Sie mit Ihrem/Ihren Stereotypen in den Austausch und nutzen Sie Kreativitätstechniken um **Begeisterungsfaktoren** zu identifizieren. Notieren Sie diese und verfolgen Sie diese im weiteren Verlauf des Projekts.
 
-    !!! note
-        **Implementierung der Begeisterungsfaktoren**  
+    !!! info "Implementierung der Begeisterungsfaktoren"
         Abhängig von Aufwand und Komplexität müssen Sie die Begeisterungsfaktoren nicht implementieren. Es reicht, wenn Sie diese "mocken", d.h., demonstrieren, wie eine Implementierung selbiger aussehen könnte. Sie sollen die Begeisterungsfaktoren jedoch im weiteren Entwicklungszyklus (UI-Entwurf etc.) berücksichtigen.
 
 
@@ -182,9 +173,7 @@ Nun tauschen Sie die Rollen, d.h., die RE-Gruppe ist nun User-Gruppe und umgekeh
 
 Ihre Praktikumsmappe muss folgende ausgearbeitete Artefakte enthalten: 
 
-!!! abstract
-    __Ergebnisse:__
-
+!!! success "Ergebnisse"
     - [x] Benutzer- und Kriterienliste
     - [x] Dokumentiertes Vorgehen der Operationalisierung 
     - [x] Dokumentierter Interviewleitfaden mit Antworten

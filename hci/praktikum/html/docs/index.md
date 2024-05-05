@@ -15,13 +15,14 @@ Auf den folgenden Seiten finden Sie die **Aufgaben** der jeweiligen Praktikumsei
 
 * [Vorbemerkung zum Praktikum](vorbemerkung.md)
 * [Projektmappe](projektmappe.md)
+* [Übersicht der Semesterprojektthemen](angebotene_themen.md)
 * [Infos zum Projekt 'Lebensmittelinformations-App'](openfoodfacts.md)
 
 ## Einheiten
 
 * [Vorbereitung: Installation und Kennenlernen von Flutter (--> Durchführung individuell im Selbststudium)](termin0.md)
 * [Termin 1: User Research](termin1.md)
-* [Termin 2: UI Entwurf und Test mittels Paper Prototyping](termin2.md)
+* [Termin 2: UI-Entwurf und Test mittels Paper Prototyping](termin2.md)
 * [Termin 3: Implementierung der Benutzungsoberfläche](termin3.md)
 * [Termin 4: Implementierung der Applikationslogik](termin4.md)
 * [Termin 5: Präsentation der App](termin5.md)

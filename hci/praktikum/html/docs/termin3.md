@@ -1,13 +1,13 @@
 # Implementierung der Benutzungsoberfläche
 
 
-!!! abstract 
-    **Lernziele**
-
-    - [x] Sie können eine Android App mit einer Layoutvariante implementieren
-    - [x] Sie verstehen das Zusammenspiel verschiedener Activities über Intents
+!!! success "Lernziele"
+    - [x] Sie können eine Flutter App mit einer Layoutvariante implementieren
+    - [x] Sie verstehen das Zusammenspiel verschiedener Screens und den Datenaustausch
     - [x] Sie verstehen das Konzept der Ereignisorientierung
-    - [x] Sie haben einen ersten Eindruck von XML
+    - [x] Sie haben einen ersten Eindruck von zustandslosen und zustandsorientierten Widgets
+
+
 
 ## Aufgaben
 

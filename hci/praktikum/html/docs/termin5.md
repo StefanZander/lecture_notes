@@ -1,15 +1,13 @@
 # App-Präsentation
 
-!!! warning
-    **Hinweis:** Keine Restarbeiten mehr an der Implementierung!
+!!! danger "Keine Restarbeiten mehr an der Implementierung!"
 
-!!! abstract 
-    **Lernziele**
-
+!!! success "Lernziele"
     - [x] Sie können die wesentlichen Features der App in einem Plenum vor Ort oder online präsentieren
     - [x] Sie können den Bezug zu Erkennissen aus dem User Research in der Präsentation herstellen
     - [x] Sie können Designentscheidungen nachvollziehbar und verständlich begründen
     - [x] Sie können nachweisen, dass die von Ihnen getroffenen Designentscheidungen auf gewonnenen Erkenntnissen und nicht auf pers. Meinungen beruhen  
+
 
 ## Vorbereitung
 
@@ -31,7 +29,7 @@ Alle **Protokolle** aus den folgenden Teilaufgaben kommen in die Projektmappe.
 
 ## Durchführung
 
-- Im Präsenztermin präsentiert jede Gruppe in **max. 15 Minuten** die entwickelte App mittels geeigneter technischer Tools und Hardware <!--BBB und Screensharing-->
+- Im Präsenztermin präsentiert jede Gruppe in **max. 15-30 Minuten** die entwickelte App mittels geeigneter technischer Tools und Hardware <!--BBB und Screensharing-->
 - Die Präsentation kann am **Emulator** oder einem **realen Gerät** (bevorzugt) erfolgen.
 - Präsentieren Sie alle Funktionen, die Sie umgesetzt haben (--> siehe [Termin 2](termin2.md)) einschl. etwaiger Leistungs- und Begeisterungsfaktoren. 
 - Alles was Sie _nicht_ präsentieren kann nicht gewertet werden! Achten Sie deshalb darauf keine Zeit zu vergeuden.
@@ -39,11 +37,10 @@ Alle **Protokolle** aus den folgenden Teilaufgaben kommen in die Projektmappe.
 - Bereiten Sie die Demonstration so vor, als würde die App das **erste Mal gestartet** werden. 
     - Löschen Sie alle Daten und Einstellungen vorab und versetzen Sie die App in den >>Urzustand<<.
 
-    !!! note
-        **Hinweis**: Langes Drücken auf das App-Icon ermöglicht das Löschen des Cache und der App.-Daten (Storage) bei den meisten Adroid-Geräten.
+    !!! info "Löschen der App-Daten auf Android-Mobiltelefonen"
+        Langes Drücken auf das App-Icon ermöglicht das Löschen des Cache und der App.-Daten (Storage) bei den meisten Android-Geräten.
 
 - Die Präsentation verläuft **interaktiv**, d.h., der Dozierende wird während der Präsentation Fragen stellen oder Sie bitten, bestimmte Funktionen zu demonstrieren. Setzen Sie diese Aufforderunge schnell und zielgerichtet um. 
 
-!!! warning
-    __Wichtig: Alles was Sie nicht präsentieren kann nicht gewertet werden.__
+!!! warning "Alles was Sie nicht präsentieren kann nicht gewertet werden."
 
