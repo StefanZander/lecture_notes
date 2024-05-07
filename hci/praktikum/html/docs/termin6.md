@@ -1,8 +1,6 @@
 # Usability Evaluierung
 
-!!! abstract 
-    **Lernziele**
-
+!!! success "Lernziele"
     - [x] Sie können einen Usability Test als Moderator und Beobachter durchführen
     - [x] Sie können sich auf das Beobachten beschränken und widerstehen der Versuchung Test-BenutzerInnen zu schulen
     - [x] Sie können Usability Probleme anhand von kleinsten Anzeichen der Test-BenutzerInnen erkennen
@@ -31,15 +29,15 @@ Alle **Protokolle** aus den folgenden Teilaufgaben kommen in die Projektmappe.
 - Fügen Sie alle zu erstellenden Artefakte (Testprotokolle etc.) der Projektmappe hinzu und laden sie diese bis zu folgenden Terminen hoch  
     
     <!-- __Ende (SO), 20:00 Uhr der darauf folgenden Woche__   -->
-    __Y-Gruppen: 31.07. (EOD)__  
-    __X-Gruppen: 07.08. (EOD)__
+    __Y-Gruppen: TBA (EOD)__  
+    __X-Gruppen: TBA (EOD)__
     
     in Moodle hoch.  ==_ACHTUNG: Verspätete Abgaben können nicht gewertet werden!_==
 
 - Bereiten Sie die __Testprotokolle__ anhand der folgenden Test-Aufgaben und der [vorgegebenen Checklisten](https://lernen.h-da.de/mod/resource/view.php?id=218415) vor, d.h. betrachten Sie die Checklisten als "Rohmaterial" und machen Sie daraus Protokollformulare.   
 - Die Testprotokolle sollen den EntwicklerInnen bei der weiteren Verbesserung helfen  
   ==_keine Angst, die Verbesserungen müssen Sie im Praktikum nicht mehr umsetzen..._==.
-- Die Vorlage zur Evaluation der Applikationen (mit Beispielen für die TV-Fernbedienung) findet sich in Moodle:  
+- Eine Vorlage zur Evaluation der Applikationen (mit Beispielen für die TV-Fernbedienung) findet sich in Moodle:  
     <https://lernen.h-da.de/mod/resource/view.php?id=218415>
 
 
@@ -67,8 +65,7 @@ Zum **Usability Test** greifen Sie bitte wieder auf Ihre **Stereotypen** zurück
 
 ### Usability Inspection
 
-!!! note
-    **Suchen Sie sich eine Peer-Gruppe für die Usability Inspection**  
+!!! info "Suchen Sie sich eine Peer-Gruppe für die Usability Inspection"
     Führen Sie die **Usability Inspection** und das **Design Review** für die **Applikation Ihrer Peer-Gruppe** durch. Beurteilen Sie die verschiedenen Aspekte kritisch und hinterfragen Sie getroffene Designentscheidungen. 
     <!--Dies kann natürlich keinen echten Durchlauf mit externen Personen ersetzen, aber Sie bekommen so zumindest eine Vorstellung davon wie beide Methoden durchgeführt werden.
     -->
@@ -97,8 +94,7 @@ Bewerten Sie die Applikation Ihrer Peer-Gruppe unter verschiedenen Design-Aspekt
 1. Reflektieren Sie innerhalb Ihrer Gruppe die Ergebnisse der verschiedenen Evaluierungsverfahren. Welche Ergebnisse und Erkenntnisse lassen sich ableiten? 
 2. Erstellen Sie eine Liste mit pot. Schwachpunkten und sich daraus ergebenden Verbesserungsvorschlägen. 
 
-    !!! note
-        **Konkrete Benennung der Schwachpunkte**   
+    !!! tip "Konkrete Benennung der Schwachpunkte"
         Benennen Sie Schwachpunkte so konkret wie möglich; pauschale "Schulnoten" helfen nicht weiter. Es muss klar ersichtlich sein, was in einem nächsten Entwicklungsschritt verbessert bzw. optimiert werden würde.
 
 
@@ -107,9 +103,7 @@ Bewerten Sie die Applikation Ihrer Peer-Gruppe unter verschiedenen Design-Aspekt
 Die folgenden Ergebnisse müssen für eine erfolgreiche Testierung der Praktikumseinheit und einer erfolgreichen Endabnahme des Semesterprojekts vorliegen: -->
 Ihre Projektmappe muss folgende ausgearbeitete Artefakte enthalten: 
 
-!!! abstract
-    __Ergebnisse:__
-
+!!! success "Ergebnisse"
     - [x] Liste der Testfälle 
     - [x] Protokoll des Thinking aloud Tests und ggf. nachgelagertem Interview
     - [x] Usability Inspection Protokoll (Vorlage + Protokoll)

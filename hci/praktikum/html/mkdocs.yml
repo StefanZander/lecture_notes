@@ -17,12 +17,29 @@ nav:
   - 'Abschluss: Usability': 'termin6.md'
 
 
+extra_css:
+  - stylesheets/extra.css
 
 theme:
   name: material
   palette:
-    primary: blue
-    accent: deep orange
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+        primary: blue
+        accent: deep orange
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: light blue
+      accent: purple
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
   font:
     text: Roboto Condensed
     code: Roboto Mono
@@ -44,11 +61,11 @@ theme:
 
 extra:
   social:
-    - icon: fontawesome/brands/mastodon 
+    - icon: fontawesome/solid/person-biking 
       link: https://fbi.h-da.de/~s.zander
       name: hda profile page of Prof. Dr. Stefan Zander
 
-copyright: Copyright &copy; 2017 - 2023 – Prof. Dr. Stefan Zander
+copyright: Copyright &copy; 2017 - 2024 – Prof. Dr. Stefan Zander
 
 repo_url: https://github.com/StefanZander/lecture_notes/tree/master/hci/praktikum/html
 repo_name: /hci/praktikum
@@ -66,6 +83,9 @@ markdown_extensions:
   - abbr
   - admonition
   - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - def_list
   - footnotes
   - toc:
@@ -89,8 +109,3 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tasklist:
       custom_checkbox: true
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
-
-  

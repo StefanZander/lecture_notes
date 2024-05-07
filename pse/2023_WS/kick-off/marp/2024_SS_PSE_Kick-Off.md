@@ -304,6 +304,43 @@ Die **Beteiligungsmatrix**
 ::::
 
 
+
+---
+# Aufgaben der WP-Owner:innen
+
+- Definition der Anforderungen (aka User Stories) in Abstimmung mit den Stakeholdern und dem Team
+- Zeit- und Resourcenplanung (Epics/Sprints/Tasks) in Abhängigkeit des Semesterplans
+- Inhaltliche Abstimmung mit dem Team und den Stakeholdern
+- Abstimmung von Aufgaben mit dem Team
+- Delegation von Aufgaben an das Team
+- Ausgestaltung der Epics / User Stories / Sprints / Tasks in Taiga
+- Teilnahme an WP-Owner-Treffen
+- Rückmeldung an die LVA-Leiter bei Problemen etc.
+- Festlegung eines/r Stellvertreter:in (zusammen mit dem Team)
+- Kontrolle der Arbeiten und Arbeitsergebnisse
+
+::: bluebox center marg5
+Essentiell ist ein **proaktives**, **eigenverantwortliches** und **selbstwirksames** Vorgehen!
+:::
+
+
+---
+# Aufgaben der Developer:innen
+
+- Definition von User Stories und Tasks
+- Zuordnung zu Epics
+- Eigenverantwortliche Übernahme und Bearbeitung von Tasks
+- Abstimmung mit dem WP-Owner
+- Ausgestaltung der Epics / User Stories / Sprints / Tasks in Taiga
+- Inhaltliche Abstimmung mit dem Team und den Stakeholdern
+- Stellvertretung der WP-Owner
+- Dokumentation 
+
+
+::: bluebox center marg5 
+Essentiell ist ein **proaktives**, **eigenverantwortliches** und **selbstwirksames** Vorgehen!
+:::
+
 <!-- 
 ---
 ## Fragen / TBD / TODOs
