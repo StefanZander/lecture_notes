@@ -77,7 +77,7 @@
     - **Protokollant**: diese Person protokolliert das Gesagte und notiert Beobachtungen und Reaktionen der Probanden 
     - **Supervisor** (_optional_): unterstützt und beobachtet die/den ModeratorIn bei der Durchführung und teilt die gewonnenen Eindrücke im Nachgang mit Ihnen und dem Team für eine gemeinsame Reflektion.
 
-3. **Interviewdurchführung**: Sind Interviewleidfaden, Stereotypenauswahl und die Rollenfestlegung abgeschlossen, dann führen Sie das Interview durch. 
+3. **Interviewdurchführung**: Sind Interviewleitfaden, Stereotypenauswahl und die Rollenfestlegung abgeschlossen, dann führen Sie das Interview durch. 
 
     !!! warning "Interview aus der Stereotypenperspektive"
         Wichtig ist, dass die InterviewteilnehmerInnen, sofern sie nicht per se den Stereotpyen entsprechen, das Interview aus der Sicht selbiger durchführen, d.h., die Teilnehmenden schlüpfen in der **Rolle der Stereotypen** und beantworten die Fragen aus deren Blickwinkel. 

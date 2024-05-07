@@ -110,4 +110,4 @@ Ihre Projektmappe muss folgende ausgearbeitete Artefakte enthalten:
     - [x] Dokumentiertes Design Review für die Peer-Gruppe 
     - [x] Liste mit Verbesserungen (--> *abgeleitet aus den unterschiedlichen Protokollen*)
 
-    **Ohne Testprotokolle ist kein erfolgreicher Abschluss möglich!**
+    **Ohne Testprotokolle ist kein erfolgreicher Abschluss möglich!** 
