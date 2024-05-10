@@ -10,33 +10,33 @@
 ## Aufgaben
 
 ### Personas
-1. **Personen- und Kriterienliste**: Erstellen Sie eine **Liste** von verschiedenen typischen Personen, die als Benutzer der jeweiligen App in Frage kommen (gerne aus dem Kreis Ihrer Verwandten und Bekannten).  
+1. **Personen- und Kriterienliste**: Erstellen Sie eine **Liste** von verschiedenen typischen Personen, die als Benutzende der jeweiligen App in Frage kommen (gerne aus dem Kreis Ihrer Freunde und Verwandten).  
 
-    Erstellen Sie zudem eine Liste mit **relevanten Kriterien**, welche diese Personen an sich sowie im Kontext der Anwendungsdomäne (=Ihr gewähltes Semesterprojekt) klassifizieren.  
-    Stellen Sie hierbei auch folgende Überlegungen an:  
+2. Erstellen Sie zudem eine Liste mit **relevanten Kriterien**, welche diese Personen an sich sowie im Kontext der Anwendungsdomäne (=Ihr gewähltes Semesterprojekt) klassifizieren.  
+Stellen Sie hierbei auch folgende Überlegungen an:  
 
-       1. Nach welchen Kriterien unterscheiden Sie die Personen? 
-       2. Welche Kriterien identifizieren Sie als relevant für die Klassifikation der Benutzer? 
-       3. Welche Kriterien sind für die Anwendungsdomäne relevant?
-       4. Welche Ausprägungen besitzen die Kriterien für die jeweiligen Personen?
+    1. Nach welchen Kriterien unterscheiden Sie die Personen? 
+    2. Welche Kriterien identifizieren Sie als relevant für die Klassifikation der Benutzenden? 
+    3. Welche Kriterien sind für die Anwendungsdomäne relevant?
+    4. Welche Ausprägungen besitzen die Kriterien für die jeweiligen Personen?
 
     Fügen Sie diese **Kriterien** der Liste hinzu.
 
-2. **Operationalisierung**: Eine saubere und systematische Klassifikation der Benutzenden (=Personas) erforderet eine Operationalisierung der Wertebereiche der Kriterien hinsichtlicher **quantitativer** oder **qualitativer Ausprägungen**. Beschreiben Sie für jedes Kriterium, nach welchen Ausprägungen Sie hier unterscheiden und begründen Sie Ihre Entscheidung. Gehen Sie inbesondere auf Gründe ein, warum diese Merkmalsunterscheidung für die Anwendungsdomäne relevant ist. 
+3. **Operationalisierung**: Eine saubere und systematische Klassifikation der Benutzenden (=Personas) erforderet eine Operationalisierung der Wertebereiche der Kriterien hinsichtlicher **quantitativer** oder **qualitativer Ausprägungen**. Beschreiben Sie für jedes Kriterium, nach welchen Ausprägungen Sie hier unterscheiden und begründen Sie Ihre Entscheidung. Gehen Sie inbesondere auf Gründe ein, warum diese Merkmalsunterscheidung für die Anwendungsdomäne relevant ist. 
 
-    Erweitern Sie die Personen- und Kriterienliste hin zu einer Matrix, in der die Merkmalsausprägungen enthalten sind.
+    Erweitern Sie die Personen- und Kriterienliste hin zu einer **Matrix**, in der die Merkmalsausprägungen enthalten sind.
 
-3. **Stereotypbeschreibung**: Fertigen Sie für _mindestens_ eine dieser Personen (mit besonders starker Ausprägung der Kriterien) eine anschaulische und lebendige **Stereotypbeschreibung** mit fiktivem oder echtem Namen, Bild, Alter, Geschlecht, Ausbildung, Vorlieben, Hobbys, Charaktereigenschaften etc. an. Anhand dieser Stereotypbeschreibung und des darauf aufbauenden **Anwendungsszenarios** sollen Sie sich später immer wieder vergewissern können, ob das entworfene Design auch wirklich zu diesen Personen passt.
+4. **Stereotypbeschreibung**: Fertigen Sie für _mindestens_ eine dieser Personen (mit besonders starker Ausprägung der Kriterien) eine anschaulische und lebendige **Stereotypbeschreibung** mit fiktivem oder echtem Namen, Bild, Alter, Geschlecht, Ausbildung, Vorlieben, Hobbys, Charaktereigenschaften etc an. Anhand dieser Stereotypbeschreibung und des darauf aufbauenden **Anwendungsszenarios** sollen Sie sich später immer wieder vergewissern können, ob das entworfene Design auch wirklich zu diesen Personen passt.
 
     !!! info "Welche Informationen stehen in der Stereotypbeschreibung" 
-        Die Stereotypbeschreibung enthält vor allem Informationen zu **Charaktereigenschaften** und etwaige **Lebensumstände**; sie soll *keine* Details zur TV-, Twitch- oder einer sonstigen App-Nutzung enthalten! Diese Informationen erfragen bzw. erfahren Sie ja erst durch das Interview. 
+        Die Stereotypbeschreibung enthält vor allem Informationen zu **Charaktereigenschaften** und etwaige **Lebensumstände**; sie soll *keine Details zur App-Nutzung* enthalten! Diese Informationen erfragen bzw. erfahren Sie ja erst durch das :octicons-comment-discussion-16: Interview. 
 
 
 ### Interview 
 
 #### Vorbereitung
 
-1. **Interviewleitfaden**: Erarbeiten Sie innerhalb ihres Teams einen **Interviewleitfaden**, d.h., überlegen Sie sich, welche Fragen Sie im Rahmen des Interviews ihren Personas (=Stakeholdern) stellen, um mehr über die Nutzungsgewohnheiten, Wünsche und Erwartungen zu erfahren. Notieren Sie diese in Form eines Leitfadens für die Durchführung eines **teilstandardisierten Interviews**. 
+1. :material-clipboard-list: **Interviewleitfaden**: Erarbeiten Sie innerhalb ihres Teams einen **Interviewleitfaden**, d.h., überlegen Sie sich, welche Fragen Sie im Rahmen des Interviews ihren Personas (=Stakeholdern) stellen, um mehr über die Nutzungsgewohnheiten, Wünsche und Erwartungen zu erfahren. Notieren Sie diese in Form eines Leitfadens für die Durchführung eines **teilstandardisierten Interviews**. 
 
     Das Interview dient als Grundlage der Erstellung von
 
@@ -48,7 +48,7 @@
         Stellen Sie _nicht_ irgendwelche Fragen; die Fragen sollen Ihnen helfen, die NutzerInnen und deren spezifische Bedürfnisse, Lebensgewohnheiten, Wünsche, Nutzungskontexte und Erwartungen besser zu verstehen. Die Antworten sind Basis für die Erarbeitung von Anwendungsszenarios, sowie  funktionalen und qualitativen Anforderung (inkl. Quantifizierung) und  Begeisterungsfaktoren (siehe KANO-Modell aus der VO).
 
     !!! danger "Achten Sie auf eine "gute" Interviewvorbereitung und -durchführung"
-        Je besser Sie das Interview planen und durchführen desto besser verwertbar sind die Resultate und Erkenntnisse. Beachten Sie deshalb die Prinzipien einer guten Interviewdurchführung (--> _schauen Sie sich hierzu ggf. noch einmal die Videos auf der HCI-Moodleseite an_).
+        Je besser Sie das Interview planen und durchführen desto besser nutz- und verwertbar sind die Resultate und Erkenntnisse. Beachten Sie deshalb die Prinzipien einer guten Interviewdurchführung (--> _schauen Sie sich hierzu noch einmal die 4 Phasen im User-Research-Foliensatz an_).
 
         - Stellen Sie **offene Fragen**, bei denen BenutzerInnen über ihre **Erfahrungen** berichten können
         - Vermeiden Sie **Suggestivfragen** – das ist, wenn Sie das Interview das erste Mal durchführen, sehr schwer umzusetzen --> _bemühen Sie sich und reflektieren Sie die Fragen vorab!_
@@ -62,13 +62,14 @@
 
 
 
-!!! warning "Durchführungsoptionen der Interviews"
+!!! warning "Durchführungsoptionen der Interviews  :octicons-comment-discussion-16: "
     Für die Durchführung der/des Interviews bieten sich mehrere Möglichkeiten:
 
-      1. :fontawesome-regular-thumbs-down: Sie können das Interview während der Praktikumseinheiten vor Ort mit einer Peer-Gruppe durchführen.  
+      1. :fontawesome-regular-thumbs-up: _(beste Option)_: Falls Sie Zugriff auf **echte Personen** haben, die ihren **Stereotypen** entsprechen, dann bitten Sie diese mit Ihnen bzw. Ihrer Gruppe das Interview durchzuführen. Sollte das nicht der Fall sein, dann bitten Sie Freunde / Verwandte / Bekannte / Eltern / Geschwister am Interview teilzunehmen und ==in die Rolle der Stereotypen zu schlüpfen==.
+      2. :fontawesome-regular-thumbs-down: Sie können das Interview während der Praktikumseinheiten vor Ort mit einer Peer-Gruppe durchführen.  
       --> _Nähere Details zum Ablauf finden Sie in der folgenden Aufgabenbeschreibung._ 
-      2. :fontawesome-regular-thumbs-down: Sie können das Interview außerhalb der Praktikumseinheiten in Eigenregie mit einer Peer-Gruppe oder anderen Personen durchführen.
-      3. :fontawesome-regular-thumbs-up: _(beste Option)_: Falls Sie Zugriff auf **echte Personen** haben, die ihren **Stereotypen** entsprechen, dann bitten Sie diese mit Ihnen bzw. Ihrer Gruppe das Interview durchzuführen. Sollte das nicht der Fall sein, dann bitten Sie Freunde / Verwandte / Bekannte / Eltern / Geschwister am Interview teilzunehmen und in die Rolle der Stereotypen zu schlüpfen.
+      3. :fontawesome-regular-thumbs-down: Sie können das Interview außerhalb der Praktikumseinheiten in Eigenregie mit einer Peer-Gruppe oder anderen Personen durchführen.
+      
 
 1. **Auswahl der Stereotypen**: Wählen Sie Personen für das Interview, die zu Ihren ausgewählten Stereotypen passen oder für das Interview in deren Rolle schlüpfen. Lassen Sie die Personen hierzu Ihre angefertigte Stereotypenbeschreibung lessen, so dass diese sich in die jeweilige Lebens- und Nutzungssituation hineinversetzen können.
 
@@ -82,21 +83,22 @@
     !!! warning "Interview aus der Stereotypenperspektive"
         Wichtig ist, dass die InterviewteilnehmerInnen, sofern sie nicht per se den Stereotpyen entsprechen, das Interview aus der Sicht selbiger durchführen, d.h., die Teilnehmenden schlüpfen in der **Rolle der Stereotypen** und beantworten die Fragen aus deren Blickwinkel. 
         
-
+<!-- 
     !!! info "Vorgehen für Optionen #1 und #2"
 
         _Vorbemerkung:  
         Es werden **2 Gruppen** benötigt. Gruppe 1 ist die eigene Gruppe (aus Sicht der Teilnehmer), Gruppe 2 ist die Peer-Gruppe._
         
         - Eine Person aus Gruppe 2 liest die **Stereotypbeschreibung** von Gruppe 1 und steigt in diese Rolle. Bei mehreren Interviews erfolt eine entspr. Aufteilung.
-        - Gruppe 1 bereitet das **teilstandardisierte Interview** vor (--> *siehe Vorlesungsunterlagen*)
-        - Gruppe 1 **interviewed** Gruppe 2 und notiert sich die wichtigsten Angaben inkl. Fragen (--> *Beantwortung offener Fragen am Ende*); 
+        - Gruppe 1 bereitet das **teilstandardisierte Interview** vor (-> *siehe Vorlesungsunterlagen*)
+        - Gruppe 1 **interviewed** Gruppe 2 und notiert sich die wichtigsten Angaben inkl. Fragen (-> *Beantwortung offener Fragen am Ende*); 
         - Nutzen Sie ggf. ein Handy etc. für Video-/Audioaufzeichnungen
-        - Gruppe 1 leitet aus den Angaben ein **Anwendungsszenario** ab und notiert dieses. Anschließend reflektieren Gruppe 1 und 2 dieses gemeinsam, um Ungereimtheiten zu identifizieren. <!--(*durch das Stellen entspr. Fragen ergibt sich dies bereits aus den Antworten*) -->
+        - Gruppe 1 leitet aus den Angaben ein **Anwendungsszenario** ab und notiert dieses. Anschließend reflektieren Gruppe 1 und 2 dieses gemeinsam, um Ungereimtheiten zu identifizieren.
         - (*optional*) Gruppe 1 leitet aus dem Anwendungszenario einige relevante **funktionale** und **qualitative Anforderung** ab
         - (*optional*) Gruppe 1 stimmt die **Quantifizierbarkeit** der qualitativen Anforderung mit Gruppe 2 ab
         - (*optional*) Gruppe 1 erarbeitet mit Gruppe 2 **einen Begeisterungsfaktor**
-        - dann Wechsel der Rollen
+        - dann Wechsel der Rollen 
+-->
 
 <!-- 
         Der Austausch mit einer Peer-Gruppe dürfte sich aufgrund mangelnder physischer Präsenz schwierig gestalten. Sie haben 3 Optionen:  
@@ -142,6 +144,11 @@
 Nun tauschen Sie die Rollen, d.h., die RE-Gruppe ist nun User-Gruppe und umgekehrt. -->
 
 
+#### Auswertung
+
+Werten Sie das Interview im Team aus. Welche Hypothesen haben sich bestätigt; welche müssen verworfen werden? Notieren Sie die wichtigsten Erkenntnisse in der Projektmappe.
+
+
 ### Anwendungsszenarios 
 
 1. **Anwendungsszenario**: Schreiben Sie aus den aus dem Interview gesammelten Erkenntnissen **mind. 1 Anwendungsszenario** pro Stereotyp. Dieses soll *lebensnah* und *anschaulich* sein und sich nicht in Details verlieren. Beziehen Sie sich nicht auf Knöpfe und deren Beschriftung (die sind ja noch gar nicht erfunden), sondern bleiben Sie auf der Ebene des mentalen Modells (dabei kann die Ich-Form helfen).
@@ -176,7 +183,7 @@ Ihre Praktikumsmappe muss folgende ausgearbeitete Artefakte enthalten:
 !!! success "Ergebnisse"
     - [x] Benutzer- und Kriterienliste
     - [x] Dokumentiertes Vorgehen der Operationalisierung 
-    - [x] Dokumentierter Interviewleitfaden mit Antworten
+    - [x] Dokumentierter Interviewleitfaden mit Vorbereitung und Antworten
     - [x] mind. 1 Stereotypbeschreibung
     - [x] mind. 1 Anwendungsszenariobeschreibung
     - [x] (*optional*) mind. 1 funktionale und mind. 1 qualitative Anforderung pro Szenario
