@@ -183,7 +183,7 @@ Ihre Praktikumsmappe muss folgende ausgearbeitete Artefakte enthalten:
 !!! success "Ergebnisse"
     - [x] Benutzer- und Kriterienliste
     - [x] Dokumentiertes Vorgehen der Operationalisierung 
-    - [x] Dokumentierter Interviewleitfaden mit Vorbereitung und Antworten
+    - [x] Dokumentierter Interviewleitfaden mit allen Vorbereitungsphasen und Antworten
     - [x] mind. 1 Stereotypbeschreibung
     - [x] mind. 1 Anwendungsszenariobeschreibung
     - [x] (*optional*) mind. 1 funktionale und mind. 1 qualitative Anforderung pro Szenario
