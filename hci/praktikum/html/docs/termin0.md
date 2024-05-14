@@ -23,7 +23,7 @@
 
 1. Installieren Sie Flutter auf Ihrem Arbeitsrechner / Laptop
       - Informationen zur Installation finden Sie unter <https://docs.flutter.dev/get-started/install>
-         - Beim Punkt "Choose your first type of app" wählen Sie als Applikationstyp entweder iOS oder Android (zum Testen bzw. Kennenlernen von Flutter können Sie alternativ auch Web wählen)
+         - Beim Punkt `Choose your first type of app` wählen Sie als Applikationstyp entweder iOS oder Android (zum Testen bzw. Kennenlernen von Flutter können Sie alternativ auch Web wählen)
 2. Testen Sie Ihre Installation mit `flutter doctor` und installieren Sie alle benötigten Komponenten.
 
 

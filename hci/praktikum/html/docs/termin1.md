@@ -26,6 +26,8 @@ Stellen Sie hierbei auch folgende Überlegungen an:
 
     Erweitern Sie die Personen- und Kriterienliste hin zu einer **Matrix**, in der die Merkmalsausprägungen enthalten sind.
 
+    Kennzeichnen Sie die Benutzenden, welche Sie als Primäre Personas auswählen.
+
 4. **Stereotypbeschreibung**: Fertigen Sie für _mindestens_ eine dieser Personen (mit besonders starker Ausprägung der Kriterien) eine anschaulische und lebendige **Stereotypbeschreibung** mit fiktivem oder echtem Namen, Bild, Alter, Geschlecht, Ausbildung, Vorlieben, Hobbys, Charaktereigenschaften etc an. Anhand dieser Stereotypbeschreibung und des darauf aufbauenden **Anwendungsszenarios** sollen Sie sich später immer wieder vergewissern können, ob das entworfene Design auch wirklich zu diesen Personen passt.
 
     !!! info "Welche Informationen stehen in der Stereotypbeschreibung" 
@@ -168,7 +170,7 @@ Werten Sie das Interview im Team aus. Welche Hypothesen haben sich bestätigt; w
 
 ### Begeisterungsfaktoren (_optional_)
 
-1. Treten Sie mit Ihrem/Ihren Stereotypen in den Austausch und nutzen Sie Kreativitätstechniken um **Begeisterungsfaktoren** zu identifizieren. Notieren Sie diese und verfolgen Sie diese im weiteren Verlauf des Projekts.
+1. Treten Sie mit Ihrem/Ihren Stereotypen in den Austausch und nutzen Sie Kreativitätstechniken um **Begeisterungsfaktoren** zu identifizieren. Notieren Sie diese und verfolgen Sie diese im weiteren Verlauf des Projekts. Protokollieren Sie kurz den Ablauf des Austausches.
 
     !!! info "Implementierung der Begeisterungsfaktoren"
         Abhängig von Aufwand und Komplexität müssen Sie die Begeisterungsfaktoren nicht implementieren. Es reicht, wenn Sie diese "mocken", d.h., demonstrieren, wie eine Implementierung selbiger aussehen könnte. Sie sollen die Begeisterungsfaktoren jedoch im weiteren Entwicklungszyklus (UI-Entwurf etc.) berücksichtigen.

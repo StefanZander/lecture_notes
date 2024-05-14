@@ -25,7 +25,7 @@ Aufgabenstellung zum Semesterprojekt im Modul Human-Computer-Interaction (Versio
 
 ## Themenübersicht
 
-Entwerfen Sie eine Nutzenden-zentrierte und anwendungsfallorientierte **mobile Applikation** für eines der folgenden Szenarien
+Entwerfen Sie im Rahmen eines User-Centered Design Prozesses eine Nutzenden-zentrierte und anwendungsfallorientierte **mobile Applikation** für eines der folgenden Szenarien
 
 - eine Steuerungs-App für einen **TV-Server** (=Entwurf einer adaptiven Fernbedienung)
 - eine Steuerungs-App für einen **Twitch Streaming-Server** 
