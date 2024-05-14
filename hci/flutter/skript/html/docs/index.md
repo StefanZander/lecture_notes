@@ -36,6 +36,12 @@ This project serves as a guideline through the different flutter topics that sho
 It structures the ... and distills the relevant parts from the comprehensive flutter documentation. Flutter has a very well written thorough and comprehensive documentation with lots of code examples. Instead of mirroring the flutter documentaion, this guide provides links to the relevant parts in the official flutter documentation. Hence, this quide should be used as a guiding structure to the different topics and serves as a topic map.
 
 
+## TODO
+
+Disadvantages of flutter (source: fireship.io)
+- deeply neested widget trees
+- no simple copy-and-paste
+
 
 
 ## Project layout --- cool for monospaced text
