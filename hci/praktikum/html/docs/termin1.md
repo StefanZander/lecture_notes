@@ -25,7 +25,6 @@ Stellen Sie hierbei auch folgende Überlegungen an:
 3. **Operationalisierung**: Eine saubere und systematische Klassifikation der Benutzenden (=Personas) erforderet eine Operationalisierung der Wertebereiche der Kriterien hinsichtlicher **quantitativer** oder **qualitativer Ausprägungen**. Beschreiben Sie für jedes Kriterium, nach welchen Ausprägungen Sie hier unterscheiden und begründen Sie Ihre Entscheidung. Gehen Sie inbesondere auf Gründe ein, warum diese Merkmalsunterscheidung für die Anwendungsdomäne relevant ist. 
 
     Erweitern Sie die Personen- und Kriterienliste hin zu einer **Matrix**, in der die Merkmalsausprägungen enthalten sind.
-
     Kennzeichnen Sie die Benutzenden, welche Sie als Primäre Personas auswählen.
 
 4. **Stereotypbeschreibung**: Fertigen Sie für _mindestens_ eine dieser Personen (mit besonders starker Ausprägung der Kriterien) eine anschaulische und lebendige **Stereotypbeschreibung** mit fiktivem oder echtem Namen, Bild, Alter, Geschlecht, Ausbildung, Vorlieben, Hobbys, Charaktereigenschaften etc an. Anhand dieser Stereotypbeschreibung und des darauf aufbauenden **Anwendungsszenarios** sollen Sie sich später immer wieder vergewissern können, ob das entworfene Design auch wirklich zu diesen Personen passt.
@@ -185,7 +184,8 @@ Ihre Praktikumsmappe muss folgende ausgearbeitete Artefakte enthalten:
 !!! success "Ergebnisse"
     - [x] Benutzer- und Kriterienliste
     - [x] Dokumentiertes Vorgehen der Operationalisierung 
-    - [x] Dokumentierter Interviewleitfaden mit allen Vorbereitungsphasen und Antworten
+    - [x] Dokumentierter Interviewleitfaden mit allen Vorbereitungsphasen 
+    - [x] Dokumentiertes Interview (autom. Transkript )
     - [x] mind. 1 Stereotypbeschreibung
     - [x] mind. 1 Anwendungsszenariobeschreibung
     - [x] (*optional*) mind. 1 funktionale und mind. 1 qualitative Anforderung pro Szenario
