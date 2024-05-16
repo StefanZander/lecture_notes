@@ -10,9 +10,9 @@
 ## Aufgaben
 
 ### Personas
-1. **Personen- und Kriterienliste**: Erstellen Sie eine **Liste** von verschiedenen typischen Personen, die als Benutzende der jeweiligen App in Frage kommen (gerne aus dem Kreis Ihrer Freunde und Verwandten).  
+1. :fontawesome-solid-users-viewfinder: **Personen- und Kriterienliste**: Erstellen Sie eine **Liste** von verschiedenen typischen Personen, die als Benutzende der jeweiligen App in Frage kommen (gerne aus dem Kreis Ihrer Freunde und Verwandten).  
 
-2. Erstellen Sie zudem eine Liste mit **relevanten Kriterien**, welche diese Personen an sich sowie im Kontext der Anwendungsdomäne (=Ihr gewähltes Semesterprojekt) klassifizieren.  
+2. Erstellen Sie zudem eine Liste mit :material-clipboard-list-outline:  **relevanten Kriterien**, welche diese Personen an sich sowie im Kontext der Anwendungsdomäne (=Ihr gewähltes Semesterprojekt) klassifizieren.  
 Stellen Sie hierbei auch folgende Überlegungen an:  
 
     1. Nach welchen Kriterien unterscheiden Sie die Personen? 
@@ -22,12 +22,12 @@ Stellen Sie hierbei auch folgende Überlegungen an:
 
     Fügen Sie diese **Kriterien** der Liste hinzu.
 
-3. **Operationalisierung**: Eine saubere und systematische Klassifikation der Benutzenden (=Personas) erforderet eine Operationalisierung der Wertebereiche der Kriterien hinsichtlicher **quantitativer** oder **qualitativer Ausprägungen**. Beschreiben Sie für jedes Kriterium, nach welchen Ausprägungen Sie hier unterscheiden und begründen Sie Ihre Entscheidung. Gehen Sie inbesondere auf Gründe ein, warum diese Merkmalsunterscheidung für die Anwendungsdomäne relevant ist. 
+3. :material-list-status: **Operationalisierung**: Eine saubere und systematische Klassifikation der Benutzenden (=Personas) erforderet eine Operationalisierung der Wertebereiche der Kriterien hinsichtlicher **quantitativer** oder **qualitativer Ausprägungen**. Beschreiben Sie für jedes Kriterium, nach welchen Ausprägungen Sie hier unterscheiden und begründen Sie Ihre Entscheidung. Gehen Sie inbesondere auf Gründe ein, warum diese Merkmalsunterscheidung für die Anwendungsdomäne relevant ist. 
 
     Erweitern Sie die Personen- und Kriterienliste hin zu einer **Matrix**, in der die Merkmalsausprägungen enthalten sind.
     Kennzeichnen Sie die Benutzenden, welche Sie als Primäre Personas auswählen.
 
-4. **Stereotypbeschreibung**: Fertigen Sie für _mindestens_ eine dieser Personen (mit besonders starker Ausprägung der Kriterien) eine anschaulische und lebendige **Stereotypbeschreibung** mit fiktivem oder echtem Namen, Bild, Alter, Geschlecht, Ausbildung, Vorlieben, Hobbys, Charaktereigenschaften etc an. Anhand dieser Stereotypbeschreibung und des darauf aufbauenden **Anwendungsszenarios** sollen Sie sich später immer wieder vergewissern können, ob das entworfene Design auch wirklich zu diesen Personen passt.
+4. :material-file-document-edit: **Stereotypbeschreibung**: Fertigen Sie für _mindestens_ eine dieser Personen (mit besonders starker Ausprägung der Kriterien) eine anschaulische und lebendige **Stereotypbeschreibung** mit fiktivem oder echtem Namen, Bild, Alter, Geschlecht, Ausbildung, Vorlieben, Hobbys, Charaktereigenschaften etc an. Anhand dieser Stereotypbeschreibung und des darauf aufbauenden **Anwendungsszenarios** sollen Sie sich später immer wieder vergewissern können, ob das entworfene Design auch wirklich zu diesen Personen passt.
 
     !!! info "Welche Informationen stehen in der Stereotypbeschreibung" 
         Die Stereotypbeschreibung enthält vor allem Informationen zu **Charaktereigenschaften** und etwaige **Lebensumstände**; sie soll *keine Details zur App-Nutzung* enthalten! Diese Informationen erfragen bzw. erfahren Sie ja erst durch das :octicons-comment-discussion-16: Interview. 
@@ -72,14 +72,14 @@ Stellen Sie hierbei auch folgende Überlegungen an:
       3. :fontawesome-regular-thumbs-down: Sie können das Interview außerhalb der Praktikumseinheiten in Eigenregie mit einer Peer-Gruppe oder anderen Personen durchführen.
       
 
-1. **Auswahl der Stereotypen**: Wählen Sie Personen für das Interview, die zu Ihren ausgewählten Stereotypen passen oder für das Interview in deren Rolle schlüpfen. Lassen Sie die Personen hierzu Ihre angefertigte Stereotypenbeschreibung lessen, so dass diese sich in die jeweilige Lebens- und Nutzungssituation hineinversetzen können.
+1. :fontawesome-solid-users-viewfinder: **Auswahl der Stereotypen**: Wählen Sie Personen für das Interview, die zu Ihren ausgewählten Stereotypen passen oder für das Interview in deren Rolle schlüpfen. Lassen Sie die Personen hierzu Ihre angefertigte Stereotypenbeschreibung lessen, so dass diese sich in die jeweilige Lebens- und Nutzungssituation hineinversetzen können.
 
-2. **Rollenfestlegen**: Bestimmen Sie aus Ihrem Team jeweils eine/n
+2. :fontawesome-solid-people-line: **Rollenfestlegen**: Bestimmen Sie aus Ihrem Team jeweils eine/n
     - **Moderator**: diese Person führt das Interview durch und ist direkte Ansprechperson
     - **Protokollant**: diese Person protokolliert das Gesagte und notiert Beobachtungen und Reaktionen der Probanden 
     - **Supervisor** (_optional_): unterstützt und beobachtet die/den ModeratorIn bei der Durchführung und teilt die gewonnenen Eindrücke im Nachgang mit Ihnen und dem Team für eine gemeinsame Reflektion.
 
-3. **Interviewdurchführung**: Sind Interviewleitfaden, Stereotypenauswahl und die Rollenfestlegung abgeschlossen, dann führen Sie das Interview durch. 
+3. :simple-theconversation: **Interviewdurchführung**: Sind Interviewleitfaden, Stereotypenauswahl und die Rollenfestlegung abgeschlossen, dann führen Sie das Interview durch. 
 
     !!! warning "Interview aus der Stereotypenperspektive"
         Wichtig ist, dass die InterviewteilnehmerInnen, sofern sie nicht per se den Stereotpyen entsprechen, das Interview aus der Sicht selbiger durchführen, d.h., die Teilnehmenden schlüpfen in der **Rolle der Stereotypen** und beantworten die Fragen aus deren Blickwinkel. 
@@ -147,7 +147,9 @@ Nun tauschen Sie die Rollen, d.h., die RE-Gruppe ist nun User-Gruppe und umgekeh
 
 #### Auswertung
 
-Werten Sie das Interview im Team aus. Welche Hypothesen haben sich bestätigt; welche müssen verworfen werden? Notieren Sie die wichtigsten Erkenntnisse in der Projektmappe.
+:simple-simpleanalytics: Werten Sie das Interview im Team aus. 
+Welche :simple-hypothesis: Hypothesen haben sich bestätigt; welche müssen verworfen werden?  
+Notieren Sie die wichtigsten Erkenntnisse in der Projektmappe.
 
 
 ### Anwendungsszenarios 
@@ -185,8 +187,8 @@ Ihre Praktikumsmappe muss folgende ausgearbeitete Artefakte enthalten:
     - [x] Benutzer- und Kriterienliste
     - [x] Dokumentiertes Vorgehen der Operationalisierung 
     - [x] Dokumentierter Interviewleitfaden mit allen Vorbereitungsphasen 
-    - [x] Dokumentiertes Interview (autom. Transkript )
+    - [x] Dokumentiertes Interview (autom. Transkript ist i.O.)
     - [x] mind. 1 Stereotypbeschreibung
     - [x] mind. 1 Anwendungsszenariobeschreibung
     - [x] (*optional*) mind. 1 funktionale und mind. 1 qualitative Anforderung pro Szenario
-    - [x] (*optional*) mind. 1 Begeisterungsfaktor pro Szenario oder Stereotyp
+    - [x] (*optional*) mind. 1 Begeisterungsfaktor pro Szenario bzw. Stereotyp
