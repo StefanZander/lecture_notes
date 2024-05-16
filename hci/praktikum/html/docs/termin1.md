@@ -24,7 +24,7 @@ Stellen Sie hierbei auch folgende Überlegungen an:
 
 3. :material-list-status: **Operationalisierung**: Eine saubere und systematische Klassifikation der Benutzenden (=Personas) erforderet eine Operationalisierung der Wertebereiche der Kriterien hinsichtlicher **quantitativer** oder **qualitativer Ausprägungen**. Beschreiben Sie für jedes Kriterium, nach welchen Ausprägungen Sie hier unterscheiden und begründen Sie Ihre Entscheidung. Gehen Sie inbesondere auf Gründe ein, warum diese Merkmalsunterscheidung für die Anwendungsdomäne relevant ist. 
 
-    Erweitern Sie die Personen- und Kriterienliste hin zu einer **Matrix**, in der die Merkmalsausprägungen enthalten sind.
+    Erweitern Sie die Personen- und Kriterienliste hin zu einer :material-table-large: **Matrix**/**Tabelle**, in der die Merkmalsausprägungen enthalten sind.
     Kennzeichnen Sie die Benutzenden, welche Sie als Primäre Personas auswählen.
 
 4. :material-file-document-edit: **Stereotypbeschreibung**: Fertigen Sie für _mindestens_ eine dieser Personen (mit besonders starker Ausprägung der Kriterien) eine anschaulische und lebendige **Stereotypbeschreibung** mit fiktivem oder echtem Namen, Bild, Alter, Geschlecht, Ausbildung, Vorlieben, Hobbys, Charaktereigenschaften etc an. Anhand dieser Stereotypbeschreibung und des darauf aufbauenden **Anwendungsszenarios** sollen Sie sich später immer wieder vergewissern können, ob das entworfene Design auch wirklich zu diesen Personen passt.
