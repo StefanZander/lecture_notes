@@ -18,13 +18,17 @@
     Anstelle eines Paper-Prototypen können Sie auch Mock-ups oder eine Wireframe-basierte Konzeption der Oberflächen Ihrer Applikation erstellen (_mit allen Nachteilen gegenüber einer Paper-Prototyp-basierten Lösung_). 
 -->
 
-1. Entwerfen Sie die **Benutzungsoberfläche** der mobilen Applikationen in Form von konkreten Screen-Diagrammen als **Papier-Prototypen** (*bitte groß und gut erkennbar!*). 
+1. Entwerfen Sie auf Basis der Erkenntnisse aus dem User Research die :fontawesome-solid-mobile-screen-button: **Benutzungsoberfläche** der mobilen Applikationen als **low-fidelty Prototyp** zum Testen der Benutzungskonzepte und zum Finden von Entwurfsalternativen. Setzen Sie hierfür bevorzugt auf :fontawesome-regular-paper-plane: **Paper-Prototyping**. 
+2. Alternativ können Sie ein interaktives (low-fidelity-) prototyping Tool ihrer Wahl einsetzen. 
 
     !!! info "Hinweise"
           - Achten Sie auf Vollständigkeit der benötigten Bedienelemente. 
           - Berücksichtigen Sie Platzierung, Größe, Anordnung, Beschriftung. 
           - Skizzieren Sie von **Icons** die Rohform so, dass man deren bildlich-inhaltliche Aussage versteht.
-          - Nutzen Sie **abstrakte Screen-Diagramme** um **Entwurfsalternativen** zu erkennen. Wählen Sie die **beste Entwurfsalternative** aus und verfolgen Sie diese weiter.
+          - Nutzen Sie **abstrakte Screen-Diagramme** um **Entwurfsalternativen** zu erkennen. Wählen Sie die **beste Entwurfsalternative** aus und verfolgen Sie diese in Form konkreter Screen-Diagramme weiter.
+
+3. Dokumentieren Sie die Entwürfe und Entwurfsentscheidungen ausführlich in der Projektmappe.
+<!-- in Form von konkreten Screen-Diagrammen als **Papier-Prototypen** (*bitte groß und gut erkennbar!*).  -->
 
 
 ### Analyseklasse
@@ -54,11 +58,11 @@
 2. **Testen** Sie Ihre Entwürfe mit Ihren Steretypen (bspw. verkörpert durch Ihre Peer-Gruppe oder Freunde/Verwandte/etc.) und identifizieren Sie Ungereimtheiten und/oder Inkonsistenzen und Verbesserungen. Überlegen Sie, ob es gut und richtig ist, wenn Sie keine Verbesserungen identifizieren.
 
     !!! warning "Wichtiges zur Durchführung der Tests"
-        Die Entwürfe sind aus **Sicht der/des Stereotypen** sowie seiner/ihrer spezifischen Anforderungen zu testen!
+        Die Entwürfe sind aus **Sicht der/des :fontawesome-solid-user-doctor: Stereotypen** sowie seiner/ihrer spezifischen Anforderungen zu testen!
 
         1. Überlegen Sie im Vorfeld, wie Sie Ihre Entwürfe sinnvoll testen (--> *funktionsorientiert vs. anwendungsfallorientiert*) 
         2. Entwickeln Sie eine Handvoll **repräsentativer Anwendungsfälle**, die Ihre Stereotypen durchspielen sollen.
-        3. Geben Sie in :fontawesome-regular-thumbs-down: **KEINEM FALL HINWEISE** oder Tipps, dies **verfälscht** Ihre Tests enorm. ==Wir wollen herausfinden, ob die getroffenen Designentscheidungen den mentalen Modellen des/der Stereotypen entsprechen und ob die UI für diese/n intuitiv benutzbar ist.==
+        3. Geben Sie in :fontawesome-regular-thumbs-down: **KEINEM FALL HINWEISE** oder Tipps, dies **verfälscht** Ihre Tests enorm. ==:fontawesome-solid-triangle-exclamation: Wir wollen herausfinden, ob die getroffenen Designentscheidungen den mentalen Modellen des/der Stereotypen entsprechen und ob die UI für diese/n intuitiv benutzbar ist.==
         <!-- 4. Den Test können Sie auch zu Beginn der nächsten Einheit durchführen. -->
 
 
