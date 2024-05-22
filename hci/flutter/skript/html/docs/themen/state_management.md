@@ -22,7 +22,7 @@ Flutter supports a wide variety of different approaches and libraries for state 
 
 For this lecture, we use a simple and straightforwart approach, known from the flutter tutorial.
 
-An exhaustive list of available approaches is available at the official flutter documentation.
+An exhaustive list of available approaches is available at the official flutter documentation (TODO: Add Link).
 
 
 ## Statemanagement in Widgets
@@ -30,11 +30,11 @@ An exhaustive list of available approaches is available at the official flutter 
 The following examples explains how state management in widgets work. 
 
 As known from the introductory sessions, everything in flutter is a widget – even an app is a widget.
+
 There are two types of widgets: stateless and stateful widgets
 
-stateless widgets do not hold explicit state information; they are merely used for displaying data
-
-statefull widgets have a dedicated state class that holds all state information. The normal widget class creates an instance of the state class in order to manage all state information.
+1. Stateless widgets do not hold explicit state information; they are merely used for displaying data
+2. Statefull widgets have a dedicated state class that holds all state information. The normal widget class creates an instance of the state class in order to manage all state information.
 
 
 

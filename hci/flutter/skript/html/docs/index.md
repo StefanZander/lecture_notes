@@ -12,7 +12,7 @@ Begleitmaterial zur Veranstaltung "Human Computer Interaction" (Modulnummer xxxx
 6. [Layout (TODO: Flutter-doc iPad verlinken)](./themen/layout.md)
 7. [Navigation zwischen Screens](./themen/navigation.md)
 8. Kommunikation zwischen Screens (Datenaustausch/Routes)
-9. Status-/Zustandsmanagement (Speicherung und Wiederherstellung von Zuständen)
+9. [Status-/Zustandsmanagement (Speicherung und Wiederherstellung von Zuständen)](./themen/state_management.md)
 10. [Data Structures](./themen/data_structures.md) 
 10. Speicherung auf dem Gerät (+Serialisierung)
 11. Zugriff auf externe Quellen/APIs (wie greift man externe Daten ab)

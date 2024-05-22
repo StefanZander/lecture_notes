@@ -82,6 +82,8 @@ plugins:
 markdown_extensions:
   - abbr
   - admonition
+  - smarty:
+      smart_angled_quotes: true  
   - attr_list
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
@@ -100,8 +102,6 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.highlight:
       anchor_linenums: true
-  - pymdownx.superfences
-  - pymdownx.highlight
   - pymdownx.inlinehilite
   - pymdownx.keys
   - pymdownx.smartsymbols
@@ -109,3 +109,4 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tasklist:
       custom_checkbox: true
+  - pymdownx.critic  

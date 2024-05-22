@@ -29,7 +29,7 @@ An entire screen is a widget too.
 
 The main thing to learn is to combine widgets into a tree-like structure in order to design a complex and usable UI.
 
-The most important tool in Flutter is the refactor function – called by pressing `CMD`+`.`.
+The most important tool in Flutter is the __refactor function__ – called by pressing `CMD`+`'.'`.
 
 The `https://pub.dev/packages/provider` provider library provides some convenience methods to expose and work with state data.
 
