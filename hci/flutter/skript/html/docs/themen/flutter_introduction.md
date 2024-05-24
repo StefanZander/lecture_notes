@@ -1,6 +1,6 @@
 # Einführung in die Entwicklung von Multi-Plattform-Apps mit Flutter
 
-Erzeugung eines neuen Flutter-Projekts mit `flutter new`
+Create a new Flutter-project using the `flutter new` command in the console.
 
 Widget Inspector hilft enorm bei der Entwicklung und Validierung von Flutter-Apps. Dieser stellt die in/auf einem Screen enthaltenen Widgets in Form eines Widget-Trees dar.
 
@@ -35,24 +35,27 @@ The `https://pub.dev/packages/provider` provider library provides some convenien
 
 ### Dart
 
-Dart uses a shorthand notation for the instantiation of classes.
+#### Class Instantiation
 
-Instead of `var obj = new Classname(...)` you can write in Dart `var obj = Classname()`. So it is quite common in Flutter source code to read this notation form.
+Dart uses a **shorthand notation** for the instantiation of classes.
+
+Instead of `var obj = new Classname(...)` you can write in Dart `var obj = Classname()`.  
+As a consequence, it is quite common in Flutter source code to read this notation.
 
 
 
 ### Data Store and State Management
 
 - 2 Approaches: 
-  - a) Centralized via a central class that holds the data / states for/from all widgets.
-  - b) Decentralized in each widget.
+    - a) Centralized via a central class that holds the data / states for/from all widgets.
+    - b) Decentralized in each widget.
 - Better: Data that belong exclusively to a widget should be stored/held there and not in a central store. Some state is only relevant for a specific widget so it is better stored there.
 
-`StatefulWidget`s have a `State` that is stored in the widget itself.
+StatefulWidgets have a `State` that is stored in the widget itself.
 
 Stateful widgets can change their state by themselves.
 
-Stateful widgets are separated into an immutable and a mutable class (indicated be the leading `_` before the class name). Mutable state classes allow to alter a widget's state (ie data).
+Stateful widgets are separated into an immutable and a mutable class (indicated by the leading `_` before the class name). Mutable state classes allow to alter a widget's state (i.e., their internal data).
 
 State classes are private classes – indicated by the `_` underscore before the class name.
 
@@ -66,9 +69,10 @@ Define: Mutable and Immutable
 
 ### Widgets
 
-Every widget defines a `build()` method. 
-- This method is automatically called every time the widget's circumstances change so that the widget is always up to date.
-- It always returns a widget or more typically a nested tree of widgets
+Every widget defines a `build()` method 
+
+- This method is automatically called every time the widget's circumstances change so that the widget is always up to date
+- It always returns a widget – or more typically – a **nested tree of widgets**
 - Complext visual UI elements should be encapsulated in and treated as a separate widget
 - Having separate widgets for separate logical parts of your UI is an important way of managing complexity in Flutter.
 - Many Flutter widgets contain standard implicit animations. Hence, they will smoothly interpolate between values so that the UI doesn't just "jump" between states. 

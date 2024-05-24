@@ -1,15 +1,17 @@
 # Navigation between Screens (aka Activities)
 
-
+## NavigationBar
 In most cases using a bottom navigation is recommended and sufficient.
 
-With Material 3, the NavigationBar-class is the recommended way to implement a navigational element for >2 - <=5 screens.
+With Material 3, the `NavigationBar`-class is the recommended way for navigation **between 3 and up to 5 screens**.
 
-Flutter provides the NavigationBar class therefore. More information together with code samples can be found here [https://api.flutter.dev/flutter/material/NavigationBar-class.html]
+Flutter provides the [NavigationBar](https://api.flutter.dev/flutter/material/NavigationBar-class.html) class therefore. 
+
+### Example
 
 A first simple example of an app that uses a navigation bar with 3 different screens.
 
-A scaffold as parent widget has a dedicated property for a navigation bar as well as a body property that can hold screens for all selectable menu items in form of an array.
+A `scaffold` as parent widget has a dedicated property for a navigation bar as well as a body property that can hold screens for all selectable menu items in form of an array.
 
 ```dart
 import 'package:flutter/material.dart';
@@ -157,9 +159,136 @@ class _NavigationExampleState extends State<NavigationExample> {
 }
 ```
 
-Tasks:
+Tasks: (TODO: refine)
+
 - Try to understand
-  - how screens are switched based on the selected item 
-  - how new screens (views) can be added
-  - ...
-- put the different screens in individual classes each
+    - how screens are switched based on the selected item 
+    - how new screens (views) can be added
+    - ...
+- Put the different screens in individual dart/flutter classes to separate them from the main `.lib`-file
+
+
+
+
+## Tabs
+
+Working with tabs is a common pattern in apps that follow the Material Design guidelines. Flutter includes a convenient way to create tab layouts as part of the material library.
+
+Tabs can be added to an app using the following steps;
+
+1. Create a `TabController`
+2. Create the tabs
+3. Create content for each tab
+
+### 1. Create a `TabController`
+
+For tabs to work, you need to keep the selected tab and content sections **in sync**. This is the job of the `TabController`.
+
+Either create  
+
+- a `TabController` manually, or  
+- automatically by using a `DefaultTabController` widget.
+
+Using `DefaultTabController` is the simplest option, since it creates a `TabController` and makes it available to all descendant widgets.
+
+```dart
+return MaterialApp(
+  home: DefaultTabController(
+    length: 3,
+    child: Scaffold(),
+  ),
+);
+```
+
+
+
+### 2. Create the tabs
+
+When a tab is selected, it needs to display content. You can create tabs using the `TabBar` widget.
+
+ In the following example, a `TabBar` with three `Tab` widgets is created and placed within an `AppBar`:
+
+```dart
+ return MaterialApp(
+  home: DefaultTabController(
+    length: 3,
+    child: Scaffold(
+      appBar: AppBar(
+        bottom: const TabBar(
+          tabs: [
+            Tab(icon: Icon(Icons.directions_car)),
+            Tab(icon: Icon(Icons.directions_transit)),
+            Tab(icon: Icon(Icons.directions_bike)),
+          ],
+        ),
+      ),
+    ),
+  ),
+);
+``` 
+
+Note that the `TabBar` is added to the `bottom` parameter of the `AppBar`.
+
+!!! info "Which TabController will be used ?"
+    By default, the `TabBar` looks up the widget tree for the nearest `DefaultTabController`.  
+    If you're manually creating a `TabController`, pass it to the `TabBar`.
+
+
+### 3. Create content for each tab
+
+After creating the tabs, display the corresponding content when a tab is selected. For this purpose, use the `TabBarView` widget.
+
+!!! warning "The order is important"
+    Order is important and must correspond to the order of the tabs in the `TabBar`.
+
+```dart
+body: const TabBarView(
+  children: [
+    Icon(Icons.directions_car),
+    Icon(Icons.directions_transit),
+    Icon(Icons.directions_bike),
+  ],
+),
+```
+
+The full code example is listed below:
+
+```dart
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(const TabBarDemo());
+}
+
+class TabBarDemo extends StatelessWidget {
+  const TabBarDemo({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: DefaultTabController(
+        length: 3,
+        child: Scaffold(
+          appBar: AppBar(
+            bottom: const TabBar(
+              tabs: [
+                Tab(icon: Icon(Icons.directions_car)),
+                Tab(icon: Icon(Icons.directions_transit)),
+                Tab(icon: Icon(Icons.directions_bike)),
+              ],
+            ),
+            title: const Text('Tabs Demo'),
+          ),
+          body: const TabBarView(
+            children: [ // important: maintain the sequence of the tabs
+              Icon(Icons.directions_car),
+              Icon(Icons.directions_transit),
+              Icon(Icons.directions_bike),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+```

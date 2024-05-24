@@ -1,8 +1,11 @@
-site_name: "Einführung in Flutter und Dart"
+site_name: "Introduction to Flutter and Dart"
 
 nav:
   - 'Main Page': 'index.md'
   - 'Dart': './themen/dart.md'
+
+extra_css:
+  - stylesheets/extra.css
 
 
 theme:
@@ -10,8 +13,8 @@ theme:
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: teal
-      accent: red
+      primary: blue
+      accent: deep orange
       toggle:
         icon: material/brightness-7 
         name: Switch to dark mode
@@ -19,8 +22,8 @@ theme:
         accent: red
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: teal
-      accent: deep orange
+      primary: light blue
+      accent: purple
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
@@ -46,15 +49,14 @@ theme:
     - search.share
     - navigation.footer
     - content.action.edit
-
-extra_css:
-  - 'stylesheets/extra_new.css'
+    - content.code.copy
+    - content.code.annotate
 
 extra:
   social:
     - icon: fontawesome/solid/person-biking 
       link: https://fbi.h-da.de/~s.zander
-      name: personal page of Prof. Dr. Stefan Zander at h_da
+      name: h_da profile page of Prof. Dr. Stefan Zander
 
 copyright: Copyright &copy; 2017 - 2024 – Prof. Dr. Stefan Zander
 
@@ -97,6 +99,7 @@ markdown_extensions:
       anchor_linenums: true
       linenums: true
       line_spans: __span
+      pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.keys
   - pymdownx.smartsymbols

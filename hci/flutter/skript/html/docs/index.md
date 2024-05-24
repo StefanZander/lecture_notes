@@ -10,15 +10,16 @@ Begleitmaterial zur Veranstaltung "Human Computer Interaction" (Modulnummer xxxx
 4. Widgets (--> Was sind Widgets ? Welche UI-Elemente gibt es und wie bindet man diese ein?)
 5. [Verhalten](./themen/behaviour.md)
 6. [Layout (TODO: Flutter-doc iPad verlinken)](./themen/layout.md)
-7. [Navigation zwischen Screens](./themen/navigation.md)
-8. Kommunikation zwischen Screens (Datenaustausch/Routes)
-9. [Status-/Zustandsmanagement (Speicherung und Wiederherstellung von Zuständen)](./themen/state_management.md)
-10. [Data Structures](./themen/data_structures.md) 
-10. Speicherung auf dem Gerät (+Serialisierung)
-11. Zugriff auf externe Quellen/APIs (wie greift man externe Daten ab)
+7. [Navigationselemente](./themen/navigation.md)
+8. [Navigation zwischen Screens mit Datenaustausch](./themen/screen_navigation.md)
+9. [Datenaustausch zwischen Screens](./themen/data_exchange.md)
+10. [Status-/Zustandsmanagement (Speicherung und Wiederherstellung von Zuständen)](./themen/state_management.md)
+11. [Data Structures](./themen/data_structures.md) 
+12. Speicherung auf dem Gerät (+Serialisierung)
+13. Zugriff auf externe Quellen/APIs (wie greift man externe Daten ab)
     1.  JSON
-12. Nebenläufigkeit
-13. Fortgestrittene Widgets
+14. Nebenläufigkeit
+15. Fortgestrittene Widgets
     1.  RecyclerView
     2.  Gesten
     3.  
