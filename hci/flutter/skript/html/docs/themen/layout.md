@@ -48,7 +48,7 @@ Ein Scaffold-Widget in Flutter kann nur einen einzigen Body-Widget haben. Der Bo
 
 Wenn Sie mehrere Inhaltsbereiche in einem Bildschirm haben möchten, können Sie Container, Column, Row oder andere Layout-Widgets verwenden, um mehrere Widgets innerhalb des Body-Widgets zu gruppieren und anzuordnen. Zum Beispiel könnten Sie eine Column verwenden, um vertikal angeordnete Inhaltsbereiche zu erstellen, oder eine Row für horizontal angeordnete Bereiche.
 
-Hier ist ein einfaches Beispiel, wie Sie verschiedene Inhaltsbereiche in einem Scaffold organisieren könnten:
+Hier ist ein einfaches Beispiel das zeigt, wie sich verschiedene Inhaltsbereiche in einem Scaffold organisieren lassen:
 
 ```dart
 import 'package:flutter/material.dart';
@@ -98,7 +98,7 @@ In diesem Beispiel wird eine Column verwendet, um drei verschiedene Inhaltsberei
 
 In Flutter ist ein Container ein grundlegendes Widget, das dazu verwendet wird, andere Widgets zu gruppieren, zu positionieren und zu dekorieren. Der Container ermöglicht es, die Größe, das Aussehen und das Verhalten von Widgets zu steuern, die innerhalb des Containers platziert sind.
 
-Hier sind einige wichtige Eigenschaften und Funktionen eines Containers in Flutter:
+Einige der wichtigsten Eigenschaften und Funktionen eines Containers in Flutter:
 
 Größe und Positionierung: Sie können die Breite, Höhe und Position des Containers steuern, indem Sie Eigenschaften wie width, height, margin, padding, alignment und andere verwenden. Dies ermöglicht es, Widgets innerhalb des Containers genau zu positionieren und zu layouten.
 
@@ -135,7 +135,7 @@ Insgesamt kann ein Container verwendet werden, um Widgets zu gruppieren, zu posi
 
 
 
-## Standard widgets
+## Standard Widgets
 
 - `Container`: Adds padding, margins, borders, background color, or other decorations to a widget.
 - `GridView`: Lays widgets out as a scrollable grid.
@@ -145,7 +145,8 @@ Insgesamt kann ein Container verwendet werden, um Widgets zu gruppieren, zu posi
 ## Container
 Many layouts make liberal use of Containers to separate widgets using padding, or to add borders or margins. You can change the device’s background by placing the entire layout into a Container and changing its background color or image.
 
-Summary (Container)
+Summary (Container) 
+
 - Add padding, margins, borders
 - Change background color or image
 - Contains a single child widget, but that child can be a Row, Column, or even the root of a widget tree
@@ -156,6 +157,7 @@ Summary (Container)
 ListView is a column-like widget that automatically provides scrolling when its content is too long for its render box.
 
 Summary (ListView)
+
 - A specialized Column for organizing a list of boxes
 - Can be laid out horizontally or vertically
 - Detects when its content won’t fit and provides scrolling
@@ -176,3 +178,5 @@ Source:
 ## Other Resources
 
 Learn more about lay outing in flutter: https://docs.flutter.dev/ui/layout#other-resources
+
+There is a good tutorial that shows how to build layouts: https://docs.flutter.dev/ui/layout/tutorial
