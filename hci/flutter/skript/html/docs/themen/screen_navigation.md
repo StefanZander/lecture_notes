@@ -1,5 +1,21 @@
 # Navigation between Screens
 
+
+!!! success "Key Points"
+    - Screen and pages are called 'routes' in Flutter
+    - The `Navigator` class is a common way to navigate between routes. It handles a stack of routes internally and provides access and manipulation methods. 
+    - `Navigator.push()` navigates to a new / the next screen 
+    - `Navigator.pop()` returns to the previous screen
+    - `Navigator.push()` and `Navigator.pop()` are usually called in the body of the `onPressed` handler methods.
+    - For Android you can use the `MaterialPageRoute`; for iOS-Apps there is a `CupertinoPageRoute` class. These classes provide convenience methods and plattform-specific animations.
+
+!!! info "Where do you find the relevant Information"
+    - Read about the `Navigator` class: <https://api.flutter.dev/flutter/widgets/Navigator-class.html>
+    - Full explanation together with an example:  <https://docs.flutter.dev/cookbook/navigation/navigation-basics>
+
+
+## Background Information
+
 Most apps contain several screens for displaying different types of information. For example, an app might have a screen that displays a catalogue of products. When the user taps the image of a product, a new screen displays details about the product.
 
 !!! info "Terminology"

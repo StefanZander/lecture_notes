@@ -1,5 +1,27 @@
 # Exchanging Data between Screens
 
+
+!!! success "Key Points"
+    - Flutter supports several ways on how to send data to another screen resp. widget
+        - Using Constructors
+        - Using Named Routes and `RouteSettings`
+        - Using `Navigator.pushNamed` with arguments
+        - Using `InheritedWidget`
+        - Using Provider as state management solution
+        - Using `GlobalKeys` 
+    - To share data between screens, use `Navigator.push()` together with `MaterialPageRoute` and pass data via the constructor or use `RouteSettings`.
+    - You need to distinguish between (a) a "normal" flow of data between equally important screens or (b) between a primary screen and a secondary screen (e.g. a selection screen that supports the primary screen).
+        - Passing data between primary screens can be realized via the standard route operations `push()` and `pop()` together with the data as constructor arguments.
+        - In order to retrieve data from a secondary (supplemental) screen you need to use a `Future` and call the second screen asynchronously using `:::dart final result await Navigator.push(...)`.
+
+
+!!! info "Where do you get more information"
+    - Flutter cookbook on sending data to a new screen including a full example: <https://docs.flutter.dev/cookbook/navigation/passing-data>
+    - Returning data from a screen inkl. full example: <https://docs.flutter.dev/cookbook/navigation/returning-data>
+
+
+## Overview
+
 This unit describes...
 
 1. how to send data to a screen
@@ -279,4 +301,255 @@ class SelectionScreen extends StatelessWidget {
     );
   }
 }
+```
+
+
+
+
+
+## Overview of different data exchange methods
+
+### 1. Using Constructors
+
+Pass data directly through the constructor of the destination widget.
+
+```dart
+class FirstScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: ElevatedButton(
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => SecondScreen(data: 'Hello from FirstScreen'),
+              ),
+            );
+          },
+          child: Text('Go to Second Screen'),
+        ),
+      ),
+    );
+  }
+}
+
+class SecondScreen extends StatelessWidget {
+  final String data;
+
+  SecondScreen({required this.data});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: Text(data),
+      ),
+    );
+  }
+}
+```
+
+
+### 2. Using Named Routes and `RouteSettings`
+
+Define routes in the MaterialApp and pass data using RouteSettings.
+
+```dart
+void main() {
+  runApp(MaterialApp(
+    routes: {
+      '/second': (context) => SecondScreen(),
+    },
+  ));
+}
+
+Navigator.pushNamed(
+  context,
+  '/second',
+  arguments: 'Hello from FirstScreen',
+);
+
+class SecondScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    final args = ModalRoute.of(context)!.settings.arguments as String;
+
+    return Scaffold(
+      body: Center(
+        child: Text(args),
+      ),
+    );
+  }
+}
+```
+
+
+### 3. Using `Navigator.pushNamed` with Arguments
+
+Pass data using the arguments parameter.
+
+```dart
+Navigator.pushNamed(
+  context,
+  '/second',
+  arguments: {'data': 'Hello from FirstScreen'},
+);
+
+class SecondScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    final Map<String, dynamic> args = ModalRoute.of(context)!.settings.arguments as Map<String, dynamic>;
+
+    return Scaffold(
+      body: Center(
+        child: Text(args['data']),
+      ),
+    );
+  }
+}
+```
+
+
+### 4. Using `InheritedWidget`
+
+Share data down the widget tree using an InheritedWidget.
+
+```dart
+class MyInheritedWidget extends InheritedWidget {
+  final String data;
+
+  MyInheritedWidget({required this.data, required Widget child}) : super(child: child);
+
+  @override
+  bool updateShouldNotify(covariant MyInheritedWidget oldWidget) {
+    return oldWidget.data != data;
+  }
+
+  static MyInheritedWidget? of(BuildContext context) {
+    return context.dependOnInheritedWidgetOfExactType<MyInheritedWidget>();
+  }
+}
+
+class ParentWidget extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MyInheritedWidget(
+      data: 'Hello from InheritedWidget',
+      child: ChildWidget(),
+    );
+  }
+}
+
+class ChildWidget extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    final myInheritedWidget = MyInheritedWidget.of(context);
+
+    return Text(myInheritedWidget!.data);
+  }
+}
+```
+
+
+### 5. Using Provider (State Management)
+
+Use a state management solution like Provider to pass data.
+
+```dart
+class DataProvider with ChangeNotifier {
+  String _data = 'Hello from Provider';
+  String get data => _data;
+
+  void updateData(String newData) {
+    _data = newData;
+    notifyListeners();
+  }
+}
+
+void main() {
+  runApp(
+    ChangeNotifierProvider(
+      create: (context) => DataProvider(),
+      child: MyApp(),
+    ),
+  );
+}
+
+class FirstScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: ElevatedButton(
+          onPressed: () {
+            Provider.of<DataProvider>(context, listen: false).updateData('Updated Data');
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => SecondScreen()),
+            );
+          },
+          child: Text('Go to Second Screen'),
+        ),
+      ),
+    );
+  }
+}
+
+class SecondScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    final data = Provider.of<DataProvider>(context).data;
+
+    return Scaffold(
+      body: Center(
+        child: Text(data),
+      ),
+    );
+  }
+}
+```
+
+
+### 6. Using GlobalKeys
+
+Use GlobalKeys to access the state of a widget and its data.
+
+```dart
+final GlobalKey<SecondScreenState> secondScreenKey = GlobalKey<SecondScreenState>();
+
+Navigator.push(
+  context,
+  MaterialPageRoute(builder: (context) => SecondScreen(key: secondScreenKey)),
+);
+
+class SecondScreen extends StatefulWidget {
+  SecondScreen({Key? key}) : super(key: key);
+
+  @override
+  SecondScreenState createState() => SecondScreenState();
+}
+
+class SecondScreenState extends State<SecondScreen> {
+  String data = 'Initial Data';
+
+  void updateData(String newData) {
+    setState(() {
+      data = newData;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: Text(data),
+      ),
+    );
+  }
+}
+
+// Update data from the first screen
+secondScreenKey.currentState?.updateData('Updated Data');
 ```

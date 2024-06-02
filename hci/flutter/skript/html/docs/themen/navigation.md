@@ -1,13 +1,33 @@
-# Navigation between Screens (aka Activities)
+# Navigation between Screens aka Routes
 
-## NavigationBar
+
+!!! success "Key Points"
+    - Flutter provides several widgets for navigating between routes.
+    - `NavigationBar` is the default implementation for a bottom navigation and should be used when the app consists of 3 and up to 5 main areas resp. screens.
+    - A `NavigationBar` is added as argument to the `bottomNavigationBar` parameter of the `Scaffold` widget.
+    - Tabs are another common navigation/layout pattern in apps and follows the Material Design guidelines.
+    - Tabs are implemented using a `TabController` to keep the selected tabs and the screen contents in sync. 
+    - Flutter provides a default implementation of a tab controller called `DefaultTabController`.
+    - Different screens resp. routes should be put in individual Dart/Flutter classes to separate them from the main `.lib`-file.
+
+
+!!! info "Where do you find the relevant information"
+    - How to create and use the `NavigationBar`: <https://api.flutter.dev/flutter/material/NavigationBar-class.html>
+    - How to create and use tabs: <https://docs.flutter.dev/cookbook/design/tabs>
+    - General information about navigation and routing: <https://docs.flutter.dev/ui/navigation>
+    
+
+
+## Background Information and Examples
+
+### NavigationBar
 In most cases using a bottom navigation is recommended and sufficient.
 
 With Material 3, the `NavigationBar`-class is the recommended way for navigation **between 3 and up to 5 screens**.
 
 Flutter provides the [NavigationBar](https://api.flutter.dev/flutter/material/NavigationBar-class.html) class therefore. 
 
-### Example
+#### Full Example
 
 A first simple example of an app that uses a navigation bar with 3 different screens.
 
@@ -159,18 +179,19 @@ class _NavigationExampleState extends State<NavigationExample> {
 }
 ```
 
+<!-- 
 Tasks: (TODO: refine)
 
 - Try to understand
     - how screens are switched based on the selected item 
     - how new screens (views) can be added
     - ...
-- Put the different screens in individual dart/flutter classes to separate them from the main `.lib`-file
+- Put the different screens in individual dart/flutter classes to separate them from the main `.lib`-file -->
 
 
 
 
-## Tabs
+### Tabs
 
 Working with tabs is a common pattern in apps that follow the Material Design guidelines. Flutter includes a convenient way to create tab layouts as part of the material library.
 
@@ -180,7 +201,7 @@ Tabs can be added to an app using the following steps;
 2. Create the tabs
 3. Create content for each tab
 
-### 1. Create a `TabController`
+#### 1. Create a `TabController`
 
 For tabs to work, you need to keep the selected tab and content sections **in sync**. This is the job of the `TabController`.
 
@@ -202,7 +223,7 @@ return MaterialApp(
 
 
 
-### 2. Create the tabs
+#### 2. Create the tabs
 
 When a tab is selected, it needs to display content. You can create tabs using the `TabBar` widget.
 
@@ -234,7 +255,7 @@ Note that the `TabBar` is added to the `bottom` parameter of the `AppBar`.
     If you're manually creating a `TabController`, pass it to the `TabBar`.
 
 
-### 3. Create content for each tab
+#### 3. Create content for each tab
 
 After creating the tabs, display the corresponding content when a tab is selected. For this purpose, use the `TabBarView` widget.
 

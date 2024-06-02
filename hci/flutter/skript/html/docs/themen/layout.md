@@ -1,5 +1,14 @@
 # Layout
 
+!!! success "Key Points"
+    - ...
+
+
+
+!!! info "Read these sources for more information"
+    - A very-well designed tutorial for building layouts: <https://docs.flutter.dev/ui/layout/tutorial>
+    - 
+
 
 ## Basic Properties of Layout Widgets
 
