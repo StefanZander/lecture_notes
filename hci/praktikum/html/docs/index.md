@@ -26,7 +26,7 @@ Auf den folgenden Seiten finden Sie die **Aufgaben** der jeweiligen Praktikumsei
 * [Termin 3: Implementierung der Benutzungsoberfläche](termin3.md)
 * [Termin 4: Implementierung der Applikationslogik](termin4.md)
 * [Termin 5: Präsentation der App](termin5.md)
-* [Abschluss: Usability Test und Inspection sowie Design Review](termin6.md)
+* [Abschluss: Usability Test, Usability Inspection und Design Review](termin6.md)
 
 ----
 Diese Unterlagen wurden mit [mkdocs.org](http://mkdocs.org), [markdown](https://en.wikipedia.org/wiki/Markdown), einem individuell angepassten [Material Theme](https://github.com/squidfunk/mkdocs-material) für MkDocs, der fantastischen [Barlow-Schriftfamilie](https://github.com/jpt/barlow) und [Visual Studio Code](https://code.visualstudio.com/) erstellt.
