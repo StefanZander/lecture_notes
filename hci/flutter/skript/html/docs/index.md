@@ -9,12 +9,12 @@ Die folgenden Inhalte dienen als Richtlinie für die Umsetzung der Semesterproje
 1. [Einführung in Flutter / Grundlegende Konzepte und Besonderheiten](./themen/flutter_introduction.md)
 2. [Grundlagen der Sprache "Dart"](./themen/dart.md)
 3. [Wie designed man eine App / Grundbausteine/Grundgerüst einer Flutter-App](./themen/designing_an_app.md)
-4. [Widgets](./themen/widgets.md)
+4. (halb-OK) [Widgets](./themen/widgets.md)
 5. (OK) [Interactivity and Behaviour](./themen/behaviour.md)
 6. (OK) [Layout](./themen/layout.md)
 7. (OK) [Navigational Elements](./themen/navigation.md)
 8. (OK) [Navigation between Screens](./themen/screen_navigation.md)
-9. (OK) [Dataexchange between Screens](./themen/data_exchange.md)
+9. (OK) [Exchanging Data between Screens](./themen/data_exchange.md)
 10. [Status-/Zustandsmanagement (Speicherung und Wiederherstellung von Zuständen)](./themen/state_management.md)
 11. [Data Structures](./themen/data_structures.md) 
 12. Speicherung auf dem Gerät (inkl. Serialisierung)
@@ -42,6 +42,13 @@ Die folgenden Inhalte dienen als Richtlinie für die Umsetzung der Semesterproje
     - Navigation zwischen Screens
     - Anzeige von Grafiken
     - Nutzung der ListView oder ListTile
+    - Datenabruf von einer externen Quelle
+    - Speicherung des App-Zustands
+    - Globales Zustandsmodell 
+    - (optional) Zugriff auf das Kameramodul
+    - Asynchronität (bspw. asynchroner Datenabruf)
+    - Verarbeitung von JSON
+    - 
 
 
 
