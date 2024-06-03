@@ -1,5 +1,25 @@
 # Widgets
 
+
+!!! success "Key Points"
+    - The Flutter framework for building UIs was inspired by React and takes a similar approach.
+    - Widgets are the central elements for building the UI.
+    - Widgets describe what their view should look like given their current configuration and state.
+    - Widgets are rebuilt when their state change
+    - Flutter incorporates a set of basic widgets
+      - `Text` --- for creating and styling textual content 
+      - `Row`, `Column` --- determine the horizontal and vertical layout resp. positioning of nested widgets. It is based on the Flexbox layout module 
+      - `Stack` --- used for placing contents on top of each other
+      - `Container` --- basic rectangular element that can be decorated using the `BoxDecoration` class. It can also have padding, marging, and constraints applied to its size
+      - `Scaffold` --- 
+      - 
+
+!!! info "Where do you find relevant information"
+    - Buildung user interfaces with Flutter (very good introduction with many examples and related topics): <https://docs.flutter.dev/ui>
+    - Flutter's widget catalogue with links to detailed information about each widget: <https://docs.flutter.dev/ui/widgets>
+
+
+
 ## Stateful and stateless widgets
 
 A widget is either **stateful** or **stateless**.  

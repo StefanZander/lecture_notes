@@ -1,13 +1,31 @@
 # Layout
 
 !!! success "Key Points"
-    - ...
+    - In Flutter, almost everything is a widget --- even layout models are widgets.
+        - Images, icons, and text that you see in a Flutter app are all widgets.
+        - But things you don't see are also widgets, such as the rows, columns, and grids that arrange, constrain, and align the visible widgets.
+    - Widgets are classes used to build UIs.
+    - Widgets are used for both layout and UI elements.
+    - Complex widgets are created by composing simple widgets
+    - An app's UI is built by hierarchically combining widgets that represent UI elements.
+    - `Container` is a widget class that allows you to customize its child widget. Use a Container when you want to add padding, margins, borders, or background color etc.
+    - Complex layouts are a combination of horizontal and vertical layout widgets.
+    - `Row` and `Column` are two of the most commonly used basic primitive widgets for horizontal and vertical layouts. They each take a list of child widgets.
+    - Flutter also offers specialized, higher level widgets such as
+        - `ListTile` --- an easy-to-use widget with properties for leading and trailing icons, and up to 3 lines of text, or 
+        - `ListView` --- a column-like layout that automatically scrolls if its content is too long to fit the available space.
+    - Flutter's default layout model works like the CSS Flexbox layout model.
+    - To minimize the visual confusion that can result from heavily nested layout code, implement pieces of the UI in variables and functions.
 
 
 
 !!! info "Read these sources for more information"
+    - An introduction to layouts in Flutter: <https://docs.flutter.dev/ui/layout>
     - A very-well designed tutorial for building layouts: <https://docs.flutter.dev/ui/layout/tutorial>
-    - 
+    - An overview of the different layout widgets in Flutter: <https://docs.flutter.dev/ui/widgets/layout>
+    - How to use the `ListView`: <https://api.flutter.dev/flutter/widgets/ListView-class.html>
+    - How to use `ListTile`: <https://api.flutter.dev/flutter/material/ListTile-class.html>
+    - A tutorial that explains the principles behind constraints: <https://docs.flutter.dev/ui/layout/constraints> 
 
 
 ## Basic Properties of Layout Widgets
@@ -57,7 +75,7 @@ Ein Scaffold-Widget in Flutter kann nur einen einzigen Body-Widget haben. Der Bo
 
 Wenn Sie mehrere Inhaltsbereiche in einem Bildschirm haben möchten, können Sie Container, Column, Row oder andere Layout-Widgets verwenden, um mehrere Widgets innerhalb des Body-Widgets zu gruppieren und anzuordnen. Zum Beispiel könnten Sie eine Column verwenden, um vertikal angeordnete Inhaltsbereiche zu erstellen, oder eine Row für horizontal angeordnete Bereiche.
 
-Hier ist ein einfaches Beispiel das zeigt, wie sich verschiedene Inhaltsbereiche in einem Scaffold organisieren lassen:
+Das folgende Beispiel zeigt, wie sich verschiedene Inhaltsbereiche in einem Scaffold organisieren lassen:
 
 ```dart
 import 'package:flutter/material.dart';
@@ -105,19 +123,19 @@ In diesem Beispiel wird eine Column verwendet, um drei verschiedene Inhaltsberei
 
 ## Gruppierung von Elementen (Container)
 
-In Flutter ist ein Container ein grundlegendes Widget, das dazu verwendet wird, andere Widgets zu gruppieren, zu positionieren und zu dekorieren. Der Container ermöglicht es, die Größe, das Aussehen und das Verhalten von Widgets zu steuern, die innerhalb des Containers platziert sind.
+In Flutter ist ein **Container** ein grundlegendes Widget, das dazu verwendet wird, andere Widgets zu gruppieren, zu positionieren und zu dekorieren. Der Container ermöglicht es, die Größe, das Aussehen und das Verhalten von Widgets zu steuern, die innerhalb des Containers platziert sind.
 
 Einige der wichtigsten Eigenschaften und Funktionen eines Containers in Flutter:
 
-Größe und Positionierung: Sie können die Breite, Höhe und Position des Containers steuern, indem Sie Eigenschaften wie width, height, margin, padding, alignment und andere verwenden. Dies ermöglicht es, Widgets innerhalb des Containers genau zu positionieren und zu layouten.
+- **Größe und Positionierung**: Sie können die Breite, Höhe und Position des Containers steuern, indem Sie Eigenschaften wie width, height, margin, padding, alignment und andere verwenden. Dies ermöglicht es, Widgets innerhalb des Containers genau zu positionieren und zu layouten.
 
-Dekoration: Sie können die visuelle Darstellung des Containers mithilfe von Dekorationsattributen wie color, border, borderRadius, boxShadow und anderen anpassen. Dadurch können Sie Hintergrundfarben, Rahmen, abgerundete Ecken, Schatteneffekte und andere visuelle Effekte hinzufügen.
+- **Dekoration**: Definieren die visuelle Darstellung des Containers mithilfe von Dekorationsattributen wie color, border, borderRadius, boxShadow etc. Dadurch können Sie Hintergrundfarben, Rahmen, abgerundete Ecken, Schatteneffekte und andere visuelle Effekte hinzufügen.
 
-Transformationen: Der Container unterstützt auch Transformationen wie Rotationen, Skalierungen, Verschiebungen und Scherungen, die es ermöglichen, den Container und die darin enthaltenen Widgets zu transformieren.
+- **Transformationen**: Der Container unterstützt auch Transformationen wie Rotationen, Skalierungen, Verschiebungen und Scherungen, die es ermöglichen, den Container und die darin enthaltenen Widgets zu transformieren.
 
-Constraints: Sie können auch die Größenbeschränkungen und Einschränkungen des Containers mithilfe von Eigenschaften wie constraints, constraints.minWidth, constraints.maxWidth, constraints.minHeight, constraints.maxHeight und anderen steuern.
+- **Constraints**: Steuern die Größenbeschränkungen und Einschränkungen des Containers mithilfe von Eigenschaften wie constraints, constraints.minWidth, constraints.maxWidth, constraints.minHeight, constraints.maxHeight und .
 
-Clippen: Der Container unterstützt das Clippen von Inhalten, um sie innerhalb eines bestimmten Bereichs sichtbar zu machen, indem Sie die clipBehavior-Eigenschaft verwenden.
+- **Clippen**: Der Container unterstützt das Clippen von Inhalten, um sie innerhalb eines bestimmten Bereichs sichtbar zu machen, indem Sie die clipBehavior-Eigenschaft verwenden.
 
 In Flutter wird der Container häufig verwendet, um Layouts zu definieren, Abstände zu steuern, Hintergrundfarben hinzuzufügen und visuelle Effekte auf Widgets anzuwenden. Es ist ein vielseitiges und mächtiges Widget, das in vielen UI-Designs eingesetzt wird, um die gewünschten Layouts und Darstellungen zu erreichen.
 

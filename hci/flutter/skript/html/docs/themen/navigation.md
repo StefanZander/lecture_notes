@@ -8,12 +8,14 @@
     - Tabs are another common navigation/layout pattern in apps and follows the Material Design guidelines.
     - Tabs are implemented using a `TabController` to keep the selected tabs and the screen contents in sync. 
     - Flutter provides a default implementation of a tab controller called `DefaultTabController`.
+    - When there is not enough space for tabs use the `Drawer` widget in combination with a `Scaffold`.
     - Different screens resp. routes should be put in individual Dart/Flutter classes to separate them from the main `.lib`-file.
 
 
 !!! info "Where do you find the relevant information"
     - How to create and use the `NavigationBar`: <https://api.flutter.dev/flutter/material/NavigationBar-class.html>
     - How to create and use tabs: <https://docs.flutter.dev/cookbook/design/tabs>
+    - How to use a `Drawer`: <https://docs.flutter.dev/cookbook/design/drawer>
     - General information about navigation and routing: <https://docs.flutter.dev/ui/navigation>
     
 

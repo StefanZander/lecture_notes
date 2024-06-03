@@ -11,10 +11,10 @@ Die folgenden Inhalte dienen als Richtlinie für die Umsetzung der Semesterproje
 3. [Wie designed man eine App / Grundbausteine/Grundgerüst einer Flutter-App](./themen/designing_an_app.md)
 4. [Widgets](./themen/widgets.md)
 5. (OK) [Interactivity and Behaviour](./themen/behaviour.md)
-6. [Layout (TODO: Flutter-doc iPad verlinken)](./themen/layout.md)
-7. (OK) [Navigationselemente](./themen/navigation.md)
-8. (OK) [Navigation zwischen Screens](./themen/screen_navigation.md)
-9. (OK) [Datenaustausch zwischen Screens](./themen/data_exchange.md)
+6. (OK) [Layout](./themen/layout.md)
+7. (OK) [Navigational Elements](./themen/navigation.md)
+8. (OK) [Navigation between Screens](./themen/screen_navigation.md)
+9. (OK) [Dataexchange between Screens](./themen/data_exchange.md)
 10. [Status-/Zustandsmanagement (Speicherung und Wiederherstellung von Zuständen)](./themen/state_management.md)
 11. [Data Structures](./themen/data_structures.md) 
 12. Speicherung auf dem Gerät (inkl. Serialisierung)
@@ -38,8 +38,10 @@ Die folgenden Inhalte dienen als Richtlinie für die Umsetzung der Semesterproje
 ## Diese Elemente sollten in die App
 
 !!! success "Diese Sprachelemente sollten sich in der App wiederfinden"
-    - ...
-    - ...
+    - mehrere Screens
+    - Navigation zwischen Screens
+    - Anzeige von Grafiken
+    - Nutzung der ListView oder ListTile
 
 
 
