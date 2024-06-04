@@ -1,6 +1,6 @@
 # Grundlagen der Sprache "Dart"
 
-!!! success "Fahrplan für die Einheit: Das sollten Sie lernen... / Was sollten Sie aus dieser Einheit mitnehmen ?"
+!!! success "Fahrplan für die Einheit: Das sollten Sie aus dieser Einheit mitnehmen"
     - Variablen unterschiedlichen Typs sicher erstellen
     - Grundlagen der Kontrollflusssteuerung
     - Definition von Funktionen
@@ -12,20 +12,27 @@
     - ... 
 
 !!! note "Warum ist dieses Kapiel wichtig...?"
-    Dart ist die Programmiersprache für die Erstellung von Flutter-Apps. 
+    - Dart ist die Programmiersprache für die Erstellung von Flutter-Apps. 
     Ohne Dart können sie keine Flutter-Apps erstellen.
 
-!!! note "Was lernen Sie in dieser Einheit..."
+
+!!! info "Diese Quellen sollten Sie sich ansehen"
+    - Überblick über die Sprache Dart: <https://dart.dev/overview>
+    - Eine Übersicht aller wesentlicher Sprechelemente die für die Entwicklung mit FLutter benötigt werden: <https://dart.dev/language>
+    - Eine Übersicht der wesentlichen Sprachkonzepte in Dart: <https://dart.dev/language#important-concepts>
+
+
+<!-- !!! note "Was lernen Sie in dieser Einheit..."
     - ....
   
 !!! note "Voraussetzung für diese Einheit (das sollten sie kennen)"
     - ...
-  
+   -->
 
 
     
 
-    
+<!--     
 ### Constructors
 
 If you come from a language like C# or Java, you might expect to see `new Map()` instead of just `Map()`. In Dart, the `new` keyword is _optional_. For details, see [Using constructors](https://dart.dev/language/classes#using-constructors).
@@ -45,4 +52,4 @@ Quellen:
 - https://dart.dev/language
   - Stellt alle wesentlichen Sprechkonzepte und -elemente vor, die für die Entwicklung mit FLutter benötigt werden
 - Eine Übersicht der wesentlichen Sprachkonzepte
-  - https://dart.dev/language#important-concepts
+  - https://dart.dev/language#important-concepts -->

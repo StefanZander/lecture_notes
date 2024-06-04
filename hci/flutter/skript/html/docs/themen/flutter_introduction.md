@@ -1,5 +1,31 @@
 # Einführung in die Entwicklung von Multi-Plattform-Apps mit Flutter
 
+!!! success "Key Points"
+    - The main thing to learn is to combine widgets into a tree-like structure in order to design a complex and usable UI.
+    - The most important tool in Flutter is the __refactor function__.
+    - Flutter allows to maintain a single code basis for different platforms.
+    - Flutter provides a comprehensive library of pre-designed widgets for building complex and responsive UIs.
+    - Basic UI elements (widgets) can be combined into more complex custom widgets.
+    - Flutter provides a hot-reload function that allows for real-time updates of the UI without reloading or restarting the app.
+    - Flutter code compiles to ARM or x86 native machine code using Dart and ensures high performance.
+    - Flutter supports both Material Design for Android and Cupertino for iOS, ensuring a native look and feel on both platforms.
+    - Flutter has an excellent support for a wide variety of popular state-of-the-art IDEs like Visual Studio Code, Android Studio, and IntelliJ IDEA with a set of debugging and productivity tools.
+    - Flutter has a very well-maintained official documentation with lot's of tutorials.
+  
+
+
+!!! info "Recommended Learning Resources"
+    - A good introductory article about the basic elements of Flutter (heise+-article): <https://lernen.h-da.de/mod/resource/view.php?id=916362>
+    - Learn about how to develop cross-platform-apps using Flutter (heise+-article): <https://lernen.h-da.de/mod/resource/view.php?id=916363>
+    - Learn how to install Flutter: <https://docs.flutter.dev/get-started/install>
+    - (highly recommended) Do the "Write your first Flutter app" codelab: <https://docs.flutter.dev/get-started/codelab>
+    - An overview of introductory material when learning Flutter: <https://docs.flutter.dev/get-started/learn-more>
+
+
+
+
+## Some general Information
+
 Create a new Flutter-project using the `flutter new` command in the console.
 
 Widget Inspector hilft enorm bei der Entwicklung und Validierung von Flutter-Apps. Dieser stellt die in/auf einem Screen enthaltenen Widgets in Form eines Widget-Trees dar.
@@ -51,7 +77,7 @@ As a consequence, it is quite common in Flutter source code to read this notatio
     - b) Decentralized in each widget.
 - Better: Data that belong exclusively to a widget should be stored/held there and not in a central store. Some state is only relevant for a specific widget so it is better stored there.
 
-StatefulWidgets have a `State` that is stored in the widget itself.
+Stateful widgets have a `State` that is stored in the widget itself.
 
 Stateful widgets can change their state by themselves.
 
@@ -61,7 +87,7 @@ State classes are private classes – indicated by the `_` underscore before th
 
 State is data that change throughout the lifecycle of an app.
 
-Define: Mutable and Immutable
+
 
 
 

@@ -1,26 +1,26 @@
 # Einführung in Flutter und Dart
 
-Begleitmaterial zur Veranstaltung "Human Computer Interaction" (Modulnummer xxxxx).
+Begleitmaterial zur Veranstaltung "Human Computer Interaction" (Modulnummer 30.7328).
 
 Die folgenden Inhalte dienen als Richtlinie für die Umsetzung der Semesterprojekt-App. Jedes der aufgeführten Themen sollte sich in einer Funktion innerhalb der App wiederfinden. 
 
 ## Inhalte
 
-1. [Einführung in Flutter / Grundlegende Konzepte und Besonderheiten](./themen/flutter_introduction.md)
-2. [Grundlagen der Sprache "Dart"](./themen/dart.md)
-3. [Wie designed man eine App / Grundbausteine/Grundgerüst einer Flutter-App](./themen/designing_an_app.md)
-4. (halb-OK) [Widgets](./themen/widgets.md)
-5. (OK) [Interactivity and Behaviour](./themen/behaviour.md)
-6. (OK) [Layout](./themen/layout.md)
-7. (OK) [Navigational Elements](./themen/navigation.md)
-8. (OK) [Navigation between Screens](./themen/screen_navigation.md)
-9. (OK) [Exchanging Data between Screens](./themen/data_exchange.md)
-10. [Status-/Zustandsmanagement (Speicherung und Wiederherstellung von Zuständen)](./themen/state_management.md)
-11. [Data Structures](./themen/data_structures.md) 
-12. Speicherung auf dem Gerät (inkl. Serialisierung)
-13. Zugriff auf externe Quellen/APIs (wie greift man externe Daten ab)
-14. Verarbeitung von JSON
-15. Nebenläufigkeit / Asynchronität
+1. [Introduction to Flutter](./themen/flutter_introduction.md)
+2. [Foundations about the programming language "Dart"](./themen/dart.md)
+3. [How to build a basic Flutter app](./themen/designing_an_app.md)
+4. [Widgets](./themen/widgets.md)
+5. [Interactivity and Behaviour](./themen/behaviour.md)
+6. [Layout](./themen/layout.md)
+7. [Navigational Elements](./themen/navigation.md)
+8. [Navigation between Screens](./themen/screen_navigation.md)
+9. [Exchanging Data between Screens](./themen/data_exchange.md)
+10. TBD – [Status-/Zustandsmanagement (Speicherung und Wiederherstellung von Zuständen)](./themen/state_management.md)
+11. TBD - [Data Structures](./themen/data_structures.md) 
+12. TBD - Speicherung auf dem Gerät (inkl. Serialisierung)
+13. TBD – Zugriff auf externe Quellen/APIs (wie greift man externe Daten ab)
+14. TBD – Verarbeitung von JSON
+15. TBD – Nebenläufigkeit / Asynchronität
 
 <!-- 16. Fortgestrittene Widgets
     1.  RecyclerView
@@ -29,26 +29,27 @@ Die folgenden Inhalte dienen als Richtlinie für die Umsetzung der Semesterproje
 
 
 
-### Ergänzende Themen
+<!-- ### Ergänzende Themen
 
-1. Setup (--> was braucht man um eine Flutter-App zu erstellen?)
-2. Lebenszyklus einer App
+1. Setup (was braucht man um eine Flutter-App zu erstellen?)
+2. Lebenszyklus einer App -->
 
 
 ## Diese Elemente sollten in die App
 
 !!! success "Diese Sprachelemente sollten sich in der App wiederfinden"
-    - mehrere Screens
+    - App bestehend aus mehreren Screens
     - Navigation zwischen Screens
     - Anzeige von Grafiken
-    - Nutzung der ListView oder ListTile
+    - Nutzung der `ListView` oder `ListTile`
     - Datenabruf von einer externen Quelle
     - Speicherung des App-Zustands
     - Globales Zustandsmodell 
     - (optional) Zugriff auf das Kameramodul
     - Asynchronität (bspw. asynchroner Datenabruf)
     - Verarbeitung von JSON
-    - 
+    - Zurücksetzen der Einstellungen
+    - ...
 
 
 

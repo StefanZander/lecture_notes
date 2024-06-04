@@ -2,7 +2,15 @@ site_name: "Introduction to Flutter and Dart"
 
 nav:
   - 'Main Page': 'index.md'
+  - 'Introduction': './themen/flutter_introduction.md'
   - 'Dart': './themen/dart.md'
+  - 'Building an App': './themen/designing_an_app.md'
+  - 'Widgets': './themen/widgets.md'
+  - 'Interactivity': './themen/behaviour.md'
+  - 'Layout': './themen/layout.md'  
+  - 'Navigational Elements': './themen/navigation.md'
+  - 'Screen Navigation': './themen/screen_navigation.md'
+  - 'Data Exchange': './themen/data_exchange.md'  
 
 extra_css:
   - stylesheets/extra.css
