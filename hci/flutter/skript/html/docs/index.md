@@ -40,18 +40,30 @@ Die folgenden Inhalte dienen als Richtlinie für die Umsetzung der Semesterproje
 !!! success "Diese Sprachelemente sollten sich in der App wiederfinden"
     - App bestehend aus mehreren Screens
     - Navigation zwischen Screens
-    - Anzeige von Grafiken
+    - Anzeigen von Grafiken
     - Nutzung der `ListView` oder `ListTile`
     - Datenabruf von einer externen Quelle
     - Speicherung des App-Zustands
-    - Globales Zustandsmodell 
+    - Globales Zustandsmodell für Widget-übergreifende Daten
     - (optional) Zugriff auf das Kameramodul
     - Asynchronität (bspw. asynchroner Datenabruf)
-    - Verarbeitung von JSON
-    - Zurücksetzen der Einstellungen
+    - Verarbeitung von JSON (bspw. als Resultat eines API-Aufrufs)
+    - Zurücksetzen der Einstellungen bzw. globalen App-Daten
+    - Unmittelbare Rückmeldung bei Benutzungseingaben
+    - ein Fehler-vermeidendes Design der UI
+    - Zustand der App zu jeder Zeit sichtbar
+    - Speicherung von Daten lokal (bspw. mittels SharedPreferences oder als serialisiertes File)
     - ...
 
 
+## Diese Elemente brauchen Sie nicht zu implementieren
+
+!!! success "Diese Elemente müssen Sie nicht implementieren"
+    - Benutzendenverwaltung
+    - Backend
+    - Full-fledged Datenbank
+    - Alle im User Research erarbeiteten Begeisterungsfaktoren (diese können Sie mocken)
+    - Bei mehreren Rollen: die volle Funktionalität für jede Rolle; konzentrieren Sie sich auf eine Rolle; wenn Sie mehr machen (wollen) ist das natürlich vorteilhaft und fließt in die Bewertung mit ein.
 
 <!--
 ## How to use this guide
