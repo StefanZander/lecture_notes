@@ -11,6 +11,9 @@
     - Flutter supports both Material Design for Android and Cupertino for iOS, ensuring a native look and feel on both platforms.
     - Flutter has an excellent support for a wide variety of popular state-of-the-art IDEs like Visual Studio Code, Android Studio, and IntelliJ IDEA with a set of debugging and productivity tools.
     - Flutter has a very well-maintained official documentation with lot's of tutorials.
+    - Two aspects make developing with Flutter difficult:
+        - Deeply neested widget trees 
+        - No simple copy-and-paste
   
 
 
