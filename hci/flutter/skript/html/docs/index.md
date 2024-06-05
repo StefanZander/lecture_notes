@@ -53,7 +53,7 @@ Die folgenden Inhalte dienen als Richtlinie für die Umsetzung der Semesterproje
 
 
 
-
+<!--
 ## How to use this guide
 
 This project serves as a guideline through the different flutter topics that should be implemented in the semester project app.
@@ -74,3 +74,4 @@ Disadvantages of flutter (source: fireship.io)
     docs/
         index.md  # The documentation homepage.
         ...       # Other markdown pages, images and other files.
+-->
