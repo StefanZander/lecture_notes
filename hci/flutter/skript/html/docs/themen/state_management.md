@@ -1,8 +1,18 @@
 # State Management
 
+
+!!! success "Key Points"
+    - ...
+    - ...
+
+
+!!! info "Recommended Learning Resources"
+    - 
+
+
 ## General
 
-State is represented by values hold in variables (app data).
+State is represented by concrete values stored in variables (app data).
 
 State (ie. data expressed as values) can be local (ie. for single widgets) or global (ie. data that need to be available to the entire app).
 
@@ -11,9 +21,8 @@ State (ie. data expressed as values) can be local (ie. for single widgets) or gl
 
 Flutter distinguished between two different types of states:
 
-a) Ephemeral state – i.e. state pertaining only to a single widget (e.g. the currently selected navigation bar item)
-
-b) App-state – i.e. data that needs to be available to the entire app and multiple widgets (e.g. the items added to a shopping cart)
+- **Ephemeral state** – i.e. state pertaining only to a single widget (e.g. the currently selected navigation bar item)
+- **App-state** – i.e. data that needs to be available to the entire app and multiple widgets (e.g. the items added to a shopping cart)
 
 
 ## (A Brief) Overview of all the state management approaches available to flutter
@@ -40,13 +49,13 @@ There are two types of widgets: stateless and stateful widgets
 
 
 
-## Statemanagement in the App
+## Statemanagement on the App-Level
 
-Statemanagement for the entire app works similar to the observer pattern
+Statemanagement for the entire app works similar to the observer pattern.
 
 Interested widgets can hold a reference of the global state class
 
-Global state is usually implemented in an separate class
+Global state is usually implemented in an separate class.
 
 
 ### ChangeNotifierProvider

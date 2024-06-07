@@ -15,9 +15,9 @@ Die folgenden Inhalte dienen als Richtlinie für die Umsetzung der Semesterproje
 7. [Navigational Elements](./themen/navigation.md)
 8. [Navigation between Screens](./themen/screen_navigation.md)
 9. [Exchanging Data between Screens](./themen/data_exchange.md)
-10. TBD – [Status-/Zustandsmanagement (Speicherung und Wiederherstellung von Zuständen)](./themen/state_management.md)
+10. TBD – [State Management (Storage and Recovery of State Data across the App)](./themen/state_management.md)
 11. TBD - [Data Structures](./themen/data_structures.md) 
-12. TBD - Speicherung auf dem Gerät (inkl. Serialisierung)
+12. [Persisting Data (Local Storage and Serialization)](./themen/persistence.md)
 13. TBD – Zugriff auf externe Quellen/APIs (wie greift man externe Daten ab)
 14. TBD – Verarbeitung von JSON
 15. TBD – Nebenläufigkeit / Asynchronität
