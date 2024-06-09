@@ -39,6 +39,8 @@ Stellen Sie hierbei auch folgende Überlegungen an:
 
 1. :material-clipboard-list: **Interviewleitfaden**: Erarbeiten Sie innerhalb ihres Teams einen **Interviewleitfaden**, d.h., überlegen Sie sich, welche Fragen Sie im Rahmen des Interviews ihren Personas (=Stakeholdern) stellen, um mehr über die Nutzungsgewohnheiten, Wünsche und Erwartungen zu erfahren. Notieren Sie diese in Form eines Leitfadens für die Durchführung eines **teilstandardisierten Interviews**. 
 
+    Notieren Sie Forschungsfragen und zugehörige Hypothesen, die Sie in den Leitfragen und im Interview bzw. im Zuge der Auswertugn aufgreifen und analysieren. 
+
     Das Interview dient als Grundlage der Erstellung von
 
     * Anwendungsszenarien
