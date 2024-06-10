@@ -38,27 +38,27 @@ Die folgenden Inhalte dienen als Richtlinie für die Umsetzung der Semesterproje
 ## Diese Elemente sollten in die App
 
 !!! success "Diese Sprachelemente sollten sich in der App wiederfinden"
-    - App bestehend aus mehreren Screens
-    - Navigation zwischen Screens
-    - Anzeigen von Grafiken
-    - Nutzung der `ListView` oder `ListTile`
-    - Datenabruf von einer externen Quelle
-    - Speicherung des App-Zustands
-    - Globales Zustandsmodell für Widget-übergreifende Daten
-    - (optional) Zugriff auf das Kameramodul
-    - Asynchronität (bspw. asynchroner Datenabruf)
-    - Verarbeitung von JSON (bspw. als Resultat eines API-Aufrufs)
-    - Zurücksetzen der Einstellungen bzw. globalen App-Daten
-    - Unmittelbare Rückmeldung bei Benutzungseingaben
-    - ein Fehler-vermeidendes Design der UI
-    - Zustand der App zu jeder Zeit sichtbar
-    - Speicherung von Daten lokal (bspw. mittels SharedPreferences oder als serialisiertes File)
+    - [x] App bestehend aus mehreren Screens
+    - [x] Navigation zwischen Screens
+    - [x] Anzeigen von Grafiken
+    - [x] Nutzung der `ListView` oder `ListTile`
+    - [x] Datenabruf von einer externen Quelle
+    - [x] Speicherung des App-Zustands
+    - [x] Globales Zustandsmodell für Widget-übergreifende Daten
+    - [x] (optional) Zugriff auf das Kameramodul
+    - [x] Asynchronität (bspw. asynchroner Datenabruf)
+    - [x] Verarbeitung von JSON (bspw. als Resultat eines API-Aufrufs)
+    - [x] Zurücksetzen der Einstellungen bzw. globalen App-Daten
+    - [x] Unmittelbare Rückmeldung bei Benutzungseingaben
+    - [x] ein Fehler-vermeidendes Design der UI
+    - [x] Zustand der App zu jeder Zeit sichtbar
+    - [x] Speicherung von Daten lokal (bspw. mittels `SharedPreferences` oder als serialisiertes File)
     - ...
 
 
 ## Diese Elemente brauchen Sie nicht zu implementieren
 
-!!! success "Diese Elemente müssen Sie nicht implementieren"
+!!! failure "Diese Elemente müssen Sie nicht implementieren"
     - Benutzendenverwaltung
     - Backend
     - Full-fledged Datenbank
