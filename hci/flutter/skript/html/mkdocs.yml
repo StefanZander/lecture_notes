@@ -11,6 +11,9 @@ nav:
   - 'Navigational Elements': './themen/navigation.md'
   - 'Screen Navigation': './themen/screen_navigation.md'
   - 'Data Exchange': './themen/data_exchange.md'  
+  - 'State Management': './themen/state_management.md' 
+  - 'Data Structures': './themen/data_structures.md' 
+  - 'Persistence': './themen/persistence.md'  
 
 extra_css:
   - stylesheets/extra.css

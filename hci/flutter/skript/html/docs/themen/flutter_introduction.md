@@ -14,6 +14,7 @@
     - Two aspects make developing with Flutter difficult:
         - Deeply neested widget trees 
         - No simple copy-and-paste
+    - Flutter is *declarative*, meaning that there are no methods such as `widget.setText(...)`; instead, you change a widget's state and the framework automatically rebuilds the UI (or parts of it).
   
 
 
@@ -23,6 +24,7 @@
     - Learn how to install Flutter: <https://docs.flutter.dev/get-started/install>
     - (highly recommended) Do the "Write your first Flutter app" codelab: <https://docs.flutter.dev/get-started/codelab>
     - An overview of introductory material when learning Flutter: <https://docs.flutter.dev/get-started/learn-more>
+    - A nice and short introduction to declarative UI programming; read this to learn more about Flutter's approach to developing/UIs: <https://docs.flutter.dev/get-started/flutter-for/declarative>
 
 
 
