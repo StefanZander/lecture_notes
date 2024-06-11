@@ -14,6 +14,8 @@ nav:
   - 'State Management': './themen/state_management.md' 
   - 'Data Structures': './themen/data_structures.md' 
   - 'Persistence': './themen/persistence.md'  
+  - 'Fetching': './themen/fetching.md'  
+  - 'JSON': './themen/json.md'  
 
 extra_css:
   - stylesheets/extra.css

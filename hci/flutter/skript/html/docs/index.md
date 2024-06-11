@@ -18,8 +18,8 @@ Die folgenden Inhalte dienen als Richtlinie für die Umsetzung der Semesterproje
 10. [State Management (Storage and Recovery of State Data across the App)](./themen/state_management.md)
 11. TBD - [Data Structures](./themen/data_structures.md) 
 12. [Persisting Data (Local Storage and Serialization)](./themen/persistence.md)
-13. TBD – Zugriff auf externe Quellen/APIs (wie greift man externe Daten ab)
-14. TBD – Verarbeitung von JSON
+13. [Fetch Data from the Internet](./themen/fetching.md)
+14. [Processing JSON Data](./themen/json.md)
 15. TBD – Nebenläufigkeit / Asynchronität
 
 <!-- 16. Fortgestrittene Widgets
@@ -64,6 +64,8 @@ Die folgenden Inhalte dienen als Richtlinie für die Umsetzung der Semesterproje
     - Full-fledged Datenbank
     - Alle im User Research erarbeiteten Begeisterungsfaktoren (diese können Sie mocken)
     - Bei mehreren Rollen: die volle Funktionalität für jede Rolle; konzentrieren Sie sich auf eine Rolle; wenn Sie mehr machen (wollen) ist das natürlich vorteilhaft und fließt in die Bewertung mit ein.
+    - Kein Update von Web Resourcen
+    - Kein Senden oder Löschen von Daten an einem Endpoint
 
 <!--
 ## How to use this guide
