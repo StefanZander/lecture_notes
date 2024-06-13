@@ -12,10 +12,11 @@ nav:
   - 'Screen Navigation': './themen/screen_navigation.md'
   - 'Data Exchange': './themen/data_exchange.md'  
   - 'State Management': './themen/state_management.md' 
-  - 'Data Structures': './themen/data_structures.md' 
+  - 'Collections': './themen/collections.md' 
   - 'Persistence': './themen/persistence.md'  
   - 'Fetching': './themen/fetching.md'  
-  - 'JSON': './themen/json.md'  
+  - 'JSON': './themen/json.md'
+  - 'Asychronity': './themen/asynchronity.md'
 
 extra_css:
   - stylesheets/extra.css

@@ -16,11 +16,11 @@ Die folgenden Inhalte dienen als Richtlinie für die Umsetzung der Semesterproje
 8. [Navigation between Screens](./themen/screen_navigation.md)
 9. [Exchanging Data between Screens](./themen/data_exchange.md)
 10. [State Management (Storage and Recovery of State Data across the App)](./themen/state_management.md)
-11. TBD - [Data Structures](./themen/data_structures.md) 
+11. [Collections](./themen/collections.md) 
 12. [Persisting Data (Local Storage and Serialization)](./themen/persistence.md)
 13. [Fetch Data from the Internet](./themen/fetching.md)
 14. [Processing JSON Data](./themen/json.md)
-15. TBD – Nebenläufigkeit / Asynchronität
+15. [Asychronity in Dart and Flutter](./themen/asynchronity.md)
 
 <!-- 16. Fortgestrittene Widgets
     1.  RecyclerView
