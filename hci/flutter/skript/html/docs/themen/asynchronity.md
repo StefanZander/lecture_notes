@@ -18,3 +18,4 @@
 
 !!! info "Recommended Learning Resources"
     - A very good and comprehensive introduction to asychronous programming in Dart and Flutter. Highly recommended to read: <https://dart.dev/libraries/async/async-await>
+    - This video from the official Flutter Youtube-channel greatly explains the usage of futures in combination with async and await to write asynchronous code in Dart: <https://youtu.be/SmTCmDMi4BY?si=rBatgx5pihJLy7qb>
