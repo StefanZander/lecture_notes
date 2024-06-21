@@ -21,7 +21,7 @@ Die folgenden Inhalte dienen als Richtlinie für die Umsetzung der Semesterproje
 13. [Fetch Data from the Internet](./themen/fetching.md)
 14. [Processing JSON Data](./themen/json.md)
 15. [Asychronity in Dart and Flutter](./themen/asynchronity.md)
-
+16. [Recommended .gitignore-settings](./themen/gitignore.md)
 <!-- 16. Fortgestrittene Widgets
     1.  RecyclerView
     2.  Gesten

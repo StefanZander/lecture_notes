@@ -17,6 +17,7 @@ nav:
   - 'Fetching': './themen/fetching.md'  
   - 'JSON': './themen/json.md'
   - 'Asychronity': './themen/asynchronity.md'
+  - '.gitignore': './themen/gitignore.md'
 
 extra_css:
   - stylesheets/extra.css
