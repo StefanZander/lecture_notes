@@ -5,17 +5,37 @@
         - Images, icons, and text that you see in a Flutter app are all widgets.
         - But things you don't see are also widgets, such as the rows, columns, and grids that arrange, constrain, and align the visible widgets.
     - Widgets are classes used to build UIs.
-    - Widgets are used for both layout and UI elements.
-    - Complex widgets are created by composing simple widgets
+    - Widgets are used for both **layout** and **UI elements**.
+    - Complex widgets are created by composing simple widgets.
     - An app's UI is built by hierarchically combining widgets that represent UI elements.
-    - `Container` is a widget class that allows you to customize its child widget. Use a Container when you want to add padding, margins, borders, or background color etc.
-    - Complex layouts are a combination of horizontal and vertical layout widgets.
-    - `Row` and `Column` are two of the most commonly used basic primitive widgets for horizontal and vertical layouts. They each take a list of child widgets.
+    - Widgets have a `build()` method. Instantiating and returning a widget in the app's `build()` method displays the widget.
+    - Depending of its type, widgets have a single `child` property for one direct child or a `children` property if a widget hosts many children
+      -  `Center` or `Container` take a single child
+      -  `Row`, `Column`, `ListView`, or `Stack` take a list of widgets.
+   - `Center` centers content horizontally and vertically.
+        - If its dimensions plus `widthfactor` and `heightfactor` are not constraint, it takes the dimensions of its child.
+    - `Container` 
+        - allows to customize its child widget. 
+        - Use a Container when you want to add padding, margins, borders, or background color etc.
+    - `Row` and `Column` 
+        - are two of the most commonly used basic primitive widgets for horizontal and vertical layouts. 
+        - They each take a list of child widgets.
+        - A child widget can itself be a `Row`, `Column`, or other complex widget.
+        - You can specify how a `Row` or `Column` aligns its children, both vertically and horizontally.
+        - You can stretch or constrain specific child widgets.
+        - You can specify how child widgets use the Row's or Column's available space.
+        - You control how a row or column aligns its children using the `mainAxisAlignment` and `crossAxisAlignment` properties. 
+          - For a **row**, the main axis runs horizontally and the cross axis runs vertically. 
+          - For a **column**, the main axis runs vertically and the cross axis runs horizontally.
+        - Widgets can be sized to fit within a row or column by using the `Expanded` widget.
+            - The `flex` property allows for specifying a size factor in order to shrink or scale a widget.
     - Flutter also offers specialized, higher level widgets such as
         - `ListTile` --- an easy-to-use widget with properties for leading and trailing icons, and up to 3 lines of text, or 
         - `ListView` --- a column-like layout that automatically scrolls if its content is too long to fit the available space.
+    - For a Material app, you can use a `Scaffold` widget; it provides a default banner, background color, and has API for adding drawers, snack bars, and bottom sheets.
+    - Complex layouts are a combination of horizontal and vertical layout widgets.
     - Flutter's default layout model works like the CSS Flexbox layout model.
-    - To minimize the visual confusion that can result from heavily nested layout code, implement pieces of the UI in variables and functions.
+    - To minimize the visual confusion that can result from heavily nested layout code, **implement pieces of the UI** in **variables** and **functions**.
 
 
 

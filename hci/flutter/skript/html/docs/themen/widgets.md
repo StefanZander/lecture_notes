@@ -7,16 +7,20 @@
     - Widgets describe what their view should look like given their current configuration and state.
     - Widgets are rebuilt when their state change
     - Flutter incorporates a set of basic widgets
-      - `Text` --- for creating and styling textual content 
-      - `Row`, `Column` --- determine the horizontal and vertical layout resp. positioning of nested widgets. It is based on the Flexbox layout module 
-      - `Stack` --- used for placing contents on top of each other
-      - `Container` --- basic rectangular element that can be decorated using the `BoxDecoration` class. It can also have padding, marging, and constraints applied to its size
-      - `Scaffold` --- 
-      - 
+        - `Text` --- for creating and styling textual content 
+        - `Row`, `Column` --- determine the horizontal and vertical layout resp. positioning of nested widgets. It is based on the Flexbox layout module 
+        - `Stack` --- used for placing contents on top of each other
+        - `Container` --- basic rectangular element that can be decorated using the `BoxDecoration` class. It can also have padding, marging, and constraints applied to its size
+        - `Scaffold` --- provides many pre-implemented visual features for a matieral themed app such as an appbar, a default banner, customizable background color, a drawer, snack bar etc.
+    - When you add images to your project, you need to update the `pubspec.yaml` file to access them.
+    - Widgets have a `build()` method the return value of which determines its visual representation. The widget is drawn when this method is executed.
 
-!!! info "Where do you find relevant information"
+
+
+!!! info "Recommended Learning Resources"
     - Buildung user interfaces with Flutter (very good introduction with many examples and related topics): <https://docs.flutter.dev/ui>
     - Flutter's widget catalogue with links to detailed information about each widget: <https://docs.flutter.dev/ui/widgets>
+    - Learn how to add assets and images to a flutter app: <https://docs.flutter.dev/ui/assets/assets-and-images>
 
 
 

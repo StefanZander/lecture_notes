@@ -19,3 +19,38 @@
 !!! info "Recommended Learning Resources"
     - A very good and comprehensive introduction to asychronous programming in Dart and Flutter. Highly recommended to read: <https://dart.dev/libraries/async/async-await>
     - This video from the official Flutter Youtube-channel greatly explains the usage of futures in combination with async and await to write asynchronous code in Dart: <https://youtu.be/SmTCmDMi4BY?si=rBatgx5pihJLy7qb>
+
+
+
+## Some Examples
+
+To be used in the lectures.
+
+```dart
+Future<int> _loadFromDisk() {
+  return Future.delayed(const Duration(seconds: 4), () => 4711);
+  // print('Data successfully loaded from disk.');
+  // return 4711;
+}
+
+Future<String> _fetchNetworkData(int id) {
+  return Future.delayed(
+      const Duration(seconds: 2), () => 'JSON incomming for id $id...');
+}
+
+void createData() async {
+  final id = await _loadFromDisk();
+  print('id $id successfully loaded.');
+  final data = await _fetchNetworkData(id);
+  print('Data \"$data\" successfully finished.');
+}
+
+void main() {
+  print('Starting the retrieval process...');
+  createData();
+  print('Hey, I (=app) want to remain responsive!');
+  for (int i = 0; i < 10; i++) {
+    print('...counting: $i');
+  }
+}
+```
