@@ -29,9 +29,9 @@ Alle **Protokolle** aus den folgenden Teilaufgaben kommen in die Projektmappe.
 
 ## Durchführung
 
-- Im Präsenztermin präsentiert jede Gruppe in **max. 15-30 Minuten** die entwickelte App mittels geeigneter technischer Tools und Hardware <!--BBB und Screensharing-->
+- Im Präsenztermin präsentiert jede Gruppe in **max. 15 Minuten** die entwickelte App mittels geeigneter technischer Tools und Hardware <!--BBB und Screensharing-->
 - Die Präsentation kann am **Emulator** oder einem **realen Gerät** (bevorzugt) erfolgen.
-- Präsentieren Sie alle Funktionen, die Sie umgesetzt haben (--> siehe [Termin 2](termin2.md)) einschl. etwaiger Leistungs- und Begeisterungsfaktoren. 
+- Präsentieren Sie alle Funktionen, die Sie umgesetzt haben einschl. etwaiger Leistungs- und Begeisterungsfaktoren. 
 - Alles was Sie _nicht_ präsentieren kann nicht gewertet werden! Achten Sie deshalb darauf keine Zeit zu vergeuden.
 - Stellen Sie _VOR_ Beginn der Praktikumseinheit sicher, dass App und Server laufen und die Kommunikation funktioniert.
 - Bereiten Sie die Demonstration so vor, als würde die App das **erste Mal gestartet** werden. 
@@ -40,7 +40,8 @@ Alle **Protokolle** aus den folgenden Teilaufgaben kommen in die Projektmappe.
     !!! info "Löschen der App-Daten auf Android-Mobiltelefonen"
         Langes Drücken auf das App-Icon ermöglicht das Löschen des Cache und der App.-Daten (Storage) bei den meisten Android-Geräten.
 
-- Die Präsentation verläuft **interaktiv**, d.h., der Dozierende wird während der Präsentation Fragen stellen oder Sie bitten, bestimmte Funktionen zu demonstrieren. Setzen Sie diese Aufforderunge schnell und zielgerichtet um. 
+- Die Präsentation verläuft **interaktiv**, d.h., der Dozierende wird während der Präsentation Fragen stellen oder Sie bitten, bestimmte Funktionen zu demonstrieren. Setzen Sie diese Aufforderungen schnell und zielgerichtet um.
+- Tipp: Präsentieren Sie den Weg durch die App aus **Sicht eines Stereotypen**, d.h., starten Sie bei den Zielen / Wünschen / Bedürfnissen des Stereotypen und zeigen Sie, durch welche Funktionen bzw. Designentscheidungen diese durch die App adressiert werden. Gehen Sie insbesondere auch auf die Learnings und wesentlichen Erkenntnisse aus den jeweiligen Phasen ein und zeigen Sie, wie sich diese in der App darstellen bzw. wie Sie diese aufgegriffen und umgesetzt haben.
 
 !!! warning "Alles was Sie nicht präsentieren kann nicht gewertet werden."
 
