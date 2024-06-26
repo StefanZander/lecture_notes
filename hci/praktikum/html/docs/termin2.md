@@ -13,7 +13,7 @@
 ### Vorbereitung
 
 1. Tragen Sie die wichtigsten :material-brain: Erkenntnisse aus dem :material-heart-search: User Research zusammen, diskutieren und reflektieren Sie diese gemeinsam im Team. 
-2. Überlegen Sie gemeinsam im Team, durch welche fachlichen :fontawesome-solid-gears: Funktionen und Features sich diese verkörpern lassen.
+2. Überlegen Sie gemeinsam im Team, durch welche fachlichen :fontawesome-solid-gears: Funktionen und Features sich diese verkörpern lassen und dokumentieren Sie diese in der Projektmappe.
 
 
 ### :material-monitor-cellphone-star: Entwurf von Screen-Diagrammen
