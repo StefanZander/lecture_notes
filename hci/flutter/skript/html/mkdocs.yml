@@ -18,6 +18,7 @@ nav:
   - 'JSON': './themen/json.md'
   - 'Asychronity': './themen/asynchronity.md'
   - '.gitignore': './themen/gitignore.md'
+  - 'SnackBar': './themen/snackbar.md'
 
 extra_css:
   - stylesheets/extra.css
