@@ -22,6 +22,7 @@ Die folgenden Inhalte dienen als Richtlinie für die Umsetzung der Semesterproje
 14. [Processing JSON Data](./themen/json.md)
 15. [Asychronity in Dart and Flutter](./themen/asynchronity.md)
 16. [Recommended .gitignore-settings](./themen/gitignore.md)
+17. [How to use the Snackbar](./themen/snackbar.md)
 <!-- 16. Fortgestrittene Widgets
     1.  RecyclerView
     2.  Gesten
