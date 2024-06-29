@@ -35,6 +35,10 @@
         - <https://pub.dev/packages/provider>
     - If you want to implement a different, more sophisticated form of global app state management, consult the list of state management approaches:
         - <https://docs.flutter.dev/data-and-backend/state-mgmt/options>
+    - A short but nice video that illustrates how to transition from a stateful widget to provider by utilizing a counter app: 
+        - <https://www.youtube.com/watch?v=uQuxrZE2dqA>
+
+
 
 
 ## General
