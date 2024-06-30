@@ -21,6 +21,7 @@
     - Buildung user interfaces with Flutter (very good introduction with many examples and related topics): <https://docs.flutter.dev/ui>
     - Flutter's widget catalogue with links to detailed information about each widget: <https://docs.flutter.dev/ui/widgets>
     - Learn how to add assets and images to a flutter app: <https://docs.flutter.dev/ui/assets/assets-and-images>
+    - A great video tutorial that shows how to use `ListView` and `ListView.Builder` in order to create dynamic horizontal and vertical scrollable lists: <https://www.youtube.com/watch?v=k1LxTsmAURU>
 
 
 
