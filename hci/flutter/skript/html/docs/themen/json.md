@@ -11,4 +11,5 @@
 
 !!! note "Recommended Learning Resources"
     - Learn how to parse JSON in the background of your Flutter app: <https://docs.flutter.dev/cookbook/networking/background-parsing>
+    - This guide provides an in-depth description with many code examples about how to parse JSON: <https://codewithandrea.com/articles/parse-json-dart/>
     - Get more information about the `compute()` function: <https://api.flutter.dev/flutter/foundation/compute.html>
