@@ -19,7 +19,7 @@ nav:
   - 'Asychronity': './themen/asynchronity.md'
   - '.gitignore': './themen/gitignore.md'
   - 'SnackBar': './themen/snackbar.md'
-  - 'Example': './themen/example.md'
+  - 'Advanced Example': './themen/example.md'
 
 extra_css:
   - stylesheets/extra.css
