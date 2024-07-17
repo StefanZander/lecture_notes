@@ -14,8 +14,12 @@
     - Process JSON asynchronously
     - Global state management using [June](https://pub.dev/packages/june)
     - Separte application data in model-classes
-    - Combine model-classes and widgets using a June as state manager
+    - Combine model-classes and widgets using June as state manager
     - Customize FloatingActionButtons on different screens using a single Scaffold
-    - Using more than one FloatingActionButtons
+    - Using more than one FloatingActionButton
     - Selectively display different FloatingActionButtons based on the selected NavigationBar item
-    -
+
+TODO: 
+
+- add project outline and architectural overview
+- add code fragments
