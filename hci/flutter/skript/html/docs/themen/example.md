@@ -19,6 +19,10 @@
     - Using more than one FloatingActionButton
     - Selectively display different FloatingActionButtons based on the selected NavigationBar item
 
+
+The sourcecode of the app is available via [GitHub](https://github.com/StefanZander/projects/tree/main/flutter/fetching_json)
+
+
 TODO: 
 
 - add project outline and architectural overview
