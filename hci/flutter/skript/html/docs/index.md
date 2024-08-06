@@ -64,7 +64,7 @@ Die folgenden Inhalte dienen als Richtlinie für die Umsetzung der Semesterproje
     - Benutzendenverwaltung
     - Backend
     - Full-fledged Datenbank
-    - Alle im User Research erarbeiteten Begeisterungsfaktoren (diese können Sie mocken)
+    - Alle im User Research erarbeiteten Begeisterungsfaktoren (diese können Sie mocken); zumindest einer sollte jedoch in der App enthalten sein
     - Bei mehreren Rollen: die volle Funktionalität für jede Rolle; konzentrieren Sie sich auf eine Rolle; wenn Sie mehr machen (wollen) ist das natürlich vorteilhaft und fließt in die Bewertung mit ein.
     - Kein Update von Web Resourcen
     - Kein Senden oder Löschen von Daten an einem Endpoint
