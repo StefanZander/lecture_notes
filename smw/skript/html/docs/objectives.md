@@ -20,14 +20,16 @@ Nach dem Absolvieren der Lehrveranstaltung sind die Studierende in der Lage...
 Konkret werden Inhalte aus folgenden **Fachgebieten** behandelt:
 
 * Abgrenzung Daten - Information - Wissen
-* Wissensorganisationssysteme ~~(SKOS)~~
+* ~~Wissensorganisationssysteme (SKOS)~~
 * Wissensmanagementmodelle und -ansätze
+* Wissensmanagement im Kontext Industrie 4.0 bzw. einer digitalen Gesellschaft
 * Grundlagen Maschinen-verarbeitbarer Semantik
 * Sprachen und Technologien zur Erstellung semantischer Wissensrepräsentationsmodelle und Wissensgraphen
-* Die Rolle von Ontologien im Wissensmanagement
+* Ontologien und deren Rolle in Wissensgraphen und im Wissensmanagement
 * Einführung in Semantic MediaWiki
 * Methoden und Werkzeuge der Wissensmodellierung mittels Semantic MediaWiki
 * Abfragesprachen für semantische Wissensrepräsentationsmodelle
+* Fortschrittliche Wissensgraphmodellierung mit Semantic MediaWiki
 * Semantic MediaWiki-Erweiterungen für das betr. Wissensmanagement
 
 Im 2. Teil: Zusammenführung und Anwendung aller Inhalte in einem **Semesterprojekt**.
@@ -90,7 +92,7 @@ Lehrveranstaltungsunterlagen
 
 ### Übung als Praktikum-as-a-Service
 
-!!! danger "Nicht relevant im Rahmen der Durchführung als Blocklehrveranstaltung."
+<!-- !!! danger "Nicht relevant im Rahmen der Durchführung als Blocklehrveranstaltung." -->
 
 Parallel zur Vorlesungseinheit sind selbständig **Übungsaufgaben** zu bearbeiten  
 
@@ -130,7 +132,7 @@ Einreichung der Übungsaufgaben bis **Montag, 24:00 Uhr** in der darauf folgende
 
 Die **Gesamtbeurteilung** der LVA setzt sich aus **2 Teilleitungen** zusammen
 : __70% Projektarbeit__ und __Präsentation__ (--> Semesterprojekt)
-: __30% Prüfung__ (idR schrifltich) am Semester-/Veranstaltungsende
+: __30% Prüfung__ (mündlich oder schrifltich) am Semester-/Veranstaltungsende
 
     !!! info "Hinweis zur Gewichtung"
         Trotz der 70/30-Gewichtung ist eine **Note** von **4,0** oder besser in _beiden_ Teilleistungen zwingende Voraussetzung für eine erfolgreiche Beurteilung, ebenso wie die Bearbeitung der Übungsaufgaben. 
@@ -147,7 +149,7 @@ Für jede Teilleistung wird eine **Note** vergeben, die mit der jeweiligen Gewic
     1. Regelmäßige Teilnahe an den Veranstaltungen
     2. Aktive Mitarbeit im Semesterprojekt
     3. Teilnahme an der Abschlusspräsentation
-    4. Note von mind. 4,0 oder besser bei schriftlichen Prüfung und dem Semesterprojekt
+    4. Note von mind. 4,0 oder besser bei Prüfung und dem Semesterprojekt
     5. Bearbeitung und Einreichung der Übungsaufgaben 
 
 
@@ -168,7 +170,7 @@ Die Erfahrung aus mehreren Semestern und unterschiedlichen Lehrveranstaltungen z
 
 * Durchführung in __3-4er Teams__. Die Gruppen-Konstellation wird in der letzten theoretischen VO-Einheit festgelegt und durch die TeilnehmerInnen im Moodle-Kurs hinterlegt ([-->Link](https://lernen.h-da.de/mod/data/view.php?id=357528))
 * Praktische Umsetzung eines Wissensmanagementproblems mittels **Semantic MediaWiki**
-* Die Festlegung des Wissensmanagementproblems und der Domäne erfolgt in Abstimmung mit dem Betreuer
+* Die Festlegung des Wissensmanagementproblems und der Domäne erfolgt durch die Gruppenmitglieder in Abstimmung mit dem Betreuer
 * **Präsentation** der Umsetzung am Semester-/Veranstaltungsende
 * Mehr Informationen finden sich auf der [Semesterprojektseite](semesterprojekt.md)
 

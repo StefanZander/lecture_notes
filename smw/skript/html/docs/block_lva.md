@@ -6,12 +6,12 @@
 Die Laufzeit des Kurses ist auf **2 Wochen** angelegt.
 
 Die **Theorieeinheiten** (MO-DO in der 1. Woche) finden vor Ort an der h_da statt (Raum siehe Stundenplan bzw. OBS). Hier herrscht **Präsenzpflicht**. 
-Die Vor-Ort-Termine starten um 8:45 Uhr und dauern bis 13:00 / 13:30 Uhr (Ende 3. Block).
+Die Vor-Ort-Termine starten um 9:00 Uhr und dauern bis 13:00/13:30 Uhr (Ende 3. Block).
 
 Die **Nachmittage** sind dem Selbststudium und den Übungen vorbehalten. Diese erfolgen NICHT in Präsenz sondern nach der individuellen Einteilung und Ausgestaltung der Studierenden.  
 
 Die Arbeiten am **Semesterprojekt** erfolgen ebenfalls in Eigenregie und nach individueller Einteilung und Ausgestaltung der Studierenden.
-**Rücksprachen** mit dem Betreuer erfolgen über BBB im Zeitraum zwischen 9:00 und 12:00 Uhr.
+**Rücksprachen** mit dem Betreuer finden über BBB im Zeitraum zwischen 9:00 und 12:00 Uhr statt.
 
 
 ### Thematischer Überblick
