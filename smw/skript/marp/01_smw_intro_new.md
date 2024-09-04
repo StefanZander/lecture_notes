@@ -31,12 +31,13 @@ Kapitel 1: Einführung in das Wissensmanagement {.lightgreen .Big .skip}
 <!-- footer: Prof. Dr. Stefan Zander -->
 # Leitfragen
 
-- Warum benötigen Unternehmen ein funktionierendes Wissensmanagement ?
 - Was ist Wissen ?
-- Welche Rolle spielt der Mensch im Wissensmanagement ?
+- Warum sollte man sich mit dem Thema Wissensmanagement auseinandersetzen ?
+- Warum benötigen Unternehmen ein funktionierendes Wissensmanagement ?
 - Welche Wissensmanagementansätze gibt es und wodurch unterscheiden sie sich ?
 - Welche Rolle spielt IKT im Wissensmanagement?
-- Warum wird WM mit fortschreitender Digitalisierung immer wichtiger ?
+- Warum wird Wissensmanagement mit fortschreitender Digitalisierung immer wichtiger ?
+- Welche Rolle spielt der :fas-person: Mensch im Wissensmanagement ?
 
 ---
 
@@ -61,18 +62,19 @@ Kapitel 1: Einführung in das Wissensmanagement {.lightgreen .Big .skip}
 
 ---
 <!-- header: Kapitel 1: Warum brauchen Organisationen Wissensmanagement -->
-# Warum benötigen Organisationen ein funktionierendes Wissensmanagement ?
+<!-- # Warum benötigen Organisationen ein funktionierendes Wissensmanagement ? -->
+# Über die Notwendigkeit eines Wissensmanagements
 
 ---
 # Von der Industrie- zur Wissensgesellschaft
 <!-- beschäftigungsanteil_inland -->
 
 ::: twocolumns small
-Mitte der 1960er Jahre – __50% aller Beschäftigten__ in der Industrie tätig.
+Mitte der 1960er Jahre waren __50% aller Beschäftigten__ in der Industrie tätig.
 
-Seit dieser Zeit hat sich die __Produktivität__ durch Automatisierung __versechsfacht__(!) und durch die Globalisierung hat sich die Massenproduktion der meisten Güter weltweit verteilt.
+Seit dieser Zeit hat sich die :fas-arrow-trend-up: __Produktivität__ durch Automatisierung __versechsfacht__(!) und durch die Globalisierung hat sich die Massenproduktion der meisten Güter weltweit verteilt.
 
-Mehrheit der Bevölkerung inzwischen im **Dienstleistungsbereich** beschäftigt.
+Mehrheit der :fas-people-group: Bevölkerung inzwischen im **Dienstleistungsbereich** beschäftigt.
 
 Durch die zunehmende Digitalisierung werden __wissensbasierte Dienstleistungen__ zum dominanten Wirtschaftssegment.
 
@@ -99,7 +101,7 @@ Der Anteil der _verarbeitenden Industrie_ (in Deutschland mit den wichtigen Sekt
 ::: single small
 **Von Produktion zu Dienstleistung – das Beispiel Automobilindustrie** :fas-car:
 
-Die Automobilindustrie produziert zwar noch immer Automobile. Die Aufgabe besteht heute aber zunehmend darin, nicht das physische Produkt Auto zu verkaufen, sondern _Mobilitätsbedürfnisse der Kunden_ zu befriedigen. Die Menschen wollen das Auto nicht mehr unbedingt besitzen, sondern es dort nutzen, wo ihnen Fahrrad, Bahn oder Bus nicht ausreichen. Die Lösung dieser Fragen – zum Beispiel durch Car-Sharing eingebunden in weitere Nutzungsmöglichkeiten – erfordert _kommunikative und logistische Leistungen, die weit über die Herstellung der physischen Produkte hinausgehen_. Es geht um Kommunikation mit den Kunden und um Kooperation mit ihnen, die in gewisser Weise zu Koproduzenten des Mobilitätsangebots werden.
+Die Automobilindustrie produziert zwar noch immer Automobile. Die Aufgabe besteht heute aber zunehmend darin, nicht das physische Produkt Auto zu verkaufen, sondern :fas-map-location-dot: _Mobilitätsbedürfnisse der Kunden_ zu befriedigen. Die Menschen wollen das Auto nicht mehr unbedingt besitzen, sondern es dort nutzen, wo ihnen Fahrrad, Bahn oder Bus nicht ausreichen. Die Lösung dieser Fragen – zum Beispiel durch Car-Sharing eingebunden in weitere Nutzungsmöglichkeiten – erfordert _kommunikative und logistische Leistungen, die weit über die Herstellung der physischen Produkte hinausgehen_. Es geht um Kommunikation mit den Kunden und um Kooperation mit ihnen, die in gewisser Weise zu Koproduzenten des Mobilitätsangebots werden.
 ::::
 
 ::: footnotes
@@ -143,16 +145,123 @@ Quelle: Wilmar Raddatz, "Wissensgesellschaft – Was ist Wissen?"; abrufbar unte
 
 
 ---
+## Was ist Digital Literacy ?
+
+::::: smallest
+**Digital Literacy** (deutsch: Digitale Kompetenz) bezieht sich auf die Fähigkeit, digitale Technologien effektiv und kritisch zu nutzen, zu bewerten und Informationen zu erstellen. Sie umfasst eine Reihe von Fähigkeiten, darunter:
+
+:::: columns
+::: single
+- **Grundlegende Computerkenntnisse**: Verstehen, wie man Computer, Smartphones und andere digitale Geräte verwendet, einschließlich Betriebssystemen, Softwareanwendungen und Internetbrowsern.
+
+- **Internetnavigation**: Die Fähigkeit, Informationen im Internet zu finden, zu bewerten und zu nutzen, einschließlich des Verständnisses von Suchmaschinen, Online-Datenbanken und sozialen Medien.
+
+- **Kritisches Denken und Bewertung**: Die Fähigkeit, die Glaubwürdigkeit und Zuverlässigkeit digitaler Inhalte zu beurteilen, Vorurteile zu erkennen und zwischen vertrauenswürdigen und nicht vertrauenswürdigen Quellen zu unterscheiden.
+
+- **Online-Kommunikation**: Die Fähigkeit, digitale Werkzeuge für die Kommunikation zu nutzen, wie E-Mail, soziale Medien und Videokonferenzen, und dabei die Normen und Etikette für Online-Interaktionen zu verstehen.
+:::
+::: single
+- **Datenkompetenz**: Das Verständnis dafür, wie man Daten in digitalen Formaten sammelt, analysiert und interpretiert, was in persönlichen und beruflichen Kontexten zunehmend wichtig wird.
+
+- **Datenschutz und Sicherheit**: Wissen, wie man persönliche Informationen online schützt, digitale Fußabdrücke versteht und Bedrohungen wie Phishing, Malware und Betrug erkennt.
+
+- **Inhaltserstellung**: Die Fähigkeit, digitale Inhalte wie Texte, Bilder, Audio und Video zu erstellen und zu teilen, wobei Urheberrechte und ethische Richtlinien beachtet werden.
+
+- **Problemlösung mit Technologie**: Die Nutzung digitaler Werkzeuge und Ressourcen zur Lösung von Problemen, zur Steigerung der Produktivität und zur Innovation in verschiedenen Bereichen.
+:::
+::::
+
+:::: bluebox center
+Digitale Kompetenz ist in der heutigen Welt unerlässlich, da digitale Technologien in Bildung, Arbeit und Alltag allgegenwärtig sind. Sie befähigt Einzelpersonen, voll am digitalen Leben teilzunehmen, fundierte Entscheidungen zu treffen und sich wirkungsvoller und sinnvoller mit der Welt auseinanderzusetzen.
+::::
+:::::
+
+
+
+
+---
 ## Zur Unterscheidung von Industrie- und Wissensgesellschaft
 
 
 ::: centerbox BIGSKIP
 | Industriegesellschaft :fas-industry: |  | Wissensgesellschaft :fas-brain:|
 | --- | :---: | --- |
-| Sachkapital | $\longleftrightarrow$ | Wissenskapital  |
-| Hierarchie/Kontrolle | $\longleftrightarrow$ |  Vernetzung/Fokussierung |
-| Produkte | $\longleftrightarrow$ | Problemlösungen | 
+| :fas-warehouse: Sachkapital | $\longleftrightarrow$ | :fas-graduation-cap: Wissenskapital  |
+| :fas-sitemap: Hierarchie/Kontrolle | $\longleftrightarrow$ |  :fas-circle-nodes: Vernetzung/Fokussierung |
+| :fas-basket-shopping: Produkte | $\longleftrightarrow$ | :fas-thumbs-up: Problemlösungen | 
 :::
+
+
+
+---
+::::: columns 
+:::: single smaller 
+:fas-industry: Sachkapital{.center .big .bluebox}
+
+1. Maschinen und Produktionsstätten
+   - Ein Automobilhersteller besitzt eine Produktionshalle mit Maschinen, die zur Herstellung von Fahrzeugteilen verwendet werden. Diese Maschinen sind physische Güter, die zur Produktion beitragen und direkt in den Produktionsprozess eingebunden sind. Sie stellen also Sachkapital dar, da sie materielle Ressourcen sind, die für die Herstellung von Waren benötigt werden.
+
+2. Bürogebäude
+   - Ein Unternehmen, das Bürodienstleistungen anbietet, hat ein Bürogebäude, in dem die Mitarbeiter arbeiten. Das Gebäude, die Möbel, und die technische Ausstattung wie Computer und Server fallen unter Sachkapital. Sie sind physische Vermögenswerte, die das Unternehmen besitzt und nutzt, um seine Dienstleistungen anzubieten.
+
+3. Fahrzeugflotte
+   - Ein Logistikunternehmen betreibt eine Flotte von Lastwagen, die für den Transport von Waren eingesetzt werden. Diese Lastwagen sind ein weiteres Beispiel für Sachkapital, da sie materielle Güter sind, die das Unternehmen zur Erbringung seiner Leistungen benötigt.
+::::
+:::: single smaller
+:fas-brain: Wissenskapital{.center .big .greenbox}
+
+1. Patente und geistiges Eigentum
+   - Ein Pharmaunternehmen hat ein Patent auf ein neu entwickeltes Medikament. Dieses Patent stellt Wissenskapital dar, weil es das Ergebnis von Forschung und Entwicklung ist und dem Unternehmen einen Wettbewerbsvorteil verschafft, indem es die exklusive Herstellung und den Vertrieb des Medikaments erlaubt.
+
+2. Mitarbeiterkompetenzen
+   - In einem IT-Unternehmen besitzen die Mitarbeiter spezielles Wissen in der Softwareentwicklung und Systemarchitektur. Dieses Wissen und die Fähigkeiten der Mitarbeiter stellen Wissenskapital dar, weil sie immaterielle Ressourcen sind, die das Unternehmen nutzt, um innovative Produkte zu entwickeln und am Markt erfolgreich zu sein.
+
+3. Markenimage und Reputation
+    - Ein Unternehmen wie Apple hat eine starke Marke und eine hohe Reputation für Qualität und Innovation. Diese immateriellen Werte sind Teil des Wissenskapitals, weil sie auf jahrelanger Innovation, Kundenvertrauen und strategischem Marketing beruhen. Diese Faktoren tragen zum langfristigen Erfolg des Unternehmens bei, obwohl sie nicht physisch greifbar sind.
+:::::
+
+
+
+---
+## Einige (negative) Beispiel für die :fas-sack-dollar: Monetarisierung von Wissenskapital 
+
+:::: small
+1. **Turing Pharmaceuticals (Martin Shkreli)**
+    - Fall Daraprim: Turing Pharmaceuticals, unter der Führung von Martin Shkreli, erwarb 2015 die Rechte an Daraprim, einem Medikament zur Behandlung von Toxoplasmose, das auch bei HIV-Patienten eingesetzt wird. Nach dem Erwerb erhöhte Shkreli den Preis des Medikaments drastisch von 13,50 USD auf 750 USD pro Tablette, was zu einem massiven öffentlichen Aufschrei und zu Debatten über die Preisgestaltung von Medikamenten führte. Dieser Fall ist ein prägnantes Beispiel für die problematische Monetarisierung von lebenswichtigen Medikamenten.
+
+2. **Mylan (Epipen Skandal)**
+    - Preissteigerung von EpiPen: Mylan erwarb die Rechte an EpiPen, einem lebensrettenden Medikament, das bei anaphylaktischen Schocks verwendet wird, und erhöhte den Preis für ein Zweierpack schrittweise von etwa 100 USD auf über 600 USD. Dies führte zu einem erheblichen öffentlichen Aufschrei und einer Untersuchung durch den US-Kongress. Mylan wurde beschuldigt, ihre Monopolstellung auf dem Markt auszunutzen, um Gewinne auf Kosten der Patienten zu maximieren.
+
+3. **Horizon Pharma**
+    - Preiserhöhungen nach Patentübernahme: Horizon Pharma erwarb die Rechte an mehreren seltenen Medikamenten und erhöhte deren Preise erheblich. Ein bekanntes Beispiel ist Vimovo, ein Schmerzmittel, dessen Preis nach der Übernahme von 138 USD auf über 2.000 USD pro Packung stieg. Horizon wurde dafür kritisiert, dass es durch Übernahmen und anschließende Preiserhöhungen Gewinne maximierte, ohne dass ein signifikanter Mehrwert für die Patienten entstand.
+::::
+
+
+
+---
+## Weitere Beispiele für die :fas-sack-dollar: Monetarisierung von Wissenskapital 
+
+:::: small
+
+- **Microsoft**
+    - Nokia Patente: Microsoft erwarb 2014 die Gerätesparte von Nokia zusammen mit einer Reihe von Patenten. Diese Patente halfen Microsoft, sein Windows Phone Ökosystem zu unterstützen und Lizenzgebühren von Android-Herstellern einzufordern, da viele der erworbenen Patente Android-Geräte betrafen.
+
+- **Qualcomm**
+    - Qualcomm ist ein weiteres Unternehmen, das stark von seinem Patentportfolio profitiert. Das Unternehmen investiert massiv in Forschung und Entwicklung, um neue Patente zu schaffen, und verdient Milliarden durch die Lizenzierung dieser Patente, insbesondere im Bereich der Mobilfunktechnologien wie 3G, 4G und 5G.
+
+- **Apple**
+    - Apple erhält Lizenzgebühren von vielen anderen Handyherstellern für die Nutzung bestimmter patentierter Technologien, darunter fallen
+      - **Multitouch-Gesten wie das "Slide-to-Unlock"** (Patent: "Slide to Unlock") 
+        Apple hällt Patente auf bestimmte Multitouch-Gesten, wie das bekannte „Slide-to-Unlock“-Feature. Android-Hersteller, die ähnliche Entsperrfunktionen implementierten mussten in einigen Fällen Lizenzgebühren zahlen oder die Funktionen anpassen.
+      - **Autokorrektur und Textergänzung** (Patent: "Autokorrektur und Textergänzung") 
+        Apple hatte Patente im Zusammenhang mit der Autokorrektur und Textergänzung bei der Eingabe von Texten auf Touchscreens. Hersteller von Android-Geräten, die ähnliche Funktionen in ihren Tastaturen implementierten, könnten diesen Patenten unterliegen.
+      - **"Bounce-Back" Effekt** (Patent: "Rubber-Banding") 
+        Dieses Patent beschreibt den Effekt, bei dem der Bildschirm "zurückspringt", wenn ein Nutzer ans Ende einer Liste scrollt. Dieser Effekt war in frühen iPhones sehr verbreitet und wurde in ähnlicher Form auch in Android-Geräten verwendet. Dies führte zu Lizenzstreitigkeiten.
+      - **Systemarchitektur für mobiles Betriebssystem** (Patent: "Unified Search" und weitere Systempatente) 
+        Apple hält Patente auf verschiedene Systemarchitekturaspekte, inkl. der Art und Weise, wie Suchanfragen innerhalb eines Geräts verarbeitet werden (z. B. durch Spotlight). 
+::::
+
+
 
 ---
 ## Warum wird Wissen zunehmend wichtiger für Unternehmen ?
@@ -200,7 +309,7 @@ Quelle: Wilmar Raddatz, "Wissensgesellschaft – Was ist Wissen?"; abrufbar unte
 ## Was ist Wissen ? – Eine pragmatische Arbeitsdefinition 
 
 ::: bluebox center
-Bevor wir einen Versuch starten Wissen zu definieren ist es sinnvoll, den Wissensbegriff richtig ein- und abzugrenzen.
+:fas-triangle-exclamation: Bevor wir einen Versuch starten Wissen zu definieren ist es sinnvoll, den Wissensbegriff richtig ein- und abzugrenzen.
 :::
 
 {.skip}
@@ -283,7 +392,7 @@ Quelle: http://qib.f-bb.de/wissensmanagement/thema/wissen/wissenstreppe.rsys
 :::
 
 ::: bluebox skip centerbox
-__Lehrvideo zur Wissenstreppe__: Die einzelnen Stufen der Wissenstreppe werden auch sehr schön in diesem [Kurzvideo](https://www.youtube.com/watch?v=VW7ArONW4dA) dargestellt.
+__Lehrvideo zur Wissenstreppe__: Die einzelnen Stufen der Wissenstreppe werden auch sehr schön in diesem [:fas-film: Kurzvideo](https://www.youtube.com/watch?v=VW7ArONW4dA) dargestellt.
 :::
 
 
@@ -335,15 +444,36 @@ Internalisierung
 
 
 ---
+## Anwendungsbeispiel für das SECI-Modell
+
+::::: columns
+:::: single small
+1. **Sozialisierung**
+    - Beispiel: Ingenieure und Produktentwickler eines Unternehmens treffen sich informell, um Ideen auszutauschen und Wissen zu teilen. Dies könnte durch Workshops, Brainstorming-Sitzungen oder persönliche Gespräche geschehen, bei denen implizites Wissen (Erfahrungen, Intuitionen) weitergegeben wird. Zum Beispiel könnte ein erfahrener Ingenieur einer jüngeren Kollegin erklären, wie er bestimmte Probleme in früheren Projekten gelöst hat.
+
+2. **Externalisierung**
+    - Beispiel: Die impliziten Erkenntnisse und Ideen, die in der Sozialisierungsphase gewonnen wurden, werden in explizites Wissen umgewandelt. Die Ingenieure könnten ihre Ideen durch Diagramme, Prototypen oder schriftliche Berichte ausdrücken. Eine Gruppe von Ingenieuren könnte beispielsweise ein Diagramm erstellen, das ihre konzeptionellen Ideen für ein neues Produktdesign darstellt.
+::::
+:::: single small
+3. **Kombination**
+    - Beispiel: Das in der Externalisierungsphase gesammelt explizite Wissen wird durch die Kombination verschiedener Informationsquellen und bestehender Daten erweitert. In dieser Phase könnten verschiedene Abteilungen des Unternehmens, wie Forschung und Entwicklung, Marketing und Produktion, zusammenarbeiten, um ein detailliertes Produktentwicklungsdokument zu erstellen, das die gesammelten Informationen konsolidiert und neue Erkenntnisse hervorbringt.
+
+4. **Internalisierung**
+    - Beispiel: Das explizite Wissen wird durch Schulungen, Simulationen oder den Einsatz in realen Projekten in implizites Wissen umgewandelt. Mitarbeiter, die das neue Produkt entwickeln oder verbessern, nutzen das gesammelte Wissen, um ihre Fähigkeiten zu erweitern und praktische Erfahrungen zu sammeln. Beispielsweise könnten die Ingenieure Schulungen erhalten oder das Produkt in einer Testumgebung entwickeln, um das Gelernte zu verinnerlichen.
+::::
+:::::
+
+
+---
 ## Das SECI-Modell: Organisatorische Voraussetzungen und Fazit
 
 Voraussetzungen seitens der Organisation^2^
 
-- **Intention** --> klare Wissensziele innerhalb der Organisation
-- **Autonomie** --> Eigenverantwortung, Selbstorganisation und Freiräume
-- **Instabilität** --> Bereitschaft Bestehendes zu hinterfragen und zu verändern
-- **Redundanz** --> Sollte nicht vermieden werden; ein "Zuviel" an Informationen eröffnet neue Perspektiven
-- **Interne Vielfalt** --> Diversität der Mitglieder und Prozesse
+- **Intention** ---> klare Wissensziele innerhalb der Organisation
+- **Autonomie** ---> Eigenverantwortung, Selbstorganisation und Freiräume
+- **Instabilität** ---> Bereitschaft Bestehendes zu hinterfragen und zu verändern
+- **Redundanz** ---> Sollte nicht vermieden werden; ein "Zuviel" an Informationen eröffnet neue Perspektiven
+- **Interne Vielfalt** ---> Diversität der Mitglieder und Prozesse
 
 **Fazit**
 : Das SECI-Modell verbindet als eines der ersten  Modelle _Wissensmanagement mit Innovation_ und versteht _Innovation als kollektiven Prozess_^1^. Besondere Bedeutung kommt hierbei der Kommunikation und Kollaboration zuteil. Ziel ist nicht den Prozess bis aufs "Kleinste" zu managen, sondern ==Rahmenbedingungen zu schaffen, in denen ein derartiger kollektiver Transformationsprozess entstehen kann== (=Systemische Sicht). 
@@ -576,12 +706,12 @@ Quelle: TRENDREPORT “Auf Wissen bauen – mit systematischem Wissensmanagement
 ::: bluebox
 __"Neue" Eigenschaften__
 
-- Der Mitarbeitende ist _Know-How Träger_
-- Untereinander sind die Mitarbeitenden _Coach_ oder _Mentor_
-- Die Erfahrung zählt, _Führung erfolgt durch Kompetenz_
-- _Communities_ (Fachgruppen) werden gebildet
-- Sie sind aktiv in den _Wissensprozessen_ eingebunden
-- Ein _offener Austausch_ wird gefördert
+- Der Mitarbeitende ist _Know-How Träger_ :fas-brain:
+- Untereinander sind die Mitarbeitenden _Coaches_ und/oder _Mentoren_ :fas-user-graduate:
+- Die Erfahrung zählt, _Führung erfolgt durch Kompetenz_ :fas-atom:
+- _Communities_ (Fachgruppen) werden gebildet :fas-people-group:
+- Sie sind aktiv in den _Wissensprozessen_ eingebunden :fas-people-arrows:
+- Ein _offener Austausch_ wird gefördert :fas-comments:
 :::
 ::::
 :::: single
