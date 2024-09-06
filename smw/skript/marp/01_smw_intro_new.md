@@ -29,21 +29,24 @@ Kapitel 1: Einführung in das Wissensmanagement {.lightgreen .Big .skip}
 ---
 <!-- header: Kapitel 1: Einführung -->
 <!-- footer: Prof. Dr. Stefan Zander -->
+![bg right:42% 215%](images/landscape_flowers_red.jpg)
 # Leitfragen
+
 
 - Was ist Wissen ?
 - Warum sollte man sich mit dem Thema Wissensmanagement auseinandersetzen ?
 - Warum benötigen Unternehmen ein funktionierendes Wissensmanagement ?
 - Welche Wissensmanagementansätze gibt es und wodurch unterscheiden sie sich ?
 - Welche Rolle spielt IKT im Wissensmanagement?
-- Warum wird Wissensmanagement mit fortschreitender Digitalisierung immer wichtiger ?
-- Welche Rolle spielt der :fas-person: Mensch im Wissensmanagement ?
+- Warum wird Wissensmanagement mit fortschreitender Digitalisierung (aka Digitale Souveränität) immer wichtiger ?
+- Welche Rolle spielt der Mensch :fas-person: im Wissensmanagement ?
 
 ---
 
 # Gliederung
+![bg right:48% 175%](images/landscape_summer_village.jpg)
 
-1. Über die Notwendigkeit eines Wissensmanagements
+1. Gesellschaftliche Implikationen und Veränderungen
 2. Was ist Wissen ?
    1. Definitionsversuche
    2. Wissensarten
@@ -52,9 +55,9 @@ Kapitel 1: Einführung in das Wissensmanagement {.lightgreen .Big .skip}
    2. Das SECI-Modell
 4. Wissensmanagement
    1. Hauptaufgaben
-   3. Ziele
-   4. Grundlegende Konzepte
-   5. Typische Wissensmanagementprobleme
+   2. Ziele
+   3. Grundlegende Konzepte
+   4. Typische Wissensmanagementprobleme
 5. Die Rolle des Menschen im Wissensmanagement
 6. Lernzielkontrolle
 
@@ -101,7 +104,7 @@ Der Anteil der _verarbeitenden Industrie_ (in Deutschland mit den wichtigen Sekt
 ::: single small
 **Von Produktion zu Dienstleistung – das Beispiel Automobilindustrie** :fas-car:
 
-Die Automobilindustrie produziert zwar noch immer Automobile. Die Aufgabe besteht heute aber zunehmend darin, nicht das physische Produkt Auto zu verkaufen, sondern :fas-map-location-dot: _Mobilitätsbedürfnisse der Kunden_ zu befriedigen. Die Menschen wollen das Auto nicht mehr unbedingt besitzen, sondern es dort nutzen, wo ihnen Fahrrad, Bahn oder Bus nicht ausreichen. Die Lösung dieser Fragen – zum Beispiel durch Car-Sharing eingebunden in weitere Nutzungsmöglichkeiten – erfordert _kommunikative und logistische Leistungen, die weit über die Herstellung der physischen Produkte hinausgehen_. Es geht um Kommunikation mit den Kunden und um Kooperation mit ihnen, die in gewisser Weise zu Koproduzenten des Mobilitätsangebots werden.
+Die Automobilindustrie produziert zwar noch immer Automobile. Die Aufgabe besteht heute aber zunehmend darin, nicht das physische Produkt »Auto« zu verkaufen, sondern _:fas-map-location-dot: Mobilitätsbedürfnisse der Kunden_ zu befriedigen. Die Menschen wollen das Auto nicht mehr unbedingt besitzen, sondern es dort nutzen, wo ihnen Fahrrad, Bahn oder Bus nicht ausreichen. Die Lösung dieser Fragen – zum Beispiel durch Car-Sharing eingebunden in weitere Nutzungsmöglichkeiten – erfordert _kommunikative und logistische Leistungen, die weit über die Herstellung der physischen Produkte hinausgehen_. Es geht um Kommunikation mit den Kunden und um Kooperation mit ihnen, die in gewisser Weise zu Koproduzenten des Mobilitätsangebots werden.
 ::::
 
 ::: footnotes
@@ -114,16 +117,16 @@ Quelle: Bundeszentrale für politische Bildung: Wissensgesellschaft – Eine Ide
 
 ::::: columns
 :::: single
-**Früher** :fas-tractor: :
+**Früher** :fas-tractor:{.Big}
 - Informationen werden von wenigen ausgewählten »ExpertInnen« bereitgestellt
 - Passive Rolle der Nutzenden: überwiegend rezeptiver Prozess der Informationsrecherche
 - __Leitgedanke__: 
     ==Wissen ist statisch und wird wie ein Gut von einer Person zur anderen übertragen==
 ::::
 :::: single
-**Heute** :fas-computer: :
+**Heute** :fas-computer:{.Big}
 - Informationen werden von _allen Nutzenden_ bereitgestellt
-- Aktive Rolle der Nutzenden: _selbstgesteuerter, konstruktiver Prozess, fügt Informationen hinzu, verknüpft Informationen; lebt "digital literacy"_
+- Aktive Rolle der Nutzenden: _selbstgesteuerter, konstruktiver Prozess, fügt Informationen hinzu, verknüpft und validiert Informationen; lebt »digital literacy«_
 - __Leitgedanke__: 
     ==Wissen ist dynamisch und wird von Akteuren auf Grund von Erfahrungen konstruiert und auf Basis praktischer Bedürfnisse laufend verändert==
 :::::
@@ -135,7 +138,7 @@ Quelle: Bundeszentrale für politische Bildung: Wissensgesellschaft – Eine Ide
 | Produkte | -- | Problemlösungen |  -->
 
 ::: bluebox skip
-Gefragt ist nicht formelles, abrufbares Wissen, sondern Formen "__lebendigen Wissens__", wie *Erfahrungswissen*, *Urteilsvermögen*, *Selbstorganisation*, etc. Nicht alles Wissen, aber wissen, wo es zu finden ist. Wichtig werden Fähigkeiten wie die Generierung, Konstruktion, Selektion und Vernetzung von Wissen.
+Gefragt ist nicht formelles, abrufbares Wissen, sondern Formen "__lebendigen Wissens__", wie *Erfahrungswissen :fas-user-gear:*, *Urteilsvermögen :fas-scale-balanced:*, *Selbstorganisation :fas-sitemap:*, etc. Nicht alles wissen, aber wissen, wo es zu finden ist. Wichtig werden Fähigkeiten wie die Generierung, Konstruktion, Selektion, Reflexion, Validierung und Vernetzung von Wissen.
 :::
 
 ::: footnotes
@@ -145,7 +148,7 @@ Quelle: Wilmar Raddatz, "Wissensgesellschaft – Was ist Wissen?"; abrufbar unte
 
 
 ---
-## Was ist Digital Literacy ?
+## Exkurs: Was ist Digital Literacy ?
 
 ::::: smallest
 **Digital Literacy** (deutsch: Digitale Kompetenz) bezieht sich auf die Fähigkeit, digitale Technologien effektiv und kritisch zu nutzen, zu bewerten und Informationen zu erstellen. Sie umfasst eine Reihe von Fähigkeiten, darunter:
@@ -183,7 +186,7 @@ Digitale Kompetenz ist in der heutigen Welt unerlässlich, da digitale Technolog
 ## Zur Unterscheidung von Industrie- und Wissensgesellschaft
 
 
-::: centerbox BIGSKIP
+::: centerbox BIGSKIP bluebox padding2em
 | Industriegesellschaft :fas-industry: |  | Wissensgesellschaft :fas-brain:|
 | --- | :---: | --- |
 | :fas-warehouse: Sachkapital | $\longleftrightarrow$ | :fas-graduation-cap: Wissenskapital  |
@@ -264,7 +267,7 @@ Digitale Kompetenz ist in der heutigen Welt unerlässlich, da digitale Technolog
 
 
 ---
-## Warum wird Wissen zunehmend wichtiger für Unternehmen ?
+## Warum wird Wissen zunehmend :fas-arrow-trend-up: wichtiger für Unternehmen ?
 
 :::: columns
 ::: single
@@ -319,6 +322,7 @@ Wissen ist
 - ... zusammengesetzt aus __Modellen__ über konkrete und abstrakte Objekte Ereignisse und Fakten, d.h. symbolische Strukturen, die im menschlichen Gedächtnis abgespeichert sind,
 - ... __kontext-situiert__ und __vernetzt__,
 - ... __handlungs-__ und __ziel-orientiert__.
+
 
 ::: definition 
 ==Wissen== bezeichnet die Gesamtheit der Kenntnisse und Fähigkeiten, die Menschen zur ==Lösung von Problemen== einsetzen. Wissen stützt sich auf Daten und Informationen, ist im Gegensatz zu diesen jedoch immer ==an Personen gebunden==. Daher müssen Daten-, Informations- und Wissensmanagement stets zusammenspielen.
@@ -678,19 +682,11 @@ Gemäss heutigen Erfahrungen spart man durch Wissensmanagement **20-25%** der **
 # Die Rolle des Menschen :fas-person: im Wissensmanagement
 
 
----
-<!-- footer: _&nbsp; -->
-::::: columns
-:::: single
 
-## Das Zusammenwirken von Mensch, Organisation und Technik
-::::
-:::: triple
-::: center
-![height:640px](./figures/zusammenwirken.jpg)
-:::
-::::
-:::::
+
+---
+## Das Zusammen-wirken von Mensch, Organisation und Technik
+![bg right:72% 82%](figures/zusammenwirken.jpg)
 
 ::: footnotes
 Quelle: TRENDREPORT “Auf Wissen bauen – mit systematischem Wissensmanagement zur digitalen Verwaltung”; Behörden Spiegel, Februar 2020
