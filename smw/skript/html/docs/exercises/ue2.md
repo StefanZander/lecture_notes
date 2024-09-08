@@ -28,10 +28,12 @@
 
 ### Modellierung eines realen Ausschnitts eines Gegenstandbereichs
 
-Stellen Sie den aus Übung 1 bekannten Sachverhalt mittels RDF dar. Verwenden Sie eigene URIs (mit bel. Namespace, den Sie in Ihrem Modell abkürzen können) zum Ausdruck von Resourcen und Properties in der ABox[^1].
+Stellen Sie den aus Übung 1 bekannten Sachverhalt _bis einschl. Stufe 3_ mittels RDF dar. Verwenden Sie eigene URIs (mit bel. Namespace, den Sie in Ihrem Modell abkürzen können) zum Ausdruck von Resourcen und Properties in der ABox[^1].
 
+<!--
 > "_In seiner konstituierenden Sitzung vom 25.06.2019 beschloss der Fachbereichsrat in Bezug auf Berichtspunkt Nr. 5 des Protokolls vom 17.05.2019:  
     Prof. Dr. Kai Renz ist neues Mitglied des Stundenplanerteams._"
+-->
 
 Hinweise:
 
@@ -42,6 +44,6 @@ Hinweise:
 - Verwenden Sie zur Darstellung ein beliebiges CASE[^2]-Tool. Entscheidend ist weniger die 100%-ig korrekte Verwendung der RDF/S Sprachelemente als vielmehr eine schlüssige Konzeptualisierung, d.h., Überführung des o.g. Beispiels in einen semantischen Wissensgraphen (der mittels RDF/S formalisiert wird).
 
 
-[^1]: Als Namensraum können Sie `ex:` verwenden; Beispiel: Für den Sachverhalt `nimmt an Sitzung teil` können Sie ein Property `ex:attend` verwenden.
+[^1]: Als Namensraum können Sie `ex:` verwenden; Beispiel: Für den Sachverhalt `nimmt an Sitzung teil` können Sie ein Property `ex:attend` verwenden oder für `hat Forschungsthema --> ex:hasTopic` .
 
 [^2]: CASE = Computer Aided Software Engineering
