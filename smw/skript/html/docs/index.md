@@ -68,6 +68,7 @@ The information on this site is separated into
 * [Kapitel #3: Semantic MediaWiki](./chapters/3/overview.md) 
 * [Kapitel #4: Erweiterungen und Fortschrittliche Modellierungskonzepte](./chapters/4/overview.md)
 * ~~[Kapitel #5: Knowledge Graph Engineering](index.md)~~ (_nicht im WiSe 2023/2024_)
+* [Hörsaalübung](./exercises/hs_ue1.md) (neu)
 <!-- * [Kapitel #3: Semantische Wissensrepräsentation](./chapters/2/overview.md)  -->
 
 ## Übungen zum Selbststudium
