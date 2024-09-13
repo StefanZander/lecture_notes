@@ -59,8 +59,8 @@ Die Nummerierung lässt keine Rückschlüsse auf die Bearbeitungsreihenfolge zu.
 
 #### AP0: Installtation Semantic MediaWiki
 
-    !!! warning 
-        Dieser Schritt ist nicht notwendig bei der Nutzung einer hochschuleigenen Instanz.
+!!! warning 
+    Dieser Schritt ist nicht notwendig bei der Nutzung einer hochschuleigenen Instanz.
 
 : Installation eines Semantic MediaWiki Systems mit einschlägigen Erweiterungen  
 
