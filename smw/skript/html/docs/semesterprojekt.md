@@ -58,6 +58,9 @@ Die Nummerierung lässt keine Rückschlüsse auf die Bearbeitungsreihenfolge zu.
 
 
 #### AP0: Installtation Semantic MediaWiki
+
+!!! warning Dieser Schritt ist nicht notwendig bei der Nutzung einer hochschuleigenen Instanz.
+
 : Installation eines Semantic MediaWiki Systems mit einschlägigen Erweiterungen  
 
     !!! info "Über den Fachbereich gehostete SMW-Instanzen"
@@ -91,7 +94,7 @@ Die Nummerierung lässt keine Rückschlüsse auf die Bearbeitungsreihenfolge zu.
 : Identifizierte NutzerInnen (vgl. ==Rollenkonzept==) sollen diese für die Erstellung neuer und Anpassung bestehender Informationen verwenden können.
 
 #### AP5: Abschlusspräsentation
-: Zusammenführung aller Arbeiten und Erkenntnisse in einer ==12-15-minütigen Live-Demonstration==.
+: Zusammenführung aller Arbeiten und Erkenntnisse in einer ==15-20-minütigen Live-Demonstration==.
 
 
 
