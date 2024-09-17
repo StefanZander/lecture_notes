@@ -19,7 +19,7 @@ Das **Anwendungsgebiet** (=*Gegenstandsbereich*) für das Semesterprojekt könne
 
 Sofern Sie _kein_ eigenes Thema bearbeiten wollen, können Sie eines der im Folgendenen dargestellten Themen wählen:
 
-!!! example "Themenvorschläge"
+!!! abstract "Themenvorschläge"
 
     - Analyse der [FlexForm-Extension](https://www.open-csp.org/DevOps:Doc/FlexForm) mit Umsetzung vieler Beispiele
     - Analyse der Unterschiede zwischen den Erweiterungen [PageForms](https://www.mediawiki.org/wiki/Extension:Page_Forms) and [FlexForms](https://www.mediawiki.org/wiki/Extension:FlexForm)
