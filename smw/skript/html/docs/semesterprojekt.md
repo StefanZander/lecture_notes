@@ -70,7 +70,7 @@ Die Nummerierung lässt keine Rückschlüsse auf die Bearbeitungsreihenfolge zu.
 
 #### AP1: Problembeschreibung und Wissensmanagementfragestellung
 <!-- AP1: Problembeschreibung und Wissensmanagementfragestellung -->
-: Definition der Problemstellung und der Wissensmanagementfragestellungen, d.h., legen Sie dar, welche ==Informationsbedürfnisse== existieren und in welchen Anwendungsfällen diese auftreten (vgl. Anwendungszenariobeschreibungen in NZSE).
+: Definition der Problemstellung und der Wissensmanagementfragestellungen, d.h., legen Sie dar, welche ==Informationsbedürfnisse== existieren und in welchen Anwendungsfällen diese auftreten (vgl. Anwendungszenariobeschreibungen in HCI).
 : Wichtig: Berücksichtigen Sie hier auch ein ==Rollenkonzept==, d.h., welche Benutzer haben in welcher Rolle welches Informationsbedürfnis und überlegen Sie auch, wie Sie dieses in geeigneter Weise adressieren können. 
 : Tragen Sie diese Informationen in die entspr. Aktivität in Moodle ein.
 : Verfeinern Sie die Beschreibungen ggf. mit Fortschreiten des Semesterprojektes iterativ
@@ -97,7 +97,24 @@ Die Nummerierung lässt keine Rückschlüsse auf die Bearbeitungsreihenfolge zu.
 : Zusammenführung aller Arbeiten und Erkenntnisse in einer ==15-20-minütigen Live-Demonstration==.
 
 
+#### Beurteilungskriterien
 
+Die folgenden Aspekte spielen eine Rolle bei der Bewertung des Semesterprojekts.
+
+!!! success "Bewertungsaspekte des Semesterprojekts"
+    - Durchgängige Verwendung einschlägiger Modellierungselemente (Categories, Properties, Subobjects, Templates, Concepts, PageForms, QueryForms, etc.)
+    - Nuztung semantischer Templates an sinnvollen Stellen zur Vermeidung des _Semantic Drifts_
+    - Gut ausgearbeitete und systematisch gegliederte Landingpage, die sich an den Informationsbedürfnissen und situativen Arbeitskontexten der FachanwenderInnen (Rollen) orientiert
+    - FachanwenderInnen-freundliche und -komfortable Dateneingabe und Nutzung des Systems
+    - Einstufiger Prozess beim Anlegen neuer Seiten mittels PageForms
+    - Aufgreifen und adressieren unterschiedlichster Informations- und Nutzungsbedürfnisse
+    - Intelligente und reflektierte Entwurfs- bzw. Modellierungsentscheidungen
+    - Darlegung verschiedener Entwurfsalternativen und Begründung für den gewählten Modellierungsansatz
+    - Systematischer und ausgewogener Research zu Informationsbedürfnissen und den zu adressierenden Wissensmanagementproblemen
+    - Clevere Lösungen bzw. Umsetzungsideen die über den VO-Inhalt hinaus gehen
+    - Umsetzung von allen Leistungs- und ---besonders--- Begeisterungsfaktoren (vgl. KANO-Modell)
+    - Hoher Grad an Vernetzung zwischen den verschiedenen abgebildeten Domänen (=Bereichen) im System
+    
 
 
 <!-- Although the tasks are listed and numbered in a sequential order, most of them should be worked in parallel and in an iterative and incremental manner.  -->
