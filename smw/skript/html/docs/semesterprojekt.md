@@ -30,6 +30,7 @@ Sofern Sie _kein_ eigenes Thema bearbeiten wollen, können Sie eines der im Folg
     - Gemeinsame Plattform für Studierende zum Finden von Praktikumsstellen und Bewertung selbiger (_dieses System soll dann für alle Studierende freigeschaltet werden, so dass dies die Suche nach passenden Praktikumsstellen vereinfacht bzw. Studierende dabei unterstützt, die passende Stelle zu finden._)
     - Verwaltung von Schulungen und Weiterbildungsmaßnahmen mit Kompetenzbetrachtung
     - Automatisierte MitarbeiterInnenvorschläge auf Basis von angefragten Skills (bspw. bei Kundenanfragen von Personalvermittlungsagenturen). Die Skills von Mitarbeitenden ergeben sich in der Regel aus Projekteinsätzen.
+    - Bearbeitung des Seiteninhalts mittels PageForms
 
 _Die genaue inhaltliche Festlegung erfolgt in bilateraler Abstimmung mit dem Betreuer._
 
