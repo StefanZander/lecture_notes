@@ -62,6 +62,27 @@ SMW verfügt über eine **eigene Anfragesprache**
 
 
 ---
+
+# Vorbemerkung
+
+Wichtig: Die Abfragesprache von SMW verfügt über keine benannten Variablen vgl. SQL oder SPARQL.
+
+Beispiel:
+Die Abfrage nach Mitarbeitern einer Organisationseinheit, die als Mitglieder auf EU-Projekten gearbeitet haben mit einem Budget > 1 Mio. EUR ist NICHT in einer einzelnen Abfrage formulier- und ausführbar.
+
+Erläuterung:
+- Filterung auf 2 Ebenen: a) einmal auf Ebene der Mitarbeitenden (zugehörig zu einer OE) + b) auf Ebene der Projekte (EU + Budget > 1 Mio. EUR)
+- Beide Domänen (pages) sind über ein Property (bspw. has_member) miteinander verknüpft
+
+Abfragelogik:
+- Die Abfragelogik in SMW basiert darauf, die Auswahl der in Frage kommenden Knoten (pages) durch das Setzen von zu erfüllenden Eigenschaften (bspw. in Form von Werten von Properties) zu limitieren. 
+- Das bedeutet, dass entweder Seiten von einer Domäne oder einer anderen selektiert werden, nicht aber von beiden.
+
+Einschränkung:
+- Data from printout statements (result data) can not be used as input i.e., in query conditions of other queries (e.g. list for each person the EU-projects they work in together with the budget)
+
+
+---
 # Part 1: Syntax and Semantics
 
 
@@ -559,7 +580,7 @@ If we want to retrieve _all topics_, members of Prof. Studer's group are working
 ![](./figures/ask_query_km.png) 
 ::::
 :::: single
-**The #ask Query**^1^
+**The #ask Query**^1,2^
 ```
 {{#ask: [[has_member::<q>[[works_in::{{PAGENAME}}]]</q>]]
 |?has_topic=
@@ -582,4 +603,71 @@ When formulating queries in Semantic MediaWiki, always consider the **structural
 
 ::: footnotes
 ^1^ Assuming, that the query is placed on the group's page; Category conditions are removed from the query for reasons of simplicity and comprehensibility.
+^2^ Hint: The query can also be solved by using property chaining, i.e. `{{#ask: [[has_member.works_in::Gruppe Prof. Studer]]}}`.
 :::
+
+
+
+---
+## Queries with Property Chains (1/2)
+
+Queries can become quite complex in terms of formulating query conditions; consider the following example:
+
+**Assumption**: There is a page that encodes memberships in form of subobjects. Each subobject represents one membership and stores a reference to the person page of each member together with additional information such as their roles (full member, subsititute, chair etc) or their entry dates. Each person page belongs to a specific category (professor, employee, student etc) that reflects their role within an organisation. 
+
+**Question**: How can we filter members based on their organisational role?
+
+**Solution**: Chaining properties in query conditions. 
+
+`[[-member.Role::Ersatzmitglied||Vorsitzender]] [[Kategorie:Professor]]` returns all professors who are either substitute or chair. 
+
+__Imporant note__: Instead of naming the subject (e.g. a page or non-anonymous subobject) directly, it is represented by a set of properties (e.g. `...Role::Ersatzmitglied`) it fulfills. 
+
+The correct wording would be: _a subject (page or subobject) that participates in a `member` relationship to a page of category `Professor` as well as in a `Role` relationship from itself to the literal `Ersatzmitglied||Vorsitzender`._
+
+
+---
+## Queries with Property Chains (2/2)
+
+::::: columns
+:::: triple
+:fas-pencil: Task: Image you want to display all the Persons (professors, employees, students) of an organisation that are members of a specific committee (e.g. Studienausschuss) together with their membership information plus the category (see above) they belong to.
+
+:fas-thumbs-down: Intuitively, one would formulate the query from the perspective of the membership page (the membership of each person is encoded via single subobjects). However, this is wrong: While membership data can be easily addressed in printout statements, it is not possible to display the category a person's page belongs to. 
+
+:fas-thumbs-up: The better solution is to start from the persons' pages and use _property chains_ with _inverse properties_ to display the membership information hosted on the membership page.
+::::
+:::: double
+Example:
+```
+{{#ask:
+[[Category:Person]]
+[[-member.Role::+]]
+[[-member.type::mitglied_studienausschuss]]
+|?Has_fullname
+|?Category
+|?-member.role=Rolle
+|?-member.start_date=Eintrittsdatum
+|?-member.end_date=Austrittsdatum
+|mainlabel=Name
+|format=table
+|sort=role
+|order=desc
+}}
+```
+
+TODO: add result image
+::::
+:::::
+
+
+---
+## Tipps
+
+a) Issuing an ask-query on the current page or to query for properties stored on a specific page (Source: https://www.mediawiki.org/wiki/Topic:Ww2qdae626d3s2lq)
+
+  ```{{#ask: [[{{PAGENAME}}]] ... }}``` inserts the current page; often used in templates
+
+  ```{{#ask: [[Research Design]] ... }}``` uses a specific page with name `Research Design`
+
+b) ...

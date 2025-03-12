@@ -16,6 +16,7 @@ extra_css:
 
 theme:
   name: material
+  color_mode: dark
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default

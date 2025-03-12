@@ -513,3 +513,28 @@ This can be achieved with ==subqueries== and ==inverse property chaining== in th
  |headers=plain
 }}
 ```
+
+
+---
+# Displaying Subobject and Parent Page Data in Queries
+
+_Inverse properties_ and _property chains_ allow for combining data from subobjects and a parent page.
+
+```
+{{#ask: [[type::sta-top]]
+ |?Titel
+ |?Verantwortliche Person
+ |?-Has subobject.Has date=Sitzungsdatum
+ |?-Has subobject.hat sitzungsnr=Nr
+ |format=broadtable
+ |sort=Sitzungsdatum
+ |order=asc
+ |headers=show
+ |searchlabel=… weitere Ergebnisse
+ |class=sortable wikitable smwtable
+ |prefix=none
+}}
+```
+
+![](./figures/subobj_query_1.png)
+

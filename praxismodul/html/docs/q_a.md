@@ -15,12 +15,48 @@ Die Informationen auf dieser Seite werden kontinuierlich erweitert und gepflegt.
 
 
 
-### Administratives
+### Allgemeines
+
+??? question "Ist es möglich, das Praxissemester auch im Ausland zu absolvieren?"
+     Ja.
+
+     Bitte sprechen sie dies vorab mit ihren Betreuern sowie den Prüfungsbüro ab.
+
+
 
 ??? question "Kann ich während der Praxisphase den Arbeitgeber wechseln?"
     Ja das ist möglich. Wichtig ist, dass sie in Summe auf die 360h Stundenumfang kommen; diese können auf unterschiedliche Arbeitgeber aufgeteilt werden.
     Hierbei ist erforderlich, dass sie sich die geleisteten Stunden von jedem Arbeitgeber bestätigen lassen (bspw. durch ein formloses Schreiben, auf dem Start- und Enddatum sowie die im angegebenen Zeitraum abgeleisteten Stunden verzeichnet sind). Dieses Schreiben muss von der Praktikumsstelle durch einen Unterzeichnungsberechtigten unterschrieben und mit einem Firmenstempel versehen sein. 
 
+
+??? question "Falls ich während der Praxisphase die Firma wechsle, werden die geleisteten Stunden in beiden Firmen zusammengezählt?"
+     Ja.
+
+
+??? question "Muss die Praxisphase innerhalb von drei Monaten in Vollzeit absolviert werden, oder wäre es auch möglich, sie in Teilzeit über vier bis fünf Monate hinweg zu absolvieren?"
+     Es müssen mind. und zwingend die 360 Stunden erbracht werden. IdR erfolgt dies in Vollzeit. Sie können aber nach Absprache mit dem Unternehmen UND(!) ihren Betreuern ein anderes Zeitmodell abstimmen. Wichtig hierbei ist v.a. die Zustimmung der Betreuer. 
+
+     IdR kann die Betreuungszusage für die BA nur bei einem nahezu nahtlosen Übergang von Praxisphase in Bachelorarbeitsphase gewährleistet werden. Das hat organisatorische Gründe. Sollten sie die Praxisphase also in Teilzeit absolvieren wollen, dann kann es ggf. sein, dass sie sich neue Referenten für die BA-Betreuung suchen müssen.
+
+
+
+??? question "Gibt es spezielle Anforderungen an das Unternehmen, in dem die Praxisphase absolviert wird (z. B. bestimmte Größe oder Branchenzugehörigkeit)?"
+     Nein.
+     Es sollte eine informatiknahe Tätigkeit gewährleistet sein. Der Interpretationsspielraum ist hier jedoch hoch. Achten sie in ihrem eigenen Interesse darauf, dass die vereinbarten Aufgaben bzw. Tätigkeitsbereiche ihren eigenen Interessensschwerpunkten entsprechen. 
+
+
+??? question "Muss die Bachelorarbeit direkt im Anschluss an die Praxisphase angemeldet werden, oder kann sie erst im darauffolgenden Semester begonnen werden?"
+     Grundsätzlich und Studienrechtlich kann die Bachelorarbeit zu einem späteren Zeitpunkt begonnen werden. Allerdings erlischt hier u.U. die Betreuungszusage der involvierten ProfessorInnen.
+
+
+??? question "Muss das Thema der Facharbeit den Lehr- und Forschungsthemen der betreuuenden ProfessorInnen entsprechen?"
+     Grundsätzlich haben sie eine freie “Themenwahl”. Viel wichtiger als das “Thema” ist allerdings das Problem, mit dem sich die Arbeit auseinandersetzt bzw. welches die Arbeit adressiert.
+
+     Bei Arbeiten die thematisch in den primären Forschungs- und Lehrgebieten der betreuuenden ProfessorInnen liegen kann natürlich eine umfassendere inhaltliche Unterstützung erfolgen. Bei Arbeiten außerhalb erfolgt die Betreuung v.a. auf methodischer Ebene.
+
+
+
+### Vertragsangelegenheiten
 
 ??? question "Ist für die Praxisphase einen Arbeitsvertrag notwendig?"
     I.d.R. ja. Diesen schließen Sie mit Ihrem Arbeitgeber, d.h., mit Ihrer Praktikumsstelle.
@@ -28,9 +64,10 @@ Die Informationen auf dieser Seite werden kontinuierlich erweitert und gepflegt.
     Ein separater Vertragsschluss zwischen Hochschule und Praktikumsstelle oder zwischen der Hochschule und Ihnen ist _nicht_ notwendig.
 
 
-
 ??? question "Stellt die Hochschule Darmstadt bzw. der Fachbereich Informatik eine Mustervorlage für einen Arbeitsvertrag zur Verfügung?"
     Nein. In vielen Fällen verfügt das Unternehmen bereits über entsprechende Verträge beziehungsweise Vertragsvorlagen.
+
+    Alternativ finden sie im  __[Anhang der Anlage 4 der BBPO](https://h-da.de/fileadmin/h_da/Hochschule/Presse_Publikationen/Hochschulanzeiger/2024/FBI_BBPO_I_B_2024-02-06.pdf)__ einen Musterausbildungsvertrag. Dieser kann vom Unternehmen übernommen werden.
 
 
 ??? question "Zwischen welchen Parteien kommt ein Vertrag zustande?"

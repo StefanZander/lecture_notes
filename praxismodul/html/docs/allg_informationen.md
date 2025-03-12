@@ -35,7 +35,7 @@ Für die Anmeldung zur Praxisphasephase sind 3 Dinge notwendig:
 
     ??? info "Beispiel 2" 
         ``` xml
-        Hallo Frau Brucherseifer,
+        Hallo Frau xxx,
         hallo Herr Zander,
 
         im Folgenden teile ich Ihnen die Details zu meiner Praxisphase mit.
