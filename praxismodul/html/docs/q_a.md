@@ -20,12 +20,12 @@ Die Informationen auf dieser Seite werden kontinuierlich erweitert und gepflegt.
 ??? question "Ist es möglich, das Praxissemester auch im Ausland zu absolvieren?"
      Ja.
 
-     Bitte sprechen sie dies vorab mit ihren Betreuern sowie den Prüfungsbüro ab.
+     Bitte sprechen sie dies vorab mit ihren Betreuern sowie dem Prüfungsbüro ab.
 
 
 
 ??? question "Kann ich während der Praxisphase den Arbeitgeber wechseln?"
-    Ja das ist möglich. Wichtig ist, dass sie in Summe auf die 360h Stundenumfang kommen; diese können auf unterschiedliche Arbeitgeber aufgeteilt werden.
+    Ja das ist möglich. Wichtig ist, dass sie in Summe auf den 360h Stundenumfang kommen; dieser kann auf unterschiedliche Arbeitgeber aufgeteilt werden.
     Hierbei ist erforderlich, dass sie sich die geleisteten Stunden von jedem Arbeitgeber bestätigen lassen (bspw. durch ein formloses Schreiben, auf dem Start- und Enddatum sowie die im angegebenen Zeitraum abgeleisteten Stunden verzeichnet sind). Dieses Schreiben muss von der Praktikumsstelle durch einen Unterzeichnungsberechtigten unterschrieben und mit einem Firmenstempel versehen sein. 
 
 
