@@ -1,8 +1,8 @@
 # Introductory Material (Milestone #0)
 
 !!! success "Objectives"
-    - [x] Become familiar with terms, concepts, and work practices related to "Science"
-    - [x] Find a topic that is of interest for both of you
+    - [x] Become familiar with terms, concepts, and work practices related to "Science" and scientific work practices
+    - [x] Find a topic – or better – a problem that is of interest for both of you
     - [x] Enter your group constellation and topic into the SWCS Moodle course
 
     **Grading Factor: ungraded**
@@ -26,10 +26,10 @@
     - Bring them to the in-class lectures; they will be discussed and answered there
 
     !!! warning "Take Responsibility!"
-        One of the main principles of this course is to learn to __take responsibility for your work and the outcome__. Be aware, that this is _not_ a standard university course in which you get all necessary information hand-feeded. Instead you are required to take actions, organize yourself, set goals, estimate and meet expectations, seek for support when you encounter problems or difficulties etc.  
+        One of the main principles of this course is to learn to __take responsibility for your work and your outcome__. Be aware, that this is _not_ a standard university course in which you get all necessary information hand-feeded. Instead, you are required to take actions, organize yourself, set goals, estimate and meet expectations, seek for support when you encounter problems or difficulties etc.  
         
         ==_Remember, your course lecturer is always available to help and support you – BUT the **initiative must come from your side**
-         --> this is part of your responsibility._==
+         --> it is your responsibility._==
 
     - If no questions arise, we assume that everything is clear to you – with all the consequences. 
 

@@ -10,17 +10,17 @@
 
 ## Communication
 
-- Usually via **email**, **BBB** or as **indiviual appointments** via <https://meet.fbi.h-da.de> or via <https://rooms.h-da.de/r?room=Zander%2C+Stefan+%28fbi%29> 
+- Usually via **email**, **BBB** or as **indiviual appointments** via <https://rooms.h-da.de/r?room=Zander%2C+Stefan+%28fbi%29> 
     _-->_ contact me via email for arranging an individual appointment
 - Please use the following subject `WAI` __OR__ `SWCS` when asking questions via email:  
-    `[SWCS|WAI] {matter}` (without `{}`)
+    `[SWCS|WAI] {matter}` (without `{}` of course)
 
     !!! info "Please consider the correct email subject"
         Please note that the curly braces (`{}`) are indicators for tokens that should be replaced with the real names and matter (without `{}` of course).
 
         Please also enter the **correct module** (WAI/SWCS) your request is referring to.
 
-        N.B. _Although these things are discussed in the lecture, a significant number of students' emails usually contain the previous template in the stated form..._
+        N.B. _Although these things are introduced here as well as in the lecture, a significant number of students' emails usually neglects these instructions, which makes it harder to treat the request appropriately and in-time._
 
 
 ## In-Class Lectures

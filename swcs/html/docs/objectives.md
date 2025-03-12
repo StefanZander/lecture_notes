@@ -40,14 +40,14 @@ You will discover a lot, mostly more detailed in the lecture and through your li
     Built your research upon information from the primary literature hosted in established scientific libraries.
     Use peer-reviewed papers from conferences or journals as your main literature source. 
 
-- **Construct Validity**  
-    Ensure the appropriateness of the chosen methodology for tackling an identified problem so that others, when applying your methodology, are likely to gather the same or comparable results (--> *Reproducability*)
+- **Internal Validity**  
+    Make sure that the logical consistency of the applied causality chain is maintained, i.e., that you used the appropriate set of methods for takling a problem and that the conclusions you draw from your observations are both verifyable and valid  (--> *"Inducability"*)
 
 - **External Validity**  
     Consider the replicability and transferability of the applied methodology and obtained results (--> *Generalisation*). Your results should be verifable by emperical research results. Others should be able to apply your researched results to comparable problems. Validate the appropriateness of your methodology and generated insights by demonstrating that they also apply to comparable problems and yield similar results.
 
-- **Internal Validity**  
-    Make sure that the logical consistency of the applied causality chain is maintained, i.e., that you used the appropriate set of methods for takling a problem and that the conclusions you draw from your observations are both verifyable and valid  (--> *"Inducability"*)
+- **Construct Validity**  
+    Ensure the appropriateness of the chosen methodology for tackling an identified problem so that others, when applying your methodology, are likely to gather the same or comparable results (--> *Reproducability*)
 
 - **Follow the principles of good scientific work practices**  
     This usually involves many aspects even bejond the creation of scientific artefacts (*--> consult the links in the literature recommendations for more in-depth information about good scientific work practices*). From previous experiences with students' submissions, the following few principles revealed to be of immediate importance as they directly influence a paper's assessment:
@@ -59,13 +59,13 @@ You will discover a lot, mostly more detailed in the lecture and through your li
         Be advised: Anything you take from external works need to be indicated, i.e., cited.
         Only take a max. of 3 words directly from external works, not more. 
 
-        !!! danger "Avoid Plagiarism – do not copy entire paragraphs"            
-            Do __not copy whole paragraphs from external works__ and only provide one citation at the paragraph's end. This counts as plagiarism and will be treated as such – with all consequences.
+        !!! danger "Avoid Plagiarism – Do not copy entire sentences or paragraphs"            
+            Do __not copy whole sentences and/or paragraphs from external works__ and only provide one citation at the paragraph's end. This counts as plagiarism and will be treated as such – with all consequences.
 
         The LaTeX template provided for this course is already pre-configured and implements a common citation style; so there is no need to modify that.
     
     - **Avoid plagiarism**  
-        This is one of the most crucial elements of good scientific work. Disregarding this principle in general leads to desk rejection of your work and impairs your name. h_da treats plagiarism as an attempt of deception and creates a note in your student record.
+        This is one of the most crucial elements of good scientific work. Disregarding this principle in general leads to desk rejection of your work and impairs your name. h_da treats plagiarism as an attempt of deception and stores a statement in your student record.
 
 - **Deliniate your own work from related works**  
     This aspect is often neglected in students' papers and even final theses, which is really unfortunate. Science is not about re-inventing the wheel or copying things others did earlier for the sake of matter (e.g. because students think it might lead to a high assessment of their works because it sounds sophisticated and complex). It is about valuing the work of others and showing how your own work builts (or deliniates) from them. This tremendously helps the reading in grasping the novel aspects of your ideas and work.

@@ -3,12 +3,12 @@
 
 ## What is Scientific Writing?
 
-A critical aspect of the scientific process is the reporting of new results in scientific journals in order to disseminate that information to the larger community of scientists. Communication of your results contributes to the pool of knowledge within your discipline (and others!) and very often provides information that helps others interpret their own experimental results. Most journals accept papers for publication only after peer review by a small group of scientists who work in the same field and who recommend the paper be published (usually with some revision).
+A central aspect of the scientific circus is the reporting of new results in scientific conferences and/or journals in order to disseminate that information to the larger community of scientists. Communication of such results contributes to the pool of knowledge within a discipline (and others!) and very often provides information that helps others interpret their own experimental results. Most conferences and journals accept papers for publication only after peer review by a small group of scientists who work in the same field and who recommend the paper be published (usually with some revision).
 
 
 ## Why a Scientific Format?
 
-The scientific format may seem confusing for the beginning science writer due to its **rigid structure** which is so different from writing in the humanities. 
+The scientific format may seem confusing for the beginning science writer due to its **rigid structure** which is very different from writing in the humanities. 
 
 1. One reason for using this format is that it is a means of **efficiently communicating scientific findings** to the broad community of scientists in a uniform manner. 
 2. Another reason, perhaps more important than the first, is that this format allows the paper to be **read at several different levels**.  
@@ -16,7 +16,7 @@ The scientific format may seem confusing for the beginning science writer due to
    
 The take home point here is that the scientific format helps to insure that at whatever level a person reads your paper (beyond title skimming), they will likely get the key results and conclusions.
 
-Source: <http://abacus.bates.edu/~ganderso/biology/resources/writing/HTWsections.html>
+Source: adapted and complemented from [here](http://abacus.bates.edu/~ganderso/biology/resources/writing/HTWsections.html).
 
 
 ## Which Structure should I use?
