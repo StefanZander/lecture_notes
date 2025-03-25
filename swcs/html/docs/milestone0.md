@@ -1,9 +1,10 @@
 # Introductory Material (Milestone #0)
 
 !!! success "Objectives"
+    - [x] Refresh your knowledge from the previous WAI course
     - [x] Become familiar with terms, concepts, and work practices related to "Science" and scientific work practices
-    - [x] Find a topic – or better – a problem that is of interest for both of you
-    - [x] Enter your group constellation and topic into the SWCS Moodle course
+    - [x] Become familiar with the organisation and structure of this course
+    - [x] Find a team mate and start searching for topics – or better – problems of potential interest
 
     **Grading Factor: ungraded**
 

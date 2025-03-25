@@ -22,14 +22,14 @@ paginate: true
 
 # Projekt-Systementwicklung / Projekt KMI im SoSe 2024
 
-#### Prof. Dr. Stefan Linus Zander
+#### Prof. Dr. Stefan Linus Zander – Dipl. Volkswirt Roland Trefftz – Lars Kleinschmidt (BSc)
 
-Kick-Off-Meeting – xx.04.2025  {.lightgreen .Big .skip}
+Kick-Off-Meeting – 22.04.2024  {.lightgreen .Big .skip}
 
 
 ---
 <!-- header: Überblick -->
-<!-- footer: Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, xx.04.2025 -->
+<!-- footer: Projekt Systementwicklung / Projekt Multimedia – Kick-Off-Meeting, 22.04.2024 -->
 
 # Agenda
 
@@ -64,6 +64,17 @@ Für *Studierende*, sagen Sie bitte kurz ...
   - Email: stefan.zander@h-da.de 
   - Website: https://fbi.h-da.de/personen/stefan-zander
 
+- **Lars Kleinschmidt** (Technische Projektleitung – CTO) 
+  - Email: Lars.Kleinschmidt@stud.h-da.de
+
+
+**Klinikon GmbH** {.Bigskip}
+- **Dipl. Volkswirt Roland Trefftz** (fachliche Projektleitung und Stakeholder) 
+  - Email: trefftz@klinikon.com
+  - Website: https://www.klinikon.com/
+
+
+
 
 
 ---
@@ -73,10 +84,22 @@ Für *Studierende*, sagen Sie bitte kurz ...
 
 ::::: columns
 :::: single
--
+- Bahammou, Ayoub	– ayoub.bahammou@stud.h-da.de
+- Bibaj, Leon	– Leon.Bibaj@stud.h-da.de
+- Boussaguia, Mohamed – Mohamed.Boussaguia@stud.h-da.de
+- Conzen, Tobias – Tobias.Conzen@stud.h-da.de
+- Gener Lopez, Teresa – teresa.generlopez@stud.h-da.de
+- Noumboussi Tayon, Guirauld – Guirauld.Tayon@stud.h-da.de
+- Hübner, Maximilian – Maximilian.Huebner@stud.h-da.de
 ::::
 :::: single
--
+- Kwasny, Marco – Marco.Kwasny@stud.h-da.de
+- Lupus, Max – max.lupus@stud.h-da.de
+- Nandha, Sanjeev – Sanjeev.Nandha@stud.h-da.de
+- Niazi, Mina – Mina.Niazi@stud.h-da.de
+- Spengler, Etienne – Etienne.Spengler@stud.h-da.de
+- Tchouankam Ngansop, Paul Arnaud – Paul.A.Ngansop@stud.h-da.de
+- Wolf, Samuel – Samuel.Wolf@stud.h-da.de
 
 ::::
 :::::
@@ -171,34 +194,30 @@ Projekt Systementwicklung / Projekt Multimedia ist ein **7,5 CP Modul**.
 - **1 CP** entspricht **30 Arbeitsstunden** laut den gängigen Berechnungsmodellen^1,2^
 - Der Arbeitunsumfang für das Modul entspricht deshalb **225 Arbeitsstunden**
 - Damit ergibt sich eine wöchentliche Arbeitszeit (ohne Pause) von **ca. 17,3 h - 18,75 h**.
-- Oder anders gerechnet: Pro Person ist eine Arbeitsleitung von rd. ** P**
 
 ::: footnotes
 ^1^ https://www.studis-online.de/Studieren/ects.php
 
 ^2^ https://fbc.h-da.de/fileadmin/Dokumente/Pruefungsordnung/ABPO_AEnderung_2018-01-30.pdf
-::: 
--->
+::: -->
 
 
 
 ---
 # Zeitliches Engagement – eine realistische Betrachtung
-
 Projekt Systementwicklung / Projekt Multimedia ist ein **7,5 CP Modul**.
-- Das Bachelor-/Masterstudium sieht **30 CP** an Modulen pro Semester vor, d.h., der Anteil des Moduls entspr. 1/4 aller ihrer Module in diesem Semester
-- Bei einer wöchentlichen Arbeitszeit von **42 h** ergibt sich ein zeitlicher Aufwand von **10,5 h** (ohne Pausen) über **15 Wochen** hinweg^1^
-- Das entspr. einer Arbeitsleistung von rund **20 Arbeitstagen** pro Person im Semester
+- Das Bachelor-/Masterstudium sieht **30 CP** an Modulen pro Semester vor
+- Bei einer wöchentlichen Arbeitszeit von **42 h** ergibt sich ein zeitlicher Aufwand von **10,5 h** (ohne Pausen) über **14 Wochen** hinweg^1^
 - Dass ist das zeitliche Engagement, das wir von Ihnen einfordern
-- Aber: Den zeitlichen Aufwand dürfen Sie frei einteilen
+- Den zeitlichen Aufwand dürfen Sie frei einteilen
 <!-- - Zeitlicher Aufwand von **10,5h** wöchentliche Arbeitszeit (ohne Pausen) über **16 Wochen** hinweg^1^ -->
 
 ::: redbox center marg20 Bigskip
-In Summe veranschlagen wir pro Person ein :far-clock: **Gesamtzeitbudget** von **ca. 160h** bzw. **20 Arbeitstagen**
+In Summe veranschlagen wir pro Person ein :far-clock: **Gesamtzeitbudget** von **150h - 160h**
 :::
 
 ::: footnotes
-^1^ Vorlesungszeit (14 Wochen) + Lernwoche (1 Woche) + Prüfungszeit (1 Woche)
+^1^ Vorlesungszeit (14 Wochen) + Lernwoche (0 Woche) + Prüfungszeit (1 Woche)
 :::
 
 

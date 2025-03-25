@@ -32,7 +32,7 @@
     Instead, we will use **BigBlueButton (BBB)** for all lectures 
 -->
 
-- Dates of the lectures will be announced via Email and via the OBS Calendar
+- Dates of the lectures will be announced via Email as well as via the OBS Calendar
     - _-->_ so please make sure that your email and calendar subscription is up-to-date 
 - Depends on the student's familirarity with the topic; 
 - Per default only very few – but attendance is compulsory
