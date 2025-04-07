@@ -234,8 +234,7 @@ Bildquelle: https://c4.wallpaperflare.com/wallpaper/556/603/706/1892-on-the-terr
 
 
 
-<!--
----
+<!-- ---
 # Was wird von Ihnen verlangt ?
 ![bg left:33% ](figures/men_lifting_stone.jpg)
 
@@ -268,7 +267,6 @@ Bildquelle: https://c4.wallpaperflare.com/wallpaper/710/270/417/1898-austrian-pa
 - Durchführung des Quizzes in der Woche nach Ihrer eigenen Präsentation
 - Moderation und Nachbearbeitung des Quizzes
 
-
 **Anwesenheitspflicht in jeder Seminarstunde**
 - Abwesenheit mit schriftlichem Nachweis per E-Mail:
   - Ärztliches Attest (Arbeitsunfähigkeitsbescheinigung)
@@ -278,7 +276,7 @@ Bildquelle: https://c4.wallpaperflare.com/wallpaper/710/270/417/1898-austrian-pa
 
 
 ---
-# Was wird von Ihnen verlangt :fa-user-check:
+## Was wird von Ihnen verlangt :fa-user-check:
 
 **Aktive Beteiligung an der LVA**
 -  Mitmachen :fa-people-pulling: – Mitdenken :fa-head-side-virus: – Mitdiskutieren :fa-comment:
