@@ -86,10 +86,16 @@ Für *Studierende*, sagen Sie bitte kurz ...
 
 ::::: columns
 :::: single
-- TBA
+- Aliyev,	Sultan	– Sultan.b.Aliyev@stud.h-da.de
+- Chiu,	Patrick	– patrick.a.chiu@stud.h-da.de
+- Cvach,	Denis	– denis.cvach@stud.h-da.de
+- Hassoun,	Hamdi	– hamdi.hassoun@stud.h-da.de
+- Horn,	Johannes	– johannes.horn@stud.h-da.de
+- Kraus,	Vladislav	– Vladislav.Kraus@stud.h-da.de
+- Lichau,	Simon	– simon.lichau@stud.h-da.de
+- Suharta,	Bryan Austin	– bryanaustin.suharta@stud.h-da.de
 ::::
 :::: single
-- TBA
 
 ::::
 :::::
@@ -234,7 +240,7 @@ In Summe veranschlagen wir pro Person ein :far-clock: **Gesamtzeitbudget** von *
 
 ---
 # Kommunikation :fas-people-arrows:
-- (optional) via :fab-discord: **Discord**:  TBA
+- (optional) via :fab-discord: **Discord**:  <https://discord.gg/73tyXbSw>
   - für die Kommunikation der Projektteams untereinander
   - für die Kommunikation mit dem/den Projektverantwortlichem/na zu technischen Fragen
 - :fas-envelope: **Email** bei wichtigen und/oder offiziellen Dingen
@@ -266,9 +272,9 @@ In Summe veranschlagen wir pro Person ein :far-clock: **Gesamtzeitbudget** von *
 - ebenso wie ergänzende Materialien
 
 **Taiga** :fas-list-check: 
-- offizielles **Projektmanagementtool** ab diesem Semester
+- offizielles **Projektmanagementtool** in diesem Semester
 - Bitte nutzen Sie dieses für die **Projektplanung** und **Projektdokumentation** (APs, Tasks, DoD, Backlog, Issues, Meetings etc.)
-- Link: <https://taiga.fgmmgr.users.h-da.cloud/project/.../>
+- Link: <https://taiga.fgmmgr.users.h-da.cloud/project/fachbereichratsprotokolle/>
 
 
 
@@ -356,6 +362,26 @@ Anmerkungen: Testing sowie die experimentelle Verifikation und Validierung von u
 
 
 
+
+---
+# :fas-person-digging: Aufgaben von Gesamtprojektleiter:innen
+
+- Gesamtprojektleitung auf Seiten der Studierenden
+- Gesamtzeit- und Resourcenplanung (Epics/Sprints/Tasks) in Abhängigkeit des Semesterplans
+- Organisation der inhaltlichen Abstimmung mit dem Team und den Stakeholdern
+- Abstimmung von Aufgaben mit den WP-Ownern und dem Team
+- Delegation von Aufgaben an die WP-Owner und das Team
+- Ausgestaltung der Epics / User Stories / Sprints / Tasks in Taiga
+- Teilnahme an und Durchführung von WP-Owner-Treffen
+- Rückmeldung an die LVA-Leiter bei Problemen etc.
+- Kontrolle der Arbeiten und Arbeitsergebnisse
+- Qualitätssicherung
+
+::: bluebox center marg5
+Essentiell ist ein **proaktives**, **eigenverantwortliches** und **selbstwirksames** Vorgehen!
+:::
+
+
 ---
 # :fas-person-digging: Aufgaben von WP-Owner:innen
 
@@ -365,7 +391,7 @@ Anmerkungen: Testing sowie die experimentelle Verifikation und Validierung von u
 - Abstimmung von Aufgaben mit dem Team
 - Delegation von Aufgaben an das Team
 - Ausgestaltung der Epics / User Stories / Sprints / Tasks in Taiga
-- Teilnahme an und Durchführung von WP-Owner-Treffen
+- Teilnahme an WP-Owner-Treffen
 - Rückmeldung an die LVA-Leiter bei Problemen etc.
 - ggf. Festlegung eines/r Stellvertreter:in (zusammen mit dem Team)
 - Kontrolle der Arbeiten und Arbeitsergebnisse
@@ -377,7 +403,7 @@ Essentiell ist ein **proaktives**, **eigenverantwortliches** und **selbstwirksam
 
 
 ---
-# :fas-person-digging: Aufgaben von Developer:innen
+# :fas-person-digging: Aufgaben der Researcher & Developer
 
 - Definition von User Stories und Tasks
 - Zuordnung zu Epics
@@ -417,13 +443,15 @@ Essentiell ist ein **proaktives**, **eigenverantwortliches** und **selbstwirksam
 ---
 # Nächste Schritte :fas-shoe-prints:
 
-- Festlegung der WP-Leader
-- Anlegen der Taiga-Accounts
-- Organisatino der WPs 
-- Definition der User Stories (Anforderungen) und Tasks durch WP-Owner in Taiga
+- Festlegung der Haupt-Projektleiter:innen
+- Festlegung der WP-Leader und Eintragung in Taiga
+- Registrierung in Taiga 
+- Organisation der WPs 
+- Definition der User Stories (Anforderungen) und Tasks durch WP-Owner + Team in Taiga
 - Beginn der Recherchearbeiten
 - Kontaktaufnahme mit Stakeholdern um WPs (Epics) weiter auszudefinieren
-
+- Festlegung der Jour fixe Termine
+- Anlayse einiger FBR-Protokolle (:fas-link: <https://fbi.h-da.de/fachbereich/gremien/fachbereichsrat/protokolle>)
 
 
 
@@ -447,8 +475,8 @@ Da wir analog dem **Agilen Manifesto** vorgehen wollen, anbei ein paar Gedanken 
 
 {.Skip}
 - Grundsätzlich: die Projektaufgaben (=Tasks der jeweiligen WPs bzw. User Stories) werden in wöchentlichen **Sprints** abgearbeitet^1^
-- Die **Detailarbeiten** pro Sprint (Research / Development / etc) legt jedes Team individuell fest
-- Jedes Projekt führt ein **Sprint**- und ein **Produkt-Backlog**. 
+- Die **Detailarbeiten** pro Sprint (Research / Development / etc) legen die WP-Leader mit dem Team individuell fest
+- Das Team führt ein **Sprint**- und ein **Produkt-Backlog**. 
   - Das Sprint-Backlog dokumentiert die einzelnen Aufgaben und Ziele eines Sprints für jedes Team. 
   - Im Produkt-Backlog werden die Anforderungen in Form von User Stories und  zugehöriger Tasks definiert und dokumentiert.
 - Die Sprint- und Produkt-Backlogs werden in Taiga geführt ~~den **Git-Repositories** der jeweiligen Projekte geführt.~~
