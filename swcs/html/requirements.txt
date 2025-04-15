@@ -1,3 +1,2 @@
 mkdocs-material==9.5.22
 mkdocs-git-revision-date-localized-plugin==1.2.0
-material.extensions.emoji
