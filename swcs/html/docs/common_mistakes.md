@@ -7,7 +7,7 @@
 
 * Paper reads like a report
 * Paper just states background technology or what others have already stated
-* Paper fails to address a specific research problem (i.e., a problem that requires extensive research to find an answer / solution for) (--> if the extend of research is considerbly low, this is a clear indicator that the topic and problem requires more thoughts)
+* Paper fails to address a specific research problem (i.e., a problem that requires extensive research to find an answer / solution for) (--> in case the extent of research is considerably low, this is a clear indicator that the topic and problem requires more thoughts)
 * Research Questions are formulated too broadly / too general
     e.g. How can context be modelled with technology xyz?
 	Those questions can not be answered directly and just provide heuristic answers
