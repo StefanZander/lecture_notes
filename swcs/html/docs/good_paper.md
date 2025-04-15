@@ -56,7 +56,7 @@ Here is what you should do if your task is to develop an algorithm / a code modu
 
 
 
-## Usefull Tools when writing a Thesis and/or Paper
+## Usefull Tools when writing a Thesis or Paper
 
 !!! info "A Word of Advice about AI Tools"
     It is totally ok to use AI tools for developing a sound and thorough reserach methodology and/or try to find an interesting research problems. 
