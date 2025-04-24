@@ -10,15 +10,15 @@
 
 ## Aufgaben
 
-### Vorbereitung
+### :material-crane: Vorbereitung
 
-1. Tragen Sie die wichtigsten :material-brain: Erkenntnisse aus dem :material-heart-search: User Research zusammen, diskutieren und reflektieren Sie diese gemeinsam im Team. 
-2. Überlegen Sie gemeinsam im Team, durch welche fachlichen :fontawesome-solid-gears: Funktionen und Features sich diese verkörpern lassen und dokumentieren Sie diese in der Projektmappe.
+1. Tragen Sie die wichtigsten :material-brain: Erkenntnisse aus dem :material-heart-search: User Research zusammen, diskutieren und reflektieren Sie diese gemeinsam im Team. Notieren Sie diese in ihrer :material-folder-open: Projektmappe (_falls nicht schon getan_).
+2. Überlegen Sie gemeinsam im Team, durch welche fachlichen :fontawesome-solid-gears: Funktionen und Features sich diese verkörpern lassen und dokumentieren Sie diese in der :material-folder-open: Projektmappe.
 
 
 ### :material-monitor-cellphone-star: Entwurf von Screen-Diagrammen
 
-1. Entwerfen Sie die :fontawesome-solid-mobile-screen-button: Benutzungsoberfläche ihrer App in Form von konkreten skizzierten :material-draw: **Screen-Diagrammen** (gerne auf Papier, bitte groß und gut erkennbar!). <!-- Achten Sie auf **Vollständigkeit** der benötigten Bedienelemente. Berücksichtigen Sie Platzierung, Größe, Anordnung, Beschriftung. Skizzieren Sie von **Icons** die Rohform so, dass man deren bildlich-inhaltliche Aussage versteht. -->
+1. Entwerfen Sie die :fontawesome-solid-mobile-screen-button: Benutzungsoberfläche ihrer App in Form von konkreten skizzierten :material-draw: **Screen-Diagrammen** (_gerne auf Papier, bitte groß und gut erkennbar!_). <!-- Achten Sie auf **Vollständigkeit** der benötigten Bedienelemente. Berücksichtigen Sie Platzierung, Größe, Anordnung, Beschriftung. Skizzieren Sie von **Icons** die Rohform so, dass man deren bildlich-inhaltliche Aussage versteht. -->
 
     !!! info "Hinweise"
           - Achten Sie auf Vollständigkeit der benötigten Bedienelemente. 
@@ -61,9 +61,9 @@
     Bitten Sie ein Familienmitglied oder eine andere externe Person die konzipierten Oberflächen aus Sicht des Stereotypen zu begutachten. Spielen Sie einige typische Anwendungsfälle mit Ihrem Stereotypen durch und beobachten Sie sehr genau, wie sie/er mit den Oberflächen interagiert.
 -->
 
-1. Entwickeln Sie eine Reihe von **repräsentativen Testfällen**, um eine erste Validierung der in ihrem Prototypen umgesetzten Entwurfsentscheidungen vorzunehmen. So finden Sie heraus, ob das von Ihnen entwickelte Benutzungskonzept für ihre Stereotypen intuitiv nutzbar ist, d.h., sich an deren mentalen Modellen orientiert.
+1. Entwickeln Sie eine Reihe von **repräsentativen Testfällen**, um eine erste Validierung der, in ihrem Prototypen umgesetzten Entwurfsentscheidungen vorzunehmen. So finden Sie heraus, ob das von Ihnen entwickelte Benutzungskonzept für ihre Stereotypen intuitiv nutzbar ist, d.h., ob es sich an deren mentalen Modellen orientiert.
 
-2. **Testen** Sie Ihre Entwürfe mit Ihren Steretypen (bspw. verkörpert durch Ihre Peer-Gruppe oder Freunde/Verwandte/etc.) und identifizieren Sie Ungereimtheiten und/oder Inkonsistenzen und Verbesserungen. Überlegen Sie, ob es gut und richtig ist, wenn Sie keine Verbesserungen identifizieren.
+2. **Testen** Sie Ihre Entwürfe mit Ihren Stereotypen (_bitte mit realen Personen_) und identifizieren Sie Ungereimtheiten, Inkonsistenzen und Verbesserungen. Überlegen Sie, ob es gut und richtig ist, wenn Sie keine Verbesserungen identifizieren.
 
     !!! warning "Wichtiges zur Durchführung der Tests"
         Die Entwürfe sind aus **Sicht der/des :fontawesome-solid-user-doctor: Stereotypen** sowie seiner/ihrer spezifischen Anforderungen zu testen!
@@ -71,7 +71,7 @@
         1. Überlegen Sie im Vorfeld, wie Sie Ihre Entwürfe sinnvoll testen (--> *funktionsorientiert vs. anwendungsfallorientiert*) 
         2. Entwickeln Sie eine Handvoll **repräsentativer Anwendungsfälle**, die Ihre Stereotypen durchspielen sollen.
         3. Geben Sie in :fontawesome-regular-thumbs-down: **KEINEM FALL HINWEISE** oder Tipps, dies **verfälscht** Ihre Tests enorm. ==:fontawesome-solid-triangle-exclamation: Wir wollen herausfinden, ob die getroffenen Designentscheidungen den mentalen Modellen des/der Stereotypen entsprechen und ob die UI für diese/n intuitiv benutzbar ist.==
-        <!-- 4. Den Test können Sie auch zu Beginn der nächsten Einheit durchführen. -->
+
 
 
 ## Ergebnisse
@@ -79,6 +79,7 @@
 Ihre Praktikumsmappe muss folgende ausgearbeitete Artefakte enthalten: 
 
 !!! success "Ergebnisse"
+    - [x] User-Research Erkenntnisse und deren geplante Verkörperung in der App 
     - [x] abstrakte und kontrete Screen Diagramme der App
     - [x] Navigationsübersicht
     - [x] Paper Prototypen ihrer Applikation mit begründeten Entwurfsentscheidungen

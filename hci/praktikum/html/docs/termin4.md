@@ -3,7 +3,7 @@
 
 !!! success "Lernziele"
 
-    - [X] Sie arbeiten weiter an der App und bereiten die Präsentation der App im 5. Termin vor
+    - [X] Sie arbeiten weiter an der App und bereiten die Vorstellung ihrer Ergebnisse und der App im 5. Termin vor
 
 
 
@@ -42,11 +42,12 @@ Selbstverständlich können Sie einschlägige Aspekte Ihrer App bzw. die Umsetzu
 Nach Abschluss dieser Einheit sollen die folgenden Artefakte vorliegen:
 
 !!! success "Ergebnisse"
-    - [ ] Persistiertes Datenmodell
-    - [ ] Darlegung der Persistierungsstrategie
-    - [ ] Fertigstellung aller Widgets
-    - [ ] Vollständige Einbindung der Daten externer Datenquellen oder Sensoren
-    - [ ] (_Optional_) Umsetzung von Begeisterungsfaktoren
+    - [x] Persistiertes Datenmodell
+    - [x] Darlegung der Persistierungsstrategie
+    - [x] Fertigstellung aller Widgets
+    - [x] Vollständige Einbindung der Daten externer Datenquellen oder Sensoren
+    - [x] Fehlerfreies Durchlaufen der implementierten Aspekte
+    - [x] (_Optional_) Umsetzung mind. eines Begeisterungsfaktors
 
 <!-- - [ ] Darlegung des fertigen Datenmodells -->
 <!-- 2. [ ] Layout für Hoch- und Querformat -->
