@@ -10,7 +10,7 @@ The following syllabus information intend to help you structure your work and ac
 - Week 1: Read introductory material + start forming groups ([MS0](milestone0.md))
 - Week 2: Find topics + start reading topic-related material ([MS1](milestone1.md)) 
 - Week 3: Become familiar with the topic and the state of the art + start preparing Factsheet & Abstract
-- Week 4: Finalize Factsheet & Abstract and submit ([MS2](milestone2.md)) --- _==Deadline: TBA (EOD)==_
+- Week 4: Finalize Factsheet & Abstract and submit ([MS2](milestone2.md)) --- _==Deadline: 09.05.2025 (EOBD)==_
 - Week 5: Feedback for [MS2](milestone2.md) + Research
 - Week 6: Research
 - Week 7: Research
