@@ -1,4 +1,4 @@
-# Willkommen auf den HCI-Semesterprojektseiten
+# Willkommen auf den neuen HCI-Semesterprojektseiten
 
 
 Auf den folgenden Seiten finden Sie die **Aufgaben** der jeweiligen Praktikumseinheiten sowie **allgemeine Informationen** zum Semesterprojekt.
