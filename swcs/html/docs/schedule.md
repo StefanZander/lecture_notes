@@ -11,7 +11,11 @@ The following syllabus information intend to help you structure your work and ac
 - Week 2: Find topics + start reading topic-related material ([MS1](milestone1.md)) 
 - Week 3: Become familiar with the topic and the state of the art + start preparing Factsheet & Abstract
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 - Week 4: Finalize Factsheet & Abstract and submit ([MS2](milestone2.md)) --- _==Deadline: 09.05.2025 (EOBD)==_
+=======
+- Week 4: Finalize Factsheet & Abstract and submit ([MS2](milestone2.md)) --- _==Deadline: 09.05.2025 (EOD)==_
+>>>>>>> Stashed changes
 =======
 - Week 4: Finalize Factsheet & Abstract and submit ([MS2](milestone2.md)) --- _==Deadline: 09.05.2025 (EOD)==_
 >>>>>>> Stashed changes
