@@ -10,7 +10,11 @@ The following syllabus information intend to help you structure your work and ac
 - Week 1: Read introductory material + start forming groups ([MS0](milestone0.md))
 - Week 2: Find topics + start reading topic-related material ([MS1](milestone1.md)) 
 - Week 3: Become familiar with the topic and the state of the art + start preparing Factsheet & Abstract
+<<<<<<< Updated upstream
 - Week 4: Finalize Factsheet & Abstract and submit ([MS2](milestone2.md)) --- _==Deadline: 09.05.2025 (EOBD)==_
+=======
+- Week 4: Finalize Factsheet & Abstract and submit ([MS2](milestone2.md)) --- _==Deadline: 09.05.2025 (EOD)==_
+>>>>>>> Stashed changes
 - Week 5: Feedback for [MS2](milestone2.md) + Research
 - Week 6: Research
 - Week 7: Research
@@ -18,7 +22,7 @@ The following syllabus information intend to help you structure your work and ac
 - Week 9: Upload review version of paper + enter paper bids ([MS3](milestone3.md)) --- _==Deadline: TBA (EOBD)==_[^1]
 - Week 10: Review Week ([MS4](milestone4.md)) --- _==Deadline: TBA (EOBD)==_
 - Week 11: Integrate feedback + paper revision + start preparing the final presentations
-- Week 12: Final presentations ([MS5](milestone5.md)) --- _==Date: TBA ==_
+- Week 12: Final presentations ([MS5](milestone5.md)) --- _==Date: TBA (vorauss. 1. Juli-Woche)==_
 <!-- - Week 13: Paper revision -->
 - Week 15: Finalization and submission of research paper ([MS6](milestone6.md)) --- _==Deadline: TBA (EOD)==_
 
