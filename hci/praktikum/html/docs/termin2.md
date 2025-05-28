@@ -26,7 +26,7 @@
           - Skizzieren Sie von **Icons** die Rohform so, dass man deren bildlich-inhaltliche Aussage versteht.
       <!--    - Nutzen Sie **abstrakte Screen-Diagramme** um **Entwurfsalternativen** zu erkennen. Wählen Sie die **beste Entwurfsalternative** aus und verfolgen Sie diese in Form konkreter Screen-Diagramme weiter. -->
 
-2. Abstrahieren Sie die Skizzen zu :simple-uml: **abstrakten Screen-Diagrammen**.  
+2. Abstrahieren Sie die Skizzen zu :simple-uml: **abstrakten Screen-Diagrammen** aka Analyseklasse(n) (_siehe Folie "Varianten von Screendiagrammen" im Kapitel "2.4 GUI-Diagramme"_).  
 
     Nutzen Sie die abstrakten Screen-Diagramme um...
 
@@ -49,9 +49,11 @@
 
 ### :fontawesome-regular-paper-plane: Prototyping
 
-1. Entwickeln Sie auf Basis der ausgewählten Entwurfsalternative :fontawesome-regular-paper-plane: **Paper Prototypen** für die Anwendungsfälle, die Sie im UI-Test testen werden.
+1. Entwickeln Sie auf Basis der ausgewählten Entwurfsalternative :fontawesome-regular-paper-plane: **Paper Prototypen** für _die Anwendungsfälle_, die Sie im UI-Test testen werden.
 2. Dokumentieren Sie die Entwürfe und Entwurfsentscheidungen ausführlich in der :material-folder-open: Projektmappe. 
 
+!!! info "Hinweis"
+    Die Paper Prototypen müssen sie nur für _die_ Anwendungsfälle entwicklen, die sie im User-/UI-Test überprüfen. Es müssen _keine_ Paper Prototypen für die komplette App / die kompletten Screendiagramme angefertigt werden. 
 
 ### :material-flask: Testen
 
