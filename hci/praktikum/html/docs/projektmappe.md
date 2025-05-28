@@ -12,7 +12,7 @@
 -->
 
 !!! warning "Einreichedatum"
-    Die Projektmappe ist jeweils bis **MI, 24:00 Uhr** in der Woche nach dem jeweiligen Praktikumstermin in Moodle hochzuladen (Details siehe unten).
+    Die Projektmappe ist jeweils bis **DI, 24:00 Uhr** in der Woche nach dem jeweiligen Praktikumstermin in Moodle hochzuladen (Details siehe unten).
 
 ### Grundsätzliches zur Projektmappe
 
@@ -39,9 +39,9 @@ dokumentiert werden. Die zu dokumentierenden Artefakte sind in den Aufgabenbesch
 - Das Dokumentationstool bzw. die Dokumentationsumgebung (bspw. Markdown, LaTeX, etc.) ist den Gruppen freigestellt
 - Als **Dateinamen** verwenden Sie bitte folgendes Format
 
-    `Projektmappe_Gr{Nr}_{Projektname}.pdf`
+    `{Praktikumstermin}_{Projektname}.pdf`
 
-    _Hinweis: Die Gruppennummer entspricht der Moodle-Gruppenummer_
+    Beispiel: `Di1x_Parkplatzsuche.pdf`
 
 - Die Projektmappe ist kontinuierlich zu pflegen und zum jeweiligen Abgabetermin im Gruppensolt in Moodle hochzuladen bzw. zu aktualisieren.
 
@@ -60,10 +60,10 @@ dokumentiert werden. Die zu dokumentierenden Artefakte sind in den Aufgabenbesch
     - **MS#4: Usability Evaluierung** – _Einreichung am Ende des Semesters nach Termin 5_
   
 - Für **MS#3: App-Entwicklung und Präsentation** (während Termin 5) ist **KEINE EINREICHUNG** notwendig, da die Dokumentation hier in Form ihres App-Codes erfolgt.
-- ==Achten Sie streng darauf, die Einreichefrist einzuhalten. Verspätete Abgaben werden mit der Note 5 bewertet.==
+- ==Achten Sie streng darauf, die Einreichefrist einzuhalten. Verspätete Abgaben werden mit der Note 5 bzw. mit 0 Punkten bewertet.==
 
 !!! warning "Aktualisieren Sie die Projektmappe regelmäßig und rechtzeitig"
-    Versäumen Sie es, die Projektmappe rechtzeitig vor der Abgabe zu aktualisieren, so wird der jeweilige Meilenstein mit der **Note 5** bzw. **0 Punkte** bewertet. 
+    Versäumen Sie es, die Projektmappe rechtzeitig vor der Abgabe zu aktualisieren, so wird der jeweilige Meilenstein mit der **Note 5** bzw. **0 Punkten** bewertet. 
 
 
 
