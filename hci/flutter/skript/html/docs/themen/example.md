@@ -24,7 +24,7 @@
 The following app demonstrates implementation options for some of the main flutter language features that should be acquired by students in the course. It is intended to help students incorporate those features into their semester projects.  
 
 !!! info "Source code of the app"
-    The app's source code is available via [GitHub](https://github.com/StefanZander/projects/tree/main/flutter/fetching_json).
+    The app's source code is available via [GitHub](https://github.com/StefanZander/lecture_notes/tree/master/hci/flutter/beispiele/fetch_json).
 
 
 ### Architecture
