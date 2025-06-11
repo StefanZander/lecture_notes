@@ -4,8 +4,8 @@
 !!! success "Key Points"
     - The Flutter framework for building UIs was inspired by React and takes a similar approach.
     - Widgets are the central elements for building the UI.
-    - Widgets describe what their view should look like given their current configuration and state.
-    - Widgets are rebuilt when their state change
+    - Widgets describe what their view should look like given their current configuration and state
+    - Widgets are rebuilt when their state change; e.g., a call of `setState()) { ... })` requests the runtime system to rebuilt the widget, i.e., to call the `build()` method again.
     - Flutter incorporates a set of basic widgets
         - `Text` --- for creating and styling textual content 
         - `Row`, `Column` --- determine the horizontal and vertical layout resp. positioning of nested widgets. It is based on the Flexbox layout module 
