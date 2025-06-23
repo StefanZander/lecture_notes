@@ -18,9 +18,9 @@ The following syllabus information intend to help you structure your work and ac
 - Week 9: Upload review version of paper + enter paper bids ([MS3](milestone3.md)) --- _==Deadline: 08.06.2025 (EOBD)==_[^1]
 - Week 10: Review Week ([MS4](milestone4.md)) --- _==Deadline: 15.06.2025 (EOBD)==_
 - Week 11: Integrate feedback + paper revision + start preparing the final presentations
-- Week 12: Final presentations ([MS5](milestone5.md)) --- _==Date: TBA (vorauss. 1. Juli-Woche)==_
+- Week 12: Final presentations ([MS5](milestone5.md)) --- _==Date: 01.07.2025==_
 <!-- - Week 13: Paper revision -->
-- Week 15: Finalization and submission of research paper ([MS6](milestone6.md)) --- _==Deadline: TBA (EOD)==_
+- Week 13+x: Finalization and submission of research paper ([MS6](milestone6.md)) --- _==Deadline: TBA (EOD)==_
 
 [^1]: I will start the bidding process on SUN., 2025-06-08.
 
