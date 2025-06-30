@@ -13,7 +13,8 @@
 ### :material-crane: Vorbereitung
 
 1. Tragen Sie die wichtigsten :material-brain: Erkenntnisse aus dem :material-heart-search: User Research zusammen, diskutieren und reflektieren Sie diese gemeinsam im Team. Notieren Sie diese in ihrer :material-folder-open: Projektmappe (_falls nicht schon getan_).
-2. Überlegen Sie gemeinsam im Team, durch welche fachlichen :fontawesome-solid-gears: Funktionen und Features sich diese verkörpern lassen und dokumentieren Sie diese in der :material-folder-open: Projektmappe.
+2. Überlegen Sie gemeinsam im Team, durch welche fachlichen :fontawesome-solid-gears: Funktionen und Features sich diese verkörpern lassen und dokumentieren Sie diese in der :material-folder-open: Projektmappe. Stellen sie die Hypothesen den Features gegenüber, d.h., notieren Sie, welche Funktionalität(en) und Eigenschaften sich aus den jeweiligen Hypothesen ableiten lassen. 
+3. (neu) Gegenüberstellung der Hypothesen und der zu entwickelnden Funktionalitäten (siehe Beschreibung bei 2.)
 
 
 ### :material-monitor-cellphone-star: Entwurf von Screen-Diagrammen
@@ -64,8 +65,9 @@
 -->
 
 1. Entwickeln Sie eine Reihe von **repräsentativen Testfällen**, um eine erste Validierung der, in ihrem Prototypen umgesetzten Entwurfsentscheidungen vorzunehmen. So finden Sie heraus, ob das von Ihnen entwickelte Benutzungskonzept für ihre Stereotypen intuitiv nutzbar ist, d.h., ob es sich an deren mentalen Modellen orientiert.
+neu: Beschreiben sie zu jedem Testfall das Ziel des Tests sowie das dahinterstehende Erkenntnisinteresse und gleichen sie dieses auch mit den Hypothesen aus dem User Research ab. Ein Testfall kann aus mehreren Schritten bestehen. 
 
-2. **Testen** Sie Ihre Entwürfe mit Ihren Stereotypen (_bitte mit realen Personen_) und identifizieren Sie Ungereimtheiten, Inkonsistenzen und Verbesserungen. Überlegen Sie, ob es gut und richtig ist, wenn Sie keine Verbesserungen identifizieren.
+2. **Testen** Sie Ihre Entwürfe mit Ihren Stereotypen (_bitte mit realen Personen_) und identifizieren Sie Ungereimtheiten, Inkonsistenzen und Verbesserungen. Überlegen Sie, ob es gut und richtig ist, wenn Sie keine Verbesserungen identifizieren. Gleichen sie auch hier ihre Beobachtungen mit den Zielen und dem Erkenntnisinteresse der Tests ab.
 
     !!! warning "Wichtiges zur Durchführung der Tests"
         Die Entwürfe sind aus **Sicht der/des :fontawesome-solid-user-doctor: Stereotypen** sowie seiner/ihrer spezifischen Anforderungen zu testen!

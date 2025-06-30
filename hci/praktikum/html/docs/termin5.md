@@ -29,11 +29,11 @@ Alle **Protokolle** aus den folgenden Teilaufgaben kommen in die Projektmappe.
 
 ## Durchführung
 
-- Im Präsenztermin präsentiert jede Gruppe in **max. 15 Minuten** die entwickelte App mittels geeigneter technischer Tools und Hardware <!--BBB und Screensharing-->
-- Die Präsentation kann am **Emulator** oder einem **realen Gerät** (bevorzugt) erfolgen.
+- Im Präsentations-/Abschlusstermin präsentiert jede Gruppe in **max. 10 Minuten** die entwickelte App mittels geeigneter technischer Tools und Hardware <!--BBB und Screensharing-->
+- Die Präsentation kann am **Emulator** oder einem **realen Gerät** (bevorzugt) erfolgen (den Screen können sie auf einen Laptop streamen und von dort am Beamer präsentieren).
 - Präsentieren Sie alle Funktionen, die Sie umgesetzt haben einschl. etwaiger **Leistungs- und Begeisterungsfaktoren**. 
 - Alles was Sie _nicht_ präsentieren kann nicht gewertet werden! Achten Sie deshalb darauf keine Zeit zu vergeuden.
-- Stellen Sie _VOR_ Beginn der Praktikumseinheit sicher, dass App und notwendige Zusatzkomponenten oder Services laufen und die Kommunikation funktioniert.
+- Stellen Sie _VOR_ Beginn der Veranstaltung sicher, dass App und notwendige Zusatzkomponenten oder Services laufen und die Kommunikation funktioniert.
 - Bereiten Sie die Demonstration so vor, als würde die App das **erste Mal gestartet** werden. 
     - Löschen Sie alle Daten und Einstellungen vorab und versetzen Sie die App in den >>Urzustand<<.
 

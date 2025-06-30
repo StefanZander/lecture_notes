@@ -9,6 +9,16 @@
 
 ## Aufgaben
 
+### Projektziele
+1. Formulieren sie ihre Projektidee auf max. 1-2 Seiten. Gehen sie hierbei insbesondere auf die folgenden Punkte ein:
+   1. **Motivation** – was ist die Ausgangslage bzw. Problemstellung hinter eines derartigen Vorhabens? Worin besteht der Bedarf nach einer derartigen App?
+   2. **Projektziele** – was soll mit dem Vorhaben und der App erreicht werden? In welchen Bereichen werden Verbesserungen etc. angestrebt?
+   3. **Zielgruppe** – welche Nutzenden wollen sie ansprechen und warum ist dies wichtig für diese Personen? Worin bzw. in welchen Aspekten können sie diese unterstützen? Welche Vorbehalte existieren ggf.?
+   4. **Erkenntnisinteresse** – was möchten sie herausfinden; was gilt es herauszufinden, damit die App und das Vorhaben erfolgreich sein wird? Auf welche Fragen müssen Antworten gefunden werden?
+   5. **Methodik** – welche Methoden setzen sie ein, um verwertbare Erkenntnisse zu generieren bzw. um die relevanten Aspekte zu identifizieren?
+
+
+
 ### Personas
 1. :fontawesome-solid-users-viewfinder: **Personen- und Kriterienliste**: Erstellen Sie eine **Liste** von verschiedenen typischen Personen, die als Benutzende der jeweiligen App in Frage kommen (gerne aus dem Kreis Ihrer Freunde und Verwandten).  
 
