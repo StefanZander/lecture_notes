@@ -16,15 +16,16 @@ The following pages contain information about
 * course milestones to achieve in order to successfully pass the course, 
 * instructions for successfully completing the practical part.
 
-!!! info "Infos zum Blockkurs im Sommersemester 2024"
-    Im Sommersemester 2024 wird die Lehrveranstaltung als **2-wöchiger Blockkurs** vor Ort an der h_da angeboten. 
+!!! info "Infos zum Blockkurs im Sommersemester 2025"
+    Im Sommersemester 2025 wird die Lehrveranstaltung als **2-wöchiger Blockkurs** vor Ort an der h_da angeboten. 
     
     - Im **ersten Teil** der Veranstaltung (MO-DO) werden die theoretischen Grundlagen und Technologien vermittelt. 
     - Im **zweiten Teil** erfolgt die selbständige Bearbeitung eines selbstgewählten Themas in Form eines Gruppenprojekts (Zeitraum: FR - DO der folgenden Woche). 
     - Am FR der zweiten Woche finden die **Abschlusspräsentationen** der Gruppenprojekte sowie ein --- je nach Teilnehmendenzahl --- **kurzer mündlicher oder schriftlicher Test** statt. 
-    - Die Lehreinheiten dauern von **9:00 bis ca. 13:00 Uhr**. 
+    - Die Lehreinheiten dauern idR von **9:00 bis ca. 13:00 Uhr**. 
     - Der Nachmittag ist für die **selbständige Auseinandersetzung** mit den Lehrinhalten des Vormittags sowie der Bearbeitung von **Übungsaufgaben** vorgesehen. 
     - Während der Projektphase finden *keine* Übungen statt, so dass die Studierenden sich voll auf die Projektarbeit bzw. das Gruppenprojekt konzentrieren können. 
+    - Eine separate Anmeldung zur Prüfung ist nicht notwendig. Der Einstieg in die Gruppenprojektphase und die Mitarbeit an einem Gruppenprojekt gilt als Beginn der Leistungsfeststellung.
 
 
 !!! info "Language and Revision Policy"
