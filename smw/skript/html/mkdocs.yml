@@ -19,7 +19,7 @@ theme:
   name: material
   palette:
     - media: "(prefers-color-scheme: light)"
-      scheme: default
+      scheme: slate
       primary: blue
       accent: red
       toggle:
@@ -28,7 +28,7 @@ theme:
         primary: deep purple
         accent: red
     - media: "(prefers-color-scheme: dark)"
-      scheme: slate
+      scheme: default
       primary: light blue
       accent: teal
       toggle:
