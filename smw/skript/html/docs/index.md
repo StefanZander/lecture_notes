@@ -65,11 +65,12 @@ The information on this site is separated into
 
 ## Themenübersicht
 * [Kapitel #1: Einführung in das Wissensmanagement](kapitel1.md) 
-* [Kapitel #2: Technologische Grundlagen semantischer Wissensrepräsentationsmodelle](./chapters/2/overview.md) 
+* [Kapitel #2: Technologische Grundlagen semantischer Wissensrepräsentationsmodelle (aka Knowledge Graphs)](./chapters/2/overview.md) 
 * [Kapitel #3: Semantic MediaWiki](./chapters/3/overview.md) 
-* [Kapitel #4: Erweiterungen und Fortschrittliche Modellierungskonzepte](./chapters/4/overview.md)
-* ~~[Kapitel #5: Knowledge Graph Engineering](index.md)~~ (_nicht im WiSe 2023/2024_)
+* [Kapitel #4: Erweiterungen und fortschrittliche Modellierungskonzepte](./chapters/4/overview.md)
 * [Hörsaalübung](./exercises/hs_ue1.md) (neu)
+<!--* ~~[Kapitel #5: Knowledge Graph Engineering](index.md)~~ (_nicht im WiSe 2023/2024_) -->
+
 <!-- * [Kapitel #3: Semantische Wissensrepräsentation](./chapters/2/overview.md)  -->
 
 ## Übungen zum Selbststudium
@@ -80,11 +81,9 @@ The information on this site is separated into
 
 
 
-## Semester Project
+## Semesterprojekt
 
-Informationen zum Semensterprojekt finden sich hier
-
-* [Semesterprojekt](./semesterprojekt.md)
+* [Detaillierte Informationen zum Semesterprojekt](./semesterprojekt.md)
 
 
 

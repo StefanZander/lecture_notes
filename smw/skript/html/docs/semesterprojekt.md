@@ -1,4 +1,4 @@
-# Semesterprojekt
+# Das Semesterprojekt
 
 
 ### Allgemeines
@@ -23,8 +23,8 @@ Sofern Sie _kein_ eigenes Thema bearbeiten wollen, können Sie eines der im Folg
 
     - Analyse der [FlexForm-Extension](https://www.open-csp.org/DevOps:Doc/FlexForm) mit Umsetzung vieler Beispiele
     - Analyse der Unterschiede zwischen den Erweiterungen [PageForms](https://www.mediawiki.org/wiki/Extension:Page_Forms) and [FlexForms](https://www.mediawiki.org/wiki/Extension:FlexForm)
-    - Abbildung von Fachbereichsrats-Protokollen in Semantic MediaWiki
-    - ~~Realisierung einer Literaturbeschaffungsplattform inkl. Bestellübersichten für den Fachbereich~~
+    - Umsetzung von Fachbereichsrats-Protokollen in Semantic MediaWiki
+    - Realisierung einer Literaturbeschaffungsplattform inkl. Bestellübersichten für den Fachbereich
     - Realisierung einer einfach nutzbaren Bewertungs-/Beurteilungsseite für studentische Abschlussarbeiten, ggf. mit PDF-Ausgabe des Beurteilungsbogens
     - ~~Verwaltung von Studierendenanmeldungen für Praxisphase und Abschlussarbeiten (ggf. gekoppelt mit Bewertungsplattform)~~
     - Gemeinsame Plattform für Studierende zum Finden von Praktikumsstellen und Bewertung selbiger (_dieses System soll dann für alle Studierende freigeschaltet werden, so dass dies die Suche nach passenden Praktikumsstellen vereinfacht bzw. Studierende dabei unterstützt, die passende Stelle zu finden._)

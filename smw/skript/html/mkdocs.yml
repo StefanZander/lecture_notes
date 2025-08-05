@@ -17,20 +17,21 @@ nav:
 
 theme:
   name: material
+  color-mode: dark
   palette:
     - media: "(prefers-color-scheme: light)"
-      scheme: slate
+      scheme: default
       primary: blue
-      accent: red
+      accent: orange
       toggle:
         icon: material/brightness-7 
         name: Switch to dark mode
         primary: deep purple
         accent: red
     - media: "(prefers-color-scheme: dark)"
-      scheme: default
+      scheme: slate
       primary: light blue
-      accent: teal
+      accent: lime
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
