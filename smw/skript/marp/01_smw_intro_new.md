@@ -37,7 +37,7 @@ Kapitel 1: Einführung in das Wissensmanagement {.lightgreen .Big .skip}
 - Warum sollte man sich mit dem Thema Wissensmanagement auseinandersetzen ?
 - Warum benötigen Unternehmen ein funktionierendes Wissensmanagement ?
 - Welche Wissensmanagementansätze gibt es und wodurch unterscheiden sie sich ?
-- Welche Rolle spielt IKT im Wissensmanagement?
+- Welche Rolle spielt :fas-computer: IKT im Wissensmanagement?
 - Warum wird Wissensmanagement mit fortschreitender Digitalisierung (aka Digitale Souveränität) immer wichtiger ?
 - Welche Rolle spielt der Mensch :fas-person: im Wissensmanagement ?
 
@@ -66,10 +66,10 @@ Kapitel 1: Einführung in das Wissensmanagement {.lightgreen .Big .skip}
 ---
 <!-- header: Kapitel 1: Warum brauchen Organisationen Wissensmanagement -->
 <!-- # Warum benötigen Organisationen ein funktionierendes Wissensmanagement ? -->
-# Über die Notwendigkeit eines Wissensmanagements
+# Über die Notwendigkeit des Managements von Wissen
 
 ---
-# Von der Industrie- zur Wissensgesellschaft
+# Von der :fas-industry: Industrie- zur :fas-brain: Wissensgesellschaft
 <!-- beschäftigungsanteil_inland -->
 
 ::: twocolumns small
@@ -81,7 +81,7 @@ Mehrheit der :fas-people-group: Bevölkerung inzwischen im **Dienstleistungsbere
 
 Durch die zunehmende Digitalisierung werden __wissensbasierte Dienstleistungen__ zum dominanten Wirtschaftssegment.
 
-Während vor wenigen Jahren noch von der Informationsgesellschaft gesprochen wurde, welche die Industriegesellschaft beerben sollte, ist es heute Konsens, dass die Ablösung der Industriegesellschaft treffender durch den Begriff der *__Wissensgesellschaft__* umschrieben werden sollte.
+Während vor wenigen Jahren noch von der Informationsgesellschaft gesprochen wurde, welche die Industriegesellschaft beerben sollte, ist es heute Konsens, dass die Ablösung der Industriegesellschaft treffender durch den Begriff der *:fas-brain: __Wissensgesellschaft__* umschrieben werden sollte.
 
 ![](../html/docs/figures/wissensgesellschaft.jpg)
 :::
@@ -99,12 +99,14 @@ Quelle: Bundeszentrale für politische Bildung: Wissensgesellschaft – Eine Ide
 ::: single small
 __Sektoraler Wandel in Deutschland, Großbritannien und der EU__ :fas-earth-europe:
 
-Der Anteil der _verarbeitenden Industrie_ (in Deutschland mit den wichtigen Sektoren Automobil, Chemie, Pharmazeutika und dem Bereich der Investitionsgüter wie Maschinenbau, elektrische Ausrüstungen etc.) an der gesamtgesellschaftlichen Wertschöpfung schrumpft, meist verbunden mit einem _Abbau von Arbeitsplätzen_ in diesem Sektor. Das ist ein langfristiger Trend, der freilich in den letzten zehn Jahren in Deutschland aufgehalten wurde, während er sich in der _EU ungebremst fortsetzte_. In Deutschland hat sich der Anteil des verarbeitenden Gewerbes an der Bruttowertschöpfung von 37 Prozent in 1971 auf _22,6 Prozent in 2011 verringert_. Zum Vergleich: 1979 betrug im Großbritannien der industrielle Anteil 33 Prozent, 2011 lag er bei 10,8 Prozent. In diesem Zeitraum entstand in der Londoner City die moderne Finanzwirtschaft. In der EU fiel der entsprechende Anteil im Zeitraum von 2001 bis 2011 von 18 auf 15,5 Prozent.
+Der Anteil der _verarbeitenden Industrie_ (in Deutschland mit den wichtigen Sektoren Automobil, Chemie, Pharmazeutika und dem Bereich der Investitionsgüter wie Maschinenbau, elektrische Ausrüstungen etc.) an der gesamtgesellschaftlichen Wertschöpfung schrumpft, meist verbunden mit einem _Abbau von Arbeitsplätzen_ in diesem Sektor. Das ist ein langfristiger Trend, der freilich in den letzten zehn Jahren in Deutschland aufgehalten wurde, während er sich in der _EU ungebremst fortsetzte_. 
+
+In Deutschland hat sich der Anteil des verarbeitenden Gewerbes an der Bruttowertschöpfung von 37% in 1971 auf _22,6%_ in _2011 verringert_. Zum Vergleich: 1979 betrug im Großbritannien der industrielle Anteil 33%, 2011 lag er bei 10,8%. In diesem Zeitraum entstand in der Londoner City die moderne Finanzwirtschaft. In der EU fiel der entsprechende Anteil im Zeitraum von 2001 bis 2011 von 18% auf 15,5%.
 :::
 ::: single small
 **Von Produktion zu Dienstleistung – das Beispiel Automobilindustrie** :fas-car:
 
-Die Automobilindustrie produziert zwar noch immer Automobile. Die Aufgabe besteht heute aber zunehmend darin, nicht das physische Produkt »Auto« zu verkaufen, sondern _:fas-map-location-dot: Mobilitätsbedürfnisse der Kunden_ zu befriedigen. Die Menschen wollen das Auto nicht mehr unbedingt besitzen, sondern es dort nutzen, wo ihnen Fahrrad, Bahn oder Bus nicht ausreichen. Die Lösung dieser Fragen – zum Beispiel durch Car-Sharing eingebunden in weitere Nutzungsmöglichkeiten – erfordert _kommunikative und logistische Leistungen, die weit über die Herstellung der physischen Produkte hinausgehen_. Es geht um Kommunikation mit den Kunden und um Kooperation mit ihnen, die in gewisser Weise zu Koproduzenten des Mobilitätsangebots werden.
+Die Automobilindustrie produziert zwar noch immer Automobile. Die Aufgabe besteht heute aber zunehmend darin, nicht das physische Produkt »Auto« zu verkaufen, sondern _:fas-map-location-dot: Mobilitätsbedürfnisse der Kunden_ zu befriedigen. Die Menschen wollen das Auto nicht mehr unbedingt besitzen, sondern es dort nutzen, wo ihnen Fahrrad, Bahn oder Bus nicht ausreichen. Die Lösung dieser Fragen – zum Beispiel durch Car-Sharing eingebunden in weitere Nutzungsmöglichkeiten – erfordert _kommunikative und logistische Leistungen, die weit über die Herstellung der physischen Produkte hinausgehen_. Es geht um Kommunikation mit den Kunden und um Kooperation mit ihnen, die in gewisser Weise zu Co-Produzenten des Mobilitätsangebots werden.
 ::::
 
 ::: footnotes
@@ -267,7 +269,7 @@ Digitale Kompetenz ist in der heutigen Welt unerlässlich, da digitale Technolog
 
 
 ---
-## Warum wird Wissen zunehmend :fas-arrow-trend-up: wichtiger für Unternehmen ?
+## Zusammenfassung: <br/>Warum Wissen zunehmend :fas-arrow-trend-up: wichtiger wird für :fas-building: Unternehmen
 
 :::: columns
 ::: single
@@ -324,10 +326,27 @@ Wissen ist
 - ... __handlungs-__ und __ziel-orientiert__.
 
 
+---
+## Definitionsversuche
+
+{.skip}
 ::: definition 
 ==Wissen== bezeichnet die Gesamtheit der Kenntnisse und Fähigkeiten, die Menschen zur ==Lösung von Problemen== einsetzen. Wissen stützt sich auf Daten und Informationen, ist im Gegensatz zu diesen jedoch immer ==an Personen gebunden==. Daher müssen Daten-, Informations- und Wissensmanagement stets zusammenspielen.
 
 Quelle: Probst GJB., Raub S., Romhardt K., (2011): "Wissen managen – Wie Unternehmen ihre wertvollste Ressource optimal nutzen". 7. Auflage, Gabler, Frankfurt/Main; S.24
+:::
+
+{.skip}
+
+::: definition 
+
+Knowledge is what we know about the world around us. It is what we have ==learned== and ==understood==, whether through ==experience==, ==study==, ==observation==, or ==instruction==. 
+
+It includes facts, concepts, principles, ideas, and insights that help us ==understand the world== and navigate it. 
+
+Knowledge is what we have in our minds and can apply to ==solve problems==, ==make decisions==, and ==navigate various situations==.
+
+Quelle: Generated by ChatGPT using the phrase "What is knowledge?" on January 15th, 2023.
 :::
 
 

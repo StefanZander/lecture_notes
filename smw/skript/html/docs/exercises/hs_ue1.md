@@ -5,6 +5,7 @@ Ziel: Entwickeln Sie ein Semantic MediaWiki-System zur Verwaltung von Mitarbeite
 
 Anhand der nachstehenden Punkte soll das System schrittweise aufgebaut werden.
 
+
 ## Schritte
 
 ### Stufe 1
@@ -24,9 +25,9 @@ Anhand der nachstehenden Punkte soll das System schrittweise aufgebaut werden.
 ### Stufe 2
 
 1. Erstellen sie für die Projekt-, Mitarbeitenden- und Forschungsthemenstammdaten entsprechende semantische Templates und binden sie diese an den entsprechenden Stellen ein. 
-2. Ergänzen sie die Templates auch um etwaige Queries (bspw. auf den Forschungsthemen- und Mitarbeitendenseiten). 
+2. Ergänzen sie die Templates auch um etwaige Queries (bspw. auf den Forschungsthemen- und Mitarbeitendenseiten), so dass automatisiert zusammengehörige /-hängende Informationen angezeigt werden (bspw. die zu einem Forschungsthema zugehörigen Projekte und/oder Mitarbeitenden etc). 
 
 
 
 ### Stufe 3
-
+1. Erstellen sie für ausgesuchte Templates sog. **Form Definition Pages**, um das Erfassen von neuen Informationen zu vereinheitlichen und zu vereinfachen (bspw. für das Anlegen neuer Projekte)
