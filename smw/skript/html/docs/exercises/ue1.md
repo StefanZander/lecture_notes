@@ -182,7 +182,8 @@ Vierter Schritt
 
 ### Aufgabe 3: Impact von Wissensmanagement
 
-Erarbeiten Sie in Ihrer Gruppe aus der Vorlesung auf max. 1 - 2 Folien je ein Beispiel in Form einer Case Study, welche den Mehrwert des Wissensmanagement für moderne Unternehmen aufzeigt. 
+~~Erarbeiten Sie in Ihrer Gruppe aus der Vorlesung auf max. 1 - 2 Folien je ein Beispiel in Form einer Case Study, welche den Mehrwert des Wissensmanagement für moderne Unternehmen aufzeigt. ~~
+Im SoSe2025: Bearbeiten sie die typischen Wissensmanagementfragestellungen (Seite 30) und beantworten sie die Fragen.
 
 
 
