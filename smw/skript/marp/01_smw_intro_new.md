@@ -91,6 +91,66 @@ Quelle: Bundeszentrale für politische Bildung: Wissensgesellschaft – Eine Ide
 :::
 
 
+---
+# Was sind wissensbasierte Dienstleistungen ?
+
+::: definition
+==Wissensbasierte Dienstleistungen== sind Dienstleistungen, die vor allem auf **Fachwissen**, **Erfahrung**, **Analyse** und **Problemlösungskompetenz** beruhen – nicht primär auf körperlicher Arbeit oder standardisierten Abläufen. Der Wert entsteht durch den Einsatz von Wissen (z. B. technisches, wissenschaftliches, juristisches oder organisatorisches Wissen), das auf die ==spezifische Situation== eines Kunden angewendet wird. 
+Oft sind sie stark ==individualisiert==, da sie auf die jeweilige Problemstellung zugeschnitten werden.
+
+Quelle: Eigene Definition
+:::
+
+Beispiele:
+::::: columns
+:::: single
+- IBM Watson in der Medizin
+  - KI-gestützte Diagnostik (Onkologie, Radiologie).
+  - Ärztliches Wissen wird durch KI ergänzt – Ärzte erhalten Entscheidungshilfen auf Basis riesiger Datenmengen.
+- Telemedizin (bspw. "Hims & Hers", "Teladoc", "Kry", "Ada")
+  - Kombination unterschiedlicher Wertschöpfungsketten (Beratung + Medikamentenvertrieb)
+  - Digitale ärztliche Beratung (z.B. Video-Sprechstunden)
+::::
+:::: single
+- FinTechs (z.B. „N26“, „Revolut“) vs. klassische Bankenberatung
+  - Beratung und Services im Finanzbereich werden digitalisiert und stark personalisiert.
+  - Disruption: Traditionelle Banken verlieren Beratungs- und Service-Monopole.
+::::
+:::::
+
+<!--
+- Unternehmensberatung
+  - z. B. Strategieberatung, Organisationsentwicklung, Prozessoptimierung.
+  - Hier wird Management- und Branchenwissen genutzt, um Probleme zu analysieren und Lösungen zu entwickeln.
+- Rechtsberatung & Anwaltskanzleien
+  - Juristisches Fachwissen wird auf konkrete Fälle angewendet (z. B. Vertragsprüfung, Rechtsstreitigkeiten).
+- Wirtschaftsprüfung & Steuerberatung
+  - Anwendung von Wissen über Rechnungslegung, Steuergesetze und Finanzregeln.
+- IT-Dienstleistungen & Softwareentwicklung
+  - Entwicklung individueller Softwarelösungen, IT-Sicherheit, Datenanalyse oder Cloud-Beratung.
+- Medizinische Dienstleistungen
+  - Diagnosen, Therapien oder Gutachten, die auf wissenschaftlich-medizinischem Wissen beruhen.
+- Forschungs- und Entwicklungsdienstleistungen (F&E)
+  - Innovationsentwicklung, Marktforschung, Produktdesign.
+- Bildung & Training
+  - Wissensvermittlung durch Hochschulen, Weiterbildungen, Coachings.
+-->
+
+---
+# Unterschiede Wissensbasierter Dienstleistungen
+
+| **Merkmal**               | **Wissensbasierte Dienstleistungen**                | **Traditionelle Dienstleistungen**            |
+|----------------------------|-----------------------------------------------------|-----------------------------------------------|
+| **Basis**                  | Fachwissen, Analyse, Problemlösung, Expertise       | Routinen, körperliche Arbeit, standardisierte Abläufe |
+| **Komplexität**            | Hoch, oft interdisziplinär                          | Geringer, klar abgegrenzte Tätigkeiten         |
+| **Individualisierung**     | Starke Anpassung an Kundenprobleme                  | Standardisiert, für viele Kunden gleich        |
+| **Ergebnis**               | Konzepte, Strategien, Innovationen                  | Direkt sichtbare, konkrete Leistungen          |
+| **Wertschöpfung**          | Anwendung und Weitergabe von Wissen                 | Arbeitsleistung oder Servicequalität           |
+| **Abhängigkeit von Fachkräften** | Sehr hoch – benötigt Spezialisten/Experten          | Eher gering – kann oft von angelernten Kräften ausgeführt werden |
+| **Beispiele**              | Beratung, Rechtswesen, IT-Services, Ingenieurwesen  | Transport, Gastronomie, Reinigung, Friseur     |
+
+
+
 
 ---
 # Beispiele
