@@ -30,4 +30,9 @@ Anhand der nachstehenden Punkte soll das System schrittweise aufgebaut werden.
 
 
 ### Stufe 3
-1. Erstellen sie für ausgesuchte Templates sog. **Form Definition Pages**, um das Erfassen von neuen Informationen zu vereinheitlichen und zu vereinfachen (bspw. für das Anlegen neuer Projekte)
+1. Erweitern Sie ihr Datenmodell dahingehend, dass sie für jede/n Mitarbeitende/n angeben können, in welcher Rolle und wie lange (Projekteinstieg & Projektende) diese auf einem Projekt gearbeitet hat. Passen Sie zuerst die Queries auf den Projektseiten selbst an und anschließend auf den anderen Seiten (Mitarbeiter + ggf. Thema).
+
+
+
+### Stufe 4
+1. Erstellen sie für ausgesuchte Templates sog. **Form Definition Pages**, um das Erfassen von neuen Informationen zu vereinheitlichen und zu vereinfachen (bspw. für das Anlegen neuer Projekte und oder Mitarbeitende)
