@@ -10,7 +10,7 @@ nav:
   - 'Abschlussbericht': 'bericht.md'
   - 'FAQ zur Praxisphase ': 'q_a.md'
   - 'Das Exposé': 'expose.md'
-  - 'Die Bachelorarbeit': 'ba_fq.md'
+  - 'Die Bachelorarbeit': 'ba_faq.md'
   - 'Tipps': 'ba_tipps.md'
 
 extra_css:
