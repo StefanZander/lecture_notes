@@ -35,14 +35,10 @@ Das Exposé ist Bestandteil des Anmeldeprozesses einer Abschlussarbeit und liefe
 
 **Wichtig**: Erst nachdem das Exposé vom Betreuer akzeptiert wurde kann eine Abschlussarbeit im Prüfungsamt angemeldet werden.
 
-<!-- ## Die Bachelorarbeit
+## Die Bachelorarbeit
 
-* [Allgemeine Informationen zu Bachelorarbeit und Kolloquium](./bachelorarbeit/q_and_a.md)
-
-
-## Tipps
-
-* [Tipps für ein erfolgreiches Arbeiten](lernen_lernen.md) -->
+* [Allgemeine Informationen zu Bachelorarbeit und Kolloquium](./ba_faq.md)
+* [Tipps für ein erfolgreiches Arbeiten](ba_tipps.md)
 
 
 ----

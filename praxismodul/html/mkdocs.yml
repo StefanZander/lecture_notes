@@ -8,8 +8,10 @@ nav:
   - 'Allgemeine Informationen': 'allg_informationen.md'
   - 'Start im Unternehmen': 'start_im_unternehmen.md'
   - 'Abschlussbericht': 'bericht.md'
-  - 'Q&A': 'q_a.md'
+  - 'FAQ zur Praxisphase ': 'q_a.md'
   - 'Das Exposé': 'expose.md'
+  - 'Die Bachelorarbeit': 'ba_fq.md'
+  - 'Tipps': 'ba_tipps.md'
 
 extra_css:
   - stylesheets/extra.css
