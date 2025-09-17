@@ -23,7 +23,7 @@ In dieser Lektion lernen sie, warum es wichtig und notwendig ist, Anforderungen 
     - ...
 3. Lernzielkontrolle
 
-    !!! question "Lernzielkontrolle"
+    !!! question "Fragen zur Reflexion des Lernstoffes"
         1. Warum müssen qualitative Anforderungen (aka Qualitätsanforderungen) verifiziert werden?
         2. Welche Verifikationsarten gibt es und wann setzt man welche Methode ein?
         3. Gibt es eine zu bevorzugende Methode und falls ja, was sind die Gründe hierfür?
@@ -44,7 +44,7 @@ In dieser Lektion lernen sie die grundlegenden Begrifflichkeiten und Hauptaktivi
     - ...
 3. Lernzielkontrolle
 
-    !!! question "Lernzielkontrolle"
+    !!! question "Fragen zur Reflexion des Lernstoffes"
         1. Warum müssen qualitative Anforderungen (aka Qualitätsanforderungen) verifiziert werden?
         2. Welche Verifikationsarten gibt es und wann setzt man welche Methode ein?
         3. Gibt es eine zu bevorzugende Methode und falls ja, was sind die Gründe hierfür?
@@ -60,7 +60,7 @@ Es gibt mehrere Arten von Anforderungen die wichtig und relevant für den System
 2. Ergänzendes Material
 3. Lernzielkontrolle
 
-    !!! question "Lernzielkontrolle"
+    !!! question "Fragen zur Reflexion des Lernstoffes"
         1. Warum müssen qualitative Anforderungen (aka Qualitätsanforderungen) verifiziert werden?
         2. Welche Verifikationsarten gibt es und wann setzt man welche Methode ein?
         3. Gibt es eine zu bevorzugende Methode und falls ja, was sind die Gründe hierfür?
@@ -76,7 +76,7 @@ Qualitativen Anforderungen (aka Qualiätsanforderungen) kommt eine besondere Rol
 2. Ergänzendes Material
 3. Lernzielkontrolle
 
-    !!! question "Lernzielkontrolle"
+    !!! question "Fragen zur Reflexion des Lernstoffes"
         1. Warum müssen qualitative Anforderungen (aka Qualitätsanforderungen) verifiziert werden?
         2. Welche Verifikationsarten gibt es und wann setzt man welche Methode ein?
         3. Gibt es eine zu bevorzugende Methode und falls ja, was sind die Gründe hierfür?
@@ -92,7 +92,7 @@ Bevor mit der Erfassung von Anforderungen begonnen werden kann ist es wichtig, d
 2. Ergänzendes Material
 3. Lernzielkontrolle
 
-    !!! question "Lernzielkontrolle"
+    !!! question "Fragen zur Reflexion des Lernstoffes"
         1. Warum müssen qualitative Anforderungen (aka Qualitätsanforderungen) verifiziert werden?
         2. Welche Verifikationsarten gibt es und wann setzt man welche Methode ein?
         3. Gibt es eine zu bevorzugende Methode und falls ja, was sind die Gründe hierfür?
@@ -108,7 +108,7 @@ Nicht immer können alle erfassten Anforderungen umgesetzt werden. Häufig ist d
 2. Ergänzendes Material
 3. Lernzielkontrolle
 
-    !!! question "Lernzielkontrolle"
+    !!! question "Fragen zur Reflexion des Lernstoffes"
         1. Warum müssen qualitative Anforderungen (aka Qualitätsanforderungen) verifiziert werden?
         2. Welche Verifikationsarten gibt es und wann setzt man welche Methode ein?
         3. Gibt es eine zu bevorzugende Methode und falls ja, was sind die Gründe hierfür?
@@ -128,7 +128,7 @@ Für die Ermittlung von Anforderungen bieten sich mehrere Möglichkeiten, Wege u
 2. Ergänzendes Material
 3. Lernzielkontrolle
 
-    !!! question "Lernzielkontrolle"
+    !!! question "Fragen zur Reflexion des Lernstoffes"
         1. Warum müssen qualitative Anforderungen (aka Qualitätsanforderungen) verifiziert werden?
         2. Welche Verifikationsarten gibt es und wann setzt man welche Methode ein?
         3. Gibt es eine zu bevorzugende Methode und falls ja, was sind die Gründe hierfür?
