@@ -1,0 +1,29 @@
+.md-typeset h1 {
+  font-size: 3.2em;
+}
+
+.md-typeset h2 {
+  font-size: 2.3em;
+}
+
+.md-typeset h3 {
+  font-size: 1.5em;
+}
+
+/* :root  > * {
+  --md-primary-fg-color:        #009c44;
+  --md-primary-fg-color--light: #f6ff00;
+  --md-primary-fg-color--dark:  #2600ff;
+} */
+
+[data-md-color-scheme="youtube"] {
+  --md-primary-fg-color:        #009c44;
+  --md-primary-fg-color--light: #ECB7B7;
+  --md-primary-fg-color--dark:  #90030C;
+}
+
+[data-md-color-scheme="myblue"] {
+  --md-primary-fg-color:        #009c44;
+  --md-primary-fg-color--light: #f6ff00;
+  --md-primary-fg-color--dark:  #fff200;
+}

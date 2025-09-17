@@ -52,6 +52,16 @@ Alle **Protokolle** aus den folgenden Teilaufgaben kommen in die Projektmappe.
     Bitten Sie ein Familienmitglied oder eine andere externe Person den Test aus der Rolle des Stereotypen durchzuführen. Ggf. kann die/der Protokollant*in via Webcam beobachten und protokollieren. Falls Sie den Test am Emulator durchführen können Sie ein Screensharing oder ggf. sogar ein Tool wie [TeamViewer](https://www.teamviewer.com/de/) nutzen (falls die/der Tester nicht vor Ort anwesend ist).
 -->
 
+#### Vorbereitung (TODO für WiSe 2025/26)
+
+##### Materialen
+* Rollen festlegen + Stereotypen auswählen
+* Aufgabenliste (aka _Tasklist_) erstellen
+* Beurteilungskriterien festlegen (TODO Anregungen aus SOSE 2025 DI5y)
+* Protokollvorlagen erstellen
+* 
+
+##### Durchführung
 Zum **Usability Test** greifen Sie bitte wieder auf Ihre **Stereotypen** zurück. Falls Sie mit einer Peer-Gruppe gearbeitet haben, dann gehen Sie wie folgt vor:
 
 * für die App Ihrer Peer-Gruppe sind Mitglieder der eigenen Gruppe Test-Benutzende und arbeiten die Test-Aufgaben ab
@@ -87,6 +97,8 @@ Bewerten Sie die Applikation Ihrer Peer-Gruppe unter verschiedenen Design-Aspekt
 5. Sinnvolle Gruppierung der Bedienelemente?
 6. Abstände und Ränder
 7. Sinnvolles Verhalten beim Drehen des Smartphones (keine Zustandsänderung, kein Abbruch von Abläufen)
+
+Beziehen sie sich hier insbesondere auf die in der Einheit Visual Design kennengelernten **Designaspekte** intuitiver Applikationen.
 
 
 ### Liste der Verbesserungen

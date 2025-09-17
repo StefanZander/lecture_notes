@@ -1,0 +1,103 @@
+site_name: Human-Computer Interaction
+
+nav:
+  - 'Startseite': 'index.md'
+  - 'Organisation': '0_organisation.md'
+  - 'Kapitel 1: User-Centered Design': '1_user-centered_design.md'
+  - 'Kapitel 2: User Research': '2_user_research.md'
+  - 'Kapitel 3: Requirements Engineering': '3_requirements_engineering.md'
+  - 'Kapitel 4: Modellbildung': '4_models.md'
+  - 'Kapitel 5: Prototyping': '5_prototyping.md'
+  - 'Kapitel 6: Visual Design': '6_visual_design.md'
+  - 'Kapitel 7: Usability': '7_usability.md'
+
+
+extra_css:
+  - stylesheets/extra.css
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: blue
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+    - scheme: slate
+      primary: blue
+      accent: light green
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+  font:
+    text: Roboto Condensed
+    code: Roboto Mono
+  icon:
+    repo: fontawesome/brands/github
+    edit: material/pencil 
+    view: material/eye
+  language: de
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - toc.follow
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - search.share
+    - navigation.footer
+    - content.action.edit
+
+extra:
+  social:
+    - icon: fontawesome/solid/person-biking 
+      link: https://fbi.h-da.de/~s.zander
+      name: hda profile page of Prof. Dr. Stefan Zander
+
+copyright: Copyright &copy; 2017 - 2025 – Prof. Dr. Stefan Zander
+
+repo_url: https://github.com/StefanZander/lecture_notes/tree/master/hci/praktikum/html
+repo_name: /hci/vorlesung
+
+edit_uri: docs/
+
+plugins:
+  - search:
+      lang: de
+  - git-revision-date-localized:
+      enable_creation_date: false
+      type: custom
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - smarty:
+      smart_angled_quotes: true  
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - def_list
+  - footnotes
+  - toc:
+      permalink: true
+  - tables
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.smartsymbols
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.critic  
