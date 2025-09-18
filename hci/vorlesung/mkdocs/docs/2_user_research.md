@@ -20,17 +20,17 @@
 
 ## Inhalte
 
-1. :material-file-pdf-box: [Ausgangslage und Vorbemerkung zum hier gelehrten Ansatz]()
-2. :material-file-pdf-box: [Was sind Stereotypen und welche Rolle spielen diese im User Research]()
-- :material-file-pdf-box: [Was sind Anwendungsszenarien und wie setzt man sie ein]()
-- :material-file-pdf-box: [Wie gewinnt man Material für die Stereotypen und Anwendungsszenarien]()
-- :material-file-pdf-box: [Interviewarten und ihre Unterschiede]()
+1. :material-file-pdf-box: [Lektion 1: Ausgangslage und Vorbemerkung zum hier gelehrten Ansatz]()
+2. :material-file-pdf-box: [Lektion 2: Was sind Stereotypen und welche Rolle spielen diese im User Research]()
+- :material-file-pdf-box: [Lektion 3: Was sind Anwendungsszenarien und wie setzt man sie ein]()
+- :material-file-pdf-box: [Lektion 4: Wie gewinnt man Material für die Stereotypen und Anwendungsszenarien]()
+- :material-file-pdf-box: [Lektion 5: Interviewarten und ihre Unterschiede]()
     - Für interessierte: Es gibt noch viel mehr Interview-Arten als die im Foliensatz aufgeführten. Eine sehr gute Übersicht findet sich hier :material-file-pdf-box: [Link to Chapter]()
-- :material-file-pdf-box: [Das teilstandardisierte Interview]()
-- :material-file-pdf-box: [Gefahren des teilstandardisierten Interviews]()
-- [Video zu einen schlecht geführten Interview]()
-- [Video eines gut geführten Interviews]()
-- :material-file-pdf-box: [Der Hawthorne-Effekt und seine Auswirkung in Feldstudien]()
+- :material-file-pdf-box: [Lektion 6: Das teilstandardisierte Interview]()
+- :material-file-pdf-box: [Lektion 7: Gefahren des teilstandardisierten Interviews]()
+- :material-video: [Video zu einem schlecht geführten Interview]()
+- :material-video: [Video eines gut geführten Interviews]()
+- :material-file-pdf-box: [Lektion 8: Der Hawthorne-Effekt und seine Auswirkung in Feldstudien]()
 
 
 ## Übungen / Aufgaben
