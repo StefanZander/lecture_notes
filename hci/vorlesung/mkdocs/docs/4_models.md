@@ -1,6 +1,6 @@
 # Modellbildung
 
-!!! abstract "Worum geht es in diesem Kapitel ?"
+!!! abstract "In diesem Kapitel geht es um folgende Themen:"
     - ...
 
 !!! success "Voraussetzungen"

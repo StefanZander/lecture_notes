@@ -1,6 +1,6 @@
 # Kapitel 5: Prototyping
 
-!!! abstract "Worum geht es in diesem Kapitel ?"
+!!! abstract "In diesem Kapitel geht es um folgende Themen:"
     - In dieser Einheit lernen sie Methoden kennen, die ihnen dabei helfen mehr über ihre primären Benutzenden herauszufinden
     - Sie lernen Methoden, wie sie ... in informatische Entwicklungsprozesse integrieren können
     - ...
