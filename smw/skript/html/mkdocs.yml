@@ -1,19 +1,19 @@
 site_name: "Semantisches Wissensmanagement mit Semantic MediaWiki"
 
 nav:
-  - 'Startseite': 'index.md'
-  - 'Allgemeine Informationen': 'objectives.md'
-  - 'Organisation': 'block_lva.md'
-  - 'Kapitel 1: Einführung': 'kapitel1.md'
-  - 'Kapitel 2: Technische Grundlagen': './chapters/2/overview.md'
-  - 'Kapitel 3: Semantic MediaWiki': './chapters/3/overview.md'
-  - 'Kapitel 4: Erweiterungen': './chapters/4/overview.md'
-  - 'Hörsaalübung': './exercises/hs_ue1.md'
-  - 'Übung 1: Wissensmanagement': './exercises/ue1.md'
-  - 'Übung 2: Wissensmodellierung': './exercises/ue2.md'
-  - 'Übung 3: Semantic MediaWiki': './exercises/ue3.md'
-  - 'Übung 4: Vertiefung': './exercises/ue4.md'
-  - 'Semesterprojekt': 'semesterprojekt.md'
+  - "Startseite": "index.md"
+  - "Allgemeine Informationen": "objectives.md"
+  - "Organisation": "block_lva.md"
+  - "Kapitel 1: Einführung": "kapitel1.md"
+  - "Kapitel 2: Technische Grundlagen": "./chapters/2/overview.md"
+  - "Kapitel 3: Semantic MediaWiki": "./chapters/3/overview.md"
+  - "Kapitel 4: Erweiterungen": "./chapters/4/overview.md"
+  - "Hörsaalübung": "./exercises/hs_ue1.md"
+  - "Übung 1: Wissensmanagement": "./exercises/ue1.md"
+  - "Übung 2: Wissensmodellierung": "./exercises/ue2.md"
+  - "Übung 3: Semantic MediaWiki": "./exercises/ue3.md"
+  - "Übung 4: Vertiefung": "./exercises/ue4.md"
+  - "Semesterprojekt": "semesterprojekt.md"
 
 theme:
   name: material
@@ -24,7 +24,7 @@ theme:
       primary: blue
       accent: orange
       toggle:
-        icon: material/brightness-7 
+        icon: material/brightness-7
         name: Switch to dark mode
         primary: deep purple
         accent: red
@@ -42,11 +42,11 @@ theme:
 
   icon:
     repo: fontawesome/brands/github
-    edit: material/pencil 
+    edit: material/pencil
     view: material/eye
-  
+
   language: de
-  
+
   features:
     - navigation.instant
     - navigation.tracking
@@ -59,21 +59,20 @@ theme:
     - content.action.edit
 
 extra_css:
-  - 'stylesheets/extra_new.css'
+  - "stylesheets/extra_new.css"
 
 extra:
   social:
-    - icon: fontawesome/solid/person-biking 
+    - icon: fontawesome/solid/person-biking
       link: https://fbi.h-da.de/~s.zander
       name: personal page of Prof. Dr. Stefan Zander at h_da
 
-copyright: Copyright &copy; 2017 - 2023 – Prof. Dr. Stefan Zander
+copyright: Copyright &copy; 2017 - 2025 – Prof. Dr. Stefan Zander
 
 repo_url: https://github.com/StefanZander/lecture_notes/tree/master/hci/praktikum/html
 repo_name: /hci/praktikum
 
 edit_uri: docs/
-
 
 plugins:
   - search:
@@ -82,12 +81,11 @@ plugins:
       enable_creation_date: false
       type: custom
 
-
 markdown_extensions:
   - abbr
   - admonition
   - smarty:
-      smart_angled_quotes: true  
+      smart_angled_quotes: true
   - attr_list
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
