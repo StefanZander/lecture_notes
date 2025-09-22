@@ -1,11 +1,19 @@
 # Usability Evaluation
 
 !!! abstract "In diesem Kapitel geht es um folgende Themen:"
-    - Unterschied und Wechselwirkung zwischen Design und User Experience
-    - Sie erfahren was Usability ist und welche zentralen Elemente ....
+    - Sie erfahren, warum **Design** und **User Experience** für sich genommen unterschiedliche Dinge sind, sich aber doch wechselseitig beeinflussen. 
+    - Sie lernen elementare Bestandteile von **Usability** und **Software-Ergonomie**
+    - Sie erfahren, warum man zur Evaluation von Softwaresystemen im Speziellen immer zwei **unterschiedliche Evaluierungsverfahren** einsetzen sollte und welche praktische Relevanz diese mit sich bringen.
+    - Sie lernen, wie man die Usability eines Softwaresystems **heuristisch** mit einer selbstentwickelten **Checkliste** evaluieren kann
+    - Sie lernen das Usability Testing, eine **empirische Testmethode** mit echten Nutzenden 
+    - Sie lernen, wie man einen Usability Test mit der **"Thinking Aloud"-Methode** plant, durchführt und auswertet
+    - Sie erfahren, wie sie diese Methoden für die eigene **Abschlussarbeit** einsetzen können.
 
 !!! success "Voraussetzungen"
-    - ...
+    - Sie haben alle vorherigen Einheiten durchgearbeitet
+    - Sie kennen User Research und Requirements Engineering-Methoden
+    - Sie haben User-Tests im Rahmen von Prototyping durchgeführt und ausgewertet
+    - Sie haben einen ersten lauffähigen Prototypen ihrer App implementiert
 
 !!! warning "Warum ist es wichtig das zu kennen..."
     - Studien zur **Usability** zeigen konsistent, dass benutzerfreundliche Systeme die **Akzeptanz und Zufriedenheit** von Anwender:innen signifikant erhöhen (vgl. Nielsen 1993; ISO 9241-11).
@@ -29,7 +37,7 @@ bitte nenne mir ein paar gute gründe, warum es für Informatik-Studierende sinn
 
 ### Lektion 1: Design und User Experience
 
-Anhand zweier anschaulicher Beispiele zeigen wir, das Design und User Experience zwar hand-in-hand-gehen, aber doch unterschiedliche Dinge sind. 
+Anhand zweier anschaulicher Beispiele zeigen wir, dass Design und User Experience zwar hand-in-hand-gehen, aber doch unterschiedliche Dinge sind und jeweils separat betrachtet und evaluiert werden müssen. 
 
 1. Slides
 2. Ergänzendes Material
