@@ -1,14 +1,28 @@
 # Usability Evaluation
 
 !!! abstract "In diesem Kapitel geht es um folgende Themen:"
-    - ...
+    - Unterschied und Wechselwirkung zwischen Design und User Experience
+    - Sie erfahren was Usability ist und welche zentralen Elemente ....
 
 !!! success "Voraussetzungen"
     - ...
 
 !!! warning "Warum ist es wichtig das zu kennen..."
-    - ...
-    - ...
+    - Studien zur **Usability** zeigen konsistent, dass benutzerfreundliche Systeme die **Akzeptanz und Zufriedenheit** von Anwender:innen signifikant erhöhen (vgl. Nielsen 1993; ISO 9241-11).
+    - Empirische Untersuchungen belegen, dass gute Usability den **Schulungs- und Supportaufwand** reduziert, was insbesondere in Unternehmen zu messbaren **Kostensenkungen** führt.
+    - **Usability-Evaluierungsmethoden** sind praxisrelevant, da sie bereits in frühen Entwicklungsphasen die Identifikation von **Benutzbarkeitsproblemen** ermöglichen und so Fehlerkosten reduzieren (vgl. Bias & Mayhew 2005).
+    - **Iterative Evaluationsprozesse** tragen empirisch nachweisbar zu einer kontinuierlichen Verbesserung der **Softwarequalität** bei und gelten als **Best Practice** in der Softwareentwicklung.
+    - **Usability-Inspections**, insbesondere **heuristische Evaluationen**, haben sich in Studien als **kosteneffiziente Verfahren** erwiesen, um bereits in **Prototyp-Phasen** wesentliche Usability-Probleme zu identifizieren (vgl. Nielsen & Molich 1990).
+    - **Usability-Tests** mit realen Nutzer:innen liefern valide und **praxisnahe Rückmeldungen**, da sie tatsächliche **Interaktionsprobleme** aufdecken, die in Experteninspektionen oft übersehen werden.
+    - Empirische Daten aus Usability-Tests (z. B. Fehlerraten, Bearbeitungszeiten, subjektive Zufriedenheit) dienen als belastbare **Entscheidungsgrundlage** für Design- und Entwicklungsprozesse.
+    - Die Methode des **Thinking Aloud** ist durch zahlreiche Studien belegt als eine der effektivsten und zugleich kostengünstigsten Evaluierungsmethoden, da sie tiefe Einblicke in die **mentalen Modelle** der Nutzer:innen ermöglicht (vgl. Ericsson & Simon 1993).
+    - **Software-Ergonomie** basiert auf etablierten Normen wie der **ISO 9241**, deren Anwendung in der Praxis die **Gesundheit**, **Effizienz** und **Leistungsfähigkeit** der Benutzer:innen nachweislich unterstützt.
+    - Forschung und Praxis zeigen, dass **ergonomisch gestaltete Systeme** durch die Berücksichtigung technischer, psychologischer und physiologischer Faktoren langfristig zu nachhaltiger, gesundheitsgerechter und produktiver Software-Nutzung beitragen.
+
+<!--
+bitte nenne mir ein paar gute gründe, warum es für Informatik-Studierende sinnvoll ist, kenntnisse zu/in folgenden themengebieten zu haben: Usability, Usability Evaluierungsmethoden, Usability INspection, Usability Testing, Thinking aloud, Software-Ergonomie
+ 
+-->
 
 
 ## Inhalte
@@ -129,3 +143,12 @@ Um die **Gebrauchstauglichkeit** bzw. Nutzbarkeit von von Produkten im Allgemein
 
 ---
 
+
+## Quellenangaben
+
+- Bias, R. G., & Mayhew, D. J. (2005). Cost-Justifying Usability: An Update for the Internet Age. Morgan Kaufmann.
+- Ericsson, K. A., & Simon, H. A. (1993). Protocol Analysis: Verbal Reports as Data (Rev. ed.). MIT Press.
+- ISO 9241-11 (2018). Ergonomics of human-system interaction – Part 11: Usability: Definitions and concepts. International Organization for Standardization.
+- Nielsen, J. (1993). Usability Engineering. Academic Press.
+- Nielsen, J., & Molich, R. (1990). Heuristic Evaluation of User Interfaces. Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (CHI '90), 249–256.
+- Verschiedene empirische Arbeiten zur Wirkung ergonomischer Gestaltung im Rahmen der Bildschirmarbeitsverordnung (1996, EU-Richtlinie 90/270/EWG).
