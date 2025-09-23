@@ -1,4 +1,4 @@
-# Kapitel 5: Prototyping
+# Prototyping
 
 !!! abstract "In diesem Kapitel geht es um folgende Themen:"
     - In dieser Einheit lernen sie Methoden kennen, die ihnen dabei helfen mehr über ihre primären Benutzenden herauszufinden

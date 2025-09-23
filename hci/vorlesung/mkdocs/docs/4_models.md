@@ -24,7 +24,15 @@ Dieses Kapitel befasst sich mit den verschieden Arten Systemaspekte modellhaft a
 3. Lernzielkontrolle
 
     !!! question "Fragen zur Reflexion des Lernstoffes"
-        1. Warum müssen qualitative Anforderungen (aka Qualitätsanforderungen) verifiziert werden?
-        2. Welche Verifikationsarten gibt es und wann setzt man welche Methode ein?
-        3. Gibt es eine zu bevorzugende Methode und falls ja, was sind die Gründe hierfür?
-        4. Welche Rolle spielt die Validierung bei der Verifikation von Anforderungen?
+        - **Verständnisfragen**
+            1. Erklären sie in kurzen Sätzen Rolle und Zweck von Analyseklassen im Rahmen eines User-zentrierten Softwareentwurfs / des Oberflächenentwurfs. Warum sollten diese verwendet werden.
+            2. Erläutern Sie kurz die grundlegende Problematik beim Screendesign; warum sollten immer mehrere Entwurfsalternativen betrachtet werden?
+            3. Erläutern Sie kurz die grundlegende Problematik bei der Ableitung von Screendiagrammen aus den anderen Modelltypen.
+        
+        - **Thesen**
+            
+            Nehmen Sie Stellung zu den folgenden Thesen; erläutern Sie, warum Sie diese unterstützen oder ablehnen.
+            
+            1. Beim Einsatz eines eigenen Design Teams im Entwicklungsprozess kann auf Analyseklassen idR verzichtet werden. 
+            2. Selbst wenn Design und Entwicklung von Softwarekomponenten auf unterschiedliche Teams aufgeteilt werden ist der Einsatz von Analyseklassen im Rahmen des UI-Entwurfs sinnvoll
+            3. Der Einsatz von Analyseklassen sollte eng an die Implementierungsphasen gekoppelt sein.

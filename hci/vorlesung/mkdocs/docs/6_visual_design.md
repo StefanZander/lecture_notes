@@ -1,33 +1,106 @@
-# Visual Design
+# Gestaltung intuitiver Benutzungsschnittstellen
 
-!!! abstract "In diesem Kapitel geht es um folgende Themen:"
-    - ...
+!!! abstract "In diesem Kapitel geht es um folgende Themen"
+    - Grundlagen des **Visual Design** und warum es viel mehr mit **Kommunikation** als mit visueller Ästhetik zu tun hat
+    - Maßnahmen welche die Effizienz und Effektivität von **Selektions- und Verarbeitungsprozesse** digitaler Inhalte verbessern
+    - Das Konzept der **Content Usability** sowie gestaltungs- und wahrnehmungspsychologische Elemente kennen- und verstehen lernen, die einer guten Content Usability zuträglich sind
+    - **Content Comprehension** – warum dieses Konzept nicht nur für das Design intuitiver Benutzungsschnittstellen sondern auch für viele andere Dinge wie bspw. Präsentationen oder ihre Abschlussarbeit ungemein wichtig ist 
+    - Wie Menschen Informationen wahrnehmen und welche Muster es aktuell hierzu gibt
+    - Welche gestaltungs- und wahrnehmungspsychologischen Aspekte intuitive Benutzungsschnittstellen aufweisen
+    - Kennenlernen von Gestaltungsprinzipien, welche die Benutzbarkeit von Softwaresystemen (und ihrer App) verbessern
+
 
 !!! success "Voraussetzungen"
-    - ...
+    - Sie sollten die Einheit zum Prototyping und Modellbildung abgeschlossen haben und im Rahmen des Semesterprojektes erste Benutzungsschnittstellen (aka Screens) ihrer App konzipiert haben
+    - Sie haben sich mit den Kapitel 
+    - Gedanklich sollten sie sich von der falschen(!) Vorstellung lösen, dass Design nur etwas für "Designer:innen" ist und dass Informatiker:innen keine guten "Designer" sind. 
 
-!!! warning "Warum ist es wichtig das zu kennen..."
-    - ...
-    - ...
+!!! warning "Warum diese Themen wichtig sind"
+    - Ein Verständnis für die Gestaltung **intuitiver Nutzungsschnittstellen** ist hilfreich, da **empirische Studien** zeigen, dass intuitive Interaktionen die Lernkurve verkürzen und Fehlerraten reduzieren, was die Effizienz von Softwareanwendungen signifikant steigert (Norman, 2013).
+    - Informatiker:innen profitieren von Kenntnissen der **Gestaltungspsychologie** (z. B. Gestaltgesetze), da diese Prinzipien empirisch fundiert erklären, wie Menschen Muster, Nähe und Ähnlichkeit wahrnehmen, und so helfen, Benutzeroberflächen klar und effizient zu strukturieren (Wertheimer, 1923; Wickens et al., 2015).
+    - Kenntnisse im **Visual Design** verbessern die Nutzbarkeit von digitalen Benutzungsschnittstellen, da **visuelle Gestaltungsprinzipien** wie Konsistenz, Kontrast und Hierarchie nachweislich die **kognitive Verarbeitung** und Orientierung der Nutzer:innen erleichtern (Ware, 2013; Lidwell et al., 2010).
+    - Kenntnisse in **Content Usability** sind hochgradig praxisrelevant, da verständliche und gut strukturierte Inhalte nachweislich die Informationsaufnahme und Entscheidungsfindung unterstützen und gleichzeitig die Verweildauer und Zufriedenheit der Nutzer:innen erhöhen (Nielsen, 2000).
+    - Ein Verständnis von **Wahrnehmungsprozessen** wie Aufmerksamkeit und Arbeitsgedächtnis ist wichtig, da Software-Interfaces, die diese berücksichtigen, Überlastung vermeiden und die kognitive Effizienz steigern (Baddeley, 1992; Wickens et al., 2015).
+    - In der Softwareentwicklungspraxis führen die Integration von **Design- und Wahrnehmungsprinzipien** zu höherer Produktivität, geringeren Fehlerquoten und größerer Nutzerzufriedenheit, was nicht nur die Akzeptanz, sondern auch die Marktchancen von Softwareprodukten erhöht (ISO 9241-210, 2019).
+
+        ---
+        Quellen
+
+        1. Baddeley, A. D. (1992). Working Memory. Science, 255(5044), 556–559.
+        2. ISO 9241-210 (2019). Ergonomics of human-system interaction – Part 210: Human-centred design for interactive systems. International Organization for Standardization.
+        3. Lidwell, W., Holden, K., & Butler, J. (2010). Universal Principles of Design (2nd ed.). Rockport.
+        4. Nielsen, J. (2000). Designing Web Usability: The Practice of Simplicity. New Riders.
+        5. Norman, D. A. (2013). The Design of Everyday Things (Revised and Expanded Edition). Basic Books.
+        6. Ware, C. (2013). Information Visualization: Perception for Design (3rd ed.). Morgan Kaufmann.
+        7. Wertheimer, M. (1923). Untersuchungen zur Lehre von der Gestalt II. Psychologische Forschung, 4, 301–350.
+        8. Wickens, C. D., Hollands, J. G., Banbury, S., & Parasuraman, R. (2015). Engineering Psychology and Human Performance (4th ed.). Psychology Press.
 
 
 ## Inhalte
 
-### Lektion 1: Motivation
+- :material-file-pdf-box: [Einführung]()
+- :material-file-pdf-box: [(engl.) Der Aesthetics Usability Effect]()
+- :material-file-pdf-box: [(engl.) UI vs. UX: User Interface und User Experience]()
+- :material-file-pdf-box: [(engl.) Principles of Intuitive User Interfaces]()
+- :material-file-pdf-box: [(engl.) Content Comprehension]()
+- :material-file-pdf-box: [(engl.) Content Usability]()
+- :material-file-pdf-box: [(engl./dt.) Icon Design]()
 
-In dieser Lektion lernen sie, warum es wichtig und notwendig ist, Anforderungen systematisch zu erfassen und verarbeiten.
+## Ergänzende Materialien
 
-1. Slides
-2. Ergänzendes Material
-    - ...
-    - ...
-3. Lernzielkontrolle
+- 
 
-    !!! question "Fragen zur Reflexion des Lernstoffes"
-        1. Warum müssen qualitative Anforderungen (aka Qualitätsanforderungen) verifiziert werden?
-        2. Welche Verifikationsarten gibt es und wann setzt man welche Methode ein?
-        3. Gibt es eine zu bevorzugende Methode und falls ja, was sind die Gründe hierfür?
-        4. Welche Rolle spielt die Validierung bei der Verifikation von Anforderungen?
+
+## Übungsaufgaben
+
+- :material-file-pdf-box: [Fallstudien]()
+- :material-file-pdf-box: [UI-Dialog-Design]()
+
+## Lernzielkontrolle
+
+!!! question "Fragen zur Reflexion des Lernstoffes"
+    - **Verständnisfragen**
+        1. Legen Sie kurz dar, warum die weitläufige Annahme, “InformatikerInnen seien keine guten IU/Content Designer” falsch ist
+        2. Erläutern Sie, warum das Konzept der Affordance im Rahmen der User Experience eine wichtige Rolle spielt; gehen Sie hierbei auch auf potentielle Gefahren/Probleme ein.
+        3. Erläutern Sie den Zusammenhang zwischen Skeuomorphic Design und Affordance 
+        4. Stellen Sie anhand eines selbstgewählten Beispiels dar, warum UX und Visual Design zusammenhängen bzw. nicht separat voneinander betrachtet werden sollten; legen Sie insbesondere die Gründe hierfür dar.
+        5. Welche Besonderheiten existieren in der Wahrnehmung und Verarbeitung von Online-Inhalten? Nennen Sie geeignete Maßnahmen zur Erhöhung der Effektivität und Effizienz.
+        6. Erläutern Sie kurz die Rolle des “natural mapping” im Bereich der Affordance.
+        7. Welchen grundsätzlichen Ansatz sollten Sie bei der Wahl potentieller UI-Elemente in Betracht ziehen?
+            <!-- - Auswahl der Elemente anhand dessen, was sie kommunizieren und was ihr Beitrag zur Zielerfüllung ist; 
+            - hinterfragen, was ist das zugrunde liegende Kommunikations- / Entscheidungsmodell -->
+    
+    - **Anwendungsfragen**
+        1. Im Rahmen der Neuentwicklung eines Web-basierten Tabellenkalkulationsprogramm erhalten Sie von ihrer Vorgesetzten den Auftrag, sich bzgl. des Designs an etablierten Tools zu orientieren. Wie beurteilen Sie diese Anweisung? Halten Sie dies für gut bzw. sinnvoll? Bitte begründen Sie Ihre Antwort.
+        2. Stellen Sie dar, wie sie die Informationsverarbeitung von Onlineinhalten unterstützen können; 
+
+    
+    - **Reflexionsfragen**
+        1. Erläutern Sie kurz, warum dem Design des visuellen Erscheinungsbildes einer Software dieselbe Aufmerksamkeit zuteil werden sollte, wie einem korrekten Softwareentwurf. Welches Problem kann hierbei jedoch auftreten? 
+        <!-- - Visual Design beeinflusst die individuelle Wahrnehmung der Qualität eines Produktes 
+        - Schlechtes Design führt zu einer subjektiv geringeren Beurteilung der Produktqualität
+        - Users are more tolerated towards minor usability flaws - —> Aesthetics Usability Effect -->
+        1. Nehmen Sie Stellung zu folgenden Thesen: 
+              1. _"Skeuomorphic Design und Affordance sind zwei völlig unterschiedliche und voneinander unabhängige Konzepte."_
+              2. _"Bei der Gestaltung von Benutzungsoberflächen steht die Konzeption des visuellen Erscheinungsbildes (Farben / Schriften / Abstände / Layout ) an erster Stelle."_
+              3. _"Für eine erfolgreiche Adaption bestehender Benutzungs- und Interaktionskonzepte muss dem Aspekt der External Consistency die größte Aufmerksamkeit zuteilwerden."_
+
 
 
 ---
+
+## Quellenangaben
+
+- Baddeley, A. D. (1992). Working Memory. Science, 255(5044), 556–559.
+- ISO 9241-210 (2019). Ergonomics of human-system interaction – Part 210: Human-centred design for interactive systems. International Organization for Standardization.
+- Lidwell, W., Holden, K., & Butler, J. (2010). Universal Principles of Design (2nd ed.). Rockport.
+- Nielsen, J. (2000). Designing Web Usability: The Practice of Simplicity. New Riders.
+- Norman, D. A. (2013). The Design of Everyday Things (Revised and Expanded Edition). Basic Books.
+- Ware, C. (2013). Information Visualization: Perception for Design (3rd ed.). Morgan Kaufmann.
+- Wertheimer, M. (1923). Untersuchungen zur Lehre von der Gestalt II. Psychologische Forschung, 4, 301–350.
+- Wickens, C. D., Hollands, J. G., Banbury, S., & Parasuraman, R. (2015). Engineering Psychology and Human Performance (4th ed.). Psychology Press.
+
+<!--
+Prompt:
+Bitte erstelle mit eine Auflistung mit je einem Satz pro Punkt, warum es für Informatikstudierende wichtig ist, Kenntnisse zu Visual Design, den Grundlagen von intuitiven Nutzungsschnittstellen bzw. User Interaces, Content Usability usw. zu haben. Gehe hierbei bitte auch auf die Relevanz von gestaltungs- und wahrnehmungspsychologischen Aspekten ein. Benutze für die Formulierung einen wissenschaftlichen, faktenstarken Stil und gebe auch vollständige Quellen an. Berücksichtige bitte auch einen hohen Praxisbezug.
+-->
