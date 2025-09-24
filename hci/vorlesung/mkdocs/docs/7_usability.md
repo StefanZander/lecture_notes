@@ -134,10 +134,12 @@ Um die **Gebrauchstauglichkeit** bzw. Nutzbarkeit von von Produkten im Allgemein
             5. Warum ist es gerade für Software-Produkte ein Usability Test wichtig und notwendig?
             6. Welche Nutzergruppen / welche Nutzer wählen Sie beim Usability Test aus?
             7. Warum sollte das Co-Discovery mit Bedacht eingesetzt werden und welche Gefahren entstehen beim Co-Discovery?
+            ---
         - **Anwendungs- & Transferfragen**
             1. Sie bekommen von Ihrem Vorgesetzten den Auftrag, eine fast fertige Software hinsichtlich Benutzbarkeit zu testen. Entsprechende Tests haben bisher nicht stattgefunden. Leider ist Budget und zeitlicher Rahmen sehr begrenzt. Wie gehen Sie sinnvollerweise vor? Welche Testmethoden wählen Sie?
             2. Bitte beurteilen Sie, ob es sinnvoll ist, teilstandardisierte Befragungstechniken im Rahmen des Usability Tests einzusetzen?
             3. In welchen Situationen würden Sie im Rahmen des Usability Testing zum Co-Discovery greifen? 
+            ---
         - **Bitte nehmen Sie Stellung zu den folgenden Thesen**
             1. Durch gezieltes Nachfragen innerhalb der Usability Tests kann man die Auswertung der Testergebnisse beschleunigen, da man so schneller und auf direktem Wege zu den Ursachen einer Verhaltensweise vorstößt.
             2. Fragebogentechnik ist der Thinking aloud Methode grundsätzlich vorzuziehen.

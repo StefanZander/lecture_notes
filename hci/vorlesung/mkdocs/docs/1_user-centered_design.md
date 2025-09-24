@@ -12,14 +12,33 @@
     - Wir versuchen zu verdeutlichen, warum Nutzendenzentrierung bzw. User-Centered Design eine wichtige Rolle in der Informatik spielt
 
 !!! success "Voraussetzungen"
-    - ...
+    - Interesse am Thema und Aufmerksamkeit
+    - Bereitschaft mitbringen zu akzeptieren, dass eigene Annahmen teilweise falsch und/oder unzureichend sind
+    - Mut haben zu erkennen, dass eigene Erfahrungen keine verlässlichen und universell gültigen Rückschlüsse auf das Verhalten oder das Erleben anderer Menschen zulassen
 
 !!! warning "Warum ist es wichtig das zu kennen..."
+    - Kenntnisse in nutzendenzentrierter Softwareentwicklung sind essenziell, da empirische Studien zeigen, dass die frühzeitige und kontinuierliche Einbindung von Nutzer:innen die Produktqualität, Akzeptanz und Gebrauchstauglichkeit signifikant erhöht (ISO 9241-210, 2019).
+    - Ein fundiertes Verständnis von User-Centered Design ist wichtig, weil systematische Analysen der Nutzerbedürfnisse nachweislich zu geringeren Fehlerquoten, höherer Produktivität und erhöhter Zufriedenheit in der Nutzung führen (Mao et al., 2005).
+    - UCD-Methoden wie Prototyping und iterative Evaluation sind für Informatiker:innen praxisrelevant, da sie helfen, Entwicklungsrisiken zu reduzieren und kostspielige Nachbesserungen in späten Entwicklungsphasen zu vermeiden (Gulliksen et al., 2003).
+    - Kenntnisse im Design Thinking sind wertvoll, da empirische Untersuchungen belegen, dass interdisziplinäre, kreative Problemlösungsansätze Innovationen fördern und die Entwicklung von Softwarelösungen mit hoher Nutzerorientierung unterstützen (Brown, 2009; Beckman & Barry, 2007).
+    - Die Anwendung von Design Thinking in der Softwareentwicklung hat sich in der Praxis bewährt, da Unternehmen wie SAP, IBM oder Google durch diese Ansätze messbare Erfolge in Form von verbesserten Entwicklungsprozessen und innovativen Produkten erzielen (Carlgren et al., 2016).
+    - Insgesamt profitieren Informatiker:innen von diesen Kenntnissen, weil nutzendenzentrierte Methoden in der Praxis zunehmend als Standard angesehen werden und somit die berufliche Anschlussfähigkeit sowie die Wettbewerbsfähigkeit auf dem Arbeitsmarkt erhöhen (Norman, 2013).
+
+    !!! refs "Literaturangaben"
+        1. Beckman, S. L., & Barry, M. (2007). Innovation as a Learning Process: Embedding Design Thinking. California Management Review, 50(1), 25–56.
+        2. Brown, T. (2009). Change by Design: How Design Thinking Creates New Alternatives for Business and Society. Harper Business.
+        3. Carlgren, L., Rauth, I., & Elmquist, M. (2016). Framing Design Thinking: The Concept in Idea and Enactment. Creativity and Innovation Management, 25(1), 38–57.
+        4. Gulliksen, J., Göransson, B., Boivie, I., Blomkvist, S., Persson, J., & Cajander, Å. (2003). Key principles for user-centred systems design. Behaviour & Information Technology, 22(6), 397–409.
+        5. ISO 9241-210 (2019). Ergonomics of human-system interaction – Part 210: Human-centred design for interactive systems. International Organization for Standardization.
+        6. Mao, J.-Y., Vredenburg, K., Smith, P. W., & Carey, T. (2005). User-Centered Design Methods in Practice: A Survey of the State of the Art. Proceedings of HCI International 2005.
+        7. Norman, D. A. (2013). The Design of Everyday Things (Revised and Expanded Edition). Basic Books.
+
+<!--
     - Projekte scheitern häufig aufgrund folgenschwerer Fehlannahmen und fehlender Nutzendenzentrierung
     - Eine Nutzendenzentrierung ist elementar und führt zu besseren / erfolgreicheren Projekten
     - Im User-Centered Design geht es nicht um ein möglichst schnelles Erreichen eines Projektzieles sondern um die Berücksichtigung aller relevanter Aspekte, die ein erfolgreiches System beeinhalten muss
     - Exzellente technische Expertise ist kein Garant für ein erfolgreiches System oder eine erfolgreiche Projektdurchführung; wichtig ist eine Einbettung in einen Nutzenden-zentrierten Entwicklungsprozess
-
+-->
 
 ## Inhalte
 
@@ -54,3 +73,9 @@
     - [x] Sie kennen die grundlegenden Prinzipen eines Nutzenden-zentrierten Entwicklungsansatzes
     - [x] Sie können die Unterschiede eines Nutzenden-zentrierten Entwurfs gegenüber anderen Entwicklungsansätzen benennen
     - [x] Sie kennen die einzelnen Entwicklungsphasen und können die unterschiedlichen Aktivitäten diesen zuordnen
+
+
+<!--
+Prompt:
+Bitte erstelle mir eine Auflistung mit je einem Satz pro Punkt, warum es für Informatikstudierende wichtig ist, Kenntnisse zur nutzendenzentrierten Softwareentwicklung und insbesonder zu user-centered design und design thinking zu haben. Benutze für die Formulierung einen wissenschaftlichen, faktenstarken Stil und gebe auch vollständige Quellen an. Berücksichtige bitte auch einen hohen Praxisbezug.
+-->

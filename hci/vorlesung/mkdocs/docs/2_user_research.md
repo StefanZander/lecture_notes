@@ -13,9 +13,22 @@
         - ...kennen die wesentlichen Elemente
         - ...können die elementaren Fehlannahmen ... benennen
 
-!!! warning "Warum ist es wichtig das zu kennen..."
-    - ...
-    - ...
+!!! warning "Warum dieses Thema wichtig ist"
+    - Kenntnisse in User Research sind entscheidend, da empirische Studien zeigen, dass eine systematische Erhebung von Nutzerbedürfnissen die Gebrauchstauglichkeit und Akzeptanz von Softwaresystemen signifikant verbessert (Goodman et al., 2012; ISO 9241-210, 2019).
+    - Methoden der Benutzendenforschung wie Beobachtungen, Umfragen oder Tagebuchstudien liefern valide Daten über tatsächliches Nutzungsverhalten, was nachweislich zu passgenaueren und effizienteren Softwarelösungen führt (Lazar, Feng & Hochheiser, 2017).
+    - Die Anwendung empirisch fundierter User Research-Methoden reduziert Entwicklungsrisiken, da sie eine frühzeitige Identifikation von Anforderungsabweichungen ermöglicht und so kostspielige Änderungen in späteren Projektphasen vermeidet (Maguire, 2001).
+    - Interviewtechniken sind praxisrelevant, weil qualitative Interviews als eine der am häufigsten genutzten Methoden im User Research gelten und tiefe Einblicke in Motivationen, Erwartungen und Probleme von Nutzer:innen ermöglichen (Myers & Newman, 2007).
+    - Der gezielte Einsatz professioneller Interviewmethoden steigert die Validität erhobener Daten, da strukturierte, halbstrukturierte und kontextuelle Interviews unterschiedliche Perspektiven abbilden und dadurch ein umfassenderes Verständnis des Nutzungskontexts schaffen (Brinkmann & Kvale, 2015).
+    - Insgesamt tragen Kenntnisse in User Research und Interviewtechniken empirisch nachweisbar dazu bei, dass Informatiker:innen Produkte entwickeln, die sowohl die tatsächlichen Bedürfnisse der Nutzer:innen erfüllen als auch in der Praxis erfolgreich und wettbewerbsfähig sind (Norman, 2013).
+
+    !!! refs "Literaturverzeichnis"
+        1. Brinkmann, S., & Kvale, S. (2015). InterViews: Learning the Craft of Qualitative Research Interviewing (3rd ed.). Sage.
+        2. Goodman, E., Kuniavsky, M., & Moed, A. (2012). Observing the User Experience: A Practitioner’s Guide to User Research (2nd ed.). Morgan Kaufmann.
+        3. ISO 9241-210 (2019). Ergonomics of human-system interaction – Part 210: Human-centred design for interactive systems. International Organization for Standardization.
+        4. Lazar, J., Feng, J. H., & Hochheiser, H. (2017). Research Methods in Human-Computer Interaction (2nd ed.). Morgan Kaufmann.
+        5. Maguire, M. (2001). Methods to support human-centred design. International Journal of Human-Computer Studies, 55(4), 587–634.
+        6. Myers, M. D., & Newman, M. (2007). The qualitative interview in IS research: Examining the craft. Information and Organization, 17(1), 2–26.
+        7. Norman, D. A. (2013). The Design of Everyday Things (Revised and Expanded Edition). Basic Books.
 
 
 ## Inhalte
@@ -51,3 +64,10 @@
 
 !!! success "Das haben sie in dieser Einheit gelernt"
     - [x] ...
+
+
+
+<!--
+Prompt:
+Bitte erstelle mit eine Auflistung mit je einem Satz pro Punkt, warum es für Informatiker:innen wichtig ist, Kenntnisse zu user research, methoden der benutzendenforschung sowie zu interviewtechniken zu haben. Benutze für die Formulierung einen wissenschaftlichen, faktenstarken Stil und gebe auch vollständige Quellen an. Berücksichtige bitte auch einen hohen Praxisbezug.
+-->

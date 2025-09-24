@@ -16,24 +16,32 @@
     - Gedanklich sollten sie sich von der falschen(!) Vorstellung lösen, dass Design nur etwas für "Designer:innen" ist und dass Informatiker:innen keine guten "Designer" sind. 
 
 !!! warning "Warum diese Themen wichtig sind"
-    - Ein Verständnis für die Gestaltung **intuitiver Nutzungsschnittstellen** ist hilfreich, da **empirische Studien** zeigen, dass intuitive Interaktionen die Lernkurve verkürzen und Fehlerraten reduzieren, was die Effizienz von Softwareanwendungen signifikant steigert (Norman, 2013).
-    - Informatiker:innen profitieren von Kenntnissen der **Gestaltungspsychologie** (z. B. Gestaltgesetze), da diese Prinzipien empirisch fundiert erklären, wie Menschen Muster, Nähe und Ähnlichkeit wahrnehmen, und so helfen, Benutzeroberflächen klar und effizient zu strukturieren (Wertheimer, 1923; Wickens et al., 2015).
-    - Kenntnisse im **Visual Design** verbessern die Nutzbarkeit von digitalen Benutzungsschnittstellen, da **visuelle Gestaltungsprinzipien** wie Konsistenz, Kontrast und Hierarchie nachweislich die **kognitive Verarbeitung** und Orientierung der Nutzer:innen erleichtern (Ware, 2013; Lidwell et al., 2010).
-    - Kenntnisse in **Content Usability** sind hochgradig praxisrelevant, da verständliche und gut strukturierte Inhalte nachweislich die Informationsaufnahme und Entscheidungsfindung unterstützen und gleichzeitig die Verweildauer und Zufriedenheit der Nutzer:innen erhöhen (Nielsen, 2000).
-    - Ein Verständnis von **Wahrnehmungsprozessen** wie Aufmerksamkeit und Arbeitsgedächtnis ist wichtig, da Software-Interfaces, die diese berücksichtigen, Überlastung vermeiden und die kognitive Effizienz steigern (Baddeley, 1992; Wickens et al., 2015).
-    - In der Softwareentwicklungspraxis führen die Integration von **Design- und Wahrnehmungsprinzipien** zu höherer Produktivität, geringeren Fehlerquoten und größerer Nutzerzufriedenheit, was nicht nur die Akzeptanz, sondern auch die Marktchancen von Softwareprodukten erhöht (ISO 9241-210, 2019).
+    - Ein Verständnis für die Gestaltung **intuitiver Nutzungsschnittstellen** ist hilfreich, da **empirische Studien** zeigen, dass intuitive Interaktionen die Lernkurve verkürzen und Fehlerraten reduzieren, was die Effizienz von Softwareanwendungen signifikant steigert (Norman, 2013)[^5].
+    - Informatiker:innen profitieren von Kenntnissen der **Gestaltungspsychologie** (z. B. Gestaltgesetze), da diese Prinzipien empirisch fundiert erklären, wie Menschen Muster, Nähe und Ähnlichkeit wahrnehmen, und so helfen, Benutzeroberflächen klar und effizient zu strukturieren (Wertheimer, 1923[^7]; Wickens et al., 2015[^8]).
+    - Kenntnisse im **Visual Design** verbessern die Nutzbarkeit von digitalen Benutzungsschnittstellen, da **visuelle Gestaltungsprinzipien** wie Konsistenz, Kontrast und Hierarchie nachweislich die **kognitive Verarbeitung** und Orientierung der Nutzer:innen erleichtern (Ware, 2013[^6]; Lidwell et al., 2010[^3]).
+    - Kenntnisse in **Content Usability** sind hochgradig praxisrelevant, da verständliche und gut strukturierte Inhalte nachweislich die Informationsaufnahme und Entscheidungsfindung unterstützen und gleichzeitig die Verweildauer und Zufriedenheit der Nutzer:innen erhöhen (Nielsen, 2000)[^4].
+    - Ein Verständnis von **Wahrnehmungsprozessen** wie Aufmerksamkeit und Arbeitsgedächtnis ist wichtig, da Software-Interfaces, die diese berücksichtigen, Überlastung vermeiden und die kognitive Effizienz steigern (Baddeley, 1992[^1]; Wickens et al., 2015[^8]).
+    - In der Softwareentwicklungspraxis führen die Integration von **Design- und Wahrnehmungsprinzipien** zu höherer Produktivität, geringeren Fehlerquoten und größerer Nutzerzufriedenheit, was nicht nur die Akzeptanz, sondern auch die Marktchancen von Softwareprodukten erhöht (ISO 9241-210, 2019)[^2].
 
-        ---
-        Quellen
+        !!! refs "Quellenverzeichnis"
+            1. Baddeley, A. D. (1992). Working Memory. Science, 255(5044), 556–559.
+            2. ISO 9241-210 (2019). Ergonomics of human-system interaction – Part 210: Human-centred design for interactive systems. International Organization for Standardization.
+            3. Lidwell, W., Holden, K., & Butler, J. (2010). Universal Principles of Design (2nd ed.). Rockport.
+            4. Nielsen, J. (2000). Designing Web Usability: The Practice of Simplicity. New Riders.
+            5. Norman, D. A. (2013). The Design of Everyday Things (Revised and Expanded Edition). Basic Books.
+            6. Ware, C. (2013). Information Visualization: Perception for Design (3rd ed.). Morgan Kaufmann.
+            7. Wertheimer, M. (1923). Untersuchungen zur Lehre von der Gestalt II. Psychologische Forschung, 4, 301–350.
+            8. Wickens, C. D., Hollands, J. G., Banbury, S., & Parasuraman, R. (2015). Engineering Psychology and Human Performance (4th ed.). Psychology Press.
 
-        1. Baddeley, A. D. (1992). Working Memory. Science, 255(5044), 556–559.
-        2. ISO 9241-210 (2019). Ergonomics of human-system interaction – Part 210: Human-centred design for interactive systems. International Organization for Standardization.
-        3. Lidwell, W., Holden, K., & Butler, J. (2010). Universal Principles of Design (2nd ed.). Rockport.
-        4. Nielsen, J. (2000). Designing Web Usability: The Practice of Simplicity. New Riders.
-        5. Norman, D. A. (2013). The Design of Everyday Things (Revised and Expanded Edition). Basic Books.
-        6. Ware, C. (2013). Information Visualization: Perception for Design (3rd ed.). Morgan Kaufmann.
-        7. Wertheimer, M. (1923). Untersuchungen zur Lehre von der Gestalt II. Psychologische Forschung, 4, 301–350.
-        8. Wickens, C. D., Hollands, J. G., Banbury, S., & Parasuraman, R. (2015). Engineering Psychology and Human Performance (4th ed.). Psychology Press.
+    
+    [^1]: Baddeley, A. D. (1992). Working Memory. Science, 255(5044), 556–559.
+    [^2]: ISO 9241-210 (2019). Ergonomics of human-system interaction – Part 210: Human-centred design for interactive systems. International Organization for Standardization.
+    [^3]: Lidwell, W., Holden, K., & Butler, J. (2010). Universal Principles of Design (2nd ed.). Rockport.
+    [^4]: Nielsen, J. (2000). Designing Web Usability: The Practice of Simplicity. New Riders.
+    [^5]: Norman, D. A. (2013). The Design of Everyday Things (Revised and Expanded Edition). Basic Books.
+    [^6]: Ware, C. (2013). Information Visualization: Perception for Design (3rd ed.). Morgan Kaufmann.
+    [^7]: Wertheimer, M. (1923). Untersuchungen zur Lehre von der Gestalt II. Psychologische Forschung, 4, 301–350.
+    [^8]: Wickens, C. D., Hollands, J. G., Banbury, S., & Parasuraman, R. (2015). Engineering Psychology and Human Performance (4th ed.). Psychology Press.
 
 
 ## Inhalte
@@ -51,6 +59,7 @@
 - 
 
 
+
 ## Übungsaufgaben
 
 - :material-file-pdf-box: [Fallstudien]()
@@ -66,24 +75,18 @@
         4. Stellen Sie anhand eines selbstgewählten Beispiels dar, warum UX und Visual Design zusammenhängen bzw. nicht separat voneinander betrachtet werden sollten; legen Sie insbesondere die Gründe hierfür dar.
         5. Welche Besonderheiten existieren in der Wahrnehmung und Verarbeitung von Online-Inhalten? Nennen Sie geeignete Maßnahmen zur Erhöhung der Effektivität und Effizienz.
         6. Erläutern Sie kurz die Rolle des “natural mapping” im Bereich der Affordance.
-        7. Welchen grundsätzlichen Ansatz sollten Sie bei der Wahl potentieller UI-Elemente in Betracht ziehen?
-            <!-- - Auswahl der Elemente anhand dessen, was sie kommunizieren und was ihr Beitrag zur Zielerfüllung ist; 
-            - hinterfragen, was ist das zugrunde liegende Kommunikations- / Entscheidungsmodell -->
-    
+        7. Welchen grundsätzlichen Ansatz sollten Sie bei der Wahl potentieller UI-Elemente in Betracht ziehen? <!-- a) Auswahl der Elemente anhand dessen, was sie kommunizieren und was ihr Beitrag zur Zielerfüllung ist; b) hinterfragen, was ist das zugrunde liegende Kommunikations- / Entscheidungsmodell -->
+    ---
     - **Anwendungsfragen**
         1. Im Rahmen der Neuentwicklung eines Web-basierten Tabellenkalkulationsprogramm erhalten Sie von ihrer Vorgesetzten den Auftrag, sich bzgl. des Designs an etablierten Tools zu orientieren. Wie beurteilen Sie diese Anweisung? Halten Sie dies für gut bzw. sinnvoll? Bitte begründen Sie Ihre Antwort.
         2. Stellen Sie dar, wie sie die Informationsverarbeitung von Onlineinhalten unterstützen können; 
-
-    
+    ---
     - **Reflexionsfragen**
-        1. Erläutern Sie kurz, warum dem Design des visuellen Erscheinungsbildes einer Software dieselbe Aufmerksamkeit zuteil werden sollte, wie einem korrekten Softwareentwurf. Welches Problem kann hierbei jedoch auftreten? 
-        <!-- - Visual Design beeinflusst die individuelle Wahrnehmung der Qualität eines Produktes 
-        - Schlechtes Design führt zu einer subjektiv geringeren Beurteilung der Produktqualität
-        - Users are more tolerated towards minor usability flaws - —> Aesthetics Usability Effect -->
-        1. Nehmen Sie Stellung zu folgenden Thesen: 
-              1. _"Skeuomorphic Design und Affordance sind zwei völlig unterschiedliche und voneinander unabhängige Konzepte."_
-              2. _"Bei der Gestaltung von Benutzungsoberflächen steht die Konzeption des visuellen Erscheinungsbildes (Farben / Schriften / Abstände / Layout ) an erster Stelle."_
-              3. _"Für eine erfolgreiche Adaption bestehender Benutzungs- und Interaktionskonzepte muss dem Aspekt der External Consistency die größte Aufmerksamkeit zuteilwerden."_
+        1. Erläutern Sie kurz, warum dem Design des visuellen Erscheinungsbildes einer Software dieselbe Aufmerksamkeit zuteil werden sollte, wie einem korrekten Softwareentwurf. Welches Problem kann hierbei jedoch auftreten? <!-- a) Visual Design beeinflusst die individuelle Wahrnehmung der Qualität eines Produktes b) Schlechtes Design führt zu einer subjektiv geringeren Beurteilung der Produktqualität c) Users are more tolerated towards minor usability flaws (see Aesthetics Usability Effect) -->
+        2. Nehmen Sie Stellung zu folgenden Thesen: 
+            1. _"Skeuomorphic Design und Affordance sind zwei völlig unterschiedliche und voneinander unabhängige Konzepte."_
+            2. _"Bei der Gestaltung von Benutzungsoberflächen steht die Konzeption des visuellen Erscheinungsbildes (Farben / Schriften / Abstände / Layout ) an erster Stelle."_
+            3. _"Für eine erfolgreiche Adaption bestehender Benutzungs- und Interaktionskonzepte muss dem Aspekt der External Consistency die größte Aufmerksamkeit zuteilwerden."_
 
 
 

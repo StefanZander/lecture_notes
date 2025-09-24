@@ -41,6 +41,8 @@ theme:
     repo: fontawesome/brands/github
     edit: material/pencil 
     view: material/eye
+    admonition:
+      refs: simple/readthedocs
   language: de
   features:
     - navigation.instant
