@@ -11,8 +11,8 @@
 
 
 !!! success "Voraussetzungen"
-    - Sie sollten die Einheit zum Prototyping und Modellbildung abgeschlossen haben und im Rahmen des Semesterprojektes erste Benutzungsschnittstellen (aka Screens) ihrer App konzipiert haben
-    - Sie haben sich mit den Kapitel 
+    - Sie haben die Einheiten zum [Prototyping](./5_prototyping.md) und [Modellbildung](4_models.md) abgeschlossen und im Rahmen des Semesterprojektes erste Entwürfe der Screens ihrer App und möglicher Navigationspfade konzipiert
+    - Sie haben in ihrem Semesterprojekt den Meilenstein "User Research" vollständig abgeschlossen
     - Gedanklich sollten sie sich von der falschen(!) Vorstellung lösen, dass Design nur etwas für "Designer:innen" ist und dass Informatiker:innen keine guten "Designer" sind. 
 
 !!! warning "Warum diese Themen wichtig sind"

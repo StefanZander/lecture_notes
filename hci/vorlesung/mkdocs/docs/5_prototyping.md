@@ -1,17 +1,15 @@
 # Prototyping
 
 !!! abstract "In diesem Kapitel geht es um folgende Themen:"
-    - In dieser Einheit lernen sie Methoden kennen, die ihnen dabei helfen mehr über ihre primären Benutzenden herauszufinden
-    - Sie lernen Methoden, wie sie ... in informatische Entwicklungsprozesse integrieren können
-    - ...
+    - **Prototyping** als wichtiges Tool in einem User-Centered Design Prozess
+    - Die Vorteile von **Paper Prototyping** in frühen Entwicklungsphasen
+    - Die Kopplung von Prototyping und **User-/UI-Test** um frühzeitig Fehleinschätzungen oder schlechte Designentscheidungen zu identifizieren und zu eliminieren
+
 
 !!! success "Voraussetzungen"
-    - Sie kennen wesentlichen Elemente eines Nutzenden-zentrierten Entwicklungsprozesses
+    - Sie haben die Einheiten [User-centered Design](1_user-centered_design.md) und [User Research](2_user_research.md) vollständig abgeschlossen und kennen die wesentlichen Elemente eines Nutzenden-zentrierten Entwicklungsprozesses
     - Sie kennen die elementaren Fehlannahmen, die häufig in Design- und Entwicklungsprojekten gemacht werden
-    - Sie wissen warum "Design" nichts mit visueller Ästhetik zu tun hat sondern vor allem mit Gebrauchstauglichkeit
-    - Sie haben alle Lektionen der vorherigen Einheit durchgearbeitet und ...
-        - ...kennen die wesentlichen Elemente
-        - ...können die elementaren Fehlannahmen ... benennen
+    - Für das Semesterprojekt haben sie die Navigationsübersicht sowie erste Entwürfe der Screens ihrer App erstellt
 
 !!! warning "Warum ist es wichtig das zu kennen..."
     - Kenntnisse im **Prototyping** sind zentral, da empirische Studien zeigen, dass frühe Prototypen die **Kommunikation** zwischen Entwickler:innen und Stakeholdern verbessern und Anforderungen präzisieren (Virzi, Sokolov & Karis, 1996)[^6]. 
