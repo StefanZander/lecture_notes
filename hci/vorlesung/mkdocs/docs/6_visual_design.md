@@ -107,3 +107,8 @@
 Prompt:
 Bitte erstelle mit eine Auflistung mit je einem Satz pro Punkt, warum es für Informatikstudierende wichtig ist, Kenntnisse zu Visual Design, den Grundlagen von intuitiven Nutzungsschnittstellen bzw. User Interaces, Content Usability usw. zu haben. Gehe hierbei bitte auch auf die Relevanz von gestaltungs- und wahrnehmungspsychologischen Aspekten ein. Benutze für die Formulierung einen wissenschaftlichen, faktenstarken Stil und gebe auch vollständige Quellen an. Berücksichtige bitte auch einen hohen Praxisbezug.
 -->
+
+<!--
+Prompt:
+Bitte erstelle mir ein paar Fragen zur Lernzielkontrolle für Informatikstudierende im Bachelor 4. Semester zum Thema Prototyping im Kontext von User-centered Design. Gehe bitte auch auf das Paper Prototyping und User Tests ein.
+-->

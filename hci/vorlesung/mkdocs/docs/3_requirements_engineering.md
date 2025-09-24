@@ -6,9 +6,22 @@
 !!! success "Voraussetzungen"
     - ...
 
-!!! warning "Warum ist es wichtig das zu kennen..."
-    - ...
-    - ...
+!!! warning "Warum es wichtig ist dieses Themengebiet zu kennen"
+    - Kenntnisse im Requirements Engineering sind essenziell, da **empirische Studien** zeigen, dass **fehlerhafte** oder **unvollständige Anforderungen** eine der häufigsten Ursachen für das Scheitern von IT-Projekten sind (Standish Group, 2015[^7]; Nuseibeh & Easterbrook, 2000[^6]).
+    - Anforderungen systematisch zu erheben und zu dokumentieren **reduziert** nachweislich **Projektrisiken** und verhindert **kostspielige Änderungen** in späten Entwicklungsphasen (Boehm & Papaccio, 1988)[^1].
+    - Ein fundiertes Requirements Engineering verbessert die **Kommunikation** zwischen Stakeholdern und Entwickler:innen, wodurch Missverständnisse minimiert und die Projektergebnisse besser an den **tatsächlichen Bedürfnissen** ausgerichtet werden (Hofmann & Lehner, 2001)[^4].
+    - Empirische Untersuchungen belegen, dass der Einsatz **strukturierter Analysemethoden** im Requirements Engineering die **Softwarequalität** und die **Benutzerzufriedenheit** signifikant erhöht (Davis, 1993[^3]; Damian & Chisan, 2006[^2]).
+    - Kenntnisse im Requirements Engineering sind praxisrelevant, da sie Informatiker:innen befähigen, **komplexe Systeme planbar und effizient zu entwickeln** und somit die Erfolgsquote von Projekten messbar steigern (Zowghi & Coulin, 2005)[^8].
+    - Darüber hinaus bildet RE die Grundlage für **agile** und **iterative Entwicklungsprozesse**, indem es die kontinuierliche Anpassung von Anforderungen an sich ändernde Rahmenbedingungen unterstützt (Inayat et al., 2015)[^5].
+
+[^1]: Boehm, B. W., & Papaccio, P. N. (1988). Understanding and controlling software costs. IEEE Transactions on Software Engineering, 14(10), 1462–1477.
+[^2]: Damian, D., & Chisan, J. (2006). An empirical study of the complex relationships between requirements engineering processes and other processes that lead to payoffs in productivity, quality, and risk management. IEEE Transactions on Software Engineering, 32(7), 433–453.
+[^3]: Davis, A. M. (1993). Software Requirements: Objects, Functions, and States. Prentice Hall.
+[^4]: Hofmann, H. F., & Lehner, F. (2001). Requirements engineering as a success factor in software projects. IEEE Software, 18(4), 58–66.
+[^5]: Inayat, I., Salim, S. S., Marczak, S., Daneva, M., & Shamshirband, S. (2015). A systematic literature review on agile requirements engineering practices and challenges. Computers in Human Behavior, 51, 915–929.
+[^6]: Nuseibeh, B., & Easterbrook, S. (2000). Requirements engineering: A roadmap. Proceedings of the Conference on the Future of Software Engineering, 35–46.
+[^7]: Standish Group. (2015). CHAOS Report 2015. The Standish Group International.
+[^8]: Zowghi, D., & Coulin, C. (2005). Requirements elicitation: A survey of techniques, approaches, and tools. In Aurum, A. & Wohlin, C. (Eds.), Engineering and Managing Software Requirements (pp. 19–46). Springer.
 
 
 ## Inhalte
@@ -133,3 +146,9 @@ Für die Ermittlung von Anforderungen bieten sich mehrere Möglichkeiten, Wege u
         2. Welche Verifikationsarten gibt es und wann setzt man welche Methode ein?
         3. Gibt es eine zu bevorzugende Methode und falls ja, was sind die Gründe hierfür?
         4. Welche Rolle spielt die Validierung bei der Verifikation von Anforderungen? 
+
+
+<!--
+Prompt:
+Bitte erstelle mir eine Auflistung mit je einem Satz pro Punkt, warum es für Informatiker:innen wichtig ist, Kenntnisse zum Requirements Engineering zu haben. Benutze für die Formulierung einen wissenschaftlichen, faktenstarken Stil und gebe auch vollständige Quellen an. Berücksichtige bitte auch einen hohen Praxisbezug und Studien mit empirischen Erkenntnissen.
+-->
