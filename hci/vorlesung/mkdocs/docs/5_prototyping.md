@@ -64,8 +64,12 @@
 
 ## Zusammenfassung
 
-!!! success "Das haben sie in dieser Einheit gelernt"
-    - [x] ...
+!!! success "Das haben sie in diesem Kapitel gelernt"
+    - [x] Testen von Benutzungsschnittstellen mittels Paper Prototyping
+    - [x] Evaluierung von Designentscheidungen mittels einfacher Prototyping-Techniken
+    - [x] Durchführung von UI-/User-Tests mittels Paper Prototyping
+    - [x] Unterschiede von Prototyping zu Wireframes und Sketching
+    - [x] Prototyping als Kommunikationswerkzeug um Designentscheidungen gegenüber Nutzer:innen darzustellen und zu evaluieren 
 
 
 
