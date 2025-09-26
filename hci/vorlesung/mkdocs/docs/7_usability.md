@@ -113,42 +113,46 @@ Diese Einheit gibt einen Überblick über die verschiedenen Normen zur Software 
 
 Um die **Gebrauchstauglichkeit** bzw. Nutzbarkeit von von Produkten im Allgemeinen und Softwaresystemen im Speziellen zu beurteilen sind **Evaluationsverfahren** notwendig. Im Bereich der Usability Evaluation unterscheidet man zwischen der **Usability Inspection** und dem **Usability Testing**. Das erstgenannte Verfahren (Usability Inspection) zählt zu der Klasse der **heuristischen Methoden** und wird von einer Reihe von Expert:innen und anhand von Checklisten etc. durchgeführt. Das Usability Testing ist ein **empirisches Verfahren**, welches die Benutzbarkeit anhand einiger vorab definierten Aufgaben und mit echten Nutzenden evaluiert. In dieser Einheit lernen sie die Besonderheiten beider Evaluationstypen sowie entsprechende Evaluationsverfahren (Checklisten bei der Usability Inspection und Thinking aloud beim Usability Test) kennen. 
 
-1. Slides
-    1. Evaluierungstypen
-    2. Die Usability Inspection (heuristisch)
-    3. Das Usability Testing (empirisch)
-    4. Die "Thinking aloud"-Methode
-    5. Weitere Usability-Testmethoden
-    6. Auswertung von Usability Tests
-2. Ergänzendes Material
-    - [Sehr guter Artikel zu den 10 grundlegenen Usability-Heuristiken für das Design von User Interfaces](https://www.nngroup.com/articles/ten-usability-heuristics/)
-    - [Video zur Erklärung der Thinking-aloud-Methode für Testuser](https://www.nngroup.com/videos/think-aloud/)
-3. Lernzielkontrolle
+:material-presentation: **Slides**
 
-    !!! question "Fragen zur Reflexion des Lernstoffes"
-        - **Verständnisfragen**
-            1. Ist es sinnvoll, Methoden der Usability Inspection grundsätzlich in enger zeitlicher Kopplung mit Usability Tests durchzuführen? Bitte begründen Sie Ihre Antwort.
-            2. Zeichnen Sie auf einem Zeitstrahl von Entwicklungsanfang bis Rollout grob die ungefähren Zeiten ein, an denen es sich lohnt Usability Tests und/oder Usability Inspection durchzuführen.
-            3. Warum ist die Einführung bei der Thinking aloud Methode bzw. beim Usability Test so wichtig?
-            4. Warum ist es auch beim Usability Testing notwendig, objektivierbare Messkriterien zu finden?
-            5. Warum ist es gerade für Software-Produkte ein Usability Test wichtig und notwendig?
-            6. Welche Nutzergruppen / welche Nutzer wählen Sie beim Usability Test aus?
-            7. Warum sollte das Co-Discovery mit Bedacht eingesetzt werden und welche Gefahren entstehen beim Co-Discovery?
-            ---
-        - **Anwendungs- & Transferfragen**
-            1. Sie bekommen von Ihrem Vorgesetzten den Auftrag, eine fast fertige Software hinsichtlich Benutzbarkeit zu testen. Entsprechende Tests haben bisher nicht stattgefunden. Leider ist Budget und zeitlicher Rahmen sehr begrenzt. Wie gehen Sie sinnvollerweise vor? Welche Testmethoden wählen Sie?
-            2. Bitte beurteilen Sie, ob es sinnvoll ist, teilstandardisierte Befragungstechniken im Rahmen des Usability Tests einzusetzen?
-            3. In welchen Situationen würden Sie im Rahmen des Usability Testing zum Co-Discovery greifen? 
-            ---
-        - **Bitte nehmen Sie Stellung zu den folgenden Thesen**
-            1. Durch gezieltes Nachfragen innerhalb der Usability Tests kann man die Auswertung der Testergebnisse beschleunigen, da man so schneller und auf direktem Wege zu den Ursachen einer Verhaltensweise vorstößt.
-            2. Fragebogentechnik ist der Thinking aloud Methode grundsätzlich vorzuziehen.
-            3. Da es beim Usability Test um das subjektive Empfinden von BenutzerInnen geht, ist hier eine Objektivierung bzw. Quantifizierung von Messkriterien nicht erforderlich.
-            4. Bei überschaubarem Budget kann man im Zweifel auf einen Pilot-Test verzichten.
-            5. Da Usability Tests idR mit sehr hohe Kosten verbunden sind, sollte man, insbesondere bei einem eng begrenzten Projektbudget, diese erst in späteren Projektphase durchführen.
-            6. Usability Tests und Usability Inspection liefern idR dieselben Ergebnisse.
-            7. Als Pretest für einen Usability Test kann man die eigenen Designer / SWE heranziehen
-            8. Interview und Fragebogentechnik können einen Thinking aloud Test nicht ersetzen. Bitte begründen Sie Ihre Antwort.  
+1. Evaluierungstypen
+2. Die Usability Inspection (heuristisch)
+3. Das Usability Testing (empirisch)
+4. Die "Thinking aloud"-Methode
+5. Weitere Usability-Testmethoden
+6. Auswertung von Usability Tests
+
+#### :material-file-document-multiple-outline: Ergänzendes Material
+ - :material-file-document-outline: [Sehr guter Artikel zu den 10 grundlegenen Usability-Heuristiken für das Design von User Interfaces](https://www.nngroup.com/articles/ten-usability-heuristics/)
+ - :material-video-outline: [Video zur Erklärung der Thinking-aloud-Methode für Testuser](https://www.nngroup.com/videos/think-aloud/)
+ - :material-file-document: [PSSUQ als Tool für die eigenen Abschlussarbeit; 10 Things to Know About the Post Study System Usability Questionnaire](https://measuringu.com/pssuq/)
+
+#### :material-account-school: Lernzielkontrolle
+
+!!! question "Fragen zur Reflexion des Lernstoffes"
+    - **Verständnisfragen**
+        1. Ist es sinnvoll, Methoden der Usability Inspection grundsätzlich in enger zeitlicher Kopplung mit Usability Tests durchzuführen? Bitte begründen Sie Ihre Antwort.
+        2. Zeichnen Sie auf einem Zeitstrahl von Entwicklungsanfang bis Rollout grob die ungefähren Zeiten ein, an denen es sich lohnt Usability Tests und/oder Usability Inspection durchzuführen.
+        3. Warum ist die Einführung bei der Thinking aloud Methode bzw. beim Usability Test so wichtig?
+        4. Warum ist es auch beim Usability Testing notwendig, objektivierbare Messkriterien zu finden?
+        5. Warum ist es gerade für Software-Produkte ein Usability Test wichtig und notwendig?
+        6. Welche Nutzergruppen / welche Nutzer wählen Sie beim Usability Test aus?
+        7. Warum sollte das Co-Discovery mit Bedacht eingesetzt werden und welche Gefahren entstehen beim Co-Discovery?
+        ---
+    - **Anwendungs- & Transferfragen**
+        1. Sie bekommen von Ihrem Vorgesetzten den Auftrag, eine fast fertige Software hinsichtlich Benutzbarkeit zu testen. Entsprechende Tests haben bisher nicht stattgefunden. Leider ist Budget und zeitlicher Rahmen sehr begrenzt. Wie gehen Sie sinnvollerweise vor? Welche Testmethoden wählen Sie?
+        2. Bitte beurteilen Sie, ob es sinnvoll ist, teilstandardisierte Befragungstechniken im Rahmen des Usability Tests einzusetzen?
+        3. In welchen Situationen würden Sie im Rahmen des Usability Testing zum Co-Discovery greifen? 
+        ---
+    - **Bitte nehmen Sie Stellung zu den folgenden Thesen**
+        1. Durch gezieltes Nachfragen innerhalb der Usability Tests kann man die Auswertung der Testergebnisse beschleunigen, da man so schneller und auf direktem Wege zu den Ursachen einer Verhaltensweise vorstößt.
+        2. Fragebogentechnik ist der Thinking aloud Methode grundsätzlich vorzuziehen.
+        3. Da es beim Usability Test um das subjektive Empfinden von BenutzerInnen geht, ist hier eine Objektivierung bzw. Quantifizierung von Messkriterien nicht erforderlich.
+        4. Bei überschaubarem Budget kann man im Zweifel auf einen Pilot-Test verzichten.
+        5. Da Usability Tests idR mit sehr hohe Kosten verbunden sind, sollte man, insbesondere bei einem eng begrenzten Projektbudget, diese erst in späteren Projektphase durchführen.
+        6. Usability Tests und Usability Inspection liefern idR dieselben Ergebnisse.
+        7. Als Pretest für einen Usability Test kann man die eigenen Designer / SWE heranziehen
+        8. Interview und Fragebogentechnik können einen Thinking aloud Test nicht ersetzen. Bitte begründen Sie Ihre Antwort.  
 
 
 ---

@@ -56,7 +56,7 @@
 
 ## Ergänzende Materialien
 
-- 
+- [Ein sehr schönes "pecha-kucha"-Video zu emotional intelligenter Kommunikation bei Design von Schildern](https://youtu.be/x7HMR0t7Qfw?si=CGMkZHsSPdgZRvMy). Viele der dort gezeigten Dinge lassen sich auch auf das Design von Benutzungsschnittstellen übertragen.
 
 
 

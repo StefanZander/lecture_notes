@@ -12,11 +12,11 @@
     - Grundzüge der Objekt-Orientierung und Kenntnisse der verschiedenen UML-Diagrammtypen
     - OOAD
 
-!!! warning "Warum ist das Kapitel wichtig"
+!!! warning "Warum das Kapitel wichtig ist"
     - Die Modellbildung der App ist wichtige Voraussetzung für die spätere Implementierung
-    - Die modellhafte Darstellung von Navigationspfaden und Navigationsstrukturen hilft dabei, den logischen Aufbau der App sowie der verschiedenen Funktionen auch für nicht-technik-affine Menschen (aka Endnutzende) greifbar zu machen
-    - Die Modellbildung ist ein Werkzeug um die Erkenntnisse aus dem User Research bildhaft darzustellen und diesen eine Gestalt zu geben
-    - Modelle sind ein wirkungsvolles Kommunikationstool und schaffen die Voraussetzung für ein gemeinsames Verständnis hinsichtlich Aufbau, Struktur und Nutzbarkeit einer Software
+    - Die modellhafte Darstellung von **Navigationspfaden** und **Navigationsstrukturen** hilft dabei, den **logischen Aufbau** der App sowie der verschiedenen Funktionen auch für nicht-technik-affine Menschen (aka Endnutzende) greifbar zu machen
+    - Die Modellbildung ist ein Werkzeug um die Erkenntnisse aus dem User Research bildhaft darzustellen und diesen eine **Gestalt** zu geben
+    - Modelle sind ein **wirkungsvolles Kommunikationstool** und schaffen die Voraussetzung für ein **gemeinsames Verständnis** hinsichtlich Aufbau, Struktur und Nutzbarkeit einer Software
     - Die hier vorgestellten Modelltypen schaffen den Übergang von mentalen Modellen (aus dem User Research) hin zu Implementierungsmodellen
 
 
@@ -25,6 +25,16 @@
 
 
 ## Aufgaben
+1. Zeichnen Sie ein vollständiges **abstraktes Navigationsübersichtsdiagramm** für eine Internet Radio Applikation. Berücksichtigen Sie dabei die folgenden Aspekte:
+    - Nach dem Starten erscheint sofort der Hauptscreen der Anwendung; dort können Radiosender aus der Senderliste ausgewählt werden (sofern vorhanden).
+    - Sind keine Sender vorhanden, kann diese über die Aktion “Senderliste abfragen” auf einem sepa- raten Screen abgerufen werden.
+    - Die Applikation erlaubt auch das Anlegen einer Favoritenliste. Auf der Favoritenseite können Ra- diostationen beliebig sortiert werden.
+    - Die Applikation soll von jedem Screen aus beendet werden können.
+
+    Hinweise:
+
+    - Treffen Sie eigene Annahmen für die Benennung der einzelnen Screens
+    - Ergänzen Sie das Diagramm sinnvoll an geeigneten Stellen
 
 
 ## Lernzielkontrolle
