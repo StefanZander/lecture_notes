@@ -1,5 +1,7 @@
 # Prototyping
 
+:material-clock-outline: Geschätzte Bearbeitungszeit: 1-2 Stunden
+
 !!! abstract "In diesem Kapitel geht es um folgende Themen:"
     - **Prototyping** als wichtiges Tool in einem User-Centered Design Prozess
     - Die Vorteile von **Paper Prototyping** in frühen Entwicklungsphasen
@@ -30,6 +32,9 @@
 
 ## Inhalte
 - :material-file-pdf-box: [Was ist Prototyping und welche Rolle spielt es im UCD-Prozess]()
+
+## Ergänzende Materialien
+- :material-file-pdf-box: [Paper Prototyping As A Usability Testing Technique](https://usabilitygeek.com/paper-prototyping-as-a-usability-testing-technique/)
 
 
 

@@ -1,17 +1,19 @@
 # User Research
 
+:material-clock-outline: Geschätzte Bearbeitungszeit: 2-3 Stunden  
+
+
 !!! abstract "In diesem Kapitel geht es um folgende Themen:"
     - In dieser Einheit lernen sie Methoden kennen, die ihnen dabei helfen mehr über ihre primären Benutzenden herauszufinden
-    - Sie lernen Methoden, wie sie ... in informatische Entwicklungsprozesse integrieren können
-    - ...
+    - Sie lernen Verfahren zur Identifizierung der **wesentlichen Merkmale** Benutzender sowie deren Unterteilung in **Benutzendengruppen**
+    - Die Rolle der **Stereotypen** und **primären Personas** in einem UCD-Entwicklungsprozess
+    - Sie lernen die wesentlichen Bestandteile und die Durchführung eines **teilstandardisierten Interviews** kennen
+    - Sie lernen, wie man teilstandardisierte Interviews als **explorative Forschungsmethode** einsetzt, um mehr über die Stereotypen und deren mentale Modelle und Nutzungserlebnisse zu erfahren und wie man diese Erkenntnisse in den weiteren bzw. in **informatorische Entwicklungsprozesse** einbettet.
 
 !!! success "Voraussetzungen"
     - Sie kennen wesentlichen Elemente eines Nutzenden-zentrierten Entwicklungsprozesses
     - Sie kennen die elementaren Fehlannahmen, die häufig in Design- und Entwicklungsprojekten gemacht werden
-    - Sie wissen warum "Design" nichts mit visueller Ästhetik zu tun hat sondern vor allem mit Gebrauchstauglichkeit
-    - Sie haben alle Lektionen der vorherigen Einheit durchgearbeitet und ...
-        - ...kennen die wesentlichen Elemente
-        - ...können die elementaren Fehlannahmen ... benennen
+    - Sie haben verstanden, dass und warum sich aus persönlichen Erfahrungen oder Wertesystemem keine Rückschlüsse auf die Bedürfnisse und Erwartungen von Benutzenden schließen lassen.
 
 !!! warning "Warum dieses Thema wichtig ist"
     - Kenntnisse in User Research sind entscheidend, da empirische Studien zeigen, dass eine systematische Erhebung von Nutzerbedürfnissen die Gebrauchstauglichkeit und Akzeptanz von Softwaresystemen signifikant verbessert (Goodman et al., 2012; ISO 9241-210, 2019).
@@ -38,16 +40,21 @@
 - :material-file-pdf-box: [Lektion 3: Was sind Anwendungsszenarien und wie setzt man sie ein]()
 - :material-file-pdf-box: [Lektion 4: Wie gewinnt man Material für die Stereotypen und Anwendungsszenarien]()
 - :material-file-pdf-box: [Lektion 5: Interviewarten und ihre Unterschiede]()
-    - Für interessierte: Es gibt noch viel mehr Interview-Arten als die im Foliensatz aufgeführten. Eine sehr gute Übersicht findet sich hier :material-file-pdf-box: [Link to Chapter]()
+    - Für interessierte: Es gibt noch viel mehr Interview-Arten als die im Foliensatz aufgeführten. Eine sehr gute Übersicht findet sich hier :material-file-pdf-box: [Link to Book-Chapter]()
 - :material-file-pdf-box: [Lektion 6: Das teilstandardisierte Interview]()
 - :material-file-pdf-box: [Lektion 7: Gefahren des teilstandardisierten Interviews]()
-- :material-video: [Video zu einem schlecht geführten Interview]()
-- :material-video: [Video eines gut geführten Interviews]()
 - :material-file-pdf-box: [Lektion 8: Der Hawthorne-Effekt und seine Auswirkung in Feldstudien]()
 
 
-## Übungen / Aufgaben
 
+## Ergänzende Materialien
+- :material-video: [Video zu einem schlecht geführten Interview]()
+- :material-video: [Video eines gut geführten Interviews]()
+
+
+## Übungen / Aufgaben
+- in VO: Leitfaden ausarbeiten 
+- ...
 
 
 
@@ -57,15 +64,41 @@
 
     Nach dem Durcharbeiten der o.g. Lektionen sollten sie folgende Fragen beantworten können:
 
-    1. 
+    1. Von Ihrem Vorgesetzten erhalten Sie die Anweisung, im Rahmen der Benutzerforschung möglichst viele Nutzer als Stakeholder in den Anforderungsermittlungsprozess einzubinden; wie beurteilen Sie dies?
+    2. Was ist bei der Auswahl der Stereotypen zu beachten?
+    3. Wie findet man im Rahmen der Benutzererforschung geeignete Stereotypen?
+    4. Was unterscheidet qualitative von quantitativen Methoden im User Research, und welchen Mehrwert bietet eine Kombination beider Ansätze?  
+    5. Diskutieren Sie, warum es im User Research wichtig ist, sowohl methodische Strenge als auch Flexibilität in der Gesprächsführung zu berücksichtigen.  
+    6. Welche Schritte gehören zur Vorbereitung eines teilstandardisierten Interviews, und warum sind sie für die Qualität der Ergebnisse entscheidend?
+    7. Welche Strategien können Interviewer:innen anwenden, um soziale Erwünschtheit in den Antworten der Befragten zu reduzieren?  
+    8. Welche typischen Methoden werden im User Research eingesetzt?  
+        - A) Beobachtungen im Nutzungskontext  
+        - B) Interviews (strukturiert, teilstrukturiert, unstrukturiert)  
+        - C) Automatisierte Softwaretests  
+        - D) Fragebögen und Umfragen  
+    9. Welche typischen Fehlerquellen können bei Interviews im User Research auftreten?  
+        - A) Suggestivfragen durch die Interviewer:innen  
+        - B) Soziale Erwünschtheit bei den Antworten  
+        - C) Statistische Auswertung mit zu großem Datensatz  
+        - D) Fehlende Neutralität in der Gesprächsführung  
+    10. Welche Elemente sind typisch für einen Interviewleitfaden im teilstandardisierten Interview?  
+        - A) Eine feste Reihenfolge von Kernthemen  
+        - B) Geschlossene Fragen ohne Spielraum  
+        - C) Offene Fragen mit Raum für Nachfragen  
+        - D) Verzicht auf eine feste Struktur  
+    11. Bitte nehmen sie Stellung zu folgenden Thesen und begründen sie ihre Antwort
+        1. _Der Entwurf eines ausgewogenen Fragenkatalogs gilt bei der Durchführung eines teilstandardisierten Interviews als wichtigster Bestandteil._
 
 
 ## Zusammenfassung
 
 !!! success "Das haben sie in dieser Einheit gelernt"
-    - [x] ...
-
-
+    - [x] **Stereotypen** können zu **Benutzendengruppen** zusammengefasst werden, um **primäre Personas** zu identifizieren.
+    - [x] Für die Einteilung in Benutzendengruppen sind **charakteristische Merkmale** ausschlaggebend; diese müssen vorab identifiziert und deren Ausprägungen bei den verschiedenen Stereotypen festgestellt bzw. untersucht werden. 
+    - [x] Das **teilstandardisierte Interview** eignet sich sehr gut, um umbekannte Problemräume zu erforschen und mehr über die spezifischen Erfahrungen, Wünsche und Bedürfnisse Benutzender zu erfahren
+    - [x] Sie können einen **Leitfaden** für ein teilstandardisiertes Interview entwerfen und einsetzen.
+    - [x] Erkenntnisse (Erfahrung, Erwartungen, Wünsche etc.) aus dem teilstandardisierten Interview werden in **Anwendungsszenarien** zusammengefasst bzw. spiegeln sich dort wider
+    - [x] Anwendungsszenarien sind Quelle für die **Anforderungsermittlung** und **-dokumentation** (mehr dazu im [Kapitel 3: Requirements Engineering](3_requirements_engineering.md))
 
 <!--
 Prompt:

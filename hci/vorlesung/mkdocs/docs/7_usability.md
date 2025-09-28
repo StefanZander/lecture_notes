@@ -1,5 +1,7 @@
 # Usability Evaluation
 
+:material-clock-outline: Geschätzte Bearbeitungszeit: 3-4 Stunden
+
 !!! abstract "In diesem Kapitel geht es um folgende Themen:"
     - Sie erfahren, warum **Design** und **User Experience** für sich genommen unterschiedliche Dinge sind, sich aber doch wechselseitig beeinflussen. 
     - Sie lernen elementare Bestandteile von **Usability** und **Software-Ergonomie**

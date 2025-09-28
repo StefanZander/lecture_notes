@@ -1,15 +1,17 @@
 # User-Centered Design: Grundlagen und Entwicklungsprozess
 
+:material-clock-outline: Geschätzte Bearbeitungszeit: 2-3 Stunden
+
 <!-- Worum geht es in diesem Kapitel... -->
 !!! abstract "In diesem Kapitel geht es um folgende Themen:"
-    - Sie lernen die Grundlagen von User-Centeren Design kennen
+    - Sie lernen die Grundlagen von **User-Centeren Design** kennen
     - Sie sehen anhand von Beispielen, wie wichtig Nutzendenzentrierung ist
     - Sie lernen das Zusammenspiel von Design und Nutzendenzentrierung anhand einiger Beispiele kennen
-    - Wir reflektieren die wesentlichen Fehler bzw. Fehlannahmen, die häufig zu schlechten Ergebnissen bzw. gescheiterten Systemen etc. führen
-    - Wir lernen eine umfassende Definition von User-Centered Design
-    - Anhand von Experimenten beweisen wir, warum Nutzendenzentrierung nicht prognostiziert oder simuliert werden kann
-    - Wir lernen elementare Konzepte eines Nutzenden-zentrierten Entwicklungsprozesses kennen
-    - Wir versuchen zu verdeutlichen, warum Nutzendenzentrierung bzw. User-Centered Design eine wichtige Rolle in der Informatik spielt
+    - Wir reflektieren die wesentlichen Fehler bzw. **Fehlannahmen**, die häufig zu schlechten Ergebnissen bzw. gescheiterten Systemen etc. führen
+    - Wir lernen eine **umfassende Definition** von User-Centered Design
+    - Anhand von **Experimenten** beweisen wir, warum Nutzendenzentrierung nicht prognostiziert oder simuliert werden kann
+    - Wir lernen elementare Konzepte eines **Nutzenden-zentrierten Entwicklungsprozesses** kennen
+    - Wir versuchen zu verdeutlichen, warum Nutzendenzentrierung bzw. User-Centered Design eine **wichtige Rolle** in der Informatik spielt
 
 !!! success "Voraussetzungen"
     - Interesse am Thema und Aufmerksamkeit
@@ -51,6 +53,9 @@
 * :material-video: [Die Summo-Fallstudie (Video)]()
 
 
+## Ergänzende Materialien
+- 
+
 ## Übungen
 * ...
 * 
@@ -63,7 +68,22 @@
     Nach dem Durcharbeiten der o.g. Lektionen sollten sie folgende Fragen beantworten können:
 
     1. Wie würden sie den UCD-Entwicklungsprozess klassifizieren (sequentiell, iterativ, inkrementell, zyklisch, etc.)? Bitte begründen sie ihre Einschätzung.
-    2. TODO: Add further Exam questions
+    2. Erklären Sie kurz und in Stichpunkten, wie und wodurch sich NZSE von der Objekt-orientierten Analyse und Design unterscheidet.
+    3. Warum gilt die frühzeitige und kontinuierliche Einbeziehung von Nutzer:innen als Schlüsselfaktor für den Erfolg nutzenden-zentrierter Softwareentwicklung?  
+    4. Welches Ziel verfolgt nutzenden-zentrierte Softwareentwicklung in erster Linie?  
+        - A) Maximale Code-Effizienz und Performanz  
+        - B) Reduktion der Projektlaufzeit unabhängig von den Anforderungen  
+        - C) Entwicklung von Systemen, die die Bedürfnisse, Fähigkeiten und Kontexte der Nutzer:innen erfüllen  <!-- x -->
+        - D) Vollständige Automatisierung aller Softwaretests
+    5. Stellen Sie sich vor, Sie entwickeln eine mobile Banking-App. Beschreiben Sie, wie Sie den Ansatz des User-Centered Design konkret auf die Gestaltung der Login-Funktion anwenden würden.  
+    6. Diskutieren Sie die Rolle von Usability-Tests und Prototyping im Rahmen nutzenden-zentrierter Softwareentwicklung. Warum sind beide Methoden für den Entwicklungsprozess unverzichtbar?  
+    7. Welche Vorteile ergeben sich für Unternehmen, wenn sie User-Centered Design als festen Bestandteil ihrer Entwicklungsprozesse etablieren?  
+    8. Bitte nehmen Sie Stellung zu folgenden Thesen und begründen Sie Ihre Antwort
+        - _Eine Nutzendenzentrierung ist elementar und führt zu besseren und erfolgreicheren Projekten._
+        - _Im User-Centered Design geht es nicht um ein möglichst schnelles Erreichen eines Projektzieles sondern um die Berücksichtigung aller relevanter Aspekte, die ein erfolgreiches System beeinhalten muss._
+        - _Exzellente technische Expertise ist kein Garant für ein erfolgreiches System oder eine erfolgreiche Projektdurchführung; wichtig ist eine Einbettung in einen Nutzenden-zentrierten Entwicklungsprozess._
+
+
 
 ## Zusammenfassung
 

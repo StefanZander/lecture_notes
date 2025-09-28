@@ -1,5 +1,7 @@
 # Requirements Engineering
 
+:material-clock-outline: Geschätzte Bearbeitungszeit: 4-6 Stunden
+
 !!! abstract "In diesem Kapitel geht es um folgende Themen:"
     - Wesentliche Ursachen warum **Projekte scheitern**
     - **Requirements Engineering** als wichtiges Werkzeug zur strukturierten und systematisierten Erfassung, Dokumentation, Verwaltung und Überprüfung von Anforderungen

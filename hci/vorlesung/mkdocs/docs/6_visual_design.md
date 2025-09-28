@@ -1,5 +1,7 @@
 # Gestaltung intuitiver Benutzungsschnittstellen
 
+:material-clock-outline: Geschätzte Bearbeitungszeit: 2-3 Stunden
+
 !!! abstract "In diesem Kapitel geht es um folgende Themen"
     - Grundlagen des **Visual Design** und warum es viel mehr mit **Kommunikation** als mit visueller Ästhetik zu tun hat
     - Maßnahmen welche die Effizienz und Effektivität von **Selektions- und Verarbeitungsprozesse** digitaler Inhalte verbessern
@@ -56,8 +58,9 @@
 
 ## Ergänzende Materialien
 
-- [Ein sehr schönes "pecha-kucha"-Video zu emotional intelligenter Kommunikation bei Design von Schildern](https://youtu.be/x7HMR0t7Qfw?si=CGMkZHsSPdgZRvMy). Viele der dort gezeigten Dinge lassen sich auch auf das Design von Benutzungsschnittstellen übertragen.
-
+- :material-video: [Ein sehr schönes "pecha-kucha"-Video zu emotional intelligenter Kommunikation bei Design von Schildern](https://youtu.be/x7HMR0t7Qfw?si=CGMkZHsSPdgZRvMy). Viele der dort gezeigten Dinge lassen sich auch auf das Design von Benutzungsschnittstellen übertragen.
+- :material-web: [7 Rules for Creating Gorgeous UI – Part 1](https://www.learnui.design/blog/7-rules-for-creating-gorgeous-ui-part-1.html)
+- :material-web: [7 Rules for Creating Gorgeous UI – Part 2](https://www.learnui.design/blog/7-rules-for-creating-gorgeous-ui-part-2.html)
 
 
 ## Übungsaufgaben

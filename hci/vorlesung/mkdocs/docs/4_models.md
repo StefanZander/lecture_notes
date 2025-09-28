@@ -1,5 +1,7 @@
 # Modellbildung
 
+:material-clock-outline: Geschätzte Bearbeitungszeit: 1-2 Stunden
+
 !!! abstract "In diesem Kapitel geht es um folgende Themen:"
     - Visualisierung von **Navigationswegen** innerhalb einer App mittels Navigationsübersicht
     - Modelle als Form der **Visualisierung** der mentalen Modelle von Benutzer:innen
