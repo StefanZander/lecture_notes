@@ -24,7 +24,7 @@
     - Kenntnisse in **Content Usability** sind hochgradig praxisrelevant, da verständliche und gut strukturierte Inhalte nachweislich die Informationsaufnahme und Entscheidungsfindung unterstützen und gleichzeitig die Verweildauer und Zufriedenheit der Nutzer:innen erhöhen (Nielsen, 2000)[^4].
     - Ein Verständnis von **Wahrnehmungsprozessen** wie Aufmerksamkeit und Arbeitsgedächtnis ist wichtig, da Software-Interfaces, die diese berücksichtigen, Überlastung vermeiden und die kognitive Effizienz steigern (Baddeley, 1992[^1]; Wickens et al., 2015[^8]).
     - In der Softwareentwicklungspraxis führen die Integration von **Design- und Wahrnehmungsprinzipien** zu höherer Produktivität, geringeren Fehlerquoten und größerer Nutzerzufriedenheit, was nicht nur die Akzeptanz, sondern auch die Marktchancen von Softwareprodukten erhöht (ISO 9241-210, 2019)[^2].
-
+<!--
         !!! refs "Quellenverzeichnis"
             1. Baddeley, A. D. (1992). Working Memory. Science, 255(5044), 556–559.
             2. ISO 9241-210 (2019). Ergonomics of human-system interaction – Part 210: Human-centred design for interactive systems. International Organization for Standardization.
@@ -34,16 +34,16 @@
             6. Ware, C. (2013). Information Visualization: Perception for Design (3rd ed.). Morgan Kaufmann.
             7. Wertheimer, M. (1923). Untersuchungen zur Lehre von der Gestalt II. Psychologische Forschung, 4, 301–350.
             8. Wickens, C. D., Hollands, J. G., Banbury, S., & Parasuraman, R. (2015). Engineering Psychology and Human Performance (4th ed.). Psychology Press.
-
+-->
     
-    [^1]: Baddeley, A. D. (1992). Working Memory. Science, 255(5044), 556–559.
-    [^2]: ISO 9241-210 (2019). Ergonomics of human-system interaction – Part 210: Human-centred design for interactive systems. International Organization for Standardization.
-    [^3]: Lidwell, W., Holden, K., & Butler, J. (2010). Universal Principles of Design (2nd ed.). Rockport.
-    [^4]: Nielsen, J. (2000). Designing Web Usability: The Practice of Simplicity. New Riders.
-    [^5]: Norman, D. A. (2013). The Design of Everyday Things (Revised and Expanded Edition). Basic Books.
-    [^6]: Ware, C. (2013). Information Visualization: Perception for Design (3rd ed.). Morgan Kaufmann.
-    [^7]: Wertheimer, M. (1923). Untersuchungen zur Lehre von der Gestalt II. Psychologische Forschung, 4, 301–350.
-    [^8]: Wickens, C. D., Hollands, J. G., Banbury, S., & Parasuraman, R. (2015). Engineering Psychology and Human Performance (4th ed.). Psychology Press.
+[^1]: Baddeley, A. D. (1992). Working Memory. Science, 255(5044), 556–559.
+[^2]: ISO 9241-210 (2019). Ergonomics of human-system interaction – Part 210: Human-centred design for interactive systems. International Organization for Standardization.
+[^3]: Lidwell, W., Holden, K., & Butler, J. (2010). Universal Principles of Design (2nd ed.). Rockport.
+[^4]: Nielsen, J. (2000). Designing Web Usability: The Practice of Simplicity. New Riders.
+[^5]: Norman, D. A. (2013). The Design of Everyday Things (Revised and Expanded Edition). Basic Books.
+[^6]: Ware, C. (2013). Information Visualization: Perception for Design (3rd ed.). Morgan Kaufmann.
+[^7]: Wertheimer, M. (1923). Untersuchungen zur Lehre von der Gestalt II. Psychologische Forschung, 4, 301–350.
+[^8]: Wickens, C. D., Hollands, J. G., Banbury, S., & Parasuraman, R. (2015). Engineering Psychology and Human Performance (4th ed.). Psychology Press.
 
 
 ## Inhalte
