@@ -2,14 +2,30 @@ site_name: Human-Computer Interaction
 
 nav:
   - 'Startseite': 'index.md'
-  - 'Organisation': '0_organisation.md'
-  - 'Kapitel 1: User-Centered Design': '1_user-centered_design.md'
-  - 'Kapitel 2: User Research': '2_user_research.md'
-  - 'Kapitel 3: Requirements Engineering': '3_requirements_engineering.md'
-  - 'Kapitel 4: Modellbildung': '4_models.md'
-  - 'Kapitel 5: Prototyping': '5_prototyping.md'
-  - 'Kapitel 6: Visual Design': '6_visual_design.md'
-  - 'Kapitel 7: Usability': '7_usability.md'
+  
+  - Organisation:
+    - 'Allgemeine Informationen': '0_organisation.md'
+    - 'Semesterplan': ''
+
+  - Vorlesung:
+    - 'Kapitel 1: User-Centered Design': '1_user-centered_design.md'
+    - 'Kapitel 2: User Research': '2_user_research.md'
+    - 'Kapitel 3: Requirements Engineering': '3_requirements_engineering.md'
+    - 'Kapitel 4: Modellbildung': '4_models.md'
+    - 'Kapitel 5: Prototyping': '5_prototyping.md'
+    - 'Kapitel 6: Visual Design': '6_visual_design.md'
+    - 'Kapitel 7: Usability': '7_usability.md'
+
+  - Praktikum:
+    - 'Termine': ''
+
+  - Semesterprojekt:
+    - 'Allgemeine Informationen': ''
+    - 'MS 1: Gruppen- und Themenfindung': ''
+    - 'MS 2: User Research': ''
+    - 'MS 3: UI-Entwurf': ''
+    - 'MS 4: App-Entwicklung': ''
+    - 'MS 5: Usability Evaluation': ''
 
 
 extra_css:
@@ -47,6 +63,7 @@ theme:
   features:
     - navigation.instant
     - navigation.tracking
+    - navigation.sections
     - toc.follow
     - navigation.top
     - search.suggest
