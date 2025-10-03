@@ -21,8 +21,9 @@ Sie ist das Pendant zum **Product Backlog** in agilen Vorgehensmodellen und enth
 Je nach Arbeitsauftrag sollen 
 
 - **Entwurfsentscheidungen**, 
-- **Verbesserungen** und 
-- **Reflektionen** 
+- **Verbesserungen**, 
+- **Reflektionen** und
+- **Lessons Learned**
 
 dokumentiert werden. Die zu dokumentierenden Artefakte sind in den Aufgabenbeschreibungen der jewiligen Meilensteine aufgeführt.
 
@@ -85,4 +86,3 @@ Sammeln Sie **projektbegleitend** alle Dokumente, die in den nachfolgend beschri
 * die Diagramme gerne als Handskizzen; halten Sie sich nicht mit irgendwelchen Tools auf
 * Texte bitte mit irgendeiner Textverarbeitung getippt und ausgedruckt
 -->
-

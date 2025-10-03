@@ -17,12 +17,12 @@ nav:
     - 'Kapitel 7: Usability': '7_usability.md'
 
   - Semesterprojekt:
-    - 'Allgemeine Informationen': ''
+    - 'Allgemeine Informationen': 'semesterprojekt.md'
     - 'MS 1: Gruppen- und Themenfindung': 'ms1.md'
-    - 'MS 2: User Research': ''
-    - 'MS 3: UI-Entwurf': ''
-    - 'MS 4: App-Entwicklung': ''
-    - 'MS 5: Usability Evaluation': ''
+    - 'MS 2: User Research': 'ms2.md'
+    - 'MS 3: UI-Entwurf': 'ms3.md'
+    - 'MS 4: App-Entwicklung': 'ms4.md'
+    - 'MS 5: Usability Evaluation': 'ms5.md'
   
   - Praktikum:
     - 'Allgemeine Informationen': 'praktikum.md'
