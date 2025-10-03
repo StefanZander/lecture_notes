@@ -1,6 +1,6 @@
 # Meilenstein 4: App-Entwicklung und -Präsentation
 
-!!! danger "Keine Restarbeiten mehr an der Implementierung!"
+!!! danger "Unmittelbar vor der Präsentation keine Restarbeiten mehr an der Implementierung!"
 
 !!! success "Lernziele"
     - [x] Sie können die wesentlichen Features der App in einem Plenum vor Ort oder online präsentieren

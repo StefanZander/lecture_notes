@@ -56,11 +56,12 @@
 
 
 ## Ergänzende Materialien
-- :material-video: [Video zu einem schlecht geführten Interview]()
-- :material-video: [Video eines gut geführten Interviews]()
-- Buch: [The Persona and Journey Map Playbook: Designing Human-Centered Artifacts to Inspire and Drive Change](https://link.springer.com/book/10.1007/979-8-8688-0893-7) – aufrufbar aus dem Hochschulnetz
-- 
-
+- :material-video: [Video zu einem schlecht geführten Interview](https://lernen.h-da.de/mod/resource/view.php?id=214390)
+- :material-video: [Video eines gut geführten Interviews](https://lernen.h-da.de/mod/resource/view.php?id=214391)
+- :material-file-pdf-box: [Beispiel einer Stereotypbeschreibung](https://lernen.h-da.de/mod/resource/view.php?id=215945)
+- :material-file-pdf-box: [Beispiel #1 einer Szenariobeschreibung](https://lernen.h-da.de/mod/resource/view.php?id=215946)
+- :material-file-pdf-box: [Szenariobeschreibung für das OBS (Beispiel 2)](https://lernen.h-da.de/mod/resource/view.php?id=215947)
+- :octicons-book-16: Buch: [The Persona and Journey Map Playbook: Designing Human-Centered Artifacts to Inspire and Drive Change](https://link.springer.com/book/10.1007/979-8-8688-0893-7) (_aufrufbar aus dem Hochschulnetz_)
 
 ## Übungen / Aufgaben
 - Erstellen sie eine erste grobe Struktur der Projektmappe und insbesondere eine für Meilenstein #1. Überlegen sie sich hierzu, welche Elemente in den User Research müssen und wie sie diese methodisch addressieren wollen/werden. Leiten sie daraus dann eine erste Sturktur ab.

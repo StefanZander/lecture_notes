@@ -52,18 +52,19 @@
 
 ## Inhalte
 
-* :material-file-pdf-box: [Lektion 1: Warum Nutzendenzentrierung mitunter Menschenleben rettet]()
-* :material-file-pdf-box: [Lektion 2: Warum gutes Design eine wichtige Rolle in der Nutzendenzentrierung spielt]()
-* :material-file-pdf-box: [Lektion 3: Warum die Informatik Nutzendenzentrierung benötigt]()
-* :material-file-pdf-box: [Lektion 4: Wie ist Nutzendenzentrierung definiert]()
-* :material-file-pdf-box: [Lektion 5: Warum Nutzendenzentrierung nicht prognostiziert oder simuliert werden kann]()
-* :material-file-pdf-box: [Lektion 6: Der User-Centered Design Prozess](../../material/1_user-centered_design/intern/1_ucd/06_process.pdf)
-* :material-video: [Die Summo-Fallstudie (Video)]()
+* :material-file-pdf-box: [Lektion 1: Warum Nutzendenzentrierung mitunter Menschenleben rettet](https://code.fbi.h-da.de/zander/hci/material/-/raw/main/1_user-centered_design/01_examples.pdf?ref_type=heads)
+* :material-file-pdf-box: [Lektion 2: Warum gutes Design eine wichtige Rolle in der Nutzendenzentrierung spielt](https://code.fbi.h-da.de/zander/hci/material/-/raw/main/1_user-centered_design/02_good_design.pdf?inline=true)
+* :material-file-pdf-box: [Lektion 3: Warum die Informatik Nutzendenzentrierung benötigt](https://code.fbi.h-da.de/zander/hci/material/-/raw/main/1_user-centered_design/03_ucd_in_cs.pdf?ref_type=heads&inline=false)
+* :material-file-pdf-box: [Lektion 4: Wie ist Nutzendenzentrierung definiert](https://code.fbi.h-da.de/zander/hci/material/-/raw/main/1_user-centered_design/04_definition.pdf?ref_type=heads&inline=false)
+* :material-file-pdf-box: [Lektion 5: Warum Nutzendenzentrierung nicht prognostiziert oder simuliert werden kann](https://code.fbi.h-da.de/zander/hci/material/-/raw/main/1_user-centered_design/05_errors.pdf?ref_type=heads&inline=false)
+* :material-file-pdf-box: [Lektion 6: Der User-Centered Design Prozess](https://code.fbi.h-da.de/zander/hci/material/-/raw/main/1_user-centered_design/06_process.pdf?ref_type=heads&inline=false)
+* :material-video: [Die Summo-Fallstudie (Video)](https://lernen.h-da.de/mod/resource/view.php?id=359759)
 
 
 ## Ergänzende Materialien
 - :octicons-book-16: [Foundations for Designing User-Centered Systems: What System Designers Need to Know about People](https://link.springer.com/book/10.1007/978-1-4471-5134-0) – sehr gutes Buch mit vielen relevanten und interessanten Themen; aufrufbar aus dem Hochschulnetz
-
+- :material-file-pdf-box: [IKEA – Die Welt-Raumausstatter (Artikel im Spiegel von 2012) mit Textmarkierungen](https://lernen.h-da.de/mod/resource/view.php?id=232278)
+- :material-file-pdf-box: [Tolles und umfassendes Skriptum zum Human-Computer-Interaction von Prof. Dr. Keith Andrews (TU Graz)](https://lernen.h-da.de/mod/resource/view.php?id=213473)
 <!--
 ## Übungen
 * ...

@@ -128,6 +128,7 @@ Um die **Gebrauchstauglichkeit** bzw. Nutzbarkeit von von Produkten im Allgemein
  - :material-file-document-outline: [Sehr guter Artikel zu den 10 grundlegenen Usability-Heuristiken für das Design von User Interfaces](https://www.nngroup.com/articles/ten-usability-heuristics/)
  - :material-video-outline: [Video zur Erklärung der Thinking-aloud-Methode für Testuser](https://www.nngroup.com/videos/think-aloud/)
  - :material-file-document: [PSSUQ als Tool für die eigenen Abschlussarbeit; 10 Things to Know About the Post Study System Usability Questionnaire](https://measuringu.com/pssuq/)
+ - :material-file-document-outline: [Vorlage & Checkliste für Usability-Evaluation](https://lernen.h-da.de/mod/resource/view.php?id=218415)
 
 #### :material-account-school: Lernzielkontrolle
 
