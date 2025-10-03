@@ -4,8 +4,8 @@ nav:
   - 'Startseite': 'index.md'
   
   - Organisation:
-    - 'Allgemeine Informationen': '0_organisation.md'
-    - 'Semesterplan': ''
+    - 'Durchführungsmodalitäten': '0_organisation.md'
+    - 'Semesterplan': '01_semesterplan.md'
 
   - Vorlesung:
     - 'Kapitel 1: User-Centered Design': '1_user-centered_design.md'
@@ -16,16 +16,17 @@ nav:
     - 'Kapitel 6: Visual Design': '6_visual_design.md'
     - 'Kapitel 7: Usability': '7_usability.md'
 
-  - Praktikum:
-    - 'Termine': ''
-
   - Semesterprojekt:
     - 'Allgemeine Informationen': ''
-    - 'MS 1: Gruppen- und Themenfindung': ''
+    - 'MS 1: Gruppen- und Themenfindung': 'ms1.md'
     - 'MS 2: User Research': ''
     - 'MS 3: UI-Entwurf': ''
     - 'MS 4: App-Entwicklung': ''
     - 'MS 5: Usability Evaluation': ''
+  
+  - Praktikum:
+    - 'Allgemeine Informationen': 'praktikum.md'
+
 
 
 extra_css:

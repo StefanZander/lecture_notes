@@ -18,7 +18,7 @@ In der 1. Vorlesungseinheit werden diese Themen ausführlich besprochen.
 
 
 
-
+<!--
 ## Semesterplan
 
 - Woche 1: [Organisation](0_organisation.md) + [Kapitel 1 – Einführung User-Centered Design](1_user-centered_design.md)
@@ -35,7 +35,7 @@ In der 1. Vorlesungseinheit werden diese Themen ausführlich besprochen.
 - Woche 12: App-Entwicklung
 - Woche 13: App-Präsentationen
 - Woche 14: App-Präsentationen  
-
+-->
 
 
 # The Docker image that will be used to build your app

@@ -1,0 +1,17 @@
+# Semesterplan
+
+- Woche 1: [Organisation](0_organisation.md) + [Kapitel 1 – Einführung User-Centered Design](1_user-centered_design.md)
+- Woche 2: [Kapitel 2 – User Research](2_user_research.md)
+- Woche 3: [Kapitel 3 – Requirements Engineering](3_requirements_engineering.md)
+- Woche 4: [Kapitel 4 – Modellbildung](4_models.md)
+- Woche 5: [Kapitel 5 – Prototyping](5_prototyping.md)
+- Woche 6: [Kapitel 6 – Visual Design](6_visual_design.md)
+- Woche 7: [Kapitel 7 – Usability Evaluation](7_usability.md)
+- Woche 8: App-Entwicklung – ggf. Flutter-Tutorial
+- Woche 9: App-Entwicklung
+- Woche 10: App-Entwicklung
+- Woche 11: App-Entwicklung
+- Woche 12: App-Entwicklung
+- Woche 13: App-Präsentationen --> :fontawesome-solid-exclamation-circle: *Anwesenheitspflicht*
+- Woche 14: App-Präsentationen --> :fontawesome-solid-exclamation-circle: *Anwesenheitspflicht*
+
