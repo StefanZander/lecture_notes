@@ -43,15 +43,15 @@
 
 ## Inhalte
 
-1. :material-file-pdf-box: [Lektion 1: Ausgangslage und Vorbemerkung zum hier gelehrten Ansatz]()
-2. :material-file-pdf-box: [Lektion 2: Was sind Stereotypen und welche Rolle spielen diese im User Research]()
-- :material-file-pdf-box: [Lektion 3: Was sind Anwendungsszenarien und wie setzt man sie ein]()
-- :material-file-pdf-box: [Lektion 4: Wie gewinnt man Material für die Stereotypen und Anwendungsszenarien]()
-- :material-file-pdf-box: [Lektion 5: Interviewarten und ihre Unterschiede]()
+1. :material-file-pdf-box: [Lektion 1: Ausgangslage und Vorbemerkung zum hier gelehrten Ansatz](https://code.fbi.h-da.de/zander/hci/material/-/raw/main/2_user_research/01_preface.pdf?ref_type=heads&inline=true)
+2. :material-file-pdf-box: [Lektion 2: Was sind Stereotypen und welche Rolle spielen diese im User Research](https://code.fbi.h-da.de/zander/hci/material/-/raw/main/2_user_research/02_stereotypes.pdf?ref_type=heads&inline=true)
+- :material-file-pdf-box: [Lektion 3: Was sind Anwendungsszenarien und wie setzt man sie ein](https://code.fbi.h-da.de/zander/hci/material/-/raw/main/2_user_research/03_scenarios.pdf?ref_type=heads&inline=false)
+- :material-file-pdf-box: [Lektion 4: Wie gewinnt man Material für die Stereotypen und Anwendungsszenarien](https://code.fbi.h-da.de/zander/hci/material/-/raw/main/2_user_research/04_acquisition.pdf?ref_type=heads&inline=false)
+- :material-file-pdf-box: [Lektion 5: Interviewarten und ihre Unterschiede](https://code.fbi.h-da.de/zander/hci/material/-/raw/main/2_user_research/05_iview_types.pdf?ref_type=heads&inline=false)
     - Für interessierte: Es gibt noch viel mehr Interview-Arten als die im Foliensatz aufgeführten. Eine sehr gute Übersicht findet sich hier :material-file-pdf-box: [Link to Book-Chapter]()
-- :material-file-pdf-box: [Lektion 6: Das teilstandardisierte Interview]()
-- :material-file-pdf-box: [Lektion 7: Gefahren des teilstandardisierten Interviews]()
-- :material-file-pdf-box: [Lektion 8: Der Hawthorne-Effekt und seine Auswirkung in Feldstudien]()
+- :material-file-pdf-box: [Lektion 6: Das teilstandardisierte Interview](https://code.fbi.h-da.de/zander/hci/material/-/raw/main/2_user_research/06_iview.pdf?ref_type=heads&inline=false)
+- :material-file-pdf-box: [Lektion 7: Gefahren des teilstandardisierten Interviews](https://code.fbi.h-da.de/zander/hci/material/-/raw/main/2_user_research/07_pitfalls.pdf?ref_type=heads&inline=false)
+- :material-file-pdf-box: [Lektion 8: Der Hawthorne-Effekt und seine Auswirkung in Feldstudien](https://code.fbi.h-da.de/zander/hci/material/-/raw/main/2_user_research/08_hawthorne_effect.pdf?ref_type=heads&inline=false)
 
 
 
@@ -61,7 +61,7 @@
 - :material-file-pdf-box: [Beispiel einer Stereotypbeschreibung](https://lernen.h-da.de/mod/resource/view.php?id=215945)
 - :material-file-pdf-box: [Beispiel #1 einer Szenariobeschreibung](https://lernen.h-da.de/mod/resource/view.php?id=215946)
 - :material-file-pdf-box: [Szenariobeschreibung für das OBS (Beispiel 2)](https://lernen.h-da.de/mod/resource/view.php?id=215947)
-- :octicons-book-16: Buch: [The Persona and Journey Map Playbook: Designing Human-Centered Artifacts to Inspire and Drive Change](https://link.springer.com/book/10.1007/979-8-8688-0893-7) (_aufrufbar aus dem Hochschulnetz_)
+- :octicons-book-16: Buch: [The Persona and Journey Map Playbook: Designing Human-Centered Artifacts to Inspire and Drive Change](https://link.springer.com/book/10.1007/979-8-8688-0893-7) (_Externe Quelle – aufrufbar aus dem Hochschulnetz_)
 
 ## Übungen / Aufgaben
 - Erstellen sie eine erste grobe Struktur der Projektmappe und insbesondere eine für Meilenstein #1. Überlegen sie sich hierzu, welche Elemente in den User Research müssen und wie sie diese methodisch addressieren wollen/werden. Leiten sie daraus dann eine erste Sturktur ab.

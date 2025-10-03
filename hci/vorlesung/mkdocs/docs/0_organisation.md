@@ -1,21 +1,30 @@
 # Organisation der Lehrveranstaltung
 
-## Allgemeines
+## Vorbemerkung
 
 !!! info "Neues didaktisches Modell ab dem WiSe 2025/2026"
+    Ab dem WiSe 2025/2026 folgt die Veranstaltung dem Modell des [Active Learning](https://cft.vanderbilt.edu/wp-content/uploads/sites/59/Active-Learning.pdf) mit Studienprogramm-spezifischen Anpassungen (Durchführung eines Gruppen-spezifischen Semesterprojekts, Semester-begleitende Teilleistungsfeststellung/-bewertung, etc.).
 
+
+## Allgemeines 
+Auf dieser Seite sowie in nachstehend verlinktem Foliensatz finden sie alles Wissenswerte zum...
+<!--
 Der nachstehend verlinkte Foliensatz enthält alles Wissenswerte zu folgenden Themen: 
-
+-->
 - Aufbau und Organisation der Lehrveranstaltung
 - Didaktisches Modell 
 - Bewertungsmodalitäten
 - Rolle des Praktikums und des Semesterprojekts
-- Semesterplan
+
 
 In der 1. Vorlesungseinheit werden diese Themen ausführlich besprochen.
 
-- :material-file-pdf-box: [Organisation der Veranstaltung](https://code.fbi.h-da.de/zander/hci/material/-/raw/main/0_organisation/01_organisation.pdf)
 
+## Organisation
+
+- :material-file-pdf-box: [Foliensatz zur Organisation der Veranstaltung](https://code.fbi.h-da.de/zander/hci/material/-/raw/main/0_organisation/01_organisation.pdf) (_abrufbar nach Anmeldung über code.fbi.h-da.de_)
+- :simple-moodle: [Moodle-Kurs der Veranstaltung](https://lernen.h-da.de/course/view.php?id=6802) (_kein Einschreibeschlüssel notwendig_)
+- :material-web: Einführende Informationen zur [Active Learning Theory](https://www.cambridge-community.org.uk/professional-development/gswal/index.html)
 
 
 <!--
