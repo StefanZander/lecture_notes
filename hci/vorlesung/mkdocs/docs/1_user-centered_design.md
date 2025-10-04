@@ -64,7 +64,7 @@
 ## Ergänzende Materialien
 - :octicons-book-16: [Foundations for Designing User-Centered Systems: What System Designers Need to Know about People](https://link.springer.com/book/10.1007/978-1-4471-5134-0) – sehr gutes Buch mit vielen relevanten und interessanten Themen; aufrufbar aus dem Hochschulnetz
 - :material-file-pdf-box: [IKEA – Die Welt-Raumausstatter (Artikel im Spiegel von 2012) mit Textmarkierungen](https://lernen.h-da.de/mod/resource/view.php?id=232278)
-- :material-file-pdf-box: [Tolles und umfassendes Skriptum zum Human-Computer-Interaction von Prof. Dr. Keith Andrews (TU Graz)](https://lernen.h-da.de/mod/resource/view.php?id=213473)
+- :material-file-pdf-box: [Tolles und umfassendes Skriptum zu Human-Computer-Interaction von Prof. Dr. Keith Andrews (TU Graz)](https://lernen.h-da.de/mod/resource/view.php?id=213473)
 <!--
 ## Übungen
 * ...

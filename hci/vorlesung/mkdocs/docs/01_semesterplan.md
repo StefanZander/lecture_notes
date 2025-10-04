@@ -1,4 +1,4 @@
-# Semesterplan
+# :material-calendar-month: Semesterplan
 
 
 - Woche 1: [Organisation](0_organisation.md) + [Kapitel 1 – Einführung User-Centered Design](1_user-centered_design.md)
