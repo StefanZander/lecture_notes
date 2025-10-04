@@ -31,11 +31,11 @@
 
 
 ## Inhalte
-- :material-file-pdf-box: [Was ist Prototyping und welche Rolle spielt es im UCD-Prozess]()
+- :material-file-pdf-box: [Was ist Prototyping und welche Rolle spielt es im UCD-Prozess](https://code.fbi.h-da.de/zander/hci/material/-/raw/main/5_prototyping/01_prototyping.pdf?ref_type=heads&inline=true)
 
 ## Ergänzende Materialien
 - :material-file-pdf-box: [Paper Prototyping As A Usability Testing Technique](https://usabilitygeek.com/paper-prototyping-as-a-usability-testing-technique/)
-
+- TODO: Add further links from slides
 
 
 

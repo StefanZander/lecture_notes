@@ -23,7 +23,7 @@
 
 
 ## Inhalte
-1. :material-file-pdf-box: [Visualisierungsmodelle]()
+1. :material-file-pdf-box: [Visualisierungsmodelle](https://code.fbi.h-da.de/zander/hci/material/-/raw/main/4_models/01_models.pdf?ref_type=heads&inline=true)
 
 
 ## Aufgaben

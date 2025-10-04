@@ -41,21 +41,23 @@ bitte nenne mir ein paar gute gründe, warum es für Informatik-Studierende sinn
 
 Anhand zweier anschaulicher Beispiele zeigen wir, dass Design und User Experience zwar hand-in-hand-gehen, aber doch unterschiedliche Dinge sind und jeweils separat betrachtet und evaluiert werden müssen. 
 
-1. Slides
-2. Ergänzendes Material
-3. Lernzielkontrolle
+:material-presentation: **Slides**
 
-    !!! question "Fragen zur Reflexion des Lernstoffes"
-        - **Verständnisfragen**
-            1. Erklären Sie den Unterschied zwischen Design und User Experience (UX) in eigenen Worten.
-            2. Warum ist es wichtig, zwischen „Sympathy“ und „Empathy“ zu unterscheiden, wenn man UX gestaltet?
-            3. Welche Rolle spielt Empathie im Gestaltungsprozess interaktiver Systeme?
-        - **Anwendungsfragen**
-            1. Stellen Sie sich vor, Sie entwickeln eine Lernplattform für Studierende: Welche Aspekte würden Sie eher unter Design und welche unter UX einordnen?
-            2. Nennen Sie ein Beispiel aus Ihrem Alltag, bei dem das Design zwar gelungen wirkt, die User Experience jedoch negativ ist (oder umgekehrt).
-        - **Reflexionsfragen**
-            1. Diskutieren Sie: Kann ein gutes Design eine schlechte User Experience kompensieren – oder umgekehrt?
-            2. Warum ist es für Softwareentwickler:innen wichtig, Empathie für die Nutzerrolle zu entwickeln?
+1. :material-file-pdf-box: [Design versus User Experience – veranschaulicht an zwei Beispielen](https://code.fbi.h-da.de/zander/hci/material/-/raw/main/7_usability/01_design_vs_ux.pdf?ref_type=heads&inline=true)
+
+:material-account-school: **Lernzielkontrolle**
+
+!!! question "Fragen zur Reflexion des Lernstoffes"
+    - **Verständnisfragen**
+        1. Erklären Sie den Unterschied zwischen Design und User Experience (UX) in eigenen Worten.
+        2. Warum ist es wichtig, zwischen „Sympathy“ und „Empathy“ zu unterscheiden, wenn man UX gestaltet?
+        3. Welche Rolle spielt Empathie im Gestaltungsprozess interaktiver Systeme?
+    - **Anwendungsfragen**
+        1. Stellen Sie sich vor, Sie entwickeln eine Lernplattform für Studierende: Welche Aspekte würden Sie eher unter Design und welche unter UX einordnen?
+        2. Nennen Sie ein Beispiel aus Ihrem Alltag, bei dem das Design zwar gelungen wirkt, die User Experience jedoch negativ ist (oder umgekehrt).
+    - **Reflexionsfragen**
+        1. Diskutieren Sie: Kann ein gutes Design eine schlechte User Experience kompensieren – oder umgekehrt?
+        2. Warum ist es für Softwareentwickler:innen wichtig, Empathie für die Nutzerrolle zu entwickeln?
 
 
 ---
@@ -64,23 +66,25 @@ Anhand zweier anschaulicher Beispiele zeigen wir, dass Design und User Experienc
 
 In dieser Lektion lernen sie die grundlegenden Eigenschaften von Usability und Software Ergonomie.
 
-1. Slides
-2. Ergänzendes Material
-3. Lernzielkontrolle
+:material-presentation: **Slides**
 
-    !!! question "Fragen zur Reflexion des Lernstoffes"
-        - **Verständnisfragen**
-            1. Wie wird Software-Ergonomie definiert und in welchem Bereich findet sie primär Anwendung?
-            2. Inwiefern ist der Begriff Usability heute aktueller als der Begriff Software-Ergonomie?
-            3. Welche drei Dimensionen beschreibt die ISO 9241-11 zur Definition von Usability?
-        - **Anwendungsfragen**
-            1. Geben Sie ein Beispiel für eine Software, die effektiv ist, aber nicht unbedingt zufriedenstellend in der Nutzung.
-            2. Nennen Sie ein Szenario, in dem eine Software effizient ist, aber nicht effektiv.
-            3. Welche Maßnahmen können im Usability Engineering helfen, die Gebrauchstauglichkeit einer Software systematisch zu verbessern?
-        - **Reflexionsfragen**
-            1. Warum ist es sinnvoll, Usability als iterativen Prozess im Produktlebenszyklus zu betrachten?
-            2. Diskutieren Sie: Welche Rolle spielen Psychologie und Physiologie des Benutzers bei der Gestaltung von Software?
-            3. Inwiefern lassen sich die Prinzipien der Software-Ergonomie auch auf Mobile Devices und Embedded Systems übertragen?
+1. :material-file-pdf-box: [Definitionen](https://code.fbi.h-da.de/zander/hci/material/-/raw/main/7_usability/02_definitions.pdf?ref_type=heads&inline=true)
+
+:material-account-school: **Lernzielkontrolle**
+
+!!! question "Fragen zur Reflexion des Lernstoffes"
+    - **Verständnisfragen**
+        1. Wie wird Software-Ergonomie definiert und in welchem Bereich findet sie primär Anwendung?
+        2. Inwiefern ist der Begriff Usability heute aktueller als der Begriff Software-Ergonomie?
+        3. Welche drei Dimensionen beschreibt die ISO 9241-11 zur Definition von Usability?
+    - **Anwendungsfragen**
+        1. Geben Sie ein Beispiel für eine Software, die effektiv ist, aber nicht unbedingt zufriedenstellend in der Nutzung.
+        2. Nennen Sie ein Szenario, in dem eine Software effizient ist, aber nicht effektiv.
+        3. Welche Maßnahmen können im Usability Engineering helfen, die Gebrauchstauglichkeit einer Software systematisch zu verbessern?
+    - **Reflexionsfragen**
+        1. Warum ist es sinnvoll, Usability als iterativen Prozess im Produktlebenszyklus zu betrachten?
+        2. Diskutieren Sie: Welche Rolle spielen Psychologie und Physiologie des Benutzers bei der Gestaltung von Software?
+        3. Inwiefern lassen sich die Prinzipien der Software-Ergonomie auch auf Mobile Devices und Embedded Systems übertragen?
 
 ---
 
@@ -88,26 +92,28 @@ In dieser Lektion lernen sie die grundlegenden Eigenschaften von Usability und S
 
 Diese Einheit gibt einen Überblick über die verschiedenen Normen zur Software Ergonomie. Die Berücksichtigung dieser Dinge hilft beim Design intuitiver Benutzungsschnittstellen (aka UIs).
 
-1. Slides
-2. Ergänzendes Material
-3. Lernzielkontrolle
+:material-presentation: **Slides**
 
-    !!! question "Fragen zur Reflexion des Lernstoffes"
-        - **Verständnisfragen**
-            1. Was ist der Unterschied zwischen einer Norm (z. B. DIN EN ISO 9241) und einer konkreten Software-Implementierung?
-            2. Nennen Sie die sieben Prinzipien der Dialoggestaltung gemäß DIN EN ISO 9241.
-            3. Wie definiert sich das Prinzip Aufgabenangemessenheit und warum ist es für die Usability zentral?
-            4. Worin unterscheidet sich Selbstbeschreibungsfähigkeit von einer klassischen Dokumentation?
-            5. Was bedeutet Erwartungskonformität im Kontext von Software-Ergonomie?
-        - **Anwendungs- & Transferfragen**
-            1. Stellen Sie sich vor, Sie entwickeln ein Online-Formular für eine Bank: Wie würden Sie die Prinzipien Fehlertoleranz und Steuerbarkeit konkret umsetzen?
-            2. In welcher Weise kann Individualisierbarkeit sowohl positiv zur Usability beitragen als auch negative Folgen haben?
-            3. Ein Programm zeigt bei jeder Eingabe eine komplexe Fehlermeldung an, ohne Korrekturvorschläge zu machen. Gegen welches Ergonomie-Prinzip verstößt das?
-            4. Wie könnte man das Prinzip Lernförderlichkeit in einer Software für Einsteiger praktisch umsetzen?
-        - **Reflexionsfragen**
-            1. Diskutieren Sie, ob die Einhaltung von ergonomischen Normen die Innovation in der Softwareentwicklung fördert oder hemmt.
-            2. Warum ist es wichtig, dass Normen zur Software-Ergonomie nur Mindestanforderungen darstellen?
-            3. Welche Rolle spielen Kontextfaktoren (z. B. Arbeitsumgebung, Benutzerrollen) bei der Umsetzung von Ergonomie-Richtlinien?
+1. :material-file-pdf-box: [Software Ergonomie – Eine Übersicht ergonomischer Normen](https://code.fbi.h-da.de/zander/hci/material/-/raw/main/7_usability/03_ergonomie.pdf?ref_type=heads&inline=true)
+
+:material-account-school: **Lernzielkontrolle**
+
+!!! question "Fragen zur Reflexion des Lernstoffes"
+    - **Verständnisfragen**
+        1. Was ist der Unterschied zwischen einer Norm (z. B. DIN EN ISO 9241) und einer konkreten Software-Implementierung?
+        2. Nennen Sie die sieben Prinzipien der Dialoggestaltung gemäß DIN EN ISO 9241.
+        3. Wie definiert sich das Prinzip Aufgabenangemessenheit und warum ist es für die Usability zentral?
+        4. Worin unterscheidet sich Selbstbeschreibungsfähigkeit von einer klassischen Dokumentation?
+        5. Was bedeutet Erwartungskonformität im Kontext von Software-Ergonomie?
+    - **Anwendungs- & Transferfragen**
+        1. Stellen Sie sich vor, Sie entwickeln ein Online-Formular für eine Bank: Wie würden Sie die Prinzipien Fehlertoleranz und Steuerbarkeit konkret umsetzen?
+        2. In welcher Weise kann Individualisierbarkeit sowohl positiv zur Usability beitragen als auch negative Folgen haben?
+        3. Ein Programm zeigt bei jeder Eingabe eine komplexe Fehlermeldung an, ohne Korrekturvorschläge zu machen. Gegen welches Ergonomie-Prinzip verstößt das?
+        4. Wie könnte man das Prinzip Lernförderlichkeit in einer Software für Einsteiger praktisch umsetzen?
+    - **Reflexionsfragen**
+        1. Diskutieren Sie, ob die Einhaltung von ergonomischen Normen die Innovation in der Softwareentwicklung fördert oder hemmt.
+        2. Warum ist es wichtig, dass Normen zur Software-Ergonomie nur Mindestanforderungen darstellen?
+        3. Welche Rolle spielen Kontextfaktoren (z. B. Arbeitsumgebung, Benutzerrollen) bei der Umsetzung von Ergonomie-Richtlinien?
 
 ---
 
@@ -117,20 +123,22 @@ Um die **Gebrauchstauglichkeit** bzw. Nutzbarkeit von von Produkten im Allgemein
 
 :material-presentation: **Slides**
 
-1. Evaluierungstypen
-2. Die Usability Inspection (heuristisch)
-3. Das Usability Testing (empirisch)
-4. Die "Thinking aloud"-Methode
-5. Weitere Usability-Testmethoden
-6. Auswertung von Usability Tests
+1. :material-file-pdf-box: [Evaluierungsarten in der Veranstaltung](https://code.fbi.h-da.de/zander/hci/material/-/raw/main/7_usability/04_types.pdf?ref_type=heads&inline=true)
+2. :material-file-pdf-box: [Die Usability Inspection (heuristisch)](https://code.fbi.h-da.de/zander/hci/material/-/raw/main/7_usability/05_inspection.pdf?ref_type=heads&inline=true)
+3. :material-file-pdf-box: [Das Usability Testing (empirisch)](https://code.fbi.h-da.de/zander/hci/material/-/raw/main/7_usability/06_testing.pdf?ref_type=heads&inline=true)
+4. :material-file-pdf-box: [Die "Thinking aloud"-Methode](https://code.fbi.h-da.de/zander/hci/material/-/raw/main/7_usability/07_thinking_aloud.pdf?ref_type=heads&inline=true)
+5. :material-file-pdf-box: [Weitere Usability-Testmethoden](https://code.fbi.h-da.de/zander/hci/material/-/raw/main/7_usability/08_additional_testing_types.pdf?ref_type=heads&inline=true)
+6. :material-file-pdf-box: [Auswertung von Usability-Tests](https://code.fbi.h-da.de/zander/hci/material/-/raw/main/7_usability/09_auswertung.pdf?ref_type=heads&inline=true)
 
-#### :material-file-document-multiple-outline: Ergänzendes Material
+
+:material-file-document-multiple-outline: **Ergänzendes Material**
+
  - :material-file-document-outline: [Sehr guter Artikel zu den 10 grundlegenen Usability-Heuristiken für das Design von User Interfaces](https://www.nngroup.com/articles/ten-usability-heuristics/)
  - :material-video-outline: [Video zur Erklärung der Thinking-aloud-Methode für Testuser](https://www.nngroup.com/videos/think-aloud/)
  - :material-file-document: [PSSUQ als Tool für die eigenen Abschlussarbeit; 10 Things to Know About the Post Study System Usability Questionnaire](https://measuringu.com/pssuq/)
  - :material-file-document-outline: [Vorlage & Checkliste für Usability-Evaluation](https://lernen.h-da.de/mod/resource/view.php?id=218415)
 
-#### :material-account-school: Lernzielkontrolle
+:material-account-school: **Lernzielkontrolle**
 
 !!! question "Fragen zur Reflexion des Lernstoffes"
     - **Verständnisfragen**

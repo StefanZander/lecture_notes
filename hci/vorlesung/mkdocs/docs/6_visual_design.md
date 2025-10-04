@@ -48,13 +48,13 @@
 
 ## Inhalte
 
-- :material-file-pdf-box: [Einführung]()
-- :material-file-pdf-box: [(engl.) Der Aesthetics Usability Effect]()
-- :material-file-pdf-box: [(engl.) UI vs. UX: User Interface und User Experience]()
-- :material-file-pdf-box: [(engl.) Principles of Intuitive User Interfaces]()
-- :material-file-pdf-box: [(engl.) Content Comprehension]()
-- :material-file-pdf-box: [(engl.) Content Usability]()
-- :material-file-pdf-box: [(engl./dt.) Icon Design]()
+- :material-file-pdf-box: [Einführung](https://code.fbi.h-da.de/zander/hci/material/-/raw/main/6_visual_design/01_intro.pdf?ref_type=heads&inline=true)
+- :material-file-pdf-box: [(engl.) Der Aesthetics Usability Effect](https://code.fbi.h-da.de/zander/hci/material/-/raw/main/6_visual_design/02_aesthetics_effect.pdf?ref_type=heads&inline=true)
+- :material-file-pdf-box: [(engl.) UI vs. UX: User Interface und User Experience](https://code.fbi.h-da.de/zander/hci/material/-/raw/main/6_visual_design/03_ui_ux.pdf?ref_type=heads&inline=true)
+- :material-file-pdf-box: [(engl.) Principles of Intuitive User Interfaces](https://code.fbi.h-da.de/zander/hci/material/-/raw/main/6_visual_design/04_intuitive_uis.pdf?ref_type=heads&inline=true)
+- :material-file-pdf-box: [(engl.) Content Comprehension](https://code.fbi.h-da.de/zander/hci/material/-/raw/main/6_visual_design/05_comprehension.pdf?ref_type=heads&inline=true)
+- :material-file-pdf-box: [(engl.) Content Usability](https://code.fbi.h-da.de/zander/hci/material/-/raw/main/6_visual_design/06_usability.pdf?ref_type=heads&inline=true)
+- :material-file-pdf-box: [(engl./dt.) Icon Design](https://code.fbi.h-da.de/zander/hci/material/-/raw/main/6_visual_design/08_icons.pdf?ref_type=heads&inline=true)
 
 ## Ergänzende Materialien
 
@@ -66,8 +66,8 @@
 
 ## Übungsaufgaben
 
-- :material-file-pdf-box: [Fallstudien]()
-- :material-file-pdf-box: [UI-Dialog-Design]()
+- :material-file-pdf-box: [Fallstudien](https://code.fbi.h-da.de/zander/hci/material/-/raw/main/6_visual_design/07_case_studies.pdf?ref_type=heads&inline=true)
+- :material-file-pdf-box: [UI-Dialog-Design](https://code.fbi.h-da.de/zander/hci/material/-/raw/main/6_visual_design/09_task.pdf?ref_type=heads&inline=true)
 
 ## Lernzielkontrolle
 
