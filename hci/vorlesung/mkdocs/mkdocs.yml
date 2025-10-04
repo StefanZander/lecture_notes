@@ -37,14 +37,14 @@ theme:
   color-mode: dark
   palette:
     - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: deep orange
+      scheme: light
+      primary: light blue
       accent: deep orange
       toggle:
         icon: material/brightness-7 
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
-      scheme: slate
+      scheme: default
       primary: light blue
       accent: light green
       toggle:
