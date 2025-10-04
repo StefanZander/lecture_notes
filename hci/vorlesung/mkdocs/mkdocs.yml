@@ -34,17 +34,17 @@ extra_css:
 
 theme:
   name: material
-  color-mode: dark
+  color-mode: slate
   palette:
     - media: "(prefers-color-scheme: light)"
-      scheme: light
+      scheme: default
       primary: light blue
       accent: deep orange
       toggle:
         icon: material/brightness-7 
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
-      scheme: default
+      scheme: slate
       primary: light blue
       accent: light green
       toggle:
