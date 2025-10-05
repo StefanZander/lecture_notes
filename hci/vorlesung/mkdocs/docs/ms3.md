@@ -7,6 +7,20 @@
     - [x] Sie verstehen das Vorgehensmodell zum Entwurf von Benutzungsschnittstellen
 
 
+## Vorbemerkung
+
+Die Benutzungsoberfläche der mobilen Apps soll **intuitiv** und **komfortabel** sein und eine hohe **Usability** aufweisen. Sie soll sich an den  
+
+- **spezifischen Bedürfnissen**, 
+- **situativen Nutzungskontexten**, 
+- **Erwartungen** und
+- **Zielen**
+    
+der Benutzenden orientieren. Eine Bedienungsanleitung oder ein online Hilfesystem *MUSS* völlig überflüssig sein. Denken Sie hierbei an die Besonderheiten und spezifischen Bedürfnisse der verschiedenen Benutzendengruppen und versuchen Sie diese in einem **gemeinsamen UI-Design** abzubilden (--> vgl. die IKEA-Fallstudie). 
+
+Konzentrieren Sie sich insbesondere auf die :material-bus-stop-uncovered: **Anwendungsfälle**, :material-office-building: **Nutzungskontexte**, :material-heart: **Bedürfnisse** und :material-target: **Ziele** der primären Personas bzw. der Stereotypen und _NICHT_ auf irgendwelche technischen Features – diese sind für die Erfüllung der Aufgabe zweitrangig (siehe auch den Einführungsfoliensatz zur Veranstaltung).
+
+
 
 ## Aufgaben
 

@@ -68,6 +68,8 @@
 
 - :material-file-pdf-box: [Fallstudien](https://code.fbi.h-da.de/zander/hci/material/-/raw/main/6_visual_design/07_case_studies.pdf?ref_type=heads&inline=true)
 - :material-file-pdf-box: [UI-Dialog-Design](https://code.fbi.h-da.de/zander/hci/material/-/raw/main/6_visual_design/09_task.pdf?ref_type=heads&inline=true)
+- :material-magnify-expand: Öffnen sie <https://my.h-da.de> und tragen sie alle Usability-Flaws in einem Foliensatz mit kurzen Erläuterungen zur Nachvollziehbarkeit zusammen. Suchen sie gezielt nach solchen "Design- und Konzeptionssünden" und zeigen sie Möglichkeiten auf dies besser zu machen.
+
 
 ## Lernzielkontrolle
 
