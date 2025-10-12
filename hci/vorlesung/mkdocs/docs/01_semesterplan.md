@@ -3,7 +3,7 @@
 ## :material-school: Vorlesung
 
 - Woche 1: [Organisation](0_organisation.md)
-- Woche 2: [Kapitel 1 – Einführung User-Centered Design](1_user-centered_design.md)
+- Woche 2: [Kapitel 1 – Einführung User-Centered Design](1_user-centered_design.md) + Festlegung der Projektgruppen[^1]
 - Woche 3: [Kapitel 2 – User Research](2_user_research.md)
 - Woche 4: [Kapitel 3 – Requirements Engineering](3_requirements_engineering.md)
 - Woche 5: [Kapitel 4 – Modellbildung](4_models.md)
@@ -22,8 +22,10 @@
 
 ## :material-sign-direction: Semesterprojekt
 
-- Meilenstein 1: Gruppenbildung und Themenfindung – _in der 1. Praktikumseinheit_
+- Meilenstein 1: Gruppenbildung und Themenfindung – _in der 1. Praktikumseinheit_[^1]
 - Meilenstein 2: User Research – _Ende Woche 6_
 - Meilenstein 3: UI-Entwurf – _Ende Woche 9_
 - Meilenstein 4: App-Entwicklung und -präsentation – _Woche 13 & 14 (siehe VO-Plan)_
 - Meilenstein 5: Usability Evaluation – *legen wir gemeinsam in den Abschlussveranstaltungen fest*
+
+[^1]: Die Gruppeneinteilung für das Semesterprojekt findet in der 2. VO-Woche statt. Im 1. Praktikumstermin (=[Meilenstein 1](ms1.md)) legen wir die Projektthemen fest.
