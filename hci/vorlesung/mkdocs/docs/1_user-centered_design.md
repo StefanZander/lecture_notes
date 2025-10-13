@@ -63,9 +63,9 @@
 
 ## Ergänzende Materialien
 - :octicons-book-16: [Foundations for Designing User-Centered Systems: What System Designers Need to Know about People](https://link.springer.com/book/10.1007/978-1-4471-5134-0) – sehr gutes Buch mit vielen relevanten und interessanten Themen; aufrufbar aus dem Hochschulnetz
-- :material-file-pdf-box: [IKEA – Die Welt-Raumausstatter (Artikel im Spiegel von 2012) mit Textmarkierungen](https://lernen.h-da.de/mod/resource/view.php?id=232278)
-- :material-file-pdf-box: [Tolles und umfassendes Skriptum zu Human-Computer-Interaction von Prof. Dr. Keith Andrews (TU Graz)](https://lernen.h-da.de/mod/resource/view.php?id=213473)
-- Auf amüsante Art und Weise zeigt :material-video: [dieses Video](https://www.youtube.com/watch?v=dln9xDsmCoY) wesentliche Merkmale von User-Centered Design.
+- :material-file-pdf-box: Lesenswerter Spiegel-Artikel der darlegt, wie IKEA durch User-Research-Methoden und Nutzendenzentrierung zur Weltmarke und dem weltweit erfolgreichsten Möbelproduzenten wurde: [IKEA – Die Welt-Raumausstatter (Artikel im Spiegel von 2012) mit Textmarkierungen](https://lernen.h-da.de/mod/resource/view.php?id=232278)
+- :material-file-pdf-box: Tolles und umfassendes [Skriptum zu Human-Computer-Interaction](https://lernen.h-da.de/mod/resource/view.php?id=213473) von Prof. Dr. Keith Andrews (TU Graz)
+- :material-video: [Dieses Video](https://www.youtube.com/watch?v=dln9xDsmCoY) zeigt auf amüsante Art und Weise wesentliche Merkmale von User-Centered Design.
 <!--
 ## Übungen
 * ...

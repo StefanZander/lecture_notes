@@ -16,7 +16,7 @@
     - Kapitel [User Research](2_user_research.md) vollständig durchgearbeitet
     - Im Semesterprojekt haben sie bereits erste Interviews geführt und diese ausgewertet
 
-!!! warning "Warum es wichtig ist dieses Themengebiet zu kennen"
+!!! warning "Warum es wichtig ist, dieses Themengebiet zu kennen"
     - Kenntnisse im Requirements Engineering sind essenziell, da **empirische Studien** zeigen, dass **fehlerhafte** oder **unvollständige Anforderungen** eine der häufigsten Ursachen für das Scheitern von IT-Projekten sind (Standish Group, 2015[^7]; Nuseibeh & Easterbrook, 2000[^6]).
     - Anforderungen systematisch zu erheben und zu dokumentieren **reduziert** nachweislich **Projektrisiken** und verhindert **kostspielige Änderungen** in späten Entwicklungsphasen (Boehm & Papaccio, 1988)[^1].
     - Ein fundiertes Requirements Engineering verbessert die **Kommunikation** zwischen Stakeholdern und Entwickler:innen, wodurch Missverständnisse minimiert und die Projektergebnisse besser an den **tatsächlichen Bedürfnissen** ausgerichtet werden (Hofmann & Lehner, 2001)[^4].

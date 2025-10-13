@@ -17,7 +17,7 @@
     - Sie haben User-Tests im Rahmen von Prototyping durchgeführt und ausgewertet
     - Sie haben einen ersten lauffähigen Prototypen ihrer App implementiert
 
-!!! warning "Warum ist es wichtig das zu kennen..."
+!!! warning "Warum ist es wichtig, dieses Themengebiet zu kennen..."
     - Studien zur **Usability** zeigen konsistent, dass benutzerfreundliche Systeme die **Akzeptanz und Zufriedenheit** von Anwender:innen signifikant erhöhen (vgl. Nielsen 1993; ISO 9241-11).
     - Empirische Untersuchungen belegen, dass gute Usability den **Schulungs- und Supportaufwand** reduziert, was insbesondere in Unternehmen zu messbaren **Kostensenkungen** führt.
     - **Usability-Evaluierungsmethoden** sind praxisrelevant, da sie bereits in frühen Entwicklungsphasen die Identifikation von **Benutzbarkeitsproblemen** ermöglichen und so Fehlerkosten reduzieren (vgl. Bias & Mayhew 2005).
