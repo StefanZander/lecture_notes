@@ -85,20 +85,19 @@ Für *Studierende*, sagen Sie bitte kurz ...
 **Hochschule Darmstadt – Studierende**
 
 ::::: columns
-:::: single
-<!--
-- Aliyev,	Sultan	– Sultan.b.Aliyev@stud.h-da.de
-- Chiu,	Patrick	– patrick.a.chiu@stud.h-da.de
-- Cvach,	Denis	– denis.cvach@stud.h-da.de
-- Hassoun,	Hamdi	– hamdi.hassoun@stud.h-da.de
-- Horn,	Johannes	– johannes.horn@stud.h-da.de
-- Kraus,	Vladislav	– Vladislav.Kraus@stud.h-da.de
-- Lichau,	Simon	– simon.lichau@stud.h-da.de
-- Suharta,	Bryan Austin	– bryanaustin.suharta@stud.h-da.de
--->
+:::: double
+- Chen, Yuan – yuan.chen@stud.h-da.de
+- Pintea, Filip Ioan – filipioan.pintea@stud.h-da.de
+- Incze, Antonia (Niki) – antonia.incze@stud.h-da.de 
+- Gligor, Sorana-Maria – soranamaria.gligor@stud.h-da.de
+- Mladin, Raul Gabriel – raulgabriel.mladin@stud.h-da.de
+- Marginean, Antonia-Madalina – antoniamadalina.marginean@stud.h-da.de
+- Matlák, Péter-Zsolt – peterzsolt.matlak@stud.h-da.de 
+- Bartus, Bíborka – 	biborka.bartus@stud.h-da.de
+- Martínez Fernández, Olaya – olaya.martinezfernandez@stud.h-da.de
+- Maniu, Maria-Diana – mariadiana.maniu@stud.h-da.de 
 ::::
 :::: single
-
 ::::
 :::::
 
