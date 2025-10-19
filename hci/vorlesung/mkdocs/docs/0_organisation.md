@@ -27,6 +27,12 @@ In der 1. Vorlesungseinheit werden diese Themen ausführlich besprochen.
 - :material-web: Einführende Informationen zur [Active Learning Theory](https://www.cambridge-community.org.uk/professional-development/gswal/index.html)
 
 
+## :material-hammer-screwdriver: Offene Labore
+
+- Durchführung vor Ort und/oder via Discord durch die HCI-Tutoren
+- Termine werden noch bekannt gegeben
+- Für alle Fragen oder Unterstützungswünsche zu HCI allgemein, dem Semesterprojekt etc.
+
 <!--
 ## Semesterplan
 

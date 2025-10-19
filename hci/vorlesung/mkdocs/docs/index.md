@@ -2,7 +2,7 @@
 
 :fontawesome-solid-university: **Belegnummer**: 30.2626
 
-:simple-discord: **Discord-Channel**: Link will be added when available
+:simple-discord: **Discord-Channel**: <https://discord.gg/kn8PFhz4Pd>
 
 Auf den folgenden Seiten finden Sie Informationen zu **Organisation** und **Ablauf** der Lehrveranstaltung Human-Computer Interaction bei mir, :teacher_tone1: Prof. Dr. Stefan Zander, sowie die entsprechenden :octicons-book-16: **Lehrmaterialien**. 
 

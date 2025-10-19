@@ -63,6 +63,8 @@ Für *Studierende*, sagen Sie bitte kurz ...
 - **Prof. Dr. Stefan Linus Zander** (Modulverantwortung und Lehrveranstaltungsleitung) 
   - Email: stefan.zander@h-da.de 
   - Website: https://fbi.h-da.de/personen/stefan-zander
+  - BBB-Büro: https://rooms.h-da.de/r?room=Zander%2C+Stefan+%28fbi%29
+  - Mobil (für Dringendes/Wichtiges): +49 176 / 456 3 96 96 
 
 <!--
 - **Lars Kleinschmidt** (Technische Projektleitung – CTO) 
@@ -86,16 +88,16 @@ Für *Studierende*, sagen Sie bitte kurz ...
 
 ::::: columns
 :::: double
+- Bartus, Bíborka – 	biborka.bartus@stud.h-da.de
 - Chen, Yuan – yuan.chen@stud.h-da.de
-- Pintea, Filip Ioan – filipioan.pintea@stud.h-da.de
 - Incze, Antonia (Niki) – antonia.incze@stud.h-da.de 
 - Gligor, Sorana-Maria – soranamaria.gligor@stud.h-da.de
-- Mladin, Raul Gabriel – raulgabriel.mladin@stud.h-da.de
-- Marginean, Antonia-Madalina – antoniamadalina.marginean@stud.h-da.de
-- Matlák, Péter-Zsolt – peterzsolt.matlak@stud.h-da.de 
-- Bartus, Bíborka – 	biborka.bartus@stud.h-da.de
-- Martínez Fernández, Olaya – olaya.martinezfernandez@stud.h-da.de
 - Maniu, Maria-Diana – mariadiana.maniu@stud.h-da.de 
+- Marginean, Antonia-Madalina – antoniamadalina.marginean@stud.h-da.de
+- Martínez Fernández, Olaya – olaya.martinezfernandez@stud.h-da.de
+- Matlák, Péter-Zsolt – peterzsolt.matlak@stud.h-da.de 
+- Mladin, Raul Gabriel – raulgabriel.mladin@stud.h-da.de
+- Pintea, Filip Ioan – filipioan.pintea@stud.h-da.de
 ::::
 :::: single
 ::::
@@ -174,7 +176,7 @@ Quelle: Modulhandbuch des Fachbereichs Informatik mit individuellen Ergänzungen
   - ... als *Ansprechpartner* für das Projektteam und die Auftraggeber fungieren
   - ... *Arbeitspakete* und Sprints koordinieren
   - ... für die *Qualitätskontrolle* verantwortlich ist
-  - ... mitarbeiten, aber vor allem Aufgaben *delegiert* 
+  - ... mitarbeitet, aber vor allem Aufgaben *delegiert* 
   - ... _WP-Leader-Treffen_ organisiert und durchführt
 - Projektdurchführung analog dem _Scrum-_ und _Design-Thinking_ Vorgehensmodell
 
@@ -264,7 +266,7 @@ In Summe veranschlagen wir pro Person ein :far-clock: **Gesamtzeitbudget** von *
 - Für das Projekt existiert ein internes **GitLab-Repository**: <https://code.fbi.h-da.de/pse_zander/markdown_quizzes>
   - die Studierenden werden von uns dort eingeschrieben 
 - dort werden Programmcode und Dokumentation (Deliverables, Research, Transcripts etc.) gehostet
-- Die Hauptentwicklung soll in einem externen Git-Repository erfolgen bzw. nach Abschluss in selbiges überführt werden
+- Nach Freigabe soll das Projekt in ein externes Git-Repository umgezogen werden und dort der Allgemeinheit zur Verfügung stehen
 <!-- - Unternehmensseitig werden notwendige APIs etc. zur Verfügung gestellt – mehr Informationen dazu in der Projektvorstellung -->
 <!-- - jede Gruppe benutzt ein eigenes **GitLab-Repository**  -->
 
@@ -275,7 +277,7 @@ In Summe veranschlagen wir pro Person ein :far-clock: **Gesamtzeitbudget** von *
 
 **Taiga** :fas-list-check: 
 - offizielles **Projektmanagementtool** in diesem Semester
-- Bitte nutzen Sie dieses für die **Projektplanung** und **Projektdokumentation** (APs, Tasks, DoD, Backlog, Issues, Meetings etc.)
+- Bitte nutzen Sie dieses für die **Projektplanung** und **Projektdokumentation** (WPs, Tasks, DoD, Backlog, Issues, Meetings etc.)
 - Link: <https://taiga.fgmmgr.users.h-da.cloud/project/markdown-quizzes/>
 
 
@@ -312,40 +314,48 @@ Die **Beteiligungsmatrix**
 
 ---
 <!-- header: "" -->
-# Projektplanung :fas-list-check:
-
-<!-- Projektdoku: <https://diy.vcd.org/projekte/we3ve> -->
-
-
+# Project Planing :fas-list-check:
 
 
 ---
-## Ausgangssituation :fas-flag-checkered:
+## Initial Situation :fas-flag-checkered:
 
-- Studierende :fas-graduation-cap:
-  - Sie sind das beauftragte Unternehmen und müssen eigenverantwortlich und selbständig das Projekt planen und durchführen. D.h.,
-    - Sie legen die Rollen innerhalb ihres Teams fest
-    - sie bestimmen Ihre Organisationsstruktur, d.h., wie sie als Team das Projekt bearbeiten wollen (nach welchen Prinzipien organisieren sie sich intern)
-    - Sie definieren WP-Verantwortliche und konkrete Inhalte (Detailplanung in Taiga)
-    - Sie halten selbständig Meetings ab und dokumentieren diese in Taiga
-    - Sie kommunizieren mit den Stakeholdern und dem Kunden bzw. Auftraggeber(!)
-    - Sie stimmen notwendige Planungsschritte innerhalb des Teams und mit dem Auftraggeber ab
-    - Sie überwachen den Projektfortschritt und kontrollieren die erarbeiteten Ergebnisse
-    - Sie übernehmen die Qualitätskontrolle
+- **Students** :fas-graduation-cap:  
+  - You assume the role of the **contracted company** and are expected to plan and execute the project **independently and responsibly**. Specifically, this includes:
+    - Defining the **roles and responsibilities** within your project team.  
+    - Establishing your **organizational structure**, i.e., determining how you will collaborate and organize your internal workflows.  
+    - Assigning **work package (WP) leads** and specifying detailed content (project planning in *Taiga*).  
+    - Conducting **team meetings autonomously** and documenting them in *Taiga*.  
+    - Communicating effectively with **stakeholders** and the **client / project sponsor**.  
+    - Coordinating necessary **planning and decision-making processes** both within the team and with the client.  
+    - **Monitoring project progress** and reviewing the outcomes produced.  
+    - Ensuring the **quality control** of all project deliverables.  
 
-- Professor :fas-chalkboard-user:
-  - Der verantwortliche Dozierende schlüpft in die Rolle des Auftraggebers bzw. des Kunden. Er...
-    - definiert das Projektziel
-    - definiert Zwischen- und Endergebnisse der Arbeitspakete und des Projekts
-    - überlässt die Projektplanung und -durchführung dem Auftragnehmer (=Studierende)
-    - hilft und unterstützt bei Fragen / Problemen / etc.
-
+- **Professor** :fas-chalkboard-user:  
+  - The responsible lecturer assumes the role of the **client or customer** and will:
+    - Define the **overall project objectives**.  
+    - Specify the **intermediate and final deliverables** of the work packages and the project as a whole.  
+    - Delegate **project planning and execution** entirely to the contractors (= students).  
+    - Provide **guidance, advice, and support** in cases of questions, difficulties, or unforeseen challenges.  
 
 
 ---
-## Übersicht der Arbeitspakete :fas-cubes: 
+## Overview of Work Packages :fas-cubes: 
 
-Diese sind von ihnen bis zum nächsten Jour fixe zu erstellen und dort mit dem Auftraggeber abzustimmen.
+<!-- Diese sind von ihnen bis zum nächsten Jour fixe zu erstellen und dort mit dem Auftraggeber abzustimmen. -->
+
+Please create an initial version for the next jour fixe; we will discuss and finalize them there. Use the following structure for each Epic/WP:
+
+::: greenbox small marg1
+- **Name of the Epic** – Epics should have short, clear, action-oriented titles that describe the business goal or user value — not the technical implementation. Recommended Naming Pattern: “[Verb] + [Object] + [Purpose/Benefit]” pattern.
+✅ Good Epic names describe what outcome is achieved, not how it is implemented.
+- **Objective** – A list of the objectives of an Epic; an Epic's intended purpose. What are we going to find out or achieve... 
+- **Tasks** – A list of tasks needed to be carried out in order to achieve the Epic's goals.
+- **Results / Milestones** – A list of results that will be created within an Epic
+- **Deliverables** – A list of documents that document main achievements of an Epic
+:::
+
+Please also create a first project plan in which you determine initial time frames and deadlines for each work package (aka Epic). 
 
 <!--
 - WP: Identifikation der Stakeholder sowie deren Informationsbedürfnisse
@@ -369,25 +379,26 @@ Anmerkungen: Testing sowie die experimentelle Verifikation und Validierung von u
 
 
 ---
-# :fas-person-digging: Aufgaben von Gesamtprojektleiter:innen
+# :fas-person-digging: Responsibilities of the Overall Project Managers
 
-- Gesamtprojektleitung auf Seiten der Studierenden
-- Gesamtzeit- und Resourcenplanung (Epics/Sprints/Tasks) in Abhängigkeit des Semesterplans
-- Organisation der inhaltlichen Abstimmung mit dem Team und den Stakeholdern
-- Abstimmung von Aufgaben mit den WP-Ownern und dem Team
-- Delegation von Aufgaben an die WP-Owner und das Team
-- Ausgestaltung der Epics / User Stories / Sprints / Tasks in Taiga
-- Teilnahme an und Durchführung von WP-Owner-Treffen
-- Rückmeldung an die LVA-Leiter bei Problemen etc.
-- Kontrolle der Arbeiten und Arbeitsergebnisse
-- Qualitätssicherung
+- Overall project management on the part of the student team.  
+- Comprehensive **time and resource planning** (Epics / Sprints / Tasks) aligned with the semester schedule.  
+- Coordination of the **content-related alignment** within the team and with stakeholders.  
+- Alignment and coordination of tasks with **work package (WP) owners** and team members.  
+- Delegation of responsibilities and tasks to WP owners and the project team.  
+- Development and maintenance of **Epics, User Stories, Sprints, and Tasks** in *Taiga*.  
+- Participation in and facilitation of **WP owner meetings**.  
+- **Reporting to the course instructors** in cases of issues or project-related challenges.  
+- **Monitoring** of ongoing work and evaluation of deliverables.  
+- **Quality assurance** across all project activities and outcomes.  
 
 ::: bluebox center marg5
-Essentiell ist ein **proaktives**, **eigenverantwortliches** und **selbstwirksames** Vorgehen!
+It is essential to adopt a **proactive**, **responsible**, and **self-directed** approach throughout the project.
 :::
 
 
 ---
+<!--
 # :fas-person-digging: Aufgaben von WP-Owner:innen
 
 - Definition der Anforderungen (aka User Stories) in Abstimmung mit den Stakeholdern und dem Team
@@ -405,9 +416,27 @@ Essentiell ist ein **proaktives**, **eigenverantwortliches** und **selbstwirksam
 ::: bluebox center marg5
 Essentiell ist ein **proaktives**, **eigenverantwortliches** und **selbstwirksames** Vorgehen!
 :::
+-->
+# :fas-person-digging: Responsibilities of the Work Package (WP) Owners
 
+- Definition of **requirements (User Stories)** in coordination with stakeholders and the project team.  
+- **Time and resource planning** (Epics / Sprints / Tasks) in alignment with the semester schedule.  
+- Coordination of **content-related alignment** within the team and with stakeholders.  
+- Coordination and clarification of tasks within the project team.  
+- **Delegation of tasks** to team members as appropriate.  
+- Development and maintenance of **Epics, User Stories, Sprints, and Tasks** in *Taiga*.  
+- Participation in **WP owner meetings**.  
+- **Reporting to the course instructors** in cases of issues or project-related challenges.  
+- Appointment of a **deputy or representative**, if necessary, in consultation with the team.  
+- **Monitoring of work progress** and evaluation of deliverables.  
+- **Quality assurance** of all assigned work packages.  
+
+::: bluebox center marg5
+A **proactive**, **responsible**, and **self-directed** approach is essential for successful project execution.
+:::
 
 ---
+<!--
 # :fas-person-digging: Aufgaben der Researcher & Developer
 
 - Definition von User Stories und Tasks
@@ -423,47 +452,72 @@ Essentiell ist ein **proaktives**, **eigenverantwortliches** und **selbstwirksam
 ::: bluebox center marg5 
 Essentiell ist ein **proaktives**, **eigenverantwortliches** und **selbstwirksames** Vorgehen!
 :::
-
-
-
-
-
-
-
-
-<!--
----
-## WP
-
-- **Ziel**
-
-
-- **Tasks**
-
-
-- **Resultate / Meilensteine**
 -->
+# :fas-people-group: Responsibilities of Team Members
+
+- Active participation in all **project activities** and meetings.  
+- **Collaboration and communication** with the WP owners, the overall project managers, and other team members.  
+- **Contribution to the development and implementation** of project deliverables within assigned work packages.  
+- **Accurate documentation** of individual tasks, progress, and results in *Taiga* (or other designated tools).  
+- Adherence to the **project schedule**, sprint goals, and quality standards defined by the project leadership.  
+- **Support in problem-solving and decision-making processes** within the team.  
+- **Constructive feedback** to peers and participation in review sessions.  
+- **Independent and responsible execution** of assigned tasks.  
+- **Reporting of issues, risks, or delays** to WP owners or project leadership in a timely manner.  
+- **Continuous reflection** on one’s own work and active contribution to the improvement of project outcomes.  
+
+::: bluebox center marg5
+Successful collaboration requires **initiative**, **accountability**, and a **team-oriented mindset**.
+:::
 
 
 ---
-# Nächste Schritte :fas-shoe-prints:
+### :fas-briefcase: Overview of Roles and Responsibilities
 
-- Festlegung der Haupt-Projektleiter:innen
-- Festlegung der WP-Leader und Eintragung in Taiga
-- Registrierung in Taiga 
-- Definition und Organisation der WPs 
-- Entwicklung eines Zeitplans
-- Definition der User Stories (Anforderungen) und Tasks durch WP-Owner + Team in Taiga
-- Beginn der Anforderungsermittlung + Definition eines Pflichtenhefts
-- Kontaktaufnahme mit Stakeholdern um WPs (Epics) weiter auszudefinieren
-- Festlegung der Jour fixe Termine
+::::smallest
+| **Role** | **Key Responsibilities** | **Focus Areas** | **Reporting / Communication** |
+|-----------|---------------------------|-----------------|-------------------------------|
+| **Overall Project Managers** | - Provide overall coordination and direction of the student project.<br>- Conduct comprehensive time and resource planning (Epics / Sprints / Tasks).<br>- Align content and deliverables with team and stakeholders.<br>- Monitor progress and ensure quality control.<br>- Represent the project externally (e.g., client communication). | - Strategic project planning and control.<br>- Team organization and communication structure.<br>- Quality assurance and overall progress tracking. | - Communicate regularly with WP owners, team members, and the course instructors.<br>- Serve as primary contact for the client or project sponsor. |
+| **Work Package (WP) Owners** | - Define requirements (User Stories) in alignment with stakeholders and team members.<br>- Plan and manage assigned work packages in *Taiga*.<br>- Delegate and coordinate tasks within the team.<br>- Monitor progress and evaluate deliverables.<br>- Ensure content alignment across related WPs. | - Tactical coordination and task management.<br>- Stakeholder alignment within assigned project areas.<br>- Quality control at work package level. | - Report to overall project managers and course instructors.<br>- Collaborate closely with team members on task execution. |
+| **Team Members** | - Contribute actively to all project tasks and meetings.<br>- Execute assigned tasks independently and responsibly.<br>- Document progress and results in *Taiga*.<br>- Provide constructive feedback and support teammates.<br>- Report issues, risks, or delays proactively. | - Operational task execution.<br>- Collaboration and self-organization within the team.<br>- Continuous improvement of deliverables. | - Communicate regularly with WP owners and project managers.<br>- Participate in reviews, retrospectives, and sprint meetings. |
 
+::: bluebox center marg20
+All roles contribute to the success of the project through **collaboration**, **transparency**, and **proactive engagement**.
+:::
+::::
 
 
 
 
 ---
-# Fragen ?
+# Next Steps :fas-shoe-prints:
+
+- Appointment of the **overall project managers**.  
+- Appointment of the **work package (WP) leaders** and registration of their roles in *Taiga*.  
+- **Registration in Taiga** for all project participants.  
+- **Definition and organization** of the work packages (aka Epics).  
+- Development of a **comprehensive project timeline**.  
+- Definition of **User Stories (requirements)** and **Tasks** by the WP owners in collaboration with the team, documented in *Taiga*.  
+- Commencement of the **requirements elicitation process** and preparation of a **requirements specification document**.  
+- **Engagement with stakeholders** to further refine and elaborate the work packages (Epics).  
+- Scheduling of regular **status meetings (jour fixe)** for coordination and progress review.  
+
+
+
+
+---
+# Questions ?
+
+
+---
+# Usefull Resources
+
+- MkDocs: <https://www.mkdocs.org/>
+- MkDocs-Material: <https://squidfunk.github.io/mkdocs-material/>
+- A markdown-based quiz generator for Hugo: <https://github.com/bonartm/hugo-quiz>
+- An Example Hugo-Markdown-based Quiz: <https://bonartm.github.io/hugo-quiz/>
+- A good introduction to the Markdown-syntax: <https://www.markdownguide.org/getting-started/>
+- A brief overview of agile software development: <https://www.geeksforgeeks.org/software-engineering/software-engineering-agile-software-development/>
 
 
 
