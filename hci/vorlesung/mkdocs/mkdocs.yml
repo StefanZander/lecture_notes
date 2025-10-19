@@ -32,6 +32,9 @@ nav:
 extra_css:
   - stylesheets/extra.css
 
+extra_javascript:
+  - javascripts/feedback.js
+
 theme:
   name: material
   color-mode: dark
