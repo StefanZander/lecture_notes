@@ -35,7 +35,8 @@
 
 ## Ergänzende Materialien
 - :material-file-pdf-box: [Paper Prototyping As A Usability Testing Technique](https://usabilitygeek.com/paper-prototyping-as-a-usability-testing-technique/)
-- TODO: Add further links from slides
+- :material-image-edit: [Tafelschaubild zum Prototyping](https://lernen.h-da.de/pluginfile.php/507604/mod_folder/content/0/2025-05-21_Prototyping/IMG_20250521_131824.jpg?forcedownload=1)
+- TODO: Add Links from slides
 
 
 
