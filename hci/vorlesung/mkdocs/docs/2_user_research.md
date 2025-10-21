@@ -62,6 +62,9 @@
 - :material-file-pdf-box: [Beispiel #1 einer Szenariobeschreibung](https://lernen.h-da.de/mod/resource/view.php?id=215946)
 - :material-file-pdf-box: [Szenariobeschreibung für das OBS (Beispiel 2)](https://lernen.h-da.de/mod/resource/view.php?id=215947)
 - :octicons-book-16: Buch: [The Persona and Journey Map Playbook: Designing Human-Centered Artifacts to Inspire and Drive Change](https://link.springer.com/book/10.1007/979-8-8688-0893-7) (_Externe Quelle – aufrufbar aus dem Hochschulnetz_)
+- :material-video: [Lehrvideo zum Ablauf des User Research](https://www.youtube.com/watch?v=qA0DlfghMAY&t=624s)
+- :material-image-edit: [Tafelschaubild des User Research Prozesses](https://lernen.h-da.de/pluginfile.php/507604/mod_folder/content/0/2025-04-23_User_Research_Prozess.jpg?forcedownload=1)
+
 
 ## Übungen / Aufgaben
 - Erstellen sie eine erste grobe Struktur der Projektmappe und insbesondere eine für Meilenstein #1. Überlegen sie sich hierzu, welche Elemente in den User Research müssen und wie sie diese methodisch addressieren wollen/werden. Leiten sie daraus dann eine erste Sturktur ab.
