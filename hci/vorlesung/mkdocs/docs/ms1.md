@@ -23,8 +23,8 @@
    2. :material-target: **Projektziele** – was soll mit dem Vorhaben erreicht werden? In welchen Bereichen werden Verbesserungen etc. angestrebt? Welche Probleme sollen gelöst werden?
    3. :fontawesome-solid-people-line: **Zielgruppe** – welche Nutzenden wollen sie ansprechen und warum ist dies wichtig für diese Personen? Worin bzw. in welchen Aspekten können sie diese unterstützen? Welche Vorbehalte existieren ggf.? Welche Einschränkungen (z.B. Zeitdruck, Mobilität, Arbeitsumgebung) existieren?
    4. :material-magnify-scan: **Erkenntnisinteresse** – was möchten sie herausfinden; was gilt es herauszufinden, damit das Vorhaben erfolgreich sein wird? Auf welche Fragen müssen Antworten gefunden werden?
-   5. Erfolgskriterien
-   5. :fontawesome-solid-person-dots-from-line: **Methodik** – welche User-Research-Methoden setzen sie ein, um verwertbare Erkenntnisse zu generieren bzw. um die relevanten Aspekte zu identifizieren? Bitte begründen sie ihre Entscheidung.
+   5. :material-trophy: **Erfolgskriterien** – an welchen Dingen bzw. Ergebnissen lässt sich der Erfolg ihres Vorhabens festmachen. Welche Kriterien sind für den (gewünschten) Erfolg ihres Vorhabens ausschlaggebend? 
+   <!-- 5. :fontawesome-solid-person-dots-from-line: **Methodik** – welche User-Research-Methoden setzen sie ein, um verwertbare Erkenntnisse zu generieren bzw. um die relevanten Aspekte zu identifizieren? Bitte begründen sie ihre Entscheidung. -->
 
 
 <!--
@@ -35,21 +35,29 @@
 
 Formulieren Sie zu Beginn klar, **welches Problem** durch das Projekt gelöst werden soll. -->
 
-Ziel dieser Aufgabe ist es, ein Verständis dafür zu schaffen, warum dies überhaupt ein untersuchenswertes Problem ist, in welchen Situationen das Problem auftritt, welche Facetten es hat, welche Personen bzw. Personengruppen in welcher Form davon betroffen sind und welcher Nutzen generiert werden soll.
+Ziel dieser Aufgabe ist es, ein Verständis dafür zu schaffen, warum ihr Vorhaben ein untersuchenswertes Unterfangen ist, in welchen Situationen Probleme und Schwierigkeiten auftretten, welche Facetten diese haben, welche Personen bzw. Personengruppen in welcher Form davon betroffen sind und welcher Nutzen für die Zielgruppe generiert werden soll.
 
-Beschreiben Sie, welchen **Nutzen** die geplante Lösung für die Zielgruppe haben soll und definieren sie **Erfolgskriterien**.
+<!-- Beschreiben Sie, welchen **Nutzen** die geplante Lösung für die Zielgruppe haben soll und definieren sie **Erfolgskriterien**. -->
 
-Halten Sie Ihre **Projektziele und Erfolgskriterien** schriftlich fest.
+<!-- Halten Sie Ihre **Projektziele und Erfolgskriterien** schriftlich fest. -->
 
-Vermeiden Sie vorschnelle technische Festlegungen (z.B. „Wir entwickeln eine App mit dieser oder jener Funktion“) und konzentrieren Sie sich stattdessen auf das **zugrunde liegende Nutzungsproblem**.  
+:fontawesome-solid-exclamation-circle: Wichtig: Vermeiden Sie vorschnelle technische Festlegungen (z.B. „Wir entwickeln eine App mit dieser oder jener Funktion“) und konzentrieren Sie sich stattdessen auf das **zugrunde liegende Nutzungsproblem**.  
 
 <!-- Formulieren sie die o.g. Punkte auf 1 - 2 Seiten, d.h., beschreiben sie präzise, welches Problem / welche Probleme gelöst werden sollen und nicht nur, was bzw. welche App entwickelt werden soll.  -->
 
-!!! warning "Wichtig"
+!!! warning "Kein vorschnelles Lösungsdenken"
     Vermeiden sie es, vorschnell in Lösungsdenken zu verfallen („Wir brauchen eine bestimmte App“) – stattdessen: „Wir müssen das Informations- und Nutzungsverhalten der Zielgruppe verstehen.“
 
-!!! note "Warum dieser Schritt wichtig ist"
+!!! question "Warum dieser Schritt wichtig ist"
     Verschiedene Studien zeigen, dass unklare Zieldefinitionen zu den häufigsten Ursachen für Fehlschläge in IT-Projekten gehören (Quelle: Standish Group, 2015).
+
+## Ergebnisse
+
+Ihre Praktikumsmappe muss folgende ausgearbeitete Artefakte enthalten: 
+
+!!! success "Ergebnisse"
+    - [x] Dokumentation der Projektziele und Darlegung des Problemverständnisses
+
 
 <!--
 Ziel: Verständnis schaffen, warum das System entwickelt wird und welche Probleme gelöst werden sollen.
@@ -74,7 +82,7 @@ Betrachten sie folgende Aspekte
 Legen sie ausgehend von vorheriger Aufgabe dar, 
 -->
 
-
+<!--
 ### Nutzungskontextanalyse
 
 Analysieren sie, in welchem **Umfeld** (physisch, sozial, organisatorisch, technisch) die zu entwickelnde App zukünftig eingesetzt werden soll.
@@ -89,7 +97,7 @@ Wichtige Fragen hierbei:
     Kontextanalysen gelten laut ISO 9241-210 als Ausgangspunkt jedes nutzendenzentrierten Prozesses.  
 
     _Quelle: ISO 9241-210 (2019). "Ergonomics of Human–System Interaction – Human-centred Design for Interactive Systems"._
-
+-->
 
 <!--
 ### Nutzende und Nutzungskontexte verstehen

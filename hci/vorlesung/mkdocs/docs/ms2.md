@@ -193,7 +193,7 @@ Notieren Sie die wichtigsten Erkenntnisse in der Projektmappe.
 
 ## Ergebnisse
 
-Ihre Praktikumsmappe muss folgende ausgearbeitete Artefakte enthalten: 
+Ihre Praktikumsmappe muss mindestens folgende ausgearbeitete Artefakte enthalten: 
 
 !!! success "Ergebnisse"
     - [x] Benutzer- und Kriterienliste mit ausführlichen, nachvollziehbaren Begründungen
