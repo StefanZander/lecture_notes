@@ -88,13 +88,13 @@ neu: Beschreiben sie zu jedem Testfall das Ziel des Tests sowie das dahintersteh
 
         1. Überlegen Sie im Vorfeld, wie Sie Ihre Entwürfe sinnvoll testen (--> *funktionsorientiert vs. anwendungsfallorientiert*) 
         2. Entwickeln Sie eine Handvoll **repräsentativer Anwendungsfälle**, die Ihre Stereotypen durchspielen sollen.
-        3. Geben Sie in :fontawesome-regular-thumbs-down: **KEINEM FALL HINWEISE** oder Tipps, dies **verfälscht** Ihre Tests enorm. ==:fontawesome-solid-triangle-exclamation: Wir wollen herausfinden, ob die getroffenen Designentscheidungen den mentalen Modellen des/der Stereotypen entsprechen und ob die UI für diese/n intuitiv benutzbar ist.==
+        3. Geben Sie in :fontawesome-regular-thumbs-down: **KEINEM FALL HINWEISE** oder Tipps, dies **verfälscht** Ihre Tests enorm. ==:fontawesome-solid-triangle-exclamation: Wir wollen herausfinden, ob die getroffenen Designentscheidungen den mentalen Modellen der Stereotypen entsprechen und ob das UI für diese intuitiv benutzbar ist.==
 
 
 
 ## Ergebnisse
 
-Ihre Praktikumsmappe muss folgende ausgearbeitete Artefakte enthalten: 
+Ihre Projektmappe muss folgende ausgearbeitete Artefakte enthalten: 
 
 !!! success "Ergebnisse"
     - [x] User-Research Erkenntnisse und deren geplante Verkörperung in der App 

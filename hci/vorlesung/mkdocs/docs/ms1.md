@@ -53,7 +53,7 @@ Ziel dieser Aufgabe ist es, ein Verständis dafür zu schaffen, warum ihr Vorhab
 
 ## Ergebnisse
 
-Ihre Praktikumsmappe muss folgende ausgearbeitete Artefakte enthalten: 
+Ihre Projektmappe muss folgende ausgearbeitete Artefakte enthalten: 
 
 !!! success "Ergebnisse"
     - [x] Dokumentation der Projektziele und Darlegung des Problemverständnisses
