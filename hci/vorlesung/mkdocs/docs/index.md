@@ -40,7 +40,7 @@ Auf den folgenden Seiten finden Sie Informationen zu **Organisation** und **Abla
 ## :material-sign-direction: Semesterprojekt
 
 * :material-calendar-month: [Infos zum Semesterprojekt](semesterprojekt.md)
-* :fontawesome-solid-users-line: [Meilenstein #1: Gruppen- und Themenfindung](ms1.md)
+* :fontawesome-solid-users-line: [Meilenstein #1: Projektziele und Problemverständnis](ms1.md)
 * :fontawesome-solid-users-viewfinder: [Meilenstein #2: User Research](ms2.md)
 * :material-drawing-box: [Meilenstein #3: UI-Entwurf](ms3.md)
 * :fontawesome-solid-mobile-screen-button: [Meilenstein #4: App-Entwicklung](ms4.md)

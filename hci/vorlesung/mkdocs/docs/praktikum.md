@@ -4,6 +4,10 @@
 
 Diese Seite enthält die wesentlichen Informationen zur Organisation und Ablauf des HCI-Praktikums. Das Praktikum ist als **Praktikum-as-a-Service** (siehe Abschnitt [Didaktisches Modell](#didaktisches-modell)) konzipiert. Anders als in vielen anderen Veranstaltungen, welche sie bisher im Studium kennengelernt haben, gibt es hier keine wöchentlichen/2-wöchentlichen Abgaben, sondern sie haben hier die Möglichkeit, vertieft und konzentriert mit ihrem Team am Semesterprojekt zu arbeiten. 
 
+!!! danger "Teilnehme an Semestergruppeneinteilungsveranstaltung zwingende Voraussetzung für Absolvieren des Moduls im aktuellen Semester"
+    Eine Teilnahme an der Gruppeneinteilung für das Semesterprjekt ist zwingende Voraussetzung für das erfolgreiche Absolvieren des Moduls. Ohne Teilnahme an dieser Veranstaltung ist eine Teilnahme im aktuellen Semester nicht möglich – auch nicht, wenn sie sich nur für das Praktikum eingeschrieben haben. 
+
+
 
 ### Didaktisches Modell
 

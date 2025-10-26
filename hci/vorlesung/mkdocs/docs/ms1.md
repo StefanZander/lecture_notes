@@ -1,10 +1,10 @@
-# Meilenstein 1: Gruppenbildung und Themenfindung
+# Meilenstein 1: Projektziele und Problemverständnis
 
 !!! success "Ziele"
-    - [x] Alle Teilnehmenden eines Praktikumsslots gehören einer Gruppe an
-    - [x] Alle Gruppen haben ein Semesterprojektsthema gefunden bzw. definiert
+    <!-- - [x] Alle Teilnehmenden eines Praktikumsslots gehören einer Gruppe an -->
+    - [x] Alle Gruppen haben ein Semesterprojektthema gefunden bzw. definiert
     - [x] Die GitLab-Gruppen-Repositories sind angelegt und den Studierenden zugeordnet
-    - [x] Erste Aufgaben des folgenden Meilensteins sind definiert und vergeben  
+    - [x] Erste Aufgaben von Meilenstein 1 sind definiert und vergeben  
 
 
 ## :material-crane: Vorbereitung
