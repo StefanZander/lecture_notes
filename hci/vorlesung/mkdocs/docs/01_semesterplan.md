@@ -22,10 +22,13 @@
 
 ## :material-sign-direction: Semesterprojekt
 
-- Meilenstein 1: Projektziele und Problemverständnis – _Ende Woche 4 -->  02.11.2025_
-- Meilenstein 2: User Research – _Ende Woche 6_ --> _16.11.2025_
-- Meilenstein 3: UI-Entwurf – _Ende Woche 9_ --> _07.12.2025_
+- Meilenstein 1: Projektziele und Problemverständnis – _Ende Woche 4_ -->  :fontawesome-solid-exclamation-circle: _02.11.2025_
+- Meilenstein 2: User Research – _Ende Woche 6_ --> :fontawesome-solid-exclamation-circle: _16.11.2025_
+- Meilenstein 3: UI-Entwurf – _Ende Woche 9_ --> :fontawesome-solid-exclamation-circle: _07.12.2025_
 - Meilenstein 4: App-Entwicklung und -präsentation – _Woche 13 & 14 (siehe VO-Plan)_
 - Meilenstein 5: Usability Evaluation – *legen wir gemeinsam in den Abschlussveranstaltungen fest*
 
-[^1]: Die Gruppeneinteilung für das Semesterprojekt findet in der 2. VO-Woche statt. Im 1. Praktikumstermin (=[Meilenstein 1](ms1.md)) legen wir die Projektthemen fest.
+!!! warning "Deadlines beachten"
+    Für die Einreichung ist der **Zeitstempel** von `git push` maßgebend; liegt dieser hinter der Deadline, dann kann die Abgabe nicht gewertet werden.
+
+[^1]: Die Gruppeneinteilung für das Semesterprojekt findet in der 2. VO-Woche statt. Im 1. Praktikumstermin (=[Meilenstein 1](ms1.md)) legen wir die Projektthemen fest und erstellen die Gruppenrepos für die Semesterprojekte.
