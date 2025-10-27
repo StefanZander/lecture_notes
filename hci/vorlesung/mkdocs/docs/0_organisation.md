@@ -30,7 +30,7 @@ In der 1. Vorlesungseinheit werden diese Themen ausführlich besprochen.
 ## :material-hammer-screwdriver: Offene Labore
 
 - Durchführung vor Ort und/oder via Discord durch die HCI-Tutoren
-- Termine werden noch bekannt gegeben
+- Termine stehen in Discord
 - Für alle Fragen oder Unterstützungswünsche zu HCI allgemein, dem Semesterprojekt etc.
 
 <!--
