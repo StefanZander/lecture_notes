@@ -19,7 +19,7 @@
 ### Projektziele und Problemverständnis
 1. Formulieren sie ihre :material-brain: **Projektidee** auf ca. 2-4 Seiten. Gehen sie hierbei insbesondere auf die folgenden Punkte ein:
    1. :material-weight-lifter: **Motivation** – was ist die Ausgangslage bzw. Problemstellung hinter eines derartigen Vorhabens? Worin besteht der Forschungsbedarf?
-   2. :material-target: **Projektziele** – was soll mit dem Vorhaben erreicht werden? In welchen Bereichen werden Verbesserungen etc. angestrebt? Welche Probleme sollen gelöst werden?
+   2. :material-target: **Projektziele** – was soll mit dem Vorhaben erreicht werden? In welchen Bereichen werden Verbesserungen etc. angestrebt? Welche Probleme sollen gelöst werden? Welcher Nutzen soll erzeugt werden?
    3. :fontawesome-solid-people-line: **Zielgruppe** – welche Nutzenden wollen sie ansprechen und warum ist dies wichtig für diese Personen? Worin bzw. in welchen Aspekten können sie diese unterstützen? Welche Vorbehalte existieren ggf.? Welche Einschränkungen (z.B. Zeitdruck, Mobilität, Arbeitsumgebung) existieren?
    4. :material-magnify-scan: **Erkenntnisinteresse** – was möchten sie herausfinden; was gilt es herauszufinden, damit das Vorhaben erfolgreich sein wird? Auf welche Fragen müssen Antworten gefunden werden?
    5. :material-trophy: **Erfolgskriterien** – an welchen Dingen bzw. Ergebnissen lässt sich der Erfolg ihres Vorhabens festmachen. Welche Kriterien sind für den (gewünschten) Erfolg ihres Vorhabens ausschlaggebend? 
