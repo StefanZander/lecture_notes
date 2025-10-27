@@ -28,7 +28,10 @@
 - Meilenstein 4: App-Entwicklung und -präsentation – _Woche 13 & 14 (siehe VO-Plan)_
 - Meilenstein 5: Usability Evaluation – *legen wir gemeinsam in den Abschlussveranstaltungen fest*
 
+Einreichzeitpunkt jeweils **EOD (=23:59 Uhr am jeweiligen Einreichetag)**
+
 !!! warning "Deadlines beachten"
     Für die Einreichung ist der **Zeitstempel** von `git push` maßgebend; liegt dieser hinter der Deadline, dann kann die Abgabe nicht gewertet werden.
+    Nach der Überschreitung des Meilensteins sind keine Änderungen an der Abgabe mehr möglich.
 
 [^1]: Die Gruppeneinteilung für das Semesterprojekt findet in der 2. VO-Woche statt. Im 1. Praktikumstermin (=[Meilenstein 1](ms1.md)) legen wir die Projektthemen fest und erstellen die Gruppenrepos für die Semesterprojekte.
