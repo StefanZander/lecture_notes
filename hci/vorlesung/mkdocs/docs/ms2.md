@@ -16,7 +16,7 @@
    3. :fontawesome-solid-people-line: **Zielgruppe** – welche Nutzenden wollen sie ansprechen und warum ist dies wichtig für diese Personen? Worin bzw. in welchen Aspekten können sie diese unterstützen? Welche Vorbehalte existieren ggf.?
    4. :material-magnify-scan: **Erkenntnisinteresse** – was möchten sie herausfinden; was gilt es herauszufinden, damit die App und das Vorhaben erfolgreich sein wird? Auf welche Fragen müssen Antworten gefunden werden?
    5. :fontawesome-solid-person-dots-from-line: **Methodik** – welche User-Research-Methoden setzen sie ein, um verwertbare Erkenntnisse zu generieren bzw. um die relevanten Aspekte zu identifizieren? Bitte begründen sie ihre Entscheidung. -->
-   6. Legen sie zu Beginn auf Basis der Zieldefinition aus Meilenstein 1 kurz dar, welche User-Research-Methoden sie einzusetzen planen. Stellen sie diese den in Meilenstein 1 unter Erkenntnisinteresse genannten Punkten gegenüber um klarzumachen, mittels welcher Methodik welche Erkenntnisse generiert werden sollen. 
+1. :fontawesome-solid-person-dots-from-line: Legen sie zu Beginn auf Basis der Zieldefinition aus [Meilenstein 1](ms1.md) kurz dar, welche User-Research-Methoden sie einzusetzen planen. Stellen sie diese den in Meilenstein 1 unter Erkenntnisinteresse genannten Punkten gegenüber um klarzumachen, mittels welcher Methodik welche Erkenntnisse erarbeitet werden sollen. Begründen sie ihre Entscheidungen.
 
 
 
@@ -197,6 +197,7 @@ Notieren Sie die wichtigsten Erkenntnisse in der Projektmappe.
 Ihre Projektmappe muss mindestens folgende ausgearbeitete Artefakte enthalten: 
 
 !!! success "Ergebnisse"
+    - [x] Methodenübersicht und Erkenntnisinteresse
     - [x] Benutzer- und Kriterienliste mit ausführlichen, nachvollziehbaren Begründungen
     - [x] Dokumentiertes Vorgehen der Operationalisierung 
     - [x] Dokumentierter Interviewleitfaden mit allen Vorbereitungsphasen 
