@@ -9,13 +9,14 @@
 
 ## Aufgaben
 
-### Projektziele
-1. Formulieren sie ihre :material-brain: **Projektidee** auf max. 1-2 Seiten. Gehen sie hierbei insbesondere auf die folgenden Punkte ein:
+### Methodik
+<!-- 1. Formulieren sie ihre :material-brain: **Projektidee** auf max. 1-2 Seiten. Gehen sie hierbei insbesondere auf die folgenden Punkte ein:
    1. :material-weight-lifter: **Motivation** – was ist die Ausgangslage bzw. Problemstellung hinter eines derartigen Vorhabens? Worin besteht der Bedarf nach einer derartigen App?
    2. :material-target: **Projektziele** – was soll mit dem Vorhaben und der App erreicht werden? In welchen Bereichen werden Verbesserungen etc. angestrebt?
    3. :fontawesome-solid-people-line: **Zielgruppe** – welche Nutzenden wollen sie ansprechen und warum ist dies wichtig für diese Personen? Worin bzw. in welchen Aspekten können sie diese unterstützen? Welche Vorbehalte existieren ggf.?
    4. :material-magnify-scan: **Erkenntnisinteresse** – was möchten sie herausfinden; was gilt es herauszufinden, damit die App und das Vorhaben erfolgreich sein wird? Auf welche Fragen müssen Antworten gefunden werden?
-   5. :fontawesome-solid-person-dots-from-line: **Methodik** – welche User-Research-Methoden setzen sie ein, um verwertbare Erkenntnisse zu generieren bzw. um die relevanten Aspekte zu identifizieren? Bitte begründen sie ihre Entscheidung.
+   5. :fontawesome-solid-person-dots-from-line: **Methodik** – welche User-Research-Methoden setzen sie ein, um verwertbare Erkenntnisse zu generieren bzw. um die relevanten Aspekte zu identifizieren? Bitte begründen sie ihre Entscheidung. -->
+   6. Legen sie zu Beginn auf Basis der Zieldefinition aus Meilenstein 1 kurz dar, welche User-Research-Methoden sie einzusetzen planen. Stellen sie diese den in Meilenstein 1 unter Erkenntnisinteresse genannten Punkten gegenüber um klarzumachen, mittels welcher Methodik welche Erkenntnisse generiert werden sollen. 
 
 
 
