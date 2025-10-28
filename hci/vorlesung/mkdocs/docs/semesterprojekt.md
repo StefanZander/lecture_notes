@@ -43,8 +43,9 @@ Die Wahl des Dokumentationstools (LaTeX, Markdown, Textverarbeitungstool, Google
 ### Formale Anforderungen
 
 - Format: ausschließlich PDF
-- Dateiname: ```{Praktikumsslot}-{Appname}.pdf```
-    - Beispiel: ```Mo1x-Parkplatzsharing.pdf```
+- Dateiname: ```{'gr'+Gruppennummer in GitLab mit voransgestellter '0'}_{Projektname in GitLab}_{Meilenstein}.pdf``` – alles kleingeschrieben
+    - Beispiel: ```gr01_bikers_life_ms1.pdf```
+    - Nummerierung des Meilensteins bitte entspr. anpassen
 - Deckblatt mit folgenden Informationen
     - Projektname
     - Praktikumsslot
