@@ -23,6 +23,7 @@ In diesem Bereich finden Sie praktische Informationen zur Praxisphase.
 * [Allgemeine Informationen zur Anmeldung und Ablauf der Praxisphase](./allg_informationen.md) 
 * [Der Start im Unternehmen](./start_im_unternehmen.md) (_wichtige Information_)
 * [Der Praktikumsbericht am Ende der Praxisphase](./bericht.md)
+* [Das Kolloquium](./kolloquium.md)
 * [Häufig gestellte Fragen und Antworten](./q_a.md)
 
 
