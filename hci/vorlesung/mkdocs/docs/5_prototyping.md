@@ -36,7 +36,11 @@
 ## Ergänzende Materialien
 - :material-file-pdf-box: [Paper Prototyping As A Usability Testing Technique](https://usabilitygeek.com/paper-prototyping-as-a-usability-testing-technique/)
 - :material-image-edit: [Tafelschaubild zum Prototyping](https://lernen.h-da.de/pluginfile.php/507604/mod_folder/content/0/2025-05-21_Prototyping/IMG_20250521_131824.jpg?forcedownload=1)
-- TODO: Add Links from slides
+- :material-video: [Sehr gutes Video über die Grundlagen von Paper Prototyping und den Unterschied zu Sketching](https://www.youtube.com/watch?v=JMjozqJS44M)
+- :material-video: Sehr schönes [Video](https://www.youtube.com/watch?v=yafaGNFu8Eg) welches die Durchführung von User Tests mittels Paper Prototypes und User Tasks demomstriert.
+- :material-video: Diese Videos [Video #1](https://www.youtube.com/watch?v=y20E3qBmHpg) und [Video #2](https://www.youtube.com/watch?v=IYem-oBxX14) demonstrieren die einfache Anwendung von Paper Prototypes für [Meilenstein #3](ms3.md).
+- :material-video: [Video #1](https://www.youtube.com/watch?v=OlbdIXLunt4) und [Video #2](https://www.youtube.com/watch?v=GrV2SZuRPv0) zeigen nochmals die Kernidee von low-fideltity Paper Prototypes als Tools zur Überprüfung von Benutzendeninteraktionsmodalitäten. _Achtung: Nicht von der schlechten Videoqualität irritieren lassen_
+
 
 
 
