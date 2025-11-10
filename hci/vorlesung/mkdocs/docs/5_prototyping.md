@@ -13,7 +13,7 @@
     - Sie kennen die elementaren Fehlannahmen, die häufig in Design- und Entwicklungsprojekten gemacht werden
     - Für das Semesterprojekt haben sie die Navigationsübersicht sowie erste Entwürfe der Screens ihrer App erstellt
 
-!!! warning "Warum es wichtig ist, diese Themen zu kennen"
+!!! warning "Warum dieses Thema wichtig ist"
     - Kenntnisse im **Prototyping** sind zentral, da empirische Studien zeigen, dass frühe Prototypen die **Kommunikation** zwischen Entwickler:innen und Stakeholdern verbessern und Anforderungen präzisieren (Virzi, Sokolov & Karis, 1996)[^6]. 
     - Prototyping reduziert nachweislich **Entwicklungsrisiken und -kosten**, da Probleme in Funktionalität und Interaktion frühzeitig erkannt werden, bevor sie in die Implementierung einfließen (Boehm, 1988)[^1].
     - **Paper Prototyping** ist besonders wertvoll, da es eine schnelle, kostengünstige und iterative Möglichkeit bietet, Designideen zu explorieren und mit Nutzer:innen zu evaluieren, ohne hohe technische Aufwände zu verursachen (Snyder, 2003)[^5].
