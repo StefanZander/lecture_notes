@@ -165,6 +165,17 @@ Welche :simple-hypothesis: Hypothesen haben sich bestätigt; welche müssen verw
 Notieren Sie die wichtigsten Erkenntnisse in der Projektmappe.
 
 
+#### Dokumentation
+
+Zeichnen sie das/die Interview(s) als Audiodatei auf; diese können sie anschließend mit einem Audio-zu-Text-Konverter (aka Transkriptionstool) verschriftlichen und in die Projektmappe übernehmen. Sie müssen dieses nicht manuell "abtippen" oder verschriftlichen.
+
+Bitte fügen sie ihrer Projektmappe einen Link zur Audiodatei (diese können sie in ihren GitLab-Projekt-Repos speichern) sowie Fotos des Interviews hinzu.
+
+!!! warning "Audiodatei und Foto der/des Interview(s)"
+    Wichtig ist uns, dass sie die Interviews tatsächlich durchführen und diese nicht durch KI-Tools simulieren. Beide Artefakte sollen dies nachweisen.
+
+
+
 ### Anwendungsszenarios 
 
 1. **Anwendungsszenario**: Schreiben Sie aus den aus dem Interview gesammelten Erkenntnissen **mind. 1 Anwendungsszenario** pro Stereotyp. Dieses soll *lebensnah* und *anschaulich* sein und sich nicht in Details verlieren. Beziehen Sie sich nicht auf Knöpfe und deren Beschriftung (die sind ja noch gar nicht erfunden), sondern bleiben Sie auf der Ebene des mentalen Modells (dabei kann die Ich-Form helfen).
