@@ -52,6 +52,7 @@
 - :material-file-pdf-box: [Lektion 6: Das teilstandardisierte Interview](https://code.fbi.h-da.de/zander/hci/material/-/raw/main/2_user_research/06_iview.pdf?ref_type=heads&inline=false)
 - :material-file-pdf-box: [Lektion 7: Gefahren des teilstandardisierten Interviews](https://code.fbi.h-da.de/zander/hci/material/-/raw/main/2_user_research/07_pitfalls.pdf?ref_type=heads&inline=false)
 - :material-file-pdf-box: [Lektion 8: Der Hawthorne-Effekt und seine Auswirkung in Feldstudien](https://code.fbi.h-da.de/zander/hci/material/-/raw/main/2_user_research/08_hawthorne_effect.pdf?ref_type=heads&inline=false)
+- :material-file-pdf-box: [Anhang: Formulierung von Hypothesen](https://code.fbi.h-da.de/zander/hci/material/-/raw/main/2_user_research/09_hypothesen.pdf?ref_type=heads&inline=false)
 
 
 
