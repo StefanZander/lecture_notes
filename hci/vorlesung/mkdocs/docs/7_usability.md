@@ -137,6 +137,9 @@ Um die **Gebrauchstauglichkeit** bzw. Nutzbarkeit von von Produkten im Allgemein
  - :material-video-outline: [Video zur Erklärung der Thinking-aloud-Methode für Testuser](https://www.nngroup.com/videos/think-aloud/)
  - :material-file-document: [PSSUQ als Tool für die eigenen Abschlussarbeit; 10 Things to Know About the Post Study System Usability Questionnaire](https://measuringu.com/pssuq/)
  - :material-file-document-outline: [Vorlage & Checkliste für Usability-Evaluation](https://lernen.h-da.de/mod/resource/view.php?id=218415)
+ - :material-video-outline: Ein sehr anschauliches [Video zum Guerilla Testing](https://www.youtube.com/watch?v=0YL0xoSmyZI)
+ - :material-video-outline: Dieses [Video](https://www.youtube.com/watch?v=LKaCtvvhbcg) zeigt die sechs häufigsten Fehler, die beim Usability Testing gemacht werden. Sehen sie sich dieses Video bitte an, damit _ihnen_ diese Fehler _nicht_ passieren.
+ - :material-video-outline: Das Video zeigt einige [Tipps](https://www.youtube.com/watch?v=tXJqAYDbRzI) wie man Testpersonen beim "Lauten Denken" unterstützen kann.
 
 :material-account-school: **Lernzielkontrolle**
 
