@@ -9,11 +9,11 @@
 - Woche 5: [Kapitel 4 – Modellbildung](4_models.md)
 - Woche 6: [Kapitel 5 – Prototyping](5_prototyping.md)
 - Woche 7: [Kapitel 6 – Visual Design](6_visual_design.md)
-- Woche 8: ggf. freies Arbeiten – _Abstimmung dazu in Woche 7_
-- Woche 9: [Kapitel 7 – Usability Evaluation](7_usability.md)
-- Woche 10: App-Entwicklung + ggf. Flutter-Tutorial
-- Woche 11: App-Entwicklung
-- Woche 12: App-Entwicklung
+- Woche 8: [Kapitel 7 – Usability Evaluation](7_usability.md)
+- Woche 9: Freies Arbeiten
+- Woche 10: Flutter-Tutorial + Freies Arbeiten
+- Woche 11: Freies Arbeiten / App-Entwicklung
+- Woche 12: Freies Arbeiten / App-Entwicklung
 - Woche 13: App-Präsentationen --> :fontawesome-solid-exclamation-circle: *Anwesenheitspflicht*
 - Woche 14: App-Präsentationen --> :fontawesome-solid-exclamation-circle: *Anwesenheitspflicht*
 
