@@ -80,19 +80,21 @@ Stellen Sie hierbei auch folgende Überlegungen an:
     Für die Durchführung der/des Interviews bieten sich mehrere Möglichkeiten:
 
       1. :fontawesome-regular-thumbs-up: _(beste Option)_: Falls Sie Zugriff auf **echte Personen** haben, die ihren **Stereotypen** entsprechen, dann bitten Sie diese mit Ihnen bzw. Ihrer Gruppe das Interview durchzuführen. Sollte das nicht der Fall sein, dann bitten Sie Freunde / Verwandte / Bekannte / Eltern / Geschwister am Interview teilzunehmen und ==in die Rolle der Stereotypen zu schlüpfen==.
-      2. :fontawesome-regular-thumbs-down: Sie können das Interview während der Praktikumseinheiten vor Ort mit einer Peer-Gruppe durchführen.  
+      2. :fontawesome-regular-thumbs-down: Sie können das Interview während der Praktikumseinheiten vor Ort oder außerhalb mit einer Peer-Gruppe durchführen.  
       --> _Nähere Details zum Ablauf finden Sie in der folgenden Aufgabenbeschreibung._ 
-      3. :fontawesome-regular-thumbs-down: Sie können das Interview außerhalb der Praktikumseinheiten in Eigenregie mit einer Peer-Gruppe oder anderen Personen durchführen.
-      
 
-1. :fontawesome-solid-users-viewfinder: **Auswahl der Stereotypen**: Wählen Sie Personen für das Interview, die zu Ihren ausgewählten Stereotypen passen oder für das Interview in deren Rolle schlüpfen. Lassen Sie die Personen hierzu Ihre angefertigte Stereotypenbeschreibung lessen, so dass diese sich in die jeweilige Lebens- und Nutzungssituation hineinversetzen können.
+<!--      
+3. :fontawesome-regular-thumbs-down: Sie können das Interview außerhalb der Praktikumseinheiten in Eigenregie mit einer Peer-Gruppe oder anderen Personen durchführen.
+-->  
 
-2. :fontawesome-solid-people-line: **Rollenfestlegen**: Bestimmen Sie aus Ihrem Team jeweils eine/n
+4. :fontawesome-solid-users-viewfinder: **Auswahl der Stereotypen**: Wählen Sie Personen für das Interview, die zu Ihren ausgewählten Stereotypen passen oder für das Interview in deren Rolle schlüpfen. Lassen Sie die Personen hierzu Ihre angefertigte Stereotypenbeschreibung lesen, so dass diese sich in die jeweilige Lebens- und Nutzungssituation hineinversetzen können.
+
+5. :fontawesome-solid-people-line: **Rollenfestlegen**: Bestimmen Sie aus Ihrem Team jeweils eine/n
     - **Moderator**: diese Person führt das Interview durch und ist direkte Ansprechperson
     - **Protokollant**: diese Person protokolliert das Gesagte und notiert Beobachtungen und Reaktionen der Probanden 
     - **Supervisor** (_optional_): unterstützt und beobachtet die/den ModeratorIn bei der Durchführung und teilt die gewonnenen Eindrücke im Nachgang mit Ihnen und dem Team für eine gemeinsame Reflektion.
 
-3. :simple-theconversation: **Interviewdurchführung**: Sind Interviewleitfaden, Stereotypenauswahl und die Rollenfestlegung abgeschlossen, dann führen Sie das Interview durch. 
+6. :simple-theconversation: **Interviewdurchführung**: Sind Interviewleitfaden, Stereotypenauswahl und die Rollenfestlegung abgeschlossen, dann führen Sie das Interview durch. 
 
     !!! warning "Interview aus der Stereotypenperspektive"
         Wichtig ist, dass die InterviewteilnehmerInnen, sofern sie nicht per se den Stereotpyen entsprechen, das Interview aus der Sicht selbiger durchführen, d.h., die Teilnehmenden schlüpfen in der **Rolle der Stereotypen** und beantworten die Fragen aus deren Blickwinkel. 
@@ -167,9 +169,9 @@ Notieren Sie die wichtigsten Erkenntnisse in der Projektmappe.
 
 #### Dokumentation
 
-Zeichnen sie das/die Interview(s) als Audiodatei auf; diese können sie anschließend mit einem Audio-zu-Text-Konverter (aka Transkriptionstool) verschriftlichen und in die Projektmappe übernehmen. Sie müssen dieses nicht manuell "abtippen" oder verschriftlichen.
+Zeichnen sie das/die Interview(s) als Audiodatei auf. Diese Audioaufzeichnung können sie anschließend mit einem Audio-zu-Text-Konverter (aka Transkriptionstool) verschriftlichen und in die Projektmappe übernehmen; sie müssen dieses nicht manuell "abtippen" oder transkribieren.
 
-Bitte fügen sie ihrer Projektmappe einen Link zur Audiodatei (diese können sie in ihren GitLab-Projekt-Repos speichern) sowie Fotos des Interviews hinzu.
+Bitte fügen sie ihrer Projektmappe einen Link zur :fontawesome-regular-file-audio: Audiodatei (diese können sie in ihren GitLab-Projekt-Repos speichern) sowie :octicons-image-16: Fotos des Interviews hinzu.
 
 !!! warning "Audiodatei und Foto der/des Interview(s)"
     Wichtig ist uns, dass sie die Interviews tatsächlich durchführen und diese nicht durch KI-Tools simulieren. Beide Artefakte sollen dies nachweisen.
@@ -195,10 +197,10 @@ Bitte fügen sie ihrer Projektmappe einen Link zur Audiodatei (diese können sie
 
 ### Begeisterungsfaktoren (_optional_)
 
-1. Treten Sie mit Ihrem/Ihren Stereotypen in den Austausch und nutzen Sie Kreativitätstechniken um **Begeisterungsfaktoren** zu identifizieren. Notieren Sie diese und verfolgen Sie diese im weiteren Verlauf des Projekts. Protokollieren Sie kurz den Ablauf des Austausches.
+1. Treten Sie mit Ihrem/Ihren Stereotypen in den Austausch und nutzen Sie Kreativitätstechniken um :material-party-popper: **Begeisterungsfaktoren** zu identifizieren. Notieren Sie diese und verfolgen Sie diese im weiteren Verlauf des Projekts. :material-pencil: Protokollieren Sie kurz den Ablauf des Austausches.
 
     !!! info "Implementierung der Begeisterungsfaktoren"
-        Abhängig von Aufwand und Komplexität müssen Sie die Begeisterungsfaktoren nicht implementieren. Es reicht, wenn Sie diese "mocken", d.h., demonstrieren, wie eine Implementierung selbiger aussehen könnte. Sie sollen die Begeisterungsfaktoren jedoch im weiteren Entwicklungszyklus (UI-Entwurf etc.) berücksichtigen.
+        Abhängig von Aufwand und Komplexität müssen Sie die Begeisterungsfaktoren _nicht_ implementieren. Es reicht, wenn Sie diese "mocken", d.h., demonstrieren sie, wie eine Implementierung selbiger aussehen könnte. Sie sollen die Begeisterungsfaktoren jedoch im weiteren Entwicklungszyklus (UI-Entwurf etc.) berücksichtigen.
 
 
 
@@ -216,5 +218,5 @@ Ihre Projektmappe muss mindestens folgende ausgearbeitete Artefakte enthalten:
     - [ ] (_optional_) Zusätzliche User-Research-Methoden 
     - [x] mind. 1 Stereotypbeschreibung
     - [x] mind. 1 Anwendungsszenariobeschreibung
-    - [x] mind. 1 funktionale und mind. 1 qualitative Anforderung pro Szenario
-    - [x] mind. 1 Begeisterungsfaktor pro Szenario bzw. Stereotyp
+    - [x] mind. 1 funktionale und mind. 1 qualitative Anforderung pro Szenario (_optional_)
+    - [x] mind. 1 Begeisterungsfaktor pro Szenario bzw. Stereotyp (_optional_)
