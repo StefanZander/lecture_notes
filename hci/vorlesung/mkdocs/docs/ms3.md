@@ -82,10 +82,10 @@ Konzentrieren Sie sich insbesondere auf die :material-bus-stop-uncovered: **Anwe
 
 1. Entwickeln Sie eine Reihe von **repräsentativen :fontawesome-solid-user-doctor: Testfällen**, um eine erste Validierung der, in ihrem Prototypen umgesetzten Entwurfsentscheidungen vorzunehmen. So finden Sie heraus, ob das von Ihnen entwickelte Benutzungskonzept für ihre Stereotypen intuitiv nutzbar ist, d.h., ob es sich an deren mentalen Modellen orientiert.
    
-!!! tipp "Tipp"
-    Beschreiben sie zu jedem Testfall das Ziel des Tests sowie das dahinterstehende Erkenntnisinteresse und gleichen sie dieses auch mit den Hypothesen aus dem User Research ab. Ein Testfall kann aus mehreren Schritten bestehen. 
+    !!! tipp "Tipp"
+        Beschreiben sie zu jedem Testfall das Ziel des Tests sowie das dahinterstehende Erkenntnisinteresse und gleichen sie dieses auch mit den Hypothesen aus dem User Research ab. Ein Testfall kann aus mehreren Schritten bestehen. 
 
-1. **Testen** Sie Ihre Entwürfe mit Ihren Stereotypen (_bitte mit realen Personen_) und identifizieren Sie Ungereimtheiten, Inkonsistenzen und Verbesserungen. Überlegen Sie, ob es gut und richtig ist, wenn Sie keine Verbesserungen identifizieren. Gleichen sie auch hier ihre Beobachtungen mit den Zielen und dem Erkenntnisinteresse der Tests ab.
+2. **Testen** Sie Ihre Entwürfe mit Ihren Stereotypen (_bitte mit realen Personen_) und identifizieren Sie Ungereimtheiten, Inkonsistenzen und Verbesserungen. Überlegen Sie, ob es gut und richtig ist, wenn Sie keine Verbesserungen identifizieren. Gleichen sie auch hier ihre Beobachtungen mit den Zielen und dem Erkenntnisinteresse der Tests ab.
 
     !!! warning "Wichtiges zur Durchführung der Tests"
         Die Entwürfe sind aus **Sicht der/des :fontawesome-solid-user-doctor: Stereotypen** sowie seiner/ihrer spezifischen Anforderungen zu testen!
