@@ -61,8 +61,8 @@
 - :material-video: [Ein sehr schönes "pecha-kucha"-Video zu emotional intelligenter Kommunikation bei Design von Schildern](https://youtu.be/x7HMR0t7Qfw?si=CGMkZHsSPdgZRvMy). Viele der dort gezeigten Dinge lassen sich auch auf das Design von Benutzungsschnittstellen übertragen.
 - :material-web: [7 Rules for Creating Gorgeous UI – Part 1](https://www.learnui.design/blog/7-rules-for-creating-gorgeous-ui-part-1.html)
 - :material-web: [7 Rules for Creating Gorgeous UI – Part 2](https://www.learnui.design/blog/7-rules-for-creating-gorgeous-ui-part-2.html)
-- :material-file-pdf-box: [Pixel Perfect Precision Handbook (mit vielen guten und schlechten Design-Beispielen) Datei ](https://lernen.h-da.de/mod/resource/view.php?id=236893)
-- [Sehr schöner Artikel über häufige UI-Design-Fehler in mobilen Applikationen und deren Behebung](https://lernen.h-da.de/mod/url/view.php?id=775441)
+- :octicons-book-16: [Pixel Perfect Precision Handbook (mit vielen guten und schlechten Design-Beispielen)](https://lernen.h-da.de/mod/resource/view.php?id=236893)
+- :material-file-pdf-box: [Sehr schöner Artikel über häufige UI-Design-Fehler in mobilen Applikationen und deren Behebung](https://lernen.h-da.de/mod/url/view.php?id=775441)
 
 ## Übungsaufgaben
 
