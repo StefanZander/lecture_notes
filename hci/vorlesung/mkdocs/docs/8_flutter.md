@@ -76,11 +76,11 @@ Nach Abschluss der Vorbereitungseinheit sollten Sie die folgenden Ergebnisse era
 
 ## Umsetzung der Semesterprojekts-App mittels Flutter
 
-### Aufgabe 
+### Dokumentation 
 
-Machen sie sich mit den für das Semesterprojekt notwendigen [Flutter-Themen](zander-hci-flutter.netlify.app) vertraut und implementieren sie diese an geeigneten Stellen in ihrer App. 
+Machen sie sich mit den für das Semesterprojekt notwendigen [Flutter-Themen](https://zander-hci-flutter.netlify.app) vertraut und implementieren sie diese an geeigneten Stellen in ihrer App. 
 
-In der [verlinkten Dokumentation](zander-hci-flutter.netlify.app) findet sich auch eine [Übersicht](https://zander-hci-flutter.netlify.app/#diese-elemente-sollten-in-die-app) zu den Themen, die mindestens in ihrer App umgesetzt werden müssen. 
+In der [verlinkten Dokumentation](https://zander-hci-flutter.netlify.app) findet sich auch eine [Übersicht](https://zander-hci-flutter.netlify.app/#diese-elemente-sollten-in-die-app) zu den Themen, die mindestens in ihrer App umgesetzt werden müssen. 
 
 Die Umsetzung der einzelnen Aspekte erfolgt eigenverantwortlich und in Abstimmung mit ihren Teammitgliedern.
 
