@@ -1,18 +1,20 @@
-site_name: Das Praxismodul
+site_name: Praxisphase und Bachelorarbeit
 
 nav:
   - 'Startseite': 'index.md'
-#  - 'NZSE-Tagebuch': 'tagebuch.md'
-#  - 'Corona-Modus': 'corona.md'
-#  - 'Arbeiten mit BBB': 'bbb.md'
-  - 'Allgemeine Informationen': 'allg_informationen.md'
-  - 'Start im Unternehmen': 'start_im_unternehmen.md'
-  - 'Abschlussbericht': 'bericht.md'
-  - 'Das Kolloquium': 'kolloquium.md'
-  - 'FAQ zur Praxisphase ': 'q_a.md'
-  - 'Das Exposé': 'expose.md'
-  - 'Die Bachelorarbeit': 'ba_faq.md'
-  - 'Tipps': 'ba_tipps.md'
+
+  - Praxismodul:
+    - 'Allgemeine Informationen': 'allg_informationen.md'
+    - 'Start im Unternehmen': 'start_im_unternehmen.md'
+    - 'Abschlussbericht': 'bericht.md'
+    - 'Kolloquium': 'kolloquium.md'
+    - 'FAQ zur Praxisphase ': 'q_a.md'
+
+  - Bachelormodul:
+    - 'Das Exposé': 'expose.md'
+    - 'Formale Anforderungen': 'ba_formelles.md'
+    - 'FAQ zur Bachelorarbeit': 'ba_faq.md'
+    - 'Tipps': 'ba_tipps.md'
 
 extra_css:
   - stylesheets/extra.css
@@ -50,6 +52,8 @@ theme:
   features:
     - navigation.instant
     - navigation.tracking
+    - navigation.expand
+    - navigation.sections
     - toc.follow
     - navigation.top
     - search.suggest

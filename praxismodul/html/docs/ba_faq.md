@@ -56,6 +56,12 @@ Diese sollen auf diesen Seiten gesammelt und kommentiert zur Verfügung gestellt
     Beide Dokumente erfüllen unterschiedliche Zwecke und sind dementsprechend anders ausgerichtet und gegliedert. 
 
 
+??? question "Gibt es Zusatzangebote oder Veranstaltungen in denen man nochmal erfährt, was in/bei der Bachelorarbeit wichtig ist?"
+    Ja.
+
+    In jedem Semester biete ich und andere KollegInnen das "Vorbereitungsseminar zur Bachelorarbeit" an. Das ist ein 2,5 CP-Modul in dem die wichtigsten Themen bei der Erstellung der Bachelorarbeit anhand anschaulicher Beispiele und Fallstudien behandelt werden.
+
+
 
 ## Kolloquium
 
@@ -84,8 +90,8 @@ Diese sollen auf diesen Seiten gesammelt und kommentiert zur Verfügung gestellt
 
     Diese setzt sich zusammen aus:
 
-    * Vortrag: Dauer **max. 20 Minuten** (sharp!) bei Bachelorarbeiten
-    * Frage- und Antwortteil: ca. 20 - 30 Min.
+    * Vortrag: Dauer **max. 15 - 20 Minuten** (sharp!) bei Bachelorarbeiten
+    * Frage- und Antwortteil: ca. 30 Min.
     * Notfeststellung: ca. 10 Min. (diese findet nicht-öffentlich zwischen den Betreuern statt)
     * Notenmitteilung und Feedback: ca. 5 Min.
 
@@ -109,6 +115,14 @@ Diese sollen auf diesen Seiten gesammelt und kommentiert zur Verfügung gestellt
 
 ??? question "Wann erfahre ich die Note?"
     Direkt nach der Notenfeststellung durch Erst- und Zweitgutachter wird diese dem Studierenden mündlich mitgeteilt – häufig zusammen mit einer Darlegung der pos. und neg. Aspekte der Abschlussarbeit.
+
+
+??? question "Darf ich Freunde / Bekannte / Familienangehörige / KollegInnen mit zum Kolloquium bringen?"
+    Ja.
+
+    Das Kolloquium ist – bis auf die Notenfestlegung – eine hochschulöffentliche Veranstaltung, die auch von Nicht-Hochschulangehörigen besucht werden kann. 
+
+    Sie dürfen die Koordinaten des Kolloquiums (Raum & Zeit) gerne auch an Interessierte weitergeben und diese zum Kolloquium einladen.
 
 
 ??? question "Wie läuft das Kolloqium in Corona-Zeiten ab?"

@@ -16,7 +16,7 @@ Studienrechtlich-relevante und administrative Informationen stehen auf den [Seit
 
 
 
-## Praxisphase
+## :material-weight-lifter: Praxisphase
 
 In diesem Bereich finden Sie praktische Informationen zur Praxisphase.
 
@@ -28,15 +28,17 @@ In diesem Bereich finden Sie praktische Informationen zur Praxisphase.
 
 
 
-## Das Exposé
+## :material-brain: Das Exposé
 
-Das Exposé ist Bestandteil des Anmeldeprozesses einer Abschlussarbeit und liefert einen Überblick über die wichtigsten Eckpunkte (Untersuchungsgegenstand, Forschungsfragen, methodischer Ansatz, Evaluierung etc.) und Ziele. Es fungiert als eine Art Vereinbarung zwischen Studierendem und Betreuer hinsichtlich der geplanten Vorhabens.
+Das Exposé ist Bestandteil des Anmeldeprozesses der Abschlussarbeit und liefert einen dokumentierten Überblick über die wichtigsten Eckpunkte (Untersuchungsgegenstand, Motivation, Forschungsfragen, methodischer Ansatz, Evaluierung etc.) und Ziele. Es fungiert als eine Art Vereinbarung zwischen Studierendem und Betreuer und stellt sicher, dass das geplante Vorhaben den formalen und inhaltlichen Anforderungen an eine Abschlussarbeit entspricht.
 
 * [Allgemeine Informationen zum Exposé](expose.md)
 
-**Wichtig**: Erst nachdem das Exposé vom Betreuer akzeptiert wurde kann eine Abschlussarbeit im Prüfungsamt angemeldet werden.
+**Wichtig**: Erst nachdem das Exposé vom Betreuer (geschlechtsneutral) akzeptiert wurde kann eine Abschlussarbeit im Prüfungsbüro angemeldet werden. Hierzu ist ein entspr. [:material-file-document-edit-outline: Anmeldeformular](https://fbi.h-da.de/fileadmin/Group_Dekanat/Dokumente/Fachbereich/Gremien/Group_Pruefungsausschuss/Formulare/Studenten/2023-10_Anmeldung_04_Thesis.pdf) vom Studierenden auszufüllen und den beiden Referenten vorzulegen. 
 
-## Die Bachelorarbeit
+
+
+## :octicons-book-16: Die Bachelorarbeit
 
 * [Allgemeine Informationen zu Bachelorarbeit und Kolloquium](./ba_faq.md)
 * [Tipps für ein erfolgreiches Arbeiten](ba_tipps.md)

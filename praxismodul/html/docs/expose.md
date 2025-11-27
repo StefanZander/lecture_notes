@@ -24,7 +24,7 @@ Dem Exposé sollte folgende Struktur zu Grunde liegen:
 
 ## Aufbau
 
-### Vorläufiger Titel  
+### :material-sign-text: Vorläufiger Titel  
    
 Der vorläufige Titel der Arbeit. Dieser kann sich selbstverständlich noch im weiteren Verlauf der Arbeit ändern.  
 
@@ -32,22 +32,34 @@ Der vorläufige Titel der Arbeit. Dieser kann sich selbstverständlich noch im w
     Der Titel sollte die **Problemstellung widerspiegeln** und nur so lang wie nötig sein. Verwenden Sie ggf. einen **Untertitel** und halten Sie den Haupttitel so knapp wie möglich. Vermeiden Sie übermäßig lange oder komplexe Titel – diese verwässern nur die eigentliche Zielsetzung der Arbeit. 
 
 
-### Problemstellung
+### :octicons-question-24: Problemstellung
 
 Die Problemstellung ist eines der wesentlichen und wichtigsten Elemente eines Exposés. Hier legen Sie die spezifische Problemstellung, mit der sich Ihre Arbeit auseinandersetzt, dar.
 
 Die Problemstellung sollte knapp aber präzise beschrieben sein. Die Struktur kann dem [Prinzip der invertierten Pyramide](https://de.wikipedia.org/wiki/Prinzip_der_umgekehrten_Pyramide) folgen, d.h., die wesentlichen Probleme sollten zu Beginn genannt werden. Erst danach folgen Hintergrundinformationen sowie die Einbettung in den Arbeitskontext und ggf. weitere Einzelheiten.
 
-Häufig wird die Problemstellung wie eine Einleitung bzw. die Hinführung zu einem Thema formuliert. Das kann fallweise in Ordnung sein. Generell sollte aber die spezifische Problemstellung, mit der sich die Arbeit auseinandersetzt, im Vordergrund stehen. 
+Häufig wird die Problemstellung wie eine Einleitung bzw. die Hinführung zu einem Thema formuliert. Das kann fallweise in Ordnung sein. Generell sollte aber die **spezifische Problemstellung**, mit der sich die Arbeit auseinandersetzt, im Vordergrund stehen. 
 
-Ein weiteres Problem ist, dass die Problemstellung oftmals nicht konkret genug und sehr allgemein formuliert ist. Das ist aus mehreren Gründen problematisch. Die Arbeit soll einen konkreten Beitrag zur Beantwortung der Problemstellung liefern, und je konkreter die Problemstellung formuliert ist, desto klarer kann später die weitere Ausarbeitung erfolgen. Zudem lässt sich so leichter überprüfen, ob die Beiträge Ihrer Arbeit die aufgeworfene Problemstellung bereits hinreichend genau beantworten.
+Ein weiteres Problem ist, dass die Problemstellung oftmals nicht konkret genug und sehr allgemein formuliert ist. Das ist aus mehreren Gründen problematisch. Die Arbeit soll einen konkreten Beitrag zur Beantwortung der Problemstellung liefern – und je konkreter die Problemstellung formuliert ist, desto klarer kann später die weitere Ausarbeitung erfolgen. Zudem lässt sich so leichter überprüfen, ob die Beiträge Ihrer Arbeit die aufgeworfene Problemstellung bereits hinreichend genau beantworten.
 
 
-### Forschungsfragen
+### :material-head-lightbulb-outline: Erkenntnisinteresse
+
+Aus der Problemstellung leitet sich das Erkenntnisinteresse, welches die Arbeit verfolgt ab. Führen sie hier die wesentlichen Erkenntnisse auf, die im Rahmen ihrer Arbeit erarbeit werden sollen. Fragen sie sich hierzu: 
+
+- "_Was will ich herausfinden, damit das Vorhaben erfolgreich sein wird ?_"
+- "_Welche Antworten soll die Arbeit liefern ?_"
+
+Erkenntnisinteresse und Problemstellung sind Ausgangspunkte für die Formulierung von Forschungsfragen. D.h., die Bearbeitung der Forschungsfragen liefert Antworten, welche das Erkenntnisinteresse widerspiegeln.
+
+Führen sie im Exposé die wichtigsten Erkenntnisinteressen auf und begründen sie jeweils, warum dieses Interesse von Relevanz ist bzw. wie dieses in Bezug zur Zielsetzung der Arbeit steht.
+
+
+### :material-magnify-scan: Forschungsfragen
 
 Der nächste sehr wichtige Bestandteil.
 
-Die Forschungsfragen definieren den **inhaltlichen Rahmen** der Arbeit. Sie leiten sich aus der **Problemstellung** ab.
+Die Forschungsfragen definieren den **inhaltlichen Rahmen** der Arbeit. Sie leiten sich aus der **Problemstellung** und dem **Erkenntnisinteresse** ab.
 
 Für die BA/MA empfiehlt es sich idR nicht mehr als **2-3 Forschungsfragen** zu haben. Ggf. können Sie nachgelagerte oder untergeordnete Fragestellungen definieren. Die Hauptforschungsfragen sollten sich jedoch an der genannten Zahl orientieren.
 
@@ -84,7 +96,7 @@ Forschungsfragen sollten deshalb **präzise**, **spezifisch** und **überprüfba
     _Kudos an Prof. Dr. Christian Spannagel für die Bereitstellung der Beispiele_
 
 
-### Geplante Aktivitäten
+### :material-weight-lifter: Geplante Aktivitäten
 
 Die geplanten Aktivitäten (auch *Beiträge* oder engl. *"Contributions"* genannt) beschreiben die im Rahmen der Arbeit durchgeführten Aktivitäten. Ihr Ziel ist die Erstellung von **Ergebnisartefakten**, welche als Grundlage für die anschließende **Evaluierung** dienen.
 
@@ -101,7 +113,7 @@ Verwenden Sie zur Beschreibung der geplanten Aktivitäten die nachstehende **Str
 Führen Sie alle wesentlichen Aktivitäten auf; dies sollen keine 20 Aktivitäten sein, aber **4-7 wesentliche Aktivitäten** sollten Sie benennen.
 
 
-### Evaluierung
+### :octicons-graph-24: Evaluierung
 
 Jede gute bzw. sehr gute BA/MA braucht eine Evaluierung! Oder anders ausgedrückt: Ohne Evaluierung wird es sehr schwer, eine gute oder sehr gute Arbeit zu verfassen bzw. eine entsprechende Beurteilung zu erlangen.
 
@@ -117,7 +129,7 @@ Verwenden Sie hier analog zur Beschreibung der geplanten Aktivitäten auch eine 
 So wird klar, *was* Sie untersuchen und welche *Methode* Sie planen einzusetzen.
 
 
-### Referenzen
+### :material-format-list-bulleted: Referenzen
 
 Führen Sie hier erste Referenzen auf, welche Sie in der weiteren Ausarbeitung heranziehen (werden).
 

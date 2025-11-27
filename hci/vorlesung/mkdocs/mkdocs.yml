@@ -1,34 +1,32 @@
 site_name: Human-Computer Interaction
 
 nav:
-  - 'Startseite': 'index.md'
-  
+  - "Startseite": "index.md"
+
   - Organisation:
-    - 'Durchführungsmodalitäten': '0_organisation.md'
-    - 'Semesterplan': '01_semesterplan.md'
+      - "Durchführungsmodalitäten": "0_organisation.md"
+      - "Semesterplan": "01_semesterplan.md"
 
   - Vorlesung:
-    - 'Kapitel 1: User-Centered Design': '1_user-centered_design.md'
-    - 'Kapitel 2: User Research': '2_user_research.md'
-    - 'Kapitel 3: Requirements Engineering': '3_requirements_engineering.md'
-    - 'Kapitel 4: Modellbildung': '4_models.md'
-    - 'Kapitel 5: Prototyping': '5_prototyping.md'
-    - 'Kapitel 6: Visual Design': '6_visual_design.md'
-    - 'Kapitel 7: Usability': '7_usability.md'
-    - 'Kapitel 8: Flutter': '8_flutter.md'
+      - "Kapitel 1: User-Centered Design": "1_user-centered_design.md"
+      - "Kapitel 2: User Research": "2_user_research.md"
+      - "Kapitel 3: Requirements Engineering": "3_requirements_engineering.md"
+      - "Kapitel 4: Modellbildung": "4_models.md"
+      - "Kapitel 5: Prototyping": "5_prototyping.md"
+      - "Kapitel 6: Visual Design": "6_visual_design.md"
+      - "Kapitel 7: Usability": "7_usability.md"
+      - "Kapitel 8: Flutter": "8_flutter.md"
 
   - Semesterprojekt:
-    - 'Allgemeine Informationen': 'semesterprojekt.md'
-    - 'MS 1: Projektziele': 'ms1.md'
-    - 'MS 2: User Research': 'ms2.md'
-    - 'MS 3: UI-Entwurf': 'ms3.md'
-    - 'MS 4: App-Entwicklung': 'ms4.md'
-    - 'MS 5: Usability Evaluation': 'ms5.md'
-  
+      - "Allgemeine Informationen": "semesterprojekt.md"
+      - "MS 1: Projektziele": "ms1.md"
+      - "MS 2: User Research": "ms2.md"
+      - "MS 3: UI-Entwurf": "ms3.md"
+      - "MS 4: App-Entwicklung": "ms4.md"
+      - "MS 5: Usability Evaluation": "ms5.md"
+
   - Praktikum:
-    - 'Allgemeine Informationen': 'praktikum.md'
-
-
+      - "Allgemeine Informationen": "praktikum.md"
 
 extra_css:
   - stylesheets/extra.css
@@ -46,8 +44,10 @@ theme:
       primary: light blue
       accent: deep orange
       toggle:
-        icon: material/brightness-7 
+        icon: material/brightness-7
         name: Switch to dark mode
+        primary: deep purple
+        accent: red
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: light blue
@@ -61,7 +61,7 @@ theme:
     code: Roboto Mono
   icon:
     repo: fontawesome/brands/github
-    edit: material/pencil 
+    edit: material/pencil
     view: material/eye
     admonition:
       refs: simple/readthedocs
@@ -80,7 +80,7 @@ theme:
 
 extra:
   social:
-    - icon: fontawesome/solid/person-biking 
+    - icon: fontawesome/solid/person-biking
       link: https://fbi.h-da.de/~s.zander
       name: hda profile page of Prof. Dr. Stefan Zander
 
@@ -102,7 +102,7 @@ markdown_extensions:
   - abbr
   - admonition
   - smarty:
-      smart_angled_quotes: true  
+      smart_angled_quotes: true
   - attr_list
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
@@ -128,4 +128,4 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tasklist:
       custom_checkbox: true
-  - pymdownx.critic  
+  - pymdownx.critic
