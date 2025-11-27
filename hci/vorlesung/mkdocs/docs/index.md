@@ -35,6 +35,7 @@ Auf den folgenden Seiten finden Sie Informationen zu **Organisation** und **Abla
 * :material-human-male-board-poll: [Kapitel 5: Prototyping](5_prototyping.md)
 * :material-human-male-board-poll: [Kapitel 6: Visual Design](6_visual_design.md)
 * :material-human-male-board-poll: [Kapitel 7: Usability Evaluation](7_usability.md)
+* :fontawesome-solid-computer: [Kapitel 8: Flutter](8_flutter.md)
 
 
 ## :material-sign-direction: Semesterprojekt
