@@ -85,7 +85,7 @@ Konzentrieren Sie sich insbesondere auf die :material-bus-stop-uncovered: **Anwe
     !!! tipp "Tipp"
         Beschreiben sie zu jedem Testfall das Ziel des Tests sowie das dahinterstehende Erkenntnisinteresse und gleichen sie dieses auch mit den Hypothesen aus dem User Research ab. Ein Testfall kann aus mehreren Schritten bestehen. 
 
-2. **Testen** Sie Ihre Entwürfe mit Ihren Stereotypen (_bitte mit realen Personen_) und identifizieren Sie Ungereimtheiten, Inkonsistenzen und Verbesserungen. Überlegen Sie, ob es gut und richtig ist, wenn Sie keine Verbesserungen identifizieren. Gleichen sie auch hier ihre Beobachtungen mit den Zielen und dem Erkenntnisinteresse der Tests ab.
+2. **Testen** Sie Ihre Entwürfe mit Ihren Stereotypen (_bitte mit realen Personen_) und identifizieren Sie Ungereimtheiten, Inkonsistenzen und Verbesserungen. Überlegen Sie, ob es gut und richtig ist, wenn Sie **keine Verbesserungen** identifizieren. Gleichen sie auch hier ihre Beobachtungen mit den Zielen und dem Erkenntnisinteresse der Tests ab.
 
     !!! warning "Wichtiges zur Durchführung der Tests"
         Die Entwürfe sind aus **Sicht der/des :fontawesome-solid-user-doctor: Stereotypen** sowie seiner/ihrer spezifischen Anforderungen zu testen!
@@ -102,7 +102,7 @@ Ihre Projektmappe muss folgende ausgearbeitete Artefakte enthalten:
 
 !!! success "Ergebnisse"
     - [x] User-Research Erkenntnisse und deren geplante Verkörperung in der App 
-    - [x] abstrakte und kontrete Screen Diagramme der App
+    - [x] Abstrakte und kontrete Screen Diagramme der App
     - [x] Navigationsübersicht
     - [x] Paper Prototypen ihrer Applikation mit begründeten Entwurfsentscheidungen
     - [x] Beschreibung der Testfälle und der Testdurchführung
