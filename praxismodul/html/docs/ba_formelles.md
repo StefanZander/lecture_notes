@@ -2,12 +2,12 @@
 
 ### Seitenlimit
 
-: Bei mir (Prof. Zander): max. 30 Seiten mit max. 10% Überschreitungsbonus; größere Überschreitung oder Missachtung i.A. führt zu einer Verschlechterung der Bewertung.
+: Bei mir (Prof. Zander): **max. 30 Seiten** mit max. 10% Überschreitungsbonus; größere Überschreitung oder Missachtung i.A. führt zu einer Verschlechterung der Bewertung.
 
 : Hintergrund:  
-Für niemanden ist es sinnvoll und wertschöpfend, 70, 80 oder gar 90 Seiten KI-generierte Texte zu lesen, die ein/e Studierende/r als die eigene Bachelorarbeit eingereicht hat. Nicht nur dass dies Studien- und v.a. Prüfungsrechtlich kritisch zu beurteilen ist (Stichwort: Plagiarismus), es ist v.a. auch KEIN Nachweis der eigenen schöpferischen Leistung – und diese müssen wir im Rahmen ihrer Abschlussarbeit bewerten.
+Für niemanden ist es sinnvoll oder wertschöpfend, 70, 80 oder gar 90 Seiten KI-generierte Texte zu lesen, die ein/e Studierende/r als eigen verfasste Bachelorarbeit eingereicht hat. Nicht nur, dass dies studien- und v.a. prüfungsrechtlich kritisch zu beurteilen ist (Stichwort: Plagiarismus), es ist v.a. auch KEIN Nachweis der eigenen schöpferischen Leistung – und diese müssen wir im Rahmen ihrer Abschlussarbeit bewerten. Das Formulieren von Prompts und Übernehmen generierter Antworttexte ist KEINE schöpferische Leistung.
 
-: Deshalb setze ich diesen reduzierten Umfang erwarte aber, dass die Verschriftlichung ausschließlich durch sie erfolgt. 
+: Deshalb setze ich diesen reduzierten Umfang, erwarte aber, dass die Verschriftlichung ausschließlich durch sie erfolgt. 
 
 
 
