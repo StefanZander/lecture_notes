@@ -1,4 +1,4 @@
-# Welcome auf den HCI-Lehrveranstaltungsseiten
+# Willkommen auf den HCI-Lehrveranstaltungsseiten
 
 :fontawesome-solid-university: **Belegnummer**: 30.2626
 
