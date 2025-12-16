@@ -57,6 +57,7 @@ Die Wahl des Dokumentationstools (LaTeX, Markdown, Textverarbeitungstool, Google
     - Beteiligungsmatrix (siehe [Organisationsfoliensatz](0_organisation.md))
 - Zweite Seite
     - Inhaltsverzeichnis mit Seitenzahlen
+- Grundsätzlich: Die Projektmappe ist _eine(!)_ Datei mit _allen(!)_ relevaten Inhalten (Texten, Bildern etc.)
 
 
 !!! danger "Die Nichteinhaltung der formalen Anforderungen führt zu Punktabzug!"
