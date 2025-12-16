@@ -46,7 +46,9 @@ Die Wahl des Dokumentationstools (LaTeX, Markdown, Textverarbeitungstool, Google
 - Dateiname: ```{'gr'+Gruppennummer in GitLab mit voransgestellter '0'}_{Projektname in GitLab}_{Meilenstein}.pdf``` – alles kleingeschrieben
     - Beispiel: ```gr01_bikers_life_ms1.pdf```
     - Nummerierung des Meilensteins bitte entspr. anpassen
-- Deckblatt mit folgenden Informationen
+- Anzahl der einzureichenden Dateien: 1
+    - Bitte reichen sie nur eine einzige Datei mit dem o.g. Namen ein. Der ms-Ordner kann selbstverständlich noch andere Datein und Unterordner enthalten. Wichtig ist jedoch, dass die die Projektmappe durch einen eindeutligen Namen gekennzeichnet ist (s.o.). Ist das nicht der Fall, dann erfolgt mindestens ein Punktabzug auf den jeweiligen Meilenstein aufgrund von Nichtbeachtung formaler Anforderungen.
+- Deckblatt mit folgenden Informationen (_bitte für jeden Meilenstein beibehalten!_)
     - Projektname
     - Praktikumsslot
     - Vollständige Namen und Matrikelnummern aller Gruppenmitglieder
