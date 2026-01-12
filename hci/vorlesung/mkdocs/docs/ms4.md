@@ -29,7 +29,7 @@ Alle **Protokolle** aus den folgenden Teilaufgaben kommen in die Projektmappe.
 
 ## Durchführung
 
-- Im Präsentations-/Abschlusstermin präsentiert jede Gruppe in **max. 10 Minuten** die entwickelte App mittels geeigneter technischer Tools und Hardware <!--BBB und Screensharing-->
+- Im Präsentations-/Abschlusstermin präsentiert jede Gruppe in **max. 12 Minuten** die entwickelte App mittels geeigneter technischer Tools und Hardware <!--BBB und Screensharing-->
 - Die Präsentation kann am **Emulator** oder einem **realen Gerät** (bevorzugt) erfolgen (den Screen können sie auf einen Laptop streamen und von dort am Beamer präsentieren).
 - Präsentieren Sie alle Funktionen, die Sie umgesetzt haben einschl. etwaiger **Leistungs- und Begeisterungsfaktoren**. 
 - Alles was Sie _nicht_ präsentieren kann nicht gewertet werden! Achten Sie deshalb darauf keine Zeit zu vergeuden.
