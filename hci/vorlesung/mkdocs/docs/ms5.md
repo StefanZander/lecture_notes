@@ -6,7 +6,7 @@
     - [x] Sie können Usability Probleme anhand von kleinsten Anzeichen der Test-BenutzerInnen erkennen
     - [x] Sie können Usability Probleme präzise benennen und dokumentieren
 
-## Vorbereitung
+## Vorbereitung (TODO)
 
 
 
@@ -26,17 +26,12 @@ Alle **Protokolle** aus den folgenden Teilaufgaben kommen in die Projektmappe.
 **Usability Test und Inspection**
 
 - Führen Sie die Usability Evaluation und das Design Review wie im weiteren Verlauf beschrieben durch
-- Fügen Sie alle zu erstellenden Artefakte (Testprotokolle etc.) der Projektmappe hinzu und speichern sie diese bis zu folgenden Terminen hoch  
-    
-    <!-- __Ende (SO), 20:00 Uhr der darauf folgenden Woche__   -->
-    __Y-Gruppen: TBA (EOD)__  
-    __X-Gruppen: TBA (EOD)__
-    
-    in Moodle hoch.  ==_ACHTUNG: Verspätete Abgaben können nicht gewertet werden!_==
+- Fügen Sie alle zu erstellenden Artefakte (Testprotokolle, die sie für eine andere Gruppe erstellt haben etc.) der Projektmappe hinzu und speichern sie diese bis zum vereinbarten Terminen in ihrem GitLab-Projektordner.  
+    ==_ACHTUNG: Verspätete Abgaben können nicht gewertet werden!_==
 
-- Bereiten Sie die __Testprotokolle__ anhand der folgenden Test-Aufgaben und der [vorgegebenen Checklisten](https://lernen.h-da.de/mod/resource/view.php?id=218415) vor, d.h. betrachten Sie die Checklisten als "Rohmaterial" und machen Sie daraus Protokollformulare.   
+- Bereiten Sie die __Testprotokolle__ in Anlehnung der folgenden Test-Aufgaben und der [vorgegebenen Checklisten](https://lernen.h-da.de/mod/resource/view.php?id=218415) vor, d.h. betrachten Sie die Checklisten als "Rohmaterial" und machen Sie daraus Protokollformulare.   
 - Die Testprotokolle sollen den EntwicklerInnen bei der weiteren Verbesserung helfen  
-  ==_keine Angst, die Verbesserungen müssen Sie im Praktikum nicht mehr umsetzen..._==.
+  ==_keine Angst, die Verbesserungen müssen Sie nicht mehr umsetzen_==.
 - Eine Vorlage zur Evaluation der Applikationen (mit Beispielen für die TV-Fernbedienung) findet sich in Moodle:  
     <https://lernen.h-da.de/mod/resource/view.php?id=218415>
 

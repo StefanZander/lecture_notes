@@ -18,7 +18,7 @@ Die Benutzungsoberfläche der mobilen Apps soll **intuitiv** und **komfortabel*
     
 der Benutzenden orientieren. Eine Bedienungsanleitung oder ein online Hilfesystem *MUSS* völlig überflüssig sein. Denken Sie hierbei an die Besonderheiten und spezifischen Bedürfnisse der verschiedenen Benutzendengruppen und versuchen Sie diese in einem **gemeinsamen UI-Design** abzubilden (--> vgl. die IKEA-Fallstudie). 
 
-Konzentrieren Sie sich insbesondere auf die :material-bus-stop-uncovered: **Anwendungsfälle**, :material-office-building: **Nutzungskontexte**, :material-heart: **Bedürfnisse** und :material-target: **Ziele** der primären Personas bzw. der Stereotypen und _NICHT_ auf irgendwelche technischen Features – diese sind für die Erfüllung der Aufgabe zweitrangig (siehe auch den Einführungsfoliensatz zur Veranstaltung).
+Konzentrieren Sie sich insbesondere auf die :fontawesome-solid-person-snowboarding: **Anwendungsfälle**, :material-office-building: **Nutzungskontexte**, :material-heart: **Bedürfnisse** und :material-target: **Ziele** der primären Personas bzw. der Stereotypen und _NICHT_ auf irgendwelche technischen Features – diese sind für die Erfüllung der Aufgabe zweitrangig (siehe auch die [Foliensätze zum User Research](2_user_research.md)).
 
 
 
@@ -26,10 +26,10 @@ Konzentrieren Sie sich insbesondere auf die :material-bus-stop-uncovered: **Anwe
 
 ### :material-crane: Vorbereitung
 
-1. Tragen Sie die wichtigsten :material-brain: Erkenntnisse aus dem :material-heart-search: User Research zusammen, diskutieren und reflektieren Sie diese gemeinsam im Team. Notieren Sie diese in ihrer :material-folder-open: Projektmappe (_falls nicht schon getan_).
+1. Tragen Sie die wichtigsten :material-brain: Erkenntnisse aus dem :material-heart-search: User Research zusammen, diskutieren und reflektieren Sie diese gemeinsam im Team. Notieren Sie diese in ihrer :material-folder-open: Projektmappe.
 2. Überlegen Sie gemeinsam im Team, durch welche fachlichen :fontawesome-solid-gears: Funktionen und Features sich diese verkörpern lassen und dokumentieren Sie diese in der :material-folder-open: Projektmappe. Stellen sie die Features den Hypothesen gegenüber, d.h., notieren Sie, welche Funktionalität(en) und Eigenschaften sich aus den jeweiligen Hypothesen ableiten lassen. 
 <!--
-3. (neu) Gegenüberstellung der Hypothesen und der zu entwickelnden Funktionalitäten (siehe Beschreibung bei 2.)
+1. (neu) Gegenüberstellung der Hypothesen und der zu entwickelnden Funktionalitäten (siehe Beschreibung bei 2.)
 -->
 
 
