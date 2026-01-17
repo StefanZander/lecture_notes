@@ -76,11 +76,23 @@ Diese Forschungsfrage ist zu unspezifisch und nicht überprüfbar, d.h., diese F
         
     _"Führt der Einsatz des Big Data Frameworks xyz zu einer 50%-igen Verbesserung der Durchsatzrate im Anwendungsfall A1?"_
 
+
+Ein weiterer häufig anzutreffender Fehler in der Formulierung von Forschungsfragen beginnend mit "Wie...". Das Problem hierbei ist, dass "wie" eine beliebige Lösung anspricht und nichts über die Güte einer Lösung aussagt. Genau darin liegt jedoch das Interesse; Ziel ist es ja gerade nicht, _irgendeine Lösung_ zu entwickeln, sondern eine Lösung zu finden, die _besser_ ist als vergleichbare Ansätze –– oder anders formuliert: Aus der Menge der vergleichbaren und in Frage kommenden Ansätze den Lösungsweg auszuwählen, der am vielversprechensten ist. 
+
+!!! note "Ein Beispiel zur Eliminierung von 'Wie'-Forschungsfragen"
+
+    Schlecht:  
+    _"Wie kann eine Spring-Batch-basierte Architektur gestaltet und parametrisiert werden, um COBOL-Batchprogramme in großem Umfang effizient vorzuprozessieren und Geschäftsregelkandidaten für eine nachgelagerte KI-basierte Anreicherung bereitzustellen, ohne Durchsatz und Fehlertoleranz zu beeinträchtigen?"_
+
+    Besser:  
+    _"Welche Anforderungen und Merkmale muss eine Spring-Batch-basierte Architektur aufweisen, um ..."_
+
+
 Im Rahmen der **Evaluierung** kann nun untersucht werden, ob der Einsatz wirklich zu einer entsprechenden Verbesserung im genannten Anwendungsfall geführt hat.
 
 Forschungsfragen sollten deshalb **präzise**, **spezifisch** und **überprüfbar** formuliert werden. Nur dann sind Forschungsfragen in der Lage, den inhaltlichen Rahmen der Abschlussarbeit formal sauber und präzise zu definieren.
 
-??? info "Für Interessierte zum Weiterlesen ein paar weitere Beispiele zur Formulierung von Forschungsfragen"
+??? info "Für Interessierte zum Weiterlesen einige zusätzliche Beispiele zur Formulierung von Forschungsfragen"
     - Wie muss Innovation X gestaltet sein, damit in einem spezifischen Kontext Y das Ziel Z erreicht wird?
     - Welche Anforderungen ergeben sich an die Innovation I / Komponente K / etc.?
     - Welche Einflussfaktoren muss man bei der Entwicklung von Innovation I beachten?
