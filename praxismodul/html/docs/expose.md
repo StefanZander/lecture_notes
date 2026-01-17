@@ -70,16 +70,16 @@ Für die BA/MA empfiehlt es sich idR nicht mehr als **2-3 Forschungsfragen** zu 
         
     _"Wie lassen sich Big Data Technologien für xyz einsetzen?"_
 
-Diese Forschungsfrage ist zu unspezifisch und nicht überprüfbar, d.h., diese Forschungsfrage drückt **keine Qualität einer Lösung** aus. Es wird nicht klar, wie gut der Einsatz letztendlich ist bzw. werden keine Metriken definiert, anhand derer sich die Güte einer Lösung festmachen lässt.
+Diese Forschungsfrage ist zu unspezifisch und nicht überprüfbar, d.h., diese Forschungsfrage drückt keine **Qualität einer Lösung** aus. Es wird nicht klar, wie gut der Einsatz letztendlich ist bzw. werden keine Metriken definiert, anhand derer sich die Güte einer Lösung festmachen lässt.
 
 !!! note "Ein besseres Beispiel"
         
     _"Führt der Einsatz des Big Data Frameworks xyz zu einer 50%-igen Verbesserung der Durchsatzrate im Anwendungsfall A1?"_
 
 
-Ein weiterer häufig anzutreffender Fehler in der Formulierung von Forschungsfragen beginnend mit "Wie...". Das Problem hierbei ist, dass "wie" eine beliebige Lösung anspricht und nichts über die Güte einer Lösung aussagt. Genau darin liegt jedoch das Interesse; Ziel ist es ja gerade nicht, _irgendeine Lösung_ zu entwickeln, sondern eine Lösung zu finden, die _besser_ ist als vergleichbare Ansätze –– oder anders formuliert: Aus der Menge der vergleichbaren und in Frage kommenden Ansätze den Lösungsweg auszuwählen, der am vielversprechensten ist. 
+Ein weiterer häufig anzutreffender Fehler bei der Formulierung von "_Wie-_"Forschungsgfragen ist, dass "wie" eine beliebige Lösung repräsentiert und nichts über die Güte einer Lösung oder eines Lösungswegs aussagt. Genau darin liegt jedoch das Erkenntnisinteresse! Ziel ist es ja gerade nicht, _irgendeine Lösung_ zu entwickeln, sondern eine Lösung zu finden, die _besser_ als vergleichbare Ansätze ist – oder anders formuliert: Aus der Menge der vergleichbaren und in Frage kommenden Ansätze _den Lösungsweg_ auszuwählen, der am vielversprechensten ist bzw. die besten Eigenschaften und Merkmalsausprägungen aufweist. 
 
-!!! note "Ein Beispiel zur Eliminierung von 'Wie'-Forschungsfragen"
+!!! note "Ein Beispiel zur Eliminierung von 'Wie-'Forschungsfragen"
 
     Schlecht:  
     _"Wie kann eine Spring-Batch-basierte Architektur gestaltet und parametrisiert werden, um COBOL-Batchprogramme in großem Umfang effizient vorzuprozessieren und Geschäftsregelkandidaten für eine nachgelagerte KI-basierte Anreicherung bereitzustellen, ohne Durchsatz und Fehlertoleranz zu beeinträchtigen?"_
