@@ -8,13 +8,10 @@
 
 ## Vorbereitung (TODO)
 
-
-
 <!--
 !!! warning
      **Vorbereitung der Testprotokolle (zu Hause!)**  
      Bereiten Sie die Testprotokolle vor anhand der folgenden Test-Aufgaben und der vorgegebenen Checklisten, d.h. betrachten Sie die Checklisten als "Rohmaterial" und machen Sie daraus Protokollformulare.
-
    
 Die Testprotokolle sollen den Entwickler*innen bei der weiteren Verbesserung helfen (_keine Angst, die Verbesserungen müssen Sie im Praktikum nicht mehr umsetzen..._).
 
@@ -26,7 +23,7 @@ Alle **Protokolle** aus den folgenden Teilaufgaben kommen in die Projektmappe.
 **Usability Test und Inspection**
 
 - Führen Sie die Usability Evaluation und das Design Review wie im weiteren Verlauf beschrieben durch
-- Fügen Sie alle zu erstellenden Artefakte (Testprotokolle, die sie für eine andere Gruppe erstellt haben etc.) der Projektmappe hinzu und speichern sie diese bis zum vereinbarten Terminen in ihrem GitLab-Projektordner.  
+- Fügen Sie alle zu erstellenden Artefakte (Testprotokolle, die sie für eine andere Gruppe erstellt haben etc.) der Projektmappe hinzu und bennenen sie diese entsprechend. Achten sie auf die Einhaltung der Deadline.
     ==_ACHTUNG: Verspätete Abgaben können nicht gewertet werden!_==
 
 - Bereiten Sie die __Testprotokolle__ in Anlehnung der folgenden Test-Aufgaben und der [vorgegebenen Checklisten](https://lernen.h-da.de/mod/resource/view.php?id=218415) vor, d.h. betrachten Sie die Checklisten als "Rohmaterial" und machen Sie daraus Protokollformulare.   
