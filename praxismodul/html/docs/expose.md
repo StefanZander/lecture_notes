@@ -16,10 +16,11 @@ Dem Exposé sollte folgende Struktur zu Grunde liegen:
 
 1. **Vorläufiger Titel** (=Arbeitstitel)  
 2. **Problemstellung**  
-3. **Forschungsfragen**
-4. **Geplante Aktivitäten**
-5. **Evaluierung**
-6. **Referenzen**
+3. **Erkenntnisinteresse**
+4. **Forschungsfragen**
+5. **Geplante Aktivitäten**
+6. **Evaluierung**
+7. **Referenzen**
 
 
 ## Aufbau
