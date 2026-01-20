@@ -89,6 +89,11 @@ Ein weiterer häufig anzutreffender Fehler bei der Formulierung von "_Wie-_"Fors
     _"Welche Anforderungen und Merkmale muss eine Spring-Batch-basierte Architektur aufweisen, um ..."_
 
 
+??? example "Further Examples"
+    - bad: _"How do HTMX and other JavaScript frameworks compare in terms of architecture and deployment?"_
+    - better: _"Which key architectural differences exist between HTMX and the three most widely used/popular JavaScript-frameworks?"_  
+    _"Which deployment peculiarities exist compared to other JS-frameworks in particular in ... ?"_
+
 Im Rahmen der **Evaluierung** kann nun untersucht werden, ob der Einsatz wirklich zu einer entsprechenden Verbesserung im genannten Anwendungsfall geführt hat.
 
 Forschungsfragen sollten deshalb **präzise**, **spezifisch** und **überprüfbar** formuliert werden. Nur dann sind Forschungsfragen in der Lage, den inhaltlichen Rahmen der Abschlussarbeit formal sauber und präzise zu definieren.
