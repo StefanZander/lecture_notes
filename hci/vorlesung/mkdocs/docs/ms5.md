@@ -67,17 +67,34 @@ Zum **Usability Test** greifen Sie bitte wieder auf Ihre **Stereotypen** zurück
 
 ### Usability Inspection
 
-!!! info "Suchen Sie sich eine Peer-Gruppe für die Usability Inspection"
-    Führen Sie die **Usability Inspection** und das **Design Review** für die **Applikation Ihrer Peer-Gruppe** durch. Beurteilen Sie die verschiedenen Aspekte kritisch und hinterfragen Sie getroffene Designentscheidungen. 
-    <!--Dies kann natürlich keinen echten Durchlauf mit externen Personen ersetzen, aber Sie bekommen so zumindest eine Vorstellung davon wie beide Methoden durchgeführt werden.
-    -->
+#### Vorbereitung
+
+1. Suchen Sie sich eine **Peer-Gruppe** für die Usability Inspection und auch für das Design Review
+2. Bestimmen sie innerhalb der Gruppe, wer die die Inspection und das Review übernimmt. Am besten führen sie dies mit mehreren ihrer Gruppenmitglieder zusammen mit der anderen Peer-Gruppe durch. Im Idealfall sind alle Mitglieder beider Gruppen anwesend.
+3. Bereiten sie **Inspection- und Review-Vorlagen** für die App ihrer Peer-Gruppe vor. Diese Protokollvorlagen unterscheiden sich idR von denen ihrer Peer-Gruppe. Nutzen sie hierfür das im Rahmen der Lehrveranstaltung bereit gestellte Material.
+
+#### Durchführung
+
+1. Führen Sie die **Usability Inspection** und das **Design Review** für die **Applikation Ihrer Peer-Gruppe** durch. Beurteilen Sie die verschiedenen Aspekte kritisch und hinterfragen Sie getroffene Designentscheidungen. 
+2. **Dokumentieren** Sie alles ausführlich (inkl. Metadaten zur Durchführung) und stellen Sie das **Inspektionsprotokoll** der Peer-Gruppe zur Verfügung. 
+3. Fügen Sie **IHR Protokoll** (das Protokoll, welches Sie für die andere Gruppe erstellt haben) Ihrer Projektmappe hinzu; das von der Peer-Gruppe erhaltene Protokoll zu IHRER App brauchen sie **nicht** in die Projektmappe mit aufzunehmen --- dieses müssen sie allerdings für die Verbesserungen auswerten.
+
+    !!! info "Checksliste zur Usability Inspection"
+        Wenden Sie die "**Checkliste zur Usability Inspection**" auf die mobile App Ihrer Peer-Gruppe an. Übertragen Sie die allgemeinen Regeln sinnvoll auf die Applikation. Protokollieren Sie eventuelle Probleme und Defizite so, dass die EntwicklerInnen verstehen, inwiefern die App verbessert werden sollte.
+
+    !!! warning "Wichtig ist, dass IHRE Arbeitsleistung (=ihre Protokoll-Vorlagen und angefertigte Protokolle für die Peer-Gruppe) in IHRER Projektmappe dokumentiert ist."
     
-    <!--
-    Falls Sie die Möglichkeit haben, dann können Sie die Inspektion stattdessen für die **App einer anderen Gruppe** durchführen. Dies kommt einer echten Usability Inspektion natürlich wesentlich näher. -->
-    **Dokumentieren** Sie alles ausführlich (inkl. Metadaten zur Durchführung) und stellen Sie das **Inspektionsprotokoll** der Peer-Praktikums-Gruppe zur Verfügung. Fügen Sie **IHR Protokoll** (das Protokoll, welches Sie für die andere Gruppe erstellt haben) Ihrer Projektmappe hinzu.
+<!--Dies kann natürlich keinen echten Durchlauf mit externen Personen ersetzen, aber Sie bekommen so zumindest eine Vorstellung davon wie beide Methoden durchgeführt werden.
+-->
+<!--
+Falls Sie die Möglichkeit haben, dann können Sie die Inspektion stattdessen für die **App einer anderen Gruppe** durchführen. Dies kommt einer echten Usability Inspektion natürlich wesentlich näher. -->
+
+
+
+
 
     
-Wenden Sie die "**Checkliste zur Usability Inspection**" auf die mobile App Ihrer Peer-Gruppe an. Übertragen Sie die allgemeinen Regeln sinnvoll auf die Applikation. Protokollieren Sie eventuelle Probleme und Defizite so, dass die EntwicklerInnen verstehen, inwiefern die App verbessert werden sollte.
+
 
 ### Design Review
 Bewerten Sie die Applikation Ihrer Peer-Gruppe unter verschiedenen Design-Aspekten wie bspw.
