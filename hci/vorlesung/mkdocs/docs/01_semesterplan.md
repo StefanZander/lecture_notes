@@ -26,9 +26,10 @@
 - Meilenstein 2: User Research – _Ende Woche 7_ --> :fontawesome-solid-exclamation-circle: _23.11.2025_
 - Meilenstein 3: UI-Entwurf – _Ende Woche 10_ --> :fontawesome-solid-exclamation-circle: _14.12.2025_
 - Meilenstein 4: App-Entwicklung und -präsentation – _Woche 13 & 14 (siehe VO-Plan)_
-- Meilenstein 5: Usability Evaluation – *legen wir gemeinsam in den Abschlussveranstaltungen fest*
+- Meilenstein 5: Usability Evaluation --> :fontawesome-solid-exclamation-circle: _SO., 01.03.2026_
+<!-- *legen wir gemeinsam in den Abschlussveranstaltungen fest* -->
 
-Einreichzeitpunkt jeweils **EOD (=23:59 Uhr am jeweiligen Einreichetag)**
+Einreichzeitpunkt jeweils **EOD (=End-of-Day --> 23:59 Uhr am jeweiligen Einreichetag)**
 
 !!! warning "Deadlines beachten"
     Für die Einreichung ist der **Zeitstempel** von `git push` maßgebend; liegt dieser hinter der Deadline, dann kann die Abgabe nicht gewertet werden.
