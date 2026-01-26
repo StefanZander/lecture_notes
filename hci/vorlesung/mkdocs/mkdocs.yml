@@ -1,4 +1,5 @@
 site_name: Human-Computer Interaction
+enable_parallel_processing: False
 
 nav:
   - "Startseite": "index.md"
