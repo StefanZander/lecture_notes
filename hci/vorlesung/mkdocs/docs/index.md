@@ -56,3 +56,5 @@ Auf den folgenden Seiten finden Sie Informationen zu **Organisation** und **Abla
 
 ----
 Diese Unterlagen wurden mit [mkdocs.org](http://mkdocs.org), [markdown](https://en.wikipedia.org/wiki/Markdown), einem individuell angepassten [Material Theme](https://github.com/squidfunk/mkdocs-material) für MkDocs, der fantastischen [Barlow-Schriftfamilie](https://github.com/jpt/barlow) und [Visual Studio Code](https://code.visualstudio.com/) erstellt.
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/792a8c90-0981-4017-b440-0dca64f2525f/deploy-status)](https://app.netlify.com/projects/zander-hci/deploys)
