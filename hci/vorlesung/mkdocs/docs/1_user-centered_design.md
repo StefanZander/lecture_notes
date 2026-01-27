@@ -56,7 +56,7 @@
 * :material-file-pdf-box: [Lektion 2: Warum gutes Design eine wichtige Rolle in der Nutzendenzentrierung spielt](https://code.fbi.h-da.de/zander/hci/material/-/raw/main/1_user-centered_design/02_good_design.pdf?inline=true)
 * :material-file-pdf-box: [Lektion 3: Warum die Informatik Nutzendenzentrierung benötigt](https://code.fbi.h-da.de/zander/hci/material/-/raw/main/1_user-centered_design/03_ucd_in_cs.pdf?ref_type=heads&inline=false)
 * :material-file-pdf-box: [Lektion 4: Wie ist Nutzendenzentrierung definiert](https://code.fbi.h-da.de/zander/hci/material/-/raw/main/1_user-centered_design/04_definition.pdf?ref_type=heads&inline=false)
-* :material-file-pdf-box: [Lektion 5: Warum Nutzendenzentrierung nicht prognostiziert oder simuliert werden kann](https://code.fbi.h-da.de/zander/hci/material/-/raw/main/1_user-centered_design/05_errors.pdf?ref_type=heads&inline=false)
+* :material-file-pdf-box: [Lektion 5: Warum Nutzendenzentrierung erforschtung und nicht prognostiziert oder simuliert werden kann](https://code.fbi.h-da.de/zander/hci/material/-/raw/main/1_user-centered_design/05_errors.pdf?ref_type=heads&inline=false)
 * :material-file-pdf-box: [Lektion 6: Der User-Centered Design Prozess](https://code.fbi.h-da.de/zander/hci/material/-/raw/main/1_user-centered_design/06_process.pdf?ref_type=heads&inline=false)
 * :material-video: [Die Summo-Fallstudie (Video)](https://lernen.h-da.de/mod/resource/view.php?id=359759)
 
