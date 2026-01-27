@@ -16,10 +16,11 @@ Dem Exposé sollte folgende Struktur zu Grunde liegen:
 
 1. **Vorläufiger Titel** (=Arbeitstitel)  
 2. **Problemstellung**  
-3. **Forschungsfragen**
-4. **Geplante Aktivitäten**
-5. **Evaluierung**
-6. **Referenzen**
+3. **Erkenntnisinteresse**
+4. **Forschungsfragen**
+5. **Geplante Aktivitäten**
+6. **Evaluierung**
+7. **Referenzen**
 
 
 ## Aufbau
@@ -70,17 +71,34 @@ Für die BA/MA empfiehlt es sich idR nicht mehr als **2-3 Forschungsfragen** zu 
         
     _"Wie lassen sich Big Data Technologien für xyz einsetzen?"_
 
-Diese Forschungsfrage ist zu unspezifisch und nicht überprüfbar, d.h., diese Forschungsfrage drückt **keine Qualität einer Lösung** aus. Es wird nicht klar, wie gut der Einsatz letztendlich ist bzw. werden keine Metriken definiert, anhand derer sich die Güte einer Lösung festmachen lässt.
+Diese Forschungsfrage ist zu unspezifisch und nicht überprüfbar, d.h., diese Forschungsfrage drückt keine **Qualität einer Lösung** aus. Es wird nicht klar, wie gut der Einsatz letztendlich ist bzw. werden keine Metriken definiert, anhand derer sich die Güte einer Lösung festmachen lässt.
 
 !!! note "Ein besseres Beispiel"
         
     _"Führt der Einsatz des Big Data Frameworks xyz zu einer 50%-igen Verbesserung der Durchsatzrate im Anwendungsfall A1?"_
 
+
+Ein weiterer häufig anzutreffender Fehler bei der Formulierung von "_Wie-_"Forschungsgfragen ist, dass "wie" eine beliebige Lösung repräsentiert und nichts über die Güte einer Lösung oder eines Lösungswegs aussagt. Genau darin liegt jedoch das Erkenntnisinteresse! Ziel ist es ja gerade nicht, _irgendeine Lösung_ zu entwickeln, sondern eine Lösung zu finden, die _besser_ als vergleichbare Ansätze ist – oder anders formuliert: Aus der Menge der vergleichbaren und in Frage kommenden Ansätze _den Lösungsweg_ auszuwählen, der am vielversprechensten ist bzw. die besten Eigenschaften und Merkmalsausprägungen aufweist. 
+
+!!! note "Ein Beispiel zur Eliminierung von 'Wie-'Forschungsfragen"
+
+    Schlecht:  
+    _"Wie kann eine Spring-Batch-basierte Architektur gestaltet und parametrisiert werden, um COBOL-Batchprogramme in großem Umfang effizient vorzuprozessieren und Geschäftsregelkandidaten für eine nachgelagerte KI-basierte Anreicherung bereitzustellen, ohne Durchsatz und Fehlertoleranz zu beeinträchtigen?"_
+
+    Besser:  
+    _"Welche Anforderungen und Merkmale muss eine Spring-Batch-basierte Architektur aufweisen, um ..."_
+
+
+??? example "Weitere Beispiele"
+    - Schlecht: _"How do HTMX and other JavaScript frameworks compare in terms of architecture and deployment?"_
+    - Besser: _"Which key architectural differences exist between HTMX and the three most widely used/popular JavaScript-frameworks?"_  
+    _"Which deployment peculiarities exist compared to other JS-frameworks in particular in ... ?"_
+
 Im Rahmen der **Evaluierung** kann nun untersucht werden, ob der Einsatz wirklich zu einer entsprechenden Verbesserung im genannten Anwendungsfall geführt hat.
 
 Forschungsfragen sollten deshalb **präzise**, **spezifisch** und **überprüfbar** formuliert werden. Nur dann sind Forschungsfragen in der Lage, den inhaltlichen Rahmen der Abschlussarbeit formal sauber und präzise zu definieren.
 
-??? info "Für Interessierte zum Weiterlesen ein paar weitere Beispiele zur Formulierung von Forschungsfragen"
+??? info "Für Interessierte zum Weiterlesen einige zusätzliche Beispiele zur Formulierung von Forschungsfragen"
     - Wie muss Innovation X gestaltet sein, damit in einem spezifischen Kontext Y das Ziel Z erreicht wird?
     - Welche Anforderungen ergeben sich an die Innovation I / Komponente K / etc.?
     - Welche Einflussfaktoren muss man bei der Entwicklung von Innovation I beachten?
