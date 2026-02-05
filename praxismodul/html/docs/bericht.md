@@ -50,13 +50,3 @@ Die Struktur ist **nicht-normativ**, d.h., sie ist als Vorschlag zu verstehen. T
 
 
 
-## Ergebnisse
-
-Die folgenden Ergebnisse müssen für einen erfolgreichen Abschluss des Praxismoduls vorliegen:
-
-!!! success "Ergebnisse"
-
-    - [x] Senden des Zwischenberichts zur Praktikumshälfte 
-    - [x] Praktiumsbericht und 360h-Stundennachweis als einzelne PDF-Datei
-    - [x] Teilnahme am Kolloquium; Vorbereitung eines Kurzvortrags
- 
