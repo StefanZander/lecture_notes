@@ -90,18 +90,45 @@ Beginnen Sie auch bereits mit der Erstellung des [Exposés](./expose.md).
 
 ## Der Abschluss
 
-### Praxisbericht
-Reichen Sie unmittelbar nach Beendigung der Praxisphase den [Praxisbericht](./bericht.md) über den Moodle-Kurs der Veranstaltung ein.
+### :simple-bookstack: Praxisbericht
+<!-- Reichen Sie unmittelbar nach Beendigung der Praxisphase den [Praxisbericht](./bericht.md) über den Moodle-Kurs der Veranstaltung ein. -->
+Bitte senden sie den :simple-bookstack: [Praxisbericht](./bericht.md) zusammen mit dem :material-clock-edit: 360h-Stundennachweis (siehe folgender Abschnitt) unmittelbar nach Beendigung der Praxisphase als PDFs per Email an ihre/n Betreuer:in
 
-### Nachweis der geleisteten Stunden
-Lassen Sie sich vom Unternehmen einen unterzeichneten und mit dem Firmenstempel versehenen **Nachweis** über die **geleisteten Praxisstunden** ausstellen und leiten Sie dieses per Email an uns {--und an das Prüfungssekretariat--} weiter.
 
-### Kolloquium
-Nehmen Sie am gemeinsamen **Kolloquium** zur Praxisphase teil (_--> dieser Termin ist verpflichtend_). 
+### :material-clock-edit: Nachweis der geleisteten Stunden
+Lassen Sie sich vom Unternehmen einen unterzeichneten und mit dem Firmenstempel versehenen **Nachweis** über die **geleisteten Praxisstunden** ausstellen und leiten Sie dieses per Email an ihre/n Betreuer:in weiter.
 
-Den **Termin** senden wir nach dem Eingang aller Berichte per Email aus. 
+### :fontawesome-solid-person-chalkboard: Kolloquium
 
-Im Kolloquium müssen Sie im Rahmen eines **5-minütigen Vortrags** kurz die wichtigsten Erlebnisse / Erfahrungen / Themen Ihrer Praxisphase darlegen. Im Anschluss an jeden Bericht findet eine kurze Plenumsdiskussion statt. Bei Bedarf können Sie Ihren Bericht durch eine kurze (max. 2 Folien) lange Präsentation unterstützen. 
+!!! warning "Die Teilnahme am Kolloquium ist verpflichtend!"
+
+Nehmen Sie am gemeinsamen [Kolloquium](./kolloquium.md) zur Praxisphase teil.
+
+Den **Termin** teilen wir im Laufe ihrer Praxisphase per Email mit. 
+
+Im Kolloquium müssen Sie im Rahmen eines :fontawesome-solid-person-chalkboard: **5-minütigen Vortrags** kurz die wichtigsten 
+
+- Tätigkeiten
+- Erfahrungen  
+- Erkenntnisse  
+- Lessons Learned 
+
+Ihrer Praxisphase darlegen. Informationen zum Inhalt und zur Struktur des Kolloquiumsvortrags finden sie auf der [Kolloquium's Detailseite](./kolloquium.md). 
+
+Im Anschluss an jeden Bericht findet eine kurze Plenumsdiskussion statt. Bei Bedarf können Sie Ihren Bericht durch eine kurze (max. 2 Folien) lange Präsentation unterstützen. 
 
 Erst nach dem Kolloquium gilt die Praxisphase formal als erfolgreich absolviert.
 
+
+
+
+## Ergebnisse
+
+Die folgenden Ergebnisse müssen für einen erfolgreichen Abschluss des Praxismoduls vorliegen:
+
+!!! success "Ergebnisse"
+
+    - [x] Senden des Zwischenberichts zur Praktikumshälfte 
+    - [x] Praktiumsbericht und 360h-Stundennachweis als einzelne PDF-Datei
+    - [x] Teilnahme am Kolloquium; Vorbereitung eines Kurzvortrags
+ 

@@ -17,8 +17,7 @@ Hierbei geht es *nicht* darum, sich in einem besonders guten Lichte darzustellen
 * **Umfang**: 5 - 8 Inhaltsseiten ohne Anhang, Inhaltsverzeichnis, etc.
 * **Sprache**: Deutsch oder Englisch
 * **Format**: nach belieben – vorzugsweise erstellt mit LaTeX (im eigenen Interesse)
-* **Einreichung**: Upload über den Moodle-Kurs der Veranstaltung 
-    * Link: <https://lernen.h-da.de/course/view.php?id=8565>
+* **Einreichung**: per Email als PDF zusammen mit 360h-Stundennachweis
 * **Abgabedatum**: Unmittelbar nach Beendigung der Praxisphase
 
 
@@ -53,10 +52,11 @@ Die Struktur ist **nicht-normativ**, d.h., sie ist als Vorschlag zu verstehen. T
 
 ## Ergebnisse
 
-Die folgenden Ergebnisse müssen für eine erfolgreiche Testierung des Moduls vorliegen:
+Die folgenden Ergebnisse müssen für einen erfolgreichen Abschluss des Praxismoduls vorliegen:
 
 !!! success "Ergebnisse"
 
-    - [x] Praktiumsbericht als einzelne PDF-Datei, hochgeladen über den Moodle-Kurs der Veranstaltung
+    - [x] Senden des Zwischenberichts zur Praktikumshälfte 
+    - [x] Praktiumsbericht und 360h-Stundennachweis als einzelne PDF-Datei
     - [x] Teilnahme am Kolloquium; Vorbereitung eines Kurzvortrags
-    - [x] Senden des Zwischenberichts zur Praktikumshälfte  
+ 
