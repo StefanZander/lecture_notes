@@ -40,9 +40,10 @@ Das Exposé ist Bestandteil des Anmeldeprozesses der Abschlussarbeit und liefert
 
 ## :octicons-book-16: Die Bachelorarbeit
 
-* [Allgemeine Informationen zu Bachelorarbeit und Kolloquium](./ba_faq.md)
+* [Fragen und Antworten zu Bachelorarbeit und Kolloquium](./ba_faq.md)
 * [Formale Anforderungen an die Bachelorarbeit](./ba_formelles.md) (:material-crane: _im Aufbau_)  
      :material-hand-pointing-right: _Gültig für alle von mir als Hauptreferent betreuten Bachelorarbeiten mit Startbeginn ab 1.12.2025._
+* :material-crane: [Das Kolloquium](ba_kolloquium.md)
 * [Tipps für ein erfolgreiches Arbeiten](ba_tipps.md)
 
 

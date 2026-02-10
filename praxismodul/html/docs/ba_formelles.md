@@ -14,11 +14,11 @@ Für niemanden ist es sinnvoll oder wertschöpfend, 70, 80 oder gar 90 Seiten KI
 
 ### Einsatz von KI-Tools (LLMs etc.)
 
-: Zur Verbesserung der Methodik, zur Entwicklung von geeigneten Forschungsfragen, zur Abgrenzung und Schärfung des eigenen Vorhabens, zur Abgrenzung von verwandten Arbeiten, zur Kontrolle über Vollständigkeit des ToC bzw. für Rückmeldung zur inhaltlichen Ausgestaltung etc. dürfen sie KI-Tools gerne einsetzen.
+: :fontawesome-regular-thumbs-up: Zur Verbesserung der Methodik, zur Entwicklung von geeigneten Forschungsfragen, zur Abgrenzung und Schärfung des eigenen Vorhabens, zur Abgrenzung von verwandten Arbeiten, zur Kontrolle über Vollständigkeit des ToC bzw. für Rückmeldung zur inhaltlichen und strukturellen Ausgestaltung etc. dürfen sie KI-Tools gerne einsetzen.
 
-: Was sie **NICHT** dürfen ist, sich ganze Absätze und mehr von der KI schreiben zu lassen. Hier ist ihre geistige Schöpfungsleistung notwendig und wichtig. Die KI kann ihnen sicher dabei helfen, **IHRE ARBEITSLEISTUNG** in geeigneter Form zu verschriftlichen, aber der originäre Beitrag muss ganz klar von **IHNEN** kommen... –und dieser Beitrag muss deutlich über die Formulierung von Prompts hinausgehen. 
+: :fontawesome-regular-thumbs-down: Was sie **NICHT** dürfen ist, sich ganze Absätze und mehr von der KI schreiben zu lassen. Hier ist ihre geistige Schöpfungsleistung notwendig und wichtig. Die KI kann ihnen sicher dabei helfen, **IHRE ARBEITSLEISTUNG** in geeigneter Form zu verschriftlichen, aber der originäre Beitrag muss ganz klar von **IHNEN** kommen... –und dieser Beitrag muss deutlich über die Formulierung von Prompts hinausgehen. 
 
-: Ihrer Arbeit fügen sie bitte auch eine **Eigenständigkeitserklärung** hinzu in der sie durch Unterzeichnung bestätigen, dass die Arbeit ausschließlich von ihnen erstellt wurde und KI-Tools nur im erlaubten Rahmen (s.o.) eingesetzt wurden. 
+: :fontawesome-solid-exclamation-triangle: Ihrer Arbeit fügen sie bitte auch eine **Eigenständigkeitserklärung** hinzu in der sie durch Unterzeichnung bestätigen, dass die Arbeit ausschließlich von ihnen erstellt wurde und KI-Tools nur im erlaubten Rahmen (s.o.) eingesetzt wurden. 
 
 
 ### Konsequenzen bei unsachgemäßer Nutzung von KI-Tools
@@ -33,5 +33,10 @@ Für niemanden ist es sinnvoll oder wertschöpfend, 70, 80 oder gar 90 Seiten KI
 - Verzeichnisse (Inhalt, Abbildung, Abkürzung, etc.)
 - Gebunden oder geheftet ist egal
 - Druck (farbig, s/w) ist ihnen überlassen
-- Bitte senden sie die PDF-Fassung der Arbeit per Email an die beiden Referenten (geschlechtsneutral)
-- ...
+- Bitte senden sie die PDF-Fassung der Arbeit per Email an die beiden Referenten
+- Korrekte und standardisierte Zitierweise
+    - LNCS, ACM, APA etc. bleibt ihnen überlassen
+- Verwendung eines geeigneten LaTeX-Templates – gerne auch ein angepasstes [Tufte-Layout](https://tufte-latex.github.io/tufte-latex/) :fontawesome-solid-face-smile-beam:
+
+: !!! warning ""
+        :fontawesome-regular-hand-point-right: Bitte klären sie weitere Fragen etc. zu den formellen Anforderungen direkt mit ihre/m Betreuer/in

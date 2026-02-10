@@ -13,6 +13,7 @@ nav:
   - Bachelormodul:
     - 'Das Exposé': 'expose.md'
     - 'Formale Anforderungen': 'ba_formelles.md'
+    - 'Das Kolloquium': 'ba_kolloquium.md'
     - 'FAQ zur Bachelorarbeit': 'ba_faq.md'
     - 'Tipps': 'ba_tipps.md'
 
