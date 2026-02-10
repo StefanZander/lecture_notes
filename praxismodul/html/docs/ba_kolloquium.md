@@ -15,7 +15,7 @@ Das Kolloquium findet entweder vor Ort an der h_da oder online via BBB statt. Di
 
 Nachdem sie geantwortet haben legen Haupt- und Co-Referent den :material-calendar: **Kolloquiumstermin** fest und teilen ihnen diesen via Email mit – verbunden mit der Bitte, diesen Termin zu bestätigen. 
 
-Wichtig: Hierbei handelt es sich um eine offizielle Einladung die sie zeitnah per Email (Antwort auf die Einladungsemail) bestätigen müssen. Erst dann können sie zum Kolloquium antreten.
+Wichtig: Hierbei handelt es sich um eine :incoming_envelope: **offizielle Einladung** die sie zeitnah per Email (Antwort auf die Einladungsemail) bestätigen müssen. Erst dann können sie zum Kolloquium antreten.
 
 
 ## :fontawesome-solid-person-chalkboard: Der Vortrag
@@ -24,11 +24,13 @@ Der Vortrag sollte :clock2: **max. 10 Minuten** dauern und aus nicht mehr als :m
 
 Der Vortrag folgt einer :octicons-list-ordered-16: **vorgegebenen Struktur** und muss zwingend die folgenden **Aspekte** adressieren:
 
-2. Welches :material-brain: **Erkenntnisinteresse** liegt ihren Vorhaben zugrunde
-3. Wie sind sie :material-draw:**methodisch** vorgegangen, um dieses Erkenntnisinteresse zu adressieren bzw. zu operationalisieren?
-4. Worin lagen die größten :material-weight-lifter: **Herausforderungen**
-5. Was sind ihre :fontawesome-solid-gift: **Hauptbeiträge**
+2. Welches :material-brain: **Erkenntnisinteresse** liegt ihrem Vorhaben zugrunde
+4. Worin lagen hierbei die größten :material-weight-lifter: **Herausforderungen**
+3. Wie sind sie :material-draw:**methodisch** vorgegangen, um das Erkenntnisinteresse und die Herausforderungen zu adressieren bzw. zu operationalisieren?
+5. Was sind ihre :material-gift: **Hauptbeiträge**
 6. Welche :fontawesome-solid-ranking-star: **alternativen Ansätze** zur Bearbeitung der Untersuchungsfragestellung gibt es noch und in welchen Aspekten unterscheiden sich diese von ihrem Lösungsansatz. Was macht ihr Lösungsansatz besser als vergleichbare Lösungsansätze?
+
+
 
 
 
