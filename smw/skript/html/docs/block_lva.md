@@ -6,12 +6,12 @@
 Die Laufzeit des Kurses ist auf **2 Wochen** angelegt.
 
 Die **Theorieeinheiten** (MO-DO in der 1. Woche) finden vor Ort an der h_da statt (Raum siehe Stundenplan bzw. OBS). Hier herrscht **Präsenzpflicht**. 
-Die Vor-Ort-Termine starten um 9:00 Uhr und dauern bis ca. 13:00/13:30 Uhr (Ende 3. Block).
+Die Vor-Ort-Termine starten um 9:00 Uhr und dauern bis ca. 13:00 Uhr (Ende 3. Block).
 
 Die **Nachmittage** sind dem Selbststudium und den Übungen vorbehalten. Diese finden NICHT in Präsenz statt sondern obliegen der individuellen Einteilung und Ausgestaltung der Studierenden.  
 
 Die Arbeiten am **Semesterprojekt** erfolgen ebenfalls in Eigenregie und nach individueller Einteilung und Ausgestaltung der Projektgruppen.
-**Rücksprachen** mit dem Betreuer finden über BBB (https://rooms.h-da.de/r?room=Zander%2C+Stefan+%28fbi%29) im Zeitraum zwischen 9:00 und 12:00 Uhr statt.
+**Rücksprachen** mit dem Betreuer finden über BBB (<https://rooms.h-da.de/r?room=Zander%2C+Stefan+%28fbi%29>) im Zeitraum zwischen 9:00 und 12:00 Uhr statt.
 
 
 ### Organisatorischer Überblick
