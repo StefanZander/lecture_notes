@@ -53,8 +53,9 @@
 !!! task "Stufe 1 (Grundmodell)"
 
     _ReApp (Akronym) ist ein Forschungsprojekt mit dem Titel "Reusable Robotic Components". Es beschäftigt sich mit Semantischen Technologien und Robotik. Beides sind Forschungsfelder. 
-    Auf dem ReApp-Projekt arbeitet die Wissenschaftlerin Nicole Merkle. Sie ist am FZI Forschungszentrum Informatik beschäftigt. Ihr Vorgesetzter ist Viliam Simko. 
-    Nicole Merkle hat die Forschungsfelder des Projektes als Kompetenzen (da sie ja aktiv dazu forscht bzw. auf dem Projekt arbeitet)._
+    Auf dem ReApp-Projekt arbeitet die Wissenschaftlerin Nicole Merkle. Sie ist am FZI Forschungszentrum Informatik beschäftigt._ 
+    <!-- Ihr Vorgesetzter ist Viliam Simko. 
+    Nicole Merkle hat die Forschungsfelder des Projektes als Kompetenzen (da sie ja aktiv dazu forscht bzw. auf dem Projekt arbeitet)._ -->
 
     <!-- 
     Die Person Nicole Merkle arbeitet im ReApp-Projekt.
@@ -74,7 +75,7 @@
 !!! task "Stufe 2 (Erweiterung des Modells)"
 
     _Nicole Merkle hat die Forschungsfelder des Projektes als Kompetenzen (da sie ja aktiv dazu forscht).  
-    Ihr Vorgesetzter ist Viliam Simko._
+    Ihr Vorgesetzter ist Viliam Simko, ebenfalls ein am FZI Forschungszentrum Informatik angestellter Wissenschaftler._
 
     **Fragen**:
 
@@ -111,7 +112,7 @@
 
     Erweiteren Sie Ihr Modell um das folgende allgemein gültige **Domänenwissen**:
 
-    - *Ein Senior Researcher ist eine Person, die in mindestens einem Projekt in der Rolle "ProjektleiterIn" tätig war.*
+    - *Ein Senior Researcher ist eine Person, die in mindestens einem Projekt in der Rolle "ProjektleiterIn" tätig ist.*
     - *Eine Führungskraft ist eine Person, die Vorgesetzte/r einer anderen Person ist.*
 
     **Fragen**:

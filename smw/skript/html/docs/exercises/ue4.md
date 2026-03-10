@@ -17,8 +17,11 @@
 
 1. Versuchen Sie den aus Übung 1 und 2 bekannten Sachverhalt mittels den Sprachelementen von Semantic MediaWiki abzubilden. Die Abbildung kann entweder in Form eines konzeptuellen Graphen unter Berücksichtigung entspr. Namensräume erfolgen, oder direkt in Semantic MediaWiki umgesetzt werden (das ist die bessere Vorgehensweise).
 
-> "_In seiner konstituierenden Sitzung vom 25.06.2019 beschloss der Fachbereichsrat in Bezug auf Berichtspunkt Nr. 5 des Protokolls vom 17.05.2019:  
-    Prof. Dr. Kai Renz ist neues Mitglied des Stundenplanerteams._"
+    !!! note "Zu modellierender Sachverhalt"
+        "_ReApp (Akronym) ist ein Forschungsprojekt mit dem Titel “Reusable Robotic Components”. Es beschäftigt sich mit Semantischen Technologien und Robotik. Beides sind Forschungsfelder. Auf dem ReApp-Projekt arbeitet die Wissenschaftlerin Nicole Merkle. Sie ist am FZI Forschungszentrum Informatik beschäftigt. Ihr Vorgesetzter ist Viliam Simko. Nicole Merkle hat die Forschungsfelder des Projektes als Kompetenzen (da sie ja aktiv dazu forscht bzw. auf dem Projekt arbeitet)._"
+
+        **Zusatz** – für Fortgeschrittene  
+        "_Nicole Merkle arbeitet vom 1.1.2021 bis zum 31.7.2022 in der Rolle als Research Scientist im ReApp-Projekt; ab dem 1.8.2022 bis zum Projektende (31.12.2023) als Projektleiterin._"
 
 Hinweise:
 
@@ -27,14 +30,17 @@ Hinweise:
 - Erstellen Sie hierzu die notwendige Infrastruktur (templates etc.)
 - Ggf. müssen Sie multi-instance templates in Verbindung mit subobjects verwenden
 - Überlegen Sie, welche Properties und Datentypen Sie für die Umsetzung benötigen
-- Erzeugen Sie einige Testinstanzdaten (Personen / Berichtspunkte / Protokolle etc.)
-- Überprüfen Sie die Korrektheit Ihres gewählten Modellierungsansatzes mittels einer `#ask`-query. Bspw. können Sie nach dem Inhalt eines bestimmten (referenzierten) Berichtspunktes fragen.
-- Überlegen Sie, wo sie sinnvollerweise die Informationen zu Mitgliedschaften vorhalten
+- Erzeugen Sie einige weitere Testdaten (Personen / Projekte / Forschungsfelder etc.)
+- Überprüfen Sie die Korrektheit Ihres gewählten Modellierungsansatzes mittels einer `#ask`-query. Bspw. können Sie die Kompetenzen einer/s Miterabeitenden auf dessen Mitarbeitendenseite anzeigen sowie die Projekte, an denen die Person arbeitet.
+- Überlegen Sie, wo sie sinnvollerweise die Informationen über Zugehörigkeit/Beziehungen vorhalten
 
 
 ### Vorbereitung für das Semesterprojekt
 
-1. **Installation**  
+!!! warning "Self-hosted Instanz versus Hochschulinstanz"
+    Per Default erhalten sie eine vorkonfigurierte SWM-Instanz seitens der Hochschule. Hierfür sind die Punkte 1-3 irrelevant. Alternativ können sie natürlich eine eigene Instanz erzeugen und hosten.
+
+1. **Installation** (optional)  
     Installieren Sie Semantic MediaWiki auf einem Rechner Ihrer Wahl oder nutzen Sie einen Online-Hosting-Service um die Instanz für Ihr Semesterprojekt aufzusetzen
     - Hilfe zur Installation  
         <https://www.semantic-mediawiki.org/wiki/Help:Installation>
