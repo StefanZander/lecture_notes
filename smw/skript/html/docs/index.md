@@ -16,8 +16,8 @@ The following pages contain information about
 * course milestones to achieve in order to successfully pass the course, 
 * instructions for successfully completing the practical part.
 
-!!! info "Infos zum Blockkurs im Sommersemester 2025"
-    Im Sommersemester 2025 wird die Lehrveranstaltung als **2-wöchiger Blockkurs** vor Ort an der h_da angeboten. 
+!!! info "Infos zum Blockkurs im Wintersemester 2025/2026"
+    Im Wintersemester 2025/2026 wird die Lehrveranstaltung als **2-wöchiger Blockkurs** vor Ort an der h_da angeboten. 
     
     - Im **ersten Teil** der Veranstaltung (MO-DO) werden die theoretischen Grundlagen und Technologien vermittelt. 
     - Im **zweiten Teil** erfolgt die selbständige Bearbeitung eines selbstgewählten Themas in Form eines Gruppenprojekts (Zeitraum: FR - DO der folgenden Woche). 
