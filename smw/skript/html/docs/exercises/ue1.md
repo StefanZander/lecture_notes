@@ -66,10 +66,10 @@
     **Fragen**:
     _(bitte setzen Sie sich kritisch mit den folgenden Fragen auseinander)_
 
-    - Aus welcher Perspektive (Projekt / Person / Organisation / universell) modellieren sie den oben dargelegten Sachverhalt (aka Gegenstandsbereich) ?
-    - Wie gehen Sie mit Beziehungen um ? Wie werden diese in ihrem Modell/Format repräsentiert ?
-    - Wie stellen sie die einzelnen Dinge/Entitäten dar ? Wie leicht/schwer ist es ihnen gefallen, das Modell zu erweitern / zu ergänzen ?
-    - Ist es aus Sicht eines Projektes eindeutig, welche Personen auf dem Projekt arbeiten ? Ist aus Sicht der Personen unmittelbar ersichtlich, auf welchen Projekten diese arbeiten ?
+    - Aus welcher Perspektive (Projekt / Person / Organisation / universell) modellieren sie den oben dargelegten Sachverhalt (aka Gegenstandsbereich)?
+    - Wie gehen Sie mit Beziehungen um ? Wie werden diese in ihrem Modell/Format repräsentiert?
+    - Wie stellen sie die einzelnen Dinge/Entitäten dar? Wie leicht/schwer ist es ihnen gefallen, das Modell zu erweitern / zu ergänzen?
+    - Ist es aus Sicht eines Projektes eindeutig, welche Personen auf dem Projekt arbeiten? Ist aus Sicht der Personen unmittelbar ersichtlich, auf welchen Projekten diese arbeiten?
 
 
 !!! task "Stufe 2 (Erweiterung des Modells)"
@@ -90,22 +90,22 @@
 
     **Fragen**:
 
-    - Ist ihr Modell bzw. ihr Modellierungsansatz in der Lage, die in Stufe 3 beschriebenen Sachverhalte abzubilden ?
-    - Falls sie die Eingangsfrage mit 'ja' beantworten können – ist dieses Beziehungsgeflecht _self-contained_, d.h., ist dieses ohne Kontextinformationen eindeutig interpretierbar ?
+    - Ist ihr Modell bzw. ihr Modellierungsansatz in der Lage, die in Stufe 3 beschriebenen Sachverhalte abzubilden?
+    - Falls sie die Eingangsfrage mit 'ja' beantworten können – ist dieses Beziehungsgeflecht _self-contained_, d.h., ist dieses ohne Kontextinformationen eindeutig interpretierbar?
 
 
 !!! task "Stufe 4 (Ausschöpfung impliziter Informationen)"
 
-    Überlegen Sie sich, durch welche Maßnahmen bzw. wie sie folgende, in ihrem Modell implizit enthaltenen Informationen zugreifbar (exploitable) machen können ? Was ist dazu nötig ?  
+    Überlegen Sie sich, durch welche Maßnahmen bzw. wie sie folgende, in ihrem Modell implizit enthaltenen Informationen zugreifbar (exploitable) machen können? Was ist dazu nötig?  
     Analysieren und evaluieren Sie dies kritisch. 
 
-    Lassen sich folgende Informationen einfach und eindeutig aus ihrem Modell extrahieren ?
+    Lassen sich folgende Informationen einfach und eindeutig aus ihrem Modell extrahieren?
 
-    - Wie viele Jahre hat sich Nicole Merkle mit den jeweiligen Themengebieten befasst ?
+    - Wie viele Jahre hat sich Nicole Merkle mit den jeweiligen Themengebieten befasst
     - Die Forschungsbereiche/-themengebiete, an denen eine Organisation (im konkreten Fall das FZI Forschungszentrum Informatik am KIT) aktiv forscht
     - Die Kompetenzen, die in einer Organisation vorhanden sind
     - Wie viele Projekte innerhalb einer Organisation zu einem bestimmten Themengebiet durchgeführt werden/wurden
-    - Welche Projekte und Mitarbeitende aktuell auf einem best. Forschungsfeld forschen ?
+    - Welche Projekte und Mitarbeitende aktuell auf einem best. Forschungsfeld forschen
 
 
 !!! task "Stufe 5 (Domänenwissen)"
@@ -117,8 +117,8 @@
 
     **Fragen**:
 
-    - Überlegen Sie, wie sich oben stehendes Domänenwissen in ihr Modell integrieren lässt ? 
-    - Wie lassen sich die aus dem Domänenwissen ableitbaren Informationen in ihr Modell integrieren ? Was muss getan werden, um diese (neuen) Informationen im Modell zu hinterlegen und damit zugreifbar/ausschöpfbar zu machen ?
+    - Überlegen Sie, wie sich oben stehendes Domänenwissen in ihr Modell integrieren lässt? 
+    - Wie lassen sich die aus dem Domänenwissen ableitbaren Informationen in ihr Modell integrieren? Was muss getan werden, um diese (neuen) Informationen im Modell zu hinterlegen und damit zugreifbar/ausschöpfbar zu machen?
     
 
 
@@ -183,8 +183,9 @@ Vierter Schritt
 
 ### Aufgabe 3: Impact von Wissensmanagement
 
-~Erarbeiten Sie in Ihrer Gruppe aus der Vorlesung auf max. 1 - 2 Folien je ein Beispiel in Form einer Case Study, welche den Mehrwert des Wissensmanagement für moderne Unternehmen aufzeigt.~
-Im SoSe2025: Bearbeiten sie die typischen Wissensmanagementfragestellungen (Seite 30) und beantworten sie die Fragen.
+Erarbeiten Sie in Ihrer Gruppe aus der Vorlesung auf max. 1 - 2 Folien je ein Beispiel in Form einer Case Study, welche den Mehrwert des Wissensmanagement für moderne Unternehmen aufzeigt.
+
+~~Im SoSe 2025: Bearbeiten sie die typischen Wissensmanagementfragestellungen (Seite 30) und beantworten sie die Fragen.~~
 
 
 
