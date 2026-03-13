@@ -25,6 +25,10 @@ Anhand der nachstehenden Punkte soll das Wissensmodell (aka Wissensbasis, Wissen
 ### Stufe 2
 
 1. Erstellen sie für die Projekt-, Mitarbeitenden- und Forschungsthemenstammdaten entsprechende **semantische Templates** und binden sie diese an den entsprechenden Stellen ein. 
+    
+    !!! info "Tipp" 
+        Gehen sie gerne **sequentiell** vor, d.h., erstellen Sie ein Template – bspw. für Mitarbeitende – und binden sie dort auch gleich die entspr. Queries ein. Testen und verfeinern sie diese bis die korrekten Daten im gewünschten Format angezeigt werden. Sobald alles fehlerfrei funktioniert widmen sie sich den anderen Domänen (Projekte und Themen).
+
 2. Ergänzen sie die Templates auch um etwaige **Queries** (bspw. auf den Forschungsthemen- und Mitarbeitendenseiten), so dass automatisiert zusammengehörige /-hängende Informationen angezeigt werden (bspw. die zu einem Forschungsthema zugehörigen Projekte und/oder Mitarbeitenden etc). 
 3. Wechseln sie nun erneut zu einem **Nachbarprojekt** und versuchen sie mittels der erstellten Templates neue Beispieldaten (Mitarbeitende, Projekte, Forschungsthemen) anzulegen. Überprüfen sie, ob die Queries nun korrekt funktionieren.
 
