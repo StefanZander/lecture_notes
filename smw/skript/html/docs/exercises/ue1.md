@@ -170,6 +170,8 @@ Vierter Schritt
 
 ### (optional) Aufgabe 3: Literaturrecherche
 
+!!! success "Nur auf freiwilliger Basis"
+
 1. (Optional) Beantworten sie die nachfolgenden Fragen unter Zuhilfenahme von **Kapitel 1 - 3** des Buchs 
    
     : _"Wissen managen – Wie Unternehmen ihre wertvollste Ressource optimal nutzen" (7. Auflage)_  
@@ -177,16 +179,18 @@ Vierter Schritt
 
     1. Erläutern Sie anhand eines selbst gewählten Beispiels, wie sich die Wertschöpfung durch steigende Wissensintensität bzw. wissensintensive Technologien verändert und verbessert hat (cf. S.7 Intelligente Produkte)
     2. Tragen Sie Maßnahmen zusammen, die den Aufbau einer kollektiven Wissensbasis im Unternehmen unterstützen. Wie kann dies managementseitig ebenfalls unterstützt und gefördert werden?
-    4. Erläutern Sie, warum eine kollektive Wissensbasis mehr ist, als die Summe der Experten eines Unternehmens.
-    5. Wie lassen sich Wissensmanagementziele sinnvoll definieren und überprüfen?
+    3. Erläutern Sie, warum eine kollektive Wissensbasis mehr ist, als die Summe der Experten eines Unternehmens.
+    4. Wie lassen sich Wissensmanagementziele sinnvoll definieren und überprüfen?
 <!--
-    6. Warum ist das Konzept der "Lernenden Organisation" auch in nicht hoch-dynamischen Wirtschaftszweigen wichtig? 
+    1. Warum ist das Konzept der "Lernenden Organisation" auch in nicht hoch-dynamischen Wirtschaftszweigen wichtig? 
 -->
 
 
 
 
 ### (nicht) Aufgabe 4: Impact von Wissensmanagement
+
+!!! warning "Nicht im WiSe 2025/2026"
 
 Erarbeiten Sie in Ihrer Gruppe aus der Vorlesung auf max. 1 - 2 Folien je ein Beispiel in Form einer Case Study, welche den Mehrwert des Wissensmanagement für moderne Unternehmen aufzeigt.
 
