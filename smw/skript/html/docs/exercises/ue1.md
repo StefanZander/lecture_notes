@@ -23,7 +23,7 @@
 
     1. Warum lässt sich mit "Wissen" allein noch kein Problem lösen?
     2. Welche Herausforderungen an das Wissensmanagement werden zukünftig noch zunehmen?
-    3. Was ist der Unterschied zwischen operativem und strategischem Wissensmanagement?
+    3. ~~Was ist der Unterschied zwischen operativem und strategischem Wissensmanagement?~~
     4. Erläutern Sie Maßnahmen, wie sich das operative und strategische Wissensmanagement verbinden lässt.
 
 
