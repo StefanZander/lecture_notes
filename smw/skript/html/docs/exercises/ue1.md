@@ -27,18 +27,18 @@
     4. Erläutern Sie Maßnahmen, wie sich das operative und strategische Wissensmanagement verbinden lässt.
 
 
-<!--
-1. Lesen Sie das **Kapitel 1 - 3** des Buchs
+
+1. Beantworten sie die nachfolgenden Fragen unter Zuhilfenahme von **Kapitel 1 - 3** des Buchs 
    
     : _"Wissen managen – Wie Unternehmen ihre wertvollste Ressource optimal nutzen" (7. Auflage)_  
     von Gilbert Probst, Steffen Raub, Kai Romhardt ([Link in Moodle](https://lernen.h-da.de/mod/resource/view.php?id=354825)) 
-    
-    und beantworten Sie folgende Fragen:
 
     1. Erläutern Sie anhand eines selbst gewählten Beispiels, wie sich die Wertschöpfung durch steigende Wissensintensität bzw. wissensintensive Technologien verändert und verbessert hat (cf. S.7 Intelligente Produkte)
     2. Tragen Sie Maßnahmen zusammen, die den Aufbau einer kollektiven Wissensbasis im Unternehmen unterstützen. Wie kann dies managementseitig ebenfalls unterstützt und gefördert werden?
-    3. Erläutern Sie, warum eine kollektive Wissensbasis mehr ist, als die Summe der Experten eines Unternehmens.
-    4. Warum ist das Konzept der "Lernenden Organisation" auch in nicht hoch-dynamischen Wirtschaftszweigen wichtig? 
+    4. Erläutern Sie, warum eine kollektive Wissensbasis mehr ist, als die Summe der Experten eines Unternehmens.
+    5. Wie lassen sich Wissensmanagementziele sinnvoll definieren und überprüfen?
+<!--
+    6. Warum ist das Konzept der "Lernenden Organisation" auch in nicht hoch-dynamischen Wirtschaftszweigen wichtig? 
 -->
 
 
@@ -49,7 +49,7 @@
 
 Überführen Sie den nachfolgend dargestellten Sachverhalt in ein minimales Datenmodell einer Sprache oder eines Formats (UML-Klassendiagramm / JSON / XML / ERM / etc.) Ihrer Wahl[^2]. Versuchen Sie den Sachverhalt so zu modellieren, dass Sie möglichst viele Informationen bzw. Fakten als "First-class Elemente" darstellen[^3], so dass diese möglichst präzise durch eine Suchalgebra angesprochen werden können. Starten Sie mit einem Grundmodell und erweitern Sie dieses schrittweise um die in den jeweiligen Stufen angegebenen Informationen. Setzen Sie sich eingehend mit den in den Stufen enthaltenen Fragestellungen auseinander und reflektieren Sie Ihre Entwurfsentscheidungen _kritisch_.
 
-<!-- !!! todo "Neue Aufgabe im SoSe 2024" -->
+
 !!! task "Stufe 1 (Grundmodell)"
 
     _ReApp (Akronym) ist ein Forschungsprojekt mit dem Titel "Reusable Robotic Components". Es beschäftigt sich mit Semantischen Technologien und Robotik. Beides sind Forschungsfelder. 
