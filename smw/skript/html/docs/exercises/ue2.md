@@ -66,7 +66,7 @@ Hinweise:
 
 - Berücksichtigen Sie in Ihrem Wissensgraphen auch etwaige Generalisierungs- und Spezialisierungsbeziehungen in der TBox. 
 - Überlegen Sie, welchen Sachverhalt Sie als assertionales und welches als terminologisches Wissen ausdrücken.
-- Untersuchen Sie die in Ihrem Wissensgraphen verwendeten Resourcen dahingehend, ob sie zur TBox oder ABox gehören, d.h., ob eine Resource terminologisches oder assertionales Wissen ausdrückt.
+- Untersuchen Sie die in Ihrem Wissensgraphen verwendeten Resourcen dahingehend, ob sie zur TBox oder ABox gehören, d.h., ob eine Resource terminologisches oder assertionales Wissen repräsentiert.
 - Überlegen Sie, was Subject, Object oder Literal ist.
 - Verwenden Sie zur Darstellung ein beliebiges CASE[^2]-Tool. Entscheidend ist weniger die 100%-ig korrekte Verwendung der RDF/S Sprachelemente als vielmehr eine schlüssige Konzeptualisierung, d.h., Überführung des o.g. Beispiels in einen semantischen Wissensgraphen (der mittels RDF/S formalisiert wird).
 
