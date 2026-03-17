@@ -46,6 +46,7 @@ The information on this site is separated into
 
 * [Lehrveranstaltungsziele und Durchführung](objectives.md)
 * [Semantisches Wissensmanagement als Blocklehrveranstaltung](block_lva.md)
+* [Evaluierungsergebnisse vergangener Veranstaltungen](https://lernen.h-da.de/course/section.php?id=347932)
 <!-- * [Tagebuch der Lehrveranstaltung](tagebuch.md) -->
 <!-- * [Organisation](organisation.md) -->
 <!-- * [Schedule with Milestones](schedule.md) -->
