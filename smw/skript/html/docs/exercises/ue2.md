@@ -10,17 +10,44 @@
 
 ### Literaturrecherche 
 
+1. Lesen sie den nachfolgend verlinkten Artikel und beantworten sie die folgenden Fragen:
+   
+   : [Dean Allemang: "Cool things I do with RDF", Online-Artikel, 2023.](https://medium.com/@dallemang/jug-o-cool-things-i-do-with-rdf-3cdb5b059192)
+
+    1. Warum eignet sich RDF besonders gut für den Austausch von Daten zwischen verschiedenen Systemen?
+    2. Welche Vorteile hat ein Graphmodell gegenüber tabellarischen Datenmodellen (z. B. CSV oder relationale Datenbanken)?
+    3. Warum ist eine Datenmigration zwischen TripleStores mittels RDF relativ einfach, während Datenbankmigrationen bei relationalen Systemen oft komplex sind?
+    4. Der Artikel beschreibt RDF-Daten als „selbstbeschreibend“. Was bedeutet dieser Begriff und welche Mechanismen im Semantic Web unterstützen diese Eigenschaft?
+    5. Der Artikel beschreibt das Konzept des „Layering“ von Daten oder Metadaten. Wie funktioniert dieses Prinzip und warum ist es für komplexe Informationssysteme nützlich?
+    6. Der Autor nutzt RDF, um mehrere Datensätze zu kombinieren und daraus neue Analysen abzuleiten. Beschreiben Sie einen möglichen Anwendungsfall aus Ihrem Studien- oder Arbeitskontext.
+    7. Angenommen, drei Organisationen veröffentlichen folgende Daten:
+
+        - Publikationsdaten
+        - Forschungsprojekte
+        - Organisationsstrukturen
+
+    Beschreiben Sie, wie RDF helfen kann, diese Daten zu integrieren.
+    
+    Gehen Sie dabei insbesondere auf die Konzepte *URIs*, *Linked Data*, *gemeinsame Ontologien* ein
+
+    !!! info ""
+        Für ein Grundverständnis zu RDF und dessen Modellierungsprimitive konsultieren sie gerne das Buch 
+
+        : _"Semantic Web for the Working Ontologist – Effective Modeling in RDFS and OWL" (Second Edition)_  
+        von Dean Allemang und Jim Hendler ([Link in Moodle](https://lernen.h-da.de/pluginfile.php/466426/mod_resource/content/1/Semantic%20Web%20for%20the%20Working%20Ontologist%202nd.pdf)) 
+<!--
 1. Lesen Sie das **Kapitel 1 - 3** des Buchs
    
     : _"Semantic Web for the Working Ontologist – Effective Modeling in RDFS and OWL" (Second Edition)_  
-    von Dean Allemang und Jim Hendler (--> [Link in Moodle](https://lernen.h-da.de/pluginfile.php/466426/mod_resource/content/1/Semantic%20Web%20for%20the%20Working%20Ontologist%202nd.pdf)) 
+    von Dean Allemang und Jim Hendler ([Link in Moodle](https://lernen.h-da.de/pluginfile.php/466426/mod_resource/content/1/Semantic%20Web%20for%20the%20Working%20Ontologist%202nd.pdf)) 
     
     ...und beantworten Sie folgende Fragen:
 
     1. _Welche Rolle spielen Modelle in der Mensch-Maschine-Kommunikation ?_
     2. _Erläutern Sie die Konsequenzen, welche die vier wesentlichen Grundkonzepte (AAA, Non-unique Naming Assumption, Netzwerkeffekt, Open-World Assumption) auf die Informationsqualität eines Gegenstandbereichs haben._
     3. _Erläutern Sie, wie (d.h., mit welchen Mitteln) RDF das Konzept AAA abbildet bzw. umsetzt_
-
+    4. 
+-->
 <!-- 2. Lesen Sie das Paper xxx (Link in Moodle) und beantworten Sie folgende Fragen:
     1. ...
     2. ...
