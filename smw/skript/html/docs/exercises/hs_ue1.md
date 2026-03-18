@@ -1,9 +1,11 @@
 # Hörsaalübung
 
 
-Ziel: Entwickeln Sie ein **Wissensgraphmodell** mittels Semantic MediaWiki zur Verwaltung von Mitarbeitenden, Forschungprojekten auf den denen diese Mitarbeitenden arbeiten und Forschungsthemen.
+Ziel: Entwickeln Sie ein **Wissensgraphmodell** mittels Semantic MediaWiki zur Verwaltung von Mitarbeitenden, Forschungprojekten auf denen diese Mitarbeitenden arbeiten und Forschungsthemen.
 
 Anhand der nachstehenden Punkte soll das Wissensmodell (aka Wissensbasis, Wissensgraph) schrittweise aufgebaut werden.
+
+Unter folgendem Link finden sie eine [Quick-Reference zu den wichtigesten Syntaxelementen](https://www.semantic-mediawiki.org/w/images/e/e9/SMW_quick_reference.pdf)
 
 
 ## Schritte
