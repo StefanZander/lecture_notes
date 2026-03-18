@@ -1,0 +1,19 @@
+{{PAGENAME}} is a Researcher working on different research projects
+
+{{#ask: [[Category:Research Project]] [[has_member::{{PAGENAME}}]]
+|?has_title=Projektname
+|?has_description=Beschreibung
+|?has_budget=Budget
+|?has_startdate=Beginn
+|?has_enddate=Ende
+}}
+
+{{PAGENAME}} ist Expert:in auf folgenden Gebieten:
+
+{{#ask: [[Category:Research Project]] [[has_member::{{PAGENAME}}]]
+|?has_topic=
+|mainlabel=-
+|format=valuerank
+}}
+
+[[Category:Researcher]]

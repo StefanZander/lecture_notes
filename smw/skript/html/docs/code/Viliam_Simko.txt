@@ -1,0 +1,41 @@
+{{PAGENAME}} is a Researcher working on different research projects
+
+=== Version 1 ===
+
+{{#ask: [[type::project_membership]] [[has_member::{{PAGENAME}}]]
+|?Has_role=Rolle
+|?-Has subobject.has_title=Projektname
+|?-Has subobject.has_description=Beschreibung
+|?-Has subobject.has_budget=Budget
+|?-Has subobject.has_startdate=Beginn
+|?-Has subobject.has_enddate=Ende
+|?-Has subobject.has_topic=Forschungsthemen
+|format=broadtable
+}}
+
+
+<!-- not working since all roles and members are retrieved -->
+=== Version 2 ===
+
+{{#ask: [[Category:Research Project]] [[Has subobject.type::project_membership]] [[Has subobject.has member::{{PAGENAME}}]]
+|?Has subobject.has_role=Rolle
+|?Has subobject.has_member=Mitglied
+|?has_title=Projektname
+|?has_description=Beschreibung
+|?has_budget=Budget
+|?has_startdate=Beginn
+|?has_enddate=Ende
+|?has_topic=Forschungsthemen
+|format=broadtable
+}}
+
+
+{{PAGENAME}} ist Expert:in auf folgenden Gebieten:
+
+{{#ask: [[Category:Research Project]] [[Has subobject.type::project_membership]] [[Has subobject.has member::{{PAGENAME}}]]
+|?has_topic=
+|mainlabel=-
+|format=valuerank
+}}
+
+[[Category:Researcher]]

@@ -1,0 +1,52 @@
+{| class="wikitable"
+!Projektname
+|[[has_title::{{{title|}}}]]
+|-
+!Akronym
+|[[has_acronym::{{{acronym|}}}]]
+|-
+!Beschreibung
+|[[has_description::{{{description|}}}]]
+|-
+!Budget
+|[[has_budget::{{{budget|}}}]] EUR
+|-
+!Beginn
+|[[has_startdate::{{{startdate|}}}]]
+|-
+!Ende
+|[[has_enddate::{{{enddate|}}}]]
+|-
+!Mitarbeitende
+|{{#show: {{PAGENAME}} |?has_member}}
+|-
+!Themenfelder
+|{{#show: {{PAGENAME}} |?has_topic}}
+|}
+
+{{#set:
+ |has_member={{{members|}}}|+sep=, 
+}}
+
+{{#set:
+ |has_topic={{{topics|}}}|+sep=,
+}}
+
+[[Category:Research Project]]
+<noinclude>
+Use the template as follows
+
+<pre>
+{{Research_Project
+|title=
+|acronym=
+|description=
+|budget=
+|startdate=
+|enddate=
+|members= <!-- names separated by , -->
+|topics= <!-- terms separated by , -->
+}}
+</pre>
+
+</noinclude>

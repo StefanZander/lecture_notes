@@ -1,0 +1,10 @@
+{{Research_Project
+|title=BigBIS – Predictive and Prescriptive GIS based on High-Dimensional Geo-Temporal Data Structures
+|acronym=BigGIS
+|description=Das BigGIS Projekt beschäftigt sich mit Big Data und der Fusion unsicherer, geografischer Daten. Zunehmende Datenmengen und immer komplexere Berechnungsmodelle erfordern schnelle und robuste Verfahren. Dies ist das Thema des BigGIS Projekts, in welchem integrierte Verfahren zum Umgang mit Unsicherheit im (Geo)-BigData-Zusammenhang entwickelt werden. Zusammen mit dem SDIL werden hierbei am Beispiel von Temperaturdaten passende Algorithmen implementiert, getestet und weiterentwickelt. Ziel ist hierbei ein skalierbares System, welches die Eigenheiten von räumlichen und zeitlichen Zusammenhänge berücksichtigt.
+|budget=3000000
+|startdate=1.3.2021
+|enddate=31.8.2024
+|members=Matthias Frank, Nicole Merkle
+|topics=Semantische Technologien, Robotik
+}}

@@ -1,0 +1,27 @@
+{{#ask: [[Category:Project]] [[has_topic::{{PAGENAME}}]]
+|?has_title=Projektname
+|?has_description=Projektbeschreibung
+|?has_budget=Budget
+|?has_startdate=Beginn
+|?has_enddate=Ende
+|mainlabel=Projekt
+}}
+
+Die folgenden Personen arbeiten auf diesem Themenfeld:
+
+{{#ask: [[Category:Research Project]] [[has_topic::{{PAGENAME}}]]
+|?has_member=
+|mainlabel=-
+|format=valuerank
+}}
+
+[[Category:Topic]]
+
+<noinclude>
+Use the template as follows
+
+<pre>
+{{Topic}}
+</pre>
+
+</noinclude>

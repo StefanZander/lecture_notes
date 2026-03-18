@@ -1,0 +1,35 @@
+AICASys is a research project
+{| class="wikitable"
+!Projektname
+|[[has_title::AICASys – Adaptives, intuitives Assistenzsystem zur intelligenten Gebäudesteuerung]]
+|-
+!Akronym
+|[[has_acronym::AICASys]]
+|-
+!Beschreibung
+|[[has_description::Das Projekt AICASys hat das Ziel, ein intuitiv bedienbares Blicksteuerungssystem zur intelligenten Gebäudesteuerung zu entwickeln. Das System nimmt die Blicke des Menschen in der Umgebung mit Hilfe einer tragbaren Eye-Tracking-Brille wahr und erkennt, welche Gegenstände betrachtet werden. Aufgrund der individuellen Blickmuster ist das System in der Lage herauszufinden, was die Trägerinnen und Träger der Brille beabsichtigen, und steuert entsprechend elektronische Geräte in der Umgebung an.]]
+|-
+!Budget
+|[[has_budget::2000000]] EUR
+|-
+!Beginn
+|[[has_startdate::1.1.2022]]
+|-
+!Ende
+|[[has_enddate::31.12.2024]]
+|-
+!Mitarbeitende
+|[[has_member::Nicole Merkle]]
+|-
+!Themenfelder
+|[[has_topic::Semantische Technologien]]
+[[has_topic::Ambient Assisted Living]]
+|}
+
+<!--
+{{#set:
+ |has_topic=Semantische Technologien;Ambient Assisted Living;Augmented Reality|+sep=;
+}}
+-->
+
+[[Category:Research Project]]

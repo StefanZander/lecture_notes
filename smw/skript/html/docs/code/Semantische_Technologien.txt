@@ -1,0 +1,19 @@
+[[Category:Topic]]
+
+TODO: Here we would like to display all projects that deal with the topic {{PAGENAME}}
+
+{{#ask: [[Category:Project]] [[has_topic::{{PAGENAME}}]]
+|?has_title=Projekt
+|?has_description=Projektbeschreibung
+|?has_budget=Budget
+|?has_startdate=Beginn
+|?has_enddate=Ende
+}}
+
+Welche Personen arbeiten auf diesem Themenfeld
+
+{{#ask: [[Category:Research Project]] [[has_topic::{{PAGENAME}}]]
+|?has_member=
+|mainlabel=-
+|format=valuerank
+}}

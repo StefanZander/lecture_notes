@@ -1,0 +1,35 @@
+{| class="wikitable sortable"
+!Projektname
+|[[has_title::ReApp – Wiederverwendbare Roboterapplikationen für flexible Roboteranlagen basierend auf ROS-Industrial]]
+|-
+!Akronym
+|[[has_acronym::ReApp]]
+|-
+!Beschreibung
+|[[has_description::Ein effizienterer Robotereinsatz mit kürzeren Rüstzeiten und einer besseren Wiederverwendbarkeit von einmal entwickelten Produktionsprozessen ist das Hauptziel, das die Projektpartner in ReApp adressiert haben. Sie reagieren damit auf Anforderungen, die mittelständische Unternehmen an Robotersysteme haben. Diese Unternehmen produzieren überwiegend auf Auftragsbasis, sodass sich die bisher meist zeit- und kostenintensive Inbetriebnahme und Programmierung von Robotersystemen nicht immer rentiert. Und auch Unternehmen mit Großserienproduktionen müssen zunehmend flexibel auf Produktvarianten reagieren und damit verbundene Anpassungen des Robotersystems schneller umsetzen können.]]
+|-
+!Budget
+|[[has_budget::4000000]] EUR
+|-
+!Beginn
+|[[has_startdate::1.1.2014]]
+|-
+!Ende
+|[[has_enddate::31.12.2016]]
+|-
+!Mitarbeitende
+|[[has_member::Nicole Merkle]]
+[[has_member::Matthias Frank]]
+|-
+!Themenfelder
+|[[has_topic::Semantische Technologien]]
+[[has_topic::Robotik]]
+|}
+
+<!--
+{{#set:
+ |has_topic=Semantische Technologien;Ambient Assisted Living;Augmented Reality|+sep=;
+}}
+-->
+
+[[Category:Research Project]]
