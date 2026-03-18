@@ -4,7 +4,7 @@
 
 **Belegnummer**: [30.2626](https://obs.fbi.h-da.de/mhb/modul.php?nr=30.2646&sem=20212)
 
-**Discord-Channel**: <https://discord.gg/nAmXMZAuD>
+**Discord-Channel**: <https://discord.gg/nAmXMZAuD> neu: <https://discord.gg/Ert2awRN>
 
  <!-- Welcome to the course pages of the module "Introduction to Ontology-based Knowledge Management with Semantic MediaWiki". -->
 
