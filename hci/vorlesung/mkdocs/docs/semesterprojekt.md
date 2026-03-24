@@ -51,10 +51,10 @@ Die Wahl des Dokumentationstools (LaTeX, Markdown, Textverarbeitungstool, Google
 - Deckblatt mit folgenden Informationen (_bitte für jeden Meilenstein beibehalten!_)
     - Projektname
     - Praktikumsslot
-    - Vollständige Namen und Matrikelnummern aller Gruppenmitglieder
+    - Vollständige Namen und Matrikelnummern aller Gruppenmitglieder alphabetisch sortiert
     - Link zum GitLab-Gruppen-Repository
 - Erste Seite
-    - Beteiligungsmatrix (siehe [Organisationsfoliensatz](0_organisation.md))
+    - Beteiligungsmatrizen der jeweiligen Meilensteine (siehe [Organisationsfoliensatz](0_organisation.md))
 - Zweite Seite
     - Inhaltsverzeichnis mit Seitenzahlen
 - Grundsätzlich: Die Projektmappe ist _eine(!)_ Datei mit _allen(!)_ relevaten Inhalten (Texten, Bildern etc.)
