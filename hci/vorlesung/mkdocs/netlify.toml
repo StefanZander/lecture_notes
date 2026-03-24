@@ -1,6 +1,6 @@
 
 # netlify.toml
 [build]
-  command = "mkdocs build"
+  command = "CI='' mkdocs build"
   publish = "site"
   
