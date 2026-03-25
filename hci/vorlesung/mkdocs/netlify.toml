@@ -1,6 +1,6 @@
 # netlify.toml
 [build]
-  base = "docs/"
+  base = "hci/vorlesung/mkdocs/docs/"
   command = "mkdocs build --verbose"
   publish = "site/"
   environment = { PYTHON_VERSION = "3.13" }
