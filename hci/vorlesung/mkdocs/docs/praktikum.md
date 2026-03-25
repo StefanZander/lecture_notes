@@ -37,7 +37,7 @@ Insgesamt :material-calendar-month: **5 Termine** im Semester.
 Allgemein freiwillige Teilnahme, aber **1. Termin ist Pflichttermin** für alle Teilnehmenden.
 
 - **Termin 1**
-    - Gruppen- und Themenfindung (--> siehe [Meilenstein #1](ms1.md))
+    - Gruppenkonsolidierung und Themenfindung (--> siehe [Meilenstein #1](ms1.md))
     - Anlegen der [GitLab-Gruppenrepositories]()
     - Festlegung eines Projektnamens und erster Aktivitäten
     - Kennenlernen der Teilnehmenden bzw. Gruppenmitglieder
