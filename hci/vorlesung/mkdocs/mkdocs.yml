@@ -84,7 +84,7 @@ extra:
       link: https://fbi.h-da.de/~s.zander
       name: hda profile page of Prof. Dr. Stefan Zander
 
-copyright: Copyright &copy; 2017 - 2025 – Prof. Dr. Stefan Zander
+copyright: Copyright &copy; 2017 - 2026 – Prof. Dr. Stefan Zander
 
 repo_url: https://github.com/StefanZander/lecture_notes/tree/master/hci/praktikum/html
 repo_name: /hci/vorlesung
@@ -97,6 +97,7 @@ plugins:
   - git-revision-date-localized:
       enable_creation_date: false
       type: custom
+      enable_parallel_processing: false
 
 markdown_extensions:
   - abbr
