@@ -6,6 +6,9 @@
 
 Auf den folgenden Seiten finden Sie Informationen zu **Organisation** und **Ablauf** der Lehrveranstaltung Human-Computer Interaction bei mir, :teacher_tone1: Prof. Dr. Stefan Zander, sowie die entsprechenden :octicons-book-16: **Lehrmaterialien**. 
 
+!!! danger "Ab dem SoSe 2026 benotete Fachgespräche"
+    Ab dem SoSe 2026 finden auch in meinem Zug benotete individuelle Fachgespräche als Ergänzung der Leistungsfeststellung statt. Genauere Details dazu werden in den kommenden Tagen hier auf den Seiten veröffentlicht. Ein positives bewertetes Fachgespräch (<= 4,0) ist zwingende Voraussetzung für die erfolgreiche Absolvierung des Moduls.
+
 !!! warning "Nur gültig für meine HCI-Veranstaltung"
     Die hier hinterlegten Informationen betreffen nur meine HCI-Veranstaltung. Die HCI-Veranstaltungen der anderen Züge meiner Kolleg:innen sind mitunter anders organisiert und strukturiert. 
 
