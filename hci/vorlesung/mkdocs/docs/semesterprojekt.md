@@ -31,14 +31,15 @@ Jede Gruppe erhält im **1. Praktikumstermin** nach der Gruppen- und Themenfindu
 
 Einreichung bedeutet, dass sie die aktuelle Fassung der Projektmappe in den zum jeweiligen Meilenstein gehörenden **Ordner** in ihrem :material-gitlab: GitLab-Projekt-Repo ablegen. 
 
-:fontawesome-solid-exclamation-triangle: Liegt dort _kein_ File, dann gilt die Projektmappe als nicht abgegeben und der Meilenstein als nicht erfüllt.
+!!! danger ""
+    :fontawesome-solid-exclamation-triangle: Liegt dort _kein_ File, dann gilt die Projektmappe als nicht abgegeben und der Meilenstein als nicht erfüllt. Dies führt zu einer Bewertung mit **0 Punkten** und dem **Abbruch des Projektes**.
 
 
 ## Die Projektmappe
 
 Wesentliche Informationen zu den Anforderungen und der Rolle der Projektmappe findet sich im [Organisationsfoliensatz](0_organisation.md). 
 
-Die Wahl des Dokumentationstools (LaTeX, Markdown, Textverarbeitungstool, Google Docs, etc.) obliegt jeder Gruppe selbst. Wählen sie ein Tool ihrer Wahl aber achten sie auf eine gemeinsame Editierbarkeit. Jede/r Gruppenteilnehmer:in soll aktiv an der Projektmappe arbeiten. 
+Die Wahl des Dokumentationstools (LaTeX, Markdown, Textverarbeitungstool, Google Docs, etc.) obliegt jeder Gruppe selbst. Achten sie bei der Wahl des Tools auf eine gemeinsame Editierbarkeit: Jede/r Gruppenteilnehmer:in soll aktiv an der Projektmappe arbeiten. 
 
 ### Formale Anforderungen
 
@@ -47,17 +48,17 @@ Die Wahl des Dokumentationstools (LaTeX, Markdown, Textverarbeitungstool, Google
     - Beispiel: ```gr01_bikers_life_ms1.pdf```
     - Nummerierung des Meilensteins bitte entspr. anpassen
 - Anzahl der einzureichenden Dateien: 1
-    - Bitte reichen sie nur eine einzige Datei mit dem o.g. Namen ein. Der ms-Ordner kann selbstverständlich noch andere Datein und Unterordner enthalten. Wichtig ist jedoch, dass die die Projektmappe durch einen eindeutligen Namen gekennzeichnet ist (s.o.). Ist das nicht der Fall, dann erfolgt mindestens ein Punktabzug auf den jeweiligen Meilenstein aufgrund von Nichtbeachtung formaler Anforderungen.
+    - Bitte reichen sie nur eine einzige Datei mit dem o.g. Namen ein. Der ms-Ordner kann selbstverständlich noch andere Datein und Unterordner enthalten, diese werden jedoch bei der Beurteilung nicht berücksichtig. Wichtig ist, dass die Projektmappe durch einen eindeutigen Namen gekennzeichnet ist (s.o.). Ist das nicht der Fall, dann erfolgt mindestens ein Punktabzug auf den jeweiligen Meilenstein aufgrund von Nichtbeachtung formaler Anforderungen.
 - Deckblatt mit folgenden Informationen (_bitte für jeden Meilenstein beibehalten!_)
     - Projektname
     - Praktikumsslot
     - Vollständige Namen und Matrikelnummern aller Gruppenmitglieder alphabetisch sortiert
     - Link zum GitLab-Gruppen-Repository
 - Erste Seite
-    - Beteiligungsmatrizen der jeweiligen Meilensteine (siehe [Organisationsfoliensatz](0_organisation.md))
+    - Beitragsmatrix mit Anteilen zum jeweiligen Meilenstein (siehe [Organisationsfoliensatz](0_organisation.md))
 - Zweite Seite
     - Inhaltsverzeichnis mit Seitenzahlen
-- Grundsätzlich: Die Projektmappe ist _eine(!)_ Datei mit _allen(!)_ relevaten Inhalten (Texten, Bildern etc.)
+- Grundsätzlich: Die Projektmappe ist _eine(!)_ Datei mit _allen(!)_ relevaten Inhalten (Texten, Bildern etc.), d.h., bitte fügen sie dort auch alle Abbildungen (Diagramme, Fotos, ggf. Screenshots, Skizzen etc.) ein.
 
 
 !!! danger "Die Nichteinhaltung der formalen Anforderungen führt zu Punktabzug!"

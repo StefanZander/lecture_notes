@@ -10,8 +10,8 @@ Auf den folgenden Seiten finden Sie Informationen zu **Organisation** und **Abla
     Ab dem SoSe 2026 finden auch in meinem Zug benotete individuelle Fachgespräche als Ergänzung der Leistungsfeststellung statt. Genauere Details dazu werden in den kommenden Tagen hier auf den Seiten veröffentlicht. Ein positives bewertetes Fachgespräch (<= 4,0) ist zwingende Voraussetzung für die erfolgreiche Absolvierung des Moduls.
 
 !!! warning "Besonderheiten meiner HCI-Veranstaltung"
-    Bitte machen sie sich im Vorfeld ihrer Modulbelegung mit den Besonderheiten meiner HCI-Veranstaltung vertraut, insbesondere bei der Gruppenbildung. 
-    Die hier hinterlegten Informationen betreffen nur meine HCI-Veranstaltung. Die HCI-Veranstaltungen der anderen Züge sind mitunter anders organisiert und strukturiert. 
+    Bitte machen sie sich im Vorfeld ihrer Modulbelegung mit den [Besonderheiten](./0_organisation.md) meiner HCI-Veranstaltung vertraut, insbesondere bei der Gruppenbildung.  
+    Achtung: Die hier hinterlegten Informationen betreffen nur meine HCI-Veranstaltung. Die HCI-Veranstaltungen der anderen Züge sind mitunter anders organisiert und strukturiert. 
 
 
 
