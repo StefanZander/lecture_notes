@@ -72,7 +72,7 @@ Konzentrieren Sie sich insbesondere auf die :fontawesome-solid-person-snowboardi
 !!! info "Hinweis"
     Die Paper Prototypen müssen sie nur für _die_ Anwendungsfälle entwicklen, die sie im User-/UI-Test überprüfen. Es müssen _keine_ Paper Prototypen für die komplette App / die kompletten Screendiagramme angefertigt werden. 
 
-### :material-flask: Testen
+### :material-flask: UI-Test
 
 <!--
 !!! warning
@@ -83,7 +83,7 @@ Konzentrieren Sie sich insbesondere auf die :fontawesome-solid-person-snowboardi
 1. Entwickeln Sie eine Reihe von **repräsentativen :fontawesome-solid-user-doctor: Testfällen**, um eine erste Validierung der, in ihrem Prototypen umgesetzten Entwurfsentscheidungen vorzunehmen. So finden Sie heraus, ob das von Ihnen entwickelte Benutzungskonzept für ihre Stereotypen intuitiv nutzbar ist, d.h., ob es sich an deren mentalen Modellen orientiert.
    
     !!! tipp "Tipp"
-        Beschreiben sie zu jedem Testfall das Ziel des Tests sowie das dahinterstehende Erkenntnisinteresse und gleichen sie dieses auch mit den Hypothesen aus dem User Research ab. Ein Testfall kann aus mehreren Schritten bestehen. 
+        Beschreiben sie zu jedem Testfall das **Ziel** des Tests sowie das dahinterstehende **Erkenntnisinteresse** und gleichen sie dieses auch mit den Hypothesen aus dem User Research ab. Ein Testfall kann aus mehreren Schritten bestehen. 
 
 2. **Testen** Sie Ihre Entwürfe mit Ihren Stereotypen (_bitte mit realen Personen_) und identifizieren Sie Ungereimtheiten, Inkonsistenzen und Verbesserungen. Überlegen Sie, ob es gut und richtig ist, wenn Sie **keine Verbesserungen** identifizieren. Gleichen sie auch hier ihre Beobachtungen mit den Zielen und dem Erkenntnisinteresse der Tests ab.
 
@@ -106,5 +106,5 @@ Ihre Projektmappe muss folgende ausgearbeitete Artefakte enthalten:
     - [x] Navigationsübersicht
     - [x] Paper Prototypen ihrer Applikation mit begründeten Entwurfsentscheidungen
     - [x] Beschreibung der Testfälle und der Testdurchführung
-    - [x] Zusammenfassung der wesentlichen Erkenntnisse und Anpassungen (_~> Reflexion des UI-Tests_)
+    - [x] Zusammenfassung der wesentlichen Erkenntnisse und Anpassungen (:material-hand-pointing-right: _Reflexion des UI-Tests_)
     
