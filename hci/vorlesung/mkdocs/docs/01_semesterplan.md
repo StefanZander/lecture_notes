@@ -9,9 +9,9 @@
 - Woche 3: [Kapitel 4: Modellbildung](4_models.md) + [Kapitel 5: Prototyping](5_prototyping.md) + [Kapitel 6: Visual Design](6_visual_design.md)
 - Woche 4: [Kapitel 7: Usability Evaluation](7_usability.md) + Festlegung der Projektgruppen[^1]
 - Woche 5: [Fachgespräche](fachgespraech.md) + Deadline [Meilenstein 1](ms1.md)
-- Woche 6: Arbeit am Semesterprojekt
-- Woche 7: Arbeit am Semesterprojekt
-- Woche 8: Arbeit am Semesterprojekt
+- Woche 6: Reflexion + Arbeit am Semesterprojekt
+- Woche 7: Reflexion + Arbeit am Semesterprojekt
+- Woche 8: Reflexion + Arbeit am Semesterprojekt
 - Woche 9: Arbeit am Semesterprojekt + Deadline [Meilenstein 2](ms2.md) & [Meilenstein 3](ms3.md) 
 - Woche 10: Arbeit am Semesterprojekt
 - Woche 11: Arbeit am Semesterprojekt
