@@ -21,7 +21,7 @@
    1. :material-weight-lifter: **Motivation** – was ist die Ausgangslage bzw. Problemstellung hinter eines derartigen Vorhabens? Worin besteht der Forschungsbedarf?
    2. :material-target: **Projektziele** – was soll mit dem Vorhaben erreicht werden? In welchen Bereichen werden Verbesserungen etc. angestrebt? Welche Probleme sollen gelöst werden? Welcher Nutzen soll erzeugt werden?
    3. :fontawesome-solid-people-line: **Zielgruppe** – welche Nutzenden wollen sie ansprechen und warum ist dies wichtig für diese Personen? Worin bzw. in welchen Aspekten können sie diese unterstützen? Welche Vorbehalte existieren ggf.? Welche Einschränkungen (z.B. Zeitdruck, Mobilität, Arbeitsumgebung) existieren?
-   4. :material-magnify-scan: **Erkenntnisinteresse** – was möchten sie herausfinden; was gilt es herauszufinden, damit das Vorhaben erfolgreich sein wird? Auf welche Fragen müssen Antworten gefunden werden?
+   4. :material-magnify-scan: **Erkenntnisinteresse** – was gilt es herauszufinden, damit das Vorhaben erfolgreich sein wird? Auf welche Fragen müssen Antworten gefunden werden?
    5. :material-trophy: **Erfolgskriterien** – an welchen Dingen bzw. Ergebnissen lässt sich der Erfolg ihres Vorhabens festmachen. Welche Kriterien sind für den (gewünschten) Erfolg ihres Vorhabens ausschlaggebend? 
    <!-- 5. :fontawesome-solid-person-dots-from-line: **Methodik** – welche User-Research-Methoden setzen sie ein, um verwertbare Erkenntnisse zu generieren bzw. um die relevanten Aspekte zu identifizieren? Bitte begründen sie ihre Entscheidung. -->
 
@@ -40,12 +40,13 @@ Ziel dieser Aufgabe ist es, ein Verständis dafür zu schaffen, warum ihr Vorhab
 
 <!-- Halten Sie Ihre **Projektziele und Erfolgskriterien** schriftlich fest. -->
 
-:fontawesome-solid-exclamation-circle: Wichtig: Vermeiden Sie vorschnelle technische Festlegungen (z.B. „Wir entwickeln eine App mit dieser oder jener Funktion“) und konzentrieren Sie sich stattdessen auf das **zugrunde liegende Nutzungsproblem**.  
+!!! warning "Keine vorschnelle technische/funktionale Festlegung"
+    Vermeiden Sie vorschnelle technische oder funktionale Festlegungen (z.B. „Wir entwickeln eine App mit dieser oder jener Funktion“) und konzentrieren Sie sich stattdessen auf das zugrunde liegende :fontawesome-solid-exclamation-circle: **Nutzungsproblem**.  
 
 <!-- Formulieren sie die o.g. Punkte auf 1 - 2 Seiten, d.h., beschreiben sie präzise, welches Problem / welche Probleme gelöst werden sollen und nicht nur, was bzw. welche App entwickelt werden soll.  -->
 
 !!! warning "Kein vorschnelles Lösungsdenken"
-    Vermeiden sie es, vorschnell in Lösungsdenken zu verfallen („Wir brauchen eine bestimmte App“) – stattdessen: „Wir müssen das Informations- und Nutzungsverhalten der Zielgruppe verstehen.“
+    Vermeiden sie es, vorschnell in Lösungsdenken zu verfallen („Wir brauchen eine bestimmte App“) – stattdessen: „Wir müssen das :fontawesome-solid-exclamation-circle: **Informations- und Nutzungsverhalten** der Zielgruppe verstehen.“
 
 !!! question "Warum dieser Schritt wichtig ist"
     Verschiedene Studien zeigen, dass unklare Zieldefinitionen zu den häufigsten Ursachen für Fehlschläge in IT-Projekten gehören (Quelle: Standish Group, 2015).

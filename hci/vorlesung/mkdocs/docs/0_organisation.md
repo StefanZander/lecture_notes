@@ -8,7 +8,7 @@
     1. Teilnahme an der **Semesterprojektgruppenbildungsveranstaltung** (siehe [Semesterplan](01_semesterplan.md))
     2. Erfolgreich durchgeführtes **Fachgespräch**
 
-    Erfüllen sie eine der genannten Voraussetzugnen nicht, dann können sie das Modul im aktuellen Semester nicht erfolgreich absolvieren!
+    Erfüllen sie eine der genannten Voraussetzungen nicht, dann können sie das Modul im aktuellen Semester nicht erfolgreich absolvieren!
     
 
 
@@ -90,8 +90,10 @@ Details dazu finden sich im [Foliensatz zur Organisation der Veranstaltung](http
 
 ## :material-hammer-screwdriver: Offene Labore
 
-- Durchführung vor Ort und via Discord durch die HCI-Tutoren
-- Termine in Abstimmung mit den Tutoren und Veröffentlichung via Discord
+Ergänzend zu den offiziellen Veranstaltungen (Vorlesungs- und Praktikumseinheiten) werden von den HCI-Tutor:innen betreute offene Labore angeboten.
+
+- Durchführung vor Ort und via Discord durch die HCI-Tutor:innen
+- Termine in Abstimmung mit den Tutor:innen und Veröffentlichung via Discord
 - Nützlich für alle Fragen zu HCI allgemein, dem Semesterprojekt etc. sowie für Unterstützungswünsche oder Feedback.
 
 <!--

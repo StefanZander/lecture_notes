@@ -28,6 +28,9 @@ nav:
   - Praktikum:
       - "Allgemeine Informationen": "praktikum.md"
 
+  - Fachgespräch:
+      - "Rolle und Ablauf": "fachgespraech.md"
+
 extra_css:
   - stylesheets/extra.css
 
