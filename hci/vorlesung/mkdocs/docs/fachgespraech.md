@@ -2,7 +2,8 @@
 
 ## Allgemeine Informationen
 
-Ziel des Fachgesprächs ist es, den Nachweis zu erbringen, dass Studierende über die **notwendigen theoretischen Kenntnisse** verfügen, um das HCI-Semesterprojekt erfolgreich durchführen und die in den Meilensteinen verlagten Arbeitsergebnisse erbringen zu können.
+Ziel des Fachgesprächs ist es, den Nachweis zu erbringen, dass Studierende (a) die grundlegenden Methoden und Konzepte verstanden haben und
+(b) über die **notwendigen theoretischen Kenntnisse** verfügen, um das HCI-Semesterprojekt erfolgreich durchführen und die in den Meilensteinen verlangten Arbeitsergebnisse erbringen zu können.
 
 Das Fachgespräch findet im Anschluss an die Theorieeinheiten und der Gruppenbildungsveranstaltung zu Beginn von Woche 5 statt (siehe [Semesterplan](01_semesterplan.md)).
 Voraussetzung ist die **Teilnahme** an der **Gruppenbildung** zum Semesterprojekt, da die Fachgespräche gruppenweise durchgeführt werden.
@@ -20,9 +21,11 @@ Link zum Etherpad zur Buchung eines Gruppenslots: TBA (Deadline: TBA)
 
 - Dauer: ca. 30 - 45 Min pro Gruppe
 - Raum: TBA
-- Gruppenweise Durchführung mit Buchung eines Gruppenslots während der Gruppenbildungsveranstaltung (siehe Link)
-- Jede/r Teilnehmende bekommt nacheinander eine Reihe von Fragen zu unterschiedlichen Themen aus den VO-Einheiten gestellt und sollte diese innerhalb eines definierten Zeitrahmens (idR. 30-60 Sekunden) vollständig und korrekt beantworten. 
+- Gruppenweise Durchführung 
+- Buchung eines Gruppenslots im Rahmen der Gruppenbildungsveranstaltung (siehe Link)
+- Jede/r Teilnehmende bekommt eine Reihe von Fragen zu unterschiedlichen Themen aus den VO-Einheiten gestellt und sollte diese innerhalb eines definierten Zeitrahmens (idR. 30-60 Sekunden) vollständig und korrekt beantworten. 
 - Fernbleiben ohne ärztl. Attest führt automatisch zum Ausschluss aus der Veranstaltung.
+- Entscheidend für den eigenen weiteren Verlauf der Veranstaltung
 
 
 
