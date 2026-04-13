@@ -62,11 +62,15 @@ Diese sollen auf diesen Seiten gesammelt und kommentiert zur Verfügung gestellt
     In jedem Semester biete ich und andere KollegInnen das "Vorbereitungsseminar zur Bachelorarbeit" an. Das ist ein 2,5 CP-Modul in dem die wichtigsten Themen bei der Erstellung der Bachelorarbeit anhand anschaulicher Beispiele und Fallstudien behandelt werden.
 
 
-??? question "Wie melde ich eine Bachelorarbeit an"
+??? question "Wie melde ich eine Bachelorarbeit an ?"
 
-    Voraussetzung für die Anmeldung ist ein erfolgreich abgeschlossenes Praxismodul sowie die entsprechende erarbeitete CP-Zahl. Dies ist in der jeweiligen SPO nach der sie studieren geregelt. 
+    Voraussetzung für die Anmeldung ist ein erfolgreich abgeschlossenes Praxismodul sowie die entsprechende erarbeitete CP-Zahl. Dies ist in der jeweiligen SPO, nach der sie studieren, geregelt. 
 
-    Für die Anmeldung brauchen sie eine/n Hauptbetreuer:in sowie eine/n Co-Betreuer:in (aka Korreferent:in). Ist die Betreuung geregelt, dann benötigen sie das Anmeldeformular für eine Bachelorarbeit. Dieses erhalten sie auf den Seiten des Prüfungsbüros bzw. auf den Internetseiten des Fachbereichs bei ihrem Studium. Dieses füllen sie bitte entsprechend aus und senden dieses unterzeichnet als PDF an den/die Hauptreferenten:in. Diese/r wird das Dokument ebenfalls unterzeichnen und an die/den Korreferenten:in zur Gegenzeichnung und Übermittlung an das Prüfungsbüro weiterleiten. Von Studierendenseite aus ist dann nichts weiter zu tun und sie können mit der Bearbeitung der BA starten bzw. diese fortsetzen, sollten sie bereits vor der Anmeldung begonnen haben.
+    Für die Anmeldung brauchen sie eine/n Hauptbetreuer:in sowie eine/n Co-Betreuer:in (aka Korreferent:in).
+
+    Ist die Betreuung geregelt, dann benötigen sie das **Anmeldeformular** für eine Bachelorarbeit. Dieses erhalten sie auf den Seiten des Prüfungsbüros bzw. auf den Internetseiten des Fachbereichs bei ihrem Studium. Dieses füllen sie bitte entsprechend aus und senden dieses unterzeichnet als PDF an den/die Hauptreferenten:in. Diese/r wird das Dokument ebenfalls unterzeichnen und an die/den Korreferenten:in zur Gegenzeichnung und Übermittlung an das Prüfungsbüro weiterleiten. 
+    
+    Von Studierendenseite aus ist dann nichts weiter zu tun und sie können mit der Bearbeitung der BA starten bzw. diese fortsetzen, sollten sie bereits vor der Anmeldung begonnen haben.
 
 
 ## Kolloquium
