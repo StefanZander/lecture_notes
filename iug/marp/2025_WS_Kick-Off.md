@@ -26,7 +26,7 @@ paginate: true
 
 
 Kick-Off und Organisation 
-07.10.2025 {.lightgreen .Big .Bigskip}
+14.04.2026 {.lightgreen .Big .Bigskip}
 
 
 
@@ -160,10 +160,10 @@ Weitere Vorschläge aus dem Plenum ?
   - Anwesenheitspflicht bei allen Terminen
 
 - **Erläuterung 2,5 CP**
-  - 1 CP entspricht 25 - 30 Std. Arbeit
-  - Entsprechend 2,5 CP = ca. 60 - 75 Std.
-  - Vollzeitstudium geht von 30 CP pro Semester aus, das entspricht
-  - 2,5 CP ≙ 8,5 %, d.h. bei 6-Tage-Woche ½ Tag pro Woche (4 Std.)
+  - Vollzeitstudium geht von 30 CP pro Semester aus, das entspricht 900h Zeitaufwandt 
+  - 1 CP entspricht damit 30 Std. Arbeit
+  - Daraus folgt 2,5 CP = 75 Std.
+  - Wöchentliches Arbeitspensum bei 15 Wochen Vorlesungszeit: **5 Std.** 
 
 - **Letzte Möglichkeit zur Abmeldung: Ende der Restplatzvergabe (siehe my-hda)**
   - danach Note 5 bei Nichtabgabe/Nichtteilnahme
@@ -405,7 +405,7 @@ Bildquelle: https://c4.wallpaperflare.com/wallpaper/710/270/417/1898-austrian-pa
    - 5 Minuten: Kurzes Reflexion des Quizzes
    - 45 Minuten: Präsentation, Diskussion und Interaktion
    - 15 Minuten: Feedback zur Präsentation
-   - Ende: 13:30 Uhr
+   - Ende: 11:45 Uhr
    - bei Bedarf: zus. Feedback und/oder Coaching der nachfolgenden Gruppe
 
 
@@ -413,7 +413,7 @@ Bildquelle: https://c4.wallpaperflare.com/wallpaper/710/270/417/1898-austrian-pa
 ---
 # Semestertermine :far-calendar:
 
-- **1. Termin: Kickoff und Organisation (heute 07.08.2025)**
+- **1. Termin: Kickoff und Organisation**
    - Gruppen- und Themenfindung
 
 <!--
@@ -431,12 +431,12 @@ Bildquelle: https://c4.wallpaperflare.com/wallpaper/710/270/417/1898-austrian-pa
   - selbständige Gruppenarbeit; keine Präsenzveranstaltung; bei Bedarf Coaching und Feedback durch Dozierende
 
 
-- **6. – 13. Termin: Vorstellung der einzelnen Themen** (Themen und Termine in Moodle)
+- **6. – 12. Termin: Vorstellung der einzelnen Themen** (Themen und Termine in Moodle)
   - Quiz zum Thema der Vorwoche
   - Präsentation des aktuellen Themas + Diskussion + Feedback
   
 
-- **14. Termin (TBA)**
+- **13. Termin**
   - Puffer / Quiz / Vorlesungsevaluation / Feeback / Abschluss
 
 
