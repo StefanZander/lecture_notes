@@ -69,7 +69,7 @@ extra:
       link: https://fbi.h-da.de/~s.zander
       name: personal page of Prof. Dr. Stefan Zander at h_da
 
-copyright: Copyright &copy; 2017 - 2025 – Prof. Dr. Stefan Zander
+copyright: Copyright &copy; 2017 - 2026 – Prof. Dr. Stefan Zander
 
 repo_url: https://github.com/StefanZander/lecture_notes/tree/master/swcs/html
 repo_name: swcs
@@ -80,9 +80,6 @@ edit_uri: docs/
 plugins:
   - search:
       lang: en
-  - git-revision-date-localized:
-      enable_creation_date: false
-      type: custom
 
 
 markdown_extensions:
