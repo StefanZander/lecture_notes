@@ -1,15 +1,15 @@
 # Course Schedule
 
 
-## Shorented Syllabus (SoSe 2026)
+## Shortened Syllabus (for SoSe 2026)
 
-- Week 1: Intro + Group and Topic finalization ([MS0](milestone0.md) + [MS1](milestone1.md))
-- Week 2: Submission of Factsheet and Abstract ([MS2](milestone2.md)) --- _==Deadline: TBA (EOBD)==_
-- Week 3: Research & Paper work
-- Week 4: Paper Review ([MS3](milestone3.md)) --- _==Deadline: TBA (EOBD)==_
-- Week 5: Feedback integration + Finalization of scientific presentation ([MS4](milestone4.md)) --- _==Deadline: TBA (EOBD)==_
-- Week 6: Final presenation ([MS5](milestone5.md)) --- _==Date: TBA==_
-- Week 7: Submission of research paper ([MS6](milestone6.md)) --- _==Deadline: TBA (EOD)==_
+- Week 1: Intro + Group and topic finalization ([MS0](milestone0.md) + [MS1](milestone1.md)) --- _==Deadline: MON 27.04.2026 (EOBD)==_
+- Week 2: Submission of Factsheet and Abstract ([MS2](milestone2.md)) --- _==Deadline: SUN 03.05.2026 (EOD)==_
+- Week 3: Research & paper work
+- Week 4: Upload review version of paper ([MS3](milestone3.md)) --- _==Deadline: FRI 15.05.2026 (EOBD)==_
+- Week 5: Upload paper review ([MS4](milestone4.md)) --- _==Deadline: TUE 19.05.2026 (EOBD)==_
+- Week 6: Final presenation ([MS5](milestone5.md)) --- _==Date: ggf. TUE 26.05.2026, 9:00 - 10:00 AM==_
+- Week 7: Submission of research paper ([MS6](milestone6.md)) --- _==Deadline: SUN 1.6. oder 7.6.2026 TBD (EOD)==_
 
 
 
