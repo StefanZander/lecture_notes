@@ -1,6 +1,6 @@
 # Course Schedule
 
-### Syllabus
+## Syllabus
 
 The following syllabus information intend to help you structure your work and achievements – especially during the present times. Meeting the Milestones is a hard requirement.
 
@@ -21,6 +21,19 @@ The following syllabus information intend to help you structure your work and ac
 - Week 12: Final presentations ([MS5](milestone5.md)) --- _==Date: 01.07.2025==_
 <!-- - Week 13: Paper revision -->
 - Week 13+x: Finalization and submission of research paper ([MS6](milestone6.md)) --- _==Deadline: 2025-08-14 (EOD)==_
+
+
+
+## Shorented Syllabus
+
+- Week 1: Intro + Group and Topic finalization 
+- Week 2: Submission of Factsheet and Abstract
+- Week 3: Research & Paper work
+- Week 4: Paper Review
+- Week 5: Feedback integration + Finalization of scientific presentation
+- Week 6: Final presenation
+- Week 7: Submission of research paper  
+
 
 [^1]: I will start the bidding process on SUN., 2025-06-08.
 

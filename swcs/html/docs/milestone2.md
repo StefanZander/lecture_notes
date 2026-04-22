@@ -33,7 +33,7 @@
     <!-- - Use the following link for the module "**Scientific Writing for Computer Science**":
         - Link: <https://easychair.org/conferences/?conf=swcssose2020> -->
     - Use this link for the module "**Wissenschaftliches Arbeiten in der Informatik 2**":
-        - Link: <https://easychair.org/conferences?conf=wai2-2025-sose>
+        - Link: <https://easychair.org/conferences?conf=wai2-2026-sose>
         <!-- - <https://resource-cms.springernature.com/springer-cms/rest/v1/content/19238648/data/v4> -->
     - If you haven't done this already: **Register** both authors at the EasyChair system and enter all relevant information
   
