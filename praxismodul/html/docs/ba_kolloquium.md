@@ -9,7 +9,7 @@ Das Kolloquium gliedert sich in **drei Phasen**
 Im Folgenden werden die drei Phasen sowie die Vorbereitung genauer erläutert.
 
 
-## :fontawesome-solid-people-arrows-left-right: Die Vorbereitung
+## :fontawesome-solid-people-arrows: Die Vorbereitung
 
 Das Kolloquium findet entweder vor Ort an der h_da oder online via BBB statt. Die Auswahl obliegt der/dem Studierenden und hat keinen Einfluss auf die Bewertung. Nach Abgabe der schriftlichen Arbeit und vor der Terminierung des Kolloquium meldet sich der Hauptreferent via Email bei ihnen und erfragt ihre **Präferenz** bzgl. der Durchführung.
 
