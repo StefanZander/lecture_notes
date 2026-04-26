@@ -39,9 +39,12 @@ Der Vortrag folgt einer :octicons-list-ordered-16: **vorgegebenen Struktur** und
 
 Die mündliche Verteidigung gleicht einem verkürztem Rigorosum, in dem sie mündlich Stellung zu Fragen und/oder Aussagen der Referenten beziehen müssen.
 
+Die gestellten Fragen liegen idR im Rahmen ihrer Arbeit, können aber auch Themengebiete oder Bereiche betreffen, mit denen sie sich nur am Rande befasst haben. 
 
-!!! warning "Antworten sie nur so lange wie nötig, aber so präzise wie möglich!"
-    Bitte beachten sie diesem Hinweis in ihrem eigenen Interesse. Oftmals erleben wir, dass auf Fragen, deren Antwort man nicht kennt oder bei denen man sich unsicher fühlt "herumgeredet wird", ohne belastbare Aussagen zu treffen. Tun sie das nicht. Das verschlechtert ihre Prüfungsleistung. Sagen sie stattdessen offen, dass sie aktuell keine nähere Auskuft dazu geben können. Damit geben sie uns die Möglichkeit in weiteren/folgenden Fragen ihren Kenntnisstand zu erfragen. 
+Weitere Details folgen...
+
+!!! warning "Wichtig: Antworten sie nur so lange wie nötig, aber so präzise wie möglich!"
+    Bitte beachten sie diesen Hinweis in ihrem eigenen Interesse. Oftmals erleben wir, dass auf Fragen, deren Antwort man nicht kennt oder bei denen man sich unsicher fühlt "herumgeredet" wird, ohne belastbare Aussagen zu treffen. Tun sie das nicht! Das verschlechtert ihre Prüfungsleistung. Sagen sie stattdessen offen, dass sie aktuell keine nähere Auskuft dazu geben können. Damit geben sie uns die Möglichkeit in weiteren/folgenden Fragen ihren Kenntnisstand zu erfragen. 
 
 
 
