@@ -23,7 +23,7 @@
 
     !!! important "Link to the WAI2 conference at easychair.org"
         Use this link for the registration and submission of results:  
-        <https://easychair.org/conferences?conf=wai2-2026-sose>
+        <https://easychair.org/conferences/?conf=wai2-2026-sose>
 
     !!! info "Registration Policy"
         Both(!) authors need to register at the EasyChair system. Please use your official student email addresses for the registration as I will use these later to register you as Programme Committee (PC) Member for the reviews. If author and programme committee email addresses do *not* match, problems will occur during the paper assignment and review phase. Be aware, you might lose points in such a case.
