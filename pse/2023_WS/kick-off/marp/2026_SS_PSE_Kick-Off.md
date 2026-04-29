@@ -77,7 +77,17 @@ Für *Studierende*, sagen Sie bitte kurz ...
 
 ::::: columns
 :::: double
-TBA
+Andorfer, Kim Leon	Kim.L.Andorfer@stud.h-da.de
+Fofou, Daniel Tresor	danieltresor.fofou@stud.h-da.de
+Heil, Phil	phil.heil@stud.h-da.de
+Hofmann, Till	till.hofmann@stud.h-da.de
+Karakich, Ahmad	ahmad.karakich@stud.h-da.de
+Lang, Albert	albert.lang@stud.h-da.de
+Prochazka, Philipp	philipp.prochazka@stud.h-da.de
+Reidel, Sebastian	sebastian.reidel@stud.h-da.de
+Tchouami Yaho, Brice	brice.tchouamiyaho@stud.h-da.de
+Turkmani, Ahadullah	ahadullah.turkmani@stud.h-da.de
+Younes, Wael	wael.younes@stud.h-da.de
 ::::
 :::: single
 ::::
@@ -212,7 +222,7 @@ In Summe veranschlagen wir pro Person ein :far-clock: **Gesamtzeitbudget** von *
 
 ---
 # Kommunikation :fas-people-arrows:
-- (optional) via :fab-discord: **Discord**:  TBA 
+- (optional) via :fab-discord: **Discord**: <https://discord.gg/WbD2YvqK> 
   - für die Kommunikation der Projektteams untereinander
   - für die Kommunikation mit dem/den Projektverantwortlichem/na zu technischen Fragen
 - :fas-envelope: **Email** bei wichtigen und/oder offiziellen Dingen
