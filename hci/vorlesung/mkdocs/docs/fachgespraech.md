@@ -12,7 +12,7 @@ Voraussetzung ist die **Teilnahme** an der **Gruppenbildung** zum Semesterprojek
 
 ## Organisation und Durchführung
 
-Link zum Etherpad zur Buchung eines Gruppenslots: TBA (Deadline: TBA)
+Link zum Etherpad zur Buchung eines Gruppenslots: https://etherpad.h-da.de/p/HCI_SS2026_Gruppeneinteilung
 
 - Voraussetzung: Teilnahme an der Gruppenbildungsveranstaltung zum Semesterprojekt, d.h., sie gehören einer definierten Gruppe an und haben sich in das Etherpad zur Semesterprojektgruppenübersicht zusammen mit ihren Gruppenmitgliedern eingetragen. 
 
