@@ -20,12 +20,13 @@ Link zum Etherpad zur Buchung eines Gruppenslots: https://etherpad.h-da.de/p/HCI
         Sollten sie _nicht_ an der Gruppenbildungsveranstaltung teilgenommen und/oder sich _nicht_ rechtzeitig in das Etherpad eingetragen haben, dann ist eine Teilnahme an den Fachgesprächen und eine erfolgreiche Abesolvierung der Lehrveranstaltung im aktuellen Semester nicht möglich.
 
 - Dauer: ca. 30 - 45 Min pro Gruppe
-- Raum: TBA
+- Raum: **D19/03.08**
 - Gruppenweise Durchführung 
 - Buchung eines Gruppenslots im Rahmen der Gruppenbildungsveranstaltung (siehe Link)
 - Jede/r Teilnehmende bekommt eine Reihe von Fragen zu unterschiedlichen Themen aus den VO-Einheiten gestellt und sollte diese innerhalb eines definierten Zeitrahmens (idR. 30-60 Sekunden) vollständig und korrekt beantworten. 
 - Fernbleiben ohne ärztl. Attest führt automatisch zum Ausschluss aus der Veranstaltung.
 - Entscheidend für den eigenen weiteren Verlauf der Veranstaltung
+- Hilfsmittel: keine
 
 
 
