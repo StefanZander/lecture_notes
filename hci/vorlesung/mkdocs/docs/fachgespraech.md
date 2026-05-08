@@ -12,7 +12,7 @@ Voraussetzung ist die **Teilnahme** an der **Gruppenbildung** zum Semesterprojek
 
 ## Organisation und Durchführung
 
-Link zum Etherpad zur Buchung eines Gruppenslots: https://etherpad.h-da.de/p/HCI_SS2026_Gruppeneinteilung
+Link zum Etherpad zur Buchung eines Gruppenslots: <https://etherpad.h-da.de/p/HCI_SS2026_Gruppeneinteilung>
 
 - Voraussetzung: Teilnahme an der Gruppenbildungsveranstaltung zum Semesterprojekt, d.h., sie gehören einer definierten Gruppe an und haben sich in das Etherpad zur Semesterprojektgruppenübersicht zusammen mit ihren Gruppenmitgliedern eingetragen. 
 
@@ -35,6 +35,7 @@ Link zum Etherpad zur Buchung eines Gruppenslots: https://etherpad.h-da.de/p/HCI
 - Die Gesamtbeurteilung errechnet sich aus der Summe der korrekten Antworten
 - Ist die Gesamtbeurteilung noch ausreichend oder besser, dann kann die/der Studierende in die Phase 2 der Veranstaltung ([Arbeit am Semesterprojekt](semesterprojekt.md)) eintreten.
 - Ist die Gesamtbeurteilung nicht mehr ausreichend, also mangelhaft, dann zählt die Lehrveranstaltung als nicht bestanden und die/der Studierende kann diese im aktuellen Semester nicht mehr erfolgreich absolvieren.
+- Die Beurteilung des Fachgesprächs wirkt wie eine Teilleistung für das Semesterprojekt und führt – bei allg. positiver Bewertung von Fachgespräch und Semesterprojekt – zu einer Auf- oder Abwertung der individuellen Modulnote.
 
 <!-- Entscheidet darüber, ob Studierende über das notwendige theoretische Wissen verfügen, um das Semesterprojekt erfolgreich durchführen zu können -->
 
