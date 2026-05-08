@@ -16,8 +16,8 @@ Link zum Etherpad zur Buchung eines Gruppenslots: https://etherpad.h-da.de/p/HCI
 
 - Voraussetzung: Teilnahme an der Gruppenbildungsveranstaltung zum Semesterprojekt, d.h., sie gehören einer definierten Gruppe an und haben sich in das Etherpad zur Semesterprojektgruppenübersicht zusammen mit ihren Gruppenmitgliedern eingetragen. 
 
-    !!! danger "Zwingende Voraussetzung für die Teilnahme"
-        Sollten sie _nicht_ an der Gruppenbildungsveranstaltung teilgenommen und/oder sich _nicht_ rechtzeitig in das Etherpad eingetragen haben, dann ist eine Teilnahme an den Fachgesprächen und eine erfolgreiche Abesolvierung der Lehrveranstaltung im aktuellen Semester nicht möglich.
+    !!! danger "Teilnahme an Gruppenbildungsveranstaltung zwingende Voraussetzung für Teilnahme"
+        Sollten sie _nicht_ an der Gruppenbildungsveranstaltung teilgenommen und/oder sich _nicht_ rechtzeitig in das Etherpad eingetragen haben, dann ist eine Teilnahme an den Fachgesprächen und eine erfolgreiche Absolvierung der Lehrveranstaltung im aktuellen Semester nicht möglich!
 
 - Dauer: ca. 30 - 45 Min pro Gruppe
 - Raum: **D19/03.08**
