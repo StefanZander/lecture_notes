@@ -89,7 +89,7 @@ extra:
 
 copyright: Copyright &copy; 2017 - 2026 – Prof. Dr. Stefan Zander
 
-repo_url: https://github.com/StefanZander/lecture_notes/tree/master/hci/praktikum/html
+repo_url: https://github.com/StefanZander/lecture_notes/tree/master/hci/vorlesung/mkdocs
 repo_name: /hci/vorlesung
 
 edit_uri: docs/
