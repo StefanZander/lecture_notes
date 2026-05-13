@@ -16,8 +16,8 @@
 - Woche 10: Arbeit am Semesterprojekt
 - Woche 11: Arbeit am Semesterprojekt
 - Woche 12: Arbeit am Semesterprojekt
-- Woche 13: App-Präsentationen --> :fontawesome-solid-exclamation-circle: *Anwesenheitspflicht*
-- Woche 14: App-Präsentationen --> :fontawesome-solid-exclamation-circle: *Anwesenheitspflicht*
+- Woche 13: Arbeit am Semesterprojekt ODER App-Präsentationen --> :fontawesome-solid-exclamation-circle: *Anwesenheitspflicht*
+- Woche 14: App-Präsentationen --> :fontawesome-solid-exclamation-circle: *Anwesenheitspflicht* 
 
 :octicons-info-16: _Vorbehaltlich etwaiger Anpassungen, die sich im Laufe des Semesters ergeben bzw. sich als sinnvoll herausstellen._
 
@@ -45,9 +45,9 @@
 
 ## :material-sign-direction: Semesterprojekt
 
-- Meilenstein 1: Projektziele und Problemverständnis – _Ende Woche 5_ -->  :fontawesome-solid-exclamation-circle: _TBA_
-- Meilenstein 2: User Research – _Ende Woche 9_ --> :fontawesome-solid-exclamation-circle: _TBA_
-- Meilenstein 3: UI-Entwurf – _Ende Woche 9_ --> :fontawesome-solid-exclamation-circle: _TBA_
+- Meilenstein 1: Projektziele und Problemverständnis – _finale Einreichung zusammen mit MS #3_
+- Meilenstein 2: User Research – _Ende Woche 9 oder 10_ --> :fontawesome-solid-exclamation-circle: _TBD_
+- Meilenstein 3: UI-Entwurf – _Ende Woche 9 oder 10_ --> :fontawesome-solid-exclamation-circle: _TBD_
 - Meilenstein 4: App-Entwicklung und -präsentation – _Woche 13 & 14 (siehe VO-Plan)_
 - Meilenstein 5: Usability Evaluation --> :fontawesome-solid-exclamation-circle: _TBA_
 <!-- *legen wir gemeinsam in den Abschlussveranstaltungen fest* -->
