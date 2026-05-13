@@ -21,8 +21,17 @@ Diese Seite enthält die wesentlichen Informationen zur Organisation und Ablauf 
     - ...Gruppenarbeit zu fokussieren
     - ...mit anderen Gruppen zu kollaborieren
 
+Die kanonische Unterteilung der Veranstaltung in Praktikum und Vorlesung ist aufgehoben. Die Veranstaltung hat Workshop-Charakter und ist entspr. organisiert (siehe auch den [Einführungsfoliensatz](https://code.fbi.h-da.de/zander/hci/material/-/raw/main/0_organisation/01_organisation.pdf) – _abrufbar nach Anmeldung über code.fbi.h-da.de_). Es gibt mehrere Veranstaltungsformate, die Studierende 
+
 
 ### Durchführung
+
+!!! warning ""
+    :material-timetable: Buchungslink: <https://etherpad.h-da.de/p/HCI_2026SS_Terminbuchung_Praktika>
+
+
+Gruppen können sich wochenweise in einen beliebigen PR-Termin einbuchen und bei Bedarf auch mehrere Termine in einer Woche wahrnehmen.
+
 
 Durchführung (online / offline) in Abstimmung mit den Gruppen und abhängig vom Semesterfortschritt
 
