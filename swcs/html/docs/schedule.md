@@ -7,9 +7,9 @@
 - Week 2: Submission of Factsheet and Abstract ([MS2](milestone2.md)) --- _==Deadline: SUN 03.05.2026 (EOD)==_
 - Week 3: Research & paper work
 - Week 4: Upload review version of paper ([MS3](milestone3.md)) --- _==Deadline: FRI 15.05.2026 (EOBD)==_
-- Week 5: Upload paper review ([MS4](milestone4.md)) --- _==Deadline: TUE 19.05.2026 (EOBD)==_
-- Week 6: Final presenation ([MS5](milestone5.md)) --- _==Date: ggf. TUE 26.05.2026, 9:00 - 10:00 AM==_
-- Week 7: Submission of research paper ([MS6](milestone6.md)) --- _==Deadline: SUN 1.6. oder 7.6.2026 TBD (EOD)==_
+- Week 5: Upload paper review ([MS4](milestone4.md)) --- _==Deadline: SUN 24.05.2026 (EOBD)==_
+- Week 6: Final presenation ([MS5](milestone5.md)) --- _==Date: ggf. MON/TUE 01./02.06.2026, 9:00 - 10:00 AM==_
+- Week 7: Submission of research paper ([MS6](milestone6.md)) --- _==Deadline: SUN 7.6.2026 TBD (EOD)==_
 
 
 
