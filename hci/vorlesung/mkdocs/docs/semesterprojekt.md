@@ -51,7 +51,6 @@ Die Wahl des Dokumentationstools (LaTeX, Markdown, Textverarbeitungstool, Google
     - Bitte reichen sie nur eine einzige Datei mit dem o.g. Namen ein. Der ms-Ordner kann selbstverständlich noch andere Datein und Unterordner enthalten, diese werden jedoch bei der Beurteilung nicht berücksichtig. Wichtig ist, dass die Projektmappe durch einen eindeutigen Namen gekennzeichnet ist (s.o.). Ist das nicht der Fall, dann erfolgt mindestens ein Punktabzug auf den jeweiligen Meilenstein aufgrund von Nichtbeachtung formaler Anforderungen.
 - Deckblatt mit folgenden Informationen (_bitte für jeden Meilenstein beibehalten!_)
     - Projektname
-    - Praktikumsslot
     - Vollständige Namen und Matrikelnummern aller Gruppenmitglieder alphabetisch sortiert
     - Link zum GitLab-Gruppen-Repository
 - Erste Seite
