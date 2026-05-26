@@ -39,5 +39,14 @@ Link zum Etherpad zur Buchung eines Gruppenslots: <https://etherpad.h-da.de/p/HC
 
 <!-- Entscheidet darüber, ob Studierende über das notwendige theoretische Wissen verfügen, um das Semesterprojekt erfolgreich durchführen zu können -->
 
+### Bewertungsaspekte
+
+In die Beurteilung der Fachgesprächsleistung fließen folgende Kriterien ein: 
+
+- Analysefähigkeit
+- Begründung
+- Transfer
+- Reflexion
+- Souveräner Umgang mit Unsicherheit
 
 

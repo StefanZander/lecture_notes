@@ -6,7 +6,7 @@ Vieles in diesem Bereich entstammt der persönlichen Erfahrung; Einiges aus wiss
 
 * Suchen sie nicht nach Themem – suchen sie stattdessen nach  **Problemen**. Stellen sie ein spannendes, nicht-trivial zu lösendes Problem in das Zentrum ihrer Arbeit. Überlegen sie sich dann, wie man dieses Problem grundsätzlich lösen könnte bzw. noch besser: welche grundsätzlichen Herangehensweisen es gibt, um Lösungen für das Problem zu entwicklen. Tragen sie Aspekte zusammen an denen sich die Effektivität und die Effizienz eines Lösungsweges festmachen bzw. bemessen lässt. So stellen sie sicher (und können das auch gut verargumentieren), dass der von ihnen gewählte Weg nicht zufällig oder willkürlich entstanden, sondern das Resultat eines strukturierten und systematisierten Prozesses unter Einhaltung wesentlicher Elemente guten wissenschaftlichen Arbeitens ist. 
 
-* Gehen Sie nicht mit dem Handy auf's Klo; legen sie stattdessen einen Block Papier und Stifte dort ab um sich rasch gute Einfälle oder Ideen notieren zu können
+* Gehen Sie nicht mit dem Handy auf's Klo; legen sie stattdessen einen Block Papier und Stifte dort ab, um sich rasch gute Einfälle oder Ideen notieren zu können
 
 * Nehmen Sie das Handy oder den Laptop nicht mit ins Bett.  
     Die Zeit vor dem Einschlafen ist mit die Wertvollste; reflektieren Sie Ihren Tag oder etwaige Probleme an denen Sie gerade arbeiten. Skizzieren Sie auf Paper mögliche Lösungsansätze. U.U. entwickelt sich im Schlaf eine Lösung oder ein wesentliches Artefakt, welches Ihnen bei der Lösungsfindung hilft (_--> das funktioniert wirklich – probieren Sie es aus_).
