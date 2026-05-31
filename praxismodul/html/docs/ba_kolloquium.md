@@ -20,7 +20,7 @@ Wichtig: Hierbei handelt es sich um eine :incoming_envelope: **offizielle Einlad
 
 ## :fontawesome-solid-person-chalkboard: Der Vortrag
 
-Der Vortrag sollte :clock2: **max. 10 Minuten** dauern und aus nicht mehr als :material-presentation-play: **5-6 Hauptfolien** bestehen.
+Der Vortrag sollte :clock2: **max. 10 Minuten** dauern und aus nicht mehr als :material-presentation-play: **5-7 Hauptinhaltsfolien** bestehen.
 
 Der Vortrag folgt einer :octicons-list-ordered-16: **vorgegebenen Struktur** und muss zwingend die folgenden **Aspekte** adressieren:
 
@@ -41,9 +41,14 @@ Die mündliche Verteidigung gleicht einem verkürztem Rigorosum, in dem sie mün
 
 Die gestellten Fragen liegen idR im Rahmen ihrer Arbeit, können aber auch Themengebiete oder Bereiche betreffen, mit denen sie sich nur am Rande befasst haben. 
 
-Weitere Details folgen...
+Versuchen sie die Fragen bestmöglich zu beantworten und beherzigen sie nachstehende Hinweise:
 
-!!! warning "Wichtig: Antworten sie nur so lange wie nötig, aber so präzise wie möglich!"
+!!! warning "Wichtig: Antworten sie nur so lange wie nötig, aber so präzise wie möglich!" 
+    Versuchen sie die wesentlichen Punkte möglichst präzise zu benennen. Vermeiden sie unnötige Abschweifungen oder Exkursionen; das verschlechtert die Beurteilung ihrer Antwort. Im Zweifel fragen wir nach oder fordern weitere Erläuterungen. 
+    Ihre Antwort sollte den Prinzipien eines gut formulierten Abstracts folgen: :material-lightbulb-on: _nur so lange wie nötig, aber die Dinge so präzise wie möglich benennen._
+
+
+!!! warning "Mut zur Lücke!"
     Bitte beachten sie diesen Hinweis in ihrem eigenen Interesse. Oftmals erleben wir, dass auf Fragen, deren Antwort man nicht kennt oder bei denen man sich unsicher fühlt "herumgeredet" wird, ohne belastbare Aussagen zu treffen. Tun sie das nicht! Das verschlechtert ihre Prüfungsleistung. Sagen sie stattdessen offen, dass sie aktuell keine nähere Auskuft dazu geben können. Damit geben sie uns die Möglichkeit in weiteren/folgenden Fragen ihren Kenntnisstand zu erfragen. 
 
 

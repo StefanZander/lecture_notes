@@ -46,9 +46,9 @@
 ## :material-sign-direction: Semesterprojekt
 
 - Meilenstein 1: Projektziele und Problemverständnis – _finale Einreichung zusammen mit MS #3_
-- Meilenstein 2: User Research – _Ende Woche 9 oder 10_ --> :fontawesome-solid-exclamation-circle: _TBD_
-- Meilenstein 3: UI-Entwurf – _Ende Woche 9 oder 10_ --> :fontawesome-solid-exclamation-circle: _TBD_
-- Meilenstein 4: App-Entwicklung und -präsentation – _Woche 13 & 14 (siehe VO-Plan)_
+- Meilenstein 2: User Research – _Ende Woche 9 oder 10_ --> :fontawesome-solid-exclamation-circle: _mit MS #3_
+- Meilenstein 3: UI-Entwurf – _Ende Woche 9 oder 10_ --> :fontawesome-solid-exclamation-circle: _14.06. oder 21.06._
+- Meilenstein 4: App-Entwicklung und -präsentation – _Woche 13 & 14, ie., 6.7. & 13.7._
 - Meilenstein 5: Usability Evaluation --> :fontawesome-solid-exclamation-circle: _TBA_
 <!-- *legen wir gemeinsam in den Abschlussveranstaltungen fest* -->
 
