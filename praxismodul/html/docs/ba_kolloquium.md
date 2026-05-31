@@ -35,7 +35,7 @@ Der Vortrag folgt einer :octicons-list-ordered-16: **vorgegebenen Struktur** und
 
 
 
-## :material-brain: Die mündliche Verteidigung
+## :fontawesome-solid-comments: Die mündliche Verteidigung
 
 Die mündliche Verteidigung gleicht einem verkürztem Rigorosum, in dem sie mündlich Stellung zu Fragen und/oder Aussagen der Referenten beziehen müssen.
 
