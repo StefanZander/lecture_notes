@@ -13,7 +13,7 @@
 - Woche 7: Reflexion + Arbeit am Semesterprojekt
 - Woche 8: Reflexion + Arbeit am Semesterprojekt
 - Woche 9: Arbeit am Semesterprojekt  
-- Woche 10: Arbeit am Semesterprojekt + Deadline [Meilenstein 2](ms2.md) & [Meilenstein 3](ms3.md)
+- Woche 10: Arbeit am Semesterprojekt + Deadline [Meilenstein 1](ms1.md), [2](ms2.md) & [3](ms3.md)
 - Woche 11: Arbeit am Semesterprojekt
 - Woche 12: Arbeit am Semesterprojekt
 - Woche 13: Arbeit am Semesterprojekt ODER App-Präsentationen --> :fontawesome-solid-exclamation-circle: *Anwesenheitspflicht*
