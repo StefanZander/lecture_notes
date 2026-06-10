@@ -8,12 +8,12 @@
 - Woche 2: [Kapitel 2: User Research](2_user_research.md) + [Kapitel 3: Requirements Engineering](3_requirements_engineering.md)
 - Woche 3: [Kapitel 4: Modellbildung](4_models.md) + [Kapitel 5: Prototyping](5_prototyping.md) + [Kapitel 6: Visual Design](6_visual_design.md)
 - Woche 4: [Kapitel 7: Usability Evaluation](7_usability.md) + Festlegung der Projektgruppen[^1]
-- Woche 5: [Fachgespräche](fachgespraech.md) + Deadline [Meilenstein 1](ms1.md)
+- Woche 5: [Fachgespräche](fachgespraech.md) + erste Überlegungen zu [Meilenstein 1](ms1.md)
 - Woche 6: Reflexion + Arbeit am Semesterprojekt
 - Woche 7: Reflexion + Arbeit am Semesterprojekt
 - Woche 8: Reflexion + Arbeit am Semesterprojekt
-- Woche 9: Arbeit am Semesterprojekt + Deadline [Meilenstein 2](ms2.md) & [Meilenstein 3](ms3.md) 
-- Woche 10: Arbeit am Semesterprojekt
+- Woche 9: Arbeit am Semesterprojekt  
+- Woche 10: Arbeit am Semesterprojekt + Deadline [Meilenstein 1](ms1.md), [2](ms2.md) & [3](ms3.md)
 - Woche 11: Arbeit am Semesterprojekt
 - Woche 12: Arbeit am Semesterprojekt
 - Woche 13: Arbeit am Semesterprojekt ODER App-Präsentationen --> :fontawesome-solid-exclamation-circle: *Anwesenheitspflicht*
@@ -46,8 +46,8 @@
 ## :material-sign-direction: Semesterprojekt
 
 - Meilenstein 1: Projektziele und Problemverständnis – _finale Einreichung zusammen mit MS #3_
-- Meilenstein 2: User Research – _Ende Woche 9 oder 10_ --> :fontawesome-solid-exclamation-circle: _mit MS #3_
-- Meilenstein 3: UI-Entwurf – _Ende Woche 9 oder 10_ --> :fontawesome-solid-exclamation-circle: _14.06. oder 21.06._
+- Meilenstein 2: User Research – _Ende Woche 10_ --> :fontawesome-solid-exclamation-circle: _mit MS #3_
+- Meilenstein 3: UI-Entwurf – _Ende Woche 10_ --> :fontawesome-solid-exclamation-circle: _21.06._
 - Meilenstein 4: App-Entwicklung und -präsentation – _Woche 13 & 14, ie., 6.7. & 13.7._
 - Meilenstein 5: Usability Evaluation --> :fontawesome-solid-exclamation-circle: _TBA_
 <!-- *legen wir gemeinsam in den Abschlussveranstaltungen fest* -->

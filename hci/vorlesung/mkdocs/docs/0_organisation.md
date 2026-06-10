@@ -40,7 +40,7 @@ Seit dem WiSe 2025/2026 folgt die Veranstaltung dem Modell des [Active Learning]
 
 Die Leistungsbewertung im Modul erfolgt individuell und setzt sich aus drei Elementen zusammen:
 
-1. Die bewerteten Meilensteine 2-4 (siehe [Semesterprojekt](./semesterprojekt.md) und [Semesterplan](./01_semesterplan.md#material-sign-direction-semesterprojekt))
+1. Die bewerteten Meilensteine 2-5 (siehe [Semesterprojekt](./semesterprojekt.md) und [Semesterplan](./01_semesterplan.md#material-sign-direction-semesterprojekt))
 2. Das individuelle Fachgespräch
 3. Die Beitragsmatrix
 
