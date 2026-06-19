@@ -1,4 +1,4 @@
-# Meilenstein 2: UI-Entwurf
+# Meilenstein 3: UI-Entwurf
 
 !!! success "Lernziele"
     - [x] Sie können eine Benutzungsschnittstelle mit geeigneten Diagrammen beschreiben
