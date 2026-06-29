@@ -48,6 +48,40 @@ Alle **Protokolle** aus den folgenden Teilaufgaben kommen in die Projektmappe.
 !!! warning "Alles was Sie nicht präsentieren kann nicht gewertet werden."
 
 
+## Bewertungsaspekte
+
+??? success "Auflistung der Bewertungsaspekte"
+    - *Fachlich*
+        - Aufgreifen User Research
+        - Aufgreifen von Begeisterungsfaktoren
+        - Darlegung und Begründung von Designentscheidungen
+        - Professioneller Vortrag
+        - Aufgreifen der Stereotypen bei Präsentation
+        - Berücksichtigung und Darlegung von Visual-Design-Inhalten
+        - Ziel und Probleme dargelegt
+    - *Funktional*
+        - App-Zustand jederzeit sichtbar
+        - Fehlervermeidendes Design
+        - Unmittelbare Rückmeldung bei Interaktionen
+        - Persistierung
+        - Möglichkeit des Zurücksetzens
+        - Beibehalten des App-Zustands nach Beendigung / Neustart
+    - *Technisch*
+        - Globales State-Management (Screen-übergreifendes Zustandsmanagement)
+        - Asynchroner Datenabruf aus einer externen Quelle
+        - Integration von JSON
+        - Listenbasierte Darstellung (bspw. Flutter `ListItem`)
+        - Präsentation direkt am Gerät
+        - (optional) Sensor etc. Integration
+        - (optional) Nutzing externe Daten/APIs
+        - (optional) Datenbank
+        - (optional) Backend
+    - *Sonstiges*
+        - Sonstige Aspekte (bspw. Abgrenzung zu existierenden Apps; Aufgreifen wissenschaftlicher Studien/Erkenntnisse; Darlegung zus. Research-Maßnahmen)
+        - (indirekt) Gruppengröße
+
+
+
 ## Nach den Präsentationen
 
 Nach den Präsentationen legen wir gemeinsam den Abgabetermin für den letzten Meilenstein [Usability Evaluierung](ms5.md) fest. 
