@@ -16,8 +16,8 @@
 - Woche 10: Arbeit am Semesterprojekt + Deadline [Meilenstein 1](ms1.md), [2](ms2.md) & [3](ms3.md)
 - Woche 11: Arbeit am Semesterprojekt
 - Woche 12: Arbeit am Semesterprojekt
-- Woche 13: Arbeit am Semesterprojekt ODER App-Präsentationen --> :fontawesome-solid-exclamation-circle: *Anwesenheitspflicht*
-- Woche 14: App-Präsentationen --> :fontawesome-solid-exclamation-circle: *Anwesenheitspflicht* 
+- Woche 13: Arbeit am Semesterprojekt + ggf. App-Präsentationen ([Slot-Buchung](https://etherpad.h-da.de/p/HCI_SS2026_App-Pr%C3%A4sentationen)) --> :fontawesome-solid-exclamation-circle: *Anwesenheitspflicht* 
+- Woche 14: App-Präsentationen ([Slot-Buchung](https://etherpad.h-da.de/p/HCI_SS2026_App-Pr%C3%A4sentationen))--> :fontawesome-solid-exclamation-circle: *Anwesenheitspflicht* 
 
 :octicons-info-16: _Vorbehaltlich etwaiger Anpassungen, die sich im Laufe des Semesters ergeben bzw. sich als sinnvoll herausstellen._
 
@@ -48,7 +48,7 @@
 - Meilenstein 1: Projektziele und Problemverständnis – _finale Einreichung zusammen mit MS #3_
 - Meilenstein 2: User Research – _Ende Woche 10_ --> :fontawesome-solid-exclamation-circle: _mit MS #3_
 - Meilenstein 3: UI-Entwurf – _Ende Woche 10_ --> :fontawesome-solid-exclamation-circle: _21.06._
-- Meilenstein 4: App-Entwicklung und -präsentation – _Woche 13 & 14, ie., 6.7. & 13.7._
+- Meilenstein 4: App-Entwicklung und -präsentation ([Slot-Buchung](https://etherpad.h-da.de/p/HCI_SS2026_App-Pr%C3%A4sentationen)) – _Woche 13 & 14, ie., 6.7. & 13.7._
 - Meilenstein 5: Usability Evaluation --> :fontawesome-solid-exclamation-circle: _TBA_
 <!-- *legen wir gemeinsam in den Abschlussveranstaltungen fest* -->
 
