@@ -205,6 +205,27 @@ Bitte fügen sie ihrer Projektmappe einen Link zur :fontawesome-regular-file-aud
 
 
 
+## Bewertungsaspekte
+
+??? success "Auflistung der wichtigsten Bewertungsaspekte"
+    - Einführung + Motivation: Methodenübersicht mit Erkenntnisinteresse + Begründung
+    - User- + Kriterien-Liste: Vollständigkeit, Angemessenheit, Begründungen, Operationalisierung
+    - Infos zur Unterscheidung der Ausprägungen
+    - Auswahl d. Stereotypen (nachvollziehbar, begründet)
+    - Stereotypbeschreibungen (detailliert, nachvollziehbar, etc.)
+    - Interview: Nachvollziehbare Beschreibung des Vorgehens; Metainformationen enthalten, Pilottest; Reflexion
+    - Ausarbeitung Leitfaden: Forschungsfragen, Problembereiche, Hypothesen, Dokumentation, Nachvollziehbarkeit, meth. Reflexion etc.
+    - Auswertung: strukturiert und nachvollziehbar (Belege, Iview-Stellen den Hypothesen zugeordnet etc.)
+    - Erkenntnisse: saubere, nachvollziehbare Darlegung
+    - AW-Szenarien
+    - Formulierung von Anforderungen: strukturierter Datensatz; Satzschablone; Transformationseffekte
+    - Verifikation von Qualitätsanforderungen
+    - Begeisterungsfaktoren: nachvollziehbar und realistisch; Methode(n) erörtert
+    - Weitere UR-Methoden: Beobachtung, Umfrage etc.
+    - Sonstiges
+
+
+
 ## Ergebnisse
 
 Ihre Projektmappe muss mindestens folgende ausgearbeitete Artefakte enthalten: 
