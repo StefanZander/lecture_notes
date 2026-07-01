@@ -52,12 +52,12 @@ Alle **Protokolle** aus den folgenden Teilaufgaben kommen in die Projektmappe.
 
 ??? success "Auflistung der Bewertungsaspekte"
     - *Fachlich*
-        - Aufgreifen User Research
+        - Aufgreifen User Research (_was/welche Aspekte führen zu pos./neg. Erfahrungen_)
         - Aufgreifen von Begeisterungsfaktoren
         - Darlegung und Begründung von Designentscheidungen
         - Professioneller Vortrag
         - Aufgreifen der Stereotypen bei Präsentation
-        - Berücksichtigung und Darlegung von Visual-Design-Inhalten
+        - Berücksichtigung und Darlegung von Visual-Design-Inhalten (_an welchen Stellen wurden welche UI-/VD-Prinzipien berücksichtigt_)
         - Ziel und Probleme dargelegt
     - *Funktional*
         - App-Zustand jederzeit sichtbar

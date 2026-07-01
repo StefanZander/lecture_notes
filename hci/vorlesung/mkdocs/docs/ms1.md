@@ -8,8 +8,9 @@
 
 ## :material-crane: Vorbereitung
 
-- Im Zuge der Gruppenfindung innerhalb der HCI-Vorlesung haben sie sich bereits einer Gruppe angeschlossen bzw. mit Mitstudierenden eine Gruppe gebildet. :fontawesome-solid-triangle-exclamation: Falls nicht, dann sind sie hoffentlich in der Vorlesung zu mir gekommen und wir haben eine Lösung gefunden. :material-cancel: Falls auch das nicht der Fall ist dann, fehlt ihnen die notwendige Voraussetzung für das erfolgreiche Absolvieren des Moduls im vorliegenden Semester und sie müssen das Modul in einem späteren Semester absolvieren.
-- Mit ihrer Gruppe haben sie bereits erste Anwendungsgebiete diskutiert und erste Projekt-Ideen entwickelt, die sie im Praktikum vorstellen können.
+- Sie haben das Fachgespräch erfolgreich durchlaufen und sich mit Mitstudierenden zu einer Gruppe zusammengefunden. Die Gruppenkonstellation haben sie in der auf die Fachgespräche folgenden Lehrveranstaltung in das bereitgestellte Sheet eingetragen.
+<!-- - Im Zuge der Gruppenfindung innerhalb der HCI-Vorlesung haben sie sich bereits einer Gruppe angeschlossen bzw. mit Mitstudierenden eine Gruppe gebildet. :fontawesome-solid-triangle-exclamation: Falls nicht, dann sind sie hoffentlich in der Vorlesung zu mir gekommen und wir haben eine Lösung gefunden. :material-cancel: Falls auch das nicht der Fall ist dann, fehlt ihnen die notwendige Voraussetzung für das erfolgreiche Absolvieren des Moduls im vorliegenden Semester und sie müssen das Modul in einem späteren Semester absolvieren. -->
+- Mit ihrer Gruppe haben sie bereits erste Anwendungsgebiete diskutiert und erste Projekt-Ideen entwickelt.
 - Alle Gruppenmitglieder haben sich mit den administrativen und organisatorischen Rahmenbedingungen der Veranstaltung vertraut gemacht und sich etwaige Fragen zur gemeinsamen Klärung notiert.
 
 
