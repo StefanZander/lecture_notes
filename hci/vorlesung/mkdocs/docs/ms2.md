@@ -171,10 +171,10 @@ Notieren Sie die wichtigsten Erkenntnisse in der Projektmappe.
 
 Zeichnen sie das/die Interview(s) als Audiodatei auf. Diese Audioaufzeichnung können sie anschließend mit einem Audio-zu-Text-Konverter (aka Transkriptionstool) verschriftlichen und in die Projektmappe übernehmen; sie müssen dieses nicht manuell "abtippen" oder transkribieren.
 
-Bitte fügen sie ihrer Projektmappe einen Link zur :fontawesome-regular-file-audio: Audiodatei (diese können sie in ihren GitLab-Projekt-Repos speichern) sowie :octicons-image-16: Fotos des Interviews hinzu.
+Bitte fügen sie ihrer Projektmappe einen Link zur :fontawesome-regular-file-audio: Audiodatei (_diese können sie in ihrem GitLab-Projekt-Repository speichern_) sowie :octicons-image-16: Fotos des Interviews hinzu.
 
 !!! warning "Audiodatei und Foto der/des Interview(s)"
-    Wichtig ist uns, dass sie die Interviews tatsächlich durchführen und diese nicht durch KI-Tools simulieren. Beide Artefakte sollen dies nachweisen.
+    Wichtig ist uns, dass sie die Interviews tatsächlich durchführen und diese nicht durch KI-Tools simulieren. Beide o.g. Artefakte sollen dies nachweisen.
 
 
 
