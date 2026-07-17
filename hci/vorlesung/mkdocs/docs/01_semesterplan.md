@@ -49,7 +49,8 @@
 - Meilenstein 2: User Research – _Ende Woche 10_ --> :fontawesome-solid-exclamation-circle: _mit MS #3_
 - Meilenstein 3: UI-Entwurf – _Ende Woche 10_ --> :fontawesome-solid-exclamation-circle: _21.06._
 - Meilenstein 4: App-Entwicklung und -präsentation ([Slot-Buchung](https://etherpad.h-da.de/p/HCI_SS2026_App-Pr%C3%A4sentationen)) – _Woche 13 & 14, ie., 6.7. & 13.7._
-- Meilenstein 5: Usability Evaluation --> :fontawesome-solid-exclamation-circle: _TBA_
+- Meilenstein 5: Usability Evaluation – :fontawesome-solid-exclamation-circle: _23.08.2026_
+  [Übersicht der Peer-Gruppen für die Usability-Inspection und das Design Review](https://etherpad.h-da.de/p/HCI_SS2026_App-Pr%C3%A4sentationen)
 <!-- *legen wir gemeinsam in den Abschlussveranstaltungen fest* -->
 
 Einreichzeitpunkt jeweils **Sonntag, EOD (=End-of-Day --> 23:59 Uhr am jeweiligen Einreichetag)**
