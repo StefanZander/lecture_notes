@@ -3,7 +3,7 @@
 !!! danger "Unmittelbar vor der Präsentation keine Restarbeiten mehr an der Implementierung!"
 
 !!! success "Lernziele"
-    - [x] Sie können die wesentlichen Features der App in einem Plenum vor Ort oder online präsentieren
+    - [x] Sie können die wesentlichen Features der App vor einem Plenum vor Ort oder online präsentieren
     - [x] Sie können den Bezug zu Erkennissen aus dem User Research in der Präsentation herstellen
     - [x] Sie können Designentscheidungen nachvollziehbar und verständlich begründen
     - [x] Sie können nachweisen, dass die von Ihnen getroffenen Designentscheidungen auf gewonnenen Erkenntnissen und nicht auf pers. Meinungen beruhen  
