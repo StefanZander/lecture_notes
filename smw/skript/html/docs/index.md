@@ -12,11 +12,11 @@
 
 <!-- Stand: 2019-03-18 -->
 
-The following pages contain information about 
+The following pages contain information about ...
 
 * the module's main educational contents, 
-* course milestones to achieve in order to successfully pass the course, 
-* instructions for successfully completing the practical part.
+* course milestones that need to be achieved in order to successfully pass the course, 
+* instructions for successfully completing the group project.
 
 !!! info "Infos zum Blockkurs im Sommersemester 2026"
     Im Sommersemester 2026 wird die Lehrveranstaltung als **2-wöchiger Blockkurs** vor Ort an der h_da angeboten. 
@@ -84,9 +84,9 @@ The information on this site is separated into
 
 
 
-## Semesterprojekt
+## Gruppenprojekt
 
-* [Detaillierte Informationen zum Semesterprojekt](./semesterprojekt.md)
+* [Detaillierte Informationen zum Gruppenprojekt](./semesterprojekt.md)
 
 
 

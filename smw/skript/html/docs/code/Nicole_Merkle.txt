@@ -13,7 +13,7 @@
 {{#ask: [[Category:Research Project]] [[has_member::{{PAGENAME}}]]
 |?has_topic=
 |mainlabel=-
-|format=valuerank
+<!-- |format=valuerank -->
 }}
 
 [[Category:Researcher]]

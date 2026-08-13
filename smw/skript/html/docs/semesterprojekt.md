@@ -1,4 +1,4 @@
-# Das Semesterprojekt
+# Das Gruppenprojekt
 
 
 ### Allgemeines
@@ -8,12 +8,12 @@
 
 : Die Festlegung des **Wissensmanagementproblems** und der Domäne (=Anwendungsgebiet) erfolgt in Abstimmung mit dem Betreuer
 
-: **Präsention** der Umsetzung am Semesterende
+: **Präsention** der Umsetzung am letzten Tag der Veranstaltung
 
 
 ### Themen
 
-Das **Anwendungsgebiet** (=*Gegenstandsbereich*) für das Semesterprojekt können Sie **frei wählen**.
+Das **Anwendungsgebiet** (=*Gegenstandsbereich*) für das Gruppenprojekt können Sie **frei wählen**.
 
 !!! info "Hinweis: Themen dürfen mehrfach bearbeitet werden!"
 
@@ -53,7 +53,7 @@ Für jedes Semesterprojekt sind folgende Meilensteine zu erfüllen
 
 ### Arbeitspakete
 
-Für jedes Semesterprojekt sind folgende **Arbeitspakete** durchzuführen bzw. Meilensteine zu erfüllen.
+Für jedes Gruppenprojekt sind folgende **Arbeitspakete** durchzuführen bzw. Meilensteine zu erfüllen.
 
 Die Nummerierung lässt keine Rückschlüsse auf die Bearbeitungsreihenfolge zu. Mit Ausnahme von AP1 ist es vorteilhaft, alle weiteren Arbeitspakete inkrementell und iterativ zu bearbeiten. 
 
@@ -100,9 +100,9 @@ Die Nummerierung lässt keine Rückschlüsse auf die Bearbeitungsreihenfolge zu.
 
 #### Beurteilungskriterien
 
-Die folgenden Aspekte spielen eine Rolle bei der Bewertung des Semesterprojekts.
+Die folgenden Aspekte spielen eine Rolle bei der Bewertung des Gruppenprojekts.
 
-!!! success "Bewertungsaspekte des Semesterprojekts"
+!!! success "Bewertungsaspekte des Gruppenprojekts"
     - Durchgängige Verwendung einschlägiger Modellierungselemente (Categories, Properties, Subobjects, Templates, Concepts, PageForms, QueryForms, etc.)
     - Nuztung semantischer Templates an sinnvollen Stellen zur Vermeidung des _Semantic Drifts_
     - Gut ausgearbeitete und systematisch gegliederte Landingpage, die sich an den Informationsbedürfnissen und situativen Arbeitskontexten der FachanwenderInnen (Rollen) orientiert

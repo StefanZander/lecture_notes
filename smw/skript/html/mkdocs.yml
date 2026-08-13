@@ -13,7 +13,7 @@ nav:
   - "Übung 2: Wissensmodellierung": "./exercises/ue2.md"
   - "Übung 3: Semantic MediaWiki": "./exercises/ue3.md"
   - "Übung 4: Vertiefung": "./exercises/ue4.md"
-  - "Semesterprojekt": "semesterprojekt.md"
+  - "Gruppenprojekt": "semesterprojekt.md"
 
 theme:
   name: material
