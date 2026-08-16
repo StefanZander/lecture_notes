@@ -18,7 +18,15 @@ nav:
 theme:
   name: material
   color-mode: dark
+  user_color_mode_toggle: true
   palette:
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: light blue
+      accent: lime
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: blue
@@ -28,14 +36,7 @@ theme:
         name: Switch to dark mode
         primary: deep purple
         accent: red
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: light blue
-      accent: lime
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
-
+  
   font:
     text: Roboto Condensed
     code: Roboto Mono
@@ -67,7 +68,7 @@ extra:
       link: https://fbi.h-da.de/~s.zander
       name: personal page of Prof. Dr. Stefan Zander at h_da
 
-copyright: Copyright &copy; 2017 - 2025 – Prof. Dr. Stefan Zander
+copyright: Copyright &copy; 2017 - 2026 – Prof. Dr. Stefan Zander
 
 repo_url: https://github.com/StefanZander/lecture_notes/tree/master/hci/praktikum/html
 repo_name: /hci/praktikum
@@ -80,6 +81,7 @@ plugins:
   - git-revision-date-localized:
       enable_creation_date: false
       type: custom
+      enable_parallel_processing: false
 
 markdown_extensions:
   - abbr
@@ -88,7 +90,7 @@ markdown_extensions:
       smart_angled_quotes: true
   - attr_list
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - def_list
   - footnotes
