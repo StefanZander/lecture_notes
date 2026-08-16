@@ -16,8 +16,8 @@ paginate: true
 
 </style>
 
-<!-- marp --engine ./engine.js --watch --theme-set custom-theme-roboto.css -- --allow-local-files 01_smw_intro_new.md -->
-<!-- marp --pdf --allow-local-files --engine ./engine.js --theme-set custom-theme-roboto.css -- 01_smw_intro_new.md -->
+<!-- marp --engine ./engine.js --watch --theme-set custom-theme-roboto.css -- --allow-local-files 01_wm_und_ki.md -->
+<!-- marp --pdf --allow-local-files --engine ./engine.js --theme-set custom-theme-roboto.css -- 01_wm_und_ki.md -->
 
 # Semantisches Wissensmanagement im Unternehmen: <br />Konzepte, Technologien, Anwendungen
 
@@ -75,11 +75,11 @@ Kapitel 1: Einführung in das Wissensmanagement {.lightgreen .Big .skip}
 ::: twocolumns small
 Mitte der 1960er Jahre waren __50% aller Beschäftigten__ in der Industrie tätig.
 
-Seit dieser Zeit hat sich die :fas-arrow-trend-up: __Produktivität__ durch Automatisierung __versechsfacht__(!) und durch die :fas-globe: **Globalisierung** hat sich die Massenproduktion der meisten Güter weltweit verteilt.
+Seit dieser Zeit hat sich die :fas-arrow-trend-up: __Produktivität__ durch Automatisierung __versechsfacht__(!) und durch die Globalisierung hat sich die Massenproduktion der meisten Güter weltweit verteilt.
 
 Mehrheit der :fas-people-group: Bevölkerung inzwischen im **Dienstleistungsbereich** beschäftigt.
 
-Durch die zunehmende Digitalisierung werden :fas-brain: __wissensbasierte Dienstleistungen__ zum dominanten Wirtschaftssegment.
+Durch die zunehmende Digitalisierung werden __wissensbasierte Dienstleistungen__ zum dominanten Wirtschaftssegment.
 
 Während vor wenigen Jahren noch von der Informationsgesellschaft gesprochen wurde, welche die Industriegesellschaft beerben sollte, ist es heute Konsens, dass die Ablösung der Industriegesellschaft treffender durch den Begriff der *:fas-brain: __Wissensgesellschaft__* umschrieben werden sollte.
 
@@ -138,7 +138,7 @@ Beispiele:
 ---
 # Unterschiede Wissensbasierter Dienstleistungen
 
-| **Merkmal**               | :fas-brain: **Wissensbasierte Dienstleistungen**                | :fas-industry: **Traditionelle Dienstleistungen**            |
+| **Merkmal**               | **Wissensbasierte Dienstleistungen**                | **Traditionelle Dienstleistungen**            |
 |----------------------------|-----------------------------------------------------|-----------------------------------------------|
 | **Basis**                  | Fachwissen, Analyse, Problemlösung, Expertise       | Routinen, körperliche Arbeit, standardisierte Abläufe |
 | **Komplexität**            | Hoch, oft interdisziplinär                          | Geringer, klar abgegrenzte Tätigkeiten         |
@@ -212,11 +212,7 @@ Quelle: Wilmar Raddatz, "Wissensgesellschaft – Was ist Wissen?"; abrufbar unte
 ## Exkurs: Was ist Digital Literacy ?
 
 ::::: smallest
-:::: definition
-==Digital Literacy== (deutsch: **Digitale Kompetenz**) bezieht sich auf die Fähigkeit, digitale Technologien effektiv und kritisch zu nutzen, zu bewerten und Informationen zu erstellen. Sie umfasst eine Reihe von Fähigkeiten, darunter:
-
-Quelle: Bundeszentrale für politische Bildung, Artikel zu "Medienkompetenz und Digital Literacy" mit eigenen Anpassungen
-::::
+**Digital Literacy** (deutsch: Digitale Kompetenz) bezieht sich auf die Fähigkeit, digitale Technologien effektiv und kritisch zu nutzen, zu bewerten und Informationen zu erstellen. Sie umfasst eine Reihe von Fähigkeiten, darunter:
 
 :::: columns
 ::: single
@@ -240,7 +236,7 @@ Quelle: Bundeszentrale für politische Bildung, Artikel zu "Medienkompetenz und 
 ::::
 
 :::: bluebox center
-[:far-lightbulb:]{.big} Digitale Kompetenz ist in der heutigen Welt unerlässlich, da digitale Technologien in Bildung, Arbeit und Alltag allgegenwärtig sind. Sie befähigt Einzelpersonen, voll am digitalen Leben teilzunehmen, fundierte Entscheidungen zu treffen und sich wirkungsvoller und sinnvoller mit der Welt auseinanderzusetzen.
+Digitale Kompetenz ist in der heutigen Welt unerlässlich, da digitale Technologien in Bildung, Arbeit und Alltag allgegenwärtig sind. Sie befähigt Einzelpersonen, voll am digitalen Leben teilzunehmen, fundierte Entscheidungen zu treffen und sich wirkungsvoller und sinnvoller mit der Welt auseinanderzusetzen.
 ::::
 :::::
 
@@ -264,28 +260,28 @@ Quelle: Bundeszentrale für politische Bildung, Artikel zu "Medienkompetenz und 
 ---
 ::::: columns 
 :::: single smaller 
-:fas-industry: Sachkapital{.center .Big .bluebox}
+:fas-industry: Sachkapital{.center .big .bluebox}
 
-1. **Maschinen und Produktionsstätten**
+1. Maschinen und Produktionsstätten
    - Ein Automobilhersteller besitzt eine Produktionshalle mit Maschinen, die zur Herstellung von Fahrzeugteilen verwendet werden. Diese Maschinen sind physische Güter, die zur Produktion beitragen und direkt in den Produktionsprozess eingebunden sind. Sie stellen also Sachkapital dar, da sie materielle Ressourcen sind, die für die Herstellung von Waren benötigt werden.
 
-2. **Bürogebäude**
+2. Bürogebäude
    - Ein Unternehmen, das Bürodienstleistungen anbietet, hat ein Bürogebäude, in dem die Mitarbeiter arbeiten. Das Gebäude, die Möbel, und die technische Ausstattung wie Computer und Server fallen unter Sachkapital. Sie sind physische Vermögenswerte, die das Unternehmen besitzt und nutzt, um seine Dienstleistungen anzubieten.
 
-3. **Fahrzeugflotte**
+3. Fahrzeugflotte
    - Ein Logistikunternehmen betreibt eine Flotte von Lastwagen, die für den Transport von Waren eingesetzt werden. Diese Lastwagen sind ein weiteres Beispiel für Sachkapital, da sie materielle Güter sind, die das Unternehmen zur Erbringung seiner Leistungen benötigt.
 ::::
 :::: single smaller
-:fas-brain: Wissenskapital{.center .Big .greenbox}
+:fas-brain: Wissenskapital{.center .big .greenbox}
 
-1. **Patente und geistiges Eigentum**
-   - Ein Pharmaunternehmen hat ein Patent auf ein neu entwickeltes Medikament. Dieses Patent stellt Wissenskapital dar, weil es das Ergebnis von Forschung und Entwicklung ist und dem Unternehmen einen *Wettbewerbsvorteil* verschafft, indem es die exklusive Herstellung und den Vertrieb des Medikaments erlaubt.
+1. Patente und geistiges Eigentum
+   - Ein Pharmaunternehmen hat ein Patent auf ein neu entwickeltes Medikament. Dieses Patent stellt Wissenskapital dar, weil es das Ergebnis von Forschung und Entwicklung ist und dem Unternehmen einen Wettbewerbsvorteil verschafft, indem es die exklusive Herstellung und den Vertrieb des Medikaments erlaubt.
 
-2. **Mitarbeiterkompetenzen**
-   - In einem IT-Unternehmen besitzen die Mitarbeiter _spezielles Wissen_ in der Softwareentwicklung und Systemarchitektur. Dieses *Wissen* und die *Fähigkeiten* der Mitarbeiter stellen Wissenskapital dar, weil sie immaterielle Ressourcen sind, die das Unternehmen nutzt, um innovative Produkte zu entwickeln und am Markt erfolgreich zu sein.
+2. Mitarbeiterkompetenzen
+   - In einem IT-Unternehmen besitzen die Mitarbeiter spezielles Wissen in der Softwareentwicklung und Systemarchitektur. Dieses Wissen und die Fähigkeiten der Mitarbeiter stellen Wissenskapital dar, weil sie immaterielle Ressourcen sind, die das Unternehmen nutzt, um innovative Produkte zu entwickeln und am Markt erfolgreich zu sein.
 
-3. **Markenimage und Reputation**
-    - Ein Unternehmen wie :fab-apple: Apple hat eine starke Marke und eine hohe *Reputation* für Qualität und Innovation. Diese immateriellen Werte sind Teil des Wissenskapitals, weil sie auf jahrelanger Innovation, Kundenvertrauen und strategischem Marketing beruhen. Diese Faktoren tragen zum langfristigen Erfolg des Unternehmens bei, obwohl sie nicht physisch greifbar sind.
+3. Markenimage und Reputation
+    - Ein Unternehmen wie Apple hat eine starke Marke und eine hohe Reputation für Qualität und Innovation. Diese immateriellen Werte sind Teil des Wissenskapitals, weil sie auf jahrelanger Innovation, Kundenvertrauen und strategischem Marketing beruhen. Diese Faktoren tragen zum langfristigen Erfolg des Unternehmens bei, obwohl sie nicht physisch greifbar sind.
 :::::
 
 
@@ -332,35 +328,35 @@ Quelle: Bundeszentrale für politische Bildung, Artikel zu "Medienkompetenz und 
 
 
 ---
-### Zusammenfassung: Warum Wissen zunehmend :fas-arrow-trend-up: wichtiger wird für :fas-building: Unternehmen
+## Zusammenfassung: <br/>Warum Wissen zunehmend :fas-arrow-trend-up: wichtiger wird für :fas-building: Unternehmen
 
-:::: columns 
-::: single skip
-- :fas-gears: **Wissensintensive** Geschäftsprozesse, Dienstleistungen und Produkte werden bedeutender
+:::: columns
+::: single
+- **Wissensintensive** Geschäftsprozesse, Dienstleistungen und Produkte werden bedeutender
     - Anteil der Wissensarbeiter in Organisationen nimmt zu 
         (Ingenieure, Manager, Berater, Entwickler, Forscher, ...)
     - Hoher Zeitanteil für Informationssuche und -bewertung
-- :fas-arrows-spin: **Produktlebenszyklen** werden kürzer
+- **Produktlebenszyklen** werden kürzer
     - Höhere Innovationsrate wird erforderlich
     - Concurrent Engineering komplexer Produkte erfordert die Integration von Wissen aller Unternehmensbereiche
-- :fas-people-group: **Demographischer Wandel** in Europa
+- **Demographischer Wandel** in Europa
     - Zunahme des Fachkräftemangels in vielen Branchen absehbar
 :::
-::: single skip
-- :fas-industry: Firmen arbeiten zunehmend **verteilt** und **global** 
+::: single
+- Firmen arbeiten zunehmend **verteilt** und **global** 
     - Virtuelle Unternehmen
     - Komplexe Wertschöpfungsnetzwerke
-- :fas-sitemap: **Lean Management** erfordert Entscheidungen auf allen Management-Ebenen
+- **Lean Management** erfordert Entscheidungen auf allen Management-Ebenen
     - Das erforderliche Wissen muss überall vorhanden sein
-- :fas-brain: **Wissen** selber wird zum Produkt
+- **Wissen** selber wird zum Produkt
     - Neue Arten spezialisierter Dienstleistungsangebote entstehen (z.B. Information Broker)
-- :fas-building: **Firmenwert** beruht bei Weitem nicht nur auf materiellen Werten (Fabrikationsanlagen, Immobilien, ...)
+- **Firmenwert** beruht bei Weitem nicht nur auf materiellen Werten (Fabrikationsanlagen, Immobilien, ...)
     - sondern auf "intangible assets" bzw. "intellectual capital"
 :::
 ::::
 
-::: bluebox small bigskip center marg5
-[:fas-triangle-exclamation:]{.big} **Wichtig**: Einige der vorstehenden Argumente gelten nicht nur für Gewinn-orientierte Unternehmen, sondern auch in der <br/>öffentlichen Verwaltung, Forschung & Lehre und in Non-Governmental Organizations (NGOs).
+::: bluebox small skip  
+:fas-triangle-exclamation: **Wichtig**: Einige der vorstehenden Argumente gelten nicht nur für Gewinn-orientierte Unternehmen, sondern auch in der öffentlichen Verwaltung, Forschung & Lehre und in Non-Governmental Organizations (NGOs).
 :::
 
 
@@ -376,11 +372,11 @@ Quelle: Bundeszentrale für politische Bildung, Artikel zu "Medienkompetenz und 
 ---
 ## Was ist Wissen ? – Eine pragmatische Arbeitsdefinition 
 
-::: bluebox center marg2 Bigskip 
-[:far-lightbulb:]{.big} Bevor wir einen Versuch starten Wissen zu definieren ist es sinnvoll, den Wissensbegriff richtig ein- und abzugrenzen.
+::: bluebox center
+:fas-triangle-exclamation: Bevor wir einen Versuch starten Wissen zu definieren ist es sinnvoll, den Wissensbegriff richtig ein- und abzugrenzen.
 :::
 
-{.Bigskip}
+{.skip}
 
 Wissen ist 
 - ... häufig das Ergebnis __bewusster Informationsverarbeitung__,
@@ -394,7 +390,7 @@ Wissen ist
 
 {.skip}
 ::: definition 
-==Wissen== bezeichnet die ==Gesamtheit== der ==Kenntnisse und Fähigkeiten==, die Menschen zur ==Lösung von Problemen== einsetzen. Wissen stützt sich auf Daten und Informationen, ist im Gegensatz zu diesen jedoch immer an ==Personen gebunden==. Daher müssen Daten-, Informations- und Wissensmanagement stets zusammenspielen.
+==Wissen== bezeichnet die Gesamtheit der Kenntnisse und Fähigkeiten, die Menschen zur ==Lösung von Problemen== einsetzen. Wissen stützt sich auf Daten und Informationen, ist im Gegensatz zu diesen jedoch immer ==an Personen gebunden==. Daher müssen Daten-, Informations- und Wissensmanagement stets zusammenspielen.
 
 Quelle: Probst GJB., Raub S., Romhardt K., (2011): "Wissen managen – Wie Unternehmen ihre wertvollste Ressource optimal nutzen". 7. Auflage, Gabler, Frankfurt/Main; S.24
 :::
@@ -446,9 +442,6 @@ _Implizites bzw. verborgenes Wissen_
 ::: footnotes
 ^1^ nach Michael Polanyi (1966), “The Tacit Dimension”, University of Chicago Press: Chicago
 :::
-
-
-
 
 ---
 <!-- header: Kapitel 3: Wissensmodelle -->
@@ -762,8 +755,6 @@ Gemäss heutigen Erfahrungen spart man durch Wissensmanagement **20-25%** der **
 :::
 
 
-
-
 ---
 <!-- header: Kapitel 5: Die Rolle des Menschen im Wissensmanagement -->
 # Die Rolle des Menschen :fas-person: im Wissensmanagement
@@ -813,198 +804,6 @@ __...und ihre Auswirkungen__
 ::: footnotes
 Quelle: https://de.slideshare.net/mcwyrsch/wissensmanagement-in-unternehmen
 :::
-
-
-
-
----
-<!-- header: Kapitel 6: KI und Wissensmanagement -->
-# Warum Unternehmen trotz moderner KI-Technologien und KI-Tools ein funktionierendes Wissensmanagement benötigen...
-
----
-## Beobachtung 1: KI benötigt qualitativ hochwertiges Unternehmenswissen
-
-Große Sprachmodelle werden überwiegend auf allgemeinen Internetdaten trainiert. Unternehmensspezifisches Wissen – *Prozesse*, *Produkte*, *Verträge*, *Richtlinien*, *technische Spezifikationen* – ist darin typischerweise nicht enthalten.
-
-**Faktenbasierter Zusammenhang**
-
-- Retrieval-Augmented Generation (RAG) und Unternehmensassistenten funktionieren nur dann zuverlässig, wenn relevante Dokumente, Metadaten und semantische Beziehungen vorhanden sind.
-
-- Fehlende Struktur führt zu schlechterem Retrieval und damit zu falschen oder unvollständigen Antworten.
-
-**Beispiel**
-
-- Ein Maschinenbauunternehmen betreibt einen KI-Service für Servicetechniker. Liegen Wartungshandbücher nur als uneinheitliche PDFs vor („Motor A“, „Typ-A“, „A-Serie“), findet die KI relevante Passagen oft nicht. Eine Ontologie, die die Entitäten Maschine – Baugruppe – Fehlercode – Ersatzteil eindeutig modelliert, verbessert die Trefferqualität erheblich.
-
-==Kernaussage: KI ist datenhungrig; Wissensmanagement liefert die kuratierten Wissensressourcen.==
-
-
-
----
-## Beobachtung 2: KI erzeugt Halluzinationen – Wissensmanagement schafft Verlässlichkeit
-
-Sprachmodelle können überzeugend klingende, aber falsche Aussagen erzeugen.
-
-- Versionierung
-- Freigabeprozesse
-- Provenienz (Quelle, Autor, Datum)
-- Gültigkeitszeiträume
-- Verantwortlichkeiten
-
-...sind klassische WM-Funktionen, die KI selbst nicht sicherstellt.
-
-
-**Beispiel**
-Ein interner HR-Chatbot beantwortet Fragen zu Reisekosten. Ohne kontrollierte Wissensbasis verweist er auf veraltete Spesensätze. Mit einem freigegebenen Wissensobjekt „Reisekostenrichtlinie 2026“ inklusive Gültigkeitsdatum kann die Antwort nachvollziehbar belegt werden.
-
-
-
----
-## Beobachtung 3: Implizites Expertenwissen bleibt ein Engpass
-
-Ein großer Teil des Unternehmenswissens ist **tacit knowledge** (implizites Wissen): *Erfahrungswerte*, *Heuristiken*, *Kontextwissen*.
-
-KI kann dieses Wissen nicht automatisch erfassen, wenn es nie dokumentiert wurde.
-
-**Beispiel**
-- Eine Verpackungsanlage fällt sporadisch aus, obwohl die Sensordaten keinen eindeutigen Fehler zeigen. Ein erfahrener Techniker erkennt anhand eines charakteristischen Geräuschs und der Information, dass die Anlage nach einem längeren Wochenendstillstand gestartet wurde, die wahrscheinliche Ursache: Ein leicht verzogenes Transportband löst einen Endschalter nur unter Last intermittierend aus.
-
-Dieses Wissen ist implizit, weil es auf jahrelanger Erfahrung, Mustererkennung und situativem Kontext beruht und typischerweise nicht vollständig dokumentiert ist. Ein KI-System, das nur Sensordaten und Fehlercodes kennt, würde diese Ursache oft nicht erkennen. Wissensmanagement dient hier dazu, solches Erfahrungswissen zu erfassen und für andere Mitarbeitende sowie KI-Systeme nutzbar zu machen.
-
-
----
-## Beobachtung 4: Demografischer Wandel und Fluktuation verstärken den Bedarf nach Wissensmanagement
-
-Viele Organisationen verlieren in den nächsten Jahren erfahrene Mitarbeitende durch Ruhestand oder Jobwechsel.
-
-::::: columns
-:::: single
-**Ohne Wissensmanagement**
-- längere Einarbeitung,
-- Wiederholung alter Fehler,
-- Abhängigkeit von Einzelpersonen.
-::::
-:::: single
-**Mit Wissensmanagement**
-- dokumentierte Entscheidungsbegründungen,
-- Prozesswissen,
-- Best Practices,
-- semantisch verknüpfte Wissensobjekte.
-::::
-::::: 
-
-**Praxisbeispiel**
-- Energieversorger dokumentieren Störungsfälle, Ursachen und Maßnahmen in strukturierten Wissensdatenbanken, damit Schichtteams standortübergreifend darauf zugreifen können.
-
-
----
-## Beobachtung 5: Regulatorik verlangt erklärbare Entscheidungen
-
-In regulierten Branchen (bspw. Medizin, Kreditvergabe, etc) reicht eine KI-Antwort nicht aus; Entscheidungen müssen nachvollziehbar sein.
-
-**Relevante Anforderungen**
-- Auditierbarkeit,
-- Nachvollziehbarkeit,
-- Dokumentation,
-- Verantwortungszuordnung.
-
-**Beispiel Gesundheitswesen**
-- Ein klinisches Entscheidungssystem empfiehlt eine Therapie. Für die Freigabe müssen Leitlinie, Evidenzgrad und Patientenkriterien dokumentiert sein. Ontologien (z.B. SNOMED CT) ermöglichen die semantische Verknüpfung dieser Informationen.
-
-
-
----
-## Beobachtung 6: Wissenssilos werden durch KI nicht automatisch aufgelöst
-
-Unternehmen besitzen Informationen in ERP, CRM, PLM, SharePoint, E-Mail, Wikis und Datenbanken.
-
-KI kann zwar mehrere Quellen abfragen, aber _ohne gemeinsame Semantik_ bleibt die Integration fragil.
-
-**Die Rolle von ontologiebasiertem Wissensmanagement**
-
-Ontologien definieren gemeinsame Begriffe und Beziehungen.
-
-Beispielhafte Modellierung:
-```
-Klasse:     Kunde
-Relation    bestellt → Produkt
-Relation    hatVertrag → Servicevertrag
-Relation    meldet → Störung
-Relation    Störung betrifft → Produktkomponente
-Relation    Produkt beinhaltet → Produktkomponente
-```
-
-Damit kann eine KI Anfragen wie „Zeige alle Kunden mit Wartungsvertrag, bei denen in den letzten 30 Tagen eine Störung an Komponente X auftrat“ systemübergreifend beantworten.
-
-
----
-## Beobachtung 7: Unternehmenswissen ist ein Wettbewerbsvorteil
-
-Generative KI-Modelle sind zunehmend breit verfügbar. Differenzierend ist daher oft nicht das Modell, sondern das exklusive Unternehmenswissen.
-
-**Beispiele**
-- proprietäre Konstruktionsdaten,
-- Fertigungsparameter,
-- Kundenerfahrungen,
-- Servicehistorien,
-- Forschungsdaten.
-
-Unternehmen mit gut organisiertem Wissen können KI schneller produktiv einsetzen als Unternehmen mit unstrukturierten Datenbeständen.
-
-
-
----
-## Beobachtung 8: Wissensmanagement reduziert Such- und Koordinationsaufwand
-
-Studien zum Informationsmanagement zeigen seit Jahren, dass Wissensarbeitende einen erheblichen Teil ihrer Zeit mit Suchen, Nachfragen und Kontextklärung verbringen. KI kann die Suche beschleunigen, aber nur, wenn relevante Inhalte auffindbar und korrekt klassifiziert sind.
-
-**Beispiel**
-- Ein Beratungsunternehmen verschlagwortet Projektberichte mit Branchen-, Methoden- und Technologiekonzepten aus einer Ontologie. Neue Teams finden ähnliche Projekte innerhalb von Minuten statt nach stundenlanger Volltextsuche.
-
-
----
-## Beobachtung 9: Ontologien ermöglichen maschineninterpretierbares Wissen
-
-Der besondere Mehrwert vonntologiebasierten Wissensmanagement im KI-Kontext liegt in der ==expliziten Semantik==.
-
-```
-Ansatz                          Maschinenverständnis
-====================================================
-PDF-Sammlung                    niedrig
-Word-Dokumente                  niedrig
-Wiki mit Tags                   mittel
-Ontologie + Wissensgraph        hoch
-```
-
-Ein Wissensgraph erlaubt Schlussfolgerungen, z. B.:
-- Wenn `Produkt P` Teil der `Produktlinie L` ist und
-- `Rückruf R` die `Produktlinie L` betrifft,
-- dann betrifft `R` auch `Produkt P`.
-
-Solche *Inferenzen* sind für regelbasierte Compliance- oder Risikoanalysen wertvoll.
-
-
-
----
-## Beobachtung 10: KI verändert die Aufgaben des Wissensmanagements
-
-Wissensmanagement wird nicht unbedeutender, sondern verschiebt seinen Schwerpunkt.
-
-::::: column marg3
-:::: single 
-| Traditionelles Wissensmanagement | Wissensmanagement im KI-Zeitalter |
-|---|---|
-| Dokumentenzentrierte Ablage und Archivierung | Semantische Wissensräume und vernetzte Wissensobjekte |
-| Taxonomien und kontrollierte Vokabulare | Ontologien und Wissensgraphen |
-| Schlüsselwortbasierte Informationssuche | Semantisches Retrieval und Retrieval-Augmented Generation (RAG) |
-| Expertenverzeichnisse | Kompetenz- und Expertise-Graphen |
-| Manuelle Erfassung von Lessons Learned | KI-gestützte Wissensextraktion und Wissensannotation |
-| Dokumentenfreigabe und Versionsverwaltung | AI Governance, Provenienzmanagement und Nachvollziehbarkeit |
-::::
-:::::
-
-
-
 
 ---
 <!-- header: Zusammenfassung und Lernzielkontrolle -->
