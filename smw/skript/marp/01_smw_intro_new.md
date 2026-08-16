@@ -59,7 +59,8 @@ Kapitel 1: Einführung in das Wissensmanagement {.lightgreen .Big .skip}
    3. Grundlegende Konzepte
    4. Typische Wissensmanagementprobleme
 5. Die Rolle des Menschen im Wissensmanagement
-6. Lernzielkontrolle
+6. KI und Wissensmanagement
+7. Lernzielkontrolle
 
 
 
@@ -72,7 +73,8 @@ Kapitel 1: Einführung in das Wissensmanagement {.lightgreen .Big .skip}
 # Von der :fas-industry: Industrie- zur :fas-brain: Wissensgesellschaft
 <!-- beschäftigungsanteil_inland -->
 
-::: twocolumns small
+::::: columns-center 
+:::: single small
 Mitte der 1960er Jahre waren __50% aller Beschäftigten__ in der Industrie tätig.
 
 Seit dieser Zeit hat sich die :fas-arrow-trend-up: __Produktivität__ durch Automatisierung __versechsfacht__(!) und durch die :fas-globe: **Globalisierung** hat sich die Massenproduktion der meisten Güter weltweit verteilt.
@@ -82,11 +84,13 @@ Mehrheit der :fas-people-group: Bevölkerung inzwischen im **Dienstleistungsbere
 Durch die zunehmende Digitalisierung werden :fas-brain: __wissensbasierte Dienstleistungen__ zum dominanten Wirtschaftssegment.
 
 Während vor wenigen Jahren noch von der Informationsgesellschaft gesprochen wurde, welche die Industriegesellschaft beerben sollte, ist es heute Konsens, dass die Ablösung der Industriegesellschaft treffender durch den Begriff der *:fas-brain: __Wissensgesellschaft__* umschrieben werden sollte.
-
+::::
+:::: single 
 ![](../html/docs/figures/wissensgesellschaft.jpg)
-:::
+::::
+:::::
 
-::: footnotes skip
+::: footnotes
 Quelle: Bundeszentrale für politische Bildung: Wissensgesellschaft – Eine Idee im Realitätscheck; online abrufbar unter: https://www.bpb.de/gesellschaft/bildung/zukunft-bildung/146199/wissensgesellschaft
 :::
 
@@ -251,7 +255,7 @@ Quelle: Bundeszentrale für politische Bildung, Artikel zu "Medienkompetenz und 
 ## Zur Unterscheidung von Industrie- und Wissensgesellschaft
 
 
-::: centerbox BIGSKIP bluebox padding2em
+::: centerbox Bigskip bluebox padding2em
 | Industriegesellschaft :fas-industry: |  | Wissensgesellschaft :fas-brain:|
 | --- | :---: | --- |
 | :fas-warehouse: Sachkapital | :fas-arrows-left-right: | :fas-graduation-cap: Wissenskapital  |
@@ -335,25 +339,30 @@ Quelle: Bundeszentrale für politische Bildung, Artikel zu "Medienkompetenz und 
 ### Zusammenfassung: Warum Wissen zunehmend :fas-arrow-trend-up: wichtiger wird für :fas-building: Unternehmen
 
 :::: columns 
-::: single skip
+::: single skip small
 - :fas-gears: **Wissensintensive** Geschäftsprozesse, Dienstleistungen und Produkte werden bedeutender
     - Anteil der Wissensarbeiter in Organisationen nimmt zu 
         (Ingenieure, Manager, Berater, Entwickler, Forscher, ...)
     - Hoher Zeitanteil für Informationssuche und -bewertung
+
 - :fas-arrows-spin: **Produktlebenszyklen** werden kürzer
     - Höhere Innovationsrate wird erforderlich
     - Concurrent Engineering komplexer Produkte erfordert die Integration von Wissen aller Unternehmensbereiche
+
 - :fas-people-group: **Demographischer Wandel** in Europa
     - Zunahme des Fachkräftemangels in vielen Branchen absehbar
 :::
-::: single skip
+::: single skip small
 - :fas-industry: Firmen arbeiten zunehmend **verteilt** und **global** 
     - Virtuelle Unternehmen
     - Komplexe Wertschöpfungsnetzwerke
+
 - :fas-sitemap: **Lean Management** erfordert Entscheidungen auf allen Management-Ebenen
     - Das erforderliche Wissen muss überall vorhanden sein
+
 - :fas-brain: **Wissen** selber wird zum Produkt
     - Neue Arten spezialisierter Dienstleistungsangebote entstehen (z.B. Information Broker)
+
 - :fas-building: **Firmenwert** beruht bei Weitem nicht nur auf materiellen Werten (Fabrikationsanlagen, Immobilien, ...)
     - sondern auf "intangible assets" bzw. "intellectual capital"
 :::
@@ -382,7 +391,7 @@ Quelle: Bundeszentrale für politische Bildung, Artikel zu "Medienkompetenz und 
 
 {.Bigskip}
 
-Wissen ist 
+:fas-brain: Wissen ist 
 - ... häufig das Ergebnis __bewusster Informationsverarbeitung__,
 - ... zusammengesetzt aus __Modellen__ über konkrete und abstrakte Objekte Ereignisse und Fakten, d.h. symbolische Strukturen, die im menschlichen Gedächtnis abgespeichert sind,
 - ... __kontext-situiert__ und __vernetzt__,
@@ -671,24 +680,25 @@ Diskutieren Sie die einzelnen Fragestellungen in Gruppen; jede Gruppe behandelt 
 # Typische Wissensmanagementprobleme :fas-bomb:
 
 :::: twocolumns 
-- Verfügbares Wissen wächst exponentiell
-- "Halbwertszeit" bestehenden Wissens sinkt rapide
-- Produkte und Dienstleistungen werden immer wissensintensiver in ihrer Herstellung
-- Komplexe Mitarbeiter- und Hierarchiestrukturen sowie Hemmnisse bei der Verteilung von Wissen verhindern effizienten Wissensfluss im Unternehmen
-- Wissensmanagement wird als zeit- und kostenintensiv erlebt
-- Rein technische Lösungen verfehlen oft ihren Nutzen
-- Ausarbeitung von Ideen, Standards, Evaluationen, Projekten, Vorschlägen, welche bereits bestehen
-- Ausbildung von Fähigkeiten, die bereits in der Unternehmung vorhanden sind
-- Einkauf von Lizenzen und Leistungen, obwohl eigene Entwicklungen (Produkte, Services) bestehen
-- Informationsüberlastung auf allen Ebenen
-- Projekterfahrungen werden nicht dokumentiert
-- mangelnde Transparenz über externes Wissen (Internet, Dokumente, ExpertInnen, Trends, Standards)
-- Interne ExpertInnen sind nicht bekannt
-- Zentrales Wissen geht verloren (~> ExpertInnenverlust)
+- :fas-arrow-trend-up: Verfügbares Wissen wächst exponentiell
+- :fas-arrow-trend-down: "Halbwertszeit" bestehenden Wissens sinkt rapide
+- :fas-cart-flatbed: Produkte und Dienstleistungen werden immer wissensintensiver in ihrer Herstellung
+- :fas-sitemap: Komplexe Mitarbeiter- und Hierarchiestrukturen sowie Hemmnisse bei der Verteilung von Wissen verhindern effizienten Wissensfluss im Unternehmen
+- :fas-money-bill-trend-up: Wissensmanagement wird als zeit- und kostenintensiv erlebt
+- :fas-gears: Rein technische Lösungen verfehlen oft ihren Nutzen
+- :fas-coins: Ausarbeitung von Ideen, Standards, Evaluationen, Projekten, Vorschlägen, welche bereits bestehen
+- :fas-dumbbell: Ausbildung von Fähigkeiten, die bereits in der Unternehmung vorhanden sind
+- :fas-award: Einkauf von Lizenzen und Leistungen, obwohl eigene Entwicklungen (Produkte, Services) bestehen
+- :fas-hourglass-half: Informationsüberlastung auf allen Ebenen
+- :fas-pencil: Projekterfahrungen werden nicht dokumentiert
+- :fas-eye-low-vision: mangelnde Transparenz über externes Wissen (Internet, Dokumente, ExpertInnen, Trends, Standards)
+- :fas-user-doctor: Interne ExpertInnen sind nicht bekannt
+- :fas-person-through-window: Zentrales Wissen geht verloren (:fas-arrow-right-long: ExpertInnenverlust)
 ::::
 
 
 
+<!-- 
 ---
 # Die Hauptaufgaben des Wissensmanagements
 
@@ -704,8 +714,24 @@ Diskutieren Sie die einzelnen Fragestellungen in Gruppen; jede Gruppe behandelt 
 ::: footnotes
 in Anlehnung an: http://strategie-spektren.de/innovation/aufgaben-des-wissensmanagements/
 :::
+-->
 
 
+---
+### Die [Hauptaufgaben]{.inversegreen} des Wissensmanagements
+
+::::: smaller
+| **Hauptaufgabe** | **Beschreibung** | **Beispiel im Unternehmen** |
+|---|---|---|
+| **1. Wissensidentifikation** | Ermitteln, welches Wissen vorhanden ist, wo es sich befindet und welche Wissenslücken bestehen. | Welche Mitarbeitenden verfügen über Expertise zu einer bestimmten Maschine? |
+| **2. Wissenserwerb / -entwicklung** | Fehlendes Wissen extern beschaffen oder intern erzeugen und weiterentwickeln. | Ein Unternehmen erwirbt neues Wissen durch die Kooperation mit einem Forschungspartner. |
+| **3. Wissensexternalisierung** | Implizites bzw. erfahrungsbasiertes Wissen in eine explizitere und teilbare Form überführen. | Ein erfahrener Techniker dokumentiert seine Vorgehensweise bei der Fehlersuche. |
+| **4. Wissensspeicherung** | Wissen dauerhaft, strukturiert und möglichst versionssicher verfügbar machen. | Wartungsanleitungen, Lessons Learned und [Best Practices]{.inverseorange} werden in einem [Wissensbasis]{.inversegreen} gespeichert. |
+| **5. Wissensorganisation und -strukturierung** | Wissen klassifizieren, kategorisieren und semantisch miteinander verknüpfen. | Einsatz von [Wissensgraphen]{.inverseblue} und [Ontologien]{.inverseblue} zur Harmonisierung und Verknüpfung von [Datensilos]{.inversered} |
+| **6. Wissensverteilung / -bereitstellung** | Wissen denjenigen Personen oder Systemen zugänglich machen, die es benötigen. | Ein Servicetechniker erhält relevante Lösungsinformationen zu einer konkreten Störung aus kuratierten Datenquellen. |
+| **7. Wissensnutzung** | Vorhandenes Wissen zur Entscheidungsfindung, Problemlösung und Aufgabenerfüllung einsetzen. | Frühere Störungsfälle werden zur Diagnose eines aktuellen Problems herangezogen. |
+| **8. Wissensbewertung und -pflege** | Qualität, Aktualität, Konsistenz und Gültigkeit des Wissens sicherstellen. | Eine veraltete Wartungsvorschrift wird identifiziert, überprüft und aktualisiert. |
+:::::
 
 ---
 # Weitere typische Aufgaben des Wissensmanagements
