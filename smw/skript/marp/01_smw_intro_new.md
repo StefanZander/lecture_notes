@@ -904,18 +904,19 @@ Dieses Wissen ist implizit, weil es auf jahrelanger Erfahrung, Mustererkennung u
 Viele Organisationen verlieren in den nächsten Jahren erfahrene Mitarbeitende durch Ruhestand oder Jobwechsel.
 
 ::::: columns
-:::: single
-**Ohne Wissensmanagement**
-- längere Einarbeitung,
-- Wiederholung alter Fehler,
-- Abhängigkeit von Einzelpersonen.
+:::: single bluebox
+[**Ohne Wissensmanagement**]{.centertext}
+- längere Einarbeitung
+- Wiederholung alter Fehler
+- Abhängigkeit von Einzelpersone
+- Unklarheit welche Kompetenzen existieren
 ::::
-:::: single
-**Mit Wissensmanagement**
-- dokumentierte Entscheidungsbegründungen,
-- Prozesswissen,
-- Best Practices,
-- semantisch verknüpfte Wissensobjekte.
+:::: single greenbox
+[**Mit Wissensmanagement**]{.centertext}
+- dokumentierte Entscheidungsbegründungen
+- Prozesswissen
+- Best Practices
+- semantisch verknüpfte Wissensobjekte
 ::::
 ::::: 
 
