@@ -46,6 +46,10 @@ The information on this site is separated into
 
 ## Allgemeine Informationen
 
+!!! danger "Prüfungsanmeldung in myhda"
+    Wichtig: Damit das Modul bewertet werden kann ist eine Prüfungsanmeldung während der Laufzeit des Blockkurses in myhda notwendig. Ohne Prüfungsanmeldung können sie keine Note auf das Modul erhalten.
+
+
 * [Lehrveranstaltungsziele und Durchführung](objectives.md)
 * [Semantisches Wissensmanagement als Blocklehrveranstaltung](block_lva.md)
 * [Evaluierungsergebnisse vergangener Veranstaltungen](https://lernen.h-da.de/course/section.php?id=347932)
