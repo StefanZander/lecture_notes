@@ -29,7 +29,7 @@ In der 1. Vorlesungseinheit werden diese Themen ausführlich besprochen.
 
 ## Organisation und didaktisches Modell
 
-Seit dem WiSe 2025/2026 folgt die Veranstaltung dem Modell des [Active Learning](https://cft.vanderbilt.edu/wp-content/uploads/sites/59/Active-Learning.pdf) mit Studienprogramm-spezifischen Anpassungen (u.a. Durchführung eines Gruppen-spezifischen Semesterprojekts, Semester-begleitende Teilleistungsfeststellung/-bewertung, Fachgespräch etc.). Genaueres ist in nachstehendem Foliensatz dokumentiert.
+Seit dem WiSe 2025/2026 folgt die Veranstaltung dem Modell des [Active Learning](https://cft.vanderbilt.edu/wp-content/uploads/sites/59/Active-Learning.pdf) mit Studienprogramm-spezifischen Anpassungen (u.a. Durchführung eines Gruppen-spezifischen Semesterprojekts, Semester-begleitende Teilleistungsfeststellung/-bewertung, Fachgespräch etc). Genaueres ist im Foliensatz zur Organisation der Veranstaltung dokumentiert.
 
 - :material-file-pdf-box: [Foliensatz zur Organisation der Veranstaltung](https://code.fbi.h-da.de/zander/hci/material/-/raw/main/0_organisation/01_organisation.pdf) (_abrufbar nach Anmeldung über code.fbi.h-da.de_)
 - :simple-moodle: [Moodle-Kurs der Veranstaltung](https://lernen.h-da.de/course/view.php?id=6802) (_kein Einschreibeschlüssel notwendig_)
@@ -38,7 +38,7 @@ Seit dem WiSe 2025/2026 folgt die Veranstaltung dem Modell des [Active Learning]
 
 ## Bewertungsmodalitäten
 
-Die Leistungsbewertung im Modul erfolgt individuell und setzt sich aus drei Elementen zusammen:
+Die :fontawesome-solid-ranking-star: Leistungsbewertung im Modul erfolgt individuell und setzt sich aus drei Elementen zusammen:
 
 1. Die bewerteten Meilensteine 2-5 (siehe [Semesterprojekt](./semesterprojekt.md) und [Semesterplan](./01_semesterplan.md#material-sign-direction-semesterprojekt))
 2. Das individuelle Fachgespräch
