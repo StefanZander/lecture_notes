@@ -43,10 +43,11 @@ Link zum Etherpad zur Buchung eines Gruppenslots: <https://etherpad.h-da.de/p/HC
 
 In die Beurteilung der Fachgesprächsleistung fließen folgende Kriterien ein: 
 
-- Analysefähigkeit
-- Begründung
-- Transfer
-- Reflexion
-- Souveräner Umgang mit Unsicherheit
+- Fachliche und inhaltliche Korrektheit 
+- Kenntnisse über die wesentlichen Abläufe und Methoden
+- Begründung und Nachvollziehbarkeit der Antworten
+- Fähigkeit methodische Stärken und Schwächen benennen und beurteilen zu können
+- Transferwissen
+- Problemlösungskompetenz im Sinne von: Sie können für ein Beispielszenario geeignete Methoden und Vorgehensüberlegungen benennen und erläutern
 
 
