@@ -13,7 +13,7 @@ Die Praxisphase gliedert sich grob in 3 Phasen:
 Für die Anmeldung zur Praxisphasephase sind 3 Dinge notwendig:
 
 1. Die Belegung des entspr. Praxismoduls im OBS im Rahmen der Belegphase (spätere/nachträgliche Anmeldungen sind via Email beim Betreuer möglich; bitte senden Sie immer Ihre Matrikelnummer mit, da diese für die Registrierung benötigt wird.)
-2. Die Zusendung des augefüllten und unterzeichneten [offiziellen Anmeldeformulars](https://fbi.h-da.de/fileadmin/Group_Dekanat/Dokumente/Fachbereich/Gremien/Group_Pruefungsausschuss/Formulare/Studenten/2023-10_Anmeldung_02_Praxisphase.pdf) als PDF an Ihre/n BetreuerIn
+2. Die Zusendung des augefüllten und unterzeichneten [offiziellen Anmeldeformulars](https://www.fbi.h-da.de/fileadmin/user_upload/fachbereich-informatik/Main_Menu/Studieren/Studium/Spezifisches/B.Sc._Informatik/Praxisprojekt/Formular_AZT_Antrag_aufZuweisung_Tandem.pdf) als PDF an Ihre/n BetreuerIn
 3. Die Zusendung einer Email mit allen wesentlichen Informationen zu Ihrer Praxisstelle an Ihre/n Betreuer/In. Die Email mit den Informationen benötigen wir für die Verwaltung Ihrer Praxisphase.
 
     Anbei finden Sie zwei Beispiele:
