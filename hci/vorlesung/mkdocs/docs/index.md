@@ -6,8 +6,8 @@
 
 Auf den folgenden Seiten finden Sie Informationen zu **Organisation** und **Ablauf** der Lehrveranstaltung Human-Computer Interaction bei mir, :teacher_tone1: Prof. Dr. Stefan Zander, sowie die entsprechenden :octicons-book-16: **Lehrmaterialien**. 
 
-!!! danger "Ab dem SoSe 2026 benotete Fachgespräche"
-    Ab dem SoSe 2026 finden auch in meinem Zug benotete individuelle Fachgespräche als Ergänzung der Leistungsfeststellung statt. Genauere Details dazu werden in den kommenden Tagen hier auf den Seiten veröffentlicht. Ein positives bewertetes Fachgespräch (<= 4,0) ist zwingende Voraussetzung für die erfolgreiche Absolvierung des Moduls.
+!!! danger "Ab dem SoSe 2026 qualifizierende Fachgespräche für :material-boom-gate-arrow-up: Eintritt in Semesterprojektphase"
+    Ab dem SoSe 2026 finden auch in meinem Zug qualifizierende individuelle **Fachgespräche** als **Eintrittsvoraussetzung** für für die Semesterprojektphase (=Phase 2) statt. Genauere Details dazu finden sich im Punkt [Fachgespräch: Rolle und Ablauf](fachgespraech.md). Ein positiv bewertetes Fachgespräch (Notenäquivalent <= 4,0) ist zwingende Voraussetzung für die erfolgreiche Absolvierung des Moduls.
 
 !!! warning "Besonderheiten meiner HCI-Veranstaltung"
     Bitte machen sie sich im Vorfeld ihrer Modulbelegung mit den [Besonderheiten](./0_organisation.md) meiner HCI-Veranstaltung vertraut, insbesondere bei der Gruppenbildung.  
@@ -21,6 +21,7 @@ Auf den folgenden Seiten finden Sie Informationen zu **Organisation** und **Abla
 * :fontawesome-solid-university: [Organisation der Veranstaltung](0_organisation.md)
 * :material-calendar-month: [Semesterplan](01_semesterplan.md)
 * :simple-moodle: [Link zum Moodle-Kurs der Veranstaltung](https://lernen.h-da.de/course/view.php?id=6802)
+* :material-star-shooting: [Reflexionen früherer Projektgruppen](testimonials.md)
 <!--
 * [Link zur Modulbeschreibung](...)
 * [Offenes HCI-Labor](...)
@@ -56,6 +57,10 @@ Auf den folgenden Seiten finden Sie Informationen zu **Organisation** und **Abla
 
 * :material-account-hard-hat: [Das HCI-Praktikum](praktikum.md)
 
+
+## :octicons-discussion-closed-24: Fachgespräch
+
+*  [Das Fachgespräch: Rolle und Ablauf](fachgespraech.md)
 <!-- :fontawesome-solid-ranking-star: -->
 
 ----

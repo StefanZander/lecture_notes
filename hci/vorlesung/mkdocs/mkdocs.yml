@@ -6,6 +6,7 @@ nav:
   - Organisation:
       - "Durchführungsmodalitäten": "0_organisation.md"
       - "Semesterplan": "01_semesterplan.md"
+      - "Reflexionen": "testimonials.md"
 
   - Vorlesung:
       - "Kapitel 1: User-Centered Design": "1_user-centered_design.md"

@@ -5,8 +5,8 @@
 !!! danger "Voraussetzungen für eine erfolgreiche Teilnahme"
     Für eine erfolgreiche Teilnahme an meinem Kurs gibt es **zwei** zwingend zu erfüllende  **Voraussetzungen**:
 
-    1. Teilnahme an der **Semesterprojektgruppenbildungsveranstaltung** (siehe [Semesterplan](01_semesterplan.md))
-    2. Erfolgreich durchgeführtes **Fachgespräch**
+    1. Teilnahme an der :fontawesome-solid-users-viewfinder: **Semesterprojektgruppenbildungsveranstaltung** (siehe [Semesterplan](01_semesterplan.md))
+    2. Erfolgreich durchgeführtes :octicons-discussion-closed-24: **Fachgespräch**
 
     Erfüllen sie eine der genannten Voraussetzungen nicht, dann können sie das Modul im aktuellen Semester nicht erfolgreich absolvieren!
     
