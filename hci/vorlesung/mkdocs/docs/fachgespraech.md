@@ -2,17 +2,20 @@
 
 ## Allgemeine Informationen
 
-Ziel des Fachgesprächs ist es, den Nachweis zu erbringen, dass Studierende (a) die grundlegenden Methoden und Konzepte verstanden haben und
-(b) über die **notwendigen theoretischen Kenntnisse** verfügen, um das HCI-Semesterprojekt erfolgreich durchführen und die in den Meilensteinen verlangten Arbeitsergebnisse erbringen zu können.
+Ziel des Fachgesprächs ist es, den Nachweis zu erbringen, dass Studierende  
+(a) die grundlegenden Methoden und Konzepte verstanden haben und  
+(b) über die **notwendigen theoretischen Kenntnisse** verfügen,  
+um das HCI-Semesterprojekt erfolgreich durchführen und die in den Meilensteinen verlangten Arbeitsergebnisse erbringen zu können.
 
-Das Fachgespräch findet im Anschluss an die Theorieeinheiten und der Gruppenbildungsveranstaltung zu Beginn von Woche 5 statt (siehe [Semesterplan](01_semesterplan.md)).
+Das Fachgespräch findet im Anschluss an die Theorieeinheiten und der Gruppenbildungsveranstaltung zu Beginn von :material-calendar: **Woche 5** statt (siehe [Semesterplan](01_semesterplan.md)).
 Voraussetzung ist die **Teilnahme** an der **Gruppenbildung** zum Semesterprojekt, da die Fachgespräche gruppenweise durchgeführt werden.
 
 
 
 ## Organisation und Durchführung
 
-Link zum Etherpad zur Buchung eines Gruppenslots: <https://etherpad.h-da.de/p/HCI_SS2026_Gruppeneinteilung>
+Link zum Etherpad zur Buchung eines Gruppenslots für das Fachgespräch:  
+:material-pencil: <https://etherpad.h-da.de/p/HCI_SS2026_Gruppeneinteilung>
 
 - Voraussetzung: Teilnahme an der Gruppenbildungsveranstaltung zum Semesterprojekt, d.h., sie gehören einer definierten Gruppe an und haben sich in das Etherpad zur Semesterprojektgruppenübersicht zusammen mit ihren Gruppenmitgliedern eingetragen. 
 
