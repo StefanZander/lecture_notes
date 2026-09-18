@@ -53,6 +53,22 @@ Genauere Details zu den einzelnen Bewertungsaspekten finden sich im [Foliensatz 
 ```
 | Note | Punkte        |
 |------|---------------|
+| 1,0  | 40 - 38,5     |
+| 1,3  | 38 - 35,5     |
+| 1,7  | 35 - 33,5     |
+| 2,0  | 33 - 30,5     |
+| 2,3  | 30 - 27,5     |
+| 2,7  | 27 - 25,5     |
+| 3,0  | 25 - 22,5     |
+| 3,3  | 22 - 19,5     |
+| 3,7  | 19 - 17,5     |
+| 4,0  | 17 - 15,5     | 
+| 5,0  | <= 15         | 
+```
+
+<!-- Version #2
+| Note | Punkte        |
+|------|---------------|
 | 1,0  | 40   - 38     |
 | 1,3  | 37,5 - 35     |
 | 1,7  | 34,5 - 32,5   |
@@ -64,7 +80,7 @@ Genauere Details zu den einzelnen Bewertungsaspekten finden sich im [Foliensatz 
 | 3,7  | 18,5 - 16,5   |
 | 4,0  | 16	  - 14     | 
 | 5,0  | <= 13,5       | 
-```
+-->
 
 <!--
 Punkte (neu)	
@@ -84,7 +100,7 @@ Punkte (neu)
 
 ## Fachgespräch
 
-Ab dem SoSe 2026 findet ergänzend zur Leistungsfeststellung ein bewertetes Fachgespräch zu den Inhalten der Veranstaltung statt.
+Ab dem SoSe 2026 findet ergänzend zur Leistungsfeststellung ein qualifizierendes Fachgespräch zu den Inhalten der Veranstaltung statt.
 
 Details dazu finden sich im [Foliensatz zur Organisation der Veranstaltung](https://code.fbi.h-da.de/zander/hci/material/-/raw/main/0_organisation/01_organisation.pdf) (_abrufbar nach Anmeldung über code.fbi.h-da.de_).
 
