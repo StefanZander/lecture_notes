@@ -2,20 +2,25 @@
 
 ## Allgemeine Informationen
 
-Ziel des Fachgesprächs ist es, den Nachweis zu erbringen, dass Studierende  
-(a) die grundlegenden Methoden und Konzepte verstanden haben und  
-(b) über die **notwendigen theoretischen Kenntnisse** verfügen,  
+Ziel des Fachgesprächs ist es, den Nachweis zu erbringen, dass Studierende
+
+1. die grundlegenden **Methoden** und **Konzepte** verstanden und verinnerlicht haben und  
+2. über die **notwendigen Kompetenzen** verfügen,  
+
 um das HCI-Semesterprojekt erfolgreich durchführen und die in den Meilensteinen verlangten Arbeitsergebnisse erbringen zu können.
 
 Das Fachgespräch findet im Anschluss an die Theorieeinheiten und der Gruppenbildungsveranstaltung zu Beginn von :material-calendar: **Woche 5** statt (siehe [Semesterplan](01_semesterplan.md)).
-Voraussetzung ist die **Teilnahme** an der **Gruppenbildung** zum Semesterprojekt, da die Fachgespräche gruppenweise durchgeführt werden.
+<!-- Voraussetzung ist die **Teilnahme** an der **Gruppenbildung** zum Semesterprojekt, da die Fachgespräche gruppenweise durchgeführt werden. -->
 
 
 
 ## Organisation und Durchführung
 
-Link zum Etherpad zur Buchung eines Gruppenslots für das Fachgespräch:  
-:material-pencil: <https://etherpad.h-da.de/p/HCI_SS2026_Gruppeneinteilung>
+Voraussetzung für das Absolvieren des Fachgesprächs ist die Teilnahme an der Gruppenbildungsveranstaltung sowie die Buchung eines Gruppenslots.
+
+!!! note ""
+    Link zum Etherpad zur Buchung eines Gruppenslots für das Fachgespräch:  
+    :material-pencil: <https://etherpad.h-da.de/p/HCI_SS2026_Gruppeneinteilung>
 
 - Voraussetzung: Teilnahme an der Gruppenbildungsveranstaltung zum Semesterprojekt, d.h., sie gehören einer definierten Gruppe an und haben sich in das Etherpad zur Semesterprojektgruppenübersicht zusammen mit ihren Gruppenmitgliedern eingetragen. 
 
@@ -23,11 +28,11 @@ Link zum Etherpad zur Buchung eines Gruppenslots für das Fachgespräch:
         Sollten sie _nicht_ an der Gruppenbildungsveranstaltung teilgenommen und/oder sich _nicht_ rechtzeitig in das Etherpad eingetragen haben, dann ist eine Teilnahme an den Fachgesprächen und eine erfolgreiche Absolvierung der Lehrveranstaltung im aktuellen Semester nicht möglich!
 
 - Dauer: ca. 30 - 45 Min pro Gruppe
-- Raum: **D19/03.08**
+- Raum: **TBA**
 - Gruppenweise Durchführung 
 - Buchung eines Gruppenslots im Rahmen der Gruppenbildungsveranstaltung (siehe Link)
-- Jede/r Teilnehmende bekommt eine Reihe von Fragen zu unterschiedlichen Themen aus den VO-Einheiten gestellt und sollte diese innerhalb eines definierten Zeitrahmens (idR. 30-60 Sekunden) vollständig und korrekt beantworten. 
-- Fernbleiben ohne ärztl. Attest führt automatisch zum Ausschluss aus der Veranstaltung.
+- Jede/r Teilnehmende bekommt eine Reihe von Fragen zu unterschiedlichen Themen aus den VO-Einheiten gestellt und sollte diese innerhalb eines definierten Zeitrahmens (idR. 60-90 Sekunden) vollständig und korrekt beantworten. 
+- Fernbleiben ohne ärztl. Attest führt automatisch zur negativen Beurteilung des Fachgesprächs und damit zum Ausschluss aus der Veranstaltung.
 - Entscheidend für den eigenen weiteren Verlauf der Veranstaltung
 - Hilfsmittel: keine
 
@@ -35,10 +40,10 @@ Link zum Etherpad zur Buchung eines Gruppenslots für das Fachgespräch:
 
 ## Bewertung
 
-- Die Gesamtbeurteilung errechnet sich aus der Summe der korrekten Antworten
-- Ist die Gesamtbeurteilung noch ausreichend oder besser, dann kann die/der Studierende in die Phase 2 der Veranstaltung ([Arbeit am Semesterprojekt](semesterprojekt.md)) eintreten.
-- Ist die Gesamtbeurteilung nicht mehr ausreichend, also mangelhaft, dann zählt die Lehrveranstaltung als nicht bestanden und die/der Studierende kann diese im aktuellen Semester nicht mehr erfolgreich absolvieren.
-- Die Beurteilung des Fachgesprächs wirkt wie eine Teilleistung für das Semesterprojekt und führt – bei allg. positiver Bewertung von Fachgespräch und Semesterprojekt – zu einer Auf- oder Abwertung der individuellen Modulnote.
+- Die **Gesamtbeurteilung** errechnet sich aus der Summe der korrekten Antworten
+- :material-thumb-up: Ist die Gesamtbeurteilung ausreichend oder besser, dann kann die/der Studierende in die Phase 2 der Veranstaltung ([Arbeit am Semesterprojekt](semesterprojekt.md)) eintreten.
+- :material-thumb-down: Ist die Gesamtbeurteilung nicht mehr ausreichend, also mangelhaft, dann zählt die Lehrveranstaltung als nicht bestanden und die/der Studierende kann diese im aktuellen Semester nicht mehr erfolgreich absolvieren.
+<!-- - Die Beurteilung des Fachgesprächs wirkt wie eine Teilleistung für das Semesterprojekt und führt – bei allg. positiver Bewertung von Fachgespräch und Semesterprojekt – zu einer Auf- oder Abwertung der individuellen Modulnote. -->
 
 <!-- Entscheidet darüber, ob Studierende über das notwendige theoretische Wissen verfügen, um das Semesterprojekt erfolgreich durchführen zu können -->
 

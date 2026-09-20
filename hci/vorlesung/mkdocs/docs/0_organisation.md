@@ -100,9 +100,9 @@ Punkte (neu)
 
 ## Fachgespräch
 
-Ab dem SoSe 2026 findet ergänzend zur Leistungsfeststellung ein qualifizierendes Fachgespräch zu den Inhalten der Veranstaltung statt.
+Ab dem SoSe 2026 findet ergänzend zur Leistungsfeststellung ein qualifizierendes [Fachgespräch](fachgespraech.md) zu den Inhalten der Veranstaltung statt.
 
-Details dazu finden sich im [Foliensatz zur Organisation der Veranstaltung](https://code.fbi.h-da.de/zander/hci/material/-/raw/main/0_organisation/01_organisation.pdf) (_abrufbar nach Anmeldung über code.fbi.h-da.de_).
+Weitere Informationen dazu finden sich auch im [Foliensatz zur Organisation der Veranstaltung](https://code.fbi.h-da.de/zander/hci/material/-/raw/main/0_organisation/01_organisation.pdf) (_abrufbar nach Anmeldung über code.fbi.h-da.de_).
 
 
 
