@@ -20,7 +20,7 @@
 
 
 
-### Personas
+### Finden der relevanten Benutzenden (aka Personas)
 1. :fontawesome-solid-users-viewfinder: **Personen- und Kriterienliste**: Erstellen Sie eine **Liste** von verschiedenen typischen Personen, die als Benutzende der jeweiligen App in Frage kommen (gerne aus dem Kreis Ihrer Freunde und Verwandten).  
 
 2. Erstellen Sie zudem eine Liste mit :material-clipboard-list-outline:  **relevanten Kriterien**, welche diese Personen an sich sowie im Kontext der Anwendungsdomäne (=Ihr gewähltes Semesterprojekt) klassifizieren.  
