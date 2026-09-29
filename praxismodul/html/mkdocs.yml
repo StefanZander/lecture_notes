@@ -24,6 +24,13 @@ theme:
   name: material
   color_mode: dark
   palette:
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: red
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: blue
@@ -33,13 +40,6 @@ theme:
         name: Switch to dark mode
         primary: deep purple
         accent: red
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: deep purple
-      accent: red
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
 
 
   font:
