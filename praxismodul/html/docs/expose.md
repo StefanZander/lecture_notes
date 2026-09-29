@@ -14,13 +14,14 @@ In dieser Einheit erfahren Sie, wie Sie das Exposé zu Ihrer Abschlussarbeit ers
 
 Dem Exposé sollte folgende Struktur zu Grunde liegen:
 
-1. **Vorläufiger Titel** (=Arbeitstitel)  
-2. **Problemstellung**  
-3. **Erkenntnisinteresse**
-4. **Forschungsfragen**
-5. **Geplante Aktivitäten**
-6. **Evaluierung**
-7. **Referenzen**
+1. **Vorläufiger Titel** (=Arbeitstitel) 
+2. **Zielstellung** 
+3. **Problemstellung**  
+4. **Erkenntnisinteresse**
+5. **Forschungsfragen**
+6. **Geplante Aktivitäten**
+7. **Evaluierung**
+8. **Referenzen**
 
 
 ## Aufbau
@@ -33,11 +34,31 @@ Der vorläufige Titel der Arbeit. Dieser kann sich selbstverständlich noch im w
     Der Titel sollte die **Problemstellung widerspiegeln** und nur so lang wie nötig sein. Verwenden Sie ggf. einen **Untertitel** und halten Sie den Haupttitel so knapp wie möglich. Vermeiden Sie übermäßig lange oder komplexe Titel – diese verwässern nur die eigentliche Zielsetzung der Arbeit. 
 
 
+
+### :material-target: Zielstellung
+
+Dieser Abschnitt soll in max. 1-2 Sätzen darlegen, 
+
+- welche **Zielstellung** mit dem geplanten Vorhaben verfolgt und
+- was **herausgefunden** / **herausgearbeitet** 
+
+werden soll.
+
+Versuchen sie die Zielsetzung ihres Vorhaben soweit durchzudenken, dass sie diese, wie eingangs gefordert, in :fontawesome-solid-exclamation-triangle: **einem aussagekräftigen Satz** zusammenfassen können. 
+
+Die formulierte Zielstellung ist Ausgangspunkt für das folgende Kapitel, welches die **spezifischen Probleme**, die hinter einer erfolgreichen Addressierung der Zielstellung stehen, aufzeigt.
+
+
+
 ### :octicons-question-24: Problemstellung
 
-Die Problemstellung ist eines der wesentlichen und wichtigsten Elemente eines Exposés. Hier legen Sie die spezifische Problemstellung, mit der sich Ihre Arbeit auseinandersetzt, dar.
+Die Problemstellung ist eines der wesentlichen und wichtigsten Elemente eines Exposés. Hier legen Sie die **spezifischen Probleme**, mit denen sich Ihre Arbeit auseinandersetzt, dar.
 
-Die Problemstellung sollte knapp aber präzise beschrieben sein. Die Struktur kann dem [Prinzip der invertierten Pyramide](https://de.wikipedia.org/wiki/Prinzip_der_umgekehrten_Pyramide) folgen, d.h., die wesentlichen Probleme sollten zu Beginn genannt werden. Erst danach folgen Hintergrundinformationen sowie die Einbettung in den Arbeitskontext und ggf. weitere Einzelheiten.
+<!-- 
+Die Problemstellung ist eines der wesentlichen und wichtigsten Elemente eines Exposés. Hier legen Sie die spezifische Problemstellung, mit der sich Ihre Arbeit auseinandersetzt, dar.
+ -->
+
+Die Problemstellung sollte knapp aber präzise beschrieben sein und die zu überwindenden Probleme in jeweils einem einegenen Unterpunkt darstellen. Die Struktur kann dem [Prinzip der invertierten Pyramide](https://de.wikipedia.org/wiki/Prinzip_der_umgekehrten_Pyramide) folgen, d.h., die wesentlichen Probleme sollten zu Beginn genannt werden. Erst danach folgen Hintergrundinformationen sowie die Einbettung in den Arbeitskontext und ggf. weitere Einzelheiten.
 
 Häufig wird die Problemstellung wie eine Einleitung bzw. die Hinführung zu einem Thema formuliert. Das kann fallweise in Ordnung sein. Generell sollte aber die **spezifische Problemstellung**, mit der sich die Arbeit auseinandersetzt, im Vordergrund stehen. 
 
@@ -48,12 +69,12 @@ Ein weiteres Problem ist, dass die Problemstellung oftmals nicht konkret genug u
 
 Aus der Problemstellung leitet sich das Erkenntnisinteresse, welches die Arbeit verfolgt ab. Führen sie hier die wesentlichen Erkenntnisse auf, die im Rahmen ihrer Arbeit erarbeit werden sollen. Fragen sie sich hierzu: 
 
-- "_Was will ich herausfinden, damit das Vorhaben erfolgreich sein wird ?_"
+- "_Was muss ich herausfinden, damit das Vorhaben erfolgreich sein wird ?_"
 - "_Welche Antworten soll die Arbeit liefern ?_"
 
-Erkenntnisinteresse und Problemstellung sind Ausgangspunkte für die Formulierung von Forschungsfragen. D.h., die Bearbeitung der Forschungsfragen liefert Antworten, welche das Erkenntnisinteresse widerspiegeln.
+Erkenntnisinteresse und Problemstellung sind anschließend Ausgangspunkte für die Formulierung von Forschungsfragen. D.h., die Bearbeitung der Forschungsfragen liefert Antworten, welche das Erkenntnisinteresse widerspiegeln.
 
-Führen sie im Exposé die wichtigsten Erkenntnisinteressen auf und begründen sie jeweils, warum dieses Interesse von Relevanz ist bzw. wie dieses in Bezug zur Zielsetzung der Arbeit steht.
+Führen sie im Exposé die wichtigsten Erkenntnisinteressen als eigene Unterpunkte auf und begründen sie jeweils, warum dieses Interesse von Relevanz ist bzw. wie dieses in Bezug zur Zielsetzung der Arbeit steht.
 
 
 ### :material-magnify-scan: Forschungsfragen
