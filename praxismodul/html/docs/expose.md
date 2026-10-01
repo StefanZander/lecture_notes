@@ -44,7 +44,7 @@ Dieser Abschnitt soll in max. 1-2 Sätzen darlegen,
 
 werden soll.
 
-Versuchen sie die Zielsetzung ihres Vorhaben soweit durchzudenken, dass sie diese, wie eingangs gefordert, in :fontawesome-solid-exclamation-triangle: **einem aussagekräftigen Satz** zusammenfassen können. 
+Versuchen sie die Zielsetzung ihres Vorhaben soweit durchzudenken, dass sie diese, wie eingangs gefordert, in :fontawesome-solid-exclamation-triangle: **einem aussagekräftigen Satz** konkret benennen bzw. zusammenfassen können. 
 
 Die formulierte Zielstellung ist Ausgangspunkt für das folgende Kapitel, welches die **spezifischen Probleme**, die hinter einer erfolgreichen Addressierung der Zielstellung stehen, aufzeigt.
 
@@ -54,11 +54,13 @@ Die formulierte Zielstellung ist Ausgangspunkt für das folgende Kapitel, welche
 
 Die Problemstellung ist eines der wesentlichen und wichtigsten Elemente eines Exposés. Hier legen Sie die **spezifischen Probleme**, mit denen sich Ihre Arbeit auseinandersetzt, dar.
 
+Der Fokus liegt hier bewußt auf der Frage, _was sind die spezifischen Problemstellungen, mit denen sich die Arbeit konkret auseinander setzt_, nicht auf denen sie aufbaut. Diese Unterscheidung wird oft übersehen bzw. nicht präzise genug vorgenommen. 
+
 <!-- 
 Die Problemstellung ist eines der wesentlichen und wichtigsten Elemente eines Exposés. Hier legen Sie die spezifische Problemstellung, mit der sich Ihre Arbeit auseinandersetzt, dar.
  -->
 
-Die Problemstellung sollte knapp aber präzise beschrieben sein und die zu überwindenden Probleme in jeweils einem einegenen Unterpunkt darstellen. Die Struktur kann dem [Prinzip der invertierten Pyramide](https://de.wikipedia.org/wiki/Prinzip_der_umgekehrten_Pyramide) folgen, d.h., die wesentlichen Probleme sollten zu Beginn genannt werden. Erst danach folgen Hintergrundinformationen sowie die Einbettung in den Arbeitskontext und ggf. weitere Einzelheiten.
+Die Problemstellung sollte knapp aber präzise beschrieben sein und die zu überwindenden Probleme in jeweils einem eigenen Unterpunkt darstellen. Die Struktur kann dem [Prinzip der invertierten Pyramide](https://de.wikipedia.org/wiki/Prinzip_der_umgekehrten_Pyramide) folgen, d.h., die wesentlichen Probleme sollten zu Beginn genannt werden. Erst danach folgen Hintergrundinformationen sowie die Einbettung in den Arbeitskontext und ggf. weitere Einzelheiten.
 
 Häufig wird die Problemstellung wie eine Einleitung bzw. die Hinführung zu einem Thema formuliert. Das kann fallweise in Ordnung sein. Generell sollte aber die **spezifische Problemstellung**, mit der sich die Arbeit auseinandersetzt, im Vordergrund stehen. 
 
