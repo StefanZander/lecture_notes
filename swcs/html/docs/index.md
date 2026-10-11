@@ -4,6 +4,7 @@
 
  * [Wissenschaftliches Arbeiten in der Informatik 2](https://obs.fbi.h-da.de/mhb/modul.php?nr=30.7512)
  * [Scientifc Writing for Computer Science](https://obs.fbi.h-da.de/mhb/modul.php?nr=30.7324)
+ * [Seminar Kommunikation und Medien (Studiengang KMI)](https://www.fbi.h-da.de/studieren/studium/spezifisches/bsc-informatik-kmi)
 
 <!-- Stand: 2019-03-18 -->
 

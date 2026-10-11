@@ -12,8 +12,8 @@
 
 - Usually via **email**, **BBB** or as **indiviual appointments** via <https://rooms.h-da.de/r?room=Zander%2C+Stefan+%28fbi%29> 
     _-->_ contact me via email for arranging an individual appointment
-- Please use the following subject `WAI` __OR__ `SWCS` when asking questions via email:  
-    `[SWCS|WAI] {matter}` (without `{}` of course)
+- Please use the following subject `WAI` | `SWCS` | `KUM` when asking questions via email:  
+    `[SWCS|WAI|KUM] {matter}` (without `{}` of course)
 
     !!! info "Please consider the correct email subject"
         Please note that the curly braces (`{}`) are indicators for tokens that should be replaced with the real names and matter (without `{}` of course).
@@ -32,9 +32,9 @@
     Instead, we will use **BigBlueButton (BBB)** for all lectures 
 -->
 
-- Dates of the lectures will be announced via Email as well as via the OBS Calendar
+- Dates of the lectures will be announced via Email as well as via the myhda Calendar
     - _-->_ so please make sure that your email and calendar subscription is up-to-date 
-- Depends on the student's familirarity with the topic; 
+- Depends on the student's familiarity with the topic; 
 - Per default only very few – but attendance is compulsory
     - Kick-off meeting
     - Introductory session
@@ -65,7 +65,7 @@
 ## Submission of Results
 - All Milestones need to be **submitted** exclusively via the [EasyChair system](https://easychair.org)  
     - For the corresponding conference link, see [Milestone #2](milestone2.md#tasks)
-- Please **register** yourself at the EasyChair system with your official student email-address (i.e., the one you use for the OBS system)
+- Please **register** yourself at the EasyChair system with your official student email-address (i.e., the one you use for the myhda system)
 
 !!! warning "Registration is Necessary"
     Registration at the EasyChair system is needed to submit results and to prepare the reviews for your colleagues' works (see [Milestone #4](milestone4.md))

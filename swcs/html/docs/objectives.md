@@ -86,38 +86,38 @@ External Information about good Scientific Work Practices
 * The fundamentals of science explained in a nice interactive showcase  
     <https://undsci.berkeley.edu/interactive/#/intro/1>
 
-* "Understanding Science 101" – online course by the University of Berkeley
+* :material-star: "Understanding Science 101" – online course by the University of Berkeley
     <https://undsci.berkeley.edu/article/_0/us101contents_01>
-
-* Excellent article series about scientific writing (*must read*)  
-    <https://www.aacc.org/publications/clinical-chemistry/clinical-chemistry%C2%A0guide-to-scientific-writing>
 
 * The European Code of Conduct for Research Integrity, Revised Edition (2017)  
     <http://www.allea.org/wp-content/uploads/2017/03/ALLEA-European-Code-of-Conduct-for-Research-Integrity-2017-1.pdf>
 
-* American Scientist, The Science of Scientific Writing  
+* :material-star: American Scientist, The Science of Scientific Writing  
     <https://www.americanscientist.org/blog/the-long-view/the-science-of-scientific-writing>
 
-* European Science Foundation Policy Briefing Good scientific practice in research and scholarship from Dec. 2010:  
-    <http://archives.esf.org/fileadmin/Public_documents/Publications/ESPB10.pdf>
-
-* Excellent Article about Hypothesis Buiding and Research Design (*must read*) 
-    <https://www.merlin.uzh.ch/contributionDocument/download/6915>
-
-* Nice summary of tipps for Phd theses but these also apply to any kind of scientific works  
+* :material-star: Nice summary of tipps for Phd theses but these also apply to any kind of scientific works  
     <https://medium.com/asecuritysite-when-bob-met-alice/as-a-phd-examiner-my-top-25-tips-for-phd-students-4ecb76a307e7>
 
 * An article from Oded Goldreich on how to write a scientific paper  
     <http://www.wisdom.weizmann.ac.il/~oded/R2/re-writing.pdf>
 
-* Simon Peyton Jones from Microsoft Research created an excellent presentaion on how to give a great research talk  
+* :material-star: Simon Peyton Jones from Microsoft Research created an excellent presentaion on how to give a great research talk  
     <https://www.microsoft.com/en-us/research/wp-content/uploads/2016/07/How-to-give-a-great-research-talk.pdf>
 
-* Clarity and Impact: Key Tips for Writing a Good Scientific Paper  
-    <https://www.mendeley.com/careers/article/clarity-and-impact-key-tips-for-writing-a-good-scientific-paper/>
+* :material-star: "Writing a Scientific Paper: From Clutter to Clarity" – Elsevier Research Academy 
+    <https://researcheracademy.elsevier.com/uploads/2017-11/2014-01-15-Manuscript-preparation.pdf>
+
+* :material-star: "Writing a good scientific paper" from the Max-Planck-Institute for Intelligent Systems 
+    <https://is.mpg.de/de/news/writing-a-good-scientific-paper>
 
 * Some online courses on scientific writing from Elsevier Researcher Academy (registration required)  
     <https://researcheracademy.elsevier.com/>
 
+<!-- * European Science Foundation Policy Briefing Good scientific practice in research and scholarship from Dec. 2010:  
+    <http://archives.esf.org/fileadmin/Public_documents/Publications/ESPB10.pdf> -->
 
+<!-- * Excellent Article about Hypothesis Buiding and Research Design (*must read*) 
+    <https://www.merlin.uzh.ch/contributionDocument/download/6915> -->
 
+<!-- * Excellent article series about scientific writing (*must read*) 
+    <https://www.aacc.org/publications/clinical-chemistry/clinical-chemistry%C2%A0guide-to-scientific-writing> -->

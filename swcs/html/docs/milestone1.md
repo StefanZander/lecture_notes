@@ -14,14 +14,14 @@
 1. Form **groups** of two people
      
     !!! info "Enter Partner Request in WAI2 Moodle Forum"        
-        In case you are looking for an WAI2 partner, please use the **WAI2 Moodle forum** to enter a **request** there. This is the most transparent and preferable way since other students can find you there. 
+        In case you are looking for a partner, please use the **WAI2 Moodle forum** to enter a **request** there. This is the most transparent and preferable way since other students can find you there. 
 
-2. Each group has to choose an **individual Computer Science realted topic or problem** that serves as a basis for the scientific work.  
+2. Each group has to choose an **individual Computer Science realted topic** or **problem** that serves as a basis for the scientific journey.  
 
-3. Register at the easychair.org system
-    Easychair is THE standard system for organizing scientific events. We, your instructors, have created a conference for our WAI2 course in easychair onto which you can upload, i.e. submit all your work items. Therefore, it is mandatory that all students register at the easychair website.
+3. Register at the [easychair.org](https://easychair.org/) portal  
+    Easychair is _THE_ standard system for organizing scientific events. We, your instructors, have created a conference for our scientific writing course in easychair onto which you can upload, i.e. submit all your work items there. Therefore, it is mandatory that all students register at the easychair website.
 
-    !!! important "Link to the WAI2 conference at easychair.org"
+    !!! important "Link to the lecture's conference at easychair.org"
         Use this link for the registration and submission of results:  
         <https://easychair.org/conferences/?conf=wai2-2026-sose>
 
@@ -41,4 +41,5 @@ The following results need to be achieved in order to meet the formal requiremen
 !!! success "Results"
     - [x] You formed a group of two people and researched possible topics of interest
     - [x] You selected on topic that you are going research in depth
-    - [x] Group constellation and topic have been entered in the WAI2 Moodle course
+    - [x] All authors have registered themselves using easychair
+    - [x] Group constellation and topic have been entered in easychair

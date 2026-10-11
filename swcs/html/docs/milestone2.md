@@ -24,16 +24,16 @@
 2. Write an **Abstract** based on the information outlined in the Factsheet.
     - The Abstract must be meaningful and only as long as necessary but as precise as possible  
       _(approx. 100 – 200 words; not longer than 5-7 sentences)_
-    - Use the [Springer LNCS template](https://www.springer.com/gp/computer-science/lncs/new-latex-templates-available/15634678)
+    - Use the [Springer LNCS template](https://www.overleaf.com/latex/templates/springer-nature-lecture-notes-in-computer-science/kzwwpvhwnvfj)
     
-    !!! info "Writing the Abstract" 
-        Write the Abstract from a perspective of what you *intend* to achieve. Change this perspective of what you *have* achieved for the final paper.
+        !!! info "Writing the Abstract" 
+            Write the Abstract from a perspective of what you *intend* to achieve. Change this perspective of what you *have* achieved in the final paper.
 
 3. Submit both Factsheet and Abstract as a **single PDF file** via **EasyChair** (_registration required_)  
     <!-- - Use the following link for the module "**Scientific Writing for Computer Science**":
         - Link: <https://easychair.org/conferences/?conf=swcssose2020> -->
-    - Use this link for the module "**Wissenschaftliches Arbeiten in der Informatik 2**":
-        - Link: <https://easychair.org/conferences/?conf=wai2-2026-sose>
+    - Use this link for the module:
+        - Link: TBA
         <!-- - <https://resource-cms.springernature.com/springer-cms/rest/v1/content/19238648/data/v4> -->
     - If you haven't done this already: **Register** both authors at the EasyChair system and enter all relevant information
   
@@ -93,16 +93,16 @@ The abstract therefore should outline the **main insights** (=results) of your w
 
 In order to provide that information, the abstract should answer the following **4 leading questions**:
 
-- What is the problem – WHAT
-- Why is this a problem – WHY
-- What are the specific contributions and how were they achieved – CONTRIBUTIONS & METHODOLOGY
-- What is the impact of the work – IMPACT
+- What is the problem – *WHAT*
+- Why is this a problem – *WHY*
+- What are the specific contributions and how were they achieved (contributions & methodology applied in your work for achieving the results) – *HOW*
+- What is the impact of the work – *IMPACT*
 
 ### Structural Elements
 
 These questions also serve as basis for **structuring** the abstract: 
 
-- The research problem 
+- The research problem
 - The impact of the research problem
 - The results (=contributions) created togehter with the applied methodology 
 - The consequences or insights following from the results
@@ -113,7 +113,7 @@ These questions also serve as basis for **structuring** the abstract:
 As a consequence, the abstract should *not* be longer than **5 - 7 sentences** for a regular research paper (longer works can have a more comprehensive abstract, but it should never exceed the limit of one page length).
 
 !!! info "A well-written Abstract is short and precise!"
-    The abstract must be **precise** and **meaningful**. It should only be as long as necessary but as precise as possible! 
+    The abstract must be **precise** and **meaningful**. It should only be _as long as necessary_ but _as precise as possible!_ 
 
 
 
