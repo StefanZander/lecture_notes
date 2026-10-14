@@ -319,7 +319,7 @@ Bildquelle: https://c4.wallpaperflare.com/wallpaper/710/270/417/1898-austrian-pa
   - Entwickeln Sie _Thesen_ die :fas-person-circle-exclamation: aufrütteln, :fas-heart-circle-exclamation: provozieren, :fas-comments: zum Diskutieren einladen
 
 - **Sie kennen ihr Thema – ihre Kommilitonen lernen etwas Neues**
-   - ==Keine bloße „Zusammenfassung“ der vorgegebenen Quellen==; Quellen sind *Startpunkt* für :fa-magnifying-glass: *eigene Recherche  n*
+   - ==Keine bloße „Zusammenfassung“ von Quellen==; Quellen sind Startpunkt für :fa-magnifying-glass: *eigene Analysen, Evaluierungen und Recherchen*
    - :fa-circle-exclamation: Entwickeln sie _eigene Fragestellungen_ und _Hypothesen_
    - Sie sind relativ frei in der Gestaltung ihres Themas
 
@@ -512,7 +512,7 @@ Verbesserung der Gesamtnote um bis zu einer vollen Notenstufe (+/- 1,0) durch pr
   - Link zum Sheet wird in der Veranstaltung gezeigt
 
 - Bereiten Sie Ihr Thema rechtzeitig vor (_starten Sie gleich!_)
-   - Lesen Sie Ihr Thema und die dazugehörigen Quellen aufmerksam durch
+   <!-- - Lesen Sie Ihr Thema und die dazugehörigen Quellen aufmerksam durch -->
    - Stimmen Sie ihr Thema mit den anderen Gruppen ab, um thematische Überschneidungen zu minimieren
      - Einige Themen sind nah beieinander, bleiben Sie in Ihrem Thema!
    - Machen Sie sich Ihren Zeitplan bewusst:
@@ -548,6 +548,7 @@ Verbesserung der Gesamtnote um bis zu einer vollen Notenstufe (+/- 1,0) durch pr
 11. 
 -->
 
+<!--
 ---
 # Präsentationsthemen :fa-person-chalkboard:
 
@@ -562,6 +563,7 @@ Verbesserung der Gesamtnote um bis zu einer vollen Notenstufe (+/- 1,0) durch pr
 9. Digitalisierung und Energieverbrauch
 10. BigTech als Quasi-Staaten? Einfluss von Tech-Konzernen auf globale Politik und Gesellschaft
 11. Die Krise des öffentlichen Diskurses – Ursachen und Lösungsansätze für toxische Debattenkultur im Netz
+-->
 
 <!-- 
 11. Postdemokratie und Technokratie – Wird Politik von Konzernen und Experten übernommen?
@@ -569,8 +571,8 @@ Verbesserung der Gesamtnote um bis zu einer vollen Notenstufe (+/- 1,0) durch pr
 12. ~~Sind Systeme wie TikTok eine Gefahr für uns als Gesellschaft und unsere demokratischen Grundprinzipien?~~
 -->
 
----
-## Freibleibend für Ergebnis der Themenpriorisierung
+<!-- ---
+## Freibleibend für Ergebnis der Themenpriorisierung -->
 <!-- # Themenauswahl durch die Studierenden -->
 <!-- 
 ![](https://static.mentimeter.com/screenshot/1-bitte-ranken-sie-die-themen-nach-interesse.jpg?maxage=600&w=1920&h=1080&url=https%3A%2F%2Fwww.mentimeter.com%2Fapp%2Fpresentation%2Falpqfmr4q24i36ztudch6ahikhqq8mey%2Fyb7cy5njkg36%2Fpreview%3Fp%3D0&cache_buster=7)
@@ -579,13 +581,14 @@ Verbesserung der Gesamtnote um bis zu einer vollen Notenstufe (+/- 1,0) durch pr
 
 
 ---
-## Alternative Themenliste
+## Themenliste (1/2) :fa-person-chalkboard:
 
 ::: smaller
 **💡 1. Digitale Ethik und Verantwortung**
 1. „Künstliche Intelligenz und moralische Verantwortung – wer trägt die Schuld bei Fehlentscheidungen?“ → Wie können KI-Systeme ethisch handeln, wenn sie selbst keine Moral besitzen?
-2. „Der Programmierende als moralischer Akteur – Verantwortung im digitalen Zeitalter“ → Welche ethische Verantwortung tragen Entwickler:innen für die gesellschaftlichen Folgen ihrer Software?
+2. „Der Programmierende als gewissenhafter Akteur – Verantwortung im digitalen Zeitalter“ → Welche ethische Verantwortung tragen Entwickler:innen für die gesellschaftlichen Folgen ihrer Software?
 3. „Automatisierte Entscheidungen – zwischen Effizienz und Gerechtigkeit“ → Wie beeinflussen Algorithmen unser Verständnis von Fairness und Chancengleichheit?
+4. "BigTech als Quasi-Staaten?" → Welchen Einfluss nehmen Tech-Konzerne auf globale Politik und Gesellschaft – insbesondere in Europa?
 
 **🔍 2. Daten, Privatsphäre und Macht**
 1. „Daten als Währung – wie viel ist meine Privatsphäre wert?“ → Welche wirtschaftlichen und gesellschaftlichen Dynamiken entstehen durch Datensammlung und -handel?
@@ -599,7 +602,7 @@ Verbesserung der Gesamtnote um bis zu einer vollen Notenstufe (+/- 1,0) durch pr
 :::
 
 ---
-## Alternative Themenliste (Fortsetzung)
+## Themenliste (2/2) :fa-person-chalkboard:
 
 ::: smaller
 **🏛️ 4. Politik, Demokratie und Informatik**
