@@ -2,9 +2,9 @@
 
 :fontawesome-solid-university: **Belegnummer**: 30.xxxx
 
-:simple-discord: **Discord-Channel**: <https://discord.gg/kn8PFhz4Pd>
+:simple-discord: **Discord-Channel**: TBA
 
-Auf den folgenden Seiten finden Sie Informationen zu **Organisation** und **Ablauf** des Vorbereitungsseminars zur Bachelorarbeiot bei mir, :teacher_tone1: Prof. Dr. Stefan Zander, sowie die entsprechenden :octicons-book-16: **Lehrmaterialien**. 
+Auf den folgenden Seiten finden Sie Informationen zu **Organisation** und **Ablauf** des Vorbereitungsseminars zur Bachelorarbeit bei mir, :teacher_tone1: Prof. Dr. Stefan Zander, sowie die entsprechenden :octicons-book-16: **Lehrmaterialien**. 
 
 
 
@@ -17,19 +17,19 @@ Auf den folgenden Seiten finden Sie Informationen zu **Organisation** und **Abla
 
 
 
-## :material-school: Lehreinheiten
+## :material-school: Themen
 
 
-* :material-human-male-board-poll: [Kapitel 1: Wesentliche Merkmale wissenschaftlichen Arbeitens](1_user-centered_design.md)
-* :material-human-male-board-poll: [Kapitel 2: User Research](2_user_research.md)
-* :material-human-male-board-poll: [Kapitel 3: Requirements Engineering](3_requirements_engineering.md)
-* :material-human-male-board-poll: [Kapitel 4: Modellbildung](4_models.md)
-* :material-human-male-board-poll: [Kapitel 5: Prototyping](5_prototyping.md)
-* :material-human-male-board-poll: [Kapitel 6: Visual Design](6_visual_design.md)
-* :material-human-male-board-poll: [Kapitel 7: Usability Evaluation](7_usability.md)
-* :fontawesome-solid-computer: [Kapitel 8: Fehler](x_mistakes.md)
+* :material-human-male-board-poll: [Kapitel 1: Wesentliche Merkmale wissenschaftlichen Arbeitens]()
+* :material-human-male-board-poll: [Kapitel 2: User Research]()
+* :material-human-male-board-poll: [Kapitel 3: Requirements Engineering]()
+* :material-human-male-board-poll: [Kapitel 4: Modellbildung]()
+* :material-human-male-board-poll: [Kapitel 5: Prototyping]()
+* :material-human-male-board-poll: [Kapitel 6: Visual Design]()
+* :material-human-male-board-poll: [Kapitel 7: Usability Evaluation]()
+* :fontawesome-solid-computer: [Kapitel 8: Häufige Fehler in Abschlussarbeiten](x_mistakes.md)
 
-
+<!--
 ## :material-sign-direction: Semesterprojekt
 
 * :material-calendar-month: [Infos zum Semesterprojekt](semesterprojekt.md)
@@ -48,6 +48,7 @@ Auf den folgenden Seiten finden Sie Informationen zu **Organisation** und **Abla
 ## :octicons-discussion-closed-24: Fachgespräch
 
 *  [Das Fachgespräch: Rolle und Ablauf](fachgespraech.md)
+-->  
 <!-- :fontawesome-solid-ranking-star: -->
 
 ----

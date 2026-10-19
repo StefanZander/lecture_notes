@@ -4,7 +4,14 @@
 
 ## :material-school: Zeitlicher Ablauf
 
-
+- Thema 1: Organisation und Ablauf des Seminars; gegenseitiges Kennenlernen; Klärung von Fragen etc
+- Thema 2: Das Bachelormodul – Organisation und Ablauf
+- Thema 3: Recap: Wissenschaftliches Arbeiten und wissenschaftliche Arbeitsmethodiken
+- Thema 4: Wissenschaftliches Arbeiten in der Bachelorarbeit
+- Thema 5: Was zeichnet eine gute Bachelorarbeit aus?
+- Thema 6: Das Kolloquium
+- Thema 7: Das eigene Abschlussarbeitsprojekt – Wie starte ich richtig?
+- Thema 8: Fallbeispiele
 
 
 

@@ -1,5 +1,13 @@
 # Organisation der Lehrveranstaltung
 
+
+
+!!! success "Lehr- und Arbeitsmaterialen"
+    Bitte tragen sie ihre Themen analog den Anweisungen aus der Veranstaltung in nachstehende Etherpads ein:
+
+    - [Erwartungshaltung an die Veranstaltung](https://etherpad.h-da.de/p/l9QfT9M_3Q3nbtnTp3jb)
+    - [Fragenspeicher](https://etherpad.h-da.de/p/2026_ws_vba_fragenspeicher)
+
 ## Vorbemerkung
 
 Die hier vorgestellte Veranstaltungsstruktur ist v.a. als Vorschlag zu verstehen. Die Veranstaltung richtet sich vor allem nach den Bedürfnissen und Fragen der Studierenden. Aus diesem Grund können sich Abweichungen von der hier vorstellten Veranstaltungsstruktur ergeben.  

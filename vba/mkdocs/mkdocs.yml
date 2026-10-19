@@ -8,15 +8,15 @@ nav:
       - "Semesterplan": "01_semesterplan.md"
       - "Reflexionen": "testimonials.md"
 
-  - Sessions:
-      - "Kapitel 1: User-Centered Design": "1_user-centered_design.md"
-      - "Kapitel 2: User Research": "2_user_research.md"
-      - "Kapitel 3: Requirements Engineering": "3_requirements_engineering.md"
-      - "Kapitel 4: Modellbildung": "4_models.md"
-      - "Kapitel 5: Prototyping": "5_prototyping.md"
-      - "Kapitel 6: Visual Design": "6_visual_design.md"
-      - "Kapitel 7: Usability": "7_usability.md"
-      - "Kapitel 8: Flutter": "8_flutter.md"
+  - Themen:
+      - "1: Das Bachelormodul": "1_user-centered_design.md"
+      - "2: Recap": "2_user_research.md"
+      - "3: Wissenschaftliches Arbeiten in der BA": "3_requirements_engineering.md"
+      - "4: Bachelorarbeiten – Dos & Don'ts": "4_models.md"
+      - "5: Das Kolloquium": "5_prototyping.md"
+      - "6: Das eigene BA-Projekt": "6_visual_design.md"
+      - "7: Fallstudien": "7_usability.md"
+      - "8: Häufige Fehler": "8_flutter.md"
 
   - Case Studies:
       - "Allgemeine Informationen": "semesterprojekt.md"
@@ -40,7 +40,7 @@ theme:
   palette:
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: light blue
+      primary: red
       accent: light green
       toggle:
         icon: material/brightness-4
