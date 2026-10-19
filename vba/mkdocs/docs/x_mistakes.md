@@ -1,0 +1,11 @@
+
+
+!!! task "Aufgaben"
+    Bitte lesen sie nachfolgenden Ausschnitt aus einer Abschlussarbeit und beurteilen sie diesen hinsichtlich der Belastbarkeit der getroffenen Aussagen:
+    <!-- MA Daus, Kap. 1.1 -->
+
+    > 1.1 motivation
+    >
+    > Companies are increasingly deploying virtual assistants across digital chat and telephony 
+    channels to automate customer service interactions. By automating these interactions organizations unlock substantial potential for operational cost reductions, as customer requests can either be resolved autonomously by the assistant or pre-qualified prior to human agent routing, thereby reducing average handling times. However, realizing this automation potential critically depends on the ability of virtual assistants to reliably understand user requests formulated in natural language. In real-world customer service environments, user inquiries exhibit substantial linguistic variance. Customers express their intents indirectly, imprecisely, colloquially, or with differing emotional intensity and communication styles. This natural diversity poses a central challenge for underlying Natural Language Understanding (NLU) pipelines and Large Language Model (LLM) intent classifiers. While modern conversational systems employ advanced prompt engineering and language models to mitigate ambiguity, verifying their robustness
+    against real-world conversational variance remains difficult. In enterprise practice, comprehensive quality assurance for conversational intent recognition remains a demanding, resource-intensive task. Conventional testing relies heavily on manual evaluation, which provides valuable qualitative observations but is inherently labor-intensive, time-consuming, poorly scalable, and difficult to reproduce at scale. Conversely, static benchmark datasets are limited to isolated utterances or fixed turn sequences, failing to capture the interactive dynamics, context drift, and communicative friction inherent in multi-turn dialogues. Furthermore, because natural language allows substantial room for interpretation, standard test setups struggle to systematically expose edge cases and boundary failures across diverse user groups.
