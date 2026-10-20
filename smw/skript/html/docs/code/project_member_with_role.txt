@@ -1,0 +1,23 @@
+<noinclude>
+This is the "Project member with role" subobject template.
+It should be called in the following format:
+<pre>
+{{Project member with role
+|project= #filled with {{PAGENAME}}
+|role=
+|startdate=
+|enddate=
+|member=
+}}
+</pre>
+Edit the page to see the template text.
+</noinclude><includeonly>
+{{#subobject:
+|Refers to project={{PAGENAME}} <!-- refers to name of parent page -->
+|has_role={{{role|}}}
+|has_startdate={{{startdate|}}}
+|has_enddate={{{enddate|}}}
+|has_member={{{member|}}}
+|type=project_membership
+}}
+</includeonly>

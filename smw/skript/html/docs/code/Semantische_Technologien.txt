@@ -15,7 +15,6 @@ Welche Personen arbeiten auf diesem Themenfeld
 {{#ask: [[Category:Research Project]] [[has_topic::{{PAGENAME}}]]
 |?has_member=
 |mainlabel=-
-<!-- Krass: sobald diese Zeile enthalten ist kommt eine HTTP-500-Fehlermeldung -->
 <!-- |format=valuerank -->
 }}
 
