@@ -54,3 +54,16 @@ Versuchen sie die Fragen bestmöglich zu beantworten und beherzigen sie nachsteh
 
 
 
+## :material-lightbulb-on: Hinweis zur Kolloquiumsgestaltung
+
+Gemäß der Allgemeinen Prüfungsordnung ist für den Vortrag im Rahmen des Bachelor- bzw. Masterarbeitskolloquiums eine Dauer von bis zu 30 Minuten vorgesehen. Wir weichen hiervon bewusst ab und begrenzen die Vortragszeit auf maximal 10 bis 15 Minuten.
+
+Diese Entscheidung beruht auf einer **gezielten inhaltlichen  Schwerpunktsetzung**:  
+Da sowohl Referent als auch Korreferent die Masterarbeit bereits vollständig gelesen haben, sind die wesentlichen Inhalte und Ergebnisse bekannt. Eine ausführliche erneute Darstellung der Arbeit würde daher nur einen begrenzten zusätzlichen Erkenntnisgewinn bieten.
+
+Stattdessen soll der Kurzvortrag dazu genutzt werden, die Arbeit aus einer übergeordneten, insbesondere methodischen Perspektive zu reflektieren. Im Mittelpunkt stehen dabei weniger die bloße Wiederholung der Arbeitsergebnisse als vielmehr die konzeptionellen Überlegungen, die methodischen Entscheidungen, deren Begründung sowie die kritische Reflexion des gewählten Vorgehens.
+
+Die verkürzte Vortragszeit schafft zugleich Raum für den aus unserer Sicht besonders wertvollen Teil des Kolloquiums: den anschließenden Frage- und Diskussionsteil. Dieser soll ausdrücklich Gelegenheit bieten, vertieft über die Arbeit, die zugrunde liegenden wissenschaftlichen Entscheidungen, alternative Vorgehensweisen, die Aussagekraft der Ergebnisse und mögliche Weiterentwicklungen zu diskutieren.
+
+!!! success "Ziel der angepassten Kolloquiumsform"
+    Ziel ist es somit nicht, die schriftliche Arbeit nochmals in verkürzter Form zu reproduzieren, sondern die Fähigkeit zur wissenschaftlichen Reflexion, zur methodischen Begründung und zur fundierten Diskussion der eigenen Arbeit in den Mittelpunkt zu stellen.
