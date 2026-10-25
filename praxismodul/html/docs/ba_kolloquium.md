@@ -8,6 +8,19 @@ Das Kolloquium gliedert sich in **drei Phasen**
 
 Im Folgenden werden die drei Phasen sowie die Vorbereitung genauer erläutert.
 
+!!! warning "Hinweis zur Kolloquiumsgestaltung"
+
+    Gemäß der Allgemeinen Prüfungsordnung ist für den Vortrag im Rahmen des Bachelor- bzw. Masterarbeitskolloquiums eine Dauer von bis zu 30 Minuten vorgesehen. Wir weichen hiervon bewusst ab und begrenzen die Vortragszeit auf maximal 10 bis 15 Minuten.
+
+    Diese Entscheidung beruht auf einer **gezielten inhaltlichen  Schwerpunktsetzung**:  
+    Da sowohl Referent als auch Korreferent die Masterarbeit bereits vollständig gelesen haben, sind die wesentlichen Inhalte und Ergebnisse bekannt. Eine ausführliche erneute Darstellung der Arbeit würde daher nur einen begrenzten zusätzlichen Erkenntnisgewinn bieten.
+
+    Stattdessen soll der Kurzvortrag dazu genutzt werden, die Arbeit aus einer übergeordneten, insbesondere methodischen Perspektive zu reflektieren. Im Mittelpunkt stehen dabei weniger die bloße Wiederholung der Arbeitsergebnisse als vielmehr die konzeptionellen Überlegungen, die methodischen Entscheidungen, deren Begründung sowie die kritische Reflexion des gewählten Vorgehens.
+
+    Die verkürzte Vortragszeit schafft zugleich Raum für den aus unserer Sicht besonders wertvollen Teil des Kolloquiums: den anschließenden Frage- und Diskussionsteil. Dieser soll ausdrücklich Gelegenheit bieten, vertieft über die Arbeit, die zugrunde liegenden wissenschaftlichen Entscheidungen, alternative Vorgehensweisen, die Aussagekraft der Ergebnisse und mögliche Weiterentwicklungen zu diskutieren.
+
+    :material-lightbulb-on: **Ziel ist es, die schriftliche Arbeit nicht nochmals in verkürzter Form zu reproduzieren, sondern die Fähigkeit zur wissenschaftlichen Reflexion, zur methodischen Begründung und zur fundierten Diskussion der eigenen Arbeit in den Mittelpunkt zu stellen.**
+
 
 ## :fontawesome-solid-people-arrows: Die Vorbereitung
 
@@ -37,7 +50,7 @@ Der Vortrag folgt einer :octicons-list-ordered-16: **vorgegebenen Struktur** und
 
 ## :fontawesome-solid-comments: Die mündliche Verteidigung
 
-Die mündliche Verteidigung gleicht einem verkürztem Rigorosum, in dem sie mündlich Stellung zu Fragen und/oder Aussagen der Referenten beziehen müssen.
+Die mündliche Verteidigung gleicht einem verkürztem Rigorosum, in dem sie mündlich Stellung zu Fragen und/oder Aussagen der Referenten nehmen müssen.
 
 Die gestellten Fragen liegen idR im Rahmen ihrer Arbeit, können aber auch Themengebiete oder Bereiche betreffen, mit denen sie sich nur am Rande befasst haben. 
 
@@ -45,15 +58,16 @@ Versuchen sie die Fragen bestmöglich zu beantworten und beherzigen sie nachsteh
 
 !!! warning "Wichtig: Antworten sie nur so lange wie nötig, aber so präzise wie möglich!" 
     Versuchen sie die wesentlichen Punkte möglichst präzise zu benennen. Vermeiden sie unnötige Abschweifungen oder Exkursionen; das verschlechtert die Beurteilung ihrer Antwort. Im Zweifel fragen wir nach oder fordern weitere Erläuterungen. 
-    Ihre Antwort sollte den Prinzipien eines gut formulierten Abstracts folgen: :material-lightbulb-on: _nur so lange wie nötig, aber die Dinge so präzise wie möglich benennen._
+    Ihre Antwort sollte den Prinzipien eines gut formulierten Abstracts folgen:  
+    :material-lightbulb-on: _Die relevanten Dinge nur so lange wie nötig, aber so präzise wie möglich benennen._
 
 
 !!! warning "Mut zur Lücke!"
-    Bitte beachten sie diesen Hinweis in ihrem eigenen Interesse. Oftmals erleben wir, dass auf Fragen, deren Antwort man nicht kennt oder bei denen man sich unsicher fühlt "herumgeredet" wird, ohne belastbare Aussagen zu treffen. Tun sie das nicht! Das verschlechtert ihre Prüfungsleistung. Sagen sie stattdessen offen, dass sie aktuell keine nähere Auskuft dazu geben können. Damit geben sie uns die Möglichkeit in weiteren/folgenden Fragen ihren Kenntnisstand zu erfragen. 
+    Bitte beachten sie diesen Hinweis in ihrem eigenen Interesse. Oftmals erleben wir, dass auf Fragen, deren Antwort man nicht kennt oder bei denen man sich unsicher fühlt "herumgeredet" wird, ohne belastbare Aussagen zu treffen. Tun sie das nicht! Das verschlechtert ihre Prüfungsleistung. Sagen sie stattdessen offen, dass sie aktuell keine nähere Auskuft dazu geben können. Damit geben sie uns die Möglichkeit, in weiteren Fragen ihren Kenntnisstand zu erfahren. 
 
 
 
-
+<!--
 ## :material-lightbulb-on: Hinweis zur Kolloquiumsgestaltung
 
 Gemäß der Allgemeinen Prüfungsordnung ist für den Vortrag im Rahmen des Bachelor- bzw. Masterarbeitskolloquiums eine Dauer von bis zu 30 Minuten vorgesehen. Wir weichen hiervon bewusst ab und begrenzen die Vortragszeit auf maximal 10 bis 15 Minuten.
@@ -67,3 +81,4 @@ Die verkürzte Vortragszeit schafft zugleich Raum für den aus unserer Sicht bes
 
 !!! success "Ziel der angepassten Kolloquiumsform"
     Ziel ist es somit nicht, die schriftliche Arbeit nochmals in verkürzter Form zu reproduzieren, sondern die Fähigkeit zur wissenschaftlichen Reflexion, zur methodischen Begründung und zur fundierten Diskussion der eigenen Arbeit in den Mittelpunkt zu stellen.
+-->
