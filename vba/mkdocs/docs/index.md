@@ -22,12 +22,19 @@ Auf den folgenden Seiten finden Sie Informationen zu **Organisation** und **Abla
 
 * :material-human-male-board-poll: [Kapitel 1: Das Bachelormodul – Aufbau und Ablauf](x_bachelormodul.md)
 * :material-human-male-board-poll: [Kapitel 2: Wesentliche Merkmale wissenschaftlichen Arbeitens (Wiederholung)](x_wiss_arbeiten.md)
-* :material-human-male-board-poll: [Kapitel 3: Typische Fehler](x_typische_fehler.md)
-* :material-human-male-board-poll: [Kapitel 5: Prototyping]()
-* :material-human-male-board-poll: [Kapitel 6: Visual Design]()
-* :material-human-male-board-poll: [Kapitel 7: Usability Evaluation]()
-* :material-human-male-board-poll: [Kapitel 3: Das eigene Abschlussarbeitsprojekt]()
-* :fontawesome-solid-computer: [Kapitel 8: Häufige Fehler in Abschlussarbeiten](x_mistakes.md)
+* :material-human-male-board-poll: [Kapitel x: Aufbau einer Abschlussarbeit](x_typische_fehler.md)
+* :material-human-male-board-poll: [Kapitel x: Typische Fehler beim Schreiben einer Abschlussarbeit](x_typische_fehler.md)
+* :material-human-male-board-poll: [Kapitel x: Das eigene Abschlussarbeitsprojekt]()
+* :material-human-male-board-poll: [Kapitel x: Häufige Fehler in Abschlussarbeiten](x_mistakes.md)
+
+
+## Interaktive-Apps
+
+<!--
+* [Die 10 häufigsten Fehler beim Schreiben einer Bachelorarbeit](./apps/einzeln/katalog.html) -->
+* :fontawesome-solid-computer: <a href="/apps/einzeln/katalog.html" target="_blank">Die 10 häufigsten Fehlerbilder in einer Abschlussarbeit genauer erklärt</a>
+* :fontawesome-solid-computer: <a href="/apps/einzeln/schreibprozess.html" target="_blank">47 Tipps zur Vermeidung der Fehlerbilder im Schreibprozess</a>
+* :fontawesome-solid-computer: <a href="/apps/einzeln/selbstcheck.html" target="_blank">Selbstcheck vor der Abgabe der Abschlussarbeit</a>
 
 <!--
 ## :material-sign-direction: Semesterprojekt

@@ -137,8 +137,10 @@ TODO:
 Für eine Lehrveranstaltung bietet sich insbesondere die Aufgabe an, zu einem Fehlerbild jeweils drei Dinge bestimmen zu lassen: Woran erkennt man den Fehler? Warum beeinträchtigt er die Aussagekraft? Wie müsste die Arbeit verändert werden?"
 -->
 
+<!--
 <iframe src="/apps/korrekturleitfaden_ba/" title="Korrekturleitfaden Bachelorarbeit" style="width:100%; height:85vh; border:1px solid #ddd; border-radius:8px;" loading="lazy"></iframe>
 
 <a href="/apps/korrekturleitfaden_ba/index.html" target="_blank">
   <button class="my-btn">Seite aufrufen</button>
 </a>
+-->

@@ -14,7 +14,7 @@
 - Thema 8: Fallbeispiele
 
 
-
+<!--
 ## Vorlage
 - Woche 1: [Organisation](0_organisation.md) + [Kapitel 1: Einführung User-Centered Design](1_user-centered_design.md)
 - Woche 2: [Kapitel 2: User Research](2_user_research.md) + [Kapitel 3: Requirements Engineering](3_requirements_engineering.md)
@@ -28,7 +28,9 @@
 - Woche 10: Arbeit am Semesterprojekt + Deadline [Meilenstein 1](ms1.md), [2](ms2.md) & [3](ms3.md)
 - Woche 11: Arbeit am Semesterprojekt
 - Woche 12: Arbeit am Semesterprojekt
-- Woche 13: Arbeit am Semesterprojekt + ggf. App-Präsentationen ([Slot-Buchung](https://etherpad.h-da.de/p/HCI_SS2026_App-Pr%C3%A4sentationen)) --> :fontawesome-solid-exclamation-circle: *Anwesenheitspflicht* 
-- Woche 14: App-Präsentationen ([Slot-Buchung](https://etherpad.h-da.de/p/HCI_SS2026_App-Pr%C3%A4sentationen))--> :fontawesome-solid-exclamation-circle: *Anwesenheitspflicht* 
+- Woche 13: Arbeit am Semesterprojekt + ggf. App-Präsentationen ([Slot-Buchung](https://etherpad.h-da.de/p/HCI_SS2026_App-Pr%C3%A4sentationen)) -> :fontawesome-solid-exclamation-circle: *Anwesenheitspflicht* 
+- Woche 14: App-Präsentationen ([Slot-Buchung](https://etherpad.h-da.de/p/HCI_SS2026_App-Pr%C3%A4sentationen))-> :fontawesome-solid-exclamation-circle: *Anwesenheitspflicht* 
 
 :octicons-info-16: _Vorbehaltlich etwaiger Anpassungen, die sich im Laufe des Semesters ergeben bzw. sich als sinnvoll herausstellen._
+
+-->

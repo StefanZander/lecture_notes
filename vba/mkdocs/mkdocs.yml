@@ -9,16 +9,19 @@ nav:
       - "Reflexionen": "testimonials.md"
 
   - Themen:
-      - "1: Das Bachelormodul": "1_user-centered_design.md"
-      - "2: Recap": "2_user_research.md"
-      - "3: Wissenschaftliches Arbeiten in der BA": "3_requirements_engineering.md"
-      - "4: Bachelorarbeiten – Dos & Don'ts": "4_models.md"
-      - "5: Das Kolloquium": "5_prototyping.md"
-      - "6: Das eigene BA-Projekt": "6_visual_design.md"
-      - "7: Fallstudien": "7_usability.md"
-      - "8: Häufige Fehler": "8_flutter.md"
+      - "1: Das Bachelormodul": "x_bachelormodul.md"
+      - "2: Wissenschaftliches Arbeiten": "2_user_research.md"
+      - "3: Die Themenfindung": ""
+      - "4: Dos & Don'ts": ""
+      - "5: Das Kolloquium": ""
+      - "6: Das eigene BA-Projekt": ""
+      - "7: Fallstudien": ""
+      - "8: Häufige Fehler": "x_typische_fehler.md"
 
   - Case Studies:
+      - "TBA": ""
+  
+  - Apps:
       - "TBA": ""
 
 
