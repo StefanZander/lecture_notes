@@ -22,7 +22,7 @@ Auf den folgenden Seiten finden Sie Informationen zu **Organisation** und **Abla
 
 * :material-human-male-board-poll: [Kapitel 1: Das Bachelormodul – Aufbau und Ablauf](x_bachelormodul.md)
 * :material-human-male-board-poll: [Kapitel 2: Wesentliche Merkmale wissenschaftlichen Arbeitens (Wiederholung)](x_wiss_arbeiten.md)
-* :material-human-male-board-poll: [Kapitel x: ]()
+* :material-human-male-board-poll: [Kapitel 3: Typische Fehler](x_typische_fehler.md)
 * :material-human-male-board-poll: [Kapitel 5: Prototyping]()
 * :material-human-male-board-poll: [Kapitel 6: Visual Design]()
 * :material-human-male-board-poll: [Kapitel 7: Usability Evaluation]()
