@@ -15,6 +15,8 @@
     - Welche wissenschaftlichen Gütekriterien gibt es?
     - Welche Rolle spielen die wissenschaftlichen Gütekriterien?
 
+!!! note "Etherpad"
+    <https://etherpad.h-da.de/p/vba_ws26_wiss_arbeiten>
 
 
 ## Allgemeines
