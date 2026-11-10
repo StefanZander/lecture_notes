@@ -24,9 +24,9 @@ Kern der Veranstaltung ist ein enger Austausch zwischen Dozierenden und Studiere
 !!! info "Fragen sind wichtig und gern gesehen!"
     Wichtig: Fragen sie viel und fragen sie häufig. Das Fragen und die aktive Auseinandersetzung mit neuen Inhalten ist eine der effektiefsten und effizientesten Lernstrategien überhaupt. Fragen fördert diesen Prozess. Nutzen sie diese Möglichkeit. So erzielen sie den größten Lernerfolg.
 
-    Oder wie es ein einer meiner ehemaligen Professoren ([Prof. Dr. Mario Fischer](http://www.mario-fischer.de/mario-fischer.html)) eindringlich postulierte: ==ES GIBT KEINE SCHLECHTEN FRAGEN!==
+    …oder wie es ein einer meiner ehemaligen Professoren ([Prof. Dr. Mario Fischer](http://www.mario-fischer.de/mario-fischer.html)) eindringlich postulierte: :material-lightbulb-on: _ES GIBT KEINE SCHLECHTEN FRAGEN!_
 
-    :octicons-sparkles-fill-16: Das ist auch der Credo dieser Veranstaltung! 
+    :fontawesome-solid-hand-point-right: Das ist auch das Credo dieser Veranstaltung! 
 
 
 

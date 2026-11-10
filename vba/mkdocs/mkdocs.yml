@@ -9,22 +9,21 @@ nav:
       - "Reflexionen": "testimonials.md"
 
   - Themen:
-      - "1: Das Bachelormodul": "1_user-centered_design.md"
-      - "2: Recap": "2_user_research.md"
-      - "3: Wissenschaftliches Arbeiten in der BA": "3_requirements_engineering.md"
-      - "4: Bachelorarbeiten – Dos & Don'ts": "4_models.md"
-      - "5: Das Kolloquium": "5_prototyping.md"
-      - "6: Das eigene BA-Projekt": "6_visual_design.md"
-      - "7: Fallstudien": "7_usability.md"
-      - "8: Häufige Fehler": "8_flutter.md"
+      - "1: Das Bachelormodul": "x_bachelormodul.md"
+      - "2: Wissenschaftliches Arbeiten": "2_user_research.md"
+      - "3: Die Themenfindung": ""
+      - "4: Dos & Don'ts": ""
+      - "5: Das Kolloquium": ""
+      - "6: Das eigene BA-Projekt": ""
+      - "7: Fallstudien": ""
+      - "8: Häufige Fehler": "x_typische_fehler.md"
 
   - Case Studies:
-      - "Allgemeine Informationen": "semesterprojekt.md"
-      - "MS 1: Projektziele": "ms1.md"
-      - "MS 2: User Research": "ms2.md"
-      - "MS 3: UI-Entwurf": "ms3.md"
-      - "MS 4: App-Entwicklung": "ms4.md"
-      - "MS 5: Usability Evaluation": "ms5.md"
+      - "TBA": ""
+  
+  - Apps:
+      - "TBA": ""
+
 
 
 extra_css:
@@ -84,8 +83,8 @@ extra:
 
 copyright: Copyright &copy; 2017 - 2026 – Prof. Dr. Stefan Zander
 
-repo_url: https://github.com/StefanZander/lecture_notes/tree/master/hci/vorlesung/mkdocs
-repo_name: /hci/vorlesung
+repo_url: https://github.com/StefanZander/lecture_notes/tree/master/vba/mkdocs
+repo_name: GitHub-Repository
 
 edit_uri: docs/
 

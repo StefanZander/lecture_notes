@@ -23,6 +23,7 @@ extra_css:
 theme:
   name: material
   color_mode: dark
+  user_color_mode_toggle: true
   palette:
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
@@ -71,8 +72,8 @@ extra:
 
 copyright: Copyright &copy; 2017 - 2023 – Prof. Dr. Stefan Zander
 
-repo_url: https://github.com/StefanZander/lecture_notes/tree/master/hci/praktikum/html
-repo_name: /hci/praktikum
+repo_url: https://github.com/StefanZander/lecture_notes/tree/master/praxismodul/html
+repo_name: praxismodul
 
 edit_uri: docs/
 
@@ -82,10 +83,13 @@ plugins:
   - git-revision-date-localized:
       enable_creation_date: false
       type: custom
+      enable_parallel_processing: false
 
 markdown_extensions:
   - abbr
   - admonition
+  - smarty:
+      smart_angled_quotes: true
   - attr_list
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
@@ -113,6 +117,6 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tasklist:
       custom_checkbox: true
-  
+  - pymdownx.critic
 
   

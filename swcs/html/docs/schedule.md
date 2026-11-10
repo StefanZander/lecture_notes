@@ -4,7 +4,7 @@
 ## Shortened Syllabus (:material-arrow-right-circle-outline: if requested by students)
 
 - Week 1: Intro + Group and topic finalization ([MS0](milestone0.md) + [MS1](milestone1.md)) --- _==Deadline: MON xx.xx.2026 (EOBD)==_
-- Week 2: Submission of Factsheet and Abstract ([MS2](milestone2.md)) --- _==Deadline: SUN xx.xx.2026 (EOD)==_
+- Week 2: Submission of Factsheet and Abstract ([MS2](milestone2.md)) --- _==Deadline: SUN 08.11.2026 (EOD)==_
 - Week 3: Research & paper work
 - Week 4: Upload review version of paper ([MS3](milestone3.md)) --- _==Deadline: FRI xx.xx.2026 (EOBD)==_
 - Week 5: Upload paper review ([MS4](milestone4.md)) --- _==Deadline: SUN xx.xx.2026 (EOBD)==_
@@ -23,20 +23,20 @@ The following syllabus information intend to help you structure your work and ac
 - Week 1: Read introductory material + start forming groups ([MS0](milestone0.md))
 - Week 2: Find topics + start reading topic-related material ([MS1](milestone1.md)) 
 - Week 3: Become familiar with the topic and the state of the art + start preparing Factsheet & Abstract
-- Week 4: Finalize Factsheet & Abstract and submit ([MS2](milestone2.md)) --- _==Deadline: 09.05.2025 (EOBD)==_
+- Week 4: Finalize Factsheet & Abstract and submit ([MS2](milestone2.md)) --- _==Deadline: 08.11.2026 (EOD)==_
 - Week 5: Feedback for [MS2](milestone2.md) + Research
 - Week 6: Research
 - Week 7: Research
 - Week 8: Research
-- Week 9: Upload review version of paper + enter paper bids ([MS3](milestone3.md)) --- _==Deadline: 08.06.2025 (EOBD)==_[^1]
-- Week 10: Review Week ([MS4](milestone4.md)) --- _==Deadline: 15.06.2025 (EOBD)==_
+- Week 9: Upload review version of paper + enter paper bids ([MS3](milestone3.md)) --- _==Deadline: xxx (EOBD)==_[^1]
+- Week 10: Review Week ([MS4](milestone4.md)) --- _==Deadline: xxx (EOBD)==_
 - Week 11: Integrate feedback + paper revision + start preparing the final presentations
-- Week 12: Final presentations ([MS5](milestone5.md)) --- _==Date: 01.07.2025==_
+- Week 12: Final presentations ([MS5](milestone5.md)) --- _==Date: xxx==_
 <!-- - Week 13: Paper revision -->
-- Week 13+x: Finalization and submission of research paper ([MS6](milestone6.md)) --- _==Deadline: 2025-08-14 (EOD)==_
+- Week 13+x: Finalization and submission of research paper ([MS6](milestone6.md)) --- _==Deadline: xxx (EOD)==_
 
 
-[^1]: I will start the bidding process on SUN., 2025-06-08.
+[^1]: I will start the bidding process on SUN., xxx.
 
 
 
